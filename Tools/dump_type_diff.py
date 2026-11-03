@@ -90,7 +90,7 @@ def parse_layout(path, image_regex="."):
                     current = {"kind": header.group(1), "bases": bases if separator else "", "fields": [],
                                "attributes": pending_attributes, "line": number,
                                "generated": "[CompilerGenerated]" in pending_attributes or bool(re.search(r"<>|_003C|>d__|>c__", full_name)),
-                               "generic": bool(re.search(r"<[^>]+>$", name))}
+                               "generic": bool(re.search(r"\w<[^<>]+>", name))}
                     result[key] = current
                 pending_attributes = []
                 continue
