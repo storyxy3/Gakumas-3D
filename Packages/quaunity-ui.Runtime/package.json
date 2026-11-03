@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.quaunity-ui.runtime",
+  "version": "0.0.1",
+  "displayName": "quaunity-ui.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}

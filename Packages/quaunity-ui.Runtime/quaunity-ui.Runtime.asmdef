@@ -1,0 +1,12 @@
+{
+  "name": "quaunity-ui.Runtime",
+  "references": [
+    "UnityEngine.UI",
+    "Qua.Utility",
+    "UniTask",
+    "Unity.TextMeshPro",
+    "quaunity-crypto"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
