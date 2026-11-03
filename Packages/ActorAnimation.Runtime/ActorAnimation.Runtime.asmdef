@@ -1,0 +1,12 @@
+{
+  "name": "ActorAnimation.Runtime",
+  "references": [
+    "Unity.Animation.Rigging",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.Mathematics",
+    "Unity.Collections",
+    "Unity.Burst"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}

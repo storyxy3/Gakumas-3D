@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.actoranimation.runtime",
+  "version": "0.0.1",
+  "displayName": "ActorAnimation.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}
