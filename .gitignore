@@ -20,3 +20,6 @@ UserSettings/
 Tools/**/bin/
 Tools/**/obj/
 !Tools/**/*.csproj
+__pycache__/
+*.pyc
+.utmp/

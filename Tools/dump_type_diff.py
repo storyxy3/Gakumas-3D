@@ -110,6 +110,10 @@ def parse_layout(path, image_regex="."):
                 continue
             if section != "// Fields" or not stripped or stripped.startswith("//"):
                 continue
+            # Il2CppDumper annotates RVA-backed static fields before the
+            # semicolon. The metadata address is provenance, not an identifier
+            # or a field offset, and changes between independent builds.
+            stripped = re.sub(r"/\*Metadata offset 0x[0-9A-Fa-f]+\*/", "", stripped).rstrip()
             field = re.match(r"(.+);(?:\s*//\s*(0x[\dA-Fa-f]+|-?\d+))?\s*$", stripped)
             if not field:
                 raise ValueError(f"{path}:{number}: unrecognized field: {stripped}")
