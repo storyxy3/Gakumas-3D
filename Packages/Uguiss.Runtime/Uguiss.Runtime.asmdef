@@ -1,0 +1,8 @@
+{
+  "name": "Uguiss.Runtime",
+  "references": [
+    "UniTask"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
