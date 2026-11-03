@@ -1,0 +1,9 @@
+{
+  "name": "Uguiss-Timeline.Runtime",
+  "references": [
+    "Uguiss.Runtime",
+    "UniTask"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
