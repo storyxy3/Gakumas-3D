@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.proflare.runtime",
+  "version": "0.0.1",
+  "displayName": "ProFlare.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}

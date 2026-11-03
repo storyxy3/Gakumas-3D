@@ -1,0 +1,10 @@
+{
+  "name": "ProFlare.Runtime",
+  "references": [
+    "Unity.Mathematics",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.Burst"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
