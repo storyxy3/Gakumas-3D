@@ -1,0 +1,9 @@
+{
+  "name": "Qua.VectorUI.Runtime",
+  "references": [
+    "UnityEngine.UI",
+    "Qua.Utility"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
