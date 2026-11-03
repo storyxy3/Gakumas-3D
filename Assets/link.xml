@@ -1,0 +1,33 @@
+<linker>
+  <assembly fullname="ActorAnimation.Runtime" preserve="all" />
+  <assembly fullname="AmplifyOcclusion.Runtime" preserve="all" />
+  <assembly fullname="Cinemachine" preserve="all" />
+  <assembly fullname="CriMw.CriWare.Runtime" preserve="all" />
+  <assembly fullname="DOTween" preserve="all" />
+  <assembly fullname="Octo" preserve="all" />
+  <assembly fullname="ProFlare.Runtime" preserve="all" />
+  <assembly fullname="Qua.Base.Runtime" preserve="all" />
+  <assembly fullname="Qua.PolygonUtility" preserve="all" />
+  <assembly fullname="Qua.Utility" preserve="all" />
+  <assembly fullname="Qua.VectorUI.Runtime" preserve="all" />
+  <assembly fullname="Titan.Runtime" preserve="all" />
+  <assembly fullname="Uguiss-Timeline.Runtime" preserve="all" />
+  <assembly fullname="Uguiss.Runtime" preserve="all" />
+  <assembly fullname="UniRx" preserve="all" />
+  <assembly fullname="UniTask" preserve="all" />
+  <assembly fullname="UniTask.Linq" preserve="all" />
+  <assembly fullname="Unity.Animation.Rigging" preserve="all" />
+  <assembly fullname="Unity.RenderPipelines.Core.Runtime" preserve="all" />
+  <assembly fullname="Unity.RenderPipelines.Universal.Runtime" preserve="all" />
+  <assembly fullname="Unity.TextMeshPro" preserve="all" />
+  <assembly fullname="Unity.Timeline" preserve="all" />
+  <assembly fullname="Unity.VisualEffectGraph.Runtime" preserve="all" />
+  <assembly fullname="UnityEngine.UI" preserve="all" />
+  <assembly fullname="campus-submodule.Runtime" preserve="all" />
+  <assembly fullname="campus-submodule.Shader.Runtime" preserve="all" />
+  <assembly fullname="quaunity-crypto" preserve="all" />
+  <assembly fullname="quaunity-global" preserve="all" />
+  <assembly fullname="quaunity-ui.Runtime" preserve="all" />
+  <assembly fullname="quaunity-volumetriclightbeam.Runtime" preserve="all" />
+  <assembly fullname="vl-unity.Runtime" preserve="all" />
+</linker>

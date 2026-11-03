@@ -1,0 +1,34 @@
+{
+  "com.unity.animation.rigging": {
+    "version": "1.4.0",
+    "source": "https://packages.unity.com/com.unity.animation.rigging/-/com.unity.animation.rigging-1.4.0.tgz",
+    "sha256": "db647ce42c0c7cb25b96bad6acc6c35c9bd8c79cf601a61288be27b032ebaa85",
+    "removedTestDependencies": {
+      "com.unity.test-framework": "1.1.24"
+    }
+  },
+  "com.unity.collections": {
+    "version": "2.6.8",
+    "source": "https://packages.unity.com/com.unity.collections/-/com.unity.collections-2.6.8.tgz",
+    "sha256": "56bb8672bdeb11e2781fc1a6e1c8bbed74dec4dba6144ab67906cfed7c5f4984",
+    "removedTestDependencies": {
+      "com.unity.test-framework": "1.4.6",
+      "com.unity.test-framework.performance": "3.0.3"
+    }
+  },
+  "com.unity.timeline": {
+    "version": "1.8.12",
+    "source": "https://packages.unity.com/com.unity.timeline/-/com.unity.timeline-1.8.12.tgz",
+    "sha256": "cc9a1b4203f40a625e8e59d3b86cc28cb27d1316f5cdbb873977f7afba52cc90",
+    "removedTestDependencies": {},
+    "gameAdditions": [
+      "Titan.TitanTrackBase (DummyDll skeleton)"
+    ]
+  },
+  "com.unity.visualeffectgraph": {
+    "version": "17.0.4",
+    "source": "/data/xy/.toolchains/unity-6000.0.77f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.visualeffectgraph",
+    "scope": "Runtime only; no graph authoring/editor assembly",
+    "asmdefAdaptation": "Unity.ugui -> UnityEngine.UI; omit absent optional Unity.InputSystem"
+  }
+}
