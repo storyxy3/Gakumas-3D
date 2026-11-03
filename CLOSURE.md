@@ -118,3 +118,20 @@ No hand edits to generated local skeleton source are required. Fork source chang
 ## Validation
 
 Final compile/build status and real Android IL2CPP field comparison are recorded in [LAYOUT.md](LAYOUT.md). A compilation alone is not evidence of layout equality or working runtime behavior.
+
+## Completed native comparison
+
+The final local skeleton closure has no missing types. Its eight mismatching
+types comprise six explicit backend/review/crypto type substitutions and two
+text components inheriting the stock TMP horizontal-scale storage difference.
+All event and numeric compiler-generated field names are restored. See
+[LAYOUT.md](LAYOUT.md) for the complete counts, indeterminate generic layouts,
+extra compiler helpers, remaining registry/fork differences and artifact hashes.
+
+Rerunning the main skeleton generator and the Octo generator produced no source
+diff. No generated local assembly source requires a manual fix after regeneration.
+The final Editor import and Android player script compilation have zero C# or
+metadata-postprocessor errors. Native linking completed; Gradle's SDK `37.0`
+lint parsing failure prevented APK packaging, as separately recorded in the
+layout report. Existing game scenes and rendered behavior were not exercised;
+this task supplies their structural foundation.
