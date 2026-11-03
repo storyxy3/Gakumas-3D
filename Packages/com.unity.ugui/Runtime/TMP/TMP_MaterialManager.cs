@@ -40,6 +40,7 @@ namespace TMPro
         /// <param name="baseMaterial"></param>
         /// <param name="stencilID"></param>
         /// <returns></returns>
+#if UNITY_EDITOR
         public static Material GetStencilMaterial(Material baseMaterial, int stencilID)
         {
             // Check if Material supports masking
@@ -58,7 +59,7 @@ namespace TMPro
                 {
                     m_materialList[i].count += 1;
 
-                    #if TMP_DEBUG_MODE
+                    #if UNITY_EDITOR && TMP_DEBUG_MODE
                     ListMaterials();
                     #endif
 
@@ -96,12 +97,13 @@ namespace TMPro
 
             m_materialList.Add(temp);
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListMaterials();
             #endif
 
             return stencilMaterial;
         }
+#endif
 
 
         /// <summary>
@@ -130,13 +132,14 @@ namespace TMPro
             }
 
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListMaterials();
             #endif
         }
 
 
         // Function which returns the base material associated with a Masking Material
+#if UNITY_EDITOR
         public static Material GetBaseMaterial(Material stencilMaterial)
         {
             // Check if maskingMaterial already has a base material associated with it.
@@ -148,6 +151,7 @@ namespace TMPro
                 return m_materialList[index].baseMaterial;
 
         }
+#endif
 
 
         /// <summary>
@@ -169,6 +173,7 @@ namespace TMPro
         }
 
 
+#if UNITY_EDITOR
         public static void AddMaskingMaterial(Material baseMaterial, Material stencilMaterial, int stencilID)
         {
             // Check if maskingMaterial already has a base material associated with it.
@@ -190,6 +195,7 @@ namespace TMPro
                 m_materialList[index].count += 1;
             }
         }
+#endif
 
 
 
@@ -203,13 +209,14 @@ namespace TMPro
                 m_materialList.RemoveAt(index);
             }
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListMaterials();
             #endif
         }
 
 
 
+#if UNITY_EDITOR
         public static void ReleaseBaseMaterial(Material baseMaterial)
         {
             // Check if baseMaterial already has a masking material associated with it.
@@ -234,10 +241,11 @@ namespace TMPro
                 }
             }
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListMaterials();
             #endif
         }
+#endif
 
 
         public static void ClearMaterials()
@@ -380,7 +388,7 @@ namespace TMPro
             m_fallbackMaterials.Add(key, fallback);
             m_fallbackMaterialLookup.Add(fallbackMaterial.GetInstanceID(), key);
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListFallbackMaterials();
             #endif
 
@@ -455,7 +463,7 @@ namespace TMPro
             m_fallbackMaterials.Add(key, fallback);
             m_fallbackMaterialLookup.Add(fallbackMaterial.GetInstanceID(), key);
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListFallbackMaterials();
             #endif
 
@@ -568,7 +576,7 @@ namespace TMPro
 
             isFallbackListDirty = true;
 
-            #if TMP_DEBUG_MODE
+            #if UNITY_EDITOR && TMP_DEBUG_MODE
             ListFallbackMaterials();
             #endif
         }
@@ -586,10 +594,14 @@ namespace TMPro
 
         private class MaskingMaterial
         {
+#if UNITY_EDITOR
             public Material baseMaterial;
+#endif
             public Material stencilMaterial;
             public int count;
+#if UNITY_EDITOR
             public int stencilID;
+#endif
         }
 
 
@@ -630,7 +642,7 @@ namespace TMPro
         }
 
 
-        #if TMP_DEBUG_MODE
+        #if UNITY_EDITOR && TMP_DEBUG_MODE
         /// <summary>
         ///
         /// </summary>

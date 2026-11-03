@@ -64,6 +64,7 @@ def restore_ui_additions():
         // TODO(qa-recon): game default interface accessor, DummyDll body.
         int GraphicRebuildOrder { get { return default(int); } }
 ''')
+
     marker = '        private readonly IndexedSet<ICanvasElement> m_GraphicRebuildQueue = new IndexedSet<ICanvasElement>();'
     replace_once(registry, marker, marker + '''
 
@@ -88,6 +89,35 @@ def restore_ui_additions():
             public GraphicSortComparer() { }
         }
 ''')
+
+
+def strip_unused_tmp_player_storage():
+    path = PACKAGES / 'com.unity.ugui/Runtime/TMP/TMP_MaterialManager.cs'
+    source = path.read_text()
+    # These legacy APIs have no caller outside this source file in the
+    # rendering closure, and none exists in the game DummyDll. Keep editor
+    # behavior while reproducing the game's stripped player storage.
+    for signature in [
+        'public static Material GetStencilMaterial(Material baseMaterial, int stencilID)',
+        'public static Material GetBaseMaterial(Material stencilMaterial)',
+        'public static void AddMaskingMaterial(Material baseMaterial, Material stencilMaterial, int stencilID)',
+        'public static void ReleaseBaseMaterial(Material baseMaterial)',
+    ]:
+        anchor = '        ' + signature + '\n'
+        if source.count(anchor) != 1:
+            raise ValueError(f'Expected one TMP member: {signature}')
+        start = source.index(anchor)
+        end = source.index('\n        }', start) + len('\n        }')
+        source = source[:start] + '#if UNITY_EDITOR\n' + source[start:end] + '\n#endif' + source[end:]
+    for declaration in ['public Material baseMaterial;', 'public int stencilID;']:
+        anchor = '            ' + declaration
+        if source.count(anchor) != 1:
+            raise ValueError(f'Expected one TMP field: {declaration}')
+        source = source.replace(anchor, '#if UNITY_EDITOR\n' + anchor + '\n#endif', 1)
+    # ListMaterials is a debug-only legacy API; its calls and definition must
+    # share the editor condition of the storage it inspects.
+    source = source.replace('#if TMP_DEBUG_MODE', '#if UNITY_EDITOR && TMP_DEBUG_MODE')
+    path.write_text(source)
 
 
 def restore_cinemachine_additions():
@@ -137,6 +167,11 @@ def restore_timeline_additions():
     source = raw / 'Titan/TitanTrackBase.cs'
     (destination / 'TitanTrackBase.cs').write_text(cleaner.clean_source(source.read_text()))
     subprocess.run([dotnet, str(helper), 'clean', str(destination)], env=env, check=True)
+    # Unreferenced stock storage, absent from game metadata. No executable
+    # statement in 1.8.12 reads or writes this field.
+    replace_once(PACKAGES / 'com.unity.timeline/Runtime/Animation/AnimationOutputWeightProcessor.cs',
+                 '        AnimationMotionXToDeltaPlayable m_MotionXPlayable;\n',
+                 '        // Game metadata omits the unused stock m_MotionXPlayable field.\n')
 
 
 def restore():
@@ -183,8 +218,11 @@ def restore():
     evidence[name] = {'version': metadata['version'], 'source': str(source), 'scope': 'Runtime only; no graph authoring/editor assembly', 'asmdefAdaptation': 'Unity.ugui -> UnityEngine.UI; omit absent optional Unity.InputSystem'}
     restore_timeline_additions()
     evidence['com.unity.timeline']['gameAdditions'] = ['Titan.TitanTrackBase (DummyDll skeleton)']
+    evidence['com.unity.timeline']['omittedUnusedStorage'] = ['AnimationOutputWeightProcessor.m_MotionXPlayable (declaration only in stock source; absent in game)']
     restore_ui_additions()
+    strip_unused_tmp_player_storage()
     evidence['com.unity.ugui'] = {'version': '2.0.0', 'source': str(EDITOR / 'com.unity.ugui'), 'gameAdditions': ['Graphic.GraphicRebuildOrder and backing field', 'ICanvasElement.GraphicRebuildOrder default interface accessor', 'CanvasUpdateRegistry.onLayoutComplete event and backing field', 'CanvasUpdateRegistry.s_SortGraphicComparer and GraphicSortComparer']}
+    evidence['com.unity.ugui']['editorOnlyLegacyStorage'] = ['TMP_MaterialManager.MaskingMaterial.baseMaterial', 'TMP_MaterialManager.MaskingMaterial.stencilID']
     restore_cinemachine_additions()
     evidence['com.unity.cinemachine']['gameAdditions'] = ['LensSettings.FocalLength and conversion signatures', 'CinemachineBrain.mDefaultLinearAnimationCurve', 'CinemachineShotPlayable.CameraAnimator and lifecycle signatures']
     (PACKAGES / 'registry-sources.json').write_text(json.dumps(evidence, indent=2) + '\n')

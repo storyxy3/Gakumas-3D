@@ -23,6 +23,9 @@
     "removedTestDependencies": {},
     "gameAdditions": [
       "Titan.TitanTrackBase (DummyDll skeleton)"
+    ],
+    "omittedUnusedStorage": [
+      "AnimationOutputWeightProcessor.m_MotionXPlayable (declaration only in stock source; absent in game)"
     ]
   },
   "com.unity.cinemachine": {
@@ -50,6 +53,10 @@
       "ICanvasElement.GraphicRebuildOrder default interface accessor",
       "CanvasUpdateRegistry.onLayoutComplete event and backing field",
       "CanvasUpdateRegistry.s_SortGraphicComparer and GraphicSortComparer"
+    ],
+    "editorOnlyLegacyStorage": [
+      "TMP_MaterialManager.MaskingMaterial.baseMaterial",
+      "TMP_MaterialManager.MaskingMaterial.stencilID"
     ]
   }
 }

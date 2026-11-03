@@ -17,7 +17,7 @@ namespace UnityEngine.Timeline
         }
 
         AnimationPlayableOutput m_Output;
-        AnimationMotionXToDeltaPlayable m_MotionXPlayable;
+        // Game metadata omits the unused stock m_MotionXPlayable field.
         readonly List<WeightInfo> m_Mixers = new List<WeightInfo>();
 
         public AnimationOutputWeightProcessor(AnimationPlayableOutput output)
