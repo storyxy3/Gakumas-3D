@@ -58,13 +58,23 @@ backing field. The prefix is removed only when the original DummyDll has both
 an event and a same-named field with the same delegate type, the reconstructed
 field has that type, and the prefixed name is absent from the original fields.
 
-Il2CppDumper itself prefixes RVA-data field names starting with a digit, so its
-DummyDll is insufficient evidence for those names. `OriginalDumpFieldNames.cs`
-contains 32 exact assembly/type/field/type mappings extracted from the original
-`dump.cs` for the current assembly closure. It records the dump's SHA-256. The
-ILPP applies a mapping only when the sanitized original DummyDll field and its
-declared type also match. Regenerate the table after expanding the closure:
+ILSpy prefixes RVA-data field names starting with a digit.
+`OriginalDumpFieldNames.cs` contains 32 exact assembly/type/field/type mappings
+extracted from the original `dump.cs` for the current assembly closure and
+records the dump's SHA-256. The ILPP applies a mapping only when the original
+DummyDll also contains the target name (or the prefixed spelling) and the
+declared type matches. The numeric prefix is handled before Unicode escape
+decoding: `_53A6...` must not be decoded as the character U+53A6. Regenerate the
+table after expanding the closure:
 
 ```bash
 python3 Assets/Editor/MetadataNames/GenerateDumpNameOverrides.py
 ```
+
+The second native-build investigation found the underscore already present in
+both `Library/ScriptAssemblies/AmplifyOcclusion.Runtime.dll` and
+`Library/Bee/artifacts/Android/ManagedStripped/AmplifyOcclusion.Runtime.dll`.
+The original DummyDll's field was `53A6DC4C...`, while both rebuilt assemblies
+had `_53A6DC4C...`. This localized the mismatch to the ILPP's earlier name gate,
+before stripping or IL2CPP. The gate now accepts the evidence-backed original
+target name; it no longer requires the prefixed name in original metadata.

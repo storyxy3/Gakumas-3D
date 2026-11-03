@@ -142,6 +142,13 @@ namespace zzzzQA.Recon.MetadataNames
                 // An existing original identifier always wins, including a
                 // literal sequence such as _003C in the game's real source.
                 if (allowed == null || allowed.Contains(name)) return name;
+                // A leading-digit prefix is not a Unicode escape: decoding
+                // _53A6 first would turn a SHA field's prefix into U+53A6.
+                if (name.Length > 1 && name[0] == '_' && char.IsDigit(name[1]) && allowed.Contains(name.Substring(1)))
+                {
+                    Changes++;
+                    return name.Substring(1);
+                }
                 var candidate = Decode(name);
                 // ILSpy prefixes identifiers that originally start with a digit
                 // (notably PrivateImplementationDetails SHA-named RVA fields).
@@ -197,11 +204,12 @@ namespace zzzzQA.Recon.MetadataNames
                         Changes++;
                     }
                 }
-                // Il2CppDumper itself prefixes numeric RVA field identifiers,
-                // so the original dump (rather than DummyDll) is the authority
-                // for those names. The generated table carries exact evidence.
-                if (owner != null && owner.Fields.Contains(field.Name) &&
-                    OriginalDumpFieldNames.TryGet(AssemblyName(field.DeclaringType), Decode(field.DeclaringType.FullName), field.Name, Decode(field.FieldType.FullName), out var originalName))
+                // ILSpy prefixes numeric RVA field identifiers. The original
+                // dump table provides an independent exact name/type mapping;
+                // the original DummyDll must contain either spelling as well.
+                if (owner != null &&
+                    OriginalDumpFieldNames.TryGet(AssemblyName(field.DeclaringType), Decode(field.DeclaringType.FullName), field.Name, Decode(field.FieldType.FullName), out var originalName) &&
+                    (owner.Fields.Contains(originalName) || owner.Fields.Contains(field.Name)))
                 {
                     field.Name = originalName;
                     Changes++;

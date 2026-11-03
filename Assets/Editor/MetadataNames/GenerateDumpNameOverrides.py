@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Generate evidence-backed numeric field-name overrides for the Editor ILPP.
 
-Il2CppDumper sanitizes leading-digit field names in DummyDll metadata. Its
-original dump.cs retains them, so preserve the assembly/type/field/type mapping
-as a small compile-time table. This generates no method implementation.
+ILSpy prefixes leading-digit field names to make C# identifiers. Preserve the
+original dump.cs assembly/type/field/type mapping as a small compile-time table
+to corroborate the original DummyDll metadata. This generates no method body.
 """
 import argparse
 import hashlib
