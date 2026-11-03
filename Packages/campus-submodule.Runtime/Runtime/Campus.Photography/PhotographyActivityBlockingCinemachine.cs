@@ -1,0 +1,104 @@
+namespace Campus.Photography
+{
+    using global::System.Runtime.CompilerServices;
+    using global::Cinemachine;
+    using global::UnityEngine;
+
+    public class PhotographyActivityBlockingCinemachine : CinemachineExtension
+    {
+        private const float CameraDistance = 2.5f;
+        private const float MaxRayDistance = 500f;
+        private readonly RaycastHit[] _blockHits;
+        private readonly Vector3[] _blockPoints;
+        private Camera _mainCamera;
+        [SerializeField]
+        private LayerMask _targetLayer;
+        [CompilerGenerated]
+        private bool _003CIsBlockingHit_003Ek__BackingField;
+        [CompilerGenerated]
+        private bool _003CIsRightPosition_003Ek__BackingField;
+        [CompilerGenerated]
+        private float _003CAddAngle_003Ek__BackingField;
+        public bool IsBlockingHit
+        {
+            [CompilerGenerated]
+            get
+            {
+                return default(bool);
+            }
+
+            [CompilerGenerated]
+            private set
+            {
+            }
+        }
+
+        public bool IsRightPosition
+        {
+            [CompilerGenerated]
+            get
+            {
+                return default(bool);
+            }
+
+            [CompilerGenerated]
+            private set
+            {
+            }
+        }
+
+        public float AddAngle
+        {
+            [CompilerGenerated]
+            get
+            {
+                return default(float);
+            }
+
+            [CompilerGenerated]
+            private set
+            {
+            }
+        }
+
+        public void ResetAddAngle()
+        {
+        }
+
+        protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam, CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
+        {
+        }
+
+        private bool IsHitBlocking(out float angle, ref CameraState state, Vector3 eulerAngles)
+        {
+            throw null;
+        }
+
+        private void SetBoxPoint(BoxCollider boxCollider, float cameraY, Vector3[] points)
+        {
+        }
+
+        private Vector3 GetMaxPosition(Vector3 cameraPos, Vector3 cameraForward, Vector3 topPos, Vector3 bottomPos)
+        {
+            return default(Vector3);
+        }
+
+        private BoxCollider GetHitBoxCollider(Vector3 cameraPos, Vector3 leftPos, Vector3 rightPos, Vector3 forward)
+        {
+            return null;
+        }
+
+        private float GetAngle(BoxCollider boxCollider, Vector3 cameraPos, Vector3 cameraForward, Vector3 leftDir, Vector3 rightDir)
+        {
+            return default(float);
+        }
+
+        private void OnDrawGizmos()
+        {
+        }
+
+        public PhotographyActivityBlockingCinemachine()
+        {
+        }
+    }
+}

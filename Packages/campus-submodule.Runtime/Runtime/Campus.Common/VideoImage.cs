@@ -1,0 +1,45 @@
+namespace Campus.Common
+{
+    using global::System.Runtime.CompilerServices;
+    using global::UnityEngine;
+    using global::UnityEngine.UI;
+    using global::UnityEngine.Video;
+
+    [ExecuteAlways]
+    [RequireComponent(typeof(VideoPlayer))]
+    public class VideoImage : RawImage
+    {
+        private VideoPlayer _videoPlayer;
+        [CompilerGenerated]
+        private bool _003CDisableAutoResumeOnApplicationPause_003Ek__BackingField;
+        public bool DisableAutoResumeOnApplicationPause
+        {
+            [CompilerGenerated]
+            get
+            {
+                return default(bool);
+            }
+
+            [CompilerGenerated]
+            set
+            {
+            }
+        }
+
+        protected override void OnEnable()
+        {
+        }
+
+        protected override void OnDisable()
+        {
+        }
+
+        private void LateUpdate()
+        {
+        }
+
+        public VideoImage()
+        {
+        }
+    }
+}
