@@ -1,5 +1,6 @@
 namespace Campus.Gasha
 {
+    using global::System;
     using global::System.Collections.Generic;
     using global::System.Diagnostics;
     using global::System.Runtime.CompilerServices;
@@ -19,6 +20,34 @@ namespace Campus.Gasha
             public GashaGlobalEffect globalEffect;
             public Result()
             {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<GashaCardModel.CardInfo, LightParam> _003C_003E9__1_2;
+            public static Predicate<(GashaId gashaId, GashaSequenceBase sequence)> _003C_003E9__1_0;
+            public static Predicate<(GashaId gashaId, GashaSequenceBase sequence)> _003C_003E9__1_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal LightParam _003CExecute_003Eb__1_2(GashaCardModel.CardInfo x)
+            {
+                return null;
+            }
+
+            internal bool _003CExecute_003Eb__1_0((GashaId gashaId, GashaSequenceBase sequence) x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CExecute_003Eb__1_1((GashaId gashaId, GashaSequenceBase sequence) x)
+            {
+                return default(bool);
             }
         }
 

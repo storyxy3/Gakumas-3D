@@ -80,6 +80,138 @@ namespace Octo
         }
 
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass29_0<T>
+            where T : UnityEngine.Object
+        {
+            public AssetLoader _003C_003E4__this;
+            public string assetName;
+            public Action<T, AssetLoaderError> onComplete;
+            public _003C_003Ec__DisplayClass29_0()
+            {
+            }
+
+            internal void _003C_LoadAsset_003Eb__0(T obj, AssetLoaderError error)
+            {
+            }
+
+            internal void _003C_LoadAsset_003Eb__1(T obj, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass29_1<T>
+            where T : UnityEngine.Object
+        {
+            public AssetLoaderError error;
+            public _003C_003Ec__DisplayClass29_0<T> CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass29_1()
+            {
+            }
+
+            internal void _003C_LoadAsset_003Eb__2(T fallbackObj, AssetLoaderError fallbackError)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass29_2<T>
+            where T : UnityEngine.Object
+        {
+            public AssetLoaderError error;
+            public _003C_003Ec__DisplayClass29_0<T> CS_0024_003C_003E8__locals2;
+            public _003C_003Ec__DisplayClass29_2()
+            {
+            }
+
+            internal void _003C_LoadAsset_003Eb__3(T fallbackObj, AssetLoaderError fallbackError)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass31_0
+        {
+            public AssetLoader _003C_003E4__this;
+            public Action<AssetLoader, AssetLoaderError> onComplete;
+            public _003C_003Ec__DisplayClass31_0()
+            {
+            }
+
+            internal void _003CLoadAssetBundle_003Eb__0(IAssetOperator opr, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass32_0<T>
+            where T : UnityEngine.Object
+        {
+            public AssetLoader _003C_003E4__this;
+            public KeyValuePair<string, Delegate> kv;
+            public Action<T, AssetLoaderError> onComplete;
+            public string assetName;
+            public Action<T, AssetLoaderError> callBack;
+            public _003C_003Ec__DisplayClass32_0()
+            {
+            }
+
+            internal void _003C_LoadAssetFromAssetBundle_003Eb__0(T obj, AssetLoaderError error)
+            {
+            }
+
+            internal void _003C_LoadAssetFromAssetBundle_003Eb__1(IAssetOperator opr, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass33_0<T>
+            where T : UnityEngine.Object
+        {
+            public AssetLoader _003C_003E4__this;
+            public KeyValuePair<string, Delegate> kv;
+            public Action<T, AssetLoaderError> onComplete;
+            public _003C_003Ec__DisplayClass33_0()
+            {
+            }
+
+            internal void _003C_LoadAssetFromResources_003Eb__0(T obj, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass41_0
+        {
+            public int currentResetCount;
+            public AssetLoader _003C_003E4__this;
+            public Action<IAssetOperator, AssetLoaderError> onComplete;
+            public _003C_003Ec__DisplayClass41_0()
+            {
+            }
+
+            internal void _003C_StartLoadAssetBundle_003Eb__0(IAssetOperator opr, LoadError err)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass43_0<T>
+            where T : UnityEngine.Object
+        {
+            public int index;
+            public AssetLoader _003C_003E4__this;
+            public _003C_003Ec__DisplayClass43_0()
+            {
+            }
+
+            internal void _003C_LoadAssetAsyncIncludeOtherRequest_003Eb__0(UnityEngine.Object obj, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003C_LoadAssetAsyncFromAssetBundle_003Ed__46<T> : IEnumerator<object>, IEnumerator, IDisposable where T : UnityEngine.Object
         {
             private int _003C_003E1__state;

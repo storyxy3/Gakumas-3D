@@ -187,5 +187,17 @@ namespace Campus.Gasha.Sequences
         public TapToStartSequence()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CPlay_003Eb__23_0()
+        {
+        }
+
+        [AsyncStateMachine(typeof(_003C_003COnClickAsync_003Eg__Haptic_007C29_0_003Ed))]
+        [CompilerGenerated]
+        private UniTask _003COnClickAsync_003Eg__Haptic_007C29_0()
+        {
+            return default(UniTask);
+        }
     }
 }

@@ -1,6 +1,7 @@
 namespace VL.Rendering.Skinning
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::Unity.Collections;
     using global::Unity.Jobs;
@@ -12,6 +13,22 @@ namespace VL.Rendering.Skinning
 
     public class VLSkinningSystem<TStream0, TSkinning> : IDisposable where TStream0 : struct, IStream0 where TSkinning : struct, ISkinning
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<BlendShapeData, int> _003C_003E9__23_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003C_002Ector_003Eb__23_0(BlendShapeData x)
+            {
+                return default(int);
+            }
+        }
+
         public static readonly string RendererName;
         public static readonly int inoutPrevVertices;
         public const int ComputeThreadCount = 64;

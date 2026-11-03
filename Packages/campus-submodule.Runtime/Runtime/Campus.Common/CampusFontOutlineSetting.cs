@@ -1,5 +1,6 @@
 namespace Campus.Common
 {
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::UnityEngine;
 
@@ -11,6 +12,20 @@ namespace Campus.Common
             BlackTransparent,
             WhiteOpaque,
             WhiteTransparent
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass7_0
+        {
+            public float fontSize;
+            public _003C_003Ec__DisplayClass7_0()
+            {
+            }
+
+            internal float _003CTryGetOutlineMaterial_003Eb__0(SerializableTuple<int, Material> tuple)
+            {
+                return default(float);
+            }
         }
 
         private static CampusFontOutlineSetting _setting;

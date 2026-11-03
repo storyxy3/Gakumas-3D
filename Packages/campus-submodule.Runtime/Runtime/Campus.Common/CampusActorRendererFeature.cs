@@ -1,6 +1,8 @@
 namespace Campus.Common
 {
+    using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::Campus.Rendering.Shaders;
     using global::Unity.Collections;
@@ -14,6 +16,22 @@ namespace Campus.Common
     {
         private class CampusActorRenderPass : ScriptableRenderPass
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Func<IVLActorController, bool> _003C_003E9__9_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal bool _003CSetupActorLighting_003Eb__9_0(IVLActorController x)
+                {
+                    return default(bool);
+                }
+            }
+
             public static readonly int ShaderVariablesActorLightingId;
             private static readonly string AdditionalActorLightsKeyword;
             private static readonly string ActorLightCookieKeyword;

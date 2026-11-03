@@ -17,6 +17,20 @@ namespace Campus.Common
     [RequireComponent(typeof(CriManaMovieControllerForUI), typeof(RawImage))]
     public class ABLoopVideoPlayer : QuaUIBehaviour
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass17_0
+        {
+            public CancellationToken ct;
+            public _003C_003Ec__DisplayClass17_0()
+            {
+            }
+
+            internal UniTask<string> _003CLoadResourceAsync_003Eb__0(string x)
+            {
+                return default(UniTask<string>);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CInitializeAsync_003Ed__16 : IAsyncStateMachine
@@ -285,6 +299,29 @@ namespace Campus.Common
 
         public ABLoopVideoPlayer()
         {
+        }
+
+        [CompilerGenerated]
+        private void _003CTryInitializeAsync_003Eb__15_1()
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003CTryInitializeAsync_003Eb__15_0()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CInitializeAsync_003Eb__16_0()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003COnEnterLoopAsync_003Eb__31_0()
+        {
+            return default(bool);
         }
     }
 }

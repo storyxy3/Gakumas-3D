@@ -2,6 +2,7 @@ namespace Cysharp.Threading.Tasks
 {
     using global::System;
     using global::System.Diagnostics;
+    using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::System.Threading;
     using global::System.Threading.Tasks.Sources;
@@ -9,6 +10,21 @@ namespace Cysharp.Threading.Tasks
 
     public class AutoResetUniTaskCompletionSource : IUniTaskSource, IValueTaskSource, ITaskPoolNode<AutoResetUniTaskCompletionSource>
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003C_002Ecctor_003Eb__4_0()
+            {
+                return default(int);
+            }
+        }
+
         private static TaskPool<AutoResetUniTaskCompletionSource> pool;
         private AutoResetUniTaskCompletionSource nextNode;
         private UniTaskCompletionSourceCore<AsyncUnit> core;

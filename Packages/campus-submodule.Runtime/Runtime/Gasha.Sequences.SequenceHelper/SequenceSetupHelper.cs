@@ -5,6 +5,7 @@ namespace Gasha.Sequences.SequenceHelper
     using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::System.Threading;
+    using global::Campus.Timeline;
     using global::Cysharp.Threading.Tasks;
     using global::Cysharp.Threading.Tasks.CompilerServices;
     using global::Gasha.Sequences.SequenceHelper;
@@ -13,6 +14,20 @@ namespace Gasha.Sequences.SequenceHelper
 
     public static class SequenceSetupHelper
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass0_0
+        {
+            public CancellationToken ct;
+            public _003C_003Ec__DisplayClass0_0()
+            {
+            }
+
+            internal UniTask _003CDownloadVideosInChildren_003Eb__0(CampusTimelineCriVideoPlayer videoPlayer)
+            {
+                return default(UniTask);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CDownloadMarkerSeAndBgm_003Ed__1 : IAsyncStateMachine

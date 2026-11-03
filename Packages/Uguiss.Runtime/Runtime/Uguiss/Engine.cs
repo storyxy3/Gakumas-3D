@@ -21,6 +21,20 @@ namespace Uguiss
             }
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass41_0
+        {
+            public AbstractCommand command;
+            public _003C_003Ec__DisplayClass41_0()
+            {
+            }
+
+            internal bool _003CGetCommandIndex_003Eb__0(AbstractCommand x)
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CExecuteAsync_003Ed__46 : IAsyncStateMachine

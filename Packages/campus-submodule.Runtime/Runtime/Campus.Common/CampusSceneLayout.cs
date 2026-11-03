@@ -1,5 +1,6 @@
 namespace Campus.Common
 {
+    using global::System;
     using global::System.Collections.Generic;
     using global::System.Diagnostics;
     using global::System.Runtime.CompilerServices;
@@ -24,6 +25,43 @@ namespace Campus.Common
             HomeStory = 12,
             HomeContest = 13,
             HomeLoginBonus = 14
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<(ICampusActorController actor, bool isCorrectionLayoutHeight), ICampusActorController> _003C_003E9__19_0;
+            public static Func<Transform, float> _003C_003E9__34_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal ICampusActorController _003CSetupActor_003Eb__19_0((ICampusActorController actor, bool isCorrectionLayoutHeight) data)
+            {
+                return null;
+            }
+
+            internal float _003CTryCreateActorLayoutPositionCache_003Eb__34_0(Transform data)
+            {
+                return default(float);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass27_0
+        {
+            public CinemachineBrain brain;
+            public CampusSceneLayout _003C_003E4__this;
+            public _003C_003Ec__DisplayClass27_0()
+            {
+            }
+
+            internal bool _003CWaitUntilActiveCameraAsync_003Eb__0()
+            {
+                return default(bool);
+            }
         }
 
         [StructLayout((LayoutKind)3)]
@@ -168,6 +206,16 @@ namespace Campus.Common
         }
 
         public CampusSceneLayout()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CRegisterReset_003Eb__28_0()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CResetActorLayoutPositions_003Eb__29_0(Transform data, int index)
         {
         }
     }

@@ -28,6 +28,20 @@ namespace Campus.Gasha
             }
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass24_0
+        {
+            public string handlerName;
+            public _003C_003Ec__DisplayClass24_0()
+            {
+            }
+
+            internal bool _003CPlayTitan_003Eb__0(GashaGlobalEffectTitanHandler x)
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CPlayFreeze_003Ed__19 : IAsyncStateMachine

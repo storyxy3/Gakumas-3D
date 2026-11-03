@@ -6,7 +6,7 @@ using System.Reflection.Metadata;
 using System.Reflection.Metadata.Ecma335;
 if(args[0]=="clean") { Cleaner.ConfigureBases(Environment.GetEnvironmentVariable("QA_RECON_PROJECT") ?? "/data/xy/gakumas/live-urp"); foreach(var dir in args.Skip(1)) Cleaner.Run(dir);return;}
 if(args[0]=="settings") {foreach(var p in typeof(DecompilerSettings).GetProperties()) Console.WriteLine(p.Name);return;}
-var settings=new DecompilerSettings(ICSharpCode.Decompiler.CSharp.LanguageVersion.CSharp9_0) {AutomaticProperties=false,AutomaticEvents=false,AsyncAwait=false,YieldReturn=false};
+var settings=new DecompilerSettings(ICSharpCode.Decompiler.CSharp.LanguageVersion.CSharp9_0) {AutomaticProperties=false,AutomaticEvents=false,AsyncAwait=false,YieldReturn=false,AnonymousMethods=false,AnonymousTypes=false,LocalFunctions=false};
 var decompiler=new CSharpDecompiler(args[0],settings);
 decompiler.AstTransforms.Add(new EscapeInvalidIdentifiers());
 using var pe=new PEFile(args[0]);

@@ -4,6 +4,7 @@ namespace UniRx
     using global::System.Collections;
     using global::System.Collections.Generic;
     using global::System.Collections.ObjectModel;
+    using global::System.Runtime.CompilerServices;
     using global::UniRx;
 
     [Serializable]
@@ -69,6 +70,12 @@ namespace UniRx
 
         public void Dispose()
         {
+        }
+
+        [CompilerGenerated]
+        private int _003CObserveCountChanged_003Eb__11_0()
+        {
+            return default(int);
         }
     }
 }

@@ -13,6 +13,20 @@ namespace Qua.UI
 
     public class StaticTabBase<T, TTabButton, TTabPage> : TabBase<TTabButton, TTabPage> where TTabButton : GenericTabButtonBase<T> where TTabPage : GenericTabPageBase<T>
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_0
+        {
+            public int index;
+            public StaticTabBase<T, TTabButton, TTabPage> _003C_003E4__this;
+            public _003C_003Ec__DisplayClass2_0()
+            {
+            }
+
+            internal void _003CBindTabButtonCallback_003Eb__0()
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CInitializeAsync_003Ed__1 : IAsyncStateMachine

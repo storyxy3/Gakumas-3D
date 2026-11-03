@@ -1,6 +1,7 @@
 namespace Octo.Caching
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::Octo;
     using global::Octo.Caching;
     using global::Octo.Data;
@@ -112,6 +113,30 @@ namespace Octo.Caching
         public bool InterceptDownload(string bucket, string localPath, Item item)
         {
             return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CIsLatestAssetBundleCached_003Eb__5_0(Item data)
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CIsLatestResourceCached_003Eb__7_0(Item data)
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CDeleteResourceCached_003Eb__12_0(Item data)
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private string _003CGetResourceStoragePath_003Eb__13_0(Item data)
+        {
+            return null;
         }
     }
 }

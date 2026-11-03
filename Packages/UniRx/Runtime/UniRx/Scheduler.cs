@@ -183,6 +183,25 @@ namespace UniRx
                 public void Dispose()
                 {
                 }
+
+                [CompilerGenerated]
+                private void _003CTick_003Eb__5_0()
+                {
+                }
+            }
+
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass3_0
+            {
+                public BooleanDisposable d;
+                public Action action;
+                public _003C_003Ec__DisplayClass3_0()
+                {
+                }
+
+                internal void _003CSchedule_003Eb__0(object _)
+                {
+                }
             }
 
             public DateTimeOffset Now
@@ -352,6 +371,82 @@ namespace UniRx
             public IDisposable SchedulePeriodic(TimeSpan period, Action action)
             {
                 return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass11_0
+        {
+            public Action<Action> action;
+            public IScheduler scheduler;
+            public object gate;
+            public CompositeDisposable group;
+            public Action recursiveAction;
+            public Action _003C_003E9__1;
+            public _003C_003Ec__DisplayClass11_0()
+            {
+            }
+
+            internal void _003CSchedule_003Eb__0()
+            {
+            }
+
+            internal void _003CSchedule_003Eb__1()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass11_1
+        {
+            public bool isAdded;
+            public IDisposable d;
+            public bool isDone;
+            public _003C_003Ec__DisplayClass11_0 CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass11_1()
+            {
+            }
+
+            internal void _003CSchedule_003Eb__2()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public Action<Action<TimeSpan>> action;
+            public IScheduler scheduler;
+            public object gate;
+            public CompositeDisposable group;
+            public Action recursiveAction;
+            public Action<TimeSpan> _003C_003E9__1;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal void _003CSchedule_003Eb__0()
+            {
+            }
+
+            internal void _003CSchedule_003Eb__1(TimeSpan dt)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_1
+        {
+            public bool isAdded;
+            public IDisposable d;
+            public bool isDone;
+            public _003C_003Ec__DisplayClass12_0 CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass12_1()
+            {
+            }
+
+            internal void _003CSchedule_003Eb__2()
+            {
             }
         }
 

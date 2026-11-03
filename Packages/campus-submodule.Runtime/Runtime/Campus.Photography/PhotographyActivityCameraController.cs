@@ -1,5 +1,6 @@
 namespace Campus.Photography
 {
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::Campus.Photography;
     using global::Cinemachine;
@@ -138,6 +139,17 @@ namespace Campus.Photography
 
         public PhotographyActivityCameraController()
         {
+        }
+
+        [CompilerGenerated]
+        private void _003CInitialize_003Eb__28_0(bool isGyro)
+        {
+        }
+
+        [CompilerGenerated]
+        private Vector3 _003CUpdateRotate_003Eg__GetNextAngle_007C42_0()
+        {
+            return default(Vector3);
         }
     }
 }

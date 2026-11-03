@@ -2,6 +2,8 @@ namespace Qua.UI
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
+    using global::Qua.UI;
     using global::UnityEngine;
     using global::UnityEngine.EventSystems;
     using global::UnityEngine.UI;
@@ -10,6 +12,21 @@ namespace Qua.UI
     [ExecuteAlways]
     public class TouchRectDrawer : MaskableGraphic
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public _003C_003Ec()
+            {
+            }
+
+            internal Func<List<BaseRaycaster>> _003C_002Ecctor_003Eb__24_0()
+            {
+                return null;
+            }
+        }
+
         private static readonly UIVertex[] Vertices;
         [SerializeField]
         private float _lineWidth;

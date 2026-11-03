@@ -13,6 +13,50 @@ namespace Campus.Common.Extensions
 
     public static class TitanExtensions
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass10_0
+        {
+            public CampusButton targetButton;
+            public _003C_003Ec__DisplayClass10_0()
+            {
+            }
+
+            internal void _003CSetTapWait_003Eg__SetButtonActive_007C0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass6_0
+        {
+            public UniTaskCompletionSource utcs;
+            public _003C_003Ec__DisplayClass6_0()
+            {
+            }
+
+            internal void _003CPlayUntilWaitEndMarkerAsync_003Eg__WaitEnd_007C0()
+            {
+            }
+
+            internal void _003CPlayUntilWaitEndMarkerAsync_003Eb__1()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass7_0
+        {
+            public string markerId;
+            public _003C_003Ec__DisplayClass7_0()
+            {
+            }
+
+            internal bool _003CGetSkipMarkerById_003Eb__0(CampusSkipMarker m)
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CPlayAsync_003Ed__0 : IAsyncStateMachine

@@ -88,7 +88,13 @@ public sealed class Cleaner : CSharpSyntaxRewriter
     public override SyntaxNode? VisitStructDeclaration(StructDeclarationSyntax node)
     {
         var n=(StructDeclarationSyntax)base.VisitStructDeclaration(node)!;
-        if(n.Identifier.Text.StartsWith("__StaticArrayInitTypeSize")) n=n.WithModifiers(TokenList(Token(SyntaxKind.InternalKeyword)));
+        if(n.Identifier.Text.StartsWith("__StaticArrayInitTypeSize")) {
+            n=n.WithModifiers(TokenList(Token(SyntaxKind.InternalKeyword)));
+            var size=Regex.Match(n.Identifier.Text,@"__StaticArrayInitTypeSize_003D(\d+)");
+            if(size.Success) n=n.WithAttributeLists(List(n.AttributeLists.Select(l=>l.WithAttributes(SeparatedList(l.Attributes.Select(a=>a.Name.ToString().EndsWith("StructLayout") && !a.ToString().Contains("Size =") ? a.AddArgumentListArguments(AttributeArgument(LiteralExpression(SyntaxKind.NumericLiteralExpression,Literal(int.Parse(size.Groups[1].Value)))).WithNameEquals(NameEquals("Size"))) : a))))));
+        }
+        if(n.Identifier.Text=="_003C_003Ec__DisplayClass58_0" && node.Parent is ClassDeclarationSyntax parent && parent.Identifier.Text=="TitanPlayer")
+            n=n.WithModifiers(TokenList(Token(SyntaxKind.InternalKeyword))); // ILPP restores original nested-private visibility.
         var operators=n.Members.OfType<OperatorDeclarationSyntax>().ToArray();
         foreach(var op in operators.Where(o=>o.OperatorToken.IsKind(SyntaxKind.EqualsEqualsToken))) {
             if(!operators.Any(o=>o.OperatorToken.IsKind(SyntaxKind.ExclamationEqualsToken)))

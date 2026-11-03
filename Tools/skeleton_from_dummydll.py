@@ -2,7 +2,7 @@
 """Regenerate Unity local skeleton packages from Il2CppDumper DummyDll projects.
 No game implementation is reconstructed. Raw ilspy projects are retained in .recon/raw.
 """
-import argparse, json, os, pathlib, re, subprocess, xml.etree.ElementTree as ET
+import argparse, json, os, pathlib, re, subprocess, time, xml.etree.ElementTree as ET
 ROOT=pathlib.Path('/data/xy/gakumas')
 DEFAULT_ROOTS=['vl-unity.Runtime','campus-submodule.Runtime','campus-submodule.Shader.Runtime','AmplifyOcclusion.Runtime','ActorAnimation.Runtime','ProFlare.Runtime','quaunity-volumetriclightbeam.Runtime','Uguiss.Runtime','Uguiss-Timeline.Runtime','UniTask','UniTask.Linq']
 REGISTRY={'Octo','Cinemachine','Unity.Timeline','Unity.Burst','Unity.Burst.Unsafe','Unity.Collections','Unity.Mathematics','Unity.Animation.Rigging','UnityEngine.UI','Unity.TextMeshPro','Unity.VisualEffectGraph.Runtime','Unity.Profiling.Core','Unity.MemoryProfiler','Unity.RenderPipelines.Core.Runtime','Unity.RenderPipelines.Universal.Runtime','Unity.RenderPipeline.Universal.ShaderLibrary','Newtonsoft.Json'}
@@ -31,6 +31,8 @@ def main():
         if asm in seen:continue
         d=raw/asm; proj=d/(asm+'.csproj')
         if a.refresh or not proj.exists():
+            if d.exists():
+                archive=a.project/'.recon/raw-archive'/str(time.time_ns());archive.mkdir(parents=True,exist_ok=True);d.rename(archive/asm)
             d.mkdir(parents=True,exist_ok=True)
             subprocess.run(['/data/xy/.toolchains/ilspycmd/ilspycmd','--disable-updatecheck','-lv','CSharp9_0','-p','-o',str(d),str(a.dummy/(asm+'.dll'))],env=env,check=True,stdout=subprocess.DEVNULL)
         refs=[r.attrib['Include'] for r in ET.parse(proj).iter('Reference') if r.attrib['Include']!='Il2CppDummyDll']
@@ -65,6 +67,9 @@ def main():
                     for r in c['replacements']:
                         source=re.sub(r['pattern'],r['replacement'],source,flags=re.M if 'M' in r.get('flags','') else 0)
             dest.write_text(source)
+        assembly_info=raw/asm/'Properties/AssemblyInfo.cs'
+        if assembly_info.exists():
+            dest=out/'Runtime/Properties/AssemblyInfo.cs';dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(clean_source(assembly_info.read_text()))
         print(asm, len(list(d.rglob('*.cs'))),'files',flush=True)
     subprocess.run(['/data/xy/.toolchains/dotnet-8/dotnet',str(a.project/'.recon/metadata-tool/SkeletonMetadata.dll'),'clean']+[str(a.project/'Packages'/asm/'Runtime') for asm in seen],env=env,check=True)
     (a.project/'.recon/closure.json').write_text(json.dumps({'assemblies':seen,'cuts':cuts},indent=2)+'\n')

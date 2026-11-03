@@ -43,6 +43,22 @@ namespace CriWare
         }
 
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass68_0
+        {
+            public CriAtom _003C_003E4__this;
+            public int i;
+            public Predicate<CriAtomCueSheet> _003C_003E9__0;
+            public _003C_003Ec__DisplayClass68_0()
+            {
+            }
+
+            internal bool _003CMargeCueSheet_003Eb__0(CriAtomCueSheet sheet)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CLoadAcbDataCoroutine_003Ed__74 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

@@ -1,6 +1,7 @@
 namespace UniRx.Operators
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UniRx;
     using global::UniRx.Operators;
 
@@ -22,6 +23,20 @@ namespace UniRx.Operators
             }
 
             public override void OnCompleted()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass3_0
+        {
+            public IObserver<T> observer;
+            public ReturnObservable<T> _003C_003E4__this;
+            public _003C_003Ec__DisplayClass3_0()
+            {
+            }
+
+            internal void _003CSubscribeCore_003Eb__0()
             {
             }
         }

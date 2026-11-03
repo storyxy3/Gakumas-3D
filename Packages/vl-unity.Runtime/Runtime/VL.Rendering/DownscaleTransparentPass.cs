@@ -1,5 +1,7 @@
 namespace VL.Rendering
 {
+    using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::UnityEngine.Rendering;
     using global::UnityEngine.Rendering.Universal;
@@ -10,6 +12,22 @@ namespace VL.Rendering
 
     public class DownscaleTransparentPass : ScriptableRenderPass
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<string, ShaderTagId> _003C_003E9__9_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal ShaderTagId _003C_002Ector_003Eb__9_0(string x)
+            {
+                return default(ShaderTagId);
+            }
+        }
+
         public static readonly int _CameraDepthTexture;
         private readonly DrawObjectsPass _transparentPass;
         private readonly DrawObjectsPass _distortionPass;

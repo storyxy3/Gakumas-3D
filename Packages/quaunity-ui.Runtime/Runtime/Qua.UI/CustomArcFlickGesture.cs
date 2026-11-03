@@ -9,6 +9,22 @@ namespace Qua.UI
 
     public class CustomArcFlickGesture : FlickGestureBase
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Converter<IFlickDirectionData, CustomArcFlickDirectionData> _003C_003E9__17_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal CustomArcFlickDirectionData _003COnFlick_003Eb__17_0(IFlickDirectionData flick)
+            {
+                return null;
+            }
+        }
+
         [CompilerGenerated]
         private Action m_onBeginDragCallback;
         [CompilerGenerated]

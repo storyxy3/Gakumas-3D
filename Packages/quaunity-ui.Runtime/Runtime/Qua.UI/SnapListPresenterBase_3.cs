@@ -80,5 +80,32 @@ namespace Qua.UI
         public SnapListPresenterBase()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CInitializeAsync_003Eb__9_1(int index)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CInitializeAsync_003Eb__9_2()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CInitializeAsync_003Eb__9_3(int index)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CInitializeAsync_003Eb__9_0(Vector2 _)
+        {
+        }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private UniTask _003C_003En__0(CancellationToken ct)
+        {
+            return default(UniTask);
+        }
     }
 }

@@ -2,6 +2,7 @@ namespace VLB
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine.Profiling;
     using global::VLB;
 
@@ -15,6 +16,22 @@ namespace VLB
             public VLBDrawCallChunk drawCallChunk;
             public int previousChunkIndex;
             public bool valid;
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Comparison<CombinedChunks> _003C_003E9__19_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003CUpdate_003Eb__19_0(CombinedChunks a, CombinedChunks b)
+            {
+                return default(int);
+            }
         }
 
         public const int MaxVLBSize = 200;

@@ -19,6 +19,26 @@ namespace Octo.Loader
 
         public class CallbackEvents<T>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<T> _003C_003E9__6_0;
+                public static OnDownloadProgress _003C_003E9__6_1;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__6_0(T _003Cp0_003E)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__6_1(string _003Cp0_003E, ulong _003Cp1_003E, ulong _003Cp2_003E)
+                {
+                }
+            }
+
             [CompilerGenerated]
             private Action<T> m_onComplete;
             [CompilerGenerated]
@@ -62,6 +82,19 @@ namespace Octo.Loader
             }
 
             public void CallOnProgress(string name, ulong receivedLength, ulong contentLength)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_0<T>
+        {
+            public Action<T, LoadError> action;
+            public _003C_003Ec__DisplayClass2_0()
+            {
+            }
+
+            internal void _003CConvertToSafeResultAction_003Eb__0(Result<T> result)
             {
             }
         }

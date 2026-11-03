@@ -69,6 +69,11 @@ def main():
         target = out / 'Runtime' / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text)
+    assembly_info = raw / 'Properties/AssemblyInfo.cs'
+    if assembly_info.exists():
+        destination = out / 'Runtime/Properties/AssemblyInfo.cs'
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(cleanup.clean_source(assembly_info.read_text()))
     subprocess.run(['/data/xy/.toolchains/dotnet-8/dotnet', str(a.project / '.recon/metadata-tool/SkeletonMetadata.dll'), 'clean', str(out / 'Runtime')], env=env, check=True)
     manifest = json.dumps({'assembly':'Octo','original_references':refs,'cut_references':sorted(cuts),'source_cuts':applied},indent=2)+'\n'
     (a.project / '.recon/octo-cuts.json').write_text(manifest)

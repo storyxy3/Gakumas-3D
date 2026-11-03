@@ -240,5 +240,11 @@ namespace Campus.Gasha
         {
             return default(double);
         }
+
+        [CompilerGenerated]
+        private bool _003CPlayAsync_003Eb__10_0()
+        {
+            return default(bool);
+        }
     }
 }

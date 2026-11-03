@@ -1,4 +1,6 @@
 using global::System;
+using global::System.Runtime.CompilerServices;
+using global::System.Runtime.InteropServices;
 using global::Unity.Collections;
 using global::Unity.Jobs;
 using global::Unity.Mathematics;
@@ -8,6 +10,43 @@ using global::UnityEngine.Rendering;
 [Serializable]
 public class ProFlareBatchForSRPData : IDisposable
 {
+    [StructLayout((LayoutKind)3)]
+    [CompilerGenerated]
+    private struct _003C_003Ec__DisplayClass48_0
+    {
+        public unsafe ProFlareUpdateElementData* pFlareUpdateElement;
+        public float currentTime;
+        public int visibleFlareElementCount;
+        public NativeArray<ProFlareElementData> flareElementsData;
+    }
+
+    [StructLayout((LayoutKind)3)]
+    [CompilerGenerated]
+    private struct _003C_003Ec__DisplayClass48_1
+    {
+        public int flareIndex;
+    }
+
+    [StructLayout((LayoutKind)3)]
+    [CompilerGenerated]
+    private struct _003C_003Ec__DisplayClass48_2
+    {
+        public ProFlare flare;
+        public float scaleMulti;
+        public float3 lensPosition;
+    }
+
+    [StructLayout((LayoutKind)3)]
+    [CompilerGenerated]
+    private struct _003C_003Ec__DisplayClass48_3
+    {
+        public ProFlareElement element;
+        public Color globalColor;
+        public float addAlpha;
+        public float multiplyAlpha;
+        public float finalScale;
+    }
+
     private const int ComputeThreadSize = 16;
     private static readonly int _InputBuffer;
     private static readonly int _ProcessBuffer;
@@ -144,6 +183,11 @@ public class ProFlareBatchForSRPData : IDisposable
     }
 
     public void Dispose()
+    {
+    }
+
+    [CompilerGenerated]
+    private static void _003CScheduleFlares_003Eg__UpdateElementJobData_007C48_0(Color tintColor, float subScale, float angle, float position, ref _003C_003Ec__DisplayClass48_0 P_4, ref _003C_003Ec__DisplayClass48_1 P_5, ref _003C_003Ec__DisplayClass48_2 P_6, ref _003C_003Ec__DisplayClass48_3 P_7)
     {
     }
 }

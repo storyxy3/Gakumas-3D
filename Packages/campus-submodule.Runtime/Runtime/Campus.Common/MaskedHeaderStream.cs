@@ -11,6 +11,24 @@ namespace Campus.Common
 
     public sealed class MaskedHeaderStream : Stream
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass44_0
+        {
+            public MaskedHeaderStream _003C_003E4__this;
+            public byte[] buffer;
+            public int offset;
+            public int count;
+            public long streamPos;
+            public AsyncCallback callback;
+            public _003C_003Ec__DisplayClass44_0()
+            {
+            }
+
+            internal void _003CBeginRead_003Eb__0(IAsyncResult ar)
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CReadAsync_003Ed__42 : IAsyncStateMachine

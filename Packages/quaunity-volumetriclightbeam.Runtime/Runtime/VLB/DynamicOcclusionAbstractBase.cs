@@ -95,5 +95,10 @@ namespace VLB
         protected DynamicOcclusionAbstractBase()
         {
         }
+
+        [CompilerGenerated]
+        private void _003COnEnable_003Eb__24_0()
+        {
+        }
     }
 }

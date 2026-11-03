@@ -1,5 +1,7 @@
 namespace VLB
 {
+    using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::VLB;
 
@@ -15,6 +17,21 @@ namespace VLB
             OnEnable,
             EditorUpdate,
             User
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<Camera> _003C_003E9__39_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003CInstantiateOrActivateDepthCamera_003Eb__39_0(Camera cam)
+            {
+            }
         }
 
         public const string ClassName = "VolumetricShadowHD";

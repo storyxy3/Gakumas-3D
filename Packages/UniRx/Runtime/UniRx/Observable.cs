@@ -45,6 +45,51 @@ namespace UniRx
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<IObserver<long>, CancellationToken, IEnumerator> _003C_003E9__308_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal IEnumerator _003CEveryUpdate_003Eb__308_0(IObserver<long> observer, CancellationToken cancellationToken)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass318_0
+        {
+            public int dueTimeFrameCount;
+            public _003C_003Ec__DisplayClass318_0()
+            {
+            }
+
+            internal IEnumerator _003CTimerFrame_003Eb__0(IObserver<long> observer, CancellationToken cancellation)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass319_0
+        {
+            public int dueTimeFrameCount;
+            public int periodFrameCount;
+            public _003C_003Ec__DisplayClass319_0()
+            {
+            }
+
+            internal IEnumerator _003CTimerFrame_003Eb__0(IObserver<long> observer, CancellationToken cancellation)
+            {
+                return null;
+            }
+        }
+
         [CompilerGenerated]
         private sealed class _003CCombineSources_003Ed__29<T> : IEnumerable<IObservable<T>>, IEnumerable, IEnumerator<IObservable<T>>, IEnumerator, IDisposable
         {

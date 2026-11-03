@@ -8,10 +8,10 @@ it. It changes names and references, not method bodies or field order.
 
 The allowed assemblies are the local `Packages/<assembly>` packages whose
 manifest identifies `com.qa-recon.*`, plus
-`Unity.RenderPipelines.Universal.Runtime` and
-`Unity.RenderPipelines.Core.Runtime` and `Unity.Timeline`. For URP/Core/Timeline, an escaped identifier is
-changed only if the corresponding original type/member exists. Unescaped stock
-names are preserved. The Editor processor itself is never shipped in a player.
+`Unity.RenderPipelines.Universal.Runtime`,
+`Unity.RenderPipelines.Core.Runtime`, `Unity.Timeline`, `UnityEngine.UI`, and
+`Cinemachine`. Their escaped identifiers are changed only when the corresponding
+original type/member exists. Unescaped stock names are preserved. The Editor processor itself is never shipped in a player.
 
 Each rename is checked against the corresponding original DummyDll metadata.
 The declaring type and member kind must match, and a currently valid original
@@ -50,6 +50,21 @@ original `<PrivateImplementationDetails>` is present as an escaped source type.
 The generated registration blobs are retained under
 `<QAReconstructionImplementationDetails>` with their references intact; the
 reconstructed holder receives the game's exact original name. This extra build
-type remains visible in layout reports. The processor also restores ILSpy's
-leading-digit underscore prefix for RVA-data field names, but only when the
-unprefixed name exists in the original declaring type.
+type remains visible in layout reports. The processor also restores
+leading-digit field names using the original dump evidence described below.
+
+ILSpy represents a field-like event as a custom event and an `m_`-prefixed
+backing field. The prefix is removed only when the original DummyDll has both
+an event and a same-named field with the same delegate type, the reconstructed
+field has that type, and the prefixed name is absent from the original fields.
+
+Il2CppDumper itself prefixes RVA-data field names starting with a digit, so its
+DummyDll is insufficient evidence for those names. `OriginalDumpFieldNames.cs`
+contains 32 exact assembly/type/field/type mappings extracted from the original
+`dump.cs` for the current assembly closure. It records the dump's SHA-256. The
+ILPP applies a mapping only when the sanitized original DummyDll field and its
+declared type also match. Regenerate the table after expanding the closure:
+
+```bash
+python3 Assets/Editor/MetadataNames/GenerateDumpNameOverrides.py
+```

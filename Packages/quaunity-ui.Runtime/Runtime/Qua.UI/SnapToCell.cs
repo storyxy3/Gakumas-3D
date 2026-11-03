@@ -138,5 +138,10 @@ namespace Qua.UI
         public SnapToCell()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CSnapTo_003Eb__32_0()
+        {
+        }
     }
 }

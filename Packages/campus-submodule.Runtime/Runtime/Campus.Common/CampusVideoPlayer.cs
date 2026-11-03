@@ -16,6 +16,21 @@ namespace Campus.Common
     [RequireComponent(typeof(CriManaMovieControllerForUI), typeof(RawImage))]
     public class CampusVideoPlayer : QuaUIBehaviour
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass47_0
+        {
+            public CampusVideoPlayer _003C_003E4__this;
+            public uint totalFrames;
+            public _003C_003Ec__DisplayClass47_0()
+            {
+            }
+
+            internal bool _003COnLoopOnceAsync_003Eb__0()
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CInitializeAsync_003Ed__29 : IAsyncStateMachine
@@ -359,6 +374,23 @@ namespace Campus.Common
 
         public CampusVideoPlayer()
         {
+        }
+
+        [CompilerGenerated]
+        private void _003CTryInitializeAsync_003Eb__28_1()
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003CTryInitializeAsync_003Eb__28_0()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CInitializeAsync_003Eb__29_0()
+        {
+            return default(bool);
         }
     }
 }

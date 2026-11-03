@@ -96,5 +96,10 @@ namespace Octo
         protected SetupHelper()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CSetup_003Eb__23_0(DownloadError err)
+        {
+        }
     }
 }

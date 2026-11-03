@@ -14,6 +14,26 @@ namespace Cysharp.Threading.Tasks
     {
         private sealed class AsyncGPUReadbackRequestAwaiterConfiguredSource : IUniTaskSource<AsyncGPUReadbackRequest>, IUniTaskSource, IValueTaskSource, IValueTaskSource<AsyncGPUReadbackRequest>, IPlayerLoopItem, ITaskPoolNode<AsyncGPUReadbackRequestAwaiterConfiguredSource>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__11_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__11_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<AsyncGPUReadbackRequestAwaiterConfiguredSource> pool;
             private AsyncGPUReadbackRequestAwaiterConfiguredSource nextNode;
             private AsyncGPUReadbackRequest asyncOperation;
@@ -78,6 +98,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class AsyncOperationConfiguredSource : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<AsyncOperationConfiguredSource>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__14_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__14_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<AsyncOperationConfiguredSource> pool;
             private AsyncOperationConfiguredSource nextNode;
             private AsyncOperation asyncOperation;
@@ -206,6 +246,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class UnityWebRequestAsyncOperationConfiguredSource : IUniTaskSource<UnityWebRequest>, IUniTaskSource, IValueTaskSource, IValueTaskSource<UnityWebRequest>, IPlayerLoopItem, ITaskPoolNode<UnityWebRequestAsyncOperationConfiguredSource>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__14_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__14_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<UnityWebRequestAsyncOperationConfiguredSource> pool;
             private UnityWebRequestAsyncOperationConfiguredSource nextNode;
             private UnityWebRequestAsyncOperation asyncOperation;

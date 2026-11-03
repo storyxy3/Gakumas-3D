@@ -105,5 +105,10 @@ namespace Campus.Common.Octo
         public ReusableAssetKeeper()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CInitialize_003Eb__4_0(SimpleAssetKeeper keeper)
+        {
+        }
     }
 }

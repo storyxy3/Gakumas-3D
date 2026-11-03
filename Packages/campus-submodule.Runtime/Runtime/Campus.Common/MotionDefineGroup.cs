@@ -1,6 +1,7 @@
 namespace Campus.Common
 {
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::UnityEngine;
     using global::VL;
@@ -8,6 +9,20 @@ namespace Campus.Common
     [CreateAssetMenu(fileName = "MotionDefineGroup.asset", menuName = "Campus/MotionDefineGroup", order = 1200)]
     public class MotionDefineGroup : ScriptableObject
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass7_0
+        {
+            public int clipId;
+            public _003C_003Ec__DisplayClass7_0()
+            {
+            }
+
+            internal bool _003CGetMotionDefineClip_003Eb__0(MotionDefineClip clip)
+            {
+                return default(bool);
+            }
+        }
+
         [SerializeField]
         private List<MotionDefineClip> _motionDefineClips;
         public List<MotionDefineClip> MotionDefineClips

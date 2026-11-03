@@ -190,6 +190,56 @@ namespace Cysharp.Threading.Tasks
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<Task, object> _003C_003E9__33_0;
+            public static Action<object> _003C_003E9__48_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003CAsUniTask_003Eb__33_0(Task x, object state)
+            {
+            }
+
+            internal void _003CForget_003Eb__48_0(object state)
+            {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__32<T>
+        {
+            public static readonly _003C_003Ec__32<T> _003C_003E9;
+            public static Action<Task<T>, object> _003C_003E9__32_0;
+            public _003C_003Ec__32()
+            {
+            }
+
+            internal void _003CAsUniTask_003Eb__32_0(Task<T> x, object state)
+            {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__51<T>
+        {
+            public static readonly _003C_003Ec__51<T> _003C_003E9;
+            public static Action<object> _003C_003E9__51_0;
+            public _003C_003Ec__51()
+            {
+            }
+
+            internal void _003CForget_003Eb__51_0(object state)
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CContinueWith_003Ed__54<T> : IAsyncStateMachine

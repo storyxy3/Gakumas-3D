@@ -17,6 +17,80 @@ namespace Octo.Loader
     internal sealed class OctoAPI
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass16_0
+        {
+            public Action<byte[], Error> onComplete;
+            public _003C_003Ec__DisplayClass16_0()
+            {
+            }
+
+            internal void _003CGetDatabaseDiff_003Eb__0(byte[] data, Error err)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass19_0
+        {
+            public Action<byte[], Error> onComplete;
+            public OctoAPI _003C_003E4__this;
+            public _003C_003Ec__DisplayClass19_0()
+            {
+            }
+
+            internal void _003CGetListAes_003Eb__0(byte[] bytes, Error error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass21_0
+        {
+            public Action<int, Error> onComplete;
+            public _003C_003Ec__DisplayClass21_0()
+            {
+            }
+
+            internal void _003CGetLatestRevision_003Eb__0(byte[] data, Error err)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass22_0
+        {
+            public string url;
+            public CachedAssetBundle cachedAssetBundle;
+            public Item item;
+            public Action<AssetBundle, Error> onComplete;
+            public _003C_003Ec__DisplayClass22_0()
+            {
+            }
+
+            internal DownloadHandlerAssetBundle _003CDownloadAndLoadAssetBundle_003Eb__0()
+            {
+                return null;
+            }
+
+            internal void _003CDownloadAndLoadAssetBundle_003Eb__1(DownloadHandlerAssetBundle assetBundleHandler, Error dlErr)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass23_0
+        {
+            public Action<Error> onComplete;
+            public _003C_003Ec__DisplayClass23_0()
+            {
+            }
+
+            internal void _003CDownloadObject_003Eb__0(Error dlErr)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CDoSendErrorReport_003Ed__30 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

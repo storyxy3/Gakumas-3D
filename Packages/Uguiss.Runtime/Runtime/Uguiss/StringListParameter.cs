@@ -1,6 +1,7 @@
 namespace Uguiss
 {
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Uguiss;
 
     public class StringListParameter : AbstractParameter<List<string>>
@@ -21,6 +22,12 @@ namespace Uguiss
 
         public StringListParameter()
         {
+        }
+
+        [CompilerGenerated]
+        private string _003CGetValue_003Eb__1_0(string rawValue)
+        {
+            return null;
         }
     }
 }

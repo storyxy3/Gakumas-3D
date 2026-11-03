@@ -18,6 +18,7 @@ namespace Campus.Gasha.Sequences
     using global::UnityEngine;
     using global::UnityEngine.Playables;
     using global::UnityEngine.Serialization;
+    using global::UnityEngine.Timeline;
 
     public class CardIdolSequenceSsr : CardIdolBase, ISequenceDirector, INotificationReceiver
     {
@@ -49,6 +50,28 @@ namespace Campus.Gasha.Sequences
             Live,
             Card,
             CardLoop
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<(MovieType movieType, string movieAsset), string> _003C_003E9__35_0;
+            public static Func<IMarker, bool> _003C_003E9__39_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal string _003CBind_003Eb__35_0((MovieType movieType, string movieAsset) x)
+            {
+                return null;
+            }
+
+            internal bool _003CGetIdolMovieStartTime_003Eb__39_0(IMarker x)
+            {
+                return default(bool);
+            }
         }
 
         [StructLayout((LayoutKind)3)]
@@ -232,6 +255,24 @@ namespace Campus.Gasha.Sequences
 
         public CardIdolSequenceSsr()
         {
+        }
+
+        [CompilerGenerated]
+        private bool _003CPlay_003Eb__37_0()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CPlay_003Eb__37_1()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003COnClicked_003Eb__44_0()
+        {
+            return default(bool);
         }
     }
 }

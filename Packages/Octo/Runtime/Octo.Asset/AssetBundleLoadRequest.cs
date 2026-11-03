@@ -175,5 +175,21 @@ namespace Octo.Asset
         private void LoadCompleteCallback(AssetBundle ab, LoadError err)
         {
         }
+
+        [CompilerGenerated]
+        private void _003CPrepare_003Eb__19_0(byte[] bytes, LoadError downloadError)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CPrepare_003Eb__19_1(DownloadError downloadError)
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003CExecute_003Eb__20_0()
+        {
+            return default(bool);
+        }
     }
 }

@@ -1,5 +1,6 @@
 namespace Campus.Gasha
 {
+    using global::System;
     using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::Campus.Gasha;
@@ -47,6 +48,34 @@ namespace Campus.Gasha
             public CampusActorDescriptor actorDescriptor;
             public PickupSsrCardInfo()
             {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<CardInfo, RarityType> _003C_003E9__3_0;
+            public static Func<CardInfo, bool> _003C_003E9__8_0;
+            public static Func<GashaCardParam, CardInfo> _003C_003E9__10_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal RarityType _003Cget_MaximumRarityOnReversal_003Eb__3_0(CardInfo x)
+            {
+                return default(RarityType);
+            }
+
+            internal bool _003CTryGetPickupSsrCardInfo_003Eb__8_0(CardInfo x)
+            {
+                return default(bool);
+            }
+
+            internal CardInfo _003C_002Ector_003Eb__10_0(GashaCardParam x)
+            {
+                return null;
             }
         }
 

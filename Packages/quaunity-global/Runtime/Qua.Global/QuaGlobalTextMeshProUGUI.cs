@@ -100,5 +100,11 @@ namespace Qua.Global
         public QuaGlobalTextMeshProUGUI()
         {
         }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private void _003C_003En__0()
+        {
+        }
     }
 }

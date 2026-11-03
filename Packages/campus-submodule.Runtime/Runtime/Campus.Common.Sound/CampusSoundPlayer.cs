@@ -13,6 +13,34 @@ namespace Campus.Common.Sound
 
     public class CampusSoundPlayer : MonoBehaviour, ICampusSoundPlayer
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass30_0
+        {
+            public int time;
+            public _003C_003Ec__DisplayClass30_0()
+            {
+            }
+
+            internal bool _003CPlayWithStartTime_003Eb__0(long x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass49_0
+        {
+            public int time;
+            public _003C_003Ec__DisplayClass49_0()
+            {
+            }
+
+            internal bool _003CPrepare_003Eb__0(long x)
+            {
+                return default(bool);
+            }
+        }
+
         private CriAtomSource _source;
         private SoundInfo _soundInfo;
         private CancellationTokenSource _cancelCts;
@@ -253,6 +281,27 @@ namespace Campus.Common.Sound
         }
 
         public CampusSoundPlayer()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CTryBindControl_003Eb__47_0(Unit _)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CTryBindControl_003Eb__47_1(Unit _)
+        {
+        }
+
+        [CompilerGenerated]
+        private float _003CFadeVolume_003Eb__48_0()
+        {
+            return default(float);
+        }
+
+        [CompilerGenerated]
+        private void _003CFadeVolume_003Eb__48_1(float v)
         {
         }
     }

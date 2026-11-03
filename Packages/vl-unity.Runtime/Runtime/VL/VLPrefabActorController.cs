@@ -2,6 +2,7 @@ namespace VL
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::ActorAnimation;
     using global::UnityEngine;
     using global::VL;
@@ -18,6 +19,20 @@ namespace VL
             public List<Transform> transforms;
             public PrefabParts()
             {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass8_0
+        {
+            public string resourceName;
+            public _003C_003Ec__DisplayClass8_0()
+            {
+            }
+
+            internal bool _003CBuildModel_003Eb__0(PrefabParts p)
+            {
+                return default(bool);
             }
         }
 

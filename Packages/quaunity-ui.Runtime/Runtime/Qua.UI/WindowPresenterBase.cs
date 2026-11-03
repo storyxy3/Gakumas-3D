@@ -540,5 +540,12 @@ namespace Qua.UI
         protected WindowPresenterBase()
         {
         }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private UniTask _003C_003En__0(TransitionParam param, CancellationToken ct)
+        {
+            return default(UniTask);
+        }
     }
 }

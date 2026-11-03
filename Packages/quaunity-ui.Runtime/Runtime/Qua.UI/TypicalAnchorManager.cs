@@ -1,5 +1,6 @@
 namespace Qua.UI
 {
+    using global::System.Runtime.CompilerServices;
     using global::Qua.UI;
     using global::Qua.Utility;
     using global::UnityEngine;
@@ -37,6 +38,11 @@ namespace Qua.UI
         }
 
         public TypicalAnchorManager()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003COnInitialize_003Eb__6_0(RectTransform _)
         {
         }
     }

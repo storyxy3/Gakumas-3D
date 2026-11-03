@@ -89,5 +89,10 @@ namespace CriWare.CriTimeline.Atom
         public CriAtomBehaviour()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CWaitAndStop_003Eb__21_0()
+        {
+        }
     }
 }

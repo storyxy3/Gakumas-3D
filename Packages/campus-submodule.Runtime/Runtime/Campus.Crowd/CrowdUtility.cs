@@ -1,5 +1,6 @@
 namespace Campus.Crowd
 {
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::UnityEngine.Rendering;
 
@@ -15,6 +16,12 @@ namespace Campus.Crowd
         public static Bounds GetCellBounds(Bounds aabb, int address, Vector4 boundingSphere)
         {
             return default(Bounds);
+        }
+
+        [CompilerGenerated]
+        internal static int _003CGetCellFromOctreeAddress_003Eg__BitOffset_007C17_0(int bit)
+        {
+            return default(int);
         }
     }
 }

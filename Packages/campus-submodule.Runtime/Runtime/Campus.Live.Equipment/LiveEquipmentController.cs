@@ -11,6 +11,22 @@ namespace Campus.Live.Equipment
     [RequireComponent(typeof(PlayableDirector))]
     public class LiveEquipmentController : MonoBehaviour
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<PlayableBinding, bool> _003C_003E9__43_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CBindReceiver_003Eb__43_0(PlayableBinding x)
+            {
+                return default(bool);
+            }
+        }
+
         public const int StreamBufferSize = 448;
         [SerializeField]
         private int serializeFieldWg;

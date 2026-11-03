@@ -75,6 +75,21 @@ namespace Campus.Gasha
             }
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass13_0
+        {
+            public GashaPlayableDirectorHandler _003C_003E4__this;
+            public double duration;
+            public _003C_003Ec__DisplayClass13_0()
+            {
+            }
+
+            internal bool _003CPlayAsync_003Eb__0()
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CPlayAsync_003Ed__13 : IAsyncStateMachine

@@ -22,6 +22,62 @@ namespace Campus.Common
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<UniTask> _003C_003E9__30_0;
+            public static Func<UniTask> _003C_003E9__38_0;
+            public static Func<UniTask> _003C_003E9__39_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal UniTask _003CSetAutoAsync_003Eb__30_0()
+            {
+                return default(UniTask);
+            }
+
+            internal UniTask _003CSetStartsWithLazyAsync_003Eb__38_0()
+            {
+                return default(UniTask);
+            }
+
+            internal UniTask _003CSetFixedLazyAsync_003Eb__39_0()
+            {
+                return default(UniTask);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass31_0
+        {
+            public bool untilPortrait;
+            public _003C_003Ec__DisplayClass31_0()
+            {
+            }
+
+            internal bool _003CWaitAutoOnceAsync_003Eb__1()
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass35_0
+        {
+            public OrientationPair orientationPair;
+            public _003C_003Ec__DisplayClass35_0()
+            {
+            }
+
+            internal bool _003CSetAutoAfterRotateDeviceAsync_003Eb__0()
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CInternalSetOrientationAsync_003Ed__29 : IAsyncStateMachine
@@ -349,6 +405,12 @@ namespace Campus.Common
 
         protected ScreenOrientationControllerBase()
         {
+        }
+
+        [CompilerGenerated]
+        internal static UniTask _003CWaitAutoOnceAsync_003Eg__WaitAsync_007C31_0(bool untilPortrait, CancellationToken ct)
+        {
+            return default(UniTask);
         }
     }
 }

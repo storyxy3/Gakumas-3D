@@ -2,6 +2,7 @@ namespace Octo.Loader
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::Octo;
     using global::Octo.Caching;
@@ -10,6 +11,29 @@ namespace Octo.Loader
 
     internal abstract class OctoBaseLoader
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass11_0
+        {
+            public OctoBaseLoader _003C_003E4__this;
+            public string name;
+            public string bucket;
+            public string fileName;
+            public Item data;
+            public bool canAutoDelete;
+            public Common.CallbackEvents<DownloadError> events;
+            public _003C_003Ec__DisplayClass11_0()
+            {
+            }
+
+            internal void _003CPreDownload_003Eb__0(Error err)
+            {
+            }
+
+            internal void _003CPreDownload_003Eb__1(ulong received, ulong content)
+            {
+            }
+        }
+
         private static readonly string Tag;
         protected IOctoCaching _octoCaching;
         protected OctoCaching _storageCaching;

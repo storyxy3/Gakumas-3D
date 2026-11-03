@@ -1,6 +1,8 @@
 namespace Octo
 {
+    using global::System.Runtime.CompilerServices;
     using global::Octo;
+    using global::Octo.Data;
 
     internal class ResourceBaseBulkDownloader : BaseBulkDownloader
     {
@@ -16,6 +18,12 @@ namespace Octo
 
         public override void RemoveLatestCached()
         {
+        }
+
+        [CompilerGenerated]
+        private bool _003CRemoveLatestCached_003Eb__3_0(Item item)
+        {
+            return default(bool);
         }
     }
 }

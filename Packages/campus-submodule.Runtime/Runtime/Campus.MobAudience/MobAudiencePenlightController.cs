@@ -2,6 +2,7 @@ namespace Campus.MobAudience
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.AudiencePenlight;
     using global::Campus.MobAudience;
     using global::Unity.Mathematics;
@@ -32,6 +33,34 @@ namespace Campus.MobAudience
             public MaterialInfo[] MaterialInfos;
             public RuntimeMobPenlightSetting()
             {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<Renderer, bool> _003C_003E9__13_0;
+            public static Func<Renderer, bool> _003C_003E9__13_1;
+            public static Func<Renderer, MaterialInfo> _003C_003E9__13_2;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CSetupPenlightSettings_003Eb__13_0(Renderer r)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CSetupPenlightSettings_003Eb__13_1(Renderer r)
+            {
+                return default(bool);
+            }
+
+            internal MaterialInfo _003CSetupPenlightSettings_003Eb__13_2(Renderer r)
+            {
+                return null;
             }
         }
 

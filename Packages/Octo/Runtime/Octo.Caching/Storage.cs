@@ -16,6 +16,20 @@ namespace Octo.Caching
             Deleting
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass25_0
+        {
+            public Storage _003C_003E4__this;
+            public string metaPath;
+            public _003C_003Ec__DisplayClass25_0()
+            {
+            }
+
+            internal void _003CWriteMetaAsync_003Eb__0(object state)
+            {
+            }
+        }
+
         private static readonly string Tag;
         public static readonly string MetaFileName;
         private bool isEmpty;

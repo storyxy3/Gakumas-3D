@@ -1,11 +1,58 @@
 namespace Campus.Common.Extensions
 {
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::DG.Tweening;
     using global::UnityEngine;
 
     public static class LinearGradientExtensions
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass0_0
+        {
+            public LinearGradient.ColorStep[] startValues;
+            public LinearGradient target;
+            public int count;
+            public LinearGradient.ColorStep[] temp;
+            public float progress;
+            public LinearGradient.ColorStep[] colorSteps;
+            public _003C_003Ec__DisplayClass0_0()
+            {
+            }
+
+            internal float _003CDOColorSteps_003Eb__0()
+            {
+                return default(float);
+            }
+
+            internal void _003CDOColorSteps_003Eb__1(float value)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass3_0
+        {
+            public Color[] startValues;
+            public LinearGradient target;
+            public int count;
+            public Color[] temp;
+            public float progress;
+            public Color[] colors;
+            public _003C_003Ec__DisplayClass3_0()
+            {
+            }
+
+            internal float _003CDOColors_003Eb__0()
+            {
+                return default(float);
+            }
+
+            internal void _003CDOColors_003Eb__1(float value)
+            {
+            }
+        }
+
         public static Tweener DOColorSteps(this LinearGradient target, LinearGradient.ColorStep[] colorSteps, float duration)
         {
             return null;

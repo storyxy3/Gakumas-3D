@@ -5,12 +5,130 @@ namespace Titan
     using global::System.Runtime.CompilerServices;
     using global::DG.Tweening;
     using global::DG.Tweening.Core;
+    using global::DG.Tweening.Plugins.Options;
     using global::Titan;
     using global::UnityEngine;
     using global::UnityEngine.Playables;
 
     public class TweenCreationContext : IDisposable, ITimelineTween, ICollectValueRevertersContext
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static DOGetter<float> _003C_003E9__63_0;
+            public static DOGetter<float> _003C_003E9__64_2;
+            public static DOGetter<float> _003C_003E9__64_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal float _003CSetTimeScale_003Eb__63_0()
+            {
+                return default(float);
+            }
+
+            internal float _003CTrySetLoopOffset_003Eb__64_2()
+            {
+                return default(float);
+            }
+
+            internal float _003CTrySetLoopOffset_003Eb__64_0()
+            {
+                return default(float);
+            }
+
+            internal float _003C_002Ecctor_003Eb__71_0()
+            {
+                return default(float);
+            }
+
+            internal void _003C_002Ecctor_003Eb__71_1(float _)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass60_0
+        {
+            public MarkerExecutionType executionType;
+            public CallbackTiming timing;
+            public TweenCallback callback;
+            public TweenerCore<float, float, FloatOptions> tween;
+            public float prevTime;
+            public _003C_003Ec__DisplayClass60_0()
+            {
+            }
+
+            internal void _003CInsertCallback_003Eb__0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass61_0
+        {
+            public Tween tween;
+            public _003C_003Ec__DisplayClass61_0()
+            {
+            }
+
+            internal void _003CInsertInfiniteTween_003Eb__0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass63_0
+        {
+            public Sequence tween;
+            public _003C_003Ec__DisplayClass63_0()
+            {
+            }
+
+            internal void _003CSetTimeScale_003Eb__1(float x)
+            {
+            }
+
+            internal void _003CSetTimeScale_003Eb__2()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass64_0
+        {
+            public float loopOffset;
+            public Tween tween;
+            public float targetDuration;
+            public _003C_003Ec__DisplayClass64_0()
+            {
+            }
+
+            internal void _003CTrySetLoopOffset_003Eb__1(float x)
+            {
+            }
+
+            internal void _003CTrySetLoopOffset_003Eb__4()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass64_1
+        {
+            public float duration2;
+            public _003C_003Ec__DisplayClass64_0 CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass64_1()
+            {
+            }
+
+            internal void _003CTrySetLoopOffset_003Eb__3(float x)
+            {
+            }
+        }
+
         public const float CallbackTweenDelta = 0.0001f;
         private static readonly IReadOnlyList<TweenWithDelay> EmptyInfiniteTweens;
         private static readonly DOGetter<float> ZeroGetter;

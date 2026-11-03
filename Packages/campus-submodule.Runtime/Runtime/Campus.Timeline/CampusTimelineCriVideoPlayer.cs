@@ -65,6 +65,22 @@ namespace Campus.Timeline
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<bool> _003C_003E9__26_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CDownloadMovieAsync_003Eb__26_0()
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CDownloadMovieAsync_003Ed__26 : IAsyncStateMachine
@@ -510,6 +526,30 @@ namespace Campus.Timeline
 
         public CampusTimelineCriVideoPlayer()
         {
+        }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private void _003C_003En__0()
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003CSetMovieInfo_003Eb__27_0()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CSetMovieInfo_003Eb__27_1()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private bool _003CSetMovieInfo_003Eb__27_2()
+        {
+            return default(bool);
         }
     }
 }

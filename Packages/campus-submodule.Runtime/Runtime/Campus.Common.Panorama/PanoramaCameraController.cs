@@ -132,5 +132,11 @@ namespace Campus.Common.Panorama
         public PanoramaCameraController()
         {
         }
+
+        [CompilerGenerated]
+        private Vector3 _003CUpdateRotate_003Eg__GetNextAngle_007C51_0()
+        {
+            return default(Vector3);
+        }
     }
 }

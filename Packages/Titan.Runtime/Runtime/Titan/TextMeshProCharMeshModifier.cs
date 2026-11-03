@@ -2,6 +2,8 @@ namespace Titan
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
+    using global::System.Runtime.InteropServices;
     using global::Titan;
     using global::TMPro;
     using global::UnityEngine;
@@ -21,6 +23,23 @@ namespace Titan
             public ModificationData()
             {
             }
+        }
+
+        [StructLayout((LayoutKind)3)]
+        [CompilerGenerated]
+        private struct _003C_003Ec__DisplayClass36_0
+        {
+            public Vector3[] vertices;
+            public Matrix4x4 matrix;
+            public Vector3 center;
+        }
+
+        [StructLayout((LayoutKind)3)]
+        [CompilerGenerated]
+        private struct _003C_003Ec__DisplayClass37_0
+        {
+            public Color32[] colors;
+            public Color color;
         }
 
         [SerializeField]
@@ -164,6 +183,16 @@ namespace Titan
         }
 
         public TextMeshProCharMeshModifier()
+        {
+        }
+
+        [CompilerGenerated]
+        private static void _003CUpdateCharVertex_003Eg__Set_007C36_0(in TMP_CharacterInfo charInfo, int indexOffset, Vector3 pos, ref _003C_003Ec__DisplayClass36_0 P_3)
+        {
+        }
+
+        [CompilerGenerated]
+        private static void _003CApplyCharColor_003Eg__Set_007C37_0(in TMP_CharacterInfo charInfo, int indexOffset, ref _003C_003Ec__DisplayClass37_0 P_2)
         {
         }
     }

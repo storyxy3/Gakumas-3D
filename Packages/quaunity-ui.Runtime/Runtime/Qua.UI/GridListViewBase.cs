@@ -3,11 +3,21 @@ namespace Qua.UI
     using global::System;
     using global::System.Collections.Generic;
     using global::System.Runtime.CompilerServices;
+    using global::System.Runtime.InteropServices;
     using global::Qua.UI;
     using global::UnityEngine;
 
     public class GridListViewBase : ListViewBase
     {
+        [StructLayout((LayoutKind)3)]
+        [CompilerGenerated]
+        private struct _003C_003Ec__DisplayClass19_0
+        {
+            public int directionPosition;
+            public GridListViewBase _003C_003E4__this;
+            public GridListCellArrangementContext context;
+        }
+
         private static readonly GridListCellArrangementContext ContextCache;
         [SerializeField]
         protected float _otherSize;
@@ -94,6 +104,11 @@ namespace Qua.UI
         }
 
         public GridListViewBase()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CCacheContentSizeAndCellPoints_003Eg__SetOtherDirectionCells_007C19_0(ref _003C_003Ec__DisplayClass19_0 P_0)
         {
         }
     }

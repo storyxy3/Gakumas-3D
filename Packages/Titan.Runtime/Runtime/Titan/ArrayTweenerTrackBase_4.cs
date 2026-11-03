@@ -1,11 +1,26 @@
 namespace Titan
 {
+    using global::System.Runtime.CompilerServices;
     using global::DG.Tweening;
     using global::Titan;
     using global::UnityEngine;
 
     public abstract class ArrayTweenerTrackBase<TClipAsset, TComponent, TValue, TParameter> : TweenerTrackBase<TClipAsset, TComponent, TValue[], TParameter> where TClipAsset : TweenerClipBase<TValue[], TParameter> where TComponent : Object where TParameter : ArrayParameter<TValue>, new()
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_0
+        {
+            public ArrayTweenerTrackBase<TClipAsset, TComponent, TValue, TParameter> _003C_003E4__this;
+            public TComponent component;
+            public _003C_003Ec__DisplayClass2_0()
+            {
+            }
+
+            internal void _003CGetTween_003Eb__0()
+            {
+            }
+        }
+
         protected abstract int GetLength(TComponent component);
         protected abstract Tween GetSingleTween(TComponent component, int index, TValue endValue, TClipAsset clipAsset, float duration);
         protected override Tween GetTween(TComponent component, TValue[] endValue, TClipAsset clipAsset, float duration)

@@ -11,6 +11,54 @@ namespace Octo.Data
 
     internal sealed class DataManager : IDatabase
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<Item, bool> _003C_003E9__39_0;
+            public static Func<Item, string> _003C_003E9__39_1;
+            public static Func<Item, bool> _003C_003E9__40_0;
+            public static Func<Item, string> _003C_003E9__40_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CGetAllAssetBundleNames_003Eb__39_0(Item item)
+            {
+                return default(bool);
+            }
+
+            internal string _003CGetAllAssetBundleNames_003Eb__39_1(Item item)
+            {
+                return null;
+            }
+
+            internal bool _003CGetAllResourceNames_003Eb__40_0(Item item)
+            {
+                return default(bool);
+            }
+
+            internal string _003CGetAllResourceNames_003Eb__40_1(Item item)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass56_0
+        {
+            public object /* TODO(qa-recon): octdata Octo.Proto.Database excluded. */ db;
+            public _003C_003Ec__DisplayClass56_0()
+            {
+            }
+
+            internal Item _003CConstructDictionary_003Eb__0(object /* TODO(qa-recon): octdata Octo.Proto.Data excluded. */ data)
+            {
+                return null;
+            }
+        }
+
         private static readonly string Tag;
         public static readonly string DirName;
         internal static readonly string CacheFileName;
@@ -178,6 +226,16 @@ namespace Octo.Data
         }
 
         private static void Write(object /* TODO(qa-recon): protobuf-net ProtoBuf.ProtoWriter excluded. */ writer, int tag, IEnumerable<Item> items, Dictionary<string, int> tagDictionary)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CApplyToDatabase_003Eb__31_0(object /* TODO(qa-recon): octdata Octo.Proto.Data excluded. */ data)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CApplyToDatabase_003Eb__31_1(object /* TODO(qa-recon): octdata Octo.Proto.Data excluded. */ data)
         {
         }
     }

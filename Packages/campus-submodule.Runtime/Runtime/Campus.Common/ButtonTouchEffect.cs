@@ -1,5 +1,6 @@
 namespace Campus.Common
 {
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::DG.Tweening;
     using global::UnityEngine;
@@ -64,6 +65,22 @@ namespace Campus.Common
         }
 
         public ButtonTouchEffect()
+        {
+        }
+
+        [CompilerGenerated]
+        private float _003CFadeOutEffect_003Eb__14_0()
+        {
+            return default(float);
+        }
+
+        [CompilerGenerated]
+        private void _003CFadeOutEffect_003Eb__14_1(float v)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CFadeOutEffect_003Eb__14_2()
         {
         }
     }

@@ -24,6 +24,14 @@ namespace Titan
             PlayOnEnableCompleteOnDisable
         }
 
+        [StructLayout((LayoutKind)3)]
+        [CompilerGenerated]
+        internal struct _003C_003Ec__DisplayClass58_0<T>
+        {
+            public object obj;
+            public string id;
+        }
+
         [SerializeField]
         private PlayableDirector _director;
         [SerializeField]
@@ -254,6 +262,12 @@ namespace Titan
 
         public TitanPlayer()
         {
+        }
+
+        [CompilerGenerated]
+        internal static bool _003CTryGetValue_003Eg__TryGetValueOfT_007C58_0<T>(object value, out T res, ref _003C_003Ec__DisplayClass58_0<T> P_2)
+        {
+            throw null;
         }
     }
 }

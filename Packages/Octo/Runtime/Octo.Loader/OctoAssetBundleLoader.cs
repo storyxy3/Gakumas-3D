@@ -14,6 +14,36 @@ namespace Octo.Loader
     internal sealed class OctoAssetBundleLoader : OctoBaseLoader, IAssetBundleLoader, ILoader<AssetBundle>, ILoader
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass6_0
+        {
+            public Action<AssetBundle, LoadError> safeOnComplete;
+            public OctoAssetBundleLoader _003C_003E4__this;
+            public string assetBundleName;
+            public _003C_003Ec__DisplayClass6_0()
+            {
+            }
+
+            internal void _003CLoadFromCacheOrDownload_003Eb__0(DownloadError err)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass8_0
+        {
+            public OctoAssetBundleLoader _003C_003E4__this;
+            public string assetBundleName;
+            public Action<Common.Result<byte[]>> safeAction;
+            public _003C_003Ec__DisplayClass8_0()
+            {
+            }
+
+            internal void _003CDownloadToMemory_003Eb__0(Common.Result<byte[]> result)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CLoadFromFileAsync_003Ed__9 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

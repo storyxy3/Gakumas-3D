@@ -20,6 +20,46 @@ namespace Campus.Common
             public int bottom;
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<UniTask> _003C_003E9__7_0;
+            public static Func<UniTask> _003C_003E9__8_0;
+            public static Func<UniTask> _003C_003E9__9_0;
+            public static Func<UniTask> _003C_003E9__10_0;
+            public static Func<UniTask> _003C_003E9__11_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal UniTask _003CSetStartsWithPortraitAsync_003Eb__7_0()
+            {
+                return default(UniTask);
+            }
+
+            internal UniTask _003CSetStartsWithLandscapeAsync_003Eb__8_0()
+            {
+                return default(UniTask);
+            }
+
+            internal UniTask _003CSetFixedPortraitAsync_003Eb__9_0()
+            {
+                return default(UniTask);
+            }
+
+            internal UniTask _003CSetFixedLandscapeAsync_003Eb__10_0()
+            {
+                return default(UniTask);
+            }
+
+            internal UniTask _003CSetFixedLandscapeLeftAsync_003Eb__11_0()
+            {
+                return default(UniTask);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CAdjustScreenResolutionForSetScreenResolutionFallbackAsync_003Ed__13 : IAsyncStateMachine

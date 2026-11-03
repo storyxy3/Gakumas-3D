@@ -139,5 +139,15 @@ namespace Octo.Loader
         {
             return null;
         }
+
+        [CompilerGenerated]
+        private void _003CPrepare_003Eb__12_0(DownloadError downloadError)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CExecute_003Eb__13_0(T obj)
+        {
+        }
     }
 }

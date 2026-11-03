@@ -11,6 +11,24 @@ namespace Cysharp.Threading.Tasks.Linq
 
     internal static class Subscribe
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003C_002Ecctor_003Eb__8_0(Exception _)
+            {
+            }
+
+            internal void _003C_002Ecctor_003Eb__8_1()
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CSubscribeAwaitCore_003Ed__6<TSource> : IAsyncStateMachine

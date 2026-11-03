@@ -1,6 +1,7 @@
 namespace Cysharp.Threading.Tasks
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::System.Threading;
     using global::Cysharp.Threading.Tasks;
     using global::Cysharp.Threading.Tasks.Internal;
@@ -9,6 +10,49 @@ namespace Cysharp.Threading.Tasks
 
     public static class PlayerLoopHelper
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<PlayerLoopSystem, bool> _003C_003E9__21_0;
+            public static Predicate<PlayerLoopSystem> _003C_003E9__21_1;
+            public static Predicate<PlayerLoopSystem> _003C_003E9__21_2;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CInsertUniTaskSynchronizationContext_003Eb__21_0(PlayerLoopSystem ls)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CInsertUniTaskSynchronizationContext_003Eb__21_1(PlayerLoopSystem x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CInsertUniTaskSynchronizationContext_003Eb__21_2(PlayerLoopSystem x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass20_0
+        {
+            public Type loopRunnerYieldType;
+            public Type loopRunnerType;
+            public _003C_003Ec__DisplayClass20_0()
+            {
+            }
+
+            internal bool _003CRemoveRunner_003Eb__0(PlayerLoopSystem ls)
+            {
+                return default(bool);
+            }
+        }
+
         private static readonly ContinuationQueue ThrowMarkerContinuationQueue;
         private static readonly PlayerLoopRunner ThrowMarkerPlayerLoopRunner;
         private static int mainThreadId;

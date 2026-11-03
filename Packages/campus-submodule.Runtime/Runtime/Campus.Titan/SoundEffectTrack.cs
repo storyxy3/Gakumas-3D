@@ -6,12 +6,15 @@ namespace Campus.Titan
     using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::System.Threading;
+    using global::Campus.Common;
     using global::Campus.Titan;
     using global::Cysharp.Threading.Tasks;
     using global::Cysharp.Threading.Tasks.CompilerServices;
+    using global::DG.Tweening;
     using global::Qua.Utility;
     using global::Titan;
     using global::UniRx;
+    using global::UnityEngine.Playables;
     using global::UnityEngine.Timeline;
 
     [TrackClipType(typeof(SoundEffectClip))]
@@ -20,6 +23,56 @@ namespace Campus.Titan
     {
         private class PlayingWatcher
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Func<Action, TweenCallback> _003C_003E9__10_4;
+                public _003C_003Ec()
+                {
+                }
+
+                internal TweenCallback _003CGetPauseObservable_003Eb__10_4(Action x)
+                {
+                    return null;
+                }
+            }
+
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass10_0
+            {
+                public PlayingWatcher _003C_003E4__this;
+                public TweenCreationContext root;
+                public _003C_003Ec__DisplayClass10_0()
+                {
+                }
+
+                internal void _003CGetPauseObservable_003Eb__0(Action x)
+                {
+                }
+
+                internal void _003CGetPauseObservable_003Eb__1(Action x)
+                {
+                }
+
+                internal void _003CGetPauseObservable_003Eb__2(Action<PlayableDirector> x)
+                {
+                }
+
+                internal void _003CGetPauseObservable_003Eb__3(Action<PlayableDirector> x)
+                {
+                }
+
+                internal void _003CGetPauseObservable_003Eb__5(TweenCallback x)
+                {
+                }
+
+                internal void _003CGetPauseObservable_003Eb__6(TweenCallback x)
+                {
+                }
+            }
+
             [CompilerGenerated]
             private readonly bool _003CIsAdv_003Ek__BackingField;
             private readonly ITitanAdvBridge _advBridge;
@@ -56,6 +109,52 @@ namespace Campus.Titan
             public IObservable<Unit> GetPauseObservable()
             {
                 return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_0
+        {
+            public ISoundEffectPlayer player;
+            public bool isStart;
+            public PlayingWatcher playingWatcher;
+            public CancellationTokenSource cts;
+            public Tween tween;
+            public bool isPlaying;
+            public TweenCreationContext context;
+            public float clipDuration;
+            public Action<Unit> _003C_003E9__5;
+            public _003C_003Ec__DisplayClass2_0()
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eb__0(ICampusSoundPlayer x)
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eb__1(Unit _)
+            {
+            }
+
+            internal float _003CInsertClipTween_003Eb__2()
+            {
+                return default(float);
+            }
+
+            internal void _003CInsertClipTween_003Eb__5(Unit _)
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eb__3(float x)
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eb__6()
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eg__Stop_007C4()
+            {
             }
         }
 

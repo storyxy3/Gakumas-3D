@@ -1,5 +1,6 @@
 namespace Campus.Titan
 {
+    using global::System.Collections.Generic;
     using global::System.Diagnostics;
     using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
@@ -9,6 +10,7 @@ namespace Campus.Titan
     using global::Cysharp.Threading.Tasks.CompilerServices;
     using global::Qua.Utility;
     using global::Titan;
+    using global::UnityEngine.Timeline;
 
     public static class TitanExtensions
     {
@@ -45,6 +47,11 @@ namespace Campus.Titan
         public static UniTask LoadAllAssetsAsync(this TitanPlayer titanPlayer, CancellationToken ct)
         {
             return default(UniTask);
+        }
+
+        [CompilerGenerated]
+        private static void _003CLoadAllAssetsAsync_003Eg__Recursive_007C0_0(IEnumerable<TrackAsset> trackAssets, ref _003C_003Ec__DisplayClass0_0 P_1)
+        {
         }
     }
 }

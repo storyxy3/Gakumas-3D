@@ -2,6 +2,7 @@ namespace ActorAnimation
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::ActorAnimation;
     using global::UnityEngine;
     using global::UnityEngine.Animations.Rigging;
@@ -9,6 +10,21 @@ namespace ActorAnimation
     [Serializable]
     public struct ActorAnimationRigData : IActorAnimationRigData, IAnimationJobData
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass90_0
+        {
+            public List<ActorSwingDynamicBone> secondaryDynamicList;
+            public Predicate<ActorSwingDynamicBone> _003C_003E9__0;
+            public _003C_003Ec__DisplayClass90_0()
+            {
+            }
+
+            internal bool _003CSortChainLayers_003Eb__0(ActorSwingDynamicBone x)
+            {
+                return default(bool);
+            }
+        }
+
         [SerializeField]
         private List<ActorAnimationConstraintTransformBone> _constraintTransformBones;
         [SerializeField]

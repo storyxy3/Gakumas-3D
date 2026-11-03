@@ -65,5 +65,12 @@ namespace Qua.UI
         protected QuaParentPresenterBase()
         {
         }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private UniTask _003C_003En__0(TransitionInfo info, CancellationToken ct)
+        {
+            return default(UniTask);
+        }
     }
 }

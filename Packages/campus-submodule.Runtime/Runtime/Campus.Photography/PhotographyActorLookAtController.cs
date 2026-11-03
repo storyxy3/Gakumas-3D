@@ -1,5 +1,6 @@
 namespace Campus.Photography
 {
+    using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::Campus.Common;
     using global::Campus.Common.LookAt;
@@ -39,6 +40,11 @@ namespace Campus.Photography
         }
 
         public PhotographyActorLookAtController()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CSetEvent_003Eb__2_0(bool isOn)
         {
         }
     }

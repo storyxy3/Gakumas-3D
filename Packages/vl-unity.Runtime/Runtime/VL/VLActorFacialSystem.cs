@@ -1,5 +1,7 @@
 namespace VL
 {
+    using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::VL;
     using global::VL.Animation;
@@ -12,6 +14,101 @@ namespace VL
         {
             NONE,
             BLINK
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<(VLActorFacialLimitData.LimitData x, SkinnedMeshRenderer r), bool> _003C_003E9__36_1;
+            public static Func<(VLActorFacialLimitData.LimitData x, SkinnedMeshRenderer r), VLActorBlendShapeLimitDataRuntime> _003C_003E9__36_2;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CInitializeFacialParts_003Eb__36_1((VLActorFacialLimitData.LimitData x, SkinnedMeshRenderer r) tuple)
+            {
+                return default(bool);
+            }
+
+            internal VLActorBlendShapeLimitDataRuntime _003CInitializeFacialParts_003Eb__36_2((VLActorFacialLimitData.LimitData x, SkinnedMeshRenderer r) tuple)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass29_0
+        {
+            public SkinnedMeshRenderer r;
+            public VLActorEyeBlinkData.LimitData d;
+            public _003C_003Ec__DisplayClass29_0()
+            {
+            }
+
+            internal VLActorBlendShapeIndexLimitData _003CInitializeEyeBlink_003Eb__0(string x, int blendShapeNameIndex)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass30_0
+        {
+            public VLActorFaceModel faceModel;
+            public _003C_003Ec__DisplayClass30_0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass30_1
+        {
+            public VLActorEyeBlinkData.LimitData d;
+            public _003C_003Ec__DisplayClass30_0 CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass30_1()
+            {
+            }
+
+            internal VLActorBlendShapeIndexLimitData _003CInitializeFaceModelEyeBlink_003Eb__0(string x, int blendShapeNameIndex)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass36_0
+        {
+            public (VLActorFacialLimitData.LimitData x, SkinnedMeshRenderer r) tuple;
+            public _003C_003Ec__DisplayClass36_0()
+            {
+            }
+
+            internal VLActorBlendShapeIndexLimitData _003CInitializeFacialParts_003Eb__3(VLActorFacialLimitData.BlendShapeData x)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass37_0
+        {
+            public VLActorFaceModel faceModel;
+            public Func<VLActorFacialLimitData.BlendShapeData, VLActorBlendShapeIndexLimitData> _003C_003E9__1;
+            public _003C_003Ec__DisplayClass37_0()
+            {
+            }
+
+            internal VLActorFaceModelBlendShapeLimitDataRuntime _003CInitializeFaceModelFacialParts_003Eb__0(VLActorFacialLimitData.LimitData x)
+            {
+                return null;
+            }
+
+            internal VLActorBlendShapeIndexLimitData _003CInitializeFaceModelFacialParts_003Eb__1(VLActorFacialLimitData.BlendShapeData x)
+            {
+                return null;
+            }
         }
 
         [SerializeField]
@@ -123,6 +220,12 @@ namespace VL
 
         public VLActorFacialSystem()
         {
+        }
+
+        [CompilerGenerated]
+        private (VLActorFacialLimitData.LimitData, SkinnedMeshRenderer) _003CInitializeFacialParts_003Eb__36_0(VLActorFacialLimitData.LimitData x)
+        {
+            return default((VLActorFacialLimitData.LimitData, SkinnedMeshRenderer));
         }
     }
 }

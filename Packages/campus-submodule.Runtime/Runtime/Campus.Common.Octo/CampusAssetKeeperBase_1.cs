@@ -12,6 +12,26 @@ namespace Campus.Common.Octo
 
     public class CampusAssetKeeperBase<T> : AssetKeeper where T : Object
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass19_0
+        {
+            public CancellationToken ct;
+            public CampusAssetKeeperBase<T> _003C_003E4__this;
+            public UniTaskCompletionSource completionSource;
+            public string fallbackResourceName;
+            public _003C_003Ec__DisplayClass19_0()
+            {
+            }
+
+            internal void _003CDoLoadAssetAsync_003Eb__0(T asset, AssetLoaderError error)
+            {
+            }
+
+            internal void _003CDoLoadAssetAsync_003Eb__1()
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CDoLoadAssetAsync_003Ed__19 : IAsyncStateMachine

@@ -1,6 +1,7 @@
 namespace VL
 {
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::VL;
     using global::VL.FaceSystem;
@@ -68,6 +69,12 @@ namespace VL
 
         public VLActorFaceTargetCorrection()
         {
+        }
+
+        [CompilerGenerated]
+        internal static bool _003CUpdateTarget_003Eg__TryGetBlendShapeIndex_007C12_0(string blendShapeName, out int index)
+        {
+            throw null;
         }
     }
 }

@@ -1,6 +1,7 @@
 namespace Campus.Common.UIRenderer
 {
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common.UIRenderer;
     using global::UnityEngine;
     using global::UnityEngine.Rendering;
@@ -9,6 +10,20 @@ namespace Campus.Common.UIRenderer
 
     public class UIRendererFeature : ScriptableRendererFeature
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass19_0
+        {
+            public int width;
+            public int height;
+            public _003C_003Ec__DisplayClass19_0()
+            {
+            }
+
+            internal void _003CSetBlurTextureSize_003Eb__0(UIRenderPass x)
+            {
+            }
+        }
+
         [SerializeField]
         private LayerMask _layerMask;
         [SerializeField]

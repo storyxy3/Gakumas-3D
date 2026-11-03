@@ -10,6 +10,23 @@ namespace CriWare
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         private delegate uint InternalDelegate(IntPtr cbobj, IntPtr data, uint numSamples);
         public delegate uint Delegate(float[][] buffer, uint numSamples);
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public int bufferSize;
+            public Delegate callback;
+            public int numChannels;
+            public float[][] buffer;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal uint _003C_002Ector_003Eb__0(IntPtr cbobj, IntPtr data, uint numSamples)
+            {
+                return default(uint);
+            }
+        }
+
         private InternalDelegate internalDelegate;
         [CompilerGenerated]
         private IntPtr _003CcallbackFunction_003Ek__BackingField;

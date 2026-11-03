@@ -1,6 +1,8 @@
 namespace VL.Core
 {
+    using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::ActorAnimation;
     using global::Unity.Jobs;
     using global::UnityEngine;
@@ -14,6 +16,28 @@ namespace VL.Core
     [ExecuteAlways]
     public class VLActorController : MonoBehaviour, IVLActorController, IVLTransform
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<VLActorModelParts, IEnumerable<DefaultBoneInfo>> _003C_003E9__6_0;
+            public static Func<VLActorModelParts, int> _003C_003E9__79_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal IEnumerable<DefaultBoneInfo> _003Cget_boneInfos_003Eb__6_0(VLActorModelParts x)
+            {
+                return null;
+            }
+
+            internal int _003CInitializeAABB_003Eb__79_0(VLActorModelParts x)
+            {
+                return default(int);
+            }
+        }
+
         private static ProfilingSampler _scheduleJobSampler;
         private static ProfilingSampler _completeJobSampler;
         private static List<IVLActorController> _actorControllers;
@@ -280,7 +304,7 @@ namespace VL.Core
             throw null;
         }
 
-        public void SetAnimatorBindingToDirector(PlayableDirector director, Object key)
+        public void SetAnimatorBindingToDirector(PlayableDirector director, UnityEngine.Object key)
         {
         }
 

@@ -1,6 +1,7 @@
 namespace UniRx.Operators
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UniRx.Operators;
 
     internal class WhereObservable<T> : OperatorObservableBase<T>
@@ -45,6 +46,21 @@ namespace UniRx.Operators
 
             public override void OnCompleted()
             {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass5_0
+        {
+            public WhereObservable<T> _003C_003E4__this;
+            public Func<T, bool> combinePredicate;
+            public _003C_003Ec__DisplayClass5_0()
+            {
+            }
+
+            internal bool _003CCombinePredicate_003Eb__0(T x)
+            {
+                return default(bool);
             }
         }
 

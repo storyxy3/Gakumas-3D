@@ -12,6 +12,24 @@ namespace Octo.Loader
     internal static class OctoAssetBundleLoaderExtensions
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass0_0
+        {
+            public Common.CallbackEvents<Common.Result<byte[]>> events;
+            public string name;
+            public _003C_003Ec__DisplayClass0_0()
+            {
+            }
+
+            internal void _003CDownload_003Eb__0(byte[] bytes, Error err)
+            {
+            }
+
+            internal void _003CDownload_003Eb__1(ulong received, ulong content)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CLoadAssetBundleFromBytesAsyncCoroutine_003Ed__2 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

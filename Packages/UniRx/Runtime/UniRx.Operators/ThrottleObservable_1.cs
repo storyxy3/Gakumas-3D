@@ -1,6 +1,7 @@
 namespace UniRx.Operators
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UniRx;
     using global::UniRx.Operators;
 
@@ -8,6 +9,20 @@ namespace UniRx.Operators
     {
         private class Throttle : OperatorObserverBase<T, T>
         {
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass9_0
+            {
+                public Throttle _003C_003E4__this;
+                public ulong currentid;
+                public _003C_003Ec__DisplayClass9_0()
+                {
+                }
+
+                internal void _003COnNext_003Eb__0()
+                {
+                }
+            }
+
             private readonly ThrottleObservable<T> parent;
             private readonly object gate;
             private T latestValue;

@@ -9,9 +9,30 @@ namespace Campus.Common.Sound
     using global::Campus.Common.Sound;
     using global::Cysharp.Threading.Tasks;
     using global::Cysharp.Threading.Tasks.CompilerServices;
+    using global::Octo;
 
     public class SoundCache
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass16_0
+        {
+            public UniTaskCompletionSource<string> utcs;
+            public CancellationToken ct;
+            public CancellationTokenRegistration onCancel;
+            public string resourceName;
+            public _003C_003Ec__DisplayClass16_0()
+            {
+            }
+
+            internal void _003CDownloadAsync_003Eb__0()
+            {
+            }
+
+            internal void _003CDownloadAsync_003Eb__1(DownloadError error)
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CDownloadCueSheetAsync_003Ed__6 : IAsyncStateMachine

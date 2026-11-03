@@ -2,6 +2,7 @@ namespace UniRx.Operators
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::UniRx;
     using global::UniRx.Operators;
 
@@ -9,6 +10,21 @@ namespace UniRx.Operators
     {
         private class ToObservable : OperatorObserverBase<T, T>
         {
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass2_0
+            {
+                public SingleAssignmentDisposable flag;
+                public IEnumerator<T> e;
+                public ToObservable _003C_003E4__this;
+                public _003C_003Ec__DisplayClass2_0()
+                {
+                }
+
+                internal void _003CRun_003Eb__0(Action self)
+                {
+                }
+            }
+
             private readonly ToObservableObservable<T> parent;
             // TODO(qa-recon): DummyDll omits base constructor call; default arguments satisfy C# without reconstructing behavior.
             public ToObservable(ToObservableObservable<T> parent, IObserver<T> observer, IDisposable cancel) : base(default, default)

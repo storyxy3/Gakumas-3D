@@ -1,5 +1,6 @@
 namespace Uguiss
 {
+    using global::System;
     using global::System.Collections.Generic;
     using global::System.Runtime.CompilerServices;
     using global::System.Text.RegularExpressions;
@@ -184,6 +185,35 @@ namespace Uguiss
 
         private class OperatorToken : Token
         {
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass1_0
+            {
+                public string symbol;
+                public _003C_003Ec__DisplayClass1_0()
+                {
+                }
+
+                internal bool _003CFind_003Eb__0(OperatorToken x)
+                {
+                    return default(bool);
+                }
+            }
+
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass1_1
+            {
+                public ArityType arity;
+                public _003C_003Ec__DisplayClass1_0 CS_0024_003C_003E8__locals1;
+                public _003C_003Ec__DisplayClass1_1()
+                {
+                }
+
+                internal bool _003CFind_003Eb__1(OperatorToken x)
+                {
+                    return default(bool);
+                }
+            }
+
             private static readonly List<OperatorToken> TokenList;
             [CompilerGenerated]
             private string _003CSymbol_003Ek__BackingField;
@@ -317,6 +347,22 @@ namespace Uguiss
 
         private class LiteralToken : OperandToken
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static MatchEvaluator _003C_003E9__8_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal string _003CTryParseString_003Eb__8_0(Match match)
+                {
+                    return null;
+                }
+            }
+
             [CompilerGenerated]
             private Literal _003CLiteral_003Ek__BackingField;
             private static readonly Regex EscapeReplaceRegex;
@@ -418,6 +464,34 @@ namespace Uguiss
             }
 
             public VariableToken()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass11_0
+        {
+            public Expression _003C_003E4__this;
+            public Stack<Literal> stack;
+            public _003C_003Ec__DisplayClass11_0()
+            {
+            }
+
+            internal void _003CEvaluate_003Eb__0(Token token)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public Stack<Token> stack;
+            public List<Token> outputs;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal void _003CParse_003Eb__0(Token token)
             {
             }
         }

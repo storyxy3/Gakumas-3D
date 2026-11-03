@@ -72,6 +72,34 @@ namespace Octo
             }
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass97_0
+        {
+            public DataManager dataManager;
+            public int revision;
+            public Action<DownloadError> onComplete;
+            public _003C_003Ec__DisplayClass97_0()
+            {
+            }
+
+            internal void _003CStartDbUpdate_003Eb__0(byte[] data, Error err)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass98_0
+        {
+            public Action<bool, int, DownloadError> onComplete;
+            public _003C_003Ec__DisplayClass98_0()
+            {
+            }
+
+            internal void _003CIsLatestDb_003Eb__0(int serverRevision, Error err)
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CLoadAssetBundleAsync_003Ed__128 : IAsyncStateMachine

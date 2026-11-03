@@ -157,6 +157,19 @@ namespace Uguiss
             }
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass27_0
+        {
+            public Dictionary<MemberInfo, ParameterAttribute> parameterMap;
+            public _003C_003Ec__DisplayClass27_0()
+            {
+            }
+
+            internal void _003CGetParameterMap_003Eb__0(MemberInfo member)
+            {
+            }
+        }
+
         [OptionalParameter("GroupLength", "", HideInInspector = true)]
         internal FloatParameter groupLength;
         private static readonly Dictionary<Type, Dictionary<MemberInfo, ParameterAttribute>> ParameterCache;

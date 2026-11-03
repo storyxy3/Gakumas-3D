@@ -2,6 +2,7 @@ namespace Qua.UI
 {
     using global::System.Collections.Generic;
     using global::System.Runtime.CompilerServices;
+    using global::System.Text;
     using global::System.Text.RegularExpressions;
     using global::Qua.UI;
     using global::TMPro;
@@ -19,6 +20,43 @@ namespace Qua.UI
             public int rubyEndIndex;
             public RubyInfo()
             {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass54_0
+        {
+            public int startIndex;
+            public int endIndex;
+            public _003C_003Ec__DisplayClass54_0()
+            {
+            }
+
+            internal bool _003CGetTextRect_003Eb__0(TMP_CharacterInfo x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CGetTextRect_003Eb__1(TMP_CharacterInfo x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass56_0
+        {
+            public int targetOffset;
+            public int rubyOffset;
+            public TextMeshProUGUIRuby _003C_003E4__this;
+            public StringBuilder rubyBuilder;
+            public _003C_003Ec__DisplayClass56_0()
+            {
+            }
+
+            internal string _003CUpdateText_003Eb__0(Match match)
+            {
+                return null;
             }
         }
 

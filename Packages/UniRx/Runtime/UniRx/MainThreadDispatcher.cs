@@ -18,6 +18,34 @@ namespace UniRx
             All
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<Exception> _003C_003E9__52_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__52_0(Exception ex)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass6_0
+        {
+            public IEnumerator routine;
+            public _003C_003Ec__DisplayClass6_0()
+            {
+            }
+
+            internal void _003CSendStartCoroutine_003Eb__0(object _)
+            {
+            }
+        }
+
         [CompilerGenerated]
         private sealed class _003CRunEndOfFrameMicroCoroutine_003Ed__33 : IEnumerator<object>, IEnumerator, IDisposable
         {
@@ -326,6 +354,21 @@ namespace UniRx
         }
 
         public MainThreadDispatcher()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CAwake_003Eb__30_0(Exception ex)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CAwake_003Eb__30_1(Exception ex)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CAwake_003Eb__30_2(Exception ex)
         {
         }
     }

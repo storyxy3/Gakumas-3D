@@ -1,9 +1,25 @@
 namespace Campus.Common
 {
+    using global::System.Runtime.CompilerServices;
+    using global::Campus.Common;
     using global::DG.Tweening;
 
     public struct UnitBezier
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public UnitBezier bezier;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal float _003CToEaseFunction_003Eb__0(float time, float duration, float overshootOrAmplitude, float period)
+            {
+                return default(float);
+            }
+        }
+
         private double _ax;
         private double _bx;
         private double _cx;

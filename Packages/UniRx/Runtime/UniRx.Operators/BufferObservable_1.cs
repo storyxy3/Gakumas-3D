@@ -2,6 +2,7 @@ namespace UniRx.Operators
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::UniRx;
     using global::UniRx.Operators;
 
@@ -113,6 +114,21 @@ namespace UniRx.Operators
 
         private class BufferTS : OperatorObserverBase<T, IList<T>>
         {
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass9_0
+            {
+                public BufferTS _003C_003E4__this;
+                public bool isShift;
+                public bool isSpan;
+                public _003C_003Ec__DisplayClass9_0()
+                {
+                }
+
+                internal void _003CCreateTimer_003Eb__0()
+                {
+                }
+            }
+
             private readonly BufferObservable<T> parent;
             private readonly object gate;
             private Queue<IList<T>> q;
@@ -149,6 +165,24 @@ namespace UniRx.Operators
 
         private class BufferTC : OperatorObserverBase<T, IList<T>>
         {
+            [CompilerGenerated]
+            private sealed class _003C_003Ec__DisplayClass8_0
+            {
+                public BufferTC _003C_003E4__this;
+                public long currentTimerId;
+                public _003C_003Ec__DisplayClass8_0()
+                {
+                }
+
+                internal void _003CCreateTimer_003Eb__0()
+                {
+                }
+
+                internal void _003CCreateTimer_003Eb__1(Action<TimeSpan> self)
+                {
+                }
+            }
+
             private static readonly T[] EmptyArray;
             private readonly BufferObservable<T> parent;
             private readonly object gate;

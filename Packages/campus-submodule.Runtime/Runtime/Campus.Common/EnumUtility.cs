@@ -2,6 +2,7 @@ namespace Campus.Common
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
     using global::Campus.Common;
 
@@ -29,6 +30,22 @@ namespace Campus.Common
         private static class CachedEnumValue<T>
             where T : struct, IComparable, IConvertible, IFormattable
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Func<object, object> _003C_003E9__28_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal object _003Cget_ObjectToEnumValue_003Eb__28_0(object value)
+                {
+                    return null;
+                }
+            }
+
             public static readonly T[] Values;
             private static string[] _names;
             private static string[] _lowerNames;

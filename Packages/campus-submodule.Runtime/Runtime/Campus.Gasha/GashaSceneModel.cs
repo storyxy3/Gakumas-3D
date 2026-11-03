@@ -10,6 +10,20 @@ namespace Campus.Gasha
     public class GashaSceneModel
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public string characterId;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal bool _003CGetSequence_003Eb__0(GashaSequenceBase x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
         private Dictionary<GashaId, List<GashaSequenceBase>> _003CSequences_003Ek__BackingField;
         [CompilerGenerated]
         private GashaGlobalEffect _003CGlobalEffect_003Ek__BackingField;

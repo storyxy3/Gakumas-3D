@@ -27,6 +27,40 @@ namespace Campus.Common
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<string, bool> _003C_003E9__21_0;
+            public static Func<string, bool> _003C_003E9__23_0;
+            public static Func<string, bool> _003C_003E9__25_0;
+            public static Func<string, bool> _003C_003E9__30_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003Cget_body_003Eb__21_0(string id)
+            {
+                return default(bool);
+            }
+
+            internal bool _003Cget_face_003Eb__23_0(string id)
+            {
+                return default(bool);
+            }
+
+            internal bool _003Cget_hair_003Eb__25_0(string id)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CGetCharacterId_003Eb__30_0(string x)
+            {
+                return default(bool);
+            }
+        }
+
         [SerializeField]
         private string _uniqueId;
         [SerializeField]

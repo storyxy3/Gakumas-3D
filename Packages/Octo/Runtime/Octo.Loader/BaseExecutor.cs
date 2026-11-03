@@ -12,6 +12,20 @@ namespace Octo.Loader
     internal abstract class BaseExecutor : MonoBehaviour, IExecutor
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass23_0
+        {
+            public string name;
+            public _003C_003Ec__DisplayClass23_0()
+            {
+            }
+
+            internal bool _003CSetTopPriority_003Eb__0(IRequest t)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CExecuteQueue_003Ed__26 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

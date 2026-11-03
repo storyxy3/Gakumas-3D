@@ -10,6 +10,26 @@ namespace Campus.Common
 
     public class UIRendererManager : Singleton<UIRendererManager>
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<UIRenderPassData> _003C_003E9__25_0;
+            public static Action<FinalUIRenderPassData> _003C_003E9__25_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__25_0(UIRenderPassData x)
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__25_1(FinalUIRenderPassData x)
+            {
+            }
+        }
+
         public const int MaxBlurCount = 3;
         private static readonly Comparison<UIRenderPassData> RenderPassSorter;
         private SimpleObjectPool<UIRenderPassData> _renderPassDataPool;

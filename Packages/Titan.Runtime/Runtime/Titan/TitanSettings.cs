@@ -2,12 +2,41 @@ namespace Titan
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::DG.Tweening;
     using global::Titan;
     using global::UnityEngine;
 
     public class TitanSettings : ScriptableObject
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<EaseSetting, int, (EaseSetting x, int i)> _003C_003E9__10_0;
+            public static Func<(EaseSetting x, int i), string> _003C_003E9__10_1;
+            public static Func<EaseSetting, string> _003C_003E9__13_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal (EaseSetting, int) _003Cget_EaseIdToSettings_003Eb__10_0(EaseSetting x, int i)
+            {
+                return default((EaseSetting, int));
+            }
+
+            internal string _003Cget_EaseIdToSettings_003Eb__10_1((EaseSetting x, int i) x)
+            {
+                return null;
+            }
+
+            internal string _003Cget_EaseSettingLabels_003Eb__13_0(EaseSetting x)
+            {
+                return null;
+            }
+        }
+
         private static TitanSettings _instance;
         [SerializeField]
         private EaseSetting[] _easeSettings;

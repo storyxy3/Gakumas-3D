@@ -1,5 +1,6 @@
 namespace Campus.Common.Panorama
 {
+    using global::System;
     using global::System.Diagnostics;
     using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
@@ -18,6 +19,22 @@ namespace Campus.Common.Panorama
             User,
             Live,
             Camera
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<bool> _003C_003E9__29_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CSetEvent_003Eb__29_0()
+            {
+                return default(bool);
+            }
         }
 
         [StructLayout((LayoutKind)3)]
@@ -178,6 +195,18 @@ namespace Campus.Common.Panorama
 
         public PanoramaActorLookAtController()
         {
+        }
+
+        [CompilerGenerated]
+        private LookTargetType _003CSetEvent_003Eb__29_1()
+        {
+            return default(LookTargetType);
+        }
+
+        [CompilerGenerated]
+        private Transform _003CSetEvent_003Eb__29_2()
+        {
+            return null;
         }
     }
 }

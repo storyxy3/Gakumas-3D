@@ -74,6 +74,42 @@ namespace Campus.Common
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<ActorInfo, bool> _003C_003E9__17_0;
+            public static Func<ICampusActorController, int> _003C_003E9__25_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CIsGenerating_003Eb__17_0(ActorInfo actorInfo)
+            {
+                return default(bool);
+            }
+
+            internal int _003CGetFreeActorIndex_003Eb__25_0(ICampusActorController actor)
+            {
+                return default(int);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass18_0
+        {
+            public int index;
+            public _003C_003Ec__DisplayClass18_0()
+            {
+            }
+
+            internal bool _003CIsGenerating_003Eb__0(ActorInfo actorInfo)
+            {
+                return default(bool);
+            }
+        }
+
         [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass19_0
         {
@@ -83,6 +119,20 @@ namespace Campus.Common
             }
 
             internal bool _003CUpdateCacheActorAsync_003Eb__0()
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass22_0
+        {
+            public string uniqueId;
+            public _003C_003Ec__DisplayClass22_0()
+            {
+            }
+
+            internal bool _003CExistActor_003Eb__0(CampusActorController x)
             {
                 return default(bool);
             }
@@ -257,6 +307,11 @@ namespace Campus.Common
         }
 
         public CampusActorManager()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003COnEnable_003Eb__13_0(ActorInfo actorInfo)
         {
         }
     }

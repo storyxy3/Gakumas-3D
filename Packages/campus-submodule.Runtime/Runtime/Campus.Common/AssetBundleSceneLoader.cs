@@ -295,5 +295,16 @@ namespace Campus.Common
         public AssetBundleSceneLoader()
         {
         }
+
+        [CompilerGenerated]
+        private bool _003CLoadSceneFromLoadedAssetBundleAsync_003Eb__16_0()
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private void _003COnDestroy_003Eb__24_0()
+        {
+        }
     }
 }

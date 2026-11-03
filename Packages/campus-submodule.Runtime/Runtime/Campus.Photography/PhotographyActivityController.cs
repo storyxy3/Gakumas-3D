@@ -198,5 +198,10 @@ namespace Campus.Photography
         public PhotographyActivityController()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CBind_003Eb__15_0(bool isHit)
+        {
+        }
     }
 }

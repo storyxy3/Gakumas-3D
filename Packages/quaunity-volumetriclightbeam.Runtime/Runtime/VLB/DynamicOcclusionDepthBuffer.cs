@@ -1,5 +1,7 @@
 namespace VLB
 {
+    using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::VLB;
 
@@ -7,6 +9,21 @@ namespace VLB
     [HelpURL("http://saladgamer.com/vlb-doc/comp-dynocclusion-sd-depthbuffer/")]
     public class DynamicOcclusionDepthBuffer : DynamicOcclusionAbstractBase
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<Camera> _003C_003E9__15_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003CInstantiateOrActivateDepthCamera_003Eb__15_0(Camera cam)
+            {
+            }
+        }
+
         public new const string ClassName = "DynamicOcclusionDepthBuffer";
         public LayerMask layerMask;
         public bool useOcclusionCulling;

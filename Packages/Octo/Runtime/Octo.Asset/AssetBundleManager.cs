@@ -150,6 +150,33 @@ namespace Octo.Asset
         }
 
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass19_0
+        {
+            public AssetBundleManager _003C_003E4__this;
+            public int loadRequestID;
+            public _003C_003Ec__DisplayClass19_0()
+            {
+            }
+
+            internal void _003CCancelLoadingAssetBundle_003Eb__0(RequestRollBack rBack)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass20_0
+        {
+            public bool immediateExecute;
+            public _003C_003Ec__DisplayClass20_0()
+            {
+            }
+
+            internal void _003CSetRequestTopPriority_003Eb__0(RequestRollBack rBack)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass28_0
         {
             public AssetBundleManager _003C_003E4__this;

@@ -4,17 +4,17 @@ using global::System.Runtime.InteropServices;
 [CompilerGenerated]
 internal sealed class _003CPrivateImplementationDetails_003E
 {
-    [StructLayout((LayoutKind)2)]
+    [StructLayout((LayoutKind)2, Size = 12)]
     internal struct __StaticArrayInitTypeSize_003D12
     {
     }
 
-    [StructLayout((LayoutKind)2)]
+    [StructLayout((LayoutKind)2, Size = 16)]
     internal struct __StaticArrayInitTypeSize_003D16
     {
     }
 
-    [StructLayout((LayoutKind)2)]
+    [StructLayout((LayoutKind)2, Size = 144)]
     internal struct __StaticArrayInitTypeSize_003D144
     {
     }

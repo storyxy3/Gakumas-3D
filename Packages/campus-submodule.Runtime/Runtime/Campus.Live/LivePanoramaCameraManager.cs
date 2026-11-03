@@ -19,6 +19,108 @@ namespace Campus.Live
     [SingletonResourcePath("LivePanoramaCameraManager", true)]
     public class LivePanoramaCameraManager : Singleton<LivePanoramaCameraManager>
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<bool> _003C_003E9__41_0;
+            public static Action<SwitchPanoramaCamera> _003C_003E9__42_0;
+            public static Action<PanoramaActorLookAtController> _003C_003E9__54_0;
+            public static Func<PanoramaActorLookAtController, bool> _003C_003E9__55_0;
+            public static Func<SwitchPanoramaCamera, IPanoramaMoveCamera> _003C_003E9__56_0;
+            public static Func<SwitchPanoramaCamera, IPanoramaMoveCamera> _003C_003E9__58_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003CSetEvent_003Eb__41_0(bool _)
+            {
+            }
+
+            internal void _003CLateUpdate_003Eb__42_0(SwitchPanoramaCamera x)
+            {
+            }
+
+            internal void _003CSetShouldLookAtEnable_003Eb__54_0(PanoramaActorLookAtController x)
+            {
+            }
+
+            internal bool _003CCanChangeActorLookStatus_003Eb__55_0(PanoramaActorLookAtController x)
+            {
+                return default(bool);
+            }
+
+            internal IPanoramaMoveCamera _003CSetFocusTarget_003Eb__56_0(SwitchPanoramaCamera x)
+            {
+                return null;
+            }
+
+            internal IPanoramaMoveCamera _003CSetAutoLookTargetEnable_003Eb__58_0(SwitchPanoramaCamera x)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass54_0
+        {
+            public bool isEnable;
+            public _003C_003Ec__DisplayClass54_0()
+            {
+            }
+
+            internal void _003CSetShouldLookAtEnable_003Eb__1(PanoramaActorLookAtController x)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass56_0
+        {
+            public ICampusActorController actorController;
+            public _003C_003Ec__DisplayClass56_0()
+            {
+            }
+
+            internal void _003CSetFocusTarget_003Eb__1(IPanoramaMoveCamera x)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass57_0
+        {
+            public LivePanoramaCameraManager _003C_003E4__this;
+            public int index;
+            public _003C_003Ec__DisplayClass57_0()
+            {
+            }
+
+            internal bool _003CSetFocusTargetIndex_003Eb__0(PanoramaActorLookAtController x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CSetFocusTargetIndex_003Eb__1(PanoramaActorLookAtController x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass58_0
+        {
+            public bool isEnable;
+            public _003C_003Ec__DisplayClass58_0()
+            {
+            }
+
+            internal void _003CSetAutoLookTargetEnable_003Eb__1(IPanoramaMoveCamera x)
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CInitializeAsync_003Ed__40 : IAsyncStateMachine

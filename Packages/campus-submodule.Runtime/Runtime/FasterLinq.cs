@@ -1,6 +1,7 @@
 using global::System;
 using global::System.Collections;
 using global::System.Collections.Generic;
+using global::System.Runtime.CompilerServices;
 
 public static class FasterLinq
 {
@@ -69,6 +70,21 @@ public static class FasterLinq
         IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
             return null;
+        }
+    }
+
+    [CompilerGenerated]
+    private sealed class _003C_003Ec__DisplayClass4_0<TSource, TMiddle, TResult>
+    {
+        public Func<TMiddle, TResult> selector2;
+        public Func<TSource, TMiddle> selector1;
+        public _003C_003Ec__DisplayClass4_0()
+        {
+        }
+
+        internal TResult _003CCombineSelectors_003Eb__0(TSource x)
+        {
+            return default(TResult);
         }
     }
 

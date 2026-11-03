@@ -1,9 +1,58 @@
 namespace Uguiss.Timeline
 {
+    using global::System.Runtime.CompilerServices;
     using global::Uguiss.Timeline;
 
     public static class Easing
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass54_0
+        {
+            public _003C_003Ec__DisplayClass54_0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass57_0
+        {
+            public _003C_003Ec__DisplayClass57_0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass60_0
+        {
+            public _003C_003Ec__DisplayClass60_0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass63_0
+        {
+            public _003C_003Ec__DisplayClass63_0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass66_0
+        {
+            public _003C_003Ec__DisplayClass66_0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass69_0
+        {
+            public _003C_003Ec__DisplayClass69_0()
+            {
+            }
+        }
+
         private static EasingFunction _linear;
         private static EasingFunction _inSine;
         private static EasingFunction _outSine;

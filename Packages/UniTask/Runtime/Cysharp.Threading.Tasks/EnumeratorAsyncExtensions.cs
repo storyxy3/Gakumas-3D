@@ -16,6 +16,21 @@ namespace Cysharp.Threading.Tasks
     {
         private sealed class EnumeratorPromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<EnumeratorPromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+            }
+
             [CompilerGenerated]
             private sealed class _003CConsumeEnumerator_003Ed__19 : IEnumerator<object>, IEnumerator, IDisposable
             {

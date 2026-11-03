@@ -1,6 +1,7 @@
 namespace Campus.Gasha.VolumetricLight
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Gasha;
     using global::Campus.Gasha.VolumetricLight;
     using global::JetBrains.Annotations;
@@ -27,6 +28,20 @@ namespace Campus.Gasha.VolumetricLight
             public PlayableDirector director;
             public RarityTimelineKeyValue()
             {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass13_0
+        {
+            public RarityType rarityType;
+            public _003C_003Ec__DisplayClass13_0()
+            {
+            }
+
+            internal bool _003CGetRarityDirector_003Eb__0(RarityTimelineKeyValue x)
+            {
+                return default(bool);
             }
         }
 

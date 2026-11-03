@@ -187,5 +187,11 @@ namespace Campus.Gasha.Sequences
         public CardSupportSequence()
         {
         }
+
+        [CompilerGenerated]
+        private bool _003COnClicked_003Eb__31_0()
+        {
+            return default(bool);
+        }
     }
 }

@@ -1,5 +1,6 @@
 namespace Campus.Gasha.Sequences
 {
+    using global::System;
     using global::System.Diagnostics;
     using global::System.Runtime.CompilerServices;
     using global::System.Runtime.InteropServices;
@@ -14,6 +15,7 @@ namespace Campus.Gasha.Sequences
     using global::JetBrains.Annotations;
     using global::UnityEngine;
     using global::UnityEngine.Playables;
+    using global::UnityEngine.Timeline;
 
     [RequireComponent(typeof(PlayableDirector))]
     public class GashaSequence : GashaSequenceBase, INotificationReceiver, ISequenceDirector, IGashaFadeOut, IGashaFreeze
@@ -28,6 +30,22 @@ namespace Campus.Gasha.Sequences
             public long pickupBgmStartTimeMs;
             public GashaSequenceBindParam()
             {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<IMarker, bool> _003C_003E9__32_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CGetFreezeTime_003Eb__32_0(IMarker x)
+            {
+                return default(bool);
             }
         }
 

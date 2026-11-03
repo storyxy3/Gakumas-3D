@@ -11,6 +11,55 @@ namespace Octo.Caching
 
     internal class OctoBaseCaching
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Comparison<DirectoryInfo> _003C_003E9__38_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003CPrepareDirectory_003Eb__38_0(DirectoryInfo a, DirectoryInfo b)
+            {
+                return default(int);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass61_0
+        {
+            public DateTime thres;
+            public bool breakLoop;
+            public OctoBaseCaching _003C_003E4__this;
+            public int count;
+            public _003C_003Ec__DisplayClass61_0()
+            {
+            }
+
+            internal bool _003CDeleteExpiredCaches_003Eb__0(Storage storage)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass62_0
+        {
+            public OctoBaseCaching _003C_003E4__this;
+            public long additionalSpace;
+            public bool breakLoop;
+            public _003C_003Ec__DisplayClass62_0()
+            {
+            }
+
+            internal bool _003CAutoDelete_003Eb__0(Storage storage)
+            {
+                return default(bool);
+            }
+        }
+
         private static readonly string Tag;
         [CompilerGenerated]
         private Action OnWarmupCompleted;

@@ -46,5 +46,10 @@ namespace Qua.UI
         public UICurveHandle()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CInitialize_003Eb__8_0()
+        {
+        }
     }
 }

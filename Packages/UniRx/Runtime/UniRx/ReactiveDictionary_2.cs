@@ -3,6 +3,7 @@ namespace UniRx
     using global::System;
     using global::System.Collections;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::System.Runtime.Serialization;
     using global::UniRx;
     using global::UnityEngine;
@@ -256,6 +257,12 @@ namespace UniRx
         IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator()
         {
             return null;
+        }
+
+        [CompilerGenerated]
+        private int _003CObserveCountChanged_003Eb__25_0()
+        {
+            return default(int);
         }
     }
 }

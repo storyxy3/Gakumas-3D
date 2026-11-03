@@ -32,6 +32,45 @@ namespace Campus.Common.Octo
             TempDev
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<Stream> _003C_003E9__1_0;
+            public static GetResourceExtensionHandler _003C_003E9__33_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003COnInitialize_003Eb__1_0(Stream stream)
+            {
+            }
+
+            internal string _003CSetupAsync_003Eb__33_0(string name, string extension)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass33_0
+        {
+            public UniTaskCompletionSource<DownloadError> promise;
+            public CancellationToken ct;
+            public _003C_003Ec__DisplayClass33_0()
+            {
+            }
+
+            internal void _003CSetupAsync_003Eb__1(DownloadError error)
+            {
+            }
+
+            internal void _003CSetupAsync_003Eb__2()
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CSetupAsync_003Ed__33 : IAsyncStateMachine

@@ -58,6 +58,40 @@ namespace Qua.UI
         }
 
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass16_0
+        {
+            [StructLayout((LayoutKind)3)]
+            private struct _003C_003CCloseAllDialogAsync_003Eb__0_003Ed : IAsyncStateMachine
+            {
+                public int _003C_003E1__state;
+                public AsyncUniTaskMethodBuilder _003C_003Et__builder;
+                public _003C_003Ec__DisplayClass16_0 _003C_003E4__this;
+                public DialogPresenterBase dialog;
+                private UniTask.Awaiter _003C_003Eu__1;
+                void global::System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext()
+                {
+                }
+
+                [DebuggerHidden]
+                void global::System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+                {
+                }
+            }
+
+            public DialogManagerBase<TDialogId> _003C_003E4__this;
+            public CancellationToken ct;
+            public _003C_003Ec__DisplayClass16_0()
+            {
+            }
+
+            [AsyncStateMachine(typeof(DialogManagerBase<>._003C_003Ec__DisplayClass16_0._003C_003CCloseAllDialogAsync_003Eb__0_003Ed))]
+            internal UniTask _003CCloseAllDialogAsync_003Eb__0(DialogPresenterBase dialog)
+            {
+                return default(UniTask);
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass17_0
         {
             public DialogPresenterBase dialog;
@@ -73,6 +107,20 @@ namespace Qua.UI
             internal bool _003CSafeCloseDialogAsync_003Eb__1()
             {
                 return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass19_0
+        {
+            public DialogManagerBase<TDialogId> _003C_003E4__this;
+            public DialogPresenterBase dialog;
+            public _003C_003Ec__DisplayClass19_0()
+            {
+            }
+
+            internal void _003CAddDialog_003Eb__0()
+            {
             }
         }
 

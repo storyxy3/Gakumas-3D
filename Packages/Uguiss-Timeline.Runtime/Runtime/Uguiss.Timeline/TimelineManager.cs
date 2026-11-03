@@ -85,6 +85,59 @@ namespace Uguiss.Timeline
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<TimelineClip, double> _003C_003E9__10_0;
+            public static Func<KeyValuePair<string, List<AbstractPlayableCommand>>, int> _003C_003E9__51_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal double _003COffsetDisabledBranch_003Eb__10_0(TimelineClip x)
+            {
+                return default(double);
+            }
+
+            internal int _003CCreateGraphInternal_003Eb__51_0(KeyValuePair<string, List<AbstractPlayableCommand>> x)
+            {
+                return default(int);
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__49<T>
+            where T : AbstractPlayableCommand
+        {
+            public static readonly _003C_003Ec__49<T> _003C_003E9;
+            public static Predicate<AbstractPlayableCommand> _003C_003E9__49_0;
+            public _003C_003Ec__49()
+            {
+            }
+
+            internal bool _003CCommandExists_003Eb__49_0(AbstractPlayableCommand x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass57_0
+        {
+            public string mixerId;
+            public _003C_003Ec__DisplayClass57_0()
+            {
+            }
+
+            internal bool _003CUpdateMixerAsync_003Eb__0(AbstractPlayableCommand x)
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CUpdateGraphAsync_003Ed__55 : IAsyncStateMachine

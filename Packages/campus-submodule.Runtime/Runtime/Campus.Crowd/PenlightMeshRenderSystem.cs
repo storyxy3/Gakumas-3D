@@ -9,6 +9,21 @@ namespace Campus.Crowd
 
     public class PenlightMeshRenderSystem : IDisposable
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<GraphicsBuffer> _003C_003E9__26_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003CDispose_003Eb__26_0(GraphicsBuffer b)
+            {
+            }
+        }
+
         private static readonly string UpdatePenlightKernel;
         private static readonly int TargetPenlightTypeID;
         private static readonly int PenlightInfoBytesBufferID;

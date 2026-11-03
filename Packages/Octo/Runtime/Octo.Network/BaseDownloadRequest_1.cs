@@ -191,5 +191,10 @@ namespace Octo.Network
         protected void CallProgressUpdate()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CFinish_003Eb__28_0()
+        {
+        }
     }
 }

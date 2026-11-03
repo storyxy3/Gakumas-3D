@@ -14,10 +14,77 @@ namespace Qua.UI
         [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass2_0
         {
+            private sealed class _003C_003CGetSortedTargetCellTable_003Eg__GetOtherCells_007C0_003Ed : IEnumerable<TCellPresenter>, IEnumerable, IEnumerator<TCellPresenter>, IEnumerator, IDisposable
+            {
+                private int _003C_003E1__state;
+                private TCellPresenter _003C_003E2__current;
+                private int _003C_003El__initialThreadId;
+                private IEnumerator<TCellPresenter> e;
+                public IEnumerator<TCellPresenter> _003C_003E3__e;
+                public _003C_003Ec__DisplayClass2_0 _003C_003E4__this;
+                private TCellPresenter _003Ccell_003E5__2;
+                private int _003Cposition_003E5__3;
+                TCellPresenter System.Collections.Generic.IEnumerator<TCellPresenter>.Current
+                {
+                    [DebuggerHidden]
+                    get
+                    {
+                        return null;
+                    }
+                }
+
+                object System.Collections.IEnumerator.Current
+                {
+                    [DebuggerHidden]
+                    get
+                    {
+                        return null;
+                    }
+                }
+
+                [DebuggerHidden]
+                public _003C_003CGetSortedTargetCellTable_003Eg__GetOtherCells_007C0_003Ed(int _003C_003E1__state)
+                {
+                }
+
+                [DebuggerHidden]
+                void System.IDisposable.Dispose()
+                {
+                }
+
+                bool global::System.Collections.IEnumerator.MoveNext()
+                {
+                    return default(bool);
+                }
+
+                [DebuggerHidden]
+                void System.Collections.IEnumerator.Reset()
+                {
+                }
+
+                [DebuggerHidden]
+                IEnumerator<TCellPresenter> System.Collections.Generic.IEnumerable<TCellPresenter>.GetEnumerator()
+                {
+                    return null;
+                }
+
+                [DebuggerHidden]
+                IEnumerator System.Collections.IEnumerable.GetEnumerator()
+                {
+                    return null;
+                }
+            }
+
             public GridListPresenterBase<TView, TCellPresenter, TItemModel> _003C_003E4__this;
             public bool hasNext;
             public _003C_003Ec__DisplayClass2_0()
             {
+            }
+
+            [IteratorStateMachine(typeof(GridListPresenterBase<,, >._003C_003Ec__DisplayClass2_0._003C_003CGetSortedTargetCellTable_003Eg__GetOtherCells_007C0_003Ed))]
+            internal IEnumerable<TCellPresenter> _003CGetSortedTargetCellTable_003Eg__GetOtherCells_007C0(IEnumerator<TCellPresenter> e)
+            {
+                return null;
             }
         }
 

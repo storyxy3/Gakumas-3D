@@ -1,12 +1,55 @@
 namespace VL.Animation
 {
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::UnityEngine.Playables;
     using global::VL.Animation;
 
     public abstract class AnimationPlayerBase : MonoBehaviour, IAnimationPlayer
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public int order;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal bool _003CInsertRootPlayable_003Eb__0(KeyValuePair<int, RootPlayableData> pair)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass13_0
+        {
+            public int order;
+            public _003C_003Ec__DisplayClass13_0()
+            {
+            }
+
+            internal bool _003CGetRootPlayable_003Eb__0(KeyValuePair<int, RootPlayableData> x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass14_0
+        {
+            public int order;
+            public _003C_003Ec__DisplayClass14_0()
+            {
+            }
+
+            internal bool _003CRemoveRootPlayable_003Eb__0(KeyValuePair<int, RootPlayableData> pair)
+            {
+                return default(bool);
+            }
+        }
+
         [SerializeField]
         private Animator _animator;
         private PlayableGraph _graph;

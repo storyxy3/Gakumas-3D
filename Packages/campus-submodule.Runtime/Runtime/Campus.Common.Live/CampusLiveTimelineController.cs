@@ -2,6 +2,7 @@ namespace Campus.Common.Live
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::Campus.Common.Live;
     using global::Campus.Common.Panorama;
@@ -48,6 +49,235 @@ namespace Campus.Common.Live
             public GameObject fieldConstraintTarget;
             public LivePropSetting()
             {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<CampusDirectorControlTrack, IEnumerable<TimelineClip>> _003C_003E9__109_0;
+            public static Func<TimelineClip, CampusDirectorControlAsset> _003C_003E9__109_1;
+            public static Func<CampusDirectorControlAsset, bool> _003C_003E9__109_2;
+            public static Func<PlayableDirector, PlayableAsset> _003C_003E9__112_0;
+            public static Func<TimelineAsset, IEnumerable<TrackAsset>> _003C_003E9__112_1;
+            public static Func<LiveProp, IEnumerable<LivePropSetting>> _003C_003E9__113_1;
+            public static Func<LivePropSetting, GameObject> _003C_003E9__113_2;
+            public static Func<LiveProp, IEnumerable<LivePropSetting>> _003C_003E9__114_1;
+            public static Func<LivePropSetting, GameObject> _003C_003E9__114_2;
+            public static Func<LiveProp, IEnumerable<LivePropSetting>> _003C_003E9__115_1;
+            public static Func<GroupTrack, bool> _003C_003E9__116_0;
+            public static Func<MuteTrackDisableSetting, bool> _003C_003E9__120_0;
+            public static Func<MuteTrackDisableSetting, string> _003C_003E9__120_1;
+            public static Func<MuteTrackDisableSetting, bool> _003C_003E9__120_2;
+            public static Func<TimelineClip, double> _003C_003E9__129_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal IEnumerable<TimelineClip> _003Cget_ControlDirectors_003Eb__109_0(CampusDirectorControlTrack x)
+            {
+                return null;
+            }
+
+            internal CampusDirectorControlAsset _003Cget_ControlDirectors_003Eb__109_1(TimelineClip x)
+            {
+                return null;
+            }
+
+            internal bool _003Cget_ControlDirectors_003Eb__109_2(CampusDirectorControlAsset x)
+            {
+                return default(bool);
+            }
+
+            internal PlayableAsset _003Cget_ControlledRootTracks_003Eb__112_0(PlayableDirector x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<TrackAsset> _003Cget_ControlledRootTracks_003Eb__112_1(TimelineAsset x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<LivePropSetting> _003CGetProps_003Eb__113_1(LiveProp x)
+            {
+                return null;
+            }
+
+            internal GameObject _003CGetProps_003Eb__113_2(LivePropSetting x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<LivePropSetting> _003CGetFieldConstraintTargets_003Eb__114_1(LiveProp x)
+            {
+                return null;
+            }
+
+            internal GameObject _003CGetFieldConstraintTargets_003Eb__114_2(LivePropSetting x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<LivePropSetting> _003CGetPropAndFieldConstraintTargetPairs_003Eb__115_1(LiveProp x)
+            {
+                return null;
+            }
+
+            internal bool _003CHasCharacterTrack_003Eb__116_0(GroupTrack x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CApplyMuteFromTrackDisableSettings_003Eb__120_0(MuteTrackDisableSetting x)
+            {
+                return default(bool);
+            }
+
+            internal string _003CApplyMuteFromTrackDisableSettings_003Eb__120_1(MuteTrackDisableSetting x)
+            {
+                return null;
+            }
+
+            internal bool _003CApplyMuteFromTrackDisableSettings_003Eb__120_2(MuteTrackDisableSetting x)
+            {
+                return default(bool);
+            }
+
+            internal double _003CApplyOverrideMotionTracks_003Eb__129_1(TimelineClip x)
+            {
+                return default(double);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass113_0
+        {
+            public int actorIndex;
+            public _003C_003Ec__DisplayClass113_0()
+            {
+            }
+
+            internal bool _003CGetProps_003Eb__0(LiveProp x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass114_0
+        {
+            public int actorIndex;
+            public _003C_003Ec__DisplayClass114_0()
+            {
+            }
+
+            internal bool _003CGetFieldConstraintTargets_003Eb__0(LiveProp x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass115_0
+        {
+            public int actorIndex;
+            public _003C_003Ec__DisplayClass115_0()
+            {
+            }
+
+            internal bool _003CGetPropAndFieldConstraintTargetPairs_003Eb__0(LiveProp x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass123_0
+        {
+            public CampusLiveTimelineController _003C_003E4__this;
+            public TimelineAsset masterTimeline;
+            public _003C_003Ec__DisplayClass123_0()
+            {
+            }
+
+            internal TrackAsset _003CCollectTracksResolvedByPaths_003Eb__0(string raw)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass124_0
+        {
+            public string[] segments;
+            public string lastSegment;
+            public _003C_003Ec__DisplayClass124_0()
+            {
+            }
+
+            internal bool _003CResolveTracksByPathSegments_003Eb__0(TrackAsset t)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass124_1
+        {
+            public int i;
+            public _003C_003Ec__DisplayClass124_0 CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass124_1()
+            {
+            }
+
+            internal bool _003CResolveTracksByPathSegments_003Eb__1(TrackAsset t)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass126_0
+        {
+            public TrackAsset track;
+            public _003C_003Ec__DisplayClass126_0()
+            {
+            }
+
+            internal bool _003CDisableTrackBinding_003Eb__0(PlayableDirector x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass129_0
+        {
+            public OverrideActorMotionTrack trackOverride;
+            public _003C_003Ec__DisplayClass129_0()
+            {
+            }
+
+            internal bool _003CApplyOverrideMotionTracks_003Eb__0(TrackAsset x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass129_1
+        {
+            public OverrideActorMotionClip clipOverride;
+            public _003C_003Ec__DisplayClass129_1()
+            {
+            }
+
+            internal bool _003CApplyOverrideMotionTracks_003Eb__2(TimelineClip c)
+            {
+                return default(bool);
             }
         }
 
@@ -494,6 +724,12 @@ namespace Campus.Common.Live
 
         public CampusLiveTimelineController()
         {
+        }
+
+        [CompilerGenerated]
+        private PlayableDirector _003Cget_ControlDirectors_003Eb__109_3(CampusDirectorControlAsset x)
+        {
+            return null;
         }
     }
 }

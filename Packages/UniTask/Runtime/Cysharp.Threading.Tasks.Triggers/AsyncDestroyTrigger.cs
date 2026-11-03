@@ -1,5 +1,7 @@
 namespace Cysharp.Threading.Tasks.Triggers
 {
+    using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::System.Threading;
     using global::Cysharp.Threading.Tasks;
     using global::Cysharp.Threading.Tasks.Triggers;
@@ -18,6 +20,21 @@ namespace Cysharp.Threading.Tasks.Triggers
             public bool MoveNext()
             {
                 return default(bool);
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<object> _003C_003E9__7_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003COnDestroyAsync_003Eb__7_0(object state)
+            {
             }
         }
 

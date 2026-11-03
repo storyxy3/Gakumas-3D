@@ -14,6 +14,48 @@ namespace Octo.Loader
     internal sealed class Downloader : BaseExecutor
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass10_0
+        {
+            public Action<byte[], Error> onComplete;
+            public ulong lastProgress;
+            public Action<ulong, ulong> onProgress;
+            public _003C_003Ec__DisplayClass10_0()
+            {
+            }
+
+            internal void _003CRequest_003Eb__0(DownloadHandlerBuffer bufferHandler, Error err)
+            {
+            }
+
+            internal void _003CRequest_003Eb__1(ulong received, ulong total)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass13_0
+        {
+            public Action<Error> onComplete;
+            public string path;
+            public Downloader _003C_003E4__this;
+            public string url;
+            public string md5;
+            public ulong lastProgress;
+            public Action<ulong, ulong> onProgress;
+            public _003C_003Ec__DisplayClass13_0()
+            {
+            }
+
+            internal void _003CRequestAndSave_003Eb__0(IDownloadResult fileHandler, Error err)
+            {
+            }
+
+            internal void _003CRequestAndSave_003Eb__1(ulong received, ulong total)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CRequestAfterCachingIsReady_003Ed__9 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

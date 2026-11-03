@@ -1,6 +1,7 @@
 namespace VL.Rendering
 {
     using global::System.Runtime.CompilerServices;
+    using global::System.Runtime.InteropServices;
     using global::UnityEngine;
     using global::UnityEngine.Rendering;
     using global::UnityEngine.Rendering.Universal;
@@ -27,6 +28,15 @@ namespace VL.Rendering
         }
 
         public delegate Bounds GetBoundsEvent(Camera camera, float far, int resolution);
+        [StructLayout((LayoutKind)3)]
+        [CompilerGenerated]
+        private struct _003C_003Ec__DisplayClass33_0
+        {
+            public CameraPlanes cullingPlane;
+            public int actorCount;
+            public Bounds bounds;
+        }
+
         [CompilerGenerated]
         private static GetBoundsEvent m_getBounds;
         public static readonly string _ACTOR_SHADOWS;
@@ -113,6 +123,11 @@ namespace VL.Rendering
         }
 
         private void SetupActorShadowReceiverConstants(CommandBuffer cmd)
+        {
+        }
+
+        [CompilerGenerated]
+        private static void _003CUpdateShadowData_003Eg__UpdateBounds_007C33_0(Bounds b, ref _003C_003Ec__DisplayClass33_0 P_1)
         {
         }
     }

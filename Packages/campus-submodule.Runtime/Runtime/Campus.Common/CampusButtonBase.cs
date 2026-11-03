@@ -15,6 +15,42 @@ namespace Campus.Common
     [RequireComponent(typeof(LongTapGesture))]
     public abstract class CampusButtonBase : ButtonBase
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass42_0
+        {
+            public UniTaskCompletionSource completionSource;
+            public CampusButtonBase _003C_003E4__this;
+            public _003C_003Ec__DisplayClass42_0()
+            {
+            }
+
+            internal void _003CWaitClickAsync_003Eg__OnClicked_007C0()
+            {
+            }
+
+            internal void _003CWaitClickAsync_003Eb__1()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass43_0
+        {
+            public UniTaskCompletionSource completionSource;
+            public CampusButtonBase _003C_003E4__this;
+            public _003C_003Ec__DisplayClass43_0()
+            {
+            }
+
+            internal void _003CWaitPressAsync_003Eg__OnPressed_007C0(bool isPress)
+            {
+            }
+
+            internal void _003CWaitPressAsync_003Eb__1()
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CDisabledTransitionAsync_003Ed__38 : IAsyncStateMachine

@@ -12,6 +12,56 @@ namespace Octo.Data
 
     internal class Item
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<Item, int> _003C_003E9__36_1;
+            public static Func<Item, string> _003C_003E9__37_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003CWrite_003Eb__36_1(Item dep)
+            {
+                return default(int);
+            }
+
+            internal string _003CToString_003Eb__37_0(Item d)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass32_0
+        {
+            public IList<string> tagNames;
+            public _003C_003Ec__DisplayClass32_0()
+            {
+            }
+
+            internal string _003CSetData_003Eb__0(int tagId)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass36_0
+        {
+            public Dictionary<string, int> tagDictionary;
+            public _003C_003Ec__DisplayClass36_0()
+            {
+            }
+
+            internal int _003CWrite_003Eb__0(string tag)
+            {
+                return default(int);
+            }
+        }
+
         [CompilerGenerated]
         private sealed class _003CGetFamily_003Ed__35 : IEnumerable<Item>, IEnumerable, IEnumerator<Item>, IEnumerator, IDisposable
         {

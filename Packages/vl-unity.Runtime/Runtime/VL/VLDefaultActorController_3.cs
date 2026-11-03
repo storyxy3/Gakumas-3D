@@ -1,12 +1,30 @@
 namespace VL
 {
+    using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::VL;
     using global::VL.Core;
 
     public class VLDefaultActorController<TModelParts, TDescriptor, TIDescriptor> : VLActorController<TModelParts, TDescriptor, TIDescriptor> where TModelParts : VLActorModelParts<TDescriptor> where TDescriptor : VLDefaultActorDescriptor, TIDescriptor where TIDescriptor : IVLDefaultActorDescriptor
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<VLActorModelParts, int> _003C_003E9__25_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003CBuildAvatar_003Eb__25_0(VLActorModelParts x)
+            {
+                return default(int);
+            }
+        }
+
         [SerializeField]
         protected Color _color;
         [SerializeField]

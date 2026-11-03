@@ -44,6 +44,184 @@ namespace Campus.Common
             }
         }
 
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<GameObject, bool> _003C_003E9__71_2;
+            public static Func<GameObject, int, (GameObject value, int partsIndex, bool)> _003C_003E9__71_5;
+            public static Func<(GameObject value, int partsIndex, bool), bool> _003C_003E9__71_6;
+            public static Func<(GameObject value, int partsIndex, bool), int> _003C_003E9__71_7;
+            public static Func<CampusActorModelParts, IEnumerable<VLActorExpressionBone>> _003C_003E9__80_0;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationConstraintTransformBone>> _003C_003E9__81_0;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverRotationBone>> _003C_003E9__81_1;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverFrillBone>> _003C_003E9__81_2;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverSkirtBone>> _003C_003E9__81_3;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverHairBone>> _003C_003E9__81_4;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverHumanoidHandBone>> _003C_003E9__81_5;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverHumanoidSleeveBone>> _003C_003E9__81_6;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverHumanoidUpLegBone>> _003C_003E9__81_7;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverHumanoidArmBone>> _003C_003E9__81_8;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverWaistBone>> _003C_003E9__81_9;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverFurisodeBone>> _003C_003E9__81_10;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationQuartzDriverPonchoBone>> _003C_003E9__81_11;
+            public static Func<CampusActorModelParts, IEnumerable<InitialTransform>> _003C_003E9__81_12;
+            public static Func<CampusActorModelParts, IEnumerable<ActorSwingDynamicBone>> _003C_003E9__81_13;
+            public static Func<CampusActorModelParts, IEnumerable<ActorSwingStaticBone>> _003C_003E9__81_14;
+            public static Func<CampusActorModelParts, IEnumerable<ActorSwingBreastBone>> _003C_003E9__81_15;
+            public static Func<CampusActorModelParts, IEnumerable<InitialTransform>> _003C_003E9__81_16;
+            public static Func<CampusActorModelParts, IEnumerable<InitialTransform>> _003C_003E9__81_17;
+            public static Func<CampusActorModelParts, IEnumerable<InitialTransform>> _003C_003E9__81_18;
+            public static Func<CampusActorModelParts, IEnumerable<InitialTransform>> _003C_003E9__81_19;
+            public static Func<CampusActorModelParts, IEnumerable<ActorSwingChain>> _003C_003E9__81_20;
+            public static Func<CampusActorModelParts, IEnumerable<ActorAnimationIKCorrectionCollider>> _003C_003E9__81_21;
+            public static Func<string, int, (string propName, int partsIndex)> _003C_003E9__98_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal bool _003CActorLoadAsync_003Eb__71_2(GameObject prefab)
+            {
+                return default(bool);
+            }
+
+            internal (GameObject, int, bool) _003CActorLoadAsync_003Eb__71_5(GameObject value, int partsIndex)
+            {
+                return default((GameObject, int, bool));
+            }
+
+            internal bool _003CActorLoadAsync_003Eb__71_6((GameObject value, int partsIndex, bool) x)
+            {
+                return default(bool);
+            }
+
+            internal int _003CActorLoadAsync_003Eb__71_7((GameObject value, int partsIndex, bool) x)
+            {
+                return default(int);
+            }
+
+            internal IEnumerable<VLActorExpressionBone> _003CInitializeExpression_003Eb__80_0(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationConstraintTransformBone> _003CInitializeActorAnimation_003Eb__81_0(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverRotationBone> _003CInitializeActorAnimation_003Eb__81_1(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverFrillBone> _003CInitializeActorAnimation_003Eb__81_2(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverSkirtBone> _003CInitializeActorAnimation_003Eb__81_3(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverHairBone> _003CInitializeActorAnimation_003Eb__81_4(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverHumanoidHandBone> _003CInitializeActorAnimation_003Eb__81_5(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverHumanoidSleeveBone> _003CInitializeActorAnimation_003Eb__81_6(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverHumanoidUpLegBone> _003CInitializeActorAnimation_003Eb__81_7(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverHumanoidArmBone> _003CInitializeActorAnimation_003Eb__81_8(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverWaistBone> _003CInitializeActorAnimation_003Eb__81_9(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverFurisodeBone> _003CInitializeActorAnimation_003Eb__81_10(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationQuartzDriverPonchoBone> _003CInitializeActorAnimation_003Eb__81_11(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<InitialTransform> _003CInitializeActorAnimation_003Eb__81_12(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorSwingDynamicBone> _003CInitializeActorAnimation_003Eb__81_13(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorSwingStaticBone> _003CInitializeActorAnimation_003Eb__81_14(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorSwingBreastBone> _003CInitializeActorAnimation_003Eb__81_15(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<InitialTransform> _003CInitializeActorAnimation_003Eb__81_16(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<InitialTransform> _003CInitializeActorAnimation_003Eb__81_17(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<InitialTransform> _003CInitializeActorAnimation_003Eb__81_18(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<InitialTransform> _003CInitializeActorAnimation_003Eb__81_19(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorSwingChain> _003CInitializeActorAnimation_003Eb__81_20(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<ActorAnimationIKCorrectionCollider> _003CInitializeActorAnimation_003Eb__81_21(CampusActorModelParts x)
+            {
+                return null;
+            }
+
+            internal (string, int) _003CSetupPropConstraintAnimation_003Eb__98_0(string propName, int partsIndex)
+            {
+                return default((string, int));
+            }
+        }
+
         [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass70_0
         {
@@ -70,11 +248,44 @@ namespace Campus.Common
             {
             }
 
+            internal AssetKeeper _003CActorLoadAsync_003Eg__GetAssetKeeper_007C0()
+            {
+                return null;
+            }
+
             internal void _003CActorLoadAsync_003Eb__4(CampusActorAnimationJointLimitSetting settingAsset, AssetLoaderError error)
             {
             }
 
             internal bool _003CActorLoadAsync_003Eb__1()
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass71_1
+        {
+            public int index;
+            public _003C_003Ec__DisplayClass71_0 CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass71_1()
+            {
+            }
+
+            internal void _003CActorLoadAsync_003Eb__3(GameObject prefab, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass98_0
+        {
+            public Transform propLocator;
+            public _003C_003Ec__DisplayClass98_0()
+            {
+            }
+
+            internal bool _003CSetupPropConstraintAnimation_003Eb__1(PropConstraintData x)
             {
                 return default(bool);
             }

@@ -59,5 +59,12 @@ namespace Qua.UI
         public InfiniteListPresenterBase()
         {
         }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private UniTask _003C_003En__0(CancellationToken ct)
+        {
+            return default(UniTask);
+        }
     }
 }

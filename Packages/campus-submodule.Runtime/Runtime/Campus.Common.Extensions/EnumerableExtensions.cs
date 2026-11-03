@@ -2,6 +2,8 @@ namespace Campus.Common.Extensions
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
+    using global::Campus.Common.Extensions;
 
     public static class EnumerableExtensions
     {
@@ -20,6 +22,22 @@ namespace Campus.Common.Extensions
             public int GetHashCode(T obj)
             {
                 return default(int);
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__7<T>
+        {
+            public static readonly _003C_003Ec__7<T> _003C_003E9;
+            public static Func<T, string> _003C_003E9__7_0;
+            public _003C_003Ec__7()
+            {
+            }
+
+            internal string _003CRandom_003Eb__7_0(T _)
+            {
+                return null;
             }
         }
 

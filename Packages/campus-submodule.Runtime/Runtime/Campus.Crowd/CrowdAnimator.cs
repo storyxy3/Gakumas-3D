@@ -1,6 +1,7 @@
 namespace Campus.Crowd
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Crowd;
     using global::JetBrains.Annotations;
     using global::Unity.Collections;
@@ -10,6 +11,28 @@ namespace Campus.Crowd
 
     public class CrowdAnimator : IDisposable
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<CrowdModelData.CrowdVolumeBoneData, int> _003C_003E9__21_0;
+            public static Func<CrowdModelData.CrowdVolumeBoneData, Vector3> _003C_003E9__21_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003C_002Ector_003Eb__21_0(CrowdModelData.CrowdVolumeBoneData d)
+            {
+                return default(int);
+            }
+
+            internal Vector3 _003C_002Ector_003Eb__21_1(CrowdModelData.CrowdVolumeBoneData d)
+            {
+                return default(Vector3);
+            }
+        }
+
         private NativeReference<Matrix4x4> _invRootMatrix;
         private NativeArray<Matrix4x4> _bindPoses;
         private Animator _animator;

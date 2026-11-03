@@ -7,6 +7,26 @@ namespace Octo
 
     public class MixBulkDownloader : IBulkDownloader
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action _003C_003E9__2_0;
+            public static Action<string, DownloadError> _003C_003E9__2_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__2_0()
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__2_1(string _003Cp0_003E, DownloadError _003Cp1_003E)
+            {
+            }
+        }
+
         private readonly AssetBundleBaseBulkDownloader _assetBundleBulkDownloader;
         private readonly ResourceBaseBulkDownloader _resourceBulkDownloader;
         [CompilerGenerated]

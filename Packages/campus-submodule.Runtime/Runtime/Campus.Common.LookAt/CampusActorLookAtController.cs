@@ -262,5 +262,38 @@ namespace Campus.Common.LookAt
         public CampusActorLookAtController()
         {
         }
+
+        [CompilerGenerated]
+        private float _003CSetLookAtTarget_003Eb__51_0()
+        {
+            return default(float);
+        }
+
+        [CompilerGenerated]
+        private void _003CSetLookAtTarget_003Eb__51_1(float weight)
+        {
+        }
+
+        [CompilerGenerated]
+        private float _003CSetLookAtTarget_003Eb__51_2()
+        {
+            return default(float);
+        }
+
+        [CompilerGenerated]
+        private void _003CSetLookAtTarget_003Eb__51_3(float weight)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CSetLookAtTarget_003Eb__51_4()
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003CIsBetweenZeroOne_003Eb__58_0(CampusCustomLookAtEffector.CampusCustomLookAtEffectorPoseSettingWeight setting)
+        {
+            return default(bool);
+        }
     }
 }

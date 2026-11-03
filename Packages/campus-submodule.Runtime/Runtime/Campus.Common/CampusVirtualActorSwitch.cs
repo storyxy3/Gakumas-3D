@@ -2,6 +2,7 @@ namespace Campus.Common
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::Campus.Timeline;
     using global::UnityEngine;
@@ -75,6 +76,17 @@ namespace Campus.Common
         }
 
         public CampusVirtualActorSwitch()
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003COnEnable_003Eb__11_0(CurrentActorSignalData signal)
+        {
+            return default(bool);
+        }
+
+        [CompilerGenerated]
+        private void _003COnEnable_003Eb__11_1(CurrentActorSignalData signal)
         {
         }
     }

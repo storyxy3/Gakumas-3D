@@ -1,6 +1,7 @@
 namespace Titan
 {
     using global::System.ComponentModel;
+    using global::System.Runtime.CompilerServices;
     using global::DG.Tweening;
     using global::Titan;
     using global::UnityEngine.Timeline;
@@ -11,6 +12,20 @@ namespace Titan
     [DisplayName("Titan/Image/Gauge")]
     public class GaugeTrack : TweenerTrackBase<GaugeClip, Image, float, FloatParameter>
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass0_0
+        {
+            public Image component;
+            public TweenCallback _003C_003E9__0;
+            public _003C_003Ec__DisplayClass0_0()
+            {
+            }
+
+            internal void _003CGetTween_003Eb__0()
+            {
+            }
+        }
+
         protected override Tween GetTween(Image component, float endValue, GaugeClip clipAsset, float duration)
         {
             return null;

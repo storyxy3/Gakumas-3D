@@ -21,7 +21,8 @@ namespace zzzzQA.Recon.MetadataNames
 
         private static bool IsOwned(string assembly)
         {
-            if (assembly == "Unity.RenderPipelines.Universal.Runtime" || assembly == "Unity.RenderPipelines.Core.Runtime" || assembly == "Unity.Timeline") return true;
+            if (assembly == "Unity.RenderPipelines.Universal.Runtime" || assembly == "Unity.RenderPipelines.Core.Runtime" ||
+                assembly == "Unity.Timeline" || assembly == "UnityEngine.UI" || assembly == "Cinemachine") return true;
             var package = Path.Combine(Project, "Packages", assembly);
             var manifest = Path.Combine(package, "package.json");
             return File.Exists(Path.Combine(package, assembly + ".asmdef")) && File.Exists(manifest) &&
@@ -33,12 +34,14 @@ namespace zzzzQA.Recon.MetadataNames
 
         private sealed class Names
         {
+            public TypeAttributes Visibility;
             public readonly HashSet<string> Fields = new HashSet<string>();
             public readonly HashSet<string> Methods = new HashSet<string>();
             public readonly HashSet<string> Properties = new HashSet<string>();
             public readonly HashSet<string> Events = new HashSet<string>();
             public readonly HashSet<string> Parameters = new HashSet<string>();
             public readonly HashSet<string> GenericParameters = new HashSet<string>();
+            public readonly Dictionary<string, string> EventBackingFieldTypes = new Dictionary<string, string>();
         }
 
         private sealed class ReferenceResolver : DefaultAssemblyResolver
@@ -94,7 +97,7 @@ namespace zzzzQA.Recon.MetadataNames
                 {
                     foreach (var type in Types(source.MainModule.Types))
                     {
-                        var names = new Names();
+                        var names = new Names { Visibility = type.Attributes & TypeAttributes.VisibilityMask };
                         foreach (var field in type.Fields) names.Fields.Add(field.Name);
                         foreach (var method in type.Methods)
                         {
@@ -103,7 +106,12 @@ namespace zzzzQA.Recon.MetadataNames
                             foreach (var parameter in method.GenericParameters) names.GenericParameters.Add(parameter.Name);
                         }
                         foreach (var property in type.Properties) names.Properties.Add(property.Name);
-                        foreach (var ev in type.Events) names.Events.Add(ev.Name);
+                        foreach (var ev in type.Events)
+                        {
+                            names.Events.Add(ev.Name);
+                            var backing = type.Fields.FirstOrDefault(f => f.Name == ev.Name && f.FieldType.FullName == ev.EventType.FullName);
+                            if (backing != null) names.EventBackingFieldTypes.Add(ev.Name, backing.FieldType.FullName);
+                        }
                         foreach (var parameter in type.GenericParameters) names.GenericParameters.Add(parameter.Name);
                         found.Add(type.FullName, names);
                     }
@@ -163,13 +171,42 @@ namespace zzzzQA.Recon.MetadataNames
                     type.Name = Decode(type.Name);
                     Changes++;
                 }
+                if(type is TypeDefinition definition && original.TryGetValue(definition.FullName, out var originalDefinition) &&
+                    (definition.Name.Contains("<") || definition.Name.StartsWith("__StaticArrayInitTypeSize", StringComparison.Ordinal)) &&
+                    (definition.Attributes & TypeAttributes.VisibilityMask) != originalDefinition.Visibility)
+                {
+                    definition.Attributes = (definition.Attributes & ~TypeAttributes.VisibilityMask) | originalDefinition.Visibility;
+                    Changes++;
+                }
             }
 
             private void Field(FieldReference field)
             {
                 Type(field.DeclaringType);
-                field.Name = Member(field.Name, Owner(field.DeclaringType)?.Fields);
                 Type(field.FieldType);
+                var owner = Owner(field.DeclaringType);
+                // ILSpy separates field-like events into a custom event plus
+                // an m_-prefixed field. Restore only a matching original event
+                // and backing field pair with the same delegate type.
+                if (owner != null && !owner.Fields.Contains(field.Name) && field.Name.StartsWith("m_", StringComparison.Ordinal))
+                {
+                    var eventName = field.Name.Substring(2);
+                    if (owner.EventBackingFieldTypes.TryGetValue(eventName, out var fieldType) && Decode(field.FieldType.FullName) == fieldType)
+                    {
+                        field.Name = eventName;
+                        Changes++;
+                    }
+                }
+                // Il2CppDumper itself prefixes numeric RVA field identifiers,
+                // so the original dump (rather than DummyDll) is the authority
+                // for those names. The generated table carries exact evidence.
+                if (owner != null && owner.Fields.Contains(field.Name) &&
+                    OriginalDumpFieldNames.TryGet(AssemblyName(field.DeclaringType), Decode(field.DeclaringType.FullName), field.Name, Decode(field.FieldType.FullName), out var originalName))
+                {
+                    field.Name = originalName;
+                    Changes++;
+                }
+                else field.Name = Member(field.Name, owner?.Fields);
             }
 
             private void Method(MethodReference method)

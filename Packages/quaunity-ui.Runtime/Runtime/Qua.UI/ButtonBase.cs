@@ -9,6 +9,20 @@ namespace Qua.UI
 
     public abstract class ButtonBase : QuaUIBehaviour
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass23_0
+        {
+            public LongTapGesture longTapGesture;
+            public ButtonBase _003C_003E4__this;
+            public _003C_003Ec__DisplayClass23_0()
+            {
+            }
+
+            internal void _003CAddCallbacks_003Eb__0()
+            {
+            }
+        }
+
         [SerializeField]
         protected bool _isDisabled;
         [CompilerGenerated]

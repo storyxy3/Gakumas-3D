@@ -16,6 +16,7 @@ namespace Campus.Common.Live
     using global::TMPro;
     using global::UnityEngine;
     using global::UnityEngine.Playables;
+    using global::UnityEngine.Timeline;
     using global::UnityEngine.Video;
     using global::VL;
     using global::VL.Timeline;
@@ -77,6 +78,128 @@ namespace Campus.Common.Live
             public static string GetActor(int index)
             {
                 return null;
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<PlayableBinding, UnityEngine.Object> _003C_003E9__39_0;
+            public static Func<TrackAsset, IEnumerable<TimelineClip>> _003C_003E9__39_1;
+            public static Func<TimelineClip, UnityEngine.Object> _003C_003E9__39_2;
+            public static Func<PlayableDirector, bool> _003C_003E9__39_4;
+            public static Func<PlayableDirector, bool> _003C_003E9__39_7;
+            public static Func<PlayableDirector, bool> _003C_003E9__39_6;
+            public static Func<OverrideActorMotionClip, bool> _003C_003E9__46_1;
+            public static Func<TrackAsset, bool> _003C_003E9__51_0;
+            public static Func<PlayableBinding, bool> _003C_003E9__53_0;
+            public static Func<PlayableBinding, UnityEngine.Object> _003C_003E9__53_1;
+            public static Action<TrackAsset> _003C_003E9__53_2;
+            public _003C_003Ec()
+            {
+            }
+
+            internal UnityEngine.Object _003CSetupAsync_003Eb__39_0(PlayableBinding x)
+            {
+                return null;
+            }
+
+            internal IEnumerable<TimelineClip> _003CSetupAsync_003Eb__39_1(TrackAsset x)
+            {
+                return null;
+            }
+
+            internal UnityEngine.Object _003CSetupAsync_003Eb__39_2(TimelineClip x)
+            {
+                return null;
+            }
+
+            internal bool _003CSetupAsync_003Eb__39_4(PlayableDirector x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CSetupAsync_003Eb__39_7(PlayableDirector x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CSetupAsync_003Eb__39_6(PlayableDirector x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CHasLiveOverrideActorMotion_003Eb__46_1(OverrideActorMotionClip clip)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CReplaceBGM_003Eb__51_0(TrackAsset x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CDebugSetMuteTracks_003Eb__53_0(PlayableBinding x)
+            {
+                return default(bool);
+            }
+
+            internal UnityEngine.Object _003CDebugSetMuteTracks_003Eb__53_1(PlayableBinding x)
+            {
+                return null;
+            }
+
+            internal void _003CDebugSetMuteTracks_003Eb__53_2(TrackAsset x)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass39_0
+        {
+            public PlayableDirector master;
+            public CampusLiveBinder _003C_003E4__this;
+            public _003C_003Ec__DisplayClass39_0()
+            {
+            }
+
+            internal PlayableDirector _003CSetupAsync_003Eb__3(CampusDirectorControlAsset x)
+            {
+                return null;
+            }
+
+            internal void _003CSetupAsync_003Eb__5(PlayableDirector x)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass39_1
+        {
+            public VideoPlayer videoPlayer;
+            public _003C_003Ec__DisplayClass39_1()
+            {
+            }
+
+            internal bool _003CSetupAsync_003Eb__8()
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass46_0
+        {
+            public string actorTrackName;
+            public _003C_003Ec__DisplayClass46_0()
+            {
+            }
+
+            internal bool _003CHasLiveOverrideActorMotion_003Eb__0(OverrideActorMotionTrack track)
+            {
+                return default(bool);
             }
         }
 

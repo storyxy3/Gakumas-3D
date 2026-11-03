@@ -57,6 +57,23 @@ namespace Octo
         }
 
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass16_0<T>
+            where T : UnityEngine.Object
+        {
+            public Action<T, AssetLoaderError> onComplete;
+            public AssetKeeper _003C_003E4__this;
+            public string assetBundleName;
+            public string assetName;
+            public _003C_003Ec__DisplayClass16_0()
+            {
+            }
+
+            internal void _003CLoadAssetInternal_003Eb__0(IAssetOperator assetOperator, LoadError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass29_0<T>
             where T : UnityEngine.Object
         {
@@ -68,6 +85,21 @@ namespace Octo
             }
 
             internal void _003CLoadAssetAsyncInternal_003Eb__0(T asset, AssetLoaderError error)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass29_1<T>
+            where T : UnityEngine.Object
+        {
+            public int requestId;
+            public _003C_003Ec__DisplayClass29_0<T> CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass29_1()
+            {
+            }
+
+            internal void _003CLoadAssetAsyncInternal_003Eb__1()
             {
             }
         }

@@ -214,5 +214,16 @@ namespace Campus.Common
         public ScreenOrientationManager()
         {
         }
+
+        [CompilerGenerated]
+        private float _003CBeforeChangeOrientationAsync_003Eb__25_0()
+        {
+            return default(float);
+        }
+
+        [CompilerGenerated]
+        private void _003CBeforeChangeOrientationAsync_003Eb__25_1(float x)
+        {
+        }
     }
 }

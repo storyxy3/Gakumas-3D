@@ -11,6 +11,21 @@ namespace VLB
     [HelpURL("http://saladgamer.com/vlb-doc/comp-dustparticles/")]
     public class VolumetricDustParticles : MonoBehaviour
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action<ParticleSystem> _003C_003E9__37_0;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003CInstantiateParticleSystem_003Eb__37_0(ParticleSystem ps)
+            {
+            }
+        }
+
         public const string ClassName = "VolumetricDustParticles";
         [Range(0f, 1f)]
         public float alpha;

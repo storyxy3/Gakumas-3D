@@ -1,11 +1,21 @@
 namespace Campus.Photography
 {
     using global::System.Runtime.CompilerServices;
+    using global::System.Runtime.InteropServices;
+    using global::Campus.Photography;
     using global::Cinemachine;
     using global::UnityEngine;
 
     public class PhotographyActivityBlockingCinemachine : CinemachineExtension
     {
+        [StructLayout((LayoutKind)3)]
+        [CompilerGenerated]
+        private struct _003C_003Ec__DisplayClass23_0
+        {
+            public Vector3 cameraPos;
+            public PhotographyActivityBlockingCinemachine _003C_003E4__this;
+        }
+
         private const float CameraDistance = 2.5f;
         private const float MaxRayDistance = 500f;
         private readonly RaycastHit[] _blockHits;
@@ -99,6 +109,12 @@ namespace Campus.Photography
 
         public PhotographyActivityBlockingCinemachine()
         {
+        }
+
+        [CompilerGenerated]
+        private bool _003CGetHitBoxCollider_003Eg__IsHit_007C23_0(Vector3 targetPos, ref _003C_003Ec__DisplayClass23_0 P_1)
+        {
+            return default(bool);
         }
     }
 }

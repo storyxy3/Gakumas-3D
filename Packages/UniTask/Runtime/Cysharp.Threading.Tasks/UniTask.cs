@@ -20,6 +20,26 @@ namespace Cysharp.Threading.Tasks
     {
         private sealed class YieldPromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<YieldPromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__10_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__10_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<YieldPromise> pool;
             private YieldPromise nextNode;
             private CancellationToken cancellationToken;
@@ -78,6 +98,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class NextFramePromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<NextFramePromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__11_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__11_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<NextFramePromise> pool;
             private NextFramePromise nextNode;
             private int frameCount;
@@ -137,6 +177,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WaitForEndOfFramePromise : IUniTaskSource, IValueTaskSource, ITaskPoolNode<WaitForEndOfFramePromise>, IEnumerator
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__10_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__10_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<WaitForEndOfFramePromise> pool;
             private WaitForEndOfFramePromise nextNode;
             private UniTaskCompletionSourceCore<object> core;
@@ -209,6 +269,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class DelayFramePromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<DelayFramePromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__13_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__13_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<DelayFramePromise> pool;
             private DelayFramePromise nextNode;
             private int initialFrame;
@@ -270,6 +350,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class DelayPromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<DelayPromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__13_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__13_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<DelayPromise> pool;
             private DelayPromise nextNode;
             private int initialFrame;
@@ -331,6 +431,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class DelayIgnoreTimeScalePromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<DelayIgnoreTimeScalePromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__13_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__13_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<DelayIgnoreTimeScalePromise> pool;
             private DelayIgnoreTimeScalePromise nextNode;
             private float delayFrameTimeSpan;
@@ -392,6 +512,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class DelayRealtimePromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<DelayRealtimePromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__12_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__12_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<DelayRealtimePromise> pool;
             private DelayRealtimePromise nextNode;
             private long delayTimeSpanTicks;
@@ -621,6 +761,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WaitUntilPromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<WaitUntilPromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__11_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__11_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<WaitUntilPromise> pool;
             private WaitUntilPromise nextNode;
             private Func<bool> predicate;
@@ -680,6 +840,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WaitWhilePromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<WaitWhilePromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__11_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__11_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<WaitWhilePromise> pool;
             private WaitWhilePromise nextNode;
             private Func<bool> predicate;
@@ -739,6 +919,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WaitUntilCanceledPromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<WaitUntilCanceledPromise>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__10_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal int _003C_002Ecctor_003Eb__4_0()
+                {
+                    return default(int);
+                }
+
+                internal void _003CCreate_003Eb__10_0(object state)
+                {
+                }
+            }
+
             private static TaskPool<WaitUntilCanceledPromise> pool;
             private WaitUntilCanceledPromise nextNode;
             private CancellationToken cancellationToken;
@@ -797,6 +997,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T1, T2> : IUniTaskSource<(T1, T2)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(T1, T2)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__4_0;
+                public static Action<object> _003C_003E9__4_1;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__4_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__4_1(object state)
+                {
+                }
+            }
+
             private T1 t1;
             private T2 t2;
             private int completedCount;
@@ -839,6 +1059,31 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T1, T2, T3> : IUniTaskSource<(T1, T2, T3)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(T1, T2, T3)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__5_0;
+                public static Action<object> _003C_003E9__5_1;
+                public static Action<object> _003C_003E9__5_2;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__5_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__5_1(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__5_2(object state)
+                {
+                }
+            }
+
             private T1 t1;
             private T2 t2;
             private T3 t3;
@@ -886,6 +1131,36 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T1, T2, T3, T4> : IUniTaskSource<(T1, T2, T3, T4)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(T1, T2, T3, T4)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__6_0;
+                public static Action<object> _003C_003E9__6_1;
+                public static Action<object> _003C_003E9__6_2;
+                public static Action<object> _003C_003E9__6_3;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__6_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__6_1(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__6_2(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__6_3(object state)
+                {
+                }
+            }
+
             private T1 t1;
             private T2 t2;
             private T3 t3;
@@ -938,6 +1213,41 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T1, T2, T3, T4, T5> : IUniTaskSource<(T1, T2, T3, T4, T5)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(T1, T2, T3, T4, T5)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__7_0;
+                public static Action<object> _003C_003E9__7_1;
+                public static Action<object> _003C_003E9__7_2;
+                public static Action<object> _003C_003E9__7_3;
+                public static Action<object> _003C_003E9__7_4;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__7_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__7_1(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__7_2(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__7_3(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__7_4(object state)
+                {
+                }
+            }
+
             private T1 t1;
             private T2 t2;
             private T3 t3;
@@ -995,6 +1305,46 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T1, T2, T3, T4, T5, T6> : IUniTaskSource<(T1, T2, T3, T4, T5, T6)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(T1, T2, T3, T4, T5, T6)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__8_0;
+                public static Action<object> _003C_003E9__8_1;
+                public static Action<object> _003C_003E9__8_2;
+                public static Action<object> _003C_003E9__8_3;
+                public static Action<object> _003C_003E9__8_4;
+                public static Action<object> _003C_003E9__8_5;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__8_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__8_1(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__8_2(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__8_3(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__8_4(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__8_5(object state)
+                {
+                }
+            }
+
             private T1 t1;
             private T2 t2;
             private T3 t3;
@@ -1057,6 +1407,51 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T1, T2, T3, T4, T5, T6, T7> : IUniTaskSource<(T1, T2, T3, T4, T5, T6, T7)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(T1, T2, T3, T4, T5, T6, T7)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__9_0;
+                public static Action<object> _003C_003E9__9_1;
+                public static Action<object> _003C_003E9__9_2;
+                public static Action<object> _003C_003E9__9_3;
+                public static Action<object> _003C_003E9__9_4;
+                public static Action<object> _003C_003E9__9_5;
+                public static Action<object> _003C_003E9__9_6;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_1(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_2(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_3(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_4(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_5(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__9_6(object state)
+                {
+                }
+            }
+
             private T1 t1;
             private T2 t2;
             private T3 t3;
@@ -1124,6 +1519,21 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise<T> : IUniTaskSource<T[]>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T[]>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__3_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__3_0(object state)
+                {
+                }
+            }
+
             private T[] result;
             private int completeCount;
             private UniTaskCompletionSourceCore<T[]> core;
@@ -1161,6 +1571,21 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAllPromise : IUniTaskSource, IValueTaskSource
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__3_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__3_0(object state)
+                {
+                }
+            }
+
             private int completeCount;
             private int tasksLength;
             private UniTaskCompletionSourceCore<AsyncUnit> core;
@@ -1193,6 +1618,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAnyPromise<T1, T2> : IUniTaskSource<(int, T1, T2)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(int, T1, T2)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__2_0;
+                public static Action<object> _003C_003E9__2_1;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__2_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__2_1(object state)
+                {
+                }
+            }
+
             private int completedCount;
             private UniTaskCompletionSourceCore<(int, T1 result1, T2 result2)> core;
             public WhenAnyPromise(UniTask<T1> task1, UniTask<T2> task2)
@@ -1233,6 +1678,26 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAnyLRPromise<T> : IUniTaskSource<(bool, T)>, IUniTaskSource, IValueTaskSource, IValueTaskSource<(bool, T)>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__2_0;
+                public static Action<object> _003C_003E9__2_1;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__2_0(object state)
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__2_1(object state)
+                {
+                }
+            }
+
             private int completedCount;
             private UniTaskCompletionSourceCore<(bool, T)> core;
             public WhenAnyLRPromise(UniTask<T> leftTask, UniTask rightTask)
@@ -1273,6 +1738,21 @@ namespace Cysharp.Threading.Tasks
 
         private sealed class WhenAnyPromise : IUniTaskSource<int>, IUniTaskSource, IValueTaskSource, IValueTaskSource<int>
         {
+            [Serializable]
+            [CompilerGenerated]
+            private sealed class _003C_003Ec
+            {
+                public static readonly _003C_003Ec _003C_003E9;
+                public static Action<object> _003C_003E9__2_0;
+                public _003C_003Ec()
+                {
+                }
+
+                internal void _003C_002Ector_003Eb__2_0(object state)
+                {
+                }
+            }
+
             private int completedCount;
             private UniTaskCompletionSourceCore<int> core;
             public WhenAnyPromise(UniTask[] tasks, int tasksLength)
@@ -1411,6 +1891,21 @@ namespace Cysharp.Threading.Tasks
             [DebuggerHidden]
             public void SourceOnCompleted(Action<object> continuation, object state)
             {
+            }
+        }
+
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public _003C_003Ec()
+            {
+            }
+
+            internal UniTask _003C_002Ecctor_003Eb__201_0()
+            {
+                return default(UniTask);
             }
         }
 

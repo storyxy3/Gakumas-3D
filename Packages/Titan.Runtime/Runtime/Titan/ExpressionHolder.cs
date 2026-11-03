@@ -1,5 +1,6 @@
 namespace Titan
 {
+    using global::System;
     using global::System.Collections.Generic;
     using global::System.Runtime.CompilerServices;
     using global::Titan;
@@ -7,11 +8,33 @@ namespace Titan
 
     public class ExpressionHolder
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<ExpressionWithName, string> _003C_003E9__7_0;
+            public static Func<ExpressionWithName, ExpressionWithName> _003C_003E9__7_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal string _003C_002Ector_003Eb__7_0(ExpressionWithName x)
+            {
+                return null;
+            }
+
+            internal ExpressionWithName _003C_002Ector_003Eb__7_1(ExpressionWithName x)
+            {
+                return null;
+            }
+        }
+
         private readonly ExpressionWithName[] _expressions;
         private Dictionary<string, ExpressionWithName> _nameToExpressions;
         [CompilerGenerated]
-        private readonly Object _003CLogHint_003Ek__BackingField;
-        public Object LogHint
+        private readonly UnityEngine.Object _003CLogHint_003Ek__BackingField;
+        public UnityEngine.Object LogHint
         {
             [CompilerGenerated]
             get
@@ -20,7 +43,7 @@ namespace Titan
             }
         }
 
-        public ExpressionHolder(ExpressionWithName[] expressions, Object logHint)
+        public ExpressionHolder(ExpressionWithName[] expressions, UnityEngine.Object logHint)
         {
         }
 

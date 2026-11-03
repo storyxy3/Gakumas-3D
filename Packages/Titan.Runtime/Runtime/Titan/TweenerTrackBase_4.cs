@@ -1,5 +1,6 @@
 namespace Titan
 {
+    using global::System.Runtime.CompilerServices;
     using global::DG.Tweening;
     using global::Titan;
     using global::UnityEngine;
@@ -7,6 +8,27 @@ namespace Titan
 
     public abstract class TweenerTrackBase<TClipAsset, TComponent, TValue, TParameter> : TweenTrackBase<TClipAsset, TComponent>, IComponentValueSetter<TComponent, TValue> where TClipAsset : TweenerClipBase<TValue, TParameter> where TComponent : Object where TParameter : ParameterBase<TValue>, new()
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass8_0
+        {
+            public TValue previousValue;
+            public TweenerTrackBase<TClipAsset, TComponent, TValue, TParameter> _003C_003E4__this;
+            public TComponent component;
+            public TValue endValue;
+            public TClipAsset clipAsset;
+            public _003C_003Ec__DisplayClass8_0()
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eb__0()
+            {
+            }
+
+            internal void _003CInsertClipTween_003Eb__1()
+            {
+            }
+        }
+
         [SerializeField]
         protected bool _enableInitialValue;
         [SerializeField]

@@ -1,6 +1,8 @@
 namespace Campus.Common
 {
+    using global::System;
     using global::System.Collections.Generic;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::JetBrains.Annotations;
     using global::UnityEngine;
@@ -8,12 +10,57 @@ namespace Campus.Common
     public class AnimationEventHandler : MonoBehaviour
     {
         private class CreatedEntry<T>
-            where T : Object
+            where T : UnityEngine.Object
         {
             public string id;
             public T target;
             public CreatedEntry(string id, T target)
             {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass12_0
+        {
+            public AudioClip audioClip;
+            public Func<CreatedEntry<AudioClip>, bool> _003C_003E9__0;
+            public _003C_003Ec__DisplayClass12_0()
+            {
+            }
+
+            internal bool _003COnStopVoice_003Eb__0(CreatedEntry<AudioClip> x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass14_0
+        {
+            public AudioClip audioClip;
+            public Func<CreatedEntry<AudioClip>, bool> _003C_003E9__0;
+            public _003C_003Ec__DisplayClass14_0()
+            {
+            }
+
+            internal bool _003COnStopSE_003Eb__0(CreatedEntry<AudioClip> x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass21_0
+        {
+            public EffectDefine define;
+            public Func<CreatedEntry<ParticleSystem>, bool> _003C_003E9__0;
+            public _003C_003Ec__DisplayClass21_0()
+            {
+            }
+
+            internal bool _003CStopEffectInternal_003Eb__0(CreatedEntry<ParticleSystem> x)
+            {
+                return default(bool);
             }
         }
 
@@ -49,31 +96,31 @@ namespace Campus.Common
         {
         }
 
-        private void OnVoice(Object obj)
+        private void OnVoice(UnityEngine.Object obj)
         {
         }
 
-        private void OnStopVoice(Object obj)
+        private void OnStopVoice(UnityEngine.Object obj)
         {
         }
 
-        private void OnSE(Object obj)
+        private void OnSE(UnityEngine.Object obj)
         {
         }
 
-        private void OnStopSE(Object obj)
+        private void OnStopSE(UnityEngine.Object obj)
         {
         }
 
-        private void OnEffectLaunch(Object obj)
+        private void OnEffectLaunch(UnityEngine.Object obj)
         {
         }
 
-        protected void OnEffectStop(Object obj)
+        protected void OnEffectStop(UnityEngine.Object obj)
         {
         }
 
-        private void OnEffectFinish(Object obj)
+        private void OnEffectFinish(UnityEngine.Object obj)
         {
         }
 

@@ -9,6 +9,21 @@ namespace Cysharp.Threading.Tasks.CompilerServices
 
     internal sealed class AsyncUniTask<TStateMachine> : IStateMachineRunnerPromise, IUniTaskSource, IValueTaskSource, ITaskPoolNode<AsyncUniTask<TStateMachine>> where TStateMachine : IAsyncStateMachine
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003C_002Ecctor_003Eb__12_0()
+            {
+                return default(int);
+            }
+        }
+
         private static TaskPool<AsyncUniTask<TStateMachine>> pool;
         private readonly Action returnDelegate;
         [CompilerGenerated]

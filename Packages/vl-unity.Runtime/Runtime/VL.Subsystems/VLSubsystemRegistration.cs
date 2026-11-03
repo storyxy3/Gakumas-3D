@@ -1,6 +1,7 @@
 namespace VL.Subsystems
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::UnityEngine.LowLevel;
 
@@ -12,6 +13,20 @@ namespace VL.Subsystems
 
         private struct VLBeforeRendering
         {
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass3_0
+        {
+            public PlayerLoopSystem target;
+            public _003C_003Ec__DisplayClass3_0()
+            {
+            }
+
+            internal bool _003CInsertSystem_003Eb__0(PlayerLoopSystem ls)
+            {
+                return default(bool);
+            }
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

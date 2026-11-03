@@ -7,6 +7,26 @@ namespace Titan
 
     public abstract class Vector4TweenerTrackBase<TClipAsset, TComponent, TParameter> : TweenerTrackBase<TClipAsset, TComponent, Vector4, TParameter> where TClipAsset : TweenerClipBase<Vector4, TParameter> where TComponent : Component where TParameter : Vector4Parameter, new()
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass1_0
+        {
+            public Vector4TweenerTrackBase<TClipAsset, TComponent, TParameter> _003C_003E4__this;
+            public TClipAsset clipAsset;
+            public TComponent component;
+            public _003C_003Ec__DisplayClass1_0()
+            {
+            }
+
+            internal void _003CGetTween_003Eb__0(Vector4 x)
+            {
+            }
+
+            internal Vector4 _003CGetTween_003Eb__1()
+            {
+                return default(Vector4);
+            }
+        }
+
         protected override Vector4 GetInitialValue(TComponent component)
         {
             return default(Vector4);

@@ -40,16 +40,20 @@
     {
       "file": "Octo.Data/DataManager.cs",
       "reason": "Octo.Proto.Data parameter -> object",
-      "occurrences": 1,
+      "occurrences": 4,
       "original_declarations": [
-        "private void UpdateWithNewData(Dictionary<string, Item> dictionary, Data octodata)"
+        "internal Item _003CConstructDictionary_003Eb__0(Data data)",
+        "private void UpdateWithNewData(Dictionary<string, Item> dictionary, Data octodata)",
+        "private void _003CApplyToDatabase_003Eb__31_0(Data data)",
+        "private void _003CApplyToDatabase_003Eb__31_1(Data data)"
       ]
     },
     {
       "file": "Octo.Data/DataManager.cs",
       "reason": "Octo.Proto.Database signature -> object",
-      "occurrences": 4,
+      "occurrences": 5,
       "original_declarations": [
+        "public Database db;",
         "private SecureProtoBufDatabase<Database> ReadSecureDatabase(string path)",
         "private void ResetAllDependencies(Database db)",
         "private void SetUrls(Database db)",

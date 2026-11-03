@@ -84,5 +84,19 @@ namespace Campus.Gasha
         public GashaResourceView()
         {
         }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private UniTask<Texture2D> _003C_003En__0(string exAssetName, CancellationToken ct)
+        {
+            return default(UniTask<Texture2D>);
+        }
+
+        [CompilerGenerated]
+        [DebuggerHidden]
+        private UniTask<Texture2D> _003C_003En__1(string assetName, string fallbackAssetName, CancellationToken ct)
+        {
+            return default(UniTask<Texture2D>);
+        }
     }
 }

@@ -1,6 +1,7 @@
 namespace Campus.Common
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Common;
     using global::Qua.UI;
     using global::UnityEngine;
@@ -46,6 +47,11 @@ namespace Campus.Common
         }
 
         public CampusButtonToggle()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CAwake_003Eb__7_0()
         {
         }
     }

@@ -13,6 +13,40 @@ namespace UniRx
     public static class ObserveExtensions
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_0<TSource, TProperty>
+            where TSource : class
+        {
+            public UnityEngine.Object unityObject;
+            public Func<TSource, TProperty> propertySelector;
+            public IEqualityComparer<TProperty> comparer;
+            public bool fastDestroyCheck;
+            public _003C_003Ec__DisplayClass2_0()
+            {
+            }
+
+            internal IEnumerator _003CObserveEveryValueChanged_003Eb__0(IObserver<TProperty> observer, CancellationToken cancellationToken)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_1<TSource, TProperty>
+            where TSource : class
+        {
+            public WeakReference reference;
+            public _003C_003Ec__DisplayClass2_0<TSource, TProperty> CS_0024_003C_003E8__locals1;
+            public _003C_003Ec__DisplayClass2_1()
+            {
+            }
+
+            internal IEnumerator _003CObserveEveryValueChanged_003Eb__1(IObserver<TProperty> observer, CancellationToken cancellationToken)
+            {
+                return null;
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003CEmptyEnumerator_003Ed__3 : IEnumerator<object>, IEnumerator, IDisposable
         {
             private int _003C_003E1__state;

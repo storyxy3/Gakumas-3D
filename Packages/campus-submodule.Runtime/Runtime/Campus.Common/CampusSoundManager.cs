@@ -17,6 +17,19 @@ namespace Campus.Common
     public class CampusSoundManager : Singleton<CampusSoundManager>
     {
         [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass13_0
+        {
+            public CampusSoundPlayer player;
+            public _003C_003Ec__DisplayClass13_0()
+            {
+            }
+
+            internal void _003CSwitchBgmAsync_003Eb__0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
         private sealed class _003C_003Ec__DisplayClass24_0
         {
             public CampusSoundPlayer player;
@@ -45,6 +58,38 @@ namespace Campus.Common
             }
 
             internal void _003C_PreloadAsync_003Eb__0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass26_0
+        {
+            public CampusSoundPlayer player;
+            public CampusSoundManager _003C_003E4__this;
+            public _003C_003Ec__DisplayClass26_0()
+            {
+            }
+
+            internal void _003C_Preload_003Eb__0()
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass65_0
+        {
+            public bool enableLipSync;
+            public ICampusActorController actor;
+            public _003C_003Ec__DisplayClass65_0()
+            {
+            }
+
+            internal void _003CPlayVoiceAsync_003Eb__0(CampusSoundPlayer player)
+            {
+            }
+
+            internal void _003CPlayVoiceAsync_003Eb__1()
             {
             }
         }
@@ -620,6 +665,28 @@ namespace Campus.Common
 
         public CampusSoundManager()
         {
+        }
+
+        [CompilerGenerated]
+        private CampusSoundPlayer _003C_InitializeAsync_003Eb__8_0()
+        {
+            return null;
+        }
+
+        [CompilerGenerated]
+        private void _003C_InitializeAsync_003Eb__8_1(CampusSoundPlayer player)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003C_InitializeAsync_003Eb__8_2(CampusSoundPlayer player)
+        {
+        }
+
+        [CompilerGenerated]
+        private bool _003C_PlayBgmAsync_003Eb__11_0()
+        {
+            return default(bool);
         }
     }
 }

@@ -151,5 +151,11 @@ namespace Campus.Common.Panorama
         public PanoramaCraneActivityController()
         {
         }
+
+        [CompilerGenerated]
+        private Vector3 _003CSetEvent_003Eb__21_0()
+        {
+            return default(Vector3);
+        }
     }
 }

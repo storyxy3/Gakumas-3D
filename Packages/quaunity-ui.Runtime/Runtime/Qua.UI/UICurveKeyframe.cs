@@ -14,6 +14,32 @@ namespace Qua.UI
             Out
         }
 
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass19_0
+        {
+            public UICurveKeyframe _003C_003E4__this;
+            public DragGesture dragGesture;
+            public _003C_003Ec__DisplayClass19_0()
+            {
+            }
+
+            internal void _003CInitialize_003Eb__0()
+            {
+            }
+
+            internal void _003CInitialize_003Eb__1()
+            {
+            }
+
+            internal void _003CInitialize_003Eb__2(Vector2 pos)
+            {
+            }
+
+            internal void _003CInitialize_003Eb__3(Vector2 pos)
+            {
+            }
+        }
+
         [SerializeField]
         private UICurveHandle _in;
         [SerializeField]

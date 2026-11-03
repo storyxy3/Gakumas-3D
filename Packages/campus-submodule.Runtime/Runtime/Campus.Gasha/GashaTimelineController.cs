@@ -112,5 +112,15 @@ namespace Campus.Gasha
         public GashaTimelineController()
         {
         }
+
+        [CompilerGenerated]
+        private void _003CBind_003Eb__20_0()
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CBind_003Eb__20_1()
+        {
+        }
     }
 }

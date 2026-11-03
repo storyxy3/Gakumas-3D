@@ -1,6 +1,7 @@
 namespace Campus.Crowd
 {
     using global::System;
+    using global::System.Runtime.CompilerServices;
     using global::Campus.Crowd;
     using global::UnityEngine;
     using global::UnityEngine.Rendering;
@@ -73,6 +74,17 @@ namespace Campus.Crowd
         }
 
         public CrowdVolume()
+        {
+        }
+
+        [CompilerGenerated]
+        internal static Transform _003CBuildHierarchy_003Eg__Create_007C16_0(Transform parent, string goName, ref Matrix4x4 bindPose)
+        {
+            return null;
+        }
+
+        [CompilerGenerated]
+        internal static void _003CBuildHierarchy_003Eg__Build_007C16_1(Transform parent, string path, ref Matrix4x4 bindPose)
         {
         }
     }

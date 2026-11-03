@@ -8,6 +8,71 @@ namespace Octo
 
     internal abstract class BaseBulkDownloader : IBulkDownloader
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Action _003C_003E9__46_0;
+            public static Action<string, DownloadError> _003C_003E9__46_1;
+            public _003C_003Ec()
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__46_0()
+            {
+            }
+
+            internal void _003C_002Ector_003Eb__46_1(string _003Cp0_003E, DownloadError _003Cp1_003E)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass52_0
+        {
+            public Predicate<string> match;
+            public _003C_003Ec__DisplayClass52_0()
+            {
+            }
+
+            internal bool _003CRemoveWhere_003Eb__0(Item item)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass54_0
+        {
+            public long size;
+            public _003C_003Ec__DisplayClass54_0()
+            {
+            }
+
+            internal void _003CGetTotalBytes_003Eb__0(Item item)
+            {
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass57_0
+        {
+            public BaseBulkDownloader _003C_003E4__this;
+            public Item item;
+            public _003C_003Ec__DisplayClass57_0()
+            {
+            }
+
+            internal void _003CPreDownload_003Eb__0(DownloadError error)
+            {
+            }
+
+            internal void _003CPreDownload_003Eb__1(string name, ulong length, ulong contentLength)
+            {
+            }
+        }
+
         protected static readonly string Tag;
         protected readonly DataManager _db;
         protected readonly ICachingInternal _caching;

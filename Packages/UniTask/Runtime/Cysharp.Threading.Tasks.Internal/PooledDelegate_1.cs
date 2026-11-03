@@ -7,6 +7,21 @@ namespace Cysharp.Threading.Tasks.Internal
 
     internal sealed class PooledDelegate<T> : ITaskPoolNode<PooledDelegate<T>>
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003C_002Ecctor_003Eb__4_0()
+            {
+                return default(int);
+            }
+        }
+
         private static TaskPool<PooledDelegate<T>> pool;
         private PooledDelegate<T> nextNode;
         private readonly Action<T> runDelegate;

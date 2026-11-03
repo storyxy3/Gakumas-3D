@@ -12,6 +12,54 @@ namespace Qua.UI
 
     public abstract class DynamicTabBase<TTabElement, TTabButton, TTabPage> : TabBase<TTabButton, TTabPage> where TTabButton : GenericTabButtonBase<TTabElement> where TTabPage : GenericTabPageBase<TTabElement>
     {
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_0
+        {
+            [StructLayout((LayoutKind)3)]
+            private struct _003C_003CBuildTabsAsync_003Eb__0_003Ed : IAsyncStateMachine
+            {
+                public int _003C_003E1__state;
+                public AsyncUniTaskMethodBuilder _003C_003Et__builder;
+                public _003C_003Ec__DisplayClass2_0 _003C_003E4__this;
+                public TTabElement item;
+                private UniTask.Awaiter _003C_003Eu__1;
+                void global::System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext()
+                {
+                }
+
+                [DebuggerHidden]
+                void global::System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+                {
+                }
+            }
+
+            public CancellationToken childCt;
+            public DynamicTabBase<TTabElement, TTabButton, TTabPage> _003C_003E4__this;
+            public _003C_003Ec__DisplayClass2_0()
+            {
+            }
+
+            [AsyncStateMachine(typeof(DynamicTabBase<,, >._003C_003Ec__DisplayClass2_0._003C_003CBuildTabsAsync_003Eb__0_003Ed))]
+            internal UniTask _003CBuildTabsAsync_003Eb__0(TTabElement item)
+            {
+                return default(UniTask);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass2_1
+        {
+            public int index;
+            public DynamicTabBase<TTabElement, TTabButton, TTabPage> _003C_003E4__this;
+            public _003C_003Ec__DisplayClass2_1()
+            {
+            }
+
+            internal void _003CBuildTabsAsync_003Eb__1()
+            {
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CAddTabAsync_003Ed__3 : IAsyncStateMachine

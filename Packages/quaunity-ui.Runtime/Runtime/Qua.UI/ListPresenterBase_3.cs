@@ -327,5 +327,27 @@ namespace Qua.UI
         public ListPresenterBase()
         {
         }
+
+        [CompilerGenerated]
+        private float _003CInitializeAsync_003Eb__39_0(int index)
+        {
+            return default(float);
+        }
+
+        [CompilerGenerated]
+        private int _003CInitializeAsync_003Eb__39_1()
+        {
+            return default(int);
+        }
+
+        [CompilerGenerated]
+        private void _003CInitializeAsync_003Eb__39_2(Vector2 position)
+        {
+        }
+
+        [CompilerGenerated]
+        private void _003CInitializeAsync_003Eb__39_3()
+        {
+        }
     }
 }

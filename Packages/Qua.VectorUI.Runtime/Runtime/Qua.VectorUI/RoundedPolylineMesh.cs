@@ -2,6 +2,7 @@ namespace Qua.VectorUI
 {
     using global::System.Collections.Generic;
     using global::System.Runtime.CompilerServices;
+    using global::System.Runtime.InteropServices;
     using global::Qua.VectorUI;
     using global::UnityEngine;
     using global::UnityEngine.UI;
@@ -34,6 +35,16 @@ namespace Qua.VectorUI
 
         internal class EdgeMeshInfo : PartsMeshInfoBase
         {
+            [StructLayout((LayoutKind)3)]
+            [CompilerGenerated]
+            private struct _003C_003Ec__DisplayClass6_0
+            {
+                public int index;
+                public VertexHelper vh;
+                public Color32 color;
+                public Vector4 uv1;
+            }
+
             public Vector2 direction;
             public Vector2 wing;
             public override float Length
@@ -61,10 +72,27 @@ namespace Qua.VectorUI
             public EdgeMeshInfo()
             {
             }
+
+            [CompilerGenerated]
+            private static void _003CAddMesh_003Eg__AddVert_007C6_0(Vector2 pos, ref _003C_003Ec__DisplayClass6_0 P_1)
+            {
+            }
         }
 
         internal class CornerMeshInfo : PartsMeshInfoBase
         {
+            [StructLayout((LayoutKind)3)]
+            [CompilerGenerated]
+            private struct _003C_003Ec__DisplayClass13_0
+            {
+                public CornerMeshInfo _003C_003E4__this;
+                public int index;
+                public VertexHelper vh;
+                public Color32 color;
+                public Vector4 uv1;
+                public int count;
+            }
+
             public float angle;
             public Vector2 center;
             public Vector2 outerCenter;
@@ -97,6 +125,16 @@ namespace Qua.VectorUI
             }
 
             public CornerMeshInfo()
+            {
+            }
+
+            [CompilerGenerated]
+            private void _003CAddMesh_003Eg__AddVert_007C13_0(Vector2 pos, ref _003C_003Ec__DisplayClass13_0 P_1)
+            {
+            }
+
+            [CompilerGenerated]
+            private void _003CAddMesh_003Eg__AddTriangle_007C13_1(int index1, int index2, int index3, ref _003C_003Ec__DisplayClass13_0 P_3)
             {
             }
         }

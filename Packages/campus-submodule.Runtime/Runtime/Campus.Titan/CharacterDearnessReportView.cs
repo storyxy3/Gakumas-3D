@@ -1,5 +1,6 @@
 namespace Campus.Titan
 {
+    using global::System;
     using global::System.Collections.Generic;
     using global::System.Diagnostics;
     using global::System.Runtime.CompilerServices;
@@ -17,6 +18,126 @@ namespace Campus.Titan
 
     public class CharacterDearnessReportView : QuaUIBehaviour
     {
+        [Serializable]
+        [CompilerGenerated]
+        private sealed class _003C_003Ec
+        {
+            public static readonly _003C_003Ec _003C_003E9;
+            public static Func<EpisodeReportData, int> _003C_003E9__26_2;
+            public static Func<EpisodeReportData, int> _003C_003E9__26_5;
+            public static Func<EpisodeReportData, int> _003C_003E9__26_6;
+            public static Func<EpisodeReportData, int> _003C_003E9__30_2;
+            public _003C_003Ec()
+            {
+            }
+
+            internal int _003CGetBeforeEpisodeReportData_003Eb__26_2(EpisodeReportData x)
+            {
+                return default(int);
+            }
+
+            internal int _003CGetBeforeEpisodeReportData_003Eb__26_5(EpisodeReportData x)
+            {
+                return default(int);
+            }
+
+            internal int _003CGetBeforeEpisodeReportData_003Eb__26_6(EpisodeReportData x)
+            {
+                return default(int);
+            }
+
+            internal int _003CSetDataAndLoadAssetAsync_003Eb__30_2(EpisodeReportData x)
+            {
+                return default(int);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass26_0
+        {
+            public string characterId;
+            public int episode;
+            public int index;
+            public _003C_003Ec__DisplayClass26_0()
+            {
+            }
+
+            internal bool _003CGetBeforeEpisodeReportData_003Eb__0(CharacterEpisodeReportData x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CGetBeforeEpisodeReportData_003Eb__1(EpisodeReportData x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CGetBeforeEpisodeReportData_003Eb__3(EpisodeReportData x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CGetBeforeEpisodeReportData_003Eb__4(EpisodeReportData x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass27_0
+        {
+            public string characterId;
+            public int episode;
+            public int index;
+            public _003C_003Ec__DisplayClass27_0()
+            {
+            }
+
+            internal bool _003CGetEpisodeReportData_003Eb__0(CharacterEpisodeReportData x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CGetEpisodeReportData_003Eb__1(EpisodeReportData x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass30_0
+        {
+            public string characterId;
+            public int episode;
+            public _003C_003Ec__DisplayClass30_0()
+            {
+            }
+
+            internal bool _003CSetDataAndLoadAssetAsync_003Eb__0(CharacterEpisodeReportData x)
+            {
+                return default(bool);
+            }
+
+            internal bool _003CSetDataAndLoadAssetAsync_003Eb__1(EpisodeReportData x)
+            {
+                return default(bool);
+            }
+        }
+
+        [CompilerGenerated]
+        private sealed class _003C_003Ec__DisplayClass31_0
+        {
+            public string characterId;
+            public _003C_003Ec__DisplayClass31_0()
+            {
+            }
+
+            internal bool _003CGetAllEpisodeReportDatas_003Eb__0(CharacterEpisodeReportData x)
+            {
+                return default(bool);
+            }
+        }
+
         [StructLayout((LayoutKind)3)]
         [CompilerGenerated]
         private struct _003CLoadTextureAsync_003Ed__28 : IAsyncStateMachine
