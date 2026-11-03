@@ -19,13 +19,13 @@ Timeline has `1.0.0.0`. These are not UPM versions.
 | Render Pipelines Universal / Core | 14.0.12, local `../work/urp14-fork-live` | Established project baseline: `DeferredLights.SetupLights(ScriptableRenderContext, ...)`, `ExecuteDeferredPass(ScriptableRenderContext, ...)`, `RenderStencilLights(ScriptableRenderContext, CommandBuffer, ...)` and `ClearStencilPartial(CommandBuffer)` match URP 14. The existing method comparison found 3,741 matches against 14.0.12. Game modifications are separately reconstructed in the fork. |
 | Shader Graph | 14.0.12, same fork | Matching URP/Core package family and their dependency metadata; editor dependency, not independently identifiable from the stripped player's runtime API. |
 | Universal Config | fork package | Taken from the already compiling reference project's package closure, using the same fork worktree path. |
-| Cinemachine | 2.6.0 | Strong identification: game `CinemachineCore` retains `kStreamingVersion`, `kVersionString`, `GenerateCameraActivationEvent(ICinemachineCamera, ICinemachineCamera)` and `GenerateCameraCutEvent(ICinemachineCamera)`. Candidate 2.6.0 `Runtime/Core/CinemachineCore.cs:16` sets `kVersionString = "2.6.0"`; the game's string-literal table contains `2.6.0` at `0xF013E38`. Candidate 2.8.9 contains `2.8.8` instead; 2.9.7 and cached 2.10.7 remove `kVersionString`. This is converging static evidence, not a runtime observation. |
+| Cinemachine | 2.6.0, sanitized registry source + game additions | Strong identification: game `CinemachineCore` retains `kStreamingVersion`, `kVersionString`, `GenerateCameraActivationEvent(ICinemachineCamera, ICinemachineCamera)` and `GenerateCameraCutEvent(ICinemachineCamera)`. Candidate 2.6.0 `Runtime/Core/CinemachineCore.cs:16` sets `kVersionString = "2.6.0"`; the game's string-literal table contains `2.6.0` at `0xF013E38`. Candidate 2.8.9 contains `2.8.8` instead; 2.9.7 and cached 2.10.7 remove `kVersionString`. This is converging static evidence, not a runtime observation. |
 | Timeline | 1.8.12, sanitized registry source + game addition | Compatible candidate from the Unity77 reference cache. `TimelineAsset` retains serialized `m_Version`, `List<ScriptableObject> m_Tracks`, `double m_FixedDuration`, `EditorSettings m_EditorSettings`, `MarkerTrack m_MarkerTrack`, and matching duration/track API. These are present in candidate `Runtime/TimelineAsset.cs` and its upgrade partial. Candidate 1.7.6 was also inspected; the retained members do not uniquely distinguish the patch. **Exact version unresolved.** |
 | Burst | 1.8.29 | Compatible candidate from the Unity77 reference cache. Game `BurstCompilerOptions` has `ForceDisableBurstCompilation`, `ForceBurstCompilationSynchronously`, `IsSecondaryUnityProcess`, `_enableBurstCompilation`, `_enableBurstSafetyChecks`, and `CheckIsSecondaryUnityProcess()`; candidate `Runtime/BurstCompilerOptions.cs` has these. `BurstCompileAttribute` includes `DisableSafetyChecks` and `OptimizeFor`; `BurstRuntime.RuntimeLog(byte*, int, byte*, int)` also agrees. These are insufficient to identify a patch. **Exact version unresolved.** |
 | Collections | 2.6.8, sanitized registry source | Game has both `NativeParallelHashMap` and the newer `NativeHashMap<TKey,TValue>` backed by `HashMapHelper<TKey>* m_Data`. `HashMapHelper` fields are `Ptr`, `Keys`, `Next`, `Buckets`, `Count`, `Capacity`, `Log2MinGrowth`, `BucketCapacity`, `AllocatedIndex`, `FirstFreeIdx`, `SizeOfTValue`, allocator. This rules out the old pre-rename map layout. Candidate 2.1.4, 2.4.0 and cached 2.6.7 share this structure; 2.6.8 is the compiling candidate: 2.6.7 runtime `xxHash3` depended on `System.Runtime.CompilerServices.Unsafe` from removed test infrastructure; the upstream 2.6.8 changelog explicitly removes that dependency, using byte-wise unaligned access in the source. The stripped game does not retain `xxHash3`, so this cannot identify its package patch. **Exact version unresolved.** |
 | Mathematics | 1.3.2 | Compatible candidate from the Unity77 reference cache. Game `Random` contains `uint state`, `Random(uint)`, `CreateFromIndex(uint)`, `WangHash(uint)`, `InitState(uint = 1851936439)` and the retained vector/matrix types; these agree with candidate `Unity.Mathematics/random.cs`. This does not distinguish patch releases. **Exact version unresolved.** |
 | Animation Rigging | 1.4.0, sanitized registry source | **1.4 family confirmed** by game `RigBuilder`, `Rig`, `RigTransform`, `TwoBoneIKConstraint` HelpURL attributes referring to `com.unity.animation.rigging@1.4`. `RigBuilder` field sequence is `m_RigLayers`, `m_RuntimeRigLayers`, `m_SyncSceneToStreamLayer`, `m_Effectors`, `m_IsInPreview`, static callbacks; 1.4.0 agrees. Candidates 1.2.1/1.3.0 have older documentation families. 1.4.1's editor changes do not establish a distinct retained runtime fingerprint. **1.4.0 versus 1.4.1 unresolved.** |
-| uGUI / TextMeshPro | 2.0.0 | Game TMP HelpURL attributes explicitly point to `com.unity.ugui@2.0`; `TMP_Settings` retains `assetVersion`, `s_CurrentAssetVersion`, `version`, `SetAssetVersion()`. Unity77's uGUI 2.0.0 includes both the exact `UnityEngine.UI` and `Unity.TextMeshPro` assembly names. No separate legacy TMP package is added. |
+| uGUI / TextMeshPro | 2.0.0, embedded editor source + game additions | Game TMP HelpURL attributes explicitly point to `com.unity.ugui@2.0`; `TMP_Settings` retains `assetVersion`, `s_CurrentAssetVersion`, `version`, `SetAssetVersion()`. Unity77's uGUI 2.0.0 includes both the exact `UnityEngine.UI` and `Unity.TextMeshPro` assembly names. No separate legacy TMP package is added. |
 | Visual Effect Graph | 17.0.4 runtime source from Unity77 | Compatible runtime candidate. Game `Unity.VisualEffectGraph.Runtime` includes `VisualEffectControlClip` with `scrubbing`, `startSeed`, `ReinitMode`, `PrewarmClipSettings`, `clipEvents`, `singleEvents`; the editor-bundled 17.0.4 source agrees. Its `PrewarmClipSettings` retains `enable`, `stepCount`, `deltaTime`, `eventName`, and `VFXTimeSpaceHelper.GetEventNormalizedSpace(...)` agrees. **Exact patch unresolved.** Only runtime source is included; see adaptation below. |
 | Profiling Core | 1.0.2 | Game retains `Unity.Profiling.ProfilerCounterValue<T>` and constructor `(ProfilerCategory, string, ProfilerMarkerDataUnit, ProfilerCounterOptions)`, with get/set `Value`; registry 1.0.2 matches. Too little survives stripping to distinguish 1.0.x patches. **Exact patch unresolved.** |
 | Memory Profiler | omitted unless required by closure | Game assembly exists. Registry 1.1.0 candidate was inspected: `MetadataInjector`, `MetadataCollect.CollectMetadata(MemorySnapshotMetadata)` and `DefaultMetadataCollect.FormatSecondsToTime(double)` agree. This is not needed solely because the game contains it; include only if a closure member references it. **Exact version unresolved.** |
@@ -102,3 +102,42 @@ candidate Runtime source; generic `IntervalTree<T>` is stock. This inventory
 does not assert that every retained stock method's body is identical.
 The restore script requires the metadata helper built by the project skeleton
 generation workflow before regenerating this additional type.
+
+## Native-layout findings: uGUI and Cinemachine
+
+The first actual Android native build exposed a shared UI base-class difference.
+In the game, `Graphic` ends with compiler-generated
+`<useLegacyMeshGeneration>k__BackingField` at `0xA0` and
+`int <GraphicRebuildOrder>k__BackingField` at `0xA4`. The latter is absent in
+stock uGUI 2.0.0. This explains the eight-byte shortfall in `MaskableGraphic`,
+`RawImage`, and the custom game components derived from them. uGUI 2.0.0 is
+therefore embedded from the pinned editor and the missing storage is inserted
+exactly after the legacy backing field. The public `GraphicRebuildOrder`
+property preserves DummyDll stub accessors; the metadata-name processor restores
+the escaped backing field name.
+
+The same game UI assembly adds a default interface getter
+`ICanvasElement.GraphicRebuildOrder`, and `CanvasUpdateRegistry` adds the
+`onLayoutComplete` event/backing field at `0x30`, static
+`IComparer<ICanvasElement> s_SortGraphicComparer` at `0x10`, and nested
+`GraphicSortComparer`. These additions retain metadata signatures and empty or
+default bodies; event dispatch and graphic sorting behavior are not rebuilt.
+The source still contains stock literal constants stripped from the game; these
+do not consume instance storage and remain reportable metadata differences.
+
+Cinemachine 2.6.0 is also a game fork. Game `LensSettings` adds
+`[Tooltip("Focal Length for physical camera")] public float FocalLength` after
+`Dutch`, at offset `0x14`. It enlarges `LensSettings` and shifts the embedded
+`CameraState` and camera component fields. The native report's camera instance
+shifts are therefore real missing storage, not merely stripped constants. The
+field and `VerticalFOVToFocalLength(float)` / `FocalLengthToVerticalFOV()`
+signatures are now added, with conversion bodies left as DummyDll stubs.
+`CinemachineShotPlayable` adds `public Animator CameraAnimator` at `0x18` and
+three lifecycle overrides; `CinemachineBrain` adds
+`private static readonly AnimationCurve mDefaultLinearAnimationCurve` at static
+offset `0x8`. No new static initializer executes game behavior.
+
+All these edits are applied by `Packages/restore_registry.py` from fresh source.
+They require a new native build to confirm corrected offsets; the first report
+is evidence for the missing storage, not evidence that these fixes already
+passed the layout comparison.

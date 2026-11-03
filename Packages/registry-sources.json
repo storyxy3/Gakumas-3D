@@ -25,10 +25,31 @@
       "Titan.TitanTrackBase (DummyDll skeleton)"
     ]
   },
+  "com.unity.cinemachine": {
+    "version": "2.6.0",
+    "source": "https://packages.unity.com/com.unity.cinemachine/-/com.unity.cinemachine-2.6.0.tgz",
+    "sha256": "3e24e234062591eb20cbf4d006b1bbf41a5301841642ed27db942362bdb4685a",
+    "removedTestDependencies": {},
+    "gameAdditions": [
+      "LensSettings.FocalLength and conversion signatures",
+      "CinemachineBrain.mDefaultLinearAnimationCurve",
+      "CinemachineShotPlayable.CameraAnimator and lifecycle signatures"
+    ]
+  },
   "com.unity.visualeffectgraph": {
     "version": "17.0.4",
     "source": "/data/xy/.toolchains/unity-6000.0.77f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.visualeffectgraph",
     "scope": "Runtime only; no graph authoring/editor assembly",
     "asmdefAdaptation": "Unity.ugui -> UnityEngine.UI; omit absent optional Unity.InputSystem"
+  },
+  "com.unity.ugui": {
+    "version": "2.0.0",
+    "source": "/data/xy/.toolchains/unity-6000.0.77f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui",
+    "gameAdditions": [
+      "Graphic.GraphicRebuildOrder and backing field",
+      "ICanvasElement.GraphicRebuildOrder default interface accessor",
+      "CanvasUpdateRegistry.onLayoutComplete event and backing field",
+      "CanvasUpdateRegistry.s_SortGraphicComparer and GraphicSortComparer"
+    ]
   }
 }

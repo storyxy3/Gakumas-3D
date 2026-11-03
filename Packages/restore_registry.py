@@ -17,7 +17,7 @@ import urllib.request
 
 PACKAGES = Path(__file__).resolve().parent
 EDITOR = Path('/data/xy/.toolchains/unity-6000.0.77f1/Editor/Data/Resources/PackageManager/BuiltInPackages')
-VERSIONS = {'com.unity.animation.rigging': '1.4.0', 'com.unity.collections': '2.6.8', 'com.unity.timeline': '1.8.12'}
+VERSIONS = {'com.unity.animation.rigging': '1.4.0', 'com.unity.collections': '2.6.8', 'com.unity.timeline': '1.8.12', 'com.unity.cinemachine': '2.6.0'}
 OMIT = {'Tests', 'Tests~', 'Tests.meta', 'Tests~.meta', 'Samples~', 'Samples~.meta', 'Documentation~', 'Documentation~.meta', 'DocCodeExamples', 'DocCodeExamples.meta', '.signature'}
 
 
@@ -29,6 +29,95 @@ def copy_source(source, destination):
     if destination.exists():
         shutil.rmtree(destination)
     shutil.copytree(source, destination, ignore=lambda directory, names: [n for n in names if omit(n)])
+
+
+def replace_once(path, before, after):
+    source = path.read_text()
+    if source.count(before) != 1:
+        raise ValueError(f'Expected one source anchor in {path}: {before!r}')
+    path.write_text(source.replace(before, after, 1))
+
+
+def restore_ui_additions():
+    source = EDITOR / 'com.unity.ugui'
+    destination = PACKAGES / 'com.unity.ugui'
+    copy_source(source, destination)
+    graphic = destination / 'Runtime/UGUI/UI/Core/Graphic.cs'
+    marker = '        protected bool useLegacyMeshGeneration { get; set; }'
+    replace_once(graphic, marker, marker + '''
+
+        // TODO(qa-recon): game UI addition; accessor bodies remain skeletons.
+        // Game field offset 0xA4, after <useLegacyMeshGeneration>k__BackingField.
+        [System.Runtime.CompilerServices.CompilerGenerated]
+        private int _003CGraphicRebuildOrder_003Ek__BackingField;
+        public int GraphicRebuildOrder
+        {
+            [System.Runtime.CompilerServices.CompilerGenerated]
+            get { return default(int); }
+            [System.Runtime.CompilerServices.CompilerGenerated]
+            set { }
+        }
+''')
+    registry = destination / 'Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs'
+    marker = '    public interface ICanvasElement\n    {'
+    replace_once(registry, marker, marker + '''
+        // TODO(qa-recon): game default interface accessor, DummyDll body.
+        int GraphicRebuildOrder { get { return default(int); } }
+''')
+    marker = '        private readonly IndexedSet<ICanvasElement> m_GraphicRebuildQueue = new IndexedSet<ICanvasElement>();'
+    replace_once(registry, marker, marker + '''
+
+        // TODO(qa-recon): game event storage; registration bodies are skeletons.
+        [System.Runtime.CompilerServices.CompilerGenerated]
+        private Action m_onLayoutComplete;
+        public event Action onLayoutComplete
+        {
+            [System.Runtime.CompilerServices.CompilerGenerated]
+            add { }
+            [System.Runtime.CompilerServices.CompilerGenerated]
+            remove { }
+        }
+''')
+    marker = '        private static readonly Comparison<ICanvasElement> s_SortLayoutFunction = SortLayoutList;'
+    replace_once(registry, marker, marker + '''
+        // TODO(qa-recon): game comparer storage, no reconstructed initializer.
+        private static readonly IComparer<ICanvasElement> s_SortGraphicComparer;
+        private class GraphicSortComparer : IComparer<ICanvasElement>
+        {
+            public int Compare(ICanvasElement x, ICanvasElement y) { return default(int); }
+            public GraphicSortComparer() { }
+        }
+''')
+
+
+def restore_cinemachine_additions():
+    package = PACKAGES / 'com.unity.cinemachine'
+    lens = package / 'Runtime/Core/LensSettings.cs'
+    marker = '        public float Dutch;'
+    replace_once(lens, marker, marker + '''
+
+        // TODO(qa-recon): game lens storage; camera conversion remains unknown.
+        [Tooltip("Focal Length for physical camera")]
+        public float FocalLength;
+
+        public void VerticalFOVToFocalLength(float fov) { }
+        public float FocalLengthToVerticalFOV() { return default(float); }
+''')
+    brain = package / 'Runtime/Behaviours/CinemachineBrain.cs'
+    marker = '        CinemachineBlend mCurrentLiveCameras = new CinemachineBlend(null, null, null, 0, 0);'
+    replace_once(brain, marker, marker + '''
+        // TODO(qa-recon): game static storage; leave initializer unset.
+        private static readonly AnimationCurve mDefaultLinearAnimationCurve;
+''')
+    shot = package / 'Runtime/Timeline/CinemachineShotPlayable.cs'
+    marker = '        public CinemachineVirtualCameraBase VirtualCamera;'
+    replace_once(shot, marker, marker + '''
+        // TODO(qa-recon): game shot storage and lifecycle signatures only.
+        public UnityEngine.Animator CameraAnimator;
+        public override void OnGraphStart(Playable playable) { }
+        public override void OnBehaviourPlay(Playable playable, FrameData info) { }
+        public override void OnBehaviourPause(Playable playable, FrameData info) { }
+''')
 
 
 def restore_timeline_additions():
@@ -94,6 +183,10 @@ def restore():
     evidence[name] = {'version': metadata['version'], 'source': str(source), 'scope': 'Runtime only; no graph authoring/editor assembly', 'asmdefAdaptation': 'Unity.ugui -> UnityEngine.UI; omit absent optional Unity.InputSystem'}
     restore_timeline_additions()
     evidence['com.unity.timeline']['gameAdditions'] = ['Titan.TitanTrackBase (DummyDll skeleton)']
+    restore_ui_additions()
+    evidence['com.unity.ugui'] = {'version': '2.0.0', 'source': str(EDITOR / 'com.unity.ugui'), 'gameAdditions': ['Graphic.GraphicRebuildOrder and backing field', 'ICanvasElement.GraphicRebuildOrder default interface accessor', 'CanvasUpdateRegistry.onLayoutComplete event and backing field', 'CanvasUpdateRegistry.s_SortGraphicComparer and GraphicSortComparer']}
+    restore_cinemachine_additions()
+    evidence['com.unity.cinemachine']['gameAdditions'] = ['LensSettings.FocalLength and conversion signatures', 'CinemachineBrain.mDefaultLinearAnimationCurve', 'CinemachineShotPlayable.CameraAnimator and lifecycle signatures']
     (PACKAGES / 'registry-sources.json').write_text(json.dumps(evidence, indent=2) + '\n')
 
 
