@@ -1,0 +1,11 @@
+{
+  "name": "quaunity-volumetriclightbeam.Runtime",
+  "references": [
+    "Unity.Mathematics",
+    "Unity.Collections",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.Burst"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}

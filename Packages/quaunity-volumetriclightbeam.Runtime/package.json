@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.quaunity-volumetriclightbeam.runtime",
+  "version": "0.0.1",
+  "displayName": "quaunity-volumetriclightbeam.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}
