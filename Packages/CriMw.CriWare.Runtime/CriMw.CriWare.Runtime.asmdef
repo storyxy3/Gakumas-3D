@@ -1,0 +1,10 @@
+{
+  "name": "CriMw.CriWare.Runtime",
+  "references": [
+    "Unity.Timeline",
+    "UnityEngine.UI",
+    "Unity.Profiling.Core"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
