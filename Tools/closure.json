@@ -1,0 +1,210 @@
+{
+  "assemblies": {
+    "vl-unity.Runtime": [
+      "UnityEngine.CoreModule",
+      "UnityEngine.AudioModule",
+      "UnityEngine.AnimationModule",
+      "Cinemachine",
+      "Unity.Timeline",
+      "Unity.RenderPipelines.Universal.Runtime",
+      "Unity.RenderPipelines.Core.Runtime",
+      "Unity.Collections",
+      "Unity.Mathematics",
+      "System.Core",
+      "UnityEngine.PhysicsModule",
+      "ActorAnimation.Runtime",
+      "UnityEngine.XRModule",
+      "UnityEngine.DirectorModule",
+      "UnityEngine.UI",
+      "AmplifyOcclusion.Runtime",
+      "quaunity-volumetriclightbeam.Runtime",
+      "ProFlare.Runtime",
+      "UniTask",
+      "UnityEngine.ParticleSystemModule",
+      "Unity.Animation.Rigging",
+      "Unity.Burst"
+    ],
+    "campus-submodule.Runtime": [
+      "Titan.Runtime",
+      "UnityEngine.CoreModule",
+      "UnityEngine.UI",
+      "quaunity-ui.Runtime",
+      "Unity.RenderPipelines.Universal.Runtime",
+      "ActorAnimation.Runtime",
+      "Unity.Animation.Rigging",
+      "UnityEngine.AnimationModule",
+      "UnityEngine.UIModule",
+      "Unity.Timeline",
+      "vl-unity.Runtime",
+      "CriMw.CriWare.Runtime",
+      "Cinemachine",
+      "Qua.Utility",
+      "Unity.RenderPipelines.Core.Runtime",
+      "quaunity-global",
+      "Octo",
+      "DOTween",
+      "UniTask",
+      "Unity.TextMeshPro",
+      "UnityEngine.DirectorModule",
+      "UnityEngine.VideoModule",
+      "Qua.VectorUI.Runtime",
+      "UniRx",
+      "System.Core",
+      "UnityEngine.ParticleSystemModule",
+      "UnityEngine.AudioModule",
+      "Qua.Base.Runtime",
+      "quaunity-volumetriclightbeam.Runtime",
+      "UnityEngine.PhysicsModule",
+      "Unity.Mathematics",
+      "ProFlare.Runtime",
+      "Unity.Collections",
+      "campus-submodule.Shader.Runtime",
+      "UnityEngine.InputLegacyModule",
+      "Qua.PolygonUtility",
+      "UnityEngine.AssetBundleModule",
+      "Unity.Burst"
+    ],
+    "campus-submodule.Shader.Runtime": [
+      "Unity.Mathematics",
+      "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "AmplifyOcclusion.Runtime": [
+      "Unity.RenderPipelines.Core.Runtime",
+      "Unity.RenderPipelines.Universal.Runtime",
+      "UnityEngine.CoreModule"
+    ],
+    "ActorAnimation.Runtime": [
+      "UnityEngine.CoreModule",
+      "Unity.Animation.Rigging",
+      "UnityEngine.AnimationModule",
+      "Unity.RenderPipelines.Core.Runtime",
+      "Unity.Mathematics",
+      "System.Core",
+      "Unity.Collections",
+      "Unity.Burst"
+    ],
+    "ProFlare.Runtime": [
+      "UnityEngine.CoreModule",
+      "Unity.Mathematics",
+      "Unity.RenderPipelines.Core.Runtime",
+      "Unity.Burst"
+    ],
+    "quaunity-volumetriclightbeam.Runtime": [
+      "UnityEngine.CoreModule",
+      "UnityEngine.ParticleSystemModule",
+      "Unity.Mathematics",
+      "Unity.Collections",
+      "Unity.RenderPipelines.Universal.Runtime",
+      "UnityEngine.Physics2DModule",
+      "UnityEngine.PhysicsModule",
+      "Unity.Burst"
+    ],
+    "Uguiss.Runtime": [
+      "UnityEngine.CoreModule",
+      "UniTask"
+    ],
+    "Uguiss-Timeline.Runtime": [
+      "Uguiss.Runtime",
+      "UnityEngine.CoreModule",
+      "UniTask"
+    ],
+    "UniTask": [
+      "UnityEngine.CoreModule",
+      "UnityEngine.UnityWebRequestModule",
+      "UnityEngine.PhysicsModule",
+      "UnityEngine.Physics2DModule",
+      "UnityEngine.ParticleSystemModule",
+      "UnityEngine.UI"
+    ],
+    "UniTask.Linq": [
+      "UniTask"
+    ],
+    "Titan.Runtime": [
+      "UnityEngine.CoreModule",
+      "Unity.Timeline",
+      "UnityEngine.UIModule",
+      "UnityEngine.UI",
+      "UnityEngine.DirectorModule",
+      "UnityEngine.ParticleSystemModule",
+      "Unity.TextMeshPro",
+      "DOTween",
+      "UnityEngine.AnimationModule",
+      "System.Core",
+      "Assembly-CSharp",
+      "campus-submodule.Runtime",
+      "Qua.VectorUI.Runtime"
+    ],
+    "quaunity-ui.Runtime": [
+      "UnityEngine.UI",
+      "UnityEngine.CoreModule",
+      "Qua.Utility",
+      "UnityEngine.UIModule",
+      "UniTask",
+      "System.Core",
+      "UnityEngine.TextRenderingModule",
+      "Unity.TextMeshPro",
+      "quaunity-crypto"
+    ],
+    "CriMw.CriWare.Runtime": [
+      "UnityEngine.CoreModule",
+      "Unity.Timeline",
+      "UnityEngine.AndroidJNIModule",
+      "UnityEngine.AssetBundleModule",
+      "UnityEngine.UI",
+      "Unity.Profiling.Core",
+      "UnityEngine.DirectorModule"
+    ],
+    "Qua.Utility": [
+      "UnityEngine.CoreModule",
+      "UnityEngine.UI",
+      "UniTask"
+    ],
+    "quaunity-global": [
+      "UnityEngine.CoreModule",
+      "Unity.TextMeshPro",
+      "UniTask",
+      "System.Core"
+    ],
+    "DOTween": [
+      "UnityEngine.CoreModule"
+    ],
+    "Qua.VectorUI.Runtime": [
+      "UnityEngine.UI",
+      "UnityEngine.CoreModule",
+      "Qua.Utility"
+    ],
+    "UniRx": [
+      "UnityEngine.CoreModule",
+      "UnityEngine.UI",
+      "UnityEngine.AnimationModule",
+      "System.Core",
+      "UnityEngine.Physics2DModule",
+      "UnityEngine.PhysicsModule"
+    ],
+    "Qua.Base.Runtime": [
+      "UnityEngine.CoreModule",
+      "UnityEngine.AndroidJNIModule",
+      "Google.Play.Review",
+      "Google.Play.Common"
+    ],
+    "Qua.PolygonUtility": [
+      "UnityEngine.CoreModule",
+      "Qua.Utility"
+    ],
+    "quaunity-crypto": [
+      "FastAES"
+    ]
+  },
+  "cuts": {
+    "Titan.Runtime": [
+      "Assembly-CSharp"
+    ],
+    "Qua.Base.Runtime": [
+      "Google.Play.Review",
+      "Google.Play.Common"
+    ],
+    "quaunity-crypto": [
+      "FastAES"
+    ]
+  }
+}

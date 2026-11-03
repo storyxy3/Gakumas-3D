@@ -1,0 +1,168 @@
+{
+  "assembly": "Octo",
+  "original_references": [
+    "Il2CppDummyDll",
+    "UnityEngine.CoreModule",
+    "UnityEngine.AssetBundleModule",
+    "UnityEngine.AudioModule",
+    "UnityEngine.UnityWebRequestModule",
+    "System.Core",
+    "UnityEngine.AndroidJNIModule",
+    "UnityEngine.UnityWebRequestAssetBundleModule",
+    "OCTProtoSerializer",
+    "octdata",
+    "protobuf-net",
+    "FastAES"
+  ],
+  "cut_references": [
+    "FastAES",
+    "OCTProtoSerializer",
+    "octdata",
+    "protobuf-net"
+  ],
+  "source_cuts": [
+    {
+      "file": "Octo.Data/AESCrypt.cs",
+      "reason": "Octo.Data.AESCrypt._fastAes -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "private FastAES _fastAes;"
+      ]
+    },
+    {
+      "file": "Octo.Data/DataManager.cs",
+      "reason": "remove excluded protobuf namespace import",
+      "occurrences": 1,
+      "original_declarations": [
+        "using ProtoBuf;"
+      ]
+    },
+    {
+      "file": "Octo.Data/DataManager.cs",
+      "reason": "Octo.Proto.Data parameter -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "private void UpdateWithNewData(Dictionary<string, Item> dictionary, Data octodata)"
+      ]
+    },
+    {
+      "file": "Octo.Data/DataManager.cs",
+      "reason": "Octo.Proto.Database signature -> object",
+      "occurrences": 4,
+      "original_declarations": [
+        "private SecureProtoBufDatabase<Database> ReadSecureDatabase(string path)",
+        "private void ResetAllDependencies(Database db)",
+        "private void SetUrls(Database db)",
+        "private void ConstructDictionary(Database db)"
+      ]
+    },
+    {
+      "file": "Octo.Data/DataManager.cs",
+      "reason": "ProtoBuf.ProtoWriter parameter -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "private static void Write(ProtoWriter writer, int tag, IEnumerable<Item> items, Dictionary<string, int> tagDictionary)"
+      ]
+    },
+    {
+      "file": "Octo.Data/Item.cs",
+      "reason": "remove excluded protobuf namespace import",
+      "occurrences": 1,
+      "original_declarations": [
+        "using ProtoBuf;"
+      ]
+    },
+    {
+      "file": "Octo.Data/Item.cs",
+      "reason": "Octo.Data.Item.state: Data.State -> int",
+      "occurrences": 1,
+      "original_declarations": [
+        "public Data.State state;"
+      ]
+    },
+    {
+      "file": "Octo.Data/Item.cs",
+      "reason": "Octo.Proto.Data parameter -> object",
+      "occurrences": 3,
+      "original_declarations": [
+        "public Item(Data data, IList<string> tagNames)",
+        "public virtual void SetData(Data data, IList<string> tagNames)",
+        "public virtual void SetDependencies(Data data, Dictionary<int, Item> items)"
+      ]
+    },
+    {
+      "file": "Octo.Data/Item.cs",
+      "reason": "ProtoBuf.ProtoWriter parameter -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "public void Write(ProtoWriter writer, Dictionary<string, int> tagDictionary)"
+      ]
+    },
+    {
+      "file": "Octo.Data/ItemFactory.cs",
+      "reason": "Octo.Proto.Data parameter -> object",
+      "occurrences": 4,
+      "original_declarations": [
+        "public static Item Create(Data data, IList<string> tagNames)",
+        "public static Item CreateByResource(Data data, IList<string> tagNames)",
+        "public static bool IsSameItemType(Item item, Data data)",
+        "private static ItemType CalculateItemType(Data data)"
+      ]
+    },
+    {
+      "file": "Octo.Data/ItemWithDeps.cs",
+      "reason": "Octo.Proto.Data parameter -> object",
+      "occurrences": 2,
+      "original_declarations": [
+        "public ItemWithDeps(Data data, IList<string> tagNames)",
+        "public override void SetDependencies(Data data, Dictionary<int, Item> items)"
+      ]
+    },
+    {
+      "file": "Octo.Data/ItemWithDepsAndTags.cs",
+      "reason": "Octo.Proto.Data parameter -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "public ItemWithDepsAndTags(Data data, IList<string> tagNames)"
+      ]
+    },
+    {
+      "file": "Octo.Data/ItemWithTags.cs",
+      "reason": "Octo.Proto.Data parameter -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "public ItemWithTags(Data data, IList<string> tagNames)"
+      ]
+    },
+    {
+      "file": "Octo.Data/ProtoWriterExtensions.cs",
+      "reason": "remove excluded protobuf namespace import",
+      "occurrences": 1,
+      "original_declarations": [
+        "using ProtoBuf;"
+      ]
+    },
+    {
+      "file": "Octo.Data/ProtoWriterExtensions.cs",
+      "reason": "ProtoBuf.ProtoWriter parameter -> object",
+      "occurrences": 7,
+      "original_declarations": [
+        "public static void Write(this ProtoWriter writer, int tag, int value)",
+        "public static void Write(this ProtoWriter writer, int tag, uint value)",
+        "public static void Write(this ProtoWriter writer, int tag, string value)",
+        "public static void Write(this ProtoWriter writer, int tag, IEnumerable<int> values)",
+        "public static void Write(this ProtoWriter writer, int tag, IEnumerable<string> values)",
+        "public static void WriteIfNotDefault(this ProtoWriter writer, int tag, int value)",
+        "public static void WriteIfNotDefault(this ProtoWriter writer, int tag, uint value)"
+      ]
+    },
+    {
+      "file": "Octo.Proto/StaticSerializer.cs",
+      "reason": "Octo.Proto.StaticSerializer._serializer -> object",
+      "occurrences": 1,
+      "original_declarations": [
+        "private static OCTProtoSerializer _serializer;"
+      ]
+    }
+  ]
+}

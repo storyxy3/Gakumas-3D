@@ -1,0 +1,7 @@
+{
+  "name": "Unity.QA.Recon.MetadataNames.CodeGen",
+  "includePlatforms": ["Editor"],
+  "overrideReferences": true,
+  "precompiledReferences": ["Unity.Burst.Cecil.dll"],
+  "autoReferenced": false
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "application": "Apply regex replacements after clean_source, before compiler cleanup. Paths are relative to .recon/complete/<assembly>. Every match is a documented closure cut. Never treat reference-only cuts as renamed types.",
+  "reference_only_cuts": [
+    {
+      "assembly": "Titan.Runtime",
+      "references": [
+        "Assembly-CSharp",
+        "campus-submodule.Runtime",
+        "Qua.VectorUI.Runtime"
+      ],
+      "evidence": "DummyDll project reference table lists these assemblies, but full ilspycmd -il output contains zero qualified references to them; no source declaration edits required."
+    }
+  ],
+  "source_cuts": [
+    {
+      "assembly": "Qua.Base.Runtime",
+      "file": "Qua.Base/StoreUtil.cs",
+      "dependency": "Google.Play.Common / Google.Play.Review",
+      "reason": "Store review coroutine dependencies are outside rendering. Three reference-typed fields retain reference storage, but exact declared types differ.",
+      "replacements": [
+        {
+          "pattern": "^using Google\\.Play\\.(?:Common|Review);\\n",
+          "replacement": "",
+          "flags": "M"
+        },
+        {
+          "pattern": "\\bReviewManager (?=_003CreviewManager_003E5__2\\b)",
+          "replacement": "object /* TODO(qa-recon): Google.Play.Review.ReviewManager excluded from rendering closure. */ "
+        },
+        {
+          "pattern": "PlayAsyncOperation<PlayReviewInfo, ReviewErrorCode> (?=_003CrequestFlowOperation_003E5__3\\b)",
+          "replacement": "object /* TODO(qa-recon): Google.Play.Common.PlayAsyncOperation<PlayReviewInfo, ReviewErrorCode> excluded from rendering closure. */ "
+        },
+        {
+          "pattern": "PlayAsyncOperation<VoidResult, ReviewErrorCode> (?=_003ClaunchFlowOperation_003E5__4\\b)",
+          "replacement": "object /* TODO(qa-recon): Google.Play.Common.PlayAsyncOperation<VoidResult, ReviewErrorCode> excluded from rendering closure. */ "
+        }
+      ]
+    },
+    {
+      "assembly": "quaunity-crypto",
+      "file": "Qua.Crypto/AES.cs",
+      "dependency": "FastAES",
+      "reason": "Crypto implementation reference is outside rendering; pointer storage retained while exact declared type differs. No crypto behavior reconstructed.",
+      "replacements": [
+        {
+          "pattern": "\\bFastAES (?=_fastAes\\b)",
+          "replacement": "object /* TODO(qa-recon): FastAES excluded from rendering closure. */ "
+        }
+      ]
+    }
+  ]
+}
