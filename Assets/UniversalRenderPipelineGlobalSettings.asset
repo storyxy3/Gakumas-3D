@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShaderVariantLogLevel: 0
   m_ExportShaderVariants: 1
+  m_Settings:
+    m_SettingsList:
+      m_List: []
   k_AssetVersion: 3
   m_RenderingLayerNames:
   - Default
@@ -32,3 +35,6 @@ MonoBehaviour:
   m_StripUnusedLODCrossFadeVariants: 1
   m_StripScreenCoordOverrideVariants: 1
   supportRuntimeDebugDisplay: 0
+  references:
+    version: 2
+    RefIds: []

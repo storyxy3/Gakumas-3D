@@ -1,6 +1,6 @@
 namespace Titan
 {
-    using UnityEngine.Timeline;
+    using global::UnityEngine.Timeline;
 
     public abstract class TitanTrackBase : TrackAsset
     {
