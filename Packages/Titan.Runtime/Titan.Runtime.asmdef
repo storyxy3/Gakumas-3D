@@ -1,0 +1,11 @@
+{
+  "name": "Titan.Runtime",
+  "references": [
+    "Unity.Timeline",
+    "UnityEngine.UI",
+    "Unity.TextMeshPro",
+    "DOTween"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}

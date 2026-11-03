@@ -1,0 +1,31 @@
+namespace Titan
+{
+    internal enum TokenType
+    {
+        Unknown,
+        Identifier,
+        Plus,
+        Minus,
+        Multi,
+        Division,
+        IntegerDivision,
+        Remainder,
+        Number,
+        Integer,
+        Lparen,
+        Rparen,
+        Dot,
+        Comma,
+        And,
+        Or,
+        Question,
+        Colon,
+        Greater,
+        GreaterOrEqual,
+        Less,
+        LessOrEqual,
+        Equal,
+        NotEqual,
+        String
+    }
+}
