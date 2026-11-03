@@ -1,0 +1,9 @@
+{
+  "name": "campus-submodule.Shader.Runtime",
+  "references": [
+    "Unity.Mathematics",
+    "Unity.RenderPipelines.Core.Runtime"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}

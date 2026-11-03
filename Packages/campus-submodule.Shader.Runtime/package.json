@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.campus-submodule.shader.runtime",
+  "version": "0.0.1",
+  "displayName": "campus-submodule.Shader.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}
