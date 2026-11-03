@@ -1,0 +1,8 @@
+{
+  "name": "Qua.PolygonUtility",
+  "references": [
+    "Qua.Utility"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
