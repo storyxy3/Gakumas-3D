@@ -1,0 +1,9 @@
+{
+  "name": "quaunity-global",
+  "references": [
+    "Unity.TextMeshPro",
+    "UniTask"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
