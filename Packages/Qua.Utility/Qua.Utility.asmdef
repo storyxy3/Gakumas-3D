@@ -1,0 +1,9 @@
+{
+  "name": "Qua.Utility",
+  "references": [
+    "UnityEngine.UI",
+    "UniTask"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
