@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.qua.base.runtime",
+  "version": "0.0.1",
+  "displayName": "Qua.Base.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}
