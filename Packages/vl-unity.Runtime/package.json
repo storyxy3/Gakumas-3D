@@ -1,0 +1,6 @@
+{
+  "name": "com.qa-recon.vl-unity.runtime",
+  "version": "0.0.1",
+  "displayName": "vl-unity.Runtime (DummyDll skeleton)",
+  "unity": "6000.0"
+}

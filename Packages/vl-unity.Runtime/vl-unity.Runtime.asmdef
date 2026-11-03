@@ -1,0 +1,21 @@
+{
+  "name": "vl-unity.Runtime",
+  "references": [
+    "Cinemachine",
+    "Unity.Timeline",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.Collections",
+    "Unity.Mathematics",
+    "ActorAnimation.Runtime",
+    "UnityEngine.UI",
+    "AmplifyOcclusion.Runtime",
+    "quaunity-volumetriclightbeam.Runtime",
+    "ProFlare.Runtime",
+    "UniTask",
+    "Unity.Animation.Rigging",
+    "Unity.Burst"
+  ],
+  "allowUnsafeCode": true,
+  "autoReferenced": true
+}
