@@ -1,0 +1,541 @@
+=== Campus.DecalLight.CampusDecalLightDrawSystem$$Execute @ 0xddbbb88 (539 insns)
+    void Campus_DecalLight_CampusDecalLightDrawSystem__Execute (Campus_DecalLight_CampusDecalLightDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);
+  0ddbbb88  sub     sp, sp, #0xd0
+  0ddbbb8c  stp     x29, x30, [sp, #0x70]
+  0ddbbb90  stp     x28, x27, [sp, #0x80]
+  0ddbbb94  stp     x26, x25, [sp, #0x90]
+  0ddbbb98  stp     x24, x23, [sp, #0xa0]
+  0ddbbb9c  stp     x22, x21, [sp, #0xb0]
+  0ddbbba0  stp     x20, x19, [sp, #0xc0]
+  0ddbbba4  adrp    x21, #0xf43b000
+  0ddbbba8  mov     x25, x1
+  0ddbbbac  mov     x19, x0
+  0ddbbbb0  ldrb    w8, [x21, #0xc9f]
+  0ddbbbb4  tbnz    w8, #0, #0xddbbcbc
+  0ddbbbb8  adrp    x0, #0xebc6000
+  0ddbbbbc  ldr     x0, [x0, #0x360]  ; META Campus.DecalLight.CampusDecalLightDrawSystem_TypeInfo
+  0ddbbbc0  bl      #0x63cee78
+  0ddbbbc4  adrp    x0, #0xeac8000
+  0ddbbbc8  ldr     x0, [x0, #0xb80]  ; META CanvasRT.CanvasRenderTexture_TypeInfo
+  0ddbbbcc  bl      #0x63cee78
+  0ddbbbd0  adrp    x0, #0xea6a000
+  0ddbbbd4  ldr     x0, [x0, #0xc70]  ; META UnityEngine.Rendering.CoreUtils_TypeInfo
+  0ddbbbd8  bl      #0x63cee78
+  0ddbbbdc  adrp    x0, #0xea67000
+  0ddbbbe0  ldr     x0, [x0, #0x3c0]  ; META UnityEngine.Debug_TypeInfo
+  0ddbbbe4  bl      #0x63cee78
+  0ddbbbe8  adrp    x0, #0xeba8000
+  0ddbbbec  ldr     x0, [x0, #0xc78]  ; MMETH Method$System.Collections.Generic.Dictionary<int, Material>.Add()
+  0ddbbbf0  bl      #0x63cee78
+  0ddbbbf4  adrp    x0, #0xeba8000
+  0ddbbbf8  ldr     x0, [x0, #0xcc8]  ; MMETH Method$System.Collections.Generic.Dictionary<int, Material>.TryGetValue()
+  0ddbbbfc  bl      #0x63cee78
+  0ddbbc00  adrp    x0, #0xebc6000
+  0ddbbc04  ldr     x0, [x0, #0x300]  ; MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.Dispose()
+  0ddbbc08  bl      #0x63cee78
+  0ddbbc0c  adrp    x0, #0xebc6000
+  0ddbbc10  ldr     x0, [x0, #0x308]  ; MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.MoveNext()
+  0ddbbc14  bl      #0x63cee78
+  0ddbbc18  adrp    x0, #0xebc6000
+  0ddbbc1c  ldr     x0, [x0, #0x310]  ; MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.get_Current()
+  0ddbbc20  bl      #0x63cee78
+  0ddbbc24  adrp    x0, #0xebc6000
+  0ddbbc28  ldr     x0, [x0, #0x368]  ; META Campus.DecalLight.CampusDecalLight.LightShapeType_TypeInfo
+  0ddbbc2c  bl      #0x63cee78
+  0ddbbc30  adrp    x0, #0xebc6000
+  0ddbbc34  ldr     x0, [x0, #0x318]  ; MMETH Method$System.Collections.Generic.List<CampusDecalLightCombinedChunks>.GetEnumerator()
+  0ddbbc38  bl      #0x63cee78
+  0ddbbc3c  adrp    x0, #0xeacb000
+  0ddbbc40  ldr     x0, [x0, #0x50]  ; META UnityEngine.Material_TypeInfo
+  0ddbbc44  bl      #0x63cee78
+  0ddbbc48  adrp    x0, #0xebc6000
+  0ddbbc4c  ldr     x0, [x0, #0x370]  ; MMETH Method$Unity.Collections.NativeArray<Vector4>.Copy()
+  0ddbbc50  bl      #0x63cee78
+  0ddbbc54  adrp    x0, #0xeba3000
+  0ddbbc58  ldr     x0, [x0, #0xdc0]  ; MMETH Method$Unity.Collections.NativeArray<Matrix4x4>.Copy()
+  0ddbbc5c  bl      #0x63cee78
+  0ddbbc60  adrp    x0, #0xeba3000
+  0ddbbc64  ldr     x0, [x0, #0xdd0]  ; MMETH Method$Unity.Collections.NativeArray<float4x4>.Reinterpret<Matrix4x4>()
+  0ddbbc68  bl      #0x63cee78
+  0ddbbc6c  adrp    x0, #0xebc6000
+  0ddbbc70  ldr     x0, [x0, #0x378]  ; MMETH Method$Unity.Collections.NativeArray<float4>.Reinterpret<Vector4>()
+  0ddbbc74  bl      #0x63cee78
+  0ddbbc78  adrp    x0, #0xea65000
+  0ddbbc7c  ldr     x0, [x0, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0ddbbc80  bl      #0x63cee78
+  0ddbbc84  adrp    x0, #0xebc6000
+  0ddbbc88  ldr     x0, [x0, #0x380]  ; STR "_SPHERE"
+  0ddbbc8c  bl      #0x63cee78
+  0ddbbc90  adrp    x0, #0xebc6000
+  0ddbbc94  ldr     x0, [x0, #0x388]  ; STR "DecalLight ({0}) の描画上限を超えています。{1} > {2}"
+  0ddbbc98  bl      #0x63cee78
+  0ddbbc9c  adrp    x0, #0xebc6000
+  0ddbbca0  ldr     x0, [x0, #0x390]  ; STR "_BOX"
+  0ddbbca4  bl      #0x63cee78
+  0ddbbca8  adrp    x0, #0xebc6000
+  0ddbbcac  ldr     x0, [x0, #0x398]  ; STR "_CAPSULE"
+  0ddbbcb0  bl      #0x63cee78
+  0ddbbcb4  mov     w8, #1
+  0ddbbcb8  strb    w8, [x21, #0xc9f]
+  0ddbbcbc  ldrb    w8, [x19, #0x68]
+  0ddbbcc0  strb    wzr, [sp, #0x6c]
+  0ddbbcc4  stp     xzr, xzr, [sp, #0x50]
+  0ddbbcc8  str     xzr, [sp, #0x60]
+  0ddbbccc  str     xzr, [sp, #0x48]
+  0ddbbcd0  cbz     w8, #0xddbc24c
+  0ddbbcd4  ldr     x8, [x19, #0x10]
+  0ddbbcd8  cbz     x8, #0xddbc2a0
+  0ddbbcdc  ldr     x8, [x8, #0x10]
+  0ddbbce0  cbz     x8, #0xddbc24c
+  0ddbbce4  mov     x0, xzr
+  0ddbbce8  bl      #0xd9ea784  ; -> UnityEngine.SystemInfo$$get_supportsInstancing
+  0ddbbcec  tbz     w0, #0, #0xddbc24c
+  0ddbbcf0  adrp    x8, #0xeac8000
+  0ddbbcf4  ldr     x8, [x8, #0xb80]  ; META CanvasRT.CanvasRenderTexture_TypeInfo
+  0ddbbcf8  ldr     x0, [x8]
+  0ddbbcfc  ldr     w8, [x0, #0xe4]
+  0ddbbd00  cbnz    w8, #0xddbbd08
+  0ddbbd04  bl      #0x63ceff4
+  0ddbbd08  mov     w0, wzr
+  0ddbbd0c  mov     x1, xzr
+  0ddbbd10  bl      #0xdd26eb0  ; -> CanvasRT.CanvasRenderTexture$$GetCanvasRenderTexture
+  0ddbbd14  adrp    x8, #0xea65000
+  0ddbbd18  mov     x26, x0
+  0ddbbd1c  ldr     x8, [x8, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0ddbbd20  ldr     x8, [x8]
+  0ddbbd24  ldr     w9, [x8, #0xe4]
+  0ddbbd28  cbnz    w9, #0xddbbd34
+  0ddbbd2c  mov     x0, x8
+  0ddbbd30  bl      #0x63ceff4
+  0ddbbd34  mov     x0, x26
+  0ddbbd38  mov     x1, xzr
+  0ddbbd3c  mov     x2, xzr
+  0ddbbd40  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddbbd44  tbnz    w0, #0, #0xddbbd54
+  0ddbbd48  mov     x0, xzr
+  0ddbbd4c  bl      #0xd9b08d8  ; -> UnityEngine.Texture2D$$get_whiteTexture
+  0ddbbd50  mov     x26, x0
+  0ddbbd54  ldr     x2, [x19, #0x18]
+  0ddbbd58  add     x0, sp, #0x6c
+  0ddbbd5c  mov     x1, x25
+  0ddbbd60  mov     x3, xzr
+  0ddbbd64  add     x21, sp, #0x6c
+  0ddbbd68  bl      #0xd7952fc  ; -> UnityEngine.Rendering.ProfilingScope$$.ctor
+  0ddbbd6c  ldr     x8, [x19, #0x10]
+  0ddbbd70  stp     xzr, x21, [sp, #0x38]
+  0ddbbd74  cbz     x8, #0xddbc2a4
+  0ddbbd78  ldr     x0, [x8, #0x10]
+  0ddbbd7c  cbz     x0, #0xddbc2ac
+  0ddbbd80  adrp    x8, #0xebc6000
+  0ddbbd84  ldr     x8, [x8, #0x318]  ; MMETH Method$System.Collections.Generic.List<CampusDecalLightCombinedChunks>.GetEnumerator()
+  0ddbbd88  ldr     x1, [x8]
+  0ddbbd8c  add     x8, sp, #0x20
+  0ddbbd90  bl      #0xac1c108  ; -> System.Collections.Generic.List<object>$$GetEnumerator
+  0ddbbd94  adrp    x20, #0xebc6000
+  0ddbbd98  adrp    x21, #0xebc6000
+  0ddbbd9c  adrp    x27, #0xea65000
+  0ddbbda0  ldr     x20, [x20, #0x308]  ; MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.MoveNext()
+  0ddbbda4  ldr     x21, [x21, #0x360]  ; META Campus.DecalLight.CampusDecalLightDrawSystem_TypeInfo
+  0ddbbda8  ldr     q0, [sp, #0x20]
+  0ddbbdac  ldr     x8, [sp, #0x30]
+  0ddbbdb0  str     q0, [sp, #0x50]
+  0ddbbdb4  str     x8, [sp, #0x60]
+  0ddbbdb8  add     x8, sp, #0x50
+  0ddbbdbc  ldr     x27, [x27, #0x6b0]
+  0ddbbdc0  stp     xzr, x8, [sp, #0x20]
+  0ddbbdc4  ldr     x1, [x20]
+  0ddbbdc8  add     x0, sp, #0x50
+  0ddbbdcc  bl      #0xa043518  ; -> System.Collections.Generic.List.Enumerator<object>$$MoveNext
+  0ddbbdd0  tbz     w0, #0, #0xddbc1fc
+  0ddbbdd4  ldr     x8, [sp, #0x60]
+  0ddbbdd8  cbz     x8, #0xddbbdc4
+  0ddbbddc  ldr     x9, [x8, #0x18]
+  0ddbbde0  cbz     x9, #0xddbc26c
+  0ddbbde4  ldr     x10, [x8, #0x28]
+  0ddbbde8  cbz     x10, #0xddbc270
+  0ddbbdec  ldr     x10, [x10, #0x38]
+  0ddbbdf0  ldr     w24, [x9, #0x48]
+  0ddbbdf4  ldr     w22, [x10]
+  0ddbbdf8  cmp     w22, #0x81
+  0ddbbdfc  b.ge    #0xddbbed8
+  0ddbbe00  ldr     x0, [x19, #0x60]
+  0ddbbe04  cbz     x0, #0xddbc278
+  0ddbbe08  ldr     x29, [x8, #0x20]
+  0ddbbe0c  ldr     x28, [x8, #0x30]
+  0ddbbe10  mov     x23, x21
+  0ddbbe14  ldr     x20, [x8, #0x10]
+  0ddbbe18  adrp    x8, #0xeba8000
+  0ddbbe1c  mov     x21, x25
+  0ddbbe20  ldr     x8, [x8, #0xcc8]  ; MMETH Method$System.Collections.Generic.Dictionary<int, Material>.TryGetValue()
+  0ddbbe24  ldr     x3, [x8]
+  0ddbbe28  add     x2, sp, #0x48
+  0ddbbe2c  mov     w1, w24
+  0ddbbe30  bl      #0x9b22be8  ; -> System.Collections.Generic.Dictionary<int, object>$$TryGetValue
+  0ddbbe34  tbnz    w0, #0, #0xddbbff4
+  0ddbbe38  adrp    x8, #0xeacb000
+  0ddbbe3c  mov     x27, x26
+  0ddbbe40  ldr     x26, [x19, #0x20]
+  0ddbbe44  ldr     x8, [x8, #0x50]  ; META UnityEngine.Material_TypeInfo
+  0ddbbe48  ldr     x0, [x8]
+  0ddbbe4c  bl      #0x63cf110
+  0ddbbe50  mov     x1, x26
+  0ddbbe54  mov     x2, xzr
+  0ddbbe58  mov     x25, x0
+  0ddbbe5c  bl      #0xd98ebc0  ; -> UnityEngine.Material$$.ctor
+  0ddbbe60  cbz     x25, #0xddbc298
+  0ddbbe64  mov     x0, x25
+  0ddbbe68  mov     w1, #0x3d
+  0ddbbe6c  mov     x2, xzr
+  0ddbbe70  bl      #0xd9e3d80  ; -> UnityEngine.Object$$set_hideFlags
+  0ddbbe74  mov     x0, x25
+  0ddbbe78  mov     w1, #1
+  0ddbbe7c  mov     x2, xzr
+  0ddbbe80  mov     x26, x27
+  0ddbbe84  bl      #0xd991168  ; -> UnityEngine.Material$$set_enableInstancing
+  0ddbbe88  str     x25, [sp, #0x48]
+  0ddbbe8c  cbz     w24, #0xddbbfa0
+  0ddbbe90  cmp     w24, #1
+  0ddbbe94  b.eq    #0xddbbf68
+  0ddbbe98  cmp     w24, #2
+  0ddbbe9c  b.ne    #0xddbbfd4
+  0ddbbea0  adrp    x8, #0xea6a000
+  0ddbbea4  ldr     x8, [x8, #0xc70]  ; META UnityEngine.Rendering.CoreUtils_TypeInfo
+  0ddbbea8  ldr     x0, [x8]
+  0ddbbeac  ldr     w8, [x0, #0xe4]
+  0ddbbeb0  cbnz    w8, #0xddbbeb8
+  0ddbbeb4  bl      #0x63ceff4
+  0ddbbeb8  adrp    x8, #0xebc6000
+  0ddbbebc  ldr     x8, [x8, #0x380]  ; STR "_SPHERE"
+  0ddbbec0  ldr     x1, [x8]
+  0ddbbec4  mov     x0, x25
+  0ddbbec8  mov     w2, #1
+  0ddbbecc  mov     x3, xzr
+  0ddbbed0  bl      #0xd7a6838  ; -> UnityEngine.Rendering.CoreUtils$$SetKeyword
+  0ddbbed4  b       #0xddbbfd4
+  0ddbbed8  adrp    x8, #0xebc6000
+  0ddbbedc  ldr     x8, [x8, #0x368]  ; META Campus.DecalLight.CampusDecalLight.LightShapeType_TypeInfo
+  0ddbbee0  str     w24, [sp, #0x1c]
+  0ddbbee4  ldr     x0, [x8]
+  0ddbbee8  add     x1, sp, #0x1c
+  0ddbbeec  bl      #0x63ceffc
+  0ddbbef0  mov     x23, x0
+  0ddbbef4  ldr     x0, [x27, #0x48]
+  0ddbbef8  str     w22, [sp, #0x18]
+  0ddbbefc  add     x1, sp, #0x18
+  0ddbbf00  bl      #0x63ceffc
+  0ddbbf04  mov     x22, x0
+  0ddbbf08  ldr     x0, [x27, #0x48]
+  0ddbbf0c  mov     w8, #0x80
+  0ddbbf10  str     w8, [sp, #0x14]
+  0ddbbf14  add     x1, sp, #0x14
+  0ddbbf18  bl      #0x63ceffc
+  0ddbbf1c  adrp    x8, #0xebc6000
+  0ddbbf20  mov     x3, x0
+  0ddbbf24  ldr     x8, [x8, #0x388]  ; STR "DecalLight ({0}) の描画上限を超えています。{1} > {2}"
+  0ddbbf28  ldr     x0, [x8]
+  0ddbbf2c  mov     x1, x23
+  0ddbbf30  mov     x2, x22
+  0ddbbf34  mov     x4, xzr
+  0ddbbf38  bl      #0xde5b500  ; -> System.String$$Format
+  0ddbbf3c  adrp    x8, #0xea67000
+  0ddbbf40  mov     x22, x0
+  0ddbbf44  ldr     x8, [x8, #0x3c0]  ; META UnityEngine.Debug_TypeInfo
+  0ddbbf48  ldr     x0, [x8]
+  0ddbbf4c  ldr     w8, [x0, #0xe4]
+  0ddbbf50  cbnz    w8, #0xddbbf58
+  0ddbbf54  bl      #0x63ceff4
+  0ddbbf58  mov     x0, x22
+  0ddbbf5c  mov     x1, xzr
+  0ddbbf60  bl      #0xd973858  ; -> UnityEngine.Debug$$LogError
+  0ddbbf64  b       #0xddbbdc4
+  0ddbbf68  adrp    x8, #0xea6a000
+  0ddbbf6c  ldr     x8, [x8, #0xc70]  ; META UnityEngine.Rendering.CoreUtils_TypeInfo
+  0ddbbf70  ldr     x0, [x8]
+  0ddbbf74  ldr     w8, [x0, #0xe4]
+  0ddbbf78  cbnz    w8, #0xddbbf80
+  0ddbbf7c  bl      #0x63ceff4
+  0ddbbf80  adrp    x8, #0xebc6000
+  0ddbbf84  ldr     x8, [x8, #0x398]  ; STR "_CAPSULE"
+  0ddbbf88  ldr     x1, [x8]
+  0ddbbf8c  mov     x0, x25
+  0ddbbf90  mov     w2, #1
+  0ddbbf94  mov     x3, xzr
+  0ddbbf98  bl      #0xd7a6838  ; -> UnityEngine.Rendering.CoreUtils$$SetKeyword
+  0ddbbf9c  b       #0xddbbfd4
+  0ddbbfa0  adrp    x8, #0xea6a000
+  0ddbbfa4  ldr     x8, [x8, #0xc70]  ; META UnityEngine.Rendering.CoreUtils_TypeInfo
+  0ddbbfa8  ldr     x0, [x8]
+  0ddbbfac  ldr     w8, [x0, #0xe4]
+  0ddbbfb0  cbnz    w8, #0xddbbfb8
+  0ddbbfb4  bl      #0x63ceff4
+  0ddbbfb8  adrp    x8, #0xebc6000
+  0ddbbfbc  ldr     x8, [x8, #0x390]  ; STR "_BOX"
+  0ddbbfc0  ldr     x1, [x8]
+  0ddbbfc4  mov     x0, x25
+  0ddbbfc8  mov     w2, #1
+  0ddbbfcc  mov     x3, xzr
+  0ddbbfd0  bl      #0xd7a6838  ; -> UnityEngine.Rendering.CoreUtils$$SetKeyword
+  0ddbbfd4  ldr     x0, [x19, #0x60]
+  0ddbbfd8  cbz     x0, #0xddbc29c
+  0ddbbfdc  adrp    x8, #0xeba8000
+  0ddbbfe0  ldr     x2, [sp, #0x48]
+  0ddbbfe4  ldr     x8, [x8, #0xc78]  ; MMETH Method$System.Collections.Generic.Dictionary<int, Material>.Add()
+  0ddbbfe8  ldr     x3, [x8]
+  0ddbbfec  mov     w1, w24
+  0ddbbff0  bl      #0x9b2110c  ; -> System.Collections.Generic.Dictionary<int, object>$$Add
+  0ddbbff4  cbz     x28, #0xddbc288
+  0ddbbff8  adrp    x8, #0xeba3000
+  0ddbbffc  ldr     x8, [x8, #0xdd0]  ; MMETH Method$Unity.Collections.NativeArray<float4x4>.Reinterpret<Matrix4x4>()
+  0ddbc000  ldr     x1, [x8]
+  0ddbc004  add     x0, x28, #0x28
+  0ddbc008  bl      #0x8b81e38  ; -> Unity.Collections.NativeArray<float4x4>$$Reinterpret<Matrix4x4>
+  0ddbc00c  adrp    x8, #0xeba3000
+  0ddbc010  ldr     x3, [x19, #0x38]
+  0ddbc014  ldr     x8, [x8, #0xdc0]  ; MMETH Method$Unity.Collections.NativeArray<Matrix4x4>.Copy()
+  0ddbc018  ldr     x6, [x8]
+  0ddbc01c  mov     w2, wzr
+  0ddbc020  mov     w4, wzr
+  0ddbc024  mov     w5, w22
+  0ddbc028  bl      #0xb2dd2d4  ; -> Unity.Collections.NativeArray<Matrix4x4>$$Copy
+  0ddbc02c  adrp    x8, #0xebc6000
+  0ddbc030  ldr     x8, [x8, #0x378]  ; MMETH Method$Unity.Collections.NativeArray<float4>.Reinterpret<Vector4>()
+  0ddbc034  ldr     x1, [x8]
+  0ddbc038  add     x0, x28, #0x38
+  0ddbc03c  bl      #0x8b81d64  ; -> Unity.Collections.NativeArray<float4>$$Reinterpret<Vector4>
+  0ddbc040  adrp    x8, #0xebc6000
+  0ddbc044  ldr     x3, [x19, #0x40]
+  0ddbc048  ldr     x8, [x8, #0x370]  ; MMETH Method$Unity.Collections.NativeArray<Vector4>.Copy()
+  0ddbc04c  ldr     x6, [x8]
+  0ddbc050  mov     w2, wzr
+  0ddbc054  mov     w4, wzr
+  0ddbc058  mov     w5, w22
+  0ddbc05c  bl      #0xb3012cc  ; -> Unity.Collections.NativeArray<Vector4>$$Copy
+  0ddbc060  adrp    x8, #0xeba3000
+  0ddbc064  ldr     x8, [x8, #0xdd0]  ; MMETH Method$Unity.Collections.NativeArray<float4x4>.Reinterpret<Matrix4x4>()
+  0ddbc068  ldr     x1, [x8]
+  0ddbc06c  add     x0, x28, #0x48
+  0ddbc070  bl      #0x8b81e38  ; -> Unity.Collections.NativeArray<float4x4>$$Reinterpret<Matrix4x4>
+  0ddbc074  adrp    x8, #0xeba3000
+  0ddbc078  ldr     x3, [x19, #0x48]
+  0ddbc07c  ldr     x8, [x8, #0xdc0]  ; MMETH Method$Unity.Collections.NativeArray<Matrix4x4>.Copy()
+  0ddbc080  ldr     x6, [x8]
+  0ddbc084  mov     w2, wzr
+  0ddbc088  mov     w4, wzr
+  0ddbc08c  mov     w5, w22
+  0ddbc090  bl      #0xb2dd2d4  ; -> Unity.Collections.NativeArray<Matrix4x4>$$Copy
+  0ddbc094  adrp    x8, #0xebc6000
+  0ddbc098  ldr     x8, [x8, #0x378]  ; MMETH Method$Unity.Collections.NativeArray<float4>.Reinterpret<Vector4>()
+  0ddbc09c  ldr     x1, [x8]
+  0ddbc0a0  add     x0, x28, #0x58
+  0ddbc0a4  bl      #0x8b81d64  ; -> Unity.Collections.NativeArray<float4>$$Reinterpret<Vector4>
+  0ddbc0a8  adrp    x8, #0xebc6000
+  0ddbc0ac  ldr     x3, [x19, #0x50]
+  0ddbc0b0  ldr     x8, [x8, #0x370]  ; MMETH Method$Unity.Collections.NativeArray<Vector4>.Copy()
+  0ddbc0b4  ldr     x6, [x8]
+  0ddbc0b8  mov     w2, wzr
+  0ddbc0bc  mov     w4, wzr
+  0ddbc0c0  mov     w5, w22
+  0ddbc0c4  bl      #0xb3012cc  ; -> Unity.Collections.NativeArray<Vector4>$$Copy
+  0ddbc0c8  adrp    x8, #0xebc6000
+  0ddbc0cc  ldr     x8, [x8, #0x378]  ; MMETH Method$Unity.Collections.NativeArray<float4>.Reinterpret<Vector4>()
+  0ddbc0d0  ldr     x1, [x8]
+  0ddbc0d4  add     x0, x28, #0x68
+  0ddbc0d8  bl      #0x8b81d64  ; -> Unity.Collections.NativeArray<float4>$$Reinterpret<Vector4>
+  0ddbc0dc  adrp    x8, #0xebc6000
+  0ddbc0e0  ldr     x3, [x19, #0x58]
+  0ddbc0e4  ldr     x8, [x8, #0x370]  ; MMETH Method$Unity.Collections.NativeArray<Vector4>.Copy()
+  0ddbc0e8  ldr     x6, [x8]
+  0ddbc0ec  mov     w2, wzr
+  0ddbc0f0  mov     w4, wzr
+  0ddbc0f4  mov     w5, w22
+  0ddbc0f8  bl      #0xb3012cc  ; -> Unity.Collections.NativeArray<Vector4>$$Copy
+  0ddbc0fc  cbz     x29, #0xddbc28c
+  0ddbc100  ldr     x0, [x23]
+  0ddbc104  ldr     x24, [x29, #0x28]
+  0ddbc108  mov     x25, x21
+  0ddbc10c  mov     x21, x23
+  0ddbc110  ldr     w8, [x0, #0xe4]
+  0ddbc114  cbnz    w8, #0xddbc11c
+  0ddbc118  bl      #0x63ceff4
+  0ddbc11c  cbz     x24, #0xddbc284
+  0ddbc120  ldr     x8, [x21]
+  0ddbc124  ldr     x2, [x19, #0x40]
+  0ddbc128  ldr     x8, [x8, #0xb8]
+  0ddbc12c  ldr     w1, [x8]
+  0ddbc130  mov     x0, x24
+  0ddbc134  mov     x3, xzr
+  0ddbc138  bl      #0xd986278  ; -> UnityEngine.MaterialPropertyBlock$$SetVectorArray
+  0ddbc13c  ldr     x0, [x29, #0x28]
+  0ddbc140  cbz     x0, #0xddbc290
+  0ddbc144  ldr     x8, [x21]
+  0ddbc148  ldr     x2, [x19, #0x48]
+  0ddbc14c  ldr     x8, [x8, #0xb8]
+  0ddbc150  ldr     w1, [x8, #4]
+  0ddbc154  mov     x3, xzr
+  0ddbc158  bl      #0xd9862c8  ; -> UnityEngine.MaterialPropertyBlock$$SetMatrixArray
+  0ddbc15c  ldr     x0, [x29, #0x28]
+  0ddbc160  cbz     x0, #0xddbc280
+  0ddbc164  ldr     x8, [x21]
+  0ddbc168  ldr     x2, [x19, #0x50]
+  0ddbc16c  ldr     x8, [x8, #0xb8]
+  0ddbc170  ldr     w1, [x8, #0xc]
+  0ddbc174  mov     x3, xzr
+  0ddbc178  bl      #0xd986278  ; -> UnityEngine.MaterialPropertyBlock$$SetVectorArray
+  0ddbc17c  ldr     x0, [x29, #0x28]
+  0ddbc180  cbz     x0, #0xddbc294
+  0ddbc184  ldr     x8, [x21]
+  0ddbc188  ldr     x2, [x19, #0x58]
+  0ddbc18c  ldr     x8, [x8, #0xb8]
+  0ddbc190  ldr     w1, [x8, #0x10]
+  0ddbc194  mov     x3, xzr
+  0ddbc198  bl      #0xd986278  ; -> UnityEngine.MaterialPropertyBlock$$SetVectorArray
+  0ddbc19c  ldr     x0, [x29, #0x28]
+  0ddbc1a0  cbz     x0, #0xddbc274
+  0ddbc1a4  ldr     x8, [x21]
+  0ddbc1a8  ldr     x8, [x8, #0xb8]
+  0ddbc1ac  ldr     w1, [x8, #0x14]
+  0ddbc1b0  mov     x2, x26
+  0ddbc1b4  mov     x3, xzr
+  0ddbc1b8  bl      #0xd986224  ; -> UnityEngine.MaterialPropertyBlock$$SetTexture
+  0ddbc1bc  cbz     x25, #0xddbc27c
+  0ddbc1c0  ldr     x7, [x29, #0x28]
+  0ddbc1c4  ldr     x5, [x19, #0x38]
+  0ddbc1c8  ldr     x3, [sp, #0x48]
+  0ddbc1cc  mov     x0, x25
+  0ddbc1d0  mov     x1, x20
+  0ddbc1d4  mov     w2, wzr
+  0ddbc1d8  mov     w4, wzr
+  0ddbc1dc  mov     w6, w22
+  0ddbc1e0  str     xzr, [sp]
+  0ddbc1e4  bl      #0xda0a214  ; -> UnityEngine.Rendering.CommandBuffer$$DrawMeshInstanced
+  0ddbc1e8  adrp    x20, #0xebc6000
+  0ddbc1ec  adrp    x27, #0xea65000
+  0ddbc1f0  ldr     x20, [x20, #0x308]  ; MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.MoveNext()
+  0ddbc1f4  ldr     x27, [x27, #0x6b0]
+  0ddbc1f8  b       #0xddbbdc4
+  0ddbc1fc  mov     x20, xzr
+  0ddbc200  mov     w22, wzr
+  0ddbc204  mov     w21, #0xf
+  0ddbc208  add     x0, sp, #0x50
+  0ddbc20c  adrp    x8, #0xebc6000
+  0ddbc210  ldr     x8, [x8, #0x300]  ; MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.Dispose()
+  0ddbc214  ldr     x1, [x8]
+  0ddbc218  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0ddbc21c  cbnz    x20, #0xddbc2b0
+  0ddbc220  tbz     w22, #0, #0xddbc228
+  0ddbc224  mov     w21, wzr
+  0ddbc228  ldr     x0, [sp, #0x40]
+  0ddbc22c  mov     x1, xzr
+  0ddbc230  bl      #0xd795300  ; -> UnityEngine.Rendering.ProfilingScope$$Dispose
+  0ddbc234  ldr     x0, [sp, #0x38]
+  0ddbc238  cbnz    x0, #0xddbc2a8
+  0ddbc23c  cmp     w21, #0xf
+  0ddbc240  b.eq    #0xddbc248
+  0ddbc244  cbnz    w21, #0xddbc24c
+  0ddbc248  strb    wzr, [x19, #0x68]
+  0ddbc24c  ldp     x20, x19, [sp, #0xc0]
+  0ddbc250  ldp     x22, x21, [sp, #0xb0]
+  0ddbc254  ldp     x24, x23, [sp, #0xa0]
+  0ddbc258  ldp     x26, x25, [sp, #0x90]
+  0ddbc25c  ldp     x28, x27, [sp, #0x80]
+  0ddbc260  ldp     x29, x30, [sp, #0x70]
+  0ddbc264  add     sp, sp, #0xd0
+  0ddbc268  ret     
+  0ddbc26c  bl      #0x63cf120
+  0ddbc270  bl      #0x63cf120
+  0ddbc274  bl      #0x63cf120
+  0ddbc278  bl      #0x63cf120
+  0ddbc27c  bl      #0x63cf120
+  0ddbc280  bl      #0x63cf120
+  0ddbc284  bl      #0x63cf120
+  0ddbc288  bl      #0x63cf120
+  0ddbc28c  bl      #0x63cf120
+  0ddbc290  bl      #0x63cf120
+  0ddbc294  bl      #0x63cf120
+  0ddbc298  bl      #0x63cf120
+  0ddbc29c  bl      #0x63cf120
+  0ddbc2a0  bl      #0x63cf120
+  0ddbc2a4  bl      #0x63cf120
+  0ddbc2a8  bl      #0x63cf118
+  0ddbc2ac  bl      #0x63cf120
+  0ddbc2b0  mov     x0, x20
+  0ddbc2b4  bl      #0x63cf118
+  0ddbc2b8  b       #0xddbc2d0
+  0ddbc2bc  b       #0xddbc2d0
+  0ddbc2c0  b       #0xddbc2d0
+  0ddbc2c4  b       #0xddbc378
+  0ddbc2c8  b       #0xddbc378
+  0ddbc2cc  b       #0xddbc378
+  0ddbc2d0  mov     x20, x1
+  0ddbc2d4  mov     x21, x0
+  0ddbc2d8  b       #0xddbc3bc
+  0ddbc2dc  b       #0xddbc378
+  0ddbc2e0  b       #0xddbc378
+  0ddbc2e4  b       #0xddbc378
+  0ddbc2e8  b       #0xddbc378
+  0ddbc2ec  b       #0xddbc378
+  0ddbc2f0  b       #0xddbc378
+  0ddbc2f4  b       #0xddbc378
+  0ddbc2f8  b       #0xddbc378
+  0ddbc2fc  b       #0xddbc378
+  0ddbc300  b       #0xddbc378
+  0ddbc304  b       #0xddbc378
+  0ddbc308  b       #0xddbc378
+  0ddbc30c  b       #0xddbc378
+  0ddbc310  b       #0xddbc378
+  0ddbc314  b       #0xddbc378
+  0ddbc318  b       #0xddbc378
+  0ddbc31c  b       #0xddbc378
+  0ddbc320  b       #0xddbc378
+  0ddbc324  b       #0xddbc378
+  0ddbc328  b       #0xddbc378
+  0ddbc32c  b       #0xddbc378
+  0ddbc330  b       #0xddbc378
+  0ddbc334  b       #0xddbc378
+  0ddbc338  b       #0xddbc378
+  0ddbc33c  b       #0xddbc378
+  0ddbc340  b       #0xddbc378
+  0ddbc344  b       #0xddbc378
+  0ddbc348  b       #0xddbc378
+  0ddbc34c  b       #0xddbc378
+  0ddbc350  b       #0xddbc378
+  0ddbc354  b       #0xddbc378
+  0ddbc358  b       #0xddbc378
+  0ddbc35c  b       #0xddbc378
+  0ddbc360  b       #0xddbc378
+  0ddbc364  b       #0xddbc378
+  0ddbc368  b       #0xddbc378
+  0ddbc36c  b       #0xddbc378
+  0ddbc370  b       #0xddbc378
+  0ddbc374  b       #0xddbc378
+  0ddbc378  mov     x20, x1
+  0ddbc37c  mov     x21, x0
+  0ddbc380  cmp     w20, #1
+  0ddbc384  b.ne    #0xddbc3b4
+  0ddbc388  mov     x0, x21
+  0ddbc38c  bl      #0xe1b8390
+  0ddbc390  ldr     x20, [x0]
+  0ddbc394  str     x20, [sp, #0x20]
+  0ddbc398  bl      #0xe1b83a0
+  0ddbc39c  ldr     x0, [sp, #0x28]
+  0ddbc3a0  mov     w21, wzr
+  0ddbc3a4  mov     w22, #1
+  0ddbc3a8  b       #0xddbc20c
+  0ddbc3ac  mov     x20, x1
+  0ddbc3b0  mov     x21, x0
+  0ddbc3b4  add     x0, sp, #0x20
+  0ddbc3b8  bl      #0x63bab48
+  0ddbc3bc  cmp     w20, #1
+  0ddbc3c0  b.ne    #0xddbc3e0
+  0ddbc3c4  mov     x0, x21
+  0ddbc3c8  bl      #0xe1b8390
+  0ddbc3cc  ldr     x8, [x0]
+  0ddbc3d0  str     x8, [sp, #0x38]
+  0ddbc3d4  bl      #0xe1b83a0
+  0ddbc3d8  b       #0xddbc224
+  0ddbc3dc  mov     x21, x0
+  0ddbc3e0  add     x0, sp, #0x38
+  0ddbc3e4  bl      #0xe1b6ffc
+  0ddbc3e8  mov     x0, x21
+  0ddbc3ec  bl      #0x64bd8dc
+  0ddbc3f0  bl      #0xe1b6fd8

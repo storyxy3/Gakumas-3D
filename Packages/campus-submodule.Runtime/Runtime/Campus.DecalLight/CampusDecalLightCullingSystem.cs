@@ -20,6 +20,7 @@ namespace Campus.DecalLight
             public NativeArray<int> visibleIndices;
             public void Execute(int index)
             {
+                visibleIndices[index] = planes.TestAABB(bounds[index]) ? index : -1;
             }
         }
 
@@ -27,14 +28,33 @@ namespace Campus.DecalLight
         private ProfilingSampler _sampler;
         public CampusDecalLightCullingSystem(CampusDecalLightEntityManager entityManager)
         {
+            _entityManager = entityManager;
+            _sampler = new ProfilingSampler("CampusDecalLight.Cull");
         }
 
         public void Execute(Matrix4x4 vpMatrix)
         {
+            if (_entityManager.combinedChunksList == null) return;
+            using (new ProfilingScope(null, _sampler))
+            {
+                var planes = new CameraPlanes(vpMatrix);
+                foreach (var chunks in _entityManager.combinedChunksList)
+                    Execute(chunks.CachedChunk, chunks.CulledChunk, ref planes);
+            }
         }
 
         private void Execute(CampusDecalLightCachedChunk cachedChunk, CampusDecalLightCulledChunk culledChunk, ref CameraPlanes planes)
         {
+            if (cachedChunk.count == 0) return;
+            var job = new CullingJob
+            {
+                planes = planes,
+                bounds = cachedChunk.bounds,
+                visibleIndices = culledChunk.visibleIndices
+            };
+            var handle = job.Schedule(cachedChunk.count, 16, cachedChunk.currentJobHandle);
+            culledChunk.currentJobHandle = handle;
+            cachedChunk.currentJobHandle = handle;
         }
     }
 }

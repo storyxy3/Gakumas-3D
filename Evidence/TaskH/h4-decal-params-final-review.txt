@@ -1,0 +1,15 @@
+
+== Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams 0xddbe07c (Campus_DecalLight_CampusDecalLightResultSystem_ResultJob_o __this, int32_t index, int32_t culledIndex);
+native: 155 140
+--- game
++++ ref
+@@ -1,7 +1,7 @@
+ fmov #1.00000000
++cmp #2
+ cmp #1
+-cmp #2
+-fmov #-0.50000000
+ fmov #0.50000000
+ fmov #-1.00000000
++fmov #-0.50000000
+ fmov #1.00000000

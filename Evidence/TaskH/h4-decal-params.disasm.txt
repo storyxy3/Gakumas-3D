@@ -1,0 +1,158 @@
+=== Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams @ 0xddbe07c (156 insns)
+    void Campus_DecalLight_CampusDecalLightResultSystem_ResultJob__UpdateParams (Campus_DecalLight_CampusDecalLightResultSystem_ResultJob_o __this, int32_t index, int32_t culledIndex, const MethodInfo* method);
+  0ddbe07c  sub     sp, sp, #0x50
+  0ddbe080  str     x30, [sp, #0x40]
+  0ddbe084  mrs     x9, tpidr_el0
+  0ddbe088  sxtw    x10, w2
+  0ddbe08c  fmov    s19, #1.00000000
+  0ddbe090  ldr     x8, [x9, #0x28]
+  0ddbe094  str     x8, [sp, #0x38]
+  0ddbe098  sxtw    x8, w1
+  0ddbe09c  ldr     x11, [x0, #0x58]
+  0ddbe0a0  ldr     x12, [x0, #0x78]
+  0ddbe0a4  add     x11, x11, x8, lsl #6
+  0ddbe0a8  add     x12, x12, x10, lsl #6
+  0ddbe0ac  ldp     s7, s5, [x11]
+  0ddbe0b0  ldr     s4, [x11, #8]
+  0ddbe0b4  ldp     s17, s16, [x11, #0x20]
+  0ddbe0b8  ldur    q0, [x11, #0xc]
+  0ddbe0bc  ldr     w13, [x11, #0x1c]
+  0ddbe0c0  ldr     s6, [x11, #0x28]
+  0ddbe0c4  ldur    q18, [x11, #0x2c]
+  0ddbe0c8  ldr     w14, [x11, #0x3c]
+  0ddbe0cc  stp     s7, s5, [x12]
+  0ddbe0d0  str     s4, [x12, #8]
+  0ddbe0d4  str     w13, [x12, #0x1c]
+  0ddbe0d8  stur    q0, [x12, #0xc]
+  0ddbe0dc  stp     s17, s16, [x12, #0x20]
+  0ddbe0e0  str     s6, [x12, #0x28]
+  0ddbe0e4  stur    q18, [x12, #0x2c]
+  0ddbe0e8  str     w14, [x12, #0x3c]
+  0ddbe0ec  adrp    x12, #0x276e000
+  0ddbe0f0  ldr     x11, [x0, #0x28]
+  0ddbe0f4  ldr     s2, [x12, #0xa84]
+  0ddbe0f8  ldr     x12, [x0, #0x68]
+  0ddbe0fc  str     q0, [sp, #0x20]
+  0ddbe100  add     x11, x11, w1, sxtw #4
+  0ddbe104  add     x12, x12, x8, lsl #6
+  0ddbe108  str     w13, [sp, #0x30]
+  0ddbe10c  str     q18, [sp]
+  0ddbe110  ldr     w13, [x0]
+  0ddbe114  ldp     s1, s3, [x11]
+  0ddbe118  ldr     s18, [x12, #0x38]
+  0ddbe11c  ldr     s0, [x11, #0xc]
+  0ddbe120  str     w14, [sp, #0x10]
+  0ddbe124  fmul    s1, s1, s1
+  0ddbe128  fcmp    s1, s2
+  0ddbe12c  fcsel   s2, s2, s1, mi
+  0ddbe130  fdiv    s2, s19, s2
+  0ddbe134  ldr     d19, [x12, #0x30]
+  0ddbe138  cbz     w13, #0xddbe1d4
+  0ddbe13c  cmp     w13, #1
+  0ddbe140  b.eq    #0xddbe188
+  0ddbe144  cmp     w13, #2
+  0ddbe148  b.ne    #0xddbe2ac
+  0ddbe14c  ldr     x11, [x0, #0x88]
+  0ddbe150  add     x11, x11, x10, lsl #4
+  0ddbe154  str     d19, [x11]
+  0ddbe158  stp     s18, s2, [x11, #8]
+  0ddbe15c  movi    v2.2d, #0000000000000000
+  0ddbe160  ldr     x11, [x0, #0x98]
+  0ddbe164  add     x11, x11, x10, lsl #6
+  0ddbe168  str     s1, [x11]
+  0ddbe16c  stur    q2, [x11, #4]
+  0ddbe170  stur    q2, [x11, #0x14]
+  0ddbe174  str     q2, [x11, #0x20]
+  0ddbe178  str     s0, [x11, #0x30]
+  0ddbe17c  str     xzr, [x11, #0x38]
+  0ddbe180  str     wzr, [x11, #0x34]
+  0ddbe184  b       #0xddbe2ac
+  0ddbe188  ldr     s20, [x12, #8]
+  0ddbe18c  ldr     d17, [x12]
+  0ddbe190  movi    v6.2s, #0xbf, lsl #24
+  0ddbe194  fmov    s7, #-0.50000000
+  0ddbe198  adrp    x11, #0x276e000
+  0ddbe19c  fmul    v5.2s, v17.2s, v3.s[0]
+  0ddbe1a0  fmul    s4, s20, s3
+  0ddbe1a4  ldr     s16, [x11, #0xb48]
+  0ddbe1a8  fcmp    s3, s16
+  0ddbe1ac  fmul    v6.2s, v5.2s, v6.2s
+  0ddbe1b0  fmul    s7, s4, s7
+  0ddbe1b4  fadd    v6.2s, v19.2s, v6.2s
+  0ddbe1b8  fadd    s7, s18, s7
+  0ddbe1bc  b.pl    #0xddbe248
+  0ddbe1c0  mov     s3, v17.s[1]
+  0ddbe1c4  movi    d16, #0000000000000000
+  0ddbe1c8  fmov    s4, s20
+  0ddbe1cc  fmov    s5, s17
+  0ddbe1d0  b       #0xddbe268
+  0ddbe1d4  ldr     x13, [x0, #0x88]
+  0ddbe1d8  ldr     s1, [x11, #8]
+  0ddbe1dc  ldr     s22, [x12, #0x20]
+  0ddbe1e0  ldp     s21, s20, [x12, #0x24]
+  0ddbe1e4  add     x13, x13, x10, lsl #4
+  0ddbe1e8  fmul    s17, s17, s1
+  0ddbe1ec  str     d19, [x13]
+  0ddbe1f0  fmov    s19, #0.50000000
+  0ddbe1f4  stp     s18, s2, [x13, #8]
+  0ddbe1f8  fmov    s2, #-1.00000000
+  0ddbe1fc  ldr     x11, [x0, #0x98]
+  0ddbe200  add     x11, x11, x10, lsl #6
+  0ddbe204  fadd    s18, s3, s2
+  0ddbe208  fadd    s2, s1, s2
+  0ddbe20c  stp     s7, s17, [x11]
+  0ddbe210  fmul    s7, s16, s1
+  0ddbe214  fmul    s16, s3, s19
+  0ddbe218  stp     s3, s1, [x11, #0x30]
+  0ddbe21c  stp     s21, s2, [x11, #0x18]
+  0ddbe220  stp     s22, s18, [x11, #8]
+  0ddbe224  stp     s5, s7, [x11, #0x10]
+  0ddbe228  fmul    s5, s6, s1
+  0ddbe22c  fmul    s6, s1, s19
+  0ddbe230  fadd    s7, s16, s19
+  0ddbe234  fadd    s2, s6, s19
+  0ddbe238  stp     s4, s5, [x11, #0x20]
+  0ddbe23c  stp     s20, s7, [x11, #0x28]
+  0ddbe240  stp     s0, s2, [x11, #0x38]
+  0ddbe244  b       #0xddbe2ac
+  0ddbe248  mov     s3, v5.s[1]
+  0ddbe24c  fmul    v16.2s, v5.2s, v5.2s
+  0ddbe250  fmul    s17, s3, v5.s[1]
+  0ddbe254  fadd    s16, s16, s17
+  0ddbe258  fmul    s17, s4, s4
+  0ddbe25c  fadd    s16, s17, s16
+  0ddbe260  fmov    s17, #1.00000000
+  0ddbe264  fdiv    s16, s17, s16
+  0ddbe268  ldr     x11, [x0, #0x88]
+  0ddbe26c  add     x11, x11, x10, lsl #4
+  0ddbe270  str     d6, [x11]
+  0ddbe274  stp     s7, s2, [x11, #8]
+  0ddbe278  movi    d2, #0000000000000000
+  0ddbe27c  ldr     x11, [x0, #0x98]
+  0ddbe280  add     x11, x11, x10, lsl #6
+  0ddbe284  stp     s5, s1, [x11]
+  0ddbe288  str     d2, [x11, #8]
+  0ddbe28c  str     s3, [x11, #0x10]
+  0ddbe290  stur    d2, [x11, #0x14]
+  0ddbe294  str     wzr, [x11, #0x1c]
+  0ddbe298  str     s4, [x11, #0x20]
+  0ddbe29c  stur    d2, [x11, #0x24]
+  0ddbe2a0  str     wzr, [x11, #0x2c]
+  0ddbe2a4  stp     s16, s0, [x11, #0x30]
+  0ddbe2a8  str     d2, [x11, #0x38]
+  0ddbe2ac  ldr     x11, [x0, #0x38]
+  0ddbe2b0  ldr     x12, [x0, #0xa8]
+  0ddbe2b4  ldr     q0, [x11, x8, lsl #4]
+  0ddbe2b8  str     q0, [x12, x10, lsl #4]
+  0ddbe2bc  ldr     x11, [x0, #0x48]
+  0ddbe2c0  ldr     x12, [x0, #0xb8]
+  0ddbe2c4  ldr     x9, [x9, #0x28]
+  0ddbe2c8  ldr     x13, [sp, #0x38]
+  0ddbe2cc  cmp     x9, x13
+  0ddbe2d0  b.ne    #0xddbe2e8
+  0ddbe2d4  ldr     q0, [x11, x8, lsl #4]
+  0ddbe2d8  ldr     x30, [sp, #0x40]
+  0ddbe2dc  str     q0, [x12, x10, lsl #4]
+  0ddbe2e0  add     sp, sp, #0x50
+  0ddbe2e4  ret     
+  0ddbe2e8  bl      #0xe1b8490

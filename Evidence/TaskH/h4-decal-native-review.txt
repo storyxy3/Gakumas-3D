@@ -1,0 +1,138 @@
+
+== Campus.DecalLight.CampusDecalLight$$set_BoxSize 0xddbab5c (Campus_DecalLight_CampusDecalLight_o* __this, UnityEngine_Vector3_o value);
+native: 17 31
+--- game
++++ ref
+@@ -1,4 +1,10 @@
+ cmp #2
+ cmp #1
++bl FN
++bl FN
++bl System.ArgumentOutOfRangeException$$.ctor
++ldr  MMETH Method$Campus.DecalLight.CampusDecalLight.set_BoxSize()
++bl FN
++bl FN
+ fmov #0.50000000
+ fmov #0.50000000
+
+== Campus.DecalLight.CampusDecalLight$$get_Pivot 0xddbabd8 (Campus_DecalLight_CampusDecalLight_o* __this);
+native: 29 28
+--- game
++++ ref
+@@ -1,5 +1,4 @@
+-cmp #2
+-cmp #1
+-fmov #0.50000000
++cmn #2
+ bl FN
+ mov #1
++fmov #0.50000000
+
+== Campus.DecalLight.CampusDecalLightDrawSystem$$Execute 0xddbbb88 (Campus_DecalLight_CampusDecalLightDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd);
+native: 441 441
+--- game
++++ ref
+@@ -39,5 +39,5 @@
+ bl CanvasRT.CanvasRenderTexture$$GetCanvasRenderTexture
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl UnityEngine.Texture2D$$get_whiteTexture
+ bl UnityEngine.Rendering.ProfilingScope$$.ctor
+@@ -107,7 +107,7 @@
+ bl UnityEngine.Rendering.CommandBuffer$$DrawMeshInstanced
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.MoveNext()
+-mov #0xf
++mov #0xe
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<CampusDecalLightCombinedChunks>.Dispose()
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl UnityEngine.Rendering.ProfilingScope$$Dispose
+-cmp #0xf
++cmp #0xe
+
+== Campus.DecalLight.CampusDecalLightCombinedChunks$$Create 0xddbc5a4 (Campus_DecalLight_CampusDecalLightCombinedChunks_o* __this);
+native: 68 68
+--- game
++++ ref
+@@ -5,7 +5,7 @@
+ mov #1
+ bl FN
++bl VL.EntitySystem.Chunk$$.ctor
++bl FN
+ bl UnityEngine.MaterialPropertyBlock$$.ctor
+-bl FN
+-bl VL.EntitySystem.Chunk$$.ctor
+ bl FN
+ bl FN
+
+== Campus.DecalLight.CampusDecalLightEntityManager$$CreateBoxMesh 0xddbccb4 ();
+native: 112 112
+--- game
++++ ref
+@@ -1,5 +1,5 @@
+ bl FN
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
++ldr  META Field$<QAReconstructionImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
+ bl FN
+ bl FN
+@@ -19,5 +19,5 @@
+ cmp #7
+ mov #0x24
+-ldr  META Field$<PrivateImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
++ldr  META Field$<QAReconstructionImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
+ bl FN
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
+
+== Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams 0xddbe07c (Campus_DecalLight_CampusDecalLightResultSystem_ResultJob_o __this, int32_t index, int32_t culledIndex);
+native: 155 167
+--- game
++++ ref
+@@ -1,3 +1,7 @@
++bl FN
++mov #1
+ fmov #1.00000000
++mov #0x7f800000
++and #0x7fffffff
+ cmp #1
+ cmp #2
+
+== Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$Execute 0xddbe870 (Campus_DecalLight_CampusDecalLightUpdateSystem_UpdateJob_o __this, int32_t index, UnityEngine_Jobs_TransformAccess_o transform);
+native: 232 201
+--- game
++++ ref
+@@ -8,7 +8,6 @@
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl FN
+-bl Unity.Mathematics.float3x3$$.ctor
++bl Unity.Mathematics.float4x4$$.ctor
+ mov #0xc
+-mov #0x3f800000
+ bl FN
+ bl FN
+
+== Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor 0xddbec10 ();
+native: 90 57
+--- game
++++ ref
+@@ -1,20 +1,4 @@
+-bl FN
+-mov #1
+ bl FN
+ mov #1
+ bl FN
+ bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN

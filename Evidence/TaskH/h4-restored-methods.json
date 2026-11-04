@@ -1150,5 +1150,533 @@
     "sourceStatus": "reconstructed",
     "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
     "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$OnDisable",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$OnEnable",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$OnValidate",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$VL.EntitySystem.IEntityComponent.get_transform",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Area",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_BoxSize",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Color",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Intensity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_IsFlatColor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_LightType",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Pivot",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "Equivalent switch dispatch uses two comparisons in the APK and a combined range check in the rebuild."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Size",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_SizeOffset",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_SpecularOn",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_UvScaleBias",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_chunkKey",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_entity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_isChunkChanged",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_oldChunkKey",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_BoxSize",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "The APK throws for an invalid shape through a shared cold exception tail outside the canonical native function boundary. The rebuilt function retains that tail in its range."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_Color",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_Intensity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_IsFlatColor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_LightType",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_Size",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_SpecularOn",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_UvScaleBias",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_entity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_oldChunkKey",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$RemoveAtSwapBack",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$SetCapacity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCullingSystem$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCullingSystem$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$get_IsActive",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$CompleteJob",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK canvas texture fallback, per-shape materials, 128-light cap, array copies and DrawMeshInstanced restored. Equality predicate polarity and exception-unwind state ordinals differ."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$.cctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_entityChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_entityChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_CachedChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_CachedChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_CulledChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_CulledChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_ResultChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_ResultChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Create",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$CreateEntityChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$SetCapacity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Push",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$RemoveAtSwapBack",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityChunk$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.SharedCampusDecalLightEntityManager$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$UpdateChunk",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$CreateBoxMesh",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "The 36 index integers hash to the APK field name 28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA. Only the generated PrivateImplementationDetails type name differs."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$get_sharedManager",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$Create",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$RecreateSystemsIfNeeded",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$AddRenderPasses",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$OnLitLighting",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$.cctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$RemoveAtSwapBack",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$SetCapacity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$RemoveAtSwapBack",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$SetCapacity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCullingSystem.CullingJob$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK decal entity/chunk allocation, job scheduling, rendering lifecycle or data accessor restored. Final native comparison is identical or differs in register/stack layout."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK box/capsule/sphere parameter packing restored, including capsule short-segment handling and the radius lower bound. The final semantic-token multiset is identical. Switch order and scalar/vector register allocation differ."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK world position/rotation, negative-Y-to-Z rotation, matrix multiplication and transformed unit-box bounds restored. The rebuilt float4x4 constructor remains a call instead of inline field stores."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
+    "reason": "APK negative-90-degree X rotation is restored. APK scalar trigonometric construction is folded to (-0.7071067690849304,0,0,0.7071067690849304), while rebuilt EulerXYZ uses vector trigonometric helper calls and different lazy initialization."
   }
 ]

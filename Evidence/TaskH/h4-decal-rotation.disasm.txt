@@ -1,0 +1,92 @@
+=== Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor @ 0xddbec10 (90 insns)
+    void Campus_DecalLight_CampusDecalLightUpdateSystem_UpdateJob___cctor (const MethodInfo* method);
+  0ddbec10  str     x30, [sp, #-0x20]!
+  0ddbec14  stp     x20, x19, [sp, #0x10]
+  0ddbec18  adrp    x19, #0xf43b000
+  0ddbec1c  ldrb    w8, [x19, #0xcbd]
+  0ddbec20  tbnz    w8, #0, #0xddbec38
+  0ddbec24  adrp    x0, #0xeb73000
+  0ddbec28  ldr     x0, [x0, #0x990]  ; META Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob_TypeInfo
+  0ddbec2c  bl      #0x63cee78
+  0ddbec30  mov     w8, #1
+  0ddbec34  strb    w8, [x19, #0xcbd]
+  0ddbec38  adrp    x20, #0xf400000
+  0ddbec3c  ldrb    w8, [x20, #0x4bf]
+  0ddbec40  cbnz    w8, #0xddbec58
+  0ddbec44  adrp    x0, #0xea67000
+  0ddbec48  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0ddbec4c  bl      #0x63cee78
+  0ddbec50  mov     w8, #1
+  0ddbec54  strb    w8, [x20, #0x4bf]
+  0ddbec58  adrp    x19, #0xea67000
+  0ddbec5c  ldr     x19, [x19, #0x190]  ; META System.Math_TypeInfo
+  0ddbec60  ldr     x0, [x19]
+  0ddbec64  ldr     w8, [x0, #0xe4]
+  0ddbec68  cbnz    w8, #0xddbec8c
+  0ddbec6c  bl      #0x63ceff4
+  0ddbec70  ldrb    w8, [x20, #0x4bf]
+  0ddbec74  cbnz    w8, #0xddbec8c
+  0ddbec78  adrp    x0, #0xea67000
+  0ddbec7c  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0ddbec80  bl      #0x63cee78
+  0ddbec84  mov     w8, #1
+  0ddbec88  strb    w8, [x20, #0x4bf]
+  0ddbec8c  ldr     x0, [x19]
+  0ddbec90  ldr     w8, [x0, #0xe4]
+  0ddbec94  cbnz    w8, #0xddbecb8
+  0ddbec98  bl      #0x63ceff4
+  0ddbec9c  ldrb    w8, [x20, #0x4bf]
+  0ddbeca0  cbnz    w8, #0xddbecb8
+  0ddbeca4  adrp    x0, #0xea67000
+  0ddbeca8  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0ddbecac  bl      #0x63cee78
+  0ddbecb0  mov     w8, #1
+  0ddbecb4  strb    w8, [x20, #0x4bf]
+  0ddbecb8  ldr     x0, [x19]
+  0ddbecbc  ldr     w8, [x0, #0xe4]
+  0ddbecc0  cbnz    w8, #0xddbecc8
+  0ddbecc4  bl      #0x63ceff4
+  0ddbecc8  adrp    x20, #0xf400000
+  0ddbeccc  ldrb    w8, [x20, #0x4f4]
+  0ddbecd0  cbnz    w8, #0xddbece8
+  0ddbecd4  adrp    x0, #0xea67000
+  0ddbecd8  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0ddbecdc  bl      #0x63cee78
+  0ddbece0  mov     w8, #1
+  0ddbece4  strb    w8, [x20, #0x4f4]
+  0ddbece8  ldr     x0, [x19]
+  0ddbecec  ldr     w8, [x0, #0xe4]
+  0ddbecf0  cbnz    w8, #0xddbed14
+  0ddbecf4  bl      #0x63ceff4
+  0ddbecf8  ldrb    w8, [x20, #0x4f4]
+  0ddbecfc  cbnz    w8, #0xddbed14
+  0ddbed00  adrp    x0, #0xea67000
+  0ddbed04  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0ddbed08  bl      #0x63cee78
+  0ddbed0c  mov     w8, #1
+  0ddbed10  strb    w8, [x20, #0x4f4]
+  0ddbed14  ldr     x0, [x19]
+  0ddbed18  ldr     w8, [x0, #0xe4]
+  0ddbed1c  cbnz    w8, #0xddbed40
+  0ddbed20  bl      #0x63ceff4
+  0ddbed24  ldrb    w8, [x20, #0x4f4]
+  0ddbed28  cbnz    w8, #0xddbed40
+  0ddbed2c  adrp    x0, #0xea67000
+  0ddbed30  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0ddbed34  bl      #0x63cee78
+  0ddbed38  mov     w8, #1
+  0ddbed3c  strb    w8, [x20, #0x4f4]
+  0ddbed40  ldr     x0, [x19]
+  0ddbed44  adrp    x19, #0xeb73000
+  0ddbed48  ldr     w8, [x0, #0xe4]
+  0ddbed4c  ldr     x19, [x19, #0x990]  ; META Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob_TypeInfo
+  0ddbed50  cbnz    w8, #0xddbed58
+  0ddbed54  bl      #0x63ceff4
+  0ddbed58  ldr     x8, [x19]
+  0ddbed5c  adrp    x9, #0x2770000
+  0ddbed60  ldr     q0, [x9, #0x2c0]
+  0ddbed64  ldp     x20, x19, [sp, #0x10]
+  0ddbed68  ldr     x8, [x8, #0xb8]
+  0ddbed6c  str     q0, [x8]
+  0ddbed70  ldr     x30, [sp], #0x20
+  0ddbed74  ret     

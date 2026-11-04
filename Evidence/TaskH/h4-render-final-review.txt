@@ -1,0 +1,30 @@
+
+== Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$Execute 0xddbe870 (Campus_DecalLight_CampusDecalLightUpdateSystem_UpdateJob_o __this, int32_t index, UnityEngine_Jobs_TransformAccess_o transform);
+native: 232 213
+--- game
++++ ref
+@@ -9,6 +9,6 @@
+ bl FN
+ bl Unity.Mathematics.float3x3$$.ctor
++bl Unity.Mathematics.float4x4$$.ctor
+ mov #0xc
+-mov #0x3f800000
+ bl FN
+ bl FN
+
+== Campus.Rendering.CampusLitActor$$.ctor 0xddd3550 (Campus_Rendering_CampusLitActor_o* __this);
+native: 205 220
+--- game
++++ ref
+@@ -10,4 +10,5 @@
+ fmov #1.00000000
+ fmov #1.00000000
++mov #1
+ mov #1
+ bl UnityEngine.Rendering.ColorParameter$$.ctor
+@@ -49,4 +50,5 @@
+ bl FN
+ bl FN
++bl FN
+ bl UnityEngine.Rendering.Vector2Parameter$$.ctor
+ bl FN

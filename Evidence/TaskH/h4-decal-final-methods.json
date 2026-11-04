@@ -1,0 +1,1501 @@
+[
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$.ctor",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbb038"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$OnDisable",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaff0"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$OnEnable",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbafa8"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$OnValidate",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaa70"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$VL.EntitySystem.IEntityComponent.get_transform",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbb070"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Area",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaad0"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_BoxSize",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaad8"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Color",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf44"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Intensity",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf34"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_IsFlatColor",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf24"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_LightType",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaa60"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Pivot",
+    "status": "semantic",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "semantic",
+    "apkAddresses": [
+      "0xddbabd8"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "semantic",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "Equivalent switch dispatch uses two comparisons in the APK and a combined range check in the rebuild."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Size",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaab8"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_SizeOffset",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbac80"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_SpecularOn",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf5c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_UvScaleBias",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf0c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_chunkKey",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf7c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_entity",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf6c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_isChunkChanged",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf94"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$get_oldChunkKey",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf84"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_BoxSize",
+    "status": "semantic",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "semantic",
+    "apkAddresses": [
+      "0xddbab5c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "semantic",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "The APK throws for an invalid shape through a shared cold exception tail outside the canonical native function boundary. The rebuilt function retains that tail in its range."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_Color",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf50"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_Intensity",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf3c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_IsFlatColor",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf2c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_LightType",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaa68"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_Size",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaac4"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_SpecularOn",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf64"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_UvScaleBias",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf18"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_entity",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf74"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "unfinished",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLight",
+    "method": "Campus.DecalLight.CampusDecalLight$$set_oldChunkKey",
+    "status": "same",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "same",
+    "apkAddresses": [
+      "0xddbaf8c"
+    ],
+    "missingSignatures": [],
+    "previousStatus": "same",
+    "previousSourceStatus": "reconstructed",
+    "scope": "True End rendering closure",
+    "excludedSignatures": [],
+    "reason": "APK reconstruction matches or has native instruction/register layout differences."
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCulledChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCulledChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb078"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$RemoveAtSwapBack",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCulledChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCulledChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb0f0"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$SetCapacity",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCulledChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCulledChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb160"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCulledChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCulledChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb1c0"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCullingSystem$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCullingSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCullingSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb224"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCullingSystem$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCullingSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCullingSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb2c4",
+      "0xddbb504"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$get_IsActive",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightDrawSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightDrawSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb634"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightDrawSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightDrawSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb664"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightDrawSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightDrawSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb830"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$CompleteJob",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightDrawSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightDrawSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbba00"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightDrawSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightDrawSystem.cs",
+    "reason": "APK canvas texture fallback, per-shape materials, 128-light cap, array copies and DrawMeshInstanced restored. Equality predicate polarity and exception-unwind state ordinals differ.",
+    "apkAddresses": [
+      "0xddbbb88"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "semantic",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "semantic",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$.cctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightDrawSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightDrawSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc3f4"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_entityChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc564"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_entityChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc56c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_CachedChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc574"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_CachedChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc57c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_CulledChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc584"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_CulledChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc58c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_ResultChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc594"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_ResultChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc59c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Create",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc5a4"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$CreateEntityChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc6c8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$SetCapacity",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc784"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Push",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc7fc"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$RemoveAtSwapBack",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc85c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc958"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCombinedChunks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCombinedChunks.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbca38"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityChunk$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightEntityChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightEntityChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc73c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.SharedCampusDecalLightEntityManager$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.SharedCampusDecalLightEntityManager",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/SharedCampusDecalLightEntityManager.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbca40"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$UpdateChunk",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightEntityManager",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightEntityManager.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbca88"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "layout",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "layout",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightEntityManager",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightEntityManager.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbce7c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$CreateBoxMesh",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightEntityManager",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightEntityManager.cs",
+    "reason": "The 36 index integers hash to the APK field name 28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA. Only the generated PrivateImplementationDetails type name differs.",
+    "apkAddresses": [
+      "0xddbccb4"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "semantic",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "semantic",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightEntityManager",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightEntityManager.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbcf4c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$get_sharedManager",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbcf94"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$Create",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbcfec"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd0b8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$RecreateSystemsIfNeeded",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd174"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$AddRenderPasses",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd500"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$OnLitLighting",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbdb04"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbdbd0"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$.cctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightRendererFeature.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbdbd8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc6c0"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$RemoveAtSwapBack",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbdc50"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$SetCapacity",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbdd34"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultChunk$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbdde8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd444"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd8bc",
+      "0xddbde84"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$RemoveAtSwapBack",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCachedChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCachedChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbe2ec"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$SetCapacity",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCachedChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCachedChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbe490"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$Dispose",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCachedChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCachedChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbe5e4"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCachedChunk",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCachedChunk.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbc6b8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightUpdateSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightUpdateSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd360"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightUpdateSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightUpdateSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbd6d0",
+      "0xddbe710"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightCullingSystem.CullingJob$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightCullingSystem.CullingJob",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightCullingSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbb5d8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultSystem.cs",
+    "reason": "APK reconstruction matches or has native instruction/register layout differences.",
+    "apkAddresses": [
+      "0xddbe000"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightResultSystem.cs",
+    "reason": "APK box/capsule/sphere parameter packing restored, including capsule short-segment handling and the radius lower bound. The final semantic-token multiset is identical. Switch order and scalar/vector register allocation differ.",
+    "apkAddresses": [
+      "0xddbe07c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "semantic",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "semantic",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightUpdateSystem.cs",
+    "reason": "APK world position/rotation, negative-Y-to-Z rotation, matrix multiplication and transformed unit-box bounds restored. The rebuilt float4x4 constructor remains a call instead of inline field stores.",
+    "apkAddresses": [
+      "0xddbe870"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "semantic",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "semantic",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLightUpdateSystem.cs",
+    "reason": "APK negative-90-degree X rotation is restored. APK scalar trigonometric construction is folded to (-0.7071067690849304,0,0,0.7071067690849304), while rebuilt EulerXYZ uses vector trigonometric helper calls and different lazy initialization.",
+    "apkAddresses": [
+      "0xddbec10"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "semantic",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "semantic",
+    "excludedSignatures": []
+  }
+]
