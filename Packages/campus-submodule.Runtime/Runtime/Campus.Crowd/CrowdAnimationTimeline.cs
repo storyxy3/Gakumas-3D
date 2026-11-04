@@ -25,7 +25,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<Matrix4x4>);
+                return _crowdAnimator != null ? _crowdAnimator.Matrices : default;
             }
         }
 
@@ -33,7 +33,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<Bounds>);
+                return _crowdAnimator != null ? _crowdAnimator.Bounds : default;
             }
         }
 
@@ -41,7 +41,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<Matrix4x4>);
+                return _crowdAnimator != null ? _crowdAnimator.RawMatrices : default;
             }
         }
 
@@ -95,12 +95,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CProjectionUvRectMin_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CProjectionUvRectMin_003Ek__BackingField = value;
             }
         }
 
@@ -109,98 +110,126 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CProjectionUvRectMax_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CProjectionUvRectMax_003Ek__BackingField = value;
             }
         }
 
         private void Awake()
         {
+            SetUsePenlightColorProjection(false);
+            SetPenlightColorTable(null);
         }
 
         private void InitializeCrowdAnimator()
         {
+            if (_crowdAnimator == null && TryGetComponent<Animator>(out var animator) && TryGetComponent<CrowdVolume>(out var volume))
+                _crowdAnimator = new CrowdAnimator(transform, animator, volume);
         }
 
         private void OnEnable()
         {
+            InitializeCrowdAnimator();
         }
 
         private void OnDisable()
         {
+            _crowdAnimator?.Dispose();
+            _crowdAnimator = null;
         }
 
         private void Update()
         {
+            _crowdAnimator?.Update();
         }
 
         public void SetTime(double time)
         {
+            _crowdAnimator?.SetTime(time);
         }
 
         public void Pause()
         {
+            _crowdAnimator?.Pause();
         }
 
         public bool IsPaused()
         {
-            return default(bool);
+            return _crowdAnimator != null && _crowdAnimator.IsPaused();
         }
 
         public void Play()
         {
+            _crowdAnimator?.Play();
         }
 
         public void SetAnimationCount(int count)
         {
+            InitializeCrowdAnimator();
+            _crowdAnimator.SetAnimationCount(count);
         }
 
         public void SetAnimationData(int index, CrowdTimelineBehaviour behaviour)
         {
+            _crowdAnimator?.ConnectAnimation(index, behaviour.crowdMotionDefine, behaviour.skipDuration, behaviour.maxDelay, behaviour.delayRandomSeed);
         }
 
         public void SetAnimationWeight(int index, float weight)
         {
+            _crowdAnimator?.SetAnimationWeight(index, weight);
         }
 
         public void SetAnimationTime(int index, double time)
         {
+            _crowdAnimator?.SetAnimationTime(index, time);
         }
 
         public void SetOverrideAnimationData(int index, CrowdTimelineBehaviour behaviour)
         {
+            _crowdAnimator?.ConnectOverrideAnimation(index, behaviour.crowdMotionDefine, behaviour.skipDuration, behaviour.maxDelay, behaviour.delayRandomSeed);
         }
 
         public void SetHidePenlight(bool hidePenlight)
         {
+            HidePenlight = hidePenlight;
         }
 
         public void SetUsePenlightColorProjection(bool useColorProjection)
         {
+            UseColorProjection = useColorProjection;
         }
 
         public void SetPenlightColorTable(Color[] colorTable)
         {
+            if (global::Qua.Extensions.IEnumerableExtensions.IsNullOrEmpty(colorTable)) colorTable = new[] { Color.white };
+            ColorTable = new Vector4[8];
+            for (int i = 0; i < 8; i++) ColorTable[i] = colorTable[i % colorTable.Length];
         }
 
         public void SetPenlightProjectionUvRect(Vector2 min, Vector2 max)
         {
+            ProjectionUvRectMin = Vector2.Min(min, max);
+            ProjectionUvRectMax = Vector2.Max(min, max);
         }
 
         public void SetOverrideAnimationCount(int count)
         {
+            _crowdAnimator?.SetOverrideAnimationCount(count);
         }
 
         public void SetOverrideAnimationWeight(int index, float getInputWeight)
         {
+            _crowdAnimator?.SetOverrideAnimationWeight(index, getInputWeight);
         }
 
         public void SetOverrideAnimationTime(int index, double time)
         {
+            _crowdAnimator?.SetOverrideAnimationTime(index, time);
         }
 
         public CrowdAnimationTimeline()

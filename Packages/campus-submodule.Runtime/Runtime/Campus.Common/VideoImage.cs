@@ -30,14 +30,30 @@ namespace Campus.Common
 
         protected override void OnEnable()
         {
+            base.OnEnable();
+            _videoPlayer = GetComponent<VideoPlayer>();
+            _videoPlayer.renderMode = VideoRenderMode.APIOnly;
+            if (TryGetComponent<AudioSource>(out var audioSource))
+            {
+                _videoPlayer.EnableAudioTrack(0, true);
+                _videoPlayer.SetTargetAudioSource(0, audioSource);
+            }
+            else
+            {
+                _videoPlayer.EnableAudioTrack(0, false);
+                _videoPlayer.SetTargetAudioSource(0, null);
+            }
         }
 
         protected override void OnDisable()
         {
+            base.OnDisable();
+            texture = null;
         }
 
         private void LateUpdate()
         {
+            if (texture == null) texture = _videoPlayer.texture;
         }
 
         public VideoImage()
