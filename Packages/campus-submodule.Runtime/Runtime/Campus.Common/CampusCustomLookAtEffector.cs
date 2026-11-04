@@ -29,41 +29,41 @@ namespace Campus.Common
 
         public bool isEnableLookAt;
         public EnableLimitWeightCalcType enableLimitWeightCalcType;
-        public Ease easeCurveEaseWeightFromMaxSetting;
+        public Ease easeCurveEaseWeightFromMaxSetting = (Ease)4;
         public Func<float> enableLimitWeightCalcFunc;
         public float enableLimitWeight;
         [Range(0f, 2f)]
-        public float eyeInOutLimit;
+        public float eyeInOutLimit = 0.7f;
         [Range(0f, 2f)]
-        public float eyeUpLimit;
+        public float eyeUpLimit = 0.7f;
         [Range(0f, 2f)]
-        public float eyeDownLimit;
+        public float eyeDownLimit = 0.7f;
         [Range(0f, 2f)]
-        public float headLeftRightLimit;
+        public float headLeftRightLimit = 0.7f;
         [Range(0f, 2f)]
-        public float headFrontLimit;
+        public float headFrontLimit = 0.7f;
         [Range(0f, 2f)]
-        public float headBackLimit;
+        public float headBackLimit = 0.7f;
         [Range(0f, 2f)]
-        public float headRollLeftRightLimit;
+        public float headRollLeftRightLimit = 0.7f;
         [Range(0f, 2f)]
-        public float neckLeftRightLimit;
+        public float neckLeftRightLimit = 0.7f;
         [Range(0f, 2f)]
-        public float neckFrontLimit;
+        public float neckFrontLimit = 0.7f;
         [Range(0f, 2f)]
-        public float neckBackLimit;
+        public float neckBackLimit = 0.7f;
         [Range(0f, 2f)]
-        public float neckRollLeftRightLimit;
+        public float neckRollLeftRightLimit = 0.7f;
         [Range(0f, 2f)]
-        public float bodyLeftRightLimit;
+        public float bodyLeftRightLimit = 0.7f;
         [Range(0f, 2f)]
-        public float bodyFrontLimit;
+        public float bodyFrontLimit = 0.7f;
         [Range(0f, 2f)]
-        public float bodyBackLimit;
+        public float bodyBackLimit = 0.7f;
         [Range(0f, 2f)]
-        public float bodyTwistLeftRightLimit;
+        public float bodyTwistLeftRightLimit = 0.7f;
         public float sampleTime;
-        public List<CampusCustomLookAtEffectorPoseSettingWeight> poseSettings;
+        public List<CampusCustomLookAtEffectorPoseSettingWeight> poseSettings = new List<CampusCustomLookAtEffectorPoseSettingWeight>();
         public CampusCustomLookAtEyeCorrectionType customLookAtEyeCorrectionType;
         private void OnEnable()
         {

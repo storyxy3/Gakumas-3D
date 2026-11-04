@@ -10,8 +10,8 @@ namespace Campus.AudiencePenlight
         public bool UseColorProjection;
         [ColorUsage(false, true)]
         public Color[] ColorTable;
-        public Vector2 ProjectionUvRectMin;
-        public Vector2 ProjectionUvRectMax;
+        public Vector2 ProjectionUvRectMin = Vector2.zero;
+        public Vector2 ProjectionUvRectMax = Vector2.one;
         public AudiencePenlightTimelineBehaviour()
         {
         }

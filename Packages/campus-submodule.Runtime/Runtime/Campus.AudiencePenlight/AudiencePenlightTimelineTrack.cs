@@ -13,7 +13,12 @@ namespace Campus.AudiencePenlight
     {
         public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            if (!go.TryGetComponent<PlayableDirector>(out var director)) return base.CreateTrackMixer(graph, go, inputCount);
+            var playable = ScriptPlayable<AudiencePenlightTimelineMixerBehaviour>.Create(graph, inputCount);
+            var target = director.GetGenericBinding(this) as AudiencePenlightTimeline;
+            if (target == null) return base.CreateTrackMixer(graph, go, inputCount);
+            playable.GetBehaviour().AudiencePenlightTimeline = target;
+            return playable;
         }
 
         public AudiencePenlightTimelineTrack()

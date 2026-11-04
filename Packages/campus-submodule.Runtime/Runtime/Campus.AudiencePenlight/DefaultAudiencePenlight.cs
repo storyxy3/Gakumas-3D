@@ -38,7 +38,7 @@ namespace Campus.AudiencePenlight
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CProjectionUvRectMin_003Ek__BackingField;
             }
         }
 
@@ -47,12 +47,18 @@ namespace Campus.AudiencePenlight
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CProjectionUvRectMax_003Ek__BackingField;
             }
         }
 
         public DefaultAudiencePenlight(params Color[] colors)
         {
+            _003CUseColorProjection_003Ek__BackingField = false;
+            _003CProjectionUvRectMin_003Ek__BackingField = Vector2.zero;
+            _003CProjectionUvRectMax_003Ek__BackingField = Vector2.zero;
+            if (global::Qua.Extensions.IEnumerableExtensions.IsNullOrEmpty(colors)) colors = new[] { Color.white };
+            _003CColorTable_003Ek__BackingField = new Vector4[8];
+            for (int i = 0; i < 8; i++) _003CColorTable_003Ek__BackingField[i] = colors[i % colors.Length];
         }
     }
 }

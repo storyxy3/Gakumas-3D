@@ -17,11 +17,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(bool);
+                return isValid;
             }
 
             set
             {
+                isValid = value;
             }
         }
 
@@ -29,7 +30,7 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return 1f;
             }
         }
 

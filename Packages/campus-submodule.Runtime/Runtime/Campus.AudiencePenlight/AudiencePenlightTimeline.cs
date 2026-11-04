@@ -36,7 +36,7 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(Vector2);
+                return projectionUvRectMin;
             }
         }
 
@@ -44,24 +44,32 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(Vector2);
+                return projectionUvRectMax;
             }
         }
 
         private void Awake()
         {
+            useColorProjection = false;
+            SetPenlightColorTable(null);
         }
 
         public void SetUsePenlightColorProjection(bool useColorProjection)
         {
+            this.useColorProjection = useColorProjection;
         }
 
         public void SetPenlightColorTable(Color[] colorTable)
         {
+            if (global::Qua.Extensions.IEnumerableExtensions.IsNullOrEmpty(colorTable)) colorTable = new[] { Color.white };
+            this.colorTable = new Vector4[8];
+            for (int i = 0; i < 8; i++) this.colorTable[i] = colorTable[i % colorTable.Length];
         }
 
         public void SetPenlightProjectionUvRect(Vector2 min, Vector2 max)
         {
+            projectionUvRectMin = Vector2.Min(min, max);
+            projectionUvRectMax = Vector2.Max(min, max);
         }
 
         public AudiencePenlightTimeline()

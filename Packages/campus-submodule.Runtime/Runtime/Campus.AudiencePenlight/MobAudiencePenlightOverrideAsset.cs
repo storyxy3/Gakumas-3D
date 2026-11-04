@@ -14,13 +14,13 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(ClipCaps);
+                return ClipCaps.None;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            return ScriptPlayable<MobAudiencePenlightOverrideBehaviour>.Create(graph, behaviour);
         }
 
         public MobAudiencePenlightOverrideAsset()

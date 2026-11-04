@@ -2,6 +2,7 @@
 namespace Campus.DecalLight
 {
     using global::System.Runtime.CompilerServices;
+    using global::System;
     using global::Campus.DecalLight;
     using global::Unity.Mathematics;
     using global::UnityEngine;
@@ -21,19 +22,19 @@ namespace Campus.DecalLight
         [SerializeField]
         private LightShapeType _lightType;
         [SerializeField]
-        private Vector3 _size;
+        private Vector3 _size = new Vector3(1f, 1f, 1f);
         [SerializeField]
-        private Vector2 _area;
+        private Vector2 _area = new Vector2(0.5f, 0.5f);
         [SerializeField]
-        private Vector2 _uvSize;
+        private Vector2 _uvSize = new Vector2(1f, 1f);
         [SerializeField]
-        private Vector2 _uvPivot;
+        private Vector2 _uvPivot = new Vector2(0.5f, 0.5f);
         [SerializeField]
         private bool _isFlatColor;
         [SerializeField]
-        private float _intensity;
+        private float _intensity = 1f;
         [SerializeField]
-        private Color _color;
+        private Color _color = Color.white;
         [SerializeField]
         private bool _specularOn;
         [CompilerGenerated]
@@ -49,6 +50,8 @@ namespace Campus.DecalLight
 
             set
             {
+                _lightType = value;
+                OnValidate();
             }
         }
 
@@ -56,11 +59,13 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(Vector3);
+                return _size;
             }
 
             set
             {
+                _size = value;
+                OnValidate();
             }
         }
 
@@ -68,7 +73,7 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(Vector2);
+                return _area;
             }
         }
 
@@ -76,11 +81,24 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(Vector3);
+                switch (_lightType)
+                {
+                    case LightShapeType.Box: return _size;
+                    case LightShapeType.Capsule: return new Vector3(_size.x, _size.z * 2f, _size.z * 2f);
+                    case LightShapeType.Sphere: return new Vector3(_size.x * 2f, _size.x * 2f, _size.x * 2f);
+                    default: throw new ArgumentOutOfRangeException();
+                }
             }
 
             set
             {
+                switch (_lightType)
+                {
+                    case LightShapeType.Box: _size = value; break;
+                    case LightShapeType.Capsule: _size = new Vector3(value.x, value.z * 0.5f, value.z * 0.5f); break;
+                    case LightShapeType.Sphere: _size = new Vector3(value.x * 0.5f, 1f, 1f); break;
+                    default: throw new ArgumentOutOfRangeException();
+                }
             }
         }
 
@@ -88,7 +106,13 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(Vector3);
+                switch (_lightType)
+                {
+                    case LightShapeType.Box: return new Vector3(0f, 0f, _size.z * 0.5f);
+                    case LightShapeType.Capsule:
+                    case LightShapeType.Sphere: return Vector3.zero;
+                    default: throw new ArgumentOutOfRangeException();
+                }
             }
         }
 
@@ -96,7 +120,13 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(float4x4);
+                switch (_lightType)
+                {
+                    case LightShapeType.Box: return float4x4.TRS(new float3(0f, _size.z * -0.5f, 0f), quaternion.identity, new float3(_size.x, _size.z, _size.y));
+                    case LightShapeType.Capsule: return float4x4.TRS(float3.zero, quaternion.identity, new float3(_size.x, _size.z * 2f, _size.z * 2f));
+                    case LightShapeType.Sphere: return float4x4.TRS(float3.zero, quaternion.identity, new float3(_size.x * 2f));
+                    default: throw new ArgumentOutOfRangeException();
+                }
             }
         }
 
@@ -104,11 +134,13 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(Vector4);
+                return new Vector4(_uvSize.x, _uvSize.y, _uvPivot.x, _uvPivot.y);
             }
 
             set
             {
+                _uvSize = new Vector2(value.x, value.y);
+                _uvPivot = new Vector2(value.z, value.w);
             }
         }
 
@@ -121,6 +153,8 @@ namespace Campus.DecalLight
 
             set
             {
+                _isFlatColor = value;
+                OnValidate();
             }
         }
 
@@ -133,6 +167,8 @@ namespace Campus.DecalLight
 
             set
             {
+                _intensity = value;
+                OnValidate();
             }
         }
 
@@ -140,11 +176,13 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(Color);
+                return _color;
             }
 
             set
             {
+                _color = value;
+                OnValidate();
             }
         }
 
@@ -157,6 +195,8 @@ namespace Campus.DecalLight
 
             set
             {
+                _specularOn = value;
+                OnValidate();
             }
         }
 
@@ -165,12 +205,13 @@ namespace Campus.DecalLight
             [CompilerGenerated]
             get
             {
-                return default(Entity);
+                return _003Centity_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003Centity_003Ek__BackingField = value;
             }
         }
 
@@ -201,20 +242,23 @@ namespace Campus.DecalLight
         {
             get
             {
-                return default(bool);
+                return chunkKey != oldChunkKey;
             }
         }
 
         private void OnEnable()
         {
+            EntityComponentEvent<CampusDecalLight>.InvokeAdd<int>(this);
         }
 
         private void OnDisable()
         {
+            EntityComponentEvent<CampusDecalLight>.InvokeRemove<int>(this);
         }
 
         private void OnValidate()
         {
+            EntityComponentEvent<CampusDecalLight>.InvokePropertyChange<int>(this);
         }
 
         public CampusDecalLight()
@@ -225,7 +269,7 @@ namespace Campus.DecalLight
         {
             get
             {
-                return null;
+                return transform;
             }
         }
     }

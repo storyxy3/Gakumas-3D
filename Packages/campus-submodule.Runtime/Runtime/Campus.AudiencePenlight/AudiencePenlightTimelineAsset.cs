@@ -9,18 +9,18 @@ namespace Campus.AudiencePenlight
     [Serializable]
     public class AudiencePenlightTimelineAsset : PlayableAsset, ITimelineClipAsset
     {
-        public AudiencePenlightTimelineBehaviour behaviour;
+        public AudiencePenlightTimelineBehaviour behaviour = new AudiencePenlightTimelineBehaviour();
         public ClipCaps clipCaps
         {
             get
             {
-                return default(ClipCaps);
+                return ClipCaps.SpeedMultiplier;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            return ScriptPlayable<AudiencePenlightTimelineBehaviour>.Create(graph, behaviour);
         }
 
         public AudiencePenlightTimelineAsset()

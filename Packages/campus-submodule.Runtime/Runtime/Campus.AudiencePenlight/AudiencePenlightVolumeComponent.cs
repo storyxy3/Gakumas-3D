@@ -8,7 +8,7 @@ namespace Campus.AudiencePenlight
     [VolumeComponentMenu("Campus/観客ペンライトカラー")]
     public class AudiencePenlightVolumeComponent : VolumeComponent
     {
-        public AudiencePenlightVolumeParameter target;
+        public AudiencePenlightVolumeParameter target = new AudiencePenlightVolumeParameter(null);
         public AudiencePenlightVolumeComponent()
         {
         }

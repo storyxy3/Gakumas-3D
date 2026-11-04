@@ -14,7 +14,12 @@ namespace Campus.AudiencePenlight
     {
         public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            if (!go.TryGetComponent<PlayableDirector>(out var director)) return base.CreateTrackMixer(graph, go, inputCount);
+            var playable = ScriptPlayable<MobAudiencePenlightOverrideMixerBehaviour>.Create(graph, inputCount);
+            var target = director.GetGenericBinding(this) as global::Campus.MobAudience.MobAudiencePenlightController;
+            if (target == null) return base.CreateTrackMixer(graph, go, inputCount);
+            playable.GetBehaviour().MobAudiencePenlightController = target;
+            return playable;
         }
 
         public MobAudiencePenlightOverrideTrack()

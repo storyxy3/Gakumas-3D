@@ -7,7 +7,7 @@ namespace Campus.AudiencePenlight
     [Serializable]
     public class AudiencePenlightVolumeParameter : VolumeParameter<AudiencePenlightVolume>
     {
-        public AudiencePenlightVolumeParameter(AudiencePenlightVolume value)
+        public AudiencePenlightVolumeParameter(AudiencePenlightVolume value) : base(value, false)
         {
         }
     }
