@@ -16,12 +16,42 @@ namespace VL
 
         public static (int, int) GetLimitedResolution(int screenWidth, int screenHeight, Vector2 aspectRatio, int maxBufferPixel, float bufferScale)
         {
-            return default((int, int));
+            return GetLimitedResolution(screenWidth, screenHeight, aspectRatio, maxBufferPixel, bufferScale, true);
         }
 
         private static (int, int) GetLimitedResolution(int screenWidth, int screenHeight, Vector2 aspectRatio, int maxBufferPixel, float bufferScale, bool firstCall)
         {
-            return default((int, int));
+            float width = Mathf.Max(screenWidth * bufferScale, 16f);
+            float height = Mathf.Max(screenHeight * bufferScale, 16f);
+            bool noAspect = aspectRatio.y <= 0f || aspectRatio.x <= 0f;
+            if (!noAspect && (aspectRatio.x > aspectRatio.y) != (width > height))
+            {
+                if (firstCall)
+                {
+                    var limited = GetLimitedResolution((int)width, (int)height, aspectRatio, maxBufferPixel, 1f, false);
+                    maxBufferPixel = Mathf.Min(limited.Item1, limited.Item2);
+                }
+                float temp = width;
+                width = height;
+                height = temp;
+            }
+            float max = Mathf.Max(width, height);
+            if (maxBufferPixel > 0 && max > maxBufferPixel)
+            {
+                float scale = maxBufferPixel / max;
+                width *= scale;
+                height *= scale;
+            }
+            if (!noAspect)
+            {
+                if (aspectRatio.x > aspectRatio.y) height *= (aspectRatio.y / aspectRatio.x * width) / height;
+                else width *= (aspectRatio.x / aspectRatio.y * height) / width;
+            }
+            int w = (int)width;
+            int h = (int)height;
+            if (w % 2 == 1) w++;
+            if (h % 2 == 1) h++;
+            return (w, h);
         }
 
         public static int GetEvenNumber(float num)

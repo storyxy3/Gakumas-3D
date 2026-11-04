@@ -13,7 +13,8 @@ namespace VL
         {
             get
             {
-                return null;
+                if (_controller == null) _controller = GetComponent<VLActorController>();
+                return _controller;
             }
         }
 

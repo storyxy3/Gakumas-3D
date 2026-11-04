@@ -9,7 +9,7 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return _instance != null;
             }
         }
 
@@ -17,11 +17,12 @@ namespace VL
         {
             get
             {
-                return null;
+                return _instance;
             }
 
             internal set
             {
+                _instance = value;
             }
         }
     }

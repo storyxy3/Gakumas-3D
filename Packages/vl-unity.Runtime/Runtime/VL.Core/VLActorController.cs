@@ -1,3 +1,4 @@
+// TODO(qa-recon): Only the rendering registry getter is reconstructed here. Actor registry initialization and actor lifecycle remain skeletons; render consumers need that separate reconstruction.
 namespace VL.Core
 {
     using global::System;
@@ -74,7 +75,7 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _actorControllers;
             }
         }
 
