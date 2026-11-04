@@ -1,0 +1,285 @@
+{
+  "sample": "ttmr001",
+  "platform": "pc",
+  "revision": 67,
+  "bundles": [
+    {
+      "name": "crw_layout_env_3d_live_ttmr001-00-noon",
+      "file": "crw_layout_env_3d_live_ttmr001-00-noon.unity3d",
+      "source": "DMM-PC",
+      "sha256": "eccb930338f3e381e80d7f036cf6bf452d9ba3d89fbaf109f30599be0fbc050e",
+      "dependencies": []
+    },
+    {
+      "name": "actor-shader",
+      "file": "actor-shader.unity3d",
+      "source": "DMM-PC",
+      "sha256": "3e04162ba360cd980db48809c615c5a80aefd6c27425f614db531e5e9355515f",
+      "dependencies": []
+    },
+    {
+      "name": "mdl_prp_microphone-normal-00_microphone",
+      "file": "mdl_prp_microphone-normal-00_microphone.unity3d",
+      "source": "DMM-PC",
+      "sha256": "c655e7be72fdf9d57ca3b6acd9aad9a385c64b8a02eadb9de6b5ed178cb913eb",
+      "dependencies": [
+        "actor-shader"
+      ]
+    },
+    {
+      "name": "mef_mat_chr_ttmr_ehl-move-002",
+      "file": "mef_mat_chr_ttmr_ehl-move-002.unity3d",
+      "source": "DMM-PC",
+      "sha256": "c26a2a1f4dec987124033e02ad4a65e85f9b934a4ada2a1d4bc496f0b087c4a7",
+      "dependencies": []
+    },
+    {
+      "name": "mef_mat_chr_ttmr_eye-move-001",
+      "file": "mef_mat_chr_ttmr_eye-move-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "4c1d9372989c3a5bfc4335b9f2399d91eaa7aca0d780195ec953c0695d289c75",
+      "dependencies": []
+    },
+    {
+      "name": "mot_live_chr_ttmr_ttmr-001_00_in",
+      "file": "mot_live_chr_ttmr_ttmr-001_00_in.unity3d",
+      "source": "DMM-PC",
+      "sha256": "1dd7c5e4add363977b00a8fad87874ae5216a49bfa04ddd46c12061510e56cab",
+      "dependencies": [
+        "mef_mat_chr_ttmr_ehl-move-002",
+        "mef_mat_chr_ttmr_eye-move-001"
+      ]
+    },
+    {
+      "name": "crw_mdl_mix_00-00_02",
+      "file": "crw_mdl_mix_00-00_02.unity3d",
+      "source": "DMM-PC",
+      "sha256": "e020c99cab4f62ecb40742f92ef30c6d2c1321c63bcc3df4fa6cc73217256273",
+      "dependencies": []
+    },
+    {
+      "name": "mdl_prp_microphonestand-normal-00_microphonestand",
+      "file": "mdl_prp_microphonestand-normal-00_microphonestand.unity3d",
+      "source": "DMM-PC",
+      "sha256": "ac0f0ea787bc6f521b93304dc063489cfc63300d0d4533a0aa3c7443a54fa9c5",
+      "dependencies": [
+        "actor-shader"
+      ]
+    },
+    {
+      "name": "sud_music_live_ttmr-001-ttmr_true-001",
+      "file": "sud_music_live_ttmr-001-ttmr_true-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "bf1ef1f220c8242ed6fd2e3597f962fb1e1f90e4b2458a5cf36bb6b8dfae7d65",
+      "dependencies": []
+    },
+    {
+      "name": "crw_mot_live_audience_general-006-b_in",
+      "file": "crw_mot_live_audience_general-006-b_in.unity3d",
+      "source": "DMM-PC",
+      "sha256": "82c6ab9fc8401fbb18059ddff727013da1595ffbd8ef1d32cf70214ab93a2b1a",
+      "dependencies": []
+    },
+    {
+      "name": "shader",
+      "file": "shader.unity3d",
+      "source": "DMM-PC",
+      "sha256": "e25a6942f42c988b2f9e2ee1a2969c0b5a642861f1afe2fa425834d8a7f28a9f",
+      "dependencies": []
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-equipment-01",
+      "file": "fbx_mdl_env_cmn-parts_live-equipment-01.unity3d",
+      "source": "DMM-PC",
+      "sha256": "e2f175a8a773443623b881cd8ed7b2f69049157f0c042febd47d941d816a4d0f",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "crw_mot_live_audience_general-001-a_lp",
+      "file": "crw_mot_live_audience_general-001-a_lp.unity3d",
+      "source": "DMM-PC",
+      "sha256": "d8458639489ba60222000edc77099c708a323a2748d43a67120d5105a6fc4071",
+      "dependencies": []
+    },
+    {
+      "name": "eff_cav_mov_ttmr-001",
+      "file": "eff_cav_mov_ttmr-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "2a58c8e1aa48c93321a90a35f782279db496633b5cd2c43e4afcc530eca284aa",
+      "dependencies": []
+    },
+    {
+      "name": "crw_mot_live_audience_general-010-a_in",
+      "file": "crw_mot_live_audience_general-010-a_in.unity3d",
+      "source": "DMM-PC",
+      "sha256": "5b0faae6ec5091057817bcb9c719200b4580faaf83e6ad46c8097a28c842f762",
+      "dependencies": []
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-camera-00",
+      "file": "fbx_mdl_env_cmn-parts_live-camera-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "835c2af6db3b22ab01b39c5d1d865e7235a7c553749f0050875deb5872ac1285",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "crw_mot_live_audience_ttmr-001-000-a_lp",
+      "file": "crw_mot_live_audience_ttmr-001-000-a_lp.unity3d",
+      "source": "DMM-PC",
+      "sha256": "dbcb4ecf1ef156ed4980054d40e8f90c38e4303d56e8908f3fca4fcbca6b9cea",
+      "dependencies": []
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-equipment-00",
+      "file": "fbx_mdl_env_cmn-parts_live-equipment-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "2e1a42c3ef7227848b45e7ffc4502ffc2a734b1cd5577441d4cf18989c63cabd",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "mot_live_ttmr-001_in_layout",
+      "file": "mot_live_ttmr-001_in_layout.unity3d",
+      "source": "DMM-PC",
+      "sha256": "cc430ee9578f4c67ae4971d417b8b7cf80aad3e3c1fb916e0a8d03e9743a95b2",
+      "dependencies": []
+    },
+    {
+      "name": "tln_live_ttmr-001",
+      "file": "tln_live_ttmr-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "a3423ced1e1132254e07b7ea9d173195abacd9df4cbaf97753c6ec70f40c38cf",
+      "dependencies": [
+        "crw_layout_env_3d_live_ttmr001-00-noon",
+        "mdl_prp_microphone-normal-00_microphone",
+        "mot_live_chr_ttmr_ttmr-001_00_in",
+        "crw_mdl_mix_00-00_02",
+        "mdl_prp_microphonestand-normal-00_microphonestand",
+        "sud_music_live_ttmr-001-ttmr_true-001",
+        "crw_mot_live_audience_general-006-b_in",
+        "fbx_mdl_env_cmn-parts_live-equipment-01",
+        "actor-shader",
+        "crw_mot_live_audience_general-001-a_lp",
+        "eff_cav_mov_ttmr-001",
+        "crw_mot_live_audience_general-010-a_in",
+        "mef_mat_chr_ttmr_ehl-move-002",
+        "fbx_mdl_env_cmn-parts_live-camera-00",
+        "crw_mot_live_audience_ttmr-001-000-a_lp",
+        "shader",
+        "fbx_mdl_env_cmn-parts_live-equipment-00",
+        "mef_mat_chr_ttmr_eye-move-001",
+        "mot_live_ttmr-001_in_layout"
+      ]
+    },
+    {
+      "name": "fbx_mdl_env_stg-parts_auditorium-00-00",
+      "file": "fbx_mdl_env_stg-parts_auditorium-00-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "d51bcae6bd5a4a383d62a5ead66a22ceecdc1771d020269c5165f5171bc212b0",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "t_evm_chr-eye_cub_spclit_general-00",
+      "file": "t_evm_chr-eye_cub_spclit_general-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "12c51926662538ce5b8ad61ff057141a1d667a82466468429950c73a28c236d4",
+      "dependencies": []
+    },
+    {
+      "name": "fbx_mdl_env_stg-parts_auditorium-01-00",
+      "file": "fbx_mdl_env_stg-parts_auditorium-01-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "21d1e58008245cf77f6ef4d718eecc866f519cc74b7356f76d81b0e21cc866ba",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "fbx_mdl_env_stg-parts_livestg-ttmr001-00",
+      "file": "fbx_mdl_env_stg-parts_livestg-ttmr001-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "38dea3d0958ad26da2e854478d3494ed4ea6ae2a08180cd38552bd8f88feab87",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-truss-00",
+      "file": "fbx_mdl_env_cmn-parts_live-truss-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "72ef395a1a30d2c1f6faec79d8dc03e2e0aa6034e1c56b67154e4ec981051abe",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "t_evm_chr-all_cub_spclit_general-00",
+      "file": "t_evm_chr-all_cub_spclit_general-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "ecf0abbdbc0331533d23c8880fa238aaeafd21870ba1c45dbdcb169ca9ce8e8f",
+      "dependencies": []
+    },
+    {
+      "name": "env_3d_live_ttmr001-00-noon",
+      "file": "env_3d_live_ttmr001-00-noon.unity3d",
+      "source": "DMM-PC",
+      "sha256": "11426f53ddb0a4c6a16bcfec81ba240e6d48671fcb68b13834cf1d744731a719",
+      "dependencies": [
+        "fbx_mdl_env_stg-parts_auditorium-00-00",
+        "t_evm_chr-eye_cub_spclit_general-00",
+        "shader",
+        "fbx_mdl_env_stg-parts_auditorium-01-00",
+        "fbx_mdl_env_stg-parts_livestg-ttmr001-00",
+        "fbx_mdl_env_cmn-parts_live-truss-00",
+        "fbx_mdl_env_cmn-parts_live-equipment-00",
+        "fbx_mdl_env_cmn-parts_live-equipment-01",
+        "t_evm_chr-all_cub_spclit_general-00"
+      ]
+    },
+    {
+      "name": "mdl_chr_ttmr-cstm-0003_body",
+      "file": "mdl_chr_ttmr-cstm-0003_body.unity3d",
+      "source": "DMM-PC",
+      "sha256": "c36e39f801117389c49a38cf4971204c3ca408fe6580edccf8fd1f2b01a7ed47",
+      "dependencies": [
+        "actor-shader"
+      ]
+    },
+    {
+      "name": "mdl_chr_ttmr-cstm-0003_hair",
+      "file": "mdl_chr_ttmr-cstm-0003_hair.unity3d",
+      "source": "DMM-PC",
+      "sha256": "08fe1c661d194ad2f7cde133bf9946dc4404c014319be9bd0b76f343b4250e55",
+      "dependencies": [
+        "actor-shader"
+      ]
+    },
+    {
+      "name": "m_fdc",
+      "file": "m_fdc.unity3d",
+      "source": "DMM-PC",
+      "sha256": "a0aa74f9fdfd98b3fcb58d899f697c55969810f1957dd19580d8a14ffad89fa6",
+      "dependencies": [
+        "shader"
+      ]
+    },
+    {
+      "name": "mdl_chr_ttmr-base-0000_face",
+      "file": "mdl_chr_ttmr-base-0000_face.unity3d",
+      "source": "DMM-PC",
+      "sha256": "2507db39477d3c4a1846f90475a1ec1ef293ffea003702583d968381e355a959",
+      "dependencies": [
+        "m_fdc",
+        "shader",
+        "actor-shader"
+      ]
+    }
+  ]
+}

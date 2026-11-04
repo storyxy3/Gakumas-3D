@@ -1,0 +1,13 @@
+{
+  "name": "TrueEnd.Host",
+  "references": [
+    "campus-submodule.Runtime",
+    "vl-unity.Runtime",
+    "Unity.Timeline",
+    "UniTask",
+    "Cinemachine",
+    "CriMw.CriWare.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.Universal.Runtime"
+  ]
+}

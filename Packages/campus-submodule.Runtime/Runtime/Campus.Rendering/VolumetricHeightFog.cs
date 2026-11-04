@@ -7,7 +7,7 @@ namespace Campus.Rendering
     [VolumeComponentMenu("VL/Volumetric Height Fog")]
     public class VolumetricHeightFog : VolumeComponent
     {
-        public BoolParameter UseFog;
+        public BoolParameter UseFog = new BoolParameter(false);
         public VolumetricHeightFog()
         {
         }
