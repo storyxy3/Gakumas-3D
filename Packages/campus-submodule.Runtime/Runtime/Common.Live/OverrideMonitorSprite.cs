@@ -14,7 +14,7 @@ namespace Common.Live
         {
             get
             {
-                return null;
+                return _key;
             }
         }
 
@@ -22,7 +22,7 @@ namespace Common.Live
         {
             get
             {
-                return null;
+                return _value;
             }
         }
 

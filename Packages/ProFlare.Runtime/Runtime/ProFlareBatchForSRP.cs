@@ -34,7 +34,7 @@ public class ProFlareBatchForSRP : MonoBehaviour
     {
         get
         {
-            return default(TransformAccessArray);
+            return _transformAccessArray;
         }
     }
 
@@ -42,7 +42,7 @@ public class ProFlareBatchForSRP : MonoBehaviour
     {
         get
         {
-            return null;
+            return _batchDatas;
         }
     }
 
@@ -50,7 +50,7 @@ public class ProFlareBatchForSRP : MonoBehaviour
     {
         get
         {
-            return default(float);
+            return Time.deltaTime;
         }
     }
 
@@ -58,29 +58,67 @@ public class ProFlareBatchForSRP : MonoBehaviour
     {
         get
         {
-            return null;
+            return _atlas;
         }
     }
 
     private void OnEnable()
     {
+        if (_batchDatas == null) return;
+        foreach (var data in _batchDatas) data?.Initialize(MaxFlareElementSize);
     }
 
     private void Dispose()
     {
+        if (_transformAccessArray.isCreated) _transformAccessArray.Dispose();
+        if (_batchDatas == null) return;
+        foreach (var data in _batchDatas) data?.Dispose();
     }
 
     private void OnDisable()
     {
+        Dispose();
     }
 
     private void OnDestroy()
     {
+        Dispose();
     }
 
     public bool TryGetScheduledFlareData(Camera c, ComputeShader computeShader, int updateKernelIndex, Material material, out ProFlareBatchForSRPData data)
     {
-        throw null;
+        data = null;
+        if (c == null || _batchDatas == null || _flareInstanceIDTable.Count == 0) return false;
+        for (int i = 0; i < _batchDatas.Count; i++)
+        {
+            if (_batchDatas[i].camera == c)
+            {
+                data = _batchDatas[i];
+                break;
+            }
+        }
+        if (data == null)
+        {
+            data = new ProFlareBatchForSRPData(this, c);
+            data.Initialize(MaxFlareElementSize);
+            data.UpdateUVData(_atlas);
+            _batchDatas.Add(data);
+        }
+        data.SetShader(computeShader, updateKernelIndex, material);
+        if (_flareTransformDirty)
+        {
+            if (!_transformAccessArray.isCreated) _transformAccessArray = new TransformAccessArray(1024);
+            for (int i = 0; i < FlaresList.Count; i++)
+            {
+                var transform = FlaresList[i] != null ? FlaresList[i].thisTransform : null;
+                if (i < _transformAccessArray.length) _transformAccessArray[i] = transform;
+                else _transformAccessArray.Add(transform);
+            }
+            for (int i = _transformAccessArray.length - 1; i >= FlaresList.Count; i--) _transformAccessArray.RemoveAtSwapBack(i);
+        }
+        data.ScheduleFlares(false);
+        _flareTransformDirty = false;
+        return true;
     }
 
     public void RemoveFlare(ProFlare _flare)
@@ -122,10 +160,29 @@ public class ProFlareBatchForSRP : MonoBehaviour
 
     private void LateUpdate()
     {
+        for (int i = 0; i < _batchDatas.Count; i++)
+        {
+            var data = _batchDatas[i];
+            data.DisposeCountdown();
+            if (!data.IsValid())
+            {
+                data.Dispose();
+                _batchDatas.RemoveAt(i);
+                return;
+            }
+        }
     }
 
     public void ForceRefresh()
     {
+        FlaresList.Clear();
+        _flareEmptyQueue.Clear();
+        _flareInstanceIDTable.Clear();
+        _atlas = null;
+        foreach (var flare in (ProFlare[])UnityEngine.Object.FindObjectsOfType(typeof(ProFlare)))
+        {
+            if (flare._Atlas == _atlas) AddFlare(flare);
+        }
     }
 
     public ProFlareBatchForSRP()

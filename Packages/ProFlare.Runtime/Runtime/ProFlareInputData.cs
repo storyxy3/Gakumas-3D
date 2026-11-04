@@ -12,11 +12,12 @@ public struct ProFlareInputData
     {
         get
         {
-            return default(bool);
+            return visible != 0;
         }
 
         set
         {
+            visible = value ? 1u : 0u;
         }
     }
 }

@@ -18,6 +18,7 @@ namespace VLB
         public NativeList<int>.ParallelWriter visibleIndices;
         public void Execute(int index)
         {
+            if (enables[index] && Utils.TestPlanesAABB(planes, bounds[index])) visibleIndices.AddNoResize(index);
         }
     }
 }

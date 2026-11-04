@@ -11,6 +11,7 @@ namespace VLB
         public NativeList<int> visibleIndices;
         public void Execute()
         {
+            visibleIndices.Clear();
         }
     }
 }

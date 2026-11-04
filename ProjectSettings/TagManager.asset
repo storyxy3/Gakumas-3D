@@ -11,24 +11,24 @@ TagManager:
   - 
   - Water
   - UI
+  - UI2D
   - 
   - 
   - 
   - 
   - 
+  - VL3D
+  - Ortho3D
+  - Blocking3D
   - 
+  - Overlay2D
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Volume
+  - VLB
+  - CanvasRT0
+  - CanvasRT1
+  - CanvasRT2
+  - CanvasRT3
   - 
   - 
   - 
@@ -40,6 +40,99 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ScreenTransitionBackgroundBack
+    uniqueID: 2710901155
+    locked: 0
+  - name: ScreenBackground
+    uniqueID: 1742831415
+    locked: 0
+  - name: ScreenTransitionContentBack
+    uniqueID: 3133677293
+    locked: 0
+  - name: ScreenContent
+    uniqueID: 1497993275
+    locked: 0
+  - name: ScreenContentFront
+    uniqueID: 2742920857
+    locked: 0
+  - name: ScreenHeaderFooter
+    uniqueID: 3993690429
+    locked: 0
+  - name: ScreenOverlay
+    uniqueID: 2173142771
+    locked: 0
+  - name: OverlayAdv
+    uniqueID: 2098997719
+    locked: 0
+  - name: OverlayAdvFront
+    uniqueID: 3549024037
+    locked: 0
+  - name: ScreenLayerManager
+    uniqueID: 4129292631
+    locked: 0
+  - name: ScreenLayerManager2
+    uniqueID: 3580300397
+    locked: 0
+  - name: ScreenLayerManager3
+    uniqueID: 4112038403
+    locked: 0
+  - name: DialogBackBlocking
+    uniqueID: 1271224503
+    locked: 0
+  - name: Dialog
+    uniqueID: 448825579
+    locked: 0
+  - name: DialogOverlay
+    uniqueID: 2319767691
+    locked: 0
+  - name: Hover
+    uniqueID: 3699694887
+    locked: 0
+  - name: DialogFrontBlocking
+    uniqueID: 2682828761
+    locked: 0
+  - name: TutorialBase
+    uniqueID: 2509774849
+    locked: 0
+  - name: TutorialLift
+    uniqueID: 311172889
+    locked: 0
+  - name: TutorialMain
+    uniqueID: 1512175587
+    locked: 0
+  - name: LoadingBack
+    uniqueID: 1218371295
+    locked: 0
+  - name: Loading
+    uniqueID: 3278804399
+    locked: 0
+  - name: LoadingFront
+    uniqueID: 1787891499
+    locked: 0
+  - name: Notification
+    uniqueID: 2355440417
+    locked: 0
+  - name: GlobalDialog
+    uniqueID: 1668623919
+    locked: 0
+  - name: OverlayFloating
+    uniqueID: 3869424203
+    locked: 0
+  - name: OverlayEffect
+    uniqueID: 2816262791
+    locked: 0
+  - name: Toast
+    uniqueID: 1937335509
+    locked: 0
+  - name: OrientationFade
+    uniqueID: 3394401451
+    locked: 0
+  - name: Debug
+    uniqueID: 3243799185
+    locked: 0
+  - name: MonitorOverlay
+    uniqueID: 248953065
     locked: 0
   m_RenderingLayers:
   - Default

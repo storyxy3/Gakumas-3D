@@ -77,11 +77,12 @@ namespace Campus.Common
         {
             get
             {
-                return null;
+                return _uniqueId;
             }
 
             set
             {
+                _uniqueId = value;
             }
         }
 
@@ -89,11 +90,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(bool);
+                return _autoBlinkDisabled;
             }
 
             set
             {
+                _autoBlinkDisabled = value;
             }
         }
 
@@ -101,11 +103,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(bool);
+                return _useADVSettings;
             }
 
             set
             {
+                _useADVSettings = value;
             }
         }
 
@@ -113,11 +116,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(bool);
+                return _correctSkeletonToCmmnHeight;
             }
 
             set
             {
+                _correctSkeletonToCmmnHeight = value;
             }
         }
 
@@ -126,12 +130,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CjointLimitSetting_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CjointLimitSetting_003Ek__BackingField = value;
             }
         }
 

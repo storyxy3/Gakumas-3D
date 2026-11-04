@@ -10,7 +10,8 @@ namespace VL.Core
         public Transform targetBone;
         public BoneLinkData(Transform rootBone, Transform targetBone)
         {
-            this = default;
+            this.rootBone = rootBone;
+            this.targetBone = targetBone;
         }
     }
 }

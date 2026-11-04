@@ -41,43 +41,100 @@ namespace VL.Core
 
         protected void InitializeField(VLActorSettings settings, TDescriptor descriptor)
         {
+            _settings = settings;
+            _descriptor = descriptor;
         }
 
         private bool CheckResourceObjects(IEnumerable<GameObject> resourceObejcts)
         {
-            return default(bool);
+            var names = new HashSet<string>();
+            int count = 0;
+            if (resourceObejcts == null) return false;
+            foreach (var resource in resourceObejcts)
+            {
+                if (resource == null)
+                {
+                    Debug.LogError("アセットが読み込まれていません");
+                    return false;
+                }
+                if (!names.Add(resource.name))
+                {
+                    Debug.LogError("指定アセット名が重複しているため生成できません: " + resource.name);
+                    return false;
+                }
+                count++;
+            }
+            return count > 0;
         }
 
         protected void AddDestroyParts(TModelParts parts)
         {
+            if (_destroyEstimatedParts == null) _destroyEstimatedParts = new List<TModelParts>();
+            parts.SetRendererActive(false);
+            _destroyEstimatedParts.Add(parts);
         }
 
         protected bool PreBuild()
         {
-            return default(bool);
+            if (descriptor.gameObjects == null)
+            {
+                Debug.LogError("descripter.gameObject not found");
+                return false;
+            }
+            if (CheckResourceObjects(descriptor.gameObjects)) return true;
+            OnBuildModelFail();
+            if (_settings != null) _settings.OnActorBuilded(false, this);
+            return false;
         }
 
         protected void PostBuild()
         {
+            if (_destroyEstimatedParts != null)
+            {
+                foreach (var parts in _destroyEstimatedParts) VLUtility.DestroyObject(parts.gameObject);
+                _destroyEstimatedParts.Clear();
+            }
+            if (_settings != null) _settings.OnActorBuilded(true, this);
         }
 
         public bool Build(VLActorSettings settings, TDescriptor descriptor)
         {
-            return default(bool);
+            _settings = settings;
+            _descriptor = descriptor;
+            bool success = PreBuild();
+            if (!success) return success;
+            BuildModel(descriptor.gameObjects);
+            SetupAnimation();
+            OnBuildModelSuccess();
+            PostBuild();
+            return success;
         }
 
         protected void SetRootParts(TModelParts rootParts)
         {
+            _root = rootParts;
         }
 
         protected SkeletonBone GetSkeleton(Transform trans, bool initialize = false)
         {
-            return default(SkeletonBone);
+            return new SkeletonBone
+            {
+                name = trans.name,
+                position = initialize ? Vector3.zero : trans.localPosition,
+                rotation = initialize ? Quaternion.identity : trans.localRotation,
+                scale = Vector3.one
+            };
         }
 
         protected SkeletonBone GetSkeleton(DefaultBoneInfo bone)
         {
-            return default(SkeletonBone);
+            return new SkeletonBone
+            {
+                name = bone.name,
+                position = bone.localPosition,
+                rotation = bone.localRotation,
+                scale = bone.scale
+            };
         }
 
         protected virtual void OnBuildModelFail()
@@ -102,7 +159,10 @@ namespace VL.Core
 
         public override bool IsRendererActive()
         {
-            return default(bool);
+            bool active = false;
+            if (_children != null)
+                foreach (var child in _children) active |= child.rendererActive;
+            return active;
         }
 
         public override void SetRendererActive(bool active)
@@ -150,12 +210,33 @@ namespace VL.Core
 
         protected void AddParts(TModelParts parts)
         {
+            parts.InitializeBones(_boneNameToTransformMap);
+            var links = parts.GetBoneLinkList();
+            if (!_childMap.ContainsKey(parts.assetName)) _childMap.Add(parts.assetName, parts);
+            parts.transform.localPosition = Vector3.zero;
+            parts.transform.localRotation = Quaternion.identity;
+            for (int i = 0; i < links.Count; i++)
+            {
+                var target = links[i].targetBone;
+                var rootBone = links[i].rootBone;
+                if (!VLUtility.FastStartsWith(target.name, VLActorDefine.ROOT_BONE_NAME))
+                    rootBone.SetParent(target, false);
+                rootBone.localPosition = Vector3.zero;
+                rootBone.localRotation = Quaternion.identity;
+                rootBone.localScale = Vector3.one;
+            }
+            if (!_partsIdMap.ContainsKey(parts.partsId)) _partsIdMap.Add(parts.partsId, parts);
+            else Debug.LogError("PartsIDが重複しています:" + parts.partsId);
+            _children.Add(parts);
         }
 
         public static TController Create<TController>(int index)
             where TController : VLActorController<TModelParts, TDescriptor, TIDescriptor>
         {
-            return null;
+            var actorObject = new GameObject(string.Format("{0}[{1}]", typeof(TController).Name, index));
+            var controller = actorObject.AddComponent<TController>();
+            controller._index = index;
+            return controller;
         }
 
         public VLActorController()
@@ -164,7 +245,7 @@ namespace VL.Core
 
         bool VL.IVLActorController.TryGetComponent<T>(out T component)
         {
-            throw null;
+            return TryGetComponent(out component);
         }
     }
 }

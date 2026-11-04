@@ -2,10 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Campus.Common;
 using Campus.Common.Live;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
+using VL.Animation;
 
 namespace TrueEnd.Host
 {
@@ -31,6 +36,7 @@ namespace TrueEnd.Host
         private readonly Dictionary<string, AssetBundle> bundles = new Dictionary<string, AssetBundle>();
         private LiveOptions options;
         private CampusLiveTimelineController timeline;
+        private VL.Rendering.VLSRPCameraController cameraController;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void Boot()
@@ -62,20 +68,97 @@ namespace TrueEnd.Host
                     Debug.Log($"LIVE_BUNDLE {entry.name} source={entry.source}");
                 }
 
+                var resources = bundles["trueend-resources"];
+                ResourcesAPI.overrideAPI = new LiveResources(resources);
+                var pipeline = resources.LoadAsset<UniversalRenderPipelineAsset>("assets/campusrenderpipelineultimateasset");
+                if (pipeline == null)
+                    throw new InvalidDataException("Original Ultimate pipeline asset is missing. Available assets " + string.Join(", ", resources.GetAllAssetNames()));
+                GraphicsSettings.defaultRenderPipeline = pipeline;
+                QualitySettings.renderPipeline = pipeline;
+                Debug.Log($"LIVE_PIPELINE {pipeline.name} renderer={pipeline.scriptableRenderer.GetType().FullName}");
+                var cameraObject = Instantiate(Resources.Load<GameObject>("Game3DManager"));
+                cameraController = cameraObject.GetComponent<VL.Rendering.VLSRPCameraController>();
+                cameraController.aspectRatio = new Vector2(2.35f, 1f);
+                cameraController.UpdateRenderTarget();
                 var stage = await LoadScene("env_3d_live_ttmr001-00-noon");
                 SceneManager.SetActiveScene(stage);
                 var live = await LoadScene("tln_live_ttmr-001");
                 timeline = live.GetRootGameObjects().SelectMany(root => root.GetComponentsInChildren<CampusLiveTimelineController>(true)).Single();
                 LightProbes.Tetrahedralize();
                 Debug.Log($"LIVE_LOADED bundles={bundles.Count} stage={stage.name} timeline={live.name} duration={timeline.master.duration}");
-                // TODO(qa-recon): restore CampusLiveBinder.SetupAsync and the client actor construction before playback.
-                throw new NotSupportedException("Live assets loaded. Campus client binding reconstruction is pending.");
+
+                string[] actorAssets = { "mdl_chr_ttmr-cstm-0003_body", "mdl_chr_ttmr-cstm-0003_hair", "mdl_chr_ttmr-base-0000_face" };
+                var models = Enumerable.Select(actorAssets, asset => bundles[asset].LoadAllAssets<GameObject>().Single()).ToList();
+                models.AddRange(timeline.GetProps(0));
+                var descriptor = new CampusActorDescriptor
+                {
+                    name = "ttmr",
+                    assets = Enumerable.Select(models, model => model.name).ToList(),
+                    gameObjects = models,
+                    propIndexList = Enumerable.Range(0, models.Count).Where(index => models[index].name.StartsWith("mdl_prp", StringComparison.Ordinal)).ToList(),
+                    correctSkeletonToCmmnHeight = timeline.IsCmmnHeightCorrectionNeededForActorSwing
+                };
+                var actor = VL.Core.VLActorController<CampusActorModelParts, CampusActorDescriptor, ICampusActorDescriptor>.Create<CampusActorController>(0);
+                var actorSettings = resources.LoadAsset<CampusActorSettings>("assets/campusactorsettings");
+                if (!actor.Build(actorSettings, descriptor)) throw new InvalidDataException("Cannot build Temari's actor.");
+                Debug.Log($"LIVE_ACTOR {actor.name} avatar={actor.avatar.isValid} humanoid={actor.avatar.isHuman} parts={actor.GetModelPartsList().Count} renderers={actor.GetComponentsInChildren<Renderer>().Length} layer={actor.gameObject.layer} cameraMask={cameraController.mainCamera.cullingMask}");
+                var music = bundles["sud_music_live_ttmr-001-ttmr_true-001"].LoadAllAssets<AudioClip>().Single();
+                var musicSource = gameObject.AddComponent<AudioSource>();
+                musicSource.playOnAwake = false;
+                musicSource.mute = options.Mute;
+                musicSource.outputAudioMixerGroup = resources.LoadAsset<UnityEngine.Audio.AudioMixerGroup>("assets/campuslivemixergroup");
+                // The native live uses DSP time. Linux's disabled audio device needs a running frame clock.
+                var updateMode = Application.platform == RuntimePlatform.LinuxPlayer ? DirectorUpdateMode.GameTime : DirectorUpdateMode.DSPClock;
+                Debug.Log($"LIVE_AUDIO clip={music.name} duration={music.length} frequency={music.frequency} channels={music.channels} clock={updateMode}");
+                var binder = new CampusLiveBinder(new CampusLiveBinder.BindParams
+                {
+                    timeline = timeline,
+                    campusTimeline = timeline,
+                    environment = stage.GetRootGameObjects().SelectMany(root => root.GetComponentsInChildren<CampusLiveEnvironment>(true)).SingleOrDefault(),
+                    actors = new List<ICampusActorController> { actor },
+                    overrideDirectorUpdateMode = updateMode,
+                    bgmAudioSource = musicSource,
+                    bgmAudioClip = music,
+                    initialTime = (float)options.StartTime,
+                    exposedLayoutMotion = bundles["mot_live_ttmr-001_in_layout"].LoadAllAssets<LayoutMotionDefine>().Single(),
+                    exposedActorMotions = bundles["mot_live_chr_ttmr_ttmr-001_00_in"].LoadAllAssets<VL.ActorMotionDefine>()
+                });
+                await binder.SetupAsync(this.GetCancellationTokenOnDestroy());
+                // Live3DPresenter.SetActorsActive dispatches this interface call after loading.
+                actor.SetRendererActive(true);
+                timeline.Play();
+                Debug.Log($"LIVE_PLAYING time={timeline.master.time} duration={timeline.master.duration}");
+                double started = Time.realtimeSinceStartupAsDouble;
+                int screenshotIndex = 0;
+                Directory.CreateDirectory(options.CaptureDirectory);
+                while (timeline.master.time < timeline.master.duration && Time.realtimeSinceStartupAsDouble - started < options.QuitAfter)
+                {
+                    await UniTask.WaitForEndOfFrame(this);
+                    if (screenshotIndex < options.ScreenshotTimes.Length && timeline.master.time >= options.ScreenshotTimes[screenshotIndex])
+                    {
+                        double requested = options.ScreenshotTimes[screenshotIndex++];
+                        string path = Path.Combine(options.CaptureDirectory, $"ttmr001-{requested:F3}.png");
+                        var capture = ScreenCapture.CaptureScreenshotAsTexture();
+                        File.WriteAllBytes(path, capture.EncodeToPNG());
+                        Destroy(capture);
+                        Debug.Log($"LIVE_CAPTURE requested={requested} actual={timeline.master.time} path={path}");
+                    }
+                }
+                Debug.Log($"LIVE_STOPPED time={timeline.master.time}");
+                timeline.master.Stop();
+                Application.Quit();
             }
             catch (Exception exception)
             {
                 Debug.LogException(exception);
                 Application.Quit(1);
             }
+        }
+
+        private void OnGUI()
+        {
+            if (cameraController != null && cameraController.targetTexture != null)
+                GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), cameraController.targetTexture, ScaleMode.ScaleToFit, false);
         }
 
         private async UniTask<Scene> LoadScene(string bundleName)

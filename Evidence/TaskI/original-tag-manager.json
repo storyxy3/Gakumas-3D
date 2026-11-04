@@ -1,0 +1,170 @@
+{
+  "tags": [],
+  "layers": [
+    "Default",
+    "TransparentFX",
+    "Ignore Raycast",
+    "",
+    "Water",
+    "UI",
+    "UI2D",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "VL3D",
+    "Ortho3D",
+    "Blocking3D",
+    "",
+    "Overlay2D",
+    "",
+    "Volume",
+    "VLB",
+    "CanvasRT0",
+    "CanvasRT1",
+    "CanvasRT2",
+    "CanvasRT3",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "m_SortingLayers": [
+    {
+      "name": "Default",
+      "uniqueID": 0
+    },
+    {
+      "name": "ScreenTransitionBackgroundBack",
+      "uniqueID": 2710901155
+    },
+    {
+      "name": "ScreenBackground",
+      "uniqueID": 1742831415
+    },
+    {
+      "name": "ScreenTransitionContentBack",
+      "uniqueID": 3133677293
+    },
+    {
+      "name": "ScreenContent",
+      "uniqueID": 1497993275
+    },
+    {
+      "name": "ScreenContentFront",
+      "uniqueID": 2742920857
+    },
+    {
+      "name": "ScreenHeaderFooter",
+      "uniqueID": 3993690429
+    },
+    {
+      "name": "ScreenOverlay",
+      "uniqueID": 2173142771
+    },
+    {
+      "name": "OverlayAdv",
+      "uniqueID": 2098997719
+    },
+    {
+      "name": "OverlayAdvFront",
+      "uniqueID": 3549024037
+    },
+    {
+      "name": "ScreenLayerManager",
+      "uniqueID": 4129292631
+    },
+    {
+      "name": "ScreenLayerManager2",
+      "uniqueID": 3580300397
+    },
+    {
+      "name": "ScreenLayerManager3",
+      "uniqueID": 4112038403
+    },
+    {
+      "name": "DialogBackBlocking",
+      "uniqueID": 1271224503
+    },
+    {
+      "name": "Dialog",
+      "uniqueID": 448825579
+    },
+    {
+      "name": "DialogOverlay",
+      "uniqueID": 2319767691
+    },
+    {
+      "name": "Hover",
+      "uniqueID": 3699694887
+    },
+    {
+      "name": "DialogFrontBlocking",
+      "uniqueID": 2682828761
+    },
+    {
+      "name": "TutorialBase",
+      "uniqueID": 2509774849
+    },
+    {
+      "name": "TutorialLift",
+      "uniqueID": 311172889
+    },
+    {
+      "name": "TutorialMain",
+      "uniqueID": 1512175587
+    },
+    {
+      "name": "LoadingBack",
+      "uniqueID": 1218371295
+    },
+    {
+      "name": "Loading",
+      "uniqueID": 3278804399
+    },
+    {
+      "name": "LoadingFront",
+      "uniqueID": 1787891499
+    },
+    {
+      "name": "Notification",
+      "uniqueID": 2355440417
+    },
+    {
+      "name": "GlobalDialog",
+      "uniqueID": 1668623919
+    },
+    {
+      "name": "OverlayFloating",
+      "uniqueID": 3869424203
+    },
+    {
+      "name": "OverlayEffect",
+      "uniqueID": 2816262791
+    },
+    {
+      "name": "Toast",
+      "uniqueID": 1937335509
+    },
+    {
+      "name": "OrientationFade",
+      "uniqueID": 3394401451
+    },
+    {
+      "name": "Debug",
+      "uniqueID": 3243799185
+    },
+    {
+      "name": "MonitorOverlay",
+      "uniqueID": 248953065
+    }
+  ],
+  "m_RenderingLayers": [
+    "Default"
+  ]
+}

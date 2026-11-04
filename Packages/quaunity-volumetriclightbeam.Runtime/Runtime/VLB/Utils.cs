@@ -164,21 +164,59 @@ namespace VLB
 
         public static Bounds TransformAABB(Bounds bounds, float4x4 transform)
         {
-            return default(Bounds);
+            float3 minimum = bounds.min;
+            float3 maximum = bounds.max;
+            float3 transformedMin = new float3(float.MaxValue);
+            float3 transformedMax = new float3(float.MinValue);
+            for (int i = 0; i < 8; i++)
+            {
+                var corner = new float3((i & 1) != 0 ? maximum.x : minimum.x, (i & 2) != 0 ? maximum.y : minimum.y, (i & 4) != 0 ? maximum.z : minimum.z);
+                float3 point = math.transform(transform, corner);
+                transformedMin = math.min(transformedMin, point);
+                transformedMax = math.max(transformedMax, point);
+            }
+            bounds.SetMinMax(transformedMin, transformedMax);
+            return bounds;
         }
 
         public static Plane GetPlane(Vector4 vector)
         {
-            return default(Plane);
+            float length = Mathf.Sqrt(vector.x * vector.x + vector.y * vector.y + vector.z * vector.z);
+            return new Plane(new Vector3(vector.x / length, vector.y / length, vector.z / length), vector.w / length);
         }
 
         public static void CalcCullingPlane(NativeArray<Plane> planes, Matrix4x4 vpMatrix)
         {
+            Vector4 row0 = vpMatrix.GetRow(0);
+            Vector4 row1 = vpMatrix.GetRow(1);
+            Vector4 row2 = vpMatrix.GetRow(2);
+            Vector4 row3 = vpMatrix.GetRow(3);
+            planes[0] = GetPlane(row2 + row3);
+            planes[1] = GetPlane(row3 - row2);
+            planes[2] = GetPlane(row1 + row3);
+            planes[3] = GetPlane(row3 - row1);
+            planes[4] = GetPlane(row0 + row3);
+            planes[5] = GetPlane(row3 - row0);
         }
 
         public static bool TestPlanesAABB(NativeArray<Plane> planes, Bounds bounds)
         {
-            return default(bool);
+            Vector3 min = bounds.min;
+            Vector3 max = bounds.max;
+            for (int i = 0; i < 6; i++)
+            {
+                Vector3 n = planes[i].normal;
+                float d = planes[i].distance;
+                if (d + (min.z * n.z + (min.x * n.x + min.y * n.y)) <= 0f &&
+                    d + (min.z * n.z + (max.x * n.x + min.y * n.y)) <= 0f &&
+                    d + (min.z * n.z + (min.x * n.x + max.y * n.y)) <= 0f &&
+                    d + (min.z * n.z + (max.x * n.x + max.y * n.y)) <= 0f &&
+                    d + (max.z * n.z + (min.x * n.x + min.y * n.y)) <= 0f &&
+                    d + (max.z * n.z + (max.x * n.x + min.y * n.y)) <= 0f &&
+                    d + (max.z * n.z + (min.x * n.x + max.y * n.y)) <= 0f &&
+                    d + (max.z * n.z + (max.x * n.x + max.y * n.y)) <= 0f) return false;
+            }
+            return true;
         }
     }
 }

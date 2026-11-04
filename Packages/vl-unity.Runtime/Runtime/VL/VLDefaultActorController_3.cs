@@ -2,6 +2,7 @@ namespace VL
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Linq;
     using global::System.Runtime.CompilerServices;
     using global::UnityEngine;
     using global::VL;
@@ -13,7 +14,7 @@ namespace VL
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<VLActorModelParts, int> _003C_003E9__25_0;
             public _003C_003Ec()
             {
@@ -21,14 +22,14 @@ namespace VL
 
             internal int _003CBuildAvatar_003Eb__25_0(VLActorModelParts x)
             {
-                return default(int);
+                return x.boneCount;
             }
         }
 
         [SerializeField]
-        protected Color _color;
+        protected Color _color = Color.white;
         [SerializeField]
-        protected Color _outlineColor;
+        protected Color _outlineColor = Color.white;
         private bool _colorChange;
         [SerializeField]
         protected HumanBodyBoneMapDictionary _humanBodyBoneMap;
@@ -43,11 +44,13 @@ namespace VL
         {
             get
             {
-                return default(Color);
+                return _color;
             }
 
             set
             {
+                _color = value;
+                _colorChange = true;
             }
         }
 
@@ -55,11 +58,13 @@ namespace VL
         {
             get
             {
-                return default(Color);
+                return _outlineColor;
             }
 
             set
             {
+                _outlineColor = value;
+                _colorChange = true;
             }
         }
 
@@ -67,7 +72,7 @@ namespace VL
         {
             get
             {
-                return default(Vector3);
+                return _headPosition;
             }
         }
 
@@ -75,7 +80,7 @@ namespace VL
         {
             get
             {
-                return default(float);
+                return _cameraDistance / 1000f;
             }
         }
 
@@ -118,14 +123,116 @@ namespace VL
 
         public override void BuildModel(IEnumerable<GameObject> resources)
         {
+            _buildResources = resources.ToArray();
+            bool rendererActive = false;
+            if (root != null)
+            {
+                rendererActive = root.rendererActive;
+                foreach (var parts in _childMap.Values)
+                {
+                    var partsTransform = parts.transform;
+                    partsTransform.SetParent(null, false);
+                    foreach (var link in parts.GetBoneLinkList()) link.rootBone.SetParent(partsTransform, false);
+                }
+            }
+            else
+            {
+                foreach (Transform child in transform) UnityEngine.Object.DestroyImmediate(child.gameObject);
+            }
+
+            var nextParts = new List<TModelParts>(16);
+            bool first = true;
+            foreach (var resource in _buildResources)
+            {
+                string assetName = resource.name;
+                string rootName = VLActorDefine.GetRootName(assetName);
+                TModelParts previous = null;
+                bool reuse = false;
+                if (_childMap != null)
+                {
+                    foreach (var pair in _childMap)
+                    {
+                        if (pair.Value.name != rootName) continue;
+                        reuse = assetName == pair.Key;
+                        if (reuse) Debug.Log("ReRegister:" + assetName);
+                        previous = (TModelParts)pair.Value;
+                        _childMap.Remove(pair.Key);
+                        break;
+                    }
+                }
+
+                TModelParts parts;
+                if (reuse && previous != null)
+                {
+                    parts = previous;
+                    parts.transform.SetParent(transform, false);
+                    if (first) SetRootParts(parts);
+                }
+                else
+                {
+                    var instance = UnityEngine.Object.Instantiate(resource, transform, false);
+                    instance.name = rootName;
+                    parts = instance.AddComponent<TModelParts>();
+                    if (first) SetRootParts(parts);
+                    string partsId = VLActorDefine.GetPartsId(assetName, true);
+                    CorrectSkeleton(partsId, instance);
+                    parts.Initialize(partsId, assetName);
+                    if (partsId == "body") parts.aabbCalcType = VLActorAABBCalcType.Bone;
+                    else if (partsId == "face") parts.aabbCalcType = VLActorAABBCalcType.Local;
+                    else parts.aabbCalcType = parts.skinRenderers.Count > 0 ? VLActorAABBCalcType.Default : VLActorAABBCalcType.None;
+                    if (previous != null) AddDestroyParts(previous);
+                }
+                nextParts.Add(parts);
+                first = false;
+            }
+            InitializeData();
+            foreach (var parts in nextParts) AddParts(parts);
+            InitializeAABB();
+            if (!rendererActive) SetRendererActive(false);
+            BuildAvatar();
         }
 
         protected override void InitializeData()
         {
+            base.InitializeData();
+            if (_humanBodyBoneMap == null) _humanBodyBoneMap = new HumanBodyBoneMapDictionary();
+            else _humanBodyBoneMap.Clear();
         }
 
         protected virtual void BuildAvatar()
         {
+            UnityEngine.Rendering.CoreUtils.Destroy(_avatar);
+            if (!descriptor.humanoid)
+            {
+                _avatar = AvatarBuilder.BuildGenericAvatar(gameObject, "");
+                _avatar.name = "Generic Avatar";
+                return;
+            }
+            var human = new List<HumanBone>(55);
+            int count = _childMap.Values.Sum(_003C_003Ec._003C_003E9__25_0 ??
+                (_003C_003Ec._003C_003E9__25_0 = _003C_003Ec._003C_003E9._003CBuildAvatar_003Eb__25_0));
+            var skeleton = new SkeletonBone[count + 1];
+            skeleton[0] = GetSkeleton(transform, true);
+            int index = 1;
+            foreach (var parts in _childMap.Values)
+            {
+                foreach (var bone in parts.boneInfos)
+                {
+                    skeleton[index++] = GetSkeleton(bone);
+                    if (VLActorDefine.TryGetHumanBodyBone(bone.name, out var humanBodyBone))
+                    {
+                        _humanBodyBoneMap[humanBodyBone] = bone.transform;
+                        human.Add(new HumanBone
+                        {
+                            humanName = VLActorDefine.HumanBodyToString(humanBodyBone),
+                            boneName = bone.name,
+                            limit = new HumanLimit { useDefaultValues = true }
+                        });
+                    }
+                }
+            }
+            _avatar = AvatarBuilder.BuildHumanAvatar(gameObject, GetHumanDescription(human.ToArray(), skeleton));
+            _avatar.name = "Humanoid Avatar";
         }
 
         protected virtual void OnUpdateMaterial()
@@ -191,12 +298,16 @@ namespace VL
 
         public override Vector3 GetAnimatedPosition()
         {
-            return default(Vector3);
+            if (_animator != null) return _animator.bodyPosition;
+            Debug.LogError("SetupAnimationを先に呼び出して下さい");
+            return Vector3.zero;
         }
 
         public override Quaternion GetAnimatedRotation()
         {
-            return default(Quaternion);
+            if (_animator != null) return _animator.bodyRotation;
+            Debug.LogError("SetupAnimationを先に呼び出して下さい");
+            return Quaternion.identity;
         }
 
         public bool TryGetHumanBodyBoneTransform(HumanBodyBones hbb, out Transform t)

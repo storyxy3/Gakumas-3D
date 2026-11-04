@@ -226,6 +226,7 @@ namespace VL.Core
             if (_actorControllers == null) _actorControllers = new List<IVLActorController>();
             _actorControllers.Add(this);
             InitializeAABB();
+            if (_extensions == null) return;
             for (int i = 0; i < _extensions.Count; ++i)
             {
                 if (_extensions[i] != null && (!_extensions[i].runtimeOnly || Application.isPlaying)) _extensions[i].Initialize();

@@ -16,37 +16,67 @@ namespace VLB
         private readonly Queue<int> _freeIndices;
         public bool IsValid(Entity entity)
         {
-            return default(bool);
+            return entity.index < _entities.Count && _entities[entity.index].version == entity.version;
         }
 
         public Entity CreateEntity(int arrayIndex, int chunkIndex)
         {
-            return default(Entity);
+            if (_freeIndices.Count != 0)
+            {
+                int index = _freeIndices.Dequeue();
+                var item = _entities[index];
+                item.arrayIndex = arrayIndex;
+                item.chunkIndex = chunkIndex;
+                item.version++;
+                _entities[index] = item;
+                return new Entity { index = index, version = item.version };
+            }
+            int newIndex = _entities.Count;
+            _entities.Add(new EntityItem { arrayIndex = arrayIndex, chunkIndex = chunkIndex, version = 1 });
+            return new Entity { index = newIndex, version = 1 };
         }
 
         public void DestroyEntity(Entity entity)
         {
+            _freeIndices.Enqueue(entity.index);
+            var item = _entities[entity.index];
+            item.version++;
+            _entities[entity.index] = item;
         }
 
         public EntityItem GetItem(Entity entity)
         {
-            return default(EntityItem);
+            return _entities[entity.index];
         }
 
         public void UpdateIndex(Entity entity, int newArrayIndex)
         {
+            var item = _entities[entity.index];
+            item.arrayIndex = newArrayIndex;
+            _entities[entity.index] = item;
         }
 
         public void RemapChunkIndices(List<int> remaper)
         {
+            for (int i = 0; i < _entities.Count; i++)
+            {
+                int chunkIndex = remaper[_entities[i].chunkIndex];
+                var item = _entities[i];
+                item.chunkIndex = chunkIndex;
+                _entities[i] = item;
+            }
         }
 
         public void Clear()
         {
+            _entities.Clear();
+            _freeIndices.Clear();
         }
 
         public EntityIndexer()
         {
+            _entities = new List<EntityItem>();
+            _freeIndices = new Queue<int>();
         }
     }
 }

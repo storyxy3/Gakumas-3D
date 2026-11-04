@@ -13,10 +13,11 @@ namespace VL.Core
         [SerializeField]
         private List<TValue> _values;
         private Dictionary<TKey, TValue> _dictionary;
-        public TKey this[TKey key]
+        public TValue this[TKey key]
         {
             set
             {
+                _dictionary[key] = value;
             }
         }
 

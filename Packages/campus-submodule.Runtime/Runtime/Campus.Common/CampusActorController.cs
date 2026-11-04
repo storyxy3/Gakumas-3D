@@ -1457,7 +1457,7 @@ namespace Campus.Common
 
         public UnityEngine.Object GetAnimationPlayerObject()
         {
-            return null;
+            return _animationPlayer;
         }
 
         public IAnimationController PlayMotion(MotionDefine motion)

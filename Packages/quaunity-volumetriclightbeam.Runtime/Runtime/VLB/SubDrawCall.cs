@@ -8,7 +8,7 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return end - start;
             }
         }
     }

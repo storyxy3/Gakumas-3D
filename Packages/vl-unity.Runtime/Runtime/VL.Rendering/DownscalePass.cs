@@ -151,7 +151,7 @@ namespace VL.Rendering
                 depthAttachmentIndex = 1
             };
             _downscaleNonReflectionSubPasses = new[] { new CustomSubPassData { colors = new[] { 0 }, renderAction = RenderShadowAndOcclusion } };
-            _clearTexture = new Texture2D(1, 1, GraphicsFormat.None, UnityEngine.Experimental.Rendering.TextureCreationFlags.None)
+            _clearTexture = new Texture2D(1, 1, DefaultFormat.LDR, UnityEngine.Experimental.Rendering.TextureCreationFlags.None)
             {
                 wrapMode = TextureWrapMode.Clamp, filterMode = FilterMode.Point, anisoLevel = 0, hideFlags = HideFlags.HideAndDontSave
             };

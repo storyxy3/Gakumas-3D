@@ -1,29 +1,32 @@
 # Task I — True End host
 
-## Current state
+## Playback checkpoint
 
-The first Linux Mono build succeeds with zero build errors. The standalone host loads all 31 verified PC bundles, the original stage scene and the original timeline scene. `CampusLiveTimelineController.master.duration` is 155.6 seconds. Playback binding is still pending, and this checkpoint exits with an explicit error after loading.
+The Linux Mono player builds with zero errors, loads the 31 verified DMM bundles plus a resource wrapper, builds Temari with five model parts and a valid humanoid avatar, binds the original directors through `CampusLiveBinder.SetupAsync`, and starts `CampusLiveTimelineController.Play`. Captures show the moving actor, hair, microphone, stage, camera cuts, equipment, lasers and penlights. A complete muted playback run is in progress. Native comparison and the Task F/H regression censuses are pending.
 
-The first muted run exposed empty constructors in `CampusActorRim`, `VolumetricHeightFog` and `GlobalWindParameter`. Their original APK constructors are now restored. Native evidence is in `Evidence/TaskI`. The repeated run reaches `LIVE_LOADED`. Function comparison and Task F/H parity remain pending.
+The original Ultimate pipeline, renderer resources, actor settings, tag/layer definitions and dynamically loaded actor resources come from the original player data. The standalone host supplies file access, process lifetime, window presentation and command-line controls. Reconstructed game methods remain in their original packages.
 
-Linux loading evidence is in `.recon/task-i/load-linux-volumes.log`. It also records one missing script, unsupported D3D shader variants and the missing monitor renderer at index 3. These remain open. No visual playback claim is made at this checkpoint.
+The host must create `Game3DManager` before loading the stage so scene components can register with its camera. Actor construction initially hides renderers. The native `Live3DPresenter.SetActorsActive` dispatches `IVLActorController.SetRendererActive`, which the host now invokes after binding.
+
+## Audio finding
+
+This sample's original music asset is an AudioClip named `sud_music_live_ttmr-001-ttmr_true-001`, with 154.583328 seconds of 48 kHz stereo audio. Native `LiveResourceManager.LoadAudioAsync` loads an AudioClip. Its caller passes that clip and an AudioSource to the live binder. The sample timeline references `AudioTrack` and `AudioPlayableAsset`, with no CRI audio track scripts found in the bundle. Native caller evidence is retained under `Evidence/TaskI/client-callers/audio`.
+
+The host uses that original clip, its original mixer group and the reconstructed binder. Windows selects the game's default DSP clock. Linux uses the game-time clock because its audio device is disabled. All Linux runs use `-noaudio`, `--mute`, listener volume zero and a muted source. Audible playback remains unverified. The managed PJSK CriWare port is already present in `Packages/CriMw.CriWare.Runtime/Runtime/PJSK-Port`, with its source recorded in `IMPORT.json`. An ACB/AWB music path has not been found for this sample.
 
 ## Content
 
-`python3 Tools/prepare_trueend.py Build/Content/ttmr001` collects the 31 original, verified DMM-PC bundles in dependency order and writes `manifest.json`. Each source hash is checked against `work/live_ttmr001/pc/verified_dependencies.json`. The exact bundle names, dependencies and hashes are recorded in `Evidence/TaskI/bundle-sources.json`. Source bundles are read-only.
+```sh
+/data/xy/gakumas/tools/venv/bin/python Tools/prepare_trueend.py Build/Content/ttmr001
+/data/xy/gakumas/tools/venv/bin/python Tools/prepare_trueend.py Build/Content-Linux/ttmr001 --target linux
+```
 
-The inspected `shader` and `actor-shader` bundles in both the verified PC sample and `models/bundles` contain shader platform 4, D3D11. Linux-compatible shader collection is pending.
+The collector verifies all 31 source bundle hashes. Windows keeps their original DMM DX11 shader programs. The generated resource wrapper contains 268 original objects with 15 exported roots, including the pipeline, actor resources and live mixer group. Linux replaces shader programs with original Android Vulkan programs while preserving PC scene/material references. Exact sources, replacement names and hashes are in `Evidence/TaskI/bundle-sources.json` and `linux-bundle-sources.json`.
 
-## Build preparation
+## Current limits
 
-`LiveBuild.BuildLinux` builds `Build/Linux/TrueEnd.x86_64` using Mono. `LiveBuild.BuildWindows` selects StandaloneWindows64, IL2CPP Release, minimal managed stripping and DX11, with output under `Build/Windows/TrueEnd.exe`. The Windows entry is reserved for Claude to invoke on the PC. Portable package paths and final copy/run instructions are pending.
-
-The Linux loading invocation used Xvfb, llvmpipe, `-noaudio` and `--mute`. It loads content with `--data <content directory>`. The host also parses `--sample ttmr001`, `--start-time`, `--quit-after`, `--screenshots` and `--capture-dir`. Playback and capture handling are pending.
-
-## Remaining work
-
-- Restore the client actor construction and `CampusLiveBinder` from the APK, then invoke the game's timeline playback path.
-- Supply original pipeline configuration and resources, resolve the missing script, and collect Linux-compatible shaders.
-- Connect equipment, cameras, crowd, monitors, effects and post-processing through game code.
-- Trace live audio and implement the requested managed CriWare path with source evidence.
-- Finish portable Windows build preparation and run the new-method and Task F/H comparisons.
+- Linux's VideoPlayer rejects the embedded monitor MP4. Monitor video playback requires checking on Windows.
+- The Linux frames have severe bright and diffuse rendering artifacts. Windows remains the visual reference. Matching appearance has not been established.
+- The original resources still reference the excluded `ColliderVisualizer.ColliderVisualizeRendererFeature` debug class. Its missing-script warnings remain.
+- The new census contains 314 native names selected from changed methods and initializers. Compilation, native comparison and Task F/H results will be recorded after the current build finishes.
+- Final portable Windows copy/build/run instructions are pending.

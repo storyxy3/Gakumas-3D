@@ -1,0 +1,2207 @@
+[
+  {
+    "method": "Common.Live.OverrideMonitorSprite$$get_Key",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Common.Live/OverrideMonitorSprite.cs",
+    "apkAddresses": [
+      "0xdd25cc0"
+    ]
+  },
+  {
+    "method": "Common.Live.OverrideMonitorSprite$$get_Value",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Common.Live/OverrideMonitorSprite.cs",
+    "apkAddresses": [
+      "0xdd25cc8"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.VolumetricHeightFog$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/VolumetricHeightFog.cs",
+    "apkAddresses": [
+      "0xddd0e14"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.CampusActorRim$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorRim.cs",
+    "apkAddresses": [
+      "0xddd33b0"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$GetAnimationPlayerObject",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs",
+    "apkAddresses": [
+      "0xdde0cd0"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$get_uniqueId",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde51e0"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$set_uniqueId",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde51e8"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$get_autoBlinkDisabled",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde51f0"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$set_autoBlinkDisabled",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde51f8"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$get_useADVSettings",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde5200"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$set_useADVSettings",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde5208"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$get_correctSkeletonToCmmnHeight",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde5210"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$set_correctSkeletonToCmmnHeight",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde5218"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$get_jointLimitSetting",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde5220"
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorDescriptor$$set_jointLimitSetting",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorDescriptor.cs",
+    "apkAddresses": [
+      "0xdde5228"
+    ]
+  },
+  {
+    "method": "Campus.Common.GlobalWindParameter$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/GlobalWindParameter.cs",
+    "apkAddresses": [
+      "0xddff8cc"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.DirectorName$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b69c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.TrackName$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b734"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.ReferencePropertyName$$GetActor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a820"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.ReferencePropertyName$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b93c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b9d4"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<SetupAsync>b__39_0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6ba44"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<SetupAsync>b__39_1",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6ba9c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<SetupAsync>b__39_2",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bab4"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<SetupAsync>b__39_4",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bac8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<SetupAsync>b__39_7",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bb24"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<SetupAsync>b__39_6",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bba4"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<HasLiveOverrideActorMotion>b__46_1",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bc24"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<ReplaceBGM>b__51_0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bc98"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<DebugSetMuteTracks>b__53_0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bd18"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<DebugSetMuteTracks>b__53_1",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bd98"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c$$<DebugSetMuteTracks>b__53_2",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bdf0"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c__DisplayClass39_0$$<SetupAsync>b__3",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6be10"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c__DisplayClass39_0$$<SetupAsync>b__5",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6beb8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c__DisplayClass39_1$$<SetupAsync>b__8",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bf04"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<>c__DisplayClass46_0$$<HasLiveOverrideActorMotion>b__0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6bf1c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39$$MoveNext",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6c04c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39$$SetStateMachine",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6e9a8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$set_Timeline",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f30"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$get_CampusTimeline",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f38"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$set_CampusTimeline",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f40"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$set_Environment",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f48"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$get_ActorLayout",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f50"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$set_ActorLayout",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f58"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$get_Actors",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f60"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$set_Actors",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f68"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$get_VirtualActors",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f70"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$set_VirtualActors",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f78"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68f80"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$SetupAsync",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd68fb0"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$SetLiveOverrideAsset",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd69074"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$ApplyOverrideActorHierarchyTransforms",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a088"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$DisableJointLimitIfNeeded",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a2f8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$IsAllLiveScene",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a4c8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$GetTimelineSceneName",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a70c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$GetExposedActorMotion",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a544"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$HasLiveOverrideActorMotion",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a5d8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$BindAudio",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6a944"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$BindActor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6aafc"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$BindCamera",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6af14"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$BindSubtitle",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b0f8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$ReplaceBGM",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b180"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$ReplaceClip",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd69388"
+    ]
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveBinder$$DebugSetMuteTracks",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+    "apkAddresses": [
+      "0xdd6b394"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$GetPartsId",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3b98"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$GetRootName",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3c74"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$GetConnectionName",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3ce8"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$IsBone",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3d3c"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$GetBodyType",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3a8c"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$TryGetHumanBodyBone",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3da0"
+    ]
+  },
+  {
+    "method": "VL.VLActorDefine$$HumanBodyToString",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLActorDefine.cs",
+    "apkAddresses": [
+      "0xe0f3e34"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController.<>c<object, object, object>$$.cctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xca7b11c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController.<>c<object, object, __Il2CppFullySharedGenericType>$$.cctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xca7bba4"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController.<>c<object, object, object>$$<BuildAvatar>b__25_0",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xca7b1fc"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController.<>c<object, object, __Il2CppFullySharedGenericType>$$<BuildAvatar>b__25_0",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xca7bcb8"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$get_color",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0fcfc"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$get_color",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12c68"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$set_color",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0fd10"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$set_color",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12c7c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$get_outlineColor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0fd2c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$get_outlineColor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12c98"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$set_outlineColor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0fd40"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$set_outlineColor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12cac"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$get_headPosition",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0fd5c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$get_headPosition",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12cc8"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$get_cameraDistance",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0fd6c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$get_cameraDistance",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12cd8"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$BuildModel",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd1028c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildModel",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd132fc"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$InitializeData",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd11100"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$InitializeData",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd141c4"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$BuildAvatar",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd111a0"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildAvatar",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd14264"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$GetAnimatedPosition",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12970"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedPosition",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd15c3c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$GetAnimatedRotation",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12a74"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedRotation",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd15d40"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, object>$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd12c5c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xbd15f38"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorController$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+    "apkAddresses": [
+      "0xe0f6efc"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$get_humanoid",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f44"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$set_humanoid",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f4c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$get_colliderType",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f54"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$set_colliderType",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f5c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$get_colliderTrigger",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f64"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$set_colliderTrigger",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f6c"
+    ]
+  },
+  {
+    "method": "VL.VLDefaultActorDescriptor$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe0f6f74"
+    ]
+  },
+  {
+    "method": "VL.Rendering.DownscalePass$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+    "apkAddresses": [
+      "0xe10626c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController$$OnEnable",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController.cs",
+    "apkAddresses": [
+      "0xe124a88"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController$$IsRendererActive",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xe125e34"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$InitializeField",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd02408"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$InitializeField",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd03c8c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$CheckResourceObjects",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0243c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$CheckResourceObjects",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd03cc0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$AddDestroyParts",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd028a0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$AddDestroyParts",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd04124"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$PreBuild",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0299c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$PreBuild",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd04220"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$PostBuild",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd02bac"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$PostBuild",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd0455c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$Build",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd02d68"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Build",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd04750"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$SetRootParts",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd02e28"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$SetRootParts",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd04814"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$GetSkeleton",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd02e38",
+      "0xbd02f94"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$GetSkeleton",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd04824",
+      "0xbd04980"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$IsRendererActive",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd030d0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$IsRendererActive",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd04afc"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$AddParts",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd03730"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$AddParts",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0xbd05164"
+    ]
+  },
+  {
+    "method": "VL.Core.BoneLinkData$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/BoneLinkData.cs",
+    "apkAddresses": [
+      "0xe1275b0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$get_assets",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe127698"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_assets",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe1276a0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$get_name",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe1276a8"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_name",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe1276b0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$get_gameObjects",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe1276b8"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_gameObjects",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe1276c0"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_usePropConstraint",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe127724"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$get_autoPropVisible",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe12772c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_autoPropVisible",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe127734"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$get_propIndexList",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe12773c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_propIndexList",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe127744"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$get_propFixConstraintDict",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe12774c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$set_propFixConstraintDict",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe127754"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorDescriptor$$.ctor",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorDescriptor.cs",
+    "apkAddresses": [
+      "0xe12775c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorModelParts$$InitializeBones",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorModelParts.cs",
+    "apkAddresses": [
+      "0xe128f1c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorModelParts$$UpdateRootBoneLinkList",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorModelParts.cs",
+    "apkAddresses": [
+      "0xe12908c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorModelParts$$GetBoneLinkList",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorModelParts.cs",
+    "apkAddresses": [
+      "0xe129c18"
+    ]
+  },
+  {
+    "method": "VLB.VLBCachedChunk$$RemoveAtSwapBack",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCachedChunk.cs",
+    "apkAddresses": [
+      "0xe0c9a74"
+    ]
+  },
+  {
+    "method": "VLB.VLBCachedChunk$$SetCapacity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCachedChunk.cs",
+    "apkAddresses": [
+      "0xe0c9d78"
+    ]
+  },
+  {
+    "method": "VLB.VLBCachedChunk$$Dispose",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCachedChunk.cs",
+    "apkAddresses": [
+      "0xe0ca024"
+    ]
+  },
+  {
+    "method": "VLB.VLBUpdateCachedSystem.UpdateTransformsJob$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBUpdateCachedSystem.cs",
+    "apkAddresses": [
+      "0xe0ca590"
+    ]
+  },
+  {
+    "method": "VLB.VLBUpdateCachedSystem$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBUpdateCachedSystem.cs",
+    "apkAddresses": [
+      "0xe0ca244"
+    ]
+  },
+  {
+    "method": "VLB.VLBUpdateCachedSystem$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBUpdateCachedSystem.cs",
+    "apkAddresses": [
+      "0xe0ca2ec",
+      "0xe0ca490"
+    ]
+  },
+  {
+    "method": "VLB.VLBCulledChunk$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCulledChunk.cs",
+    "apkAddresses": [
+      "0xe0ca7d4"
+    ]
+  },
+  {
+    "method": "VLB.VLBCulledChunk$$RemoveAtSwapBack",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCulledChunk.cs",
+    "apkAddresses": [
+      "0xe0ca88c"
+    ]
+  },
+  {
+    "method": "VLB.VLBCulledChunk$$SetCapacity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCulledChunk.cs",
+    "apkAddresses": [
+      "0xe0ca89c"
+    ]
+  },
+  {
+    "method": "VLB.VLBCulledChunk$$Dispose",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCulledChunk.cs",
+    "apkAddresses": [
+      "0xe0ca8fc"
+    ]
+  },
+  {
+    "method": "VLB.VLBCullingSystem$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCullingSystem.cs",
+    "apkAddresses": [
+      "0xe0ca974"
+    ]
+  },
+  {
+    "method": "VLB.VLBCullingSystem$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBCullingSystem.cs",
+    "apkAddresses": [
+      "0xe0caa1c",
+      "0xe0caba0"
+    ]
+  },
+  {
+    "method": "VLB.InitializeCullJob$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/InitializeCullJob.cs",
+    "apkAddresses": [
+      "0xe0cacb0"
+    ]
+  },
+  {
+    "method": "VLB.CullingJob$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/CullingJob.cs",
+    "apkAddresses": [
+      "0xe0cacf8"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallChunk$$get_subCallCount",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallChunk.cs",
+    "apkAddresses": [
+      "0xe0cad94"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallChunk$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallChunk.cs",
+    "apkAddresses": [
+      "0xe0cada0"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallChunk$$RemoveAtSwapBack",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallChunk.cs",
+    "apkAddresses": [
+      "0xe0cae18"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallChunk$$SetCapacity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallChunk.cs",
+    "apkAddresses": [
+      "0xe0caf5c"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallChunk$$Dispose",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallChunk.cs",
+    "apkAddresses": [
+      "0xe0cb07c"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallSystem.DrawCallJob$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+    "apkAddresses": [
+      "0xe0cb554"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallSystem.DrawCallJob$$GetInsideBeamFactorFromObjectSpacePos",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+    "apkAddresses": [
+      "0xe0cbb78"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallSystem.DrawCallJob$$UpdateParams",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+    "apkAddresses": [
+      "0xe0cb778"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallSystem$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+    "apkAddresses": [
+      "0xe0cb16c"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawCallSystem$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+    "apkAddresses": [
+      "0xe0cb228",
+      "0xe0cb36c"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0cbd0c"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$Execute",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0cbe70",
+      "0xe0cbfc4"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$ExecuteHD",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0cc2e0",
+      "0xe0cc454"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$MarkRendered",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0cc8d8"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$GetShadowLightIndex",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0cc8f0"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$.cctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0ccb30"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityChunk$$RemoveAtSwapBack",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityChunk.cs",
+    "apkAddresses": [
+      "0xe0cccd0"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityChunk$$SetCapacity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityChunk.cs",
+    "apkAddresses": [
+      "0xe0ccd7c"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityChunk$$Dispose",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityChunk.cs",
+    "apkAddresses": [
+      "0xe0cce40"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$Get",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ccebc"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$Release",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cd6bc"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$Dispose",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cd6d8"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$OnVLBAdd",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce168"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$OnVLBRemove",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce1bc"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$OnVLBPropertyChange",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce3c4"
+    ]
+  },
+  {
+    "method": "VLB.SharedVLBEntityManager$$OnVLBMaterialChange",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SharedVLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce73c"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager.<>c$$.cctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cff64"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager.<>c$$<Update>b__19_0",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cffd4"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$IsValid",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cd3fc"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$CreateEntity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cd410"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cd108"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$CreateChunkIndex",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce7f4"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$UpdateAllEntityData",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cf35c"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$UpdateEntityData",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce424"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$DestroyEntity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0ce1dc"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$Update",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cf720"
+    ]
+  },
+  {
+    "method": "VLB.VLBEntityManager$$Dispose",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+    "apkAddresses": [
+      "0xe0cd83c"
+    ]
+  },
+  {
+    "method": "VLB.SubDrawCall$$get_count",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/SubDrawCall.cs",
+    "apkAddresses": [
+      "0xe0cc8e4"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$IsValid",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0ce76c"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$CreateEntity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0ced14"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$DestroyEntity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0cf5d4"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$GetItem",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0cf464"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$UpdateIndex",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0cf684"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$RemapChunkIndices",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0cfde0"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$Clear",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0cfef4"
+    ]
+  },
+  {
+    "method": "VLB.EntityIndexer$$.ctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+    "apkAddresses": [
+      "0xe0cee98"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$get_count",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d0028"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$set_count",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d0030"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$get_capacity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d0038"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$set_capacity",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d0040"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$get_currentJobHandle",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d0048"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$set_currentJobHandle",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d0054"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$Push",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0xe0d005c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<object>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aafc0"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<__Il2CppFullySharedGenericType>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab23c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<bool>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aacf0"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<Bounds>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aad80"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<Color>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aae10"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<Entity>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aaea0"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<int>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aaf30"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<float>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab03c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<SubDrawCall>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab0cc"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<__Il2CppFullySharedGenericStructType>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab15c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<float2>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab2bc"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<float3>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab34c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<float4>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab3dc"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<float4x4>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab46c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeArray<quaternion>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab4fc"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<bool>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa930"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<Bounds>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa944"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<Color>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa970"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<Entity>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa984"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<int>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa998"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<float>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa9f0"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<SubDrawCall>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aaa04"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<__Il2CppFullySharedGenericStructType>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aaa18"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<float2>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aac5c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<float3>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aac70"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<float4>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aac9c"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<float4x4>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aacb0"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<quaternion>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aacdc"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<object>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aa9ac"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$RemoveAtSwapBack<__Il2CppFullySharedGenericType>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90aaafc"
+    ]
+  },
+  {
+    "method": "VLB.GlobalMeshHD$$Get",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/GlobalMeshHD.cs",
+    "apkAddresses": [
+      "0xe0cca14"
+    ]
+  },
+  {
+    "method": "VLB.GlobalMeshHD$$Destroy",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/GlobalMeshHD.cs",
+    "apkAddresses": [
+      "0xe0d2b8c"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator.<>c__DisplayClass6_0$$<GenerateConeZ_Radii_DoubleCaps>b__0",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d74ac"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator.<>c__DisplayClass6_0$$<GenerateConeZ_Radii_DoubleCaps>b__1",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d74b8"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator.<>c__DisplayClass6_1$$<GenerateConeZ_Radii_DoubleCaps>b__2",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d74c4"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator$$GetAngleOffset",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d6ba0"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator$$GetRadiiScale",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d6bb8"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator$$GenerateConeZ_Radii",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d6bd0"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator$$GenerateConeZ_Radii_DoubleCaps",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d2c58"
+    ]
+  },
+  {
+    "method": "VLB.MeshGenerator$$ComputeBounds",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+    "apkAddresses": [
+      "0xe0d746c"
+    ]
+  },
+  {
+    "method": "VLB.GlobalMeshSD$$Get",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/GlobalMeshSD.cs",
+    "apkAddresses": [
+      "0xe0ddc68"
+    ]
+  },
+  {
+    "method": "VLB.GlobalMeshSD$$Destroy",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/GlobalMeshSD.cs",
+    "apkAddresses": [
+      "0xe0ddde4"
+    ]
+  },
+  {
+    "method": "VLB.Utils$$TransformAABB",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Utils.cs",
+    "apkAddresses": [
+      "0xe0e3098"
+    ]
+  },
+  {
+    "method": "VLB.Utils$$GetPlane",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Utils.cs",
+    "apkAddresses": [
+      "0xe0e3254"
+    ]
+  },
+  {
+    "method": "VLB.Utils$$CalcCullingPlane",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Utils.cs",
+    "apkAddresses": [
+      "0xe0e3358"
+    ]
+  },
+  {
+    "method": "VLB.Utils$$TestPlanesAABB",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Utils.cs",
+    "apkAddresses": [
+      "0xe0e3514"
+    ]
+  },
+  {
+    "method": "ProFlareRenderingSystem$$.ctor",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareRenderingSystem.cs",
+    "apkAddresses": [
+      "0xd1ccb70"
+    ]
+  },
+  {
+    "method": "ProFlareRenderingSystem$$TryGetFlareData",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareRenderingSystem.cs",
+    "apkAddresses": [
+      "0xd1ccd00"
+    ]
+  },
+  {
+    "method": "ProFlareRenderingSystem$$.cctor",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareRenderingSystem.cs",
+    "apkAddresses": [
+      "0xd1cd27c"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$get_TransformAccessArray",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d2efc"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$get_BatchDatas",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d2f04"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$get_DeltaTime",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d2f0c"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$get_CurrentAtlas",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d2f14"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$OnEnable",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d2f1c"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$Dispose",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d3430"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$OnDisable",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d3820"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$OnDestroy",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d3824"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$TryGetScheduledFlareData",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1cceb8"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$LateUpdate",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d4ae0"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRP$$ForceRefresh",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+    "apkAddresses": [
+      "0xd1d4c88"
+    ]
+  },
+  {
+    "method": "ProFlareInputData$$get_Visible",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareInputData.cs",
+    "apkAddresses": [
+      "0xd1d5044"
+    ]
+  },
+  {
+    "method": "ProFlareInputData$$set_Visible",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareInputData.cs",
+    "apkAddresses": [
+      "0xd1d5054"
+    ]
+  },
+  {
+    "method": "ProFlareElementData$$set_color32",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareElementData.cs",
+    "apkAddresses": [
+      "0xd1d5060"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_IndexBuffer",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5068"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_FlareElementsBuffer",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5070"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_InputBuffer",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5078"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_ProcessBuffer",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5080"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_FlareCount",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5088"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_VisibleFlareElementCount",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5090"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$.ctor",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d3828"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$SetShader",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d3ae8"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$ScheduleFlares",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d3b98"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$CompleteJob",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5220"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$ComputeFlares",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d522c"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$RenderFlares",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d54f8"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$UpdateComputeBuffer",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5474"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$UpdateElementData",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d58c8"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$Initialize",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d3048"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$IsValid",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d4bd0"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$DisposeCountdown",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d4bc0"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$get_CanDispose",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5a70"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$Dispose",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d356c"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$.cctor",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5a7c"
+    ]
+  },
+  {
+    "method": "ProFlareBatchForSRPData$$<ScheduleFlares>g__UpdateElementJobData|48_0",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+    "apkAddresses": [
+      "0xd1d5098"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateJob$$Execute",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateJob.cs",
+    "apkAddresses": [
+      "0xd1d5bb4"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateJob$$Angle",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateJob.cs",
+    "apkAddresses": [
+      "0xd1d5e20"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateJob$$WorldToViewportPoint",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateJob.cs",
+    "apkAddresses": [
+      "0xd1d5db0"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateElementJob$$Execute",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateElementJob.cs",
+    "apkAddresses": [
+      "0xd1d5fb8"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateElementJob$$GetElementColor",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateElementJob.cs",
+    "apkAddresses": [
+      "0xd1d6100"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateElementJob$$GetOffsetPosition",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateElementJob.cs",
+    "apkAddresses": [
+      "0xd1d6138"
+    ]
+  },
+  {
+    "method": "ProFlareUpdateElementJob$$GetElementJobData",
+    "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateElementJob.cs",
+    "apkAddresses": [
+      "0xd1d629c"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, object>$$Create<object>",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0x8c910fc"
+    ]
+  },
+  {
+    "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Create<object>",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+    "apkAddresses": [
+      "0x8c91254"
+    ]
+  },
+  {
+    "method": "VL.Core.SerializedDictionary<int, int>$$set_Item",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/SerializedDictionary_2.cs",
+    "apkAddresses": [
+      "0xb970038"
+    ]
+  },
+  {
+    "method": "VL.Core.SerializedDictionary<int, object>$$set_Item",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/SerializedDictionary_2.cs",
+    "apkAddresses": [
+      "0xb97066c"
+    ]
+  },
+  {
+    "method": "VL.Core.SerializedDictionary<Int32Enum, object>$$set_Item",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/SerializedDictionary_2.cs",
+    "apkAddresses": [
+      "0xb970ce8"
+    ]
+  },
+  {
+    "method": "VL.Core.SerializedDictionary<object, object>$$set_Item",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/SerializedDictionary_2.cs",
+    "apkAddresses": [
+      "0xb971364"
+    ]
+  },
+  {
+    "method": "VL.Core.SerializedDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>$$set_Item",
+    "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/SerializedDictionary_2.cs",
+    "apkAddresses": [
+      "0xb971a18"
+    ]
+  },
+  {
+    "method": "VLB.Chunk$$ResizeNativeArray<object>",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Chunk.cs",
+    "apkAddresses": [
+      "0x90ab58c"
+    ]
+  }
+]

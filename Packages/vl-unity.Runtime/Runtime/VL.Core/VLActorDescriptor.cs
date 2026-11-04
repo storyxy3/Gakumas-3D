@@ -17,7 +17,7 @@ namespace VL.Core
         [SerializeField]
         private bool _usePropConstraint;
         [SerializeField]
-        private bool _autoPropVisible;
+        private bool _autoPropVisible = true;
         [SerializeField]
         private List<int> _propIndexList;
         [SerializeField]
@@ -26,11 +26,12 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _assets;
             }
 
             set
             {
+                _assets = value;
             }
         }
 
@@ -38,11 +39,12 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _name;
             }
 
             set
             {
+                _name = value;
             }
         }
 
@@ -50,11 +52,12 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _gameObjects;
             }
 
             set
             {
+                _gameObjects = global::System.Linq.Enumerable.ToArray(value);
             }
         }
 
@@ -62,6 +65,7 @@ namespace VL.Core
         {
             set
             {
+                _usePropConstraint = value;
             }
         }
 
@@ -69,11 +73,12 @@ namespace VL.Core
         {
             get
             {
-                return default(bool);
+                return _autoPropVisible;
             }
 
             set
             {
+                _autoPropVisible = value;
             }
         }
 
@@ -81,11 +86,12 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _propIndexList;
             }
 
             set
             {
+                _propIndexList = value;
             }
         }
 
@@ -93,11 +99,12 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _propFixConstraintDict;
             }
 
             set
             {
+                _propFixConstraintDict = value;
             }
         }
 

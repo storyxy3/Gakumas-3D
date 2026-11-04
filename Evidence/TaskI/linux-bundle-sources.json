@@ -1,0 +1,432 @@
+{
+  "sample": "ttmr001",
+  "platform": "linux",
+  "revision": 67,
+  "bundles": [
+    {
+      "name": "trueend-resources",
+      "file": "trueend-resources.unity3d",
+      "source": "DMM-PC-player-20261103 + Android Vulkan shader programs",
+      "sha256": "b4b4434f658d7c089736842429109f52ebe7af21653839837cd297a6d40b70b7",
+      "original_sha256": "73cf277bb6ce42e6f237959bedbb276563dd8acba7c025eef4fc7b453f815eda",
+      "dependencies": [],
+      "assets": [
+        "assets/campusactorsettings",
+        "assets/campuslivemixergroup",
+        "assets/campusrenderpipelineultimateasset",
+        "resources/actorfootshadowshader",
+        "resources/actorfootshadowtexture",
+        "resources/campusactorbatchmaterial",
+        "resources/defaultactoranimationdata",
+        "resources/game3dmanager",
+        "resources/liveatlas",
+        "resources/mot_all_chr_cmn_idle-001-add_lp_b",
+        "resources/mot_all_chr_cmn_idle-002-add_lp_b",
+        "resources/vlactoreyeblinkdata",
+        "resources/vlactorfaciallimitdata",
+        "resources/vlactortalkdata",
+        "resources/vlbconfigoverride"
+      ]
+    },
+    {
+      "name": "crw_layout_env_3d_live_ttmr001-00-noon",
+      "file": "crw_layout_env_3d_live_ttmr001-00-noon.unity3d",
+      "source": "DMM-PC",
+      "sha256": "eccb930338f3e381e80d7f036cf6bf452d9ba3d89fbaf109f30599be0fbc050e",
+      "original_sha256": "eccb930338f3e381e80d7f036cf6bf452d9ba3d89fbaf109f30599be0fbc050e",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "actor-shader",
+      "file": "actor-shader.unity3d",
+      "source": "DMM-PC + Android Vulkan shader programs",
+      "sha256": "122359125e277a27a27c1fbecb2d97a8f34baeb87930f2db5f60afe77525e450",
+      "original_sha256": "3e04162ba360cd980db48809c615c5a80aefd6c27425f614db531e5e9355515f",
+      "dependencies": [],
+      "replaced_shaders": [
+        "Campus/Actor/VirtualEffect",
+        "Campus/Actor/Default"
+      ]
+    },
+    {
+      "name": "mdl_prp_microphone-normal-00_microphone",
+      "file": "mdl_prp_microphone-normal-00_microphone.unity3d",
+      "source": "DMM-PC",
+      "sha256": "c655e7be72fdf9d57ca3b6acd9aad9a385c64b8a02eadb9de6b5ed178cb913eb",
+      "original_sha256": "c655e7be72fdf9d57ca3b6acd9aad9a385c64b8a02eadb9de6b5ed178cb913eb",
+      "dependencies": [
+        "actor-shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "mef_mat_chr_ttmr_ehl-move-002",
+      "file": "mef_mat_chr_ttmr_ehl-move-002.unity3d",
+      "source": "DMM-PC",
+      "sha256": "c26a2a1f4dec987124033e02ad4a65e85f9b934a4ada2a1d4bc496f0b087c4a7",
+      "original_sha256": "c26a2a1f4dec987124033e02ad4a65e85f9b934a4ada2a1d4bc496f0b087c4a7",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "mef_mat_chr_ttmr_eye-move-001",
+      "file": "mef_mat_chr_ttmr_eye-move-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "4c1d9372989c3a5bfc4335b9f2399d91eaa7aca0d780195ec953c0695d289c75",
+      "original_sha256": "4c1d9372989c3a5bfc4335b9f2399d91eaa7aca0d780195ec953c0695d289c75",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "mot_live_chr_ttmr_ttmr-001_00_in",
+      "file": "mot_live_chr_ttmr_ttmr-001_00_in.unity3d",
+      "source": "DMM-PC",
+      "sha256": "1dd7c5e4add363977b00a8fad87874ae5216a49bfa04ddd46c12061510e56cab",
+      "original_sha256": "1dd7c5e4add363977b00a8fad87874ae5216a49bfa04ddd46c12061510e56cab",
+      "dependencies": [
+        "mef_mat_chr_ttmr_ehl-move-002",
+        "mef_mat_chr_ttmr_eye-move-001"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "crw_mdl_mix_00-00_02",
+      "file": "crw_mdl_mix_00-00_02.unity3d",
+      "source": "DMM-PC + Android Vulkan shader programs",
+      "sha256": "3c3b643c91eabfb8c04f83caee1fef000befb5d5604304babd01ae3a2fabf832",
+      "original_sha256": "e020c99cab4f62ecb40742f92ef30c6d2c1321c63bcc3df4fa6cc73217256273",
+      "dependencies": [],
+      "replaced_shaders": [
+        "Campus/Crowd/Live",
+        "Campus/Crowd/DefaultPenlight"
+      ]
+    },
+    {
+      "name": "mdl_prp_microphonestand-normal-00_microphonestand",
+      "file": "mdl_prp_microphonestand-normal-00_microphonestand.unity3d",
+      "source": "DMM-PC",
+      "sha256": "ac0f0ea787bc6f521b93304dc063489cfc63300d0d4533a0aa3c7443a54fa9c5",
+      "original_sha256": "ac0f0ea787bc6f521b93304dc063489cfc63300d0d4533a0aa3c7443a54fa9c5",
+      "dependencies": [
+        "actor-shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "sud_music_live_ttmr-001-ttmr_true-001",
+      "file": "sud_music_live_ttmr-001-ttmr_true-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "bf1ef1f220c8242ed6fd2e3597f962fb1e1f90e4b2458a5cf36bb6b8dfae7d65",
+      "original_sha256": "bf1ef1f220c8242ed6fd2e3597f962fb1e1f90e4b2458a5cf36bb6b8dfae7d65",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "crw_mot_live_audience_general-006-b_in",
+      "file": "crw_mot_live_audience_general-006-b_in.unity3d",
+      "source": "DMM-PC",
+      "sha256": "82c6ab9fc8401fbb18059ddff727013da1595ffbd8ef1d32cf70214ab93a2b1a",
+      "original_sha256": "82c6ab9fc8401fbb18059ddff727013da1595ffbd8ef1d32cf70214ab93a2b1a",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "shader",
+      "file": "shader.unity3d",
+      "source": "DMM-PC + Android Vulkan shader programs",
+      "sha256": "189770cc396928d407f60ad263a987f31687edf1bf5b61c1fa308e4fdf244352",
+      "original_sha256": "e25a6942f42c988b2f9e2ee1a2969c0b5a642861f1afe2fa425834d8a7f28a9f",
+      "dependencies": [],
+      "replaced_shaders": [
+        "Environment/CanvasMultiEmission",
+        "Environment/Decal/DecalDefault",
+        "Environment/Vegetation",
+        "Environment/Decal/LightProxy",
+        "Environment/SimpleWater",
+        "Environment/MobPenlight",
+        "Environment/CanvasMonitor",
+        "Environment/Diamond",
+        "Environment/Decal/Occlusion",
+        "Environment/Emission",
+        "UI/UISpriteBlendEmission",
+        "Hidden/Grass",
+        "Campus/Effect/Particle",
+        "Campus/LaserShader",
+        "Environment/Decal/HeightOcclusion",
+        "Environment/Decal/Water",
+        "Campus/Cloud",
+        "Campus/Actor/FacialDecal",
+        "Environment/Decal/Normal",
+        "UI/UISaturation",
+        "Environment/CampusWaterCausticsDecal",
+        "Environment/CanvasEmission",
+        "Hidden/Shader Graph/FallbackError",
+        "Environment/Skybox/Panoramic",
+        "Environment/Ground",
+        "Environment/SimpleWaterFlow",
+        "Environment/Decal/Albedo",
+        "Environment/Default",
+        "Environment/Decal/MAOS",
+        "Environment/Color And Depth Image",
+        "UI/UIEmission"
+      ]
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-equipment-01",
+      "file": "fbx_mdl_env_cmn-parts_live-equipment-01.unity3d",
+      "source": "DMM-PC",
+      "sha256": "e2f175a8a773443623b881cd8ed7b2f69049157f0c042febd47d941d816a4d0f",
+      "original_sha256": "e2f175a8a773443623b881cd8ed7b2f69049157f0c042febd47d941d816a4d0f",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "crw_mot_live_audience_general-001-a_lp",
+      "file": "crw_mot_live_audience_general-001-a_lp.unity3d",
+      "source": "DMM-PC",
+      "sha256": "d8458639489ba60222000edc77099c708a323a2748d43a67120d5105a6fc4071",
+      "original_sha256": "d8458639489ba60222000edc77099c708a323a2748d43a67120d5105a6fc4071",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "eff_cav_mov_ttmr-001",
+      "file": "eff_cav_mov_ttmr-001.unity3d",
+      "source": "DMM-PC",
+      "sha256": "2a58c8e1aa48c93321a90a35f782279db496633b5cd2c43e4afcc530eca284aa",
+      "original_sha256": "2a58c8e1aa48c93321a90a35f782279db496633b5cd2c43e4afcc530eca284aa",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "crw_mot_live_audience_general-010-a_in",
+      "file": "crw_mot_live_audience_general-010-a_in.unity3d",
+      "source": "DMM-PC",
+      "sha256": "5b0faae6ec5091057817bcb9c719200b4580faaf83e6ad46c8097a28c842f762",
+      "original_sha256": "5b0faae6ec5091057817bcb9c719200b4580faaf83e6ad46c8097a28c842f762",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-camera-00",
+      "file": "fbx_mdl_env_cmn-parts_live-camera-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "835c2af6db3b22ab01b39c5d1d865e7235a7c553749f0050875deb5872ac1285",
+      "original_sha256": "835c2af6db3b22ab01b39c5d1d865e7235a7c553749f0050875deb5872ac1285",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "crw_mot_live_audience_ttmr-001-000-a_lp",
+      "file": "crw_mot_live_audience_ttmr-001-000-a_lp.unity3d",
+      "source": "DMM-PC",
+      "sha256": "dbcb4ecf1ef156ed4980054d40e8f90c38e4303d56e8908f3fca4fcbca6b9cea",
+      "original_sha256": "dbcb4ecf1ef156ed4980054d40e8f90c38e4303d56e8908f3fca4fcbca6b9cea",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-equipment-00",
+      "file": "fbx_mdl_env_cmn-parts_live-equipment-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "2e1a42c3ef7227848b45e7ffc4502ffc2a734b1cd5577441d4cf18989c63cabd",
+      "original_sha256": "2e1a42c3ef7227848b45e7ffc4502ffc2a734b1cd5577441d4cf18989c63cabd",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "mot_live_ttmr-001_in_layout",
+      "file": "mot_live_ttmr-001_in_layout.unity3d",
+      "source": "DMM-PC",
+      "sha256": "cc430ee9578f4c67ae4971d417b8b7cf80aad3e3c1fb916e0a8d03e9743a95b2",
+      "original_sha256": "cc430ee9578f4c67ae4971d417b8b7cf80aad3e3c1fb916e0a8d03e9743a95b2",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "tln_live_ttmr-001",
+      "file": "tln_live_ttmr-001.unity3d",
+      "source": "DMM-PC + Android Vulkan shader programs",
+      "sha256": "2980062e81f1d5cb0ff433a7895032dced6b685e5dde00ace44728aa873413bc",
+      "original_sha256": "a3423ced1e1132254e07b7ea9d173195abacd9df4cbaf97753c6ec70f40c38cf",
+      "dependencies": [
+        "crw_layout_env_3d_live_ttmr001-00-noon",
+        "mdl_prp_microphone-normal-00_microphone",
+        "mot_live_chr_ttmr_ttmr-001_00_in",
+        "crw_mdl_mix_00-00_02",
+        "mdl_prp_microphonestand-normal-00_microphonestand",
+        "sud_music_live_ttmr-001-ttmr_true-001",
+        "crw_mot_live_audience_general-006-b_in",
+        "fbx_mdl_env_cmn-parts_live-equipment-01",
+        "actor-shader",
+        "crw_mot_live_audience_general-001-a_lp",
+        "eff_cav_mov_ttmr-001",
+        "crw_mot_live_audience_general-010-a_in",
+        "mef_mat_chr_ttmr_ehl-move-002",
+        "fbx_mdl_env_cmn-parts_live-camera-00",
+        "crw_mot_live_audience_ttmr-001-000-a_lp",
+        "shader",
+        "fbx_mdl_env_cmn-parts_live-equipment-00",
+        "mef_mat_chr_ttmr_eye-move-001",
+        "mot_live_ttmr-001_in_layout"
+      ],
+      "replaced_shaders": [
+        "Skybox/Procedural"
+      ]
+    },
+    {
+      "name": "fbx_mdl_env_stg-parts_auditorium-00-00",
+      "file": "fbx_mdl_env_stg-parts_auditorium-00-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "d51bcae6bd5a4a383d62a5ead66a22ceecdc1771d020269c5165f5171bc212b0",
+      "original_sha256": "d51bcae6bd5a4a383d62a5ead66a22ceecdc1771d020269c5165f5171bc212b0",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "t_evm_chr-eye_cub_spclit_general-00",
+      "file": "t_evm_chr-eye_cub_spclit_general-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "12c51926662538ce5b8ad61ff057141a1d667a82466468429950c73a28c236d4",
+      "original_sha256": "12c51926662538ce5b8ad61ff057141a1d667a82466468429950c73a28c236d4",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "fbx_mdl_env_stg-parts_auditorium-01-00",
+      "file": "fbx_mdl_env_stg-parts_auditorium-01-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "21d1e58008245cf77f6ef4d718eecc866f519cc74b7356f76d81b0e21cc866ba",
+      "original_sha256": "21d1e58008245cf77f6ef4d718eecc866f519cc74b7356f76d81b0e21cc866ba",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "fbx_mdl_env_stg-parts_livestg-ttmr001-00",
+      "file": "fbx_mdl_env_stg-parts_livestg-ttmr001-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "38dea3d0958ad26da2e854478d3494ed4ea6ae2a08180cd38552bd8f88feab87",
+      "original_sha256": "38dea3d0958ad26da2e854478d3494ed4ea6ae2a08180cd38552bd8f88feab87",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "fbx_mdl_env_cmn-parts_live-truss-00",
+      "file": "fbx_mdl_env_cmn-parts_live-truss-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "72ef395a1a30d2c1f6faec79d8dc03e2e0aa6034e1c56b67154e4ec981051abe",
+      "original_sha256": "72ef395a1a30d2c1f6faec79d8dc03e2e0aa6034e1c56b67154e4ec981051abe",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "t_evm_chr-all_cub_spclit_general-00",
+      "file": "t_evm_chr-all_cub_spclit_general-00.unity3d",
+      "source": "DMM-PC",
+      "sha256": "ecf0abbdbc0331533d23c8880fa238aaeafd21870ba1c45dbdcb169ca9ce8e8f",
+      "original_sha256": "ecf0abbdbc0331533d23c8880fa238aaeafd21870ba1c45dbdcb169ca9ce8e8f",
+      "dependencies": [],
+      "replaced_shaders": []
+    },
+    {
+      "name": "env_3d_live_ttmr001-00-noon",
+      "file": "env_3d_live_ttmr001-00-noon.unity3d",
+      "source": "DMM-PC + Android Vulkan shader programs",
+      "sha256": "14a46800ac025c4e16db95579a07e2544accecccc47bae3dc2646fa67afa572e",
+      "original_sha256": "11426f53ddb0a4c6a16bcfec81ba240e6d48671fcb68b13834cf1d744731a719",
+      "dependencies": [
+        "fbx_mdl_env_stg-parts_auditorium-00-00",
+        "t_evm_chr-eye_cub_spclit_general-00",
+        "shader",
+        "fbx_mdl_env_stg-parts_auditorium-01-00",
+        "fbx_mdl_env_stg-parts_livestg-ttmr001-00",
+        "fbx_mdl_env_cmn-parts_live-truss-00",
+        "fbx_mdl_env_cmn-parts_live-equipment-00",
+        "fbx_mdl_env_cmn-parts_live-equipment-01",
+        "t_evm_chr-all_cub_spclit_general-00"
+      ],
+      "replaced_shaders": [
+        "Skybox/Procedural"
+      ]
+    },
+    {
+      "name": "mdl_chr_ttmr-cstm-0003_body",
+      "file": "mdl_chr_ttmr-cstm-0003_body.unity3d",
+      "source": "DMM-PC",
+      "sha256": "c36e39f801117389c49a38cf4971204c3ca408fe6580edccf8fd1f2b01a7ed47",
+      "original_sha256": "c36e39f801117389c49a38cf4971204c3ca408fe6580edccf8fd1f2b01a7ed47",
+      "dependencies": [
+        "actor-shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "mdl_chr_ttmr-cstm-0003_hair",
+      "file": "mdl_chr_ttmr-cstm-0003_hair.unity3d",
+      "source": "DMM-PC",
+      "sha256": "08fe1c661d194ad2f7cde133bf9946dc4404c014319be9bd0b76f343b4250e55",
+      "original_sha256": "08fe1c661d194ad2f7cde133bf9946dc4404c014319be9bd0b76f343b4250e55",
+      "dependencies": [
+        "actor-shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "m_fdc",
+      "file": "m_fdc.unity3d",
+      "source": "DMM-PC",
+      "sha256": "a0aa74f9fdfd98b3fcb58d899f697c55969810f1957dd19580d8a14ffad89fa6",
+      "original_sha256": "a0aa74f9fdfd98b3fcb58d899f697c55969810f1957dd19580d8a14ffad89fa6",
+      "dependencies": [
+        "shader"
+      ],
+      "replaced_shaders": []
+    },
+    {
+      "name": "mdl_chr_ttmr-base-0000_face",
+      "file": "mdl_chr_ttmr-base-0000_face.unity3d",
+      "source": "DMM-PC",
+      "sha256": "2507db39477d3c4a1846f90475a1ec1ef293ffea003702583d968381e355a959",
+      "original_sha256": "2507db39477d3c4a1846f90475a1ec1ef293ffea003702583d968381e355a959",
+      "dependencies": [
+        "m_fdc",
+        "shader",
+        "actor-shader"
+      ],
+      "replaced_shaders": []
+    }
+  ],
+  "shader_sources": [
+    {
+      "file": "/data/xy/gakumas/extracted/com.bandainamcoent.idolmaster_gakuen/assets/bin/Data/data.unity3d",
+      "sha256": "be57495e87c2c887f60ee43158a0e6e2997e0a19093f37661471c2c9ab136b33"
+    },
+    {
+      "file": "/data/xy/gakumas/extracted/UnityDataAssetPack/assets/bin/Data/datapack.unity3d",
+      "sha256": "069a8d3eb3014992da93fb98d3a1f0bfe467f2a810e3c5999f45954086b22114"
+    },
+    {
+      "file": "/data/xy/gakumas/work/models/shader.unity3d",
+      "sha256": "f8c90c590427f3c91dfa7a9b02fbcf952badc01ffaa2e44e6effc775ea677315"
+    },
+    {
+      "file": "/data/xy/gakumas/work/models/actor-shader.unity3d",
+      "sha256": "22ee83d22c7bc3fce8646feb903d478c1d02979d88702ff944a63b636b08c626"
+    }
+  ]
+}

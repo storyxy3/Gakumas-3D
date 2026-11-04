@@ -159,37 +159,46 @@ namespace VL
         private static bool[] _requiredDescriptionFlags;
         public static string GetPartsId(string assetName, bool toLower = false)
         {
-            return null;
+            int separator = assetName.LastIndexOf('_');
+            if (separator + 1 < 2) return assetName;
+            if (toLower) return assetName.Substring(separator + 1);
+            return char.ToUpper(assetName[separator + 1]).ToString() + assetName.Substring(separator + 2);
         }
 
         public static string GetRootName(string assetName)
         {
-            return null;
+            return PARTS_ROOT_NAME + GetPartsId(assetName);
         }
 
         public static string GetConnectionName(Transform transform)
         {
-            return null;
+            string name = transform.name;
+            int separator = name.LastIndexOf('_');
+            return separator < 1 ? name : name.Substring(0, separator);
         }
 
         public static bool IsBone(Transform transform)
         {
-            return default(bool);
+            return !transform.TryGetComponent<Renderer>(out _);
         }
 
         public static VLActorBodyType GetBodyType(HumanBodyBones hbb)
         {
-            return default(VLActorBodyType);
+            HumanBoneToBody.TryGetValue(hbb, out var type);
+            return type;
         }
 
         public static bool TryGetHumanBodyBone(string transformName, out HumanBodyBones type)
         {
-            throw null;
+            type = default;
+            return boneToAvatarMap.TryGetValue(transformName, out type);
         }
 
         public static string HumanBodyToString(HumanBodyBones type)
         {
-            return null;
+            string name = "";
+            avatarMapToString.TryGetValue(type, out name);
+            return name;
         }
 
         public static void ClearRequiredDescriptionFlags()

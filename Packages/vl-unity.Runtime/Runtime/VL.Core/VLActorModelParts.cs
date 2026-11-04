@@ -205,10 +205,27 @@ namespace VL.Core
 
         public void InitializeBones(BoneNameToTransformDictionary allBoneNameToTransformMap)
         {
+            UpdateRootBoneLinkList(allBoneNameToTransformMap);
+            foreach (var bone in _boneInfos) allBoneNameToTransformMap.Add(bone.name, bone.transform);
         }
 
         private void UpdateRootBoneLinkList(BoneNameToTransformDictionary allBoneNameToTransformMap)
         {
+            if (_rootBoneLinkList == null) _rootBoneLinkList = new List<BoneLinkData>();
+            else _rootBoneLinkList.Clear();
+            if (_tempRootTransBoneList == null) _tempRootTransBoneList = new List<Transform>(8);
+            else _tempRootTransBoneList.Clear();
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                var child = transform.GetChild(i);
+                if (VLActorDefine.IsBone(child)) _tempRootTransBoneList.Add(child);
+            }
+            for (int i = 0; i < _tempRootTransBoneList.Count; i++)
+            {
+                string connectionName = VLActorDefine.GetConnectionName(_tempRootTransBoneList[i]);
+                if (allBoneNameToTransformMap.TryGetValue(connectionName, out var target))
+                    _rootBoneLinkList.Add(new BoneLinkData(_tempRootTransBoneList[i], target));
+            }
         }
 
         protected void InitializeMaterials()
@@ -263,7 +280,7 @@ namespace VL.Core
 
         public List<BoneLinkData> GetBoneLinkList()
         {
-            return null;
+            return _rootBoneLinkList;
         }
 
         public VLActorModelParts()

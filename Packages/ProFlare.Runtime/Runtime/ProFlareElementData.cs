@@ -15,6 +15,7 @@ public struct ProFlareElementData
     {
         set
         {
+            color = (uint)(value.r | value.g << 8 | value.b << 16 | value.a << 24);
         }
     }
 }

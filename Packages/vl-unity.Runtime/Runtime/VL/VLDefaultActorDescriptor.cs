@@ -9,7 +9,7 @@ namespace VL
     public class VLDefaultActorDescriptor : VLActorDescriptor, IVLDefaultActorDescriptor, IVLActorDescriptor
     {
         [SerializeField]
-        private bool _humanoid;
+        private bool _humanoid = true;
         [SerializeField]
         private VLActorColliderType _colliderType;
         [SerializeField]
@@ -18,11 +18,12 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return _humanoid;
             }
 
             set
             {
+                _humanoid = value;
             }
         }
 
@@ -30,11 +31,12 @@ namespace VL
         {
             get
             {
-                return default(VLActorColliderType);
+                return _colliderType;
             }
 
             set
             {
+                _colliderType = value;
             }
         }
 
@@ -42,11 +44,12 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return _colliderTrigger;
             }
 
             set
             {
+                _colliderTrigger = value;
             }
         }
 
