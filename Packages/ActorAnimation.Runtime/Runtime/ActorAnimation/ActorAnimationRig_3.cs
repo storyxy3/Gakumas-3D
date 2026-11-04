@@ -223,6 +223,9 @@ namespace ActorAnimation
 
         public new void Reset()
         {
+            // TODO(qa-recon): ResetDynamicBone and ResetBreastBone remain outside the selected census.
+            ResetDynamicBone();
+            ResetBreastBone();
         }
 
         public virtual void ResetDynamicBone()

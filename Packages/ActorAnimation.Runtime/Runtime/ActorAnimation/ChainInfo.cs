@@ -7,7 +7,7 @@ namespace ActorAnimation
     [Serializable]
     public class ChainInfo
     {
-        public List<ChainLayerInfo> layers;
+        public List<ChainLayerInfo> layers = new List<ChainLayerInfo>();
         public ChainInfo()
         {
         }

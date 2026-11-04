@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, Awake, SetPenlightColorTable, SetPenlightProjectionUvRect, SetUsePenlightColorProjection, get_ProjectionUvRectMax, get_ProjectionUvRectMin.
 namespace Campus.AudiencePenlight
 {
     using global::Campus.AudiencePenlight;
@@ -19,7 +20,7 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(bool);
+                return useColorProjection;
             }
         }
 
@@ -27,7 +28,7 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return null;
+                return colorTable;
             }
         }
 

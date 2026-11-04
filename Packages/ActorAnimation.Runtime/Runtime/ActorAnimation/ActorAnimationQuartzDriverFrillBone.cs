@@ -10,7 +10,7 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverFrillSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)3;
         }
 
         public static quaternion Calc(quaternion referenceRotation, math.RotationOrder rotationOrder, float3 outerMinusCoefficient, float3 innerCoefficient, float3 outerPlusCoefficient, float3 switchMinus, float3 switchPlus, math.RotationOrder connectionAxis, ActorAnimationQuartzDriverRotationDecomposeType decomposeType, ActorAnimationQuartzDriverRotationComposeType composeType)

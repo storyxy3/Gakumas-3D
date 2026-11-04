@@ -25,6 +25,7 @@ namespace ActorAnimation
         public abstract ActorAnimationConstraintBoneType GetBoneType();
         public void SetDirty()
         {
+            _003CisDirty_003Ek__BackingField = true;
         }
 
         public void ResetDirty()

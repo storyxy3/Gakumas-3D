@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, get_BoundingSphere, set_BoundingSphere.
 namespace Campus.Crowd
 {
     using global::System;
@@ -59,11 +60,12 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return bones;
             }
 
             set
             {
+                bones = value;
             }
         }
 
@@ -71,11 +73,12 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return bindPoses;
             }
 
             set
             {
+                bindPoses = value;
             }
         }
 

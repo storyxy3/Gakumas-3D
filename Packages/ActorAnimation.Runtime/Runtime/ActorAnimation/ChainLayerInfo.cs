@@ -12,9 +12,9 @@ namespace ActorAnimation
         [HideInInspector]
         public bool active;
         public bool around;
-        public float radius;
+        public float radius = 0.05f;
         public float smoothing;
-        public List<ActorSwingDynamicBone> bones;
+        public List<ActorSwingDynamicBone> bones = new List<ActorSwingDynamicBone>();
         [CompilerGenerated]
         private short _003ChierarchyDepth_003Ek__BackingField;
         [CompilerGenerated]
@@ -53,6 +53,9 @@ namespace ActorAnimation
 
         public ChainLayerInfo(ChainLayerInfo other)
         {
+            active = other.active;
+            radius = other.radius;
+            smoothing = other.smoothing;
         }
 
         public void SetHierarchyDepth(int depth)
@@ -65,7 +68,7 @@ namespace ActorAnimation
 
         public int CompareTo(ChainLayerInfo other)
         {
-            return default(int);
+            return _003ChierarchyDepth_003Ek__BackingField - other._003ChierarchyDepth_003Ek__BackingField;
         }
     }
 }

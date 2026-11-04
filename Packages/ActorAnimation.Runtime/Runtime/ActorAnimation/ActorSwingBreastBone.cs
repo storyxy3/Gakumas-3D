@@ -13,10 +13,10 @@ namespace ActorAnimation
         [FormerlySerializedAs("dampingPosition")]
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float damping;
+        public float damping = 0.5f;
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float stiffness;
+        public float stiffness = 0.05f;
         [SyncSceneToStream]
         [Range(0f, 2f)]
         public float spring;
@@ -29,12 +29,12 @@ namespace ActorAnimation
         [SyncSceneToStream]
         [Range(0f, 0.5f)]
         public float average;
-        public LimitInfo limitInfo;
+        public LimitInfo limitInfo = new LimitInfo();
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float rootWeight;
+        public float rootWeight = 1f;
         [SyncSceneToStream]
-        public bool useArmCorrection;
+        public bool useArmCorrection = true;
         public Transform leftLowerArm;
         public Transform rightLowerArm;
         public Transform leftBreast;
@@ -62,12 +62,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(InitialTransform);
+                return _003CinitialLeftTransform_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinitialLeftTransform_003Ek__BackingField = value;
             }
         }
 
@@ -76,12 +77,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(InitialTransform);
+                return _003CinitialRightTransform_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinitialRightTransform_003Ek__BackingField = value;
             }
         }
 
@@ -90,12 +92,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(InitialTransform);
+                return _003CinitialLeftEndTransform_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinitialLeftEndTransform_003Ek__BackingField = value;
             }
         }
 
@@ -104,12 +107,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(InitialTransform);
+                return _003CinitialRightEndTransform_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinitialRightEndTransform_003Ek__BackingField = value;
             }
         }
 
@@ -118,12 +122,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisDirty_003Ek__BackingField = value;
             }
         }
 
@@ -131,33 +136,47 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return breastCollider;
             }
         }
 
         public void SetDirty()
         {
+            isDirty = true;
         }
 
         public void ResetDirty()
         {
+            isDirty = false;
         }
 
         public void UpdateInitialTransform(InitialTransform initialLeftTransform, InitialTransform initialRightTransform, InitialTransform initialLeftEndTransform, InitialTransform initialRightEndTransform)
         {
+            this.initialLeftTransform = initialLeftTransform;
+            this.initialRightTransform = initialRightTransform;
+            this.initialLeftEndTransform = initialLeftEndTransform;
+            this.initialRightEndTransform = initialRightEndTransform;
         }
 
         public void SetArms(Transform lArm, Transform rArm)
         {
+            useArmCorrection = true;
+            if (lArm != null) leftLowerArm = lArm;
+            if (rArm != null) rightLowerArm = rArm;
         }
 
         public void SetBreasts(Transform lBreast, Transform rBreast, Transform lBreastEnd, Transform rBreastEnd)
         {
+            useArmCorrection = true;
+            if (lBreast != null) leftBreast = lBreast;
+            if (rBreast != null) rightBreast = rBreast;
+            if (lBreastEnd != null) leftBreastEnd = lBreastEnd;
+            if (rBreastEnd != null) rightBreastEnd = rBreastEnd;
         }
 
         public bool IsValid()
         {
-            return default(bool);
+            return true;
         }
 
         public void SetDefaultValues()
@@ -172,7 +191,7 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return isActiveAndEnabled;
             }
         }
 
@@ -180,7 +199,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return transform;
             }
         }
     }

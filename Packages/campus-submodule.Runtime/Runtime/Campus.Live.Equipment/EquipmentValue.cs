@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, SetController.
 namespace Campus.Live.Equipment
 {
     using global::Campus.Live.Equipment;
@@ -27,7 +28,7 @@ namespace Campus.Live.Equipment
         {
             get
             {
-                return null;
+                return _controller;
             }
         }
 

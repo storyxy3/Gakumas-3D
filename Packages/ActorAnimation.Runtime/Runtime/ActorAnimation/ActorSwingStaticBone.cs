@@ -15,7 +15,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return staticCollider;
             }
         }
 
@@ -23,7 +23,7 @@ namespace ActorAnimation
         {
             get
             {
-                return default(ActorSwingJobCollisionMask);
+                return staticCollider.seatDynamicCorrectionDisableCollisionMask;
             }
         }
 
@@ -32,26 +32,29 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisDirty_003Ek__BackingField = value;
             }
         }
 
         public void SetDirty()
         {
+            isDirty = true;
         }
 
         public void ResetDirty()
         {
+            isDirty = false;
         }
 
         public bool IsValid()
         {
-            return default(bool);
+            return true;
         }
 
         public void SetDefaultValues()
@@ -66,7 +69,7 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return isActiveAndEnabled;
             }
         }
 
@@ -74,7 +77,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return transform;
             }
         }
     }

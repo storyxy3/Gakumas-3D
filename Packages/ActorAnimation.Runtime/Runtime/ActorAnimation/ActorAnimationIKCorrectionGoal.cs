@@ -6,7 +6,7 @@ namespace ActorAnimation
     public class ActorAnimationIKCorrectionGoal : ActorAnimationIKCorrectionComponentBase
     {
         public AvatarIKGoal goal;
-        public bool enable;
+        public bool enable = true;
         [Range(0f, 0.2f)]
         public float radius;
         public Vector3 offset;

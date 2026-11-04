@@ -10,7 +10,7 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverPonchoSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)11;
         }
 
         public static (quaternion, float3) Calc(Quaternion armLocalRotation, Vector3 ponchoOffsetWorldPosition, Quaternion ponchoOffsetWorldRotation, Vector3 armOffsetWorldPosition, Vector3 bodyOffsetWorldPosition, Vector3 innerOffsetLocalPosition, Vector3 outerOffsetLocalPosition, float lerpCoefficient, float innerLimit, float outerLimit, float3 defaultWay)

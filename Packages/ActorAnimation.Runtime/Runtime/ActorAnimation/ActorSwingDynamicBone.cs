@@ -16,10 +16,10 @@ namespace ActorAnimation
         [FormerlySerializedAs("dampingPosition")]
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float damping;
+        public float damping = 0.5f;
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float stiffness;
+        public float stiffness = 0.05f;
         [SyncSceneToStream]
         [Range(0f, 2f)]
         public float spring;
@@ -28,7 +28,7 @@ namespace ActorAnimation
         public float pendulum;
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float pendulumRange;
+        public float pendulumRange = 1f;
         [SyncSceneToStream]
         public float mass;
         [SyncSceneToStream]
@@ -39,12 +39,12 @@ namespace ActorAnimation
         public float axisAddXToZ;
         [SyncSceneToStream]
         [Range(0f, 10f)]
-        public float wind;
-        public bool useWindGlobalForce;
-        public LimitInfo limitInfo;
+        public float wind = 1f;
+        public bool useWindGlobalForce = true;
+        public LimitInfo limitInfo = new LimitInfo();
         [SyncSceneToStream]
         [Range(0f, 1f)]
-        public float rootWeight;
+        public float rootWeight = 1f;
         [SyncSceneToStream]
         [Range(0f, 1f)]
         public float seatDynamicCorrection;
@@ -60,7 +60,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return dynamicCollider;
             }
         }
 
@@ -69,12 +69,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003ChierarchyDepth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003ChierarchyDepth_003Ek__BackingField = value;
             }
         }
 
@@ -83,12 +84,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(InitialTransform);
+                return _003CinitialTransform_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinitialTransform_003Ek__BackingField = value;
             }
         }
 
@@ -97,44 +99,52 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisDirty_003Ek__BackingField = value;
             }
         }
 
         public void SetDirty()
         {
+            isDirty = true;
         }
 
         public void ResetDirty()
         {
+            isDirty = false;
         }
 
         public int GetHierarchyDepth()
         {
-            return default(int);
+            var current = transform;
+            int depth = -1;
+            while (current != null) { depth++; current = current.parent; }
+            return depth;
         }
 
         public void UpdateHierarchyDepth()
         {
+            hierarchyDepth = GetHierarchyDepth();
         }
 
         public void UpdateInitialTransform(InitialTransform initialTransform)
         {
+            this.initialTransform = initialTransform;
         }
 
         public int CompareTo(ActorSwingDynamicBone other)
         {
-            return default(int);
+            return hierarchyDepth - other.hierarchyDepth;
         }
 
         public bool IsValid()
         {
-            return default(bool);
+            return true;
         }
 
         public void SetDefaultValues()
@@ -149,7 +159,7 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return isActiveAndEnabled;
             }
         }
 
@@ -157,7 +167,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return transform;
             }
         }
     }

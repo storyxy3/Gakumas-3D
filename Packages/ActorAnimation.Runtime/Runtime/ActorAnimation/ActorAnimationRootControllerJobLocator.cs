@@ -40,6 +40,8 @@ namespace ActorAnimation
 
         public void SetupRootController(Transform root, Transform rootReference, Animator animator)
         {
+            rootHandle = ReadWriteTransformHandle.Bind(animator, root);
+            rootReferenceHandle = animator.BindSceneTransform(rootReference);
         }
     }
 }

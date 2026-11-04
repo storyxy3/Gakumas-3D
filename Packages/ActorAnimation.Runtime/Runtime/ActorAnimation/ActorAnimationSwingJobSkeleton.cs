@@ -184,6 +184,7 @@ namespace ActorAnimation
 
         public void ResetTime()
         {
+            _time = 0f;
         }
     }
 }

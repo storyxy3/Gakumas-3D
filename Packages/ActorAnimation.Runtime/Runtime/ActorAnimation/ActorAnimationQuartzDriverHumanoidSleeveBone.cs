@@ -10,7 +10,7 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverHumanoidSleeveSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)5;
         }
 
         public static quaternion Calc(float3 referenceRollPitchYaw, float3 outerMinusCoefficient, float3 innerCoefficient, float3 outerPlusCoefficient, float3 switchMinus, float3 switchPlus, ActorAnimationQuartzDriverRotationComposeType composeType)

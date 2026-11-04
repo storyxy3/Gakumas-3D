@@ -11,11 +11,15 @@ public static class FasterLinq
         private readonly Func<TSource, TResult> _selector;
         public SelectArray(TSource[] source, Func<TSource, TResult> selector)
         {
+            _source = source;
+            _selector = selector;
         }
 
         public TResult[] ToArray()
         {
-            return null;
+            var result = new TResult[_source.Length];
+            for (int i = 0; i < _source.Length; i++) result[i] = _selector(_source[i]);
+            return result;
         }
 
         public List<TResult> ToList()
@@ -30,12 +34,12 @@ public static class FasterLinq
 
         public IEnumerator<TResult> GetEnumerator()
         {
-            return null;
+            return System.Linq.Enumerable.Select(System.Linq.Enumerable.AsEnumerable(_source), _selector).GetEnumerator();
         }
 
         IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
-            return null;
+            return GetEnumerator();
         }
     }
 
@@ -45,6 +49,8 @@ public static class FasterLinq
         private readonly Func<TSource, TResult> _selector;
         public SelectList(List<TSource> source, Func<TSource, TResult> selector)
         {
+            _source = source;
+            _selector = selector;
         }
 
         public TResult[] ToArray()
@@ -90,12 +96,12 @@ public static class FasterLinq
 
     public static SelectArray<TSource, TResult> Select<TSource, TResult>(this TSource[] source, Func<TSource, TResult> selector)
     {
-        return null;
+        return new SelectArray<TSource, TResult>(source, selector);
     }
 
     public static SelectList<TSource, TResult> Select<TSource, TResult>(this List<TSource> source, Func<TSource, TResult> selector)
     {
-        return null;
+        return new SelectList<TSource, TResult>(source, selector);
     }
 
     public static int Count<TSource>(this TSource[] source)

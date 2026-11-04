@@ -10,7 +10,7 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverWaistSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)9;
         }
 
         public static (quaternion, float3) Calc(float3 waistWorldPosition, quaternion waistWorldRotation, float3 thighWorldPosition, float weight)

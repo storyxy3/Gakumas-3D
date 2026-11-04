@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, get_ProjectionUvRectMax, get_ProjectionUvRectMin.
 namespace Campus.AudiencePenlight
 {
     using global::System.Runtime.CompilerServices;
@@ -19,7 +20,7 @@ namespace Campus.AudiencePenlight
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CUseColorProjection_003Ek__BackingField;
             }
         }
 
@@ -28,7 +29,7 @@ namespace Campus.AudiencePenlight
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CColorTable_003Ek__BackingField;
             }
         }
 

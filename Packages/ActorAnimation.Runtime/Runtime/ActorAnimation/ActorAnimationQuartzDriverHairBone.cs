@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: Calc.
 namespace ActorAnimation
 {
     using global::ActorAnimation;
@@ -10,7 +11,7 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverHairSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)2;
         }
 
         public static (quaternion, float3) Calc(quaternion referenceHeadRotation, quaternion referenceNeckRotation, math.RotationOrder translateConnectionAxis, float3 headTranslateCoefficient, float3 headTranslateLimitMin, float3 headTranslateLimitMax, math.RotationOrder rotationOrder, float3 headRotateCoefficient, float3 headRotateLimitMin, float3 headRotateLimitMax, math.RotationOrder rotateConnectionAxis, float3 neckRotateCoefficient, float3 neckRotateLimitMin, float3 neckRotateLimitMax, ActorAnimationQuartzDriverRotationComposeType composeType)

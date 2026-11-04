@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, OnBind, OnLateUpdate, Setup, get_ActorController, get_Color, get_HipRootTransform, get_HumanScale, get_OutlineColor, get_rootPosition, get_rootRotation, set_Color, set_OutlineColor.
 namespace Campus.Common
 {
     using global::Campus.Common;
@@ -87,11 +88,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _sweatWeight;
             }
 
             set
             {
+                _sweatWeight = value;
             }
         }
 
@@ -99,11 +101,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _highlightWeight;
             }
 
             set
             {
+                _highlightWeight = value;
             }
         }
 
@@ -111,11 +114,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _targetCorrectionWeight;
             }
 
             set
             {
+                _targetCorrectionWeight = value;
             }
         }
 

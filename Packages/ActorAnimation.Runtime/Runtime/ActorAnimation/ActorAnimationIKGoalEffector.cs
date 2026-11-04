@@ -54,7 +54,10 @@ namespace ActorAnimation
 
         public ActorAnimationIKGoalEffector(Animator animator, Transform locator, AvatarIKGoal goalParts, ActorAnimationIKHandleType handleType)
         {
-            this = default;
+            _003CreferenceAnimationHandle_003Ek__BackingField = ReadOnlyTransformHandle.Bind(animator, locator);
+            _003CreferenceSceneHandle_003Ek__BackingField = animator.BindSceneTransform(locator);
+            _003Cgoal_003Ek__BackingField = goalParts;
+            _003ChandleType_003Ek__BackingField = handleType;
         }
 
         public bool IsValid(AnimationStream stream)

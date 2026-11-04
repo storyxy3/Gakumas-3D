@@ -10,7 +10,7 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverFurisodeSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)10;
         }
 
         public static quaternion Calc(Vector3 handWorldPosition, Vector3 forearmWorldPosition, Quaternion furisodeOffsetWorldRotation, Quaternion spineWorldRotation, float3 backWay, float apexAngle, float coefficient, float min, float max)

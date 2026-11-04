@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, Awake, InitializeCrowdAnimator, IsPaused, OnDisable, OnEnable, Pause, Play, SetAnimationCount, SetAnimationData, SetAnimationTime, SetAnimationWeight, SetHidePenlight, SetOverrideAnimationCount, SetOverrideAnimationData, SetOverrideAnimationTime, SetOverrideAnimationWeight, SetPenlightColorTable, SetPenlightProjectionUvRect, SetTime, SetUsePenlightColorProjection, Update, get_Bounds, get_Matrices, get_ProjectionUvRectMax, get_ProjectionUvRectMin, get_RawMatrices, set_ProjectionUvRectMax, set_ProjectionUvRectMin.
 namespace Campus.Crowd
 {
     using global::System.Runtime.CompilerServices;
@@ -49,12 +50,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CHidePenlight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CHidePenlight_003Ek__BackingField = value;
             }
         }
 
@@ -63,12 +65,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CUseColorProjection_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CUseColorProjection_003Ek__BackingField = value;
             }
         }
 
@@ -77,12 +80,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CColorTable_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CColorTable_003Ek__BackingField = value;
             }
         }
 

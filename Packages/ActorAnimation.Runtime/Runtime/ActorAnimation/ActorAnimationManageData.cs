@@ -25,6 +25,15 @@ namespace ActorAnimation
 
         public void SetCommonPropertyData(ref ActorAnimationManagePropertyData p)
         {
+            propertyData.rootWeight = p.rootWeight;
+            propertyData.rootHorizontalWeight = p.rootHorizontalWeight;
+            propertyData.prewarmCount = p.prewarmCount;
+            propertyData.rootVerticalWeight = p.rootVerticalWeight;
+            propertyData.weight = p.weight;
+            propertyData.modelingPoseWeight = p.modelingPoseWeight;
+            propertyData.swingPowerWeight = p.swingPowerWeight;
+            propertyData.swingBreastPowerWeight = p.swingBreastPowerWeight;
+            propertyData.swingBreastCorrectionPowerWeight = p.swingBreastCorrectionPowerWeight;
         }
 
         public void SetWindPropertyData(ref ActorAnimationManagePropertyData p)

@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, GetDrawingDimensions2, GetUVOffset, OnPopulateMesh, Update, get_ScrollOffset, get_ScrollSpeed, get_UvScale, set_ScrollOffset, set_ScrollSpeed, set_Time, set_UvScale.
 namespace Campus.Live.Monitor
 {
     using global::UnityEngine;
@@ -33,7 +34,7 @@ namespace Campus.Live.Monitor
         {
             get
             {
-                return default(float);
+                return _time;
             }
 
             set
@@ -69,7 +70,7 @@ namespace Campus.Live.Monitor
         {
             get
             {
-                return null;
+                return _sprite2;
             }
         }
 

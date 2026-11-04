@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, BindReceiver, Dispose, GetTimelineData, Initialize, InitializeArray, InitializeReceiver, LateUpdate, OnDirectorPlayed, OnDirectorStopped, OnDisable, OnEnable, Start, Update, get_AnimationData, get_InitialData, get_IsPlaying, get_IsValidPlayableGraph, get_StreamData, get_TimelineData, set_AnimationData, set_InitialData, set_StreamData, set_TimelineData.
 namespace Campus.Live.Equipment
 {
     using global::System;
@@ -49,7 +50,7 @@ namespace Campus.Live.Equipment
         {
             get
             {
-                return default(int);
+                return serializeFieldWg;
             }
         }
 
@@ -57,7 +58,7 @@ namespace Campus.Live.Equipment
         {
             get
             {
-                return null;
+                return _receiver;
             }
         }
 

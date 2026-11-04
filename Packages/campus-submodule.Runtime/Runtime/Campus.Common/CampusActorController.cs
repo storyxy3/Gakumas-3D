@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .cctor, .ctor, ApplyActorAnimationManagePropertyData, Campus.Common.ICampusActorController.get_isDestroyed, CanEyeBlink, CorrectSkeleton, DisposeTalk<object>, EnableBakedSwingBone, ExecuteEyeBlink, GetAnimationController, GetCustomGraphAnimationPlayer, GetHumanScale, GetPlayingAnimationController, InitializeActorAO, InitializeActorAnimation, InitializeBodyAdditive, InitializeExpression, InitializeFacial, InitializeRenderer, InitializeTalk<object>, LateUpdate, OnActorDestroy, OnBuildModelSuccess, OnClipPlay, OnDisable, OnEnable, OnUpdateMaterial, OverrideActorMaterialProperty, PlayEffect, PlayMotion, PlayTalk, RemoveOverrideMaterialProperty, ResetActorMaterialProperty, ResetAllIKGoalToOriginalTarget, ResetBakeSwingBone, ResetIKGoalToOriginalTarget, ResetModel, SampleAnimation, SetAnimationEventActive, SetEnableColliders, SetEyeBlinkEnable, SetEyeBlinkWeight, SetOverrideMaterialProperty, SetRendererActiveByReference, SetRendererAndCollidersActive, SetTalkActive, SetupAllIKGoalToOverrideTarget, SetupAnimation, SetupMoveConstraint, SetupPropConstraintAnimation, SetupPropConstraintSource, SetupSeatedDynamicCorrection, SetupTimelineEventReceiver, StopEffects, StopTalk, TryInitializeTalk, UpdateHighLightMaterial, UpdateLookAtEyePitchCorrection, UpdateMaterialInfos, UpdateNodAdditive, UpdateTalkAdditive, get_LookAtEyeSideCorrectionDeFactoWeight, get_localToWorldMatrix, get_worldToLocalMatrix.
 namespace Campus.Common
 {
     using global::System;
@@ -452,11 +453,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _talkAnimationSpeed;
             }
 
             set
             {
+                _talkAnimationSpeed = value;
             }
         }
 
@@ -464,11 +466,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _sweatWeight;
             }
 
             set
             {
+                _sweatWeight = value;
             }
         }
 
@@ -476,11 +479,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _highlightWeight;
             }
 
             set
             {
+                _highlightWeight = value;
             }
         }
 
@@ -488,11 +492,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _targetCorrectionWeight;
             }
 
             set
             {
+                _targetCorrectionWeight = value;
             }
         }
 
@@ -512,11 +517,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return _lookAtEyeSideCorrectionWeight;
             }
 
             set
             {
+                _lookAtEyeSideCorrectionWeight = value;
             }
         }
 
@@ -549,7 +555,7 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsBuildSuccess_003Ek__BackingField;
             }
 
             [CompilerGenerated]
@@ -650,7 +656,7 @@ namespace Campus.Common
 
         protected override HumanDescription GetHumanDescription(HumanBone[] human, SkeletonBone[] skeleton)
         {
-            return default(HumanDescription);
+            return new HumanDescription { human = human, skeleton = skeleton, lowerArmTwist = 0f, upperArmTwist = 1f, lowerLegTwist = 0f, upperLegTwist = 1f, armStretch = 0.05f, legStretch = 0.05f, feetSpacing = 0f, hasTranslationDoF = false };
         }
 
         protected override void LateUpdate()
@@ -810,51 +816,57 @@ namespace Campus.Common
 
         public CustomLookAtEffector GetCurrentCustomLookAtEffector()
         {
-            return null;
+            return _actorAnimation != null ? _actorAnimation.CustomLookAtEffector : null;
         }
 
         public void SetCustomLookAt(Transform t)
         {
+            if (_actorAnimation != null) _actorAnimation.SetCustomLookAt(t);
         }
 
         public void SetCustomLookAt(Vector3 pos)
         {
+            if (_actorAnimation != null) _actorAnimation.SetCustomLookAt(pos);
         }
 
         public void SetCustomLookAtEffector(CustomLookAtEffector effector)
         {
+            if (_actorAnimation != null) _actorAnimation.SetCustomLookAtEffector(effector);
         }
 
         public void SetCampusCustomLookAtEffector(CampusCustomLookAtEffector effector)
         {
+            if (_actorAnimation != null) _actorAnimation.SetCampusCustomLookAtEffector(effector);
         }
 
         public bool IsLookAtLimitedPoseEnable()
         {
-            return default(bool);
+            return _actorAnimation != null && _actorAnimation.isCustomLookAtLimitEnablePose;
         }
 
         public void ResetCustomLookAt()
         {
+            if (_actorAnimation != null) _actorAnimation.ResetCustomLookAt();
         }
 
         public Vector3 GetFullBodyIkHeadOriginalPosition()
         {
-            return default(Vector3);
+            return _actorAnimation != null ? _actorAnimation.FullBodyIkHeadOriginalPosition : Vector3.zero;
         }
 
         public Quaternion GetFullBodyIkHeadOriginalRotation()
         {
-            return default(Quaternion);
+            return _actorAnimation != null ? _actorAnimation.FullBodyIkHeadOriginalRotation : Quaternion.identity;
         }
 
         public Vector3 GetFullBodyIkHeadOriginalForward()
         {
-            return default(Vector3);
+            return _actorAnimation != null ? _actorAnimation.FullBodyIkHeadOriginalForward : Vector3.zero;
         }
 
         public void SetActorLayout(Transform actorLayout)
         {
+            if (_actorAnimation != null) _actorAnimation.SetActorLayout(actorLayout);
         }
 
         public override void ResetModel()
@@ -863,6 +875,7 @@ namespace Campus.Common
 
         public override void ResetTime()
         {
+            if (_actorAnimation != null) _actorAnimation.ResetTime();
         }
 
         public override void ApplyActorAnimationManagePropertyData(ActorAnimationManagePropertyData propertyData)
@@ -871,6 +884,7 @@ namespace Campus.Common
 
         public void ResetDynamicSkin()
         {
+            if (_actorAnimation != null) _actorAnimation.ResetDynamicSkin();
         }
 
         private void SetupMoveConstraint()
@@ -897,15 +911,22 @@ namespace Campus.Common
 
         public void SetAndEnableJointLimitSetting(CampusActorAnimationJointLimitSetting setting)
         {
+            jointLimitSetting = setting;
+            if (_actorAnimation != null) _actorAnimation.SetAndEnableJointLimitSetting(setting);
         }
 
         public void DisableJointLimitSetting()
         {
+            if (_actorAnimation != null)
+            {
+                jointLimitSetting = null;
+                _actorAnimation.DisableJointLimitSetting();
+            }
         }
 
         public bool IsJointLimitNowLimited()
         {
-            return default(bool);
+            return _actorAnimation != null && _actorAnimation.jointLimitNowLimited;
         }
 
         public UnityEngine.Object GetAnimationPlayerObject()

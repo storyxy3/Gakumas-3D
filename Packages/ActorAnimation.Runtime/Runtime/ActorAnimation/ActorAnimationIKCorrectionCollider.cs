@@ -9,13 +9,13 @@ namespace ActorAnimation
     {
         public ActorAnimationIKCorrectionColliderType type;
         [Range(0f, 1f)]
-        public float weight;
+        public float weight = 1f;
         [Range(0f, 1f)]
         public float radius;
         [Range(0f, 1f)]
         public float radiusSub;
         [Range(0f, 1f)]
-        public float dampArea;
+        public float dampArea = 0.02f;
         [Range(0f, 1f)]
         public float length;
         public Vector3 offset;
@@ -27,27 +27,32 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003ChierarchyDepth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003ChierarchyDepth_003Ek__BackingField = value;
             }
         }
 
         public int GetHierarchyDepth()
         {
-            return default(int);
+            var current = transform;
+            int depth = -1;
+            while (current != null) { depth++; current = current.parent; }
+            return depth;
         }
 
         public void UpdateHierarchyDepth()
         {
+            hierarchyDepth = GetHierarchyDepth();
         }
 
         public int CompareTo(ActorAnimationIKCorrectionCollider other)
         {
-            return default(int);
+            return hierarchyDepth - other.hierarchyDepth;
         }
 
         public ActorAnimationIKCorrectionCollider()

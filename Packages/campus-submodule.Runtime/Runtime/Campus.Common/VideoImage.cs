@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, LateUpdate, OnDisable, OnEnable.
 namespace Campus.Common
 {
     using global::System.Runtime.CompilerServices;
@@ -17,12 +18,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CDisableAutoResumeOnApplicationPause_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDisableAutoResumeOnApplicationPause_003Ek__BackingField = value;
             }
         }
 

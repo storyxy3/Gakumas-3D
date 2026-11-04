@@ -9,12 +9,12 @@ namespace ActorAnimation
         public ActorAnimationQuartzDriverHumanoidHandSetting setting;
         public override ActorAnimationQuartzDriverBoneType GetBoneType()
         {
-            return default(ActorAnimationQuartzDriverBoneType);
+            return (ActorAnimationQuartzDriverBoneType)4;
         }
 
         public static float Calc(float muscleValue, float muscleConvertCoefficient, float rotateCoefficient)
         {
-            return default(float);
+            return muscleValue * muscleConvertCoefficient * rotateCoefficient;
         }
 
         public ActorAnimationQuartzDriverHumanoidHandBone()

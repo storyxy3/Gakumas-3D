@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .cctor, .ctor, GetCanvasRenderTexture, GetTextureName, OnDisable, OnEnable, RegisterInstance, RegisterMonitor3D, Start, UnRegisterInstance, UnregisterMonitor3D, UpdateParameter, UpdateTexture.
 namespace CanvasRT
 {
     using global::System;
@@ -51,11 +52,12 @@ namespace CanvasRT
         {
             get
             {
-                return default(int);
+                return _baseHeight;
             }
 
             set
             {
+                _baseHeight = value;
             }
         }
 
@@ -63,11 +65,12 @@ namespace CanvasRT
         {
             get
             {
-                return default(float);
+                return _aspectRatio;
             }
 
             set
             {
+                _aspectRatio = value;
             }
         }
 
@@ -75,11 +78,12 @@ namespace CanvasRT
         {
             get
             {
-                return default(bool);
+                return _isHDRFormat;
             }
 
             set
             {
+                _isHDRFormat = value;
             }
         }
 
@@ -87,7 +91,7 @@ namespace CanvasRT
         {
             get
             {
-                return null;
+                return _target;
             }
         }
 
@@ -95,7 +99,7 @@ namespace CanvasRT
         {
             get
             {
-                return null;
+                return _canvas;
             }
         }
 
@@ -103,7 +107,7 @@ namespace CanvasRT
         {
             get
             {
-                return null;
+                return _threeDImages;
             }
         }
 
@@ -111,7 +115,7 @@ namespace CanvasRT
         {
             get
             {
-                return default(int);
+                return _instanceIndex;
             }
         }
 
