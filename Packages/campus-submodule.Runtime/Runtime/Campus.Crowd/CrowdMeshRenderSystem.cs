@@ -9,18 +9,18 @@ namespace Campus.Crowd
 
     public class CrowdMeshRenderSystem : IDisposable
     {
-        private static readonly string SkinningKernel;
-        private static readonly int VertexCountID;
-        private static readonly int BoneCountID;
-        private static readonly int InVerticesID;
-        private static readonly int InSkinsID;
-        private static readonly int InMatricesID;
-        private static readonly int OutVerticesID;
-        private static readonly int MeshInfoID;
-        private static readonly int HandMatricesID;
-        private static readonly ProfilingSampler CreateCrowdMeshRenderSystemSampler;
-        private static readonly int RenderGBufferPass;
-        private static readonly int RenderPreDepthPass;
+        private static readonly string SkinningKernel = "Skinning";
+        private static readonly int VertexCountID = Shader.PropertyToID("_VertexCount");
+        private static readonly int BoneCountID = Shader.PropertyToID("_BoneCount");
+        private static readonly int InVerticesID = Shader.PropertyToID("_InVertices");
+        private static readonly int InSkinsID = Shader.PropertyToID("_InSkins");
+        private static readonly int InMatricesID = Shader.PropertyToID("_InMatrices");
+        private static readonly int OutVerticesID = Shader.PropertyToID("_OutVertices");
+        private static readonly int MeshInfoID = Shader.PropertyToID("_MeshInfo");
+        private static readonly int HandMatricesID = Shader.PropertyToID("_HandMatrices");
+        private static readonly ProfilingSampler CreateCrowdMeshRenderSystemSampler = new ProfilingSampler("CrowdMeshRenderSystem.Create");
+        private static readonly int RenderGBufferPass = 2;
+        private static readonly int RenderPreDepthPass = 3;
         private readonly CrowdModelData.MeshData _meshData;
         private readonly int _boneCount;
         private readonly int _rightHandBoneIndex;
@@ -38,7 +38,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _mesh;
             }
         }
 
@@ -46,7 +46,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _meshData?.subMeshes;
             }
         }
 
@@ -55,56 +55,117 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CMaxInstanceCountsPerSubMesh_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CMaxInstanceCountsPerSubMesh_003Ek__BackingField = value;
             }
         }
 
         public CrowdMeshRenderSystem(CrowdModelData modelData)
         {
+            using (new ProfilingScope(null, CreateCrowdMeshRenderSystemSampler))
+            {
+                _meshData = modelData.crowdMeshData;
+                _boneCount = modelData.Bones.Length;
+                _rightHandBoneIndex = modelData.rightHandBoneIndex;
+                _leftHandBoneIndex = modelData.leftHandBoneIndex;
+                _mesh = global::VL.VLMeshUtility.CopyMesh(_meshData.mesh);
+                _mesh.vertexBufferTarget |= GraphicsBuffer.Target.Raw;
+                if (_mesh.vertexBufferCount != 4)
+                {
+                    Debug.LogError("頂点バッファのレイアウトが違います");
+                    return;
+                }
+                _vertexBuffers = new GraphicsBuffer[4];
+                for (int i = 0; i < _vertexBuffers.Length; i++) _vertexBuffers[i] = _mesh.GetVertexBuffer(i);
+                _sourceVertexBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Vertex | GraphicsBuffer.Target.CopyDestination | GraphicsBuffer.Target.Raw,
+                    _mesh.vertexCount, _mesh.GetVertexBufferStride(0));
+                Graphics.CopyBuffer(GetVertexBuffer((VertexStreamType)0), _sourceVertexBuffer);
+                _handMatrices = new Matrix4x4[16];
+                _rightHandRotateMatrix = Matrix4x4.Rotate(Quaternion.Euler(0f, 180f, 0f));
+            }
         }
 
         public void SetupCompute(ComputeShader computeShader)
         {
+            _computeShader = computeShader;
+            _skinningKernelIndex = _computeShader.FindKernel(SkinningKernel);
         }
 
         public void SetMaxInstanceCounts(int totalMaxInstanceCount)
         {
+            if (_meshData?.subMeshes != null && _meshData.subMeshes.Length > 0)
+                MaxInstanceCountsPerSubMesh = Mathf.Max(0, totalMaxInstanceCount) / _meshData.subMeshes.Length;
         }
 
         public void ComputeSkinning(CommandBuffer cmd, GraphicsBuffer inMatricesBuffer)
         {
+            int count = GetVertexCount();
+            if (count < 1 || _computeShader == null || _skinningKernelIndex < 0) return;
+            cmd.SetComputeIntParam(_computeShader, VertexCountID, count);
+            cmd.SetComputeIntParam(_computeShader, BoneCountID, _boneCount);
+            var vertices = GetVertexBuffer((VertexStreamType)0);
+            var skins = GetVertexBuffer((VertexStreamType)3);
+            cmd.SetComputeBufferParam(_computeShader, _skinningKernelIndex, InVerticesID, _sourceVertexBuffer);
+            cmd.SetComputeBufferParam(_computeShader, _skinningKernelIndex, InSkinsID, skins);
+            cmd.SetComputeBufferParam(_computeShader, _skinningKernelIndex, InMatricesID, inMatricesBuffer);
+            cmd.SetComputeBufferParam(_computeShader, _skinningKernelIndex, OutVerticesID, vertices);
+            cmd.DispatchCompute(_computeShader, _skinningKernelIndex, count / 64 + 1, 1, 1);
         }
 
         public void SetHandMatrices(MaterialPropertyBlock mpb, in NativeArray<Matrix4x4> boneMatrices)
         {
+            if (mpb == null) return;
+            for (int i = 0; i < 8; i++)
+            {
+                _handMatrices[2 * i] = boneMatrices[i * _boneCount + _rightHandBoneIndex] * _rightHandRotateMatrix;
+                _handMatrices[2 * i + 1] = boneMatrices[i * _boneCount + _leftHandBoneIndex];
+            }
+            mpb.SetMatrixArray(HandMatricesID, _handMatrices);
         }
 
         public void Render(CommandBuffer cmd, MaterialPropertyBlock mpb, NativeArray<int> instanceCountsPerSubMesh, CrowdSystem.EventType eventType)
         {
+            if (_meshData == null || _mesh == null || _meshData.subMeshes == null) return;
+            int pass = eventType == CrowdSystem.EventType.GBuffer ? RenderGBufferPass : eventType == CrowdSystem.EventType.PreDepth ? RenderPreDepthPass : -1;
+            int offset = 0;
+            for (int i = 0; i < _meshData.subMeshes.Length; i++)
+            {
+                var subMesh = _meshData.subMeshes[i];
+                var material = subMesh?.material;
+                if (material == null) continue;
+                int count = instanceCountsPerSubMesh[i];
+                if (count < 1) continue;
+                mpb.SetVector(MeshInfoID, new Vector4(subMesh.vertexCount, count, subMesh.vertexStart, offset));
+                cmd.DrawMeshInstancedProcedural(_mesh, i, material, pass, count, mpb);
+                offset += count;
+            }
         }
 
         public bool EqualData(CrowdModelData.MeshData crowdMeshData)
         {
-            return default(bool);
+            return _meshData == crowdMeshData;
         }
 
         public void Dispose()
         {
+            _sourceVertexBuffer?.Dispose();
+            foreach (var buffer in _vertexBuffers) buffer?.Dispose();
+            if (_mesh != null) UnityEngine.Object.DestroyImmediate(_mesh);
         }
 
         private GraphicsBuffer GetVertexBuffer(VertexStreamType streamType)
         {
-            return null;
+            return _vertexBuffers[(int)streamType];
         }
 
         private int GetVertexCount()
         {
-            return default(int);
+            return _mesh != null ? _mesh.vertexCount : 0;
         }
     }
 }

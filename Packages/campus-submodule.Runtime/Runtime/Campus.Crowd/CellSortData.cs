@@ -11,7 +11,7 @@ namespace Campus.Crowd
         public ushort cameraDistance;
         public int CompareTo(CellSortData other)
         {
-            return default(int);
+            return cameraDistance > other.cameraDistance ? 1 : -1;
         }
     }
 }

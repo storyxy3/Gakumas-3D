@@ -16,6 +16,15 @@ namespace Campus.Crowd
         public Vector4 OcclusionSphere;
         public void Update(in CameraData cameraData, bool useMainCamera, Crowd crowd)
         {
+            ViewProjMatrix = cameraData.GetProjectionMatrix() * cameraData.GetViewMatrix();
+            CameraPos = cameraData.worldSpaceCameraPos;
+            CameraForward = cameraData.camera.transform.forward;
+            HeightOcclusion = Mathf.Max(crowd.heightOcclusionStart.value, 0.001f);
+            CrowdParams = new Vector4(1f / HeightOcclusion, crowd.heightOcclusionMin.value, 0f, 0f);
+            CrowdLookAt = crowd.target.value.Position;
+            CrowdRandomLookAtWeight = crowd.target.value.randomLookAtWeight;
+            var position = crowd.occlusionPosition.value;
+            OcclusionSphere = new Vector4(position.x, position.y, position.z, crowd.occlusionRadius.value);
         }
 
         public CrowdRenderingSetupData()

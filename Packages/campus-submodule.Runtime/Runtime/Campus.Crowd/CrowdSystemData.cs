@@ -10,15 +10,15 @@ namespace Campus.Crowd
 
     public class CrowdSystemData : IDisposable
     {
-        private static readonly int PersonInfoBytesStride;
-        private static readonly string UpdatePersonKernel;
-        private static readonly int PersonInfoBufferID;
-        private static readonly int PersonInfoBytesBufferID;
-        private static readonly int PersonIndexBufferID;
-        private static readonly int BoundingMinID;
-        private static readonly int NonBillboardPersonCountID;
-        private static readonly int VisiblePersonCountID;
-        private static readonly int PenlightInfoBufferID;
+        private static readonly int PersonInfoBytesStride = 16;
+        private static readonly string UpdatePersonKernel = "UpdatePerson";
+        private static readonly int PersonInfoBufferID = Shader.PropertyToID("_PersonInfoBuffer");
+        private static readonly int PersonInfoBytesBufferID = Shader.PropertyToID("_PersonInfoBytesBuffer");
+        private static readonly int PersonIndexBufferID = Shader.PropertyToID("_PersonIndexBuffer");
+        private static readonly int BoundingMinID = Shader.PropertyToID("_BoundingMin");
+        private static readonly int NonBillboardPersonCountID = Shader.PropertyToID("_NonBillboardPersonCount");
+        private static readonly int VisiblePersonCountID = Shader.PropertyToID("_VisiblePersonCount");
+        private static readonly int PenlightInfoBufferID = Shader.PropertyToID("_PenlightInfoBuffer");
         private readonly CrowdData _crowdData;
         private readonly GraphicsBuffer _personInfoBuffer;
         private readonly GraphicsBuffer _animationMatricesBuffer;
@@ -42,12 +42,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCrowdCompute_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCrowdCompute_003Ek__BackingField = value;
             }
         }
 
@@ -56,12 +57,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(Bounds);
+                return _003CBounds_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CBounds_003Ek__BackingField = value;
             }
         }
 
@@ -70,12 +72,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return default(Bounds);
+                return _003CBaseCellBounds_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CBaseCellBounds_003Ek__BackingField = value;
             }
         }
 
@@ -83,7 +86,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _personInfoBuffer;
             }
         }
 
@@ -91,7 +94,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _animationMatricesBuffer;
             }
         }
 
@@ -99,7 +102,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _personInfoBytesBuffer;
             }
         }
 
@@ -107,7 +110,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _personIndexBuffer;
             }
         }
 
@@ -115,7 +118,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<PersonInfo>);
+                return _personInfos;
             }
         }
 
@@ -123,7 +126,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<OctreeInfo>);
+                return _octreeInfos;
             }
         }
 
@@ -131,7 +134,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<uint>);
+                return _personIndexes;
             }
         }
 
@@ -139,7 +142,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeArray<int>);
+                return _instanceCountsPerSubMesh;
             }
         }
 
@@ -147,7 +150,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(NativeReference<int>);
+                return _billboardInstanceCount;
             }
         }
 
@@ -155,77 +158,157 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(int);
+                int count = 0;
+                if (_instanceCountsPerSubMesh.IsCreated)
+                    for (int i = 0; i < _instanceCountsPerSubMesh.Length; i++) count += _instanceCountsPerSubMesh[i];
+                return count;
             }
         }
 
         public CrowdSystemData(CrowdData crowdData, int subMeshCount, int boneCount, int[] penlightTypeWeights, int[] penlightAmountWeights, Vector4 boundingSphere)
         {
+            _crowdData = crowdData;
+            if (_crowdData != null)
+            {
+                var bounds = _crowdData.aabb;
+                bounds.Expand(boundingSphere.w * 4f);
+                Bounds = bounds;
+                BaseCellBounds = _crowdData.version == 0 ? bounds : _crowdData.aabb;
+            }
+            _instanceCountsPerSubMesh = new NativeArray<int>(subMeshCount, Allocator.Persistent);
+            _billboardInstanceCount = new NativeReference<int>(Allocator.Persistent);
+            _octreeInfos = new NativeArray<OctreeInfo>(_crowdData.octreeInfos, Allocator.Persistent);
+            _personInfos = new NativeArray<PersonInfo>(_crowdData.personInfos, Allocator.Persistent);
+            int personCount = _personInfos.Length;
+            _personInfoBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, personCount, System.Runtime.InteropServices.Marshal.SizeOf<PersonInfo>());
+            _personInfoBuffer.SetData(_personInfos);
+            _animationMatricesBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, 8 * boneCount, System.Runtime.InteropServices.Marshal.SizeOf<float4x4>());
+            InitializeBytesBuffer(PersonInfoBytesStride * personCount, out _personInfoBytesBuffer);
+            InitializePersonIndexArray(personCount, out _personIndexes);
+            InitializeBytesBuffer(_personIndexes.Length, out _personIndexBuffer);
+            InitializedPenlightInfoBuffer(in _personInfos, penlightTypeWeights, penlightAmountWeights, out _penlightInfoBuffer);
         }
 
         public void SetupCompute(ComputeShader computeShader)
         {
+            CrowdCompute = computeShader;
+            _updatePersonKernelIndex = CrowdCompute.FindKernel(UpdatePersonKernel);
         }
 
         public void UpdatePersonIndexBuffer(CommandBuffer cmd)
         {
+            _personIndexBuffer.SetData(_personIndexes, 0, 0, TotalSubMeshInstanceCount + _billboardInstanceCount.Value);
         }
 
         public void ComputeUpdatePerson(CommandBuffer cmd)
         {
+            if (CrowdCompute == null || _updatePersonKernelIndex < 0 || !_billboardInstanceCount.IsCreated) return;
+            int meshCount = TotalSubMeshInstanceCount;
+            int visibleCount = meshCount + _billboardInstanceCount.Value;
+            if (visibleCount < 1) return;
+            cmd.SetComputeIntParam(CrowdCompute, NonBillboardPersonCountID, meshCount);
+            SetBoundsMin(cmd, CrowdCompute);
+            SetVisiblePersonCount(cmd, CrowdCompute, visibleCount);
+            SetPersonBuffers(cmd, CrowdCompute, _updatePersonKernelIndex);
+            cmd.DispatchCompute(CrowdCompute, _updatePersonKernelIndex, (visibleCount + 255) / 256, 1, 1);
         }
 
         public void SetBoundsMin(CommandBuffer cmd, ComputeShader compute)
         {
+            if (cmd == null || compute == null) return;
+            cmd.SetComputeVectorParam(compute, BoundingMinID, Bounds.min);
         }
 
         public void SetVisiblePersonCount(CommandBuffer cmd, ComputeShader compute, int visiblePersonCount)
         {
+            if (cmd == null || compute == null) return;
+            cmd.SetComputeIntParam(compute, VisiblePersonCountID, visiblePersonCount);
         }
 
         public void SetPersonBuffers(CommandBuffer cmd, ComputeShader compute, int kernelIndex)
         {
+            if (cmd == null || compute == null || kernelIndex < 0) return;
+            cmd.SetComputeBufferParam(compute, kernelIndex, PersonInfoBufferID, _personInfoBuffer);
+            cmd.SetComputeBufferParam(compute, kernelIndex, PersonInfoBytesBufferID, _personInfoBytesBuffer);
+            cmd.SetComputeBufferParam(compute, kernelIndex, PersonIndexBufferID, _personIndexBuffer);
         }
 
         public void SetPenlightBuffers(CommandBuffer cmd, ComputeShader compute, int kernelIndex)
         {
+            if (cmd == null || compute == null || kernelIndex < 0) return;
+            cmd.SetComputeBufferParam(compute, kernelIndex, PenlightInfoBufferID, _penlightInfoBuffer);
         }
 
         public void SetPersonInfoBytes(MaterialPropertyBlock mpb)
         {
+            mpb?.SetBuffer(PersonInfoBytesBufferID, _personInfoBytesBuffer);
         }
 
         public void SetBoundsMin(MaterialPropertyBlock mpb)
         {
+            mpb?.SetVector(BoundingMinID, Bounds.min);
         }
 
         public bool EqualData(CrowdData crowdData)
         {
-            return default(bool);
+            return _crowdData == crowdData;
         }
 
         public void Dispose()
         {
+            _personInfoBuffer?.Dispose();
+            _animationMatricesBuffer?.Dispose();
+            _personIndexBuffer?.Dispose();
+            _personInfoBytesBuffer?.Dispose();
+            _penlightInfoBuffer?.Dispose();
+            if (_personInfos.IsCreated) _personInfos.Dispose();
+            if (_octreeInfos.IsCreated) _octreeInfos.Dispose();
+            if (_personIndexes.IsCreated) _personIndexes.Dispose();
+            if (_instanceCountsPerSubMesh.IsCreated) _instanceCountsPerSubMesh.Dispose();
+            if (_billboardInstanceCount.IsCreated) _billboardInstanceCount.Dispose();
         }
 
         private void InitializeBytesBuffer(int count, out GraphicsBuffer buffer)
         {
-            throw null;
+            buffer = new GraphicsBuffer(GraphicsBuffer.Target.Raw, count, sizeof(uint));
         }
 
         private void InitializePersonIndexArray(int count, out NativeArray<uint> personInfoArray)
         {
-            throw null;
+            personInfoArray = new NativeArray<uint>(count, Allocator.Persistent);
+            for (int i = 0; i < count; i++) personInfoArray[i] = (uint)i;
         }
 
         private void InitializedPenlightInfoBuffer(in NativeArray<PersonInfo> personInfos, int[] typeWeights, int[] amountWeights, out GraphicsBuffer buffer)
         {
-            throw null;
+            buffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured | GraphicsBuffer.Target.Raw, personInfos.Length, sizeof(uint));
+            var rand = new Unity.Mathematics.Random { state = 0xD12310CDu };
+            var data = new int[personInfos.Length];
+            for (int i = 0; i < data.Length; i++)
+            {
+                uint flags = personInfos[i].flags;
+                int type = GetRandomIndex(typeWeights, ref rand);
+                int amount = GetRandomIndex(amountWeights, ref rand);
+                int right = (type + 1) & 3;
+                int left = (flags & (1u << 21)) != 0 ? ((type + 1) << 2) & 12 : 0;
+                data[i] = right | left | (type == 0 ? (amount & 15) << 4 : 0);
+            }
+            buffer.SetData(data);
         }
 
         private int GetRandomIndex(int[] weights, ref Unity.Mathematics.Random rand)
         {
-            return default(int);
+            int sum = System.Linq.Enumerable.Sum(weights);
+            if (sum < 1) return 0;
+            int value = rand.NextInt(sum);
+            int cumulative = 0;
+            for (int i = 0; i < weights.Length; i++)
+            {
+                int previous = cumulative;
+                cumulative += weights[i];
+                if (previous <= value && cumulative > value) return i;
+            }
+            return 0;
         }
     }
 }

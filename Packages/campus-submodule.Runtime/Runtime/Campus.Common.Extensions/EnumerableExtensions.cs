@@ -53,6 +53,7 @@ namespace Campus.Common.Extensions
 
         public static void ForEach<T>(this IEnumerable<T> enumerable, Action<T> action)
         {
+            foreach (var item in enumerable) action?.Invoke(item);
         }
 
         public static int FindIndex<T>(this IEnumerable<T> items, Predicate<T> match)

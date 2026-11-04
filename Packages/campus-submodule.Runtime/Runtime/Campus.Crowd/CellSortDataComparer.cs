@@ -7,7 +7,7 @@ namespace Campus.Crowd
     {
         public int Compare(CellSortData x, CellSortData y)
         {
-            return default(int);
+            return x.cameraDistance == y.cameraDistance ? 0 : x.cameraDistance > y.cameraDistance ? 1 : -1;
         }
     }
 }

@@ -1,0 +1,1025 @@
+[
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$LookCamera",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Equipment.Environment/LiveLaser.cs",
+    "apkAddresses": [
+      "0xddb7d94"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CellSortData$$CompareTo",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CellSortData.cs",
+    "apkAddresses": [
+      "0xddc388c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CellSortDataComparer$$Compare",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CellSortDataComparer.cs",
+    "apkAddresses": [
+      "0xddc38a0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$Create",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc3b28"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$OnCameraPreCull",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc3e6c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$AddRenderPasses",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc4ee0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$Dispose",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc4fe8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$GetSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc5218"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$OnRenderPreDepth",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc52cc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$OnRenderGBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc57f8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$OnRenderMotionVector",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc5a14"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRendererFeature$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRendererFeature.cs",
+    "apkAddresses": [
+      "0xddc5b10"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdComputePass$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdComputePass.cs",
+    "apkAddresses": [
+      "0xddc3db4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdComputePass$$Setup",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdComputePass.cs",
+    "apkAddresses": [
+      "0xddc4fb8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdComputePass$$Execute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdComputePass.cs",
+    "apkAddresses": [
+      "0xddc5bdc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdComputePass$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdComputePass.cs",
+    "apkAddresses": [
+      "0xddc63bc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$Execute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMatricesJobHandler.cs",
+    "apkAddresses": [
+      "0xddc65c8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$CalculateObjToWorldMatrix",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMatricesJobHandler.cs",
+    "apkAddresses": [
+      "0xddc6854"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$CalculateBillboardMatrix",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMatricesJobHandler.cs",
+    "apkAddresses": [
+      "0xddc6988"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMatricesJobHandler$$Schedule",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMatricesJobHandler.cs",
+    "apkAddresses": [
+      "0xddc6424"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$get_BillboardRotateMatrices",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc6a30"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$get_ObjToWorldMatrices",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc6a3c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$get_BillboardMatrices",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc6a48"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc6a54"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$SetBillboardResolution",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7148"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$IsValid",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7150"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7174"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$OnBakeBillboard",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7388"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$RenderBillboard",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7650"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$Dispose",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc77f0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$CreateBillboardMesh",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc6f18"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.BillboardMeshRenderSystem$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/BillboardMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc78d4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdCullJob$$Execute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdCullJob.cs",
+    "apkAddresses": [
+      "0xddc7a24"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$get_Mesh",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7d88"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$get_SubMeshes",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7d90"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$get_MaxInstanceCountsPerSubMesh",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7da8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$set_MaxInstanceCountsPerSubMesh",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7db0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc7db8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$SetupCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8240"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$SetMaxInstanceCounts",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc82d8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$ComputeSkinning",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8304"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$SetHandMatrices",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc857c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$Render",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8700"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$EqualData",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8930"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$Dispose",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8940"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$GetVertexBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8210"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$GetVertexCount",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc84f4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdMeshRenderSystem$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc8a3c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSortJob$$Execute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSortJob.cs",
+    "apkAddresses": [
+      "0xddc8cb0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSortJob$$IsCulledBoundingSphere",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSortJob.cs",
+    "apkAddresses": [
+      "0xddc9120"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSortJob$$IsCulledOcclusionSphere",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSortJob.cs",
+    "apkAddresses": [
+      "0xddc9140"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc4264"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$Setup",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc43c8",
+      "0xddc92f8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$IsActive",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc4510"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$SetDrawCounts",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc485c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$SetBillboardResolution",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc4898"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$ScheduleJobs",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc4918"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$CompleteJobs",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc5e9c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$ComputeCrowdSkinning",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc5fb0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$SetupComputeCrowd",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc5ea8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$ComputeCrowd",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc61bc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$SetupCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc9688"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$SetComputeParams",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc9e30"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$ComputePenlight",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddca238"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$BakeBillboardCrowd",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc638c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$SetupRenderingParameter",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc6208"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$RenderCrowd",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc54e0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$RenderBillboardCrowd",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc56b4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$Dispose",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc517c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$DisposeCrowdMeshRenderSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc96dc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$DisposeBillboardMeshRenderSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc9704"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$DisposePenlightMeshRenderSystem",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc972c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$DisposeCrowdSystemData",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddc99cc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystem$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystem.cs",
+    "apkAddresses": [
+      "0xddcb54c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_CrowdCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb6f0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$set_CrowdCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb6f8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_Bounds",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb700"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$set_Bounds",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb714"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_BaseCellBounds",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb728"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$set_BaseCellBounds",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb73c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_PersonInfoBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb750"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_AnimationMatricesBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb758"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_PersonInfoBytesBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb760"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_PersonIndexBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb768"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_PersonInfos",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb770"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_OctreeInfos",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb77c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_PersonIndexes",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb788"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_InstanceCountsPerSubMesh",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb794"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_BillboardInstanceCount",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb7a0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$get_TotalSubMeshInstanceCount",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca6b8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddc99f4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$SetupCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca5b0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$UpdatePersonIndexBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddc9fe4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$ComputeUpdatePerson",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca08c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$SetBoundsMin",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca720",
+      "0xddcad84"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$SetVisiblePersonCount",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca804"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$SetPersonBuffers",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca8cc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$SetPenlightBuffers",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddca9e8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$SetPersonInfoBytes",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcad08"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$EqualData",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddc9960"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$Dispose",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb3b4"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$InitializeBytesBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb7ac"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$InitializePersonIndexArray",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb86c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$InitializedPenlightInfoBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcb908"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$GetRandomIndex",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcbab8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdSystemData$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdSystemData.cs",
+    "apkAddresses": [
+      "0xddcbb60"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem.<>c$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcc2c8"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem.<>c$$<Dispose>b__26_0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcc338"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$get_PenlightCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcbd38"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$set_PenlightCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcbd40"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$get_UpdatePenlightKernelIndex",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcbd48"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$set_UpdatePenlightKernelIndex",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcbd50"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddc9754"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$SetupCompute",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddca518"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$ComputeUpdatePenlight",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcaabc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$Render",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcae1c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$Dispose",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcb208"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$InitializedArgsBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcbd58"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$InitializeAppendBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcbf1c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$GetPenlightInfoBytesBuffer",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcc0e0"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.PenlightMeshRenderSystem$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/PenlightMeshRenderSystem.cs",
+    "apkAddresses": [
+      "0xddcc120"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdRenderingSetupData$$Update",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdRenderingSetupData.cs",
+    "apkAddresses": [
+      "0xddc45fc"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdUtility$$GetCellFromOctreeAddress",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdUtility.cs",
+    "apkAddresses": [
+      "0xddcd52c"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdUtility$$GetCellBounds",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdUtility.cs",
+    "apkAddresses": [
+      "0xddc7c30"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdUtility$$.cctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdUtility.cs",
+    "apkAddresses": [
+      "0xddcd640"
+    ]
+  },
+  {
+    "method": "Campus.Crowd.CrowdUtility$$<GetCellFromOctreeAddress>g__BitOffset|17_0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdUtility.cs",
+    "apkAddresses": [
+      "0xddcd618"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<Int32Enum, int>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f6810",
+      "0x91f6548"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<long, long, bool>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f7374"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<int>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f7bfc",
+      "0x91f7934"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<Int32Enum>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f8198",
+      "0x91f7ed0"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<object>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f8734",
+      "0x91f846c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<float>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f8a08"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<uint>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f8fa0",
+      "0x91f8cd8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<__Il2CppFullySharedGenericType>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f9604",
+      "0x91f9274"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<int, Int32Enum>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f5194"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<int, object>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f545c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<Int32Enum, long>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f5730"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<Int32Enum, object>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f5a04"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<object, bool>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f5cd8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<object, object>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f5fac"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<int, float>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f6280"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<object, object>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f6ae4"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<uint, bool>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f6db8"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<uint, Color>>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f7080"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<Color>",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "apkAddresses": [
+      "0x91f7670"
+    ]
+  }
+]
