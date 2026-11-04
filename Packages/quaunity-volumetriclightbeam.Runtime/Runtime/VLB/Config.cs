@@ -100,7 +100,7 @@ namespace VLB
         {
             get
             {
-                return GetActualRenderingMode(ShaderMode.SD) != RenderingMode.Default;
+                return GetActualRenderingMode(ShaderMode.SD) != RenderingMode.MultiPass;
             }
         }
 

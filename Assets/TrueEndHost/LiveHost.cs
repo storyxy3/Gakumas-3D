@@ -146,6 +146,18 @@ namespace TrueEnd.Host
                 }
                 Debug.Log($"LIVE_STOPPED time={timeline.master.time}");
                 timeline.master.Stop();
+                musicSource.Stop();
+                await SceneManager.UnloadSceneAsync(live);
+                actor.DestroyActor();
+                Destroy(cameraObject);
+                await UniTask.NextFrame();
+                await SceneManager.UnloadSceneAsync(stage);
+                QualitySettings.renderPipeline = null;
+                GraphicsSettings.defaultRenderPipeline = null;
+                Destroy(pipeline);
+                await UniTask.NextFrame();
+                ResourcesAPI.overrideAPI = null;
+                foreach (var bundle in bundles.Values) bundle.Unload(true);
                 Application.Quit();
             }
             catch (Exception exception)

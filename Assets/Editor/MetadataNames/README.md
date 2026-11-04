@@ -23,11 +23,9 @@ PDBs. Definition collisions fail compilation instead of producing ambiguous
 metadata. Generic method arity is part of the collision identity. A compiler log line beginning `QA_RECON_METADATA` records the number
 of changed identifiers per assembly.
 
-Inputs default to this task's server paths:
-
-- Project: `/data/xy/gakumas/live-urp`, override with `QA_RECON_PROJECT`.
-- Original DummyDlls: `/data/xy/gakumas/work/il2cpp-3.5.3/DummyDll`, override with
-  `QA_RECON_DUMMYDLL`.
+The project defaults to the Unity process working directory and can be set with
+`QA_RECON_PROJECT`. Original DummyDlls default to `../work/il2cpp-3.5.3/DummyDll`
+relative to the project and can be set with `QA_RECON_DUMMYDLL`.
 
 The original DummyDlls must remain available during compilation. Missing input
 for a selected assembly fails compilation. Set overrides before starting Unity
