@@ -15,7 +15,13 @@ namespace ActorAnimation
         public PropertyStreamHandle headOriginalRotationZWriteBackPropertyHandle;
         public ActorAnimationFullBodyIKWriteBack(Animator animator, ReadOnlyTransformHandle headTransformHandle, PropertyStreamHandle headOriginalPositionXWriteBackPropertyHandle, PropertyStreamHandle headOriginalPositionYWriteBackPropertyHandle, PropertyStreamHandle headOriginalPositionZWriteBackPropertyHandle, PropertyStreamHandle headOriginalRotationXWriteBackPropertyHandle, PropertyStreamHandle headOriginalRotationYWriteBackPropertyHandle, PropertyStreamHandle headOriginalRotationZWriteBackPropertyHandle)
         {
-            this = default;
+            this.headTransformHandle = headTransformHandle;
+            this.headOriginalPositionXWriteBackPropertyHandle = headOriginalPositionXWriteBackPropertyHandle;
+            this.headOriginalPositionYWriteBackPropertyHandle = headOriginalPositionYWriteBackPropertyHandle;
+            this.headOriginalPositionZWriteBackPropertyHandle = headOriginalPositionZWriteBackPropertyHandle;
+            this.headOriginalRotationXWriteBackPropertyHandle = headOriginalRotationXWriteBackPropertyHandle;
+            this.headOriginalRotationYWriteBackPropertyHandle = headOriginalRotationYWriteBackPropertyHandle;
+            this.headOriginalRotationZWriteBackPropertyHandle = headOriginalRotationZWriteBackPropertyHandle;
         }
     }
 }

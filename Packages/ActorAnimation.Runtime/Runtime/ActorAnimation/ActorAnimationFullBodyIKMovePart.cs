@@ -20,7 +20,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformStreamHandle);
+                return _003CreferenceHandle_003Ek__BackingField;
             }
         }
 
@@ -29,7 +29,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformStreamHandle);
+                return _003CtargetHandle_003Ek__BackingField;
             }
         }
 
@@ -38,7 +38,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformStreamHandle);
+                return _003CskeletonHandle_003Ek__BackingField;
             }
         }
 
@@ -47,18 +47,22 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float3);
+                return _003CmoveDelta_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CmoveDelta_003Ek__BackingField = value;
             }
         }
 
         public ActorAnimationFullBodyIKMovePart(Animator animator, Transform reference, Transform target, Transform skeleton)
         {
-            this = default;
+            _003CreferenceHandle_003Ek__BackingField = animator.BindStreamTransform(reference);
+            _003CtargetHandle_003Ek__BackingField = animator.BindStreamTransform(target);
+            _003CskeletonHandle_003Ek__BackingField = animator.BindStreamTransform(skeleton);
+            _003CmoveDelta_003Ek__BackingField = float3.zero;
         }
     }
 }

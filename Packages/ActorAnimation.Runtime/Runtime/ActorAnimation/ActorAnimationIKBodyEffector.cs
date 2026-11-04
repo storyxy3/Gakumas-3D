@@ -19,7 +19,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(ActorAnimationIKHandleType);
+                return _003ChandleType_003Ek__BackingField;
             }
         }
 
@@ -28,7 +28,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003CreferenceAnimationHandle_003Ek__BackingField;
             }
         }
 
@@ -37,33 +37,55 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformSceneHandle);
+                return _003CreferenceSceneHandle_003Ek__BackingField;
             }
         }
 
         public ActorAnimationIKBodyEffector(Animator animator, Transform locator, ActorAnimationIKHandleType handleType)
         {
-            this = default;
+            _003CreferenceAnimationHandle_003Ek__BackingField = ReadOnlyTransformHandle.Bind(animator, locator);
+            _003CreferenceSceneHandle_003Ek__BackingField = animator.BindSceneTransform(locator);
+            _003ChandleType_003Ek__BackingField = handleType;
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            switch (handleType)
+            {
+                case (ActorAnimationIKHandleType)0: return referenceAnimationHandle.IsValid(stream);
+                case (ActorAnimationIKHandleType)1: return referenceSceneHandle.IsValid(stream);
+                default: return false;
+            }
         }
 
         public Vector3 GetPosition(AnimationStream stream)
         {
-            return default(Vector3);
+            switch (handleType)
+            {
+                case (ActorAnimationIKHandleType)0: return referenceAnimationHandle.GetPosition(stream);
+                case (ActorAnimationIKHandleType)1: return referenceSceneHandle.GetPosition(stream);
+                default: return Vector3.zero;
+            }
         }
 
         public Quaternion GetRotation(AnimationStream stream)
         {
-            return default(Quaternion);
+            switch (handleType)
+            {
+                case (ActorAnimationIKHandleType)0: return referenceAnimationHandle.GetRotation(stream);
+                case (ActorAnimationIKHandleType)1: return referenceSceneHandle.GetRotation(stream);
+                default: return Quaternion.identity;
+            }
         }
 
         public Vector3 GetLocalScale(AnimationStream stream)
         {
-            return default(Vector3);
+            switch (handleType)
+            {
+                case (ActorAnimationIKHandleType)0: return referenceAnimationHandle.GetLocalScale(stream);
+                case (ActorAnimationIKHandleType)1: return referenceSceneHandle.GetLocalScale(stream);
+                default: return Vector3.one;
+            }
         }
     }
 }

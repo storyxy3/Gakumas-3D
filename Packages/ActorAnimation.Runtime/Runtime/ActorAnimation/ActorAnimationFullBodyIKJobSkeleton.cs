@@ -34,6 +34,7 @@ namespace ActorAnimation
         public ActorAnimationFullBodyIKWriteBack writeBack;
         public void Execute(AnimationStream stream)
         {
+            // TODO(qa-recon): APK full-body IK execution and its pull/correction solver callees remain unreconstructed.
         }
 
         private void WriteBack(AnimationStream stream)

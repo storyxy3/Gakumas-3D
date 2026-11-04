@@ -20,7 +20,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CeyesWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -29,7 +29,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CheadWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -38,7 +38,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -47,7 +47,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003CreferenceHandle_003Ek__BackingField;
             }
         }
 
@@ -58,7 +58,10 @@ namespace ActorAnimation
 
         public ActorAnimationIKLookAtEffector(ReadOnlyTransformHandle referenceHandle, PropertySceneHandle eyesWeightHandle, PropertySceneHandle headWeightHandle, PropertySceneHandle bodyWeightHandle)
         {
-            this = default;
+            _003CreferenceHandle_003Ek__BackingField = referenceHandle;
+            _003CeyesWeightHandle_003Ek__BackingField = eyesWeightHandle;
+            _003CheadWeightHandle_003Ek__BackingField = headWeightHandle;
+            _003CbodyWeightHandle_003Ek__BackingField = bodyWeightHandle;
         }
     }
 }

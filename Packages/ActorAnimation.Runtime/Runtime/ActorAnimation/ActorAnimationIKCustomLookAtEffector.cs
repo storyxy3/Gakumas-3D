@@ -33,12 +33,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003CreferenceHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CreferenceHandle_003Ek__BackingField = value;
             }
         }
 
@@ -47,12 +48,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CuseCustomTargetPositionHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CuseCustomTargetPositionHandle_003Ek__BackingField = value;
             }
         }
 
@@ -61,12 +63,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CcustomTargetPositionXHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcustomTargetPositionXHandle_003Ek__BackingField = value;
             }
         }
 
@@ -75,12 +78,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CcustomTargetPositionYHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcustomTargetPositionYHandle_003Ek__BackingField = value;
             }
         }
 
@@ -89,12 +93,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CcustomTargetPositionZHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcustomTargetPositionZHandle_003Ek__BackingField = value;
             }
         }
 
@@ -103,12 +108,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CeyesWeightHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CeyesWeightHandle_003Ek__BackingField = value;
             }
         }
 
@@ -117,12 +123,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CheadWeightHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CheadWeightHandle_003Ek__BackingField = value;
             }
         }
 
@@ -131,12 +138,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyWeightHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CbodyWeightHandle_003Ek__BackingField = value;
             }
         }
 
@@ -145,12 +153,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CcustomUseWeightHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcustomUseWeightHandle_003Ek__BackingField = value;
             }
         }
 
@@ -159,6 +168,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             set
             {
+                _003CweightHandle_003Ek__BackingField = value;
             }
         }
 

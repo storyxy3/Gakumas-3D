@@ -5,6 +5,7 @@ namespace ActorAnimation
     using global::Campus.Common;
     using global::Unity.Burst;
     using global::Unity.Collections;
+    using global::Unity.Collections.LowLevel.Unsafe;
     using global::UnityEngine;
     using global::UnityEngine.Animations;
     using global::UnityEngine.Animations.Rigging;
@@ -373,10 +374,74 @@ namespace ActorAnimation
 
         public void CreateFullBodyIK(Animator animator, IActorAnimationRigData rigData)
         {
+            if (!(rigData is CampusActorAnimationRigData campusData)) return;
+            _fullBodyIKJobSkeleton = default;
+            foreach (var effector in campusData.effectors)
+            {
+                if (effector is IKGoalEffector goal)
+                {
+                    switch (goal.goal)
+                    {
+                        case AvatarIKGoal.LeftFoot: _fullBodyIKJobSkeleton.leftFootEffector = new ActorAnimationIKGoalEffector(animator, goal.transform, AvatarIKGoal.LeftFoot, goal.HandleType); break;
+                        case AvatarIKGoal.RightFoot: _fullBodyIKJobSkeleton.rightFootEffector = new ActorAnimationIKGoalEffector(animator, goal.transform, AvatarIKGoal.RightFoot, goal.HandleType); break;
+                        case AvatarIKGoal.LeftHand: _fullBodyIKJobSkeleton.leftHandEffector = new ActorAnimationIKGoalEffector(animator, goal.transform, AvatarIKGoal.LeftHand, goal.HandleType); break;
+                        case AvatarIKGoal.RightHand: _fullBodyIKJobSkeleton.rightHandEffector = new ActorAnimationIKGoalEffector(animator, goal.transform, AvatarIKGoal.RightHand, goal.HandleType); break;
+                    }
+                }
+                else if (effector is IKHintEffector hint)
+                {
+                    switch (hint.hint)
+                    {
+                        case AvatarIKHint.LeftKnee: _fullBodyIKJobSkeleton.leftKneeHintEffector = new ActorAnimationIKHintEffector(animator, hint.transform, AvatarIKHint.LeftKnee, hint.HandleType); break;
+                        case AvatarIKHint.RightKnee: _fullBodyIKJobSkeleton.rightKneeHintEffector = new ActorAnimationIKHintEffector(animator, hint.transform, AvatarIKHint.RightKnee, hint.HandleType); break;
+                        case AvatarIKHint.LeftElbow: _fullBodyIKJobSkeleton.leftElbowHintEffector = new ActorAnimationIKHintEffector(animator, hint.transform, AvatarIKHint.LeftElbow, hint.HandleType); break;
+                        case AvatarIKHint.RightElbow: _fullBodyIKJobSkeleton.rightElbowHintEffector = new ActorAnimationIKHintEffector(animator, hint.transform, AvatarIKHint.RightElbow, hint.HandleType); break;
+                    }
+                }
+                else if (effector is IKBodyEffector body)
+                    _fullBodyIKJobSkeleton.bodyEffector = new ActorAnimationIKBodyEffector(animator, body.transform, body.HandleType);
+                else if (effector is LookAtEffector lookAt)
+                    _fullBodyIKJobSkeleton.lookAtEffector = new CampusActorAnimationIKLookAtEffector(animator, lookAt.transform).ToActorAnimation();
+            }
+            _fullBodyIKJobSkeleton.customLookAtEffector = new ActorAnimationIKCustomLookAtEffector(animator);
+            _fullBodyIKJobSkeleton.leftArmLimb = new ActorAnimationFullBodyIKLimbPart(animator, HumanBodyBones.LeftUpperArm, HumanBodyBones.LeftLowerArm, HumanBodyBones.LeftHand);
+            _fullBodyIKJobSkeleton.rightArmLimb = new ActorAnimationFullBodyIKLimbPart(animator, HumanBodyBones.RightUpperArm, HumanBodyBones.RightLowerArm, HumanBodyBones.RightHand);
+            _fullBodyIKJobSkeleton.leftLegLimb = new ActorAnimationFullBodyIKLimbPart(animator, HumanBodyBones.LeftUpperLeg, HumanBodyBones.LeftLowerLeg, HumanBodyBones.LeftFoot);
+            _fullBodyIKJobSkeleton.rightLegLimb = new ActorAnimationFullBodyIKLimbPart(animator, HumanBodyBones.RightUpperLeg, HumanBodyBones.RightLowerLeg, HumanBodyBones.RightFoot);
+            _fullBodyIKJobSkeleton.move = new ActorAnimationFullBodyIKMovePart(animator, campusData.move, campusData.hips.parent, campusData.hips);
+            _fullBodyIKJobSkeleton.pull = new CampusActorAnimationFullBodyIKPullPart(animator, campusData.root.parent).ToActorAnimation();
+            _fullBodyIKJobSkeleton.correctionGoalRightHand = new ActorAnimationIKCorrectionJobGoal(animator, campusData.rightHandGoal);
+            _fullBodyIKJobSkeleton.correctionGoalLeftHand = new ActorAnimationIKCorrectionJobGoal(animator, campusData.leftHandGoal);
+            _fullBodyIKJobSkeleton.correctionColliders = new NativeArray<ActorAnimationIKCorrectionJobCollider>(8, Allocator.Persistent);
+            for (int i = 0; i < campusData.ikCorrectionColliders.Count; i++)
+                _fullBodyIKJobSkeleton.correctionColliders[i] = new ActorAnimationIKCorrectionJobCollider(animator, campusData.ikCorrectionColliders[i]);
+            _fullBodyIKJobSkeleton.nodAdditiveJob = new ActorAnimationNodAdditiveJob(
+                new MuscleHandle((HeadDof)0),
+                new MuscleHandle((HeadDof)1),
+                new MuscleHandle((HeadDof)2),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "nodAdditiveNeckFrontBackWeight"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "nodAdditiveNeckLeftRightWeight"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "nodAdditiveNeckRollLeftRightWeight"),
+                new MuscleHandle((HeadDof)3),
+                new MuscleHandle((HeadDof)4),
+                new MuscleHandle((HeadDof)5),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "nodAdditiveHeadFrontBackWeight"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "nodAdditiveHeadLeftRightWeight"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "nodAdditiveHeadRollLeftRightWeight"));
+            _fullBodyIKJobSkeleton.writeBack = new ActorAnimationFullBodyIKWriteBack(
+                animator,
+                ReadOnlyTransformHandle.Bind(animator, campusData.head),
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "fullBodyIkHeadOriginalPositionX"),
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "fullBodyIkHeadOriginalPositionY"),
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "fullBodyIkHeadOriginalPositionZ"),
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "fullBodyIkHeadOriginalRotationX"),
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "fullBodyIkHeadOriginalRotationY"),
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "fullBodyIkHeadOriginalRotationZ"));
         }
 
         public void CreateSwingSkeleton(Animator animator, IActorAnimationRigData rigData)
         {
+            // TODO(qa-recon): APK factory still needs dynamic-bone, breast, chain and seated-correction data reconstruction.
         }
 
         public void CreateRoot(Animator animator, IActorAnimationRigData rigData)
@@ -385,14 +450,37 @@ namespace ActorAnimation
                 _rootController = new ActorAnimationRootControllerJobLocator(campusData.root.parent, campusData.rootReference, animator);
         }
 
-        public void UpdateConstraintSource<TData>(ref TData rigData, Animator animator)
+        public unsafe void UpdateConstraintSource<TData>(ref TData rigData, Animator animator)
             where TData : struct, IActorAnimationRigData
         {
+            var jobBone = (ActorAnimationConstraintTransformJobBone*)constraintTransformJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.constraintTransformBones)
+            {
+                if (bone.isDirty)
+                {
+                    jobBone->UpdateSource(bone, animator);
+                    bone.ResetDirty();
+                }
+                jobBone++;
+            }
         }
 
-        public void UpdateIKCorrectionColliderProperty<TData>(ref TData rigData, Animator animator)
+        public unsafe void UpdateIKCorrectionColliderProperty<TData>(ref TData rigData, Animator animator)
             where TData : struct, IActorAnimationRigData
         {
+            if (rigData is CampusActorAnimationRigData campusData)
+            {
+                var jobCollider = (ActorAnimationIKCorrectionJobCollider*)fullBodyIKJobSkeleton.correctionColliders.GetUnsafeReadOnlyPtr();
+                foreach (var collider in campusData.ikCorrectionColliders)
+                {
+                    if (collider.isDirty)
+                    {
+                        jobCollider->UpdateProperty(collider, animator);
+                        collider.ResetDirty();
+                    }
+                    jobCollider++;
+                }
+            }
         }
 
         public void UpdateManageProperty(ActorAnimationManageProperty manageProperty)
@@ -400,9 +488,201 @@ namespace ActorAnimation
             _swingJobSkeleton.manageProperty = manageProperty;
         }
 
-        public void UpdateRigData<TData>(ref TData rigData)
+        public unsafe void UpdateRigData<TData>(ref TData rigData)
             where TData : struct, IActorAnimationRigData
         {
+            var constraintJob = (ActorAnimationConstraintTransformJobBone*)constraintTransformJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.constraintTransformBones)
+            {
+                if (bone.isDirty)
+                {
+                    constraintJob->Update(bone);
+                    bone.ResetDirty();
+                }
+                constraintJob++;
+            }
+            var rotationJob = (ActorAnimationQuartzDriverRotationJobBone*)quartzDriverRotationJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverRotationBones)
+            {
+                if (bone.isDirty)
+                {
+                    rotationJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                rotationJob++;
+            }
+            var frillJob = (ActorAnimationQuartzDriverFrillJobBone*)quartzDriverFrillJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverFrillBones)
+            {
+                if (bone.isDirty)
+                {
+                    frillJob->Update(bone.setting.ConvertToUnity());
+                    bone.ResetDirty();
+                }
+                frillJob++;
+            }
+            var skirtJob = (ActorAnimationQuartzDriverSkirtJobBone*)quartzDriverSkirtJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverSkirtBones)
+            {
+                if (bone.isDirty)
+                {
+                    skirtJob->Update(bone.setting.ConvertToUnity());
+                    bone.ResetDirty();
+                }
+                skirtJob++;
+            }
+            var hairJob = (ActorAnimationQuartzDriverHairJobBone*)quartzDriverHairJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverHairBones)
+            {
+                if (bone.isDirty)
+                {
+                    hairJob->Update(bone.setting.ConvertToUnity());
+                    bone.ResetDirty();
+                }
+                hairJob++;
+            }
+            var humanoidHandJob = (ActorAnimationQuartzDriverHumanoidHandJobBone*)quartzDriverHumanoidHandJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverHumanoidHandBones)
+            {
+                if (bone.isDirty)
+                {
+                    humanoidHandJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                humanoidHandJob++;
+            }
+            var humanoidSleeveJob = (ActorAnimationQuartzDriverHumanoidSleeveJobBone*)quartzDriverHumanoidSleeveJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverHumanoidSleeveBones)
+            {
+                if (bone.isDirty)
+                {
+                    humanoidSleeveJob->Update(bone.setting.ConvertToUnity());
+                    bone.ResetDirty();
+                }
+                humanoidSleeveJob++;
+            }
+            var humanoidUpLegJob = (ActorAnimationQuartzDriverHumanoidUpLegJobBone*)quartzDriverHumanoidUpLegJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverHumanoidUpLegBones)
+            {
+                if (bone.isDirty)
+                {
+                    humanoidUpLegJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                humanoidUpLegJob++;
+            }
+            var humanoidArmJob = (ActorAnimationQuartzDriverHumanoidArmJobBone*)quartzDriverHumanoidArmJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverHumanoidArmBones)
+            {
+                if (bone.isDirty)
+                {
+                    humanoidArmJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                humanoidArmJob++;
+            }
+            var waistJob = (ActorAnimationQuartzDriverWaistJobBone*)quartzDriverWaistJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverWaistBones)
+            {
+                if (bone.isDirty)
+                {
+                    waistJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                waistJob++;
+            }
+            var furisodeJob = (ActorAnimationQuartzDriverFurisodeJobBone*)quartzDriverFurisodeJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverFurisodeBones)
+            {
+                if (bone.isDirty)
+                {
+                    furisodeJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                furisodeJob++;
+            }
+            var ponchoJob = (ActorAnimationQuartzDriverPonchoJobBone*)quartzDriverPonchoJobBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.quartzDriverPonchoBones)
+            {
+                if (bone.isDirty)
+                {
+                    ponchoJob->Update(bone.setting);
+                    bone.ResetDirty();
+                }
+                ponchoJob++;
+            }
+            var breastJob = (ActorSwingJobBreastBone*)swingJobSkeleton.breastBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.swingBreastBones)
+            {
+                if (bone.isDirty)
+                {
+                    breastJob->damping = bone.damping;
+                    breastJob->stiffness = bone.stiffness;
+                    breastJob->spring = bone.spring;
+                    breastJob->pendulum = bone.pendulum;
+                    breastJob->pendulumRange = bone.pendulumRange;
+                    breastJob->average = bone.average;
+                    breastJob->useArmCorrection = bone.useArmCorrection;
+                    breastJob->limit = new ActorSwingJobLimitInfo(bone.limitInfo);
+                    breastJob->rootWeight = bone.rootWeight;
+                    bone.ResetDirty();
+                }
+                breastJob++;
+            }
+            var dynamicJob = (ActorSwingJobDynamicBone*)swingJobSkeleton.dynamicBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.swingDynamicBones)
+            {
+                if (bone.isDirty)
+                {
+                    int referenceIndex = -1;
+                    if (bone.referenceLimitInfo.bone != null && swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(bone.referenceLimitInfo.bone.transform.GetInstanceID(), out referenceIndex))
+                    {
+                        swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(bone.transform.GetInstanceID(), out int index);
+                        if (index <= referenceIndex) referenceIndex = -1;
+                    }
+                    dynamicJob->damping = bone.damping;
+                    dynamicJob->stiffness = bone.stiffness;
+                    dynamicJob->spring = bone.spring;
+                    dynamicJob->pendulum = bone.pendulum;
+                    dynamicJob->pendulumRange = bone.pendulumRange;
+                    dynamicJob->mass = bone.mass;
+                    dynamicJob->axisAddXToY = bone.axisAddXToY;
+                    dynamicJob->axisAddXToZ = bone.axisAddXToZ;
+                    dynamicJob->wind = bone.wind;
+                    dynamicJob->collision = default;
+                    dynamicJob->limit = new ActorSwingJobLimitInfo(bone.limitInfo);
+                    dynamicJob->referenceLimit = new ActorSwingJobReferenceLimitInfo(bone.referenceLimitInfo, bone.dynamicType == DynamicType.Swing ? referenceIndex : -1);
+                    dynamicJob->rootWeight = bone.rootWeight;
+                    dynamicJob->seatDynamicCorrection = bone.seatDynamicCorrection;
+                    dynamicJob->collider = ActorSwingColliderUtility.ConvertJobCollider(bone);
+                    bone.ResetDirty();
+                }
+                dynamicJob++;
+            }
+            var staticJob = (ActorSwingJobStaticBone*)swingJobSkeleton.staticBones.GetUnsafeReadOnlyPtr();
+            foreach (var bone in rigData.swingStaticBones)
+            {
+                if (bone.isDirty)
+                {
+                    staticJob->collider = ActorSwingColliderUtility.ConvertJobCollider(bone);
+                    bone.ResetDirty();
+                }
+                staticJob++;
+            }
+            var chainJob = (ActorSwingJobChainBone*)swingJobSkeleton.chainBones.GetUnsafeReadOnlyPtr();
+            foreach (var layer in rigData.swingChainLayers)
+            {
+                if (layer.active)
+                {
+                    for (int i = 0; i < layer.bones.Count; i++)
+                    {
+                        if (i == layer.bones.Count - 1 && !layer.around) break;
+                        if (layer.isDirty) chainJob->smoothing = layer.smoothing;
+                        chainJob++;
+                    }
+                    layer.ResetDirty();
+                }
+            }
         }
 
         public void SetupCustomLookAtEffector(Animator animator, CustomLookAtEffector customLookAtEffector)

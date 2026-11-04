@@ -20,7 +20,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003ClookAtClampWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -29,7 +29,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CstiffnessHandle_003Ek__BackingField;
             }
         }
 
@@ -38,7 +38,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CmaxPullIterationHandle_003Ek__BackingField;
             }
         }
 
@@ -47,18 +47,21 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003ChandDownHandle_003Ek__BackingField;
             }
         }
 
         public CampusActorAnimationFullBodyIKPullPart(Animator animator, Transform reference)
         {
-            this = default;
+            _003ClookAtClampWeightHandle_003Ek__BackingField = animator.BindSceneProperty(reference, typeof(global::Campus.Common.CampusActorAnimation), "lookAtClampWeight");
+            _003CstiffnessHandle_003Ek__BackingField = animator.BindSceneProperty(reference, typeof(global::Campus.Common.CampusActorAnimation), "stiffness");
+            _003CmaxPullIterationHandle_003Ek__BackingField = animator.BindSceneProperty(reference, typeof(global::Campus.Common.CampusActorAnimation), "maxPullIteration");
+            _003ChandDownHandle_003Ek__BackingField = animator.BindSceneProperty(reference, typeof(global::Campus.Common.CampusActorAnimation), "handDown");
         }
 
         public ActorAnimationFullBodyIKPullPart ToActorAnimation()
         {
-            return default(ActorAnimationFullBodyIKPullPart);
+            return new ActorAnimationFullBodyIKPullPart(lookAtClampWeightHandle, stiffnessHandle, maxPullIterationHandle, handDownHandle);
         }
     }
 }

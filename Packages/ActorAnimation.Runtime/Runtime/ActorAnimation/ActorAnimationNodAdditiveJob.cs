@@ -34,12 +34,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(MuscleHandle);
+                return _003CneckFrontBackMuscleHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CneckFrontBackMuscleHandle_003Ek__BackingField = value;
             }
         }
 
@@ -48,12 +49,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(MuscleHandle);
+                return _003CneckLeftRightMuscleHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CneckLeftRightMuscleHandle_003Ek__BackingField = value;
             }
         }
 
@@ -62,12 +64,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(MuscleHandle);
+                return _003CneckRollLeftRightMuscleHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CneckRollLeftRightMuscleHandle_003Ek__BackingField = value;
             }
         }
 
@@ -76,12 +79,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CnodAdditiveNeckFrontBackWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CnodAdditiveNeckFrontBackWeight_003Ek__BackingField = value;
             }
         }
 
@@ -90,12 +94,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CnodAdditiveNeckLeftRightWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CnodAdditiveNeckLeftRightWeight_003Ek__BackingField = value;
             }
         }
 
@@ -104,12 +109,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CnodAdditiveNeckRollLeftRightWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CnodAdditiveNeckRollLeftRightWeight_003Ek__BackingField = value;
             }
         }
 
@@ -118,12 +124,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(MuscleHandle);
+                return _003CheadFrontBackMuscleHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CheadFrontBackMuscleHandle_003Ek__BackingField = value;
             }
         }
 
@@ -132,12 +139,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(MuscleHandle);
+                return _003CheadLeftRightMuscleHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CheadLeftRightMuscleHandle_003Ek__BackingField = value;
             }
         }
 
@@ -146,12 +154,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(MuscleHandle);
+                return _003CheadRollLeftRightMuscleHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CheadRollLeftRightMuscleHandle_003Ek__BackingField = value;
             }
         }
 
@@ -160,12 +169,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CnodAdditiveHeadFrontBackWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CnodAdditiveHeadFrontBackWeight_003Ek__BackingField = value;
             }
         }
 
@@ -174,12 +184,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CnodAdditiveHeadLeftRightWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CnodAdditiveHeadLeftRightWeight_003Ek__BackingField = value;
             }
         }
 
@@ -188,18 +199,30 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(PropertySceneHandle);
+                return _003CnodAdditiveHeadRollLeftRightWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CnodAdditiveHeadRollLeftRightWeight_003Ek__BackingField = value;
             }
         }
 
         public ActorAnimationNodAdditiveJob(MuscleHandle neckFrontBackMuscleHandle, MuscleHandle neckLeftRightMuscleHandle, MuscleHandle neckRollLeftRightMuscleHandle, PropertySceneHandle nodAdditiveNeckFrontBackWeight, PropertySceneHandle nodAdditiveNeckLeftRightWeight, PropertySceneHandle nodAdditiveNeckRollLeftRightWeight, MuscleHandle headFrontBackMuscleHandle, MuscleHandle headLeftRightMuscleHandle, MuscleHandle headRollLeftRightMuscleHandle, PropertySceneHandle nodAdditiveHeadFrontBackWeight, PropertySceneHandle nodAdditiveHeadLeftRightWeight, PropertySceneHandle nodAdditiveHeadRollLeftRightWeight)
         {
-            this = default;
+            _003CneckFrontBackMuscleHandle_003Ek__BackingField = neckFrontBackMuscleHandle;
+            _003CneckLeftRightMuscleHandle_003Ek__BackingField = neckLeftRightMuscleHandle;
+            _003CneckRollLeftRightMuscleHandle_003Ek__BackingField = neckRollLeftRightMuscleHandle;
+            _003CnodAdditiveNeckFrontBackWeight_003Ek__BackingField = nodAdditiveNeckFrontBackWeight;
+            _003CnodAdditiveNeckLeftRightWeight_003Ek__BackingField = nodAdditiveNeckLeftRightWeight;
+            _003CnodAdditiveNeckRollLeftRightWeight_003Ek__BackingField = nodAdditiveNeckRollLeftRightWeight;
+            _003CheadFrontBackMuscleHandle_003Ek__BackingField = headFrontBackMuscleHandle;
+            _003CheadLeftRightMuscleHandle_003Ek__BackingField = headLeftRightMuscleHandle;
+            _003CheadRollLeftRightMuscleHandle_003Ek__BackingField = headRollLeftRightMuscleHandle;
+            _003CnodAdditiveHeadFrontBackWeight_003Ek__BackingField = nodAdditiveHeadFrontBackWeight;
+            _003CnodAdditiveHeadLeftRightWeight_003Ek__BackingField = nodAdditiveHeadLeftRightWeight;
+            _003CnodAdditiveHeadRollLeftRightWeight_003Ek__BackingField = nodAdditiveHeadRollLeftRightWeight;
         }
     }
 }

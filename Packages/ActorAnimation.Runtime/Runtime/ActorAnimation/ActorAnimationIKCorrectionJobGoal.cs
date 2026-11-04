@@ -22,7 +22,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CenableHandle_003Ek__BackingField;
             }
         }
 
@@ -31,7 +31,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CradiusHandle_003Ek__BackingField;
             }
         }
 
@@ -40,7 +40,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CoffsetXHandle_003Ek__BackingField;
             }
         }
 
@@ -49,7 +49,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CoffsetYHandle_003Ek__BackingField;
             }
         }
 
@@ -58,13 +58,19 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CoffsetZHandle_003Ek__BackingField;
             }
         }
 
         public ActorAnimationIKCorrectionJobGoal(Animator animator, ActorAnimationIKCorrectionGoal correctionGoal)
         {
             this = default;
+            if (correctionGoal == null) return;
+            _003CenableHandle_003Ek__BackingField = animator.BindSceneProperty(correctionGoal.transform, typeof(ActorAnimationIKCorrectionGoal), "enable");
+            _003CradiusHandle_003Ek__BackingField = animator.BindSceneProperty(correctionGoal.transform, typeof(ActorAnimationIKCorrectionGoal), "radius");
+            _003CoffsetXHandle_003Ek__BackingField = animator.BindSceneProperty(correctionGoal.transform, typeof(ActorAnimationIKCorrectionGoal), "offset.x");
+            _003CoffsetYHandle_003Ek__BackingField = animator.BindSceneProperty(correctionGoal.transform, typeof(ActorAnimationIKCorrectionGoal), "offset.y");
+            _003CoffsetZHandle_003Ek__BackingField = animator.BindSceneProperty(correctionGoal.transform, typeof(ActorAnimationIKCorrectionGoal), "offset.z");
         }
     }
 }

@@ -21,7 +21,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CeyesWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -30,7 +30,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CheadWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -39,7 +39,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -48,17 +48,21 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003CreferenceHandle_003Ek__BackingField;
             }
         }
 
         public CampusActorAnimationIKLookAtEffector(Animator animator, Transform locator)
         {
+            _003CreferenceHandle_003Ek__BackingField = ReadOnlyTransformHandle.Bind(animator, locator);
+            _003CeyesWeightHandle_003Ek__BackingField = animator.BindSceneProperty(locator, typeof(global::VL.IK.LookAtEffector), "eyesWeight");
+            _003CheadWeightHandle_003Ek__BackingField = animator.BindSceneProperty(locator, typeof(global::VL.IK.LookAtEffector), "headWeight");
+            _003CbodyWeightHandle_003Ek__BackingField = animator.BindSceneProperty(locator, typeof(global::VL.IK.LookAtEffector), "bodyWeight");
         }
 
         public ActorAnimationIKLookAtEffector ToActorAnimation()
         {
-            return default(ActorAnimationIKLookAtEffector);
+            return new ActorAnimationIKLookAtEffector(referenceHandle, eyesWeightHandle, headWeightHandle, bodyWeightHandle);
         }
     }
 }

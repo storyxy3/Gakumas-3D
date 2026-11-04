@@ -20,7 +20,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CstiffnessHandle_003Ek__BackingField;
             }
         }
 
@@ -29,7 +29,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CmaxPullIterationHandle_003Ek__BackingField;
             }
         }
 
@@ -40,7 +40,10 @@ namespace ActorAnimation
 
         public ActorAnimationFullBodyIKPullPart(PropertySceneHandle lookAtClampWeightHandle, PropertySceneHandle stiffnessHandle, PropertySceneHandle maxPullIterationHandle, PropertySceneHandle handDownHandle)
         {
-            this = default;
+            _003ClookAtClampWeightHandle_003Ek__BackingField = lookAtClampWeightHandle;
+            _003CstiffnessHandle_003Ek__BackingField = stiffnessHandle;
+            _003CmaxPullIterationHandle_003Ek__BackingField = maxPullIterationHandle;
+            _003ChandDownHandle_003Ek__BackingField = handDownHandle;
         }
     }
 }

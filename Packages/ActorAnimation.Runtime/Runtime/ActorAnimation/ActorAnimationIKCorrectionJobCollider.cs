@@ -18,11 +18,28 @@ namespace ActorAnimation
         public float3 rotation;
         public ActorAnimationIKCorrectionJobCollider(Animator animator, ActorAnimationIKCorrectionCollider collider)
         {
-            this = default;
+            referenceHandle = ReadOnlyTransformHandle.Bind(animator, collider.transform);
+            type = collider.type;
+            weight = collider.weight;
+            radius = collider.radius;
+            radiusSub = collider.radiusSub;
+            length = collider.length;
+            dampArea = collider.dampArea;
+            offset = collider.offset;
+            rotation = collider.rotation;
         }
 
         public void UpdateProperty(ActorAnimationIKCorrectionCollider collider, Animator animator)
         {
+            referenceHandle = ReadOnlyTransformHandle.Bind(animator, collider.transform);
+            type = collider.type;
+            weight = collider.weight;
+            radius = collider.radius;
+            radiusSub = collider.radiusSub;
+            length = collider.length;
+            dampArea = collider.dampArea;
+            offset = collider.offset;
+            rotation = collider.rotation;
         }
     }
 }

@@ -30,7 +30,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformStreamHandle);
+                return _003CtopHandle_003Ek__BackingField;
             }
         }
 
@@ -39,7 +39,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformStreamHandle);
+                return _003CmiddleHandle_003Ek__BackingField;
             }
         }
 
@@ -48,7 +48,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(TransformStreamHandle);
+                return _003CendHandle_003Ek__BackingField;
             }
         }
 
@@ -57,12 +57,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float);
+                return _003CmaximumExtension_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CmaximumExtension_003Ek__BackingField = value;
             }
         }
 
@@ -71,12 +72,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float3);
+                return _003ClocalPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003ClocalPosition_003Ek__BackingField = value;
             }
         }
 
@@ -85,12 +87,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float3);
+                return _003CgoalPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CgoalPosition_003Ek__BackingField = value;
             }
         }
 
@@ -99,12 +102,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float);
+                return _003CgoalWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CgoalWeight_003Ek__BackingField = value;
             }
         }
 
@@ -113,12 +117,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float);
+                return _003CgoalPullWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CgoalPullWeight_003Ek__BackingField = value;
             }
         }
 
@@ -127,18 +132,24 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(float);
+                return _003Cstiffness_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003Cstiffness_003Ek__BackingField = value;
             }
         }
 
         public ActorAnimationFullBodyIKLimbPart(Animator animator, HumanBodyBones top, HumanBodyBones middle, HumanBodyBones end)
         {
             this = default;
+            _003CtopHandle_003Ek__BackingField = animator.BindStreamTransform(animator.GetBoneTransform(top));
+            _003CmiddleHandle_003Ek__BackingField = animator.BindStreamTransform(animator.GetBoneTransform(middle));
+            _003CendHandle_003Ek__BackingField = animator.BindStreamTransform(animator.GetBoneTransform(end));
+            _003ClocalPosition_003Ek__BackingField = float3.zero;
+            _003CgoalPosition_003Ek__BackingField = float3.zero;
         }
     }
 }
