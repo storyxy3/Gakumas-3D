@@ -23,7 +23,7 @@ namespace Uguiss.Timeline
 
         protected TPlayable GetPlayableBehaviour()
         {
-            return null;
+            return TimelineEngineUtility.GetPlayableBehaviour<TPlayable>(Playable);
         }
 
         protected AbstractScriptPlayableCommand()

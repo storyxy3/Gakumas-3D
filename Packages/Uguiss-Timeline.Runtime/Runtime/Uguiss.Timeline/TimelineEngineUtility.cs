@@ -7,7 +7,7 @@ namespace Uguiss.Timeline
 
     public static class TimelineEngineUtility
     {
-        private static readonly Regex EscapeJsonRegex;
+        private static readonly Regex EscapeJsonRegex = new Regex(@"[\{\}]");
         private static string EscapeJson(string value)
         {
             return null;
@@ -21,7 +21,8 @@ namespace Uguiss.Timeline
         public static T GetPlayableBehaviour<T>(Playable playable)
             where T : PlayableBehaviour, new()
         {
-            return null;
+            if (!playable.IsValid() || !typeof(T).IsAssignableFrom(playable.GetPlayableType())) return null;
+            return ((ScriptPlayable<T>)playable).GetBehaviour();
         }
 
         public static double ClampTime(double time, double minTime = 0.0, double maxTime = 1000000.0)

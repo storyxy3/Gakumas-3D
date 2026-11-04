@@ -10,7 +10,10 @@ namespace Qua.Extensions
         [ContractAnnotation("self:null=>true", true)]
         public static bool IsNullOrEmpty<T>([NotNullWhen(false)] this IEnumerable<T> self)
         {
-            return default(bool);
+            if (self == null) return true;
+            if (self is ICollection<T> collection) return collection.Count == 0;
+            if (self is IReadOnlyCollection<T> readOnlyCollection) return readOnlyCollection.Count == 0;
+            return !System.Linq.Enumerable.Any(self);
         }
 
         public static T GetValueOrDefault<T>(this IEnumerable<T> self, int index, [Optional] T defaultValue)

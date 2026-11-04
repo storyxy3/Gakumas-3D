@@ -10,7 +10,7 @@ namespace Qua.Extensions
         [ContractAnnotation("self:null=>true", true)]
         public static bool IsNullOrEmpty<TKey, TValue>([NotNullWhen(false)] this IDictionary<TKey, TValue> self)
         {
-            return default(bool);
+            return self == null || self.Count == 0;
         }
 
         public static TValue GetValueOrDefault<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, [Optional] TValue defaultValue)

@@ -33,12 +33,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(Playable);
+                return _003CPlayable_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CPlayable_003Ek__BackingField = value;
             }
         }
 
