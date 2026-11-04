@@ -31,7 +31,7 @@ namespace VL.Animation
         {
             get
             {
-                return null;
+                return _motion != null ? _motion.name : "Null";
             }
         }
 
@@ -39,7 +39,7 @@ namespace VL.Animation
         {
             get
             {
-                return null;
+                return _motion;
             }
         }
 
@@ -47,7 +47,7 @@ namespace VL.Animation
         {
             get
             {
-                return default(double);
+                return _transitionTime;
             }
         }
 
@@ -55,7 +55,7 @@ namespace VL.Animation
         {
             get
             {
-                return default(double);
+                return _length;
             }
         }
 
@@ -63,7 +63,7 @@ namespace VL.Animation
         {
             get
             {
-                return default(bool);
+                return _isLoop;
             }
         }
 
@@ -71,32 +71,42 @@ namespace VL.Animation
         {
             get
             {
-                return default(bool);
+                return _motion != null && _motion.ignoreAdditive;
             }
         }
 
         public ClipParam(MotionDefine motionDefine)
         {
+            _motion = motionDefine;
+            _length = _motion != null ? _motion.animationLength : 0;
+            _transitionTime = 0;
+            _easeType = EaseType.Linear;
+            _isLoop = _motion != null && _motion.isLoop;
         }
 
         public ClipParam SetTransitionTime(double time)
         {
-            return null;
+            _transitionTime = time;
+            return this;
         }
 
         public ClipParam SetEase(EaseType type)
         {
-            return null;
+            _easeType = type;
+            return this;
         }
 
         public ClipParam SetLength(double length)
         {
-            return null;
+            _length = Math.Max(0, length);
+            return this;
         }
 
         public float EvaluateWeight(float time)
         {
-            return default(float);
+            if (_easeFunction == null)
+                _easeFunction = EaseFunctions.GetEaseFunction(_easeType);
+            return Mathf.Clamp01(_easeFunction(time, (float)_transitionTime));
         }
     }
 }

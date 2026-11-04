@@ -21,13 +21,45 @@ namespace VL.Animation
             public LayerController _003C_003E4__this;
             public CancellationToken ct;
             private UniTask.Awaiter _003C_003Eu__1;
-            void global::System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext()
+            public void MoveNext()
             {
+                int state = _003C_003E1__state;
+                try
+                {
+                    UniTask.Awaiter awaiter;
+                    if (state != 0)
+                    {
+                        awaiter = UniTask.WaitWhile(_003C_003E4__this.IsPlaying, PlayerLoopTiming.Update, ct).GetAwaiter();
+                        if (!awaiter.IsCompleted)
+                        {
+                            _003C_003E1__state = 0;
+                            _003C_003Eu__1 = awaiter;
+                            _003C_003Et__builder.AwaitUnsafeOnCompleted(ref awaiter, ref this);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        awaiter = _003C_003Eu__1;
+                        _003C_003Eu__1 = default;
+                        _003C_003E1__state = -1;
+                    }
+                    awaiter.GetResult();
+                }
+                catch (Exception exception)
+                {
+                    _003C_003E1__state = -2;
+                    _003C_003Et__builder.SetException(exception);
+                    return;
+                }
+                _003C_003E1__state = -2;
+                _003C_003Et__builder.SetResult();
             }
 
             [DebuggerHidden]
-            void global::System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+            public void SetStateMachine(IAsyncStateMachine stateMachine)
             {
+                _003C_003Et__builder.SetStateMachine(stateMachine);
             }
         }
 
@@ -39,7 +71,7 @@ namespace VL.Animation
         {
             get
             {
-                return null;
+                return _param;
             }
         }
 
@@ -47,112 +79,152 @@ namespace VL.Animation
         {
             get
             {
-                return default(double);
+                return _param?.length ?? 0;
             }
         }
 
         public LayerController(ScriptPlayable<MotionTimelinePlayable> timelinePlayable, LayerParam param)
         {
+            _timelinePlayable = timelinePlayable;
+            _param = param;
         }
 
         public void Dispose()
         {
+            if (_playable.IsValid())
+            {
+                _playable.Destroy();
+                _playable = ScriptPlayable<MotionLayerPlayable>.Null;
+            }
         }
 
         public void Play()
         {
+            if (_timelinePlayable.IsValid() && _timelinePlayable.GetBehaviour().TryGetLayerPlayable(this, out _playable, out _layerIndex))
+                _playable.Play();
         }
 
         [AsyncStateMachine(typeof(_003CWaitForCompletionAsync_003Ed__12))]
         public UniTask WaitForCompletionAsync(CancellationToken ct)
         {
-            return default(UniTask);
+            var stateMachine = new _003CWaitForCompletionAsync_003Ed__12();
+            stateMachine._003C_003Et__builder = AsyncUniTaskMethodBuilder.Create();
+            stateMachine._003C_003E4__this = this;
+            stateMachine.ct = ct;
+            stateMachine._003C_003E1__state = -1;
+            stateMachine._003C_003Et__builder.Start(ref stateMachine);
+            return stateMachine._003C_003Et__builder.Task;
         }
 
         public bool IsPlaying()
         {
-            return default(bool);
+            return _playable.IsValid() && !_playable.GetBehaviour().isCompleted;
         }
 
         public bool IsPause()
         {
-            return default(bool);
+            return _playable.IsValid() && _playable.GetPlayState() == PlayState.Paused;
         }
 
         public void Pause()
         {
+            if (_playable.IsValid())
+                _playable.Pause();
         }
 
         public void Resume()
         {
+            if (_playable.IsValid())
+                _playable.Play();
         }
 
         public void Stop()
         {
+            Dispose();
         }
 
         public void SetTime(double time)
         {
+            if (_playable.IsValid())
+            {
+                _playable.SetTime(time);
+                if (IsPause())
+                {
+                    _playable.Play();
+                    _playable.GetGraph().Evaluate();
+                    _playable.Pause();
+                }
+            }
         }
 
         public double GetTime()
         {
-            return default(double);
+            return _playable.IsValid() ? _playable.GetTime() : 0;
         }
 
         public void SetWeight(float weight)
         {
+            if (_timelinePlayable.IsValid())
+                _timelinePlayable.GetBehaviour().SetLayerWeight(_layerIndex, weight);
         }
 
         public float GetWeight()
         {
-            return default(float);
+            return _timelinePlayable.IsValid() ? _timelinePlayable.GetBehaviour().GetLayerWeight(_layerIndex) : 0f;
         }
 
         private ScriptPlayable<MotionLayerMixerPlayable> GetLayerPlayable(string otherLayerName)
         {
-            return default(ScriptPlayable<MotionLayerMixerPlayable>);
+            return _timelinePlayable.IsValid() ? _timelinePlayable.GetBehaviour().GetLayerMixerPlayable(otherLayerName) : ScriptPlayable<MotionLayerMixerPlayable>.Null;
         }
 
         public bool IsPlayingLayer(string otherLayerName)
         {
-            return default(bool);
+            return GetLayerPlayable(otherLayerName).IsValid();
         }
 
         public float GetLayerWeight(string otherLayerName)
         {
-            return default(float);
+            return _timelinePlayable.IsValid() ? _timelinePlayable.GetBehaviour().GetLayerWeight(otherLayerName) : 1f;
         }
 
         public bool IsValid()
         {
-            return default(bool);
+            return _playable.IsValid();
         }
 
         public int GetPlayableCount()
         {
-            return default(int);
+            return _playable.IsValid() ? _playable.GetBehaviour()?.GetPlayableCount() ?? 0 : 0;
         }
 
         public PlayState GetPlayablePlayState(int index)
         {
-            return default(PlayState);
+            return _playable.IsValid() && _playable.GetBehaviour() != null ? _playable.GetBehaviour().GetPlayablePlayState(index) : PlayState.Paused;
         }
 
         public void PlayPlayable(int index)
         {
+            if (_playable.IsValid())
+                _playable.GetBehaviour()?.PlayPlayable(index);
         }
 
         public void PausePlayable(int index)
         {
+            if (_playable.IsValid())
+                _playable.GetBehaviour()?.PausePlayable(index);
         }
 
         public void SetPlayableTime(int index, double time)
         {
+            if (_playable.IsValid())
+                _playable.GetBehaviour()?.SetPlayableTime(index, time);
         }
 
         public void SetPlayableWeight(int index, float weight)
         {
+            if (_playable.IsValid())
+                _playable.GetBehaviour()?.SetPlayableWeight(index, weight);
         }
     }
 }

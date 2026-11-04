@@ -58,7 +58,7 @@ namespace VL.Animation
         {
             get
             {
-                return default(bool);
+                return _graph.IsValid();
             }
         }
 
@@ -66,18 +66,23 @@ namespace VL.Animation
         {
             get
             {
-                return null;
+                if (_animator == null && !TryGetComponent(out _animator))
+                    _animator = gameObject.AddComponent<Animator>();
+                return _animator;
             }
         }
 
         protected PlayableGraph CreatePlayableGraph()
         {
-            return default(PlayableGraph);
+            if (initialized)
+                DestroyGraph();
+            _graph = PlayableGraph.Create(name);
+            return _graph;
         }
 
         public PlayableGraph GetPlayableGraph()
         {
-            return default(PlayableGraph);
+            return _graph;
         }
 
         public abstract void Setup();
@@ -106,6 +111,8 @@ namespace VL.Animation
 
         private void DestroyGraph()
         {
+            if (_graph.IsValid())
+                _graph.Destroy();
         }
 
         protected virtual void OnDisable()

@@ -14,7 +14,7 @@ namespace VL.Animation
         public double duration;
         public Playable CreatePlayable(PlayableGraph graph, GameObject go, bool isSubTrack, bool isTimeline = false)
         {
-            return default(Playable);
+            return effect == null ? Playable.Create(graph) : effect.CreatePlayable(graph, go, isSubTrack, isTimeline);
         }
 
         public int CompareTo(EffectData other)

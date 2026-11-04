@@ -16,7 +16,7 @@ namespace VL
         {
             get
             {
-                return default(int);
+                return faceAnimation == null || faceAnimation.clip == null ? 1 : 2;
             }
         }
 
@@ -24,7 +24,7 @@ namespace VL
         {
             get
             {
-                return null;
+                return index == 1 ? faceAnimation : baseAnimation;
             }
         }
 

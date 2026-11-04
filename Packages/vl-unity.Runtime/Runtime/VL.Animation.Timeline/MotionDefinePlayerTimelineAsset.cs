@@ -17,7 +17,7 @@ namespace VL.Animation.Timeline
         {
             get
             {
-                return default(ClipCaps);
+                return motion == null ? ClipCaps.None : ClipCaps.ClipIn | ClipCaps.SpeedMultiplier | ClipCaps.Blending | (motion.isLoop ? ClipCaps.Looping : ClipCaps.None);
             }
         }
 
@@ -25,13 +25,13 @@ namespace VL.Animation.Timeline
         {
             get
             {
-                return default(double);
+                return motion != null ? motion.animationLength : base.duration;
             }
         }
 
         public sealed override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            return Playable.Create(graph);
         }
 
         public MotionDefinePlayerTimelineAsset()

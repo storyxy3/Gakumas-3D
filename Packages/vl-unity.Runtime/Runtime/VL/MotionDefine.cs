@@ -14,12 +14,12 @@ namespace VL
         {
             private MotionDefine _target;
             private bool _ignoreDispose;
-            private int _currentIndex;
+            private int _currentIndex = -1;
             public AnimationData Current
             {
                 get
                 {
-                    return null;
+                    return _target[_currentIndex];
                 }
             }
 
@@ -27,35 +27,50 @@ namespace VL
             {
                 get
                 {
-                    return null;
+                    return Current;
                 }
             }
 
             public MotionDefineEnumerator(MotionDefine target, bool ignoreDispose)
             {
+                _target = target;
+                _ignoreDispose = ignoreDispose;
             }
 
             public bool MoveNext()
             {
-                return default(bool);
+                if (_target == null)
+                {
+                    Debug.Log(ReferenceEquals(_target, null) ? "Disposeされています" : "assetが破棄されています");
+                    return false;
+                }
+                if (_currentIndex >= _target.count)
+                    throw new InvalidOperationException("Resetを呼んでください");
+                ++_currentIndex;
+                return _currentIndex < _target.count;
             }
 
             public void Reset()
             {
+                _currentIndex = -1;
             }
 
             public void Dispose()
             {
+                if (_ignoreDispose)
+                    Reset();
+                else
+                    _target = null;
             }
 
             public IEnumerator<AnimationData> GetEnumerator()
             {
-                return null;
+                return this;
             }
 
             IEnumerator System.Collections.IEnumerable.GetEnumerator()
             {
-                return null;
+                return this;
             }
         }
 
@@ -80,7 +95,7 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return baseAnimation != null && baseAnimation.isLoop;
             }
         }
 
@@ -88,7 +103,7 @@ namespace VL
         {
             get
             {
-                return default(float);
+                return baseAnimation != null ? baseAnimation.animationLength : 0f;
             }
         }
 
@@ -96,7 +111,9 @@ namespace VL
         {
             get
             {
-                return null;
+                if (index >= count)
+                    throw new IndexOutOfRangeException();
+                return baseAnimation;
             }
         }
 
@@ -104,13 +121,13 @@ namespace VL
         {
             get
             {
-                return default(int);
+                return 1;
             }
         }
 
         public virtual float OnProcessMixerWeight(int index, float weight, float time)
         {
-            return default(float);
+            return weight;
         }
 
         private void OnEnable()
@@ -119,6 +136,7 @@ namespace VL
 
         protected virtual void OnDestroy()
         {
+            _sharedEnumerator = null;
         }
 
         public bool ContainAnimationClip(AnimationClip clip)
@@ -133,12 +151,12 @@ namespace VL
 
         public IEnumerator<AnimationData> GetEnumerator()
         {
-            return null;
+            return new MotionDefineEnumerator(this, false);
         }
 
         IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
-            return null;
+            return GetEnumerator();
         }
 
         public void Validate()

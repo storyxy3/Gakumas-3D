@@ -24,7 +24,7 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _dictionary.Keys;
             }
         }
 
@@ -32,57 +32,78 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _dictionary.Values;
             }
         }
 
         public SerializedDictionary()
         {
+            _keys = new List<TKey>();
+            _values = new List<TValue>();
+            _dictionary = new Dictionary<TKey, TValue>();
         }
 
         public SerializedDictionary(int capacity)
         {
+            _keys = new List<TKey>(capacity);
+            _values = new List<TValue>(capacity);
+            _dictionary = new Dictionary<TKey, TValue>(capacity);
         }
 
         public void Clear()
         {
+            _dictionary.Clear();
         }
 
         public Dictionary<TKey, TValue>.Enumerator GetEnumerator()
         {
-            return default(Dictionary<TKey, TValue>.Enumerator);
+            return _dictionary.GetEnumerator();
         }
 
         public void Add(TKey key, TValue value)
         {
+            _dictionary.Add(key, value);
         }
 
         public bool Remove(TKey key)
         {
-            return default(bool);
+            return _dictionary.Remove(key);
         }
 
         public bool ContainsKey(TKey key)
         {
-            return default(bool);
+            return _dictionary.ContainsKey(key);
         }
 
         public bool TryGetValue(TKey key, out TValue value)
         {
-            throw null;
+            return _dictionary.TryGetValue(key, out value);
         }
 
         public void OnBeforeSerialize()
         {
+            _keys.Clear();
+            _values.Clear();
+            foreach (var pair in _dictionary)
+            {
+                _keys.Add(pair.Key);
+                _values.Add(pair.Value);
+            }
         }
 
         public void OnAfterDeserialize()
         {
+            if (_dictionary == null)
+                _dictionary = new Dictionary<TKey, TValue>();
+            else
+                _dictionary.Clear();
+            for (int i = 0; i < _keys.Count; ++i)
+                _dictionary.Add(_keys[i], _values[i]);
         }
 
         public static implicit operator Dictionary<TKey, TValue>(SerializedDictionary<TKey, TValue> d)
         {
-            return null;
+            return d?._dictionary;
         }
     }
 }
