@@ -544,5 +544,209 @@
     "sourceStatus": "reconstructed",
     "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
     "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$WriteBack",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$HasLookAtBodyWeight",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetEffectorHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "Same four goal-to-effector selections and default; native branch comparisons reordered."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetIKLimbHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "Same four goal-to-limb selections and default; native branch comparisons reordered."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateMoveDelta",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateMove",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetGaolEffector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "Same foot blending and hand collision correction. Rebuilt math.max(double,double) has explicit NaN guard implementing APK fmaxnm semantics."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetHintEffector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetLookAtEffector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetBodyEffector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetMaximumExtension",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$PrepareSolvePull",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$PrepareSolvePullUpdateLimbPart",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SolvePull",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetDeltaBodyPosition",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "Actual APK body matches pull-distance arithmetic; raw game boundary includes following unnamed copy/slerp/Euler helpers."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$Solve",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateHipsHorizon",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetLimbPart",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetLimbPart",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$NodAdditive",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKPullPart$$get_stiffnessHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKPullPart$$get_maxPullIterationHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKPullPart$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKLookAtEffector$$get_eyesWeightHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKLookAtEffector$$get_headWeightHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKLookAtEffector$$get_bodyWeightHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKLookAtEffector$$get_referenceHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKLookAtEffector$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcSphereCollisionInfo",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcCapsuleCollisionInfo",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "Same capsule endpoints, projection, interpolated radius and sphere collision record; quaternion metadata initialization/inlining differs."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcGoalPosition",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "Same inner-radius/damping-band branches, normalized push-out and weight multipliers; repeated pure distance calculations and metadata init merged."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKCorrectionColliderCollisionInfo$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKCorrectionColliderCollisionInfo$$FromSphereColliderCollision",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
+    "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
   }
 ]

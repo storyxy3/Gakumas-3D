@@ -1,0 +1,119 @@
+
+== ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetGaolEffector 0x656b03c (ActorAnimation_ActorAnimationFullBodyIKJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, Unity_Mathematics_float3_o moveDelta, ActorAnimation_ActorAnimationIKGoalEffector_o goalEffector, ActorAnimation_ActorAnimationIKHintEffector_o hintEffector);
+native: 702 715
+--- game
++++ ref
+@@ -16,4 +16,6 @@
+ bl UnityEngine.Animations.AnimationStream$$AsHuman
+ bl ActorAnimation.ActorAnimationIKGoalEffector$$GetLocalScale
++mov #0x7ff0000000000000
++and #0x7fffffffffffffff
+ bl ActorAnimation.ActorAnimationIKHintEffector$$GetLocalScale
+ cmp #1
+
+== ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetEffectorHandle 0x656c1c0 (ActorAnimation_ActorAnimationFullBodyIKJobSkeleton_o __this, int32_t goal);
+native: 15 15
+--- game
++++ ref
+@@ -1,3 +1,3 @@
++cmp #1
++cmp #2
+ cmp #3
+-cmp #2
+-cmp #1
+
+== ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetIKLimbHandle 0x656c1fc (ActorAnimation_ActorAnimationFullBodyIKJobSkeleton_o __this, int32_t goal);
+native: 17 17
+--- game
++++ ref
+@@ -1,5 +1,5 @@
++cmp #3
++cmp #2
+ cmp #1
+-cmp #2
+-cmp #3
+ mov #0x4c
+ b FN
+
+== ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetDeltaBodyPosition 0x656c9e4 (ActorAnimation_ActorAnimationFullBodyIKLimbPart_o limbPart, UnityEngine_Vector3_o bodyPosition);
+native: 488 106
+--- game
++++ ref
+@@ -9,46 +9,2 @@
+ bl FN
+ mov #1
+-mov #0x4b0
+-b FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-fmov #1.00000000
+-bl FN
+-mov #1
+-bl FN
+-fmov #1.00000000
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-orr #32
+-and #0x80000000
+-orr #32
+-fmov #1.00000000
+-bl FN
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-fmov #-2.00000000
+-bl FN
+-bl FN
+-bl FN
+-bl UnityEngine.Quaternion$$Internal_ToEulerRad
+-b UnityEngine.Quaternion$$Internal_MakePositive
+-mov #0x230
+-b FN
+
+== ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcCapsuleCollisionInfo 0x6579dc0 (UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationIKCorrectionJobCollider_o correctionCollider, UnityEngine_Vector3_o goalPosition, float goalRadius);
+native: 437 430
+--- game
++++ ref
+@@ -6,6 +6,4 @@
+ movk #0x3c8e, lsl #16
+ fmov #0.50000000
+-bl FN
+-mov #1
+ bl FN
+ bl FN
+
+== ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcGoalPosition 0x657a494 (UnityEngine_Vector3_o* resultGaolPosition, ActorAnimation_ActorAnimationIKCorrectionColliderCollisionInfo_o* info, UnityEngine_Vector3_o goalPosition, float goalRadius, float* correctionWeight);
+native: 209 183
+--- game
++++ ref
+@@ -1,5 +1,2 @@
+-bl FN
+-mov #1
+-bl FN
+ bl FN
+ mov #1
+@@ -15,7 +12,4 @@
+ bl FN
+ mov #1
+-bl FN
+-mov #1
+-bl FN
+ fmov #1.00000000
+ mov #1

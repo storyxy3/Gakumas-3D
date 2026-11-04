@@ -1,0 +1,118 @@
+{
+ "addedOverloads": [],
+ "same": 14,
+ "changed": [
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcCapsuleCollisionInfo",
+   "similarity": 0.648,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcGoalPosition",
+   "similarity": 0.75,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcSphereCollisionInfo",
+   "similarity": 0.982,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$Execute",
+   "similarity": 0.889,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetDeltaBodyPosition",
+   "similarity": 0.293,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetEffectorHandle",
+   "similarity": 0.8,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetIKLimbHandle",
+   "similarity": 0.882,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetLimbPart",
+   "similarity": 0.75,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$HasLookAtBodyWeight",
+   "similarity": 0.992,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$NodAdditive",
+   "similarity": 0.516,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$PrepareSolvePullUpdateLimbPart",
+   "similarity": 0.793,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetBodyEffector",
+   "similarity": 0.7,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetGaolEffector",
+   "similarity": 0.731,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetHintEffector",
+   "similarity": 0.926,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetLimbPart",
+   "similarity": 0.786,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetLookAtEffector",
+   "similarity": 0.867,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetMaximumExtension",
+   "similarity": 0.759,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SolvePull",
+   "similarity": 0.993,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateMove",
+   "similarity": 0.19,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateMoveDelta",
+   "similarity": 0.902,
+   "note": "layout"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton",
+   17
+  ],
+  [
+   "ActorAnimation.ActorAnimationFullBodyIKCalcUtility",
+   3
+  ]
+ ]
+}

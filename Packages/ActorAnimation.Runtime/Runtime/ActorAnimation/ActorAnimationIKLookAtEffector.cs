@@ -53,7 +53,10 @@ namespace ActorAnimation
 
         public ActorAnimationIKLookAtEffector(Animator animator, Transform locator)
         {
-            this = default;
+            _003CreferenceHandle_003Ek__BackingField = ReadOnlyTransformHandle.Bind(animator, locator);
+            _003CeyesWeightHandle_003Ek__BackingField = animator.BindSceneProperty(locator, typeof(ActorAnimationLookAtEffectorLocator), "eyesWeight");
+            _003CheadWeightHandle_003Ek__BackingField = animator.BindSceneProperty(locator, typeof(ActorAnimationLookAtEffectorLocator), "headWeight");
+            _003CbodyWeightHandle_003Ek__BackingField = animator.BindSceneProperty(locator, typeof(ActorAnimationLookAtEffectorLocator), "bodyWeight");
         }
 
         public ActorAnimationIKLookAtEffector(ReadOnlyTransformHandle referenceHandle, PropertySceneHandle eyesWeightHandle, PropertySceneHandle headWeightHandle, PropertySceneHandle bodyWeightHandle)

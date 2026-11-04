@@ -1,0 +1,145 @@
+[
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcSphereCollisionInfo",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationFullBodyIKCalcUtility.cs",
+    "reason": "CampusActorAnimationJob.ProcessFullBodyIK -> ActorAnimationFullBodyIKJobSkeleton.Execute -> SetGaolEffector reaches correction collision calculations.",
+    "apkAddresses": [
+      "0x6579c74"
+    ]
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcCapsuleCollisionInfo",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationFullBodyIKCalcUtility.cs",
+    "reason": "CampusActorAnimationJob.ProcessFullBodyIK -> ActorAnimationFullBodyIKJobSkeleton.Execute -> SetGaolEffector reaches correction collision calculations.",
+    "apkAddresses": [
+      "0x6579dc0"
+    ]
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcGoalPosition",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationFullBodyIKCalcUtility.cs",
+    "reason": "CampusActorAnimationJob.ProcessFullBodyIK -> ActorAnimationFullBodyIKJobSkeleton.Execute -> SetGaolEffector reaches correction collision calculations.",
+    "apkAddresses": [
+      "0x657a494"
+    ]
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKCorrectionColliderCollisionInfo$$.ctor",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationIKCorrectionColliderCollisionInfo",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationIKCorrectionColliderCollisionInfo.cs",
+    "reason": "ActorAnimationFullBodyIKCalcUtility.CalcSphereCollisionInfo and CalcCapsuleCollisionInfo construct candidate collision records for live hand correction.",
+    "apkAddresses": [
+      "0x655d31c"
+    ]
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKCorrectionColliderCollisionInfo$$FromSphereColliderCollision",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationIKCorrectionColliderCollisionInfo",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationIKCorrectionColliderCollisionInfo.cs",
+    "reason": "ActorAnimationFullBodyIKCalcUtility.CalcSphereCollisionInfo and CalcCapsuleCollisionInfo construct candidate collision records for live hand correction.",
+    "apkAddresses": [
+      "0x655d330"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$Evaluate",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x6576314"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FindSurroundingKeyframes",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x657d2a4"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$HermiteInterpolate",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x657d354",
+      "0x657d458"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$BezierInterpolate",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x657d3f8",
+      "0x657d4a8",
+      "0x657db54"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FastCbrtPositive",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x657d550"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FastCbrt",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x657d5f8"
+    ]
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$BezierExtractU",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.AnimationCurveEvaluator",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/AnimationCurveEvaluator.cs",
+    "reason": "ActorAnimationSwingJobSkeleton.ProcessBreastBones evaluates up/side curves, including Hermite and weighted Bezier paths.",
+    "apkAddresses": [
+      "0x657d738"
+    ]
+  },
+  {
+    "method": "ActorAnimation.CurveConversion$$CurveToKeyframes",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.CurveConversion",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/CurveConversion.cs",
+    "reason": "CampusActorAnimationJob.CreateSwingSkeleton converts breast up/side curve data to NativeArray<KeyframeData>.",
+    "apkAddresses": [
+      "0x657dba0"
+    ]
+  },
+  {
+    "method": "ActorAnimation.CurveConversion$$KeyframeConversion",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.CurveConversion",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/CurveConversion.cs",
+    "reason": "CampusActorAnimationJob.CreateSwingSkeleton converts breast up/side curve data to NativeArray<KeyframeData>.",
+    "apkAddresses": [
+      "0x657dca0"
+    ]
+  }
+]
