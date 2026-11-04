@@ -1,0 +1,19 @@
+{
+  "source": "/data/xy/gakumas/dmm/program-20261103/data.unity3d",
+  "sourceSha256": "73cf277bb6ce42e6f237959bedbb276563dd8acba7c025eef4fc7b453f815eda",
+  "serializedFile": "globalgamemanagers",
+  "pathId": 8,
+  "rawHex": "ff215600000000000100000000526908cdcccc3d0000803f0ad7233d",
+  "settings": {
+    "Fixed Timestep": {
+      "m_Count": 5644799,
+      "m_Rate": {
+        "m_Denominator": 1,
+        "m_Numerator": 141120000
+      }
+    },
+    "Maximum Allowed Timestep": 0.10000000149011612,
+    "m_TimeScale": 1.0,
+    "Maximum Particle Timestep": 0.03999999910593033
+  }
+}
