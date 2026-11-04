@@ -26,7 +26,8 @@ namespace ActorAnimation
 
         public bool Resolve(AnimationStream stream)
         {
-            if (!rootHandle.IsResolved(stream)) rootHandle.Resolve(stream);
+            if (rootHandle.IsResolved(stream)) return true;
+            rootHandle.Resolve(stream);
             return rootHandle.IsResolved(stream);
         }
 

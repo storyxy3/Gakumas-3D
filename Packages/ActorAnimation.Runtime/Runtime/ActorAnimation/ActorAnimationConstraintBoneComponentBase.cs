@@ -19,17 +19,19 @@ namespace ActorAnimation
             [CompilerGenerated]
             private set
             {
+                _003CisDirty_003Ek__BackingField = value;
             }
         }
 
         public abstract ActorAnimationConstraintBoneType GetBoneType();
         public void SetDirty()
         {
-            _003CisDirty_003Ek__BackingField = true;
+            isDirty = true;
         }
 
         public void ResetDirty()
         {
+            isDirty = false;
         }
 
         protected ActorAnimationConstraintBoneComponentBase()
