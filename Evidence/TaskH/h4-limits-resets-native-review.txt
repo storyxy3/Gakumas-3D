@@ -1,0 +1,135 @@
+
+== ActorAnimation.ActorSwingJobDynamicBoneCash$$IsAlreadyStable 0x6578a8c (ActorAnimation_ActorSwingJobDynamicBoneCash_o __this);
+native: 64 63
+--- game
++++ ref
+@@ -1,2 +1 @@
+ cmp #5
+-mov #1
+
+== ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor 0x6578d8c (ActorAnimation_ActorSwingJobBreastBoneSetting_o __this, UnityEngine_Animations_Rigging_ReadOnlyTransformHandle_o lowerArm, UnityEngine_Animations_Rigging_ReadWriteTransformHandle_o breast, ActorAnimation_ActorSwingAffineTransform_o initialSelfTx, ActorAnimation_ActorSwingAffineTransform_o localEndTx, ActorAnimation_ActorSwingAffineTransform_o selfEndTx, ActorAnimation_ActorSwingAffineTransform_o modelingLocalTx);
+native: 68 95
+--- game
++++ ref
+@@ -1,2 +1,4 @@
++bl FN
++mov #1
+ bl FN
+ mov #1
+
+== ActorAnimation.ActorSwingJobBreastBone$$Reset 0x6578e9c (ActorAnimation_ActorSwingJobBreastBone_o __this, ActorAnimation_InitialTransform_o initialLeftBreastEndTransform, ActorAnimation_InitialTransform_o initialRightBreastEndTransform, int32_t prewarmCount);
+native: 176 576
+--- game
++++ ref
+@@ -7,6 +7,5 @@
+ mov #1
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
++cmp #0
+ bl FN
+ mov #1
+@@ -17,4 +16,65 @@
+ mov #1
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
++bl FN
++mov #1
++bl FN
++bl FN
++fmov #1.00000000
++bl FN
++mov #1
++bl FN
++fmov #1.00000000
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++orr #32
++and #0x80000000
++orr #32
++fmov #1.00000000
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++fmov #-2.00000000
++bl FN
++fmov #-2.00000000
++bl FN
++bl FN
+
+== ActorAnimation.ActorSwingAffineTransform$$op_Multiply 0x657f564 (ActorAnimation_ActorSwingAffineTransform_o lhs, Unity_Mathematics_float3_o rhs);
+native: 39 31
+--- game
++++ ref
+@@ -0,0 +1,4 @@
++bl FN
++mov #1
++bl FN
++b ActorAnimation.ActorSwingAffineTransform$$Transform
+
+== ActorAnimation.ActorSwingAffineTransform$$op_Multiply 0x657f600 (ActorAnimation_ActorSwingAffineTransform_o lhs, ActorAnimation_ActorSwingAffineTransform_o rhs);
+native: 74 74
+
+== ActorAnimation.ActorSwingAffineTransform$$op_Multiply 0x657f728 (ActorAnimation_ActorSwingAffineTransform_o lhs, Unity_Mathematics_quaternion_o rhs);
+native: 40 40
+
+== ActorAnimation.CampusActorAnimationLookAtLimit$$IsValid 0xdd2e8c8 (ActorAnimation_CampusActorAnimationLookAtLimit_o __this, UnityEngine_Animations_AnimationStream_o stream);
+native: 63 62
+--- game
++++ ref
+@@ -3,3 +3,3 @@
+ bl UnityEngine.Animations.PropertySceneHandle$$IsValid
+ bl UnityEngine.Animations.PropertySceneHandle$$IsValid
+-mov #1
++and #1
+
+== ActorAnimation.CampusActorAnimationJointLimit$$IsValid 0xdd2e9c4 (ActorAnimation_CampusActorAnimationJointLimit_o __this, UnityEngine_Animations_AnimationStream_o stream);
+native: 37 36
+--- game
++++ ref
+@@ -1,3 +1,3 @@
+ bl UnityEngine.Animations.PropertySceneHandle$$IsValid
+ bl UnityEngine.Animations.PropertySceneHandle$$IsValid
+-mov #1
++and #1

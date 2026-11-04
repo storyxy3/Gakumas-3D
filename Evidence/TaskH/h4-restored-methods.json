@@ -1,0 +1,368 @@
+[
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitNowLimitedHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitEyeEnable",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitEyeUpLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitEyeDownLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_leftEyeDownUpMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_rightEyeDownUpMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$GetEyeLimitRange",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$ExecuteEye",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$GetLimit",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$ClampMuscle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$IsValid",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_isCustomLookAtLimitEnablePoseHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_enableLimitWeightHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_eyeInOutLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_eyeUpLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_eyeDownLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headLeftRightLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headFrontLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headBackLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headRollLeftRightLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckLeftRightLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckFrontLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckBackLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckRollLeftRightLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyLeftRightLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyFrontLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyBackLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyTwistLeftRightLimitHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_leftEyeInOutMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_leftEyeDownUpMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_rightEyeInOutMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_rightEyeDownUpMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckFrontBackMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckRollLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headFrontBackMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headRollLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_spineLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_spineFrontBackMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_spineRollLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_chestLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_chestFrontBackMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_chestRollLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_upperChestLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_upperChestFrontBackMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_upperChestRollLeftRightMuscleHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetEyeLimitRange",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetHeadLimitRange",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetNeckLimitRange",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetBodyLimitRange",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ExecuteEye",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ExecuteHead",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ExecuteBody",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetLimit",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ClampMuscle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$IsValid",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  }
+]

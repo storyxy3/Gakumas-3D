@@ -1,0 +1,17 @@
+same 78  changed 16  only-in-game 0  re-signed 0
+  ~ 0.00 [semantic] ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+  ~ 0.20 [semantic] ActorAnimation.ActorSwingJobBreastBone$$Reset
+  ~ 0.30 [layout] ActorAnimation.ActorSwingAffineTransform$$Transform
+  ~ 0.31 [semantic] ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor
+  ~ 0.53 [semantic] ActorAnimation.CampusActorAnimationRig$$RegisterBones
+  ~ 0.60 [layout] ActorAnimation.CampusActorAnimationRig$$ResetBreastBone
+  ~ 0.68 [layout] ActorAnimation.CampusActorAnimationRig$$ResetDynamicSkin
+  ~ 0.69 [layout] ActorAnimation.CampusActorAnimationRig$$ResetDynamicBone
+  ~ 0.74 [layout] ActorAnimation.ActorSwingJobDynamicBone$$Reset
+  ~ 0.90 [semantic] ActorAnimation.CampusActorAnimationJointLimit$$IsValid
+  ~ 0.91 [semantic] ActorAnimation.CampusActorAnimationLookAtLimit$$IsValid
+  ~ 0.93 [layout] ActorAnimation.CampusActorAnimationRig$$ResetTime
+  ~ 0.96 [semantic] ActorAnimation.ActorSwingJobDynamicBoneCash$$IsAlreadyStable
+  ~ 0.97 [layout] ActorAnimation.CampusActorAnimationLookAtLimit$$Execute
+  ~ 0.99 [layout] ActorAnimation.CampusActorAnimationRig$$SetInactiveBones
+  ~ 0.99 [layout] ActorAnimation.CampusActorAnimationJointLimit$$Execute

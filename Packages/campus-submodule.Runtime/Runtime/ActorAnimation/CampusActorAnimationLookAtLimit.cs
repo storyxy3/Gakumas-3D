@@ -84,7 +84,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertyStreamHandle);
+                return _003CisCustomLookAtLimitEnablePoseHandle_003Ek__BackingField;
             }
         }
 
@@ -93,7 +93,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CenableLimitWeightHandle_003Ek__BackingField;
             }
         }
 
@@ -102,7 +102,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CeyeInOutLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -111,7 +111,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CeyeUpLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -120,7 +120,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CeyeDownLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -129,7 +129,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CheadLeftRightLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -138,7 +138,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CheadFrontLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -147,7 +147,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CheadBackLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -156,7 +156,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CheadRollLeftRightLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -165,7 +165,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CneckLeftRightLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -174,7 +174,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CneckFrontLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -183,7 +183,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CneckBackLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -192,7 +192,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CneckRollLeftRightLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -201,7 +201,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyLeftRightLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -210,7 +210,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyFrontLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -219,7 +219,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyBackLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -228,7 +228,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(PropertySceneHandle);
+                return _003CbodyTwistLeftRightLimitHandle_003Ek__BackingField;
             }
         }
 
@@ -237,7 +237,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CleftEyeInOutMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -246,7 +246,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CleftEyeDownUpMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -255,7 +255,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CrightEyeInOutMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -264,7 +264,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CrightEyeDownUpMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -273,7 +273,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CneckFrontBackMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -282,7 +282,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CneckLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -291,7 +291,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CneckRollLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -300,7 +300,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CheadFrontBackMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -309,7 +309,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CheadLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -318,7 +318,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CheadRollLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -327,7 +327,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CspineLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -336,7 +336,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CspineFrontBackMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -345,7 +345,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CspineRollLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -354,7 +354,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CchestLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -363,7 +363,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CchestFrontBackMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -372,7 +372,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CchestRollLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -381,7 +381,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CupperChestLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -390,7 +390,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CupperChestFrontBackMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -399,7 +399,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(MuscleHandle);
+                return _003CupperChestRollLeftRightMuscleHandle_003Ek__BackingField;
             }
         }
 
@@ -445,56 +445,94 @@ namespace ActorAnimation
 
         public void Execute(AnimationStream stream)
         {
+            var humanStream = stream.AsHuman();
+            if (!humanStream.isValid) return;
+            if (enableLimitWeightHandle.IsValid(stream) && enableLimitWeightHandle.GetFloat(stream) < 0.00001f)
+            {
+                if (isCustomLookAtLimitEnablePoseHandle.IsValid(stream)) isCustomLookAtLimitEnablePoseHandle.SetBool(stream, false);
+                return;
+            }
+            float weight = enableLimitWeightHandle.GetFloat(stream);
+            bool limited = false;
+            var eye = GetEyeLimitRange(stream);
+            ExecuteEye(humanStream, ref limited, leftEyeInOutMuscleHandle, leftEyeDownUpMuscleHandle, eye.Item1, eye.Item2, eye.Item3, weight);
+            ExecuteEye(humanStream, ref limited, rightEyeInOutMuscleHandle, rightEyeDownUpMuscleHandle, eye.Item1, eye.Item2, eye.Item3, weight);
+            var head = GetHeadLimitRange(stream);
+            var neck = GetNeckLimitRange(stream);
+            ExecuteHead(humanStream, ref limited, headLeftRightMuscleHandle, headFrontBackMuscleHandle, headRollLeftRightMuscleHandle, head.Item1, head.Item2, head.Item3, head.Item4, weight);
+            ExecuteHead(humanStream, ref limited, neckLeftRightMuscleHandle, neckFrontBackMuscleHandle, neckRollLeftRightMuscleHandle, neck.Item1, neck.Item2, neck.Item3, neck.Item4, weight);
+            var body = GetBodyLimitRange(stream);
+            ExecuteBody(humanStream, ref limited, spineLeftRightMuscleHandle, spineFrontBackMuscleHandle, spineRollLeftRightMuscleHandle, body.Item1, body.Item2, body.Item3, body.Item4, weight);
+            ExecuteBody(humanStream, ref limited, chestLeftRightMuscleHandle, chestFrontBackMuscleHandle, chestRollLeftRightMuscleHandle, body.Item1, body.Item2, body.Item3, body.Item4, weight);
+            ExecuteBody(humanStream, ref limited, upperChestLeftRightMuscleHandle, upperChestFrontBackMuscleHandle, upperChestRollLeftRightMuscleHandle, body.Item1, body.Item2, body.Item3, body.Item4, weight);
+            if (isCustomLookAtLimitEnablePoseHandle.IsValid(stream)) isCustomLookAtLimitEnablePoseHandle.SetBool(stream, limited);
         }
 
         private (float, float, float) GetEyeLimitRange(AnimationStream stream)
         {
-            return default((float, float, float));
+            return (GetLimit(stream, eyeInOutLimitHandle), GetLimit(stream, eyeUpLimitHandle), GetLimit(stream, eyeDownLimitHandle));
         }
 
         private (float, float, float, float) GetHeadLimitRange(AnimationStream stream)
         {
-            return default((float, float, float, float));
+            return (GetLimit(stream, headLeftRightLimitHandle), GetLimit(stream, headFrontLimitHandle), GetLimit(stream, headBackLimitHandle), GetLimit(stream, headRollLeftRightLimitHandle));
         }
 
         private (float, float, float, float) GetNeckLimitRange(AnimationStream stream)
         {
-            return default((float, float, float, float));
+            return (GetLimit(stream, neckLeftRightLimitHandle), GetLimit(stream, neckFrontLimitHandle), GetLimit(stream, neckBackLimitHandle), GetLimit(stream, neckRollLeftRightLimitHandle));
         }
 
         private (float, float, float, float) GetBodyLimitRange(AnimationStream stream)
         {
-            return default((float, float, float, float));
+            return (GetLimit(stream, bodyLeftRightLimitHandle), GetLimit(stream, bodyFrontLimitHandle), GetLimit(stream, bodyBackLimitHandle), GetLimit(stream, bodyTwistLeftRightLimitHandle));
         }
 
         private void ExecuteEye(AnimationHumanStream humanStream, ref bool isCustomLookAtLimitEnable, MuscleHandle eyeDownUpMuscleHandle, MuscleHandle eyeInOutMuscleHandle, float eyeInOutLimit, float eyeUpLimit, float eyeDownLimit, float enableLimitWeight)
         {
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, eyeDownUpMuscleHandle, eyeInOutLimit, enableLimitWeight);
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, eyeInOutMuscleHandle, eyeUpLimit, eyeDownLimit, enableLimitWeight);
         }
 
         private void ExecuteHead(AnimationHumanStream humanStream, ref bool isCustomLookAtLimitEnable, MuscleHandle leftRightMuscleHandle, MuscleHandle frontBackMuscleHandle, MuscleHandle rollLeftRightMuscleHandle, float leftRightLimit, float frontLimit, float backLimit, float rollLeftRightLimit, float enableLimitWeight)
         {
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, leftRightMuscleHandle, leftRightLimit, enableLimitWeight);
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, frontBackMuscleHandle, frontLimit, backLimit, enableLimitWeight);
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, rollLeftRightMuscleHandle, rollLeftRightLimit, enableLimitWeight);
         }
 
         private void ExecuteBody(AnimationHumanStream humanStream, ref bool isCustomLookAtLimitEnable, MuscleHandle leftRightMuscleHandle, MuscleHandle frontBackMuscleHandle, MuscleHandle twistLeftRightMuscleHandle, float leftRightLimit, float frontLimit, float backLimit, float twistLeftRightLimit, float enableLimitWeight)
         {
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, leftRightMuscleHandle, leftRightLimit, enableLimitWeight);
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, frontBackMuscleHandle, frontLimit, backLimit, enableLimitWeight);
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, twistLeftRightMuscleHandle, twistLeftRightLimit, enableLimitWeight);
         }
 
         private float GetLimit(AnimationStream stream, PropertySceneHandle limitHandle)
         {
-            return default(float);
+            return limitHandle.IsValid(stream) ? limitHandle.GetFloat(stream) : 10f;
         }
 
         private void ClampMuscle(AnimationHumanStream humanStream, ref bool isCustomLookAtLimitEnable, MuscleHandle muscleHandle, float limit, float enableLimitWeight)
         {
+            ClampMuscle(humanStream, ref isCustomLookAtLimitEnable, muscleHandle, limit, -limit, enableLimitWeight);
         }
 
         private void ClampMuscle(AnimationHumanStream humanStream, ref bool isCustomLookAtLimitEnable, MuscleHandle muscleHandle, float plusLimit, float minusLimit, float enableLimitWeight)
         {
+            float muscle = humanStream.GetMuscle(muscleHandle);
+            if (muscle < minusLimit || muscle > plusLimit)
+            {
+                isCustomLookAtLimitEnable = true;
+                float clamped = Unity.Mathematics.math.clamp(muscle, minusLimit, plusLimit);
+                humanStream.SetMuscle(muscleHandle, Unity.Mathematics.math.lerp(muscle, clamped, enableLimitWeight));
+            }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return headLeftRightLimitHandle.IsValid(stream) && headFrontLimitHandle.IsValid(stream)
+                && headBackLimitHandle.IsValid(stream) && headRollLeftRightLimitHandle.IsValid(stream);
         }
     }
 }
