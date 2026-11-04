@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor.
 namespace Campus.Common.Live
 {
     using global::Campus.Live.Equipment;

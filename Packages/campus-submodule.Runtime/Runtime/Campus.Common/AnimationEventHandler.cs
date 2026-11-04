@@ -1,3 +1,4 @@
+// TODO(qa-recon): Selected APK bodies still need reconstruction: get_IsInitialized.
 namespace Campus.Common
 {
     using global::System;
@@ -94,6 +95,7 @@ namespace Campus.Common
 
         public void SetAnimationEventActive(bool active)
         {
+            _isActiveAnimationEvent = active;
         }
 
         private void OnVoice(UnityEngine.Object obj)

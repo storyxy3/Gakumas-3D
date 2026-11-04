@@ -1,4 +1,4 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .cctor, .ctor, ApplyActorAnimationManagePropertyData, Campus.Common.ICampusActorController.get_isDestroyed, CanEyeBlink, CorrectSkeleton, DisposeTalk<object>, EnableBakedSwingBone, ExecuteEyeBlink, GetAnimationController, GetCustomGraphAnimationPlayer, GetHumanScale, GetPlayingAnimationController, InitializeActorAO, InitializeActorAnimation, InitializeBodyAdditive, InitializeExpression, InitializeFacial, InitializeRenderer, InitializeTalk<object>, LateUpdate, OnActorDestroy, OnBuildModelSuccess, OnClipPlay, OnDisable, OnEnable, OnUpdateMaterial, OverrideActorMaterialProperty, PlayEffect, PlayMotion, PlayTalk, RemoveOverrideMaterialProperty, ResetActorMaterialProperty, ResetAllIKGoalToOriginalTarget, ResetBakeSwingBone, ResetIKGoalToOriginalTarget, ResetModel, SampleAnimation, SetAnimationEventActive, SetEnableColliders, SetEyeBlinkEnable, SetEyeBlinkWeight, SetOverrideMaterialProperty, SetRendererActiveByReference, SetRendererAndCollidersActive, SetTalkActive, SetupAllIKGoalToOverrideTarget, SetupAnimation, SetupMoveConstraint, SetupPropConstraintAnimation, SetupPropConstraintSource, SetupSeatedDynamicCorrection, SetupTimelineEventReceiver, StopEffects, StopTalk, TryInitializeTalk, UpdateHighLightMaterial, UpdateLookAtEyePitchCorrection, UpdateMaterialInfos, UpdateNodAdditive, UpdateTalkAdditive, get_LookAtEyeSideCorrectionDeFactoWeight, get_localToWorldMatrix, get_worldToLocalMatrix.
+// TODO(qa-recon): Selected APK bodies still need reconstruction: .cctor, .ctor, ApplyActorAnimationManagePropertyData, Campus.Common.ICampusActorController.get_isDestroyed, CanEyeBlink, CorrectSkeleton, DisposeTalk<object>, EnableBakedSwingBone, ExecuteEyeBlink, GetAnimationController, GetPlayingAnimationController, InitializeActorAO, InitializeActorAnimation, InitializeBodyAdditive, InitializeExpression, InitializeFacial, InitializeRenderer, InitializeTalk<object>, LateUpdate, OnActorDestroy, OnBuildModelSuccess, OnClipPlay, OnEnable, OnUpdateMaterial, OverrideActorMaterialProperty, PlayEffect, PlayMotion, PlayTalk, ResetActorMaterialProperty, ResetAllIKGoalToOriginalTarget, ResetBakeSwingBone, ResetIKGoalToOriginalTarget, ResetModel, SampleAnimation, SetupAllIKGoalToOverrideTarget, SetupAnimation, SetupMoveConstraint, SetupPropConstraintAnimation, SetupPropConstraintSource, SetupSeatedDynamicCorrection, SetupTimelineEventReceiver, StopEffects, TryInitializeTalk, UpdateHighLightMaterial, UpdateLookAtEyePitchCorrection, UpdateMaterialInfos, UpdateNodAdditive.
 namespace Campus.Common
 {
     using global::System;
@@ -530,7 +530,7 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return 0.25f;
             }
         }
 
@@ -538,7 +538,7 @@ namespace Campus.Common
         {
             get
             {
-                return default(Matrix4x4);
+                return _rootBody.worldToLocalMatrix;
             }
         }
 
@@ -546,7 +546,7 @@ namespace Campus.Common
         {
             get
             {
-                return default(Matrix4x4);
+                return _rootBody.localToWorldMatrix;
             }
         }
 
@@ -570,6 +570,8 @@ namespace Campus.Common
 
         protected override void OnDisable()
         {
+            base.OnDisable();
+            if (_animationPlayer != null) _animationPlayer.onPlayEvent -= OnClipPlay;
         }
 
         [AsyncStateMachine(typeof(_003CBuildAsync_003Ed__69))]
@@ -669,10 +671,27 @@ namespace Campus.Common
 
         public void SetOverrideMaterialProperty(string materialName, CampusActorMaterialProperty property)
         {
+            if (string.IsNullOrEmpty(materialName)) return;
+            if (_overrideActorMaterialProperties == null)
+                _overrideActorMaterialProperties = new Dictionary<string, OverrideActorMaterialPropertyData>(16);
+            if (_overrideActorMaterialProperties.TryGetValue(materialName, out var data))
+                data.property = property;
+            else
+            {
+                data = new OverrideActorMaterialPropertyData { property = property, defaultProperty = null };
+                _overrideActorMaterialProperties.Add(materialName, data);
+            }
         }
 
         public void RemoveOverrideMaterialProperty(string materialName)
         {
+            if (_overrideActorMaterialProperties == null || string.IsNullOrEmpty(materialName)) return;
+            if (!_overrideActorMaterialProperties.TryGetValue(materialName, out var data)) return;
+            if (Application.isPlaying && _materialInfoTable.TryGetValue(materialName, out var materials))
+            {
+                foreach (var material in materials) ResetActorMaterialProperty(material, data);
+            }
+            data.property = null;
         }
 
         private void OverrideActorMaterialProperty(MaterialInfo materialInfo, OverrideActorMaterialPropertyData overrideProperty)
@@ -743,6 +762,8 @@ namespace Campus.Common
 
         public void SetTalkActive(bool active)
         {
+            if (_talk != null) _talk.TalkEnabled = active;
+            if (_criTalk != null) _criTalk.TalkEnabled = active;
         }
 
         public void PlayTalk()
@@ -767,10 +788,14 @@ namespace Campus.Common
 
         public void StopTalk()
         {
+            if (_talk != null) _talk.StopTalk();
+            if (_criTalk != null) _criTalk.StopTalk();
         }
 
         public void UpdateTalkAdditive(float time, float weight)
         {
+            if (_talk != null) _talk.UpdateAdditive(time, weight);
+            if (_criTalk != null) _criTalk.UpdateAdditive(time, weight);
         }
 
         private void UpdateNodAdditive()
@@ -787,10 +812,12 @@ namespace Campus.Common
 
         public void SetEyeBlinkWeight(float weight)
         {
+            if (_facial != null) _facial.SetEyeBlinkWeight(weight);
         }
 
         public void SetEyeBlinkEnable(bool enable)
         {
+            if (_facial != null) _facial.useBlink = enable;
         }
 
         public bool CanEyeBlink()
@@ -800,14 +827,20 @@ namespace Campus.Common
 
         public void SetRendererActiveByReference(bool isActive, bool isReset = false)
         {
+            if (isActive) _renderActiveCount = isReset ? 1 : _renderActiveCount + 1;
+            else _renderActiveCount = isReset ? 0 : Mathf.Max(_renderActiveCount - 1, 0);
+            SetRendererAndCollidersActive(_renderActiveCount > 0);
         }
 
         public void SetRendererAndCollidersActive(bool isActive)
         {
+            SetRendererActive(isActive);
+            SetEnableColliders(isActive);
         }
 
         private void SetEnableColliders(bool isActive)
         {
+            if (_collider != null) _collider.SetEnableColliders(isActive);
         }
 
         protected override void OnActorDestroy()
@@ -893,7 +926,7 @@ namespace Campus.Common
 
         public float GetHumanScale()
         {
-            return default(float);
+            return _animator != null ? _animator.humanScale : 1f;
         }
 
         public void SampleAnimation(AnimationClip clip, float time)
@@ -902,11 +935,12 @@ namespace Campus.Common
 
         public CustomGraphAnimationPlayer GetCustomGraphAnimationPlayer()
         {
-            return null;
+            return _customGraphAnimationPlayer;
         }
 
         public void SetAnimationEventActive(bool active)
         {
+            _animationEventHandler.SetAnimationEventActive(active);
         }
 
         public void SetAndEnableJointLimitSetting(CampusActorAnimationJointLimitSetting setting)
