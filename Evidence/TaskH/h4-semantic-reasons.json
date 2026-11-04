@@ -1,0 +1,2415 @@
+[
+  {
+    "method": "ActorAnimation.ActorAnimationConstraintTransformJobBone$$Resolve",
+    "signature": "(ActorAnimation_ActorAnimationConstraintTransformJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      76,
+      77
+    ],
+    "removed": {},
+    "added": {
+      "and #1": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationConstraintUtility$$ProcessConstraintParts<CampusActorAnimationJob, ActorAnimationConstraintTransformJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcCapsuleCollisionInfo",
+    "signature": "(UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationIKCorrectionJobCollider_o correctionCollider, UnityEngine_Vector3_o goalPosition, float goalRadius);",
+    "nativeLength": [
+      437,
+      430
+    ],
+    "removed": {
+      "bl FN": 1,
+      "mov #1": 1
+    },
+    "added": {},
+    "reason": "Same capsule endpoints, projection, interpolated radius and sphere collision record; quaternion metadata initialization/inlining differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKCalcUtility$$CalcGoalPosition",
+    "signature": "(UnityEngine_Vector3_o* resultGaolPosition, ActorAnimation_ActorAnimationIKCorrectionColliderCollisionInfo_o* info, UnityEngine_Vector3_o goalPosition, float goalRadius, float* correctionWeight);",
+    "nativeLength": [
+      209,
+      183
+    ],
+    "removed": {
+      "bl FN": 4,
+      "mov #1": 2
+    },
+    "added": {},
+    "reason": "Same inner-radius/damping-band branches, normalized push-out and weight multipliers; repeated pure distance calculations and metadata init merged.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetDeltaBodyPosition",
+    "signature": "(ActorAnimation_ActorAnimationFullBodyIKLimbPart_o limbPart, UnityEngine_Vector3_o bodyPosition);",
+    "nativeLength": [
+      488,
+      106
+    ],
+    "removed": {
+      "bl FN": 23,
+      "mov #1": 8,
+      "mov #0x4b0": 1,
+      "b FN": 2,
+      "fmov #1.00000000": 3,
+      "orr #32": 2,
+      "and #0x80000000": 1,
+      "fmov #-2.00000000": 1,
+      "bl UnityEngine.Quaternion$$Internal_ToEulerRad": 1,
+      "b UnityEngine.Quaternion$$Internal_MakePositive": 1,
+      "mov #0x230": 1
+    },
+    "added": {},
+    "reason": "Actual APK body matches pull-distance arithmetic; raw game boundary includes following unnamed copy/slerp/Euler helpers.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetEffectorHandle",
+    "signature": "(ActorAnimation_ActorAnimationFullBodyIKJobSkeleton_o __this, int32_t goal);",
+    "nativeLength": [
+      15,
+      15
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "Same four goal-to-effector selections and default; native branch comparisons reordered.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetIKLimbHandle",
+    "signature": "(ActorAnimation_ActorAnimationFullBodyIKJobSkeleton_o __this, int32_t goal);",
+    "nativeLength": [
+      17,
+      17
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "Same four goal-to-limb selections and default; native branch comparisons reordered.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetGaolEffector",
+    "signature": "(ActorAnimation_ActorAnimationFullBodyIKJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, Unity_Mathematics_float3_o moveDelta, ActorAnimation_ActorAnimationIKGoalEffector_o goalEffector, ActorAnimation_ActorAnimationIKHintEffector_o hintEffector);",
+    "nativeLength": [
+      702,
+      715
+    ],
+    "removed": {},
+    "added": {
+      "mov #0x7ff0000000000000": 1,
+      "and #0x7fffffffffffffff": 1
+    },
+    "reason": "Same foot blending and hand collision correction. Rebuilt math.max(double,double) has explicit NaN guard implementing APK fmaxnm semantics.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse",
+    "signature": "(Unity_Mathematics_float3_o euler);",
+    "nativeLength": [
+      240,
+      189
+    ],
+    "removed": {
+      "bl FN": 3,
+      "mov #1": 1,
+      "fmov #1.00000000": 1,
+      "fmov #0.50000000": 1
+    },
+    "added": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion": 1
+    },
+    "reason": "Equivalent rotation-order dispatch and arithmetic helper inlining differ. APK Euler/quaternion formulas and unsupported-order fallback are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverseYRoll",
+    "signature": "(Unity_Mathematics_float3_o euler, uint8_t rotationOrder);",
+    "nativeLength": [
+      234,
+      194
+    ],
+    "removed": {
+      "bl FN": 3,
+      "mov #1": 1,
+      "fmov #1.00000000": 1,
+      "fmov #0.50000000": 1
+    },
+    "added": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion": 1
+    },
+    "reason": "Equivalent rotation-order dispatch and arithmetic helper inlining differ. APK Euler/quaternion formulas and unsupported-order fallback are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection",
+    "signature": "(float inX, float inY, float inZ, uint8_t axisConnection);",
+    "nativeLength": [
+      39,
+      54
+    ],
+    "removed": {
+      "cmp #3": 1
+    },
+    "added": {
+      "cmp #2": 2,
+      "cmp #1": 1,
+      "tst #0xfc": 1,
+      "tst #0xfe": 1
+    },
+    "reason": "Equivalent rotation-order dispatch and arithmetic helper inlining differ. APK Euler/quaternion formulas and unsupported-order fallback are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$ToEuler",
+    "signature": "(Unity_Mathematics_quaternion_o q, uint8_t rotSeq);",
+    "nativeLength": [
+      205,
+      182
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot": 5
+    },
+    "added": {},
+    "reason": "Equivalent rotation-order dispatch and arithmetic helper inlining differ. APK Euler/quaternion formulas and unsupported-order fallback are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$ToQuaternion",
+    "signature": "(Unity_Mathematics_float3_o euler, uint8_t rotSeq);",
+    "nativeLength": [
+      294,
+      106
+    ],
+    "removed": {
+      "bl FN": 10,
+      "fmov #0.50000000": 5
+    },
+    "added": {
+      "cmp #6": 1
+    },
+    "reason": "Equivalent rotation-order dispatch and arithmetic helper inlining differ. APK Euler/quaternion formulas and unsupported-order fallback are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler",
+    "signature": "(Unity_Mathematics_quaternion_o q);",
+    "nativeLength": [
+      91,
+      98
+    ],
+    "removed": {},
+    "added": {
+      "fmov #-2.00000000": 1
+    },
+    "reason": "Existing formula verified against APK. The rebuilt code reloads -2.0 between atan2 calls.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverFrillBone$$Calc",
+    "signature": "(Unity_Mathematics_quaternion_o referenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o outerMinusCoefficient, Unity_Mathematics_float3_o innerCoefficient, Unity_Mathematics_float3_o outerPlusCoefficient, Unity_Mathematics_float3_o switchMinus, Unity_Mathematics_float3_o switchPlus, uint8_t connectionAxis, int32_t decomposeType, int32_t composeType);",
+    "nativeLength": [
+      243,
+      271
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree": 3,
+      "bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion": 3
+    },
+    "added": {
+      "mov #0x43340000": 3,
+      "mov #-0x3c4c0000": 3,
+      "mov #-0x3ccc0000": 3,
+      "mov #0x43b40000": 3
+    },
+    "reason": "Degree normalization and coefficient conversion helpers inline in the rebuilt calculation. Native immediates expose the same 180/360-degree ranges and clamp constants.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeBone$$Calc",
+    "signature": "(UnityEngine_Vector3_o handWorldPosition, UnityEngine_Vector3_o forearmWorldPosition, UnityEngine_Quaternion_o furisodeOffsetWorldRotation, UnityEngine_Quaternion_o spineWorldRotation, Unity_Mathematics_float3_o backWay, float apexAngle, float coefficient, float min, float max);",
+    "nativeLength": [
+      253,
+      243
+    ],
+    "removed": {
+      "bl FN": 1,
+      "mov #1": 1
+    },
+    "added": {},
+    "reason": "Degree normalization and coefficient conversion helpers inline in the rebuilt calculation. Native immediates expose the same 180/360-degree ranges and clamp constants.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHairBone$$Calc",
+    "signature": "(Unity_Mathematics_quaternion_o referenceHeadRotation, Unity_Mathematics_quaternion_o referenceNeckRotation, uint8_t translateConnectionAxis, Unity_Mathematics_float3_o headTranslateCoefficient, Unity_Mathematics_float3_o headTranslateLimitMin, Unity_Mathematics_float3_o headTranslateLimitMax, uint8_t rotationOrder, Unity_Mathematics_float3_o headRotateCoefficient, Unity_Mathematics_float3_o headRotateLimitMin, Unity_Mathematics_float3_o headRotateLimitMax, uint8_t rotateConnectionAxis, Unity_Mathematics_float3_o neckRotateCoefficient, Unity_Mathematics_float3_o neckRotateLimitMin, Unity_Mathematics_float3_o neckRotateLimitMax, int32_t composeType);",
+    "nativeLength": [
+      437,
+      587
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree": 9,
+      "bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion": 9
+    },
+    "added": {
+      "mov #0x43340000": 9,
+      "mov #-0x3c4c0000": 9,
+      "mov #-0x3ccc0000": 9,
+      "mov #0x43b40000": 9,
+      "mov #0x7f800000": 7,
+      "and #0x7fffffff": 18
+    },
+    "reason": "Degree normalization and coefficient conversion helpers inline in the rebuilt calculation. Native immediates expose the same 180/360-degree ranges and clamp constants.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmJobBone$$Execute",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverHumanoidArmJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      79,
+      77
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationQuartzDriverHumanoidArmBone$$Calc": 1
+    },
+    "added": {},
+    "reason": "The restored scalar Calc multiplication is inlined into the animation job.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandJobBone$$Execute",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverHumanoidHandJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      79,
+      77
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationQuartzDriverHumanoidHandBone$$Calc": 1
+    },
+    "added": {},
+    "reason": "The restored scalar Calc multiplication is inlined into the animation job.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$Calc",
+    "signature": "(Unity_Mathematics_float3_o referenceRollPitchYaw, Unity_Mathematics_float3_o outerMinusCoefficient, Unity_Mathematics_float3_o innerCoefficient, Unity_Mathematics_float3_o outerPlusCoefficient, Unity_Mathematics_float3_o switchMinus, Unity_Mathematics_float3_o switchPlus, int32_t composeType);",
+    "nativeLength": [
+      192,
+      225
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree": 3,
+      "bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion": 3
+    },
+    "added": {
+      "mov #0x43340000": 3,
+      "mov #-0x3c4c0000": 3,
+      "mov #-0x3ccc0000": 3,
+      "mov #0x43b40000": 3
+    },
+    "reason": "Degree normalization and coefficient conversion helpers inline in the rebuilt calculation. Native immediates expose the same 180/360-degree ranges and clamp constants.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone$$Resolve",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverHumanoidSleeveJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      44,
+      43
+    ],
+    "removed": {},
+    "added": {
+      "and #1": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegJobBone$$Execute",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverHumanoidUpLegJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      79,
+      77
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegBone$$Calc": 1
+    },
+    "added": {},
+    "reason": "The restored scalar Calc multiplication is inlined into the animation job.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoBone$$CalcPosition",
+    "signature": "(UnityEngine_Quaternion_o armLocalRotation, UnityEngine_Vector3_o innerOffsetLocalPosition, UnityEngine_Vector3_o outerOffsetLocalPosition, float lerpCoefficient, float innerLimit, float outerLimit);",
+    "nativeLength": [
+      141,
+      141
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverRotationBone$$Calc",
+    "signature": "(Unity_Mathematics_quaternion_o referenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o coefficient, Unity_Mathematics_float3_o limitMin, Unity_Mathematics_float3_o limitMax, uint8_t connectionAxis, int32_t decomposeType, int32_t composeType);",
+    "nativeLength": [
+      115,
+      161
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree": 3,
+      "bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion": 3
+    },
+    "added": {
+      "bl FN": 1,
+      "mov #1": 1,
+      "mov #0x43340000": 3,
+      "mov #-0x3c4c0000": 3,
+      "mov #-0x3ccc0000": 3,
+      "mov #0x43b40000": 3,
+      "mov #0x7f800000": 1,
+      "and #0x7fffffff": 6
+    },
+    "reason": "Degree normalization and coefficient conversion helpers inline in the rebuilt calculation. Native immediates expose the same 180/360-degree ranges and clamp constants.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverRotationJobBone$$Update",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverRotationJobBone_o __this, ActorAnimation_ActorAnimationQuartzDriverRotationSetting_o* setting);",
+    "nativeLength": [
+      20,
+      466
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 42,
+      "mov #1": 14,
+      "fmov #1.00000000": 3,
+      "orr #32": 2,
+      "and #0x80000000": 1,
+      "bl UnityEngine.Quaternion$$Internal_ToEulerRad": 1,
+      "b UnityEngine.Quaternion$$Internal_MakePositive": 1,
+      "fmov #-2.00000000": 2
+    },
+    "reason": "The first 20 rebuilt instructions are identical to the complete APK method. The comparator range also includes unnamed following math helpers. See h4-final-boundary-review.txt.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$.ctor",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverSkirtBone_o* __this);",
+    "nativeLength": [
+      2,
+      2
+    ],
+    "removed": {
+      "b UnityEngine.MonoBehaviour$$.ctor": 1
+    },
+    "added": {
+      "b ActorAnimation.ActorAnimationQuartzDriverBoneBase$$.ctor": 1
+    },
+    "reason": "The linker names the identical base-constructor body ActorAnimationQuartzDriverBoneBase..ctor instead of MonoBehaviour..ctor.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverFrillJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverFurisodeJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHairJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidArmJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidHandJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidSleeveJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      108,
+      109
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidUpLegJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverPonchoJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverRotationJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverSkirtJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverWaistJobBone>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o driver, UnityEngine_Animations_AnimationStream_o stream, Unity_Collections_NativeArray_TBone__o list);",
+    "nativeLength": [
+      65,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$.ctor",
+    "signature": "(ActorAnimation_ActorAnimationQuartzDriverWaistBone_o* __this);",
+    "nativeLength": [
+      2,
+      2
+    ],
+    "removed": {
+      "b UnityEngine.MonoBehaviour$$.ctor": 1
+    },
+    "added": {
+      "b ActorAnimation.ActorAnimationQuartzDriverBoneBase$$.ctor": 1
+    },
+    "reason": "The linker names the identical base-constructor body ActorAnimationQuartzDriverBoneBase..ctor instead of MonoBehaviour..ctor.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationRootControllerJobLocator$$Resolve",
+    "signature": "(ActorAnimation_ActorAnimationRootControllerJobLocator_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      44,
+      43
+    ],
+    "removed": {},
+    "added": {
+      "and #1": 1
+    },
+    "reason": "Boolean return materialization or zero-extension of the job loop index differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamicHead, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamic, float weight);",
+    "nativeLength": [
+      297,
+      315
+    ],
+    "removed": {
+      "tst #1": 3
+    },
+    "added": {
+      "mov #0x7f800000": 3,
+      "and #0x7fffffff": 2,
+      "cmp #0": 1
+    },
+    "reason": "APK parent-frame Euler limits and reference min/max restored. Scalar conditional selection differs from the native vectorized boolean masks.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, int32_t dynamicType, Unity_Mathematics_float3_o boneAxis, float boneLength, ActorAnimation_ActorSwingAffineTransform_o selfTx, ActorAnimation_ActorSwingAffineTransform_o childTx, ActorAnimation_ActorSwingAffineTransform_o childDefaultTx, float stiffness, float pendulum, float pendulumRange);",
+    "nativeLength": [
+      234,
+      224
+    ],
+    "removed": {
+      "mov #0x7f800000": 1,
+      "and #0x7fffffff": 1
+    },
+    "added": {},
+    "reason": "APK swing/slide stiffness and pendulum terms restored, including reciprocal multiplication. Compiler folds the range NaN guard after its positive threshold check.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      386,
+      384
+    ],
+    "removed": {
+      "bl Unity.Mathematics.float3$$op_Implicit": 1,
+      "bl ActorAnimation.ActorSwingAffineTransform$$Set": 2
+    },
+    "added": {},
+    "reason": "APK root/hips TR reads, height normalization and three solver stages restored. Affine Set helpers inline in the rebuilt caller and the unused local-scale float3 conversion is folded.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o rootTx, ActorAnimation_ActorSwingAffineTransform_o hipsTx);",
+    "nativeLength": [
+      1426,
+      1392
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition": 1,
+      "mov #0x7f800000": 2,
+      "bl ActorAnimation.ActorSwingAffineTransform$$.ctor": 3,
+      "and #0x7fffffff": 1,
+      "cmp #0": 1
+    },
+    "added": {
+      "fmov #1.00000000": 1,
+      "tst #1": 1
+    },
+    "reason": "APK alternating breast steps, arm correction curves, prewarm and rotation averaging restored. Root-cancellation and affine helpers inline. Constants, side selection and clamp operations are scheduled differently.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, ActorAnimation_ActorSwingJobChainBone_o* pChainHead, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamicHead, int32_t depth, int32_t chainStartIndex, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o hipsTx, float heightCorrectionBoneScale, bool enableSeatedDynamicCorrection);",
+    "nativeLength": [
+      225,
+      214
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition": 2
+    },
+    "added": {
+      "fmov #1.00000000": 1
+    },
+    "reason": "APK root-cancellation, height scale and chain collision order restored. Root-cancellation helper inlines.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorSwingAffineTransform_o selfTx, ActorAnimation_ActorSwingAffineTransform_o childDefaultTx, ActorAnimation_ActorSwingAffineTransform_o childTx, ActorAnimation_ActorSwingAffineTransform_o invRootTx, Unity_Mathematics_float3_o cancelRootPosition);",
+    "nativeLength": [
+      466,
+      440
+    ],
+    "removed": {
+      "cmp #0": 1
+    },
+    "added": {},
+    "reason": "APK thigh/knee/foot interpolation restored. Six GetPosition calls and equivalent math operations have different scheduling.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o rootTx, ActorAnimation_ActorSwingAffineTransform_o hipsTx, Unity_Mathematics_float3_o heightCorrectionBonePosition, float heightCorrectionBoneScale);",
+    "nativeLength": [
+      1548,
+      1477
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition": 2,
+      "bl ActorAnimation.ActorSwingAffineTransform$$.ctor": 1,
+      "bl ActorAnimation.ActorSwingAffineTransform$$Set": 2,
+      "cmp #1": 2,
+      "mov #0x7f800000": 1,
+      "and #0x7fffffff": 1,
+      "cmp #0": 1
+    },
+    "added": {},
+    "reason": "APK layer traversal, fixed 0.01667 integration, prewarm stability, root cancellation, wind, seated correction, collisions and writeback restored. Affine/root helpers inline and prewarm branches are folded.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones",
+    "signature": "(ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o rootTx, ActorAnimation_ActorSwingAffineTransform_o hipsTx, Unity_Mathematics_float3_o heightCorrectionBonePosition, float heightCorrectionBoneScale);",
+    "nativeLength": [
+      297,
+      267
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorSwingAffineTransform$$.ctor": 2
+    },
+    "added": {},
+    "reason": "APK inverse-root transforms and optional collider scaling restored. Affine constructors inline and reciprocal-scale materialization moves.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationWindUtility$$CalcWindPower",
+    "signature": "(Unity_Mathematics_float3_o jointWorldPosition, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, float time);",
+    "nativeLength": [
+      196,
+      187
+    ],
+    "removed": {
+      "tst #1": 2
+    },
+    "added": {
+      "and #0x7fffffff": 1,
+      "cmp #0": 1
+    },
+    "reason": "Same force/noise/wave/range/random operations and constants; min/max/NaN handling and SIMD register scheduling differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingChain$$UpdateChainInfo",
+    "signature": "(ActorAnimation_ActorSwingChain_o* __this);",
+    "nativeLength": [
+      416,
+      419
+    ],
+    "removed": {
+      "mov #1": 1,
+      "mov #0xd": 1,
+      "cmp #0xd": 1
+    },
+    "added": {
+      "mov #0xe": 1,
+      "cmp #0xe": 1
+    },
+    "reason": "Foreach exception-unwind state ordinals differ while the same list operations and hierarchy updates remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingChain$$UpdateHierarchyDepth",
+    "signature": "(ActorAnimation_ActorSwingChain_o* __this);",
+    "nativeLength": [
+      154,
+      164
+    ],
+    "removed": {},
+    "added": {
+      "bl System.Collections.Generic.List<object>$$get_Item": 1
+    },
+    "reason": "The rebuilt loop retains a List indexer call that the APK inlines.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingColliderUtility$$UpdateCollider",
+    "signature": "(ActorAnimation_ActorSwingJobCollider_o* jobCollider, Unity_Mathematics_float3_o position, Unity_Mathematics_float3_o subPosition, Unity_Mathematics_quaternion_o rotation);",
+    "nativeLength": [
+      230,
+      235
+    ],
+    "removed": {},
+    "added": {
+      "and #0x7fffffff": 2
+    },
+    "reason": "Equivalent max/min radius selection emits additional NaN-mask instructions in the rebuilt broad-phase bounds calculation.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision",
+    "signature": "(Unity_Collections_NativeList_ActorSwingJobStaticBone__o staticBones, ActorAnimation_ActorSwingJobChainBone_o* pChain, ActorAnimation_ActorSwingAffineTransform_o* selfTx, ActorAnimation_ActorSwingAffineTransform_o* subTx, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamicHead, ActorAnimation_ActorSwingJobDynamicBone_o* pBone, ActorAnimation_ActorSwingJobDynamicBone_o* pSubBone, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o hipsTx, bool enableSeatedDynamicCorrection, bool isCmmnHeightCorrectionNeeded, float inverseHeightCorrectionBoneScale);",
+    "nativeLength": [
+      360,
+      347
+    ],
+    "removed": {},
+    "added": {
+      "mov #0x3bc": 1
+    },
+    "reason": "APK segment-normal displacement and parent-length projections restored. NativeList metadata and dynamic-bone stride constants are scheduled differently.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule",
+    "signature": "(ActorAnimation_ActorSwingJobCollider_o* capsuleA, ActorAnimation_ActorSwingJobCollider_o* capsuleB, ActorAnimation_HitInfo_o* hitInfo);",
+    "nativeLength": [
+      207,
+      210
+    ],
+    "removed": {},
+    "added": {
+      "mov #0xc5ac": 1,
+      "movk #0x3727, lsl #16": 1
+    },
+    "reason": "APK segment projection, degenerate thresholds and radius interpolation restored. Clamp constants and checks move within equivalent branches.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider",
+    "signature": "(ActorAnimation_ActorSwingJobCollider_o* fromCollider, ActorAnimation_ActorSwingJobCollider_o* toCollider, bool enableSeatedDynamicCorrection, ActorAnimation_HitInfo_o* hitInfo);",
+    "nativeLength": [
+      95,
+      78
+    ],
+    "removed": {
+      "cmp #2": 1,
+      "bl FN": 6,
+      "mov #1": 2
+    },
+    "added": {
+      "cmp #3": 2,
+      "b FN": 5
+    },
+    "reason": "APK mask filtering, plane fast path and shape dispatch restored. Wrappers are tail-called instead of returning their result through a local.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobBreastBone$$Reset",
+    "signature": "(ActorAnimation_ActorSwingJobBreastBone_o __this, ActorAnimation_InitialTransform_o initialLeftBreastEndTransform, ActorAnimation_InitialTransform_o initialRightBreastEndTransform, int32_t prewarmCount);",
+    "nativeLength": [
+      176,
+      145
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorSwingAffineTransform$$.ctor": 4
+    },
+    "added": {
+      "cmp #0": 1
+    },
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBone$$Reset",
+    "signature": "(ActorAnimation_ActorSwingJobDynamicBone_o __this, ActorAnimation_InitialTransform_o initialTransform, int32_t prewarmCount);",
+    "nativeLength": [
+      128,
+      93
+    ],
+    "removed": {
+      "bl ActorAnimation.ActorSwingAffineTransform$$.ctor": 2
+    },
+    "added": {},
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBoneCash$$IsAlreadyStable",
+    "signature": "(ActorAnimation_ActorSwingJobDynamicBoneCash_o __this);",
+    "nativeLength": [
+      64,
+      63
+    ],
+    "removed": {
+      "mov #1": 1
+    },
+    "added": {},
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$BezierExtractU",
+    "signature": "(float t, float w1, float w2);",
+    "nativeLength": [
+      263,
+      247
+    ],
+    "removed": {
+      "fmov #1.00000000": 2,
+      "fmov #0.50000000": 2,
+      "cmp #0": 1
+    },
+    "added": {
+      "bl FN": 1
+    },
+    "reason": "Same cubic, quadratic and linear branches, roots and range fallback; compiler merges range fallback blocks and reorders metadata setup.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$Evaluate",
+    "signature": "(float time, ActorAnimation_AnimationCurveData_o* curve, ActorAnimation_KeyframeData_o* keyframe);",
+    "nativeLength": [
+      68,
+      66
+    ],
+    "removed": {},
+    "added": {
+      "mov #0x18": 1,
+      "and #0x7fffffff": 2
+    },
+    "reason": "APK remainder wrapping, cached binary search, infinite tangent step and exact 1/3-weight dispatch restored; Infinity comparisons use equivalent explicit bit masks.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FastCbrt",
+    "signature": "(float x);",
+    "nativeLength": [
+      80,
+      9
+    ],
+    "removed": {
+      "bl FN": 12,
+      "mov #1": 4,
+      "fmov #3.00000000": 2
+    },
+    "added": {
+      "bl ActorAnimation.AnimationCurveEvaluator$$FastCbrtPositive": 1,
+      "b ActorAnimation.AnimationCurveEvaluator$$FastCbrtPositive": 1
+    },
+    "reason": "Same signed exp(log(abs(x))/3); APK inlines FastCbrtPositive into both branches while rebuilt calls/tail-calls it.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$CreateFullBodyIK",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, ActorAnimation_IActorAnimationRigData_o* rigData);",
+    "nativeLength": [
+      907,
+      907
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, ActorAnimation_IActorAnimationRigData_o* rigData);",
+    "nativeLength": [
+      2103,
+      1889
+    ],
+    "removed": {
+      "bl FN": 2,
+      "ldr  MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()": 1,
+      "mov #0x1d0": 3,
+      "bl UnityEngine.Component$$get_transform": 1,
+      "orr #1": 1,
+      "orr #3": 1,
+      "tst #1": 2,
+      "mov #0x58": 1,
+      "bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor": 1
+    },
+    "added": {
+      "mov #0x230": 1,
+      "mov #0x3bc": 1,
+      "mov #-1": 1,
+      "cmp #0": 1
+    },
+    "reason": "APK native allocations, instance-ID index map, dynamic/static/breast/chain payloads, curve conversion and six seated-correction bindings restored. Object-initializer zeroing and local reuse differ. Native hipsHandle binds campus.move and heightCorrectionBoneHandle binds campus.hips. Reference indices are restricted to preceding swing bones.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$DisableIKGoal",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, int32_t ikGoal);",
+    "nativeLength": [
+      20,
+      20
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$SetupIKGoalEffector",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, UnityEngine_Transform_o* ikGoalEffectorTransform, int32_t ikGoal, int32_t handleType);",
+    "nativeLength": [
+      66,
+      66
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$UpdateConstraintSource<ActorAnimationRigData>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, ActorAnimation_ActorAnimationRigData_o* rigData, UnityEngine_Animator_o* animator);",
+    "nativeLength": [
+      79,
+      81
+    ],
+    "removed": {},
+    "added": {
+      "bl ActorAnimation.ActorAnimationRigData$$get_constraintTransformBones": 1
+    },
+    "reason": "The constrained generic getter remains a direct ActorAnimationRigData accessor call instead of inline field access.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<ActorAnimationRigData>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, ActorAnimation_ActorAnimationRigData_o* rigData);",
+    "nativeLength": [
+      1602,
+      1544
+    ],
+    "removed": {
+      "bl FN": 13,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHairBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHumanoidSleeveBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverFrillBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverSkirtBone>.Dispose()": 1,
+      "bl System.Collections.Generic.List.Enumerator<object>$$Dispose": 4,
+      "cmp #1": 4,
+      "mov #-1": 1,
+      "bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor": 1
+    },
+    "added": {
+      "bl ActorAnimation.ActorAnimationRigData$$get_constraintTransformBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverRotationBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverFrillBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverSkirtBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHairBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidHandBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidSleeveBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidUpLegBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidArmBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverWaistBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverFurisodeBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverPonchoBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_swingBreastBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_swingDynamicBones": 1,
+      "cmp #0": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_swingStaticBones": 1,
+      "bl ActorAnimation.ActorAnimationRigData$$get_swingChainLayers": 1
+    },
+    "reason": "Constrained generic accessor dispatch, helper inlining, reference-limit branch merging and foreach exception-finally layout differ. The APK dirty-data field updates and list traversal are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<CampusActorAnimationRigData>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, ActorAnimation_CampusActorAnimationRigData_o* rigData);",
+    "nativeLength": [
+      1602,
+      1509
+    ],
+    "removed": {
+      "bl FN": 13,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHairBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHumanoidSleeveBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverFrillBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverSkirtBone>.Dispose()": 1,
+      "bl System.Collections.Generic.List.Enumerator<object>$$Dispose": 4,
+      "cmp #1": 4,
+      "mov #-1": 1,
+      "bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor": 1
+    },
+    "added": {
+      "cmp #0": 1
+    },
+    "reason": "Constrained generic accessor dispatch, helper inlining, reference-limit branch merging and foreach exception-finally layout differ. The APK dirty-data field updates and list traversal are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<__Il2CppFullySharedGenericStructType>",
+    "signature": "(ActorAnimation_CampusActorAnimationJob_o __this, Unity_IL2CPP_Metadata___Il2CppFullySharedGenericStructType_o* rigData);",
+    "nativeLength": [
+      2302,
+      2197
+    ],
+    "removed": {
+      "bl FN": 14,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHairBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHumanoidSleeveBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverFrillBone>.Dispose()": 1,
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverSkirtBone>.Dispose()": 1,
+      "bl System.Collections.Generic.List.Enumerator<object>$$Dispose": 4,
+      "cmp #1": 4,
+      "mov #-1": 1,
+      "bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor": 1
+    },
+    "added": {
+      "cmp #0": 1
+    },
+    "reason": "Constrained generic accessor dispatch, helper inlining, reference-limit branch merging and foreach exception-finally layout differ. The APK dirty-data field updates and list traversal are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJointLimit$$IsValid",
+    "signature": "(ActorAnimation_CampusActorAnimationJointLimit_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      37,
+      36
+    ],
+    "removed": {
+      "mov #1": 1
+    },
+    "added": {
+      "and #1": 1
+    },
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$IsValid",
+    "signature": "(ActorAnimation_CampusActorAnimationLookAtLimit_o __this, UnityEngine_Animations_AnimationStream_o stream);",
+    "nativeLength": [
+      63,
+      62
+    ],
+    "removed": {
+      "mov #1": 1
+    },
+    "added": {
+      "and #1": 1
+    },
+    "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationRig$$RegisterBones",
+    "signature": "(ActorAnimation_CampusActorAnimationRig_o* __this, ActorAnimation_CampusActorAnimationInitializeData_o* initialData);",
+    "nativeLength": [
+      760,
+      810
+    ],
+    "removed": {
+      "bl UnityEngine.Animations.Rigging.RigConstraint<CampusActorAnimationJob, CampusActorAnimationRigData, object>$$get_data": 1,
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "The job-data accessor is inlined and null-predicate polarity is reversed with the corresponding branch reversal.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "ActorAnimation.CurveConversion$$KeyframeConversion",
+    "signature": "(UnityEngine_Keyframe_o key);",
+    "nativeLength": [
+      1466,
+      63
+    ],
+    "removed": {
+      "cmp #3": 1,
+      "cmp #2": 4,
+      "bl FN": 57,
+      "mov #1": 24,
+      "fmov #-2.00000000": 1,
+      "ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()": 3,
+      "ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()": 2,
+      "bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>": 2,
+      "mov #0x58": 5,
+      "and #1": 2,
+      "bl ActorAnimation.ActorSwingColliderUtility$$UpdateCollider": 2,
+      "add MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()": 1,
+      "add MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()": 2,
+      "fmov #1.00000000": 9,
+      "bl Unity.Mathematics.float3$$op_Implicit": 8,
+      "mov #0x3bc": 1,
+      "cmp #4": 2,
+      "tst #1": 1,
+      "mov #0x7f800000": 4,
+      "and #0x7fffffff": 8
+    },
+    "added": {},
+    "reason": "Actual key conversion matches; APK raw boundary includes unnamed Euler and collision helper clones after its return.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$CorrectSkeleton",
+    "signature": "(Campus_Common_CampusActorController_o* __this, System_String_o* partsId, UnityEngine_GameObject_o* instance);",
+    "nativeLength": [
+      137,
+      137
+    ],
+    "removed": {
+      "bl System.String$$op_Equality": 1
+    },
+    "added": {
+      "bl System.String$$op_Inequality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$DisableJointLimitSetting",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      36,
+      38
+    ],
+    "removed": {
+      "b Campus.Common.CampusActorAnimation$$DisableJointLimitSetting": 1
+    },
+    "added": {
+      "bl FN": 1
+    },
+    "reason": "The restored CampusActorAnimation/face-system forwarding helper is inlined or tail-called differently. The caller retains the same arguments and fallback path.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$EnableBakedSwingBone",
+    "signature": "(Campus_Common_CampusActorController_o* __this, VL_MotionDefine_o* motionDefine);",
+    "nativeLength": [
+      193,
+      193
+    ],
+    "removed": {
+      "bl System.String$$op_Inequality": 1
+    },
+    "added": {
+      "bl System.String$$op_Equality": 1,
+      "cmp #1": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$ExecuteEyeBlink",
+    "signature": "(Campus_Common_CampusActorController_o* __this, bool forceBlink);",
+    "nativeLength": [
+      42,
+      46
+    ],
+    "removed": {},
+    "added": {
+      "b VL.VLActorFacialSystem$$set_NextBlinkTime": 1
+    },
+    "reason": "The restored CampusActorAnimation/face-system forwarding helper is inlined or tail-called differently. The caller retains the same arguments and fallback path.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$GetAnimationController",
+    "signature": "(Campus_Common_CampusActorController_o* __this, VL_Animation_LayerParam_o* param);",
+    "nativeLength": [
+      43,
+      43
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$GetAnimationController",
+    "signature": "(Campus_Common_CampusActorController_o* __this, VL_Animation_LayerParam_o* param, int32_t outputType);",
+    "nativeLength": [
+      45,
+      45
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalPosition",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      46,
+      49
+    ],
+    "removed": {
+      "b Campus.Common.CampusActorAnimation$$get_FullBodyIkHeadOriginalPosition": 1
+    },
+    "added": {},
+    "reason": "The restored CampusActorAnimation/face-system forwarding helper is inlined or tail-called differently. The caller retains the same arguments and fallback path.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalRotation",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      46,
+      56
+    ],
+    "removed": {
+      "b Campus.Common.CampusActorAnimation$$get_FullBodyIkHeadOriginalRotation": 1
+    },
+    "added": {
+      "mov #0xfa35": 1,
+      "movk #0x3c8e, lsl #16": 1,
+      "b UnityEngine.Quaternion$$Internal_FromEulerRad": 1
+    },
+    "reason": "The restored CampusActorAnimation/face-system forwarding helper is inlined or tail-called differently. The caller retains the same arguments and fallback path.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$InitializeRenderer",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      218,
+      217
+    ],
+    "removed": {
+      "cmp #9": 1
+    },
+    "added": {
+      "cmp #0xa": 1
+    },
+    "reason": "The actor index bound is expressed as <=9 in the APK and <10 in the rebuild.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$OverrideActorMaterialProperty",
+    "signature": "(Campus_Common_CampusActorController_o* __this, VL_Core_MaterialInfo_o* materialInfo, Campus_Common_CampusActorController_OverrideActorMaterialPropertyData_o* overrideProperty);",
+    "nativeLength": [
+      221,
+      222
+    ],
+    "removed": {
+      "bl Campus.Common.CampusActorMaterialProperty$$.ctor": 1
+    },
+    "added": {
+      "mov #1": 1,
+      "bl System.Object$$.ctor": 1
+    },
+    "reason": "The restored material-property constructor is inlined into its allocation site.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$RemoveOverrideMaterialProperty",
+    "signature": "(Campus_Common_CampusActorController_o* __this, System_String_o* materialName);",
+    "nativeLength": [
+      106,
+      100
+    ],
+    "removed": {
+      "bl FN": 3,
+      "cmp #1": 1
+    },
+    "added": {
+      "ldr  MMETH Method$System.Collections.Generic.List.Enumerator<MaterialInfo>.Dispose()": 1,
+      "bl System.Collections.Generic.List.Enumerator<object>$$Dispose": 1
+    },
+    "reason": "Foreach disposal and exception-finally lowering differ while the same MaterialInfo updates remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$ResetCustomLookAt",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      32,
+      37
+    ],
+    "removed": {
+      "b Campus.Common.CampusActorAnimation$$ResetCustomLookAt": 1
+    },
+    "added": {
+      "bl FN": 1,
+      "b Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector": 1
+    },
+    "reason": "The restored CampusActorAnimation/face-system forwarding helper is inlined or tail-called differently. The caller retains the same arguments and fallback path.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$ResetDynamicSkin",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      32,
+      31
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$ResetTime",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      32,
+      31
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$SetCustomLookAtEffector",
+    "signature": "(Campus_Common_CampusActorController_o* __this, VL_IK_CustomLookAtEffector_o* effector);",
+    "nativeLength": [
+      37,
+      41
+    ],
+    "removed": {
+      "b Campus.Common.CampusActorAnimation$$SetCustomLookAtEffector": 1
+    },
+    "added": {
+      "bl FN": 1,
+      "b Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector": 1
+    },
+    "reason": "The restored CampusActorAnimation/face-system forwarding helper is inlined or tail-called differently. The caller retains the same arguments and fallback path.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$SetEnableColliders",
+    "signature": "(Campus_Common_CampusActorController_o* __this, bool isActive);",
+    "nativeLength": [
+      37,
+      37
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$SetEyeBlinkEnable",
+    "signature": "(Campus_Common_CampusActorController_o* __this, bool enable);",
+    "nativeLength": [
+      33,
+      33
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$SetEyeBlinkWeight",
+    "signature": "(Campus_Common_CampusActorController_o* __this, float weight);",
+    "nativeLength": [
+      37,
+      37
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "Unity Object or string equality predicate polarity changes together with the consuming branch. Both paths retain the APK null/name condition.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$SetupPropConstraintAnimation",
+    "signature": "(Campus_Common_CampusActorController_o* __this, VL_MotionDefine_o* motionDefine);",
+    "nativeLength": [
+      746,
+      755
+    ],
+    "removed": {},
+    "added": {
+      "bl UnityEngine.Object$$get_name": 2
+    },
+    "reason": "The rebuilt code reads the same Unity Object name twice where the APK reuses the earlier value.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$UpdateLookAtEyePitchCorrection",
+    "signature": "(Campus_Common_CampusActorController_o* __this);",
+    "nativeLength": [
+      75,
+      162
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 2,
+      "mov #1": 1,
+      "fmov #1.00000000": 1,
+      "mov #2": 2,
+      "mov #0x15": 1,
+      "cmp #1": 1,
+      "mov #0x16": 1,
+      "and #0xffffffff": 1,
+      "bl UnityEngine.Transform$$get_localRotation": 1,
+      "bl Unity.Mathematics.quaternion$$op_Implicit": 2,
+      "bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollZRoll": 1,
+      "bl Unity.Mathematics.float3$$get_Item": 3,
+      "bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll": 1,
+      "bl UnityEngine.Transform$$set_localRotation": 1
+    },
+    "reason": "The restored correction calculation is inlined into the caller. The native range also contains the expanded quaternion/Euler helper sequence.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusActorModelParts$$OnRegisterBone",
+    "signature": "(Campus_Common_CampusActorModelParts_o* __this, System_String_o** boneName, UnityEngine_Transform_o* bone);",
+    "nativeLength": [
+      971,
+      968
+    ],
+    "removed": {
+      "ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()": 4
+    },
+    "added": {},
+    "reason": "Generic InitialTransform List.Add metadata loads are reused or inlined by the rebuilt compiler.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusLightAnchor$$SetShadow",
+    "signature": "(Campus_Common_CampusLightAnchor_o* __this, int32_t value);",
+    "nativeLength": [
+      69,
+      67
+    ],
+    "removed": {
+      "cmp #0": 1
+    },
+    "added": {},
+    "reason": "The light-type branch is lowered without the APK explicit compare-to-zero instruction.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$OnBind",
+    "signature": "(Campus_Common_CampusVirtualActorController_o* __this, VL_VLVirtualActorController_BindData_o boneBind);",
+    "nativeLength": [
+      497,
+      497
+    ],
+    "removed": {
+      "bl <PrivateImplementationDetails>$$ComputeStringHash": 1,
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl <QAReconstructionImplementationDetails>$$ComputeStringHash": 1,
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "The metadata postprocessor renames PrivateImplementationDetails to QAReconstructionImplementationDetails. Unity Object null predicates use the complementary equality call.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$ApplyOverrideMotionTracks",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Playables_PlayableDirector_o* actorDirector, Common_Live_OverrideActorMotionTrack_array* overrideActorMotionTracks);",
+    "nativeLength": [
+      385,
+      390
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 2
+    },
+    "added": {
+      "and #0xffffffff": 2,
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 2
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$Campus.Timeline.IForcedCameraInternal.SetForcedCamera",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t sourceId, Cinemachine_ICinemachineCamera_o* camA, Cinemachine_ICinemachineCamera_o* camB, float weightB, float deltaTime, bool forceAuto);",
+    "nativeLength": [
+      62,
+      62
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$CollectTracksResolvedByPaths",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, System_String_array* pathStrings);",
+    "nativeLength": [
+      147,
+      147
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 1
+    },
+    "added": {
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 1
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$DisableTrackBinding",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Timeline_TrackAsset_o* track, int32_t componentDisableTarget);",
+    "nativeLength": [
+      144,
+      144
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 1
+    },
+    "added": {
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 1
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$EnableCharacterTrack",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, System_String_o* characteId);",
+    "nativeLength": [
+      238,
+      238
+    ],
+    "removed": {},
+    "added": {
+      "b FN": 1,
+      "ldr  STR field of view": 1
+    },
+    "reason": "An outlined native load thunk changes metadata/string-address tracking in the comparator. The method instruction count and track-binding flow are unchanged.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$GetFieldConstraintTargets",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex);",
+    "nativeLength": [
+      162,
+      162
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 1
+    },
+    "added": {
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 1
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$GetPropAndFieldConstraintTargetPairs",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex);",
+    "nativeLength": [
+      114,
+      114
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 1
+    },
+    "added": {
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 1
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$GetProps",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex);",
+    "nativeLength": [
+      162,
+      162
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 1
+    },
+    "added": {
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 1
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$ResolveTracksByPathSegments",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Timeline_TimelineAsset_o* timeline, System_String_array* segments);",
+    "nativeLength": [
+      198,
+      191
+    ],
+    "removed": {
+      "bl System.Object$$.ctor": 2,
+      "mov #-0x100000000": 1
+    },
+    "added": {
+      "bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor": 2
+    },
+    "reason": "Generated display-class constructor aliases, closure-field initialization and loop zero-extension differ. The same track filters and binding operations remain.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$UpdateCameraOverride",
+    "signature": "(Campus_Common_Live_CampusLiveTimelineController_o* __this, float deltaTime, bool forceReacquire);",
+    "nativeLength": [
+      152,
+      133
+    ],
+    "removed": {
+      "ldr  CampusLiveTimelineController.ForcedCameraState>.Dispose()": 1,
+      "and #1": 1,
+      "bl Campus.Common.Live.CampusLiveTimelineController$$ApplyCameraOverride": 1,
+      "bl System.Collections.Generic.Dictionary.Enumerator<int, CampusLiveTimelineController.ForcedCameraState>$$Dispose": 1,
+      "bl Campus.Common.Live.CampusLiveTimelineController$$ClearCameraOverride": 1,
+      "fmov #1.00000000": 1
+    },
+    "added": {},
+    "reason": "ApplyCameraOverride/ClearCameraOverride inline and the dictionary enumerator exception-finally layout changes.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.Panorama.PanoramaCameraHolder$$ResolveCamera",
+    "signature": "(Campus_Common_Panorama_PanoramaCameraHolder_o* __this, int32_t type, int32_t index);",
+    "nativeLength": [
+      32,
+      32
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Common.UIDrawObjects$$Execute",
+    "signature": "(Campus_Common_UIDrawObjects_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_DrawingSettings_o* drawSettings, UnityEngine_Matrix4x4_o viewMatrix, UnityEngine_Matrix4x4_o projectionMatrix, UnityEngine_Vector3_o cameraPosition, UnityEngine_Rect_o viewport);",
+    "nativeLength": [
+      193,
+      190
+    ],
+    "removed": {
+      "bl FN": 1
+    },
+    "added": {
+      "ldr  STR _WorldSpaceCameraPos": 2,
+      "bl UnityEngine.Shader$$PropertyToID": 1
+    },
+    "reason": "The _WorldSpaceCameraPos shader property is resolved through Shader.PropertyToID rather than an already initialized native property-id helper.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimator$$.ctor",
+    "signature": "(Campus_Crowd_CrowdAnimator_o* __this, UnityEngine_Transform_o* transform, UnityEngine_Animator_o* animator, Campus_Crowd_CrowdVolume_o* volume);",
+    "nativeLength": [
+      482,
+      482
+    ],
+    "removed": {
+      "bl Campus.Crowd.CrowdAnimationBehaviour$$.ctor": 1
+    },
+    "added": {
+      "bl UnityEngine.Playables.PlayableBehaviour$$.ctor": 1
+    },
+    "reason": "The trivial CrowdAnimationBehaviour constructor folds into PlayableBehaviour..ctor.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Crowd.CrowdVolume$$<BuildHierarchy>g__Create|16_0",
+    "signature": "(UnityEngine_Transform_o* parent, System_String_o* goName, UnityEngine_Matrix4x4_o* bindPose);",
+    "nativeLength": [
+      101,
+      311
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 11,
+      "mov #1": 4,
+      "fmov #0.50000000": 1,
+      "fmov #1.00000000": 1,
+      "bl Unity.Mathematics.quaternion$$.ctor": 1
+    },
+    "reason": "The first 101 rebuilt instructions are identical to the complete APK method. The comparator includes neighboring unnamed math routines. See h4-final-boundary-review.txt.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Pivot",
+    "signature": "(Campus_DecalLight_CampusDecalLight_o* __this);",
+    "nativeLength": [
+      29,
+      28
+    ],
+    "removed": {
+      "cmp #2": 1,
+      "cmp #1": 1
+    },
+    "added": {
+      "cmn #2": 1
+    },
+    "reason": "Equivalent switch dispatch uses two comparisons in the APK and a combined range check in the rebuild.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_BoxSize",
+    "signature": "(Campus_DecalLight_CampusDecalLight_o* __this, UnityEngine_Vector3_o value);",
+    "nativeLength": [
+      17,
+      31
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 4,
+      "bl System.ArgumentOutOfRangeException$$.ctor": 1,
+      "ldr  MMETH Method$Campus.DecalLight.CampusDecalLight.set_BoxSize()": 1
+    },
+    "reason": "The APK throws for an invalid shape through a shared cold exception tail outside the canonical native function boundary. The rebuilt function retains that tail in its range.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Execute",
+    "signature": "(Campus_DecalLight_CampusDecalLightDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd);",
+    "nativeLength": [
+      441,
+      441
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1,
+      "mov #0xf": 1,
+      "cmp #0xf": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1,
+      "mov #0xe": 1,
+      "cmp #0xe": 1
+    },
+    "reason": "APK canvas texture fallback, per-shape materials, 128-light cap, array copies and DrawMeshInstanced restored. Equality predicate polarity and exception-unwind state ordinals differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightEntityManager$$CreateBoxMesh",
+    "signature": "();",
+    "nativeLength": [
+      112,
+      112
+    ],
+    "removed": {
+      "ldr  META Field$<PrivateImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA": 2
+    },
+    "added": {
+      "ldr  META Field$<QAReconstructionImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA": 2
+    },
+    "reason": "The 36 index integers hash to the APK field name 28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA. Only the generated PrivateImplementationDetails type name differs.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams",
+    "signature": "(Campus_DecalLight_CampusDecalLightResultSystem_ResultJob_o __this, int32_t index, int32_t culledIndex);",
+    "nativeLength": [
+      155,
+      140
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "APK box/capsule/sphere parameter packing restored, including capsule short-segment handling and the radius lower bound. The final semantic-token multiset is identical. Switch order and scalar/vector register allocation differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor",
+    "signature": "();",
+    "nativeLength": [
+      90,
+      57
+    ],
+    "removed": {
+      "bl FN": 10,
+      "mov #1": 6
+    },
+    "added": {},
+    "reason": "APK negative-90-degree X rotation is restored. APK scalar trigonometric construction is folded to (-0.7071067690849304,0,0,0.7071067690849304), while rebuilt EulerXYZ uses vector trigonometric helper calls and different lazy initialization.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$Execute",
+    "signature": "(Campus_DecalLight_CampusDecalLightUpdateSystem_UpdateJob_o __this, int32_t index, UnityEngine_Jobs_TransformAccess_o transform);",
+    "nativeLength": [
+      232,
+      213
+    ],
+    "removed": {
+      "mov #0x3f800000": 1
+    },
+    "added": {
+      "bl Unity.Mathematics.float4x4$$.ctor": 1
+    },
+    "reason": "APK world position/rotation, negative-Y-to-Z rotation, matrix multiplication and transformed unit-box bounds restored. The rebuilt float4x4 constructor remains a call instead of inline field stores.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3$$System.Collections.IEnumerable.GetEnumerator",
+    "signature": "(Campus_Live_Equipment_Environment_LiveDirectionalLight__get_GatherProperties_d__3_o* __this);",
+    "nativeLength": [
+      1,
+      37
+    ],
+    "removed": {
+      "b Campus.Live.Equipment.Environment.LiveDirectionalLight.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator": 1
+    },
+    "added": {
+      "bl FN": 2,
+      "mov #1": 1
+    },
+    "reason": "The generic iterator GetEnumerator body is inlined into the nongeneric forwarding method. The APK keeps a one-instruction tail call.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser$$OnApply",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser_o* __this, Campus_Live_Equipment_LiveEquipmentStreamData_o* data);",
+    "nativeLength": [
+      100,
+      101
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser$$OnEnable",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser_o* __this);",
+    "nativeLength": [
+      379,
+      381
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "mov #1": 1,
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "reason": "Unity Object null checks use complementary equality predicates and corresponding branch polarity.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser$$UpdateMesh",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser_o* __this);",
+    "nativeLength": [
+      99,
+      98
+    ],
+    "removed": {
+      "cmp #1": 1
+    },
+    "added": {},
+    "reason": "The equivalent positive-count/shape branch is lowered without an explicit compare-to-one instruction.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser__get_GatherProperties_d__31_o* __this);",
+    "nativeLength": [
+      415,
+      416
+    ],
+    "removed": {},
+    "added": {
+      "mov #-1": 1
+    },
+    "reason": "Compiler-generated iterator state materialization and Unity Object null-predicate polarity differ. Yield order and property types are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$System.Collections.IEnumerable.GetEnumerator",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser__get_GatherProperties_d__31_o* __this);",
+    "nativeLength": [
+      1,
+      37
+    ],
+    "removed": {
+      "b Campus.Live.Equipment.Environment.LiveLaser.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator": 1
+    },
+    "added": {
+      "bl FN": 2,
+      "mov #1": 1
+    },
+    "reason": "The generic iterator GetEnumerator body is inlined into the nongeneric forwarding method. The APK keeps a one-instruction tail call.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$Execute",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser_LaserVertexJob_o __this);",
+    "nativeLength": [
+      101,
+      102
+    ],
+    "removed": {
+      "cmp #3": 1
+    },
+    "added": {
+      "cmp #2": 1
+    },
+    "reason": "Equivalent shape dispatch uses <3 versus <=2.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdateCone",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser_LaserVertexJob_o __this, Campus_Live_Equipment_Environment_LiveLaser_VertexLayout_o* pVertexHead, bool fullRandom);",
+    "nativeLength": [
+      164,
+      164
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdatePlane",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser_LaserVertexJob_o __this, Campus_Live_Equipment_Environment_LiveLaser_VertexLayout_o* pVertexHead);",
+    "nativeLength": [
+      131,
+      131
+    ],
+    "removed": {},
+    "added": {},
+    "reason": "The semantic-token multiset is identical. Instruction ordering, register allocation and equivalent branch ordering differ.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightBasic$$ApplyMaterial",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightBasic_o* __this, UnityEngine_Color_o color);",
+    "nativeLength": [
+      77,
+      77
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "reason": "Unity Object null checks use complementary equality predicates and corresponding branch polarity.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightBasic$$OnApply",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightBasic_o* __this, Campus_Live_Equipment_LiveEquipmentStreamData_o* data);",
+    "nativeLength": [
+      251,
+      245
+    ],
+    "removed": {
+      "mov #0x126f": 1,
+      "movk #0x3b83, lsl #16": 1
+    },
+    "added": {
+      "and #0xffffffff": 1
+    },
+    "reason": "The equivalent round/conversion operation uses different immediate materialization and zero-extension. Light parameter writes and update calls are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightBasic__get_GatherProperties_d__13_o* __this);",
+    "nativeLength": [
+      709,
+      710
+    ],
+    "removed": {
+      "bl FN": 1,
+      "bl UnityEngine.Object$$op_Inequality": 3
+    },
+    "added": {
+      "mov #-1": 2,
+      "bl UnityEngine.Object$$op_Equality": 3
+    },
+    "reason": "Compiler-generated iterator state materialization and Unity Object null-predicate polarity differ. Yield order and property types are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$System.Collections.IEnumerable.GetEnumerator",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightBasic__get_GatherProperties_d__13_o* __this);",
+    "nativeLength": [
+      1,
+      37
+    ],
+    "removed": {
+      "b Campus.Live.Equipment.Environment.LiveLightBasic.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator": 1
+    },
+    "added": {
+      "bl FN": 2,
+      "mov #1": 1
+    },
+    "reason": "The generic iterator GetEnumerator body is inlined into the nongeneric forwarding method. The APK keeps a one-instruction tail call.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightComponent__get_GatherProperties_d__6_o* __this);",
+    "nativeLength": [
+      181,
+      181
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 2
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 2
+    },
+    "reason": "Compiler-generated iterator state materialization and Unity Object null-predicate polarity differ. Yield order and property types are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$System.Collections.IEnumerable.GetEnumerator",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightComponent__get_GatherProperties_d__6_o* __this);",
+    "nativeLength": [
+      1,
+      37
+    ],
+    "removed": {
+      "b Campus.Live.Equipment.Environment.LiveLightComponent.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator": 1
+    },
+    "added": {
+      "bl FN": 2,
+      "mov #1": 1
+    },
+    "reason": "The generic iterator GetEnumerator body is inlined into the nongeneric forwarding method. The APK keeps a one-instruction tail call.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.LiveEquipmentController$$get_IsPlaying",
+    "signature": "(Campus_Live_Equipment_LiveEquipmentController_o* __this);",
+    "nativeLength": [
+      45,
+      44
+    ],
+    "removed": {
+      "mov #1": 1,
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1,
+      "and #1": 1
+    },
+    "reason": "The Unity Object null check and boolean return use complementary predicate/bit-mask instructions.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Equipment.Timeline.LiveEquipmentLaserClip$$.ctor",
+    "signature": "(Campus_Live_Equipment_Timeline_LiveEquipmentLaserClip_o* __this);",
+    "nativeLength": [
+      30,
+      321
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 11,
+      "mov #1": 8,
+      "add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()": 8,
+      "bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale": 4,
+      "bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset": 4,
+      "fmov #1.00000000": 4,
+      "mov #0x80": 1,
+      "bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>": 4,
+      "mov #0x100": 1,
+      "mov #0x200": 1,
+      "mov #0x400": 1
+    },
+    "reason": "The first 30 rebuilt instructions are identical to the complete APK constructor. The comparator includes adjacent unnamed equipment-curve helpers.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Monitor.MonitorRepeatImage$$GetDrawingDimensions2",
+    "signature": "(Campus_Live_Monitor_MonitorRepeatImage_o* __this);",
+    "nativeLength": [
+      182,
+      194
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 1,
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "The sprite accessor/null-check helper is inlined differently. Drawing dimensions retain the same padding and aspect-ratio formulas.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Live.Monitor.MonitorRepeatImage$$OnPopulateMesh",
+    "signature": "(Campus_Live_Monitor_MonitorRepeatImage_o* __this, UnityEngine_UI_VertexHelper_o* toFill);",
+    "nativeLength": [
+      502,
+      500
+    ],
+    "removed": {
+      "mov #-1": 2
+    },
+    "added": {
+      "mov #1": 1,
+      "mov #3": 1,
+      "fmov #-1.00000000": 1
+    },
+    "reason": "Mesh-loop sentinels and minus-one constants are materialized in integer/vector registers differently.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.MobAudience.MobAudiencePenlightController$$CalcPenlightParams",
+    "signature": "(Campus_MobAudience_MobAudiencePenlightController_o* __this, Campus_AudiencePenlight_IAudiencePenlight_o* penlight, UnityEngine_Rendering_VolumeStack_o* stack, Unity_Mathematics_float4_o* projectionParams, Unity_Mathematics_float4_o* projectionUV, int32_t* colorTableSize);",
+    "nativeLength": [
+      159,
+      159
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 2
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 2
+    },
+    "reason": "Unity Object null predicates are complemented together with their branch conditions.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.MobAudience.MobAudiencePenlightController.<>c$$.cctor",
+    "signature": "();",
+    "nativeLength": [
+      26,
+      26
+    ],
+    "removed": {
+      "b FN": 1,
+      "ldr  MMETH Method$Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<GashaTimelineController.BindResult>.Create()": 3
+    },
+    "added": {},
+    "reason": "The APK native load thunk causes false MethodInfo attribution in the canonical comparator. The rebuilt singleton initialization no longer needs that thunk.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Rendering.CampusLitActor$$.ctor",
+    "signature": "(Campus_Rendering_CampusLitActor_o* __this);",
+    "nativeLength": [
+      205,
+      220
+    ],
+    "removed": {},
+    "added": {
+      "bl FN": 1,
+      "mov #1": 1
+    },
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusBpmTimelineTrack$$InjectBpmBehaviour",
+    "signature": "(Campus_Timeline_CampusBpmTimelineTrack_o* __this, UnityEngine_Playables_PlayableDirector_o* playableDirector, Campus_Timeline_CampusBpmInfo_o* bpmInfo);",
+    "nativeLength": [
+      459,
+      455
+    ],
+    "removed": {
+      "cmp #0": 1
+    },
+    "added": {},
+    "reason": "The zero/positive-input condition is folded into an existing branch. Timeline mixer creation and BPM bindings are retained.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusLightTrack$$GatherPropertiesLightAnchor",
+    "signature": "(Campus_Timeline_CampusLightTrack_o* __this, Campus_Common_CampusLightAnchor_o* lightAnchor, UnityEngine_Timeline_IPropertyCollector_o* driver);",
+    "nativeLength": [
+      46,
+      46
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "reason": "Unity Object null checks use complementary equality predicates with matching branch reversal.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusLightTrack$$GatherPropertiesLightAnchorGroup",
+    "signature": "(Campus_Timeline_CampusLightTrack_o* __this, Campus_Common_CampusLightAnchorGroup_o* lightAnchorGroup, UnityEngine_Timeline_IPropertyCollector_o* driver);",
+    "nativeLength": [
+      85,
+      85
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "reason": "Unity Object null checks use complementary equality predicates with matching branch reversal.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusLightTrack$$GatherPropertiesTransformAnchor",
+    "signature": "(Campus_Timeline_CampusLightTrack_o* __this, UnityEngine_Timeline_IPropertyCollector_o* driver, Campus_Common_CampusTransformAnchor_o* transformAnchor);",
+    "nativeLength": [
+      55,
+      55
+    ],
+    "removed": {
+      "mov #7": 1
+    },
+    "added": {
+      "mov #0xb": 1
+    },
+    "reason": "The IPropertyCollector generic interface slot changes after stripping (7 versus 11), while the called property-collection operation is identical.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusVideoPlayerTrack$$CreateTrackMixer",
+    "signature": "(Campus_Timeline_CampusVideoPlayerTrack_o* __this, UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_GameObject_o* go, int32_t inputCount);",
+    "nativeLength": [
+      148,
+      147
+    ],
+    "removed": {
+      "bl Campus.Timeline.CampusVideoPlayerTrackBehaviour$$.ctor": 1
+    },
+    "added": {
+      "mov #1": 1,
+      "bl UnityEngine.Playables.PlayableBehaviour$$.ctor": 1
+    },
+    "reason": "The trivial CampusVideoPlayerTrackBehaviour constructor folds into PlayableBehaviour..ctor.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$PauseVideo",
+    "signature": "(Campus_Timeline_CampusVideoPlayerTrackBehaviour_o* __this);",
+    "nativeLength": [
+      40,
+      40
+    ],
+    "removed": {
+      "bl UnityEngine.Object$$op_Equality": 1
+    },
+    "added": {
+      "bl UnityEngine.Object$$op_Inequality": 1
+    },
+    "reason": "Unity Object null checks use complementary equality predicates with matching branch reversal.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$TrySetFrame",
+    "signature": "(Campus_Timeline_CampusVideoPlayerTrackBehaviour_o* __this, double time);",
+    "nativeLength": [
+      126,
+      107
+    ],
+    "removed": {
+      "bl FN": 3,
+      "mov #1": 1,
+      "ldr  MMETH Method$System.Math.ThrowMinMaxException<long>()": 2,
+      "bl System.Math$$ThrowMinMaxException<long>": 1
+    },
+    "added": {},
+    "reason": "The constant lower-bound clamp no longer emits System.Math.ThrowMinMaxException<long> scaffolding. Frame conversion, bounds and write path retain the APK behavior.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTextureRendererPass$$OnRenderCanvasRenderTexture",
+    "signature": "(CanvasRT_CanvasRenderTextureRendererPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData);",
+    "nativeLength": [
+      330,
+      327
+    ],
+    "removed": {
+      "bl FN": 1
+    },
+    "added": {
+      "ldr  STR _WorldSpaceCameraPos": 2,
+      "bl UnityEngine.Shader$$PropertyToID": 1
+    },
+    "reason": "The _WorldSpaceCameraPos shader property is resolved through Shader.PropertyToID rather than an already initialized native property-id helper.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  },
+  {
+    "method": "Uguiss.Timeline.TimelineEngineUtility$$GetPlayableBehaviour<object>",
+    "signature": "(UnityEngine_Playables_Playable_o playable);",
+    "nativeLength": [
+      85,
+      85
+    ],
+    "removed": {
+      "add MMETH Method$UnityEngine.Playables.PlayableExtensions.IsValid<Playable>()": 1
+    },
+    "added": {
+      "ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.IsValid<Playable>()": 1
+    },
+    "reason": "The same PlayableExtensions.IsValid MethodInfo address is materialized with a load instead of an add.",
+    "evidence": "h4-semantic-summary.json; h4-final-new-flags-review.txt; h4-final-boundary-review.txt; h3-reconstructed-native-review.txt; final-native-review.txt; final-boundary-review.txt"
+  }
+]

@@ -1,0 +1,6 @@
+Source commit 0c793f9c0844410687a081e89d0eb02abc49d5a8
+C# and native IL2CPP compilation completed.
+Gradle packaging fails at lintVitalAnalyzeRelease with For input string: "37.0".
+Unity log .recon/task-h4/build-final-unity.log
+Final comparison follows the final source edit.
+Verification used compilation and native function comparison.

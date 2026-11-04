@@ -1,732 +1,848 @@
 [
   {
-    "method": "ActorAnimation.ActorSwingAffineTransform$$.cctor",
-    "apkAddress": "0x657f830",
-    "signature": "();"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<int, object>, object>",
-    "apkAddress": "0x9217b3c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, object>, object>",
-    "apkAddress": "0x9217ba4",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, bool>, object>",
-    "apkAddress": "0x9217c0c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, int>, object>",
-    "apkAddress": "0x9217c74",
-    "signature": "(System_ValueTuple_object__int__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, int>, object>",
-    "apkAddress": "0x9217cdc",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, Int32Enum>, object>",
-    "apkAddress": "0x9217d44",
-    "signature": "(System_ValueTuple_object__Int32Enum__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>",
-    "apkAddress": "0x9217dac",
-    "signature": "(System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<object, object>>",
-    "apkAddress": "0x9217e14",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, object>, object>",
-    "apkAddress": "0x9217e7c",
-    "signature": "(System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, object>, object>",
-    "apkAddress": "0x9217ee4",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, ValueTuple<int, object>>",
-    "apkAddress": "0x9217f4c",
-    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, int>",
-    "apkAddress": "0x9217fb4",
-    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, object>",
-    "apkAddress": "0x921801c",
-    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, int, object>, object>",
-    "apkAddress": "0x9218084",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, object, object>, ValueTuple<object, object>>",
-    "apkAddress": "0x92180ec",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, int, int>, object>",
-    "apkAddress": "0x9218154",
-    "signature": "(System_ValueTuple_object__int__int__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
-    "apkAddress": "0x92181bc",
-    "signature": "(System_ValueTuple_object__object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
-    "apkAddress": "0x9218224",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>",
-    "apkAddress": "0x921828c",
-    "signature": "(System_ValueTuple_int__int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<int, object, object, object, object>, object>",
-    "apkAddress": "0x92182f4",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<ValueTuple<object, int, object, object, object>, object>",
-    "apkAddress": "0x921835c",
-    "signature": "(System_ValueTuple_object__int__object__object__object__array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
     "method": "FasterLinq$$Select<ExamBattleResult, int>",
     "apkAddress": "0x92183c4",
-    "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<ExamBattleResult, object>",
     "apkAddress": "0x921842c",
-    "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<int, int>",
-    "apkAddress": "0x9218494",
-    "signature": "(System_Int32_array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<int, int>",
-    "apkAddress": "0x92184fc",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<int, object>",
-    "apkAddress": "0x9218564",
-    "signature": "(System_Int32_array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<int, object>",
-    "apkAddress": "0x92185cc",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, long>>",
-    "apkAddress": "0x9218634",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
-    "apkAddress": "0x921869c",
-    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
-    "apkAddress": "0x9218704",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<object, Int32Enum, long, long>>",
-    "apkAddress": "0x921876c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<Int32Enum, object>",
-    "apkAddress": "0x92187d4",
-    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<Int32Enum, object>",
-    "apkAddress": "0x921883c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<Int32Enum, UniTask>",
     "apkAddress": "0x92188a4",
-    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, long>>",
+    "apkAddress": "0x9218634",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
+    "apkAddress": "0x921869c",
+    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
+    "apkAddress": "0x9218704",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<object, Int32Enum, long, long>>",
+    "apkAddress": "0x921876c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, object>",
+    "apkAddress": "0x92187d4",
+    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, object>",
+    "apkAddress": "0x921883c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<MessageLogSoundInfo, UniTask>",
     "apkAddress": "0x921890c",
-    "signature": "(Campus_Common_MessageLogSoundInfo_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(Campus_Common_MessageLogSoundInfo_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, Nullable<int>>",
-    "apkAddress": "0x9218974",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, int, object>, object>",
+    "apkAddress": "0x9218084",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, UniTask<bool>>",
-    "apkAddress": "0x92189dc",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, object, object>, ValueTuple<object, object>>",
+    "apkAddress": "0x92180ec",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, UniTask<object>>",
-    "apkAddress": "0x9218a44",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, object>, object>",
+    "apkAddress": "0x9217ba4",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, UniTask<object>>",
-    "apkAddress": "0x9218aac",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>",
+    "apkAddress": "0x921828c",
+    "signature": "(System_ValueTuple_int__int__object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<Int32Enum, object>>",
-    "apkAddress": "0x9218b14",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object, object, object>, object>",
+    "apkAddress": "0x92182f4",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, bool>>",
-    "apkAddress": "0x9218b7c",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, ValueTuple<int, object>>",
+    "apkAddress": "0x9217f4c",
+    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, bool>>",
-    "apkAddress": "0x9218be4",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, int>",
+    "apkAddress": "0x9217fb4",
+    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, int>>",
-    "apkAddress": "0x9218c4c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, object>",
+    "apkAddress": "0x921801c",
+    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, object>>",
-    "apkAddress": "0x9218cb4",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<int, object>, object>",
+    "apkAddress": "0x9217b3c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, object>>",
-    "apkAddress": "0x9218d1c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<object, Int32Enum>, object>",
+    "apkAddress": "0x9217d44",
+    "signature": "(System_ValueTuple_object__Int32Enum__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, object, object>>",
-    "apkAddress": "0x9218d84",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<object, bool>, object>",
+    "apkAddress": "0x9217c0c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<Int32Enum, int, object, object>>",
-    "apkAddress": "0x9218dec",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<object, int, int>, object>",
+    "apkAddress": "0x9218154",
+    "signature": "(System_ValueTuple_object__int__int__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, ValueTuple<object, int, object, object, object>>",
-    "apkAddress": "0x9218e54",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<object, int, object, object, object>, object>",
+    "apkAddress": "0x921835c",
+    "signature": "(System_ValueTuple_object__int__object__object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, bool>",
-    "apkAddress": "0x9218ebc",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<object, int>, object>",
+    "apkAddress": "0x9217c74",
+    "signature": "(System_ValueTuple_object__int__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, bool>",
-    "apkAddress": "0x9218f24",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<ValueTuple<object, int>, object>",
+    "apkAddress": "0x9217cdc",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
+    "apkAddress": "0x92181bc",
+    "signature": "(System_ValueTuple_object__object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
+    "apkAddress": "0x9218224",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>",
+    "apkAddress": "0x9217dac",
+    "signature": "(System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<object, object>>",
+    "apkAddress": "0x9217e14",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, object>",
+    "apkAddress": "0x9217e7c",
+    "signature": "(System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, object>",
+    "apkAddress": "0x9217ee4",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<int, int>",
+    "apkAddress": "0x9218494",
+    "signature": "(System_Int32_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<int, int>",
+    "apkAddress": "0x92184fc",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<int, object>",
+    "apkAddress": "0x9218564",
+    "signature": "(System_Int32_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<int, object>",
+    "apkAddress": "0x92185cc",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, Color>",
     "apkAddress": "0x9218f8c",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<object, int>",
-    "apkAddress": "0x921905c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, Int32Enum>",
     "apkAddress": "0x92190c4",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, Int32Enum>",
     "apkAddress": "0x921912c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
-  },
-  {
-    "method": "FasterLinq$$Select<object, long>",
-    "apkAddress": "0x9219194",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, MessageLogSoundInfo>",
     "apkAddress": "0x92191fc",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, object>",
-    "apkAddress": "0x92192cc",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<object, Nullable<int>>",
+    "apkAddress": "0x9218974",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, ProduceCardFilterElement>",
     "apkAddress": "0x9219334",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>",
     "apkAddress": "0x921939c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, float>",
-    "apkAddress": "0x9219404",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<object, UniTask<bool>>",
+    "apkAddress": "0x92189dc",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<object, float>",
-    "apkAddress": "0x921946c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<object, UniTask<object>>",
+    "apkAddress": "0x9218a44",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, UniTask<object>>",
+    "apkAddress": "0x9218aac",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, UniTask>",
     "apkAddress": "0x92194d4",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, UniTask>",
     "apkAddress": "0x921953c",
-    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<Int32Enum, int, object, object>>",
+    "apkAddress": "0x9218dec",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<Int32Enum, object>>",
+    "apkAddress": "0x9218b14",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, bool>>",
+    "apkAddress": "0x9218b7c",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, bool>>",
+    "apkAddress": "0x9218be4",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, int, object, object, object>>",
+    "apkAddress": "0x9218e54",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, int>>",
+    "apkAddress": "0x9218c4c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, object, object>>",
+    "apkAddress": "0x9218d84",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, object>>",
+    "apkAddress": "0x9218cb4",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, object>>",
+    "apkAddress": "0x9218d1c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<object, Vector2>",
     "apkAddress": "0x92195a4",
-    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq$$Select<uint, bool>",
-    "apkAddress": "0x9219674",
-    "signature": "(System_UInt32_array* source, System_Func_TSource__TResult__o* selector);"
+    "method": "FasterLinq$$Select<object, bool>",
+    "apkAddress": "0x9218ebc",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, bool>",
+    "apkAddress": "0x9218f24",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, float>",
+    "apkAddress": "0x9219404",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, float>",
+    "apkAddress": "0x921946c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, int>",
+    "apkAddress": "0x921905c",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, long>",
+    "apkAddress": "0x9219194",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq$$Select<object, object>",
+    "apkAddress": "0x92192cc",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq$$Select<uint, Color>",
     "apkAddress": "0x92196dc",
-    "signature": "(System_UInt32_array* source, System_Func_TSource__TResult__o* selector);"
+    "signature": "(System_UInt32_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object>",
-    "apkAddress": "0x92330b8",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color>",
-    "apkAddress": "0x9233170",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int>",
-    "apkAddress": "0x9233228",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object>",
-    "apkAddress": "0x92332e0",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float>",
-    "apkAddress": "0x9233398",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2>",
-    "apkAddress": "0x9233450",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>>",
-    "apkAddress": "0x9233508",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool>",
-    "apkAddress": "0x92335c0",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object>",
-    "apkAddress": "0x9233678",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
-    "apkAddress": "0x92337e8",
-    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, bool>>",
-    "apkAddress": "0x9236ff0",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int>>",
-    "apkAddress": "0x923716c",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Nullable<bool>>>",
-    "apkAddress": "0x92372e8",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int>>",
-    "apkAddress": "0x9237464",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object>>",
-    "apkAddress": "0x92375e0",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int, object>>",
-    "apkAddress": "0x923775c",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, object, bool>>",
-    "apkAddress": "0x92378d8",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, int, object>>",
-    "apkAddress": "0x9237a54",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, bool, bool>>",
-    "apkAddress": "0x9237bd0",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool>>",
-    "apkAddress": "0x9237d4c",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, object>>",
-    "apkAddress": "0x9237ec8",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, int>>",
-    "apkAddress": "0x9238044",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, bool, bool>>",
-    "apkAddress": "0x92381c0",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, bool, int>>",
-    "apkAddress": "0x923833c",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, int, int>>",
-    "apkAddress": "0x92384b8",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, Int32Enum, Int32Enum, Int32Enum, Int32Enum, object>>",
-    "apkAddress": "0x9238634",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>",
-    "apkAddress": "0x92387b0",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
-    "apkAddress": "0x923892c",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<bool>",
-    "apkAddress": "0x9238aa8",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<byte>",
-    "apkAddress": "0x9238c24",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
-    "apkAddress": "0x9238f1c",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<int>",
-    "apkAddress": "0x9239098",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Int32Enum>",
-    "apkAddress": "0x9239214",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<long>",
-    "apkAddress": "0x9239390",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
-    "apkAddress": "0x9239804",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
-    "apkAddress": "0x9239980",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
-    "apkAddress": "0x9239afc",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<float>",
-    "apkAddress": "0x9239c78",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<UniTask>",
-    "apkAddress": "0x9239df4",
-    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, int>, object>$$ToArray",
-    "apkAddress": "0xb9018fc",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, Int32Enum>, object>$$ToArray",
-    "apkAddress": "0xb901c18",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$ToArray",
-    "apkAddress": "0xb901f34",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToArray",
-    "apkAddress": "0xb9022ac",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, object>$$ToArray",
-    "apkAddress": "0xb902608",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, ValueTuple<int, object>>$$ToArray",
-    "apkAddress": "0xb902924",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, int>$$ToArray",
-    "apkAddress": "0xb902c98",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, object>$$ToArray",
-    "apkAddress": "0xb902fdc",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, int, int>, object>$$ToArray",
-    "apkAddress": "0xb903338",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, object, object>, object>$$ToArray",
-    "apkAddress": "0xb903654",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>$$ToArray",
-    "apkAddress": "0xb9039b0",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<ValueTuple<object, int, object, object, object>, object>$$ToArray",
-    "apkAddress": "0xb903d4c",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq$$Select<uint, bool>",
+    "apkAddress": "0x9219674",
+    "signature": "(System_UInt32_array* source, System_Func_TSource__TResult__o* selector);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray",
     "apkAddress": "0xb9040a8",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray",
     "apkAddress": "0xb9043ec",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<int, int>$$ToArray",
-    "apkAddress": "0xb904748",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<int, object>$$ToArray",
-    "apkAddress": "0xb904a38",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<Int32Enum, ValueTuple<Int32Enum, object>>$$ToArray",
-    "apkAddress": "0xb904d44",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<Int32Enum, object>$$ToArray",
-    "apkAddress": "0xb905060",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<Int32Enum, UniTask>$$ToArray",
     "apkAddress": "0xb90536c",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<Int32Enum, ValueTuple<Int32Enum, object>>$$ToArray",
+    "apkAddress": "0xb904d44",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<Int32Enum, object>$$ToArray",
+    "apkAddress": "0xb905060",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray",
     "apkAddress": "0xb905684",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, UniTask<bool>>$$ToArray",
-    "apkAddress": "0xb9059f4",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>$$ToArray",
+    "apkAddress": "0xb9039b0",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, UniTask<object>>$$ToArray",
-    "apkAddress": "0xb905d0c",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, ValueTuple<int, object>>$$ToArray",
+    "apkAddress": "0xb902924",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, ValueTuple<object, bool>>$$ToArray",
-    "apkAddress": "0xb906064",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, int>$$ToArray",
+    "apkAddress": "0xb902c98",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, ValueTuple<object, object>>$$ToArray",
-    "apkAddress": "0xb90637c",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, object>$$ToArray",
+    "apkAddress": "0xb902fdc",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, ValueTuple<Int32Enum, int, object, object>>$$ToArray",
-    "apkAddress": "0xb906694",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<object, Int32Enum>, object>$$ToArray",
+    "apkAddress": "0xb901c18",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, ValueTuple<object, int, object, object, object>>$$ToArray",
-    "apkAddress": "0xb9069ec",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<object, int, int>, object>$$ToArray",
+    "apkAddress": "0xb903338",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, bool>$$ToArray",
-    "apkAddress": "0xb906d5c",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<ValueTuple<object, int, object, object, object>, object>$$ToArray",
+    "apkAddress": "0xb903d4c",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, int>, object>$$ToArray",
+    "apkAddress": "0xb9018fc",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object, object>, object>$$ToArray",
+    "apkAddress": "0xb903654",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$ToArray",
+    "apkAddress": "0xb901f34",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToArray",
+    "apkAddress": "0xb9022ac",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, object>$$ToArray",
+    "apkAddress": "0xb902608",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<int, int>$$ToArray",
+    "apkAddress": "0xb904748",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<int, object>$$ToArray",
+    "apkAddress": "0xb904a38",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<object, Color>$$ToArray",
     "apkAddress": "0xb907050",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<object, Int32Enum>$$ToArray",
     "apkAddress": "0xb907638",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
-  },
-  {
-    "method": "FasterLinq.SelectArray<object, long>$$ToArray",
-    "apkAddress": "0xb907924",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray",
     "apkAddress": "0xb907c14",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<object, float>$$ToArray",
-    "apkAddress": "0xb908274",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<object, UniTask<bool>>$$ToArray",
+    "apkAddress": "0xb9059f4",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, UniTask<object>>$$ToArray",
+    "apkAddress": "0xb905d0c",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<object, UniTask>$$ToArray",
     "apkAddress": "0xb90855c",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<Int32Enum, int, object, object>>$$ToArray",
+    "apkAddress": "0xb906694",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<object, bool>>$$ToArray",
+    "apkAddress": "0xb906064",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<object, int, object, object, object>>$$ToArray",
+    "apkAddress": "0xb9069ec",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<object, object>>$$ToArray",
+    "apkAddress": "0xb90637c",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<object, Vector2>$$ToArray",
     "apkAddress": "0xb908874",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "FasterLinq.SelectArray<uint, bool>$$ToArray",
-    "apkAddress": "0xb908e64",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "method": "FasterLinq.SelectArray<object, bool>$$ToArray",
+    "apkAddress": "0xb906d5c",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, float>$$ToArray",
+    "apkAddress": "0xb908274",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, long>$$ToArray",
+    "apkAddress": "0xb907924",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
     "method": "FasterLinq.SelectArray<uint, Color>$$ToArray",
     "apkAddress": "0xb909158",
-    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$.cctor",
-    "apkAddress": "0xddbc3f4",
-    "signature": "();"
+    "method": "FasterLinq.SelectArray<uint, bool>$$ToArray",
+    "apkAddress": "0xb908e64",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+    "scope": "out of scope"
   },
   {
-    "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$.cctor",
-    "apkAddress": "0xddbdbd8",
-    "signature": "();"
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color>",
+    "apkAddress": "0x9233170",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
   },
   {
-    "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor",
-    "apkAddress": "0xddbec10",
-    "signature": "();"
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2>",
+    "apkAddress": "0x9233450",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
   },
   {
-    "method": "Campus.Rendering.CampusActorParameterPass$$.cctor",
-    "apkAddress": "0xddd078c",
-    "signature": "();"
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float>",
+    "apkAddress": "0x9233398",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int>",
+    "apkAddress": "0x9233228",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object>",
+    "apkAddress": "0x92332e0",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object>",
+    "apkAddress": "0x92330b8",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+    "apkAddress": "0x92337e8",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>>",
+    "apkAddress": "0x9233508",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool>",
+    "apkAddress": "0x92335c0",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object>",
+    "apkAddress": "0x9233678",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
+    "apkAddress": "0x923892c",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
+    "apkAddress": "0x9238f1c",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Int32Enum>",
+    "apkAddress": "0x9239214",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
+    "apkAddress": "0x9239804",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
+    "apkAddress": "0x9239980",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
+    "apkAddress": "0x9239afc",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<UniTask>",
+    "apkAddress": "0x9239df4",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, Int32Enum, Int32Enum, Int32Enum, Int32Enum, object>>",
+    "apkAddress": "0x9238634",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, int, object>>",
+    "apkAddress": "0x9237a54",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, bool>>",
+    "apkAddress": "0x9236ff0",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int, object>>",
+    "apkAddress": "0x923775c",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int>>",
+    "apkAddress": "0x923716c",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, object, bool>>",
+    "apkAddress": "0x92378d8",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>",
+    "apkAddress": "0x92387b0",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, int, int>>",
+    "apkAddress": "0x92384b8",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool>>",
+    "apkAddress": "0x9237d4c",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Nullable<bool>>>",
+    "apkAddress": "0x92372e8",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, bool, bool>>",
+    "apkAddress": "0x9237bd0",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, bool, int>>",
+    "apkAddress": "0x923833c",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, int>>",
+    "apkAddress": "0x9238044",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int>>",
+    "apkAddress": "0x9237464",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, bool, bool>>",
+    "apkAddress": "0x92381c0",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, object>>",
+    "apkAddress": "0x9237ec8",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object>>",
+    "apkAddress": "0x92375e0",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<bool>",
+    "apkAddress": "0x9238aa8",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<byte>",
+    "apkAddress": "0x9238c24",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<float>",
+    "apkAddress": "0x9239c78",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<int>",
+    "apkAddress": "0x9239098",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<long>",
+    "apkAddress": "0x9239390",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+    "scope": "out of scope"
   }
 ]

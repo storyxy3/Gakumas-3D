@@ -1,0 +1,47 @@
+{
+  "sourceCommit": "0c793f9c0844410687a081e89d0eb02abc49d5a8",
+  "censusNames": 1676,
+  "h4AddedNames": 22,
+  "total": {
+    "same": 1272,
+    "layout": 133,
+    "semantic": 146,
+    "out of scope": 125
+  },
+  "assemblyCounts": {
+    "ActorAnimation.Runtime": {
+      "same": 378,
+      "layout": 63,
+      "semantic": 61
+    },
+    "Qua.Utility": {
+      "out of scope": 39,
+      "same": 7
+    },
+    "Uguiss-Timeline.Runtime": {
+      "layout": 1,
+      "same": 1,
+      "semantic": 1
+    },
+    "campus-submodule.Runtime": {
+      "same": 886,
+      "semantic": 84,
+      "layout": 69,
+      "out of scope": 86
+    }
+  },
+  "missingSignatures": 141,
+  "unresolvedSignatures": 0,
+  "rawComparison": {
+    "same": 1272,
+    "changed": 279,
+    "onlyGame": 125
+  },
+  "taskF": {
+    "same": 630,
+    "layout": 36,
+    "semantic": 39,
+    "onlyGame": 0
+  },
+  "verification": "C# and IL2CPP compilation plus function comparisons. Gradle packaging fails on SDK version string 37.0."
+}

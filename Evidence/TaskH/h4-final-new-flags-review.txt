@@ -1,0 +1,243 @@
+
+== ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$.ctor 0x655f430 (ActorAnimation_ActorAnimationQuartzDriverSkirtBone_o* __this);
+native: 2 2
+--- game
++++ ref
+@@ -1 +1 @@
+-b UnityEngine.MonoBehaviour$$.ctor
++b ActorAnimation.ActorAnimationQuartzDriverBoneBase$$.ctor
+
+== ActorAnimation.ActorAnimationQuartzDriverWaistBone$$.ctor 0x655f68c (ActorAnimation_ActorAnimationQuartzDriverWaistBone_o* __this);
+native: 2 2
+--- game
++++ ref
+@@ -1 +1 @@
+-b UnityEngine.MonoBehaviour$$.ctor
++b ActorAnimation.ActorAnimationQuartzDriverBoneBase$$.ctor
+
+== ActorAnimation.ActorAnimationQuartzDriverRotationJobBone$$Update 0x65717c0 (ActorAnimation_ActorAnimationQuartzDriverRotationJobBone_o __this, ActorAnimation_ActorAnimationQuartzDriverRotationSetting_o* setting);
+native: 20 466
+--- game
++++ ref
+@@ -0,0 +1,66 @@
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++fmov #1.00000000
++bl FN
++mov #1
++bl FN
++fmov #1.00000000
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++orr #32
++and #0x80000000
++orr #32
++fmov #1.00000000
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl UnityEngine.Quaternion$$Internal_ToEulerRad
++b UnityEngine.Quaternion$$Internal_MakePositive
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++fmov #-2.00000000
++bl FN
++fmov #-2.00000000
++bl FN
++bl FN
+
+== Campus.Common.Live.CampusLiveTimelineController$$GetPropAndFieldConstraintTargetPairs 0xdd6e7dc (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex);
+native: 114 114
+--- game
++++ ref
+@@ -17,5 +17,5 @@
+ mov #1
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<gen>.<gen>()
+ ldr  MMETH Method$System.Linq.Enumerable.Where<CampusLiveTimelineController.LiveProp>()
+
+== Campus.Common.Live.CampusLiveTimelineController$$GetProps 0xdd7109c (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex);
+native: 162 162
+--- game
++++ ref
+@@ -22,5 +22,5 @@
+ mov #1
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<gen>.<gen>()
+ ldr  MMETH Method$System.Linq.Enumerable.Where<CampusLiveTimelineController.LiveProp>()
+
+== Campus.Common.Live.CampusLiveTimelineController$$GetFieldConstraintTargets 0xdd71330 (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex);
+native: 162 162
+--- game
++++ ref
+@@ -22,5 +22,5 @@
+ mov #1
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<gen>.<gen>()
+ ldr  MMETH Method$System.Linq.Enumerable.Where<CampusLiveTimelineController.LiveProp>()
+
+== Campus.Common.Live.CampusLiveTimelineController$$DisableTrackBinding 0xdd7221c (Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Timeline_TrackAsset_o* track, int32_t componentDisableTarget);
+native: 144 144
+--- game
++++ ref
+@@ -13,5 +13,5 @@
+ mov #1
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.Live.CampusLiveTimelineController.<gen>$$.ctor
+ bl FN
+ bl FN
+
+== Campus.Common.Live.CampusLiveTimelineController.<>c__DisplayClass123_0$$<CollectTracksResolvedByPaths>b__0 0xdd73528 (Campus_Common_Live_CampusLiveTimelineController___c__DisplayClass123_0_o* __this, System_String_o* raw);
+native: 28 29
+
+== Campus.Live.Equipment.Timeline.LiveEquipmentLaserClip$$.ctor 0xddb2080 (Campus_Live_Equipment_Timeline_LiveEquipmentLaserClip_o* __this);
+native: 30 321
+--- game
++++ ref
+@@ -9,2 +9,49 @@
+ movk #0x3dcc, lsl #16
+ b Campus.Live.Equipment.Timeline.LiveEquipmentClipBase<object>$$.ctor
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x80
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x100
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x200
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x400
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
+
+== Campus.Live.Equipment.Timeline.LiveEquipmentDirectionalLightTrack$$.ctor 0xddb61a8 (Campus_Live_Equipment_Timeline_LiveEquipmentDirectionalLightTrack_o* __this);
+native: 1 2
+
+== Campus.Crowd.CrowdVolume$$<BuildHierarchy>g__Create|16_0 0xddcdd20 (UnityEngine_Transform_o* parent, System_String_o* goName, UnityEngine_Matrix4x4_o* bindPose);
+native: 101 311
+--- game
++++ ref
+@@ -16,2 +16,20 @@
+ bl UnityEngine.Transform$$SetPositionAndRotation
+ bl UnityEngine.Transform$$SetParent
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++fmov #0.50000000
++bl FN
++bl FN
++mov #1
++bl FN
++fmov #1.00000000
++bl Unity.Mathematics.quaternion$$.ctor
+
+== Campus.Rendering.CampusLitActor$$.ctor 0xddd3550 (Campus_Rendering_CampusLitActor_o* __this);
+native: 205 220
+--- game
++++ ref
+@@ -10,4 +10,5 @@
+ fmov #1.00000000
+ fmov #1.00000000
++mov #1
+ mov #1
+ bl UnityEngine.Rendering.ColorParameter$$.ctor
+@@ -49,4 +50,5 @@
+ bl FN
+ bl FN
++bl FN
+ bl UnityEngine.Rendering.Vector2Parameter$$.ctor
+ bl FN
+
+== Campus.Common.CampusActorMaterialEffectPlayable$$OnPlayableDestroy 0xddf20cc (Campus_Common_CampusActorMaterialEffectPlayable_o* __this, UnityEngine_Playables_Playable_o playable);
+native: 35 34

@@ -1,0 +1,1592 @@
+=== Campus.OutGame.StoryEventBonusSheetPresenter$$SetView @ 0x6ea0ca0 (949 insns)
+    void Campus_OutGame_StoryEventBonusSheetPresenter__SetView (Campus_OutGame_StoryEventBonusSheetPresenter_o* __this, System_ValueTuple_string__IdolCardRarity__List_StoryEventBonus_Types_CharacterBonus_Types_PotentialRankBonusPermil___array* characterList, System_ValueTuple_string__List_StoryEventBonus_Types_IdolCardBonus_Types_PotentialRankBonusPermil___array* idolList, System_ValueTuple_string__List_StoryEventBonus_Types_SupportCardBonus_Types_LevelLimitRankBonusPermil___array* supportCardList, const MethodInfo* method);
+  06ea0ca0  stp     x29, x30, [sp, #-0x60]!
+  06ea0ca4  stp     x28, x27, [sp, #0x10]
+  06ea0ca8  stp     x26, x25, [sp, #0x20]
+  06ea0cac  stp     x24, x23, [sp, #0x30]
+  06ea0cb0  stp     x22, x21, [sp, #0x40]
+  06ea0cb4  stp     x20, x19, [sp, #0x50]
+  06ea0cb8  adrp    x20, #0xf404000
+  06ea0cbc  adrp    x24, #0xeab3000
+  06ea0cc0  mov     x21, x3
+  06ea0cc4  ldrb    w8, [x20, #0x7da]
+  06ea0cc8  ldr     x24, [x24, #0xd80]  ; META Campus.OutGame.StoryEventBonusSheetPresenter.<>c__DisplayClass4_0_TypeInfo
+  06ea0ccc  mov     x22, x2
+  06ea0cd0  mov     x23, x1
+  06ea0cd4  mov     x19, x0
+  06ea0cd8  tbnz    w8, #0, #0x6ea0fb4
+  06ea0cdc  adrp    x0, #0xeaa1000
+  06ea0ce0  ldr     x0, [x0, #0x558]  ; META System.Action<ICard>_TypeInfo
+  06ea0ce4  bl      #0x63cee78
+  06ea0ce8  adrp    x0, #0xeab3000
+  06ea0cec  ldr     x0, [x0, #0xd88]  ; MMETH Method$System.Linq.Enumerable.GroupBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06ea0cf0  bl      #0x63cee78
+  06ea0cf4  adrp    x0, #0xeab3000
+  06ea0cf8  ldr     x0, [x0, #0xd90]  ; MMETH Method$System.Linq.Enumerable.OrderByDescending<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>
+  06ea0cfc  bl      #0x63cee78
+  06ea0d00  adrp    x0, #0xeab3000
+  06ea0d04  ldr     x0, [x0, #0xd98]  ; MMETH Method$System.Linq.Enumerable.OrderByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06ea0d08  bl      #0x63cee78
+  06ea0d0c  adrp    x0, #0xeab3000
+  06ea0d10  ldr     x0, [x0, #0xda0]  ; MMETH Method$System.Linq.Enumerable.SelectMany<ValueTuple<string, IdolCardRarity, List<StoryEventBonus.Types.CharacterBonus.Types.PotentialRankBonusPermil>>, Va
+  06ea0d14  bl      #0x63cee78
+  06ea0d18  adrp    x0, #0xeab3000
+  06ea0d1c  ldr     x0, [x0, #0xda8]  ; MMETH Method$System.Linq.Enumerable.Select<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolC
+  06ea0d20  bl      #0x63cee78
+  06ea0d24  adrp    x0, #0xeab3000
+  06ea0d28  ldr     x0, [x0, #0xdb0]  ; MMETH Method$System.Linq.Enumerable.Select<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportC
+  06ea0d2c  bl      #0x63cee78
+  06ea0d30  adrp    x0, #0xeab3000
+  06ea0d34  ldr     x0, [x0, #0xdb8]  ; MMETH Method$System.Linq.Enumerable.ThenByDescending<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>
+  06ea0d38  bl      #0x63cee78
+  06ea0d3c  adrp    x0, #0xeab3000
+  06ea0d40  ldr     x0, [x0, #0xdc0]  ; MMETH Method$System.Linq.Enumerable.ThenByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>()
+  06ea0d44  bl      #0x63cee78
+  06ea0d48  adrp    x0, #0xeab3000
+  06ea0d4c  ldr     x0, [x0, #0xdc8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportC
+  06ea0d50  bl      #0x63cee78
+  06ea0d54  adrp    x0, #0xeab3000
+  06ea0d58  ldr     x0, [x0, #0xdd0]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportC
+  06ea0d5c  bl      #0x63cee78
+  06ea0d60  adrp    x0, #0xeab3000
+  06ea0d64  ldr     x0, [x0, #0xdd8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06ea0d68  bl      #0x63cee78
+  06ea0d6c  adrp    x0, #0xeab3000
+  06ea0d70  ldr     x0, [x0, #0xde0]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>()
+  06ea0d74  bl      #0x63cee78
+  06ea0d78  adrp    x0, #0xeab3000
+  06ea0d7c  ldr     x0, [x0, #0xde8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06ea0d80  bl      #0x63cee78
+  06ea0d84  adrp    x0, #0xeab3000
+  06ea0d88  ldr     x0, [x0, #0xdf0]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<SupportCard, SupportCardLevelLimitRank, bool, int, int>>()
+  06ea0d8c  bl      #0x63cee78
+  06ea0d90  adrp    x0, #0xeab3000
+  06ea0d94  ldr     x0, [x0, #0xdf8]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06ea0d98  bl      #0x63cee78
+  06ea0d9c  adrp    x0, #0xeab3000
+  06ea0da0  ldr     x0, [x0, #0xe00]  ; MMETH Method$System.Linq.Enumerable.Where<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCa
+  06ea0da4  bl      #0x63cee78
+  06ea0da8  adrp    x0, #0xeab3000
+  06ea0dac  ldr     x0, [x0, #0xe08]  ; MMETH Method$System.Linq.Enumerable.Where<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06ea0db0  bl      #0x63cee78
+  06ea0db4  adrp    x0, #0xeab3000
+  06ea0db8  ldr     x0, [x0, #0xe10]  ; MMETH Method$FasterLinq.Select<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<
+  06ea0dbc  bl      #0x63cee78
+  06ea0dc0  adrp    x0, #0xeab3000
+  06ea0dc4  ldr     x0, [x0, #0xe18]  ; MMETH Method$FasterLinq.Select<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, ValueTuple<ValueTuple<string, L
+  06ea0dc8  bl      #0x63cee78
+  06ea0dcc  adrp    x0, #0xeab3000
+  06ea0dd0  ldr     x0, [x0, #0xe20]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, long>_TypeInfo
+  06ea0dd4  bl      #0x63cee78
+  06ea0dd8  adrp    x0, #0xeab3000
+  06ea0ddc  ldr     x0, [x0, #0xe28]  ; META System.Func<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, ValueTuple<ValueTuple<string, List<StoryEvent
+  06ea0de0  bl      #0x63cee78
+  06ea0de4  adrp    x0, #0xeab3000
+  06ea0de8  ldr     x0, [x0, #0xe30]  ; META System.Func<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<StoryEventBonu
+  06ea0dec  bl      #0x63cee78
+  06ea0df0  adrp    x0, #0xeab3000
+  06ea0df4  ldr     x0, [x0, #0xe38]  ; META System.Func<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bo
+  06ea0df8  bl      #0x63cee78
+  06ea0dfc  adrp    x0, #0xeab3000
+  06ea0e00  ldr     x0, [x0, #0xe40]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, string>_TypeInfo
+  06ea0e04  bl      #0x63cee78
+  06ea0e08  adrp    x0, #0xeab3000
+  06ea0e0c  ldr     x0, [x0, #0xe48]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, int>_TypeInfo
+  06ea0e10  bl      #0x63cee78
+  06ea0e14  adrp    x0, #0xeab3000
+  06ea0e18  ldr     x0, [x0, #0xe50]  ; META System.Func<ValueTuple<string, IdolCardRarity, List<StoryEventBonus.Types.CharacterBonus.Types.PotentialRankBonusPermil>>, IEnumerable<ValueTuple<IdolCard,
+  06ea0e1c  bl      #0x63cee78
+  06ea0e20  adrp    x0, #0xeab3000
+  06ea0e24  ldr     x0, [x0, #0xe58]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, ValueTuple<SupportCa
+  06ea0e28  bl      #0x63cee78
+  06ea0e2c  adrp    x0, #0xeab3000
+  06ea0e30  ldr     x0, [x0, #0xe60]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>_TypeInfo
+  06ea0e34  bl      #0x63cee78
+  06ea0e38  adrp    x0, #0xeab3000
+  06ea0e3c  ldr     x0, [x0, #0xe68]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, SupportCardRarity>_T
+  06ea0e40  bl      #0x63cee78
+  06ea0e44  adrp    x0, #0xeab3000
+  06ea0e48  ldr     x0, [x0, #0xe70]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, IdolCard>, ValueTuple<IdolCard, IdolCa
+  06ea0e4c  bl      #0x63cee78
+  06ea0e50  adrp    x0, #0xeab3000
+  06ea0e54  ldr     x0, [x0, #0xe78]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>_TypeInfo
+  06ea0e58  bl      #0x63cee78
+  06ea0e5c  adrp    x0, #0xeab3000
+  06ea0e60  ldr     x0, [x0, #0xe80]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>_TypeInfo
+  06ea0e64  bl      #0x63cee78
+  06ea0e68  adrp    x0, #0xeab3000
+  06ea0e6c  ldr     x0, [x0, #0xe88]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>_TypeInfo
+  06ea0e70  bl      #0x63cee78
+  06ea0e74  adrp    x0, #0xeab3000
+  06ea0e78  ldr     x0, [x0, #0xe90]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, bool>_TypeInfo
+  06ea0e7c  bl      #0x63cee78
+  06ea0e80  adrp    x0, #0xeab3000
+  06ea0e84  ldr     x0, [x0, #0xe98]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, bool>_TypeInfo
+  06ea0e88  bl      #0x63cee78
+  06ea0e8c  adrp    x0, #0xeab3000
+  06ea0e90  ldr     x0, [x0, #0xea0]  ; MMETH Method$System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>.AddRange()
+  06ea0e94  bl      #0x63cee78
+  06ea0e98  adrp    x0, #0xeab3000
+  06ea0e9c  ldr     x0, [x0, #0xea8]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, 
+  06ea0ea0  bl      #0x63cee78
+  06ea0ea4  adrp    x0, #0xeab3000
+  06ea0ea8  ldr     x0, [x0, #0xeb0]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<IdolCard, IdolCardP
+  06ea0eac  bl      #0x63cee78
+  06ea0eb0  adrp    x0, #0xeab3000
+  06ea0eb4  ldr     x0, [x0, #0xeb8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_10()
+  06ea0eb8  bl      #0x63cee78
+  06ea0ebc  adrp    x0, #0xeab3000
+  06ea0ec0  ldr     x0, [x0, #0xec0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_11()
+  06ea0ec4  bl      #0x63cee78
+  06ea0ec8  adrp    x0, #0xeab3000
+  06ea0ecc  ldr     x0, [x0, #0xec8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_12()
+  06ea0ed0  bl      #0x63cee78
+  06ea0ed4  adrp    x0, #0xeab3000
+  06ea0ed8  ldr     x0, [x0, #0xed0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_13()
+  06ea0edc  bl      #0x63cee78
+  06ea0ee0  adrp    x0, #0xeab3000
+  06ea0ee4  ldr     x0, [x0, #0xed8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_14()
+  06ea0ee8  bl      #0x63cee78
+  06ea0eec  adrp    x0, #0xeab3000
+  06ea0ef0  ldr     x0, [x0, #0xee0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_15()
+  06ea0ef4  bl      #0x63cee78
+  06ea0ef8  adrp    x0, #0xeab3000
+  06ea0efc  ldr     x0, [x0, #0xee8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_16()
+  06ea0f00  bl      #0x63cee78
+  06ea0f04  adrp    x0, #0xeab3000
+  06ea0f08  ldr     x0, [x0, #0xef0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_17()
+  06ea0f0c  bl      #0x63cee78
+  06ea0f10  adrp    x0, #0xeab3000
+  06ea0f14  ldr     x0, [x0, #0xef8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_18()
+  06ea0f18  bl      #0x63cee78
+  06ea0f1c  adrp    x0, #0xeab3000
+  06ea0f20  ldr     x0, [x0, #0xf00]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_2()
+  06ea0f24  bl      #0x63cee78
+  06ea0f28  adrp    x0, #0xeab3000
+  06ea0f2c  ldr     x0, [x0, #0xf08]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_3()
+  06ea0f30  bl      #0x63cee78
+  06ea0f34  adrp    x0, #0xeab3000
+  06ea0f38  ldr     x0, [x0, #0xf10]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_4()
+  06ea0f3c  bl      #0x63cee78
+  06ea0f40  adrp    x0, #0xeab3000
+  06ea0f44  ldr     x0, [x0, #0xf18]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_5()
+  06ea0f48  bl      #0x63cee78
+  06ea0f4c  adrp    x0, #0xeab3000
+  06ea0f50  ldr     x0, [x0, #0xf20]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_6()
+  06ea0f54  bl      #0x63cee78
+  06ea0f58  adrp    x0, #0xeab3000
+  06ea0f5c  ldr     x0, [x0, #0xf28]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_7()
+  06ea0f60  bl      #0x63cee78
+  06ea0f64  adrp    x0, #0xeab3000
+  06ea0f68  ldr     x0, [x0, #0xf30]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_8()
+  06ea0f6c  bl      #0x63cee78
+  06ea0f70  adrp    x0, #0xeab3000
+  06ea0f74  ldr     x0, [x0, #0xf38]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_9()
+  06ea0f78  bl      #0x63cee78
+  06ea0f7c  adrp    x0, #0xeab3000
+  06ea0f80  ldr     x0, [x0, #0xf40]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c__DisplayClass4_0.<SetView>b__0()
+  06ea0f84  bl      #0x63cee78
+  06ea0f88  adrp    x0, #0xeab3000
+  06ea0f8c  ldr     x0, [x0, #0xf48]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c__DisplayClass4_0.<SetView>b__1()
+  06ea0f90  bl      #0x63cee78
+  06ea0f94  adrp    x0, #0xeab3000
+  06ea0f98  ldr     x0, [x0, #0xd80]  ; META Campus.OutGame.StoryEventBonusSheetPresenter.<>c__DisplayClass4_0_TypeInfo
+  06ea0f9c  bl      #0x63cee78
+  06ea0fa0  adrp    x0, #0xeab3000
+  06ea0fa4  ldr     x0, [x0, #0xf50]  ; META Campus.OutGame.StoryEventBonusSheetPresenter.<>c_TypeInfo
+  06ea0fa8  bl      #0x63cee78
+  06ea0fac  mov     w8, #1
+  06ea0fb0  strb    w8, [x20, #0x7da]
+  06ea0fb4  ldr     x0, [x24]
+  06ea0fb8  bl      #0x63cf110
+  06ea0fbc  mov     x1, xzr
+  06ea0fc0  mov     x24, x0
+  06ea0fc4  bl      #0xe01f020  ; -> System.Object$$.ctor
+  06ea0fc8  cbz     x24, #0x6ea1b70
+  06ea0fcc  adrp    x20, #0xeaa1000
+  06ea0fd0  adrp    x25, #0xeab3000
+  06ea0fd4  mov     x0, x24
+  06ea0fd8  ldr     x20, [x20, #0x558]  ; META System.Action<ICard>_TypeInfo
+  06ea0fdc  ldr     x25, [x25, #0xf40]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c__DisplayClass4_0.<SetView>b__0()
+  06ea0fe0  mov     x1, x19
+  06ea0fe4  str     x19, [x0, #0x10]!
+  06ea0fe8  bl      #0x63cee24
+  06ea0fec  ldr     x0, [x20]
+  06ea0ff0  bl      #0x63cf110
+  06ea0ff4  ldr     x2, [x25]
+  06ea0ff8  mov     x1, x24
+  06ea0ffc  mov     x3, xzr
+  06ea1000  mov     x20, x0
+  06ea1004  bl      #0xa3308fc  ; -> System.Action<object>$$.ctor
+  06ea1008  mov     x0, xzr
+  06ea100c  bl      #0x745d138  ; -> Campus.Common.Master.MasterManager$$get_IdolCardMaster
+  06ea1010  cbz     x0, #0x6ea1b70
+  06ea1014  adrp    x25, #0xeab3000
+  06ea1018  adrp    x28, #0xeab3000
+  06ea101c  adrp    x29, #0xeab3000
+  06ea1020  adrp    x27, #0xeab3000
+  06ea1024  ldr     x25, [x25, #0xe50]  ; META System.Func<ValueTuple<string, IdolCardRarity, List<StoryEventBonus.Types.CharacterBonus.Types.PotentialRankBonusPermil>>, IEnumerable<ValueTuple<IdolCard,
+  06ea1028  ldr     x28, [x28, #0xf48]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c__DisplayClass4_0.<SetView>b__1()
+  06ea102c  ldr     x29, [x29, #0xda0]  ; MMETH Method$System.Linq.Enumerable.SelectMany<ValueTuple<string, IdolCardRarity, List<StoryEventBonus.Types.CharacterBonus.Types.PotentialRankBonusPermil>>, Va
+  06ea1030  ldr     x27, [x27, #0xdf8]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06ea1034  ldr     x8, [x0]
+  06ea1038  adrp    x26, #0xeab3000
+  06ea103c  mov     x1, xzr
+  06ea1040  mov     x2, xzr
+  06ea1044  ldr     x26, [x26, #0xf50]  ; META Campus.OutGame.StoryEventBonusSheetPresenter.<>c_TypeInfo
+  06ea1048  ldr     x9, [x8, #0x228]
+  06ea104c  ldr     x3, [x8, #0x230]
+  06ea1050  blr     x9
+  06ea1054  mov     x1, x0
+  06ea1058  mov     x0, x24
+  06ea105c  str     x1, [x0, #0x18]!
+  06ea1060  bl      #0x63cee24
+  06ea1064  ldr     x0, [x25]
+  06ea1068  bl      #0x63cf110
+  06ea106c  ldr     x2, [x28]
+  06ea1070  mov     x1, x24
+  06ea1074  mov     x3, xzr
+  06ea1078  mov     x25, x0
+  06ea107c  bl      #0xa4cff0c  ; -> System.Func<ValueTuple<object, Int32Enum, object>, object>$$.ctor
+  06ea1080  ldr     x2, [x29]
+  06ea1084  mov     x0, x23
+  06ea1088  mov     x1, x25
+  06ea108c  bl      #0x91d1fcc  ; -> System.Linq.Enumerable$$SelectMany<ValueTuple<object, Int32Enum, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06ea1090  ldr     x1, [x27]
+  06ea1094  bl      #0x91ea2f4  ; -> System.Linq.Enumerable$$ToList<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06ea1098  ldr     x8, [x26]
+  06ea109c  mov     x23, x0
+  06ea10a0  ldr     w9, [x8, #0xe4]
+  06ea10a4  cbnz    w9, #0x6ea10b4
+  06ea10a8  mov     x0, x8
+  06ea10ac  bl      #0x63ceff4
+  06ea10b0  ldr     x8, [x26]
+  06ea10b4  ldr     x9, [x8, #0xb8]
+  06ea10b8  adrp    x28, #0xeab3000
+  06ea10bc  ldr     x24, [x9, #8]
+  06ea10c0  ldr     x28, [x28, #0xe10]  ; MMETH Method$FasterLinq.Select<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<
+  06ea10c4  cbnz    x24, #0x6ea1124
+  06ea10c8  ldr     w10, [x8, #0xe4]
+  06ea10cc  cbnz    w10, #0x6ea10e0
+  06ea10d0  mov     x0, x8
+  06ea10d4  bl      #0x63ceff4
+  06ea10d8  ldr     x8, [x26]
+  06ea10dc  ldr     x9, [x8, #0xb8]
+  06ea10e0  adrp    x8, #0xeab3000
+  06ea10e4  ldr     x8, [x8, #0xe30]  ; META System.Func<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<StoryEventBonu
+  06ea10e8  ldr     x25, [x9]
+  06ea10ec  ldr     x0, [x8]
+  06ea10f0  bl      #0x63cf110
+  06ea10f4  adrp    x8, #0xeab3000
+  06ea10f8  mov     x1, x25
+  06ea10fc  mov     x3, xzr
+  06ea1100  ldr     x8, [x8, #0xf00]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_2()
+  06ea1104  mov     x24, x0
+  06ea1108  ldr     x2, [x8]
+  06ea110c  bl      #0xa4b963c  ; -> System.Func<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$.ctor
+  06ea1110  ldr     x8, [x26]
+  06ea1114  mov     x1, x24
+  06ea1118  ldr     x0, [x8, #0xb8]
+  06ea111c  str     x24, [x0, #8]!
+  06ea1120  bl      #0x63cee24
+  06ea1124  ldr     x2, [x28]
+  06ea1128  mov     x0, x22
+  06ea112c  mov     x1, x24
+  06ea1130  bl      #0x9217dac  ; -> FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>
+  06ea1134  ldr     x8, [x26]
+  06ea1138  mov     x22, x0
+  06ea113c  ldr     w9, [x8, #0xe4]
+  06ea1140  cbnz    w9, #0x6ea1150
+  06ea1144  mov     x0, x8
+  06ea1148  bl      #0x63ceff4
+  06ea114c  ldr     x8, [x26]
+  06ea1150  ldr     x9, [x8, #0xb8]
+  06ea1154  ldr     x24, [x9, #0x10]
+  06ea1158  cbnz    x24, #0x6ea11b8
+  06ea115c  ldr     w10, [x8, #0xe4]
+  06ea1160  cbnz    w10, #0x6ea1174
+  06ea1164  mov     x0, x8
+  06ea1168  bl      #0x63ceff4
+  06ea116c  ldr     x8, [x26]
+  06ea1170  ldr     x9, [x8, #0xb8]
+  06ea1174  adrp    x8, #0xeab3000
+  06ea1178  ldr     x8, [x8, #0xe70]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, IdolCard>, ValueTuple<IdolCard, IdolCa
+  06ea117c  ldr     x25, [x9]
+  06ea1180  ldr     x0, [x8]
+  06ea1184  bl      #0x63cf110
+  06ea1188  adrp    x8, #0xeab3000
+  06ea118c  mov     x1, x25
+  06ea1190  mov     x3, xzr
+  06ea1194  ldr     x8, [x8, #0xf08]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_3()
+  06ea1198  mov     x24, x0
+  06ea119c  ldr     x2, [x8]
+  06ea11a0  bl      #0xa4a3abc  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$.ctor
+  06ea11a4  ldr     x8, [x26]
+  06ea11a8  mov     x1, x24
+  06ea11ac  ldr     x0, [x8, #0xb8]
+  06ea11b0  str     x24, [x0, #0x10]!
+  06ea11b4  bl      #0x63cee24
+  06ea11b8  cbz     x22, #0x6ea1b70
+  06ea11bc  adrp    x8, #0xeab3000
+  06ea11c0  mov     x0, x22
+  06ea11c4  mov     x1, x24
+  06ea11c8  ldr     x8, [x8, #0xea8]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, 
+  06ea11cc  ldr     x2, [x8]
+  06ea11d0  bl      #0x8b8cec8  ; -> FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$Select<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06ea11d4  cbz     x0, #0x6ea1b70
+  06ea11d8  adrp    x8, #0xeab3000
+  06ea11dc  ldr     x8, [x8, #0xeb0]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<StoryEventBonus.Types.IdolCardBonus.Types.PotentialRankBonusPermil>>, ValueTuple<IdolCard, IdolCardP
+  06ea11e0  ldr     x1, [x8]
+  06ea11e4  bl      #0xb9023a0  ; -> FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToList
+  06ea11e8  cbz     x0, #0x6ea1b70
+  06ea11ec  adrp    x8, #0xeab3000
+  06ea11f0  mov     x1, x23
+  06ea11f4  mov     x22, x0
+  06ea11f8  ldr     x8, [x8, #0xea0]  ; MMETH Method$System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>.AddRange()
+  06ea11fc  ldr     x2, [x8]
+  06ea1200  bl      #0xaa500a4  ; -> System.Collections.Generic.List<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$AddRange
+  06ea1204  ldr     x0, [x26]
+  06ea1208  ldr     w8, [x0, #0xe4]
+  06ea120c  cbnz    w8, #0x6ea1218
+  06ea1210  bl      #0x63ceff4
+  06ea1214  ldr     x0, [x26]
+  06ea1218  ldr     x8, [x0, #0xb8]
+  06ea121c  adrp    x25, #0xeab3000
+  06ea1220  ldr     x23, [x8, #0x18]
+  06ea1224  ldr     x25, [x25, #0xd88]  ; MMETH Method$System.Linq.Enumerable.GroupBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06ea1228  cbnz    x23, #0x6ea1284
+  06ea122c  ldr     w9, [x0, #0xe4]
+  06ea1230  cbnz    w9, #0x6ea1240
+  06ea1234  bl      #0x63ceff4
+  06ea1238  ldr     x8, [x26]
+  06ea123c  ldr     x8, [x8, #0xb8]
+  06ea1240  adrp    x9, #0xeab3000
+  06ea1244  ldr     x9, [x9, #0xe88]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>_TypeInfo
+  06ea1248  ldr     x24, [x8]
+  06ea124c  ldr     x0, [x9]
+  06ea1250  bl      #0x63cf110
+  06ea1254  adrp    x8, #0xeab3000
+  06ea1258  mov     x1, x24
+  06ea125c  mov     x3, xzr
+  06ea1260  ldr     x8, [x8, #0xf10]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_4()
+  06ea1264  mov     x23, x0
+  06ea1268  ldr     x2, [x8]
+  06ea126c  bl      #0xa4dd2ec  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>$$.ctor
+  06ea1270  ldr     x8, [x26]
+  06ea1274  mov     x1, x23
+  06ea1278  ldr     x0, [x8, #0xb8]
+  06ea127c  str     x23, [x0, #0x18]!
+  06ea1280  bl      #0x63cee24
+  06ea1284  ldr     x2, [x25]
+  06ea1288  mov     x0, x22
+  06ea128c  mov     x1, x23
+  06ea1290  bl      #0x91a576c  ; -> System.Linq.Enumerable$$GroupBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>
+  06ea1294  ldr     x8, [x26]
+  06ea1298  mov     x22, x0
+  06ea129c  ldr     w9, [x8, #0xe4]
+  06ea12a0  cbnz    w9, #0x6ea12b0
+  06ea12a4  mov     x0, x8
+  06ea12a8  bl      #0x63ceff4
+  06ea12ac  ldr     x8, [x26]
+  06ea12b0  ldr     x9, [x8, #0xb8]
+  06ea12b4  adrp    x25, #0xeab3000
+  06ea12b8  ldr     x23, [x9, #0x30]
+  06ea12bc  ldr     x25, [x25, #0xda8]  ; MMETH Method$System.Linq.Enumerable.Select<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolC
+  06ea12c0  cbnz    x23, #0x6ea1320
+  06ea12c4  ldr     w10, [x8, #0xe4]
+  06ea12c8  cbnz    w10, #0x6ea12dc
+  06ea12cc  mov     x0, x8
+  06ea12d0  bl      #0x63ceff4
+  06ea12d4  ldr     x8, [x26]
+  06ea12d8  ldr     x9, [x8, #0xb8]
+  06ea12dc  adrp    x8, #0xeab3000
+  06ea12e0  ldr     x8, [x8, #0xe38]  ; META System.Func<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bo
+  06ea12e4  ldr     x24, [x9]
+  06ea12e8  ldr     x0, [x8]
+  06ea12ec  bl      #0x63cf110
+  06ea12f0  adrp    x8, #0xeab3000
+  06ea12f4  mov     x1, x24
+  06ea12f8  mov     x3, xzr
+  06ea12fc  ldr     x8, [x8, #0xf18]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_5()
+  06ea1300  mov     x23, x0
+  06ea1304  ldr     x2, [x8]
+  06ea1308  bl      #0xa4eeedc  ; -> System.Func<object, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$.ctor
+  06ea130c  ldr     x8, [x26]
+  06ea1310  mov     x1, x23
+  06ea1314  ldr     x0, [x8, #0xb8]
+  06ea1318  str     x23, [x0, #0x30]!
+  06ea131c  bl      #0x63cee24
+  06ea1320  ldr     x2, [x25]
+  06ea1324  mov     x0, x22
+  06ea1328  mov     x1, x23
+  06ea132c  bl      #0x91c8cc0  ; -> System.Linq.Enumerable$$Select<object, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06ea1330  ldr     x8, [x26]
+  06ea1334  mov     x22, x0
+  06ea1338  ldr     w9, [x8, #0xe4]
+  06ea133c  cbnz    w9, #0x6ea134c
+  06ea1340  mov     x0, x8
+  06ea1344  bl      #0x63ceff4
+  06ea1348  ldr     x8, [x26]
+  06ea134c  ldr     x9, [x8, #0xb8]
+  06ea1350  adrp    x25, #0xeab3000
+  06ea1354  ldr     x23, [x9, #0x38]
+  06ea1358  ldr     x25, [x25, #0xe08]  ; MMETH Method$System.Linq.Enumerable.Where<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06ea135c  cbnz    x23, #0x6ea13bc
+  06ea1360  ldr     w10, [x8, #0xe4]
+  06ea1364  cbnz    w10, #0x6ea1378
+  06ea1368  mov     x0, x8
+  06ea136c  bl      #0x63ceff4
+  06ea1370  ldr     x8, [x26]
+  06ea1374  ldr     x9, [x8, #0xb8]
+  06ea1378  adrp    x8, #0xeab3000
+  06ea137c  ldr     x8, [x8, #0xe98]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, bool>_TypeInfo
+  06ea1380  ldr     x24, [x9]
+  06ea1384  ldr     x0, [x8]
+  06ea1388  bl      #0x63cf110
+  06ea138c  adrp    x8, #0xeab3000
+  06ea1390  mov     x1, x24
+  06ea1394  mov     x3, xzr
+  06ea1398  ldr     x8, [x8, #0xf20]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_6()
+  06ea139c  mov     x23, x0
+  06ea13a0  ldr     x2, [x8]
+  06ea13a4  bl      #0xa4dcf98  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, bool>$$.ctor
+  06ea13a8  ldr     x8, [x26]
+  06ea13ac  mov     x1, x23
+  06ea13b0  ldr     x0, [x8, #0xb8]
+  06ea13b4  str     x23, [x0, #0x38]!
+  06ea13b8  bl      #0x63cee24
+  06ea13bc  ldr     x2, [x25]
+  06ea13c0  mov     x0, x22
+  06ea13c4  mov     x1, x23
+  06ea13c8  bl      #0x91f06d8  ; -> System.Linq.Enumerable$$Where<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06ea13cc  ldr     x8, [x26]
+  06ea13d0  mov     x22, x0
+  06ea13d4  ldr     w9, [x8, #0xe4]
+  06ea13d8  cbnz    w9, #0x6ea13e8
+  06ea13dc  mov     x0, x8
+  06ea13e0  bl      #0x63ceff4
+  06ea13e4  ldr     x8, [x26]
+  06ea13e8  ldr     x9, [x8, #0xb8]
+  06ea13ec  adrp    x25, #0xeab3000
+  06ea13f0  ldr     x23, [x9, #0x40]
+  06ea13f4  ldr     x25, [x25, #0xd98]  ; MMETH Method$System.Linq.Enumerable.OrderByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06ea13f8  cbnz    x23, #0x6ea1458
+  06ea13fc  ldr     w10, [x8, #0xe4]
+  06ea1400  cbnz    w10, #0x6ea1414
+  06ea1404  mov     x0, x8
+  06ea1408  bl      #0x63ceff4
+  06ea140c  ldr     x8, [x26]
+  06ea1410  ldr     x9, [x8, #0xb8]
+  06ea1414  adrp    x8, #0xeab3000
+  06ea1418  ldr     x8, [x8, #0xe78]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>_TypeInfo
+  06ea141c  ldr     x24, [x9]
+  06ea1420  ldr     x0, [x8]
+  06ea1424  bl      #0x63cf110
+  06ea1428  adrp    x8, #0xeab3000
+  06ea142c  mov     x1, x24
+  06ea1430  mov     x3, xzr
+  06ea1434  ldr     x8, [x8, #0xf28]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_7()
+  06ea1438  mov     x23, x0
+  06ea143c  ldr     x2, [x8]
+  06ea1440  bl      #0xa4dd070  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>$$.ctor
+  06ea1444  ldr     x8, [x26]
+  06ea1448  mov     x1, x23
+  06ea144c  ldr     x0, [x8, #0xb8]
+  06ea1450  str     x23, [x0, #0x40]!
+  06ea1454  bl      #0x63cee24
+  06ea1458  ldr     x2, [x25]
+  06ea145c  mov     x0, x22
+  06ea1460  mov     x1, x23
+  06ea1464  bl      #0x91ae2fc  ; -> System.Linq.Enumerable$$OrderByDescending<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>
+  06ea1468  ldr     x8, [x26]
+  06ea146c  mov     x22, x0
+  06ea1470  ldr     w9, [x8, #0xe4]
+  06ea1474  cbnz    w9, #0x6ea1484
+  06ea1478  mov     x0, x8
+  06ea147c  bl      #0x63ceff4
+  06ea1480  ldr     x8, [x26]
+  06ea1484  ldr     x9, [x8, #0xb8]
+  06ea1488  adrp    x25, #0xeab3000
+  06ea148c  ldr     x23, [x9, #0x48]
+  06ea1490  ldr     x25, [x25, #0xdc0]  ; MMETH Method$System.Linq.Enumerable.ThenByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>()
+  06ea1494  cbnz    x23, #0x6ea14f4
+  06ea1498  ldr     w10, [x8, #0xe4]
+  06ea149c  cbnz    w10, #0x6ea14b0
+  06ea14a0  mov     x0, x8
+  06ea14a4  bl      #0x63ceff4
+  06ea14a8  ldr     x8, [x26]
+  06ea14ac  ldr     x9, [x8, #0xb8]
+  06ea14b0  adrp    x8, #0xeab3000
+  06ea14b4  ldr     x8, [x8, #0xe80]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>_TypeInfo
+  06ea14b8  ldr     x24, [x9]
+  06ea14bc  ldr     x0, [x8]
+  06ea14c0  bl      #0x63cf110
+  06ea14c4  adrp    x8, #0xeab3000
+  06ea14c8  mov     x1, x24
+  06ea14cc  mov     x3, xzr
+  06ea14d0  ldr     x8, [x8, #0xf30]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_8()
+  06ea14d4  mov     x23, x0
+  06ea14d8  ldr     x2, [x8]
+  06ea14dc  bl      #0xa4dd144  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, Int32Enum>$$.ctor
+  06ea14e0  ldr     x8, [x26]
+  06ea14e4  mov     x1, x23
+  06ea14e8  ldr     x0, [x8, #0xb8]
+  06ea14ec  str     x23, [x0, #0x48]!
+  06ea14f0  bl      #0x63cee24
+  06ea14f4  ldr     x2, [x25]
+  06ea14f8  mov     x0, x22
+  06ea14fc  mov     x1, x23
+  06ea1500  bl      #0x91ddf20  ; -> System.Linq.Enumerable$$ThenByDescending<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, Int32Enum>
+  06ea1504  ldr     x8, [x26]
+  06ea1508  mov     x22, x0
+  06ea150c  ldr     w9, [x8, #0xe4]
+  06ea1510  cbnz    w9, #0x6ea1520
+  06ea1514  mov     x0, x8
+  06ea1518  bl      #0x63ceff4
+  06ea151c  ldr     x8, [x26]
+  06ea1520  ldr     x9, [x8, #0xb8]
+  06ea1524  adrp    x25, #0xeab3000
+  06ea1528  ldr     x23, [x9, #0x50]
+  06ea152c  ldr     x25, [x25, #0xdd8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06ea1530  cbnz    x23, #0x6ea1590
+  06ea1534  ldr     w10, [x8, #0xe4]
+  06ea1538  cbnz    w10, #0x6ea154c
+  06ea153c  mov     x0, x8
+  06ea1540  bl      #0x63ceff4
+  06ea1544  ldr     x8, [x26]
+  06ea1548  ldr     x9, [x8, #0xb8]
+  06ea154c  adrp    x8, #0xeab3000
+  06ea1550  ldr     x8, [x8, #0xe78]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>_TypeInfo
+  06ea1554  ldr     x24, [x9]
+  06ea1558  ldr     x0, [x8]
+  06ea155c  bl      #0x63cf110
+  06ea1560  adrp    x8, #0xeab3000
+  06ea1564  mov     x1, x24
+  06ea1568  mov     x3, xzr
+  06ea156c  ldr     x8, [x8, #0xf38]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_9()
+  06ea1570  mov     x23, x0
+  06ea1574  ldr     x2, [x8]
+  06ea1578  bl      #0xa4dd070  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>$$.ctor
+  06ea157c  ldr     x8, [x26]
+  06ea1580  mov     x1, x23
+  06ea1584  ldr     x0, [x8, #0xb8]
+  06ea1588  str     x23, [x0, #0x50]!
+  06ea158c  bl      #0x63cee24
+  06ea1590  ldr     x2, [x25]
+  06ea1594  mov     x0, x22
+  06ea1598  mov     x1, x23
+  06ea159c  bl      #0x91dc738  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>
+  06ea15a0  ldr     x8, [x26]
+  06ea15a4  mov     x22, x0
+  06ea15a8  ldr     w9, [x8, #0xe4]
+  06ea15ac  cbnz    w9, #0x6ea15bc
+  06ea15b0  mov     x0, x8
+  06ea15b4  bl      #0x63ceff4
+  06ea15b8  ldr     x8, [x26]
+  06ea15bc  ldr     x9, [x8, #0xb8]
+  06ea15c0  adrp    x25, #0xeab3000
+  06ea15c4  ldr     x23, [x9, #0x58]
+  06ea15c8  ldr     x25, [x25, #0xde0]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>()
+  06ea15cc  cbnz    x23, #0x6ea162c
+  06ea15d0  ldr     w10, [x8, #0xe4]
+  06ea15d4  cbnz    w10, #0x6ea15e8
+  06ea15d8  mov     x0, x8
+  06ea15dc  bl      #0x63ceff4
+  06ea15e0  ldr     x8, [x26]
+  06ea15e4  ldr     x9, [x8, #0xb8]
+  06ea15e8  adrp    x8, #0xeab3000
+  06ea15ec  ldr     x8, [x8, #0xe60]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>_TypeInfo
+  06ea15f0  ldr     x24, [x9]
+  06ea15f4  ldr     x0, [x8]
+  06ea15f8  bl      #0x63cf110
+  06ea15fc  adrp    x8, #0xeab3000
+  06ea1600  mov     x1, x24
+  06ea1604  mov     x3, xzr
+  06ea1608  ldr     x8, [x8, #0xeb8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_10()
+  06ea160c  mov     x23, x0
+  06ea1610  ldr     x2, [x8]
+  06ea1614  bl      #0xa4dd218  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, long>$$.ctor
+  06ea1618  ldr     x8, [x26]
+  06ea161c  mov     x1, x23
+  06ea1620  ldr     x0, [x8, #0xb8]
+  06ea1624  str     x23, [x0, #0x58]!
+  06ea1628  bl      #0x63cee24
+  06ea162c  ldr     x2, [x25]
+  06ea1630  mov     x0, x22
+  06ea1634  mov     x1, x23
+  06ea1638  bl      #0x91dc804  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, long>
+  06ea163c  ldr     x8, [x26]
+  06ea1640  mov     x22, x0
+  06ea1644  ldr     w9, [x8, #0xe4]
+  06ea1648  cbnz    w9, #0x6ea1658
+  06ea164c  mov     x0, x8
+  06ea1650  bl      #0x63ceff4
+  06ea1654  ldr     x8, [x26]
+  06ea1658  ldr     x9, [x8, #0xb8]
+  06ea165c  adrp    x25, #0xeab3000
+  06ea1660  ldr     x23, [x9, #0x60]
+  06ea1664  ldr     x25, [x25, #0xde8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06ea1668  cbnz    x23, #0x6ea16c8
+  06ea166c  ldr     w10, [x8, #0xe4]
+  06ea1670  cbnz    w10, #0x6ea1684
+  06ea1674  mov     x0, x8
+  06ea1678  bl      #0x63ceff4
+  06ea167c  ldr     x8, [x26]
+  06ea1680  ldr     x9, [x8, #0xb8]
+  06ea1684  adrp    x8, #0xeab3000
+  06ea1688  ldr     x8, [x8, #0xe88]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>_TypeInfo
+  06ea168c  ldr     x24, [x9]
+  06ea1690  ldr     x0, [x8]
+  06ea1694  bl      #0x63cf110
+  06ea1698  adrp    x8, #0xeab3000
+  06ea169c  mov     x1, x24
+  06ea16a0  mov     x3, xzr
+  06ea16a4  ldr     x8, [x8, #0xec0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_11()
+  06ea16a8  mov     x23, x0
+  06ea16ac  ldr     x2, [x8]
+  06ea16b0  bl      #0xa4dd2ec  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>$$.ctor
+  06ea16b4  ldr     x8, [x26]
+  06ea16b8  mov     x1, x23
+  06ea16bc  ldr     x0, [x8, #0xb8]
+  06ea16c0  str     x23, [x0, #0x60]!
+  06ea16c4  bl      #0x63cee24
+  06ea16c8  ldr     x2, [x25]
+  06ea16cc  mov     x0, x22
+  06ea16d0  mov     x1, x23
+  06ea16d4  bl      #0x91dc8d0  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>
+  06ea16d8  ldr     x1, [x27]
+  06ea16dc  bl      #0x91ea2f4  ; -> System.Linq.Enumerable$$ToList<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06ea16e0  ldr     x8, [x19, #0x58]
+  06ea16e4  cbz     x8, #0x6ea1b70
+  06ea16e8  mov     x1, x0
+  06ea16ec  mov     x0, x8
+  06ea16f0  mov     x2, x20
+  06ea16f4  bl      #0x6ea1b7c  ; -> Campus.OutGame.StoryEventBonusSheetView$$SetPointBonus
+  06ea16f8  ldr     x0, [x26]
+  06ea16fc  ldr     w8, [x0, #0xe4]
+  06ea1700  cbnz    w8, #0x6ea170c
+  06ea1704  bl      #0x63ceff4
+  06ea1708  ldr     x0, [x26]
+  06ea170c  ldr     x8, [x0, #0xb8]
+  06ea1710  adrp    x24, #0xeab3000
+  06ea1714  ldr     x22, [x8, #0x68]
+  06ea1718  ldr     x24, [x24, #0xe18]  ; MMETH Method$FasterLinq.Select<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, ValueTuple<ValueTuple<string, L
+  06ea171c  cbnz    x22, #0x6ea1778
+  06ea1720  ldr     w9, [x0, #0xe4]
+  06ea1724  cbnz    w9, #0x6ea1734
+  06ea1728  bl      #0x63ceff4
+  06ea172c  ldr     x8, [x26]
+  06ea1730  ldr     x8, [x8, #0xb8]
+  06ea1734  adrp    x9, #0xeab3000
+  06ea1738  ldr     x9, [x9, #0xe28]  ; META System.Func<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, ValueTuple<ValueTuple<string, List<StoryEvent
+  06ea173c  ldr     x23, [x8]
+  06ea1740  ldr     x0, [x9]
+  06ea1744  bl      #0x63cf110
+  06ea1748  adrp    x8, #0xeab3000
+  06ea174c  mov     x1, x23
+  06ea1750  mov     x3, xzr
+  06ea1754  ldr     x8, [x8, #0xec8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_12()
+  06ea1758  mov     x22, x0
+  06ea175c  ldr     x2, [x8]
+  06ea1760  bl      #0xa4b963c  ; -> System.Func<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$.ctor
+  06ea1764  ldr     x8, [x26]
+  06ea1768  mov     x1, x22
+  06ea176c  ldr     x0, [x8, #0xb8]
+  06ea1770  str     x22, [x0, #0x68]!
+  06ea1774  bl      #0x63cee24
+  06ea1778  ldr     x2, [x24]
+  06ea177c  mov     x0, x21
+  06ea1780  mov     x1, x22
+  06ea1784  bl      #0x9217dac  ; -> FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>
+  06ea1788  ldr     x8, [x26]
+  06ea178c  mov     x21, x0
+  06ea1790  ldr     w9, [x8, #0xe4]
+  06ea1794  cbnz    w9, #0x6ea17a4
+  06ea1798  mov     x0, x8
+  06ea179c  bl      #0x63ceff4
+  06ea17a0  ldr     x8, [x26]
+  06ea17a4  ldr     x9, [x8, #0xb8]
+  06ea17a8  adrp    x24, #0xeab3000
+  06ea17ac  ldr     x22, [x9, #0x70]
+  06ea17b0  ldr     x24, [x24, #0xe00]  ; MMETH Method$System.Linq.Enumerable.Where<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCa
+  06ea17b4  cbnz    x22, #0x6ea1814
+  06ea17b8  ldr     w10, [x8, #0xe4]
+  06ea17bc  cbnz    w10, #0x6ea17d0
+  06ea17c0  mov     x0, x8
+  06ea17c4  bl      #0x63ceff4
+  06ea17c8  ldr     x8, [x26]
+  06ea17cc  ldr     x9, [x8, #0xb8]
+  06ea17d0  adrp    x8, #0xeab3000
+  06ea17d4  ldr     x8, [x8, #0xe90]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, bool>_TypeInfo
+  06ea17d8  ldr     x23, [x9]
+  06ea17dc  ldr     x0, [x8]
+  06ea17e0  bl      #0x63cf110
+  06ea17e4  adrp    x8, #0xeab3000
+  06ea17e8  mov     x1, x23
+  06ea17ec  mov     x3, xzr
+  06ea17f0  ldr     x8, [x8, #0xed0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_13()
+  06ea17f4  mov     x22, x0
+  06ea17f8  ldr     x2, [x8]
+  06ea17fc  bl      #0xa4a3b98  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, bool>$$.ctor
+  06ea1800  ldr     x8, [x26]
+  06ea1804  mov     x1, x22
+  06ea1808  ldr     x0, [x8, #0xb8]
+  06ea180c  str     x22, [x0, #0x70]!
+  06ea1810  bl      #0x63cee24
+  06ea1814  ldr     x2, [x24]
+  06ea1818  mov     x0, x21
+  06ea181c  mov     x1, x22
+  06ea1820  bl      #0x91ed020  ; -> System.Linq.Enumerable$$Where<ValueTuple<ValueTuple<object, object>, object>>
+  06ea1824  ldr     x8, [x26]
+  06ea1828  mov     x21, x0
+  06ea182c  ldr     w9, [x8, #0xe4]
+  06ea1830  cbnz    w9, #0x6ea1840
+  06ea1834  mov     x0, x8
+  06ea1838  bl      #0x63ceff4
+  06ea183c  ldr     x8, [x26]
+  06ea1840  ldr     x9, [x8, #0xb8]
+  06ea1844  adrp    x24, #0xeab3000
+  06ea1848  ldr     x22, [x9, #0x78]
+  06ea184c  ldr     x24, [x24, #0xd90]  ; MMETH Method$System.Linq.Enumerable.OrderByDescending<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>
+  06ea1850  cbnz    x22, #0x6ea18b0
+  06ea1854  ldr     w10, [x8, #0xe4]
+  06ea1858  cbnz    w10, #0x6ea186c
+  06ea185c  mov     x0, x8
+  06ea1860  bl      #0x63ceff4
+  06ea1864  ldr     x8, [x26]
+  06ea1868  ldr     x9, [x8, #0xb8]
+  06ea186c  adrp    x8, #0xeab3000
+  06ea1870  ldr     x8, [x8, #0xe48]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, int>_TypeInfo
+  06ea1874  ldr     x23, [x9]
+  06ea1878  ldr     x0, [x8]
+  06ea187c  bl      #0x63cf110
+  06ea1880  adrp    x8, #0xeab3000
+  06ea1884  mov     x1, x23
+  06ea1888  mov     x3, xzr
+  06ea188c  ldr     x8, [x8, #0xed8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_14()
+  06ea1890  mov     x22, x0
+  06ea1894  ldr     x2, [x8]
+  06ea1898  bl      #0xa4a3c78  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, int>$$.ctor
+  06ea189c  ldr     x8, [x26]
+  06ea18a0  mov     x1, x22
+  06ea18a4  ldr     x0, [x8, #0xb8]
+  06ea18a8  str     x22, [x0, #0x78]!
+  06ea18ac  bl      #0x63cee24
+  06ea18b0  ldr     x2, [x24]
+  06ea18b4  mov     x0, x21
+  06ea18b8  mov     x1, x22
+  06ea18bc  bl      #0x91ade9c  ; -> System.Linq.Enumerable$$OrderByDescending<ValueTuple<ValueTuple<object, object>, object>, int>
+  06ea18c0  ldr     x8, [x26]
+  06ea18c4  mov     x21, x0
+  06ea18c8  ldr     w9, [x8, #0xe4]
+  06ea18cc  cbnz    w9, #0x6ea18dc
+  06ea18d0  mov     x0, x8
+  06ea18d4  bl      #0x63ceff4
+  06ea18d8  ldr     x8, [x26]
+  06ea18dc  ldr     x9, [x8, #0xb8]
+  06ea18e0  adrp    x24, #0xeab3000
+  06ea18e4  ldr     x22, [x9, #0x80]
+  06ea18e8  ldr     x24, [x24, #0xdb8]  ; MMETH Method$System.Linq.Enumerable.ThenByDescending<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>
+  06ea18ec  cbnz    x22, #0x6ea194c
+  06ea18f0  ldr     w10, [x8, #0xe4]
+  06ea18f4  cbnz    w10, #0x6ea1908
+  06ea18f8  mov     x0, x8
+  06ea18fc  bl      #0x63ceff4
+  06ea1900  ldr     x8, [x26]
+  06ea1904  ldr     x9, [x8, #0xb8]
+  06ea1908  adrp    x8, #0xeab3000
+  06ea190c  ldr     x8, [x8, #0xe68]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, SupportCardRarity>_T
+  06ea1910  ldr     x23, [x9]
+  06ea1914  ldr     x0, [x8]
+  06ea1918  bl      #0x63cf110
+  06ea191c  adrp    x8, #0xeab3000
+  06ea1920  mov     x1, x23
+  06ea1924  mov     x3, xzr
+  06ea1928  ldr     x8, [x8, #0xee0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_15()
+  06ea192c  mov     x22, x0
+  06ea1930  ldr     x2, [x8]
+  06ea1934  bl      #0xa4a3d54  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, Int32Enum>$$.ctor
+  06ea1938  ldr     x8, [x26]
+  06ea193c  mov     x1, x22
+  06ea1940  ldr     x0, [x8, #0xb8]
+  06ea1944  str     x22, [x0, #0x80]!
+  06ea1948  bl      #0x63cee24
+  06ea194c  ldr     x2, [x24]
+  06ea1950  mov     x0, x21
+  06ea1954  mov     x1, x22
+  06ea1958  bl      #0x91dd65c  ; -> System.Linq.Enumerable$$ThenByDescending<ValueTuple<ValueTuple<object, object>, object>, Int32Enum>
+  06ea195c  ldr     x8, [x26]
+  06ea1960  mov     x21, x0
+  06ea1964  ldr     w9, [x8, #0xe4]
+  06ea1968  cbnz    w9, #0x6ea1978
+  06ea196c  mov     x0, x8
+  06ea1970  bl      #0x63ceff4
+  06ea1974  ldr     x8, [x26]
+  06ea1978  ldr     x9, [x8, #0xb8]
+  06ea197c  adrp    x24, #0xeab3000
+  06ea1980  ldr     x22, [x9, #0x88]
+  06ea1984  ldr     x24, [x24, #0xdc8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportC
+  06ea1988  cbnz    x22, #0x6ea19e8
+  06ea198c  ldr     w10, [x8, #0xe4]
+  06ea1990  cbnz    w10, #0x6ea19a4
+  06ea1994  mov     x0, x8
+  06ea1998  bl      #0x63ceff4
+  06ea199c  ldr     x8, [x26]
+  06ea19a0  ldr     x9, [x8, #0xb8]
+  06ea19a4  adrp    x8, #0xeab3000
+  06ea19a8  ldr     x8, [x8, #0xe20]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, long>_TypeInfo
+  06ea19ac  ldr     x23, [x9]
+  06ea19b0  ldr     x0, [x8]
+  06ea19b4  bl      #0x63cf110
+  06ea19b8  adrp    x8, #0xeab3000
+  06ea19bc  mov     x1, x23
+  06ea19c0  mov     x3, xzr
+  06ea19c4  ldr     x8, [x8, #0xee8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_16()
+  06ea19c8  mov     x22, x0
+  06ea19cc  ldr     x2, [x8]
+  06ea19d0  bl      #0xa4a3e30  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, long>$$.ctor
+  06ea19d4  ldr     x8, [x26]
+  06ea19d8  mov     x1, x22
+  06ea19dc  ldr     x0, [x8, #0xb8]
+  06ea19e0  str     x22, [x0, #0x88]!
+  06ea19e4  bl      #0x63cee24
+  06ea19e8  ldr     x2, [x24]
+  06ea19ec  mov     x0, x21
+  06ea19f0  mov     x1, x22
+  06ea19f4  bl      #0x91dbda8  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<ValueTuple<object, object>, object>, long>
+  06ea19f8  ldr     x8, [x26]
+  06ea19fc  mov     x21, x0
+  06ea1a00  ldr     w9, [x8, #0xe4]
+  06ea1a04  cbnz    w9, #0x6ea1a14
+  06ea1a08  mov     x0, x8
+  06ea1a0c  bl      #0x63ceff4
+  06ea1a10  ldr     x8, [x26]
+  06ea1a14  ldr     x9, [x8, #0xb8]
+  06ea1a18  adrp    x24, #0xeab3000
+  06ea1a1c  ldr     x22, [x9, #0x90]
+  06ea1a20  ldr     x24, [x24, #0xdd0]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportC
+  06ea1a24  cbnz    x22, #0x6ea1a84
+  06ea1a28  ldr     w10, [x8, #0xe4]
+  06ea1a2c  cbnz    w10, #0x6ea1a40
+  06ea1a30  mov     x0, x8
+  06ea1a34  bl      #0x63ceff4
+  06ea1a38  ldr     x8, [x26]
+  06ea1a3c  ldr     x9, [x8, #0xb8]
+  06ea1a40  adrp    x8, #0xeab3000
+  06ea1a44  ldr     x8, [x8, #0xe40]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, string>_TypeInfo
+  06ea1a48  ldr     x23, [x9]
+  06ea1a4c  ldr     x0, [x8]
+  06ea1a50  bl      #0x63cf110
+  06ea1a54  adrp    x8, #0xeab3000
+  06ea1a58  mov     x1, x23
+  06ea1a5c  mov     x3, xzr
+  06ea1a60  ldr     x8, [x8, #0xef0]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_17()
+  06ea1a64  mov     x22, x0
+  06ea1a68  ldr     x2, [x8]
+  06ea1a6c  bl      #0xa4a3f0c  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, object>$$.ctor
+  06ea1a70  ldr     x8, [x26]
+  06ea1a74  mov     x1, x22
+  06ea1a78  ldr     x0, [x8, #0xb8]
+  06ea1a7c  str     x22, [x0, #0x90]!
+  06ea1a80  bl      #0x63cee24
+  06ea1a84  ldr     x2, [x24]
+  06ea1a88  mov     x0, x21
+  06ea1a8c  mov     x1, x22
+  06ea1a90  bl      #0x91dbe74  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<ValueTuple<object, object>, object>, object>
+  06ea1a94  ldr     x8, [x26]
+  06ea1a98  mov     x21, x0
+  06ea1a9c  ldr     w9, [x8, #0xe4]
+  06ea1aa0  cbnz    w9, #0x6ea1ab0
+  06ea1aa4  mov     x0, x8
+  06ea1aa8  bl      #0x63ceff4
+  06ea1aac  ldr     x8, [x26]
+  06ea1ab0  ldr     x9, [x8, #0xb8]
+  06ea1ab4  adrp    x25, #0xeab3000
+  06ea1ab8  adrp    x24, #0xeab3000
+  06ea1abc  ldr     x25, [x25, #0xdb0]  ; MMETH Method$System.Linq.Enumerable.Select<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportC
+  06ea1ac0  ldr     x22, [x9, #0x98]
+  06ea1ac4  ldr     x24, [x24, #0xdf0]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<SupportCard, SupportCardLevelLimitRank, bool, int, int>>()
+  06ea1ac8  cbnz    x22, #0x6ea1b28
+  06ea1acc  ldr     w10, [x8, #0xe4]
+  06ea1ad0  cbnz    w10, #0x6ea1ae4
+  06ea1ad4  mov     x0, x8
+  06ea1ad8  bl      #0x63ceff4
+  06ea1adc  ldr     x8, [x26]
+  06ea1ae0  ldr     x9, [x8, #0xb8]
+  06ea1ae4  adrp    x8, #0xeab3000
+  06ea1ae8  ldr     x8, [x8, #0xe58]  ; META System.Func<ValueTuple<ValueTuple<string, List<StoryEventBonus.Types.SupportCardBonus.Types.LevelLimitRankBonusPermil>>, SupportCard>, ValueTuple<SupportCa
+  06ea1aec  ldr     x23, [x9]
+  06ea1af0  ldr     x0, [x8]
+  06ea1af4  bl      #0x63cf110
+  06ea1af8  adrp    x8, #0xeab3000
+  06ea1afc  mov     x1, x23
+  06ea1b00  mov     x3, xzr
+  06ea1b04  ldr     x8, [x8, #0xef8]  ; MMETH Method$Campus.OutGame.StoryEventBonusSheetPresenter.<>c.<SetView>b__4_18()
+  06ea1b08  mov     x22, x0
+  06ea1b0c  ldr     x2, [x8]
+  06ea1b10  bl      #0xa4a39e0  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, ValueTuple<object, Int32Enum, bool, int, int>>$$.ctor
+  06ea1b14  ldr     x8, [x26]
+  06ea1b18  mov     x1, x22
+  06ea1b1c  ldr     x0, [x8, #0xb8]
+  06ea1b20  str     x22, [x0, #0x98]!
+  06ea1b24  bl      #0x63cee24
+  06ea1b28  ldr     x2, [x25]
+  06ea1b2c  mov     x0, x21
+  06ea1b30  mov     x1, x22
+  06ea1b34  bl      #0x91b41fc  ; -> System.Linq.Enumerable$$Select<ValueTuple<ValueTuple<object, object>, object>, ValueTuple<object, Int32Enum, bool, int, int>>
+  06ea1b38  ldr     x1, [x24]
+  06ea1b3c  bl      #0x91ea274  ; -> System.Linq.Enumerable$$ToList<ValueTuple<object, Int32Enum, bool, int, int>>
+  06ea1b40  ldr     x8, [x19, #0x58]
+  06ea1b44  cbz     x8, #0x6ea1b70
+  06ea1b48  mov     x2, x20
+  06ea1b4c  ldp     x20, x19, [sp, #0x50]
+  06ea1b50  ldp     x22, x21, [sp, #0x40]
+  06ea1b54  mov     x1, x0
+  06ea1b58  ldp     x24, x23, [sp, #0x30]
+  06ea1b5c  mov     x0, x8
+  06ea1b60  ldp     x26, x25, [sp, #0x20]
+  06ea1b64  ldp     x28, x27, [sp, #0x10]
+  06ea1b68  ldp     x29, x30, [sp], #0x60
+  06ea1b6c  b       #0x6ea1d54  ; -> Campus.OutGame.StoryEventBonusSheetView$$SetCoinBonus
+  06ea1b70  bl      #0x63cf120
+=== Campus.OutGame.TourEventBonusSheetPresenter$$SetIdolConsumptionBonus @ 0x6f145f8 (5 insns)
+    void Campus_OutGame_TourEventBonusSheetPresenter__SetIdolConsumptionBonus (Campus_OutGame_TourEventBonusSheetPresenter_o* __this, System_ValueTuple_string__List_EventBonus_Types_EventPotentialRankBonusPermil___array* idolList, Campus_Common_Proto_Client_Master_Item_o* consumptionItem, System_Action_ICard__o* moveToCardPreview, const MethodInfo* method);
+  06f145f8  mov     x4, x3
+  06f145fc  mov     x3, x2
+  06f14600  mov     x2, x1
+  06f14604  mov     x1, xzr
+  06f14608  b       #0x6f1460c  ; -> Campus.OutGame.TourEventBonusSheetPresenter$$SetIdolConsumptionBonus
+=== Campus.OutGame.TourEventBonusSheetPresenter$$SetIdolConsumptionBonus @ 0x6f1460c (632 insns)
+    void Campus_OutGame_TourEventBonusSheetPresenter__SetIdolConsumptionBonus (Campus_OutGame_TourEventBonusSheetPresenter_o* __this, System_ValueTuple_string__IdolCardRarity__List_EventBonus_Types_EventPotentialRankBonusPermil___array* characterList, System_ValueTuple_string__List_EventBonus_Types_EventPotentialRankBonusPermil___array* idolList, Campus_Common_Proto_Client_Master_Item_o* consumptionItem, System_Action_ICard__o* moveToCardPreview, const MethodInfo* method);
+  06f1460c  str     x30, [sp, #-0x60]!
+  06f14610  stp     x28, x27, [sp, #0x10]
+  06f14614  stp     x26, x25, [sp, #0x20]
+  06f14618  stp     x24, x23, [sp, #0x30]
+  06f1461c  stp     x22, x21, [sp, #0x40]
+  06f14620  stp     x20, x19, [sp, #0x50]
+  06f14624  adrp    x24, #0xf404000
+  06f14628  mov     x19, x4
+  06f1462c  mov     x20, x3
+  06f14630  ldrb    w8, [x24, #0xab5]
+  06f14634  mov     x22, x2
+  06f14638  mov     x23, x1
+  06f1463c  mov     x21, x0
+  06f14640  tbnz    w8, #0, #0x6f14814
+  06f14644  adrp    x0, #0xeab3000
+  06f14648  ldr     x0, [x0, #0xd88]  ; MMETH Method$System.Linq.Enumerable.GroupBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06f1464c  bl      #0x63cee78
+  06f14650  adrp    x0, #0xeab3000
+  06f14654  ldr     x0, [x0, #0xd98]  ; MMETH Method$System.Linq.Enumerable.OrderByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06f14658  bl      #0x63cee78
+  06f1465c  adrp    x0, #0xeab6000
+  06f14660  ldr     x0, [x0, #0xc08]  ; MMETH Method$System.Linq.Enumerable.SelectMany<ValueTuple<string, IdolCardRarity, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<IdolCard, Id
+  06f14664  bl      #0x63cee78
+  06f14668  adrp    x0, #0xeab3000
+  06f1466c  ldr     x0, [x0, #0xda8]  ; MMETH Method$System.Linq.Enumerable.Select<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolC
+  06f14670  bl      #0x63cee78
+  06f14674  adrp    x0, #0xeab3000
+  06f14678  ldr     x0, [x0, #0xdc0]  ; MMETH Method$System.Linq.Enumerable.ThenByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>()
+  06f1467c  bl      #0x63cee78
+  06f14680  adrp    x0, #0xeab3000
+  06f14684  ldr     x0, [x0, #0xdd8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06f14688  bl      #0x63cee78
+  06f1468c  adrp    x0, #0xeab3000
+  06f14690  ldr     x0, [x0, #0xde0]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>()
+  06f14694  bl      #0x63cee78
+  06f14698  adrp    x0, #0xeab3000
+  06f1469c  ldr     x0, [x0, #0xde8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06f146a0  bl      #0x63cee78
+  06f146a4  adrp    x0, #0xeab3000
+  06f146a8  ldr     x0, [x0, #0xdf8]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06f146ac  bl      #0x63cee78
+  06f146b0  adrp    x0, #0xeab3000
+  06f146b4  ldr     x0, [x0, #0xe08]  ; MMETH Method$System.Linq.Enumerable.Where<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06f146b8  bl      #0x63cee78
+  06f146bc  adrp    x0, #0xeab6000
+  06f146c0  ldr     x0, [x0, #0xc10]  ; MMETH Method$FasterLinq.Select<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<EventBonus.Types.Eve
+  06f146c4  bl      #0x63cee78
+  06f146c8  adrp    x0, #0xeab6000
+  06f146cc  ldr     x0, [x0, #0xc18]  ; META System.Func<ValueTuple<string, IdolCardRarity, List<EventBonus.Types.EventPotentialRankBonusPermil>>, IEnumerable<ValueTuple<IdolCard, IdolCardPotentialRan
+  06f146d0  bl      #0x63cee78
+  06f146d4  adrp    x0, #0xeab3000
+  06f146d8  ldr     x0, [x0, #0xe38]  ; META System.Func<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bo
+  06f146dc  bl      #0x63cee78
+  06f146e0  adrp    x0, #0xeab6000
+  06f146e4  ldr     x0, [x0, #0xc20]  ; META System.Func<ValueTuple<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, IdolCard>, ValueTuple<IdolCard, IdolCardPotentialRank, boo
+  06f146e8  bl      #0x63cee78
+  06f146ec  adrp    x0, #0xeab6000
+  06f146f0  ldr     x0, [x0, #0xc28]  ; META System.Func<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<EventBonus.Types.EventPotentialRan
+  06f146f4  bl      #0x63cee78
+  06f146f8  adrp    x0, #0xeab3000
+  06f146fc  ldr     x0, [x0, #0xe60]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>_TypeInfo
+  06f14700  bl      #0x63cee78
+  06f14704  adrp    x0, #0xeab3000
+  06f14708  ldr     x0, [x0, #0xe78]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>_TypeInfo
+  06f1470c  bl      #0x63cee78
+  06f14710  adrp    x0, #0xeab3000
+  06f14714  ldr     x0, [x0, #0xe80]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>_TypeInfo
+  06f14718  bl      #0x63cee78
+  06f1471c  adrp    x0, #0xeab3000
+  06f14720  ldr     x0, [x0, #0xe88]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>_TypeInfo
+  06f14724  bl      #0x63cee78
+  06f14728  adrp    x0, #0xeab3000
+  06f1472c  ldr     x0, [x0, #0xe98]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, bool>_TypeInfo
+  06f14730  bl      #0x63cee78
+  06f14734  adrp    x0, #0xeab3000
+  06f14738  ldr     x0, [x0, #0xea0]  ; MMETH Method$System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>.AddRange()
+  06f1473c  bl      #0x63cee78
+  06f14740  adrp    x0, #0xeab6000
+  06f14744  ldr     x0, [x0, #0xd78]  ; MMETH Method$System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>..ctor()
+  06f14748  bl      #0x63cee78
+  06f1474c  adrp    x0, #0xeab6000
+  06f14750  ldr     x0, [x0, #0xd80]  ; META System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>_TypeInfo
+  06f14754  bl      #0x63cee78
+  06f14758  adrp    x0, #0xeab6000
+  06f1475c  ldr     x0, [x0, #0xc30]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<EventBonus.Type
+  06f14760  bl      #0x63cee78
+  06f14764  adrp    x0, #0xeab6000
+  06f14768  ldr     x0, [x0, #0xc38]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<IdolCard, IdolCardPotentialRank, bool, 
+  06f1476c  bl      #0x63cee78
+  06f14770  adrp    x0, #0xeab6000
+  06f14774  ldr     x0, [x0, #0xd88]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_0()
+  06f14778  bl      #0x63cee78
+  06f1477c  adrp    x0, #0xeab6000
+  06f14780  ldr     x0, [x0, #0xd90]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_1()
+  06f14784  bl      #0x63cee78
+  06f14788  adrp    x0, #0xeab6000
+  06f1478c  ldr     x0, [x0, #0xd98]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_2()
+  06f14790  bl      #0x63cee78
+  06f14794  adrp    x0, #0xeab6000
+  06f14798  ldr     x0, [x0, #0xda0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_3()
+  06f1479c  bl      #0x63cee78
+  06f147a0  adrp    x0, #0xeab6000
+  06f147a4  ldr     x0, [x0, #0xda8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_4()
+  06f147a8  bl      #0x63cee78
+  06f147ac  adrp    x0, #0xeab6000
+  06f147b0  ldr     x0, [x0, #0xdb0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_5()
+  06f147b4  bl      #0x63cee78
+  06f147b8  adrp    x0, #0xeab6000
+  06f147bc  ldr     x0, [x0, #0xdb8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_6()
+  06f147c0  bl      #0x63cee78
+  06f147c4  adrp    x0, #0xeab6000
+  06f147c8  ldr     x0, [x0, #0xdc0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_7()
+  06f147cc  bl      #0x63cee78
+  06f147d0  adrp    x0, #0xeab6000
+  06f147d4  ldr     x0, [x0, #0xdc8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_8()
+  06f147d8  bl      #0x63cee78
+  06f147dc  adrp    x0, #0xeab6000
+  06f147e0  ldr     x0, [x0, #0xdd0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_9()
+  06f147e4  bl      #0x63cee78
+  06f147e8  adrp    x0, #0xeab6000
+  06f147ec  ldr     x0, [x0, #0xdd8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c__DisplayClass2_0.<SetIdolConsumptionBonus>b__10()
+  06f147f0  bl      #0x63cee78
+  06f147f4  adrp    x0, #0xeab6000
+  06f147f8  ldr     x0, [x0, #0xde0]  ; META Campus.OutGame.TourEventBonusSheetPresenter.<>c__DisplayClass2_0_TypeInfo
+  06f147fc  bl      #0x63cee78
+  06f14800  adrp    x0, #0xeab6000
+  06f14804  ldr     x0, [x0, #0xc98]  ; META Campus.OutGame.TourEventBonusSheetPresenter.<>c_TypeInfo
+  06f14808  bl      #0x63cee78
+  06f1480c  mov     w8, #1
+  06f14810  strb    w8, [x24, #0xab5]
+  06f14814  cbz     x23, #0x6f14838
+  06f14818  ldr     w8, [x23, #0x18]
+  06f1481c  cmp     w8, #0
+  06f14820  cset    w25, ne
+  06f14824  cbz     x22, #0x6f14840
+  06f14828  ldr     w8, [x22, #0x18]
+  06f1482c  cmp     w8, #0
+  06f14830  cset    w26, ne
+  06f14834  b       #0x6f14844
+  06f14838  mov     w25, wzr
+  06f1483c  cbnz    x22, #0x6f14828
+  06f14840  mov     w26, wzr
+  06f14844  orr     w8, w25, w26
+  06f14848  tbz     w8, #0, #0x6f14a78
+  06f1484c  adrp    x28, #0xeab6000
+  06f14850  adrp    x27, #0xeab6000
+  06f14854  ldr     x28, [x28, #0xd80]  ; META System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>_TypeInfo
+  06f14858  ldr     x27, [x27, #0xd78]  ; MMETH Method$System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>..ctor()
+  06f1485c  ldr     x0, [x28]
+  06f14860  bl      #0x63cf110
+  06f14864  ldr     x1, [x27]
+  06f14868  mov     x24, x0
+  06f1486c  bl      #0xaa4f570  ; -> System.Collections.Generic.List<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$.ctor
+  06f14870  cbz     w25, #0x6f14920
+  06f14874  adrp    x8, #0xeab6000
+  06f14878  ldr     x8, [x8, #0xde0]  ; META Campus.OutGame.TourEventBonusSheetPresenter.<>c__DisplayClass2_0_TypeInfo
+  06f1487c  ldr     x0, [x8]
+  06f14880  bl      #0x63cf110
+  06f14884  mov     x1, xzr
+  06f14888  mov     x24, x0
+  06f1488c  bl      #0xe01f020  ; -> System.Object$$.ctor
+  06f14890  mov     x0, xzr
+  06f14894  bl      #0x745d138  ; -> Campus.Common.Master.MasterManager$$get_IdolCardMaster
+  06f14898  cbz     x0, #0x6f14fe8
+  06f1489c  ldr     x8, [x0]
+  06f148a0  mov     x1, xzr
+  06f148a4  mov     x2, xzr
+  06f148a8  ldr     x9, [x8, #0x228]
+  06f148ac  ldr     x3, [x8, #0x230]
+  06f148b0  blr     x9
+  06f148b4  cbz     x24, #0x6f14fe8
+  06f148b8  mov     x1, x0
+  06f148bc  mov     x0, x24
+  06f148c0  str     x1, [x0, #0x10]!
+  06f148c4  bl      #0x63cee24
+  06f148c8  adrp    x8, #0xeab6000
+  06f148cc  ldr     x8, [x8, #0xc18]  ; META System.Func<ValueTuple<string, IdolCardRarity, List<EventBonus.Types.EventPotentialRankBonusPermil>>, IEnumerable<ValueTuple<IdolCard, IdolCardPotentialRan
+  06f148d0  ldr     x0, [x8]
+  06f148d4  bl      #0x63cf110
+  06f148d8  adrp    x8, #0xeab6000
+  06f148dc  mov     x1, x24
+  06f148e0  mov     x3, xzr
+  06f148e4  ldr     x8, [x8, #0xdd8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c__DisplayClass2_0.<SetIdolConsumptionBonus>b__10()
+  06f148e8  mov     x25, x0
+  06f148ec  ldr     x2, [x8]
+  06f148f0  bl      #0xa4cff0c  ; -> System.Func<ValueTuple<object, Int32Enum, object>, object>$$.ctor
+  06f148f4  adrp    x8, #0xeab6000
+  06f148f8  mov     x0, x23
+  06f148fc  mov     x1, x25
+  06f14900  ldr     x8, [x8, #0xc08]  ; MMETH Method$System.Linq.Enumerable.SelectMany<ValueTuple<string, IdolCardRarity, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<IdolCard, Id
+  06f14904  ldr     x2, [x8]
+  06f14908  bl      #0x91d1fcc  ; -> System.Linq.Enumerable$$SelectMany<ValueTuple<object, Int32Enum, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06f1490c  adrp    x8, #0xeab3000
+  06f14910  ldr     x8, [x8, #0xdf8]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06f14914  ldr     x1, [x8]
+  06f14918  bl      #0x91ea2f4  ; -> System.Linq.Enumerable$$ToList<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06f1491c  mov     x24, x0
+  06f14920  tbz     w26, #0, #0x6f14a98
+  06f14924  adrp    x26, #0xeab6000
+  06f14928  ldr     x26, [x26, #0xc98]  ; META Campus.OutGame.TourEventBonusSheetPresenter.<>c_TypeInfo
+  06f1492c  ldr     x0, [x26]
+  06f14930  ldr     w8, [x0, #0xe4]
+  06f14934  cbnz    w8, #0x6f14940
+  06f14938  bl      #0x63ceff4
+  06f1493c  ldr     x0, [x26]
+  06f14940  ldr     x8, [x0, #0xb8]
+  06f14944  ldr     x23, [x8, #0x68]
+  06f14948  cbnz    x23, #0x6f149a4
+  06f1494c  ldr     w9, [x0, #0xe4]
+  06f14950  cbnz    w9, #0x6f14960
+  06f14954  bl      #0x63ceff4
+  06f14958  ldr     x8, [x26]
+  06f1495c  ldr     x8, [x8, #0xb8]
+  06f14960  adrp    x9, #0xeab6000
+  06f14964  ldr     x9, [x9, #0xc28]  ; META System.Func<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<EventBonus.Types.EventPotentialRan
+  06f14968  ldr     x25, [x8]
+  06f1496c  ldr     x0, [x9]
+  06f14970  bl      #0x63cf110
+  06f14974  adrp    x8, #0xeab6000
+  06f14978  mov     x1, x25
+  06f1497c  mov     x3, xzr
+  06f14980  ldr     x8, [x8, #0xd88]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_0()
+  06f14984  mov     x23, x0
+  06f14988  ldr     x2, [x8]
+  06f1498c  bl      #0xa4b963c  ; -> System.Func<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$.ctor
+  06f14990  ldr     x8, [x26]
+  06f14994  mov     x1, x23
+  06f14998  ldr     x0, [x8, #0xb8]
+  06f1499c  str     x23, [x0, #0x68]!
+  06f149a0  bl      #0x63cee24
+  06f149a4  adrp    x8, #0xeab6000
+  06f149a8  mov     x0, x22
+  06f149ac  mov     x1, x23
+  06f149b0  ldr     x8, [x8, #0xc10]  ; MMETH Method$FasterLinq.Select<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<EventBonus.Types.Eve
+  06f149b4  ldr     x2, [x8]
+  06f149b8  bl      #0x9217dac  ; -> FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>
+  06f149bc  ldr     x8, [x26]
+  06f149c0  mov     x22, x0
+  06f149c4  ldr     w9, [x8, #0xe4]
+  06f149c8  cbnz    w9, #0x6f149d8
+  06f149cc  mov     x0, x8
+  06f149d0  bl      #0x63ceff4
+  06f149d4  ldr     x8, [x26]
+  06f149d8  ldr     x9, [x8, #0xb8]
+  06f149dc  ldr     x23, [x9, #0x70]
+  06f149e0  cbnz    x23, #0x6f14a40
+  06f149e4  ldr     w10, [x8, #0xe4]
+  06f149e8  cbnz    w10, #0x6f149fc
+  06f149ec  mov     x0, x8
+  06f149f0  bl      #0x63ceff4
+  06f149f4  ldr     x8, [x26]
+  06f149f8  ldr     x9, [x8, #0xb8]
+  06f149fc  adrp    x8, #0xeab6000
+  06f14a00  ldr     x8, [x8, #0xc20]  ; META System.Func<ValueTuple<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, IdolCard>, ValueTuple<IdolCard, IdolCardPotentialRank, boo
+  06f14a04  ldr     x25, [x9]
+  06f14a08  ldr     x0, [x8]
+  06f14a0c  bl      #0x63cf110
+  06f14a10  adrp    x8, #0xeab6000
+  06f14a14  mov     x1, x25
+  06f14a18  mov     x3, xzr
+  06f14a1c  ldr     x8, [x8, #0xd90]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_1()
+  06f14a20  mov     x23, x0
+  06f14a24  ldr     x2, [x8]
+  06f14a28  bl      #0xa4a3abc  ; -> System.Func<ValueTuple<ValueTuple<object, object>, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$.ctor
+  06f14a2c  ldr     x8, [x26]
+  06f14a30  mov     x1, x23
+  06f14a34  ldr     x0, [x8, #0xb8]
+  06f14a38  str     x23, [x0, #0x70]!
+  06f14a3c  bl      #0x63cee24
+  06f14a40  cbz     x22, #0x6f14fe8
+  06f14a44  adrp    x8, #0xeab6000
+  06f14a48  mov     x0, x22
+  06f14a4c  mov     x1, x23
+  06f14a50  ldr     x8, [x8, #0xc30]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<ValueTuple<string, List<EventBonus.Type
+  06f14a54  ldr     x2, [x8]
+  06f14a58  bl      #0x8b8cec8  ; -> FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$Select<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06f14a5c  cbz     x0, #0x6f14fe8
+  06f14a60  adrp    x8, #0xeab6000
+  06f14a64  ldr     x8, [x8, #0xc38]  ; MMETH Method$FasterLinq.SelectArray<ValueTuple<string, List<EventBonus.Types.EventPotentialRankBonusPermil>>, ValueTuple<IdolCard, IdolCardPotentialRank, bool, 
+  06f14a68  ldr     x1, [x8]
+  06f14a6c  bl      #0xb9023a0  ; -> FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToList
+  06f14a70  mov     x22, x0
+  06f14a74  b       #0x6f14aac
+  06f14a78  mov     x0, x21
+  06f14a7c  ldp     x20, x19, [sp, #0x50]
+  06f14a80  ldp     x22, x21, [sp, #0x40]
+  06f14a84  ldp     x24, x23, [sp, #0x30]
+  06f14a88  ldp     x26, x25, [sp, #0x20]
+  06f14a8c  ldp     x28, x27, [sp, #0x10]
+  06f14a90  ldr     x30, [sp], #0x60
+  06f14a94  b       #0x6f14fec  ; -> Campus.OutGame.TourEventBonusSheetPresenter$$HideIdolConsumptionBonus
+  06f14a98  ldr     x0, [x28]
+  06f14a9c  bl      #0x63cf110
+  06f14aa0  ldr     x1, [x27]
+  06f14aa4  mov     x22, x0
+  06f14aa8  bl      #0xaa4f570  ; -> System.Collections.Generic.List<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$.ctor
+  06f14aac  cbz     x22, #0x6f14fe8
+  06f14ab0  adrp    x8, #0xeab3000
+  06f14ab4  mov     x0, x22
+  06f14ab8  mov     x1, x24
+  06f14abc  ldr     x8, [x8, #0xea0]  ; MMETH Method$System.Collections.Generic.List<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>.AddRange()
+  06f14ac0  ldr     x2, [x8]
+  06f14ac4  bl      #0xaa500a4  ; -> System.Collections.Generic.List<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$AddRange
+  06f14ac8  adrp    x25, #0xeab6000
+  06f14acc  ldr     x25, [x25, #0xc98]  ; META Campus.OutGame.TourEventBonusSheetPresenter.<>c_TypeInfo
+  06f14ad0  ldr     x0, [x25]
+  06f14ad4  ldr     w8, [x0, #0xe4]
+  06f14ad8  cbnz    w8, #0x6f14ae4
+  06f14adc  bl      #0x63ceff4
+  06f14ae0  ldr     x0, [x25]
+  06f14ae4  ldr     x8, [x0, #0xb8]
+  06f14ae8  ldr     x23, [x8, #0x78]
+  06f14aec  cbnz    x23, #0x6f14b48
+  06f14af0  ldr     w9, [x0, #0xe4]
+  06f14af4  cbnz    w9, #0x6f14b04
+  06f14af8  bl      #0x63ceff4
+  06f14afc  ldr     x8, [x25]
+  06f14b00  ldr     x8, [x8, #0xb8]
+  06f14b04  adrp    x9, #0xeab3000
+  06f14b08  ldr     x9, [x9, #0xe88]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>_TypeInfo
+  06f14b0c  ldr     x24, [x8]
+  06f14b10  ldr     x0, [x9]
+  06f14b14  bl      #0x63cf110
+  06f14b18  adrp    x8, #0xeab6000
+  06f14b1c  mov     x1, x24
+  06f14b20  mov     x3, xzr
+  06f14b24  ldr     x8, [x8, #0xd98]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_2()
+  06f14b28  mov     x23, x0
+  06f14b2c  ldr     x2, [x8]
+  06f14b30  bl      #0xa4dd2ec  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>$$.ctor
+  06f14b34  ldr     x8, [x25]
+  06f14b38  mov     x1, x23
+  06f14b3c  ldr     x0, [x8, #0xb8]
+  06f14b40  str     x23, [x0, #0x78]!
+  06f14b44  bl      #0x63cee24
+  06f14b48  adrp    x8, #0xeab3000
+  06f14b4c  mov     x0, x22
+  06f14b50  mov     x1, x23
+  06f14b54  ldr     x8, [x8, #0xd88]  ; MMETH Method$System.Linq.Enumerable.GroupBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06f14b58  ldr     x2, [x8]
+  06f14b5c  bl      #0x91a576c  ; -> System.Linq.Enumerable$$GroupBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>
+  06f14b60  ldr     x8, [x25]
+  06f14b64  mov     x22, x0
+  06f14b68  ldr     w9, [x8, #0xe4]
+  06f14b6c  cbnz    w9, #0x6f14b7c
+  06f14b70  mov     x0, x8
+  06f14b74  bl      #0x63ceff4
+  06f14b78  ldr     x8, [x25]
+  06f14b7c  ldr     x9, [x8, #0xb8]
+  06f14b80  ldr     x23, [x9, #0x90]
+  06f14b84  cbnz    x23, #0x6f14be4
+  06f14b88  ldr     w10, [x8, #0xe4]
+  06f14b8c  cbnz    w10, #0x6f14ba0
+  06f14b90  mov     x0, x8
+  06f14b94  bl      #0x63ceff4
+  06f14b98  ldr     x8, [x25]
+  06f14b9c  ldr     x9, [x8, #0xb8]
+  06f14ba0  adrp    x8, #0xeab3000
+  06f14ba4  ldr     x8, [x8, #0xe38]  ; META System.Func<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bo
+  06f14ba8  ldr     x24, [x9]
+  06f14bac  ldr     x0, [x8]
+  06f14bb0  bl      #0x63cf110
+  06f14bb4  adrp    x8, #0xeab6000
+  06f14bb8  mov     x1, x24
+  06f14bbc  mov     x3, xzr
+  06f14bc0  ldr     x8, [x8, #0xda0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_3()
+  06f14bc4  mov     x23, x0
+  06f14bc8  ldr     x2, [x8]
+  06f14bcc  bl      #0xa4eeedc  ; -> System.Func<object, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$.ctor
+  06f14bd0  ldr     x8, [x25]
+  06f14bd4  mov     x1, x23
+  06f14bd8  ldr     x0, [x8, #0xb8]
+  06f14bdc  str     x23, [x0, #0x90]!
+  06f14be0  bl      #0x63cee24
+  06f14be4  adrp    x8, #0xeab3000
+  06f14be8  mov     x0, x22
+  06f14bec  mov     x1, x23
+  06f14bf0  ldr     x8, [x8, #0xda8]  ; MMETH Method$System.Linq.Enumerable.Select<IGrouping<string, ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>, ValueTuple<IdolCard, IdolC
+  06f14bf4  ldr     x2, [x8]
+  06f14bf8  bl      #0x91c8cc0  ; -> System.Linq.Enumerable$$Select<object, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06f14bfc  ldr     x8, [x25]
+  06f14c00  mov     x22, x0
+  06f14c04  ldr     w9, [x8, #0xe4]
+  06f14c08  cbnz    w9, #0x6f14c18
+  06f14c0c  mov     x0, x8
+  06f14c10  bl      #0x63ceff4
+  06f14c14  ldr     x8, [x25]
+  06f14c18  ldr     x9, [x8, #0xb8]
+  06f14c1c  ldr     x23, [x9, #0x98]
+  06f14c20  cbnz    x23, #0x6f14c80
+  06f14c24  ldr     w10, [x8, #0xe4]
+  06f14c28  cbnz    w10, #0x6f14c3c
+  06f14c2c  mov     x0, x8
+  06f14c30  bl      #0x63ceff4
+  06f14c34  ldr     x8, [x25]
+  06f14c38  ldr     x9, [x8, #0xb8]
+  06f14c3c  adrp    x8, #0xeab3000
+  06f14c40  ldr     x8, [x8, #0xe98]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, bool>_TypeInfo
+  06f14c44  ldr     x24, [x9]
+  06f14c48  ldr     x0, [x8]
+  06f14c4c  bl      #0x63cf110
+  06f14c50  adrp    x8, #0xeab6000
+  06f14c54  mov     x1, x24
+  06f14c58  mov     x3, xzr
+  06f14c5c  ldr     x8, [x8, #0xda8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_4()
+  06f14c60  mov     x23, x0
+  06f14c64  ldr     x2, [x8]
+  06f14c68  bl      #0xa4dcf98  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, bool>$$.ctor
+  06f14c6c  ldr     x8, [x25]
+  06f14c70  mov     x1, x23
+  06f14c74  ldr     x0, [x8, #0xb8]
+  06f14c78  str     x23, [x0, #0x98]!
+  06f14c7c  bl      #0x63cee24
+  06f14c80  adrp    x8, #0xeab3000
+  06f14c84  mov     x0, x22
+  06f14c88  mov     x1, x23
+  06f14c8c  ldr     x8, [x8, #0xe08]  ; MMETH Method$System.Linq.Enumerable.Where<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06f14c90  ldr     x2, [x8]
+  06f14c94  bl      #0x91f06d8  ; -> System.Linq.Enumerable$$Where<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06f14c98  ldr     x8, [x25]
+  06f14c9c  mov     x22, x0
+  06f14ca0  ldr     w9, [x8, #0xe4]
+  06f14ca4  cbnz    w9, #0x6f14cb4
+  06f14ca8  mov     x0, x8
+  06f14cac  bl      #0x63ceff4
+  06f14cb0  ldr     x8, [x25]
+  06f14cb4  ldr     x9, [x8, #0xb8]
+  06f14cb8  ldr     x23, [x9, #0xa0]
+  06f14cbc  cbnz    x23, #0x6f14d1c
+  06f14cc0  ldr     w10, [x8, #0xe4]
+  06f14cc4  cbnz    w10, #0x6f14cd8
+  06f14cc8  mov     x0, x8
+  06f14ccc  bl      #0x63ceff4
+  06f14cd0  ldr     x8, [x25]
+  06f14cd4  ldr     x9, [x8, #0xb8]
+  06f14cd8  adrp    x8, #0xeab3000
+  06f14cdc  ldr     x8, [x8, #0xe78]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>_TypeInfo
+  06f14ce0  ldr     x24, [x9]
+  06f14ce4  ldr     x0, [x8]
+  06f14ce8  bl      #0x63cf110
+  06f14cec  adrp    x8, #0xeab6000
+  06f14cf0  mov     x1, x24
+  06f14cf4  mov     x3, xzr
+  06f14cf8  ldr     x8, [x8, #0xdb0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_5()
+  06f14cfc  mov     x23, x0
+  06f14d00  ldr     x2, [x8]
+  06f14d04  bl      #0xa4dd070  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>$$.ctor
+  06f14d08  ldr     x8, [x25]
+  06f14d0c  mov     x1, x23
+  06f14d10  ldr     x0, [x8, #0xb8]
+  06f14d14  str     x23, [x0, #0xa0]!
+  06f14d18  bl      #0x63cee24
+  06f14d1c  adrp    x8, #0xeab3000
+  06f14d20  mov     x0, x22
+  06f14d24  mov     x1, x23
+  06f14d28  ldr     x8, [x8, #0xd98]  ; MMETH Method$System.Linq.Enumerable.OrderByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06f14d2c  ldr     x2, [x8]
+  06f14d30  bl      #0x91ae2fc  ; -> System.Linq.Enumerable$$OrderByDescending<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>
+  06f14d34  ldr     x8, [x25]
+  06f14d38  mov     x22, x0
+  06f14d3c  ldr     w9, [x8, #0xe4]
+  06f14d40  cbnz    w9, #0x6f14d50
+  06f14d44  mov     x0, x8
+  06f14d48  bl      #0x63ceff4
+  06f14d4c  ldr     x8, [x25]
+  06f14d50  ldr     x9, [x8, #0xb8]
+  06f14d54  ldr     x23, [x9, #0xa8]
+  06f14d58  cbnz    x23, #0x6f14db8
+  06f14d5c  ldr     w10, [x8, #0xe4]
+  06f14d60  cbnz    w10, #0x6f14d74
+  06f14d64  mov     x0, x8
+  06f14d68  bl      #0x63ceff4
+  06f14d6c  ldr     x8, [x25]
+  06f14d70  ldr     x9, [x8, #0xb8]
+  06f14d74  adrp    x8, #0xeab3000
+  06f14d78  ldr     x8, [x8, #0xe80]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>_TypeInfo
+  06f14d7c  ldr     x24, [x9]
+  06f14d80  ldr     x0, [x8]
+  06f14d84  bl      #0x63cf110
+  06f14d88  adrp    x8, #0xeab6000
+  06f14d8c  mov     x1, x24
+  06f14d90  mov     x3, xzr
+  06f14d94  ldr     x8, [x8, #0xdb8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_6()
+  06f14d98  mov     x23, x0
+  06f14d9c  ldr     x2, [x8]
+  06f14da0  bl      #0xa4dd144  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, Int32Enum>$$.ctor
+  06f14da4  ldr     x8, [x25]
+  06f14da8  mov     x1, x23
+  06f14dac  ldr     x0, [x8, #0xb8]
+  06f14db0  str     x23, [x0, #0xa8]!
+  06f14db4  bl      #0x63cee24
+  06f14db8  adrp    x8, #0xeab3000
+  06f14dbc  mov     x0, x22
+  06f14dc0  mov     x1, x23
+  06f14dc4  ldr     x8, [x8, #0xdc0]  ; MMETH Method$System.Linq.Enumerable.ThenByDescending<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, IdolCardRarity>()
+  06f14dc8  ldr     x2, [x8]
+  06f14dcc  bl      #0x91ddf20  ; -> System.Linq.Enumerable$$ThenByDescending<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, Int32Enum>
+  06f14dd0  ldr     x8, [x25]
+  06f14dd4  mov     x22, x0
+  06f14dd8  ldr     w9, [x8, #0xe4]
+  06f14ddc  cbnz    w9, #0x6f14dec
+  06f14de0  mov     x0, x8
+  06f14de4  bl      #0x63ceff4
+  06f14de8  ldr     x8, [x25]
+  06f14dec  ldr     x9, [x8, #0xb8]
+  06f14df0  ldr     x23, [x9, #0xb0]
+  06f14df4  cbnz    x23, #0x6f14e54
+  06f14df8  ldr     w10, [x8, #0xe4]
+  06f14dfc  cbnz    w10, #0x6f14e10
+  06f14e00  mov     x0, x8
+  06f14e04  bl      #0x63ceff4
+  06f14e08  ldr     x8, [x25]
+  06f14e0c  ldr     x9, [x8, #0xb8]
+  06f14e10  adrp    x8, #0xeab3000
+  06f14e14  ldr     x8, [x8, #0xe78]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>_TypeInfo
+  06f14e18  ldr     x24, [x9]
+  06f14e1c  ldr     x0, [x8]
+  06f14e20  bl      #0x63cf110
+  06f14e24  adrp    x8, #0xeab6000
+  06f14e28  mov     x1, x24
+  06f14e2c  mov     x3, xzr
+  06f14e30  ldr     x8, [x8, #0xdc0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_7()
+  06f14e34  mov     x23, x0
+  06f14e38  ldr     x2, [x8]
+  06f14e3c  bl      #0xa4dd070  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>$$.ctor
+  06f14e40  ldr     x8, [x25]
+  06f14e44  mov     x1, x23
+  06f14e48  ldr     x0, [x8, #0xb8]
+  06f14e4c  str     x23, [x0, #0xb0]!
+  06f14e50  bl      #0x63cee24
+  06f14e54  adrp    x8, #0xeab3000
+  06f14e58  mov     x0, x22
+  06f14e5c  mov     x1, x23
+  06f14e60  ldr     x8, [x8, #0xdd8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, int>()
+  06f14e64  ldr     x2, [x8]
+  06f14e68  bl      #0x91dc738  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, int>
+  06f14e6c  ldr     x8, [x25]
+  06f14e70  mov     x22, x0
+  06f14e74  ldr     w9, [x8, #0xe4]
+  06f14e78  cbnz    w9, #0x6f14e88
+  06f14e7c  mov     x0, x8
+  06f14e80  bl      #0x63ceff4
+  06f14e84  ldr     x8, [x25]
+  06f14e88  ldr     x9, [x8, #0xb8]
+  06f14e8c  ldr     x23, [x9, #0xb8]
+  06f14e90  cbnz    x23, #0x6f14ef0
+  06f14e94  ldr     w10, [x8, #0xe4]
+  06f14e98  cbnz    w10, #0x6f14eac
+  06f14e9c  mov     x0, x8
+  06f14ea0  bl      #0x63ceff4
+  06f14ea4  ldr     x8, [x25]
+  06f14ea8  ldr     x9, [x8, #0xb8]
+  06f14eac  adrp    x8, #0xeab3000
+  06f14eb0  ldr     x8, [x8, #0xe60]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>_TypeInfo
+  06f14eb4  ldr     x24, [x9]
+  06f14eb8  ldr     x0, [x8]
+  06f14ebc  bl      #0x63cf110
+  06f14ec0  adrp    x8, #0xeab6000
+  06f14ec4  mov     x1, x24
+  06f14ec8  mov     x3, xzr
+  06f14ecc  ldr     x8, [x8, #0xdc8]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_8()
+  06f14ed0  mov     x23, x0
+  06f14ed4  ldr     x2, [x8]
+  06f14ed8  bl      #0xa4dd218  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, long>$$.ctor
+  06f14edc  ldr     x8, [x25]
+  06f14ee0  mov     x1, x23
+  06f14ee4  ldr     x0, [x8, #0xb8]
+  06f14ee8  str     x23, [x0, #0xb8]!
+  06f14eec  bl      #0x63cee24
+  06f14ef0  adrp    x8, #0xeab3000
+  06f14ef4  mov     x0, x22
+  06f14ef8  mov     x1, x23
+  06f14efc  ldr     x8, [x8, #0xde0]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, long>()
+  06f14f00  ldr     x2, [x8]
+  06f14f04  bl      #0x91dc804  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, long>
+  06f14f08  ldr     x8, [x25]
+  06f14f0c  mov     x22, x0
+  06f14f10  ldr     w9, [x8, #0xe4]
+  06f14f14  cbnz    w9, #0x6f14f24
+  06f14f18  mov     x0, x8
+  06f14f1c  bl      #0x63ceff4
+  06f14f20  ldr     x8, [x25]
+  06f14f24  ldr     x9, [x8, #0xb8]
+  06f14f28  ldr     x23, [x9, #0xc0]
+  06f14f2c  cbnz    x23, #0x6f14f8c
+  06f14f30  ldr     w10, [x8, #0xe4]
+  06f14f34  cbnz    w10, #0x6f14f48
+  06f14f38  mov     x0, x8
+  06f14f3c  bl      #0x63ceff4
+  06f14f40  ldr     x8, [x25]
+  06f14f44  ldr     x9, [x8, #0xb8]
+  06f14f48  adrp    x8, #0xeab3000
+  06f14f4c  ldr     x8, [x8, #0xe88]  ; META System.Func<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>_TypeInfo
+  06f14f50  ldr     x24, [x9]
+  06f14f54  ldr     x0, [x8]
+  06f14f58  bl      #0x63cf110
+  06f14f5c  adrp    x8, #0xeab6000
+  06f14f60  mov     x1, x24
+  06f14f64  mov     x3, xzr
+  06f14f68  ldr     x8, [x8, #0xdd0]  ; MMETH Method$Campus.OutGame.TourEventBonusSheetPresenter.<>c.<SetIdolConsumptionBonus>b__2_9()
+  06f14f6c  mov     x23, x0
+  06f14f70  ldr     x2, [x8]
+  06f14f74  bl      #0xa4dd2ec  ; -> System.Func<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>$$.ctor
+  06f14f78  ldr     x8, [x25]
+  06f14f7c  mov     x1, x23
+  06f14f80  ldr     x0, [x8, #0xb8]
+  06f14f84  str     x23, [x0, #0xc0]!
+  06f14f88  bl      #0x63cee24
+  06f14f8c  adrp    x8, #0xeab3000
+  06f14f90  mov     x0, x22
+  06f14f94  mov     x1, x23
+  06f14f98  ldr     x8, [x8, #0xde8]  ; MMETH Method$System.Linq.Enumerable.ThenBy<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>, string>()
+  06f14f9c  ldr     x2, [x8]
+  06f14fa0  bl      #0x91dc8d0  ; -> System.Linq.Enumerable$$ThenBy<ValueTuple<object, Int32Enum, bool, bool, int, int, int>, object>
+  06f14fa4  adrp    x8, #0xeab3000
+  06f14fa8  ldr     x8, [x8, #0xdf8]  ; MMETH Method$System.Linq.Enumerable.ToList<ValueTuple<IdolCard, IdolCardPotentialRank, bool, bool, int, int, int>>()
+  06f14fac  ldr     x1, [x8]
+  06f14fb0  bl      #0x91ea2f4  ; -> System.Linq.Enumerable$$ToList<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>
+  06f14fb4  ldr     x8, [x21, #0x58]
+  06f14fb8  cbz     x8, #0x6f14fe8
+  06f14fbc  mov     x2, x20
+  06f14fc0  mov     x3, x19
+  06f14fc4  mov     x1, x0
+  06f14fc8  ldp     x20, x19, [sp, #0x50]
+  06f14fcc  mov     x0, x8
+  06f14fd0  ldp     x22, x21, [sp, #0x40]
+  06f14fd4  ldp     x24, x23, [sp, #0x30]
+  06f14fd8  ldp     x26, x25, [sp, #0x20]
+  06f14fdc  ldp     x28, x27, [sp, #0x10]
+  06f14fe0  ldr     x30, [sp], #0x60
+  06f14fe4  b       #0x6f13c28  ; -> Campus.OutGame.TourEventBonusSheetView$$SetIdolConsumptionBonus
+  06f14fe8  bl      #0x63cf120

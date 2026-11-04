@@ -1,0 +1,561 @@
+{
+ "addedOverloads": [],
+ "same": 630,
+ "changed": [
+  {
+   "method": "VL.AABB.AABBJobData$$.ctor",
+   "similarity": 0.863,
+   "note": "layout"
+  },
+  {
+   "method": "VL.ActorMotionDefine$$get_count",
+   "similarity": 0.857,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Animation.ClipParam$$EvaluateWeight",
+   "similarity": 0.925,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Animation.LayerParam$$ToString",
+   "similarity": 0.924,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Animation.MotionDefinePlayer$$GetSpeed",
+   "similarity": 0.609,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Animation.MotionDefinePlayer$$SetSpeed",
+   "similarity": 0.613,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Animation.MotionEffectPlayable$$PrepareFrame",
+   "similarity": 0.754,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Animation.Timeline.MotionDefinePlayerTimelineAsset$$get_clipCaps",
+   "similarity": 0.914,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Animation.Timeline.MotionDefinePlayerTimelineTrack$$CreateLayerMixer",
+   "similarity": 0.712,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Animation.Timeline.MotionDefinePlayerTimelineTrackLayerBehaviour$$PrepareFrame",
+   "similarity": 0.986,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Animation.Timeline.MotionDefinePlayerTimelineTrackLayerBehaviour$$ProcessFrame",
+   "similarity": 0.764,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.AnimationData$$CreatePlayable",
+   "similarity": 0.27,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.MaterialInfo$$.ctor",
+   "similarity": 0.846,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.SerializedDictionary<Int32Enum, object>$$.ctor",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.SerializedDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>$$.ctor",
+   "similarity": 0.984,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.SerializedDictionary<int, int>$$.ctor",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.SerializedDictionary<int, object>$$.ctor",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.SerializedDictionary<object, object>$$.ctor",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController$$InitializeAABB",
+   "similarity": 0.842,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController$$OnEnable",
+   "similarity": 0.994,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController$$SetupSkinningModels",
+   "similarity": 0.976,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Ease.EaseFunctions$$GetEaseFunction",
+   "similarity": 0.555,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.FaceSystem.VLActorFaceModel$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.FaceSystem.VLActorFaceModel$$SetupBindVertices",
+   "similarity": 0.893,
+   "note": "layout"
+  },
+  {
+   "method": "VL.FaceSystem.VLActorFaceModel.<>c$$<Setup>b__36_3",
+   "similarity": 0.915,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.JobUtility.Array2DInfo$$get_end",
+   "similarity": 0.571,
+   "note": "layout"
+  },
+  {
+   "method": "VL.MotionDefine.MotionDefineEnumerator$$MoveNext",
+   "similarity": 0.731,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$ScheduleSkinning",
+   "similarity": 0.803,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor",
+   "similarity": 0.302,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor",
+   "similarity": 0.93,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$ScheduleSkinning",
+   "similarity": 0.879,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLActorBlendShapeLimitDataRuntime$$IsValid",
+   "similarity": 0.944,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLActorCollider$$_ApplyCollider",
+   "similarity": 0.995,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLActorFaceModelBlendShapeLimitDataRuntime$$IsValid",
+   "similarity": 0.944,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLCinemachineFocusPoint$$PostPipelineStageCallback",
+   "similarity": 0.977,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLCinemachineFocusPoint.VcamFocusPointState$$CreateProfile",
+   "similarity": 0.567,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$OnActorDestroy",
+   "similarity": 0.85,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, object>$$OnActorDestroy",
+   "similarity": 0.85,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorModelParts<object>$$.ctor",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLExtension$$IsValid",
+   "similarity": 0.813,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLMeshUtility$$CopyMesh",
+   "similarity": 0.892,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLVirtualActorController$$AddBone",
+   "similarity": 0.873,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$CoUpdateFadeOut",
+   "similarity": 0.873,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$ComputeLocalMatrix",
+   "similarity": 0.432,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$ComputeMaterialStaticProperties",
+   "similarity": 0.793,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$RestartFadeOutCoroutine",
+   "similarity": 0.769,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$SetDynamicOcclusionCallback",
+   "similarity": 0.953,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$UpdateMaterialAndBounds",
+   "similarity": 0.646,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$UpdateMatricesPropertiesForGPUInstancingSRP",
+   "similarity": 0.906,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$get_isNoiseEnabled",
+   "similarity": 0.37,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.BeamGeometrySD$$get_shouldUseGPUInstancedMaterial",
+   "similarity": 0.743,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.Config$$GetActualRenderingMode",
+   "similarity": 0.745,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.Consts.Beam$$.cctor",
+   "similarity": 0.889,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.MaterialManager$$.cctor",
+   "similarity": 0.969,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.MaterialManager.StaticPropertiesHD$$ApplyToMaterial",
+   "similarity": 0.912,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.MaterialManager.StaticPropertiesSD$$ApplyToMaterial",
+   "similarity": 0.861,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.Utils$$SampleInMatrix",
+   "similarity": 0.812,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$ClampProperties",
+   "similarity": 0.047,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$GetInsideBeamFactorFromObjectSpacePos",
+   "similarity": 0.991,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$GetStaticProps",
+   "similarity": 0.838,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$OnDisable",
+   "similarity": 0.928,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$OnEnable",
+   "similarity": 0.948,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$OnFadeOutStateChanged",
+   "similarity": 0.877,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$UpdateAfterManualPropertyChange",
+   "similarity": 0.928,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$_INTERNAL_SetDynamicOcclusionCallback",
+   "similarity": 0.938,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get__INTERNAL_DynamicOcclusionMode",
+   "similarity": 0.833,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get_coneVolume",
+   "similarity": 0.603,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get_geomSegments",
+   "similarity": 0.846,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get_geomSides",
+   "similarity": 0.846,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get_hasMeshSkewing",
+   "similarity": 0.971,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get_useColorTemperatureFromAttachedLightSpot",
+   "similarity": 0.895,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$get_usedColorMode",
+   "similarity": 0.833,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$set_sortingLayerID",
+   "similarity": 0.868,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD$$set_sortingOrder",
+   "similarity": 0.868,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VolumetricLightBeamSD.<CoPlaytimeUpdate>d__221$$MoveNext",
+   "similarity": 0.943,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "VLB.VolumetricLightBeamSD",
+   17
+  ],
+  [
+   "VLB.BeamGeometrySD",
+   9
+  ],
+  [
+   "VL.Core.VLActorController",
+   3
+  ],
+  [
+   "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>",
+   3
+  ],
+  [
+   "VL.Animation.MotionDefinePlayer",
+   2
+  ],
+  [
+   "VL.Animation.Timeline.MotionDefinePlayerTimelineTrackLayerBehaviour",
+   2
+  ],
+  [
+   "VL.FaceSystem.VLActorFaceModel",
+   2
+  ],
+  [
+   "VL.AABB.AABBJobData",
+   1
+  ],
+  [
+   "VL.ActorMotionDefine",
+   1
+  ],
+  [
+   "VL.Animation.ClipParam",
+   1
+  ],
+  [
+   "VL.Animation.LayerParam",
+   1
+  ],
+  [
+   "VL.Animation.MotionEffectPlayable",
+   1
+  ],
+  [
+   "VL.Animation.Timeline.MotionDefinePlayerTimelineAsset",
+   1
+  ],
+  [
+   "VL.Animation.Timeline.MotionDefinePlayerTimelineTrack",
+   1
+  ],
+  [
+   "VL.AnimationData",
+   1
+  ],
+  [
+   "VL.Core.MaterialInfo",
+   1
+  ],
+  [
+   "VL.Core.SerializedDictionary<Int32Enum, object>",
+   1
+  ],
+  [
+   "VL.Core.SerializedDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>",
+   1
+  ],
+  [
+   "VL.Core.SerializedDictionary<int, int>",
+   1
+  ],
+  [
+   "VL.Core.SerializedDictionary<int, object>",
+   1
+  ],
+  [
+   "VL.Core.SerializedDictionary<object, object>",
+   1
+  ],
+  [
+   "VL.Ease.EaseFunctions",
+   1
+  ],
+  [
+   "VL.FaceSystem.VLActorFaceModel.<>c",
+   1
+  ],
+  [
+   "VL.JobUtility.Array2DInfo",
+   1
+  ],
+  [
+   "VL.MotionDefine.MotionDefineEnumerator",
+   1
+  ],
+  [
+   "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>",
+   1
+  ],
+  [
+   "VL.VLActorBlendShapeLimitDataRuntime",
+   1
+  ],
+  [
+   "VL.VLActorCollider",
+   1
+  ],
+  [
+   "VL.VLActorFaceModelBlendShapeLimitDataRuntime",
+   1
+  ],
+  [
+   "VL.VLCinemachineFocusPoint",
+   1
+  ],
+  [
+   "VL.VLCinemachineFocusPoint.VcamFocusPointState",
+   1
+  ],
+  [
+   "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>",
+   1
+  ],
+  [
+   "VL.VLDefaultActorController<object, object, object>",
+   1
+  ],
+  [
+   "VL.VLDefaultActorModelParts<object>",
+   1
+  ],
+  [
+   "VL.VLExtension",
+   1
+  ],
+  [
+   "VL.VLMeshUtility",
+   1
+  ],
+  [
+   "VL.VLVirtualActorController",
+   1
+  ],
+  [
+   "VLB.Config",
+   1
+  ],
+  [
+   "VLB.Consts.Beam",
+   1
+  ],
+  [
+   "VLB.MaterialManager",
+   1
+  ],
+  [
+   "VLB.MaterialManager.StaticPropertiesHD",
+   1
+  ],
+  [
+   "VLB.MaterialManager.StaticPropertiesSD",
+   1
+  ],
+  [
+   "VLB.Utils",
+   1
+  ],
+  [
+   "VLB.VolumetricLightBeamSD.<CoPlaytimeUpdate>d__221",
+   1
+  ]
+ ]
+}

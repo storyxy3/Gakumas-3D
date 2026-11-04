@@ -1,0 +1,2340 @@
+[
+  {
+    "method": "Campus.Common.CampusActorController$$BuildAsync",
+    "apkAddress": "0xddd8b74",
+    "signature": "Cysharp_Threading_Tasks_UniTask_ValueTuple_bool__ICampusActorController___o Campus_Common_CampusActorController__BuildAsync (Campus_Common_CampusActorController_o* __this, VL_VLActorSettings_o* actorSettings, Campus_Common_CampusActorDescriptor_o* actorDescriptor, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde88a8",
+        "callerAddress": "0xdde85a0",
+        "callerNames": [
+          "Campus.Common.CampusActorManager.<UpdateActorAsync>d__21$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$_BuildAsync",
+    "apkAddress": "0xddd8ca8",
+    "signature": "Cysharp_Threading_Tasks_UniTask_ValueTuple_bool__ICampusActorController___o Campus_Common_CampusActorController___BuildAsync (Campus_Common_CampusActorController_o* __this, VL_VLActorSettings_o* actorSettings, Campus_Common_CampusActorDescriptor_o* actorDescriptor, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde3544",
+        "callerAddress": "0xdde34ac",
+        "callerNames": [
+          "Campus.Common.CampusActorController.<BuildAsync>d__69$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$ActorLoadAsync",
+    "apkAddress": "0xddd8dbc",
+    "signature": "Cysharp_Threading_Tasks_UniTask_o Campus_Common_CampusActorController__ActorLoadAsync (Campus_Common_CampusActorController_o* __this, System_Action_string__o* onFail, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde4a20",
+        "callerAddress": "0xdde470c",
+        "callerNames": [
+          "Campus.Common.CampusActorController.<_BuildAsync>d__70$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$add_onInitialize",
+    "apkAddress": "0xdde6aa4",
+    "signature": "void Campus_Common_CampusActorManager__add_onInitialize (System_Action_o* value, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x712ca50",
+        "callerAddress": "0x712c370",
+        "callerNames": [
+          "Campus.Common.CampusInitializer$$AfterSceneLoad"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$remove_onInitialize",
+    "apkAddress": "0xdde6b5c",
+    "signature": "void Campus_Common_CampusActorManager__remove_onInitialize (System_Action_o* value, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x712ca28",
+        "callerAddress": "0x712c370",
+        "callerNames": [
+          "Campus.Common.CampusInitializer$$AfterSceneLoad"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$ClearCache",
+    "apkAddress": "0xdde6c14",
+    "signature": "void Campus_Common_CampusActorManager__ClearCache (Campus_Common_CampusActorManager_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x684d660",
+        "callerAddress": "0x684d5f4",
+        "callerNames": [
+          "Campus.InGame.InGame3DManager$$DestroyAllActor"
+        ]
+      },
+      {
+        "callAddress": "0x7f3c2ec",
+        "callerAddress": "0x7f3bfc0",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleEventScreenPresenter.<OnPreCloseOutAsync>d__44$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7fb3544",
+        "callerAddress": "0x7fb30d4",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleStoryPlayerScreenPresenter.<OnPreCloseOutAsync>d__33$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0xdde6e88",
+        "callerAddress": "0xdde6ce8",
+        "callerNames": [
+          "Campus.Common.CampusActorManager$$OnEnable"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$OnEnable",
+    "apkAddress": "0xdde6ce8",
+    "signature": "void Campus_Common_CampusActorManager__OnEnable (Campus_Common_CampusActorManager_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$TryInitialize",
+    "apkAddress": "0xdde6ea0",
+    "signature": "void Campus_Common_CampusActorManager__TryInitialize (Campus_Common_CampusActorManager_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde6e9c",
+        "callerAddress": "0xdde6ce8",
+        "callerNames": [
+          "Campus.Common.CampusActorManager$$OnEnable"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$GetCacheActorInfo",
+    "apkAddress": "0xdde6f18",
+    "signature": "Campus_Common_CampusActorManager_ActorInfo_o* Campus_Common_CampusActorManager__GetCacheActorInfo (Campus_Common_CampusActorManager_o* __this, Campus_Common_CampusActorDescriptor_o* descriptor, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde6fd0",
+        "callerAddress": "0xdde6f80",
+        "callerNames": [
+          "Campus.Common.CampusActorManager$$TryGetCached"
+        ]
+      },
+      {
+        "callAddress": "0xdde8eac",
+        "callerAddress": "0xdde8c9c",
+        "callerNames": [
+          "Campus.Common.CampusActorManager.<UpdateCacheActorAsync>d__19$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$TryGetCached",
+    "apkAddress": "0xdde6f80",
+    "signature": "bool Campus_Common_CampusActorManager__TryGetCached (Campus_Common_CampusActorManager_o* __this, Campus_Common_CampusActorDescriptor_o* descriptor, Campus_Common_ICampusActorController_o** controller, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$IsGenerating",
+    "apkAddress": "0xdde7034",
+    "signature": "bool Campus_Common_CampusActorManager__IsGenerating (Campus_Common_CampusActorManager_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$IsGenerating",
+    "apkAddress": "0xdde7160",
+    "signature": "bool Campus_Common_CampusActorManager__IsGenerating (Campus_Common_CampusActorManager_o* __this, int32_t index, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$UpdateCacheActorAsync",
+    "apkAddress": "0xdde7278",
+    "signature": "Cysharp_Threading_Tasks_UniTask_ValueTuple_bool__ICampusActorController___o Campus_Common_CampusActorManager__UpdateCacheActorAsync (Campus_Common_CampusActorManager_o* __this, Campus_Common_CampusActorDescriptor_o* descriptor, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x710bd88",
+        "callerAddress": "0x710bc98",
+        "callerNames": [
+          "Campus.Common.CampusActorUtility.<UpdateCacheActorAsync>d__24$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x710c1e8",
+        "callerAddress": "0x710c0f8",
+        "callerNames": [
+          "Campus.Common.CampusActorUtility.<UpdateCacheActorAsync>d__25$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x710c600",
+        "callerAddress": "0x710c558",
+        "callerNames": [
+          "Campus.Common.CampusActorUtility.<UpdateCacheActorAsync>d__26$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x710ca34",
+        "callerAddress": "0x710c974",
+        "callerNames": [
+          "Campus.Common.CampusActorUtility.<UpdateCacheActorAsync>d__27$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$SafeUpdateActorAsync",
+    "apkAddress": "0xdde7394",
+    "signature": "Cysharp_Threading_Tasks_UniTask_ValueTuple_bool__ICampusActorController___o Campus_Common_CampusActorManager__SafeUpdateActorAsync (Campus_Common_CampusActorManager_o* __this, Campus_Common_CampusActorManager_ActorInfo_o* actorInfo, int32_t index, Campus_Common_CampusActorDescriptor_o* descriptor, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde925c",
+        "callerAddress": "0xdde8c9c",
+        "callerNames": [
+          "Campus.Common.CampusActorManager.<UpdateCacheActorAsync>d__19$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$UpdateActorAsync",
+    "apkAddress": "0xdde74d4",
+    "signature": "Cysharp_Threading_Tasks_UniTask_ValueTuple_bool__ICampusActorController___o Campus_Common_CampusActorManager__UpdateActorAsync (Campus_Common_CampusActorManager_o* __this, int32_t index, Campus_Common_CampusActorDescriptor_o* descriptor, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x64ed998",
+        "callerAddress": "0x64ed858",
+        "callerNames": [
+          "Campus.ADV.ActorManager.Actor.<LoadModelAsync>d__72$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x650a014",
+        "callerAddress": "0x6509ee4",
+        "callerNames": [
+          "Campus.ADV.LiveManager.<LoadActorAsync>d__42$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x674a56c",
+        "callerAddress": "0x674a308",
+        "callerNames": [
+          "Campus.OutGame.DearnessActor.<CreateActorAsync>d__20$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6c1a6c4",
+        "callerAddress": "0x6c1a614",
+        "callerNames": [
+          "Campus.InGame.Contest3DManager.<LoadCharacterAsync>d__50$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6d08680",
+        "callerAddress": "0x6d0836c",
+        "callerNames": [
+          "Campus.OutGame.ResearchEvent3DController.<CreateActorAsync>d__16$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6e7e7a4",
+        "callerAddress": "0x6e7e398",
+        "callerNames": [
+          "Campus.OutGame.StoryEvent3DController.<CreateActorAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6f8d6a4",
+        "callerAddress": "0x6f8d548",
+        "callerNames": [
+          "Campus.OutGame.TrailEvent3DController.<SetupActorAsync>d__12$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fd0dfc",
+        "callerAddress": "0x6fd0a68",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<LoadCharacterAsync>d__36$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fd1348",
+        "callerAddress": "0x6fd0a68",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<LoadCharacterAsync>d__36$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fd14f4",
+        "callerAddress": "0x6fd0a68",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<LoadCharacterAsync>d__36$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70cac34",
+        "callerAddress": "0x70ca89c",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController.<CreateActorAsync>d__39$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70cad34",
+        "callerAddress": "0x70ca89c",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController.<CreateActorAsync>d__39$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80cb294",
+        "callerAddress": "0x80cad70",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController.<PrepareExamActorsAsync>d__73$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x81782a8",
+        "callerAddress": "0x8177c44",
+        "callerNames": [
+          "Campus.Photography.Photography3DPresenter.<LoadActorAsync>d__31$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x8393b14",
+        "callerAddress": "0x8393a18",
+        "callerNames": [
+          "Campus.OutGame.HomeActorBase.<LoadAsync>d__31$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x83a92c0",
+        "callerAddress": "0x83a8ecc",
+        "callerNames": [
+          "Campus.OutGame.OutGameActorCreateController.<RequestCreateActorAsync>d__11$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x863b1ec",
+        "callerAddress": "0x863b1c0",
+        "callerNames": [
+          "Campus.Live.LivePlayerPresenter.<>c__DisplayClass32_0$$<CreateActorAsync>b__0"
+        ]
+      },
+      {
+        "callAddress": "0xdd818c0",
+        "callerAddress": "0xdd817a0",
+        "callerNames": [
+          "Campus.Gasha.GashaGlobalEffect.<SetUp>d__12$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0xdde7ff8",
+        "callerAddress": "0xdde7f10",
+        "callerNames": [
+          "Campus.Common.CampusActorManager.<SafeUpdateActorAsync>d__20$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$ExistActor",
+    "apkAddress": "0xdde75fc",
+    "signature": "bool Campus_Common_CampusActorManager__ExistActor (Campus_Common_CampusActorManager_o* __this, System_String_o* uniqueId, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x70ea6fc",
+        "callerAddress": "0x70ea594",
+        "callerNames": [
+          "Campus.Common.CampusActorCriRelation$$CleanCache"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$GetActorIndex",
+    "apkAddress": "0xdde7710",
+    "signature": "int32_t Campus_Common_CampusActorManager__GetActorIndex (Campus_Common_CampusActorManager_o* __this, System_String_o* uniqueId, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde79c4",
+        "callerAddress": "0xdde798c",
+        "callerNames": [
+          "Campus.Common.CampusActorManager$$TryDestroyActor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$TryDestroyActor",
+    "apkAddress": "0xdde798c",
+    "signature": "bool Campus_Common_CampusActorManager__TryDestroyActor (Campus_Common_CampusActorManager_o* __this, System_String_o* uniqueId, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x7aad638",
+        "callerAddress": "0x7aad414",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController.<InitializeAsync>d__14$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$GetFreeActorIndex",
+    "apkAddress": "0xdde79fc",
+    "signature": "int32_t Campus_Common_CampusActorManager__GetFreeActorIndex (Campus_Common_CampusActorManager_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x70cac14",
+        "callerAddress": "0x70ca89c",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController.<CreateActorAsync>d__39$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80cb24c",
+        "callerAddress": "0x80cad70",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController.<PrepareExamActorsAsync>d__73$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$SetJointLimitAssetMap",
+    "apkAddress": "0xdde7b68",
+    "signature": "void Campus_Common_CampusActorManager__SetJointLimitAssetMap (Campus_Common_CampusActorManager_o* __this, System_Collections_Generic_Dictionary_string__string__o* value, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$GetJointLimitAsset",
+    "apkAddress": "0xdde3440",
+    "signature": "System_String_o* Campus_Common_CampusActorManager__GetJointLimitAsset (Campus_Common_CampusActorManager_o* __this, System_String_o* characterId, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xdde2858",
+        "callerAddress": "0xdde2178",
+        "callerNames": [
+          "Campus.Common.CampusActorController.<ActorLoadAsync>d__71$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$.ctor",
+    "apkAddress": "0xdde7b70",
+    "signature": "void Campus_Common_CampusActorManager___ctor (Campus_Common_CampusActorManager_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorManager$$<OnEnable>b__13_0",
+    "apkAddress": "0xdde7bb8",
+    "signature": "void Campus_Common_CampusActorManager___OnEnable_b__13_0 (Campus_Common_CampusActorManager_o* __this, Campus_Common_CampusActorManager_ActorInfo_o* actorInfo, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusColorManager$$get_ColorDictionary",
+    "apkAddress": "0xddfe64c",
+    "signature": "System_Collections_Generic_Dictionary_ColorEntry__Color__o* Campus_Common_CampusColorManager__get_ColorDictionary (Campus_Common_CampusColorManager_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xddfda7c",
+        "callerAddress": "0xddfda40",
+        "callerNames": [
+          "Campus.Common.CampusColorManager$$GetColor"
+        ]
+      },
+      {
+        "callAddress": "0xddfea0c",
+        "callerAddress": "0xddfe954",
+        "callerNames": [
+          "Campus.Common.CampusColorManager$$GetColor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusColorManager$$InitializeColorDictionary",
+    "apkAddress": "0xddfe6a8",
+    "signature": "void Campus_Common_CampusColorManager__InitializeColorDictionary (Campus_Common_CampusColorManager_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xddfe694",
+        "callerAddress": "0xddfe64c",
+        "callerNames": [
+          "Campus.Common.CampusColorManager$$get_ColorDictionary"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusColorManager$$GetColor",
+    "apkAddress": "0xddfda40",
+    "signature": "UnityEngine_Color_o Campus_Common_CampusColorManager__GetColor (Campus_Common_CampusColorManager_o* __this, int32_t type, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x70fb57c",
+        "callerAddress": "0x70fb4a8",
+        "callerNames": [
+          "Campus.InGame.AuditionBattleResultScreenView.<InitializeAsync>d__26$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70fb600",
+        "callerAddress": "0x70fb4a8",
+        "callerNames": [
+          "Campus.InGame.AuditionBattleResultScreenView.<InitializeAsync>d__26$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x72fe960",
+        "callerAddress": "0x72fe878",
+        "callerNames": [
+          "Campus.Common.ProduceLog.ProducePlayLogItemModel$$GetColor"
+        ]
+      },
+      {
+        "callAddress": "0x747080c",
+        "callerAddress": "0x7470788",
+        "callerNames": [
+          "Campus.Common.Extensions.CampusTextExtensions$$SetRemainTimeLabelAndColor"
+        ]
+      },
+      {
+        "callAddress": "0x74715b8",
+        "callerAddress": "0x7471428",
+        "callerNames": [
+          "Campus.Common.Extensions.ColorExtensions$$UPalettePatternConvert"
+        ]
+      },
+      {
+        "callAddress": "0x74f4670",
+        "callerAddress": "0x74f4618",
+        "callerNames": [
+          "Campus.Common.UI.CardParameterView$$GetColor"
+        ]
+      },
+      {
+        "callAddress": "0x7580474",
+        "callerAddress": "0x7580394",
+        "callerNames": [
+          "Campus.Common.Proto.Client.Transaction.UserProduceProgress$$GetNavigation"
+        ]
+      },
+      {
+        "callAddress": "0x7580534",
+        "callerAddress": "0x7580394",
+        "callerNames": [
+          "Campus.Common.Proto.Client.Transaction.UserProduceProgress$$GetNavigation"
+        ]
+      },
+      {
+        "callAddress": "0x7580590",
+        "callerAddress": "0x7580394",
+        "callerNames": [
+          "Campus.Common.Proto.Client.Transaction.UserProduceProgress$$GetNavigation"
+        ]
+      },
+      {
+        "callAddress": "0x81db1e4",
+        "callerAddress": "0x81db00c",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamGimmickPlayView$$GetPlayTween"
+        ]
+      },
+      {
+        "callAddress": "0x81dbe5c",
+        "callerAddress": "0x81dbc4c",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamGimmickTriggerView$$SetTrigger"
+        ]
+      },
+      {
+        "callAddress": "0x825fa9c",
+        "callerAddress": "0x825f848",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamStatusView$$GetStaminaBlockTween"
+        ]
+      },
+      {
+        "callAddress": "0x825ff74",
+        "callerAddress": "0x825f848",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamStatusView$$GetStaminaBlockTween"
+        ]
+      },
+      {
+        "callAddress": "0x8260150",
+        "callerAddress": "0x825f848",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamStatusView$$GetStaminaBlockTween"
+        ]
+      },
+      {
+        "callAddress": "0x8261708",
+        "callerAddress": "0x82612c8",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamStatusView$$SetStaminaForecast"
+        ]
+      },
+      {
+        "callAddress": "0x8261954",
+        "callerAddress": "0x82612c8",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamStatusView$$SetStaminaForecast"
+        ]
+      },
+      {
+        "callAddress": "0x836f6bc",
+        "callerAddress": "0x836f5a0",
+        "callerNames": [
+          "Campus.OutGame.AuditionBattleResultHifScreenView.<InitializeAsync>d__26$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x836f710",
+        "callerAddress": "0x836f5a0",
+        "callerNames": [
+          "Campus.OutGame.AuditionBattleResultHifScreenView.<InitializeAsync>d__26$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x90a0740",
+        "callerAddress": "0x90a06f0",
+        "callerNames": [
+          "Campus.Common.CampusColorExtensions$$SetCampusColor<object>"
+        ]
+      },
+      {
+        "callAddress": "0xddfda38",
+        "callerAddress": "0xddfd9f0",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_BlackCommon"
+        ]
+      },
+      {
+        "callAddress": "0xddfdb14",
+        "callerAddress": "0xddfdacc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_BlackBackground"
+        ]
+      },
+      {
+        "callAddress": "0xddfdb64",
+        "callerAddress": "0xddfdb1c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_GrayCommon"
+        ]
+      },
+      {
+        "callAddress": "0xddfdbb4",
+        "callerAddress": "0xddfdb6c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Positive"
+        ]
+      },
+      {
+        "callAddress": "0xddfdc04",
+        "callerAddress": "0xddfdbbc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Negative"
+        ]
+      },
+      {
+        "callAddress": "0xddfdc54",
+        "callerAddress": "0xddfdc0c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Strong"
+        ]
+      },
+      {
+        "callAddress": "0xddfdca4",
+        "callerAddress": "0xddfdc5c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Vocal"
+        ]
+      },
+      {
+        "callAddress": "0xddfdcf4",
+        "callerAddress": "0xddfdcac",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Dance"
+        ]
+      },
+      {
+        "callAddress": "0xddfdd44",
+        "callerAddress": "0xddfdcfc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Visual"
+        ]
+      },
+      {
+        "callAddress": "0xddfdd94",
+        "callerAddress": "0xddfdd4c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Stamina"
+        ]
+      },
+      {
+        "callAddress": "0xddfdde4",
+        "callerAddress": "0xddfdd9c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Mental"
+        ]
+      },
+      {
+        "callAddress": "0xddfde34",
+        "callerAddress": "0xddfddec",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Emphasis"
+        ]
+      },
+      {
+        "callAddress": "0xddfde84",
+        "callerAddress": "0xddfde3c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_White"
+        ]
+      },
+      {
+        "callAddress": "0xddfded4",
+        "callerAddress": "0xddfde8c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Assist"
+        ]
+      },
+      {
+        "callAddress": "0xddfdf24",
+        "callerAddress": "0xddfdedc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Description"
+        ]
+      },
+      {
+        "callAddress": "0xddfdf74",
+        "callerAddress": "0xddfdf2c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Link"
+        ]
+      },
+      {
+        "callAddress": "0xddfdfc4",
+        "callerAddress": "0xddfdf7c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_HoverLabel"
+        ]
+      },
+      {
+        "callAddress": "0xddfe014",
+        "callerAddress": "0xddfdfcc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Main"
+        ]
+      },
+      {
+        "callAddress": "0xddfe064",
+        "callerAddress": "0xddfe01c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_MainThin"
+        ]
+      },
+      {
+        "callAddress": "0xddfe0b4",
+        "callerAddress": "0xddfe06c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_VocalThin"
+        ]
+      },
+      {
+        "callAddress": "0xddfe104",
+        "callerAddress": "0xddfe0bc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_DanceThin"
+        ]
+      },
+      {
+        "callAddress": "0xddfe154",
+        "callerAddress": "0xddfe10c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_VisualThin"
+        ]
+      },
+      {
+        "callAddress": "0xddfe1a4",
+        "callerAddress": "0xddfe15c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_EmpahasisYellow"
+        ]
+      },
+      {
+        "callAddress": "0xddfe1f4",
+        "callerAddress": "0xddfe1ac",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Customize"
+        ]
+      },
+      {
+        "callAddress": "0xddfe244",
+        "callerAddress": "0xddfe1fc",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_DanceEndColor"
+        ]
+      },
+      {
+        "callAddress": "0xddfe294",
+        "callerAddress": "0xddfe24c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_VocalEndColor"
+        ]
+      },
+      {
+        "callAddress": "0xddfe2e4",
+        "callerAddress": "0xddfe29c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_VisialEndColor"
+        ]
+      },
+      {
+        "callAddress": "0xddfe334",
+        "callerAddress": "0xddfe2ec",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_Star"
+        ]
+      },
+      {
+        "callAddress": "0xddfe384",
+        "callerAddress": "0xddfe33c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_StarMiddleColor"
+        ]
+      },
+      {
+        "callAddress": "0xddfe3d4",
+        "callerAddress": "0xddfe38c",
+        "callerNames": [
+          "Campus.Common.CampusColor$$get_StarEndColor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusColorManager$$GetColor",
+    "apkAddress": "0xddfe954",
+    "signature": "UnityEngine_Color_o Campus_Common_CampusColorManager__GetColor (Campus_Common_CampusColorManager_o* __this, System_String_o* colorId, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x750c03c",
+        "callerAddress": "0x750bfec",
+        "callerNames": [
+          "Campus.Common.UI.CampusSimpleTabButton$$Initialize"
+        ]
+      },
+      {
+        "callAddress": "0x750c064",
+        "callerAddress": "0x750bfec",
+        "callerNames": [
+          "Campus.Common.UI.CampusSimpleTabButton$$Initialize"
+        ]
+      },
+      {
+        "callAddress": "0xb82a0ec",
+        "callerAddress": "0xb82a094",
+        "callerNames": [
+          "Campus.Common.RemainTimeLabel<object>$$get_NormalColor"
+        ]
+      },
+      {
+        "callAddress": "0xb82a178",
+        "callerAddress": "0xb82a120",
+        "callerNames": [
+          "Campus.Common.RemainTimeLabel<__Il2CppFullySharedGenericType>$$get_NormalColor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusColorManager$$.ctor",
+    "apkAddress": "0xddfea74",
+    "signature": "void Campus_Common_CampusColorManager___ctor (Campus_Common_CampusColorManager_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$get_Id",
+    "apkAddress": "0xde04f78",
+    "signature": "System_String_o* Campus_Common_CampusSceneLayout__get_Id (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$get_Camera",
+    "apkAddress": "0xde04f80",
+    "signature": "Cinemachine_CinemachineVirtualCamera_o* Campus_Common_CampusSceneLayout__get_Camera (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$get_ActorLayout",
+    "apkAddress": "0xde04f88",
+    "signature": "Campus_Common_CampusActorLayout_o* Campus_Common_CampusSceneLayout__get_ActorLayout (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$get_OverrideVolume",
+    "apkAddress": "0xde04f90",
+    "signature": "UnityEngine_Rendering_Volume_o* Campus_Common_CampusSceneLayout__get_OverrideVolume (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetupActor",
+    "apkAddress": "0xde030cc",
+    "signature": "void Campus_Common_CampusSceneLayout__SetupActor (Campus_Common_CampusSceneLayout_o* __this, Campus_Common_ICampusActorController_o* actor, bool isCorrectionLayoutHeight, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x67461f0",
+        "callerAddress": "0x67460d8",
+        "callerNames": [
+          "Campus.OutGame.Dearness3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x674a6e4",
+        "callerAddress": "0x674a308",
+        "callerNames": [
+          "Campus.OutGame.DearnessActor.<CreateActorAsync>d__20$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6b776d4",
+        "callerAddress": "0x6b770b0",
+        "callerNames": [
+          "Campus.OutGame.ProducePrepare3DController.<OnCreateActorAsync>d__18$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6c2180c",
+        "callerAddress": "0x6c21748",
+        "callerNames": [
+          "Campus.InGame.Contest3DManager.<SetupContestResultAsync>d__49$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6d087f4",
+        "callerAddress": "0x6d0836c",
+        "callerNames": [
+          "Campus.OutGame.ResearchEvent3DController.<CreateActorAsync>d__16$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6e7e91c",
+        "callerAddress": "0x6e7e398",
+        "callerNames": [
+          "Campus.OutGame.StoryEvent3DController.<CreateActorAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fdc0f8",
+        "callerAddress": "0x6fdc034",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayoutActive"
+        ]
+      },
+      {
+        "callAddress": "0x6fddb54",
+        "callerAddress": "0x6fdd9c8",
+        "callerNames": [
+          "Campus.OutGame.Work3DController.<OnCreateActorAsync>d__20$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70c7ab0",
+        "callerAddress": "0x70c7a00",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x7529520",
+        "callerAddress": "0x7528ac0",
+        "callerNames": [
+          "Campus.InGame.ProduceResult3DController.<InitializeAsync>d__3$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f43468",
+        "callerAddress": "0x7f4309c",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleInterval3DController.<InitializeAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f54c20",
+        "callerAddress": "0x7f545a8",
+        "callerNames": [
+          "Campus.InGame.Schedule.SchedulePresentScreenPresenter.<InitializeAsync>d__8$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f69824",
+        "callerAddress": "0x7f68af4",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleScreen3DController.<PlayLoadingOutAnimationAsync>d__31$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f89ecc",
+        "callerAddress": "0x7f89b00",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleShop3DController.<InitializeAsync>d__14$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x82b6b68",
+        "callerAddress": "0x82b6ad4",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamResult3DController.<PlayExamEndAsync>d__12$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0xde030bc",
+        "callerAddress": "0xde03090",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$SetupActor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetupActor",
+    "apkAddress": "0xde0320c",
+    "signature": "void Campus_Common_CampusSceneLayout__SetupActor (Campus_Common_CampusSceneLayout_o* __this, System_Collections_Generic_IList_ICampusActorController__o* actors, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x70e98d8",
+        "callerAddress": "0x70e9818",
+        "callerNames": [
+          "Campus.Common.Campus3DUtility$$GetSetupSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70f1e70",
+        "callerAddress": "0x70f1d84",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<SetupAuditionResultAsync>d__33$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70f22e4",
+        "callerAddress": "0x70f222c",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<SetupAuditionStartAsync>d__32$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80b8ea8",
+        "callerAddress": "0x80b8dc0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x80bd94c",
+        "callerAddress": "0x80bd4c0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DSwitchingActorAnimation.<PlayAnimationAsync>d__5$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80c32e0",
+        "callerAddress": "0x80c3214",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SwitchActorController"
+        ]
+      },
+      {
+        "callAddress": "0xde03200",
+        "callerAddress": "0xde031e8",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$SetupActor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetupActor",
+    "apkAddress": "0xde033d8",
+    "signature": "void Campus_Common_CampusSceneLayout__SetupActor (Campus_Common_CampusSceneLayout_o* __this, System_Collections_Generic_IList_ValueTuple_ICampusActorController__bool___o* actors, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xde033cc",
+        "callerAddress": "0xde033b4",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$SetupActor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$Unset",
+    "apkAddress": "0xde03704",
+    "signature": "void Campus_Common_CampusSceneLayout__Unset (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x674619c",
+        "callerAddress": "0x67460d8",
+        "callerNames": [
+          "Campus.OutGame.Dearness3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x6b761f8",
+        "callerAddress": "0x6b76084",
+        "callerNames": [
+          "Campus.OutGame.ProducePrepare3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x6d09730",
+        "callerAddress": "0x6d08d00",
+        "callerNames": [
+          "Campus.OutGame.ResearchEvent3DController.<CreateBackgroundAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6e7f880",
+        "callerAddress": "0x6e7ee74",
+        "callerNames": [
+          "Campus.OutGame.StoryEvent3DController.<CreateBackgroundAsync>d__14$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fdc128",
+        "callerAddress": "0x6fdc034",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayoutActive"
+        ]
+      },
+      {
+        "callAddress": "0x6fdcc98",
+        "callerAddress": "0x6fdcb84",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70c7a74",
+        "callerAddress": "0x70c7a00",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70e9890",
+        "callerAddress": "0x70e9818",
+        "callerNames": [
+          "Campus.Common.Campus3DUtility$$GetSetupSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x7aacf68",
+        "callerAddress": "0x7aaceb0",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x7b91a7c",
+        "callerAddress": "0x7b919c4",
+        "callerNames": [
+          "Campus.InGame.ScheduleFanPresent3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x7c6ae84",
+        "callerAddress": "0x7c6acb0",
+        "callerNames": [
+          "Campus.InGame.ScheduleSelfLesson3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x80b8e38",
+        "callerAddress": "0x80b8dc0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x80c32c0",
+        "callerAddress": "0x80c3214",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SwitchActorController"
+        ]
+      },
+      {
+        "callAddress": "0x82b5078",
+        "callerAddress": "0x82b4eb8",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamResult3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0xde036f8",
+        "callerAddress": "0xde036e8",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$Unset"
+        ]
+      },
+      {
+        "callAddress": "0xde05aa4",
+        "callerAddress": "0xde05a30",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$<RegisterReset>b__28_0"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetCameraPriority",
+    "apkAddress": "0xde02ce4",
+    "signature": "void Campus_Common_CampusSceneLayout__SetCameraPriority (Campus_Common_CampusSceneLayout_o* __this, int32_t priority, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x6fdc118",
+        "callerAddress": "0x6fdc034",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayoutActive"
+        ]
+      },
+      {
+        "callAddress": "0x6fdccdc",
+        "callerAddress": "0x6fdcb84",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x80c3454",
+        "callerAddress": "0x80c337c",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$OnFinalize"
+        ]
+      },
+      {
+        "callAddress": "0xde02cc0",
+        "callerAddress": "0xde02a3c",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$Awake"
+        ]
+      },
+      {
+        "callAddress": "0xde02d40",
+        "callerAddress": "0xde02d1c",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$SwitchSituation"
+        ]
+      },
+      {
+        "callAddress": "0xde02d58",
+        "callerAddress": "0xde02d1c",
+        "callerNames": [
+          "Campus.Common.CampusHomeSceneLayout$$SwitchSituation"
+        ]
+      },
+      {
+        "callAddress": "0xde02eac",
+        "callerAddress": "0xde02e9c",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$SetCameraActive"
+        ]
+      },
+      {
+        "callAddress": "0xde05a94",
+        "callerAddress": "0xde05a30",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$<RegisterReset>b__28_0"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetCameraActive",
+    "apkAddress": "0xde02e9c",
+    "signature": "void Campus_Common_CampusSceneLayout__SetCameraActive (Campus_Common_CampusSceneLayout_o* __this, bool isActive, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x67461ac",
+        "callerAddress": "0x67460d8",
+        "callerNames": [
+          "Campus.OutGame.Dearness3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x67461c0",
+        "callerAddress": "0x67460d8",
+        "callerNames": [
+          "Campus.OutGame.Dearness3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x6b7620c",
+        "callerAddress": "0x6b76084",
+        "callerNames": [
+          "Campus.OutGame.ProducePrepare3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x6b76f1c",
+        "callerAddress": "0x6b76c90",
+        "callerNames": [
+          "Campus.OutGame.ProducePrepare3DController.<LoadSceneLayoutAsync>d__14$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6c21820",
+        "callerAddress": "0x6c21748",
+        "callerNames": [
+          "Campus.InGame.Contest3DManager.<SetupContestResultAsync>d__49$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6d096cc",
+        "callerAddress": "0x6d08d00",
+        "callerNames": [
+          "Campus.OutGame.ResearchEvent3DController.<CreateBackgroundAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6d09740",
+        "callerAddress": "0x6d08d00",
+        "callerNames": [
+          "Campus.OutGame.ResearchEvent3DController.<CreateBackgroundAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6e7f81c",
+        "callerAddress": "0x6e7ee74",
+        "callerNames": [
+          "Campus.OutGame.StoryEvent3DController.<CreateBackgroundAsync>d__14$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6e7f890",
+        "callerAddress": "0x6e7ee74",
+        "callerNames": [
+          "Campus.OutGame.StoryEvent3DController.<CreateBackgroundAsync>d__14$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fdc148",
+        "callerAddress": "0x6fdc034",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayoutActive"
+        ]
+      },
+      {
+        "callAddress": "0x6fdccac",
+        "callerAddress": "0x6fdcb84",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$SetSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70c7a84",
+        "callerAddress": "0x70c7a00",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70c7ac0",
+        "callerAddress": "0x70c7a00",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70e98a4",
+        "callerAddress": "0x70e9818",
+        "callerNames": [
+          "Campus.Common.Campus3DUtility$$GetSetupSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70e98c8",
+        "callerAddress": "0x70e9818",
+        "callerNames": [
+          "Campus.Common.Campus3DUtility$$GetSetupSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x70f1e4c",
+        "callerAddress": "0x70f1d84",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<SetupAuditionResultAsync>d__33$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70f22c0",
+        "callerAddress": "0x70f222c",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<SetupAuditionStartAsync>d__32$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7529508",
+        "callerAddress": "0x7528ac0",
+        "callerNames": [
+          "Campus.InGame.ProduceResult3DController.<InitializeAsync>d__3$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x77101b4",
+        "callerAddress": "0x770fa40",
+        "callerNames": [
+          "Campus.InGame.ProduceResultStoryEventScreenPresenter.<InitializeBackgroundAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7aacf7c",
+        "callerAddress": "0x7aaceb0",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x7b91a90",
+        "callerAddress": "0x7b919c4",
+        "callerNames": [
+          "Campus.InGame.ScheduleFanPresent3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x7c6ae98",
+        "callerAddress": "0x7c6acb0",
+        "callerNames": [
+          "Campus.InGame.ScheduleSelfLesson3DController$$Dispose"
+        ]
+      },
+      {
+        "callAddress": "0x7f44834",
+        "callerAddress": "0x7f445a8",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleInterval3DController.<LoadSceneLayoutAsync>d__16$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f55e08",
+        "callerAddress": "0x7f55b64",
+        "callerNames": [
+          "Campus.InGame.Schedule.SchedulePresentScreenPresenter.<LoadSceneLayoutAsync>d__10$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f697f4",
+        "callerAddress": "0x7f68af4",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleScreen3DController.<PlayLoadingOutAnimationAsync>d__31$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f8b298",
+        "callerAddress": "0x7f8b00c",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleShop3DController.<LoadSceneLayoutAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80b8e4c",
+        "callerAddress": "0x80b8dc0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x80b8e84",
+        "callerAddress": "0x80b8dc0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SwitchSceneLayout"
+        ]
+      },
+      {
+        "callAddress": "0x82b5d00",
+        "callerAddress": "0x82b50dc",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamResult3DController.<InitializeAsync>d__9$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetVolumeEnable",
+    "apkAddress": "0xde0509c",
+    "signature": "void Campus_Common_CampusSceneLayout__SetVolumeEnable (Campus_Common_CampusSceneLayout_o* __this, bool isActive, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xde02cfc",
+        "callerAddress": "0xde02ce4",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$SetCameraPriority"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$GetCameraAnimationPlayer",
+    "apkAddress": "0xde05134",
+    "signature": "VL_Animation_MotionDefinePlayer_o* Campus_Common_CampusSceneLayout__GetCameraAnimationPlayer (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x6c168cc",
+        "callerAddress": "0x6c16874",
+        "callerNames": [
+          "Campus.InGame.Contest3DManager$$SkipMotion"
+        ]
+      },
+      {
+        "callAddress": "0x6c16acc",
+        "callerAddress": "0x6c16a94",
+        "callerNames": [
+          "Campus.InGame.Contest3DManager$$StopCameraAnimation"
+        ]
+      },
+      {
+        "callAddress": "0x6fc7264",
+        "callerAddress": "0x6fc7174",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager$$SkipMotion"
+        ]
+      },
+      {
+        "callAddress": "0x6fc7580",
+        "callerAddress": "0x6fc7448",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager$$SeekMotion"
+        ]
+      },
+      {
+        "callAddress": "0x6fc923c",
+        "callerAddress": "0x6fc9120",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager$$PauseMotion"
+        ]
+      },
+      {
+        "callAddress": "0x6fc9804",
+        "callerAddress": "0x6fc96e8",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager$$ResumeMotion"
+        ]
+      },
+      {
+        "callAddress": "0x6fd521c",
+        "callerAddress": "0x6fd4640",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<PlayMotionAsync>d__37$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fdc7bc",
+        "callerAddress": "0x6fdc780",
+        "callerNames": [
+          "Campus.OutGame.Work3DController$$PlayCompleteOpenSelect"
+        ]
+      },
+      {
+        "callAddress": "0x6fdea00",
+        "callerAddress": "0x6fde980",
+        "callerNames": [
+          "Campus.OutGame.Work3DController.<PlayOpenSelectAsync>d__26$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7aace80",
+        "callerAddress": "0x7aace18",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController$$SkipCurrentOutMotion"
+        ]
+      },
+      {
+        "callAddress": "0x7aad28c",
+        "callerAddress": "0x7aad110",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController.<>c__DisplayClass23_0$$<SkipCurrentOpenMotionAsync>b__0"
+        ]
+      },
+      {
+        "callAddress": "0x7b91994",
+        "callerAddress": "0x7b9192c",
+        "callerNames": [
+          "Campus.InGame.ScheduleFanPresent3DController$$SkipCurrentMotion"
+        ]
+      },
+      {
+        "callAddress": "0x7c6abd8",
+        "callerAddress": "0x7c6aa50",
+        "callerNames": [
+          "Campus.InGame.ScheduleSelfLesson3DController$$SkipOpenMotion"
+        ]
+      },
+      {
+        "callAddress": "0x7f427a4",
+        "callerAddress": "0x7f42624",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleInterval3DController$$SkipOpenMotion"
+        ]
+      },
+      {
+        "callAddress": "0x7f533c4",
+        "callerAddress": "0x7f53338",
+        "callerNames": [
+          "Campus.InGame.Schedule.SchedulePresentScreenPresenter$$SkipOpenMotion"
+        ]
+      },
+      {
+        "callAddress": "0x7f88eac",
+        "callerAddress": "0x7f88e20",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleShop3DController$$SkipOpenMotion"
+        ]
+      },
+      {
+        "callAddress": "0x80bae30",
+        "callerAddress": "0x80bad68",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DExamBorderClearAnimation$$Skip"
+        ]
+      },
+      {
+        "callAddress": "0x80bb3b4",
+        "callerAddress": "0x80bb170",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DExamBorderClearAnimation.<PlayAnimationAsync>d__3$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80bf744",
+        "callerAddress": "0x80bf70c",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$KeepSceneLayoutCameraTime"
+        ]
+      },
+      {
+        "callAddress": "0x80c3078",
+        "callerAddress": "0x80c2f58",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$SkipCurrentMotion"
+        ]
+      },
+      {
+        "callAddress": "0x80c36fc",
+        "callerAddress": "0x80c3620",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$Pause"
+        ]
+      },
+      {
+        "callAddress": "0x80c3908",
+        "callerAddress": "0x80c382c",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$Resume"
+        ]
+      },
+      {
+        "callAddress": "0x82b4b58",
+        "callerAddress": "0x82b4a8c",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamResult3DController$$SkipExamEnd"
+        ]
+      },
+      {
+        "callAddress": "0xde052dc",
+        "callerAddress": "0xde051e4",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$PlayCameraMotion"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$PlayCameraMotion",
+    "apkAddress": "0xde051e4",
+    "signature": "VL_Animation_IAnimationController_o* Campus_Common_CampusSceneLayout__PlayCameraMotion (Campus_Common_CampusSceneLayout_o* __this, VL_MotionDefine_o* motionDefine, float transition, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x6c1e894",
+        "callerAddress": "0x6c1e7c4",
+        "callerNames": [
+          "Campus.InGame.Contest3DManager.<PlayResultMotionAsync>d__52$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fd4c2c",
+        "callerAddress": "0x6fd4640",
+        "callerNames": [
+          "Campus.InGame.AuditionBattle3DManager.<PlayMotionAsync>d__37$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6fe0b70",
+        "callerAddress": "0x6fe06a8",
+        "callerNames": [
+          "Campus.OutGame.Work3DController.<SetupOpenSelectAsync>d__25$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x70c8b8c",
+        "callerAddress": "0x70c813c",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController.<ChangeCostumeAsync>d__41$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7aae90c",
+        "callerAddress": "0x7aae700",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController.<PlayCloseAnimationAsync>d__16$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7aaf42c",
+        "callerAddress": "0x7aaf228",
+        "callerNames": [
+          "Campus.InGame.ScheduleCustomize3DController.<PlayOpenAnimationAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7b93fa4",
+        "callerAddress": "0x7b93ec8",
+        "callerNames": [
+          "Campus.InGame.ScheduleFanPresent3DController.<PlayReactionMotionAsync>d__13$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7c6a938",
+        "callerAddress": "0x7c6a8c8",
+        "callerNames": [
+          "Campus.InGame.ScheduleSelfLesson3DController$$PlayOpenInAnimation"
+        ]
+      },
+      {
+        "callAddress": "0x7f45314",
+        "callerAddress": "0x7f4526c",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleInterval3DController.<PlayCloseAnimationAsync>d__23$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f45ccc",
+        "callerAddress": "0x7f45bc0",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleInterval3DController.<PlayOpenInAnimationAsync>d__21$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f56454",
+        "callerAddress": "0x7f55fa8",
+        "callerNames": [
+          "Campus.InGame.Schedule.SchedulePresentScreenPresenter.<NonBlockOpenInAsync>d__12$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f5b5a4",
+        "callerAddress": "0x7f5b09c",
+        "callerNames": [
+          "Campus.InGame.Schedule.SchedulePresentScreenPresenter.<Play3DCompleteAnimationAsync>d__18$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f8c0bc",
+        "callerAddress": "0x7f8c014",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleShop3DController.<PlayCloseAnimationAsync>d__22$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f8cf44",
+        "callerAddress": "0x7f8cd24",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleShop3DController.<PlayOpenInAnimationAsync>d__20$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80ba0f8",
+        "callerAddress": "0x80b9ae0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DEffectReactionAnimation.<PlayAnimationAsync>d__7$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80bb394",
+        "callerAddress": "0x80bb170",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DExamBorderClearAnimation.<PlayAnimationAsync>d__3$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80bbda8",
+        "callerAddress": "0x80bbb2c",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DExamStartAnimation.<PlayAnimationAsync>d__3$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80bc910",
+        "callerAddress": "0x80bc540",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DIdleOnceAnimation.<PlayAnimationAsync>d__8$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80bdc04",
+        "callerAddress": "0x80bd4c0",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DSwitchingActorAnimation.<PlayAnimationAsync>d__5$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x80c2274",
+        "callerAddress": "0x80c2078",
+        "callerNames": [
+          "Campus.InGame.Exam.Exam3DController$$PlayIdleMotion"
+        ]
+      },
+      {
+        "callAddress": "0x82b6b80",
+        "callerAddress": "0x82b6ad4",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamResult3DController.<PlayExamEndAsync>d__12$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$IsActiveCamera",
+    "apkAddress": "0xde05378",
+    "signature": "bool Campus_Common_CampusSceneLayout__IsActiveCamera (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$WaitUntilActiveCameraAsync",
+    "apkAddress": "0xde05454",
+    "signature": "Cysharp_Threading_Tasks_UniTask_o Campus_Common_CampusSceneLayout__WaitUntilActiveCameraAsync (Campus_Common_CampusSceneLayout_o* __this, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x67483ac",
+        "callerAddress": "0x6747a18",
+        "callerNames": [
+          "Campus.OutGame.Dearness3DController.<CreateBackgroundAsync>d__11$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6d09754",
+        "callerAddress": "0x6d08d00",
+        "callerNames": [
+          "Campus.OutGame.ResearchEvent3DController.<CreateBackgroundAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x6e7f8a4",
+        "callerAddress": "0x6e7ee74",
+        "callerNames": [
+          "Campus.OutGame.StoryEvent3DController.<CreateBackgroundAsync>d__14$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f4347c",
+        "callerAddress": "0x7f4309c",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleInterval3DController.<InitializeAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f54c38",
+        "callerAddress": "0x7f545a8",
+        "callerNames": [
+          "Campus.InGame.Schedule.SchedulePresentScreenPresenter.<InitializeAsync>d__8$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7f89ee0",
+        "callerAddress": "0x7f89b00",
+        "callerNames": [
+          "Campus.InGame.Schedule.ScheduleShop3DController.<InitializeAsync>d__14$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$RegisterReset",
+    "apkAddress": "0xde05514",
+    "signature": "void Campus_Common_CampusSceneLayout__RegisterReset (Campus_Common_CampusSceneLayout_o* __this, System_Threading_CancellationToken_o ct, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$ResetActorLayoutPositions",
+    "apkAddress": "0xde055d0",
+    "signature": "void Campus_Common_CampusSceneLayout__ResetActorLayoutPositions (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$ResetActorLayoutPosition",
+    "apkAddress": "0xde056c0",
+    "signature": "void Campus_Common_CampusSceneLayout__ResetActorLayoutPosition (Campus_Common_CampusSceneLayout_o* __this, int32_t index, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x70c76c4",
+        "callerAddress": "0x70c73c0",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController$$SetActiveActor"
+        ]
+      },
+      {
+        "callAddress": "0xde059c4",
+        "callerAddress": "0xde05970",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$AddActorLayoutPosition"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$SetActorLayoutPosition",
+    "apkAddress": "0xde05774",
+    "signature": "void Campus_Common_CampusSceneLayout__SetActorLayoutPosition (Campus_Common_CampusSceneLayout_o* __this, int32_t index, float value, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$AddActorLayoutPosition",
+    "apkAddress": "0xde05970",
+    "signature": "void Campus_Common_CampusSceneLayout__AddActorLayoutPosition (Campus_Common_CampusSceneLayout_o* __this, int32_t index, float value, bool isFromCurrent, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xde05094",
+        "callerAddress": "0xde04f98",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$AddActorLayoutPosition"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$AddActorLayoutPosition",
+    "apkAddress": "0xde04f98",
+    "signature": "void Campus_Common_CampusSceneLayout__AddActorLayoutPosition (Campus_Common_CampusSceneLayout_o* __this, int32_t index, Campus_Common_ICampusActorController_o* actor, bool isFromCurrent, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0x70c7678",
+        "callerAddress": "0x70c73c0",
+        "callerNames": [
+          "Campus.OutGame.Costume.CostumeSelect3DController$$SetActiveActor"
+        ]
+      },
+      {
+        "callAddress": "0xde031c0",
+        "callerAddress": "0xde030cc",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$SetupActor"
+        ]
+      },
+      {
+        "callAddress": "0xde035fc",
+        "callerAddress": "0xde033d8",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$SetupActor"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$TryCreateActorLayoutPositionCache",
+    "apkAddress": "0xde0580c",
+    "signature": "void Campus_Common_CampusSceneLayout__TryCreateActorLayoutPositionCache (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": [
+      {
+        "callAddress": "0xde057b0",
+        "callerAddress": "0xde05774",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$SetActorLayoutPosition"
+        ]
+      },
+      {
+        "callAddress": "0xde059b4",
+        "callerAddress": "0xde05970",
+        "callerNames": [
+          "Campus.Common.CampusSceneLayout$$AddActorLayoutPosition"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$.ctor",
+    "apkAddress": "0xde05a28",
+    "signature": "void Campus_Common_CampusSceneLayout___ctor (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$<RegisterReset>b__28_0",
+    "apkAddress": "0xde05a30",
+    "signature": "void Campus_Common_CampusSceneLayout___RegisterReset_b__28_0 (Campus_Common_CampusSceneLayout_o* __this, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Campus.Common.CampusSceneLayout$$<ResetActorLayoutPositions>b__29_0",
+    "apkAddress": "0xde05ab8",
+    "signature": "void Campus_Common_CampusSceneLayout___ResetActorLayoutPositions_b__29_0 (Campus_Common_CampusSceneLayout_o* __this, UnityEngine_Transform_o* data, int32_t index, const MethodInfo* method);",
+    "callers": []
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, int>",
+    "apkAddress": "0x9233000",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_int__int_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233000* method);",
+    "callers": [
+      {
+        "callAddress": "0xdda8a9c",
+        "callerAddress": "0xdda8a10",
+        "callerNames": [
+          "Campus.MobAudience.MobAudiencePenlightController$$UpdateColorTableParams"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object>",
+    "apkAddress": "0x92330b8",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_int__object_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_92330B8* method);",
+    "callers": [
+      {
+        "callAddress": "0x8144600",
+        "callerAddress": "0x81445c4",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamGimmickModel$$get_HasGimmick"
+        ]
+      },
+      {
+        "callAddress": "0x81447d4",
+        "callerAddress": "0x81446b4",
+        "callerNames": [
+          "Campus.InGame.Exam.ExamGimmickModel$$GetNextEffectGroup"
+        ]
+      },
+      {
+        "callAddress": "0x9232990",
+        "callerAddress": "0x9232954",
+        "callerNames": [
+          "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<int, object>"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color>",
+    "apkAddress": "0x9233170",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_Int32Enum__Color_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233170* method);",
+    "callers": [
+      {
+        "callAddress": "0xddfe688",
+        "callerAddress": "0xddfe64c",
+        "callerNames": [
+          "Campus.Common.CampusColorManager$$get_ColorDictionary"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int>",
+    "apkAddress": "0x9233228",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_Int32Enum__int_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233228* method);",
+    "callers": [
+      {
+        "callAddress": "0x6b03920",
+        "callerAddress": "0x6b03774",
+        "callerNames": [
+          "Campus.OutGame.SupportCardAutoLogic$$FindCandidateCard"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object>",
+    "apkAddress": "0x92332e0",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_Int32Enum__object_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_92332E0* method);",
+    "callers": [
+      {
+        "callAddress": "0x85f830c",
+        "callerAddress": "0x85f81e4",
+        "callerNames": [
+          "Campus.OutGame.CostumeProduceSettingSheetModel$$SetProduceUnitOtherCharacterSettingFlag"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float>",
+    "apkAddress": "0x9233398",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_Int32Enum__float_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233398* method);",
+    "callers": [
+      {
+        "callAddress": "0x7264118",
+        "callerAddress": "0x7263e58",
+        "callerNames": [
+          "Campus.Common.InputKeyHandler$$LateUpdate"
+        ]
+      },
+      {
+        "callAddress": "0x9232a7c",
+        "callerAddress": "0x9232a40",
+        "callerNames": [
+          "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<Int32Enum, float>"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2>",
+    "apkAddress": "0x9233450",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_Int32Enum__Vector2_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233450* method);",
+    "callers": [
+      {
+        "callAddress": "0x9232b70",
+        "callerAddress": "0x9232b2c",
+        "callerNames": [
+          "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<Int32Enum, Vector2>"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>>",
+    "apkAddress": "0x9233508",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_object__ValueTuple_object__object__ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233508* method);",
+    "callers": [
+      {
+        "callAddress": "0x839a4f0",
+        "callerAddress": "0x839a380",
+        "callerNames": [
+          "Campus.OutGame.HomeEnvironmentHelper.<UpdateHomeBackgroundPrefabGroupAsync>d__6$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool>",
+    "apkAddress": "0x92335c0",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_object__bool_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_92335C0* method);",
+    "callers": [
+      {
+        "callAddress": "0x6ed543c",
+        "callerAddress": "0x6ed5030",
+        "callerNames": [
+          "Campus.OutGame.TourTopResponseExtensions$$GetAprilFoolStoryInfo"
+        ]
+      },
+      {
+        "callAddress": "0x9232c60",
+        "callerAddress": "0x9232c24",
+        "callerNames": [
+          "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<object, bool>"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object>",
+    "apkAddress": "0x9233678",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_object__object_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233678* method);",
+    "callers": [
+      {
+        "callAddress": "0x6afefe8",
+        "callerAddress": "0x6afeefc",
+        "callerNames": [
+          "Campus.OutGame.ProduceSupportCardDeckEditInfo.<GetSupportCardRankingAsync>d__24$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x7294810",
+        "callerAddress": "0x7294750",
+        "callerNames": [
+          "Campus.Common.CampusWebView$$PreloadHtmlString"
+        ]
+      },
+      {
+        "callAddress": "0x7294b44",
+        "callerAddress": "0x7294a5c",
+        "callerNames": [
+          "Campus.Common.CampusWebView$$Preload"
+        ]
+      },
+      {
+        "callAddress": "0x9232d50",
+        "callerAddress": "0x9232d14",
+        "callerNames": [
+          "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<object, object>"
+        ]
+      },
+      {
+        "callAddress": "0x9eae698",
+        "callerAddress": "0x9ead634",
+        "callerNames": [
+          "Campus.Common.Network.RestApiClient.<RequestAsync>d__18<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, VLActorPropFixConstraint>",
+    "apkAddress": "0x9233730",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_object__VLActorPropFixConstraint_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_9233730* method);",
+    "callers": [
+      {
+        "callAddress": "0xddde238",
+        "callerAddress": "0xddddc30",
+        "callerNames": [
+          "Campus.Common.CampusActorController$$SetupPropConstraintAnimation"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+    "apkAddress": "0x92337e8",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty_object__ExamDepthFirstSearchSimulator_ExamNodeTurnResult_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_92337E8* method);",
+    "callers": [
+      {
+        "callAddress": "0x7fb7b3c",
+        "callerAddress": "0x7fb7a00",
+        "callerNames": [
+          "Campus.InGame.Contest.ExamDepthFirstSearchSimulator$$GetSearchResult"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>",
+    "apkAddress": "0x92338a0",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__IsNullOrEmpty___Il2CppFullySharedGenericType____Il2CppFullySharedGenericType_ (System_Collections_Generic_IDictionary_TKey__TValue__o* self, const MethodInfo_92338A0* method);",
+    "callers": []
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<int, object>",
+    "apkAddress": "0x9232954",
+    "signature": "Il2CppObject* Qua_Extensions_IDictionaryExtensions__GetValueOrDefault_int__object_ (System_Collections_Generic_IDictionary_TKey__TValue__o* dictionary, int32_t key, Il2CppObject* defaultValue, const MethodInfo_9232954* method);",
+    "callers": [
+      {
+        "callAddress": "0x8366048",
+        "callerAddress": "0x8365fe4",
+        "callerNames": [
+          "Campus.OutGame.AuditionBattleResultHifScreenPresenter.<>c__DisplayClass15_0$$<ResultAnimationAsync>b__4"
+        ]
+      },
+      {
+        "callAddress": "0x8366064",
+        "callerAddress": "0x8365fe4",
+        "callerNames": [
+          "Campus.OutGame.AuditionBattleResultHifScreenPresenter.<>c__DisplayClass15_0$$<ResultAnimationAsync>b__4"
+        ]
+      },
+      {
+        "callAddress": "0x836d858",
+        "callerAddress": "0x836d320",
+        "callerNames": [
+          "Campus.OutGame.AuditionBattleResultHifScreenPresenter.<ResultAnimationAsync>d__15$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x836d870",
+        "callerAddress": "0x836d320",
+        "callerNames": [
+          "Campus.OutGame.AuditionBattleResultHifScreenPresenter.<ResultAnimationAsync>d__15$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<Int32Enum, float>",
+    "apkAddress": "0x9232a40",
+    "signature": "float Qua_Extensions_IDictionaryExtensions__GetValueOrDefault_Int32Enum__float_ (System_Collections_Generic_IDictionary_TKey__TValue__o* dictionary, int32_t key, float defaultValue, const MethodInfo_9232A40* method);",
+    "callers": [
+      {
+        "callAddress": "0x828ec88",
+        "callerAddress": "0x828eb48",
+        "callerNames": [
+          "Campus.Photography.PhotographyPhotoLookTargetView$$Set"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<Int32Enum, Vector2>",
+    "apkAddress": "0x9232b2c",
+    "signature": "UnityEngine_Vector2_o Qua_Extensions_IDictionaryExtensions__GetValueOrDefault_Int32Enum__Vector2_ (System_Collections_Generic_IDictionary_TKey__TValue__o* dictionary, int32_t key, UnityEngine_Vector2_o defaultValue, const MethodInfo_9232B2C* method);",
+    "callers": [
+      {
+        "callAddress": "0x7500928",
+        "callerAddress": "0x75008a8",
+        "callerNames": [
+          "Campus.Common.UI.MemoryTagIconView$$SetSize"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<object, bool>",
+    "apkAddress": "0x9232c24",
+    "signature": "bool Qua_Extensions_IDictionaryExtensions__GetValueOrDefault_object__bool_ (System_Collections_Generic_IDictionary_TKey__TValue__o* dictionary, Il2CppObject* key, bool defaultValue, const MethodInfo_9232C24* method);",
+    "callers": [
+      {
+        "callAddress": "0x6769d5c",
+        "callerAddress": "0x67696ac",
+        "callerNames": [
+          "Campus.OutGame.IdolDearnessTopScreenPresenter.<ChangeCharacterSheetAsync>d__9$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x676b4cc",
+        "callerAddress": "0x676b218",
+        "callerNames": [
+          "Campus.OutGame.IdolDearnessTopScreenPresenter.<InitializeAsync>d__2$$MoveNext"
+        ]
+      },
+      {
+        "callAddress": "0x676c15c",
+        "callerAddress": "0x676be9c",
+        "callerNames": [
+          "Campus.OutGame.IdolDearnessTopScreenPresenter.<OnCloseInAsync>d__7$$MoveNext"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<object, object>",
+    "apkAddress": "0x9232d14",
+    "signature": "Il2CppObject* Qua_Extensions_IDictionaryExtensions__GetValueOrDefault_object__object_ (System_Collections_Generic_IDictionary_TKey__TValue__o* dictionary, Il2CppObject* key, Il2CppObject* defaultValue, const MethodInfo_9232D14* method);",
+    "callers": [
+      {
+        "callAddress": "0x717deb4",
+        "callerAddress": "0x717de3c",
+        "callerNames": [
+          "Campus.Common.CampusDeepLinkRecord$$Decode"
+        ]
+      }
+    ]
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$GetValueOrDefault<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>",
+    "apkAddress": "0x9232e00",
+    "signature": "Unity_IL2CPP_Metadata___Il2CppFullySharedGenericType_o Qua_Extensions_IDictionaryExtensions__GetValueOrDefault___Il2CppFullySharedGenericType____Il2CppFullySharedGenericType_ (System_Collections_Generic_IDictionary_TKey__TValue__o* dictionary, Unity_IL2CPP_Metadata___Il2CppFullySharedGenericType_o key, Unity_IL2CPP_Metadata___Il2CppFullySharedGenericType_o defaultValue, const MethodInfo_9232E00* method);",
+    "callers": []
+  }
+]
