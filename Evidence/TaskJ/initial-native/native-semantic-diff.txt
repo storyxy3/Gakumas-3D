@@ -1,0 +1,397 @@
+
+== Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$CalculateBillboardMatrix layout
+
+
+== Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$Execute semantic
+--- game
++++ rebuilt
+@@ -3,9 +3,8 @@
+ cmp #0x1f
+ cmp #0
++mov #0x18
+ and #0xfffffffc
+ bl FN
+ mov #1
+-cmp #0
+-mov #0x18
+ mov #0xcccd
+ movk #0x3dcc, lsl #16
+
+== Campus.Crowd.BillboardMeshRenderSystem$$.ctor semantic
+--- game
++++ rebuilt
+@@ -53,5 +53,5 @@
+ mov #0x78
+ bl FN
+-mov #0x5a
++mov #0x5c
+ bl UnityEngine.Rendering.AttachmentDescriptor$$.ctor
+ mov #1
+
+== Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard semantic
+--- game
++++ rebuilt
+@@ -18,5 +18,5 @@
+ bl UnityEngine.Rendering.Universal.RenderingUtils$$ReAllocateIfNeeded
+ bl UnityEngine.RenderTextureDescriptor$$set_graphicsFormat
+-mov #0x5a
++mov #0x5c
+ ldr  STR _BillboardDepthBuffer
+ mov #1
+
+== Campus.Crowd.BillboardMeshRenderSystem$$CreateBillboardMesh semantic
+--- game
++++ rebuilt
+@@ -1,5 +1,5 @@
+ bl FN
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.A493ECF28E33055ADFE6BC8CA3E34E8C596165C57BE7A385BF0A924C74806A92
++ldr  META Field$<QAReconstructionImplementationDetails>.A493ECF28E33055ADFE6BC8CA3E34E8C596165C57BE7A385BF0A924C74806A92
+ bl FN
+ bl FN
+@@ -14,12 +14,15 @@
+ cmp #3
+ mov #6
+-ldr  META Field$<PrivateImplementationDetails>.A493ECF28E33055ADFE6BC8CA3E34E8C596165C57BE7A385BF0A924C74806A92
++ldr  META Field$<QAReconstructionImplementationDetails>.A493ECF28E33055ADFE6BC8CA3E34E8C596165C57BE7A385BF0A924C74806A92
+ bl FN
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
+ mov #4
+ bl FN
++bl FN
++mov #1
+ cmp #1
++bl FN
++mov #1
+ cmp #2
+-fmov #1.00000000
+ cmp #3
+ bl FN
+
+== Campus.Crowd.CrowdMeshRenderSystem$$.ctor semantic
+--- game
++++ rebuilt
+@@ -32,6 +32,6 @@
+ bl UnityEngine.Debug$$LogError
+ bl UnityEngine.Rendering.ProfilingScope$$Dispose
++bl UnityEngine.Mesh$$get_vertexCount
+ bl UnityEngine.Mesh$$GetVertexBufferStride
+-bl UnityEngine.Mesh$$get_vertexCount
+ bl FN
+ mov #0x29
+
+== Campus.Crowd.CrowdMeshRenderSystem$$ComputeSkinning layout
+
+
+== Campus.Crowd.CrowdMeshRenderSystem$$Render layout
+
+
+== Campus.Crowd.CrowdMeshRenderSystem$$SetMaxInstanceCounts semantic
+--- game
++++ rebuilt
+@@ -1 +0,0 @@
+-cmp #1
+
+== Campus.Crowd.CrowdRendererFeature$$OnCameraPreCull semantic
+--- game
++++ rebuilt
+@@ -32,10 +32,8 @@
+ bl FN
+ bl Campus.Crowd.CrowdSystem$$.ctor
+-bl UnityEngine.Object$$GetInstanceID
+ ldr  CrowdSystem>.set_Item()
+ bl System.Collections.Generic.Dictionary<int, object>$$set_Item
+ bl FN
+ bl Campus.Crowd.CrowdSystem$$.ctor
+-bl UnityEngine.Object$$GetInstanceID
+ ldr  CrowdSystem>.Add()
+ bl System.Collections.Generic.Dictionary<int, object>$$Add
+@@ -43,5 +41,4 @@
+ bl Campus.Crowd.CrowdSystem$$IsActive
+ bl Campus.Crowd.CrowdRenderingSetupData$$Update
+-bl Campus.Crowd.CrowdSystem$$SetDrawCounts
+ bl Campus.Crowd.CrowdSystem$$SetBillboardResolution
+ bl Campus.Crowd.CrowdSystem$$ScheduleJobs
+
+== Campus.Crowd.CrowdRenderingSetupData$$Update semantic
+--- game
++++ rebuilt
+@@ -8,4 +8,4 @@
+ bl UnityEngine.Component$$get_transform
+ bl UnityEngine.Transform$$get_forward
++fmov #1.00000000
+ bl Campus.Crowd.CrowdVolume$$get_Position
+-fmov #1.00000000
+
+== Campus.Crowd.CrowdSortJob$$Execute layout
+
+
+== Campus.Crowd.CrowdSortJob$$IsCulledOcclusionSphere layout
+
+
+== Campus.Crowd.CrowdSystem$$.ctor layout
+
+
+== Campus.Crowd.CrowdSystem$$BakeBillboardCrowd semantic
+--- game
++++ rebuilt
+@@ -1,2 +1 @@
+ b Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard
+-b Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard
+
+== Campus.Crowd.CrowdSystem$$ComputeCrowdSkinning layout
+
+
+== Campus.Crowd.CrowdSystem$$ComputePenlight layout
+
+
+== Campus.Crowd.CrowdSystem$$DisposeBillboardMeshRenderSystem layout
+
+
+== Campus.Crowd.CrowdSystem$$RenderBillboardCrowd layout
+
+
+== Campus.Crowd.CrowdSystem$$RenderCrowd layout
+
+
+== Campus.Crowd.CrowdSystem$$ScheduleJobs layout
+
+
+== Campus.Crowd.CrowdSystem$$SetBillboardResolution semantic
+--- game
++++ rebuilt
+@@ -1,4 +1,11 @@
+ cmp #1
+ cmp #1
++mov #0x10
++mov #0x20
+ cmp #2
+ cmp #3
++mov #0x40
++mov #0x80
++mov #0x20
++mov #0x40
++b Campus.Crowd.BillboardMeshRenderSystem$$SetBillboardResolution
+
+== Campus.Crowd.CrowdSystem$$SetDrawCounts semantic
+--- game
++++ rebuilt
+@@ -1 +0,0 @@
+-cmp #1
+
+== Campus.Crowd.CrowdSystem$$Setup layout
+
+
+== Campus.Crowd.CrowdSystem$$Setup layout
+
+
+== Campus.Crowd.CrowdSystem$$SetupRenderingParameter layout
+
+
+== Campus.Crowd.CrowdSystemData$$.ctor layout
+
+
+== Campus.Crowd.CrowdSystemData$$ComputeUpdatePerson semantic
+--- game
++++ rebuilt
+@@ -14,5 +14,4 @@
+ bl Unity.Collections.NativeReference<int>$$get_Value
+ cmp #1
+-tst #0xff
+ bl FN
+ bl UnityEngine.Rendering.CommandBuffer$$SetComputeIntParam
+@@ -20,5 +19,6 @@
+ bl Campus.Crowd.CrowdSystemData$$SetVisiblePersonCount
+ bl Campus.Crowd.CrowdSystemData$$SetPersonBuffers
++cmp #0
+ mov #1
+ mov #1
+-bl UnityEngine.Rendering.CommandBuffer$$DispatchCompute
++b UnityEngine.Rendering.CommandBuffer$$DispatchCompute
+
+== Campus.Crowd.CrowdSystemData$$EqualData layout
+
+
+== Campus.Crowd.CrowdSystemData$$InitializeBytesBuffer semantic
+--- game
++++ rebuilt
+@@ -1,12 +1,7 @@
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl FN
+ bl FN
+ mov #1
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl FN
+-bl System.Runtime.InteropServices.Marshal$$SizeOf<uint>
+ bl FN
+ mov #0x20
++mov #4
+ bl UnityEngine.GraphicsBuffer$$.ctor
+ b FN
+
+== Campus.Crowd.CrowdSystemData$$InitializedPenlightInfoBuffer semantic
+--- game
++++ rebuilt
+@@ -1,13 +1,8 @@
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+ bl FN
+ bl FN
+ mov #1
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl FN
+-bl System.Runtime.InteropServices.Marshal$$SizeOf<uint>
+ bl FN
+ mov #0x30
++mov #4
+ bl UnityEngine.GraphicsBuffer$$.ctor
+ bl FN
+@@ -19,4 +14,7 @@
+ bl Campus.Crowd.CrowdSystemData$$GetRandomIndex
+ cmp #0
++and #3
+ and #31
++and #0xc
++orr #1
+ b UnityEngine.GraphicsBuffer$$SetData
+
+== Campus.Crowd.CrowdSystemData$$UpdatePersonIndexBuffer semantic
+--- game
++++ rebuilt
+@@ -8,3 +8,3 @@
+ bl Unity.Collections.NativeReference<int>$$get_Value
+ ldr  MMETH Method$UnityEngine.GraphicsBuffer.SetData<uint>()
+-bl UnityEngine.GraphicsBuffer$$SetData<uint>
++b UnityEngine.GraphicsBuffer$$SetData<uint>
+
+== Campus.Crowd.CrowdUtility$$GetCellBounds layout
+
+
+== Campus.Crowd.PenlightMeshRenderSystem$$.ctor semantic
+--- game
++++ rebuilt
+@@ -22,4 +22,5 @@
+ bl Campus.Crowd.PenlightMeshRenderSystem$$InitializeAppendBuffer
+ bl FN
++bl UnityEngine.GraphicsBuffer$$Dispose
+ bl FN
+ ldr  STR 頂点バッファのレイアウトが違います
+
+== Campus.Crowd.PenlightMeshRenderSystem$$ComputeUpdatePenlight semantic
+--- game
++++ rebuilt
+@@ -1,5 +1,2 @@
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl FN
+-bl FN
+ bl FN
+ bl FN
+@@ -8,9 +5,8 @@
+ bl UnityEngine.Object$$op_Equality
+ cmp #1
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl System.Runtime.InteropServices.Marshal$$SizeOf<uint>
+-tst #0xff
++cmp #0
+ cmp #1
++mov #0x14
++mov #4
+ bl Campus.Crowd.PenlightMeshRenderSystem$$GetPenlightInfoBytesBuffer
+ bl UnityEngine.GraphicsBuffer$$SetCounterValue
+
+== Campus.Crowd.PenlightMeshRenderSystem$$Dispose semantic
+--- game
++++ rebuilt
+@@ -1,5 +1,4 @@
+ bl FN
+ ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<GraphicsBuffer>()
+-bl FN
+ bl FN
+ bl FN
+@@ -10,10 +9,9 @@
+ bl UnityEngine.GraphicsBuffer$$Dispose
+ bl FN
++ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<GraphicsBuffer>()
+ bl FN
+ bl FN
+ ldr  MMETH Method$Campus.Crowd.PenlightMeshRenderSystem.<>c.<gen>()
+ bl System.Action<object>$$.ctor
+-bl FN
+-ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<GraphicsBuffer>()
+ bl FN
+ bl Campus.Common.Extensions.EnumerableExtensions$$ForEach<object>
+
+== Campus.Crowd.PenlightMeshRenderSystem$$GetPenlightInfoBytesBuffer layout
+
+
+== Campus.Crowd.PenlightMeshRenderSystem$$InitializeAppendBuffer semantic
+--- game
++++ rebuilt
+@@ -1,6 +1,4 @@
++ldr  MMETH Method$Unity.Collections.NativeArray<uint>..ctor()
+ ldr  MMETH Method$UnityEngine.GraphicsBuffer.SetData<uint>()
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+ bl FN
+ bl FN
+@@ -10,14 +8,12 @@
+ bl FN
+ mov #1
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-ldr  MMETH Method$Unity.Collections.NativeArray<uint>..ctor()
+-bl FN
+-bl System.Runtime.InteropServices.Marshal$$SizeOf<uint>
+ bl FN
+ mov #0x48
++mov #4
+ bl UnityEngine.GraphicsBuffer$$.ctor
+ bl FN
+ bl FN
+ mov #0x44
++mov #4
+ bl UnityEngine.GraphicsBuffer$$.ctor
+ bl FN
+
+== Campus.Crowd.PenlightMeshRenderSystem$$InitializedArgsBuffer semantic
+--- game
++++ rebuilt
+@@ -1,13 +1,8 @@
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<int>()
+-bl FN
+ bl FN
+ bl FN
+ mov #1
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<int>()
+-bl FN
+-bl System.Runtime.InteropServices.Marshal$$SizeOf<int>
+ bl FN
+ mov #0x100
++mov #4
+ bl UnityEngine.GraphicsBuffer$$.ctor
+ bl FN
+
+== Campus.Crowd.PenlightMeshRenderSystem$$Render semantic
+--- game
++++ rebuilt
+@@ -1,5 +1,2 @@
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl FN
+ bl FN
+ bl FN
+@@ -25,7 +22,4 @@
+ bl FN
+ mov #-1
+-bl FN
+-ldr  MMETH Method$System.Runtime.InteropServices.Marshal.SizeOf<uint>()
+-bl System.Runtime.InteropServices.Marshal$$SizeOf<uint>
+ cmp #1
+ bl FN
+
+== Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$LookCamera layout
+

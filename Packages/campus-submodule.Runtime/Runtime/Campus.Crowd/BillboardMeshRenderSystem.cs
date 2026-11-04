@@ -65,7 +65,7 @@ namespace Campus.Crowd
                         storeAction = RenderBufferStoreAction.Store,
                         clearColor = Color.clear
                     },
-                    new AttachmentDescriptor(global::UnityEngine.Experimental.Rendering.GraphicsFormat.D24_UNorm_S8_UInt)
+                    new AttachmentDescriptor(global::UnityEngine.Experimental.Rendering.GraphicsFormat.D16_UNorm)
                     {
                         loadAction = RenderBufferLoadAction.Clear,
                         storeAction = RenderBufferStoreAction.DontCare
@@ -102,7 +102,7 @@ namespace Campus.Crowd
             var descriptor = new RenderTextureDescriptor(32 * _width, _height, global::UnityEngine.Experimental.Rendering.GraphicsFormat.R8G8B8A8_UNorm, 0);
             RenderingUtils.ReAllocateIfNeeded(ref _billboardColorBuffer, descriptor, FilterMode.Point, TextureWrapMode.Clamp, name: "_BillboardColorBuffer");
             descriptor.graphicsFormat = global::UnityEngine.Experimental.Rendering.GraphicsFormat.None;
-            descriptor.depthStencilFormat = global::UnityEngine.Experimental.Rendering.GraphicsFormat.D24_UNorm_S8_UInt;
+            descriptor.depthStencilFormat = global::UnityEngine.Experimental.Rendering.GraphicsFormat.D16_UNorm;
             RenderingUtils.ReAllocateIfNeeded(ref _billboardDepthBuffer, descriptor, FilterMode.Point, TextureWrapMode.Clamp, name: "_BillboardDepthBuffer");
             _crowdMesh = crowdMesh;
             _subMeshes = subMeshes;
