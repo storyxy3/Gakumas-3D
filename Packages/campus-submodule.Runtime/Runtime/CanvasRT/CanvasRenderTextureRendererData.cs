@@ -14,7 +14,7 @@ namespace CanvasRT
         public uint actorRenderingLayer;
         protected override ScriptableRenderer Create()
         {
-            return null;
+            return new CanvasRenderTextureRenderer(this);
         }
 
         public CanvasRenderTextureRendererData()

@@ -64,6 +64,7 @@ namespace Campus.Rendering
 
         public static void UpdateActorCommand(CommandBuffer cmd, VolumeStack stack, Transform cameraTransform)
         {
+            // TODO(qa-recon): APK volume-driven actor shader parameter upload remains unreconstructed.
         }
 
         public static void UpdateVirtualEffectCommand(CommandBuffer cmd, VolumeStack stack)

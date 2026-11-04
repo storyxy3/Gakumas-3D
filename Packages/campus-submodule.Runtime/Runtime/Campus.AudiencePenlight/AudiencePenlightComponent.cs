@@ -19,7 +19,7 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(bool);
+                return _hidePenlight;
             }
         }
 
@@ -27,7 +27,7 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(bool);
+                return false;
             }
         }
 
@@ -36,12 +36,13 @@ namespace Campus.AudiencePenlight
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CColorTable_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CColorTable_003Ek__BackingField = value;
             }
         }
 
@@ -49,7 +50,7 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(Vector2);
+                return Vector2.zero;
             }
         }
 
@@ -57,16 +58,22 @@ namespace Campus.AudiencePenlight
         {
             get
             {
-                return default(Vector2);
+                return Vector2.one;
             }
         }
 
         private void OnEnable()
         {
+            ValidatePenlightData();
         }
 
         private void ValidatePenlightData()
         {
+            if (global::Qua.Extensions.IEnumerableExtensions.IsNullOrEmpty(_penlightColorTable))
+                _penlightColorTable = new[] { Color.white };
+            ColorTable = new Vector4[8];
+            for (int i = 0; i < 8; i++)
+                ColorTable[i] = _penlightColorTable[i % _penlightColorTable.Length];
         }
 
         public AudiencePenlightComponent()

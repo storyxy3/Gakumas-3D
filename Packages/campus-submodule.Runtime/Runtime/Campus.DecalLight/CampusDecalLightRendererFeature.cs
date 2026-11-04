@@ -31,6 +31,7 @@ namespace Campus.DecalLight
 
         public override void Create()
         {
+            // TODO(qa-recon): APK decal renderer system lifecycle and entity/culling/draw dependencies remain unreconstructed.
         }
 
         protected override void Dispose(bool disposing)
