@@ -17,31 +17,44 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return _isActive;
             }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return drivenHandle.IsValid(stream);
         }
 
         public bool Resolve(AnimationStream stream)
         {
-            return default(bool);
+            if (!drivenHandle.IsResolved(stream))
+            {
+                drivenHandle.Resolve(stream);
+                if (!drivenHandle.IsResolved(stream)) return false;
+            }
+            return true;
         }
 
         public void Execute(AnimationStream stream)
         {
+            float angle = ActorAnimationQuartzDriverHumanoidUpLegBone.Calc(stream.AsHuman().GetMuscle(referenceHandle), ActorAnimationQuartzDriverHumanoidUpLegSetting.MuscleConvertCoefficient, coefficient);
+            var euler = ActorAnimationMathUtility.ToUnityEuler(drivenHandle.GetLocalRotation(stream));
+            euler.x = angle;
+            drivenHandle.SetLocalRotation(stream, ActorAnimationMathUtility.ToUnityQuaternion(euler));
         }
 
         public ActorAnimationQuartzDriverHumanoidUpLegJobBone(ActorAnimationQuartzDriverHumanoidUpLegSetting setting, Transform transform, Animator animator)
         {
-            this = default;
+            _isActive = true;
+            drivenHandle = ReadWriteTransformHandle.Bind(animator, transform);
+            referenceHandle = new MuscleHandle(setting.humanPartDof, ActorAnimationQuartzDriverHumanoidUpLegSetting.LegDof);
+            coefficient = setting.coefficient;
         }
 
         public void Update(ActorAnimationQuartzDriverHumanoidUpLegSetting setting)
         {
+            coefficient = setting.coefficient;
         }
     }
 }

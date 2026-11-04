@@ -17,7 +17,22 @@ namespace ActorAnimation
         public GameObject referenceBone;
         public ActorAnimationQuartzDriverSkirtSetting ConvertToUnity()
         {
-            return null;
+            if (referenceBone.name.Contains("Left"))
+            {
+                float minimum = -limitMax[1];
+                float maximum = -limitMin[1];
+                limitMin[1] = minimum;
+                limitMax[1] = maximum;
+                innerCoefficient[1] = -innerCoefficient[1];
+                outerCoefficient[1] = -outerCoefficient[1];
+            }
+            innerCoefficient[2] = -innerCoefficient[2];
+            outerCoefficient[2] = -outerCoefficient[2];
+            float minZ = -limitMax[2];
+            float maxZ = -limitMin[2];
+            limitMin[2] = minZ;
+            limitMax[2] = maxZ;
+            return this;
         }
 
         public ActorAnimationQuartzDriverSkirtSetting()

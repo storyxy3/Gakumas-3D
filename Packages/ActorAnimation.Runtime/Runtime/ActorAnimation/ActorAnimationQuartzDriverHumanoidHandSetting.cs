@@ -6,8 +6,8 @@ namespace ActorAnimation
     [Serializable]
     public class ActorAnimationQuartzDriverHumanoidHandSetting
     {
-        public static readonly ArmDof ArmDof;
-        public static readonly float MuscleConvertCoefficient;
+        public static readonly ArmDof ArmDof = (ArmDof)6;
+        public static readonly float MuscleConvertCoefficient = -66f;
         public HumanPartDof humanPartDof;
         public float coefficient;
         public ActorAnimationQuartzDriverHumanoidHandSetting()

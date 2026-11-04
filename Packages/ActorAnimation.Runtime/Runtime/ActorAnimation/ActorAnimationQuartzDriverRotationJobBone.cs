@@ -24,31 +24,58 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return _isActive;
             }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return referenceHandle.IsValid(stream) && drivenHandle.IsValid(stream);
         }
 
         public bool Resolve(AnimationStream stream)
         {
-            return default(bool);
+            if (!referenceHandle.IsResolved(stream))
+            {
+                referenceHandle.Resolve(stream);
+                if (!referenceHandle.IsResolved(stream)) return false;
+            }
+            if (!drivenHandle.IsResolved(stream))
+            {
+                drivenHandle.Resolve(stream);
+                if (!drivenHandle.IsResolved(stream)) return false;
+            }
+            return true;
         }
 
         public void Execute(AnimationStream stream)
         {
+            drivenHandle.SetLocalRotation(stream, ActorAnimationQuartzDriverRotationBone.Calc(referenceHandle.GetLocalRotation(stream), rotationOrder, coefficient, limitMin, limitMax, connectionAxis, decomposeType, composeType));
         }
 
         public ActorAnimationQuartzDriverRotationJobBone(ActorAnimationQuartzDriverRotationSetting setting, Transform transform, Animator animator)
         {
-            this = default;
+            _isActive = true;
+            drivenHandle = ReadWriteTransformHandle.Bind(animator, transform);
+            referenceHandle = ReadOnlyTransformHandle.Bind(animator, setting.referenceBone.transform);
+            rotationOrder = setting.rotationOrder;
+            limitMin = setting.limitMin;
+            limitMax = setting.limitMax;
+            coefficient = setting.coefficient;
+            connectionAxis = setting.connectionAxis;
+            decomposeType = setting.decomposeType;
+            composeType = setting.composeType;
         }
 
         public void Update(ActorAnimationQuartzDriverRotationSetting setting)
         {
+            rotationOrder = setting.rotationOrder;
+            limitMin = setting.limitMin;
+            limitMax = setting.limitMax;
+            coefficient = setting.coefficient;
+            connectionAxis = setting.connectionAxis;
+            decomposeType = setting.decomposeType;
+            composeType = setting.composeType;
         }
     }
 }

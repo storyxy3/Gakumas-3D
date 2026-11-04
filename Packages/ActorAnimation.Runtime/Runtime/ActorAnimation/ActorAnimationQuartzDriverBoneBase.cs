@@ -15,12 +15,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisDirty_003Ek__BackingField = value;
             }
         }
 
@@ -40,10 +41,12 @@ namespace ActorAnimation
 
         public void SetDirty()
         {
+            isDirty = true;
         }
 
         public void ResetDirty()
         {
+            isDirty = false;
         }
 
         public int GetHierarchyDepth()

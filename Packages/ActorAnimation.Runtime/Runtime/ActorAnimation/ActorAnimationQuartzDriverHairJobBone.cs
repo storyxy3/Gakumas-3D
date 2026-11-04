@@ -31,31 +31,78 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return _isActive;
             }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return referenceHeadHandle.IsValid(stream) && referenceNeckHandle.IsValid(stream) && drivenHandle.IsValid(stream);
         }
 
         public bool Resolve(AnimationStream stream)
         {
-            return default(bool);
+            if (!referenceHeadHandle.IsResolved(stream))
+            {
+                referenceHeadHandle.Resolve(stream);
+                if (!referenceHeadHandle.IsResolved(stream)) return false;
+            }
+            if (!referenceNeckHandle.IsResolved(stream))
+            {
+                referenceNeckHandle.Resolve(stream);
+                if (!referenceNeckHandle.IsResolved(stream)) return false;
+            }
+            if (!drivenHandle.IsResolved(stream))
+            {
+                drivenHandle.Resolve(stream);
+                if (!drivenHandle.IsResolved(stream)) return false;
+            }
+            return true;
         }
 
         public void Execute(AnimationStream stream)
         {
+            var result = ActorAnimationQuartzDriverHairBone.Calc(referenceHeadHandle.GetLocalRotation(stream), referenceNeckHandle.GetLocalRotation(stream), translateConnectionAxis, headTranslateCoefficient, headTranslateLimitMin, headTranslateLimitMax, rotationOrder, headRotateCoefficient, headRotateLimitMin, headRotateLimitMax, rotateConnectionAxis, neckRotateCoefficient, neckRotateLimitMin, neckRotateLimitMax, composeType);
+            drivenHandle.SetLocalRotation(stream, result.Item1);
+            drivenHandle.SetLocalPosition(stream, result.Item2);
         }
 
         public ActorAnimationQuartzDriverHairJobBone(ActorAnimationQuartzDriverHairSetting setting, Transform transform, Animator animator)
         {
-            this = default;
+            _isActive = true;
+            drivenHandle = ReadWriteTransformHandle.Bind(animator, transform);
+            referenceHeadHandle = ReadOnlyTransformHandle.Bind(animator, setting.referenceHeadBone.transform);
+            referenceNeckHandle = ReadOnlyTransformHandle.Bind(animator, setting.referenceNeckBone.transform);
+            translateConnectionAxis = setting.translateConnectionAxis;
+            headTranslateCoefficient = setting.headTranslateCoefficient;
+            headTranslateLimitMin = setting.headTranslateLimitMin;
+            headTranslateLimitMax = setting.headTranslateLimitMax;
+            rotationOrder = setting.rotationOrder;
+            headRotateCoefficient = setting.headRotateCoefficient;
+            headRotateLimitMin = setting.headRotateLimitMin;
+            headRotateLimitMax = setting.headRotateLimitMax;
+            rotateConnectionAxis = setting.rotateConnectionAxis;
+            neckRotateCoefficient = setting.neckRotateCoefficient;
+            neckRotateLimitMin = setting.neckRotateLimitMin;
+            neckRotateLimitMax = setting.neckRotateLimitMax;
+            composeType = setting.composeType;
         }
 
         public void Update(ActorAnimationQuartzDriverHairSetting setting)
         {
+            translateConnectionAxis = setting.translateConnectionAxis;
+            headTranslateCoefficient = setting.headTranslateCoefficient;
+            headTranslateLimitMin = setting.headTranslateLimitMin;
+            headTranslateLimitMax = setting.headTranslateLimitMax;
+            rotationOrder = setting.rotationOrder;
+            headRotateCoefficient = setting.headRotateCoefficient;
+            headRotateLimitMin = setting.headRotateLimitMin;
+            headRotateLimitMax = setting.headRotateLimitMax;
+            rotateConnectionAxis = setting.rotateConnectionAxis;
+            neckRotateCoefficient = setting.neckRotateCoefficient;
+            neckRotateLimitMin = setting.neckRotateLimitMin;
+            neckRotateLimitMax = setting.neckRotateLimitMax;
+            composeType = setting.composeType;
         }
     }
 }

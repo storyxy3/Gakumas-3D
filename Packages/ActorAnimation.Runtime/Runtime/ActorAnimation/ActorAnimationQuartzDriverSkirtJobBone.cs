@@ -24,31 +24,57 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return _isActive;
             }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return referenceHandle.IsValid(stream) && drivenHandle.IsValid(stream);
         }
 
         public bool Resolve(AnimationStream stream)
         {
-            return default(bool);
+            if (!referenceHandle.IsResolved(stream))
+            {
+                referenceHandle.Resolve(stream);
+                if (!referenceHandle.IsResolved(stream)) return false;
+            }
+            if (!drivenHandle.IsResolved(stream))
+            {
+                drivenHandle.Resolve(stream);
+                if (!drivenHandle.IsResolved(stream)) return false;
+            }
+            return true;
         }
 
         public void Execute(AnimationStream stream)
         {
+            drivenHandle.SetLocalRotation(stream, ActorAnimationQuartzDriverSkirtBone.Calc(initialReferenceRotation, referenceHandle.GetLocalRotation(stream), rotationOrder, innerCoefficient, outerCoefficient, limitMin, limitMax, connectionAxis));
         }
 
         public ActorAnimationQuartzDriverSkirtJobBone(ActorAnimationQuartzDriverSkirtSetting setting, Transform transform, Animator animator)
         {
-            this = default;
+            _isActive = true;
+            drivenHandle = ReadWriteTransformHandle.Bind(animator, transform);
+            referenceHandle = ReadOnlyTransformHandle.Bind(animator, setting.referenceBone.transform);
+            initialReferenceRotation = setting.referenceBone.transform.localRotation;
+            rotationOrder = setting.rotationOrder;
+            innerCoefficient = setting.innerCoefficient;
+            outerCoefficient = setting.outerCoefficient;
+            limitMin = setting.limitMin;
+            limitMax = setting.limitMax;
+            connectionAxis = setting.connectionAxis;
         }
 
         public void Update(ActorAnimationQuartzDriverSkirtSetting setting)
         {
+            rotationOrder = setting.rotationOrder;
+            innerCoefficient = setting.innerCoefficient;
+            outerCoefficient = setting.outerCoefficient;
+            limitMin = setting.limitMin;
+            limitMax = setting.limitMax;
+            connectionAxis = setting.connectionAxis;
         }
     }
 }

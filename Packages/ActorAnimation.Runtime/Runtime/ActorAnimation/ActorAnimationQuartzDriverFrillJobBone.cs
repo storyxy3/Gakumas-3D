@@ -26,31 +26,62 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return _isActive;
             }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return referenceHandle.IsValid(stream) && drivenHandle.IsValid(stream);
         }
 
         public bool Resolve(AnimationStream stream)
         {
-            return default(bool);
+            if (!referenceHandle.IsResolved(stream))
+            {
+                referenceHandle.Resolve(stream);
+                if (!referenceHandle.IsResolved(stream)) return false;
+            }
+            if (!drivenHandle.IsResolved(stream))
+            {
+                drivenHandle.Resolve(stream);
+                if (!drivenHandle.IsResolved(stream)) return false;
+            }
+            return true;
         }
 
         public void Execute(AnimationStream stream)
         {
+            drivenHandle.SetLocalRotation(stream, ActorAnimationQuartzDriverFrillBone.Calc(referenceHandle.GetLocalRotation(stream), rotationOrder, outerMinusCoefficient, innerCoefficient, outerPlusCoefficient, switchMinus, switchPlus, connectionAxis, decomposeType, composeType));
         }
 
         public ActorAnimationQuartzDriverFrillJobBone(ActorAnimationQuartzDriverFrillSetting setting, Transform transform, Animator animator)
         {
-            this = default;
+            _isActive = true;
+            drivenHandle = ReadWriteTransformHandle.Bind(animator, transform.transform);
+            referenceHandle = ReadOnlyTransformHandle.Bind(animator, setting.referenceBone.transform);
+            rotationOrder = setting.rotationOrder;
+            outerMinusCoefficient = setting.outerMinusCoefficient;
+            innerCoefficient = setting.innerCoefficient;
+            outerPlusCoefficient = setting.outerPlusCoefficient;
+            switchMinus = setting.switchMinus;
+            switchPlus = setting.switchPlus;
+            connectionAxis = setting.connectionAxis;
+            decomposeType = setting.decomposeType;
+            composeType = setting.composeType;
         }
 
         public void Update(ActorAnimationQuartzDriverFrillSetting setting)
         {
+            rotationOrder = setting.rotationOrder;
+            outerMinusCoefficient = setting.outerMinusCoefficient;
+            innerCoefficient = setting.innerCoefficient;
+            outerPlusCoefficient = setting.outerPlusCoefficient;
+            switchMinus = setting.switchMinus;
+            switchPlus = setting.switchPlus;
+            connectionAxis = setting.connectionAxis;
+            decomposeType = setting.decomposeType;
+            composeType = setting.composeType;
         }
     }
 }

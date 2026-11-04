@@ -89,7 +89,7 @@ namespace ActorAnimation
 
         public static float TripleCoefficientConversion(float degree, float outerMinusCoef, float innerCoef, float outerPlusCoef, float switchMinus, float switchPlus)
         {
-            return default(float);
+            return degree * innerCoef + math.min(degree - switchMinus, 0f) * outerMinusCoef + math.max(degree - switchPlus, 0f) * outerPlusCoef;
         }
 
         public static float3 ExchangeArrayFromAxisConnection(float inX, float inY, float inZ, math.RotationOrder axisConnection)
