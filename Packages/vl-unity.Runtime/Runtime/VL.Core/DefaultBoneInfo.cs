@@ -15,6 +15,13 @@ namespace VL.Core
         public Vector3 scale;
         public DefaultBoneInfo(string transformName, Transform transform)
         {
+            this.transform = transform;
+            name = transformName;
+            localPosition = transform.localPosition;
+            localRotation = transform.localRotation;
+            position = transform.position;
+            rotation = transform.rotation;
+            scale = transform.localScale;
         }
     }
 }

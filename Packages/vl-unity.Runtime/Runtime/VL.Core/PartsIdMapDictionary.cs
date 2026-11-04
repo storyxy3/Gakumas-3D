@@ -6,7 +6,7 @@ namespace VL.Core
     [Serializable]
     public class PartsIdMapDictionary : SerializedDictionary<string, VLActorModelParts>
     {
-        public PartsIdMapDictionary(int capacity)
+        public PartsIdMapDictionary(int capacity) : base(capacity)
         {
         }
     }

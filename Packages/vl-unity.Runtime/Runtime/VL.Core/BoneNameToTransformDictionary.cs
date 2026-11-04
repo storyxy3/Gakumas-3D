@@ -7,7 +7,7 @@ namespace VL.Core
     [Serializable]
     public class BoneNameToTransformDictionary : SerializedDictionary<string, Transform>
     {
-        public BoneNameToTransformDictionary(int capacity)
+        public BoneNameToTransformDictionary(int capacity) : base(capacity)
         {
         }
     }

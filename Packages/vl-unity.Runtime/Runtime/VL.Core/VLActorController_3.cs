@@ -19,7 +19,7 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _settings;
             }
         }
 
@@ -27,7 +27,7 @@ namespace VL.Core
         {
             get
             {
-                return default(TIDescriptor);
+                return _descriptor;
             }
         }
 
@@ -35,7 +35,7 @@ namespace VL.Core
         {
             get
             {
-                return null;
+                return _root;
             }
         }
 
@@ -123,12 +123,26 @@ namespace VL.Core
 
         public bool TryGetPartsFromAssetName(string assetName, out TModelParts parts)
         {
-            throw null;
+            if (_childMap != null)
+            {
+                bool result = _childMap.TryGetValue(assetName, out var value);
+                parts = value as TModelParts;
+                return result;
+            }
+            parts = null;
+            return false;
         }
 
         public bool TryGetPartsFromPartsId(string partsId, out TModelParts parts)
         {
-            throw null;
+            if (_partsIdMap != null)
+            {
+                bool result = _partsIdMap.TryGetValue(partsId, out var value);
+                parts = value as TModelParts;
+                return result;
+            }
+            parts = null;
+            return false;
         }
 
         protected void AddParts(TModelParts parts)

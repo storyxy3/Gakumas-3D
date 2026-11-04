@@ -86,10 +86,18 @@ namespace VL
 
         public void UpdateHeadPosition(Transform headTransform)
         {
+            _headPosition = headTransform != null ? headTransform.position : position;
         }
 
         protected void InitializeCollider()
         {
+            if (_collider == null)
+            {
+                _collider = GetComponent<VLActorCollider>();
+                if (_collider == null) _collider = gameObject.AddComponent<VLActorCollider>();
+            }
+            _collider.UpdateCollider(descriptor.colliderType, _humanBodyBoneMap, descriptor.colliderTrigger);
+            _collider.SetEnableColliders(true);
         }
 
         protected override void OnBuildModelSuccess()
@@ -98,10 +106,14 @@ namespace VL
 
         protected override void OnActorDestroy()
         {
+            if (this != null) UnityEngine.Rendering.CoreUtils.Destroy(_avatar);
         }
 
         protected override void LateUpdate()
         {
+            if (this == null) return;
+            base.LateUpdate();
+            UpdateMaterial();
         }
 
         public override void BuildModel(IEnumerable<GameObject> resources)
@@ -122,6 +134,46 @@ namespace VL
 
         private void UpdateMaterial()
         {
+            if (_children == null) return;
+            Matrix4x4 reflection = Matrix4x4.identity;
+            var head = GetHumanBodyBoneTransform(HumanBodyBones.Head);
+            Vector3 forward = Vector3.forward;
+            Vector3 up = Vector3.up;
+            if (head != null)
+            {
+                forward = head.forward;
+                up = head.up;
+                reflection = head.localToWorldMatrix * Matrix4x4.Scale(new Vector3(-1, 1, 1)) * head.worldToLocalMatrix * transform.localToWorldMatrix;
+            }
+            UpdateHeadPosition(head);
+            float alpha = _color.a;
+            foreach (var child in _children)
+                if (child.materials != null)
+                    foreach (var material in child.materials) material.InitializeProperty();
+            foreach (var child in _children)
+            {
+                if (child.materials == null) continue;
+                bool hair = child.partsId == VLActorDefine.PARTS_HAIR_NAME;
+                bool face = child.partsId == VLActorDefine.PARTS_FACE_NAME;
+                foreach (var material in child.materials)
+                {
+                    if (_colorChange) material.SetKeyword(ShaderKeywords._DITHER_ALPHA, alpha < 1);
+                    material.SetFloat(ShaderIDs._ActorIndex, _index);
+                    material.SetColor(ShaderIDs._MultiplyColor, _color);
+                    material.SetColor(ShaderIDs._MultiplyOutlineColor, _outlineColor);
+                    if (hair)
+                    {
+                        material.SetVector(ShaderIDs._HeadDirection, new Vector4(forward.x, forward.y, forward.z, 1));
+                        material.SetVector(ShaderIDs._HeadUpDirection, new Vector4(up.x, up.y, up.z, 1));
+                    }
+                    if (face) material.SetMatrix(ShaderIDs._HeadXAxisReflectionMatrix, reflection);
+                }
+            }
+            _colorChange = false;
+            OnUpdateMaterial();
+            foreach (var child in _children)
+                if (child.materials != null)
+                    foreach (var material in child.materials) material.ApplyProperty();
         }
 
         public void UpdateCameraDistance(Vector3 cameraPos)
@@ -149,12 +201,19 @@ namespace VL
 
         public bool TryGetHumanBodyBoneTransform(HumanBodyBones hbb, out Transform t)
         {
-            throw null;
+            if (_humanBodyBoneMap != null)
+            {
+                if (_humanBodyBoneMap.TryGetValue(hbb, out t)) return true;
+            }
+            else Debug.LogError("InitializeBonesを呼び出して下さい");
+            t = null;
+            return false;
         }
 
         public override Transform GetHumanBodyBoneTransform(HumanBodyBones hbb)
         {
-            return null;
+            TryGetHumanBodyBoneTransform(hbb, out var t);
+            return t;
         }
 
         public VLDefaultActorController()

@@ -6,7 +6,7 @@ namespace VL.Core
     [Serializable]
     public class InstanceIDToDefaultBoneInfoIndexDictionary : SerializedDictionary<int, int>
     {
-        public InstanceIDToDefaultBoneInfoIndexDictionary(int capacity)
+        public InstanceIDToDefaultBoneInfoIndexDictionary(int capacity) : base(capacity)
         {
         }
     }

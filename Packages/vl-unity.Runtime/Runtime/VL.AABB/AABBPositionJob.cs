@@ -12,6 +12,7 @@ namespace VL.AABB
         public NativeArray<Vector3> positions;
         public void Execute(int index, TransformAccess transform)
         {
+            positions[index] = transform.position;
         }
     }
 }

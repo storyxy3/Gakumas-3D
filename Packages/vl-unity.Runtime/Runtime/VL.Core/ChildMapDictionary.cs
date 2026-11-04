@@ -6,7 +6,7 @@ namespace VL.Core
     [Serializable]
     public class ChildMapDictionary : SerializedDictionary<string, VLActorModelParts>
     {
-        public ChildMapDictionary(int capacity)
+        public ChildMapDictionary(int capacity) : base(capacity)
         {
         }
     }

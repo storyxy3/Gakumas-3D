@@ -56,11 +56,12 @@ namespace VL
 
         private void OnDestroy()
         {
+            Dispose();
         }
 
         public int CompareTo(VLActorExtension other)
         {
-            return default(int);
+            return other.order - order;
         }
 
         public VLActorExtension()
