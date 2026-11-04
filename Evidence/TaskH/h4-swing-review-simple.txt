@@ -1,0 +1,112 @@
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation 0x65724c8 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream);
+native: 386 384
+--- game
++++ ref
+@@ -17,5 +17,4 @@
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$Set
+ bl FN
+ bl FN
+@@ -27,9 +26,7 @@
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$Set
+ fmov #1.00000000
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$IsValid
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetLocalScale
+-bl Unity.Mathematics.float3$$op_Implicit
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
+ bl Unity.Mathematics.float3$$op_Implicit
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones 0x6572b80 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o rootTx, ActorAnimation_ActorSwingAffineTransform_o hipsTx, Unity_Mathematics_float3_o heightCorrectionBonePosition, float heightCorrectionBoneScale);
+native: 297 267
+--- game
++++ ref
+@@ -7,5 +7,4 @@
+ bl FN
+ mov #1
+-fmov #1.00000000
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>
+@@ -13,9 +12,9 @@
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+ bl ActorAnimation.ActorSwingAffineTransform$$Inverse
++fmov #1.00000000
+ bl FN
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetGlobalTR
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+@@ -24,5 +23,4 @@
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum 0x6575f6c (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, int32_t dynamicType, Unity_Mathematics_float3_o boneAxis, float boneLength, ActorAnimation_ActorSwingAffineTransform_o selfTx, ActorAnimation_ActorSwingAffineTransform_o childTx, ActorAnimation_ActorSwingAffineTransform_o childDefaultTx, float stiffness, float pendulum, float pendulumRange);
+native: 234 223
+--- game
++++ ref
+@@ -17,5 +17,3 @@
+ mov #1
+ bl FN
+-mov #0x7f800000
+ fmov #1.00000000
+-and #0x7fffffff
+
+== ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider 0x6580ba8 (ActorAnimation_ActorSwingJobCollider_o* fromCollider, ActorAnimation_ActorSwingJobCollider_o* toCollider, bool enableSeatedDynamicCorrection, ActorAnimation_HitInfo_o* hitInfo);
+native: 95 78
+--- game
++++ ref
+@@ -3,14 +3,12 @@
+ cmp #3
+ cmp #2
+-bl FN
+ cmp #2
++cmp #3
++b FN
+ cmp #2
+-bl FN
+-bl FN
++cmp #3
+ mov #1
+-cmp #2
+-bl FN
+-mov #1
+-mov #1
+-bl FN
+-bl FN
++b FN
++b FN
++b FN
++b FN
+
+== ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule 0x658128c (ActorAnimation_ActorSwingJobCollider_o* capsuleA, ActorAnimation_ActorSwingJobCollider_o* capsuleB, ActorAnimation_HitInfo_o* hitInfo);
+native: 207 210
+--- game
++++ ref
+@@ -1,4 +1,10 @@
+ bl FN
+ mov #1
++mov #0xc5ac
++movk #0x3727, lsl #16
++mov #0x7f800000
++fmov #1.00000000
++and #0x7fffffff
++and #0x7fffffff
+ mov #0x7f800000
+ fmov #1.00000000
+@@ -10,8 +16,4 @@
+ and #0x7fffffff
+ fmov #1.00000000
+-mov #0x7f800000
+-and #0x7fffffff
+-and #0x7fffffff
+-fmov #1.00000000
+ bl FN
+ mov #1

@@ -5,6 +5,7 @@ namespace ActorAnimation
     using global::Campus.Common;
     using global::Unity.Burst;
     using global::Unity.Collections;
+    using global::Unity.Mathematics;
     using global::Unity.Collections.LowLevel.Unsafe;
     using global::UnityEngine;
     using global::UnityEngine.Animations;
@@ -441,7 +442,180 @@ namespace ActorAnimation
 
         public void CreateSwingSkeleton(Animator animator, IActorAnimationRigData rigData)
         {
-            // TODO(qa-recon): APK factory still needs dynamic-bone, breast, chain and seated-correction data reconstruction.
+            _swingJobSkeleton = new ActorAnimationSwingJobSkeleton
+            {
+                dynamicBones = new NativeList<ActorSwingJobDynamicBone>(64, Allocator.Persistent),
+                staticBones = new NativeList<ActorSwingJobStaticBone>(24, Allocator.Persistent),
+                breastBones = new NativeList<ActorSwingJobBreastBone>(1, Allocator.Persistent),
+                chainBones = new NativeList<ActorSwingJobChainBone>(64, Allocator.Persistent),
+                instanceIDToDynamicBoneIndex = new NativeHashMap<int, int>(64, Allocator.Persistent)
+            };
+            if (rigData.root != null)
+                _swingJobSkeleton.rootHandle = ReadOnlyTransformHandle.Bind(animator, rigData.root);
+            if (rigData.hips != null)
+            {
+                if (rigData is CampusActorAnimationRigData campusData)
+                {
+                    _swingJobSkeleton.hipsHandle = ReadOnlyTransformHandle.Bind(animator, campusData.move);
+                    _swingJobSkeleton.heightCorrectionBoneHandle = ReadOnlyTransformHandle.Bind(animator, campusData.hips);
+                }
+                else
+                {
+                    _swingJobSkeleton.hipsHandle = ReadOnlyTransformHandle.Bind(animator, rigData.hips);
+                    _swingJobSkeleton.heightCorrectionBoneHandle = ReadOnlyTransformHandle.Bind(animator, rigData.hips);
+                }
+            }
+            rigData.Sort();
+            int index = 0;
+            foreach (var bone in rigData.swingDynamicBones)
+                _swingJobSkeleton.instanceIDToDynamicBoneIndex.Add(bone.transform.GetInstanceID(), index++);
+            foreach (var bone in rigData.swingDynamicBones)
+            {
+                var transform = bone.transform;
+                var initial = bone.initialTransform;
+                var self = new ActorSwingAffineTransform(initial.position, initial.rotation);
+                var parent = transform.parent;
+                int parentIndex = -1;
+                if (parent != null && !_swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(parent.GetInstanceID(), out parentIndex)) parentIndex = -1;
+                int childIndex = -1;
+                if (transform.childCount > 0 && !_swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(transform.GetChild(0).GetInstanceID(), out childIndex)) childIndex = -1;
+                int referenceIndex = -1;
+                if (bone.referenceLimitInfo.bone != null && swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(bone.referenceLimitInfo.bone.transform.GetInstanceID(), out referenceIndex))
+                {
+                    swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(transform.GetInstanceID(), out int currentIndex);
+                    if (currentIndex <= referenceIndex) referenceIndex = -1;
+                }
+                _swingJobSkeleton.dynamicBones.Add(new ActorSwingJobDynamicBone
+                {
+                    active = true,
+                    resetType = bone.resetType,
+                    dynamicType = bone.dynamicType,
+                    collider = ActorSwingColliderUtility.ConvertJobCollider(bone),
+                    depth = bone.hierarchyDepth,
+                    parentIndex = parentIndex,
+                    childIndex = childIndex,
+                    driven = ReadWriteTransformHandle.Bind(animator, transform),
+                    parent = parentIndex == -1 ? default : ReadOnlyTransformHandle.Bind(animator, parent),
+                    boneAxis = math.length(initial.localPosition) > 0.00001f ? math.normalize(initial.localPosition) : new float3(1f, 0f, 0f),
+                    boneLength = math.length(initial.localPosition),
+                    localTx = new ActorSwingAffineTransform(initial.localPosition, initial.localRotation),
+                    selfTx = self,
+                    modelingLocalTx = new ActorSwingAffineTransform(bone.modelingTransform.localPosition, bone.modelingTransform.localRotation),
+                    damping = bone.damping,
+                    stiffness = bone.stiffness,
+                    spring = bone.spring,
+                    pendulum = bone.pendulum,
+                    pendulumRange = bone.pendulumRange,
+                    mass = bone.mass,
+                    axisAddXToY = bone.axisAddXToY,
+                    axisAddXToZ = bone.axisAddXToZ,
+                    wind = bone.wind,
+                    useWindGlobalForce = bone.useWindGlobalForce,
+                    limit = new ActorSwingJobLimitInfo(bone.limitInfo),
+                    referenceLimit = new ActorSwingJobReferenceLimitInfo(bone.referenceLimitInfo, bone.dynamicType == DynamicType.Swing ? referenceIndex : -1),
+                    rootWeight = bone.rootWeight,
+                    seatDynamicCorrection = bone.seatDynamicCorrection
+                });
+            }
+            foreach (var bone in rigData.swingStaticBones)
+            {
+                var transform = bone.transform;
+                var parent = transform.parent != null ? ReadOnlyTransformHandle.Bind(animator, transform.parent) : default;
+                _swingJobSkeleton.staticBones.Add(new ActorSwingJobStaticBone
+                {
+                    collider = ActorSwingColliderUtility.ConvertJobCollider(bone),
+                    driven = ReadOnlyTransformHandle.Bind(animator, transform),
+                    parent = parent
+                });
+            }
+            foreach (var bone in rigData.swingBreastBones)
+            {
+                _swingJobSkeleton.breastBones.Add(new ActorSwingJobBreastBone
+                {
+                    driven = ReadOnlyTransformHandle.Bind(animator, bone.transform),
+                    leftBreastSetting = new ActorSwingJobBreastBoneSetting(
+                        ReadOnlyTransformHandle.Bind(animator, bone.leftLowerArm), ReadWriteTransformHandle.Bind(animator, bone.leftBreast),
+                        new ActorSwingAffineTransform(bone.initialLeftTransform.localPosition, bone.initialLeftTransform.localRotation),
+                        new ActorSwingAffineTransform(bone.initialLeftEndTransform.localPosition, bone.initialLeftEndTransform.localRotation),
+                        new ActorSwingAffineTransform(bone.initialLeftEndTransform.position, bone.initialLeftEndTransform.rotation),
+                        new ActorSwingAffineTransform(bone.modelingLeftTransform.localPosition, bone.modelingLeftTransform.localRotation)),
+                    rightBreastSetting = new ActorSwingJobBreastBoneSetting(
+                        ReadOnlyTransformHandle.Bind(animator, bone.rightLowerArm), ReadWriteTransformHandle.Bind(animator, bone.rightBreast),
+                        new ActorSwingAffineTransform(bone.initialRightTransform.localPosition, bone.initialRightTransform.localRotation),
+                        new ActorSwingAffineTransform(bone.initialRightEndTransform.localPosition, bone.initialRightEndTransform.localRotation),
+                        new ActorSwingAffineTransform(bone.initialRightEndTransform.position, bone.initialRightEndTransform.rotation),
+                        new ActorSwingAffineTransform(bone.modelingRightTransform.localPosition, bone.modelingRightTransform.localRotation)),
+                    damping = bone.damping,
+                    stiffness = bone.stiffness,
+                    spring = bone.spring,
+                    pendulum = bone.pendulum,
+                    pendulumRange = bone.pendulumRange,
+                    average = bone.average,
+                    useArmCorrection = bone.useArmCorrection,
+                    limit = new ActorSwingJobLimitInfo(bone.limitInfo),
+                    rootWeight = bone.rootWeight
+                });
+                var up = CurveConversion.CurveToKeyframes(bone.upCurve, Allocator.Persistent);
+                var side = CurveConversion.CurveToKeyframes(bone.sideCurve, Allocator.Persistent);
+                _swingJobSkeleton.breastBoneCurve = new ActorSwingJobBreastBoneCurve
+                {
+                    upCurveData = new AnimationCurveData { length = up.Length },
+                    sideCurveData = new AnimationCurveData { length = side.Length },
+                    upKeyFrames = up,
+                    sideKeyFrames = side
+                };
+            }
+            foreach (var layer in rigData.swingChainLayers)
+            {
+                if (!layer.active) continue;
+                float loopLength = ActorAnimationSwingSkeletonCalcUtility.GetChainLoopLength(layer.bones, layer.around);
+                for (int i = 0; i < layer.bones.Count; i++)
+                {
+                    int next = i + 1;
+                    if (i == layer.bones.Count - 1)
+                    {
+                        if (!layer.around) break;
+                        next = 0;
+                    }
+                    var bone = layer.bones[i];
+                    var subBone = layer.bones[next];
+                    Vector3 scale = bone.transform.lossyScale;
+                    float minimumScale = math.min(scale.x, math.min(scale.y, scale.z));
+                    var collider = new ActorSwingJobCollider
+                    {
+                        active = 1,
+                        type = ActorSwingColliderType.Line,
+                        collisionMask = bone.dynamicCollider.collisionMask | subBone.dynamicCollider.collisionMask,
+                        float_A = minimumScale * layer.radius,
+                        float_B = minimumScale * layer.radius,
+                        scale = minimumScale
+                    };
+                    ActorSwingColliderUtility.UpdateCollider(ref collider, bone.initialTransform.position, subBone.initialTransform.position, quaternion.identity);
+                    int offset = 0;
+                    if (_swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(bone.transform.GetInstanceID(), out int boneIndex)
+                        && _swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(subBone.transform.GetInstanceID(), out int subIndex))
+                        offset = subIndex - boneIndex;
+                    _swingJobSkeleton.chainBones.Add(new ActorSwingJobChainBone
+                    {
+                        collider = collider,
+                        dynamicBoneIndex = boneIndex,
+                        chainOffsetIndex = offset,
+                        depth = layer.hierarchyDepth,
+                        smoothing = layer.smoothing,
+                        around = layer.around,
+                        initialLoopLength = loopLength
+                    });
+                }
+            }
+            _swingJobSkeleton.seatedDynamicCorrection = new ActorSwingJobSeatDynamicCorrection
+            {
+                leftUpLeg = ReadOnlyTransformHandle.Bind(animator, rigData.leftUpLeg),
+                leftLeg = ReadOnlyTransformHandle.Bind(animator, rigData.leftLeg),
+                leftFoot = ReadOnlyTransformHandle.Bind(animator, rigData.leftFoot),
+                rightUpLeg = ReadOnlyTransformHandle.Bind(animator, rigData.rightUpLeg),
+                rightLeg = ReadOnlyTransformHandle.Bind(animator, rigData.rightLeg),
+                rightFoot = ReadOnlyTransformHandle.Bind(animator, rigData.rightFoot)
+            };
         }
 
         public void CreateRoot(Animator animator, IActorAnimationRigData rigData)

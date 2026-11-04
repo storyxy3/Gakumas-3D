@@ -34,7 +34,9 @@ namespace ActorAnimation
 
         public static float3 GetRollPitchYawDegreeFromMuscleValue(float rotX, float rotY, float rotZ)
         {
-            return default(float3);
+            return new float3(rotX * ActorAnimationQuartzDriverHumanoidSleeveSetting.MuscleConvertCoefficientForeArmRollInOut,
+                rotY * ActorAnimationQuartzDriverHumanoidSleeveSetting.MuscleConvertCoefficientHandInOut,
+                rotZ * ActorAnimationQuartzDriverHumanoidSleeveSetting.MuscleConvertCoefficientHandDownUp);
         }
 
         public ActorAnimationQuartzDriverHumanoidSleeveBone()

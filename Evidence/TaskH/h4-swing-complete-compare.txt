@@ -1,0 +1,26 @@
+same 27  changed 25  only-in-game 0  re-signed 0
+  ~ 0.32 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones
+  ~ 0.32 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones
+  ~ 0.33 [semantic] ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule
+  ~ 0.35 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation
+  ~ 0.37 [layout] ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc
+  ~ 0.38 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection
+  ~ 0.41 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing
+  ~ 0.44 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones
+  ~ 0.44 [semantic] ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler
+  ~ 0.45 [semantic] ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision
+  ~ 0.47 [layout] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSmoothing
+  ~ 0.51 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider
+  ~ 0.51 [semantic] ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider
+  ~ 0.51 [semantic] ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton
+  ~ 0.63 [layout] ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereCapsule
+  ~ 0.69 [layout] ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSlide
+  ~ 0.80 [semantic] ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum
+  ~ 0.85 [layout] ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleCollider
+  ~ 0.90 [layout] ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereSphere
+  ~ 0.90 [layout] ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToSphere
+  ~ 0.94 [layout] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBoneLayer
+  ~ 0.95 [layout] ActorAnimation.ActorSwingCollisionUtility$$CheckFastCollision
+  ~ 0.98 [layout] ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBoneLayer
+  ~ 0.99 [layout] ActorAnimation.ActorSwingCollisionUtility$$CheckDynamicCollision
+  ~ 1.00 [layout] ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$ConvertToUnity

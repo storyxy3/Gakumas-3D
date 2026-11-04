@@ -1,0 +1,277 @@
+=== ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$GetRollPitchYawDegreeFromMuscleValue @ 0x655e738 (33 insns)
+    Unity_Mathematics_float3_o ActorAnimation_ActorAnimationQuartzDriverHumanoidSleeveBone__GetRollPitchYawDegreeFromMuscleValue (float rotX, float rotY, float rotZ, const MethodInfo* method);
+  0655e738  str     d10, [sp, #-0x30]!
+  0655e73c  stp     d9, d8, [sp, #8]
+  0655e740  str     x30, [sp, #0x18]
+  0655e744  stp     x20, x19, [sp, #0x20]
+  0655e748  fmov    s8, s2
+  0655e74c  fmov    s9, s1
+  0655e750  adrp    x20, #0xf400000
+  0655e754  fmov    s10, s0
+  0655e758  adrp    x19, #0xea6a000
+  0655e75c  ldrb    w8, [x20, #0x47f]
+  0655e760  ldr     x19, [x19, #0x4d0]  ; META ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting_TypeInfo
+  0655e764  tbnz    w8, #0, #0x655e77c
+  0655e768  adrp    x0, #0xea6a000
+  0655e76c  ldr     x0, [x0, #0x4d0]  ; META ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting_TypeInfo
+  0655e770  bl      #0x63cee78
+  0655e774  mov     w8, #1
+  0655e778  strb    w8, [x20, #0x47f]
+  0655e77c  ldr     x0, [x19]
+  0655e780  ldr     w8, [x0, #0xe4]
+  0655e784  cbnz    w8, #0x655e790
+  0655e788  bl      #0x63ceff4
+  0655e78c  ldr     x0, [x19]
+  0655e790  ldr     x8, [x0, #0xb8]
+  0655e794  ldp     x20, x19, [sp, #0x20]
+  0655e798  ldr     x30, [sp, #0x18]
+  0655e79c  ldp     s0, s1, [x8, #4]
+  0655e7a0  ldr     s2, [x8, #0xc]
+  0655e7a4  fmul    s2, s2, s8
+  0655e7a8  fmul    s1, s1, s9
+  0655e7ac  ldp     d9, d8, [sp, #8]
+  0655e7b0  fmul    s0, s0, s10
+  0655e7b4  ldr     d10, [sp], #0x30
+  0655e7b8  ret     
+=== ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc @ 0x655f440 (147 insns)
+    System_ValueTuple_quaternion__float3__o ActorAnimation_ActorAnimationQuartzDriverWaistBone__Calc (Unity_Mathematics_float3_o waistWorldPosition, Unity_Mathematics_quaternion_o waistWorldRotation, Unity_Mathematics_float3_o thighWorldPosition, float weight, const MethodInfo* method);
+  0655f440  sub     sp, sp, #0x70
+  0655f444  stp     d15, d14, [sp, #0x10]
+  0655f448  stp     d13, d12, [sp, #0x20]
+  0655f44c  stp     d11, d10, [sp, #0x30]
+  0655f450  stp     d9, d8, [sp, #0x40]
+  0655f454  stp     x30, x21, [sp, #0x50]
+  0655f458  stp     x20, x19, [sp, #0x60]
+  0655f45c  fmov    s12, s5
+  0655f460  fmov    s13, s4
+  0655f464  adrp    x20, #0xf400000
+  0655f468  fmov    s14, s3
+  0655f46c  fmov    s11, s0
+  0655f470  ldrb    w9, [x20, #0x482]
+  0655f474  ldp     s9, s8, [sp, #0x74]
+  0655f478  ldr     s10, [sp, #0x70]
+  0655f47c  ldr     s15, [sp, #0x80]
+  0655f480  mov     x19, x8
+  0655f484  stp     s6, s2, [sp, #4]
+  0655f488  str     s1, [sp, #0xc]
+  0655f48c  tbnz    w9, #0, #0x655f4a4
+  0655f490  adrp    x0, #0xea6a000
+  0655f494  ldr     x0, [x0, #0x4c8]  ; MMETH Method$System.ValueTuple<quaternion, float3>..ctor()
+  0655f498  bl      #0x63cee78
+  0655f49c  mov     w8, #1
+  0655f4a0  strb    w8, [x20, #0x482]
+  0655f4a4  adrp    x20, #0xf400000
+  0655f4a8  ldrb    w8, [x20, #0x4be]
+  0655f4ac  cbnz    w8, #0x655f4c4
+  0655f4b0  adrp    x0, #0xea67000
+  0655f4b4  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0655f4b8  bl      #0x63cee78
+  0655f4bc  mov     w8, #1
+  0655f4c0  strb    w8, [x20, #0x4be]
+  0655f4c4  adrp    x8, #0xea67000
+  0655f4c8  ldr     x8, [x8, #0x190]  ; META System.Math_TypeInfo
+  0655f4cc  ldr     x0, [x8]
+  0655f4d0  ldr     w8, [x0, #0xe4]
+  0655f4d4  cbnz    w8, #0x655f4dc
+  0655f4d8  bl      #0x63ceff4
+  0655f4dc  adrp    x21, #0xf400000
+  0655f4e0  adrp    x20, #0xea6a000
+  0655f4e4  ldrb    w8, [x21, #0x4c2]
+  0655f4e8  ldr     x20, [x20, #0x4c8]  ; MMETH Method$System.ValueTuple<quaternion, float3>..ctor()
+  0655f4ec  cbnz    w8, #0x655f504
+  0655f4f0  adrp    x0, #0xea67000
+  0655f4f4  ldr     x0, [x0, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0655f4f8  bl      #0x63cee78
+  0655f4fc  mov     w8, #1
+  0655f500  strb    w8, [x21, #0x4c2]
+  0655f504  ldp     s25, s24, [sp, #8]
+  0655f508  fsub    s0, s10, s11
+  0655f50c  fmul    s6, s12, s12
+  0655f510  ldr     s26, [sp, #4]
+  0655f514  adrp    x8, #0xea67000
+  0655f518  ldr     x8, [x8, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0655f51c  mov     x0, xzr
+  0655f520  fsub    s1, s9, s24
+  0655f524  fsub    s2, s8, s25
+  0655f528  fmul    s3, s0, s0
+  0655f52c  ldr     x8, [x8]
+  0655f530  ldr     x8, [x8, #0xb8]
+  0655f534  fmul    s4, s1, s1
+  0655f538  fmul    s5, s2, s2
+  0655f53c  fadd    s3, s3, s4
+  0655f540  fmul    s4, s14, s14
+  0655f544  fadd    s3, s5, s3
+  0655f548  fmul    s5, s13, s13
+  0655f54c  fsqrt   s3, s3
+  0655f550  fadd    s4, s4, s5
+  0655f554  fmul    s5, s26, s26
+  0655f558  fadd    s4, s6, s4
+  0655f55c  fadd    s4, s5, s4
+  0655f560  fmov    s5, #1.00000000
+  0655f564  fdiv    s4, s5, s4
+  0655f568  fdiv    s3, s5, s3
+  0655f56c  fnmul   s5, s14, s4
+  0655f570  fnmul   s6, s13, s4
+  0655f574  ldr     s13, [x8, #0x2c]
+  0655f578  fnmul   s17, s12, s4
+  0655f57c  fmul    s4, s26, s4
+  0655f580  fmul    s7, s1, s3
+  0655f584  fmul    s16, s0, s3
+  0655f588  fmul    s3, s2, s3
+  0655f58c  fmul    s2, s2, s15
+  0655f590  fmul    s18, s5, s7
+  0655f594  fmul    s19, s6, s16
+  0655f598  fmul    s20, s17, s16
+  0655f59c  fmul    s21, s5, s3
+  0655f5a0  fadd    s10, s25, s2
+  0655f5a4  fmul    s22, s6, s3
+  0655f5a8  fmul    s23, s17, s7
+  0655f5ac  fsub    s18, s18, s19
+  0655f5b0  fsub    s19, s20, s21
+  0655f5b4  fsub    s20, s22, s23
+  0655f5b8  fadd    s18, s18, s18
+  0655f5bc  fadd    s19, s19, s19
+  0655f5c0  fadd    s20, s20, s20
+  0655f5c4  fmul    s21, s4, s18
+  0655f5c8  fmul    s22, s5, s19
+  0655f5cc  fmul    s5, s5, s18
+  0655f5d0  fmul    s23, s6, s20
+  0655f5d4  fmul    s6, s6, s18
+  0655f5d8  fmul    s18, s4, s19
+  0655f5dc  fmul    s4, s4, s20
+  0655f5e0  fmul    s20, s17, s20
+  0655f5e4  fmul    s17, s17, s19
+  0655f5e8  fadd    s3, s3, s21
+  0655f5ec  fsub    s19, s22, s23
+  0655f5f0  fadd    s7, s7, s18
+  0655f5f4  fadd    s4, s16, s4
+  0655f5f8  fmul    s16, s1, s15
+  0655f5fc  fsub    s5, s20, s5
+  0655f600  fsub    s6, s6, s17
+  0655f604  fmul    s17, s0, s15
+  0655f608  fadd    s2, s3, s19
+  0655f60c  fadd    s9, s24, s16
+  0655f610  fadd    s1, s7, s5
+  0655f614  fadd    s0, s4, s6
+  0655f618  fadd    s8, s11, s17
+  0655f61c  ldp     s11, s12, [x8, #0x24]
+  0655f620  bl      #0xd70a1cc  ; -> Unity.Mathematics.float3$$op_Implicit
+  0655f624  fmov    s3, s0
+  0655f628  fmov    s4, s1
+  0655f62c  mov     x0, xzr
+  0655f630  fmov    s5, s2
+  0655f634  fmov    s0, s11
+  0655f638  fmov    s1, s12
+  0655f63c  fmov    s2, s13
+  0655f640  bl      #0xd9ca430  ; -> UnityEngine.Quaternion$$FromToRotation
+  0655f644  mov     x0, xzr
+  0655f648  bl      #0xd70d6ac  ; -> Unity.Mathematics.quaternion$$op_Implicit
+  0655f64c  stp     xzr, xzr, [x19, #8]
+  0655f650  ldr     x1, [x20]
+  0655f654  mov     x0, x19
+  0655f658  str     xzr, [x19]
+  0655f65c  fmov    s4, s8
+  0655f660  fmov    s5, s9
+  0655f664  fmov    s6, s10
+  0655f668  str     wzr, [x19, #0x18]
+  0655f66c  ldp     x20, x19, [sp, #0x60]
+  0655f670  ldp     x30, x21, [sp, #0x50]
+  0655f674  ldp     d9, d8, [sp, #0x40]
+  0655f678  ldp     d11, d10, [sp, #0x30]
+  0655f67c  ldp     d13, d12, [sp, #0x20]
+  0655f680  ldp     d15, d14, [sp, #0x10]
+  0655f684  add     sp, sp, #0x70
+  0655f688  b       #0xbeed200  ; -> System.ValueTuple<quaternion, float3>$$.ctor
+=== ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler @ 0x657cf78 (91 insns)
+    Unity_Mathematics_float3_o ActorAnimation_ActorAnimationMathUtility__ToUnityEuler (Unity_Mathematics_quaternion_o q, const MethodInfo* method);
+  0657cf78  stp     d13, d12, [sp, #-0x50]!
+  0657cf7c  stp     d11, d10, [sp, #0x10]
+  0657cf80  stp     d9, d8, [sp, #0x20]
+  0657cf84  str     x30, [sp, #0x30]
+  0657cf88  stp     x20, x19, [sp, #0x40]
+  0657cf8c  fmov    s8, s3
+  0657cf90  fmov    s9, s2
+  0657cf94  adrp    x19, #0xf400000
+  0657cf98  fmov    s10, s1
+  0657cf9c  fmov    s11, s0
+  0657cfa0  ldrb    w8, [x19, #0x4c0]
+  0657cfa4  cbnz    w8, #0x657cfbc
+  0657cfa8  adrp    x0, #0xea67000
+  0657cfac  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0657cfb0  bl      #0x63cee78
+  0657cfb4  mov     w8, #1
+  0657cfb8  strb    w8, [x19, #0x4c0]
+  0657cfbc  adrp    x19, #0xea67000
+  0657cfc0  ldr     x19, [x19, #0x190]  ; META System.Math_TypeInfo
+  0657cfc4  ldr     x0, [x19]
+  0657cfc8  ldr     w8, [x0, #0xe4]
+  0657cfcc  cbnz    w8, #0x657cfd4
+  0657cfd0  bl      #0x63ceff4
+  0657cfd4  adrp    x20, #0xf400000
+  0657cfd8  ldrb    w8, [x20, #0x4c1]
+  0657cfdc  cbnz    w8, #0x657cff4
+  0657cfe0  adrp    x0, #0xea67000
+  0657cfe4  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0657cfe8  bl      #0x63cee78
+  0657cfec  mov     w8, #1
+  0657cff0  strb    w8, [x20, #0x4c1]
+  0657cff4  ldr     x0, [x19]
+  0657cff8  ldr     w8, [x0, #0xe4]
+  0657cffc  cbnz    w8, #0x657d020
+  0657d000  bl      #0x63ceff4
+  0657d004  ldrb    w8, [x20, #0x4c1]
+  0657d008  cbnz    w8, #0x657d020
+  0657d00c  adrp    x0, #0xea67000
+  0657d010  ldr     x0, [x0, #0x190]  ; META System.Math_TypeInfo
+  0657d014  bl      #0x63cee78
+  0657d018  mov     w8, #1
+  0657d01c  strb    w8, [x20, #0x4c1]
+  0657d020  ldr     x0, [x19]
+  0657d024  ldr     w8, [x0, #0xe4]
+  0657d028  cbnz    w8, #0x657d030
+  0657d02c  bl      #0x63ceff4
+  0657d030  fmul    s0, s8, s8
+  0657d034  fmul    s1, s11, s11
+  0657d038  fmov    s7, #-2.00000000
+  0657d03c  fmul    s2, s10, s10
+  0657d040  fmul    s3, s8, s10
+  0657d044  fmul    s4, s9, s9
+  0657d048  fmul    s5, s11, s10
+  0657d04c  fmul    s6, s8, s9
+  0657d050  fsub    s0, s0, s1
+  0657d054  fmul    s1, s11, s9
+  0657d058  fadd    s1, s1, s3
+  0657d05c  fsub    s3, s0, s2
+  0657d060  fadd    s0, s2, s0
+  0657d064  fadd    s2, s5, s6
+  0657d068  fmul    s1, s1, s7
+  0657d06c  fadd    s3, s4, s3
+  0657d070  fsub    s12, s0, s4
+  0657d074  fmul    s13, s2, s7
+  0657d078  fcvt    d0, s1
+  0657d07c  fcvt    d1, s3
+  0657d080  bl      #0xe1b8470
+  0657d084  fmul    s1, s10, s9
+  0657d088  fmul    s2, s8, s11
+  0657d08c  fcvt    s8, d0
+  0657d090  fsub    s1, s1, s2
+  0657d094  fadd    s1, s1, s1
+  0657d098  fcvt    d0, s1
+  0657d09c  bl      #0xe1b8480
+  0657d0a0  fcvt    d2, s13
+  0657d0a4  fcvt    s9, d0
+  0657d0a8  fcvt    d1, s12
+  0657d0ac  fmov    d0, d2
+  0657d0b0  bl      #0xe1b8470
+  0657d0b4  adrp    x8, #0x276e000
+  0657d0b8  fcvt    s2, d0
+  0657d0bc  ldr     x30, [sp, #0x30]
+  0657d0c0  ldr     s3, [x8, #0x5d8]
+  0657d0c4  ldp     x20, x19, [sp, #0x40]
+  0657d0c8  ldp     d11, d10, [sp, #0x10]
+  0657d0cc  fmul    s0, s9, s3
+  0657d0d0  fmul    s1, s8, s3
+  0657d0d4  ldp     d9, d8, [sp, #0x20]
+  0657d0d8  fmul    s2, s2, s3
+  0657d0dc  ldp     d13, d12, [sp], #0x50
+  0657d0e0  ret     

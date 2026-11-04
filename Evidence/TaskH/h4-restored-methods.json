@@ -838,5 +838,317 @@
     "sourceStatus": "reconstructed",
     "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
     "reason": "Actual key conversion matches; APK raw boundary includes unnamed Euler and collision helper clones after its return."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ResetTime",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK native allocations, instance-ID index map, dynamic/static/breast/chain payloads, curve conversion and six seated-correction bindings restored. Object-initializer zeroing and local reuse differ. Native hipsHandle binds campus.move and heightCorrectionBoneHandle binds campus.hips. Reference indices are restricted to preceding swing bones."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$GetRollPitchYawDegreeFromMuscleValue",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "Waist Calc verified against APK. Quaternion inverse/normalization and tuple return differ only in native layout."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$get_rootHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$set_rootHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$get_hipsHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$set_hipsHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$get_heightCorrectionBoneHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$set_heightCorrectionBoneHandle",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$get_seatedDynamicCorrection",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$set_seatedDynamicCorrection",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$get_manageProperty",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$set_manageProperty",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK root/hips TR reads, height normalization and three solver stages restored. Affine Set helpers inline in the rebuilt caller and the unused local-scale float3 conversion is folded."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK inverse-root transforms and optional collider scaling restored. Affine constructors inline and reciprocal-scale materialization moves."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK alternating breast steps, arm correction curves, prewarm and rotation averaging restored. Root-cancellation and affine helpers inline. Constants, side selection and clamp operations are scheduled differently."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBoneLayer",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK layer traversal, fixed 0.01667 integration, prewarm stability, root cancellation, wind, seated correction, collisions and writeback restored. Affine/root helpers inline and prewarm branches are folded."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBone",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK root-cancellation, height scale and chain collision order restored. Root-cancellation helper inlines."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSmoothing",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK thigh/knee/foot interpolation restored. Six GetPosition calls and equivalent math operations have different scheduling."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBoneLayer",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK parent-frame Euler limits and reference min/max restored. Scalar conditional selection differs from the native vectorized boolean masks."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSlide",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK swing/slide stiffness and pendulum terms restored, including reciprocal multiplication. Compiler folds the range NaN guard after its positive threshold check."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleScalar",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleDirectionVector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScalePositionVector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleCollider",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$ConvertToUnity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$.cctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "Existing formula verified against APK. The rebuilt code reloads -2.0 between atan2 calls."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckDynamicCollision",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK segment-normal displacement and parent-length projections restored. NativeList metadata and dynamic-bone stride constants are scheduled differently."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckFastCollision",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK mask filtering, plane fast path and shape dispatch restored. Wrappers are tail-called instead of returning their result through a local."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToSphere",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToCapsule",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessCapsuleToSphere",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessCapsuleToCapsule",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToCirclePlane",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessCapsuleToCirclePlane",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereSphere",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereCapsule",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK segment projection, degenerate thresholds and radius interpolation restored. Clamp constants and checks move within equivalent branches."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSpherePlane",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsulePlane",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingSkeletonCalcUtility$$GetChainLoopLength",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
+    "reason": "APK body restored or verified. Native comparison is identical or differs in instruction/register layout. Sleeve copy constructor copies five coefficient vectors, referenceBone and composeType only. Chain-length overloads sum adjacent segments and optionally the closing segment."
   }
 ]

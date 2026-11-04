@@ -1,0 +1,192 @@
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum 0x6575f6c (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, int32_t dynamicType, Unity_Mathematics_float3_o boneAxis, float boneLength, ActorAnimation_ActorSwingAffineTransform_o selfTx, ActorAnimation_ActorSwingAffineTransform_o childTx, ActorAnimation_ActorSwingAffineTransform_o childDefaultTx, float stiffness, float pendulum, float pendulumRange);
+native: 234 224
+--- game
++++ ref
+@@ -17,5 +17,3 @@
+ mov #1
+ bl FN
+-mov #0x7f800000
+ fmov #1.00000000
+-and #0x7fffffff
+
+== ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler 0x657cf78 (Unity_Mathematics_quaternion_o q);
+native: 91 98
+--- game
++++ ref
+@@ -10,4 +10,5 @@
+ fmov #-2.00000000
+ bl FN
++fmov #-2.00000000
+ bl FN
+ bl FN
+
+== ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton 0xdd311b8 (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, ActorAnimation_IActorAnimationRigData_o* rigData);
+native: 2103 1889
+--- game
++++ ref
+@@ -68,9 +68,7 @@
+ bl FN
+ mov #1
++mov #0x230
++bl FN
+ mov #0x3bc
+-bl FN
+-mov #0x230
+-bl FN
+-mov #0x1d0
+ bl FN
+ mov #0x88
+@@ -104,4 +102,6 @@
+ mov #0x40
+ bl Unity.Collections.NativeHashMap<int, int>$$.ctor
++mov #0x230
++bl FN
+ mov #0x10
+ bl FN
+@@ -129,31 +129,30 @@
+ bl FN
+ ldr  MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.GetEnumerator()
++ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.MoveNext()
+ ldr  int>.Add()
+ ldr  MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
++ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
++bl System.Collections.Generic.List<object>$$GetEnumerator
++bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
++bl UnityEngine.Component$$get_transform
++bl UnityEngine.Object$$GetInstanceID
++bl Unity.Collections.NativeHashMap<int, int>$$Add
++bl System.Collections.Generic.List.Enumerator<object>$$Dispose
++mov #0xc
++bl FN
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.MoveNext()
+ bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+ bl UnityEngine.Component$$get_transform
+-bl UnityEngine.Object$$GetInstanceID
+-bl Unity.Collections.NativeHashMap<int, int>$$Add
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-mov #0xc
+-bl FN
+-bl System.Collections.Generic.List<object>$$GetEnumerator
+-orr #1
+-orr #3
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.MoveNext()
+-bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+-bl UnityEngine.Component$$get_transform
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl UnityEngine.Transform$$get_parent
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-bl UnityEngine.Object$$GetInstanceID
+-ldr  int>.TryGetValue()
+-bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+-tst #1
++mov #-1
++bl FN
++bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$GetInstanceID
++ldr  int>.TryGetValue()
++bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
++mov #-1
+ mov #-1
+ bl UnityEngine.Transform$$get_childCount
+@@ -163,26 +162,25 @@
+ ldr  int>.TryGetValue()
+ bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+-tst #1
+-mov #-1
+-mov #-1
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-bl FN
+-mov #0x230
+-bl FN
+-bl UnityEngine.Component$$get_transform
+-bl UnityEngine.Object$$GetInstanceID
+-ldr  int>.TryGetValue()
+-bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+-bl FN
+-mov #0x230
+-bl FN
+-bl UnityEngine.Component$$get_transform
+-bl UnityEngine.Object$$GetInstanceID
+-ldr  int>.TryGetValue()
+-bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+-mov #-1
+-mov #0x1d0
+-bl FN
++mov #-1
++mov #-1
++bl FN
++bl UnityEngine.Object$$op_Inequality
++bl FN
++mov #0x230
++bl FN
++bl UnityEngine.Component$$get_transform
++bl UnityEngine.Object$$GetInstanceID
++ldr  int>.TryGetValue()
++bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
++bl FN
++mov #0x230
++bl FN
++bl UnityEngine.Object$$GetInstanceID
++ldr  int>.TryGetValue()
++bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
++mov #-1
++mov #0x3bc
++bl FN
++mov #1
+ bl ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider
+ mov #0x58
+@@ -206,23 +204,17 @@
+ bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+-mov #-1
++cmp #0
+ bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+-bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+-mov #1
+-mov #0x58
+-bl FN
+-mov #0x1d0
+-bl FN
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>.Add()
+-ldr  MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+ bl Unity.Collections.NativeList<ActorSwingJobDynamicBone>$$Add
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
++ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.MoveNext()
++ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>.Add()
++mov #0xd
++bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingStaticBone>.GetEnumerator()
++bl System.Collections.Generic.List<object>$$GetEnumerator
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.MoveNext()
+-ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.Add()
+-mov #0xd
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List<ActorSwingStaticBone>.GetEnumerator()
+-bl System.Collections.Generic.List<object>$$GetEnumerator
+ bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+ bl UnityEngine.Component$$get_transform
+@@ -238,4 +230,5 @@
+ bl FN
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
++ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.Add()
+ bl Unity.Collections.NativeList<ActorSwingJobStaticBone>$$Add
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.Dispose()
+@@ -245,5 +238,4 @@
+ ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.MoveNext()
+ bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+ mov #0x1b8
+@@ -276,5 +268,4 @@
+ bl FN
+ bl ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+-ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>.Add()
+ bl Unity.Collections.NativeList<ActorSwingJobBreastBone>$$Add
+ mov #4

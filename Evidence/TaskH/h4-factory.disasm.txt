@@ -1,0 +1,2479 @@
+=== ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton @ 0xdd311b8 (2477 insns)
+    void ActorAnimation_CampusActorAnimationJob__CreateSwingSkeleton (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, ActorAnimation_IActorAnimationRigData_o* rigData, const MethodInfo* method);
+  0dd311b8  stp     d15, d14, [sp, #-0xa0]!
+  0dd311bc  stp     d13, d12, [sp, #0x10]
+  0dd311c0  stp     d11, d10, [sp, #0x20]
+  0dd311c4  stp     d9, d8, [sp, #0x30]
+  0dd311c8  stp     x29, x30, [sp, #0x40]
+  0dd311cc  stp     x28, x27, [sp, #0x50]
+  0dd311d0  stp     x26, x25, [sp, #0x60]
+  0dd311d4  stp     x24, x23, [sp, #0x70]
+  0dd311d8  stp     x22, x21, [sp, #0x80]
+  0dd311dc  stp     x20, x19, [sp, #0x90]
+  0dd311e0  sub     sp, sp, #1, lsl #12
+  0dd311e4  sub     sp, sp, #0x4b0
+  0dd311e8  str     x2, [sp, #0x30]
+  0dd311ec  adrp    x24, #0xea6a000
+  0dd311f0  adrp    x23, #0xea6a000
+  0dd311f4  str     x1, [sp, #0xa8]
+  0dd311f8  mrs     x8, tpidr_el0
+  0dd311fc  adrp    x25, #0xf43b000
+  0dd31200  str     x8, [sp, #0x20]
+  0dd31204  adrp    x22, #0xea6a000
+  0dd31208  adrp    x21, #0xea6a000
+  0dd3120c  ldr     x8, [x8, #0x28]
+  0dd31210  ldr     x24, [x24, #0x7a8]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>..ctor()
+  0dd31214  ldr     x23, [x23, #0x7b0]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>..ctor()
+  0dd31218  adrp    x20, #0xea6a000
+  0dd3121c  mov     x19, x0
+  0dd31220  add     x26, sp, #0xd60
+  0dd31224  str     x8, [sp, #0x14a8]
+  0dd31228  ldr     x22, [x22, #0x7b8]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>..ctor()
+  0dd3122c  ldrb    w8, [x25, #0x83a]
+  0dd31230  ldr     x21, [x21, #0x7c0]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobChainBone>..ctor()
+  0dd31234  ldr     x20, [x20, #0x7c8]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>..ctor()
+  0dd31238  tbnz    w8, #0, #0xdd313dc
+  0dd3123c  adrp    x0, #0xea6a000
+  0dd31240  ldr     x0, [x0, #0x7d0]  ; META ActorAnimation.ActorSwingAffineTransform_TypeInfo
+  0dd31244  bl      #0x63cee78
+  0dd31248  adrp    x0, #0xeb6e000
+  0dd3124c  ldr     x0, [x0, #0x720]  ; META ActorAnimation.CampusActorAnimationRigData_TypeInfo
+  0dd31250  bl      #0x63cee78
+  0dd31254  adrp    x0, #0xea6a000
+  0dd31258  ldr     x0, [x0, #0x7d8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.Dispose()
+  0dd3125c  bl      #0x63cee78
+  0dd31260  adrp    x0, #0xea6a000
+  0dd31264  ldr     x0, [x0, #0x7e0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.Dispose()
+  0dd31268  bl      #0x63cee78
+  0dd3126c  adrp    x0, #0xea6a000
+  0dd31270  ldr     x0, [x0, #0x3a8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ChainLayerInfo>.Dispose()
+  0dd31274  bl      #0x63cee78
+  0dd31278  adrp    x0, #0xea6a000
+  0dd3127c  ldr     x0, [x0, #0x368]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+  0dd31280  bl      #0x63cee78
+  0dd31284  adrp    x0, #0xea6a000
+  0dd31288  ldr     x0, [x0, #0x7e8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.MoveNext()
+  0dd3128c  bl      #0x63cee78
+  0dd31290  adrp    x0, #0xea6a000
+  0dd31294  ldr     x0, [x0, #0x7f0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.MoveNext()
+  0dd31298  bl      #0x63cee78
+  0dd3129c  adrp    x0, #0xea6a000
+  0dd312a0  ldr     x0, [x0, #0x3b0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ChainLayerInfo>.MoveNext()
+  0dd312a4  bl      #0x63cee78
+  0dd312a8  adrp    x0, #0xea6a000
+  0dd312ac  ldr     x0, [x0, #0x370]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.MoveNext()
+  0dd312b0  bl      #0x63cee78
+  0dd312b4  adrp    x0, #0xea6a000
+  0dd312b8  ldr     x0, [x0, #0x7f8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.get_Current()
+  0dd312bc  bl      #0x63cee78
+  0dd312c0  adrp    x0, #0xea6a000
+  0dd312c4  ldr     x0, [x0, #0x3b8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ChainLayerInfo>.get_Current()
+  0dd312c8  bl      #0x63cee78
+  0dd312cc  adrp    x0, #0xea6a000
+  0dd312d0  ldr     x0, [x0, #0x800]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.get_Current()
+  0dd312d4  bl      #0x63cee78
+  0dd312d8  adrp    x0, #0xea6a000
+  0dd312dc  ldr     x0, [x0, #0x378]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.get_Current()
+  0dd312e0  bl      #0x63cee78
+  0dd312e4  adrp    x0, #0xea6a000
+  0dd312e8  ldr     x0, [x0, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd312ec  bl      #0x63cee78
+  0dd312f0  adrp    x0, #0xea6a000
+  0dd312f4  ldr     x0, [x0, #0x3d8]  ; MMETH Method$System.Collections.Generic.List<ChainLayerInfo>.GetEnumerator()
+  0dd312f8  bl      #0x63cee78
+  0dd312fc  adrp    x0, #0xea6a000
+  0dd31300  ldr     x0, [x0, #0x808]  ; MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.GetEnumerator()
+  0dd31304  bl      #0x63cee78
+  0dd31308  adrp    x0, #0xea6a000
+  0dd3130c  ldr     x0, [x0, #0x810]  ; MMETH Method$System.Collections.Generic.List<ActorSwingStaticBone>.GetEnumerator()
+  0dd31310  bl      #0x63cee78
+  0dd31314  adrp    x0, #0xea6a000
+  0dd31318  ldr     x0, [x0, #0x390]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.GetEnumerator()
+  0dd3131c  bl      #0x63cee78
+  0dd31320  adrp    x0, #0xea6a000
+  0dd31324  ldr     x0, [x0, #0x508]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Count()
+  0dd31328  bl      #0x63cee78
+  0dd3132c  adrp    x0, #0xea6a000
+  0dd31330  ldr     x0, [x0, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd31334  bl      #0x63cee78
+  0dd31338  adrp    x0, #0xea6a000
+  0dd3133c  ldr     x0, [x0, #0x818]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.Add()
+  0dd31340  bl      #0x63cee78
+  0dd31344  adrp    x0, #0xea6a000
+  0dd31348  ldr     x0, [x0, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd3134c  bl      #0x63cee78
+  0dd31350  adrp    x0, #0xea6a000
+  0dd31354  ldr     x0, [x0, #0x7c8]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>..ctor()
+  0dd31358  bl      #0x63cee78
+  0dd3135c  adrp    x0, #0xea6a000
+  0dd31360  ldr     x0, [x0, #0x828]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>.Add()
+  0dd31364  bl      #0x63cee78
+  0dd31368  adrp    x0, #0xea6a000
+  0dd3136c  ldr     x0, [x0, #0x830]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobChainBone>.Add()
+  0dd31370  bl      #0x63cee78
+  0dd31374  adrp    x0, #0xea6a000
+  0dd31378  ldr     x0, [x0, #0x838]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>.Add()
+  0dd3137c  bl      #0x63cee78
+  0dd31380  adrp    x0, #0xea6a000
+  0dd31384  ldr     x0, [x0, #0x840]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.Add()
+  0dd31388  bl      #0x63cee78
+  0dd3138c  adrp    x0, #0xea6a000
+  0dd31390  ldr     x0, [x0, #0x7c0]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobChainBone>..ctor()
+  0dd31394  bl      #0x63cee78
+  0dd31398  adrp    x0, #0xea6a000
+  0dd3139c  ldr     x0, [x0, #0x7b0]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>..ctor()
+  0dd313a0  bl      #0x63cee78
+  0dd313a4  adrp    x0, #0xea6a000
+  0dd313a8  ldr     x0, [x0, #0x7b8]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>..ctor()
+  0dd313ac  bl      #0x63cee78
+  0dd313b0  adrp    x0, #0xea6a000
+  0dd313b4  ldr     x0, [x0, #0x7a8]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>..ctor()
+  0dd313b8  bl      #0x63cee78
+  0dd313bc  adrp    x0, #0xea65000
+  0dd313c0  ldr     x0, [x0, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd313c4  bl      #0x63cee78
+  0dd313c8  adrp    x0, #0xea6a000
+  0dd313cc  ldr     x0, [x0, #0x4b8]  ; META Unity.Mathematics.quaternion_TypeInfo
+  0dd313d0  bl      #0x63cee78
+  0dd313d4  mov     w8, #1
+  0dd313d8  strb    w8, [x25, #0x83a]
+  0dd313dc  add     x0, sp, #1, lsl #12
+  0dd313e0  mov     w1, wzr
+  0dd313e4  mov     w2, #0x3bc
+  0dd313e8  add     x0, x0, #0x90
+  0dd313ec  str     xzr, [sp, #0x1478]
+  0dd313f0  str     xzr, [sp, #0x1470]
+  0dd313f4  str     xzr, [sp, #0x1480]
+  0dd313f8  str     xzr, [sp, #0x1458]
+  0dd313fc  str     xzr, [sp, #0x1450]
+  0dd31400  str     wzr, [sp, #0x1468]
+  0dd31404  str     xzr, [sp, #0x1460]
+  0dd31408  str     wzr, [sp, #0x144c]
+  0dd3140c  bl      #0xe1b83e0
+  0dd31410  add     x0, sp, #0xe58
+  0dd31414  mov     w1, wzr
+  0dd31418  mov     w2, #0x230
+  0dd3141c  str     xzr, [sp, #0x1088]
+  0dd31420  bl      #0xe1b83e0
+  0dd31424  movi    v0.2d, #0000000000000000
+  0dd31428  add     x0, sp, #0xb40
+  0dd3142c  mov     w1, wzr
+  0dd31430  mov     w2, #0x1d0
+  0dd31434  str     wzr, [sp, #0xe54]
+  0dd31438  strh    wzr, [sp, #0xe50]
+  0dd3143c  strb    wzr, [sp, #0xe52]
+  0dd31440  str     q0, [sp, #0xdf0]
+  0dd31444  str     q0, [sp, #0xe00]
+  0dd31448  str     q0, [sp, #0xe10]
+  0dd3144c  str     q0, [sp, #0xe20]
+  0dd31450  str     q0, [sp, #0xe30]
+  0dd31454  str     xzr, [sp, #0xe40]
+  0dd31458  str     xzr, [sp, #0xde0]
+  0dd3145c  str     xzr, [sp, #0xdd0]
+  0dd31460  str     xzr, [sp, #0xdd8]
+  0dd31464  str     wzr, [sp, #0xde8]
+  0dd31468  str     xzr, [sp, #0xdb8]
+  0dd3146c  str     xzr, [sp, #0xdb0]
+  0dd31470  str     wzr, [sp, #0xdc8]
+  0dd31474  str     xzr, [sp, #0xdc0]
+  0dd31478  str     xzr, [sp, #0xd98]
+  0dd3147c  str     xzr, [sp, #0xd90]
+  0dd31480  str     wzr, [sp, #0xda8]
+  0dd31484  str     xzr, [sp, #0xda0]
+  0dd31488  stur    q0, [x26, #0x1c]
+  0dd3148c  str     q0, [sp, #0xd70]
+  0dd31490  str     q0, [sp, #0xd60]
+  0dd31494  str     xzr, [sp, #0xd50]
+  0dd31498  str     q0, [sp, #0xd40]
+  0dd3149c  str     q0, [sp, #0xd30]
+  0dd314a0  str     xzr, [sp, #0xd18]
+  0dd314a4  str     xzr, [sp, #0xd10]
+  0dd314a8  str     xzr, [sp, #0xd20]
+  0dd314ac  bl      #0xe1b83e0
+  0dd314b0  movi    v0.2d, #0000000000000000
+  0dd314b4  add     x8, sp, #1, lsl #12
+  0dd314b8  add     x0, sp, #0xa18
+  0dd314bc  add     x8, x8, #0x450
+  0dd314c0  mov     w1, wzr
+  0dd314c4  mov     w2, #0x88
+  0dd314c8  str     xzr, [sp, #0x1498]
+  0dd314cc  str     xzr, [sp, #0x1488]
+  0dd314d0  str     xzr, [sp, #0x1490]
+  0dd314d4  stur    xzr, [x8, #0x4f]
+  0dd314d8  str     xzr, [sp, #0xb30]
+  0dd314dc  str     xzr, [sp, #0xb28]
+  0dd314e0  str     wzr, [sp, #0xb38]
+  0dd314e4  str     q0, [sp, #0xae0]
+  0dd314e8  str     q0, [sp, #0xaf0]
+  0dd314ec  str     q0, [sp, #0xb00]
+  0dd314f0  str     q0, [sp, #0xb10]
+  0dd314f4  str     xzr, [sp, #0xac8]
+  0dd314f8  str     xzr, [sp, #0xac0]
+  0dd314fc  str     xzr, [sp, #0xad0]
+  0dd31500  str     xzr, [sp, #0xaa8]
+  0dd31504  str     xzr, [sp, #0xaa0]
+  0dd31508  str     xzr, [sp, #0xab0]
+  0dd3150c  bl      #0xe1b83e0
+  0dd31510  add     x0, sp, #0x848
+  0dd31514  mov     w1, wzr
+  0dd31518  mov     w2, #0x1b8
+  0dd3151c  str     xzr, [sp, #0xa08]
+  0dd31520  str     xzr, [sp, #0xa00]
+  0dd31524  str     xzr, [sp, #0xa10]
+  0dd31528  bl      #0xe1b83e0
+  0dd3152c  movi    v0.2d, #0000000000000000
+  0dd31530  add     x0, sp, #0x73c
+  0dd31534  mov     w1, wzr
+  0dd31538  mov     w2, #0x8c
+  0dd3153c  str     xzr, [sp, #0x838]
+  0dd31540  str     xzr, [sp, #0x830]
+  0dd31544  str     xzr, [sp, #0x840]
+  0dd31548  str     xzr, [sp, #0x820]
+  0dd3154c  str     q0, [sp, #0x810]
+  0dd31550  str     q0, [sp, #0x800]
+  0dd31554  str     q0, [sp, #0x7f0]
+  0dd31558  str     q0, [sp, #0x7e0]
+  0dd3155c  str     q0, [sp, #0x7d0]
+  0dd31560  str     xzr, [sp, #0x7c8]
+  0dd31564  bl      #0xe1b83e0
+  0dd31568  add     x0, sp, #0x6a8
+  0dd3156c  mov     w1, wzr
+  0dd31570  mov     w2, #0x94
+  0dd31574  bl      #0xe1b83e0
+  0dd31578  add     x0, x19, #0xd0
+  0dd3157c  mov     w1, wzr
+  0dd31580  mov     w2, #0x230
+  0dd31584  str     xzr, [sp, #0x698]
+  0dd31588  str     xzr, [sp, #0x690]
+  0dd3158c  str     xzr, [sp, #0x6a0]
+  0dd31590  str     wzr, [sp, #0x688]
+  0dd31594  str     xzr, [sp, #0x680]
+  0dd31598  bl      #0xe1b83e0
+  0dd3159c  mov     w0, #4
+  0dd315a0  mov     x1, xzr
+  0dd315a4  bl      #0xd702838  ; -> Unity.Collections.AllocatorManager.AllocatorHandle$$op_Implicit
+  0dd315a8  ldr     x3, [x24]
+  0dd315ac  mov     w2, w0
+  0dd315b0  add     x0, sp, #0x408
+  0dd315b4  mov     w1, #0x40
+  0dd315b8  str     xzr, [sp, #0x408]
+  0dd315bc  bl      #0xb325710  ; -> Unity.Collections.NativeList<ActorSwingJobDynamicBone>$$.ctor
+  0dd315c0  ldr     x8, [sp, #0x408]
+  0dd315c4  mov     w0, #4
+  0dd315c8  mov     x1, xzr
+  0dd315cc  str     x8, [x19, #0x128]
+  0dd315d0  bl      #0xd702838  ; -> Unity.Collections.AllocatorManager.AllocatorHandle$$op_Implicit
+  0dd315d4  ldr     x3, [x23]
+  0dd315d8  mov     w2, w0
+  0dd315dc  add     x0, sp, #0x170
+  0dd315e0  mov     w1, #0x18
+  0dd315e4  str     xzr, [sp, #0x170]
+  0dd315e8  bl      #0xb325d34  ; -> Unity.Collections.NativeList<ActorSwingJobStaticBone>$$.ctor
+  0dd315ec  ldr     x8, [sp, #0x170]
+  0dd315f0  mov     w0, #4
+  0dd315f4  mov     x1, xzr
+  0dd315f8  str     x8, [x19, #0x130]
+  0dd315fc  bl      #0xd702838  ; -> Unity.Collections.AllocatorManager.AllocatorHandle$$op_Implicit
+  0dd31600  ldr     x3, [x22]
+  0dd31604  mov     w2, w0
+  0dd31608  add     x0, sp, #0x3e8
+  0dd3160c  mov     w1, #1
+  0dd31610  str     xzr, [sp, #0x3e8]
+  0dd31614  bl      #0xb324ad0  ; -> Unity.Collections.NativeList<ActorSwingJobBreastBone>$$.ctor
+  0dd31618  movi    v0.2d, #0000000000000000
+  0dd3161c  ldr     x8, [sp, #0x3e8]
+  0dd31620  mov     w0, #4
+  0dd31624  mov     x1, xzr
+  0dd31628  str     x8, [x19, #0x138]
+  0dd3162c  stp     q0, q0, [x19, #0x140]
+  0dd31630  stp     q0, q0, [x19, #0x160]
+  0dd31634  bl      #0xd702838  ; -> Unity.Collections.AllocatorManager.AllocatorHandle$$op_Implicit
+  0dd31638  ldr     x3, [x21]
+  0dd3163c  mov     w2, w0
+  0dd31640  add     x0, sp, #0x3a0
+  0dd31644  mov     w1, #0x40
+  0dd31648  str     xzr, [sp, #0x3a0]
+  0dd3164c  bl      #0xb3250f4  ; -> Unity.Collections.NativeList<ActorSwingJobChainBone>$$.ctor
+  0dd31650  ldr     x8, [sp, #0x3a0]
+  0dd31654  mov     w0, #4
+  0dd31658  mov     x1, xzr
+  0dd3165c  str     x8, [x19, #0x180]
+  0dd31660  bl      #0xd702838  ; -> Unity.Collections.AllocatorManager.AllocatorHandle$$op_Implicit
+  0dd31664  ldr     x3, [x20]
+  0dd31668  mov     w2, w0
+  0dd3166c  add     x0, sp, #0x380
+  0dd31670  mov     w1, #0x40
+  0dd31674  str     xzr, [sp, #0x380]
+  0dd31678  bl      #0xb323bb8  ; -> Unity.Collections.NativeHashMap<int, int>$$.ctor
+  0dd3167c  ldr     x8, [sp, #0x380]
+  0dd31680  ldr     x12, [sp, #0x30]
+  0dd31684  str     x8, [x19, #0x188]
+  0dd31688  cbz     x12, #0xdd3348c
+  0dd3168c  adrp    x10, #0xea6a000
+  0dd31690  ldr     x8, [x12]
+  0dd31694  adrp    x25, #0xea65000
+  0dd31698  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd3169c  ldrh    w9, [x8, #0x12e]
+  0dd316a0  ldr     x25, [x25, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd316a4  ldr     x1, [x10]
+  0dd316a8  cbz     x9, #0xdd316cc
+  0dd316ac  ldr     x10, [x8, #0xb0]
+  0dd316b0  add     x10, x10, #8
+  0dd316b4  ldur    x11, [x10, #-8]
+  0dd316b8  cmp     x11, x1
+  0dd316bc  b.eq    #0xdd316e0
+  0dd316c0  subs    x9, x9, #1
+  0dd316c4  add     x10, x10, #0x10
+  0dd316c8  b.ne    #0xdd316b4
+  0dd316cc  mov     x0, x12
+  0dd316d0  mov     w2, #0x10
+  0dd316d4  bl      #0x6408234
+  0dd316d8  ldr     x12, [sp, #0x30]
+  0dd316dc  b       #0xdd316f0
+  0dd316e0  ldr     w9, [x10]
+  0dd316e4  add     w9, w9, #0x10
+  0dd316e8  add     x8, x8, w9, sxtw #4
+  0dd316ec  add     x0, x8, #0x138
+  0dd316f0  ldp     x8, x1, [x0]
+  0dd316f4  mov     x0, x12
+  0dd316f8  blr     x8
+  0dd316fc  ldr     x8, [x25]
+  0dd31700  mov     x22, x0
+  0dd31704  ldr     w9, [x8, #0xe4]
+  0dd31708  cbnz    w9, #0xdd31714
+  0dd3170c  mov     x0, x8
+  0dd31710  bl      #0x63ceff4
+  0dd31714  mov     x0, x22
+  0dd31718  mov     x1, xzr
+  0dd3171c  mov     x2, xzr
+  0dd31720  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd31724  ldr     x20, [sp, #0xa8]
+  0dd31728  tbz     w0, #0, #0xdd317c0
+  0dd3172c  ldr     x12, [sp, #0x30]
+  0dd31730  adrp    x10, #0xea6a000
+  0dd31734  ldr     x8, [x12]
+  0dd31738  ldrh    w9, [x8, #0x12e]
+  0dd3173c  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd31740  ldr     x1, [x10]
+  0dd31744  cbz     x9, #0xdd31768
+  0dd31748  ldr     x10, [x8, #0xb0]
+  0dd3174c  add     x10, x10, #8
+  0dd31750  ldur    x11, [x10, #-8]
+  0dd31754  cmp     x11, x1
+  0dd31758  b.eq    #0xdd3177c
+  0dd3175c  subs    x9, x9, #1
+  0dd31760  add     x10, x10, #0x10
+  0dd31764  b.ne    #0xdd31750
+  0dd31768  mov     x0, x12
+  0dd3176c  mov     w2, #0x10
+  0dd31770  bl      #0x6408234
+  0dd31774  ldr     x12, [sp, #0x30]
+  0dd31778  b       #0xdd3178c
+  0dd3177c  ldr     w9, [x10]
+  0dd31780  add     w9, w9, #0x10
+  0dd31784  add     x8, x8, w9, sxtw #4
+  0dd31788  add     x0, x8, #0x138
+  0dd3178c  ldp     x8, x1, [x0]
+  0dd31790  mov     x0, x12
+  0dd31794  blr     x8
+  0dd31798  mov     x1, x0
+  0dd3179c  add     x8, sp, #0x668
+  0dd317a0  mov     x0, x20
+  0dd317a4  mov     x2, xzr
+  0dd317a8  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd317ac  add     x8, sp, #0x638
+  0dd317b0  ldr     q0, [x8, #0x30]
+  0dd317b4  ldr     x8, [sp, #0x678]
+  0dd317b8  str     q0, [x19, #0xe0]
+  0dd317bc  str     x8, [x19, #0xf0]
+  0dd317c0  ldr     x12, [sp, #0x30]
+  0dd317c4  adrp    x10, #0xea6a000
+  0dd317c8  ldr     x8, [x12]
+  0dd317cc  ldrh    w9, [x8, #0x12e]
+  0dd317d0  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd317d4  ldr     x1, [x10]
+  0dd317d8  cbz     x9, #0xdd317fc
+  0dd317dc  ldr     x10, [x8, #0xb0]
+  0dd317e0  add     x10, x10, #8
+  0dd317e4  ldur    x11, [x10, #-8]
+  0dd317e8  cmp     x11, x1
+  0dd317ec  b.eq    #0xdd31810
+  0dd317f0  subs    x9, x9, #1
+  0dd317f4  add     x10, x10, #0x10
+  0dd317f8  b.ne    #0xdd317e4
+  0dd317fc  mov     x0, x12
+  0dd31800  mov     w2, #0x12
+  0dd31804  bl      #0x6408234
+  0dd31808  ldr     x12, [sp, #0x30]
+  0dd3180c  b       #0xdd31820
+  0dd31810  ldr     w9, [x10]
+  0dd31814  add     w9, w9, #0x12
+  0dd31818  add     x8, x8, w9, sxtw #4
+  0dd3181c  add     x0, x8, #0x138
+  0dd31820  ldp     x8, x1, [x0]
+  0dd31824  mov     x0, x12
+  0dd31828  blr     x8
+  0dd3182c  ldr     x8, [x25]
+  0dd31830  mov     x22, x0
+  0dd31834  ldr     w9, [x8, #0xe4]
+  0dd31838  cbnz    w9, #0xdd31844
+  0dd3183c  mov     x0, x8
+  0dd31840  bl      #0x63ceff4
+  0dd31844  mov     x0, x22
+  0dd31848  mov     x1, xzr
+  0dd3184c  mov     x2, xzr
+  0dd31850  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd31854  tbz     w0, #0, #0xdd319f0
+  0dd31858  adrp    x8, #0xeb6e000
+  0dd3185c  add     x21, sp, #0x360
+  0dd31860  ldr     x8, [x8, #0x720]  ; META ActorAnimation.CampusActorAnimationRigData_TypeInfo
+  0dd31864  ldr     x12, [sp, #0x30]
+  0dd31868  ldr     x9, [x8]
+  0dd3186c  ldr     x8, [x12]
+  0dd31870  cmp     x8, x9
+  0dd31874  b.eq    #0xdd318c4
+  0dd31878  adrp    x10, #0xea6a000
+  0dd3187c  ldrh    w9, [x8, #0x12e]
+  0dd31880  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd31884  ldr     x20, [sp, #0xa8]
+  0dd31888  ldr     x1, [x10]
+  0dd3188c  cbz     x9, #0xdd318b0
+  0dd31890  ldr     x10, [x8, #0xb0]
+  0dd31894  add     x10, x10, #8
+  0dd31898  ldur    x11, [x10, #-8]
+  0dd3189c  cmp     x11, x1
+  0dd318a0  b.eq    #0xdd3191c
+  0dd318a4  subs    x9, x9, #1
+  0dd318a8  add     x10, x10, #0x10
+  0dd318ac  b.ne    #0xdd31898
+  0dd318b0  mov     x0, x12
+  0dd318b4  mov     w2, #0x12
+  0dd318b8  bl      #0x6408234
+  0dd318bc  ldr     x12, [sp, #0x30]
+  0dd318c0  b       #0xdd3192c
+  0dd318c4  mov     x0, x12
+  0dd318c8  bl      #0x63cf000
+  0dd318cc  ldr     x20, [sp, #0xa8]
+  0dd318d0  ldr     x1, [x0, #0xb0]
+  0dd318d4  add     x8, sp, #0x408
+  0dd318d8  ldr     x22, [x0, #0xc0]
+  0dd318dc  mov     x2, xzr
+  0dd318e0  mov     x0, x20
+  0dd318e4  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd318e8  add     x8, sp, #0x360
+  0dd318ec  mov     x0, x20
+  0dd318f0  mov     x1, x22
+  0dd318f4  ldur    q0, [x8, #0xa8]
+  0dd318f8  ldr     x8, [sp, #0x418]
+  0dd318fc  mov     x2, xzr
+  0dd31900  str     x8, [x19, #0x108]
+  0dd31904  add     x8, sp, #0x650
+  0dd31908  stur    q0, [x19, #0xf8]
+  0dd3190c  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd31910  ldr     q0, [sp, #0x650]
+  0dd31914  ldr     x8, [sp, #0x660]
+  0dd31918  b       #0xdd319e8
+  0dd3191c  ldr     w9, [x10]
+  0dd31920  add     w9, w9, #0x12
+  0dd31924  add     x8, x8, w9, sxtw #4
+  0dd31928  add     x0, x8, #0x138
+  0dd3192c  ldp     x8, x1, [x0]
+  0dd31930  mov     x0, x12
+  0dd31934  blr     x8
+  0dd31938  mov     x1, x0
+  0dd3193c  add     x8, sp, #0x408
+  0dd31940  mov     x0, x20
+  0dd31944  mov     x2, xzr
+  0dd31948  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd3194c  ldr     x8, [sp, #0x418]
+  0dd31950  ldur    q0, [x21, #0xa8]
+  0dd31954  adrp    x10, #0xea6a000
+  0dd31958  ldr     x12, [sp, #0x30]
+  0dd3195c  str     x8, [x19, #0x108]
+  0dd31960  stur    q0, [x19, #0xf8]
+  0dd31964  ldr     x8, [x12]
+  0dd31968  ldrh    w9, [x8, #0x12e]
+  0dd3196c  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd31970  ldr     x1, [x10]
+  0dd31974  cbz     x9, #0xdd31998
+  0dd31978  ldr     x10, [x8, #0xb0]
+  0dd3197c  add     x10, x10, #8
+  0dd31980  ldur    x11, [x10, #-8]
+  0dd31984  cmp     x11, x1
+  0dd31988  b.eq    #0xdd319ac
+  0dd3198c  subs    x9, x9, #1
+  0dd31990  add     x10, x10, #0x10
+  0dd31994  b.ne    #0xdd31980
+  0dd31998  mov     x0, x12
+  0dd3199c  mov     w2, #0x12
+  0dd319a0  bl      #0x6408234
+  0dd319a4  ldr     x12, [sp, #0x30]
+  0dd319a8  b       #0xdd319bc
+  0dd319ac  ldr     w9, [x10]
+  0dd319b0  add     w9, w9, #0x12
+  0dd319b4  add     x8, x8, w9, sxtw #4
+  0dd319b8  add     x0, x8, #0x138
+  0dd319bc  ldp     x8, x1, [x0]
+  0dd319c0  mov     x0, x12
+  0dd319c4  blr     x8
+  0dd319c8  mov     x1, x0
+  0dd319cc  add     x8, sp, #0x638
+  0dd319d0  mov     x0, x20
+  0dd319d4  mov     x2, xzr
+  0dd319d8  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd319dc  add     x8, sp, #0x638
+  0dd319e0  ldr     q0, [x8]
+  0dd319e4  ldr     x8, [sp, #0x648]
+  0dd319e8  str     q0, [x19, #0x110]
+  0dd319ec  str     x8, [x19, #0x120]
+  0dd319f0  ldr     x12, [sp, #0x30]
+  0dd319f4  adrp    x10, #0xea6a000
+  0dd319f8  ldr     x8, [x12]
+  0dd319fc  ldrh    w9, [x8, #0x12e]
+  0dd31a00  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd31a04  ldr     x1, [x10]
+  0dd31a08  cbz     x9, #0xdd31a2c
+  0dd31a0c  ldr     x10, [x8, #0xb0]
+  0dd31a10  add     x10, x10, #8
+  0dd31a14  ldur    x11, [x10, #-8]
+  0dd31a18  cmp     x11, x1
+  0dd31a1c  b.eq    #0xdd31a40
+  0dd31a20  subs    x9, x9, #1
+  0dd31a24  add     x10, x10, #0x10
+  0dd31a28  b.ne    #0xdd31a14
+  0dd31a2c  mov     x0, x12
+  0dd31a30  mov     w2, #0x19
+  0dd31a34  bl      #0x6408234
+  0dd31a38  ldr     x12, [sp, #0x30]
+  0dd31a3c  b       #0xdd31a50
+  0dd31a40  ldr     w9, [x10]
+  0dd31a44  add     w9, w9, #0x19
+  0dd31a48  add     x8, x8, w9, sxtw #4
+  0dd31a4c  add     x0, x8, #0x138
+  0dd31a50  ldp     x8, x1, [x0]
+  0dd31a54  mov     x0, x12
+  0dd31a58  blr     x8
+  0dd31a5c  ldr     x12, [sp, #0x30]
+  0dd31a60  adrp    x10, #0xea6a000
+  0dd31a64  ldr     x8, [x12]
+  0dd31a68  ldrh    w9, [x8, #0x12e]
+  0dd31a6c  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd31a70  ldr     x1, [x10]
+  0dd31a74  cbz     x9, #0xdd31a98
+  0dd31a78  ldr     x10, [x8, #0xb0]
+  0dd31a7c  add     x10, x10, #8
+  0dd31a80  ldur    x11, [x10, #-8]
+  0dd31a84  cmp     x11, x1
+  0dd31a88  b.eq    #0xdd31aac
+  0dd31a8c  subs    x9, x9, #1
+  0dd31a90  add     x10, x10, #0x10
+  0dd31a94  b.ne    #0xdd31a80
+  0dd31a98  mov     x0, x12
+  0dd31a9c  mov     w2, #0xc
+  0dd31aa0  bl      #0x6408234
+  0dd31aa4  ldr     x12, [sp, #0x30]
+  0dd31aa8  b       #0xdd31abc
+  0dd31aac  ldr     w9, [x10]
+  0dd31ab0  add     w9, w9, #0xc
+  0dd31ab4  add     x8, x8, w9, sxtw #4
+  0dd31ab8  add     x0, x8, #0x138
+  0dd31abc  ldp     x8, x1, [x0]
+  0dd31ac0  mov     x0, x12
+  0dd31ac4  add     x27, sp, #0xd60
+  0dd31ac8  blr     x8
+  0dd31acc  cbz     x0, #0xdd3348c
+  0dd31ad0  adrp    x20, #0xea6a000
+  0dd31ad4  add     x8, sp, #1, lsl #12
+  0dd31ad8  adrp    x21, #0xea6a000
+  0dd31adc  ldr     x20, [x20, #0x390]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.GetEnumerator()
+  0dd31ae0  adrp    x29, #0xea6a000
+  0dd31ae4  add     x8, x8, #0x90
+  0dd31ae8  ldr     x21, [x21, #0x818]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.Add()
+  0dd31aec  ldr     x29, [x29, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd31af0  add     x8, x8, #0x14c
+  0dd31af4  ldr     x1, [x20]
+  0dd31af8  str     x8, [sp, #0x58]
+  0dd31afc  add     x8, sp, #0x408
+  0dd31b00  add     x28, sp, #0x240
+  0dd31b04  bl      #0xac1c108  ; -> System.Collections.Generic.List<object>$$GetEnumerator
+  0dd31b08  add     x8, sp, #0x360
+  0dd31b0c  mov     w22, wzr
+  0dd31b10  ldur    q0, [x8, #0xa8]
+  0dd31b14  ldr     x8, [sp, #0x418]
+  0dd31b18  str     xzr, [sp, #0x408]
+  0dd31b1c  str     x8, [sp, #0x1480]
+  0dd31b20  add     x8, sp, #1, lsl #12
+  0dd31b24  add     x8, x8, #0x470
+  0dd31b28  str     q0, [sp, #0x1470]
+  0dd31b2c  str     x8, [sp, #0x410]
+  0dd31b30  adrp    x8, #0xea6a000
+  0dd31b34  ldr     x8, [x8, #0x370]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.MoveNext()
+  0dd31b38  ldr     x1, [x8]
+  0dd31b3c  add     x0, sp, #1, lsl #12
+  0dd31b40  add     x0, x0, #0x470
+  0dd31b44  bl      #0xa043518  ; -> System.Collections.Generic.List.Enumerator<object>$$MoveNext
+  0dd31b48  tbz     w0, #0, #0xdd31b88
+  0dd31b4c  ldr     x0, [sp, #0x1480]
+  0dd31b50  cbz     x0, #0xdd33354
+  0dd31b54  mov     x1, xzr
+  0dd31b58  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd31b5c  cbz     x0, #0xdd3336c
+  0dd31b60  mov     x1, xzr
+  0dd31b64  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd31b68  mov     w1, w0
+  0dd31b6c  ldr     x3, [x21]
+  0dd31b70  add     w23, w22, #1
+  0dd31b74  add     x0, x19, #0x188
+  0dd31b78  mov     w2, w22
+  0dd31b7c  bl      #0xb323cf8  ; -> Unity.Collections.NativeHashMap<int, int>$$Add
+  0dd31b80  mov     w22, w23
+  0dd31b84  b       #0xdd31b30
+  0dd31b88  adrp    x8, #0xea6a000
+  0dd31b8c  add     x0, sp, #1, lsl #12
+  0dd31b90  ldr     x8, [x8, #0x368]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+  0dd31b94  add     x0, x0, #0x470
+  0dd31b98  ldr     x1, [x8]
+  0dd31b9c  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd31ba0  ldr     x12, [sp, #0x30]
+  0dd31ba4  adrp    x10, #0xea6a000
+  0dd31ba8  ldr     x8, [x12]
+  0dd31bac  ldrh    w9, [x8, #0x12e]
+  0dd31bb0  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd31bb4  ldr     x1, [x10]
+  0dd31bb8  cbz     x9, #0xdd31bdc
+  0dd31bbc  ldr     x10, [x8, #0xb0]
+  0dd31bc0  add     x10, x10, #8
+  0dd31bc4  ldur    x11, [x10, #-8]
+  0dd31bc8  cmp     x11, x1
+  0dd31bcc  b.eq    #0xdd31bf0
+  0dd31bd0  subs    x9, x9, #1
+  0dd31bd4  add     x10, x10, #0x10
+  0dd31bd8  b.ne    #0xdd31bc4
+  0dd31bdc  mov     x0, x12
+  0dd31be0  mov     w2, #0xc
+  0dd31be4  bl      #0x6408234
+  0dd31be8  ldr     x12, [sp, #0x30]
+  0dd31bec  b       #0xdd31c00
+  0dd31bf0  ldr     w9, [x10]
+  0dd31bf4  add     w9, w9, #0xc
+  0dd31bf8  add     x8, x8, w9, sxtw #4
+  0dd31bfc  add     x0, x8, #0x138
+  0dd31c00  ldp     x8, x1, [x0]
+  0dd31c04  mov     x0, x12
+  0dd31c08  blr     x8
+  0dd31c0c  cbz     x0, #0xdd3348c
+  0dd31c10  ldr     x1, [x20]
+  0dd31c14  add     x8, sp, #0x408
+  0dd31c18  bl      #0xac1c108  ; -> System.Collections.Generic.List<object>$$GetEnumerator
+  0dd31c1c  add     x8, sp, #0x360
+  0dd31c20  add     x9, sp, #1, lsl #12
+  0dd31c24  add     x20, sp, #1, lsl #12
+  0dd31c28  ldur    q0, [x8, #0xa8]
+  0dd31c2c  ldr     x8, [sp, #0x418]
+  0dd31c30  add     x9, x9, #0x470
+  0dd31c34  add     x20, x20, #0x90
+  0dd31c38  str     x9, [sp, #0x3a8]
+  0dd31c3c  str     x8, [sp, #0x1480]
+  0dd31c40  add     x8, sp, #1, lsl #12
+  0dd31c44  orr     x9, x20, #1
+  0dd31c48  add     x8, x8, #0x488
+  0dd31c4c  str     q0, [sp, #0x1470]
+  0dd31c50  add     x22, x20, #0x37c
+  0dd31c54  orr     x8, x8, #3
+  0dd31c58  str     xzr, [sp, #0x3a0]
+  0dd31c5c  str     x8, [sp, #0x60]
+  0dd31c60  add     x8, x20, #0x134
+  0dd31c64  stp     x8, x9, [sp, #0x48]
+  0dd31c68  add     x9, x20, #0x341
+  0dd31c6c  add     x8, x20, #0x368
+  0dd31c70  stp     x8, x9, [sp, #0x38]
+  0dd31c74  adrp    x8, #0x276c000
+  0dd31c78  adrp    x9, #0x276d000
+  0dd31c7c  ldr     d0, [x8, #0xb98]
+  0dd31c80  str     d0, [sp, #0x28]
+  0dd31c84  ldr     d0, [x9, #0x8f0]
+  0dd31c88  str     d0, [sp, #0x68]
+  0dd31c8c  adrp    x8, #0xea6a000
+  0dd31c90  ldr     x8, [x8, #0x370]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.MoveNext()
+  0dd31c94  ldr     x1, [x8]
+  0dd31c98  add     x0, sp, #1, lsl #12
+  0dd31c9c  add     x0, x0, #0x470
+  0dd31ca0  bl      #0xa043518  ; -> System.Collections.Generic.List.Enumerator<object>$$MoveNext
+  0dd31ca4  tbz     w0, #0, #0xdd32430
+  0dd31ca8  ldr     x23, [sp, #0x1480]
+  0dd31cac  cbz     x23, #0xdd333cc
+  0dd31cb0  mov     x0, x23
+  0dd31cb4  mov     x1, xzr
+  0dd31cb8  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd31cbc  ldur    d0, [x23, #0x7c]
+  0dd31cc0  ldp     s8, s1, [x23, #0x84]
+  0dd31cc4  adrp    x8, #0xea6a000
+  0dd31cc8  mov     x24, x0
+  0dd31ccc  str     q0, [sp, #0x90]
+  0dd31cd0  ldp     s2, s0, [x23, #0x8c]
+  0dd31cd4  stp     s2, s1, [sp, #0x7c]
+  0dd31cd8  str     s0, [sp, #0x78]
+  0dd31cdc  ldr     x8, [x8, #0x7d0]  ; META ActorAnimation.ActorSwingAffineTransform_TypeInfo
+  0dd31ce0  ldp     s0, s13, [x23, #0x94]
+  0dd31ce4  ldp     s14, s15, [x23, #0x9c]
+  0dd31ce8  ldr     x0, [x8]
+  0dd31cec  ldp     s9, s10, [x23, #0xa4]
+  0dd31cf0  ldp     s11, s12, [x23, #0xac]
+  0dd31cf4  str     s0, [sp, #0x74]
+  0dd31cf8  ldr     w8, [x0, #0xe4]
+  0dd31cfc  cbnz    w8, #0xdd31d04
+  0dd31d00  bl      #0x63ceff4
+  0dd31d04  fmov    s0, s13
+  0dd31d08  fmov    s1, s14
+  0dd31d0c  add     x0, sp, #1, lsl #12
+  0dd31d10  fmov    s2, s15
+  0dd31d14  fmov    s3, s9
+  0dd31d18  add     x0, x0, #0x450
+  0dd31d1c  fmov    s4, s10
+  0dd31d20  fmov    s5, s11
+  0dd31d24  mov     x1, xzr
+  0dd31d28  fmov    s6, s12
+  0dd31d2c  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd31d30  cbz     x24, #0xdd333e4
+  0dd31d34  mov     x0, x24
+  0dd31d38  mov     x1, xzr
+  0dd31d3c  bl      #0xd9eed88  ; -> UnityEngine.Transform$$get_parent
+  0dd31d40  mov     x26, x0
+  0dd31d44  ldr     x0, [x25]
+  0dd31d48  ldr     w8, [x0, #0xe4]
+  0dd31d4c  cbnz    w8, #0xdd31d54
+  0dd31d50  bl      #0x63ceff4
+  0dd31d54  mov     x0, x26
+  0dd31d58  mov     x1, xzr
+  0dd31d5c  mov     x2, xzr
+  0dd31d60  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd31d64  tbz     w0, #0, #0xdd31da8
+  0dd31d68  cbz     x26, #0xdd3342c
+  0dd31d6c  mov     x0, x26
+  0dd31d70  mov     x1, xzr
+  0dd31d74  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd31d78  mov     w1, w0
+  0dd31d7c  adrp    x8, #0xea6a000
+  0dd31d80  ldr     x8, [x8, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd31d84  ldr     x3, [x8]
+  0dd31d88  add     x2, sp, #1, lsl #12
+  0dd31d8c  add     x0, x19, #0x188
+  0dd31d90  add     x2, x2, #0x8c
+  0dd31d94  bl      #0xb323da4  ; -> Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+  0dd31d98  ldr     w8, [sp, #0x108c]
+  0dd31d9c  tst     w0, #1
+  0dd31da0  csinv   w21, w8, wzr, ne
+  0dd31da4  b       #0xdd31dac
+  0dd31da8  mov     w21, #-1
+  0dd31dac  mov     x0, x24
+  0dd31db0  mov     x1, xzr
+  0dd31db4  bl      #0xd9f2634  ; -> UnityEngine.Transform$$get_childCount
+  0dd31db8  cmp     w0, #1
+  0dd31dbc  b.lt    #0xdd31e0c
+  0dd31dc0  mov     x0, x24
+  0dd31dc4  mov     w1, wzr
+  0dd31dc8  mov     x2, xzr
+  0dd31dcc  bl      #0xd9f34cc  ; -> UnityEngine.Transform$$GetChild
+  0dd31dd0  cbz     x0, #0xdd33414
+  0dd31dd4  mov     x1, xzr
+  0dd31dd8  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd31ddc  mov     w1, w0
+  0dd31de0  adrp    x8, #0xea6a000
+  0dd31de4  ldr     x8, [x8, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd31de8  ldr     x3, [x8]
+  0dd31dec  add     x2, sp, #1, lsl #12
+  0dd31df0  add     x0, x19, #0x188
+  0dd31df4  add     x2, x2, #0x88
+  0dd31df8  bl      #0xb323da4  ; -> Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+  0dd31dfc  ldr     w8, [sp, #0x1088]
+  0dd31e00  tst     w0, #1
+  0dd31e04  csinv   w8, w8, wzr, ne
+  0dd31e08  b       #0xdd31e10
+  0dd31e0c  mov     w8, #-1
+  0dd31e10  ldr     x0, [x25]
+  0dd31e14  str     w8, [sp, #0x70]
+  0dd31e18  mov     w9, #-1
+  0dd31e1c  ldr     x25, [x23, #0x68]
+  0dd31e20  str     w9, [sp, #0x144c]
+  0dd31e24  ldr     w8, [x0, #0xe4]
+  0dd31e28  cbnz    w8, #0xdd31e30
+  0dd31e2c  bl      #0x63ceff4
+  0dd31e30  mov     x0, x25
+  0dd31e34  mov     x1, xzr
+  0dd31e38  mov     x2, xzr
+  0dd31e3c  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd31e40  tbz     w0, #0, #0xdd31f18
+  0dd31e44  add     x8, sp, #0x408
+  0dd31e48  mov     x0, x19
+  0dd31e4c  mov     x1, xzr
+  0dd31e50  bl      #0x90a88bc
+  0dd31e54  add     x0, sp, #0xe58
+  0dd31e58  add     x1, sp, #0x408
+  0dd31e5c  mov     w2, #0x230
+  0dd31e60  bl      #0xe1b8430
+  0dd31e64  ldr     x0, [x23, #0x68]
+  0dd31e68  cbz     x0, #0xdd33444
+  0dd31e6c  mov     x1, xzr
+  0dd31e70  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd31e74  cbz     x0, #0xdd3345c
+  0dd31e78  mov     x1, xzr
+  0dd31e7c  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd31e80  mov     w1, w0
+  0dd31e84  adrp    x8, #0xea6a000
+  0dd31e88  ldr     x8, [x8, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd31e8c  ldr     x3, [x8]
+  0dd31e90  add     x8, sp, #0xe58
+  0dd31e94  add     x2, sp, #1, lsl #12
+  0dd31e98  add     x0, x8, #0xb8
+  0dd31e9c  add     x2, x2, #0x44c
+  0dd31ea0  bl      #0xb323da4  ; -> Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+  0dd31ea4  tbz     w0, #0, #0xdd31f18
+  0dd31ea8  add     x8, sp, #0x408
+  0dd31eac  mov     x0, x19
+  0dd31eb0  mov     x1, xzr
+  0dd31eb4  bl      #0x90a88bc
+  0dd31eb8  add     x0, sp, #0xe58
+  0dd31ebc  add     x1, sp, #0x408
+  0dd31ec0  mov     w2, #0x230
+  0dd31ec4  bl      #0xe1b8430
+  0dd31ec8  mov     x0, x23
+  0dd31ecc  mov     x1, xzr
+  0dd31ed0  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd31ed4  cbz     x0, #0xdd33474
+  0dd31ed8  mov     x1, xzr
+  0dd31edc  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd31ee0  mov     w1, w0
+  0dd31ee4  adrp    x8, #0xea6a000
+  0dd31ee8  ldr     x8, [x8, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd31eec  ldr     x3, [x8]
+  0dd31ef0  add     x8, sp, #0xe58
+  0dd31ef4  add     x2, sp, #0xe54
+  0dd31ef8  add     x0, x8, #0xb8
+  0dd31efc  bl      #0xb323da4  ; -> Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+  0dd31f00  ldr     w8, [sp, #0xe54]
+  0dd31f04  ldr     w9, [sp, #0x144c]
+  0dd31f08  cmp     w8, w9
+  0dd31f0c  b.gt    #0xdd31f18
+  0dd31f10  mov     w8, #-1
+  0dd31f14  str     w8, [sp, #0x144c]
+  0dd31f18  movi    v0.2d, #0000000000000000
+  0dd31f1c  add     x0, sp, #0xb40
+  0dd31f20  mov     w1, wzr
+  0dd31f24  mov     w2, #0x1d0
+  0dd31f28  strb    wzr, [sp, #0xe52]
+  0dd31f2c  strh    wzr, [sp, #0xe50]
+  0dd31f30  str     xzr, [sp, #0xe40]
+  0dd31f34  str     q0, [sp, #0xdf0]
+  0dd31f38  str     q0, [sp, #0xe00]
+  0dd31f3c  str     q0, [sp, #0xe10]
+  0dd31f40  str     q0, [sp, #0xe20]
+  0dd31f44  str     q0, [sp, #0xe30]
+  0dd31f48  str     xzr, [sp, #0xde0]
+  0dd31f4c  str     xzr, [sp, #0xdd0]
+  0dd31f50  str     xzr, [sp, #0xdd8]
+  0dd31f54  str     wzr, [sp, #0xde8]
+  0dd31f58  str     xzr, [sp, #0xdc0]
+  0dd31f5c  str     xzr, [sp, #0xdb0]
+  0dd31f60  str     xzr, [sp, #0xdb8]
+  0dd31f64  str     wzr, [sp, #0xdc8]
+  0dd31f68  str     xzr, [sp, #0xd98]
+  0dd31f6c  str     xzr, [sp, #0xd90]
+  0dd31f70  str     wzr, [sp, #0xda8]
+  0dd31f74  str     xzr, [sp, #0xda0]
+  0dd31f78  stur    q0, [x27, #0x1c]
+  0dd31f7c  str     q0, [sp, #0xd70]
+  0dd31f80  str     q0, [sp, #0xd60]
+  0dd31f84  str     q0, [sp, #0xd30]
+  0dd31f88  str     q0, [sp, #0xd40]
+  0dd31f8c  str     xzr, [sp, #0xd50]
+  0dd31f90  str     xzr, [sp, #0xd20]
+  0dd31f94  str     xzr, [sp, #0xd10]
+  0dd31f98  str     xzr, [sp, #0xd18]
+  0dd31f9c  bl      #0xe1b83e0
+  0dd31fa0  movi    v0.2d, #0000000000000000
+  0dd31fa4  add     x8, sp, #1, lsl #12
+  0dd31fa8  ldr     d9, [x23, #0x28]
+  0dd31fac  add     x8, x8, #0x450
+  0dd31fb0  str     xzr, [sp, #0x1498]
+  0dd31fb4  str     xzr, [sp, #0x1488]
+  0dd31fb8  str     xzr, [sp, #0x1490]
+  0dd31fbc  stur    xzr, [x8, #0x4f]
+  0dd31fc0  str     xzr, [sp, #0xb30]
+  0dd31fc4  str     xzr, [sp, #0xb28]
+  0dd31fc8  str     wzr, [sp, #0xb38]
+  0dd31fcc  str     q0, [sp, #0xae0]
+  0dd31fd0  str     q0, [sp, #0xaf0]
+  0dd31fd4  str     q0, [sp, #0xb00]
+  0dd31fd8  str     q0, [sp, #0xb10]
+  0dd31fdc  add     x8, sp, #0x408
+  0dd31fe0  mov     x0, x23
+  0dd31fe4  mov     x1, xzr
+  0dd31fe8  bl      #0x657f8d4  ; -> ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider
+  0dd31fec  add     x0, sp, #0xdf0
+  0dd31ff0  add     x1, sp, #0x408
+  0dd31ff4  mov     w2, #0x58
+  0dd31ff8  bl      #0xe1b8430
+  0dd31ffc  ldr     w28, [x23, #0x78]
+  0dd32000  ldr     x0, [sp, #0xa8]
+  0dd32004  mov     x1, x24
+  0dd32008  mov     x2, xzr
+  0dd3200c  bl      #0xd6f37cc  ; -> UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$Bind
+  0dd32010  adrp    x27, #0xea67000
+  0dd32014  ldr     x27, [x27, #0x190]  ; META System.Math_TypeInfo
+  0dd32018  mov     x25, x0
+  0dd3201c  mov     x24, x1
+  0dd32020  cmn     w21, #1
+  0dd32024  b.eq    #0xdd32054
+  0dd32028  ldr     x0, [sp, #0xa8]
+  0dd3202c  add     x8, sp, #0x408
+  0dd32030  mov     x1, x26
+  0dd32034  mov     x2, xzr
+  0dd32038  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd3203c  add     x8, sp, #0x360
+  0dd32040  ldur    q0, [x8, #0xa8]
+  0dd32044  ldr     x8, [sp, #0x418]
+  0dd32048  str     q0, [sp, #0x690]
+  0dd3204c  str     x8, [sp, #0x6a0]
+  0dd32050  b       #0xdd32060
+  0dd32054  str     xzr, [sp, #0x698]
+  0dd32058  str     xzr, [sp, #0x690]
+  0dd3205c  str     xzr, [sp, #0x6a0]
+  0dd32060  adrp    x9, #0xf400000
+  0dd32064  ldr     q0, [sp, #0x690]
+  0dd32068  ldr     x8, [sp, #0x6a0]
+  0dd3206c  ldrb    w9, [x9, #0x4be]
+  0dd32070  str     q0, [sp, #0xd10]
+  0dd32074  str     x8, [sp, #0xd20]
+  0dd32078  cbnz    w9, #0xdd32090
+  0dd3207c  mov     x0, x27
+  0dd32080  bl      #0x63cee78
+  0dd32084  adrp    x8, #0xf400000
+  0dd32088  mov     w9, #1
+  0dd3208c  strb    w9, [x8, #0x4be]
+  0dd32090  ldr     x0, [x27]
+  0dd32094  ldr     w8, [x0, #0xe4]
+  0dd32098  cbz     w8, #0xdd320a4
+  0dd3209c  mov     w8, #1
+  0dd320a0  b       #0xdd320b0
+  0dd320a4  bl      #0x63ceff4
+  0dd320a8  adrp    x8, #0xf400000
+  0dd320ac  ldrb    w8, [x8, #0x4be]
+  0dd320b0  ldr     q0, [sp, #0x90]
+  0dd320b4  fmul    s1, s8, s8
+  0dd320b8  movi    d11, #0000000000000000
+  0dd320bc  fmul    v0.2s, v0.2s, v0.2s
+  0dd320c0  faddp   s0, v0.2s
+  0dd320c4  fadd    s0, s1, s0
+  0dd320c8  ldr     d1, [sp, #0x68]
+  0dd320cc  fsqrt   s10, s0
+  0dd320d0  fcvt    d0, s10
+  0dd320d4  fcmp    d0, d1
+  0dd320d8  b.le    #0xdd32108
+  0dd320dc  cbnz    w8, #0xdd320f4
+  0dd320e0  mov     x0, x27
+  0dd320e4  bl      #0x63cee78
+  0dd320e8  adrp    x8, #0xf400000
+  0dd320ec  mov     w9, #1
+  0dd320f0  strb    w9, [x8, #0x4be]
+  0dd320f4  ldr     x0, [x27]
+  0dd320f8  ldr     w8, [x0, #0xe4]
+  0dd320fc  cbz     w8, #0xdd32114
+  0dd32100  mov     w8, #1
+  0dd32104  b       #0xdd32120
+  0dd32108  ldr     d12, [sp, #0x28]
+  0dd3210c  cbnz    w8, #0xdd3214c
+  0dd32110  b       #0xdd32138
+  0dd32114  bl      #0x63ceff4
+  0dd32118  adrp    x8, #0xf400000
+  0dd3211c  ldrb    w8, [x8, #0x4be]
+  0dd32120  fmov    s0, #1.00000000
+  0dd32124  ldr     q1, [sp, #0x90]
+  0dd32128  fdiv    s0, s0, s10
+  0dd3212c  fmul    v12.2s, v1.2s, v0.s[0]
+  0dd32130  fmul    s11, s8, s0
+  0dd32134  cbnz    w8, #0xdd3214c
+  0dd32138  mov     x0, x27
+  0dd3213c  bl      #0x63cee78
+  0dd32140  adrp    x8, #0xf400000
+  0dd32144  mov     w9, #1
+  0dd32148  strb    w9, [x8, #0x4be]
+  0dd3214c  ldr     x0, [x27]
+  0dd32150  ldr     w8, [x0, #0xe4]
+  0dd32154  cbnz    w8, #0xdd3215c
+  0dd32158  bl      #0x63ceff4
+  0dd3215c  ldr     q0, [sp, #0x90]
+  0dd32160  str     xzr, [sp, #0x410]
+  0dd32164  str     xzr, [sp, #0x408]
+  0dd32168  mov     s1, v0.s[1]
+  0dd3216c  str     wzr, [sp, #0x420]
+  0dd32170  str     xzr, [sp, #0x418]
+  0dd32174  fmov    s2, s8
+  0dd32178  ldp     s4, s3, [sp, #0x7c]
+  0dd3217c  ldp     s6, s5, [sp, #0x74]
+  0dd32180  add     x0, sp, #0x408
+  0dd32184  mov     x1, xzr
+  0dd32188  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd3218c  add     x8, sp, #0x360
+  0dd32190  ldr     q2, [sp, #0x1450]
+  0dd32194  add     x26, sp, #0xd60
+  0dd32198  ldur    q0, [x8, #0xa8]
+  0dd3219c  ldur    q1, [x8, #0xb4]
+  0dd321a0  add     x8, sp, #1, lsl #12
+  0dd321a4  add     x8, x8, #0x450
+  0dd321a8  ldp     s4, s5, [x23, #0xc4]
+  0dd321ac  str     q0, [sp, #0xd90]
+  0dd321b0  ldur    q0, [x8, #0xc]
+  0dd321b4  add     x8, sp, #0xd60
+  0dd321b8  stur    q1, [x26, #0x3c]
+  0dd321bc  ldr     s6, [x23, #0xcc]
+  0dd321c0  stur    q2, [x8, #0x10]
+  0dd321c4  ldp     s2, s3, [x23, #0xbc]
+  0dd321c8  stur    q0, [x8, #0x1c]
+  0dd321cc  ldp     s0, s1, [x23, #0xb4]
+  0dd321d0  stp     xzr, xzr, [sp, #0x170]
+  0dd321d4  str     wzr, [sp, #0x188]
+  0dd321d8  str     xzr, [sp, #0x180]
+  0dd321dc  add     x0, sp, #0x170
+  0dd321e0  mov     x1, xzr
+  0dd321e4  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd321e8  add     x8, sp, #0x130
+  0dd321ec  ldr     q0, [sp, #0x170]
+  0dd321f0  ldr     s8, [x23, #0x50]
+  0dd321f4  ldur    q1, [x8, #0x4c]
+  0dd321f8  ldr     x1, [x23, #0x58]
+  0dd321fc  str     xzr, [sp, #0xde0]
+  0dd32200  str     q0, [sp, #0xdb0]
+  0dd32204  stur    q1, [x26, #0x5c]
+  0dd32208  ldp     q1, q0, [x23, #0x30]
+  0dd3220c  ldrb    w26, [x23, #0x54]
+  0dd32210  str     xzr, [sp, #0xdd0]
+  0dd32214  str     xzr, [sp, #0xdd8]
+  0dd32218  str     wzr, [sp, #0xde8]
+  0dd3221c  str     xzr, [sp, #0x3f0]
+  0dd32220  stp     q0, q1, [sp, #0x80]
+  0dd32224  str     xzr, [sp, #0x3e8]
+  0dd32228  str     wzr, [sp, #0x400]
+  0dd3222c  str     xzr, [sp, #0x3f8]
+  0dd32230  add     x0, sp, #0x3e8
+  0dd32234  mov     x2, xzr
+  0dd32238  bl      #0x6578970  ; -> ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+  0dd3223c  add     x8, sp, #0x360
+  0dd32240  ldp     x1, x2, [x23, #0x68]
+  0dd32244  ldur    q0, [x8, #0x88]
+  0dd32248  ldur    q1, [x8, #0x94]
+  0dd3224c  ldr     w8, [x23, #0x2c]
+  0dd32250  ldr     x9, [sp, #0x60]
+  0dd32254  str     q0, [x9]
+  0dd32258  stur    q1, [x9, #0xc]
+  0dd3225c  cbz     w8, #0xdd3227c
+  0dd32260  str     wzr, [sp, #0x410]
+  0dd32264  str     xzr, [sp, #0x408]
+  0dd32268  add     x0, sp, #0x408
+  0dd3226c  mov     w3, #-1
+  0dd32270  mov     x4, xzr
+  0dd32274  bl      #0x65789d0  ; -> ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+  0dd32278  b       #0xdd32294
+  0dd3227c  ldr     w3, [sp, #0x144c]
+  0dd32280  str     wzr, [sp, #0x410]
+  0dd32284  str     xzr, [sp, #0x408]
+  0dd32288  add     x0, sp, #0x408
+  0dd3228c  mov     x4, xzr
+  0dd32290  bl      #0x65789d0  ; -> ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+  0dd32294  ldr     w9, [sp, #0x410]
+  0dd32298  ldr     x8, [sp, #0x408]
+  0dd3229c  add     x29, sp, #0xd60
+  0dd322a0  mov     w10, #1
+  0dd322a4  add     x11, sp, #0xb28
+  0dd322a8  ldr     d13, [x23, #0x60]
+  0dd322ac  str     w9, [sp, #0x688]
+  0dd322b0  mov     w9, w9
+  0dd322b4  add     x23, sp, #1, lsl #12
+  0dd322b8  str     x8, [sp, #0x680]
+  0dd322bc  add     x23, x23, #0x90
+  0dd322c0  add     x0, x20, #0xc
+  0dd322c4  strb    w10, [x29, #0x330]
+  0dd322c8  ldrh    w10, [sp, #0xe50]
+  0dd322cc  add     x1, sp, #0xdf0
+  0dd322d0  stur    x8, [x11, #8]
+  0dd322d4  ldrb    w8, [sp, #0xe52]
+  0dd322d8  mov     w2, #0x58
+  0dd322dc  stur    w9, [x11, #0x10]
+  0dd322e0  ldr     x9, [sp, #0x50]
+  0dd322e4  stur    d9, [x23, #4]
+  0dd322e8  strh    w10, [x9]
+  0dd322ec  strb    w8, [x9, #2]
+  0dd322f0  bl      #0xe1b8430
+  0dd322f4  ldr     q0, [sp, #0xdd0]
+  0dd322f8  ldur    q1, [x29, #0x7c]
+  0dd322fc  add     x0, x20, #0x170
+  0dd32300  ldr     w8, [sp, #0x70]
+  0dd32304  ldr     x9, [sp, #0x48]
+  0dd32308  add     x1, sp, #0xb40
+  0dd3230c  stur    q0, [x20, #0x64]
+  0dd32310  ldr     q0, [sp, #0xdb0]
+  0dd32314  mov     w2, #0x1d0
+  0dd32318  stur    q1, [x20, #0x70]
+  0dd3231c  ldur    q1, [x29, #0x5c]
+  0dd32320  add     x27, sp, #0xd60
+  0dd32324  stur    q0, [x20, #0x9c]
+  0dd32328  ldr     q0, [sp, #0xd90]
+  0dd3232c  stur    q1, [x20, #0xa8]
+  0dd32330  ldur    q1, [x29, #0x3c]
+  0dd32334  stur    q0, [x20, #0xb8]
+  0dd32338  ldr     q0, [sp, #0xd60]
+  0dd3233c  stur    q1, [x20, #0xc4]
+  0dd32340  ldr     q1, [sp, #0xd70]
+  0dd32344  stur    q0, [x20, #0xd4]
+  0dd32348  ldur    q0, [x29, #0x1c]
+  0dd3234c  stur    q1, [x20, #0xe4]
+  0dd32350  ldr     q1, [sp, #0xd30]
+  0dd32354  str     w8, [sp, #0x1118]
+  0dd32358  ldr     x8, [sp, #0xd50]
+  0dd3235c  stp     q0, q1, [x20, #0xf0]
+  0dd32360  ldr     q0, [sp, #0xd40]
+  0dd32364  str     x8, [x20, #0x120]
+  0dd32368  ldr     x8, [sp, #0xd20]
+  0dd3236c  str     q0, [x20, #0x110]
+  0dd32370  ldr     q0, [sp, #0xd10]
+  0dd32374  str     x8, [x9, #0x10]
+  0dd32378  ldr     x8, [sp, #0x58]
+  0dd3237c  str     q0, [x9]
+  0dd32380  ldp     q0, q1, [sp, #0x80]
+  0dd32384  str     w28, [sp, #0x1110]
+  0dd32388  str     w21, [sp, #0x1114]
+  0dd3238c  stur    d12, [x23, #0x8c]
+  0dd32390  str     s11, [sp, #0x1124]
+  0dd32394  str     s10, [sp, #0x1128]
+  0dd32398  str     x25, [sp, #0x11b8]
+  0dd3239c  str     w24, [sp, #0x11c0]
+  0dd323a0  stp     q1, q0, [x8]
+  0dd323a4  str     s8, [sp, #0x11fc]
+  0dd323a8  bl      #0xe1b8430
+  0dd323ac  add     x8, sp, #1, lsl #12
+  0dd323b0  ldp     x9, x10, [sp, #0x38]
+  0dd323b4  add     x8, x8, #0x450
+  0dd323b8  strb    w26, [x23, #0x340]
+  0dd323bc  ldr     q2, [sp, #0xae0]
+  0dd323c0  ldur    q0, [x8, #0x38]
+  0dd323c4  ldur    q1, [x8, #0x47]
+  0dd323c8  add     x8, sp, #0x638
+  0dd323cc  str     d13, [sp, #0x13f0]
+  0dd323d0  str     q0, [x10]
+  0dd323d4  ldr     q0, [x8, #0x4f0]
+  0dd323d8  ldr     w8, [sp, #0xb38]
+  0dd323dc  stur    q1, [x10, #0xf]
+  0dd323e0  ldr     q1, [sp, #0xb00]
+  0dd323e4  str     q0, [x9]
+  0dd323e8  ldr     q0, [sp, #0xb10]
+  0dd323ec  str     w8, [x9, #0x10]
+  0dd323f0  adrp    x8, #0xea6a000
+  0dd323f4  stp     q1, q0, [x22, #0x20]
+  0dd323f8  ldr     q0, [sp, #0xaf0]
+  0dd323fc  ldr     x8, [x8, #0x838]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>.Add()
+  0dd32400  stp     q2, q0, [x22]
+  0dd32404  ldr     x2, [x8]
+  0dd32408  add     x1, sp, #1, lsl #12
+  0dd3240c  adrp    x25, #0xea65000
+  0dd32410  adrp    x29, #0xea6a000
+  0dd32414  add     x0, x19, #0x128
+  0dd32418  add     x1, x1, #0x90
+  0dd3241c  ldr     x25, [x25, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd32420  ldr     x29, [x29, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd32424  add     x28, sp, #0x240
+  0dd32428  bl      #0xb325900  ; -> Unity.Collections.NativeList<ActorSwingJobDynamicBone>$$Add
+  0dd3242c  b       #0xdd31c8c
+  0dd32430  adrp    x8, #0xea6a000
+  0dd32434  add     x0, sp, #1, lsl #12
+  0dd32438  ldr     x8, [x8, #0x368]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+  0dd3243c  add     x0, x0, #0x470
+  0dd32440  ldr     x1, [x8]
+  0dd32444  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd32448  adrp    x26, #0xea6a000
+  0dd3244c  adrp    x27, #0xea6a000
+  0dd32450  add     x20, sp, #0x360
+  0dd32454  ldr     x26, [x26, #0x7e8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.MoveNext()
+  0dd32458  ldr     x27, [x27, #0x840]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.Add()
+  0dd3245c  ldr     x12, [sp, #0x30]
+  0dd32460  adrp    x10, #0xea6a000
+  0dd32464  ldr     x8, [x12]
+  0dd32468  ldrh    w9, [x8, #0x12e]
+  0dd3246c  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd32470  ldr     x1, [x10]
+  0dd32474  cbz     x9, #0xdd32498
+  0dd32478  ldr     x10, [x8, #0xb0]
+  0dd3247c  add     x10, x10, #8
+  0dd32480  ldur    x11, [x10, #-8]
+  0dd32484  cmp     x11, x1
+  0dd32488  b.eq    #0xdd324ac
+  0dd3248c  subs    x9, x9, #1
+  0dd32490  add     x10, x10, #0x10
+  0dd32494  b.ne    #0xdd32480
+  0dd32498  mov     x0, x12
+  0dd3249c  mov     w2, #0xd
+  0dd324a0  bl      #0x6408234
+  0dd324a4  ldr     x12, [sp, #0x30]
+  0dd324a8  b       #0xdd324bc
+  0dd324ac  ldr     w9, [x10]
+  0dd324b0  add     w9, w9, #0xd
+  0dd324b4  add     x8, x8, w9, sxtw #4
+  0dd324b8  add     x0, x8, #0x138
+  0dd324bc  ldp     x8, x1, [x0]
+  0dd324c0  mov     x0, x12
+  0dd324c4  blr     x8
+  0dd324c8  cbz     x0, #0xdd3348c
+  0dd324cc  adrp    x8, #0xea6a000
+  0dd324d0  ldr     x8, [x8, #0x810]  ; MMETH Method$System.Collections.Generic.List<ActorSwingStaticBone>.GetEnumerator()
+  0dd324d4  ldr     x1, [x8]
+  0dd324d8  add     x8, sp, #0x408
+  0dd324dc  bl      #0xac1c108  ; -> System.Collections.Generic.List<object>$$GetEnumerator
+  0dd324e0  ldr     x8, [sp, #0x418]
+  0dd324e4  ldur    q0, [x20, #0xa8]
+  0dd324e8  add     x21, sp, #0x360
+  0dd324ec  add     x20, sp, #0xa18
+  0dd324f0  str     x8, [sp, #0xad0]
+  0dd324f4  add     x8, sp, #0xac0
+  0dd324f8  str     q0, [sp, #0xac0]
+  0dd324fc  stp     xzr, x8, [sp, #0x170]
+  0dd32500  ldr     x1, [x26]
+  0dd32504  add     x0, sp, #0xac0
+  0dd32508  bl      #0xa043518  ; -> System.Collections.Generic.List.Enumerator<object>$$MoveNext
+  0dd3250c  tbz     w0, #0, #0xdd32618
+  0dd32510  ldr     x23, [sp, #0xad0]
+  0dd32514  cbz     x23, #0xdd33384
+  0dd32518  mov     x0, x23
+  0dd3251c  mov     x1, xzr
+  0dd32520  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd32524  mov     x22, x0
+  0dd32528  cbz     x0, #0xdd3339c
+  0dd3252c  mov     x0, x22
+  0dd32530  mov     x1, xzr
+  0dd32534  bl      #0xd9eed88  ; -> UnityEngine.Transform$$get_parent
+  0dd32538  mov     x24, x0
+  0dd3253c  ldr     x0, [x25]
+  0dd32540  ldr     w8, [x0, #0xe4]
+  0dd32544  cbnz    w8, #0xdd3254c
+  0dd32548  bl      #0x63ceff4
+  0dd3254c  mov     x0, x24
+  0dd32550  mov     x1, xzr
+  0dd32554  mov     x2, xzr
+  0dd32558  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd3255c  tbz     w0, #0, #0xdd32594
+  0dd32560  mov     x0, x22
+  0dd32564  mov     x1, xzr
+  0dd32568  bl      #0xd9eed88  ; -> UnityEngine.Transform$$get_parent
+  0dd3256c  mov     x1, x0
+  0dd32570  ldr     x0, [sp, #0xa8]
+  0dd32574  add     x8, sp, #0x408
+  0dd32578  mov     x2, xzr
+  0dd3257c  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd32580  ldur    q0, [x21, #0xa8]
+  0dd32584  ldr     x8, [sp, #0x418]
+  0dd32588  str     q0, [sp, #0xaa0]
+  0dd3258c  str     x8, [sp, #0xab0]
+  0dd32590  b       #0xdd325a0
+  0dd32594  str     xzr, [sp, #0xaa8]
+  0dd32598  str     xzr, [sp, #0xaa0]
+  0dd3259c  str     xzr, [sp, #0xab0]
+  0dd325a0  add     x0, sp, #0xa18
+  0dd325a4  mov     w1, wzr
+  0dd325a8  mov     w2, #0x88
+  0dd325ac  bl      #0xe1b83e0
+  0dd325b0  add     x8, sp, #0x408
+  0dd325b4  mov     x0, x23
+  0dd325b8  mov     x1, xzr
+  0dd325bc  bl      #0x657f8d4  ; -> ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider
+  0dd325c0  add     x0, sp, #0xa18
+  0dd325c4  add     x1, sp, #0x408
+  0dd325c8  mov     w2, #0x58
+  0dd325cc  bl      #0xe1b8430
+  0dd325d0  ldr     x0, [sp, #0xa8]
+  0dd325d4  add     x8, sp, #0x408
+  0dd325d8  mov     x1, x22
+  0dd325dc  mov     x2, xzr
+  0dd325e0  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd325e4  ldur    q0, [x21, #0xa8]
+  0dd325e8  ldr     x8, [sp, #0x418]
+  0dd325ec  ldr     q1, [sp, #0xaa0]
+  0dd325f0  ldr     x9, [sp, #0xab0]
+  0dd325f4  ldr     x2, [x27]
+  0dd325f8  stur    q0, [x20, #0x58]
+  0dd325fc  stur    x8, [x20, #0x68]
+  0dd32600  stur    q1, [x20, #0x70]
+  0dd32604  stur    x9, [x20, #0x80]
+  0dd32608  add     x0, x19, #0x130
+  0dd3260c  add     x1, sp, #0xa18
+  0dd32610  bl      #0xb325f1c  ; -> Unity.Collections.NativeList<ActorSwingJobStaticBone>$$Add
+  0dd32614  b       #0xdd32500
+  0dd32618  adrp    x8, #0xea6a000
+  0dd3261c  add     x0, sp, #0xac0
+  0dd32620  ldr     x8, [x8, #0x7d8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.Dispose()
+  0dd32624  ldr     x1, [x8]
+  0dd32628  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd3262c  add     x20, sp, #0x360
+  0dd32630  ldr     x12, [sp, #0x30]
+  0dd32634  adrp    x10, #0xea6a000
+  0dd32638  ldr     x8, [x12]
+  0dd3263c  ldrh    w9, [x8, #0x12e]
+  0dd32640  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd32644  ldr     x1, [x10]
+  0dd32648  cbz     x9, #0xdd3266c
+  0dd3264c  ldr     x10, [x8, #0xb0]
+  0dd32650  add     x10, x10, #8
+  0dd32654  ldur    x11, [x10, #-8]
+  0dd32658  cmp     x11, x1
+  0dd3265c  b.eq    #0xdd32680
+  0dd32660  subs    x9, x9, #1
+  0dd32664  add     x10, x10, #0x10
+  0dd32668  b.ne    #0xdd32654
+  0dd3266c  mov     x0, x12
+  0dd32670  mov     w2, #0xe
+  0dd32674  bl      #0x6408234
+  0dd32678  ldr     x12, [sp, #0x30]
+  0dd3267c  b       #0xdd32690
+  0dd32680  ldr     w9, [x10]
+  0dd32684  add     w9, w9, #0xe
+  0dd32688  add     x8, x8, w9, sxtw #4
+  0dd3268c  add     x0, x8, #0x138
+  0dd32690  ldp     x8, x1, [x0]
+  0dd32694  mov     x0, x12
+  0dd32698  blr     x8
+  0dd3269c  cbz     x0, #0xdd3348c
+  0dd326a0  adrp    x8, #0xea6a000
+  0dd326a4  ldr     x8, [x8, #0x808]  ; MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.GetEnumerator()
+  0dd326a8  ldr     x1, [x8]
+  0dd326ac  add     x8, sp, #0x408
+  0dd326b0  bl      #0xac1c108  ; -> System.Collections.Generic.List<object>$$GetEnumerator
+  0dd326b4  ldr     x8, [sp, #0x418]
+  0dd326b8  ldur    q0, [x20, #0xa8]
+  0dd326bc  add     x20, sp, #0x848
+  0dd326c0  str     xzr, [sp, #0x3d8]
+  0dd326c4  add     x21, x20, #0x178
+  0dd326c8  add     x25, x20, #0x190
+  0dd326cc  str     x8, [sp, #0xa10]
+  0dd326d0  add     x8, sp, #0xa00
+  0dd326d4  str     q0, [sp, #0xa00]
+  0dd326d8  str     x8, [sp, #0x3e0]
+  0dd326dc  adrp    x8, #0xea6a000
+  0dd326e0  ldr     x8, [x8, #0x7f0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.MoveNext()
+  0dd326e4  ldr     x1, [x8]
+  0dd326e8  add     x0, sp, #0xa00
+  0dd326ec  bl      #0xa043518  ; -> System.Collections.Generic.List.Enumerator<object>$$MoveNext
+  0dd326f0  tbz     w0, #0, #0xdd32b54
+  0dd326f4  ldr     x22, [sp, #0xa10]
+  0dd326f8  add     x0, sp, #0x848
+  0dd326fc  mov     w1, wzr
+  0dd32700  mov     w2, #0x1b8
+  0dd32704  bl      #0xe1b83e0
+  0dd32708  cbz     x22, #0xdd333b4
+  0dd3270c  mov     x0, x22
+  0dd32710  mov     x1, xzr
+  0dd32714  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd32718  mov     x1, x0
+  0dd3271c  ldr     x23, [sp, #0xa8]
+  0dd32720  add     x8, sp, #0x408
+  0dd32724  mov     x2, xzr
+  0dd32728  mov     x0, x23
+  0dd3272c  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd32730  add     x24, sp, #0x360
+  0dd32734  ldr     x8, [sp, #0x418]
+  0dd32738  ldur    q0, [x24, #0xa8]
+  0dd3273c  str     x8, [x20, #0x170]
+  0dd32740  str     q0, [x20, #0x160]
+  0dd32744  ldr     x1, [x22, #0x50]
+  0dd32748  add     x8, sp, #0x408
+  0dd3274c  mov     x0, x23
+  0dd32750  mov     x2, xzr
+  0dd32754  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd32758  ldur    q0, [x24, #0xa8]
+  0dd3275c  ldr     x8, [sp, #0x418]
+  0dd32760  ldr     x1, [x22, #0x60]
+  0dd32764  str     q0, [sp, #0x3c0]
+  0dd32768  str     x8, [sp, #0x3d0]
+  0dd3276c  mov     x0, x23
+  0dd32770  mov     x2, xzr
+  0dd32774  bl      #0xd6f37cc  ; -> UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$Bind
+  0dd32778  ldp     s0, s1, [x22, #0x90]
+  0dd3277c  mov     x23, x0
+  0dd32780  ldp     s2, s3, [x22, #0x98]
+  0dd32784  mov     x24, x1
+  0dd32788  ldp     s4, s5, [x22, #0xa0]
+  0dd3278c  ldr     s6, [x22, #0xa8]
+  0dd32790  str     xzr, [sp, #0x3f0]
+  0dd32794  str     xzr, [sp, #0x3e8]
+  0dd32798  str     wzr, [sp, #0x400]
+  0dd3279c  str     xzr, [sp, #0x3f8]
+  0dd327a0  add     x0, sp, #0x3e8
+  0dd327a4  mov     x1, xzr
+  0dd327a8  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd327ac  ldr     s0, [x22, #0x100]
+  0dd327b0  ldr     s1, [x22, #0x104]
+  0dd327b4  ldr     s2, [x22, #0x108]
+  0dd327b8  ldr     s3, [x22, #0x10c]
+  0dd327bc  ldr     s4, [x22, #0x110]
+  0dd327c0  ldr     s5, [x22, #0x114]
+  0dd327c4  ldr     s6, [x22, #0x118]
+  0dd327c8  str     xzr, [sp, #0x3a8]
+  0dd327cc  str     xzr, [sp, #0x3a0]
+  0dd327d0  str     wzr, [sp, #0x3b8]
+  0dd327d4  str     xzr, [sp, #0x3b0]
+  0dd327d8  add     x0, sp, #0x3a0
+  0dd327dc  mov     x1, xzr
+  0dd327e0  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd327e4  ldr     s0, [x22, #0x11c]
+  0dd327e8  ldr     s1, [x22, #0x120]
+  0dd327ec  ldr     s2, [x22, #0x124]
+  0dd327f0  ldr     s3, [x22, #0x128]
+  0dd327f4  ldr     s4, [x22, #0x12c]
+  0dd327f8  ldr     s5, [x22, #0x130]
+  0dd327fc  ldr     s6, [x22, #0x134]
+  0dd32800  str     xzr, [sp, #0x388]
+  0dd32804  str     xzr, [sp, #0x380]
+  0dd32808  str     wzr, [sp, #0x398]
+  0dd3280c  str     xzr, [sp, #0x390]
+  0dd32810  add     x0, sp, #0x380
+  0dd32814  mov     x1, xzr
+  0dd32818  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd3281c  ldr     s0, [x22, #0x170]
+  0dd32820  ldr     s1, [x22, #0x174]
+  0dd32824  ldr     s2, [x22, #0x178]
+  0dd32828  ldr     s3, [x22, #0x17c]
+  0dd3282c  ldr     s4, [x22, #0x180]
+  0dd32830  ldr     s5, [x22, #0x184]
+  0dd32834  ldr     s6, [x22, #0x188]
+  0dd32838  str     xzr, [sp, #0x368]
+  0dd3283c  str     xzr, [sp, #0x360]
+  0dd32840  str     wzr, [sp, #0x378]
+  0dd32844  str     xzr, [sp, #0x370]
+  0dd32848  add     x0, sp, #0x360
+  0dd3284c  mov     x1, xzr
+  0dd32850  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd32854  add     x0, sp, #0x408
+  0dd32858  mov     w1, wzr
+  0dd3285c  mov     w2, #0xb0
+  0dd32860  bl      #0xe1b83e0
+  0dd32864  ldr     q0, [sp, #0x3c0]
+  0dd32868  add     x9, sp, #0x360
+  0dd3286c  ldr     x8, [sp, #0x3d0]
+  0dd32870  ldur    q1, [x9, #0x88]
+  0dd32874  str     q0, [sp, #0x340]
+  0dd32878  ldur    q0, [x9, #0x94]
+  0dd3287c  str     q1, [sp, #0x320]
+  0dd32880  ldr     q1, [sp, #0x3a0]
+  0dd32884  stur    q0, [x28, #0xec]
+  0dd32888  ldur    q0, [x9, #0x4c]
+  0dd3288c  str     q1, [sp, #0x300]
+  0dd32890  ldur    q1, [x9, #0x2c]
+  0dd32894  stur    q0, [x28, #0xcc]
+  0dd32898  ldr     q0, [sp, #0x380]
+  0dd3289c  stur    q1, [x28, #0xac]
+  0dd328a0  ldur    q1, [x9, #0xc]
+  0dd328a4  str     q0, [sp, #0x2e0]
+  0dd328a8  ldr     q0, [sp, #0x360]
+  0dd328ac  str     x8, [sp, #0x350]
+  0dd328b0  stur    q1, [x28, #0x8c]
+  0dd328b4  str     q0, [sp, #0x2c0]
+  0dd328b8  add     x0, sp, #0x408
+  0dd328bc  add     x1, sp, #0x340
+  0dd328c0  and     x3, x24, #0xffffffff
+  0dd328c4  add     x4, sp, #0x320
+  0dd328c8  add     x5, sp, #0x300
+  0dd328cc  add     x6, sp, #0x2e0
+  0dd328d0  add     x7, sp, #0x2c0
+  0dd328d4  mov     x2, x23
+  0dd328d8  str     xzr, [sp]
+  0dd328dc  bl      #0x6578d8c  ; -> ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor
+  0dd328e0  add     x0, sp, #0x848
+  0dd328e4  add     x1, sp, #0x408
+  0dd328e8  mov     w2, #0xb0
+  0dd328ec  bl      #0xe1b8430
+  0dd328f0  ldr     x1, [x22, #0x58]
+  0dd328f4  ldr     x23, [sp, #0xa8]
+  0dd328f8  add     x8, sp, #0x170
+  0dd328fc  mov     x2, xzr
+  0dd32900  mov     x0, x23
+  0dd32904  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd32908  ldr     q0, [sp, #0x170]
+  0dd3290c  ldr     x8, [sp, #0x180]
+  0dd32910  ldr     x1, [x22, #0x68]
+  0dd32914  str     q0, [sp, #0x2a0]
+  0dd32918  str     x8, [sp, #0x2b0]
+  0dd3291c  mov     x0, x23
+  0dd32920  mov     x2, xzr
+  0dd32924  bl      #0xd6f37cc  ; -> UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$Bind
+  0dd32928  ldp     s0, s1, [x22, #0xc8]
+  0dd3292c  mov     x23, x0
+  0dd32930  ldp     s2, s3, [x22, #0xd0]
+  0dd32934  mov     x24, x1
+  0dd32938  ldp     s4, s5, [x22, #0xd8]
+  0dd3293c  ldr     s6, [x22, #0xe0]
+  0dd32940  str     xzr, [sp, #0x288]
+  0dd32944  str     xzr, [sp, #0x280]
+  0dd32948  str     wzr, [sp, #0x298]
+  0dd3294c  str     xzr, [sp, #0x290]
+  0dd32950  add     x0, sp, #0x280
+  0dd32954  mov     x1, xzr
+  0dd32958  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd3295c  ldr     s0, [x22, #0x138]
+  0dd32960  ldr     s1, [x22, #0x13c]
+  0dd32964  ldr     s2, [x22, #0x140]
+  0dd32968  ldr     s3, [x22, #0x144]
+  0dd3296c  ldr     s4, [x22, #0x148]
+  0dd32970  ldr     s5, [x22, #0x14c]
+  0dd32974  ldr     s6, [x22, #0x150]
+  0dd32978  str     xzr, [sp, #0x268]
+  0dd3297c  str     xzr, [sp, #0x260]
+  0dd32980  str     wzr, [sp, #0x278]
+  0dd32984  str     xzr, [sp, #0x270]
+  0dd32988  add     x0, sp, #0x260
+  0dd3298c  mov     x1, xzr
+  0dd32990  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd32994  ldr     s0, [x22, #0x154]
+  0dd32998  ldr     s1, [x22, #0x158]
+  0dd3299c  ldr     s2, [x22, #0x15c]
+  0dd329a0  ldr     s3, [x22, #0x160]
+  0dd329a4  ldr     s4, [x22, #0x164]
+  0dd329a8  ldr     s5, [x22, #0x168]
+  0dd329ac  ldr     s6, [x22, #0x16c]
+  0dd329b0  str     xzr, [sp, #0x248]
+  0dd329b4  str     xzr, [sp, #0x240]
+  0dd329b8  str     wzr, [sp, #0x258]
+  0dd329bc  str     xzr, [sp, #0x250]
+  0dd329c0  add     x0, sp, #0x240
+  0dd329c4  mov     x1, xzr
+  0dd329c8  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd329cc  ldr     s0, [x22, #0x1a8]
+  0dd329d0  ldr     s1, [x22, #0x1ac]
+  0dd329d4  ldr     s2, [x22, #0x1b0]
+  0dd329d8  ldr     s3, [x22, #0x1b4]
+  0dd329dc  ldr     s4, [x22, #0x1b8]
+  0dd329e0  ldr     s5, [x22, #0x1bc]
+  0dd329e4  ldr     s6, [x22, #0x1c0]
+  0dd329e8  str     xzr, [sp, #0x228]
+  0dd329ec  str     xzr, [sp, #0x220]
+  0dd329f0  str     wzr, [sp, #0x238]
+  0dd329f4  str     xzr, [sp, #0x230]
+  0dd329f8  add     x0, sp, #0x220
+  0dd329fc  mov     x1, xzr
+  0dd32a00  bl      #0x657f388  ; -> ActorAnimation.ActorSwingAffineTransform$$.ctor
+  0dd32a04  add     x0, sp, #0x170
+  0dd32a08  mov     w1, wzr
+  0dd32a0c  mov     w2, #0xb0
+  0dd32a10  bl      #0xe1b83e0
+  0dd32a14  ldr     q0, [sp, #0x2a0]
+  0dd32a18  ldr     x8, [sp, #0x2b0]
+  0dd32a1c  add     x9, sp, #0x1d
+  0dd32a20  ldr     q1, [sp, #0x280]
+  0dd32a24  str     q0, [sp, #0x150]
+  0dd32a28  ldur    q0, [x28, #0x4c]
+  0dd32a2c  str     x8, [sp, #0x160]
+  0dd32a30  add     x8, sp, #0x130
+  0dd32a34  str     q1, [sp, #0x130]
+  0dd32a38  ldr     q1, [sp, #0x260]
+  0dd32a3c  stur    q0, [x8, #0xc]
+  0dd32a40  ldur    q0, [x28, #0x2c]
+  0dd32a44  str     q1, [sp, #0x110]
+  0dd32a48  ldur    q1, [x28, #0xc]
+  0dd32a4c  stur    q0, [x9, #0xff]
+  0dd32a50  ldr     q0, [sp, #0x240]
+  0dd32a54  stur    q1, [sp, #0xfc]
+  0dd32a58  ldur    q1, [x8, #0xfc]
+  0dd32a5c  str     q0, [sp, #0xf0]
+  0dd32a60  ldr     q0, [sp, #0x220]
+  0dd32a64  stur    q1, [sp, #0xdc]
+  0dd32a68  str     q0, [sp, #0xd0]
+  0dd32a6c  add     x0, sp, #0x170
+  0dd32a70  add     x1, sp, #0x150
+  0dd32a74  and     x3, x24, #0xffffffff
+  0dd32a78  add     x4, sp, #0x130
+  0dd32a7c  add     x5, sp, #0x110
+  0dd32a80  add     x6, sp, #0xf0
+  0dd32a84  add     x7, sp, #0xd0
+  0dd32a88  mov     x2, x23
+  0dd32a8c  str     xzr, [sp]
+  0dd32a90  bl      #0x6578d8c  ; -> ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor
+  0dd32a94  add     x0, x20, #0xb0
+  0dd32a98  add     x1, sp, #0x170
+  0dd32a9c  mov     w2, #0xb0
+  0dd32aa0  bl      #0xe1b8430
+  0dd32aa4  ldur    q0, [x22, #0x28]
+  0dd32aa8  stp     xzr, xzr, [sp, #0xb0]
+  0dd32aac  str     wzr, [sp, #0xc8]
+  0dd32ab0  str     q0, [x21]
+  0dd32ab4  ldr     d0, [x22, #0x38]
+  0dd32ab8  str     xzr, [sp, #0xc0]
+  0dd32abc  str     d0, [sp, #0x9d0]
+  0dd32ac0  ldrb    w8, [x22, #0x4c]
+  0dd32ac4  strb    w8, [sp, #0x9f8]
+  0dd32ac8  ldr     x1, [x22, #0x40]
+  0dd32acc  add     x0, sp, #0xb0
+  0dd32ad0  mov     x2, xzr
+  0dd32ad4  bl      #0x6578970  ; -> ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+  0dd32ad8  ldr     q0, [sp, #0xb0]
+  0dd32adc  ldur    q1, [sp, #0xbc]
+  0dd32ae0  adrp    x8, #0xea6a000
+  0dd32ae4  str     q0, [x25]
+  0dd32ae8  stur    q1, [x25, #0xc]
+  0dd32aec  ldr     s0, [x22, #0x48]
+  0dd32af0  ldr     x8, [x8, #0x828]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>.Add()
+  0dd32af4  ldr     x2, [x8]
+  0dd32af8  str     s0, [sp, #0x9f4]
+  0dd32afc  add     x0, x19, #0x138
+  0dd32b00  add     x1, sp, #0x848
+  0dd32b04  bl      #0xb324cc0  ; -> Unity.Collections.NativeList<ActorSwingJobBreastBone>$$Add
+  0dd32b08  ldr     x0, [x22, #0x80]
+  0dd32b0c  mov     w1, #4
+  0dd32b10  mov     x2, xzr
+  0dd32b14  bl      #0x657dba0  ; -> ActorAnimation.CurveConversion$$CurveToKeyframes
+  0dd32b18  mov     x23, x0
+  0dd32b1c  ldr     x0, [x22, #0x88]
+  0dd32b20  mov     x24, x1
+  0dd32b24  mov     w1, #4
+  0dd32b28  mov     x2, xzr
+  0dd32b2c  bl      #0x657dba0  ; -> ActorAnimation.CurveConversion$$CurveToKeyframes
+  0dd32b30  str     wzr, [x19, #0x140]
+  0dd32b34  str     w24, [x19, #0x144]
+  0dd32b38  str     xzr, [x19, #0x148]
+  0dd32b3c  str     wzr, [x19, #0x150]
+  0dd32b40  str     w1, [x19, #0x154]
+  0dd32b44  stp     xzr, x23, [x19, #0x158]
+  0dd32b48  stp     x24, x0, [x19, #0x168]
+  0dd32b4c  str     x1, [x19, #0x178]
+  0dd32b50  b       #0xdd326dc
+  0dd32b54  adrp    x8, #0xea6a000
+  0dd32b58  add     x0, sp, #0xa00
+  0dd32b5c  ldr     x8, [x8, #0x7e0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.Dispose()
+  0dd32b60  ldr     x1, [x8]
+  0dd32b64  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd32b68  add     x20, sp, #0x360
+  0dd32b6c  ldr     x12, [sp, #0x30]
+  0dd32b70  adrp    x10, #0xea6a000
+  0dd32b74  ldr     x8, [x12]
+  0dd32b78  ldrh    w9, [x8, #0x12e]
+  0dd32b7c  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd32b80  ldr     x1, [x10]
+  0dd32b84  cbz     x9, #0xdd32ba8
+  0dd32b88  ldr     x10, [x8, #0xb0]
+  0dd32b8c  add     x10, x10, #8
+  0dd32b90  ldur    x11, [x10, #-8]
+  0dd32b94  cmp     x11, x1
+  0dd32b98  b.eq    #0xdd32bbc
+  0dd32b9c  subs    x9, x9, #1
+  0dd32ba0  add     x10, x10, #0x10
+  0dd32ba4  b.ne    #0xdd32b90
+  0dd32ba8  mov     x0, x12
+  0dd32bac  mov     w2, #0xf
+  0dd32bb0  bl      #0x6408234
+  0dd32bb4  ldr     x12, [sp, #0x30]
+  0dd32bb8  b       #0xdd32bcc
+  0dd32bbc  ldr     w9, [x10]
+  0dd32bc0  add     w9, w9, #0xf
+  0dd32bc4  add     x8, x8, w9, sxtw #4
+  0dd32bc8  add     x0, x8, #0x138
+  0dd32bcc  ldp     x8, x1, [x0]
+  0dd32bd0  mov     x0, x12
+  0dd32bd4  blr     x8
+  0dd32bd8  cbz     x0, #0xdd3348c
+  0dd32bdc  adrp    x8, #0xea6a000
+  0dd32be0  ldr     x8, [x8, #0x3d8]  ; MMETH Method$System.Collections.Generic.List<ChainLayerInfo>.GetEnumerator()
+  0dd32be4  ldr     x1, [x8]
+  0dd32be8  add     x8, sp, #0x408
+  0dd32bec  bl      #0xac1c108  ; -> System.Collections.Generic.List<object>$$GetEnumerator
+  0dd32bf0  ldur    q0, [x20, #0xa8]
+  0dd32bf4  ldr     x8, [sp, #0x418]
+  0dd32bf8  add     x20, sp, #0x7d0
+  0dd32bfc  add     x9, sp, #0x830
+  0dd32c00  orr     x21, x20, #8
+  0dd32c04  add     x25, sp, #0x73c
+  0dd32c08  mov     w26, #0x7f800000
+  0dd32c0c  mov     w27, #0x201
+  0dd32c10  str     q0, [sp, #0x830]
+  0dd32c14  str     x8, [sp, #0x840]
+  0dd32c18  str     xzr, [sp, #0x408]
+  0dd32c1c  str     x9, [sp, #0x410]
+  0dd32c20  adrp    x8, #0xea6a000
+  0dd32c24  ldr     x8, [x8, #0x3b0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ChainLayerInfo>.MoveNext()
+  0dd32c28  ldr     x1, [x8]
+  0dd32c2c  add     x0, sp, #0x830
+  0dd32c30  bl      #0xa043518  ; -> System.Collections.Generic.List.Enumerator<object>$$MoveNext
+  0dd32c34  tbz     w0, #0, #0xdd32ea4
+  0dd32c38  ldr     x28, [sp, #0x840]
+  0dd32c3c  cbz     x28, #0xdd333fc
+  0dd32c40  ldrb    w8, [x28, #0x10]
+  0dd32c44  cbz     w8, #0xdd32c20
+  0dd32c48  ldr     x0, [x28, #0x20]
+  0dd32c4c  ldrb    w1, [x28, #0x11]
+  0dd32c50  mov     x2, xzr
+  0dd32c54  bl      #0x657d0e4  ; -> ActorAnimation.ActorAnimationSwingSkeletonCalcUtility$$GetChainLoopLength
+  0dd32c58  ldr     x0, [x28, #0x20]
+  0dd32c5c  cbz     x0, #0xdd32e8c
+  0dd32c60  fmov    s8, s0
+  0dd32c64  mov     w22, wzr
+  0dd32c68  ldr     w8, [x0, #0x18]
+  0dd32c6c  cmp     w22, w8
+  0dd32c70  b.ge    #0xdd32c20
+  0dd32c74  sub     w8, w8, #1
+  0dd32c78  cmp     w22, w8
+  0dd32c7c  b.ne    #0xdd32c90
+  0dd32c80  ldrb    w8, [x28, #0x11]
+  0dd32c84  mov     w23, wzr
+  0dd32c88  cbnz    w8, #0xdd32c94
+  0dd32c8c  b       #0xdd32c20
+  0dd32c90  add     w23, w22, #1
+  0dd32c94  ldr     x2, [x29]
+  0dd32c98  mov     w1, w22
+  0dd32c9c  bl      #0xac1b344  ; -> System.Collections.Generic.List<object>$$get_Item
+  0dd32ca0  mov     x24, x0
+  0dd32ca4  ldr     x0, [x28, #0x20]
+  0dd32ca8  cbz     x0, #0xdd332f4
+  0dd32cac  ldr     x2, [x29]
+  0dd32cb0  mov     w1, w23
+  0dd32cb4  bl      #0xac1b344  ; -> System.Collections.Generic.List<object>$$get_Item
+  0dd32cb8  cbz     x24, #0xdd332dc
+  0dd32cbc  mov     x23, x0
+  0dd32cc0  mov     x0, x24
+  0dd32cc4  mov     x1, xzr
+  0dd32cc8  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd32ccc  cbz     x0, #0xdd332c4
+  0dd32cd0  mov     x1, xzr
+  0dd32cd4  bl      #0xd9f2f14  ; -> UnityEngine.Transform$$get_lossyScale
+  0dd32cd8  fmov    w8, s2
+  0dd32cdc  and     w8, w8, #0x7fffffff
+  0dd32ce0  cmp     w8, w26
+  0dd32ce4  fccmp   s1, s2, #8, ls
+  0dd32ce8  fcsel   s1, s1, s2, mi
+  0dd32cec  fmov    w8, s1
+  0dd32cf0  and     w8, w8, #0x7fffffff
+  0dd32cf4  cmp     w8, w26
+  0dd32cf8  ldr     x8, [x24, #0x20]
+  0dd32cfc  fccmp   s0, s1, #8, ls
+  0dd32d00  fcsel   s5, s0, s1, mi
+  0dd32d04  cbz     x8, #0xdd33294
+  0dd32d08  cbz     x23, #0xdd332ac
+  0dd32d0c  ldr     x9, [x23, #0x20]
+  0dd32d10  cbz     x9, #0xdd3330c
+  0dd32d14  ldr     s0, [x28, #0x14]
+  0dd32d18  movi    v1.2d, #0000000000000000
+  0dd32d1c  ldr     w8, [x8, #0x14]
+  0dd32d20  ldr     w9, [x9, #0x14]
+  0dd32d24  str     w27, [sp, #0x7d0]
+  0dd32d28  fmul    s0, s5, s0
+  0dd32d2c  orr     w8, w9, w8
+  0dd32d30  stp     q1, q1, [x21]
+  0dd32d34  stur    q1, [x21, #0x1c]
+  0dd32d38  str     w8, [sp, #0x7d4]
+  0dd32d3c  adrp    x8, #0xea6a000
+  0dd32d40  str     s0, [sp, #0x804]
+  0dd32d44  str     s0, [sp, #0x808]
+  0dd32d48  ldr     x8, [x8, #0x4b8]  ; META Unity.Mathematics.quaternion_TypeInfo
+  0dd32d4c  stur    xzr, [x20, #0x3c]
+  0dd32d50  ldr     s2, [x24, #0xa0]
+  0dd32d54  ldp     s0, s1, [x24, #0x98]
+  0dd32d58  stur    xzr, [x20, #0x4c]
+  0dd32d5c  ldr     x8, [x8]
+  0dd32d60  stur    xzr, [x20, #0x44]
+  0dd32d64  ldp     s3, s4, [x23, #0x98]
+  0dd32d68  str     s5, [sp, #0x824]
+  0dd32d6c  ldr     x8, [x8, #0xb8]
+  0dd32d70  ldr     s5, [x23, #0xa0]
+  0dd32d74  ldr     s6, [x8]
+  0dd32d78  ldur    x9, [x8, #4]
+  0dd32d7c  ldr     s7, [x8, #0xc]
+  0dd32d80  mov     x1, xzr
+  0dd32d84  add     x0, sp, #0x7d0
+  0dd32d88  str     s7, [sp, #0xc]
+  0dd32d8c  stur    x9, [sp, #4]
+  0dd32d90  str     s6, [sp]
+  0dd32d94  bl      #0x657fe64  ; -> ActorAnimation.ActorSwingColliderUtility$$UpdateCollider
+  0dd32d98  mov     x0, x24
+  0dd32d9c  mov     x1, xzr
+  0dd32da0  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd32da4  cbz     x0, #0xdd33324
+  0dd32da8  mov     x1, xzr
+  0dd32dac  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd32db0  mov     w1, w0
+  0dd32db4  adrp    x8, #0xea6a000
+  0dd32db8  ldr     x8, [x8, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd32dbc  ldr     x3, [x8]
+  0dd32dc0  add     x0, x19, #0x188
+  0dd32dc4  add     x2, sp, #0x7cc
+  0dd32dc8  bl      #0xb323da4  ; -> Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+  0dd32dcc  tbz     w0, #0, #0xdd32e18
+  0dd32dd0  mov     x0, x23
+  0dd32dd4  mov     x1, xzr
+  0dd32dd8  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd32ddc  cbz     x0, #0xdd3333c
+  0dd32de0  mov     x1, xzr
+  0dd32de4  bl      #0xd9e2400  ; -> UnityEngine.Object$$GetInstanceID
+  0dd32de8  mov     w1, w0
+  0dd32dec  adrp    x8, #0xea6a000
+  0dd32df0  ldr     x8, [x8, #0x820]  ; MMETH Method$Unity.Collections.NativeHashMap<int, int>.TryGetValue()
+  0dd32df4  ldr     x3, [x8]
+  0dd32df8  add     x0, x19, #0x188
+  0dd32dfc  add     x2, sp, #0x7c8
+  0dd32e00  bl      #0xb323da4  ; -> Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+  0dd32e04  ldr     w23, [sp, #0x7cc]
+  0dd32e08  tbz     w0, #0, #0xdd32e1c
+  0dd32e0c  ldr     w8, [sp, #0x7c8]
+  0dd32e10  sub     w24, w8, w23
+  0dd32e14  b       #0xdd32e20
+  0dd32e18  ldr     w23, [sp, #0x7cc]
+  0dd32e1c  mov     w24, wzr
+  0dd32e20  add     x0, sp, #0x73c
+  0dd32e24  add     x1, sp, #0x7d0
+  0dd32e28  mov     w2, #0x58
+  0dd32e2c  bl      #0xe1b8430
+  0dd32e30  movi    v0.2d, #0000000000000000
+  0dd32e34  stur    wzr, [x25, #0x88]
+  0dd32e38  adrp    x9, #0xea6a000
+  0dd32e3c  stur    q0, [x25, #0x78]
+  0dd32e40  stur    q0, [x25, #0x58]
+  0dd32e44  stur    q0, [x25, #0x68]
+  0dd32e48  str     w24, [sp, #0x7b4]
+  0dd32e4c  ldrsh   w8, [x28, #0x28]
+  0dd32e50  str     w23, [sp, #0x7b0]
+  0dd32e54  str     w8, [sp, #0x7b8]
+  0dd32e58  ldr     s0, [x28, #0x18]
+  0dd32e5c  str     s0, [sp, #0x7bc]
+  0dd32e60  ldrb    w8, [x28, #0x11]
+  0dd32e64  ldr     x9, [x9, #0x830]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobChainBone>.Add()
+  0dd32e68  str     s8, [sp, #0x7c4]
+  0dd32e6c  ldr     x2, [x9]
+  0dd32e70  strb    w8, [sp, #0x7c0]
+  0dd32e74  add     x0, x19, #0x180
+  0dd32e78  add     x1, sp, #0x73c
+  0dd32e7c  bl      #0xb3252dc  ; -> Unity.Collections.NativeList<ActorSwingJobChainBone>$$Add
+  0dd32e80  ldr     x0, [x28, #0x20]
+  0dd32e84  add     w22, w22, #1
+  0dd32e88  cbnz    x0, #0xdd32c68
+  0dd32e8c  ldr     x8, [sp, #0x20]
+  0dd32e90  ldr     x8, [x8, #0x28]
+  0dd32e94  ldr     x9, [sp, #0x14a8]
+  0dd32e98  cmp     x8, x9
+  0dd32e9c  b.ne    #0xdd33864
+  0dd32ea0  bl      #0x63cf120
+  0dd32ea4  adrp    x8, #0xea6a000
+  0dd32ea8  add     x0, sp, #0x830
+  0dd32eac  ldr     x8, [x8, #0x3a8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ChainLayerInfo>.Dispose()
+  0dd32eb0  ldr     x1, [x8]
+  0dd32eb4  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd32eb8  add     x0, sp, #0x6a8
+  0dd32ebc  mov     w1, wzr
+  0dd32ec0  mov     w2, #0x94
+  0dd32ec4  bl      #0xe1b83e0
+  0dd32ec8  ldr     x12, [sp, #0x30]
+  0dd32ecc  adrp    x10, #0xea6a000
+  0dd32ed0  ldr     x8, [x12]
+  0dd32ed4  ldrh    w9, [x8, #0x12e]
+  0dd32ed8  ldr     x10, [x10, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd32edc  ldr     x20, [sp, #0xa8]
+  0dd32ee0  ldr     x1, [x10]
+  0dd32ee4  cbz     x9, #0xdd32f08
+  0dd32ee8  ldr     x10, [x8, #0xb0]
+  0dd32eec  add     x10, x10, #8
+  0dd32ef0  ldur    x11, [x10, #-8]
+  0dd32ef4  cmp     x11, x1
+  0dd32ef8  b.eq    #0xdd32f1c
+  0dd32efc  subs    x9, x9, #1
+  0dd32f00  add     x10, x10, #0x10
+  0dd32f04  b.ne    #0xdd32ef0
+  0dd32f08  mov     x0, x12
+  0dd32f0c  mov     w2, #0x13
+  0dd32f10  bl      #0x6408234
+  0dd32f14  ldr     x12, [sp, #0x30]
+  0dd32f18  b       #0xdd32f2c
+  0dd32f1c  ldr     w9, [x10]
+  0dd32f20  add     w9, w9, #0x13
+  0dd32f24  add     x8, x8, w9, sxtw #4
+  0dd32f28  add     x0, x8, #0x138
+  0dd32f2c  ldp     x8, x1, [x0]
+  0dd32f30  mov     x0, x12
+  0dd32f34  blr     x8
+  0dd32f38  mov     x1, x0
+  0dd32f3c  add     x8, sp, #0x408
+  0dd32f40  mov     x0, x20
+  0dd32f44  mov     x2, xzr
+  0dd32f48  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd32f4c  ldr     x12, [sp, #0x30]
+  0dd32f50  add     x9, sp, #0x360
+  0dd32f54  add     x13, sp, #0x638
+  0dd32f58  ldur    q0, [x9, #0xa8]
+  0dd32f5c  adrp    x11, #0xea6a000
+  0dd32f60  ldr     x10, [sp, #0x418]
+  0dd32f64  ldr     x8, [x12]
+  0dd32f68  stur    q0, [x13, #0x74]
+  0dd32f6c  ldrh    w9, [x8, #0x12e]
+  0dd32f70  ldr     x11, [x11, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd32f74  stur    x10, [x13, #0x84]
+  0dd32f78  ldr     x1, [x11]
+  0dd32f7c  cbz     x9, #0xdd32fa0
+  0dd32f80  ldr     x10, [x8, #0xb0]
+  0dd32f84  add     x10, x10, #8
+  0dd32f88  ldur    x11, [x10, #-8]
+  0dd32f8c  cmp     x11, x1
+  0dd32f90  b.eq    #0xdd32fb4
+  0dd32f94  subs    x9, x9, #1
+  0dd32f98  add     x10, x10, #0x10
+  0dd32f9c  b.ne    #0xdd32f88
+  0dd32fa0  mov     x0, x12
+  0dd32fa4  mov     w2, #0x14
+  0dd32fa8  bl      #0x6408234
+  0dd32fac  ldr     x12, [sp, #0x30]
+  0dd32fb0  b       #0xdd32fc4
+  0dd32fb4  ldr     w9, [x10]
+  0dd32fb8  add     w9, w9, #0x14
+  0dd32fbc  add     x8, x8, w9, sxtw #4
+  0dd32fc0  add     x0, x8, #0x138
+  0dd32fc4  ldp     x8, x1, [x0]
+  0dd32fc8  mov     x0, x12
+  0dd32fcc  blr     x8
+  0dd32fd0  mov     x1, x0
+  0dd32fd4  add     x8, sp, #0x170
+  0dd32fd8  mov     x0, x20
+  0dd32fdc  mov     x2, xzr
+  0dd32fe0  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd32fe4  ldr     x12, [sp, #0x30]
+  0dd32fe8  ldr     q0, [sp, #0x170]
+  0dd32fec  add     x13, sp, #0x638
+  0dd32ff0  adrp    x11, #0xea6a000
+  0dd32ff4  ldr     x10, [sp, #0x180]
+  0dd32ff8  ldr     x8, [x12]
+  0dd32ffc  stur    q0, [x13, #0x8c]
+  0dd33000  ldrh    w9, [x8, #0x12e]
+  0dd33004  ldr     x11, [x11, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd33008  stur    x10, [x13, #0x9c]
+  0dd3300c  ldr     x1, [x11]
+  0dd33010  cbz     x9, #0xdd33034
+  0dd33014  ldr     x10, [x8, #0xb0]
+  0dd33018  add     x10, x10, #8
+  0dd3301c  ldur    x11, [x10, #-8]
+  0dd33020  cmp     x11, x1
+  0dd33024  b.eq    #0xdd33048
+  0dd33028  subs    x9, x9, #1
+  0dd3302c  add     x10, x10, #0x10
+  0dd33030  b.ne    #0xdd3301c
+  0dd33034  mov     x0, x12
+  0dd33038  mov     w2, #0x15
+  0dd3303c  bl      #0x6408234
+  0dd33040  ldr     x12, [sp, #0x30]
+  0dd33044  b       #0xdd33058
+  0dd33048  ldr     w9, [x10]
+  0dd3304c  add     w9, w9, #0x15
+  0dd33050  add     x8, x8, w9, sxtw #4
+  0dd33054  add     x0, x8, #0x138
+  0dd33058  ldp     x8, x1, [x0]
+  0dd3305c  mov     x0, x12
+  0dd33060  blr     x8
+  0dd33064  mov     x1, x0
+  0dd33068  add     x8, sp, #0x3e8
+  0dd3306c  mov     x0, x20
+  0dd33070  mov     x2, xzr
+  0dd33074  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd33078  ldr     x12, [sp, #0x30]
+  0dd3307c  add     x9, sp, #0x360
+  0dd33080  add     x13, sp, #0x638
+  0dd33084  ldur    q0, [x9, #0x88]
+  0dd33088  adrp    x11, #0xea6a000
+  0dd3308c  ldr     x10, [sp, #0x3f8]
+  0dd33090  ldr     x8, [x12]
+  0dd33094  stur    q0, [x13, #0xa4]
+  0dd33098  ldrh    w9, [x8, #0x12e]
+  0dd3309c  ldr     x11, [x11, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd330a0  stur    x10, [x13, #0xb4]
+  0dd330a4  ldr     x1, [x11]
+  0dd330a8  cbz     x9, #0xdd330cc
+  0dd330ac  ldr     x10, [x8, #0xb0]
+  0dd330b0  add     x10, x10, #8
+  0dd330b4  ldur    x11, [x10, #-8]
+  0dd330b8  cmp     x11, x1
+  0dd330bc  b.eq    #0xdd330e0
+  0dd330c0  subs    x9, x9, #1
+  0dd330c4  add     x10, x10, #0x10
+  0dd330c8  b.ne    #0xdd330b4
+  0dd330cc  mov     x0, x12
+  0dd330d0  mov     w2, #0x16
+  0dd330d4  bl      #0x6408234
+  0dd330d8  ldr     x12, [sp, #0x30]
+  0dd330dc  b       #0xdd330f0
+  0dd330e0  ldr     w9, [x10]
+  0dd330e4  add     w9, w9, #0x16
+  0dd330e8  add     x8, x8, w9, sxtw #4
+  0dd330ec  add     x0, x8, #0x138
+  0dd330f0  ldp     x8, x1, [x0]
+  0dd330f4  mov     x0, x12
+  0dd330f8  blr     x8
+  0dd330fc  mov     x1, x0
+  0dd33100  add     x8, sp, #0x3a0
+  0dd33104  mov     x0, x20
+  0dd33108  mov     x2, xzr
+  0dd3310c  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd33110  ldr     x12, [sp, #0x30]
+  0dd33114  ldr     q0, [sp, #0x3a0]
+  0dd33118  add     x13, sp, #0x638
+  0dd3311c  adrp    x11, #0xea6a000
+  0dd33120  ldr     x10, [sp, #0x3b0]
+  0dd33124  ldr     x8, [x12]
+  0dd33128  stur    q0, [x13, #0xbc]
+  0dd3312c  ldrh    w9, [x8, #0x12e]
+  0dd33130  ldr     x11, [x11, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd33134  stur    x10, [x13, #0xcc]
+  0dd33138  ldr     x1, [x11]
+  0dd3313c  cbz     x9, #0xdd33160
+  0dd33140  ldr     x10, [x8, #0xb0]
+  0dd33144  add     x10, x10, #8
+  0dd33148  ldur    x11, [x10, #-8]
+  0dd3314c  cmp     x11, x1
+  0dd33150  b.eq    #0xdd33174
+  0dd33154  subs    x9, x9, #1
+  0dd33158  add     x10, x10, #0x10
+  0dd3315c  b.ne    #0xdd33148
+  0dd33160  mov     x0, x12
+  0dd33164  mov     w2, #0x17
+  0dd33168  bl      #0x6408234
+  0dd3316c  ldr     x12, [sp, #0x30]
+  0dd33170  b       #0xdd33184
+  0dd33174  ldr     w9, [x10]
+  0dd33178  add     w9, w9, #0x17
+  0dd3317c  add     x8, x8, w9, sxtw #4
+  0dd33180  add     x0, x8, #0x138
+  0dd33184  ldp     x8, x1, [x0]
+  0dd33188  mov     x0, x12
+  0dd3318c  blr     x8
+  0dd33190  mov     x1, x0
+  0dd33194  add     x8, sp, #0x380
+  0dd33198  mov     x0, x20
+  0dd3319c  mov     x2, xzr
+  0dd331a0  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd331a4  ldr     x12, [sp, #0x30]
+  0dd331a8  ldr     q0, [sp, #0x380]
+  0dd331ac  add     x13, sp, #0x638
+  0dd331b0  adrp    x11, #0xea6a000
+  0dd331b4  ldr     x10, [sp, #0x390]
+  0dd331b8  ldr     x8, [x12]
+  0dd331bc  stur    q0, [x13, #0xd4]
+  0dd331c0  ldrh    w9, [x8, #0x12e]
+  0dd331c4  ldr     x11, [x11, #0x670]  ; META ActorAnimation.IActorAnimationRigData_TypeInfo
+  0dd331c8  stur    x10, [x13, #0xe4]
+  0dd331cc  ldr     x1, [x11]
+  0dd331d0  cbz     x9, #0xdd331f4
+  0dd331d4  ldr     x10, [x8, #0xb0]
+  0dd331d8  add     x10, x10, #8
+  0dd331dc  ldur    x11, [x10, #-8]
+  0dd331e0  cmp     x11, x1
+  0dd331e4  b.eq    #0xdd33208
+  0dd331e8  subs    x9, x9, #1
+  0dd331ec  add     x10, x10, #0x10
+  0dd331f0  b.ne    #0xdd331dc
+  0dd331f4  mov     x0, x12
+  0dd331f8  mov     w2, #0x18
+  0dd331fc  bl      #0x6408234
+  0dd33200  ldr     x12, [sp, #0x30]
+  0dd33204  b       #0xdd33218
+  0dd33208  ldr     w9, [x10]
+  0dd3320c  add     w9, w9, #0x18
+  0dd33210  add     x8, x8, w9, sxtw #4
+  0dd33214  add     x0, x8, #0x138
+  0dd33218  ldp     x8, x1, [x0]
+  0dd3321c  mov     x0, x12
+  0dd33220  blr     x8
+  0dd33224  add     x8, sp, #0x6a8
+  0dd33228  mov     x1, x0
+  0dd3322c  mov     x0, x20
+  0dd33230  add     x8, x8, #0x7c
+  0dd33234  mov     x2, xzr
+  0dd33238  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd3323c  add     x0, x19, #0x190
+  0dd33240  add     x1, sp, #0x6a8
+  0dd33244  mov     w2, #0x94
+  0dd33248  bl      #0xe1b8430
+  0dd3324c  ldr     x8, [sp, #0x20]
+  0dd33250  ldr     x8, [x8, #0x28]
+  0dd33254  ldr     x9, [sp, #0x14a8]
+  0dd33258  cmp     x8, x9
+  0dd3325c  b.ne    #0xdd33864
+  0dd33260  add     sp, sp, #1, lsl #12
+  0dd33264  add     sp, sp, #0x4b0
+  0dd33268  ldp     x20, x19, [sp, #0x90]
+  0dd3326c  ldp     x22, x21, [sp, #0x80]
+  0dd33270  ldp     x24, x23, [sp, #0x70]
+  0dd33274  ldp     x26, x25, [sp, #0x60]
+  0dd33278  ldp     x28, x27, [sp, #0x50]
+  0dd3327c  ldp     x29, x30, [sp, #0x40]
+  0dd33280  ldp     d9, d8, [sp, #0x30]
+  0dd33284  ldp     d11, d10, [sp, #0x20]
+  0dd33288  ldp     d13, d12, [sp, #0x10]
+  0dd3328c  ldp     d15, d14, [sp], #0xa0
+  0dd33290  ret     
+  0dd33294  ldr     x8, [sp, #0x20]
+  0dd33298  ldr     x8, [x8, #0x28]
+  0dd3329c  ldr     x9, [sp, #0x14a8]
+  0dd332a0  cmp     x8, x9
+  0dd332a4  b.ne    #0xdd33864
+  0dd332a8  bl      #0x63cf120
+  0dd332ac  ldr     x8, [sp, #0x20]
+  0dd332b0  ldr     x8, [x8, #0x28]
+  0dd332b4  ldr     x9, [sp, #0x14a8]
+  0dd332b8  cmp     x8, x9
+  0dd332bc  b.ne    #0xdd33864
+  0dd332c0  bl      #0x63cf120
+  0dd332c4  ldr     x8, [sp, #0x20]
+  0dd332c8  ldr     x8, [x8, #0x28]
+  0dd332cc  ldr     x9, [sp, #0x14a8]
+  0dd332d0  cmp     x8, x9
+  0dd332d4  b.ne    #0xdd33864
+  0dd332d8  bl      #0x63cf120
+  0dd332dc  ldr     x8, [sp, #0x20]
+  0dd332e0  ldr     x8, [x8, #0x28]
+  0dd332e4  ldr     x9, [sp, #0x14a8]
+  0dd332e8  cmp     x8, x9
+  0dd332ec  b.ne    #0xdd33864
+  0dd332f0  bl      #0x63cf120
+  0dd332f4  ldr     x8, [sp, #0x20]
+  0dd332f8  ldr     x8, [x8, #0x28]
+  0dd332fc  ldr     x9, [sp, #0x14a8]
+  0dd33300  cmp     x8, x9
+  0dd33304  b.ne    #0xdd33864
+  0dd33308  bl      #0x63cf120
+  0dd3330c  ldr     x8, [sp, #0x20]
+  0dd33310  ldr     x8, [x8, #0x28]
+  0dd33314  ldr     x9, [sp, #0x14a8]
+  0dd33318  cmp     x8, x9
+  0dd3331c  b.ne    #0xdd33864
+  0dd33320  bl      #0x63cf120
+  0dd33324  ldr     x8, [sp, #0x20]
+  0dd33328  ldr     x8, [x8, #0x28]
+  0dd3332c  ldr     x9, [sp, #0x14a8]
+  0dd33330  cmp     x8, x9
+  0dd33334  b.ne    #0xdd33864
+  0dd33338  bl      #0x63cf120
+  0dd3333c  ldr     x8, [sp, #0x20]
+  0dd33340  ldr     x8, [x8, #0x28]
+  0dd33344  ldr     x9, [sp, #0x14a8]
+  0dd33348  cmp     x8, x9
+  0dd3334c  b.ne    #0xdd33864
+  0dd33350  bl      #0x63cf120
+  0dd33354  ldr     x8, [sp, #0x20]
+  0dd33358  ldr     x8, [x8, #0x28]
+  0dd3335c  ldr     x9, [sp, #0x14a8]
+  0dd33360  cmp     x8, x9
+  0dd33364  b.ne    #0xdd33864
+  0dd33368  bl      #0x63cf120
+  0dd3336c  ldr     x8, [sp, #0x20]
+  0dd33370  ldr     x8, [x8, #0x28]
+  0dd33374  ldr     x9, [sp, #0x14a8]
+  0dd33378  cmp     x8, x9
+  0dd3337c  b.ne    #0xdd33864
+  0dd33380  bl      #0x63cf120
+  0dd33384  ldr     x8, [sp, #0x20]
+  0dd33388  ldr     x8, [x8, #0x28]
+  0dd3338c  ldr     x9, [sp, #0x14a8]
+  0dd33390  cmp     x8, x9
+  0dd33394  b.ne    #0xdd33864
+  0dd33398  bl      #0x63cf120
+  0dd3339c  ldr     x8, [sp, #0x20]
+  0dd333a0  ldr     x8, [x8, #0x28]
+  0dd333a4  ldr     x9, [sp, #0x14a8]
+  0dd333a8  cmp     x8, x9
+  0dd333ac  b.ne    #0xdd33864
+  0dd333b0  bl      #0x63cf120
+  0dd333b4  ldr     x8, [sp, #0x20]
+  0dd333b8  ldr     x8, [x8, #0x28]
+  0dd333bc  ldr     x9, [sp, #0x14a8]
+  0dd333c0  cmp     x8, x9
+  0dd333c4  b.ne    #0xdd33864
+  0dd333c8  bl      #0x63cf120
+  0dd333cc  ldr     x8, [sp, #0x20]
+  0dd333d0  ldr     x8, [x8, #0x28]
+  0dd333d4  ldr     x9, [sp, #0x14a8]
+  0dd333d8  cmp     x8, x9
+  0dd333dc  b.ne    #0xdd33864
+  0dd333e0  bl      #0x63cf120
+  0dd333e4  ldr     x8, [sp, #0x20]
+  0dd333e8  ldr     x8, [x8, #0x28]
+  0dd333ec  ldr     x9, [sp, #0x14a8]
+  0dd333f0  cmp     x8, x9
+  0dd333f4  b.ne    #0xdd33864
+  0dd333f8  bl      #0x63cf120
+  0dd333fc  ldr     x8, [sp, #0x20]
+  0dd33400  ldr     x8, [x8, #0x28]
+  0dd33404  ldr     x9, [sp, #0x14a8]
+  0dd33408  cmp     x8, x9
+  0dd3340c  b.ne    #0xdd33864
+  0dd33410  bl      #0x63cf120
+  0dd33414  ldr     x8, [sp, #0x20]
+  0dd33418  ldr     x8, [x8, #0x28]
+  0dd3341c  ldr     x9, [sp, #0x14a8]
+  0dd33420  cmp     x8, x9
+  0dd33424  b.ne    #0xdd33864
+  0dd33428  bl      #0x63cf120
+  0dd3342c  ldr     x8, [sp, #0x20]
+  0dd33430  ldr     x8, [x8, #0x28]
+  0dd33434  ldr     x9, [sp, #0x14a8]
+  0dd33438  cmp     x8, x9
+  0dd3343c  b.ne    #0xdd33864
+  0dd33440  bl      #0x63cf120
+  0dd33444  ldr     x8, [sp, #0x20]
+  0dd33448  ldr     x8, [x8, #0x28]
+  0dd3344c  ldr     x9, [sp, #0x14a8]
+  0dd33450  cmp     x8, x9
+  0dd33454  b.ne    #0xdd33864
+  0dd33458  bl      #0x63cf120
+  0dd3345c  ldr     x8, [sp, #0x20]
+  0dd33460  ldr     x8, [x8, #0x28]
+  0dd33464  ldr     x9, [sp, #0x14a8]
+  0dd33468  cmp     x8, x9
+  0dd3346c  b.ne    #0xdd33864
+  0dd33470  bl      #0x63cf120
+  0dd33474  ldr     x8, [sp, #0x20]
+  0dd33478  ldr     x8, [x8, #0x28]
+  0dd3347c  ldr     x9, [sp, #0x14a8]
+  0dd33480  cmp     x8, x9
+  0dd33484  b.ne    #0xdd33864
+  0dd33488  bl      #0x63cf120
+  0dd3348c  ldr     x8, [sp, #0x20]
+  0dd33490  ldr     x8, [x8, #0x28]
+  0dd33494  ldr     x9, [sp, #0x14a8]
+  0dd33498  cmp     x8, x9
+  0dd3349c  b.ne    #0xdd33864
+  0dd334a0  bl      #0x63cf120
+  0dd334a4  b       #0xdd334f4
+  0dd334a8  b       #0xdd33568
+  0dd334ac  b       #0xdd33568
+  0dd334b0  b       #0xdd33568
+  0dd334b4  b       #0xdd33568
+  0dd334b8  b       #0xdd336e8
+  0dd334bc  b       #0xdd334f4
+  0dd334c0  b       #0xdd33538
+  0dd334c4  b       #0xdd334f4
+  0dd334c8  b       #0xdd334f4
+  0dd334cc  b       #0xdd3354c
+  0dd334d0  b       #0xdd33568
+  0dd334d4  b       #0xdd33568
+  0dd334d8  b       #0xdd336e8
+  0dd334dc  b       #0xdd336e8
+  0dd334e0  b       #0xdd33568
+  0dd334e4  b       #0xdd33748
+  0dd334e8  b       #0xdd33748
+  0dd334ec  b       #0xdd337e8
+  0dd334f0  b       #0xdd3354c
+  0dd334f4  adrp    x25, #0xea65000
+  0dd334f8  mov     x22, x0
+  0dd334fc  add     x20, sp, #0x360
+  0dd33500  ldr     x25, [x25, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd33504  b       #0xdd33554
+  0dd33508  b       #0xdd33538
+  0dd3350c  b       #0xdd336e8
+  0dd33510  b       #0xdd336e8
+  0dd33514  b       #0xdd336e8
+  0dd33518  b       #0xdd33538
+  0dd3351c  b       #0xdd33538
+  0dd33520  b       #0xdd337e8
+  0dd33524  b       #0xdd33538
+  0dd33528  b       #0xdd33538
+  0dd3352c  b       #0xdd336e8
+  0dd33530  b       #0xdd33538
+  0dd33534  b       #0xdd33538
+  0dd33538  mov     x22, x0
+  0dd3353c  add     x20, sp, #0x360
+  0dd33540  add     x28, sp, #0x240
+  0dd33544  b       #0xdd33570
+  0dd33548  b       #0xdd3354c
+  0dd3354c  mov     x22, x0
+  0dd33550  add     x20, sp, #0x360
+  0dd33554  add     x28, sp, #0x240
+  0dd33558  adrp    x29, #0xea6a000
+  0dd3355c  ldr     x29, [x29, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd33560  b       #0xdd336f0
+  0dd33564  b       #0xdd336e8
+  0dd33568  mov     x22, x0
+  0dd3356c  add     x20, sp, #0x360
+  0dd33570  adrp    x25, #0xea65000
+  0dd33574  ldr     x25, [x25, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd33578  b       #0xdd336f0
+  0dd3357c  b       #0xdd336e8
+  0dd33580  b       #0xdd336e8
+  0dd33584  b       #0xdd336e8
+  0dd33588  b       #0xdd33648
+  0dd3358c  b       #0xdd33648
+  0dd33590  b       #0xdd33648
+  0dd33594  b       #0xdd33648
+  0dd33598  b       #0xdd33648
+  0dd3359c  adrp    x29, #0xea6a000
+  0dd335a0  mov     x22, x0
+  0dd335a4  add     x20, sp, #0x360
+  0dd335a8  ldr     x29, [x29, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd335ac  b       #0xdd33650
+  0dd335b0  b       #0xdd33648
+  0dd335b4  b       #0xdd33648
+  0dd335b8  b       #0xdd33648
+  0dd335bc  b       #0xdd33648
+  0dd335c0  b       #0xdd33648
+  0dd335c4  b       #0xdd33648
+  0dd335c8  b       #0xdd33648
+  0dd335cc  b       #0xdd33648
+  0dd335d0  b       #0xdd33648
+  0dd335d4  b       #0xdd33648
+  0dd335d8  b       #0xdd33648
+  0dd335dc  b       #0xdd33648
+  0dd335e0  b       #0xdd33648
+  0dd335e4  b       #0xdd33648
+  0dd335e8  b       #0xdd33648
+  0dd335ec  b       #0xdd335f0
+  0dd335f0  adrp    x29, #0xea6a000
+  0dd335f4  mov     x22, x0
+  0dd335f8  add     x20, sp, #0x360
+  0dd335fc  ldr     x29, [x29, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd33600  add     x28, sp, #0x240
+  0dd33604  b       #0xdd33750
+  0dd33608  b       #0xdd33748
+  0dd3360c  b       #0xdd33748
+  0dd33610  b       #0xdd33748
+  0dd33614  b       #0xdd33748
+  0dd33618  b       #0xdd33748
+  0dd3361c  b       #0xdd33620
+  0dd33620  adrp    x29, #0xea6a000
+  0dd33624  mov     x22, x0
+  0dd33628  add     x28, sp, #0x240
+  0dd3362c  ldr     x29, [x29, #0x520]  ; MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.get_Item()
+  0dd33630  b       #0xdd336a0
+  0dd33634  b       #0xdd3369c
+  0dd33638  b       #0xdd3369c
+  0dd3363c  b       #0xdd3369c
+  0dd33640  b       #0xdd337e8
+  0dd33644  b       #0xdd336e8
+  0dd33648  mov     x22, x0
+  0dd3364c  add     x20, sp, #0x360
+  0dd33650  cmp     w1, #1
+  0dd33654  b.ne    #0xdd3368c
+  0dd33658  mov     x0, x22
+  0dd3365c  bl      #0xe1b8390
+  0dd33660  ldr     x22, [x0]
+  0dd33664  str     x22, [sp, #0x3d8]
+  0dd33668  bl      #0xe1b83a0
+  0dd3366c  adrp    x8, #0xea6a000
+  0dd33670  ldr     x0, [sp, #0x3e0]
+  0dd33674  ldr     x8, [x8, #0x7e0]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingBreastBone>.Dispose()
+  0dd33678  ldr     x1, [x8]
+  0dd3367c  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd33680  cbz     x22, #0xdd32b6c
+  0dd33684  b       #0xdd33820
+  0dd33688  mov     x22, x0
+  0dd3368c  add     x0, sp, #0x3d8
+  0dd33690  bl      #0x5d98af8
+  0dd33694  b       #0xdd33848
+  0dd33698  b       #0xdd33748
+  0dd3369c  mov     x22, x0
+  0dd336a0  cmp     w1, #1
+  0dd336a4  b.ne    #0xdd336dc
+  0dd336a8  mov     x0, x22
+  0dd336ac  bl      #0xe1b8390
+  0dd336b0  ldr     x22, [x0]
+  0dd336b4  str     x22, [sp, #0x408]
+  0dd336b8  bl      #0xe1b83a0
+  0dd336bc  adrp    x8, #0xea6a000
+  0dd336c0  ldr     x0, [sp, #0x410]
+  0dd336c4  ldr     x8, [x8, #0x368]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+  0dd336c8  ldr     x1, [x8]
+  0dd336cc  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd336d0  cbz     x22, #0xdd31ba0
+  0dd336d4  b       #0xdd33820
+  0dd336d8  mov     x22, x0
+  0dd336dc  add     x0, sp, #0x408
+  0dd336e0  bl      #0x5d981f0
+  0dd336e4  b       #0xdd33848
+  0dd336e8  mov     x22, x0
+  0dd336ec  add     x20, sp, #0x360
+  0dd336f0  adrp    x26, #0xea6a000
+  0dd336f4  adrp    x27, #0xea6a000
+  0dd336f8  cmp     w1, #1
+  0dd336fc  ldr     x26, [x26, #0x7e8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.MoveNext()
+  0dd33700  ldr     x27, [x27, #0x840]  ; MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.Add()
+  0dd33704  b.ne    #0xdd3373c
+  0dd33708  mov     x0, x22
+  0dd3370c  bl      #0xe1b8390
+  0dd33710  ldr     x22, [x0]
+  0dd33714  str     x22, [sp, #0x3a0]
+  0dd33718  bl      #0xe1b83a0
+  0dd3371c  adrp    x8, #0xea6a000
+  0dd33720  ldr     x0, [sp, #0x3a8]
+  0dd33724  ldr     x8, [x8, #0x368]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+  0dd33728  ldr     x1, [x8]
+  0dd3372c  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd33730  cbz     x22, #0xdd3245c
+  0dd33734  b       #0xdd33820
+  0dd33738  mov     x22, x0
+  0dd3373c  add     x0, sp, #0x3a0
+  0dd33740  bl      #0x5d981f0
+  0dd33744  b       #0xdd33848
+  0dd33748  mov     x22, x0
+  0dd3374c  add     x20, sp, #0x360
+  0dd33750  cmp     w1, #1
+  0dd33754  b.ne    #0xdd3378c
+  0dd33758  mov     x0, x22
+  0dd3375c  bl      #0xe1b8390
+  0dd33760  ldr     x22, [x0]
+  0dd33764  str     x22, [sp, #0x170]
+  0dd33768  bl      #0xe1b83a0
+  0dd3376c  adrp    x8, #0xea6a000
+  0dd33770  ldr     x0, [sp, #0x178]
+  0dd33774  ldr     x8, [x8, #0x7d8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingStaticBone>.Dispose()
+  0dd33778  ldr     x1, [x8]
+  0dd3377c  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd33780  cbz     x22, #0xdd32630
+  0dd33784  b       #0xdd33820
+  0dd33788  mov     x22, x0
+  0dd3378c  add     x0, sp, #0x170
+  0dd33790  bl      #0x5d98ac8
+  0dd33794  b       #0xdd33848
+  0dd33798  b       #0xdd337e8
+  0dd3379c  b       #0xdd337e8
+  0dd337a0  b       #0xdd337e8
+  0dd337a4  b       #0xdd337e8
+  0dd337a8  b       #0xdd337e8
+  0dd337ac  b       #0xdd337e8
+  0dd337b0  b       #0xdd337e8
+  0dd337b4  b       #0xdd337e8
+  0dd337b8  b       #0xdd337e8
+  0dd337bc  b       #0xdd337e8
+  0dd337c0  b       #0xdd337e8
+  0dd337c4  b       #0xdd337e8
+  0dd337c8  b       #0xdd337e8
+  0dd337cc  b       #0xdd337e8
+  0dd337d0  b       #0xdd337e8
+  0dd337d4  b       #0xdd337e8
+  0dd337d8  b       #0xdd337e8
+  0dd337dc  b       #0xdd337e8
+  0dd337e0  b       #0xdd337e8
+  0dd337e4  b       #0xdd337e8
+  0dd337e8  mov     x22, x0
+  0dd337ec  cmp     w1, #1
+  0dd337f0  b.ne    #0xdd33840
+  0dd337f4  mov     x0, x22
+  0dd337f8  bl      #0xe1b8390
+  0dd337fc  ldr     x22, [x0]
+  0dd33800  str     x22, [sp, #0x408]
+  0dd33804  bl      #0xe1b83a0
+  0dd33808  adrp    x8, #0xea6a000
+  0dd3380c  ldr     x0, [sp, #0x410]
+  0dd33810  ldr     x8, [x8, #0x3a8]  ; MMETH Method$System.Collections.Generic.List.Enumerator<ChainLayerInfo>.Dispose()
+  0dd33814  ldr     x1, [x8]
+  0dd33818  bl      #0xa043514  ; -> System.Collections.Generic.List.Enumerator<object>$$Dispose
+  0dd3381c  cbz     x22, #0xdd32eb8
+  0dd33820  ldr     x8, [sp, #0x20]
+  0dd33824  ldr     x8, [x8, #0x28]
+  0dd33828  ldr     x9, [sp, #0x14a8]
+  0dd3382c  cmp     x8, x9
+  0dd33830  b.ne    #0xdd33864
+  0dd33834  mov     x0, x22
+  0dd33838  bl      #0x63cf118
+  0dd3383c  mov     x22, x0
+  0dd33840  add     x0, sp, #0x408
+  0dd33844  bl      #0x5d981b8
+  0dd33848  ldr     x8, [sp, #0x20]
+  0dd3384c  ldr     x8, [x8, #0x28]
+  0dd33850  ldr     x9, [sp, #0x14a8]
+  0dd33854  cmp     x8, x9
+  0dd33858  b.ne    #0xdd33864
+  0dd3385c  mov     x0, x22
+  0dd33860  bl      #0x64bd8dc
+  0dd33864  bl      #0xe1b8490
+  0dd33868  bl      #0x5d96648

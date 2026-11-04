@@ -27,6 +27,13 @@ namespace ActorAnimation
 
         public ActorAnimationQuartzDriverHumanoidSleeveSetting(ActorAnimationQuartzDriverHumanoidSleeveSetting source)
         {
+            outerMinusCoefficient = source.outerMinusCoefficient;
+            innerCoefficient = source.innerCoefficient;
+            outerPlusCoefficient = source.outerPlusCoefficient;
+            switchMinus = source.switchMinus;
+            switchPlus = source.switchPlus;
+            referenceBone = source.referenceBone;
+            composeType = source.composeType;
         }
 
         public ActorAnimationQuartzDriverHumanoidSleeveSetting ConvertToUnity()

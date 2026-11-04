@@ -1,0 +1,159 @@
+{
+ "addedOverloads": [],
+ "same": 27,
+ "changed": [
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler",
+   "similarity": 0.444,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$ConvertToUnity",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc",
+   "similarity": 0.366,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSlide",
+   "similarity": 0.692,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing",
+   "similarity": 0.412,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum",
+   "similarity": 0.799,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation",
+   "similarity": 0.348,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBoneLayer",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones",
+   "similarity": 0.324,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider",
+   "similarity": 0.506,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection",
+   "similarity": 0.38,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSmoothing",
+   "similarity": 0.475,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBoneLayer",
+   "similarity": 0.945,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones",
+   "similarity": 0.32,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones",
+   "similarity": 0.436,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleCollider",
+   "similarity": 0.846,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision",
+   "similarity": 0.447,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckDynamicCollision",
+   "similarity": 0.988,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckFastCollision",
+   "similarity": 0.95,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule",
+   "similarity": 0.326,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereCapsule",
+   "similarity": 0.632,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereSphere",
+   "similarity": 0.897,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider",
+   "similarity": 0.509,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToSphere",
+   "similarity": 0.897,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton",
+   "similarity": 0.511,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "ActorAnimation.ActorAnimationSwingJobSkeleton",
+   13
+  ],
+  [
+   "ActorAnimation.ActorSwingCollisionUtility",
+   8
+  ],
+  [
+   "ActorAnimation.ActorAnimationMathUtility",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverWaistBone",
+   1
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationJob",
+   1
+  ]
+ ]
+}

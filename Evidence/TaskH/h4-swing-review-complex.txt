@@ -1,0 +1,202 @@
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones 0x6573028 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o rootTx, ActorAnimation_ActorSwingAffineTransform_o hipsTx);
+native: 1426 1392
+--- game
++++ ref
+@@ -15,6 +15,5 @@
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$Inverse
+-bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition
+-mov #0x7f800000
++fmov #1.00000000
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobBreastBone>.get_Length()
+ bl FN
+@@ -25,15 +24,12 @@
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$GetGlobalTR
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$GetGlobalTR
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
+@@ -53,4 +49,5 @@
+ fmov #0.50000000
+ tst #1
++tst #1
+ cmp #1
+ bl System.Single$$Equals
+@@ -60,5 +57,5 @@
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+-and #0x7fffffff
++mov #0x42200000
+ bl ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum
+ bl FN
+@@ -84,5 +81,4 @@
+ bl FN
+ mov #0x7f800000
+-mov #0x7f800000
+ and #0x7fffffff
+ and #0x7fffffff
+@@ -91,6 +87,4 @@
+ bl ActorAnimation.AnimationCurveEvaluator$$Evaluate
+ tst #1
+-mov #0x42200000
+-cmp #0
+ bl ActorAnimation.ActorSwingUtility$$FromToRotation
+ bl FN
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones 0x6574674 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o rootTx, ActorAnimation_ActorSwingAffineTransform_o hipsTx, Unity_Mathematics_float3_o heightCorrectionBonePosition, float heightCorrectionBoneScale);
+native: 1548 1477
+--- game
++++ ref
+@@ -20,15 +20,15 @@
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobDynamicBone>
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobChainBone>
+-fmov #1.00000000
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$Inverse
++fmov #1.00000000
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobChainBone>.get_Length()
+ bl FN
+ mov #0x42200000
++fmov #1.00000000
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>.get_Length()
+ bl FN
+ and #1
+ bl ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBoneLayer
+-bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition
+ mov #0x3bc
+ bl FN
+@@ -39,12 +39,9 @@
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$.ctor
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+-bl ActorAnimation.ActorSwingAffineTransform$$Set
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$GetGlobalTR
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl FN
+-bl ActorAnimation.ActorSwingAffineTransform$$Set
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+@@ -55,14 +52,8 @@
+ bl UnityEngine.Animations.Rigging.AnimationRuntimeUtils$$Square
+ cmp #1
+-cmp #1
+ fmov #1.00000000
+-cmp #1
+-mov #0x7f800000
+-and #0x7fffffff
+ bl ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum
+ bl ActorAnimation.ActorAnimationWindUtility$$CalcWindPower
+-cmp #0
+ cmp #1
+-fmov #1.00000000
+ bl ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection
+ bl ActorAnimation.ActorSwingUtility$$FromToRotation
+@@ -94,5 +85,4 @@
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobDynamicBone>.get_Length()
+ bl FN
+-bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition
+ bl FN
+ bl ActorAnimation.ActorSwingAffineTransform$$op_Multiply
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection 0x6576bb0 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, UnityEngine_Animations_AnimationStream_o stream, ActorAnimation_ActorSwingAffineTransform_o selfTx, ActorAnimation_ActorSwingAffineTransform_o childDefaultTx, ActorAnimation_ActorSwingAffineTransform_o childTx, ActorAnimation_ActorSwingAffineTransform_o invRootTx, Unity_Mathematics_float3_o cancelRootPosition);
+native: 466 440
+--- game
++++ ref
+@@ -1,11 +1,4 @@
+ bl FN
+ mov #1
+-mov #0x94
+-bl FN
+-bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
+-mov #0x94
+-bl FN
+-bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
+-fmov #0.50000000
+ mov #0x94
+ bl FN
+@@ -20,4 +13,11 @@
+ bl FN
+ bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
++mov #0x94
++bl FN
++bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
++mov #0x94
++bl FN
++bl UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$GetPosition
++fmov #0.50000000
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl FN
+@@ -37,5 +37,4 @@
+ mov #1
+ bl FN
+-cmp #0
+ bl FN
+ mov #1
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider 0x6577400 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, ActorAnimation_ActorSwingJobChainBone_o* pChainHead, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamicHead, int32_t depth, int32_t chainStartIndex, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o hipsTx, float heightCorrectionBoneScale, bool enableSeatedDynamicCorrection);
+native: 225 214
+--- game
++++ ref
+@@ -6,8 +6,7 @@
+ and #1
+ ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobChainBone>.get_Length()
++fmov #1.00000000
+ mov #0x3bc
+ bl FN
+-bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition
+-bl ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition
+ bl ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleCollider
+ bl ActorAnimation.ActorSwingColliderUtility$$UpdateCollider
+
+== ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing 0x6578264 (ActorAnimation_ActorAnimationSwingJobSkeleton_o __this, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamicHead, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamic, float weight);
+native: 297 315
+--- game
++++ ref
+@@ -15,9 +15,12 @@
+ mov #0x7f800000
+ and #0x7fffffff
+-tst #1
+ and #0x7fffffff
+-tst #1
++mov #0x7f800000
++cmp #0
+ and #0x7fffffff
+-tst #1
++mov #0x7f800000
++and #0x7fffffff
++mov #0x7f800000
++and #0x7fffffff
+ bl ActorAnimation.ActorSwingUtility$$ToUnityQuaternion
+ bl FN
+
+== ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision 0x65805b4 (Unity_Collections_NativeList_ActorSwingJobStaticBone__o staticBones, ActorAnimation_ActorSwingJobChainBone_o* pChain, ActorAnimation_ActorSwingAffineTransform_o* selfTx, ActorAnimation_ActorSwingAffineTransform_o* subTx, ActorAnimation_ActorSwingJobDynamicBone_o* pDynamicHead, ActorAnimation_ActorSwingJobDynamicBone_o* pBone, ActorAnimation_ActorSwingJobDynamicBone_o* pSubBone, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, ActorAnimation_ActorSwingAffineTransform_o hipsTx, bool enableSeatedDynamicCorrection, bool isCmmnHeightCorrectionNeeded, float inverseHeightCorrectionBoneScale);
+native: 360 347
+--- game
++++ ref
+@@ -7,6 +7,6 @@
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>
+ mov #0x58
++ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+ bl FN
+-ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+ bl FN
+ and #1
+@@ -18,4 +18,5 @@
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.float3$$op_Implicit
++mov #0x3bc
+ mov #0x3bc
+ fmov #1.00000000

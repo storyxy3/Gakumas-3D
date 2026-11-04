@@ -141,5 +141,16 @@
     "apkAddresses": [
       "0x657dca0"
     ]
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationSwingSkeletonCalcUtility$$GetChainLoopLength",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationSwingSkeletonCalcUtility",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationSwingSkeletonCalcUtility.cs",
+    "reason": "CampusActorAnimationJob.CreateSwingSkeleton initializes chain loop lengths; ActorAnimationSwingJobSkeleton.ProcessChainBoneSmoothing measures the solved NativeList loop.",
+    "apkAddresses": [
+      "0x657d0e4",
+      "0x6578054"
+    ]
   }
 ]
