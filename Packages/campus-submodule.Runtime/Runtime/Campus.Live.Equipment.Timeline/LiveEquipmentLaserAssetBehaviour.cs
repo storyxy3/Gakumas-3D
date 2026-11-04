@@ -1,6 +1,8 @@
 namespace Campus.Live.Equipment.Timeline
 {
     using global::System.Runtime.CompilerServices;
+    using global::UnityEngine;
+    using global::Unity.Mathematics;
     using global::Campus.Common;
     using global::Campus.Live.Equipment;
     using global::Campus.Live.Equipment.Environment;
@@ -33,12 +35,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(LiveLaser.LaserType);
+                return _003CLaserType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLaserType_003Ek__BackingField = value;
             }
         }
 
@@ -47,12 +50,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(LiveLaser.LightType);
+                return _003CLightType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLightType_003Ek__BackingField = value;
             }
         }
 
@@ -61,12 +65,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CLaserLength_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLaserLength_003Ek__BackingField = value;
             }
         }
 
@@ -75,12 +80,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CLaserCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLaserCount_003Ek__BackingField = value;
             }
         }
 
@@ -89,12 +95,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CLaserRadius_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLaserRadius_003Ek__BackingField = value;
             }
         }
 
@@ -103,12 +110,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CRandomSpeed_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CRandomSpeed_003Ek__BackingField = value;
             }
         }
 
@@ -117,12 +125,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CLightOnTime_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLightOnTime_003Ek__BackingField = value;
             }
         }
 
@@ -131,12 +140,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CLightOffTime_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLightOffTime_003Ek__BackingField = value;
             }
         }
 
@@ -145,12 +155,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CLightDelay_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLightDelay_003Ek__BackingField = value;
             }
         }
 
@@ -159,17 +170,30 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLaserAngle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLaserAngle_003Ek__BackingField = value;
             }
         }
 
         protected unsafe override void OnUpdateAnimationData(LiveEquipmentAnimationData* pData, LiveEquipmentInitialData* pInitial, float time, float duration, float weight, in EquipmentValueFactor valueFactor)
         {
+            SampleAllCurve(pData, time, duration, weight, in valueFactor);
+            if (!IsMainTrack) return;
+            var value = pData->valueInt;
+            value.x = (int)LaserType | ((int)LightType << 8) | (LaserCount << 16);
+            value.y += Mathf.RoundToInt(LaserRadius * weight);
+            value.z += Mathf.RoundToInt(LaserLength * 1000f * weight);
+            value.w += Mathf.RoundToInt(EvaluateCurve(LaserAngle, time, duration) * weight);
+            pData->valueInt = value;
+            pData->bpmTime = time;
+            pData->valueFloat = LightType != global::Campus.Live.Equipment.Environment.LiveLaser.LightType.Always
+                ? new float4(LightOnTime, LightOffTime, LightDelay, RandomSpeed)
+                : new float4(0f, 0f, 0f, RandomSpeed);
         }
 
         public LiveEquipmentLaserAssetBehaviour()

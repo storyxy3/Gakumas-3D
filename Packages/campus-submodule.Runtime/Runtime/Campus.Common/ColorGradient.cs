@@ -11,13 +11,18 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return 1f;
             }
         }
 
         public override Color Evaluate(float time)
         {
-            return default(Color);
+            switch (mode)
+            {
+                case ConstantCurvePairMode.Constant: return constant;
+                case ConstantCurvePairMode.Curve: return curve.Evaluate(time);
+                default: return Color.black;
+            }
         }
     }
 }

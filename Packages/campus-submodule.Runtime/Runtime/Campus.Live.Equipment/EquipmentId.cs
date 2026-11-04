@@ -94,7 +94,17 @@ namespace Campus.Live.Equipment
 
         public bool Exist(int id)
         {
-            return default(bool);
+            switch (id / 64)
+            {
+                case 0: return ((id0 >> id) & 1L) != 0;
+                case 1: return ((id1 >> id) & 1L) != 0;
+                case 2: return ((id2 >> id) & 1L) != 0;
+                case 3: return ((id3 >> id) & 1L) != 0;
+                case 4: return ((id4 >> id) & 1L) != 0;
+                case 5: return ((id5 >> id) & 1L) != 0;
+                case 6: return ((id6 >> id) & 1L) != 0;
+                default: return false;
+            }
         }
 
         public char GetGroupName(int id)
@@ -109,7 +119,7 @@ namespace Campus.Live.Equipment
 
         public EquipmentIdList GetIdList()
         {
-            return default(EquipmentIdList);
+            return new EquipmentIdList(this);
         }
 
         public override string ToString()

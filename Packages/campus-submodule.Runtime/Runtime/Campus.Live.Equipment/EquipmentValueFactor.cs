@@ -12,7 +12,10 @@ namespace Campus.Live.Equipment
         public float v3;
         public EquipmentValueFactor(EquipmentValueFlags reverseFlags)
         {
-            this = default;
+            v0 = reverseFlags.v0 ? -1f : 1f;
+            v1 = reverseFlags.v1 ? -1f : 1f;
+            v2 = reverseFlags.v2 ? -1f : 1f;
+            v3 = reverseFlags.v3 ? -1f : 1f;
         }
     }
 }

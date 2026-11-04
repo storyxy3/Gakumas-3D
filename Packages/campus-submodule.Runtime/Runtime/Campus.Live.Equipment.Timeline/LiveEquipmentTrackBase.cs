@@ -21,7 +21,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return null;
+                return _value;
             }
         }
 
@@ -29,11 +29,12 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(EquipmentValueFlags);
+                return _reverseFlags;
             }
 
             set
             {
+                _reverseFlags = value;
             }
         }
 
@@ -44,36 +45,65 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CBpmInfo_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CBpmInfo_003Ek__BackingField = value;
             }
         }
 
         private void UpdateBaseParameter(LiveEquipmentController controller)
         {
+            if (!_scriptPlayable.IsValid()) return;
+            var behaviour = _scriptPlayable.GetBehaviour();
+            behaviour.jobType = JobType;
+            behaviour.animationData = controller.AnimationData;
+            behaviour.equipmentValue = _value;
         }
 
         public virtual void UpdateTrack(LiveEquipmentController controller)
         {
+            UpdateBaseParameter(controller);
+            foreach (var clip in GetClips())
+            {
+                if (clip.asset != null && clip.asset is LiveEquipmentClipBase asset)
+                {
+                    asset.UpdateReverseFlags(_reverseFlags);
+                    asset.UpdateBehaviour(controller);
+                }
+            }
+            foreach (var child in GetChildTracks())
+                if (child is LiveEquipmentTrackBase track) track.UpdateTrack(controller);
         }
 
         public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            return Playable.Create(graph, inputCount);
         }
 
         protected override Playable CreatePlayable(PlayableGraph graph, GameObject gameObject, TimelineClip clip)
         {
-            return default(Playable);
+            if (isSubTrack) BpmInfo = (parent as LiveEquipmentTrackBase).BpmInfo;
+            (clip.asset as LiveEquipmentClipBase).BpmInfo = BpmInfo;
+            return base.CreatePlayable(graph, gameObject, clip);
         }
 
         public Playable CreateLayerMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            if (!go.TryGetComponent<LiveEquipmentController>(out var controller)) return Playable.Create(graph, inputCount);
+            controller.Initialize();
+            _value = null;
+            if (controller.TryGetComponent<PlayableDirector>(out var director))
+            {
+                _value = director.GetGenericBinding(this) as EquipmentValue;
+                if (_value != null) _value.SetController(controller);
+            }
+            _scriptPlayable = ScriptPlayable<LiveEquipmentTrackBehaviour>.Create(graph, inputCount);
+            UpdateTrack(controller);
+            return _scriptPlayable;
         }
 
         protected LiveEquipmentTrackBase()

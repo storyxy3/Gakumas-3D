@@ -12,7 +12,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(LiveEquipmentStreamJobType);
+                return (LiveEquipmentStreamJobType)13;
             }
         }
 

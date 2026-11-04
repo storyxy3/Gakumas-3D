@@ -16,7 +16,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return intensity != null && intensity.IsValid;
             }
         }
 
@@ -24,7 +24,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return colorGradient != null && colorGradient.IsValid;
             }
         }
 
@@ -32,7 +32,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return Yow != null && Yow.IsValid;
             }
         }
 
@@ -40,7 +40,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return Pitch != null && Pitch.IsValid;
             }
         }
 
@@ -48,7 +48,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return v2 != null && v2.IsValid;
             }
         }
 
@@ -56,7 +56,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return v3 != null && v3.IsValid;
             }
         }
 

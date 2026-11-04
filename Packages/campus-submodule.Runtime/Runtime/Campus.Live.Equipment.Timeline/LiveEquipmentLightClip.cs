@@ -14,13 +14,21 @@ namespace Campus.Live.Equipment.Timeline
         [Min(0.1f)]
         public float rangeLimit;
         [Range(0f, 1f)]
-        public float noiseIntensity;
+        public float noiseIntensity = 0.5f;
         public int flareIndex;
-        public float flareScale;
-        public FloatCurve specularStrength;
+        public float flareScale = 1f;
+        public FloatCurve specularStrength = new FloatCurve(1f) { IsValid = true };
         public FloatCurve realLightMultiplier;
         protected override void OnUpdateParameter(LiveEquipmentLightAssetBehaviour behaviour, PlayableGraph graph)
         {
+            behaviour.SpotAngle = spotAngle;
+            behaviour.SideThickness = sideThickness;
+            behaviour.RangeLimit = rangeLimit;
+            behaviour.FlareIndex = flareIndex;
+            behaviour.NoiseIntensity = noiseIntensity;
+            behaviour.FlareScale = flareScale;
+            behaviour.SpecularStrength = specularStrength;
+            behaviour.RealLightMultiplier = realLightMultiplier;
         }
 
         public LiveEquipmentLightClip()

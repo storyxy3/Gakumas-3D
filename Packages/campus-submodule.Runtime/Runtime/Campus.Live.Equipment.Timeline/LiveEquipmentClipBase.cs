@@ -22,13 +22,13 @@ namespace Campus.Live.Equipment.Timeline
         [SerializeField]
         protected float _delayOffset;
         [SerializeField]
-        protected bool _useBpm;
+        protected bool _useBpm = true;
         [SerializeField]
         protected FloatCurve rotateSpeed;
         [SerializeField]
         protected FloatCurve rotateAngle;
         [SerializeField]
-        protected int _beat;
+        protected int _beat = 1;
         [SerializeField]
         protected int _beatOffset;
         [SerializeField]
@@ -37,7 +37,7 @@ namespace Campus.Live.Equipment.Timeline
         protected ExposedReference<Transform> _lookAtTarget;
         [SerializeField]
         protected MovingMode _movingMode;
-        protected EquipmentValueFactor _valueFactor;
+        protected EquipmentValueFactor _valueFactor = new EquipmentValueFactor { v0 = 1f, v1 = 1f, v2 = 1f, v3 = 1f };
         [HideInInspector]
         public LiveEquipmentTrackBase track;
         public LiveEquipmentAnimationCurve curves;
@@ -49,7 +49,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(bool);
+                return _useBpm;
             }
         }
 
@@ -57,7 +57,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(EquipmentValueFlags);
+                return _ignoreReverseFlags;
             }
         }
 
@@ -65,11 +65,12 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(AnimationPlayableAsset.LoopMode);
+                return m_Loop;
             }
 
             set
             {
+                m_Loop = value;
             }
         }
 
@@ -77,11 +78,12 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(FireType);
+                return _fireType;
             }
 
             set
             {
+                _fireType = value;
             }
         }
 
@@ -89,11 +91,12 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(float);
+                return _delayInterval;
             }
 
             set
             {
+                _delayInterval = value;
             }
         }
 
@@ -101,11 +104,12 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(float);
+                return _delayOffset;
             }
 
             set
             {
+                _delayOffset = value;
             }
         }
 
@@ -113,7 +117,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(int);
+                return _beatOffset;
             }
         }
 
@@ -122,12 +126,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CBpmInfo_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CBpmInfo_003Ek__BackingField = value;
             }
         }
 
@@ -135,7 +140,7 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(int);
+                return _beat;
             }
         }
 
@@ -143,17 +148,21 @@ namespace Campus.Live.Equipment.Timeline
         {
             get
             {
-                return default(ClipCaps);
+                return ClipCaps.Extrapolation | ClipCaps.Blending;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
         {
-            return default(Playable);
+            return Playable.Create(graph);
         }
 
         public void UpdateReverseFlags(EquipmentValueFlags reverseFlags)
         {
+            _valueFactor.v0 = reverseFlags.v0 && !_ignoreReverseFlags.v0 ? -1f : 1f;
+            _valueFactor.v1 = reverseFlags.v1 && !_ignoreReverseFlags.v1 ? -1f : 1f;
+            _valueFactor.v2 = reverseFlags.v2 && !_ignoreReverseFlags.v2 ? -1f : 1f;
+            _valueFactor.v3 = reverseFlags.v3 && !_ignoreReverseFlags.v3 ? -1f : 1f;
         }
 
         public abstract void UpdateBehaviour();
