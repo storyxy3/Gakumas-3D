@@ -12,7 +12,7 @@ namespace VL
         {
             get
             {
-                return default(Vector3);
+                return controllerBase != null ? controllerBase.position : base.rootPosition;
             }
         }
 
@@ -20,12 +20,15 @@ namespace VL
         {
             get
             {
-                return default(Quaternion);
+                return controllerBase != null ? controllerBase.rotation : base.rootRotation;
             }
         }
 
         public void SetActorController(TController controller)
         {
+            controllerBase = controller;
+            if (controller != null) Bind();
+            else UnBind();
         }
 
         public VLVirtualActorController()

@@ -13,14 +13,20 @@ namespace Campus.Crowd
         private Crowd _crowd;
         private void LateUpdate()
         {
+            UpdateParameters();
         }
 
         private void OnDestroy()
         {
+            if (_crowd != null) UnityEngine.Object.DestroyImmediate(_crowd);
+            UnityEngine.Object.DestroyImmediate(profile);
         }
 
         private void UpdateParameters()
         {
+            if (_crowd == null && !profile.TryGet(out _crowd)) _crowd = profile.Add<Crowd>();
+            _crowd.occlusionRadius.Override(radius);
+            _crowd.occlusionPosition.Override(transform.position);
         }
 
         public CrowdOcclusionVolume()

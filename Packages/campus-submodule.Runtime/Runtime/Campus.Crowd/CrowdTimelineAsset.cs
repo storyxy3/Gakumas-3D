@@ -9,18 +9,19 @@ namespace Campus.Crowd
     [Serializable]
     public class CrowdTimelineAsset : PlayableAsset, ITimelineClipAsset
     {
-        public CrowdTimelineBehaviour behaviour;
+        public CrowdTimelineBehaviour behaviour = new CrowdTimelineBehaviour();
         public ClipCaps clipCaps
         {
             get
             {
-                return default(ClipCaps);
+                if (behaviour?.crowdMotionDefine == null) return ClipCaps.None;
+                return behaviour.crowdMotionDefine.isLoop ? (ClipCaps)27 : (ClipCaps)26;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            return ScriptPlayable<CrowdTimelineBehaviour>.Create(graph, behaviour);
         }
 
         public CrowdTimelineAsset()

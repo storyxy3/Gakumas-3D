@@ -7,7 +7,7 @@ namespace Campus.Crowd
     [Serializable]
     public class CrowdVolumeParameter : VolumeParameter<CrowdVolume>
     {
-        public CrowdVolumeParameter(CrowdVolume value)
+        public CrowdVolumeParameter(CrowdVolume value) : base(value, false)
         {
         }
     }

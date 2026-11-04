@@ -124,6 +124,13 @@ namespace VL
 
         public void Bind()
         {
+            if (_binds == null) return;
+            _results = new List<IBindResult>(_binds.Count);
+            for (int i = 0; i < _binds.Count; i++)
+            {
+                var result = OnBind(_binds[i]);
+                if (result != null) _results.Add(result);
+            }
         }
 
         protected void AddBone(string boneName)
@@ -141,14 +148,31 @@ namespace VL
 
         protected void AddBind(string bindName)
         {
+            _binds.Add(new BindData { name = bindName });
         }
 
         protected void UnBind()
         {
+            _binds.Clear();
+            _results = null;
         }
 
         private void LateUpdate()
         {
+            if (_binds == null || _results == null)
+            {
+                _ = Application.isPlaying;
+                return;
+            }
+            transform.position = rootPosition;
+            transform.rotation = rootRotation;
+            for (int i = 0; i < _results.Count; i++)
+            {
+                var result = _results[i];
+                var bind = _binds[i];
+                result?.LateUpdate(bind);
+            }
+            OnLateUpdate();
         }
 
         protected virtual void OnLateUpdate()
@@ -158,7 +182,11 @@ namespace VL
         public static T Create<T>(int index)
             where T : VLVirtualActorController
         {
-            return null;
+            Debug.Log("Create VirtualActor");
+            var controller = new GameObject(string.Format(RootName, index)).AddComponent<T>();
+            controller.index = index;
+            controller.Setup();
+            return controller;
         }
 
         protected VLVirtualActorController()

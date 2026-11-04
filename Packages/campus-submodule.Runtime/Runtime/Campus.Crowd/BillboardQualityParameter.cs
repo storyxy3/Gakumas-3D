@@ -7,7 +7,7 @@ namespace Campus.Crowd
     [Serializable]
     public sealed class BillboardQualityParameter : VolumeParameter<BillboardQuality>
     {
-        public BillboardQualityParameter(BillboardQuality value, bool overrideState = false)
+        public BillboardQualityParameter(BillboardQuality value, bool overrideState = false) : base(value, overrideState)
         {
         }
     }

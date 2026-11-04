@@ -13,6 +13,20 @@ namespace Campus.Common
             public float weight;
             public void LateUpdate(BindData data)
             {
+                if (target != null && data.transform != null && weight > 0.01f)
+                {
+                    var position = target.position;
+                    if (VLCameraController.HasInstance)
+                    {
+                        var cameraPosition = VLCameraController.Instance.position;
+                        var right = target.right;
+                        var direction = (cameraPosition - position).normalized;
+                        float side = Mathf.Clamp01(Vector3.Dot(right, direction));
+                        position += target.rotation * new Vector3(side * 0.1f - 0.05f, 0.05f, 0.09f);
+                    }
+                    data.transform.position = Vector3.Lerp(data.transform.position, position, weight);
+                    data.transform.rotation = Quaternion.Slerp(data.transform.rotation, target.rotation, weight);
+                }
             }
 
             public FocusedEyeBoneResult()
@@ -25,6 +39,12 @@ namespace Campus.Common
             public Transform hips;
             public void LateUpdate(BindData data)
             {
+                if (hips == null) return;
+                float height = data.transform.position.y;
+                var position = hips.position;
+                position.y = height;
+                data.transform.position = position;
+                data.transform.rotation = Quaternion.AngleAxis(hips.eulerAngles.y, Vector3.up);
             }
 
             public HipsPosXZResult()
@@ -37,6 +57,7 @@ namespace Campus.Common
             public float humanScale;
             public void LateUpdate(BindData data)
             {
+                data.transform.localScale = Vector3.one * (humanScale / CampusActorController.HeightCoefficient);
             }
 
             public ScaleResult()
@@ -46,29 +67,30 @@ namespace Campus.Common
 
         private const string OptionPrefix = "Opt_";
         [SerializeField]
-        private Color _color;
+        private Color _color = Color.white;
         [SerializeField]
-        private Color _outlineColor;
+        private Color _outlineColor = Color.white;
         [SerializeField]
         [Range(0f, 1f)]
         private float _sweatWeight;
         [SerializeField]
         [Range(0f, 2f)]
-        private float _highlightWeight;
+        private float _highlightWeight = 1f;
         [SerializeField]
         [Range(0f, 1f)]
-        private float _targetCorrectionWeight;
+        private float _targetCorrectionWeight = 1f;
         private ICampusActorController _hipRootController;
         private Transform _hipTransformCache;
         public Color Color
         {
             get
             {
-                return default(Color);
+                return _color;
             }
 
             set
             {
+                _color = value;
             }
         }
 
@@ -76,11 +98,12 @@ namespace Campus.Common
         {
             get
             {
-                return default(Color);
+                return _outlineColor;
             }
 
             set
             {
+                _outlineColor = value;
             }
         }
 
@@ -127,7 +150,13 @@ namespace Campus.Common
         {
             get
             {
-                return null;
+                if (controllerBase == null || !ReferenceEquals(_hipRootController, controllerBase)) _hipTransformCache = null;
+                if (_hipTransformCache == null && controllerBase != null)
+                {
+                    _hipTransformCache = controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.Hips);
+                    _hipRootController = controllerBase;
+                }
+                return _hipTransformCache;
             }
         }
 
@@ -135,7 +164,7 @@ namespace Campus.Common
         {
             get
             {
-                return default(float);
+                return controllerBase != null ? controllerBase.GetHumanScale() : 1f;
             }
         }
 
@@ -143,7 +172,7 @@ namespace Campus.Common
         {
             get
             {
-                return null;
+                return controllerBase;
             }
         }
 
@@ -151,7 +180,13 @@ namespace Campus.Common
         {
             get
             {
-                return default(Vector3);
+                if (HipRootTransform != null)
+                {
+                    var position = HipRootTransform.position;
+                    position.y = controllerBase != null ? controllerBase.position.y : transform.position.y;
+                    return position;
+                }
+                return transform.position;
             }
         }
 
@@ -159,21 +194,57 @@ namespace Campus.Common
         {
             get
             {
-                return default(Quaternion);
+                return HipRootTransform != null ? Quaternion.AngleAxis(HipRootTransform.eulerAngles.y, Vector3.up) : transform.rotation;
             }
         }
 
         protected override void Setup()
         {
+            AddBone("Head");
+            AddBone("HeadFace");
+            AddBone("RightHand");
+            AddBone("LeftHand");
+            AddBone("FocusedEye");
+            AddBone("Hips-PosXZ");
+            AddBone("Scale");
         }
 
         protected override IBindResult OnBind(BindData boneBind)
         {
+            if (controllerBase == null) return new ErrorResult();
+            switch (boneBind.name)
+            {
+                case "Head":
+                    return new BoneResult(boneBind, controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.Head), 1f, 0f, new Vector3(0f, 0.2f, 0f), Vector3.zero);
+                case "HeadFace":
+                    return new BoneResult(boneBind, controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.Head), 1f, 1f, Vector3.zero, Vector3.zero);
+                case "RightHand":
+                    return new BoneResult(boneBind, controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.RightHand), 1f, 1f, Vector3.zero, Vector3.zero);
+                case "LeftHand":
+                    return new BoneResult(boneBind, controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.LeftHand), 1f, 1f, Vector3.zero, Vector3.zero);
+                case "FocusedEye":
+                    return new FocusedEyeBoneResult { target = controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.Head), weight = 1f };
+                case "Hips-PosXZ":
+                    return new HipsPosXZResult { hips = controllerBase.GetHumanBodyBoneTransform(HumanBodyBones.Hips) };
+                case "Scale":
+                    return new ScaleResult { humanScale = HumanScale };
+            }
+            if (boneBind.name != null && boneBind.name.StartsWith(OptionPrefix, global::System.StringComparison.Ordinal))
+            {
+                var target = controllerBase.GetBoneTransformByName(boneBind.name.Remove(0, OptionPrefix.Length));
+                if (target != null) return new BoneResult(boneBind, target, 1f, 1f, Vector3.zero, Vector3.zero);
+            }
             return null;
         }
 
         protected override void OnLateUpdate()
         {
+            if (controllerBase == null) return;
+            controllerBase.color = _color;
+            controllerBase.outlineColor = _outlineColor;
+            controllerBase.SweatWeight = _sweatWeight;
+            controllerBase.HighlightWeight = _highlightWeight;
+            controllerBase.TargetCorrectionWeight = _targetCorrectionWeight;
         }
 
         public CampusVirtualActorController()

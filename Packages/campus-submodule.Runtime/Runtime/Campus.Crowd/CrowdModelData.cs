@@ -86,11 +86,12 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(Vector4);
+                return boundingSphere;
             }
 
             set
             {
+                boundingSphere = value;
             }
         }
 
