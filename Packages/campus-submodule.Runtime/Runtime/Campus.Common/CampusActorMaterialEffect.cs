@@ -13,7 +13,7 @@ namespace Campus.Common
         {
             get
             {
-                return null;
+                return "ActorMaterial上書き";
             }
         }
 
@@ -21,17 +21,26 @@ namespace Campus.Common
         {
             get
             {
-                return null;
+                return overrideProperty?.materialName ?? "CampusActorMaterialEffect";
             }
         }
 
         private void OnEnable()
         {
+            if (overrideProperty == null) overrideProperty = new CampusActorMaterialProperty();
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject go, bool isSubTrack, bool isTimeline)
         {
-            return default(Playable);
+            if (!go.TryGetComponent<CampusActorController>(out var actor)) return Playable.Null;
+            var behaviour = new CampusActorMaterialEffectPlayable
+            {
+                isSubTrack = isSubTrack,
+                actorController = actor,
+                overrideProperty = overrideProperty,
+                isTimeline = isTimeline
+            };
+            return ScriptPlayable<CampusActorMaterialEffectPlayable>.Create(graph, behaviour);
         }
 
         public CampusActorMaterialEffect()

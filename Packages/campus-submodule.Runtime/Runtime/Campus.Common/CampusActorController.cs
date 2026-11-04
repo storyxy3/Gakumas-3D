@@ -222,7 +222,7 @@ namespace Campus.Common
 
             internal (string, int) _003CSetupPropConstraintAnimation_003Eb__98_0(string propName, int partsIndex)
             {
-                return default((string, int));
+                return (propName, partsIndex);
             }
         }
 
@@ -291,7 +291,7 @@ namespace Campus.Common
 
             internal bool _003CSetupPropConstraintAnimation_003Eb__1(PropConstraintData x)
             {
-                return default(bool);
+                return x.prop == propLocator.name;
             }
         }
 
@@ -1026,10 +1026,58 @@ namespace Campus.Common
 
         public void SetupPropConstraintAnimation(MotionDefine motionDefine)
         {
+            var actorMotion = motionDefine as ActorMotionDefine;
+            if (actorMotion && !actorMotion.isAdditive)
+            {
+                foreach (var item in _childMap.Keys.Select(_003C_003Ec._003C_003E9__98_0 ?? (_003C_003Ec._003C_003E9__98_0 = _003C_003Ec._003C_003E9._003CSetupPropConstraintAnimation_003Eb__98_0)))
+                {
+                    if (descriptor.propIndexList == null || !descriptor.propIndexList.Contains(item.partsIndex)) continue;
+                    if (!TryGetPartsFromAssetName(item.propName, out var parts))
+                    {
+                        UnityEngine.Debug.LogError("アニメーション対象のPropが見つかりませんでした");
+                        continue;
+                    }
+                    if (!global::Qua.Extensions.IDictionaryExtensions.IsNullOrEmpty(descriptor.propFixConstraintDict)
+                        && descriptor.propFixConstraintDict.TryGetValue(item.propName, out var fixedConstraint))
+                    {
+                        for (int i = 0; i < parts.transform.childCount; i++)
+                        {
+                            var child = parts.transform.GetChild(i);
+                            if (child.name != null && child.name.StartsWith("Geo", StringComparison.Ordinal)) continue;
+                            if (child.TryGetComponent<ActorAnimationConstraintTransformBone>(out var constraint))
+                                SetupPropConstraintSource(constraint, new[] { fixedConstraint.constraintTargetJointName }, fixedConstraint.isAdaptScale);
+                            else UnityEngine.Debug.LogError("コンストコンポーネントが見つかりませんでした。");
+                        }
+                    }
+                    else if (!global::Qua.Extensions.IEnumerableExtensions.IsNullOrEmpty(actorMotion.propConstraints))
+                    {
+                        if (descriptor.autoPropVisible) parts.gameObject.SetActive(true);
+                        for (int i = 0; i < parts.transform.childCount; i++)
+                        {
+                            var closure = new _003C_003Ec__DisplayClass98_0 { propLocator = parts.transform.GetChild(i) };
+                            if (closure.propLocator.name != null && closure.propLocator.name.StartsWith("Geo", StringComparison.Ordinal)) continue;
+                            var data = actorMotion.propConstraints.FirstOrDefault(closure._003CSetupPropConstraintAnimation_003Eb__1);
+                            if (data != null)
+                            {
+                                if (closure.propLocator.TryGetComponent<ActorAnimationConstraintTransformBone>(out var constraint))
+                                {
+                                    SetupPropExecuteType(constraint, data.executeType);
+                                    SetupPropConstraintSource(constraint, data.constraintTargets, data.isAdaptScale);
+                                }
+                                else UnityEngine.Debug.LogError("コンストコンポーネントが見つかりませんでした。");
+                            }
+                            else if (descriptor.autoPropVisible) parts.gameObject.SetActive(false);
+                        }
+                    }
+                    else if (descriptor.autoPropVisible) parts.gameObject.SetActive(false);
+                }
+            }
+            _actorAnimation.OnUpdate();
         }
 
         private void SetupPropExecuteType(ActorAnimationConstraintTransformBone transformConstraint, ActorAnimationConstraintExecuteType executeType)
         {
+            transformConstraint.executeType = executeType;
         }
 
         private void SetupPropConstraintSource(ActorAnimationConstraintTransformBone transformConstraint, string[] constraintTargets, bool isAdaptScale)

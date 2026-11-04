@@ -12,7 +12,7 @@ namespace VL
         {
             get
             {
-                return null;
+                return _constraintTargetJointName;
             }
         }
 
@@ -20,13 +20,14 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return _isAdaptScale;
             }
         }
 
         public VLActorPropFixConstraint(string constraintTargetJointName, bool isAdaptScale)
         {
-            this = default;
+            _constraintTargetJointName = constraintTargetJointName;
+            _isAdaptScale = isAdaptScale;
         }
     }
 }
