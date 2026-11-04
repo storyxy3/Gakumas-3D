@@ -1,0 +1,445 @@
+{
+  "scope": "Task I raw semantic flags. Review notes explain inspected source and assembly differences. Flags remain in native-comparison.json.",
+  "evidence": [
+    "native-semantic-diff.txt",
+    "native/",
+    "client-callers/",
+    "flare-offset.asm",
+    "flare-render.asm",
+    "vlb-params.asm",
+    "vlb-double-sided.asm"
+  ],
+  "methods": [
+    {
+      "method": "Campus.Common.Live.CampusLiveBinder$$BindCamera",
+      "similarity": 0.933,
+      "note": "semantic",
+      "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+      "apkAddresses": [
+        "0xdd6af14"
+      ],
+      "review": "Type equality becomes an inverted early-return inequality guard. The camera binding and output-type selection remain in source.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "Campus.Common.Live.CampusLiveBinder$$DebugSetMuteTracks",
+      "similarity": 0.89,
+      "note": "semantic",
+      "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+      "apkAddresses": [
+        "0xdd6b394"
+      ],
+      "review": "The semantic sequence differs in generic ForEach metadata initialization placement. Track enumeration and mute action remain in the native order.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "Campus.Common.Live.CampusLiveBinder$$SetupAsync",
+      "similarity": 0.611,
+      "note": "semantic",
+      "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+      "apkAddresses": [
+        "0xdd68fb0"
+      ],
+      "review": "Async state initialization and zero-initialization calls differ. The original named state machine, builder start and returned task are present.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39$$MoveNext",
+      "similarity": 0.401,
+      "note": "semantic",
+      "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+      "apkAddresses": [
+        "0xdd6c04c"
+      ],
+      "review": "Large async/exception-region and branch-order differences remain. The source retains the three native await stages for DownloadMovieAsync, SetMovieInfo and VideoPlayer preparation, as well as actor, audio, camera and reference binding. This flag remains open for further native comparison.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "Campus.Common.Live.CampusLiveBinder.TrackName$$.cctor",
+      "similarity": 0.724,
+      "note": "semantic",
+      "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveBinder.cs",
+      "apkAddresses": [
+        "0xdd6b734"
+      ],
+      "review": "String and generic initialization loads move around the static array construction. Original track strings and array contents are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "Campus.Rendering.CampusActorRim$$.ctor",
+      "similarity": 0.824,
+      "note": "semantic",
+      "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorRim.cs",
+      "apkAddresses": [
+        "0xddd33b0"
+      ],
+      "review": "The rebuilt Vector2.zero access introduces extra type initialization before Vector2Parameter construction. Native parameter values are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareBatchForSRP$$TryGetScheduledFlareData",
+      "similarity": 0.794,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRP.cs",
+      "apkAddresses": [
+        "0xd1cceb8"
+      ],
+      "review": "List item caching and TransformAccessArray length reads differ. Transform replacement, append and tail removal remain in the same data-dependent paths.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareBatchForSRPData$$ComputeFlares",
+      "similarity": 0.924,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+      "apkAddresses": [
+        "0xd1d522c"
+      ],
+      "review": "The division/remainder rounding to 16-thread compute groups is emitted as a compare instead of the original low-bit test. The flare count is nonnegative.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareBatchForSRPData$$RenderFlares",
+      "similarity": 0.709,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+      "apkAddresses": [
+        "0xd1d54f8"
+      ],
+      "review": "A common SetTexture call merges the two native texture-selection branches. Projection construction and camera-aspect access move. Native matrix values and procedural draw are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareBatchForSRPData$$ScheduleFlares",
+      "similarity": 0.27,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareBatchForSRPData.cs",
+      "apkAddresses": [
+        "0xd1d3b98"
+      ],
+      "review": "The reconstruction uses NativeArray indexers for input/inout data where native code uses unsafe pointers. Visibility, screen fade, element data and job scheduling were derived from native assembly. The substantial remaining instruction differences remain an open flag.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareUpdateElementJob$$GetElementJobData",
+      "similarity": 0.174,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateElementJob.cs",
+      "apkAddresses": [
+        "0xd1d629c"
+      ],
+      "review": "Vector conversions and initialization calls are inlined differently. Native element color, atlas UV and size calculations are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareUpdateElementJob$$GetOffsetPosition",
+      "similarity": 0.27,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateElementJob.cs",
+      "apkAddresses": [
+        "0xd1d6138"
+      ],
+      "review": "float3 conversion calls are inlined and initialization moves. The native offset calculation is retained in flare-offset.asm.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareUpdateJob$$Angle",
+      "similarity": 0.892,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateJob.cs",
+      "apkAddresses": [
+        "0xd1d5e20"
+      ],
+      "review": "Math helper initialization calls reorder around the native angle calculation. The infinity constant and angle branches remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "ProFlareUpdateJob$$Execute",
+      "similarity": 0.791,
+      "note": "semantic",
+      "sourcePath": "Packages/ProFlare.Runtime/Runtime/ProFlareUpdateJob.cs",
+      "apkAddresses": [
+        "0xd1d5bb4"
+      ],
+      "review": "Packed boolean writes and constant placement differ around TransformAccess validity and position/rotation calculations. The native data layout and transform operations are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Build",
+      "similarity": 0.577,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+      "apkAddresses": [
+        "0xbd04750"
+      ],
+      "review": "The fully shared generic wrapper includes additional indirect calls. The resource check, descriptor build and model/avatar initialization remain in the native path.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$CheckResourceObjects",
+      "similarity": 0.851,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+      "apkAddresses": [
+        "0xbd03cc0"
+      ],
+      "review": "Exception-cleanup state labels use different integer values. Resource enumeration, unique-name detection and the original error strings remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Create<object>",
+      "similarity": 0.887,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+      "apkAddresses": [
+        "0x8c91254"
+      ],
+      "review": "The same actor-name format string is loaded using ldr instead of add.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.Core.VLActorController<object, object, object>$$CheckResourceObjects",
+      "similarity": 0.851,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+      "apkAddresses": [
+        "0xbd0243c"
+      ],
+      "review": "Exception-cleanup state labels use different integer values. Resource enumeration, unique-name detection and the original error strings remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.Core.VLActorController<object, object, object>$$Create<object>",
+      "similarity": 0.887,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+      "apkAddresses": [
+        "0x8c910fc"
+      ],
+      "review": "The same actor-name format string is loaded using ldr instead of add.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$.ctor",
+      "similarity": 0.942,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "apkAddresses": [
+        "0xe10626c"
+      ],
+      "review": "UnsafeUtility.SizeOf metadata and initialization calls are folded in the rebuilt constructor. The restored buffer setup uses the original constant-buffer type.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildAvatar",
+      "similarity": 0.745,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd14264"
+      ],
+      "review": "The Generic Avatar name setter is emitted as a named call where the original normalized sequence resolves the call differently. Native humanoid/generic avatar selection and binding are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildModel",
+      "similarity": 0.785,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd132fc"
+      ],
+      "review": "Enumerator cleanup labels, metadata load placement and an inverted string guard differ. Bone linking, part registration, default children and AABB initialization follow the native reconstruction. This larger flag remains open.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedPosition",
+      "similarity": 0.677,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd15c3c"
+      ],
+      "review": "The animator null guard is inverted and the success path becomes an early tail call. The native error message and body position/rotation result remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedRotation",
+      "similarity": 0.677,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd15d40"
+      ],
+      "review": "The animator null guard is inverted and the success path becomes an early tail call. The native error message and body position/rotation result remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, object>$$BuildModel",
+      "similarity": 0.801,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd1028c"
+      ],
+      "review": "Enumerator cleanup labels, metadata load placement and an inverted string guard differ. Bone linking, part registration, default children and AABB initialization follow the native reconstruction. This larger flag remains open.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, object>$$GetAnimatedPosition",
+      "similarity": 0.677,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd12970"
+      ],
+      "review": "The animator null guard is inverted and the success path becomes an early tail call. The native error message and body position/rotation result remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VL.VLDefaultActorController<object, object, object>$$GetAnimatedRotation",
+      "similarity": 0.677,
+      "note": "semantic",
+      "sourcePath": "Packages/vl-unity.Runtime/Runtime/VL/VLDefaultActorController_3.cs",
+      "apkAddresses": [
+        "0xbd12a74"
+      ],
+      "review": "The animator null guard is inverted and the success path becomes an early tail call. The native error message and body position/rotation result remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.CullingJob$$Execute",
+      "similarity": 0.875,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/CullingJob.cs",
+      "apkAddresses": [
+        "0xe0cacf8"
+      ],
+      "review": "The final NativeList.ParallelWriter AddNoResize becomes a tail branch instead of a call.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.EntityIndexer$$UpdateIndex",
+      "similarity": 0.8,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/EntityIndexer.cs",
+      "apkAddresses": [
+        "0xe0cf684"
+      ],
+      "review": "An additional 32-bit mask appears when storing the index into the entity item.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.GlobalMeshSD$$Get",
+      "similarity": 0.631,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/GlobalMeshSD.cs",
+      "apkAddresses": [
+        "0xe0ddc68"
+      ],
+      "review": "Config instance and double-sided accessors are inlined into GetInstance/GetActualRenderingMode. Native mesh destruction and generation remain.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.MeshGenerator$$GenerateConeZ_Radii",
+      "similarity": 0.54,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+      "apkAddresses": [
+        "0xe0d6bd0"
+      ],
+      "review": "Normal direction arithmetic, packed mesh-update constants and branch placement differ. Native vertex, UV and triangle construction were restored from the retained decompilation. The raw flag remains open.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.MeshGenerator$$GenerateConeZ_Radii_DoubleCaps",
+      "similarity": 0.456,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/MeshGenerator.cs",
+      "apkAddresses": [
+        "0xe0d2c58"
+      ],
+      "review": "One redundant comparison is absent near the generated cap helper. Both native cap directions and inverted construction are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.Utils$$TransformAABB",
+      "similarity": 0.304,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Utils.cs",
+      "apkAddresses": [
+        "0xe0e3098"
+      ],
+      "review": "Two explicit float3 conversions appear before the native bounds min/max accumulation.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.VLBDrawCallSystem.DrawCallJob$$GetInsideBeamFactorFromObjectSpacePos",
+      "similarity": 0.683,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+      "apkAddresses": [
+        "0xe0cbb78"
+      ],
+      "review": "The constant-one load is folded in the native cone-angle/radial clamp calculation.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.VLBDrawCallSystem.DrawCallJob$$UpdateParams",
+      "similarity": 0.398,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawCallSystem.cs",
+      "apkAddresses": [
+        "0xe0cb778"
+      ],
+      "review": "The original NaN-aware minimum Fresnel clamp is emitted through math.max. The original assembly explicitly substitutes 0.001 for NaN or smaller values. The rebuilt floating maximum selects that same finite operand.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.VLBDrawSystem$$Execute",
+      "similarity": 0.621,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+      "apkAddresses": [
+        "0xe0cbe70",
+        "0xe0cbfc4"
+      ],
+      "review": "Chunk-list item access is cached in the outer overload. The drawing overload reorders NativeArray reinterpret/copy metadata loads while retaining the original draw inputs.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.VLBDrawSystem$$ExecuteHD",
+      "similarity": 0.475,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+      "apkAddresses": [
+        "0xe0cc2e0",
+        "0xe0cc454"
+      ],
+      "review": "Chunk-list item access is cached in the outer overload. One initialization call is folded in the HD overload around property-block updates.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.VLBEntityManager$$CreateEntity",
+      "similarity": 0.795,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+      "apkAddresses": [
+        "0xe0cd410"
+      ],
+      "review": "Capacity clamping uses System.Math.Max rather than an inline compare. Chunk/index registration and minimum capacity eight are retained.",
+      "status": "reviewed-open"
+    },
+    {
+      "method": "VLB.VLBEntityManager$$UpdateEntityData",
+      "similarity": 0.569,
+      "note": "semantic",
+      "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBEntityManager.cs",
+      "apkAddresses": [
+        "0xe0ce424"
+      ],
+      "review": "Beam radius, distance, attenuation and inside/outside-intensity getters inline into the native cache update sequence.",
+      "status": "reviewed-open"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "runtimeSourceCommit": "e1795e05dccaa92a80e098c9972afb0bf122169e",
+  "evidence": [
+    "parity-original.asm",
+    "parity-rebuilt.asm",
+    "parity-load-thunk.asm"
+  ],
+  "censuses": [
+    {
+      "name": "task-f",
+      "baseline": "Evidence/TaskH/h4-task-f-regression.json",
+      "baselineCounts": {
+        "same": 630,
+        "layout": 36,
+        "semantic": 39,
+        "onlyGame": 0,
+        "resigned": 0
+      },
+      "currentCounts": {
+        "same": 629,
+        "layout": 37,
+        "semantic": 39,
+        "onlyGame": 0,
+        "resigned": 0
+      },
+      "onlyGameListUnchanged": true,
+      "newFlags": [
+        {
+          "method": "VL.Animation.MotionLayerPlayable$$OnPlayableDestroy",
+          "similarity": 0.966,
+          "note": "semantic",
+          "review": "Unchanged source. An out-of-line metadata-load thunk replaces the original ldr instruction and returns to the following instruction. The linear normalizer misses the x22 update and mislabels a later load as VLSRP Render Target Blur. Native disconnect/destroy calls are retained. See parity-load-thunk.asm."
+        },
+        {
+          "method": "VL.FaceSystem.VLActorFaceModel$$Setup",
+          "similarity": 0.993,
+          "note": "semantic",
+          "review": "Unchanged source. The final SetupBindVertices tail branch is emitted as a call with epilogue. The recorded body has 375 instructions."
+        },
+        {
+          "method": "VLB.VolumetricLightBeamSD$$get_additionalClippingPlane",
+          "similarity": 0.969,
+          "note": "layout",
+          "review": "Unchanged source. The comparator retains an identical semantic sequence and classifies the different register/instruction layout as layout."
+        },
+        {
+          "method": "VLB.VolumetricLightBeamSD$$get_skewingLocalForwardDirectionNormalized",
+          "similarity": 0.993,
+          "note": "layout",
+          "review": "Unchanged source. The comparator retains an identical semantic sequence and classifies the different register/instruction layout as layout."
+        }
+      ],
+      "nowSame": [
+        "VL.Core.VLActorController$$OnEnable",
+        "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor",
+        "VLB.Consts.Beam$$.cctor"
+      ],
+      "semanticToLayout": []
+    },
+    {
+      "name": "task-h",
+      "baseline": "Evidence/TaskH/h4-final-func-diff.json",
+      "baselineCounts": {
+        "same": 1272,
+        "layout": 133,
+        "semantic": 146,
+        "onlyGame": 125,
+        "resigned": 0
+      },
+      "currentCounts": {
+        "same": 1280,
+        "layout": 132,
+        "semantic": 139,
+        "onlyGame": 125,
+        "resigned": 0
+      },
+      "onlyGameListUnchanged": true,
+      "newFlags": [
+        {
+          "method": "Campus.Crowd.CrowdTimelineTrack$$.ctor",
+          "similarity": 0.019,
+          "note": "semantic",
+          "review": "Unchanged source. The actual constructor is two instructions, mov x1, zero followed by a tail branch to PlayableTrack..ctor. The next known dumper symbol is 211 instructions later, so the normalizer includes an unrelated unnamed function."
+        }
+      ],
+      "nowSame": [
+        "Campus.Common.Live.CampusLiveTimelineController$$DisableTrackBinding",
+        "Campus.Common.Live.CampusLiveTimelineController$$GetAllPanoramaCameras",
+        "Campus.Common.Live.CampusLiveTimelineController$$GetFieldConstraintTargets",
+        "Campus.Common.Live.CampusLiveTimelineController$$GetPropAndFieldConstraintTargetPairs",
+        "Campus.Common.Live.CampusLiveTimelineController$$GetProps",
+        "Campus.Common.Live.CampusLiveTimelineController$$ResolveCamera",
+        "Campus.Common.Live.CampusLiveTimelineController.<>c__DisplayClass123_0$$<CollectTracksResolvedByPaths>b__0",
+        "Campus.Crowd.CrowdVolume$$<BuildHierarchy>g__Create|16_0",
+        "Campus.Live.Equipment.Timeline.LiveEquipmentLaserClip$$.ctor"
+      ],
+      "semanticToLayout": [
+        "Campus.Common.Live.CampusLiveTimelineController$$EnableCharacterTrack",
+        "Uguiss.Timeline.TimelineEngineUtility$$GetPlayableBehaviour<object>"
+      ]
+    }
+  ]
+}

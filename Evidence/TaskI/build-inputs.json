@@ -1,0 +1,69 @@
+{
+  "runtimeSourceCommit": "e1795e05dccaa92a80e098c9972afb0bf122169e",
+  "unityVersion": "6000.0.77f1",
+  "linux": {
+    "buildLog": ".recon/task-i/build-linux-multipass.log",
+    "result": "Succeeded",
+    "errors": 0,
+    "backend": "Mono",
+    "graphics": "Vulkan on llvmpipe",
+    "audio": "disabled and muted",
+    "playback": {
+      "log": "linux-full-playback.txt",
+      "runtimeSourceCommit": "e1795e05dccaa92a80e098c9972afb0bf122169e",
+      "startTime": 0,
+      "endTime": 155.6,
+      "exitCode": 0,
+      "screenshots": [
+        {
+          "requested": 5.0,
+          "actual": 5.00000014901161
+        },
+        {
+          "requested": 30.0,
+          "actual": 30.0124934390187
+        },
+        {
+          "requested": 60.0,
+          "actual": 60.1933184536174
+        },
+        {
+          "requested": 90.0,
+          "actual": 90.2043495634571
+        },
+        {
+          "requested": 120.0,
+          "actual": 120.215786873363
+        },
+        {
+          "requested": 150.0,
+          "actual": 150.087494270876
+        }
+      ],
+      "captureDirectory": "screenshots/"
+    }
+  },
+  "native": {
+    "buildLog": ".recon/task-i/build-android-multipass.log",
+    "target": "Android ARM64 IL2CPP Release",
+    "nativeCompilation": "succeeded",
+    "apkPackaging": "failed",
+    "packagingError": ":unityLibrary:lintVitalAnalyzeRelease For input string: \"37.0\"",
+    "binary": "Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so",
+    "dump": ".recon/live-dump/script.json"
+  },
+  "windows": {
+    "status": "prepared for PC build",
+    "target": "StandaloneWindows64 IL2CPP Release",
+    "graphics": "Direct3D11",
+    "contentArchive": "Build/ttmr001-windows-content.tar.gz",
+    "contentArchiveBytes": 171872621
+  },
+  "comparisonTool": "/data/xy/gakumas/scripts/live_check.sh",
+  "comparisonLogs": [
+    ".recon/task-i/native-comparison-complete.txt",
+    ".recon/task-i/task-f-comparison-complete.txt",
+    ".recon/task-i/task-h-comparison-complete.txt"
+  ],
+  "hashes": "SHA256SUMS"
+}

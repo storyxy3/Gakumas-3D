@@ -1,0 +1,1013 @@
+
+== Campus.Common.Live.CampusLiveBinder$$BindCamera (Campus_Common_Live_CampusLiveBinder_o* __this, UnityEngine_Playables_PlayableBinding_o binding);
+--- game
++++ rebuilt
+@@ -12,5 +12,5 @@
+ bl FN
+ bl System.Type$$GetTypeFromHandle
+-bl System.Type$$op_Equality
++bl System.Type$$op_Inequality
+ bl FN
+ bl UnityEngine.Playables.PlayableBinding$$get_sourceObject
+
+== Campus.Common.Live.CampusLiveBinder$$DebugSetMuteTracks (Campus_Common_Live_CampusLiveBinder_o* __this);
+--- game
++++ rebuilt
+@@ -1,5 +1,4 @@
+ bl FN
+ ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<TrackAsset>()
+-bl FN
+ bl FN
+ ldr  MMETH Method$System.Linq.Enumerable.OfType<TrackAsset>()
+@@ -39,4 +38,5 @@
+ bl System.Linq.Enumerable$$OfType<object>
+ bl FN
++ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<TrackAsset>()
+ bl FN
+ bl FN
+@@ -44,5 +44,3 @@
+ bl System.Action<object>$$.ctor
+ bl FN
+-ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<TrackAsset>()
+-bl FN
+ b Campus.Common.Extensions.EnumerableExtensions$$ForEach<object>
+
+== Campus.Common.Live.CampusLiveBinder$$SetupAsync (Campus_Common_Live_CampusLiveBinder_o* __this, System_Threading_CancellationToken_o ct);
+--- game
++++ rebuilt
+@@ -3,9 +3,11 @@
+ bl FN
+ mov #1
++mov #-1
+ orr #8
+ bl FN
+ bl FN
+ bl FN
+-mov #-1
++mov #0x58
++bl FN
+ bl FN
+ bl Campus.Common.Live.CampusLiveBinder.<gen>$$MoveNext
+
+== Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39$$MoveNext (Campus_Common_Live_CampusLiveBinder__SetupAsync_d__39_o __this);
+--- game
++++ rebuilt
+@@ -26,5 +26,4 @@
+ ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<PlayableDirector>()
+ bl FN
+-bl FN
+ ldr  MMETH Method$System.Linq.Enumerable.FirstOrDefault<PlayableDirector>()
+ bl FN
+@@ -128,8 +127,12 @@
+ bl FN
+ mov #1
++ldr  MMETH Method$System.Collections.Generic.List.Enumerator<CampusTimelineCriVideoPlayer>.MoveNext()
++cmp #1
+ cmp #2
+ mov #-1
+ bl FN
+ mov #1
++b FN
++ldr  STR  missing target or field errors
+ mov #2
+ bl FN
+@@ -204,5 +207,4 @@
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveBinder.<gen>.<gen>()
+ bl System.Action<object>$$.ctor
+-bl FN
+ ldr  MMETH Method$Campus.Common.Extensions.EnumerableExtensions.ForEach<PlayableDirector>()
+ bl Campus.Common.Extensions.EnumerableExtensions$$ForEach<object>
+@@ -275,11 +277,14 @@
+ cmp #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ bl UnityEngine.Object$$get_name
+ bl Campus.Common.CampusActorController$$SetPropFieldConstraintTarget
+-mov #0x21
++mov #0x22
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ICampusActorController>.Dispose()
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-cmp #0x21
++cmp #0x22
++bl FN
++ldr  MMETH Method$System.Collections.Generic.List<VLTimelineController.ReferenceBindParam>..ctor()
++bl System.Collections.Generic.List<object>$$.ctor
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+@@ -296,8 +301,4 @@
+ bl Campus.Common.Live.CampusLiveBinder$$ReplaceBGM
+ bl FN
+-ldr  MMETH Method$System.Collections.Generic.List<VLTimelineController.ReferenceBindParam>..ctor()
+-mov #8
+-bl System.Collections.Generic.List<object>$$.ctor
+-bl FN
+ bl UnityEngine.Object$$op_Inequality
+ bl FN
+@@ -306,5 +307,4 @@
+ ldr  MMETH Method$System.Collections.Generic.List<VLTimelineController.ReferenceBindParam>.Add()
+ bl FN
+-bl System.Collections.Generic.List<object>$$AddWithResize
+ ldr  MMETH Method$Qua.Extensions.IEnumerableExtensions.IsNullOrEmpty<ActorMotionDefine>()
+ bl Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<object>
+@@ -323,4 +323,6 @@
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
++bl FN
++bl UnityEngine.Object$$op_Inequality
+ bl UnityEngine.Video.VideoPlayer$$set_clip
+ bl FN
+@@ -359,8 +361,4 @@
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+ bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<CampusTimelineCriVideoPlayer>.MoveNext()
+-cmp #1
+-mov #-1
+-mov #-1
+ ldr  MMETH Method$System.Collections.Generic.List<VLTimelineController.ReferenceBindParam>.Add()
+ bl FN
+@@ -419,63 +417,22 @@
+ bl FN
+ bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-bl FN
++cmp #1
++bl FN
++bl FN
++bl FN
++cmp #1
++bl FN
++bl FN
++bl FN
++bl FN
++ldr  MMETH Method$System.Collections.Generic.List.Enumerator<CampusTimelineCriVideoPlayer>.Dispose()
++bl FN
++bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ mov #-2
+ bl FN
+-mov #1
+-mov #2
+-bl FN
+-bl FN
+-mov #1
+-mov #2
++mov #8
++bl FN
++bl FN
++bl FN
+ bl FN
+ bl FN
+@@ -488,15 +445,14 @@
+ bl FN
+ bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-mov #0x32
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<CampusTimelineCriVideoPlayer>.Dispose()
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-cmp #0x32
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl FN
++bl UnityEngine.Object$$op_Equality
+ ldr  META Campus.Common.Live.CampusLiveBinder.<gen>
+ bl FN
+@@ -505,38 +461,8 @@
+ bl UnityEngine.Video.VideoPlayer$$get_clip
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
+-bl UnityEngine.Video.VideoPlayer$$Prepare
+-bl FN
+-ldr  MMETH Method$Campus.Common.Live.CampusLiveBinder.<gen>.<gen>()
+-bl System.Func<bool>$$.ctor
+-bl FN
+-mov #8
+-bl Cysharp.Threading.Tasks.UniTask$$WaitUntil
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
++bl UnityEngine.Object$$op_Equality
++mov #-2
+ bl FN
+ mov #1
+ mov #2
+ bl FN
+-bl Campus.Timeline.CampusTimelineCriVideoPlayer$$SetMovieInfo
+-bl FN
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-mov #1
+-bl FN
+-ldr  CampusLiveBinder.<gen>>()
+-bl FN
+-mov #2
+-bl FN
+-ldr  CampusLiveBinder.<gen>>()
+-bl FN
+
+== Campus.Common.Live.CampusLiveBinder.TrackName$$.cctor ();
+--- game
++++ rebuilt
+@@ -6,9 +6,12 @@
+ ldr  STR Audio
+ ldr  STR Light
+-bl FN
++ldr  STR ActorLayout
++ldr  STR Actor_
+ bl FN
+ ldr  STR Cinemachine
+ bl FN
+ ldr  STR Actor
++bl FN
++ldr  STR ActorLayout
+ bl FN
+ ldr  STR Camera
+@@ -27,6 +30,4 @@
+ bl FN
+ mov #1
+-ldr  STR Actor_
+-ldr  STR Subtitle
+ bl FN
+ bl FN
+@@ -38,4 +39,4 @@
+ bl FN
+ bl FN
+-bl FN
++ldr  STR Subtitle
+ b FN
+
+== Campus.Rendering.CampusActorRim$$.ctor (Campus_Rendering_CampusActorRim_o* __this);
+--- game
++++ rebuilt
+@@ -15,4 +15,6 @@
+ bl FN
+ bl FN
++mov #1
++bl FN
+ bl UnityEngine.Rendering.Vector2Parameter$$.ctor
+ bl FN
+
+== ProFlareBatchForSRP$$TryGetScheduledFlareData (ProFlareBatchForSRP_o* __this, UnityEngine_Camera_o* c, UnityEngine_ComputeShader_o* computeShader, int32_t updateKernelIndex, UnityEngine_Material_o* material, ProFlareBatchForSRPData_o** data);
+--- game
++++ rebuilt
+@@ -39,9 +39,9 @@
+ bl UnityEngine.Jobs.TransformAccessArray$$.ctor
+ ldr  MMETH Method$System.Collections.Generic.List<ProFlare>.get_Item()
++bl System.Collections.Generic.List<object>$$get_Item
+ bl UnityEngine.Jobs.TransformAccessArray$$get_length
+-bl System.Collections.Generic.List<object>$$get_Item
+-bl System.Collections.Generic.List<object>$$get_Item
+ bl UnityEngine.Jobs.TransformAccessArray$$set_Item
+ bl UnityEngine.Jobs.TransformAccessArray$$Add
++bl UnityEngine.Jobs.TransformAccessArray$$get_length
+ bl UnityEngine.Jobs.TransformAccessArray$$RemoveAtSwapBack
+ bl FN
+
+== ProFlareBatchForSRPData$$ComputeFlares (ProFlareBatchForSRPData_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd);
+--- game
++++ rebuilt
+@@ -2,5 +2,5 @@
+ mov #1
+ cmp #0
+-tst #0xf
++cmp #0
+ bl UnityEngine.Rendering.ProfilingScope$$.ctor
+ bl ProFlareBatchForSRPData$$UpdateComputeBuffer
+
+== ProFlareBatchForSRPData$$RenderFlares (ProFlareBatchForSRPData_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd);
+--- game
++++ rebuilt
+@@ -5,7 +5,4 @@
+ bl UnityEngine.Texture2D$$get_whiteTexture
+ bl UnityEngine.MaterialPropertyBlock$$SetTexture
+-bl FN
+-bl UnityEngine.MaterialPropertyBlock$$SetTexture
+-bl UnityEngine.Camera$$get_aspect
+ fmov #-1.00000000
+ fmov #1.00000000
+@@ -14,8 +11,9 @@
+ fmov #-2.00000000
+ fmov #2.00000000
+-fmov #1.00000000
+ bl UnityEngine.Matrix4x4$$Ortho
++bl UnityEngine.Camera$$get_aspect
+ bl FN
+ mov #1
++fmov #1.00000000
+ mov #-0x40800000
+ bl UnityEngine.Rendering.CommandBuffer$$SetViewProjectionMatrices
+
+== ProFlareBatchForSRPData$$ScheduleFlares (ProFlareBatchForSRPData_o* __this, bool isDirty);
+--- game
++++ rebuilt
+@@ -16,9 +16,5 @@
+ ldr  MMETH Method$System.Collections.Generic.List<SubElement>.get_Item()
+ bl FN
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<ProFlareInputData>()
+-bl FN
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<ProFlareUpdateElementData>()
+-bl FN
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<ProFlareUpdateInOutputData>()
+ bl FN
+ ldr  MMETH Method$Unity.Collections.NativeArray<ProFlareUpdateInOutputData>.get_IsCreated()
+@@ -34,6 +30,4 @@
+ b UnityEngine.Debug$$LogError
+ bl UnityEngine.Camera$$get_aspect
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<ProFlareUpdateInOutputData>()
+-bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafePtr<ProFlareUpdateInOutputData>
+ bl UnityEngine.Time$$get_time
+ cmp #1
+@@ -41,7 +35,7 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ bl FN
++bl UnityEngine.Object$$op_Inequality
++bl FN
+ bl UnityEngine.Object$$op_Equality
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+ bl UnityEngine.Transform$$get_localScale
+ mov #1
+@@ -64,15 +58,9 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<ProFlareUpdateElementData>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafePtr<ProFlareUpdateElementData>
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<ProFlareInputData>()
+-bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafePtr<ProFlareInputData>
+-bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafePtr<ProFlareUpdateInOutputData>
+ cmp #0
+-fmov #1.00000000
+-ldr  MMETH Method$System.Collections.Generic.List<ProFlareElement>.get_Item()
+ orr #8
+-mov #0x3f800000
++mov #0x18
+ ldr  MMETH Method$System.Collections.Generic.List<ProFlare>.get_Item()
+ bl System.Collections.Generic.List<object>$$get_Item
+-bl FN
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+@@ -86,30 +74,35 @@
+ bl UnityEngine.Transform$$set_rotation
+ fmov #1.00000000
+-cmp #1
+ fmov #0.50000000
+ fmov #-1.00000000
+-fmov #0.50000000
+ fmov #-1.00000000
++fmov #1.00000000
+ fmov #0.50000000
+ fmov #0.50000000
+-fmov #-0.50000000
++fmov #1.00000000
+ fmov #0.50000000
++fmov #1.00000000
++fmov #1.00000000
+ fmov #-1.00000000
+-fmov #0.50000000
+-fmov #0.50000000
++fmov #1.00000000
+ fmov #-1.00000000
+-fmov #0.50000000
++fmov #1.00000000
+ bl UnityEngine.AnimationCurve$$Evaluate
+ fmov #1.00000000
+ fmov #-0.50000000
++fmov #1.00000000
+ bl UnityEngine.AnimationCurve$$Evaluate
+ fmov #1.00000000
+-fmov #-0.50000000
++mov #1
++fmov #1.00000000
++mov #1
++bl FN
+ cmp #0
++fmov #1.00000000
++ldr  MMETH Method$System.Collections.Generic.List<ProFlareElement>.get_Item()
+ bl System.Collections.Generic.List<object>$$get_Item
+ bl FN
++mov #0x3f800000
+ cmp #0
+-cmp #0
+-fmov #1.00000000
+ cmp #0
+ cmp #0
+@@ -121,9 +114,9 @@
+ bl FN
+ bl ProFlareBatchForSRPData$$<gen>|48_0
+-fmov #1.00000000
+ cmp #1
+ bl FN
+ fmov #1.00000000
+ bl ProFlareBatchForSRPData$$<gen>|48_0
++mov #0x18
+ cmp #1
+ mov #0x20
+
+== ProFlareUpdateElementJob$$GetElementJobData (ProFlareUpdateElementJob_o __this, ProFlareUpdateElementData_o* inputData, Unity_Mathematics_float3_o offsetPosition, float angle, UnityEngine_Color_o finalColor);
+--- game
++++ rebuilt
+@@ -3,9 +3,6 @@
+ bl Unity.Mathematics.float2$$op_Implicit
+ bl FN
+-bl FN
+-mov #1
+ mov #0x14
+ mov #0x32
+ mov #0x14
+ mov #0x14
+-bl Unity.Mathematics.float2$$op_Implicit
+
+== ProFlareUpdateElementJob$$GetOffsetPosition (ProFlareUpdateElementJob_o __this, ProFlareUpdateElementData_o* input, float* rotateToFlareAngle);
+--- game
++++ rebuilt
+@@ -1,10 +1,7 @@
++bl FN
++mov #1
+ bl Unity.Mathematics.float3$$op_Implicit
+ fmov #-1.00000000
+ fmov #1.00000000
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl FN
+-mov #1
+ bl FN
+ bl FN
+
+== ProFlareUpdateJob$$Angle (ProFlareUpdateJob_o __this, Unity_Mathematics_float3_o from, Unity_Mathematics_float3_o to);
+--- game
++++ rebuilt
+@@ -1,2 +1,4 @@
++bl FN
++mov #1
+ bl FN
+ mov #1
+@@ -5,6 +7,4 @@
+ mov #1
+ bl FN
+-bl FN
+-mov #1
+ bl FN
+ mov #0x7f800000
+
+== ProFlareUpdateJob$$Execute (ProFlareUpdateJob_o __this, int32_t index, UnityEngine_Jobs_TransformAccess_o transform);
+--- game
++++ rebuilt
+@@ -1,4 +1,4 @@
+ bl UnityEngine.Jobs.TransformAccess$$get_isValid
+-and #0xffffff00
++orr #16
+ bl UnityEngine.Jobs.TransformAccess$$get_position
+ bl Unity.Mathematics.float3$$op_Implicit
+@@ -6,5 +6,5 @@
+ fmov #1.00000000
+ fmov #1.00000000
+-cmp #0
++fmov #1.00000000
+ bl UnityEngine.Jobs.TransformAccess$$get_rotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+
+== VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Build (VL_Core_VLActorController_TModelParts__TDescriptor__TIDescriptor__o* __this, VL_VLActorSettings_o* settings, Il2CppObject* descriptor);
+--- game
++++ rebuilt
+@@ -1 +1,3 @@
++bl FN
++bl FN
+ and #1
+
+== VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$CheckResourceObjects (VL_Core_VLActorController_TModelParts__TDescriptor__TIDescriptor__o* __this, System_Collections_Generic_IEnumerable_GameObject__o* resourceObejcts);
+--- game
++++ rebuilt
+@@ -27,5 +27,5 @@
+ bl System.Collections.Generic.HashSet<object>$$Add
+ bl FN
+-mov #2
++mov #8
+ bl FN
+ ldr  STR アセットが読み込まれていません
+@@ -38,5 +38,5 @@
+ mov #6
+ bl FN
+-orr #2
+-cmp #2
++orr #8
++cmp #8
+ cmp #0
+
+== VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Create<object> (int32_t index);
+--- game
++++ rebuilt
+@@ -1,4 +1,4 @@
+ bl FN
+-add STR {0}[{1}]
++ldr  STR {0}[{1}]
+ bl FN
+ bl FN
+
+== VL.Core.VLActorController<object, object, object>$$CheckResourceObjects (VL_Core_VLActorController_TModelParts__TDescriptor__TIDescriptor__o* __this, System_Collections_Generic_IEnumerable_GameObject__o* resourceObejcts);
+--- game
++++ rebuilt
+@@ -27,5 +27,5 @@
+ bl System.Collections.Generic.HashSet<object>$$Add
+ bl FN
+-mov #2
++mov #8
+ bl FN
+ ldr  STR アセットが読み込まれていません
+@@ -38,5 +38,5 @@
+ mov #6
+ bl FN
+-orr #2
+-cmp #2
++orr #8
++cmp #8
+ cmp #0
+
+== VL.Core.VLActorController<object, object, object>$$Create<object> (int32_t index);
+--- game
++++ rebuilt
+@@ -1,4 +1,4 @@
+ bl FN
+-add STR {0}[{1}]
++ldr  STR {0}[{1}]
+ bl FN
+ bl FN
+
+== VL.Rendering.DownscalePass$$.ctor (VL_Rendering_DownscalePass_o* __this, UnityEngine_Mesh_o* boxMesh, UnityEngine_Material_o* downscaleBufferMaterial, VL_Rendering_DownscaleBuffers_o* buffers);
+--- game
++++ rebuilt
+@@ -18,6 +18,4 @@
+ bl FN
+ bl FN
+-bl FN
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<ShaderVariablesScreenSpaceReflection>()
+ bl FN
+ bl FN
+
+== VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildAvatar (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this);
+--- game
++++ rebuilt
+@@ -68,4 +68,5 @@
+ bl FN
+ ldr  STR Generic Avatar
++bl UnityEngine.Object$$set_name
+ mov #1
+ mov #0x38
+
+== VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildModel (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this, System_Collections_Generic_IEnumerable_GameObject__o* resources);
+--- game
++++ rebuilt
+@@ -63,10 +63,14 @@
+ bl System.Collections.Generic.List.Enumerator<BoneLinkData>$$MoveNext
+ bl UnityEngine.Transform$$SetParent
++mov #3
+ bl System.Collections.Generic.List.Enumerator<BoneLinkData>$$Dispose
++cmp #3
+ bl FN
+ cmp #1
+ bl FN
+ bl FN
++mov #7
+ bl FN
++cmp #7
+ bl UnityEngine.Component$$get_transform
+ bl UnityEngine.Transform$$GetEnumerator
+@@ -77,6 +81,8 @@
+ bl FN
+ bl UnityEngine.Object$$DestroyImmediate
++mov #7
+ bl FN
+ bl FN
++cmp #7
+ bl FN
+ bl FN
+@@ -85,5 +91,4 @@
+ cmp #1
+ mov #1
+-ldr  VLActorModelParts>.MoveNext()
+ bl UnityEngine.Object$$get_name
+ bl FN
+@@ -91,7 +96,8 @@
+ ldr  VLActorModelParts>.GetEnumerator()
+ bl VL.Core.SerializedDictionary<object, object>$$GetEnumerator
++ldr  VLActorModelParts>.MoveNext()
+ bl System.Collections.Generic.Dictionary.Enumerator<object, object>$$MoveNext
+ bl UnityEngine.Object$$get_name
+-bl System.String$$op_Equality
++bl System.String$$op_Inequality
+ bl System.String$$op_Equality
+ ldr  STR ReRegister:
+@@ -135,4 +141,6 @@
+ bl FN
+ bl FN
++bl FN
++mov #1
+ cmp #1
+ bl FN
+@@ -143,6 +151,6 @@
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+ bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+-mov #0x1c
++mov #0x1a
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-cmp #0x1c
++cmp #0x1a
+ bl VL.Core.VLActorController$$InitializeAABB
+
+== VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedPosition (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this);
+--- game
++++ rebuilt
+@@ -5,9 +5,9 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
++b UnityEngine.Animator$$get_bodyPosition
++ldr  STR SetupAnimationを先に呼び出して下さい
+ bl FN
+-ldr  STR SetupAnimationを先に呼び出して下さい
+ bl UnityEngine.Debug$$LogError
+ bl FN
+ mov #1
+-b UnityEngine.Animator$$get_bodyPosition
+
+== VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedRotation (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this);
+--- game
++++ rebuilt
+@@ -5,9 +5,9 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
++b UnityEngine.Animator$$get_bodyRotation
++ldr  STR SetupAnimationを先に呼び出して下さい
+ bl FN
+-ldr  STR SetupAnimationを先に呼び出して下さい
+ bl UnityEngine.Debug$$LogError
+ bl FN
+ mov #1
+-b UnityEngine.Animator$$get_bodyRotation
+
+== VL.VLDefaultActorController<object, object, object>$$BuildModel (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this, System_Collections_Generic_IEnumerable_GameObject__o* resources);
+--- game
++++ rebuilt
+@@ -63,10 +63,14 @@
+ bl System.Collections.Generic.List.Enumerator<BoneLinkData>$$MoveNext
+ bl UnityEngine.Transform$$SetParent
++mov #3
+ bl System.Collections.Generic.List.Enumerator<BoneLinkData>$$Dispose
++cmp #3
+ bl FN
+ cmp #1
+ bl FN
+ bl FN
++mov #7
+ bl FN
++cmp #7
+ bl UnityEngine.Component$$get_transform
+ bl UnityEngine.Transform$$GetEnumerator
+@@ -77,6 +81,8 @@
+ bl FN
+ bl UnityEngine.Object$$DestroyImmediate
++mov #7
+ bl FN
+ bl FN
++cmp #7
+ bl FN
+ bl FN
+@@ -85,5 +91,4 @@
+ cmp #1
+ mov #1
+-ldr  VLActorModelParts>.MoveNext()
+ bl UnityEngine.Object$$get_name
+ bl FN
+@@ -91,7 +96,8 @@
+ ldr  VLActorModelParts>.GetEnumerator()
+ bl VL.Core.SerializedDictionary<object, object>$$GetEnumerator
++ldr  VLActorModelParts>.MoveNext()
+ bl System.Collections.Generic.Dictionary.Enumerator<object, object>$$MoveNext
+ bl UnityEngine.Object$$get_name
+-bl System.String$$op_Equality
++bl System.String$$op_Inequality
+ bl System.String$$op_Equality
+ ldr  STR ReRegister:
+@@ -138,4 +144,6 @@
+ bl FN
+ bl FN
++bl FN
++mov #1
+ cmp #1
+ bl FN
+@@ -147,6 +155,6 @@
+ bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+ bl VL.Core.VLActorController<object, object, object>$$AddParts
+-mov #0x1c
++mov #0x1a
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-cmp #0x1c
++cmp #0x1a
+ bl VL.Core.VLActorController$$InitializeAABB
+
+== VL.VLDefaultActorController<object, object, object>$$GetAnimatedPosition (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this);
+--- game
++++ rebuilt
+@@ -5,9 +5,9 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
++b UnityEngine.Animator$$get_bodyPosition
++ldr  STR SetupAnimationを先に呼び出して下さい
+ bl FN
+-ldr  STR SetupAnimationを先に呼び出して下さい
+ bl UnityEngine.Debug$$LogError
+ bl FN
+ mov #1
+-b UnityEngine.Animator$$get_bodyPosition
+
+== VL.VLDefaultActorController<object, object, object>$$GetAnimatedRotation (VL_VLDefaultActorController_TModelParts__TDescriptor__TIDescriptor__o* __this);
+--- game
++++ rebuilt
+@@ -5,9 +5,9 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
++b UnityEngine.Animator$$get_bodyRotation
++ldr  STR SetupAnimationを先に呼び出して下さい
+ bl FN
+-ldr  STR SetupAnimationを先に呼び出して下さい
+ bl UnityEngine.Debug$$LogError
+ bl FN
+ mov #1
+-b UnityEngine.Animator$$get_bodyRotation
+
+== VLB.CullingJob$$Execute (VLB_CullingJob_o __this, int32_t index);
+--- game
++++ rebuilt
+@@ -5,3 +5,3 @@
+ bl VLB.Utils$$TestPlanesAABB
+ ldr  MMETH Method$Unity.Collections.NativeList.ParallelWriter<int>.AddNoResize()
+-bl Unity.Collections.NativeList.ParallelWriter<int>$$AddNoResize
++b Unity.Collections.NativeList.ParallelWriter<int>$$AddNoResize
+
+== VLB.EntityIndexer$$UpdateIndex (VLB_EntityIndexer_o* __this, VLB_Entity_o entity, int32_t newArrayIndex);
+--- game
++++ rebuilt
+@@ -6,4 +6,5 @@
+ ldr  MMETH Method$System.Collections.Generic.List<EntityIndexer.EntityItem>.get_Item()
+ bl System.Collections.Generic.List<EntityIndexer.EntityItem>$$get_Item
++and #0xffffffff
+ ldr  MMETH Method$System.Collections.Generic.List<EntityIndexer.EntityItem>.set_Item()
+ b System.Collections.Generic.List<EntityIndexer.EntityItem>$$set_Item
+
+== VLB.GlobalMeshSD$$Get ();
+--- game
++++ rebuilt
+@@ -3,15 +3,16 @@
+ bl FN
+ mov #1
+-bl VLB.Config$$get_Instance
+-bl VLB.Config$$get_SD_requiresDoubleSidedMesh
++bl VLB.Config$$GetInstance
++bl VLB.Config$$GetActualRenderingMode
++cmp #0
+ bl FN
+-and #1
+ bl UnityEngine.Object$$op_Equality
+ bl VLB.GlobalMeshSD$$Destroy
+-bl VLB.Config$$get_Instance
+-bl VLB.Config$$get_Instance
++bl VLB.Config$$GetInstance
++bl VLB.Config$$GetInstance
+ fmov #1.00000000
+ fmov #1.00000000
+ fmov #1.00000000
++cmp #0
+ bl VLB.MeshGenerator$$GenerateConeZ_Radii
+ bl FN
+
+== VLB.MeshGenerator$$GenerateConeZ_Radii (float lengthZ, float radiusStart, float radiusEnd, int32_t numSides, int32_t numSegments, bool cap, bool doubleSided);
+--- game
++++ rebuilt
+@@ -27,19 +27,19 @@
+ bl FN
+ cmp #1
+-fmov #2.00000000
+ fmov #-1.00000000
+-cmp #1
++fmov #1.00000000
+ bl FN
+ bl System.Array$$CopyTo
+ bl System.Array$$CopyTo
+ cmp #1
++and #0xffffffff
+ mov #0x3f800000
++mov #0x100000000
+ bl UnityEngine.Mesh$$SetUVs
++tst #1
+ mov #1
+ cmp #1
+-tst #1
+ bl FN
+ cmp #1
+-mov #1
+ mov #0x7ffffffe
+ cmp #1
+
+== VLB.MeshGenerator$$GenerateConeZ_Radii_DoubleCaps (float lengthZ, float radiusStart, float radiusEnd, int32_t numSides, bool inverted);
+--- game
++++ rebuilt
+@@ -51,5 +51,4 @@
+ mov #1
+ mov #4
+-cmp #1
+ ldr  MMETH Method$VLB.MeshGenerator.<gen>.<gen>()
+ bl FN
+
+== VLB.Utils$$TransformAABB (UnityEngine_Bounds_o bounds, Unity_Mathematics_float4x4_o transform);
+--- game
++++ rebuilt
+@@ -1,2 +1,4 @@
++bl Unity.Mathematics.float3$$op_Implicit
++bl Unity.Mathematics.float3$$op_Implicit
+ mov #0x7f7fffff
+ mov #0x7f800000
+
+== VLB.VLBDrawCallSystem.DrawCallJob$$GetInsideBeamFactorFromObjectSpacePos (VLB_VLBDrawCallSystem_DrawCallJob_o __this, Unity_Mathematics_float3_o posOS, float coneApexOffsetZ, float coneAngle);
+--- game
++++ rebuilt
+@@ -7,5 +7,4 @@
+ bl FN
+ fmov #0.50000000
+-fmov #1.00000000
+ bl FN
+ mov #1
+
+== VLB.VLBDrawCallSystem.DrawCallJob$$UpdateParams (VLB_VLBDrawCallSystem_DrawCallJob_o __this, int32_t instanceIndex, int32_t visibleIndex);
+--- game
++++ rebuilt
+@@ -18,4 +18,2 @@
+ fmov #0.50000000
+ bl FN
+-mov #0x7f800000
+-and #0x7fffffff
+
+== VLB.VLBDrawSystem$$Execute (VLB_VLBDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_CullingResults_o* cullResults);
+--- game
++++ rebuilt
+@@ -12,5 +12,4 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ bl System.Collections.Generic.List<object>$$get_Item
+-bl System.Collections.Generic.List<object>$$get_Item
+ bl VLB.VLBDrawSystem$$Execute
+ bl FN
+
+== VLB.VLBDrawSystem$$Execute (VLB_VLBDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, VLB_VLBEntityChunk_o* entityChunk, VLB_VLBCachedChunk_o* cachedChunk, VLB_VLBDrawCallChunk_o* drawCallChunk, int32_t count, UnityEngine_Rendering_CullingResults_o* cullResults);
+--- game
++++ rebuilt
+@@ -17,11 +17,11 @@
+ bl VLB.GlobalMeshSD$$Get
+ cmp #1
++ldr  MMETH Method$Unity.Collections.NativeArray<float4>.Reinterpret<Vector4>()
++ldr  MMETH Method$Unity.Collections.NativeArray<Vector4>.Copy()
+ ldr  MMETH Method$Unity.Collections.NativeArray<float4x4>.Reinterpret<Matrix4x4>()
+-ldr  MMETH Method$Unity.Collections.NativeArray<float4>.Reinterpret<Vector4>()
+ bl Unity.Collections.NativeArray<float4x4>$$Reinterpret<Matrix4x4>
+ ldr  MMETH Method$Unity.Collections.NativeArray<Matrix4x4>.Copy()
+ bl Unity.Collections.NativeArray<Matrix4x4>$$Copy
+ bl Unity.Collections.NativeArray<float4>$$Reinterpret<Vector4>
+-ldr  MMETH Method$Unity.Collections.NativeArray<Vector4>.Copy()
+ bl Unity.Collections.NativeArray<Vector4>$$Copy
+ bl Unity.Collections.NativeArray<float4>$$Reinterpret<Vector4>
+
+== VLB.VLBDrawSystem$$ExecuteHD (VLB_VLBDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_CullingResults_o* cullResults, UnityEngine_Rendering_Universal_Internal_AdditionalLightsShadowCasterPass_o* shadowCasterPass);
+--- game
++++ rebuilt
+@@ -12,5 +12,4 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ bl System.Collections.Generic.List<object>$$get_Item
+-bl System.Collections.Generic.List<object>$$get_Item
+ bl VLB.VLBDrawSystem$$ExecuteHD
+ bl FN
+
+== VLB.VLBDrawSystem$$ExecuteHD (VLB_VLBDrawSystem_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, VLB_VLBEntityChunk_o* entityChunk, VLB_VLBCachedChunk_o* cachedChunk, VLB_VLBDrawCallChunk_o* drawCallChunk, int32_t count, UnityEngine_Rendering_CullingResults_o* cullResults, UnityEngine_Rendering_Universal_Internal_AdditionalLightsShadowCasterPass_o* shadowCasterPass);
+--- game
++++ rebuilt
+@@ -21,5 +21,4 @@
+ bl UnityEngine.MaterialPropertyBlock$$SetVector
+ bl UnityEngine.MaterialPropertyBlock$$SetVector
+-bl FN
+ bl UnityEngine.MaterialPropertyBlock$$SetVector
+ bl Unity.Mathematics.float4x4$$op_Implicit
+
+== VLB.VLBEntityManager$$CreateEntity (VLB_VLBEntityManager_o* __this, VLB_VolumetricLightBeamSD_o* component);
+--- game
++++ rebuilt
+@@ -6,4 +6,5 @@
+ bl FN
+ ldr  MMETH Method$System.Collections.Generic.List<VLBDrawCallChunk>.get_Item()
++bl FN
+ bl FN
+ mov #1
+@@ -19,6 +20,7 @@
+ ldr  MMETH Method$System.Collections.Generic.List<VLBDrawCallChunk>.get_Item()
+ bl System.Collections.Generic.List<object>$$get_Item
++bl FN
+ mov #8
+-cmp #8
++bl System.Math$$Max
+ bl FN
+ bl FN
+
+== VLB.VLBEntityManager$$UpdateEntityData (VLB_VLBEntityManager_o* __this, VLB_Entity_o entity, VLB_VolumetricLightBeamSD_o* vlb, bool checkJobHandle);
+--- game
++++ rebuilt
+@@ -6,7 +6,8 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ bl Unity.Jobs.JobHandle$$Complete
+-bl VLB.VolumetricLightBeamSD$$get_coneRadiusEnd
+-bl VLB.VolumetricLightBeamSD$$get_maxGeometryDistance
+-bl VLB.VolumetricLightBeamSD$$get_attenuationLerpLinearQuad
++fmov #0.50000000
++bl FN
++cmp #1
++fmov #1.00000000
+ bl VLB.Noise3D$$LoadIfNeeded
+ bl VLB.Config$$GetInstance
+@@ -16,8 +17,7 @@
+ bl VLB.VolumetricLightBeamSD$$get_coneApexOffsetZ
+ bl VLB.VolumetricLightBeamSD$$get_coneAngle
+-bl VLB.VolumetricLightBeamSD$$GetInsideAndOutsideIntensity
+-bl VLB.VolumetricLightBeamSD$$get_coneRadiusEnd
++fmov #0.50000000
++bl FN
+ bl VLB.VolumetricLightBeamSD$$get_beamInternalLocalRotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl VLB.VolumetricLightBeamSD$$get_maxGeometryDistance
+ mov #0xc
