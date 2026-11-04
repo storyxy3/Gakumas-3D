@@ -21,21 +21,24 @@ namespace VL.Rendering
         {
             get
             {
-                return null;
+                return _blurRequests;
             }
         }
 
         public void Add(BlurRequest target)
         {
+            if (_blurRequests == null) _blurRequests = new List<BlurRequest>();
+            _blurRequests.Add(target);
         }
 
         public bool Remove(BlurRequest target)
         {
-            return default(bool);
+            return _blurRequests != null && _blurRequests.Remove(target);
         }
 
         public void Clear()
         {
+            _blurRequests?.Clear();
         }
 
         public VLSRPRenderTargetBlur()

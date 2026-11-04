@@ -7,7 +7,7 @@ namespace VL.Rendering
     [Serializable]
     public sealed class VLActorShadowDirectionalTypeParameter : VolumeParameter<VLActorShadowDirectionalType>
     {
-        public VLActorShadowDirectionalTypeParameter(VLActorShadowDirectionalType value, bool overrideState = false)
+        public VLActorShadowDirectionalTypeParameter(VLActorShadowDirectionalType value, bool overrideState = false) : base(value, overrideState)
         {
         }
     }

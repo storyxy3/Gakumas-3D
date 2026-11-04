@@ -8,16 +8,17 @@ namespace VL.Rendering
     public class VLSRPDrawUIBlurPassSetting : VLMonoBehaviourSingleton<VLSRPDrawUIBlurPassSetting>
     {
         [SerializeField]
-        private UIBlurPass.BlurTargetType _blurTargetType;
+        private UIBlurPass.BlurTargetType _blurTargetType = UIBlurPass.BlurTargetType.Blur;
         public UIBlurPass.BlurTargetType BlurTargetType
         {
             get
             {
-                return default(UIBlurPass.BlurTargetType);
+                return _blurTargetType;
             }
 
             set
             {
+                _blurTargetType = value;
             }
         }
 

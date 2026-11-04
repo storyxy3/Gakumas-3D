@@ -14,7 +14,7 @@ namespace VL.Rendering
             public string blurSortingLayer;
             public string uiSortingLayer;
             [Range(4f, 10f)]
-            public float blurSize;
+            public float blurSize = 7f;
             [Header("アルファブレンドするかどうか")]
             public bool useAlpha;
             public Settings()
@@ -27,14 +27,20 @@ namespace VL.Rendering
         public Shader blurShader;
         public override void Create()
         {
+            if (blurShader == null) return;
+            _pass = new UIBlurPass(UnityEngine.Rendering.CoreUtils.CreateEngineMaterial(blurShader), settings);
         }
 
         protected override void Dispose(bool disposing)
         {
+            _pass?.Dispose();
         }
 
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
+            if (_pass == null) return;
+            _pass.Setup(renderer.cameraColorTargetHandle);
+            renderer.EnqueuePass(_pass);
         }
 
         public DrawUIBlurPass()

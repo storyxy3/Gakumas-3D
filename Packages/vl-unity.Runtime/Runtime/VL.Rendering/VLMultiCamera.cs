@@ -18,7 +18,10 @@ namespace VL.Rendering
             {
                 get
                 {
-                    return default(Matrix4x4);
+                    if (camera == null || !VLSRPCameraController.HasInstance) return Matrix4x4.identity;
+                    var lens = camera.m_Lens;
+                    float fov = lens.IsPhysicalCamera ? lens.FocalLengthToVerticalFOV() : lens.FieldOfView;
+                    return Matrix4x4.Perspective(fov, VLSRPCameraController.Instance.mainCamera.aspect, lens.NearClipPlane, lens.FarClipPlane);
                 }
             }
 
@@ -26,7 +29,8 @@ namespace VL.Rendering
             {
                 get
                 {
-                    return default(Matrix4x4);
+                    if (camera == null) return Matrix4x4.identity;
+                    return Matrix4x4.Scale(new Vector3(1f, 1f, -1f)) * camera.transform.worldToLocalMatrix;
                 }
             }
         }
@@ -35,15 +39,24 @@ namespace VL.Rendering
         private MultiCameraData[] _cameraDatas;
         public void SetCameraData(int index, CinemachineVirtualCamera virtualCamera, MeshRenderer maskRenderer, bool useOffset)
         {
+            if (index < 0 || index >= DrawMultiCameraPass.MaxMultiCamera)
+                throw new ArgumentOutOfRangeException(string.Format("{0} < 0 || {1} >= VLSRPDefine.MaxMultiCamera", index, index));
+            if (_cameraDatas == null) _cameraDatas = new MultiCameraData[index + 1];
+            if (_cameraDatas.Length <= index) Array.Resize(ref _cameraDatas, index + 1);
+            _cameraDatas[index] = new MultiCameraData { useOffset = useOffset, camera = virtualCamera, maskRenderer = maskRenderer };
         }
 
         public void ClearCameraData(int index)
         {
+            if (index < 0 || index >= DrawMultiCameraPass.MaxMultiCamera)
+                throw new ArgumentOutOfRangeException(string.Format("{0} < 0 || {1} >= VLSRPDefine.MaxMultiCamera", index, index));
+            if (_cameraDatas != null && index < _cameraDatas.Length) _cameraDatas[index] = default;
         }
 
         public MultiCameraData GetCameraData(int index)
         {
-            return default(MultiCameraData);
+            if (index < 0 || _cameraDatas == null || index >= _cameraDatas.Length) return default;
+            return _cameraDatas[index];
         }
 
         public VLMultiCamera()
