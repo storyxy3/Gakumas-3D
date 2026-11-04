@@ -40,13 +40,7 @@ namespace UnityEngine.UI
                     return s_WhiteTexture;
                 }
 
-                // Patch fix for UUM-117371.
-                // If m_Texture is set as a non-matching type from native side this will ensure that dependent code will be able to null-check.
-                // Proposed fix involved safe-casting to Texture2D, but RawImage must support any Texture subclass.
-                // We can't safe-cast m_Texture to Texture directly, as the managed runtime assumes it's already a Texture and does nothing.
-                // Instead, cast to a System.Object and check that.
-                object objReference = m_Texture;
-                return objReference as Texture;
+                return m_Texture;
             }
         }
 
@@ -145,11 +139,10 @@ namespace UnityEngine.UI
                 Rect r = GetPixelAdjustedRect();
                 var v = new Vector4(r.x, r.y, r.x + r.width, r.y + r.height);
 
-                Vector2 texTexelSize = tex.texelSize;
-                float scaleX = tex.width * texTexelSize.x;
-                float scaleY = tex.height * texTexelSize.y;
+                var scaleX = tex.width * tex.texelSize.x;
+                var scaleY = tex.height * tex.texelSize.y;
 
-                Color32 color32 = color;
+                var color32 = color;
                 vh.AddVert(new Vector3(v.x, v.y), color32, new Vector4(m_UVRect.xMin * scaleX, m_UVRect.yMin * scaleY));
                 vh.AddVert(new Vector3(v.x, v.w), color32, new Vector4(m_UVRect.xMin * scaleX, m_UVRect.yMax * scaleY));
                 vh.AddVert(new Vector3(v.z, v.w), color32, new Vector4(m_UVRect.xMax * scaleX, m_UVRect.yMax * scaleY));

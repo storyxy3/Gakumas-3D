@@ -1833,6 +1833,9 @@ namespace UnityEngine.UI
             float x = local.x / activeSprite.texture.width;
             float y = local.y / activeSprite.texture.height;
 
+            if (x < 0f || x > 1f || y < 0f || y > 1f)
+                return true;
+
             try
             {
                 return activeSprite.texture.GetPixelBilinear(x, y).a >= alphaHitTestMinimumThreshold;

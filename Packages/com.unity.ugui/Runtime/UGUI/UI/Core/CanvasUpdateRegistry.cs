@@ -41,9 +41,6 @@ namespace UnityEngine.UI
     /// </summary>
     public interface ICanvasElement
     {
-        // TODO(qa-recon): game default interface accessor, DummyDll body.
-        int GraphicRebuildOrder { get { return default(int); } }
-
         /// <summary>
         /// Rebuild the element for the given stage.
         /// </summary>
@@ -70,6 +67,8 @@ namespace UnityEngine.UI
         /// </summary>
         /// <returns>Return true if the element is considered destroyed.</returns>
         bool IsDestroyed();
+
+        int GraphicRebuildOrder => 0;
     }
 
     /// <summary>
@@ -89,16 +88,7 @@ namespace UnityEngine.UI
         private readonly IndexedSet<ICanvasElement> m_LayoutRebuildQueue = new IndexedSet<ICanvasElement>();
         private readonly IndexedSet<ICanvasElement> m_GraphicRebuildQueue = new IndexedSet<ICanvasElement>();
 
-        // TODO(qa-recon): game event storage; registration bodies are skeletons.
-        [System.Runtime.CompilerServices.CompilerGenerated]
-        private Action m_onLayoutComplete;
-        public event Action onLayoutComplete
-        {
-            [System.Runtime.CompilerServices.CompilerGenerated]
-            add { }
-            [System.Runtime.CompilerServices.CompilerGenerated]
-            remove { }
-        }
+        public event Action onLayoutComplete;
 
 
         protected CanvasUpdateRegistry()
@@ -174,12 +164,13 @@ namespace UnityEngine.UI
         }
 
         private static readonly Comparison<ICanvasElement> s_SortLayoutFunction = SortLayoutList;
-        // TODO(qa-recon): game comparer storage, no reconstructed initializer.
-        private static readonly IComparer<ICanvasElement> s_SortGraphicComparer;
+        private static readonly IComparer<ICanvasElement> s_SortGraphicComparer = new GraphicSortComparer();
         private class GraphicSortComparer : IComparer<ICanvasElement>
         {
-            public int Compare(ICanvasElement x, ICanvasElement y) { return default(int); }
-            public GraphicSortComparer() { }
+            public int Compare(ICanvasElement x, ICanvasElement y)
+            {
+                return x.GraphicRebuildOrder - y.GraphicRebuildOrder;
+            }
         }
 
         private void PerformUpdate()
@@ -217,6 +208,7 @@ namespace UnityEngine.UI
             m_LayoutRebuildQueue.Clear();
             m_PerformingLayoutUpdate = false;
             UISystemProfilerApi.EndSample(UISystemProfilerApi.SampleType.Layout);
+            onLayoutComplete?.Invoke();
             UISystemProfilerApi.BeginSample(UISystemProfilerApi.SampleType.Render);
 
             // now layout is complete do culling...
@@ -226,6 +218,7 @@ namespace UnityEngine.UI
 
             m_PerformingGraphicUpdate = true;
 
+            m_GraphicRebuildQueue.Sort(s_SortGraphicComparer);
             for (var i = (int)CanvasUpdate.PreRender; i < (int)CanvasUpdate.MaxUpdateValue; i++)
             {
                 UnityEngine.Profiling.Profiler.BeginSample(m_CanvasUpdateProfilerStrings[i]);

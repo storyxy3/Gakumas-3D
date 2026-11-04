@@ -227,5 +227,15 @@ namespace UnityEngine.UI.Collections
                 m_Dictionary[item] = i;
             }
         }
+
+        public void Sort(IComparer<T> comparer)
+        {
+            m_List.Sort(comparer);
+            for (int i = 0; i < m_List.Count; ++i)
+            {
+                T item = m_List[i];
+                m_Dictionary[item] = i;
+            }
+        }
     }
 }

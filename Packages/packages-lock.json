@@ -30,12 +30,6 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.qa-recon.dotween": {
-      "version": "file:DOTween",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.qa-recon.octo": {
       "version": "file:Octo",
       "depth": 0,
@@ -114,26 +108,38 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "com.qa-recon.unirx": {
+    "com.qa-recon.vl-unity.runtime": {
+      "version": "file:vl-unity.Runtime",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.thirdparty.coffee.uiparticle": {
+      "version": "file:Coffee.UIParticle",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.thirdparty.dotween": {
+      "version": "file:DOTween",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.thirdparty.dotween.modules": {
+      "version": "file:DOTween.Modules",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.thirdparty.unirx": {
       "version": "file:UniRx",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
     },
-    "com.qa-recon.unitask": {
+    "com.thirdparty.unitask": {
       "version": "file:UniTask",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "com.qa-recon.unitask.linq": {
-      "version": "file:UniTask.Linq",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "com.qa-recon.vl-unity.runtime": {
-      "version": "file:vl-unity.Runtime",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

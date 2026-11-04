@@ -134,7 +134,6 @@ namespace UnityEngine.UI
         protected override void OnEnable()
         {
             base.OnEnable();
-            rectTransform.sendChildDimensionsChange = true;
             SetDirty();
         }
 
@@ -142,7 +141,6 @@ namespace UnityEngine.UI
         {
             m_Tracker.Clear();
             LayoutRebuilder.MarkLayoutForRebuild(rectTransform);
-            rectTransform.sendChildDimensionsChange = false;
             base.OnDisable();
         }
 
@@ -337,15 +335,6 @@ namespace UnityEngine.UI
         protected virtual void OnTransformChildrenChanged()
         {
             SetDirty();
-        }
-
-        /// <summary>
-        /// Callback sent from native code whenever the RectTransform dimensions of a direct child are changed.
-        /// </summary>
-        protected virtual void OnChildRectTransformDimensionsChange()
-        {
-            if (!CanvasUpdateRegistry.IsRebuildingLayout())
-                SetDirty();
         }
 
         /// <summary>

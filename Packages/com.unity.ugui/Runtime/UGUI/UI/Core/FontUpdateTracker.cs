@@ -45,16 +45,8 @@ namespace UnityEngine.UI
             if (texts == null)
                 return;
 
-            // Iterate a list copy since the set can be modified within the scope of this loop
-            var textsCopy = new List<Text>(texts);
-            foreach (var text in textsCopy)
-            {
-                if (!text)
-                {
-                    continue;
-                }
+            foreach (var text in texts)
                 text.FontTextureChanged();
-            }
         }
 
         /// <summary>
