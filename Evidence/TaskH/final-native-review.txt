@@ -1,5 +1,298 @@
-== ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion (float degree, float innerCoef, float outerCoef, float minLimit, float maxLimit); [layout] game 3 ref 3
-== ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection (float inX, float inY, float inZ, uint8_t axisConnection); [semantic] game 12 ref 16
+=== ActorAnimation.ActorAnimationQuartzDriverHairBone$$Calc (Unity_Mathematics_quaternion_o referenceHeadRotation, Unity_Mathematics_quaternion_o referenceNeckRotation, uint8_t translateConnectionAxis, Unity_Mathematics_float3_o headTranslateCoefficient, Unity_Mathematics_float3_o headTranslateLimitMin, Unity_Mathematics_float3_o headTranslateLimitMax, uint8_t rotationOrder, Unity_Mathematics_float3_o headRotateCoefficient, Unity_Mathematics_float3_o headRotateLimitMin, Unity_Mathematics_float3_o headRotateLimitMax, uint8_t rotateConnectionAxis, Unity_Mathematics_float3_o neckRotateCoefficient, Unity_Mathematics_float3_o neckRotateLimitMin, Unity_Mathematics_float3_o neckRotateLimitMax, int32_t composeType); game 103 ref 146
+--- game
++++ ref
+@@ -3,5 +3,4 @@
+ mov #1
+ mov #2
+-ldr  float3>..ctor()
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
+ mov #2
+@@ -11,11 +10,16 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -24,8 +28,10 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+@@ -34,15 +40,21 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+-bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -51,8 +63,13 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
+ mov #2
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+@@ -61,14 +78,24 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
+ mov #1
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -77,9 +104,15 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
+ mov #2
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
++ldr  float3>..ctor()
+ bl Unity.Mathematics.float3$$get_Item
+ mov #2
+@@ -87,15 +120,25 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
++cmp #2
+ cmp #1
+-cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithRollBend
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+=== ActorAnimation.ActorAnimationQuartzDriverRotationBone$$Calc (Unity_Mathematics_quaternion_o referenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o coefficient, Unity_Mathematics_float3_o limitMin, Unity_Mathematics_float3_o limitMax, uint8_t connectionAxis, int32_t decomposeType, int32_t composeType); game 19 ref 34
+--- game
++++ ref
+@@ -1,19 +1,34 @@
++bl FN
++mov #1
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
++cmp #2
+ cmp #1
++bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendroll
++bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
++mov #0x43340000
++mov #-0x3c4c0000
++mov #0x43b40000
++mov #-0x3ccc0000
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
+ cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse
+-bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendroll
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+ cmp #1
+-cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithRollBend
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
+ bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+=== ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$Calc (Unity_Mathematics_quaternion_o initialReferenceRotation, Unity_Mathematics_quaternion_o currentReferenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o innerCoefficient, Unity_Mathematics_float3_o outerCoefficient, Unity_Mathematics_float3_o limitMin, Unity_Mathematics_float3_o limitMax, uint8_t connectionAxis); game 65 ref 78
+--- game
++++ ref
+@@ -13,11 +13,20 @@
+ bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverseYRoll
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #0x43b40000
++mov #-0x3ccc0000
+ bl Unity.Mathematics.float3$$set_Item
+ mov #1
+@@ -30,6 +39,8 @@
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion
++and #0x7fffffff
++mov #0x7f800000
+ mov #1
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+ mov #1
+@@ -41,6 +52,7 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion
++and #0x7fffffff
+ mov #2
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+ mov #2
+@@ -52,5 +64,6 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+=== ActorAnimation.ActorSwingChain$$UpdateHierarchyDepth (ActorAnimation_ActorSwingChain_o* __this); game 37 ref 38
+--- game
++++ ref
+@@ -21,4 +21,5 @@
+ ldr  MMETH Method$System.Collections.Generic.List<ChainLayerInfo>.get_Item()
+ bl System.Collections.Generic.List<object>$$get_Item
++bl System.Collections.Generic.List<object>$$get_Item
+ cmp #1
+ bl System.Collections.Generic.List<object>$$get_Item
+=== ActorAnimation.ActorSwingChain$$UpdateChainInfo (ActorAnimation_ActorSwingChain_o* __this); game 97 ref 96
+--- game
++++ ref
+@@ -69,5 +69,4 @@
+ bl FN
+ bl System.Collections.Generic.List<object>$$AddWithResize
+-mov #1
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+@@ -86,8 +85,8 @@
+ ldr  MMETH Method$UnityEngine.Component.TryGetComponent<ActorSwingDynamicBone>()
+ bl UnityEngine.Component$$TryGetComponent<object>
+-mov #0xd
++mov #0xe
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorSwingDynamicBone>.Dispose()
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-cmp #0xd
++cmp #0xe
+ bl FN
+ ldr  MMETH Method$ActorAnimation.ActorSwingChain.<gen>()
+=== ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection (float inX, float inY, float inZ, uint8_t axisConnection); game 12 ref 16
 --- game
 +++ ref
 @@ -1,12 +1,16 @@
@@ -25,31 +318,7 @@
 +cmp #2
 +tst #0xfc
 +tst #0xfe
-== ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion (float degree, float coef, float minLimit, float maxLimit); [layout] game 3 ref 3
-== ActorAnimation.ActorAnimationMathUtility$$ToEuler (Unity_Mathematics_quaternion_o q, uint8_t rotSeq); [semantic] game 21 ref 16
---- game
-+++ ref
-@@ -6,16 +6,11 @@
- cmp #2
- fmov #-2.00000000
--bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
- cmp #3
- cmp #4
- cmp #5
- fmov #-2.00000000
--bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
-+fmov #-2.00000000
-+fmov #-2.00000000
-+fmov #-2.00000000
- fmov #-2.00000000
- bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
--fmov #-2.00000000
--bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
--fmov #-2.00000000
--bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
--fmov #-2.00000000
--bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
-== ActorAnimation.ActorAnimationMathUtility$$ToQuaternion (Unity_Mathematics_float3_o euler, uint8_t rotSeq); [semantic] game 27 ref 13
+=== ActorAnimation.ActorAnimationMathUtility$$ToQuaternion (Unity_Mathematics_float3_o euler, uint8_t rotSeq); game 27 ref 13
 --- game
 +++ ref
 @@ -2,26 +2,12 @@
@@ -83,8 +352,211 @@
 -fmov #0.50000000
 -bl FN
 -bl FN
-== ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion (Unity_Mathematics_float3_o euler); [layout] game 3 ref 3
-== ActorAnimation.CampusActorAnimationJob$$DisableIKGoal (ActorAnimation_CampusActorAnimationJob_o __this, int32_t ikGoal); [semantic] game 4 ref 4
+=== ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse (Unity_Mathematics_float3_o euler); game 23 ref 18
+--- game
++++ ref
+@@ -6,15 +6,10 @@
+ mov #1
+ bl FN
+-bl FN
+-mov #1
+ fmov #1.00000000
+ bl FN
+ bl FN
+-fmov #0.50000000
+-bl FN
+-bl FN
++bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+ fmov #1.00000000
+ bl ActorAnimation.ActorAnimationMathUtility$$FromToRotation
+-fmov #1.00000000
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl UnityEngine.Quaternion$$Internal_ToAxisAngleRad
+=== ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverseYRoll (Unity_Mathematics_float3_o euler, uint8_t rotationOrder); game 23 ref 18
+--- game
++++ ref
+@@ -6,15 +6,10 @@
+ mov #1
+ bl FN
+-bl FN
+-mov #1
+ fmov #1.00000000
+ bl FN
+ bl FN
+-fmov #0.50000000
+-bl FN
+-bl FN
++bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+ fmov #1.00000000
+ bl ActorAnimation.ActorAnimationMathUtility$$FromToRotation
+-fmov #1.00000000
+ bl Unity.Mathematics.quaternion$$op_Implicit
+ bl UnityEngine.Quaternion$$Internal_ToAxisAngleRad
+=== ActorAnimation.ActorAnimationMathUtility$$ToEuler (Unity_Mathematics_quaternion_o q, uint8_t rotSeq); game 21 ref 16
+--- game
++++ ref
+@@ -6,16 +6,11 @@
+ cmp #2
+ fmov #-2.00000000
+-bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
+ cmp #3
+ cmp #4
+ cmp #5
+ fmov #-2.00000000
+-bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
++fmov #-2.00000000
++fmov #-2.00000000
++fmov #-2.00000000
+ fmov #-2.00000000
+ bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
+-fmov #-2.00000000
+-bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
+-fmov #-2.00000000
+-bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
+-fmov #-2.00000000
+-bl ActorAnimation.ActorAnimationMathUtility$$ThreeAxisRot
+MISSING FasterLinq$$Select<ValueTuple<int, object>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<Int32Enum, object>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, bool>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, int>, object> (System_ValueTuple_object__int__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, int>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, Int32Enum>, object> (System_ValueTuple_object__Int32Enum__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>> (System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<object, object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, object>, object> (System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, object>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<int, object, object>, ValueTuple<int, object>> (System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<int, object, object>, int> (System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<int, object, object>, object> (System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<Int32Enum, int, object>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<Int32Enum, object, object>, ValueTuple<object, object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, int, int>, object> (System_ValueTuple_object__int__int__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, object, object>, object> (System_ValueTuple_object__object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, object, object>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>> (System_ValueTuple_int__int__object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<int, object, object, object, object>, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ValueTuple<object, int, object, object, object>, object> (System_ValueTuple_object__int__object__object__object__array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ExamBattleResult, int> (Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<ExamBattleResult, object> (Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<int, int> (System_Int32_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<int, int> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<int, object> (System_Int32_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<int, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, long>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>> (System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, ValueTuple<object, Int32Enum, long, long>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, object> (System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<Int32Enum, UniTask> (System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<MessageLogSoundInfo, UniTask> (Campus_Common_MessageLogSoundInfo_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, Nullable<int>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, UniTask<bool>> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, UniTask<object>> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, UniTask<object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<Int32Enum, object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, bool>> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, bool>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, int>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, object>> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, object, object>> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<Int32Enum, int, object, object>> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ValueTuple<object, int, object, object, object>> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, bool> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, bool> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, Color> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, int> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, Int32Enum> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, Int32Enum> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, long> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, MessageLogSoundInfo> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, object> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ProduceCardFilterElement> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, float> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, float> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, UniTask> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, UniTask> (System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<object, Vector2> (System_Object_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<uint, bool> (System_UInt32_array* source, System_Func_TSource__TResult__o* selector);
+MISSING FasterLinq$$Select<uint, Color> (System_UInt32_array* source, System_Func_TSource__TResult__o* selector);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult> (System_Collections_Generic_IDictionary_TKey__TValue__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, bool>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Nullable<bool>>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int, object>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, object, bool>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, int, object>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, bool, bool>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, object>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, int>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, bool, bool>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, bool, int>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, int, int>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, Int32Enum, Int32Enum, Int32Enum, Int32Enum, object>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, bool, int, int, int>> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<bool> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<byte> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<int> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Int32Enum> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<long> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<float> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<UniTask> (System_Collections_Generic_IEnumerable_T__o* self);
+MISSING FasterLinq.SelectArray<ValueTuple<object, int>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, Int32Enum>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, object>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<int, object, object>, ValueTuple<int, object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<int, object, object>, int>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<int, object, object>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, int, int>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, object, object>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ValueTuple<object, int, object, object, object>, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<int, int>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<int, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<Int32Enum, ValueTuple<Int32Enum, object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<Int32Enum, object>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<Int32Enum, UniTask>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, UniTask<bool>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, UniTask<object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, ValueTuple<object, bool>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, ValueTuple<object, object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, ValueTuple<Int32Enum, int, object, object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, ValueTuple<object, int, object, object, object>>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, bool>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, Color>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, Int32Enum>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, long>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, float>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, UniTask>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<object, Vector2>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<uint, bool>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+MISSING FasterLinq.SelectArray<uint, Color>$$ToArray (FasterLinq_SelectArray_TSource__TResult__o* __this);
+=== ActorAnimation.CampusActorAnimationJob$$DisableIKGoal (ActorAnimation_CampusActorAnimationJob_o __this, int32_t ikGoal); game 4 ref 4
 --- game
 +++ ref
 @@ -1,4 +1,4 @@
@@ -93,30 +565,7 @@
 +cmp #2
  cmp #3
 -cmp #2
-== ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, Campus_Common_CampusCustomLookAtEffector_o* campusCustomLookAtEffector, ActorAnimation_CampusActorAnimationInitializeData_o* initializeData); [semantic] game 146 ref 151
---- game
-+++ ref
-@@ -51,4 +51,5 @@
- ldr  STR headLeftRightLimit
- ldr  STR headFrontLimit
-+ldr  STR headBackLimit
- bl UnityEngine.Component$$get_transform
- bl System.Type$$GetTypeFromHandle
-@@ -71,5 +72,4 @@
- bl UnityEngine.Component$$get_transform
- bl System.Type$$GetTypeFromHandle
--ldr  STR headBackLimit
- bl UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
- bl UnityEngine.Component$$get_transform
-@@ -145,2 +145,7 @@
- mov #8
- bl UnityEngine.Animations.MuscleHandle$$.ctor
-+mov #0x128
-+bl FN
-+bl ActorAnimation.CampusActorAnimationLookAtLimit$$.ctor
-+mov #0x128
-+bl FN
-== ActorAnimation.CampusActorAnimationJob$$SetupIKGoalEffector (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, UnityEngine_Transform_o* ikGoalEffectorTransform, int32_t ikGoal, int32_t handleType); [semantic] game 8 ref 8
+=== ActorAnimation.CampusActorAnimationJob$$SetupIKGoalEffector (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, UnityEngine_Transform_o* ikGoalEffectorTransform, int32_t ikGoal, int32_t handleType); game 8 ref 8
 --- game
 +++ ref
 @@ -2,6 +2,6 @@
@@ -127,116 +576,45 @@
 -cmp #2
  bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
  bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
-== Campus.Common.CampusActorAnimation$$ApplyActorSwingCmmnHeightCorrection (Campus_Common_CampusActorAnimation_o* __this, bool enable); [layout] game 23 ref 23
-== Campus.Common.CampusActorAnimation$$DisableIKGoalForOverride (Campus_Common_CampusActorAnimation_o* __this, int32_t ikGoal); [layout] game 22 ref 22
-== Campus.Common.CampusActorAnimation$$ResetTime (Campus_Common_CampusActorAnimation_o* __this); [layout] game 21 ref 21
-== Campus.Common.CampusActorAnimation$$SetActorLayout (Campus_Common_CampusActorAnimation_o* __this, UnityEngine_Transform_o* actorLayout); [layout] game 31 ref 31
-== Campus.Common.CampusActorAnimation$$SetAndEnableJointLimitSetting (Campus_Common_CampusActorAnimation_o* __this, Campus_Common_CampusActorAnimationJointLimitSetting_o* setting); [layout] game 26 ref 26
-== Campus.Common.CampusActorAnimation$$SetCustomLookAt (Campus_Common_CampusActorAnimation_o* __this, UnityEngine_Transform_o* t); [layout] game 5 ref 5
-== Campus.Common.CampusActorAnimation$$SetCustomLookAt (Campus_Common_CampusActorAnimation_o* __this, UnityEngine_Vector3_o pos); [layout] game 4 ref 4
-== Campus.Common.CampusActorAnimation$$SetEnableSeatedDynamicCorrection (Campus_Common_CampusActorAnimation_o* __this, bool enable); [layout] game 23 ref 23
-== Campus.Common.CampusActorAnimation$$SetupCampusCustomLookAtLimit (Campus_Common_CampusActorAnimation_o* __this); [semantic] game 38 ref 36
+=== Campus.Timeline.CampusBpmTimelineTrack$$InjectBpmBehaviour (Campus_Timeline_CampusBpmTimelineTrack_o* __this, UnityEngine_Playables_PlayableDirector_o* playableDirector, Campus_Timeline_CampusBpmInfo_o* bpmInfo); game 50 ref 49
 --- game
 +++ ref
-@@ -30,9 +30,7 @@
- b UnityEngine.Debug$$LogError
- bl ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit
-+bl FN
- mov #0xa00
+@@ -24,5 +24,4 @@
  bl FN
--bl FN
- ldr  MMETH Method$UnityEngine.Animations.AnimationScriptPlayable.SetJobData<CampusActorAnimationJob>()
--mov #0xa00
--bl FN
- bl UnityEngine.Animations.AnimationScriptPlayable$$SetJobData<CampusActorAnimationJob>
-== Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector (Campus_Common_CampusActorAnimation_o* __this); [layout] game 39 ref 39
-== Campus.Common.CampusActorAnimation$$SetupIKGoalForOverride (Campus_Common_CampusActorAnimation_o* __this, UnityEngine_Animator_o* animator, UnityEngine_Transform_o* ikGoalEffectorTransform, int32_t ikGoal, int32_t handleType); [layout] game 22 ref 22
-== Campus.Common.CampusActorController$$DisableJointLimitSetting (Campus_Common_CampusActorController_o* __this); [semantic] game 6 ref 6
+ bl FN
+-cmp #0
+ bl FN
+ bl UnityEngine.Timeline.TrackAsset$$GetClips
+=== Campus.Timeline.CampusLightTrack$$GatherPropertiesLightAnchor (Campus_Timeline_CampusLightTrack_o* __this, Campus_Common_CampusLightAnchor_o* lightAnchor, UnityEngine_Timeline_IPropertyCollector_o* driver); game 10 ref 10
 --- game
 +++ ref
-@@ -4,3 +4,3 @@
- bl UnityEngine.Object$$op_Inequality
- bl FN
--b Campus.Common.CampusActorAnimation$$DisableJointLimitSetting
-+bl FN
-== Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalForward (Campus_Common_CampusActorController_o* __this); [layout] game 7 ref 7
-== Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalPosition (Campus_Common_CampusActorController_o* __this); [semantic] game 7 ref 6
---- game
-+++ ref
-@@ -3,5 +3,4 @@
- bl FN
- bl UnityEngine.Object$$op_Inequality
--b Campus.Common.CampusActorAnimation$$get_FullBodyIkHeadOriginalPosition
- bl FN
- mov #1
-== Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalRotation (Campus_Common_CampusActorController_o* __this); [semantic] game 7 ref 9
---- game
-+++ ref
-@@ -3,5 +3,7 @@
- bl FN
- bl UnityEngine.Object$$op_Inequality
--b Campus.Common.CampusActorAnimation$$get_FullBodyIkHeadOriginalRotation
-+mov #0xfa35
-+movk #0x3c8e, lsl #16
-+b UnityEngine.Quaternion$$Internal_FromEulerRad
- bl FN
- mov #1
-== Campus.Common.CampusActorController$$RemoveOverrideMaterialProperty (Campus_Common_CampusActorController_o* __this, System_String_o* materialName); [semantic] game 31 ref 28
---- game
-+++ ref
-@@ -24,8 +24,5 @@
- ldr  MMETH Method$System.Collections.Generic.List.Enumerator<MaterialInfo>.MoveNext()
- bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
--bl Campus.Common.CampusActorController$$ResetActorMaterialProperty
--cmp #1
-+ldr  MMETH Method$System.Collections.Generic.List.Enumerator<MaterialInfo>.Dispose()
-+bl System.Collections.Generic.List.Enumerator<object>$$Dispose
- bl FN
--bl FN
--bl FN
--bl FN
-== Campus.Common.CampusActorController$$ResetCustomLookAt (Campus_Common_CampusActorController_o* __this); [semantic] game 5 ref 6
---- game
-+++ ref
-@@ -3,3 +3,4 @@
- bl FN
- bl UnityEngine.Object$$op_Inequality
--b Campus.Common.CampusActorAnimation$$ResetCustomLookAt
-+bl FN
-+b Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector
-== Campus.Common.CampusActorController$$ResetDynamicSkin (Campus_Common_CampusActorController_o* __this); [semantic] game 5 ref 5
---- game
-+++ ref
-@@ -2,4 +2,4 @@
+@@ -4,5 +4,5 @@
  mov #1
  bl FN
--bl UnityEngine.Object$$op_Equality
-+bl UnityEngine.Object$$op_Inequality
- b Campus.Common.CampusActorAnimation$$ResetDynamicSkin
-== Campus.Common.CampusActorController$$ResetTime (Campus_Common_CampusActorController_o* __this); [semantic] game 5 ref 5
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl Campus.Timeline.CampusLightTrack$$GatherPropertiesLight
+ ldr  MMETH Method$UnityEngine.Component.GetComponentInChildren<CampusTransformAnchor>()
+=== Campus.Timeline.CampusLightTrack$$GatherPropertiesTransformAnchor (Campus_Timeline_CampusLightTrack_o* __this, UnityEngine_Timeline_IPropertyCollector_o* driver, Campus_Common_CampusTransformAnchor_o* transformAnchor); game 8 ref 8
 --- game
 +++ ref
-@@ -2,4 +2,4 @@
+@@ -5,4 +5,4 @@
+ bl UnityEngine.Object$$op_Equality
+ bl UnityEngine.Component$$get_gameObject
+-mov #7
++mov #0xb
+ bl FN
+=== Campus.Timeline.CampusLightTrack$$GatherPropertiesLightAnchorGroup (Campus_Timeline_CampusLightTrack_o* __this, Campus_Common_CampusLightAnchorGroup_o* lightAnchorGroup, UnityEngine_Timeline_IPropertyCollector_o* driver); game 16 ref 16
+--- game
++++ ref
+@@ -4,5 +4,5 @@
  mov #1
  bl FN
--bl UnityEngine.Object$$op_Equality
-+bl UnityEngine.Object$$op_Inequality
- b Campus.Common.CampusActorAnimation$$ResetTime
-== Campus.Common.CampusActorController$$SetActorLayout (Campus_Common_CampusActorController_o* __this, UnityEngine_Transform_o* actorLayout); [layout] game 5 ref 5
-== Campus.Common.CampusActorController$$SetAndEnableJointLimitSetting (Campus_Common_CampusActorController_o* __this, Campus_Common_CampusActorAnimationJointLimitSetting_o* setting); [layout] game 6 ref 6
-== Campus.Common.CampusActorController$$SetCampusCustomLookAtEffector (Campus_Common_CampusActorController_o* __this, Campus_Common_CampusCustomLookAtEffector_o* effector); [layout] game 5 ref 5
-== Campus.Common.CampusActorController$$SetCustomLookAt (Campus_Common_CampusActorController_o* __this, UnityEngine_Transform_o* t); [layout] game 5 ref 5
-== Campus.Common.CampusActorController$$SetCustomLookAt (Campus_Common_CampusActorController_o* __this, UnityEngine_Vector3_o pos); [layout] game 5 ref 5
-== Campus.Common.CampusActorController$$SetCustomLookAtEffector (Campus_Common_CampusActorController_o* __this, VL_IK_CustomLookAtEffector_o* effector); [semantic] game 5 ref 6
---- game
-+++ ref
-@@ -3,3 +3,4 @@
- bl FN
- bl UnityEngine.Object$$op_Inequality
--b Campus.Common.CampusActorAnimation$$SetCustomLookAtEffector
-+bl FN
-+b Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector
-== Campus.Common.CampusActorController$$SetEnableColliders (Campus_Common_CampusActorController_o* __this, bool isActive); [semantic] game 6 ref 6
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ cmp #1
+ and #0xffffffff
+=== Campus.Timeline.CampusVideoPlayerTrackBehaviour$$PauseVideo (Campus_Timeline_CampusVideoPlayerTrackBehaviour_o* __this); game 7 ref 7
 --- game
 +++ ref
 @@ -2,5 +2,5 @@
@@ -244,58 +622,33 @@
  bl FN
 -bl UnityEngine.Object$$op_Equality
 +bl UnityEngine.Object$$op_Inequality
- and #1
- b VL.VLActorCollider$$SetEnableColliders
-== Campus.Common.CampusActorController$$SetEyeBlinkEnable (Campus_Common_CampusActorController_o* __this, bool enable); [semantic] game 5 ref 5
+ bl UnityEngine.Component$$get_gameObject
+ bl UnityEngine.GameObject$$get_activeInHierarchy
+=== Campus.Timeline.CampusVideoPlayerTrackBehaviour$$TrySetFrame (Campus_Timeline_CampusVideoPlayerTrackBehaviour_o* __this, double time); game 26 ref 19
 --- game
 +++ ref
-@@ -2,4 +2,4 @@
- mov #1
- bl FN
--bl UnityEngine.Object$$op_Equality
-+bl UnityEngine.Object$$op_Inequality
- and #1
-== Campus.Common.CampusActorController$$SetEyeBlinkWeight (Campus_Common_CampusActorController_o* __this, float weight); [semantic] game 5 ref 5
---- game
-+++ ref
-@@ -2,4 +2,4 @@
- mov #1
- bl FN
--bl UnityEngine.Object$$op_Equality
-+bl UnityEngine.Object$$op_Inequality
- b VL.VLActorFacialSystem$$SetEyeBlinkWeight
-== Campus.Common.CampusActorController$$SetRendererActiveByReference (Campus_Common_CampusActorController_o* __this, bool isActive, bool isReset); [semantic] game 7 ref 3
---- game
-+++ ref
-@@ -1,7 +1,3 @@
+@@ -15,11 +15,4 @@
+ mov #0x7ff0000000000000
+ mov #-0x8000000000000000
+-ldr  MMETH Method$System.Math.ThrowMinMaxException<long>()
 -bl FN
- mov #1
+-bl FN
 -mov #1
 -bl FN
--bl System.Math$$Max
+-ldr  MMETH Method$System.Math.ThrowMinMaxException<long>()
+-bl System.Math$$ThrowMinMaxException<long>
  cmp #0
- b Campus.Common.CampusActorController$$SetEnableColliders
-== Campus.Common.Live.CampusLiveTimelineController$$<get_ControlDirectors>b__109_3 (Campus_Common_Live_CampusLiveTimelineController_o* __this, Campus_Timeline_CampusDirectorControlAsset_o* x); [semantic] game 5 ref 6
+ bl UnityEngine.Video.VideoPlayer$$set_frame
+=== Campus.Common.Panorama.PanoramaCameraHolder$$ResolveCamera (Campus_Common_Panorama_PanoramaCameraHolder_o* __this, int32_t type, int32_t index); game 4 ref 4
 --- game
 +++ ref
-@@ -3,3 +3,4 @@
- mov #1
- ldr  MMETH Method$UnityEngine.ExposedReference<PlayableDirector>.Resolve()
-+bl VL.Timeline.VLTimelineController$$get_master
- b UnityEngine.ExposedReference<object>$$Resolve
-== Campus.Common.Live.CampusLiveTimelineController$$ApplyCameraOverride (Campus_Common_Live_CampusLiveTimelineController_o* __this, Cinemachine_CinemachineBrain_o* brain, Cinemachine_ICinemachineCamera_o* camA, Cinemachine_ICinemachineCamera_o* camB, float weightB, float deltaTime, bool forceReacquire); [semantic] game 14 ref 16
---- game
-+++ ref
-@@ -1,6 +1,8 @@
- bl FN
- mov #1
-+bl VL.Timeline.VLTimelineController$$get_master
- bl FN
- bl UnityEngine.Object$$op_Inequality
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$get_state
+@@ -1,4 +1,4 @@
  cmp #1
-== Campus.Common.Live.CampusLiveTimelineController$$ApplyOverrideMotionTracks (Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Playables_PlayableDirector_o* actorDirector, Common_Live_OverrideActorMotionTrack_array* overrideActorMotionTracks); [semantic] game 78 ref 80
+ cmp #1
++cmp #2
+ cmp #3
+-cmp #2
+=== Campus.Common.Live.CampusLiveTimelineController$$ApplyOverrideMotionTracks (Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Playables_PlayableDirector_o* actorDirector, Common_Live_OverrideActorMotionTrack_array* overrideActorMotionTracks); game 78 ref 80
 --- game
 +++ ref
 @@ -34,4 +34,5 @@
@@ -310,37 +663,7 @@
 +and #0xffffffff
  bl FN
  bl System.Object$$.ctor
-== Campus.Common.Live.CampusLiveTimelineController$$ApplyTrackMuteState (Campus_Common_Live_CampusLiveTimelineController_o* __this, System_String_array* trackNames, bool mute); [semantic] game 20 ref 21
---- game
-+++ ref
-@@ -18,3 +18,4 @@
- ldr  MMETH Method$System.Collections.Generic.HashSet.Enumerator<TrackAsset>.Dispose()
- bl System.Collections.Generic.HashSet.Enumerator<object>$$Dispose
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$RebuildGraph
-== Campus.Common.Live.CampusLiveTimelineController$$Campus.Timeline.ICurrentActorSignalNotifier.InitializeSlotDefault (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t slotIndex, int32_t defaultActorIndex); [semantic] game 10 ref 10
---- game
-+++ ref
-@@ -6,5 +6,5 @@
- ldr  int>.set_Item()
- bl System.Collections.Generic.Dictionary<int, int>$$set_Item
--bl Campus.Timeline.CurrentActorSignalData$$.ctor
- ldr  MMETH Method$UniRx.Subject<CurrentActorSignalData>.OnNext()
--bl UniRx.Subject<CurrentActorSignalData>$$OnNext
-+orr #32
-+b UniRx.Subject<CurrentActorSignalData>$$OnNext
-== Campus.Common.Live.CampusLiveTimelineController$$Campus.Timeline.ICurrentActorSignalNotifier.NotifyCurrentActorSignal (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t slotIndex, int32_t nextActorIndex); [semantic] game 11 ref 11
---- game
-+++ ref
-@@ -7,5 +7,5 @@
- ldr  int>.set_Item()
- bl System.Collections.Generic.Dictionary<int, int>$$set_Item
--bl Campus.Timeline.CurrentActorSignalData$$.ctor
- ldr  MMETH Method$UniRx.Subject<CurrentActorSignalData>.OnNext()
--bl UniRx.Subject<CurrentActorSignalData>$$OnNext
-+orr #32
-+b UniRx.Subject<CurrentActorSignalData>$$OnNext
-== Campus.Common.Live.CampusLiveTimelineController$$Campus.Timeline.IForcedCameraInternal.SetForcedCamera (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t sourceId, Cinemachine_ICinemachineCamera_o* camA, Cinemachine_ICinemachineCamera_o* camB, float weightB, float deltaTime, bool forceAuto); [semantic] game 12 ref 12
+=== Campus.Common.Live.CampusLiveTimelineController$$Campus.Timeline.IForcedCameraInternal.SetForcedCamera (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t sourceId, Cinemachine_ICinemachineCamera_o* camA, Cinemachine_ICinemachineCamera_o* camB, float weightB, float deltaTime, bool forceAuto); game 12 ref 12
 --- game
 +++ ref
 @@ -2,10 +2,10 @@
@@ -356,79 +679,7 @@
 +and #1
  ldr  CampusLiveTimelineController.ForcedCameraState>.set_Item()
  bl System.Collections.Generic.Dictionary<int, CampusLiveTimelineController.ForcedCameraState>$$set_Item
-== Campus.Common.Live.CampusLiveTimelineController$$CollectTracksResolvedByPaths (Campus_Common_Live_CampusLiveTimelineController_o* __this, System_String_array* pathStrings); [semantic] game 37 ref 39
---- game
-+++ ref
-@@ -20,6 +20,8 @@
- bl System.Object$$.ctor
- bl FN
-+bl VL.Timeline.VLTimelineController$$get_master
- bl FN
- bl UnityEngine.Object$$op_Equality
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$get_playableAsset
- bl FN
-@@ -33,5 +35,5 @@
- ldr  MMETH Method$System.Linq.Enumerable.ToHashSet<TrackAsset>()
- b System.Linq.Enumerable$$ToHashSet<object>
-+bl FN
- ldr  MMETH Method$System.Collections.Generic.HashSet<TrackAsset>..ctor()
--bl FN
- bl System.Collections.Generic.HashSet<object>$$.ctor
-== Campus.Common.Live.CampusLiveTimelineController$$DisableAllCharacterTracks (Campus_Common_Live_CampusLiveTimelineController_o* __this); [semantic] game 28 ref 29
---- game
-+++ ref
-@@ -26,3 +26,4 @@
- bl FN
- bl FN
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$RebuildGraph
-== Campus.Common.Live.CampusLiveTimelineController$$EnableCharacterTrack (Campus_Common_Live_CampusLiveTimelineController_o* __this, System_String_o* characteId); [semantic] game 34 ref 35
---- game
-+++ ref
-@@ -32,3 +32,4 @@
- bl FN
- bl FN
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$RebuildGraph
-== Campus.Common.Live.CampusLiveTimelineController$$GetAllPanoramaCameras (Campus_Common_Live_CampusLiveTimelineController_o* __this); [layout] game 13 ref 13
-== Campus.Common.Live.CampusLiveTimelineController$$ResolveCamera (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t type, int32_t index); [layout] game 7 ref 7
-== Campus.Common.Live.CampusLiveTimelineController$$ResolveTracksByPathSegments (Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Timeline_TimelineAsset_o* timeline, System_String_array* segments); [semantic] game 47 ref 46
---- game
-+++ ref
-@@ -40,5 +40,4 @@
- bl UnityEngine.Timeline.TimelineAsset$$GetRootTracks
- bl FN
--mov #-0x100000000
- bl FN
- bl FN
-== Campus.Common.Live.CampusLiveTimelineController$$SetUserCamera (Campus_Common_Live_CampusLiveTimelineController_o* __this, Campus_Common_Panorama_SwitchPanoramaCamera_o* camera); [layout] game 36 ref 36
-== Campus.Common.Live.CampusLiveTimelineController$$SetUserCamera (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t type, int32_t index); [layout] game 21 ref 21
-== Campus.Common.Live.CampusLiveTimelineController$$TryGetControlledTimeline (Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Timeline_TrackAsset_o* controlTrack); [semantic] game 27 ref 29
---- game
-+++ ref
-@@ -9,4 +9,5 @@
- bl FN
- mov #1
-+bl VL.Timeline.VLTimelineController$$get_master
- bl FN
- bl UnityEngine.Object$$op_Equality
-@@ -16,4 +17,5 @@
- bl FN
- bl FN
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.ExposedReference<object>$$Resolve
- bl UnityEngine.Playables.PlayableDirector$$get_playableAsset
-== Campus.Common.Live.CampusLiveTimelineController$$Update (Campus_Common_Live_CampusLiveTimelineController_o* __this); [semantic] game 7 ref 8
---- game
-+++ ref
-@@ -1,4 +1,5 @@
- bl FN
- mov #1
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$get_time
- bl FN
-== Campus.Common.Live.CampusLiveTimelineController$$UpdateCameraOverride (Campus_Common_Live_CampusLiveTimelineController_o* __this, float deltaTime, bool forceReacquire); [semantic] game 39 ref 33
+=== Campus.Common.Live.CampusLiveTimelineController$$UpdateCameraOverride (Campus_Common_Live_CampusLiveTimelineController_o* __this, float deltaTime, bool forceReacquire); game 39 ref 33
 --- game
 +++ ref
 @@ -32,8 +32,2 @@
@@ -440,46 +691,1012 @@
 -and #1
 -bl Campus.Common.Live.CampusLiveTimelineController$$ApplyCameraOverride
 -bl Campus.Common.Live.CampusLiveTimelineController$$ClearCameraOverride
-== Campus.Common.Live.CampusLiveTimelineController$$get_ControlDirectors (Campus_Common_Live_CampusLiveTimelineController_o* __this); [semantic] game 83 ref 86
+=== Campus.Common.Live.CampusLiveTimelineController$$GetFieldConstraintTargets (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex); game 47 ref 56
 --- game
 +++ ref
-@@ -33,6 +33,8 @@
+@@ -25,22 +25,31 @@
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<gen>.<gen>()
+ ldr  MMETH Method$System.Linq.Enumerable.Where<CampusLiveTimelineController.LiveProp>()
++b FN
+ bl FN
+ bl System.Func<object, bool>$$.ctor
+ bl System.Linq.Enumerable$$Where<object>
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ ldr  CampusLiveTimelineController.LivePropSetting>()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<>c.<gen>()
+ bl System.Func<object, object>$$.ctor
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ bl System.Linq.Enumerable$$SelectMany<object, object>
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ ldr  GameObject>()
+ ldr  MMETH Method$System.Linq.Enumerable.ToArray<GameObject>()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<>c.<gen>()
+ bl System.Func<object, object>$$.ctor
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ bl System.Linq.Enumerable$$Select<object, object>
+=== Campus.Common.Live.CampusLiveTimelineController$$CollectTracksResolvedByPaths (Campus_Common_Live_CampusLiveTimelineController_o* __this, System_String_array* pathStrings); game 37 ref 37
+--- game
++++ ref
+@@ -33,5 +33,5 @@
+ ldr  MMETH Method$System.Linq.Enumerable.ToHashSet<TrackAsset>()
+ b System.Linq.Enumerable$$ToHashSet<object>
++bl FN
+ ldr  MMETH Method$System.Collections.Generic.HashSet<TrackAsset>..ctor()
+-bl FN
+ bl System.Collections.Generic.HashSet<object>$$.ctor
+=== Campus.Common.Live.CampusLiveTimelineController$$ResolveTracksByPathSegments (Campus_Common_Live_CampusLiveTimelineController_o* __this, UnityEngine_Timeline_TimelineAsset_o* timeline, System_String_array* segments); game 47 ref 46
+--- game
++++ ref
+@@ -40,5 +40,4 @@
+ bl UnityEngine.Timeline.TimelineAsset$$GetRootTracks
+ bl FN
+-mov #-0x100000000
+ bl FN
+ bl FN
+=== Campus.Timeline.CampusVideoPlayerTrack$$CreateTrackMixer (Campus_Timeline_CampusVideoPlayerTrack_o* __this, UnityEngine_Playables_PlayableGraph_o graph, UnityEngine_GameObject_o* go, int32_t inputCount); game 36 ref 37
+--- game
++++ ref
+@@ -18,4 +18,5 @@
+ bl UnityEngine.Component$$TryGetComponent<object>
+ mov #1
++mov #1
+ bl UnityEngine.Video.VideoPlayer$$set_skipOnDrop
+ bl UnityEngine.Video.VideoPlayer$$set_waitForFirstFrame
+@@ -23,5 +24,5 @@
+ bl UnityEngine.Video.VideoPlayer$$set_isLooping
+ bl FN
+-bl Campus.Timeline.CampusVideoPlayerTrackBehaviour$$.ctor
++bl UnityEngine.Playables.PlayableBehaviour$$.ctor
+ bl FN
+ bl FN
+=== Campus.MobAudience.MobAudiencePenlightController$$CalcPenlightParams (Campus_MobAudience_MobAudiencePenlightController_o* __this, Campus_AudiencePenlight_IAudiencePenlight_o* penlight, UnityEngine_Rendering_VolumeStack_o* stack, Unity_Mathematics_float4_o* projectionParams, Unity_Mathematics_float4_o* projectionUV, int32_t* colorTableSize); game 19 ref 19
+--- game
++++ ref
+@@ -8,7 +8,7 @@
+ bl UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ fmov #1.00000000
+ mov #2
+=== Campus.MobAudience.MobAudiencePenlightController.<>c$$.cctor (); game 9 ref 5
+--- game
++++ ref
+@@ -1,9 +1,5 @@
+-b FN
  bl FN
  mov #1
-+bl VL.Timeline.VLTimelineController$$get_master
+-ldr  MMETH Method$Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<GashaTimelineController.BindResult>.Create()
+ bl FN
+ bl System.Object$$.ctor
+-ldr  MMETH Method$Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<GashaTimelineController.BindResult>.Create()
+-ldr  MMETH Method$Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder<GashaTimelineController.BindResult>.Create()
+ b FN
+=== Campus.Live.Monitor.MonitorRepeatImage$$GetDrawingDimensions2 (Campus_Live_Monitor_MonitorRepeatImage_o* __this); game 29 ref 31
+--- game
++++ ref
+@@ -4,7 +4,9 @@
+ bl UnityEngine.Object$$op_Inequality
+ bl UnityEngine.Sprites.DataUtility$$GetPadding
+-bl UnityEngine.Sprite$$get_rect
+ bl FN
+ mov #1
++bl FN
++bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Sprite$$get_rect
+ bl UnityEngine.Rect$$get_zero
+ bl UnityEngine.UI.Graphic$$GetPixelAdjustedRect
+=== Campus.Live.Monitor.MonitorRepeatImage$$OnPopulateMesh (Campus_Live_Monitor_MonitorRepeatImage_o* __this, UnityEngine_UI_VertexHelper_o* toFill); game 64 ref 65
+--- game
++++ ref
+@@ -43,8 +43,9 @@
+ mov #-0x80000000
+ cmp #1
++mov #1
++mov #3
+ mov #-0x4080000000000000
+ mov #0x3f800000
+-mov #-1
+-mov #-1
++fmov #-1.00000000
+ bl Campus.Live.Monitor.MonitorRepeatImage$$GetUVOffset
+ bl Campus.Live.Monitor.MonitorRepeatImage$$GetUVOffset
+=== Campus.Live.Equipment.LiveEquipmentController$$get_IsPlaying (Campus_Live_Equipment_LiveEquipmentController_o* __this); game 8 ref 8
+--- game
++++ ref
+@@ -2,7 +2,7 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl UnityEngine.Playables.PlayableDirector$$get_playableGraph
+ bl UnityEngine.Playables.PlayableGraph$$IsValid
+ bl UnityEngine.Playables.PlayableGraph$$IsPlaying
+-mov #1
++and #1
+=== Campus.Live.Equipment.Environment.LiveDirectionalLight$$.ctor (Campus_Live_Equipment_Environment_LiveDirectionalLight_o* __this); game 1 ref 2
+--- game
++++ ref
+@@ -1 +1,2 @@
+-b Campus.Live.Equipment.EnvironmentBase$$.ctor
++mov #1
++b UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3$$MoveNext (Campus_Live_Equipment_Environment_LiveDirectionalLight__get_GatherProperties_d__3_o* __this); game 26 ref 28
+--- game
++++ ref
+@@ -11,5 +11,6 @@
+ bl UnityEngine.Component$$get_transform
+ ldr  STR m_LocalRotation
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
+ bl FN
+ bl FN
+@@ -19,5 +20,6 @@
+ bl UnityEngine.Object$$op_Inequality
+ ldr  STR m_Shadows.m_Strength
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
+ bl FN
+ bl FN
+=== Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3$$System.Collections.IEnumerable.GetEnumerator (Campus_Live_Equipment_Environment_LiveDirectionalLight__get_GatherProperties_d__3_o* __this); game 1 ref 3
+--- game
++++ ref
+@@ -1 +1,3 @@
+-b Campus.Live.Equipment.Environment.LiveDirectionalLight.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator
++bl FN
++mov #1
++bl FN
+=== Campus.Live.Equipment.Environment.LiveLaser$$OnEnable (Campus_Live_Equipment_Environment_LiveLaser_o* __this); game 98 ref 99
+--- game
++++ ref
+@@ -25,5 +25,4 @@
+ bl FN
+ bl UnityEngine.Mesh$$.ctor
+-bl FN
+ bl UnityEngine.Object$$get_name
+ bl System.String$$Concat
+@@ -31,4 +30,5 @@
+ mov #0x34
+ bl UnityEngine.Object$$set_hideFlags
++bl FN
+ mov #4
+ bl FN
+@@ -56,7 +56,7 @@
+ mov #4
+ bl Unity.Collections.NativeArray<LiveLaser.VertexLayout>$$.ctor
++mov #0xaaab
+ fmov #-0.50000000
+ fmov #0.75000000
+-mov #0xaaab
+ movk #0xaaaa, lsl #16
+ cmp #0x294
+@@ -67,4 +67,5 @@
+ mov #4
+ bl Unity.Collections.NativeArray<ushort>$$.ctor
++mov #1
+ mov #1
+ cmp #4
+@@ -78,5 +79,8 @@
+ bl UnityEngine.Mesh$$MarkDynamic
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
++bl FN
++ldr  STR Laser用のRendererが指定されていません
++bl UnityEngine.Debug$$LogError
+ bl UnityEngine.Renderer$$set_shadowCastingMode
+ bl UnityEngine.Renderer$$set_lightProbeUsage
+@@ -94,5 +98,2 @@
+ bl FN
+ bl UnityEngine.MeshFilter$$set_sharedMesh
+-bl FN
+-ldr  STR Laser用のRendererが指定されていません
+-bl UnityEngine.Debug$$LogError
+=== Campus.Live.Equipment.Environment.LiveLaser$$UpdateMesh (Campus_Live_Equipment_Environment_LiveLaser_o* __this); game 14 ref 13
+--- game
++++ ref
+@@ -7,5 +7,4 @@
+ bl FN
+ bl UnityEngine.Mesh$$set_bounds
+-cmp #1
+ cmp #0
+ bl UnityEngine.Renderer$$set_enabled
+=== Campus.Live.Equipment.Environment.LiveLaser$$get_GatherProperties (Campus_Live_Equipment_Environment_LiveLaser_o* __this); game 9 ref 8
+--- game
++++ ref
+@@ -4,6 +4,5 @@
+ mov #1
+ bl FN
+-bl System.Object$$.ctor
+ mov #-2
+-bl System.Environment$$get_CurrentManagedThreadId
++bl Campus.Live.Equipment.Environment.LiveLaser.<gen>$$.ctor
+ bl FN
+=== Campus.Live.Equipment.Environment.LiveLaser$$OnApply (Campus_Live_Equipment_Environment_LiveLaser_o* __this, Campus_Live_Equipment_LiveEquipmentStreamData_o* data); game 18 ref 18
+--- game
++++ ref
+@@ -1,8 +1,8 @@
+ bl FN
+ mov #1
++and #0xff
++mov #0x126f
+ mov #0x126f
+ movk #0x3b83, lsl #16
+-and #0xff
+-mov #0x126f
+ movk #0x3a83, lsl #16
+ bl FN
+=== Campus.Live.Equipment.Environment.LiveLaser$$.ctor (Campus_Live_Equipment_Environment_LiveLaser_o* __this); game 4 ref 52
+--- game
++++ ref
+@@ -1,4 +1,52 @@
+ mov #-0x40800000
++mov #0x41200000
+ mov #2
+-mov #0x41200000
+-b Campus.Live.Equipment.EnvironmentBase$$.ctor
++mov #1
++b UnityEngine.MonoBehaviour$$.ctor
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x80
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x100
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x200
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++bl FN
++mov #1
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeScale
++bl Campus.Live.Equipment.Timeline.LiveEquipmentAssetBehaviour$$get_TimeOffset
++fmov #1.00000000
++bl FN
++add MMETH Method$Campus.Live.Equipment.EquipmentExtensions.AddFlag<LiveEquipmentAnimationData>()
++mov #0x400
++bl Campus.Live.Equipment.EquipmentExtensions$$AddFlag<LiveEquipmentAnimationData>
++mov #1
+=== Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$Execute (Campus_Live_Equipment_Environment_LiveLaser_LaserVertexJob_o __this); game 15 ref 15
+--- game
++++ ref
+@@ -4,12 +4,12 @@
+ mov #1
+ mov #0x84
+-mov #0x800000
+ mov #0x126f
+ movk #0x3b83, lsl #16
+ and #0xff
++mov #0x800000
+ fmov #1.00000000
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafePtr<LiveLaser.VertexLayout>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafePtr<LiveLaser.VertexLayout>
+-cmp #3
++cmp #2
+ b Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdateCone
+ b Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdatePlane
+=== Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdatePlane (Campus_Live_Equipment_Environment_LiveLaser_LaserVertexJob_o __this, Campus_Live_Equipment_Environment_LiveLaser_VertexLayout_o* pVertexHead); game 19 ref 19
+--- game
++++ ref
+@@ -1,5 +1,5 @@
+ cmp #2
++fmov #-0.50000000
+ cmp #1
+-fmov #-0.50000000
+ mov #0x3d800000
+ mov #1
+=== Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdateCone (Campus_Live_Equipment_Environment_LiveLaser_LaserVertexJob_o __this, Campus_Live_Equipment_Environment_LiveLaser_VertexLayout_o* pVertexHead, bool fullRandom); game 28 ref 28
+--- game
++++ ref
+@@ -1,8 +1,8 @@
+ cmp #1
+-fmov #1.00000000
+ mov #1
+ mov #0x3d800000
+ mov #0x3f000000
+ mov #0xf00000000
++fmov #1.00000000
+ cmp #2
+ bl FN
+=== Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$MoveNext (Campus_Live_Equipment_Environment_LiveLaser__get_GatherProperties_d__31_o* __this); game 113 ref 114
+--- game
++++ ref
+@@ -39,18 +39,4 @@
+ mov #5
+ mov #-1
+-bl UnityEngine.Component$$get_transform
+-ldr  STR m_LocalRotation
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+-bl FN
+-bl FN
+-mov #0xd
+-mov #-1
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-ldr  STR m_LocalRotation
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+-bl FN
+-bl FN
+-mov #0xa
+ mov #-1
+ ldr  STR laserType
+@@ -84,4 +70,10 @@
+ mov #6
+ mov #-1
++bl UnityEngine.Component$$get_transform
++ldr  STR m_LocalRotation
++bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
++mov #0xd
+ mov #-1
+ ldr  STR radius
+@@ -97,5 +89,20 @@
+ bl FN
+ bl FN
++mov #0xa
++mov #-1
++ldr  STR randomSpeed
++bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
++mov #9
++mov #-1
++bl FN
++bl UnityEngine.Object$$op_Inequality
++ldr  STR m_LocalRotation
++bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
+ mov #0xb
++mov #-1
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+@@ -105,9 +112,3 @@
+ bl FN
+ mov #0xc
+-mov #-1
+-ldr  STR randomSpeed
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+-bl FN
+-bl FN
+-mov #9
+ mov #1
+=== Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$System.Collections.IEnumerable.GetEnumerator (Campus_Live_Equipment_Environment_LiveLaser__get_GatherProperties_d__31_o* __this); game 1 ref 3
+--- game
++++ ref
+@@ -1 +1,3 @@
+-b Campus.Live.Equipment.Environment.LiveLaser.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator
++bl FN
++mov #1
++bl FN
+=== Campus.Live.Equipment.Environment.LiveLightBasic$$OnApply (Campus_Live_Equipment_Environment_LiveLightBasic_o* __this, Campus_Live_Equipment_LiveEquipmentStreamData_o* data); game 34 ref 33
+--- game
++++ ref
+@@ -7,6 +7,4 @@
+ bl UnityEngine.Object$$op_Inequality
+ bl UnityEngine.Transform$$set_localRotation
+-mov #0x126f
+-movk #0x3b83, lsl #16
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+@@ -30,4 +28,5 @@
+ mov #1
+ cmp #0
++and #0xffffffff
+ bl UnityEngine.Transform$$set_localScale
+ bl FN
+=== Campus.Live.Equipment.Environment.LiveLightBasic$$ApplyMaterial (Campus_Live_Equipment_Environment_LiveLightBasic_o* __this, UnityEngine_Color_o color); game 12 ref 12
+--- game
++++ ref
+@@ -3,5 +3,5 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl Campus.Live.Equipment.EnvironmentBase$$GetMaterialInfo
+ bl FN
+=== Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$MoveNext (Campus_Live_Equipment_Environment_LiveLightBasic__get_GatherProperties_d__13_o* __this); game 187 ref 188
+--- game
++++ ref
+@@ -52,24 +52,15 @@
+ mov #1
+ mov #-1
+-ldr  STR m_InnerSpotAngle
++ldr  STR m_SpotAngle
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
+ bl FN
+-mov #0x11
++mov #0x10
+ mov #-1
+-ldr  STR m_Range
++ldr  STR m_Intensity
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
+ bl FN
+-mov #0xf
+-mov #-1
+-bl FN
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-ldr  STR m_Enabled
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+-bl FN
+-bl FN
+-mov #0xc
++mov #0xe
+ mov #-1
+ ldr  STR fresnelPow
+@@ -79,9 +70,12 @@
+ mov #5
+ mov #-1
+-ldr  STR m_Color
++bl FN
++bl FN
++bl UnityEngine.Object$$op_Equality
++ldr  STR m_Enabled
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
+ bl FN
+-mov #0xd
++mov #0xc
+ mov #-1
+ ldr  STR spotAngleFromLight
+@@ -92,9 +86,9 @@
+ mov #-1
+ mov #-1
+-ldr  STR m_SpotAngle
++ldr  STR m_Range
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
+ bl FN
+-mov #0x10
++mov #0xf
+ mov #-1
+ ldr  STR spotAngle
+@@ -110,27 +104,10 @@
+ mov #8
+ mov #-1
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-ldr  STR m_LocalRotation
++mov #-1
++ldr  STR m_InnerSpotAngle
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
+ bl FN
+-mov #2
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-ldr  STR color
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+-bl FN
+-bl FN
+-mov #3
+-mov #-1
+-bl UnityEngine.Rendering.Universal.LightExtensions$$GetUniversalAdditionalLightData
+-bl FN
+-bl UnityEngine.Object$$op_Inequality
+-ldr  STR m_SpecularStrength
+-bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+-bl FN
+-bl FN
+-mov #0x12
++mov #0x11
+ mov #-1
+ ldr  STR GlobalTintColor
+@@ -147,9 +124,9 @@
+ mov #-1
+ mov #-1
+-ldr  STR m_Intensity
++ldr  STR m_Color
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
+ bl FN
+-mov #0xe
++mov #0xd
+ mov #-1
+ ldr  STR noiseIntensity
+@@ -158,4 +135,8 @@
+ bl FN
+ mov #7
++mov #-1
++bl UnityEngine.Rendering.Universal.LightExtensions$$GetUniversalAdditionalLightData
++bl FN
++bl UnityEngine.Object$$op_Equality
+ mov #-1
+ bl FN
+@@ -179,5 +160,20 @@
+ bl FN
+ mov #0x14
++ldr  STR m_SpecularStrength
++bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+ bl FN
++bl FN
++mov #0x12
++mov #-1
++bl FN
++bl UnityEngine.Object$$op_Inequality
++ldr  STR m_LocalRotation
++bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
++mov #2
++mov #-1
++bl FN
++bl UnityEngine.Object$$op_Equality
+ ldr  STR isVisible
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+@@ -185,3 +181,8 @@
+ bl FN
+ mov #0x13
++ldr  STR color
++bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
++bl FN
++bl FN
++mov #3
+ mov #1
+=== Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$System.Collections.IEnumerable.GetEnumerator (Campus_Live_Equipment_Environment_LiveLightBasic__get_GatherProperties_d__13_o* __this); game 1 ref 3
+--- game
++++ ref
+@@ -1 +1,3 @@
+-b Campus.Live.Equipment.Environment.LiveLightBasic.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator
++bl FN
++mov #1
++bl FN
+=== Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$MoveNext (Campus_Live_Equipment_Environment_LiveLightComponent__get_GatherProperties_d__6_o* __this); game 48 ref 48
+--- game
++++ ref
+@@ -31,5 +31,5 @@
+ bl UnityEngine.Rendering.Universal.LightExtensions$$GetUniversalAdditionalLightData
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ ldr  STR m_SpecularStrength
+ bl Campus.Live.Equipment.LiveEquipmentComponentProperty$$.ctor
+@@ -40,5 +40,5 @@
+ mov #-1
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl UnityEngine.Component$$get_transform
+ ldr  STR m_LocalRotation
+=== Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$System.Collections.IEnumerable.GetEnumerator (Campus_Live_Equipment_Environment_LiveLightComponent__get_GatherProperties_d__6_o* __this); game 1 ref 3
+--- game
++++ ref
+@@ -1 +1,3 @@
+-b Campus.Live.Equipment.Environment.LiveLightComponent.<gen>$$System.Collections.Generic.IEnumerable<Campus.Live.Equipment.ILiveEquipmentProperty>.GetEnumerator
++bl FN
++mov #1
++bl FN
+=== Campus.DecalLight.CampusDecalLight$$set_BoxSize (Campus_DecalLight_CampusDecalLight_o* __this, UnityEngine_Vector3_o value); game 6 ref 12
+--- game
++++ ref
+@@ -1,4 +1,10 @@
+ cmp #2
+ cmp #1
++bl FN
++bl FN
++bl System.ArgumentOutOfRangeException$$.ctor
++ldr  MMETH Method$Campus.DecalLight.CampusDecalLight.set_BoxSize()
++bl FN
++bl FN
+ fmov #0.50000000
+ fmov #0.50000000
+=== Campus.DecalLight.CampusDecalLight$$get_Pivot (Campus_DecalLight_CampusDecalLight_o* __this); game 5 ref 4
+--- game
++++ ref
+@@ -1,5 +1,4 @@
+-cmp #2
+-cmp #1
+-fmov #0.50000000
++cmn #2
+ bl FN
+ mov #1
++fmov #0.50000000
+=== Campus.Crowd.CrowdAnimator$$.ctor (Campus_Crowd_CrowdAnimator_o* __this, UnityEngine_Transform_o* transform, UnityEngine_Animator_o* animator, Campus_Crowd_CrowdVolume_o* volume); game 144 ref 144
+--- game
++++ ref
+@@ -134,5 +134,5 @@
+ bl UnityEngine.Animations.AnimatorJobExtensions$$BindStreamTransform
+ bl FN
+-bl Campus.Crowd.CrowdAnimationBehaviour$$.ctor
++bl UnityEngine.Playables.PlayableBehaviour$$.ctor
+ ldr  MMETH Method$UnityEngine.Playables.ScriptPlayable<CrowdAnimationBehaviour>.Create()
+ ldr  ScriptPlayable<CrowdAnimationBehaviour>>()
+=== Campus.Common.CampusActorController$$CorrectSkeleton (Campus_Common_CampusActorController_o* __this, System_String_o* partsId, UnityEngine_GameObject_o* instance); game 25 ref 25
+--- game
++++ ref
+@@ -13,5 +13,5 @@
+ bl FN
+ bl FN
+-bl System.String$$op_Equality
++bl System.String$$op_Inequality
+ bl UnityEngine.GameObject$$get_transform
+ ldr  STR Reference/Hips
+=== Campus.Common.CampusActorController$$InitializeRenderer (Campus_Common_CampusActorController_o* __this); game 64 ref 64
+--- game
++++ ref
+@@ -41,5 +41,5 @@
+ mov #0x1104
+ mov #0x4404
+-cmp #9
++cmp #0xa
+ ldr  MMETH Method$System.Collections.Generic.List<Renderer>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+=== Campus.Common.CampusActorController$$OnBuildModelSuccess (Campus_Common_CampusActorController_o* __this); game 40 ref 40
+--- game
++++ ref
+@@ -32,5 +32,5 @@
+ bl Campus.Common.CampusActorController$$UpdateMaterialInfos
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.CampusActorEffectController$$.ctor
+ bl FN
+ bl Campus.Common.CampusActorEffectController$$Initialize
+=== Campus.Common.CampusActorController$$SetupMoveConstraint (Campus_Common_CampusActorController_o* __this); game 10 ref 9
+--- game
++++ ref
+@@ -7,4 +7,3 @@
+ bl FN
+ bl VL.Core.VLActorController$$GetBoneTransformByName
+-bl FN
+-b FN
++b Campus.Common.CampusActorHipCorrector$$Setup
+=== Campus.Common.CampusActorController$$UpdateLookAtEyePitchCorrection (Campus_Common_CampusActorController_o* __this); game 16 ref 35
+--- game
++++ ref
+@@ -15,2 +15,21 @@
  bl FN
  bl UnityEngine.Object$$op_Equality
-+bl VL.Timeline.VLTimelineController$$get_master
- bl UnityEngine.Playables.PlayableDirector$$get_playableAsset
- bl FN
-@@ -75,4 +77,5 @@
- ldr  PlayableDirector>()
- bl System.Linq.Enumerable$$Select<object, object>
-+bl VL.Timeline.VLTimelineController$$get_master
- ldr  MMETH Method$System.Linq.Enumerable.Append<PlayableDirector>()
- bl System.Linq.Enumerable$$Append<object>
-== Campus.Common.Live.CampusLiveTimelineController$$get_CurrentForcedCamera (Campus_Common_Live_CampusLiveTimelineController_o* __this); [semantic] game 38 ref 38
++fmov #1.00000000
++mov #2
++bl FN
++mov #0x15
++cmp #1
++mov #0x16
++and #0xffffffff
++bl UnityEngine.Transform$$get_localRotation
++bl Unity.Mathematics.quaternion$$op_Implicit
++bl FN
++bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollZRoll
++mov #1
++bl Unity.Mathematics.float3$$get_Item
++mov #2
++bl Unity.Mathematics.float3$$get_Item
++bl Unity.Mathematics.float3$$get_Item
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl Unity.Mathematics.quaternion$$op_Implicit
++bl UnityEngine.Transform$$set_localRotation
+=== Campus.Common.CampusActorController$$OverrideActorMaterialProperty (Campus_Common_CampusActorController_o* __this, VL_Core_MaterialInfo_o* materialInfo, Campus_Common_CampusActorController_OverrideActorMaterialPropertyData_o* overrideProperty); game 34 ref 34
 --- game
 +++ ref
-@@ -18,5 +18,4 @@
- ldr  CampusLiveTimelineController.ForcedCameraState>.GetEnumerator()
- ldr  CampusLiveTimelineController.ForcedCameraState>.MoveNext()
--ldr  CampusLiveTimelineController.ForcedCameraState>.Dispose()
- bl System.Collections.Generic.Dictionary<int, CampusLiveTimelineController.ForcedCameraState>$$GetEnumerator
- bl System.Collections.Generic.Dictionary.Enumerator<int, CampusLiveTimelineController.ForcedCameraState>$$MoveNext
-@@ -36,3 +35,4 @@
+@@ -28,7 +28,7 @@
+ cmp #1
+ cmp #2
++fmov #1.00000000
+ mov #0x7ff0000000000000
+ mov #-0x80000000
+-fmov #1.00000000
  bl FN
- bl FN
-+ldr  CampusLiveTimelineController.ForcedCameraState>.Dispose()
- bl System.Collections.Generic.Dictionary.Enumerator<int, CampusLiveTimelineController.ForcedCameraState>$$Dispose
-== Campus.Common.Panorama.PanoramaCameraHolder$$ResolveCamera (Campus_Common_Panorama_PanoramaCameraHolder_o* __this, int32_t type, int32_t index); [semantic] game 4 ref 4
+ b VL.Core.MaterialInfo$$SetVector
+=== Campus.Common.CampusActorController$$RemoveOverrideMaterialProperty (Campus_Common_CampusActorController_o* __this, System_String_o* materialName); game 31 ref 29
 --- game
 +++ ref
-@@ -1,4 +1,4 @@
- cmp #1
- cmp #1
-+cmp #2
- cmp #3
--cmp #2
-== Uguiss.Timeline.AbstractScriptPlayableCommand<object, object, object>$$GetPlayableBehaviour (Uguiss_Timeline_AbstractScriptPlayableCommand_TEngine__TPlayable__TMixer__o* __this); [layout] game 4 ref 4
-== Uguiss.Timeline.TimelineEngineUtility$$GetPlayableBehaviour<object> (UnityEngine_Playables_Playable_o playable); [layout] game 14 ref 14
+@@ -25,7 +25,5 @@
+ bl System.Collections.Generic.List.Enumerator<object>$$MoveNext
+ bl Campus.Common.CampusActorController$$ResetActorMaterialProperty
+-cmp #1
++ldr  MMETH Method$System.Collections.Generic.List.Enumerator<MaterialInfo>.Dispose()
++bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+-bl FN
+-bl FN
+-bl FN
+=== Campus.Common.CampusActorController$$EnableBakedSwingBone (Campus_Common_CampusActorController_o* __this, VL_MotionDefine_o* motionDefine); game 48 ref 50
+--- game
++++ ref
+@@ -17,4 +17,5 @@
+ mov #1
+ ldr  MMETH Method$UnityEngine.Rendering.ListPool<int>.Get()
++b FN
+ bl FN
+ bl UnityEngine.Rendering.ListPool<int>$$Get
+@@ -31,5 +32,6 @@
+ and #0xffff
+ cmp #0x5f
+-bl System.String$$op_Inequality
++bl System.String$$op_Equality
++cmp #1
+ mov #0x2f
+ bl System.String$$LastIndexOf
+=== Campus.Common.CampusActorController$$SetupPropConstraintAnimation (Campus_Common_CampusActorController_o* __this, VL_MotionDefine_o* motionDefine); game 143 ref 145
+--- game
++++ ref
+@@ -90,4 +90,5 @@
+ bl UnityEngine.Transform$$GetChild
+ bl UnityEngine.Object$$get_name
++bl UnityEngine.Object$$get_name
+ mov #4
+ bl System.String$$StartsWith
+@@ -117,8 +118,9 @@
+ bl UnityEngine.Transform$$get_childCount
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.CampusActorController.<gen>$$.ctor
+ bl UnityEngine.Component$$get_transform
+ bl UnityEngine.Transform$$GetChild
+ bl FN
++bl UnityEngine.Object$$get_name
+ bl UnityEngine.Object$$get_name
+ mov #4
+=== Campus.Common.CampusActorController$$ExecuteEyeBlink (Campus_Common_CampusActorController_o* __this, bool forceBlink); game 6 ref 7
+--- game
++++ ref
+@@ -5,2 +5,3 @@
+ bl VL.VLActorFacialSystem$$IsEyeLimit
+ fmov #-1.00000000
++b VL.VLActorFacialSystem$$set_NextBlinkTime
+=== Campus.Common.CampusActorController$$SetEyeBlinkWeight (Campus_Common_CampusActorController_o* __this, float weight); game 5 ref 5
+--- game
++++ ref
+@@ -2,4 +2,4 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ b VL.VLActorFacialSystem$$SetEyeBlinkWeight
+=== Campus.Common.CampusActorController$$SetEyeBlinkEnable (Campus_Common_CampusActorController_o* __this, bool enable); game 5 ref 5
+--- game
++++ ref
+@@ -2,4 +2,4 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ and #1
+=== Campus.Common.CampusActorController$$SetEnableColliders (Campus_Common_CampusActorController_o* __this, bool isActive); game 6 ref 6
+--- game
++++ ref
+@@ -2,5 +2,5 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ and #1
+ b VL.VLActorCollider$$SetEnableColliders
+=== Campus.Common.CampusActorController$$SetCustomLookAtEffector (Campus_Common_CampusActorController_o* __this, VL_IK_CustomLookAtEffector_o* effector); game 5 ref 6
+--- game
++++ ref
+@@ -3,3 +3,4 @@
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+-b Campus.Common.CampusActorAnimation$$SetCustomLookAtEffector
++bl FN
++b Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector
+=== Campus.Common.CampusActorController$$ResetCustomLookAt (Campus_Common_CampusActorController_o* __this); game 5 ref 6
+--- game
++++ ref
+@@ -3,3 +3,4 @@
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+-b Campus.Common.CampusActorAnimation$$ResetCustomLookAt
++bl FN
++b Campus.Common.CampusActorAnimation$$SetupCustomLookAtEffector
+=== Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalPosition (Campus_Common_CampusActorController_o* __this); game 7 ref 6
+--- game
++++ ref
+@@ -3,5 +3,4 @@
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+-b Campus.Common.CampusActorAnimation$$get_FullBodyIkHeadOriginalPosition
+ bl FN
+ mov #1
+=== Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalRotation (Campus_Common_CampusActorController_o* __this); game 7 ref 9
+--- game
++++ ref
+@@ -3,5 +3,7 @@
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+-b Campus.Common.CampusActorAnimation$$get_FullBodyIkHeadOriginalRotation
++mov #0xfa35
++movk #0x3c8e, lsl #16
++b UnityEngine.Quaternion$$Internal_FromEulerRad
+ bl FN
+ mov #1
+=== Campus.Common.CampusActorController$$ResetTime (Campus_Common_CampusActorController_o* __this); game 5 ref 5
+--- game
++++ ref
+@@ -2,4 +2,4 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ b Campus.Common.CampusActorAnimation$$ResetTime
+=== Campus.Common.CampusActorController$$ResetDynamicSkin (Campus_Common_CampusActorController_o* __this); game 5 ref 5
+--- game
++++ ref
+@@ -2,4 +2,4 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ b Campus.Common.CampusActorAnimation$$ResetDynamicSkin
+=== Campus.Common.CampusActorController$$DisableJointLimitSetting (Campus_Common_CampusActorController_o* __this); game 6 ref 6
+--- game
++++ ref
+@@ -4,3 +4,3 @@
+ bl UnityEngine.Object$$op_Inequality
+ bl FN
+-b Campus.Common.CampusActorAnimation$$DisableJointLimitSetting
++bl FN
+=== Campus.Common.CampusActorController$$GetAnimationController (Campus_Common_CampusActorController_o* __this, VL_Animation_LayerParam_o* param); game 6 ref 6
+--- game
++++ ref
+@@ -2,5 +2,5 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl VL.Animation.LayerParam$$SetDefaultAnimations
+ b VL.Animation.MotionDefinePlayer$$CreateLayerController
+=== Campus.Common.CampusActorController$$GetAnimationController (Campus_Common_CampusActorController_o* __this, VL_Animation_LayerParam_o* param, int32_t outputType); game 6 ref 6
+--- game
++++ ref
+@@ -2,5 +2,5 @@
+ mov #1
+ bl FN
+-bl UnityEngine.Object$$op_Inequality
++bl UnityEngine.Object$$op_Equality
+ bl VL.Animation.LayerParam$$SetDefaultAnimations
+ b VL.Animation.MotionDefinePlayer$$CreateLayerController
+=== Campus.Common.CampusActorController.<>c$$.cctor (); game 5 ref 36
+--- game
++++ ref
+@@ -4,2 +4,33 @@
+ bl System.Object$$.ctor
+ b FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++fmov #0.50000000
++bl FN
++bl FN
++mov #1
++bl FN
++fmov #1.00000000
++bl Unity.Mathematics.quaternion$$.ctor
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++fmov #-2.00000000
++bl FN
++fmov #-2.00000000
++bl FN
++bl FN
+=== Campus.Common.CampusActorModelParts$$OnRegisterBone (Campus_Common_CampusActorModelParts_o* __this, System_String_o** boneName, UnityEngine_Transform_o* bone); game 163 ref 159
+--- game
++++ ref
+@@ -72,4 +72,5 @@
+ bl UnityEngine.Component$$GetComponents<object>
+ ldr  MMETH Method$System.Collections.Generic.List<MonoBehaviour>.get_Item()
++ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()
+ bl System.Collections.Generic.List<object>$$get_Item
+ ldr  MMETH Method$System.Collections.Generic.List<DecalProjector>.Add()
+@@ -90,7 +91,6 @@
+ bl Unity.Mathematics.float3$$op_Implicit
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()
+ mov #0x38
+-ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationConstraintTransformBone>.Add()
++b FN
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverRotationBone>.Add()
+ bl FN
+@@ -105,5 +105,4 @@
+ bl UnityEngine.Transform$$get_rotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()
+ mov #0x38
+ bl System.Collections.Generic.List<InitialTransform>$$AddWithResize
+@@ -116,5 +115,4 @@
+ bl UnityEngine.Transform$$get_rotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()
+ mov #0x38
+ bl System.Collections.Generic.List<InitialTransform>$$AddWithResize
+@@ -127,5 +125,4 @@
+ bl UnityEngine.Transform$$get_rotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()
+ mov #0x38
+ bl System.Collections.Generic.List<InitialTransform>$$AddWithResize
+@@ -138,5 +135,4 @@
+ bl UnityEngine.Transform$$get_rotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-ldr  MMETH Method$System.Collections.Generic.List<InitialTransform>.Add()
+ mov #0x38
+ bl System.Collections.Generic.List<InitialTransform>$$AddWithResize
+=== Campus.Common.CampusVirtualActorController$$OnBind (Campus_Common_CampusVirtualActorController_o* __this, VL_VLVirtualActorController_BindData_o boneBind); game 104 ref 104
+--- game
++++ ref
+@@ -23,5 +23,5 @@
+ bl FN
+ mov #1
+-bl <PrivateImplementationDetails>$$ComputeStringHash
++bl <QAReconstructionImplementationDetails>$$ComputeStringHash
+ mov #0x8e11
+ movk #0x2852, lsl #16
+@@ -84,5 +84,5 @@
+ bl FN
+ bl FN
+-bl UnityEngine.Object$$op_Equality
++bl UnityEngine.Object$$op_Inequality
+ mov #0x12
+ mov #0xa
+=== Campus.Common.CampusLightAnchor$$SetShadow (Campus_Common_CampusLightAnchor_o* __this, int32_t value); game 12 ref 11
+--- game
++++ ref
+@@ -4,5 +4,4 @@
+ bl UnityEngine.Object$$op_Inequality
+ bl UnityEngine.Light$$get_shadows
+-cmp #0
+ bl UnityEngine.Light$$set_shadows
+ bl FN

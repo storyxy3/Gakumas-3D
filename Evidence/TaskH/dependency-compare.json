@@ -1,0 +1,19 @@
+{
+ "addedOverloads": [],
+ "same": 15,
+ "changed": [
+  {
+   "method": "VL.Core.VLActorModelParts$$SetRendererActive",
+   "similarity": 0.903,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "VL.Core.VLActorModelParts",
+   1
+  ]
+ ]
+}

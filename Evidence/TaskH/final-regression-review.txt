@@ -1,0 +1,109 @@
+=== VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor (); game 15 ref 53
+--- game
++++ ref
+@@ -14,2 +14,40 @@
+ bl FN
+ bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++add 
++bl FN
++bl System.String$$Format
++bl FN
++bl FN
++bl System.InvalidOperationException$$.ctor
++bl FN
++bl FN
++and #0x1fffffff0
++bl System.IntPtr$$op_Explicit
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++and #0x1fffffff0
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++and #0xffffffff
++and #0x1fffffff0
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++cmp #0
+=== Campus.Common.Live.CampusLiveTimelineController$$GetFieldConstraintTargets (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex); game 47 ref 56
+--- game
++++ ref
+@@ -25,22 +25,31 @@
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<gen>.<gen>()
+ ldr  MMETH Method$System.Linq.Enumerable.Where<CampusLiveTimelineController.LiveProp>()
++b FN
+ bl FN
+ bl System.Func<object, bool>$$.ctor
+ bl System.Linq.Enumerable$$Where<object>
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ ldr  CampusLiveTimelineController.LivePropSetting>()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<>c.<gen>()
+ bl System.Func<object, object>$$.ctor
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ bl System.Linq.Enumerable$$SelectMany<object, object>
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ ldr  GameObject>()
+ ldr  MMETH Method$System.Linq.Enumerable.ToArray<GameObject>()
+ bl FN
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ ldr  MMETH Method$Campus.Common.Live.CampusLiveTimelineController.<>c.<gen>()
+ bl System.Func<object, object>$$.ctor
++ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.Add()
+ bl FN
+ bl System.Linq.Enumerable$$Select<object, object>
+=== VL.MotionDefinePlayable$$OnBehaviourPause (VL_MotionDefinePlayable_o* __this, UnityEngine_Playables_Playable_o playable, UnityEngine_Playables_FrameData_o info); game 27 ref 29
+--- game
++++ ref
+@@ -1,4 +1,4 @@
+ ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.Pause<AnimationLayerMixerPlayable>()
+-ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.GetInputCount<AnimationLayerMixerPlayable>()
++b FN
+ ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.GetInputCount<AnimationLayerMixerPlayable>()
+ bl FN
+@@ -16,4 +16,5 @@
+ ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.IsValid<ScriptPlayable<MotionEffectPlayable>>()
+ bl UnityEngine.Playables.PlayableExtensions$$Pause<AnimationLayerMixerPlayable>
++ldr  META System.Threading.Volatile.VolatileObject_var
+ bl UnityEngine.Playables.PlayableExtensions$$GetInputCount<AnimationLayerMixerPlayable>
+ cmp #1
+@@ -22,4 +23,5 @@
+ bl UnityEngine.Playables.PlayableExtensions$$GetInput<AnimationLayerMixerPlayable>
+ bl UnityEngine.Playables.PlayableExtensions$$Pause<Playable>
++ldr  META System.Threading.Volatile.VolatileObject_var
+ bl UnityEngine.Playables.PlayableExtensions$$GetInputCount<AnimationLayerMixerPlayable>
+ bl UnityEngine.Playables.PlayableExtensions$$IsValid<ScriptPlayable<object>>
+=== VL.Core.VLActorModelParts$$SetRendererActive (VL_Core_VLActorModelParts_o* __this, bool active); game 19 ref 18
+--- game
++++ ref
+@@ -9,5 +9,4 @@
+ bl FN
+ mov #1
+-cmp #0
+ ldr  MMETH Method$System.Collections.Generic.List<Renderer>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator

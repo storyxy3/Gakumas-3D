@@ -1,0 +1,66 @@
+{
+  "sourceCommit": "7b23cffb8091ec70fa529c668cdda7d5ae06406c",
+  "censusNames": 1070,
+  "censusTypes": 207,
+  "assemblyCounts": {
+    "ActorAnimation.Runtime": {
+      "same": 120,
+      "layout": 6,
+      "semantic": 10,
+      "not done": 0
+    },
+    "Qua.Utility": {
+      "same": 7,
+      "layout": 0,
+      "semantic": 0,
+      "not done": 39
+    },
+    "Uguiss-Timeline.Runtime": {
+      "same": 1,
+      "layout": 2,
+      "semantic": 0,
+      "not done": 0
+    },
+    "campus-submodule.Runtime": {
+      "same": 667,
+      "layout": 62,
+      "semantic": 68,
+      "not done": 88
+    }
+  },
+  "total": {
+    "same": 795,
+    "layout": 70,
+    "semantic": 78,
+    "not done": 127
+  },
+  "previousSemanticTransitions": {
+    "semantic": 22,
+    "same": 11,
+    "layout": 3
+  },
+  "missingSignatureCount": 141,
+  "missingNameCount": 127,
+  "sourceStatus": {
+    "reconstructed": 987,
+    "retained and reviewed": 83
+  },
+  "commits": [
+    "7d30652 Restore APK timeline binding lifecycle and panorama camera accessor",
+    "2557f84 Reconstruct actor initialization material updates talk and effect control from APK",
+    "1d6f2f2 Restore rig lifecycle playable builder data storage and actor IK overrides",
+    "4565c5e Reconstruct constraint evaluation quartz rotations bend-roll math and swing chains",
+    "0ae7979 Restore campus rig registration secondary-bone sorting and eye correction",
+    "6be530d Restore crowd animation graph, clip timing and bounds jobs from APK",
+    "7d02c5b Restore equipment controller, receiver, lighting and stream conversion jobs",
+    "98da0eb Restore canvas textures, monitor meshes and crowd timeline controls",
+    "6c62a22 Restore crowd volume binding and virtual actor bone control",
+    "cc2c1ba Restore actor model part registration face correction and prop constraints",
+    "8de3c16 Restore video timeline synchronization and camera-based light anchors",
+    "fff114e Reconstruct laser mesh generation color timing and dependency job",
+    "dfbfb2f Restore BPM light subtitle image and volume timeline adapters",
+    "5c05f9e Restore audience penlights decal-light properties and actor layout",
+    "facb477 Restore equipment timeline sampling bindings and animation data flow",
+    "7b23cff Restore renderer visibility dependencies and final constructor defaults"
+  ]
+}
