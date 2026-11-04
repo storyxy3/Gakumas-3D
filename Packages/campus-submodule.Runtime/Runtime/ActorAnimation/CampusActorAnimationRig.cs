@@ -94,6 +94,8 @@ namespace ActorAnimation
 
         public void UpdateIKCorrectionColliderProperty(Animator animator)
         {
+            if (_job is CampusActorAnimationJob animationJob)
+                animationJob.UpdateIKCorrectionColliderProperty(ref data, animator);
         }
 
         public CampusActorAnimationRig()
