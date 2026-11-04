@@ -142,7 +142,7 @@ namespace Campus.Live.Equipment.Environment
             private quaternion LookCamera(quaternion rotation)
             {
                 float angle = math.atan2(worldPosition.x - cameraPosition.x, worldPosition.z - cameraPosition.z);
-                return math.mul(math.mul(invRoll, quaternion.AxisAngle(new float3(0f, 0f, 1f), angle)), rotation);
+                return math.mul(rotation, math.mul(invRoll, quaternion.AxisAngle(new float3(0f, 0f, 1f), angle)));
             }
         }
 

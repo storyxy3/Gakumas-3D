@@ -1,0 +1,1 @@
+LookCamera at 0xddb7d94 computes invRoll * quaternion.AxisAngle(Z, angle), then left-multiplies by the incoming laser rotation. The existing implementation applied the incoming rotation on the right. At 0xddb7f24-0xddb7f98 the quaternion product's cross-term signs identify rotation * facing. This changes ribbon orientation relative to the beam axis and the camera. See laser.asm.
