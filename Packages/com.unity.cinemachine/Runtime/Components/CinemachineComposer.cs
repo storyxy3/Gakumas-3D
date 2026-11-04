@@ -364,11 +364,12 @@ namespace Cinemachine
                 }
                 else
                 {
-                    if (mFov != lens.FieldOfView)
+                    float fov = lens.IsPhysicalCamera ? lens.FocalLengthToVerticalFOV() : lens.FieldOfView;   // QualiArts: physical lens
+                    if (mFov != fov)
                         recalculate = true;
                     if (recalculate)
                     {
-                        mFov = lens.FieldOfView;
+                        mFov = fov;
                         double radHFOV = 2 * Math.Atan(Math.Tan(mFov * Mathf.Deg2Rad / 2) * lens.Aspect);
                         mFovH = (float)(Mathf.Rad2Deg * radHFOV);
                         mOrthoSizeOverDistance = 0;

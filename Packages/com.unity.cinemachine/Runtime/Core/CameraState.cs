@@ -320,8 +320,8 @@ namespace Cinemachine
             else
             {
                 // Re-interpolate FOV to preserve target composition, if possible
-                float fovA = stateA.Lens.FieldOfView;
-                float fovB = stateB.Lens.FieldOfView;
+                float fovA = stateA.Lens.IsPhysicalCamera ? stateA.Lens.FocalLengthToVerticalFOV() : stateA.Lens.FieldOfView;   // QualiArts: physical lens
+                float fovB = stateB.Lens.IsPhysicalCamera ? stateB.Lens.FocalLengthToVerticalFOV() : stateB.Lens.FieldOfView;
                 if (((stateA.BlendHint | stateB.BlendHint) & BlendHintValue.NoLens) == 0
                     && !state.Lens.Orthographic && !Mathf.Approximately(fovA, fovB))
                 {
@@ -330,6 +330,7 @@ namespace Cinemachine
                             fovA, fovB,
                             Mathf.Max((stateA.ReferenceLookAt - stateA.CorrectedPosition).magnitude, stateA.Lens.NearClipPlane),
                             Mathf.Max((stateB.ReferenceLookAt - stateB.CorrectedPosition).magnitude, stateB.Lens.NearClipPlane), t);
+                    lens.VerticalFOVToFocalLength(lens.FieldOfView);   // QualiArts
                     state.Lens = lens;
 
                     // Make sure we preserve the screen composition through FOV changes

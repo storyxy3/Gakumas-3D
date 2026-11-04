@@ -68,7 +68,7 @@ namespace Cinemachine
         {
             VcamExtraState extra = GetExtraState<VcamExtraState>(vcam);
             if (deltaTime < 0 || !VirtualCamera.PreviousStateIsValid)
-                extra.m_previousFrameZoom = state.Lens.FieldOfView;
+                extra.m_previousFrameZoom = state.Lens.IsPhysicalCamera ? state.Lens.FocalLengthToVerticalFOV() : state.Lens.FieldOfView;   // QualiArts: physical lens
 
             // Set the zoom after the body has been positioned, but before the aim,
             // so that composer can compose using the updated fov.
@@ -97,6 +97,7 @@ namespace Cinemachine
                 }
                 LensSettings lens = state.Lens;
                 lens.FieldOfView = extra.m_previousFrameZoom = Mathf.Clamp(fov, m_MinFOV, m_MaxFOV);
+                lens.VerticalFOVToFocalLength(lens.FieldOfView);   // QualiArts: keep the focal length in step
                 state.Lens = lens;
             }
         }

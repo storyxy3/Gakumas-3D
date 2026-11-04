@@ -90,7 +90,7 @@ namespace Cinemachine
                     if (m_ScaleImpactWithMass)
                         mass *= mRigidBody.mass;
                     if (getVelocity)
-                        vel = -mRigidBody.velocity;
+                        vel = -mRigidBody.linearVelocity;
                 }
                 var rb = other != null ? other.attachedRigidbody : null;
                 if (rb != null)
@@ -98,7 +98,7 @@ namespace Cinemachine
                     if (m_ScaleImpactWithMass)
                         mass *= rb.mass;
                     if (getVelocity)
-                        vel += rb.velocity;
+                        vel += rb.linearVelocity;
                 }
             }
             return mass;
@@ -154,7 +154,7 @@ namespace Cinemachine
                     if (m_ScaleImpactWithMass)
                         mass *= mRigidBody2D.mass;
                     if (getVelocity)
-                        vel = -mRigidBody2D.velocity;
+                        vel = -mRigidBody2D.linearVelocity;
                 }
 
                 var rb2d = other2d != null ? other2d.attachedRigidbody : null;
@@ -164,7 +164,7 @@ namespace Cinemachine
                         mass *= rb2d.mass;
                     if (getVelocity)
                     {
-                        Vector3 v = rb2d.velocity;
+                        Vector3 v = rb2d.linearVelocity;
                         vel += v;
                     }
                 }

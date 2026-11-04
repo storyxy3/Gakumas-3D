@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 #if CINEMACHINE_HDRP || CINEMACHINE_LWRP_7_0_0
@@ -214,14 +215,29 @@ namespace Cinemachine
 
             // We check in after the physics system has had a chance to move things
             mPhysicsCoroutine = StartCoroutine(AfterPhysics());
+            SceneManager.sceneLoaded += OnSceneLoaded;       // game 3.5.3
+            SceneManager.sceneUnloaded += OnSceneUnloaded;
         }
 
         private void OnDisable()
         {
+            SceneManager.sceneLoaded -= OnSceneLoaded;       // game 3.5.3
+            SceneManager.sceneUnloaded -= OnSceneUnloaded;
             CinemachineDebug.OnGUIHandlers -= OnGuiHandler;
             CinemachineCore.Instance.RemoveActiveBrain(this);
             mFrameStack.Clear();
             StopCoroutine(mPhysicsCoroutine);
+        }
+
+        // game 3.5.3: update the cameras immediately when scenes change (unconditional, unlike later upstream releases)
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            ManualUpdate();
+        }
+
+        void OnSceneUnloaded(Scene scene)
+        {
+            ManualUpdate();
         }
 
         private void Start()
@@ -499,7 +515,7 @@ namespace Cinemachine
         // Current Brain State - result of all frames.  Blend camB is "current" camera always
         CinemachineBlend mCurrentLiveCameras = new CinemachineBlend(null, null, null, 0, 0);
         // TODO(qa-recon): game static storage; leave initializer unset.
-        private static readonly AnimationCurve mDefaultLinearAnimationCurve;
+        private static readonly AnimationCurve mDefaultLinearAnimationCurve = AnimationCurve.Linear(0, 0, 1, 1);
 
 
         /// <summary>
@@ -533,7 +549,7 @@ namespace Cinemachine
             frame.deltaTimeOverride = deltaTime;
             frame.blend.CamA = camA;
             frame.blend.CamB = camB;
-            frame.blend.BlendCurve = AnimationCurve.Linear(0, 0, 1, 1);
+            frame.blend.BlendCurve = mDefaultLinearAnimationCurve;
             frame.blend.Duration = 1;
             frame.blend.TimeInBlend = weightB;
 
@@ -809,7 +825,6 @@ namespace Cinemachine
                 {
                     cam.nearClipPlane = state.Lens.NearClipPlane;
                     cam.farClipPlane = state.Lens.FarClipPlane;
-                    cam.fieldOfView = state.Lens.FieldOfView;
                     if (cam.orthographic)
                         cam.orthographicSize = state.Lens.OrthographicSize;
 #if UNITY_2018_2_OR_NEWER
@@ -817,6 +832,11 @@ namespace Cinemachine
                     {
                         cam.usePhysicalProperties = state.Lens.IsPhysicalCamera;
                         cam.lensShift = state.Lens.LensShift;
+                        // game 3.5.3: a physical camera gets the focal length, otherwise the field of view
+                        if (state.Lens.IsPhysicalCamera)
+                            cam.focalLength = state.Lens.FocalLength;
+                        else
+                            cam.fieldOfView = state.Lens.FieldOfView;
                     }
     #if CINEMACHINE_HDRP
                     if (state.Lens.IsPhysicalCamera)

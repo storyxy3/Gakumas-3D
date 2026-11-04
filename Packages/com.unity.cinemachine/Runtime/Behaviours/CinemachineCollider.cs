@@ -779,7 +779,7 @@ namespace Cinemachine
                 }
                 else
                 {
-                    float fov = state.Lens.FieldOfView / 2;
+                    float fov = state.Lens.IsPhysicalCamera ? state.Lens.FocalLengthToVerticalFOV() : state.Lens.FieldOfView / 2;   // QualiArts (physical FOV is not halved, as in the game)
                     float angle = UnityVectorExtensions.Angle(dir.ProjectOntoPlane(Vector3.right), Vector3.forward);
                     if (angle > fov)
                         return true;

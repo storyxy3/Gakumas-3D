@@ -429,6 +429,8 @@ namespace Cinemachine
                 m_Predictor.Reset();
                 m_PreviousCameraPosition = curState.RawPosition;
                 m_prevFOV = lens.Orthographic ? lens.OrthographicSize : lens.FieldOfView;
+                if (!lens.Orthographic && lens.IsPhysicalCamera)
+                    m_prevFOV = lens.FocalLengthToVerticalFOV();   // QualiArts: physical lens
                 m_prevRotation = curState.RawOrientation;
                 if (!InheritingPosition && m_CenterOnActivate)
                 {
@@ -473,6 +475,7 @@ namespace Cinemachine
             float targetDistance = m_CameraDistance;
             bool isOrthographic = lens.Orthographic;
             float targetHeight = isGroupFraming ? GetTargetHeight(LastBounds.size / m_GroupFramingSize) : 0;
+            float fieldOfView = lens.IsPhysicalCamera ? lens.FocalLengthToVerticalFOV() : lens.FieldOfView;   // QualiArts: physical lens
             targetHeight = Mathf.Max(targetHeight, kMinimumGroupSize);
             if (!isOrthographic && isGroupFraming)
             {
@@ -486,7 +489,7 @@ namespace Cinemachine
                 {
                     // What distance from near edge would be needed to get the adjusted
                     // target height, at the current FOV
-                    targetDistance = targetHeight / (2f * Mathf.Tan(lens.FieldOfView * Mathf.Deg2Rad / 2f));
+                    targetDistance = targetHeight / (2f * Mathf.Tan(fieldOfView * Mathf.Deg2Rad / 2f));
 
                     // Clamp to respect min/max distance settings to the near surface of the bounds
                     targetDistance = Mathf.Clamp(targetDistance, m_MinimumDistance, m_MaximumDistance);
@@ -527,7 +530,7 @@ namespace Cinemachine
             // Move along the XY plane
             float screenSize = lens.Orthographic 
                 ? lens.OrthographicSize 
-                : Mathf.Tan(0.5f * lens.FieldOfView * Mathf.Deg2Rad) * (targetZ - cameraOffset.z);
+                : Mathf.Tan(0.5f * fieldOfView * Mathf.Deg2Rad) * (targetZ - cameraOffset.z);
             Rect softGuideOrtho = ScreenToOrtho(SoftGuideRect, screenSize, lens.Aspect);
             if (!previousStateIsValid)
             {
@@ -590,6 +593,7 @@ namespace Cinemachine
                     m_prevFOV = targetFOV;
 
                     lens.FieldOfView = targetFOV;
+                    lens.VerticalFOVToFocalLength(targetFOV);   // QualiArts
                     curState.Lens = lens;
                 }
             }

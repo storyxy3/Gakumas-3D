@@ -424,7 +424,7 @@ namespace Cinemachine
                     velocity = FollowTargetPosition - mLastTargetPosition;
                     break;
                 case Heading.HeadingDefinition.Velocity:
-                    velocity = mTargetRigidBody.velocity;
+                    velocity = mTargetRigidBody.linearVelocity;   // Unity 6 API (as compiled in the game)
                     break;
                 case Heading.HeadingDefinition.TargetForward:
                     velocity = FollowTargetRotation * Vector3.forward;

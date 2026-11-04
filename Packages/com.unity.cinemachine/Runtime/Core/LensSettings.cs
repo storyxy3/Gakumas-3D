@@ -64,8 +64,18 @@ namespace Cinemachine
         [Tooltip("Focal Length for physical camera")]
         public float FocalLength;
 
-        public void VerticalFOVToFocalLength(float fov) { }
-        public float FocalLengthToVerticalFOV() { return default(float); }
+        // QualiArts addition (game 3.5.3): physical focal length kept in step with the vertical FOV.
+        public void VerticalFOVToFocalLength(float fov)
+        {
+            FocalLength = SensorSize.y * 0.5f / Mathf.Tan(fov * Mathf.Deg2Rad * 0.5f);
+        }
+
+        public float FocalLengthToVerticalFOV()
+        {
+            if (FocalLength < 0.0001f)
+                return 180f;
+            return Mathf.Atan(SensorSize.y * 0.5f / FocalLength) * Mathf.Rad2Deg * 2f;
+        }
 
 
         /// <summary>
@@ -126,6 +136,7 @@ namespace Cinemachine
 #if UNITY_2018_2_OR_NEWER
                 lens.LensShift = fromCamera.lensShift;
 #endif
+                lens.FocalLength = fromCamera.focalLength;
                 lens.SnapshotCameraReadOnlyProperties(fromCamera);
 
 #if CINEMACHINE_HDRP
@@ -205,6 +216,7 @@ namespace Cinemachine
             NearClipPlane = nearClip;
             FarClipPlane = farClip;
             Dutch = dutch;
+            VerticalFOVToFocalLength(fov);
 
 #if CINEMACHINE_HDRP
             Iso = 200;
