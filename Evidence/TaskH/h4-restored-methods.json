@@ -860,8 +860,8 @@
   {
     "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc",
     "sourceStatus": "reconstructed",
-    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt",
-    "reason": "Waist Calc verified against APK. Quaternion inverse/normalization and tuple return differ only in native layout."
+    "evidence": "h4-remaining-quartz.disasm.txt; h4-actor-parameter-final-methods.json",
+    "reason": "APK static Vector3 field offsets identify Vector3.down as the FromToRotation source axis. Corrected the earlier Vector3.back translation. The final native comparison remains layout-only because static field offsets are normalized by the comparator."
   },
   {
     "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$Execute",
@@ -1678,5 +1678,95 @@
     "sourceStatus": "reconstructed",
     "evidence": "h4-decal-final-methods.json; h4-decal-native-review.txt; h4-decal-params-final-review.txt; h4-decal-params.disasm.txt; h4-decal-draw.disasm.txt",
     "reason": "APK negative-90-degree X rotation is restored. APK scalar trigonometric construction is folded to (-0.7071067690849304,0,0,0.7071067690849304), while rebuilt EulerXYZ uses vector trigonometric helper calls and different lazy initialization."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$Setup",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$UpdateOutlineCommand",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$Execute",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$CalcLightVector",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$UpdateActorCommand",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$UpdateVirtualEffectCommand",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$.cctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$Create",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$AddRenderPasses",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterSettings$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusLitActor$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.CampusLitColorParameter$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
+  },
+  {
+    "method": "Campus.Rendering.VegetationParameter$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-actor-parameter-final-methods.json; h4-actor-command.disasm.txt; h4-render-final-review.txt",
+    "reason": "APK volume-derived actor/vegetation/virtual-effect shader upload, outline focal-length scaling, renderer feature entry point or parameter defaults restored. UpdateActorCommand differs in register/stack layout. CampusLitActor constructor retains an extra Vector2.zero type initialization and materializes a ColorParameter boolean differently."
   }
 ]

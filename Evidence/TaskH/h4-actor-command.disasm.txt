@@ -1,0 +1,905 @@
+=== Campus.Rendering.CampusActorParameterPass$$UpdateActorCommand @ 0xddcf4d8 (903 insns)
+    void Campus_Rendering_CampusActorParameterPass__UpdateActorCommand (UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_VolumeStack_o* stack, UnityEngine_Transform_o* cameraTransform, const MethodInfo* method);
+  0ddcf4d8  sub     sp, sp, #0x120
+  0ddcf4dc  stp     d11, d10, [sp, #0xa0]
+  0ddcf4e0  stp     d9, d8, [sp, #0xb0]
+  0ddcf4e4  stp     x29, x30, [sp, #0xc0]
+  0ddcf4e8  stp     x28, x27, [sp, #0xd0]
+  0ddcf4ec  stp     x26, x25, [sp, #0xe0]
+  0ddcf4f0  stp     x24, x23, [sp, #0xf0]
+  0ddcf4f4  stp     x22, x21, [sp, #0x100]
+  0ddcf4f8  stp     x20, x19, [sp, #0x110]
+  0ddcf4fc  adrp    x22, #0xf43b000
+  0ddcf500  mov     x21, x2
+  0ddcf504  mov     x20, x1
+  0ddcf508  ldrb    w8, [x22, #0xd60]
+  0ddcf50c  mov     x19, x0
+  0ddcf510  tbnz    w8, #0, #0xddcf5a0
+  0ddcf514  adrp    x0, #0xebc2000
+  0ddcf518  ldr     x0, [x0, #0xb08]  ; META Campus.Rendering.CampusActorParameterPass_TypeInfo
+  0ddcf51c  bl      #0x63cee78
+  0ddcf520  adrp    x0, #0xea6a000
+  0ddcf524  ldr     x0, [x0, #0xc70]  ; META UnityEngine.Rendering.CoreUtils_TypeInfo
+  0ddcf528  bl      #0x63cee78
+  0ddcf52c  adrp    x0, #0xea65000
+  0ddcf530  ldr     x0, [x0, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0ddcf534  bl      #0x63cee78
+  0ddcf538  adrp    x0, #0xeba3000
+  0ddcf53c  ldr     x0, [x0, #0xef8]  ; META VL.Rendering.VLLightProbeUtility_TypeInfo
+  0ddcf540  bl      #0x63cee78
+  0ddcf544  adrp    x0, #0xeba4000
+  0ddcf548  ldr     x0, [x0, #0x7b0]  ; MMETH Method$UnityEngine.Rendering.VolumeParameter<Cubemap>.op_Inequality()
+  0ddcf54c  bl      #0x63cee78
+  0ddcf550  adrp    x0, #0xebc6000
+  0ddcf554  ldr     x0, [x0, #0xc38]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<CampusLitActor>()
+  0ddcf558  bl      #0x63cee78
+  0ddcf55c  adrp    x0, #0xebc6000
+  0ddcf560  ldr     x0, [x0, #0xc40]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<CampusLitColorParameter>()
+  0ddcf564  bl      #0x63cee78
+  0ddcf568  adrp    x0, #0xeba4000
+  0ddcf56c  ldr     x0, [x0, #0x7b8]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLActorParameter>()
+  0ddcf570  bl      #0x63cee78
+  0ddcf574  adrp    x0, #0xebc6000
+  0ddcf578  ldr     x0, [x0, #0xc48]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLGlobalLightProbe>()
+  0ddcf57c  bl      #0x63cee78
+  0ddcf580  adrp    x0, #0xeba4000
+  0ddcf584  ldr     x0, [x0, #0x7c8]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLLightmapVolume>()
+  0ddcf588  bl      #0x63cee78
+  0ddcf58c  adrp    x0, #0xebc6000
+  0ddcf590  ldr     x0, [x0, #0xc50]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VegetationParameter>()
+  0ddcf594  bl      #0x63cee78
+  0ddcf598  mov     w8, #1
+  0ddcf59c  strb    w8, [x22, #0xd60]
+  0ddcf5a0  cbz     x20, #0xddd02f0
+  0ddcf5a4  adrp    x8, #0xeba4000
+  0ddcf5a8  adrp    x22, #0xea6a000
+  0ddcf5ac  adrp    x27, #0xea65000
+  0ddcf5b0  ldr     x8, [x8, #0x7b8]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLActorParameter>()
+  0ddcf5b4  ldr     x22, [x22, #0xc70]  ; META UnityEngine.Rendering.CoreUtils_TypeInfo
+  0ddcf5b8  ldr     x27, [x27, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0ddcf5bc  mov     x0, x20
+  0ddcf5c0  ldr     x1, [x8]
+  0ddcf5c4  bl      #0x9493c1c  ; -> UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+  0ddcf5c8  ldr     x8, [x22]
+  0ddcf5cc  mov     x24, x0
+  0ddcf5d0  ldr     w9, [x8, #0xe4]
+  0ddcf5d4  cbnz    w9, #0xddcf5e0
+  0ddcf5d8  mov     x0, x8
+  0ddcf5dc  bl      #0x63ceff4
+  0ddcf5e0  mov     x0, xzr
+  0ddcf5e4  bl      #0xd7a4d00  ; -> UnityEngine.Rendering.CoreUtils$$get_blackCubeTexture
+  0ddcf5e8  mov     x23, x0
+  0ddcf5ec  mov     x0, xzr
+  0ddcf5f0  bl      #0xd7a4d00  ; -> UnityEngine.Rendering.CoreUtils$$get_blackCubeTexture
+  0ddcf5f4  ldr     x8, [x27]
+  0ddcf5f8  mov     x22, x0
+  0ddcf5fc  ldr     w9, [x8, #0xe4]
+  0ddcf600  cbnz    w9, #0xddcf60c
+  0ddcf604  mov     x0, x8
+  0ddcf608  bl      #0x63ceff4
+  0ddcf60c  adrp    x26, #0xebc2000
+  0ddcf610  mov     x0, x24
+  0ddcf614  mov     x1, xzr
+  0ddcf618  ldr     x26, [x26, #0xb08]  ; META Campus.Rendering.CampusActorParameterPass_TypeInfo
+  0ddcf61c  mov     x2, xzr
+  0ddcf620  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcf624  tbz     w0, #0, #0xddcfb9c
+  0ddcf628  ldr     x0, [x26]
+  0ddcf62c  ldr     w8, [x0, #0xe4]
+  0ddcf630  cbnz    w8, #0xddcf63c
+  0ddcf634  bl      #0x63ceff4
+  0ddcf638  ldr     x0, [x26]
+  0ddcf63c  cbz     x24, #0xddd02f0
+  0ddcf640  ldr     x8, [x24, #0x38]
+  0ddcf644  cbz     x8, #0xddd02f0
+  0ddcf648  ldr     x9, [x0, #0xb8]
+  0ddcf64c  ldr     x10, [x8]
+  0ddcf650  mov     x0, x8
+  0ddcf654  ldr     w25, [x9]
+  0ddcf658  ldr     x9, [x10, #0x218]
+  0ddcf65c  ldr     x1, [x10, #0x220]
+  0ddcf660  blr     x9
+  0ddcf664  cbz     x19, #0xddd02f0
+  0ddcf668  mov     x0, x19
+  0ddcf66c  mov     w1, w25
+  0ddcf670  mov     x2, xzr
+  0ddcf674  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcf678  ldr     x0, [x24, #0x40]
+  0ddcf67c  cbz     x0, #0xddd02f0
+  0ddcf680  ldr     x8, [x0]
+  0ddcf684  ldr     x9, [x8, #0x218]
+  0ddcf688  ldr     x1, [x8, #0x220]
+  0ddcf68c  blr     x9
+  0ddcf690  ldr     x8, [x24, #0x48]
+  0ddcf694  cbz     x8, #0xddd02f0
+  0ddcf698  ldr     x9, [x8]
+  0ddcf69c  mov     w25, w0
+  0ddcf6a0  mov     x0, x8
+  0ddcf6a4  ldr     x10, [x9, #0x218]
+  0ddcf6a8  ldr     x1, [x9, #0x220]
+  0ddcf6ac  blr     x10
+  0ddcf6b0  cbz     x21, #0xddd02f0
+  0ddcf6b4  mov     x0, x21
+  0ddcf6b8  mov     x1, xzr
+  0ddcf6bc  fmov    s8, s0
+  0ddcf6c0  fmov    s9, s1
+  0ddcf6c4  bl      #0xd9ef344  ; -> UnityEngine.Transform$$get_eulerAngles
+  0ddcf6c8  movi    d0, #0000000000000000
+  0ddcf6cc  fmov    s1, #1.00000000
+  0ddcf6d0  cmp     w25, #1
+  0ddcf6d4  cset    w0, eq
+  0ddcf6d8  fcsel   s10, s1, s0, eq
+  0ddcf6dc  fmov    s0, s8
+  0ddcf6e0  fmov    s1, s9
+  0ddcf6e4  bl      #0xddd05e4  ; -> Campus.Rendering.CampusActorParameterPass$$CalcLightVector
+  0ddcf6e8  ldr     x8, [x26]
+  0ddcf6ec  fmov    s3, s10
+  0ddcf6f0  mov     x0, x19
+  0ddcf6f4  mov     x2, xzr
+  0ddcf6f8  ldr     x8, [x8, #0xb8]
+  0ddcf6fc  ldr     w1, [x8, #4]
+  0ddcf700  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddcf704  ldr     x0, [x26]
+  0ddcf708  ldr     w8, [x0, #0xe4]
+  0ddcf70c  cbnz    w8, #0xddcf718
+  0ddcf710  bl      #0x63ceff4
+  0ddcf714  ldr     x0, [x26]
+  0ddcf718  ldr     x8, [x24, #0x50]
+  0ddcf71c  cbz     x8, #0xddd02f0
+  0ddcf720  ldr     x9, [x0, #0xb8]
+  0ddcf724  ldr     x10, [x8]
+  0ddcf728  mov     x0, x8
+  0ddcf72c  ldr     w25, [x9, #0x10]
+  0ddcf730  ldr     x9, [x10, #0x218]
+  0ddcf734  ldr     x1, [x10, #0x220]
+  0ddcf738  blr     x9
+  0ddcf73c  ldr     x0, [x24, #0x58]
+  0ddcf740  cbz     x0, #0xddd02f0
+  0ddcf744  ldr     x8, [x0]
+  0ddcf748  fmov    s8, s0
+  0ddcf74c  ldr     x9, [x8, #0x218]
+  0ddcf750  ldr     x1, [x8, #0x220]
+  0ddcf754  blr     x9
+  0ddcf758  ldr     x0, [x24, #0x70]
+  0ddcf75c  cbz     x0, #0xddd02f0
+  0ddcf760  ldr     x8, [x0]
+  0ddcf764  fmov    s9, s0
+  0ddcf768  ldr     x9, [x8, #0x218]
+  0ddcf76c  ldr     x1, [x8, #0x220]
+  0ddcf770  blr     x9
+  0ddcf774  fmov    s2, s0
+  0ddcf778  movi    d3, #0000000000000000
+  0ddcf77c  mov     x0, x19
+  0ddcf780  fmov    s0, s8
+  0ddcf784  fmov    s1, s9
+  0ddcf788  mov     w1, w25
+  0ddcf78c  mov     x2, xzr
+  0ddcf790  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddcf794  ldr     x0, [x24, #0x60]
+  0ddcf798  cbz     x0, #0xddd02f0
+  0ddcf79c  ldr     x8, [x26]
+  0ddcf7a0  ldr     x9, [x0]
+  0ddcf7a4  ldr     x8, [x8, #0xb8]
+  0ddcf7a8  ldr     x1, [x9, #0x220]
+  0ddcf7ac  ldr     w25, [x8, #0x14]
+  0ddcf7b0  ldr     x8, [x9, #0x218]
+  0ddcf7b4  blr     x8
+  0ddcf7b8  mov     x0, x19
+  0ddcf7bc  mov     w1, w25
+  0ddcf7c0  mov     x2, xzr
+  0ddcf7c4  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcf7c8  ldr     x0, [x24, #0x68]
+  0ddcf7cc  cbz     x0, #0xddd02f0
+  0ddcf7d0  ldr     x8, [x26]
+  0ddcf7d4  ldr     x9, [x0]
+  0ddcf7d8  ldr     x8, [x8, #0xb8]
+  0ddcf7dc  ldr     x1, [x9, #0x220]
+  0ddcf7e0  ldr     w25, [x8, #0x18]
+  0ddcf7e4  ldr     x8, [x9, #0x218]
+  0ddcf7e8  blr     x8
+  0ddcf7ec  mov     x0, x19
+  0ddcf7f0  mov     w1, w25
+  0ddcf7f4  mov     x2, xzr
+  0ddcf7f8  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcf7fc  ldr     x0, [x24, #0x78]
+  0ddcf800  cbz     x0, #0xddd02f0
+  0ddcf804  ldr     x8, [x0]
+  0ddcf808  ldr     x9, [x8, #0x218]
+  0ddcf80c  ldr     x1, [x8, #0x220]
+  0ddcf810  blr     x9
+  0ddcf814  adrp    x8, #0x276e000
+  0ddcf818  mov     x0, xzr
+  0ddcf81c  ldr     s2, [x8, #0xb44]
+  0ddcf820  fmul    s3, s1, s2
+  0ddcf824  fmul    s1, s0, s2
+  0ddcf828  movi    d2, #0000000000000000
+  0ddcf82c  fmov    s0, s3
+  0ddcf830  bl      #0xd9ca804  ; -> UnityEngine.Quaternion$$Internal_FromEulerRad
+  0ddcf834  fmov    s8, s0
+  0ddcf838  fmov    s9, s1
+  0ddcf83c  adrp    x25, #0xf405000
+  0ddcf840  fmov    s10, s2
+  0ddcf844  fmov    s11, s3
+  0ddcf848  ldrb    w8, [x25, #0x7c9]
+  0ddcf84c  cbnz    w8, #0xddcf864
+  0ddcf850  adrp    x0, #0xea67000
+  0ddcf854  ldr     x0, [x0, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0ddcf858  bl      #0x63cee78
+  0ddcf85c  mov     w8, #1
+  0ddcf860  strb    w8, [x25, #0x7c9]
+  0ddcf864  adrp    x8, #0xea67000
+  0ddcf868  fmov    s0, s8
+  0ddcf86c  fmov    s1, s9
+  0ddcf870  ldr     x8, [x8, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0ddcf874  fmov    s2, s10
+  0ddcf878  fmov    s3, s11
+  0ddcf87c  mov     x0, xzr
+  0ddcf880  ldr     x8, [x8]
+  0ddcf884  ldr     x8, [x8, #0xb8]
+  0ddcf888  ldp     s4, s5, [x8, #0x48]
+  0ddcf88c  ldr     s6, [x8, #0x50]
+  0ddcf890  bl      #0xd9cac8c  ; -> UnityEngine.Quaternion$$op_Multiply
+  0ddcf894  ldr     x0, [x24, #0x88]
+  0ddcf898  cbz     x0, #0xddd02f0
+  0ddcf89c  ldr     x8, [x26]
+  0ddcf8a0  ldr     x9, [x0]
+  0ddcf8a4  fmov    s8, s0
+  0ddcf8a8  fmov    s9, s1
+  0ddcf8ac  fmov    s10, s2
+  0ddcf8b0  ldr     x8, [x8, #0xb8]
+  0ddcf8b4  ldr     x1, [x9, #0x220]
+  0ddcf8b8  ldr     w25, [x8, #8]
+  0ddcf8bc  ldr     x8, [x9, #0x218]
+  0ddcf8c0  blr     x8
+  0ddcf8c4  fmov    s3, s0
+  0ddcf8c8  fmov    s0, s8
+  0ddcf8cc  mov     x0, x19
+  0ddcf8d0  fmov    s1, s9
+  0ddcf8d4  fmov    s2, s10
+  0ddcf8d8  mov     w1, w25
+  0ddcf8dc  mov     x2, xzr
+  0ddcf8e0  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddcf8e4  ldr     x0, [x24, #0x90]
+  0ddcf8e8  cbz     x0, #0xddd02f0
+  0ddcf8ec  ldr     x8, [x0]
+  0ddcf8f0  ldr     x9, [x8, #0x218]
+  0ddcf8f4  ldr     x1, [x8, #0x220]
+  0ddcf8f8  blr     x9
+  0ddcf8fc  ldr     x0, [x24, #0x80]
+  0ddcf900  cbz     x0, #0xddd02f0
+  0ddcf904  ldr     x8, [x0]
+  0ddcf908  fmov    s8, s0
+  0ddcf90c  fmov    s9, s1
+  0ddcf910  fmov    s10, s2
+  0ddcf914  ldr     x9, [x8, #0x218]
+  0ddcf918  ldr     x1, [x8, #0x220]
+  0ddcf91c  blr     x9
+  0ddcf920  ldr     x8, [x26]
+  0ddcf924  fmov    s3, s0
+  0ddcf928  fmov    s0, s8
+  0ddcf92c  fmov    s1, s9
+  0ddcf930  fmov    s2, s10
+  0ddcf934  mov     x0, x19
+  0ddcf938  ldr     x8, [x8, #0xb8]
+  0ddcf93c  mov     x2, xzr
+  0ddcf940  ldr     w1, [x8, #0xc]
+  0ddcf944  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcf948  ldr     x0, [x24, #0x98]
+  0ddcf94c  cbz     x0, #0xddd02f0
+  0ddcf950  ldr     x8, [x26]
+  0ddcf954  ldr     x9, [x0]
+  0ddcf958  ldr     x8, [x8, #0xb8]
+  0ddcf95c  ldr     x1, [x9, #0x220]
+  0ddcf960  ldr     w25, [x8, #0x2c]
+  0ddcf964  ldr     x8, [x9, #0x218]
+  0ddcf968  blr     x8
+  0ddcf96c  ldr     x0, [x24, #0xa0]
+  0ddcf970  cbz     x0, #0xddd02f0
+  0ddcf974  ldr     x8, [x0]
+  0ddcf978  fmov    s8, s0
+  0ddcf97c  ldr     x9, [x8, #0x218]
+  0ddcf980  ldr     x1, [x8, #0x220]
+  0ddcf984  blr     x9
+  0ddcf988  ldr     x0, [x24, #0xa8]
+  0ddcf98c  cbz     x0, #0xddd02f0
+  0ddcf990  ldr     x8, [x0]
+  0ddcf994  fmov    s9, s0
+  0ddcf998  ldr     x9, [x8, #0x218]
+  0ddcf99c  ldr     x1, [x8, #0x220]
+  0ddcf9a0  blr     x9
+  0ddcf9a4  fmov    s2, s0
+  0ddcf9a8  movi    d3, #0000000000000000
+  0ddcf9ac  mov     x0, x19
+  0ddcf9b0  fmov    s0, s8
+  0ddcf9b4  fmov    s1, s9
+  0ddcf9b8  mov     w1, w25
+  0ddcf9bc  mov     x2, xzr
+  0ddcf9c0  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddcf9c4  ldr     x0, [x24, #0xb0]
+  0ddcf9c8  cbz     x0, #0xddd02f0
+  0ddcf9cc  ldr     x8, [x26]
+  0ddcf9d0  ldr     x9, [x0]
+  0ddcf9d4  ldr     x8, [x8, #0xb8]
+  0ddcf9d8  ldr     x1, [x9, #0x220]
+  0ddcf9dc  ldr     w25, [x8, #0x38]
+  0ddcf9e0  ldr     x8, [x9, #0x218]
+  0ddcf9e4  blr     x8
+  0ddcf9e8  fmov    s1, #1.00000000
+  0ddcf9ec  mov     x0, x19
+  0ddcf9f0  mov     w1, w25
+  0ddcf9f4  mov     x2, xzr
+  0ddcf9f8  fadd    s0, s0, s1
+  0ddcf9fc  bl      #0xda064b8  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalFloat
+  0ddcfa00  ldr     x0, [x24, #0xb8]
+  0ddcfa04  cbz     x0, #0xddd02f0
+  0ddcfa08  ldr     x8, [x26]
+  0ddcfa0c  ldr     x9, [x0]
+  0ddcfa10  ldr     x8, [x8, #0xb8]
+  0ddcfa14  ldr     x1, [x9, #0x220]
+  0ddcfa18  ldr     w25, [x8, #0x3c]
+  0ddcfa1c  ldr     x8, [x9, #0x218]
+  0ddcfa20  blr     x8
+  0ddcfa24  mov     x0, x19
+  0ddcfa28  mov     w1, w25
+  0ddcfa2c  mov     x2, xzr
+  0ddcfa30  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcfa34  adrp    x28, #0xeba4000
+  0ddcfa38  mov     x1, xzr
+  0ddcfa3c  ldr     x28, [x28, #0x7b0]  ; MMETH Method$UnityEngine.Rendering.VolumeParameter<Cubemap>.op_Inequality()
+  0ddcfa40  ldr     x0, [x24, #0xc0]
+  0ddcfa44  ldr     x2, [x28]
+  0ddcfa48  bl      #0xc03b1b4  ; -> UnityEngine.Rendering.VolumeParameter<object>$$op_Inequality
+  0ddcfa4c  tbz     w0, #0, #0xddcfab0
+  0ddcfa50  ldr     x0, [x24, #0xc0]
+  0ddcfa54  cbz     x0, #0xddd02f0
+  0ddcfa58  ldr     x8, [x0]
+  0ddcfa5c  ldr     x9, [x8, #0x218]
+  0ddcfa60  ldr     x1, [x8, #0x220]
+  0ddcfa64  blr     x9
+  0ddcfa68  ldr     x8, [x27]
+  0ddcfa6c  mov     x25, x0
+  0ddcfa70  ldr     w9, [x8, #0xe4]
+  0ddcfa74  cbnz    w9, #0xddcfa80
+  0ddcfa78  mov     x0, x8
+  0ddcfa7c  bl      #0x63ceff4
+  0ddcfa80  mov     x0, x25
+  0ddcfa84  mov     x1, xzr
+  0ddcfa88  mov     x2, xzr
+  0ddcfa8c  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcfa90  tbz     w0, #0, #0xddcfab0
+  0ddcfa94  ldr     x0, [x24, #0xc0]
+  0ddcfa98  cbz     x0, #0xddd02f0
+  0ddcfa9c  ldr     x8, [x0]
+  0ddcfaa0  ldr     x9, [x8, #0x218]
+  0ddcfaa4  ldr     x1, [x8, #0x220]
+  0ddcfaa8  blr     x9
+  0ddcfaac  mov     x23, x0
+  0ddcfab0  ldr     x0, [x24, #0xd0]
+  0ddcfab4  ldr     x2, [x28]
+  0ddcfab8  mov     x1, xzr
+  0ddcfabc  bl      #0xc03b1b4  ; -> UnityEngine.Rendering.VolumeParameter<object>$$op_Inequality
+  0ddcfac0  tbz     w0, #0, #0xddcfb24
+  0ddcfac4  ldr     x0, [x24, #0xd0]
+  0ddcfac8  cbz     x0, #0xddd02f0
+  0ddcfacc  ldr     x8, [x0]
+  0ddcfad0  ldr     x9, [x8, #0x218]
+  0ddcfad4  ldr     x1, [x8, #0x220]
+  0ddcfad8  blr     x9
+  0ddcfadc  ldr     x8, [x27]
+  0ddcfae0  mov     x25, x0
+  0ddcfae4  ldr     w9, [x8, #0xe4]
+  0ddcfae8  cbnz    w9, #0xddcfaf4
+  0ddcfaec  mov     x0, x8
+  0ddcfaf0  bl      #0x63ceff4
+  0ddcfaf4  mov     x0, x25
+  0ddcfaf8  mov     x1, xzr
+  0ddcfafc  mov     x2, xzr
+  0ddcfb00  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcfb04  tbz     w0, #0, #0xddcfb24
+  0ddcfb08  ldr     x0, [x24, #0xd0]
+  0ddcfb0c  cbz     x0, #0xddd02f0
+  0ddcfb10  ldr     x8, [x0]
+  0ddcfb14  ldr     x9, [x8, #0x218]
+  0ddcfb18  ldr     x1, [x8, #0x220]
+  0ddcfb1c  blr     x9
+  0ddcfb20  mov     x22, x0
+  0ddcfb24  ldr     x0, [x26]
+  0ddcfb28  ldr     w8, [x0, #0xe4]
+  0ddcfb2c  cbnz    w8, #0xddcfb34
+  0ddcfb30  bl      #0x63ceff4
+  0ddcfb34  ldr     x0, [x24, #0xc8]
+  0ddcfb38  cbz     x0, #0xddd02f0
+  0ddcfb3c  ldr     x8, [x26]
+  0ddcfb40  ldr     x9, [x0]
+  0ddcfb44  ldr     x8, [x8, #0xb8]
+  0ddcfb48  ldr     x1, [x9, #0x220]
+  0ddcfb4c  ldr     w25, [x8, #0x20]
+  0ddcfb50  ldr     x8, [x9, #0x218]
+  0ddcfb54  blr     x8
+  0ddcfb58  mov     x0, x19
+  0ddcfb5c  mov     w1, w25
+  0ddcfb60  mov     x2, xzr
+  0ddcfb64  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcfb68  ldr     x0, [x24, #0xd8]
+  0ddcfb6c  cbz     x0, #0xddd02f0
+  0ddcfb70  ldr     x8, [x26]
+  0ddcfb74  ldr     x9, [x0]
+  0ddcfb78  ldr     x8, [x8, #0xb8]
+  0ddcfb7c  ldr     x1, [x9, #0x220]
+  0ddcfb80  ldr     w24, [x8, #0x28]
+  0ddcfb84  ldr     x8, [x9, #0x218]
+  0ddcfb88  blr     x8
+  0ddcfb8c  mov     x0, x19
+  0ddcfb90  mov     w1, w24
+  0ddcfb94  mov     x2, xzr
+  0ddcfb98  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcfb9c  ldr     x0, [x26]
+  0ddcfba0  ldr     w8, [x0, #0xe4]
+  0ddcfba4  cbnz    w8, #0xddcfbb0
+  0ddcfba8  bl      #0x63ceff4
+  0ddcfbac  ldr     x0, [x26]
+  0ddcfbb0  ldr     x8, [x0, #0xb8]
+  0ddcfbb4  mov     x0, x23
+  0ddcfbb8  mov     x1, xzr
+  0ddcfbbc  ldr     w24, [x8, #0x1c]
+  0ddcfbc0  add     x8, sp, #0x78
+  0ddcfbc4  bl      #0xda02318  ; -> UnityEngine.Rendering.RenderTargetIdentifier$$op_Implicit
+  0ddcfbc8  cbz     x19, #0xddd02f0
+  0ddcfbcc  ldur    q0, [sp, #0x78]
+  0ddcfbd0  ldur    q1, [sp, #0x88]
+  0ddcfbd4  adrp    x25, #0xeba4000
+  0ddcfbd8  ldr     x8, [sp, #0x98]
+  0ddcfbdc  add     x2, sp, #0x50
+  0ddcfbe0  mov     x0, x19
+  0ddcfbe4  str     q0, [sp, #0x50]
+  0ddcfbe8  mov     w1, w24
+  0ddcfbec  mov     x3, xzr
+  0ddcfbf0  ldr     x25, [x25, #0x7c8]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLLightmapVolume>()
+  0ddcfbf4  str     q1, [sp, #0x60]
+  0ddcfbf8  str     x8, [sp, #0x70]
+  0ddcfbfc  bl      #0xda0ae34  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalTexture
+  0ddcfc00  ldr     x8, [x26]
+  0ddcfc04  mov     x0, x22
+  0ddcfc08  mov     x1, xzr
+  0ddcfc0c  ldr     x8, [x8, #0xb8]
+  0ddcfc10  ldr     w23, [x8, #0x24]
+  0ddcfc14  add     x8, sp, #0x28
+  0ddcfc18  bl      #0xda02318  ; -> UnityEngine.Rendering.RenderTargetIdentifier$$op_Implicit
+  0ddcfc1c  ldur    q0, [sp, #0x28]
+  0ddcfc20  ldur    q1, [sp, #0x38]
+  0ddcfc24  mov     x2, sp
+  0ddcfc28  ldr     x8, [sp, #0x48]
+  0ddcfc2c  mov     x0, x19
+  0ddcfc30  mov     w1, w23
+  0ddcfc34  mov     x3, xzr
+  0ddcfc38  stp     q0, q1, [sp]
+  0ddcfc3c  str     x8, [sp, #0x20]
+  0ddcfc40  bl      #0xda0ae34  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalTexture
+  0ddcfc44  ldr     x1, [x25]
+  0ddcfc48  mov     x0, x20
+  0ddcfc4c  bl      #0x9493c1c  ; -> UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+  0ddcfc50  ldr     x8, [x27]
+  0ddcfc54  mov     x22, x0
+  0ddcfc58  ldr     w9, [x8, #0xe4]
+  0ddcfc5c  cbnz    w9, #0xddcfc68
+  0ddcfc60  mov     x0, x8
+  0ddcfc64  bl      #0x63ceff4
+  0ddcfc68  mov     x0, x22
+  0ddcfc6c  mov     x1, xzr
+  0ddcfc70  mov     x2, xzr
+  0ddcfc74  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcfc78  tbz     w0, #0, #0xddcfd1c
+  0ddcfc7c  cbz     x22, #0xddd02f0
+  0ddcfc80  ldr     x0, [x22, #0x38]
+  0ddcfc84  cbz     x0, #0xddd02f0
+  0ddcfc88  ldr     x8, [x0]
+  0ddcfc8c  ldr     x9, [x8, #0x218]
+  0ddcfc90  ldr     x1, [x8, #0x220]
+  0ddcfc94  blr     x9
+  0ddcfc98  ldr     x0, [x22, #0x40]
+  0ddcfc9c  cbz     x0, #0xddd02f0
+  0ddcfca0  ldr     x8, [x0]
+  0ddcfca4  fmov    s8, s0
+  0ddcfca8  fmov    s9, s1
+  0ddcfcac  fmov    s10, s2
+  0ddcfcb0  ldr     x9, [x8, #0x218]
+  0ddcfcb4  ldr     x1, [x8, #0x220]
+  0ddcfcb8  blr     x9
+  0ddcfcbc  ldr     x0, [x22, #0x48]
+  0ddcfcc0  cbz     x0, #0xddd02f0
+  0ddcfcc4  ldr     x8, [x0]
+  0ddcfcc8  fmul    s8, s8, s0
+  0ddcfccc  fmul    s9, s9, s0
+  0ddcfcd0  fmul    s10, s10, s0
+  0ddcfcd4  ldr     x9, [x8, #0x218]
+  0ddcfcd8  ldr     x1, [x8, #0x220]
+  0ddcfcdc  blr     x9
+  0ddcfce0  ldr     x0, [x26]
+  0ddcfce4  fmov    s11, s0
+  0ddcfce8  ldr     w8, [x0, #0xe4]
+  0ddcfcec  cbnz    w8, #0xddcfcf8
+  0ddcfcf0  bl      #0x63ceff4
+  0ddcfcf4  ldr     x0, [x26]
+  0ddcfcf8  ldr     x8, [x0, #0xb8]
+  0ddcfcfc  fmov    s0, s8
+  0ddcfd00  fmov    s1, s9
+  0ddcfd04  fmov    s2, s10
+  0ddcfd08  fmov    s3, s11
+  0ddcfd0c  mov     x0, x19
+  0ddcfd10  ldr     w1, [x8, #0x30]
+  0ddcfd14  mov     x2, xzr
+  0ddcfd18  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcfd1c  adrp    x8, #0xebc6000
+  0ddcfd20  mov     x0, x20
+  0ddcfd24  ldr     x8, [x8, #0xc40]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<CampusLitColorParameter>()
+  0ddcfd28  ldr     x1, [x8]
+  0ddcfd2c  bl      #0x9493c1c  ; -> UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+  0ddcfd30  ldr     x8, [x27]
+  0ddcfd34  mov     x22, x0
+  0ddcfd38  ldr     w9, [x8, #0xe4]
+  0ddcfd3c  cbnz    w9, #0xddcfd48
+  0ddcfd40  mov     x0, x8
+  0ddcfd44  bl      #0x63ceff4
+  0ddcfd48  mov     x0, x22
+  0ddcfd4c  mov     x1, xzr
+  0ddcfd50  mov     x2, xzr
+  0ddcfd54  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcfd58  tbz     w0, #0, #0xddcfda8
+  0ddcfd5c  ldr     x0, [x26]
+  0ddcfd60  ldr     w8, [x0, #0xe4]
+  0ddcfd64  cbnz    w8, #0xddcfd70
+  0ddcfd68  bl      #0x63ceff4
+  0ddcfd6c  ldr     x0, [x26]
+  0ddcfd70  cbz     x22, #0xddd02f0
+  0ddcfd74  ldr     x8, [x22, #0x38]
+  0ddcfd78  cbz     x8, #0xddd02f0
+  0ddcfd7c  ldr     x9, [x0, #0xb8]
+  0ddcfd80  ldr     x10, [x8]
+  0ddcfd84  mov     x0, x8
+  0ddcfd88  ldr     w22, [x9, #0x34]
+  0ddcfd8c  ldr     x9, [x10, #0x218]
+  0ddcfd90  ldr     x1, [x10, #0x220]
+  0ddcfd94  blr     x9
+  0ddcfd98  mov     x0, x19
+  0ddcfd9c  mov     w1, w22
+  0ddcfda0  mov     x2, xzr
+  0ddcfda4  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcfda8  adrp    x8, #0xebc6000
+  0ddcfdac  mov     x0, x20
+  0ddcfdb0  ldr     x8, [x8, #0xc48]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLGlobalLightProbe>()
+  0ddcfdb4  ldr     x1, [x8]
+  0ddcfdb8  bl      #0x9493c1c  ; -> UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+  0ddcfdbc  ldr     x8, [x27]
+  0ddcfdc0  mov     x22, x0
+  0ddcfdc4  ldr     w9, [x8, #0xe4]
+  0ddcfdc8  cbnz    w9, #0xddcfdd4
+  0ddcfdcc  mov     x0, x8
+  0ddcfdd0  bl      #0x63ceff4
+  0ddcfdd4  mov     x0, x22
+  0ddcfdd8  mov     x1, xzr
+  0ddcfddc  mov     x2, xzr
+  0ddcfde0  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcfde4  tbz     w0, #0, #0xddcfe40
+  0ddcfde8  cbz     x22, #0xddd02f0
+  0ddcfdec  ldr     x0, [x22, #0x38]
+  0ddcfdf0  cbz     x0, #0xddd02f0
+  0ddcfdf4  ldr     x8, [x0]
+  0ddcfdf8  ldr     x9, [x8, #0x218]
+  0ddcfdfc  ldr     x1, [x8, #0x220]
+  0ddcfe00  blr     x9
+  0ddcfe04  adrp    x8, #0xeba3000
+  0ddcfe08  fmov    s8, s0
+  0ddcfe0c  fmov    s9, s1
+  0ddcfe10  ldr     x8, [x8, #0xef8]  ; META VL.Rendering.VLLightProbeUtility_TypeInfo
+  0ddcfe14  fmov    s10, s2
+  0ddcfe18  ldr     x0, [x8]
+  0ddcfe1c  ldr     w8, [x0, #0xe4]
+  0ddcfe20  cbnz    w8, #0xddcfe28
+  0ddcfe24  bl      #0x63ceff4
+  0ddcfe28  fmov    s0, s8
+  0ddcfe2c  fmov    s1, s9
+  0ddcfe30  mov     x0, x19
+  0ddcfe34  fmov    s2, s10
+  0ddcfe38  mov     x1, xzr
+  0ddcfe3c  bl      #0xd7bf118  ; -> VL.Rendering.VLLightProbeUtility$$SetupGlobalLightProbe
+  0ddcfe40  adrp    x8, #0xebc6000
+  0ddcfe44  mov     x0, x20
+  0ddcfe48  ldr     x8, [x8, #0xc38]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<CampusLitActor>()
+  0ddcfe4c  ldr     x1, [x8]
+  0ddcfe50  bl      #0x9493c1c  ; -> UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+  0ddcfe54  ldr     x8, [x27]
+  0ddcfe58  mov     x22, x0
+  0ddcfe5c  ldr     w9, [x8, #0xe4]
+  0ddcfe60  cbnz    w9, #0xddcfe6c
+  0ddcfe64  mov     x0, x8
+  0ddcfe68  bl      #0x63ceff4
+  0ddcfe6c  mov     x0, x22
+  0ddcfe70  mov     x1, xzr
+  0ddcfe74  mov     x2, xzr
+  0ddcfe78  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddcfe7c  tbz     w0, #0, #0xddd019c
+  0ddcfe80  ldr     x0, [x26]
+  0ddcfe84  ldr     w8, [x0, #0xe4]
+  0ddcfe88  cbnz    w8, #0xddcfe94
+  0ddcfe8c  bl      #0x63ceff4
+  0ddcfe90  ldr     x0, [x26]
+  0ddcfe94  cbz     x22, #0xddd02f0
+  0ddcfe98  ldr     x8, [x22, #0x38]
+  0ddcfe9c  cbz     x8, #0xddd02f0
+  0ddcfea0  ldr     x9, [x0, #0xb8]
+  0ddcfea4  ldr     x10, [x8]
+  0ddcfea8  mov     x0, x8
+  0ddcfeac  ldr     w23, [x9, #0x40]
+  0ddcfeb0  ldr     x9, [x10, #0x218]
+  0ddcfeb4  ldr     x1, [x10, #0x220]
+  0ddcfeb8  blr     x9
+  0ddcfebc  mov     x0, x19
+  0ddcfec0  mov     w1, w23
+  0ddcfec4  mov     x2, xzr
+  0ddcfec8  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddcfecc  ldr     x0, [x22, #0x48]
+  0ddcfed0  cbz     x0, #0xddd02f0
+  0ddcfed4  ldr     x8, [x0]
+  0ddcfed8  ldr     x9, [x8, #0x218]
+  0ddcfedc  ldr     x1, [x8, #0x220]
+  0ddcfee0  blr     x9
+  0ddcfee4  ldr     x8, [x22, #0x50]
+  0ddcfee8  cbz     x8, #0xddd02f0
+  0ddcfeec  ldr     x9, [x8]
+  0ddcfef0  mov     w23, w0
+  0ddcfef4  mov     x0, x8
+  0ddcfef8  ldr     x10, [x9, #0x218]
+  0ddcfefc  ldr     x1, [x9, #0x220]
+  0ddcff00  blr     x10
+  0ddcff04  cbz     x21, #0xddd02f0
+  0ddcff08  mov     x0, x21
+  0ddcff0c  mov     x1, xzr
+  0ddcff10  fmov    s8, s0
+  0ddcff14  fmov    s9, s1
+  0ddcff18  bl      #0xd9ef344  ; -> UnityEngine.Transform$$get_eulerAngles
+  0ddcff1c  movi    d0, #0000000000000000
+  0ddcff20  fmov    s1, #1.00000000
+  0ddcff24  cmp     w23, #1
+  0ddcff28  cset    w0, eq
+  0ddcff2c  fcsel   s10, s1, s0, eq
+  0ddcff30  fmov    s0, s8
+  0ddcff34  fmov    s1, s9
+  0ddcff38  bl      #0xddd05e4  ; -> Campus.Rendering.CampusActorParameterPass$$CalcLightVector
+  0ddcff3c  ldr     x8, [x26]
+  0ddcff40  fmov    s3, s10
+  0ddcff44  mov     x0, x19
+  0ddcff48  mov     x2, xzr
+  0ddcff4c  ldr     x8, [x8, #0xb8]
+  0ddcff50  ldr     w1, [x8, #0x44]
+  0ddcff54  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddcff58  ldr     x0, [x26]
+  0ddcff5c  ldr     w8, [x0, #0xe4]
+  0ddcff60  cbnz    w8, #0xddcff6c
+  0ddcff64  bl      #0x63ceff4
+  0ddcff68  ldr     x0, [x26]
+  0ddcff6c  ldr     x8, [x22, #0x58]
+  0ddcff70  cbz     x8, #0xddd02f0
+  0ddcff74  ldr     x9, [x0, #0xb8]
+  0ddcff78  ldr     x10, [x8]
+  0ddcff7c  mov     x0, x8
+  0ddcff80  ldr     w21, [x9, #0x48]
+  0ddcff84  ldr     x9, [x10, #0x218]
+  0ddcff88  ldr     x1, [x10, #0x220]
+  0ddcff8c  blr     x9
+  0ddcff90  ldr     x0, [x22, #0x60]
+  0ddcff94  cbz     x0, #0xddd02f0
+  0ddcff98  ldr     x8, [x0]
+  0ddcff9c  fmov    s8, s0
+  0ddcffa0  ldr     x9, [x8, #0x218]
+  0ddcffa4  ldr     x1, [x8, #0x220]
+  0ddcffa8  blr     x9
+  0ddcffac  ldr     x0, [x22, #0x40]
+  0ddcffb0  cbz     x0, #0xddd02f0
+  0ddcffb4  ldr     x8, [x0]
+  0ddcffb8  fmov    s9, s0
+  0ddcffbc  ldr     x9, [x8, #0x218]
+  0ddcffc0  ldr     x1, [x8, #0x220]
+  0ddcffc4  blr     x9
+  0ddcffc8  fmov    s3, s0
+  0ddcffcc  fmov    s0, s8
+  0ddcffd0  mov     x0, x19
+  0ddcffd4  fmov    s2, s9
+  0ddcffd8  fmov    s1, #1.00000000
+  0ddcffdc  mov     w1, w21
+  0ddcffe0  mov     x2, xzr
+  0ddcffe4  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddcffe8  ldr     x0, [x22, #0x68]
+  0ddcffec  cbz     x0, #0xddd02f0
+  0ddcfff0  ldr     x8, [x26]
+  0ddcfff4  ldr     x9, [x0]
+  0ddcfff8  ldr     x8, [x8, #0xb8]
+  0ddcfffc  ldr     x1, [x9, #0x220]
+  0ddd0000  ldr     w21, [x8, #0x4c]
+  0ddd0004  ldr     x8, [x9, #0x218]
+  0ddd0008  blr     x8
+  0ddd000c  mov     x0, x19
+  0ddd0010  mov     w1, w21
+  0ddd0014  mov     x2, xzr
+  0ddd0018  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddd001c  ldr     x0, [x22, #0x70]
+  0ddd0020  cbz     x0, #0xddd02f0
+  0ddd0024  ldr     x8, [x26]
+  0ddd0028  ldr     x9, [x0]
+  0ddd002c  ldr     x8, [x8, #0xb8]
+  0ddd0030  ldr     x1, [x9, #0x220]
+  0ddd0034  ldr     w21, [x8, #0x50]
+  0ddd0038  ldr     x8, [x9, #0x218]
+  0ddd003c  blr     x8
+  0ddd0040  mov     x0, x19
+  0ddd0044  mov     w1, w21
+  0ddd0048  mov     x2, xzr
+  0ddd004c  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddd0050  ldr     x0, [x22, #0x78]
+  0ddd0054  cbz     x0, #0xddd02f0
+  0ddd0058  ldr     x8, [x0]
+  0ddd005c  ldr     x9, [x8, #0x218]
+  0ddd0060  ldr     x1, [x8, #0x220]
+  0ddd0064  blr     x9
+  0ddd0068  adrp    x8, #0x276e000
+  0ddd006c  mov     x0, xzr
+  0ddd0070  ldr     s2, [x8, #0xb44]
+  0ddd0074  fmul    s3, s1, s2
+  0ddd0078  fmul    s1, s0, s2
+  0ddd007c  movi    d2, #0000000000000000
+  0ddd0080  fmov    s0, s3
+  0ddd0084  bl      #0xd9ca804  ; -> UnityEngine.Quaternion$$Internal_FromEulerRad
+  0ddd0088  fmov    s8, s0
+  0ddd008c  fmov    s9, s1
+  0ddd0090  adrp    x21, #0xf405000
+  0ddd0094  fmov    s10, s2
+  0ddd0098  fmov    s11, s3
+  0ddd009c  ldrb    w8, [x21, #0x7c9]
+  0ddd00a0  cbnz    w8, #0xddd00b8
+  0ddd00a4  adrp    x0, #0xea67000
+  0ddd00a8  ldr     x0, [x0, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0ddd00ac  bl      #0x63cee78
+  0ddd00b0  mov     w8, #1
+  0ddd00b4  strb    w8, [x21, #0x7c9]
+  0ddd00b8  adrp    x8, #0xea67000
+  0ddd00bc  fmov    s0, s8
+  0ddd00c0  fmov    s1, s9
+  0ddd00c4  ldr     x8, [x8, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0ddd00c8  fmov    s2, s10
+  0ddd00cc  fmov    s3, s11
+  0ddd00d0  mov     x0, xzr
+  0ddd00d4  ldr     x8, [x8]
+  0ddd00d8  ldr     x8, [x8, #0xb8]
+  0ddd00dc  ldp     s4, s5, [x8, #0x48]
+  0ddd00e0  ldr     s6, [x8, #0x50]
+  0ddd00e4  bl      #0xd9cac8c  ; -> UnityEngine.Quaternion$$op_Multiply
+  0ddd00e8  ldr     x0, [x22, #0x88]
+  0ddd00ec  cbz     x0, #0xddd02f0
+  0ddd00f0  ldr     x8, [x26]
+  0ddd00f4  ldr     x9, [x0]
+  0ddd00f8  fmov    s8, s0
+  0ddd00fc  fmov    s9, s1
+  0ddd0100  fmov    s10, s2
+  0ddd0104  ldr     x8, [x8, #0xb8]
+  0ddd0108  ldr     x1, [x9, #0x220]
+  0ddd010c  ldr     w21, [x8, #0x54]
+  0ddd0110  ldr     x8, [x9, #0x218]
+  0ddd0114  blr     x8
+  0ddd0118  fmov    s3, s0
+  0ddd011c  fmov    s0, s8
+  0ddd0120  mov     x0, x19
+  0ddd0124  fmov    s1, s9
+  0ddd0128  fmov    s2, s10
+  0ddd012c  mov     w1, w21
+  0ddd0130  mov     x2, xzr
+  0ddd0134  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddd0138  ldr     x0, [x22, #0x90]
+  0ddd013c  cbz     x0, #0xddd02f0
+  0ddd0140  ldr     x8, [x0]
+  0ddd0144  ldr     x9, [x8, #0x218]
+  0ddd0148  ldr     x1, [x8, #0x220]
+  0ddd014c  blr     x9
+  0ddd0150  ldr     x0, [x22, #0x80]
+  0ddd0154  cbz     x0, #0xddd02f0
+  0ddd0158  ldr     x8, [x0]
+  0ddd015c  fmov    s8, s0
+  0ddd0160  fmov    s9, s1
+  0ddd0164  fmov    s10, s2
+  0ddd0168  ldr     x9, [x8, #0x218]
+  0ddd016c  ldr     x1, [x8, #0x220]
+  0ddd0170  blr     x9
+  0ddd0174  ldr     x8, [x26]
+  0ddd0178  fmov    s3, s0
+  0ddd017c  fmov    s0, s8
+  0ddd0180  fmov    s1, s9
+  0ddd0184  fmov    s2, s10
+  0ddd0188  mov     x0, x19
+  0ddd018c  ldr     x8, [x8, #0xb8]
+  0ddd0190  mov     x2, xzr
+  0ddd0194  ldr     w1, [x8, #0x58]
+  0ddd0198  bl      #0xda067a0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalColor
+  0ddd019c  adrp    x8, #0xebc6000
+  0ddd01a0  mov     x0, x20
+  0ddd01a4  ldr     x8, [x8, #0xc50]  ; MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VegetationParameter>()
+  0ddd01a8  ldr     x1, [x8]
+  0ddd01ac  bl      #0x9493c1c  ; -> UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+  0ddd01b0  ldr     x8, [x27]
+  0ddd01b4  mov     x20, x0
+  0ddd01b8  ldr     w9, [x8, #0xe4]
+  0ddd01bc  cbnz    w9, #0xddd01c8
+  0ddd01c0  mov     x0, x8
+  0ddd01c4  bl      #0x63ceff4
+  0ddd01c8  mov     x0, x20
+  0ddd01cc  mov     x1, xzr
+  0ddd01d0  mov     x2, xzr
+  0ddd01d4  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0ddd01d8  tbz     w0, #0, #0xddd02c8
+  0ddd01dc  ldr     x0, [x26]
+  0ddd01e0  ldr     w8, [x0, #0xe4]
+  0ddd01e4  cbnz    w8, #0xddd01f0
+  0ddd01e8  bl      #0x63ceff4
+  0ddd01ec  ldr     x0, [x26]
+  0ddd01f0  cbz     x20, #0xddd02f0
+  0ddd01f4  ldr     x8, [x20, #0x38]
+  0ddd01f8  cbz     x8, #0xddd02f0
+  0ddd01fc  ldr     x9, [x0, #0xb8]
+  0ddd0200  ldr     x10, [x8]
+  0ddd0204  mov     x0, x8
+  0ddd0208  ldr     w21, [x9, #0x5c]
+  0ddd020c  ldr     x9, [x10, #0x218]
+  0ddd0210  ldr     x1, [x10, #0x220]
+  0ddd0214  blr     x9
+  0ddd0218  movi    d2, #0000000000000000
+  0ddd021c  movi    d3, #0000000000000000
+  0ddd0220  mov     x0, x19
+  0ddd0224  mov     w1, w21
+  0ddd0228  mov     x2, xzr
+  0ddd022c  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddd0230  ldr     x0, [x20, #0x40]
+  0ddd0234  cbz     x0, #0xddd02f0
+  0ddd0238  ldr     x8, [x26]
+  0ddd023c  ldr     x9, [x0]
+  0ddd0240  ldr     x8, [x8, #0xb8]
+  0ddd0244  ldr     x1, [x9, #0x220]
+  0ddd0248  ldr     w21, [x8, #0x60]
+  0ddd024c  ldr     x8, [x9, #0x218]
+  0ddd0250  blr     x8
+  0ddd0254  ldr     x0, [x20, #0x48]
+  0ddd0258  cbz     x0, #0xddd02f0
+  0ddd025c  ldr     x8, [x0]
+  0ddd0260  fmov    s8, s0
+  0ddd0264  ldr     x9, [x8, #0x218]
+  0ddd0268  ldr     x1, [x8, #0x220]
+  0ddd026c  blr     x9
+  0ddd0270  ldr     x0, [x20, #0x50]
+  0ddd0274  cbz     x0, #0xddd02f0
+  0ddd0278  ldr     x8, [x0]
+  0ddd027c  fmov    s9, s0
+  0ddd0280  ldr     x9, [x8, #0x218]
+  0ddd0284  ldr     x1, [x8, #0x220]
+  0ddd0288  blr     x9
+  0ddd028c  ldr     x0, [x20, #0x58]
+  0ddd0290  cbz     x0, #0xddd02f0
+  0ddd0294  ldr     x8, [x0]
+  0ddd0298  fmov    s10, s0
+  0ddd029c  ldr     x9, [x8, #0x218]
+  0ddd02a0  ldr     x1, [x8, #0x220]
+  0ddd02a4  blr     x9
+  0ddd02a8  fmov    s3, s0
+  0ddd02ac  fmov    s0, s8
+  0ddd02b0  mov     x0, x19
+  0ddd02b4  fmov    s1, s9
+  0ddd02b8  fmov    s2, s10
+  0ddd02bc  mov     w1, w21
+  0ddd02c0  mov     x2, xzr
+  0ddd02c4  bl      #0xda066e0  ; -> UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+  0ddd02c8  ldp     x20, x19, [sp, #0x110]
+  0ddd02cc  ldp     x22, x21, [sp, #0x100]
+  0ddd02d0  ldp     x24, x23, [sp, #0xf0]
+  0ddd02d4  ldp     x26, x25, [sp, #0xe0]
+  0ddd02d8  ldp     x28, x27, [sp, #0xd0]
+  0ddd02dc  ldp     x29, x30, [sp, #0xc0]
+  0ddd02e0  ldp     d9, d8, [sp, #0xb0]
+  0ddd02e4  ldp     d11, d10, [sp, #0xa0]
+  0ddd02e8  add     sp, sp, #0x120
+  0ddd02ec  ret     
+  0ddd02f0  bl      #0x63cf120

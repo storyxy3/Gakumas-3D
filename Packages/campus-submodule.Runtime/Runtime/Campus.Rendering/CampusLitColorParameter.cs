@@ -9,7 +9,7 @@ namespace Campus.Rendering
     public class CampusLitColorParameter : VolumeComponent
     {
         [Tooltip("LitColorのレンダリング結果に対して乗算します")]
-        public ColorParameter multiplyColor;
+        public ColorParameter multiplyColor = new ColorParameter(Color.white, false, false, false, false);
         public CampusLitColorParameter()
         {
         }

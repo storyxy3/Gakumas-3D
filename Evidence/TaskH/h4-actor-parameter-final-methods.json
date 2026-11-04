@@ -1,0 +1,268 @@
+[
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddcf124"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$Setup",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddcf220"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$UpdateOutlineCommand",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddcf228"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$Execute",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddcf370"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$CalcLightVector",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddd05e4"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$UpdateActorCommand",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddcf4d8"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "layout",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "layout",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$UpdateVirtualEffectCommand",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddd02f4"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterPass$$.cctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterPass",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterPass.cs",
+    "reason": "CanvasRenderTextureRendererPass.Draw3DImage calls UpdateActorCommand for the monitor camera.",
+    "apkAddresses": [
+      "0xddd078c"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "same",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "excludedSignatures": []
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc",
+    "assembly": "ActorAnimation.Runtime",
+    "type": "ActorAnimation.ActorAnimationQuartzDriverWaistBone",
+    "sourcePath": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationQuartzDriverWaistBone.cs",
+    "reason": "Waist Calc verified against APK. Quaternion inverse/normalization and tuple return differ only in native layout.",
+    "apkAddresses": [
+      "0x655f440"
+    ],
+    "previousStatus": "outside H2 census",
+    "missingSignatures": [],
+    "rawComparatorStatus": "layout",
+    "scope": "True End rendering closure",
+    "sourceStatus": "reconstructed",
+    "status": "layout",
+    "excludedSignatures": [],
+    "evidence": "h4-swing-complete-func-diff.json; h4-swing-review-simple.txt; h4-swing-review-complex.txt; h4-swing-factory-final-review.txt; h4-factory.disasm.txt; h4-remaining-quartz.disasm.txt"
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$Create",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusGlobalParameterRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusGlobalParameterRendererFeature.cs",
+    "reason": "The True End global-parameter renderer feature constructs, configures and enqueues CampusActorParameterPass.",
+    "apkAddresses": [
+      "0xddcf068"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "same",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "scope": "True End rendering closure"
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$AddRenderPasses",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusGlobalParameterRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusGlobalParameterRendererFeature.cs",
+    "reason": "The True End global-parameter renderer feature constructs, configures and enqueues CampusActorParameterPass.",
+    "apkAddresses": [
+      "0xddcf1d4"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "same",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "scope": "True End rendering closure"
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusGlobalParameterRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusGlobalParameterRendererFeature.cs",
+    "reason": "The True End global-parameter renderer feature constructs, configures and enqueues CampusActorParameterPass.",
+    "apkAddresses": [
+      "0xddcf218"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "same",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "scope": "True End rendering closure"
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterSettings$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterSettings",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterSettings.cs",
+    "reason": "CampusGlobalParameterRendererFeature constructs settings consumed by CampusActorParameterPass.UpdateOutlineCommand.",
+    "apkAddresses": [
+      "0xddcf04c"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "same",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "scope": "True End rendering closure"
+  },
+  {
+    "method": "Campus.Rendering.CampusLitActor$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusLitActor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusLitActor.cs",
+    "reason": "CampusActorParameterPass.UpdateActorCommand retrieves this VolumeComponent and reads its initialized parameters.",
+    "apkAddresses": [
+      "0xddd3550"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "semantic",
+    "sourceStatus": "reconstructed",
+    "status": "semantic",
+    "scope": "True End rendering closure"
+  },
+  {
+    "method": "Campus.Rendering.CampusLitColorParameter$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusLitColorParameter",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusLitColorParameter.cs",
+    "reason": "CampusActorParameterPass.UpdateActorCommand retrieves this VolumeComponent and reads multiplyColor.",
+    "apkAddresses": [
+      "0xddd3884"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "same",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "scope": "True End rendering closure"
+  },
+  {
+    "method": "Campus.Rendering.VegetationParameter$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.VegetationParameter",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/VegetationParameter.cs",
+    "reason": "CampusActorParameterPass.UpdateActorCommand retrieves this VolumeComponent and reads wind and bending parameters.",
+    "apkAddresses": [
+      "0xddd4180"
+    ],
+    "missingSignatures": [],
+    "excludedSignatures": [],
+    "rawComparatorStatus": "same",
+    "sourceStatus": "reconstructed",
+    "status": "same",
+    "scope": "True End rendering closure"
+  }
+]

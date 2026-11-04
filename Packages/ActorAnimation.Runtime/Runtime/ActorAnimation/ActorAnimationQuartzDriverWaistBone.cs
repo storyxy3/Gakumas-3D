@@ -17,7 +17,7 @@ namespace ActorAnimation
         {
             var delta = thighWorldPosition - waistWorldPosition;
             var direction = math.mul(math.inverse(waistWorldRotation), math.normalize(delta));
-            quaternion rotation = Quaternion.FromToRotation(Vector3.back, direction);
+            quaternion rotation = Quaternion.FromToRotation(Vector3.down, direction);
             return (rotation, waistWorldPosition + delta * weight);
         }
 

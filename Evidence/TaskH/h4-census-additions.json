@@ -152,5 +152,75 @@
       "0x657d0e4",
       "0x6578054"
     ]
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$Create",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusGlobalParameterRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusGlobalParameterRendererFeature.cs",
+    "reason": "The True End global-parameter renderer feature constructs, configures and enqueues CampusActorParameterPass.",
+    "apkAddresses": [
+      "0xddcf068"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$AddRenderPasses",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusGlobalParameterRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusGlobalParameterRendererFeature.cs",
+    "reason": "The True End global-parameter renderer feature constructs, configures and enqueues CampusActorParameterPass.",
+    "apkAddresses": [
+      "0xddcf1d4"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.CampusGlobalParameterRendererFeature$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusGlobalParameterRendererFeature",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusGlobalParameterRendererFeature.cs",
+    "reason": "The True End global-parameter renderer feature constructs, configures and enqueues CampusActorParameterPass.",
+    "apkAddresses": [
+      "0xddcf218"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.CampusActorParameterSettings$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusActorParameterSettings",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusActorParameterSettings.cs",
+    "reason": "CampusGlobalParameterRendererFeature constructs settings consumed by CampusActorParameterPass.UpdateOutlineCommand.",
+    "apkAddresses": [
+      "0xddcf04c"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.CampusLitActor$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusLitActor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusLitActor.cs",
+    "reason": "CampusActorParameterPass.UpdateActorCommand retrieves this VolumeComponent and reads its initialized parameters.",
+    "apkAddresses": [
+      "0xddd3550"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.CampusLitColorParameter$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.CampusLitColorParameter",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/CampusLitColorParameter.cs",
+    "reason": "CampusActorParameterPass.UpdateActorCommand retrieves this VolumeComponent and reads multiplyColor.",
+    "apkAddresses": [
+      "0xddd3884"
+    ]
+  },
+  {
+    "method": "Campus.Rendering.VegetationParameter$$.ctor",
+    "assembly": "campus-submodule.Runtime",
+    "type": "Campus.Rendering.VegetationParameter",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Rendering/VegetationParameter.cs",
+    "reason": "CampusActorParameterPass.UpdateActorCommand retrieves this VolumeComponent and reads wind and bending parameters.",
+    "apkAddresses": [
+      "0xddd4180"
+    ]
   }
 ]
