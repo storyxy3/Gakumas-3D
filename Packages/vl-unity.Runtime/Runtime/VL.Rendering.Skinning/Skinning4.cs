@@ -9,7 +9,10 @@ namespace VL.Rendering.Skinning
         public uint4 skin;
         public float4x4 GetBlendedSkinMatrix(ref NativeArray<float4x4> matricesArray)
         {
-            return default(float4x4);
+            uint4 indices = skin & 65535;
+            float4 weights = (float4)(skin >> 16) * (1f / 65535f);
+            return matricesArray[(int)indices.x] * weights.x + matricesArray[(int)indices.y] * weights.y
+                + matricesArray[(int)indices.z] * weights.z + matricesArray[(int)indices.w] * weights.w;
         }
     }
 }

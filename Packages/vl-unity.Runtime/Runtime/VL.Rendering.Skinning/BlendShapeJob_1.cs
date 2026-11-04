@@ -17,6 +17,17 @@ namespace VL.Rendering.Skinning
         public NativeArray<TStream0> destinationArray;
         public void Execute()
         {
+            for (int i = 0; i < length; i++)
+            {
+                var info = blendShapeInfoArray[i];
+                for (int j = 0; j < info.length; j++)
+                {
+                    var shape = blendShapeArray[info.start + j];
+                    var vertex = destinationArray[shape.vertIndex];
+                    vertex.Position += shape.position * info.weight;
+                    destinationArray[shape.vertIndex] = vertex;
+                }
+            }
         }
     }
 }

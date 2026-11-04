@@ -16,6 +16,11 @@ namespace VL.Rendering.Skinning
         public NativeArray<TStream0> destinationArray;
         public void Execute(int i)
         {
+            var vertex = destinationArray[i];
+            var skinning = skinArray[i];
+            var matrix = skinning.GetBlendedSkinMatrix(ref matricesArray);
+            vertex.MultiplySkinMatrix(matrix);
+            destinationArray[i] = vertex;
         }
     }
 }

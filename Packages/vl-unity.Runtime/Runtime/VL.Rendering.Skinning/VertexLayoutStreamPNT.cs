@@ -12,16 +12,20 @@ namespace VL.Rendering.Skinning
         {
             get
             {
-                return default(float3);
+                return position;
             }
 
             set
             {
+                position = value;
             }
         }
 
         public void MultiplySkinMatrix(float4x4 blendedMatrix)
         {
+            position = math.mul(blendedMatrix, new float4(position, 1f)).xyz;
+            normal = math.mul(blendedMatrix, new float4(normal, 0f)).xyz;
+            tangent.xyz = math.mul(blendedMatrix, new float4(tangent.xyz, 0f)).xyz;
         }
     }
 }

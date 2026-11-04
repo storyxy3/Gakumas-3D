@@ -15,6 +15,8 @@ namespace VL.Rendering.Skinning
         public NativeArray<TStream0> destinationArray;
         public void Execute(int index)
         {
+            prevArray[index] = new VertexLayoutStream2 { prevPosition = destinationArray[index].Position };
+            destinationArray[index] = sourceArray[index];
         }
     }
 }

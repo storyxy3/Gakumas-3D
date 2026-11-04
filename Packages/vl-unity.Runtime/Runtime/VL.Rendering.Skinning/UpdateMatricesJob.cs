@@ -15,6 +15,8 @@ namespace VL.Rendering.Skinning
         public NativeArray<Matrix4x4> matricesArray;
         public void Execute(int index, TransformAccess transform)
         {
+            if (transform.isValid)
+                matricesArray[index] = rendererWorldToLocalMatrix * transform.localToWorldMatrix * bindposesArray[index];
         }
     }
 }

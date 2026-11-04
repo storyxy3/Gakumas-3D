@@ -33,21 +33,22 @@ namespace VL.Core
         public BlendShapeWeight16 w10;
         [System.Runtime.InteropServices.FieldOffset(0x2C0)]
         public BlendShapeWeight16 w11;
-        public float this[int index]
+        public unsafe float this[int index]
         {
             get
             {
-                return default(float);
+                fixed (float* weights = &w0.w0) return weights[index];
             }
 
             set
             {
+                fixed (float* weights = &w0.w0) weights[index] = value;
             }
         }
 
         public static string GetPropertyPath(int index)
         {
-            return null;
+            return string.Format("w{0}.w{1}", index / 16, index % 16);
         }
     }
 }
