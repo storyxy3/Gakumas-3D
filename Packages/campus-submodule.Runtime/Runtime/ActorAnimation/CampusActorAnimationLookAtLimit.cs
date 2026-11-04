@@ -405,7 +405,42 @@ namespace ActorAnimation
 
         public CampusActorAnimationLookAtLimit(PropertyStreamHandle isCustomLookAtLimitEnablePoseHandle, PropertySceneHandle enableLimitWeightHandle, PropertySceneHandle eyeInOutLimitHandle, PropertySceneHandle eyeUpLimitHandle, PropertySceneHandle eyeDownLimitHandle, PropertySceneHandle headLeftRightLimitHandle, PropertySceneHandle headFrontLimitHandle, PropertySceneHandle headBackLimitHandle, PropertySceneHandle headRollLeftRightLimitHandle, PropertySceneHandle neckLeftRightLimitHandle, PropertySceneHandle neckFrontLimitHandle, PropertySceneHandle neckBackLimitHandle, PropertySceneHandle neckRollLeftRightLimitHandle, PropertySceneHandle bodyLeftRightLimitHandle, PropertySceneHandle bodyFrontLimitHandle, PropertySceneHandle bodyBackLimitHandle, PropertySceneHandle bodyTwistLeftRightLimitHandle, MuscleHandle leftEyeInOutMuscleHandle, MuscleHandle leftEyeDownUpMuscleHandle, MuscleHandle rightEyeInOutMuscleHandle, MuscleHandle rightEyeDownUpMuscleHandle, MuscleHandle neckFrontBackMuscleHandle, MuscleHandle neckLeftRightMuscleHandle, MuscleHandle neckRollLeftRightMuscleHandle, MuscleHandle headFrontBackMuscleHandle, MuscleHandle headLeftRightMuscleHandle, MuscleHandle headRollLeftRightMuscleHandle, MuscleHandle spineLeftRightMuscleHandle, MuscleHandle spineFrontBackMuscleHandle, MuscleHandle spineRollLeftRightMuscleHandle, MuscleHandle chestLeftRightMuscleHandle, MuscleHandle chestFrontBackMuscleHandle, MuscleHandle chestRollLeftRightMuscleHandle, MuscleHandle upperChestLeftRightMuscleHandle, MuscleHandle upperChestFrontBackMuscleHandle, MuscleHandle upperChestRollLeftRightMuscleHandle)
         {
-            this = default;
+            _003CisCustomLookAtLimitEnablePoseHandle_003Ek__BackingField = isCustomLookAtLimitEnablePoseHandle;
+            _003CenableLimitWeightHandle_003Ek__BackingField = enableLimitWeightHandle;
+            _003CeyeInOutLimitHandle_003Ek__BackingField = eyeInOutLimitHandle;
+            _003CeyeUpLimitHandle_003Ek__BackingField = eyeUpLimitHandle;
+            _003CeyeDownLimitHandle_003Ek__BackingField = eyeDownLimitHandle;
+            _003CheadLeftRightLimitHandle_003Ek__BackingField = headLeftRightLimitHandle;
+            _003CheadFrontLimitHandle_003Ek__BackingField = headFrontLimitHandle;
+            _003CheadBackLimitHandle_003Ek__BackingField = headBackLimitHandle;
+            _003CheadRollLeftRightLimitHandle_003Ek__BackingField = headRollLeftRightLimitHandle;
+            _003CneckLeftRightLimitHandle_003Ek__BackingField = neckLeftRightLimitHandle;
+            _003CneckFrontLimitHandle_003Ek__BackingField = neckFrontLimitHandle;
+            _003CneckBackLimitHandle_003Ek__BackingField = neckBackLimitHandle;
+            _003CneckRollLeftRightLimitHandle_003Ek__BackingField = neckRollLeftRightLimitHandle;
+            _003CbodyLeftRightLimitHandle_003Ek__BackingField = bodyLeftRightLimitHandle;
+            _003CbodyFrontLimitHandle_003Ek__BackingField = bodyFrontLimitHandle;
+            _003CbodyBackLimitHandle_003Ek__BackingField = bodyBackLimitHandle;
+            _003CbodyTwistLeftRightLimitHandle_003Ek__BackingField = bodyTwistLeftRightLimitHandle;
+            _003CleftEyeInOutMuscleHandle_003Ek__BackingField = leftEyeInOutMuscleHandle;
+            _003CleftEyeDownUpMuscleHandle_003Ek__BackingField = leftEyeDownUpMuscleHandle;
+            _003CrightEyeInOutMuscleHandle_003Ek__BackingField = rightEyeInOutMuscleHandle;
+            _003CrightEyeDownUpMuscleHandle_003Ek__BackingField = rightEyeDownUpMuscleHandle;
+            _003CneckFrontBackMuscleHandle_003Ek__BackingField = neckFrontBackMuscleHandle;
+            _003CneckLeftRightMuscleHandle_003Ek__BackingField = neckLeftRightMuscleHandle;
+            _003CneckRollLeftRightMuscleHandle_003Ek__BackingField = neckRollLeftRightMuscleHandle;
+            _003CheadFrontBackMuscleHandle_003Ek__BackingField = headFrontBackMuscleHandle;
+            _003CheadLeftRightMuscleHandle_003Ek__BackingField = headLeftRightMuscleHandle;
+            _003CheadRollLeftRightMuscleHandle_003Ek__BackingField = headRollLeftRightMuscleHandle;
+            _003CspineLeftRightMuscleHandle_003Ek__BackingField = spineLeftRightMuscleHandle;
+            _003CspineFrontBackMuscleHandle_003Ek__BackingField = spineFrontBackMuscleHandle;
+            _003CspineRollLeftRightMuscleHandle_003Ek__BackingField = spineRollLeftRightMuscleHandle;
+            _003CchestLeftRightMuscleHandle_003Ek__BackingField = chestLeftRightMuscleHandle;
+            _003CchestFrontBackMuscleHandle_003Ek__BackingField = chestFrontBackMuscleHandle;
+            _003CchestRollLeftRightMuscleHandle_003Ek__BackingField = chestRollLeftRightMuscleHandle;
+            _003CupperChestLeftRightMuscleHandle_003Ek__BackingField = upperChestLeftRightMuscleHandle;
+            _003CupperChestFrontBackMuscleHandle_003Ek__BackingField = upperChestFrontBackMuscleHandle;
+            _003CupperChestRollLeftRightMuscleHandle_003Ek__BackingField = upperChestRollLeftRightMuscleHandle;
         }
 
         public void Execute(AnimationStream stream)

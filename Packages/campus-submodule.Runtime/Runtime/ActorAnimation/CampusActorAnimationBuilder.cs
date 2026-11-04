@@ -22,7 +22,7 @@ namespace ActorAnimation
         {
             get
             {
-                return default(AnimationScriptPlayable);
+                return _playable;
             }
         }
 

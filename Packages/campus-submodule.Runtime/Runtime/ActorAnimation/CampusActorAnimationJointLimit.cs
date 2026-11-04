@@ -75,7 +75,12 @@ namespace ActorAnimation
 
         public CampusActorAnimationJointLimit(PropertyStreamHandle jointLimitNowLimitedHandle, PropertySceneHandle jointLimitEyeEnable, PropertySceneHandle jointLimitEyeUpLimitHandle, PropertySceneHandle jointLimitEyeDownLimitHandle, MuscleHandle leftEyeDownUpMuscleHandle, MuscleHandle rightEyeDownUpMuscleHandle)
         {
-            this = default;
+            _003CjointLimitNowLimitedHandle_003Ek__BackingField = jointLimitNowLimitedHandle;
+            _003CjointLimitEyeEnable_003Ek__BackingField = jointLimitEyeEnable;
+            _003CjointLimitEyeUpLimitHandle_003Ek__BackingField = jointLimitEyeUpLimitHandle;
+            _003CjointLimitEyeDownLimitHandle_003Ek__BackingField = jointLimitEyeDownLimitHandle;
+            _003CleftEyeDownUpMuscleHandle_003Ek__BackingField = leftEyeDownUpMuscleHandle;
+            _003CrightEyeDownUpMuscleHandle_003Ek__BackingField = rightEyeDownUpMuscleHandle;
         }
 
         public void Execute(AnimationStream stream)

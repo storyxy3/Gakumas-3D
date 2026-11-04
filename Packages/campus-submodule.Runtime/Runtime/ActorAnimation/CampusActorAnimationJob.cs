@@ -290,38 +290,116 @@ namespace ActorAnimation
 
         public void SetupCustomLookAtEffector(Animator animator, CustomLookAtEffector customLookAtEffector)
         {
+            var effector = _fullBodyIKJobSkeleton.customLookAtEffector;
+            ReadOnlyTransformHandle reference = default;
+            if (customLookAtEffector.target != null)
+                reference = ReadOnlyTransformHandle.Bind(animator, customLookAtEffector.transform);
+            effector.Setup(reference,
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "useCustomTargetPosition"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "customTargetPosition.x"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "customTargetPosition.y"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "customTargetPosition.z"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "eyesWeight"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "headWeight"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "bodyWeight"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "customUseWeight"),
+                animator.BindSceneProperty(customLookAtEffector.transform, typeof(CustomLookAtEffector), "weight"));
+            _fullBodyIKJobSkeleton.customLookAtEffector = effector;
         }
 
         public void SetupCampusLookAtLimit(Animator animator, CampusCustomLookAtEffector campusCustomLookAtEffector, CampusActorAnimationInitializeData initializeData)
         {
+            _lookAtLimit = new CampusActorAnimationLookAtLimit(
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "isCustomLookAtLimitEnablePose"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "enableLimitWeight"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "eyeInOutLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "eyeUpLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "eyeDownLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "headLeftRightLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "headFrontLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "headBackLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "headRollLeftRightLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "neckLeftRightLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "neckFrontLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "neckBackLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "neckRollLeftRightLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "bodyLeftRightLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "bodyFrontLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "bodyBackLimit"),
+                animator.BindSceneProperty(campusCustomLookAtEffector.transform, typeof(CampusCustomLookAtEffector), "bodyTwistLeftRightLimit"),
+                new MuscleHandle((HeadDof)7),
+                new MuscleHandle((HeadDof)6),
+                new MuscleHandle((HeadDof)9),
+                new MuscleHandle((HeadDof)8),
+                new MuscleHandle((HeadDof)0),
+                new MuscleHandle((HeadDof)1),
+                new MuscleHandle((HeadDof)2),
+                new MuscleHandle((HeadDof)3),
+                new MuscleHandle((HeadDof)4),
+                new MuscleHandle((HeadDof)5),
+                new MuscleHandle((BodyDof)1),
+                new MuscleHandle((BodyDof)0),
+                new MuscleHandle((BodyDof)2),
+                new MuscleHandle((BodyDof)4),
+                new MuscleHandle((BodyDof)3),
+                new MuscleHandle((BodyDof)5),
+                new MuscleHandle((BodyDof)7),
+                new MuscleHandle((BodyDof)6),
+                new MuscleHandle((BodyDof)8));
         }
 
         public void SetupCampusJointLimit(Animator animator)
         {
+            _jointLimit = new CampusActorAnimationJointLimit(
+                animator.BindStreamProperty(animator.transform, typeof(CampusActorAnimation), "jointLimitNowLimited"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "jointLimitEyeEnable"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "jointLimitEyeUpLimit"),
+                animator.BindSceneProperty(animator.transform, typeof(CampusActorAnimation), "jointLimitEyeDownLimit"),
+                new MuscleHandle((HeadDof)6), new MuscleHandle((HeadDof)8));
         }
 
         public void DisposeCustomLookAtEffector()
         {
+            _fullBodyIKJobSkeleton.customLookAtEffector.Dispose();
         }
 
         public void SetEnableSeatedDynamicCorrection(bool enable)
         {
+            var correction = _swingJobSkeleton.seatedDynamicCorrection;
+            correction.enableSeatedDynamicCorrection = enable;
+            _swingJobSkeleton.seatedDynamicCorrection = correction;
         }
 
         public void DisableIKGoal(AvatarIKGoal ikGoal)
         {
+            switch (ikGoal)
+            {
+                case AvatarIKGoal.LeftFoot: _fullBodyIKJobSkeleton.leftFootEffector = default; break;
+                case AvatarIKGoal.RightFoot: _fullBodyIKJobSkeleton.rightFootEffector = default; break;
+                case AvatarIKGoal.LeftHand: _fullBodyIKJobSkeleton.leftHandEffector = default; break;
+                case AvatarIKGoal.RightHand: _fullBodyIKJobSkeleton.rightHandEffector = default; break;
+            }
         }
 
         public void SetupIKGoalEffector(Animator animator, Transform ikGoalEffectorTransform, AvatarIKGoal ikGoal, ActorAnimationIKHandleType handleType)
         {
+            switch (ikGoal)
+            {
+                case AvatarIKGoal.LeftFoot: _fullBodyIKJobSkeleton.leftFootEffector = new ActorAnimationIKGoalEffector(animator, ikGoalEffectorTransform, AvatarIKGoal.LeftFoot, handleType); break;
+                case AvatarIKGoal.RightFoot: _fullBodyIKJobSkeleton.rightFootEffector = new ActorAnimationIKGoalEffector(animator, ikGoalEffectorTransform, AvatarIKGoal.RightFoot, handleType); break;
+                case AvatarIKGoal.LeftHand: _fullBodyIKJobSkeleton.leftHandEffector = new ActorAnimationIKGoalEffector(animator, ikGoalEffectorTransform, AvatarIKGoal.LeftHand, handleType); break;
+                case AvatarIKGoal.RightHand: _fullBodyIKJobSkeleton.rightHandEffector = new ActorAnimationIKGoalEffector(animator, ikGoalEffectorTransform, AvatarIKGoal.RightHand, handleType); break;
+            }
         }
 
         public void SetActorLayout(Animator animator, Transform actorLayout)
         {
+            _rootController.SetupRootController(animator.transform, actorLayout, animator);
         }
 
         public void ResetTime()
         {
+            _swingJobSkeleton.ResetTime();
         }
 
         public void Destroy()
@@ -330,6 +408,7 @@ namespace ActorAnimation
 
         public void ApplyActorSwingCmmnHeightCorrection(bool enabled)
         {
+            _swingJobSkeleton.isCmmnHeightCorrectionNeeded = enabled;
         }
 
         private void DestroyIK()

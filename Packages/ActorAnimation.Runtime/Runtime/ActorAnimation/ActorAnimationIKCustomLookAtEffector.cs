@@ -169,10 +169,21 @@ namespace ActorAnimation
 
         public void Setup(ReadOnlyTransformHandle referenceHandle, PropertySceneHandle useCustomTargetPositionHandle, PropertySceneHandle customTargetPositionXHandle, PropertySceneHandle customTargetPositionYHandle, PropertySceneHandle customTargetPositionZHandle, PropertySceneHandle eyesWeightHandle, PropertySceneHandle headWeightHandle, PropertySceneHandle bodyWeightHandle, PropertySceneHandle customUseWeightHandle, PropertySceneHandle weightHandle)
         {
+            _003CreferenceHandle_003Ek__BackingField = referenceHandle;
+            _003CuseCustomTargetPositionHandle_003Ek__BackingField = useCustomTargetPositionHandle;
+            _003CcustomTargetPositionXHandle_003Ek__BackingField = customTargetPositionXHandle;
+            _003CcustomTargetPositionYHandle_003Ek__BackingField = customTargetPositionYHandle;
+            _003CcustomTargetPositionZHandle_003Ek__BackingField = customTargetPositionZHandle;
+            _003CeyesWeightHandle_003Ek__BackingField = eyesWeightHandle;
+            _003CheadWeightHandle_003Ek__BackingField = headWeightHandle;
+            _003CbodyWeightHandle_003Ek__BackingField = bodyWeightHandle;
+            _003CcustomUseWeightHandle_003Ek__BackingField = customUseWeightHandle;
+            _003CweightHandle_003Ek__BackingField = weightHandle;
         }
 
         public void Dispose()
         {
+            this = default;
         }
     }
 }

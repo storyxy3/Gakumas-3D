@@ -78,12 +78,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(ActorSwingJobSeatDynamicCorrection);
+                return _003CseatedDynamicCorrection_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CseatedDynamicCorrection_003Ek__BackingField = value;
             }
         }
 
