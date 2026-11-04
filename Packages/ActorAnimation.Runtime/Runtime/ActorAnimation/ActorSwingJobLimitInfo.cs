@@ -12,7 +12,9 @@ namespace ActorAnimation
         public float3 negative;
         public ActorSwingJobLimitInfo(LimitInfo info)
         {
-            this = default;
+            useLimit = (byte)(info.useLimit > 0 ? 1 : 0);
+            negative = new float3(info.axisX.x, info.axisY.x, info.axisZ.x);
+            positive = new float3(info.axisX.y, info.axisY.y, info.axisZ.y);
         }
     }
 }

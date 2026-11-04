@@ -12,7 +12,9 @@ namespace ActorAnimation
         public int boneIndex;
         public ActorSwingJobReferenceLimitInfo(ReferenceLimitInfo info, int infoBoneIndex)
         {
-            this = default;
+            min = info.min;
+            max = info.max;
+            boneIndex = infoBoneIndex;
         }
     }
 }

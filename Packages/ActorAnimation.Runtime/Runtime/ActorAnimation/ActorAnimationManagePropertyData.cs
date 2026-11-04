@@ -30,7 +30,28 @@ namespace ActorAnimation
         public int prewarmCount;
         public ActorAnimationManagePropertyData(float weight, float modelingPoseWeight, float swingPowerWeight, float swingBreastPowerWeight, float swingBreastCorrectionPowerWeight, float rootWeight, float rootHorizontalWeight, float rootVerticalWeight, float3 globalForce, float3 windDirection, float windPower, float windFluctuation, float windWaveAmplitude, float windWaveFrequency, float windWavePhase, float windRangeMax, float windRangeMin, float windRangeFrequency, float windRangePhase, float randomPower, float randomFluctuation, int prewarmCount)
         {
-            this = default;
+            this.weight = weight;
+            this.modelingPoseWeight = modelingPoseWeight;
+            this.swingPowerWeight = swingPowerWeight;
+            this.swingBreastPowerWeight = swingBreastPowerWeight;
+            this.swingBreastCorrectionPowerWeight = swingBreastCorrectionPowerWeight;
+            this.rootWeight = rootWeight;
+            this.rootHorizontalWeight = rootHorizontalWeight;
+            this.rootVerticalWeight = rootVerticalWeight;
+            this.globalForce = globalForce;
+            this.windDirection = windDirection;
+            this.windPower = windPower;
+            this.windFluctuation = windFluctuation;
+            this.windWaveAmplitude = windWaveAmplitude;
+            this.windWaveFrequency = windWaveFrequency;
+            this.windWavePhase = windWavePhase;
+            this.windRangeMax = windRangeMax;
+            this.windRangeMin = windRangeMin;
+            this.windRangeFrequency = windRangeFrequency;
+            this.windRangePhase = windRangePhase;
+            this.randomPower = randomPower;
+            this.randomFluctuation = randomFluctuation;
+            this.prewarmCount = prewarmCount;
         }
     }
 }

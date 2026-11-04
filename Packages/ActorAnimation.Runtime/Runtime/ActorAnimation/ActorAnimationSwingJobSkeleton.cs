@@ -36,12 +36,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003CrootHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CrootHandle_003Ek__BackingField = value;
             }
         }
 
@@ -50,12 +51,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003ChipsHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003ChipsHandle_003Ek__BackingField = value;
             }
         }
 
@@ -64,12 +66,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(ReadOnlyTransformHandle);
+                return _003CheightCorrectionBoneHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CheightCorrectionBoneHandle_003Ek__BackingField = value;
             }
         }
 
@@ -93,17 +96,19 @@ namespace ActorAnimation
             [CompilerGenerated]
             readonly get
             {
-                return default(ActorAnimationManageProperty);
+                return _003CmanageProperty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CmanageProperty_003Ek__BackingField = value;
             }
         }
 
         public void Execute(AnimationStream stream)
         {
+            // TODO(qa-recon): APK swing execution, prewarm, collision and chain solver bodies remain unreconstructed.
         }
 
         public void ProcessAnimation(AnimationStream stream)
