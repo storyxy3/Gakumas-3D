@@ -15,8 +15,8 @@ namespace zzzzQA.Recon.MetadataNames
     public sealed class OriginalMetadataNames : ILPostProcessor
     {
         private static readonly Regex Escape = new Regex("_([0-9A-Fa-f]{4})", RegexOptions.CultureInvariant);
-        private static string Project => Environment.GetEnvironmentVariable("QA_RECON_PROJECT") ?? "/data/xy/gakumas/live-urp";
-        private static string DummyDll => Environment.GetEnvironmentVariable("QA_RECON_DUMMYDLL") ?? "/data/xy/gakumas/work/il2cpp-3.5.3/DummyDll";
+        private static string Project => Environment.GetEnvironmentVariable("QA_RECON_PROJECT") ?? Directory.GetCurrentDirectory();
+        private static string DummyDll => Environment.GetEnvironmentVariable("QA_RECON_DUMMYDLL") ?? Path.GetFullPath(Path.Combine(Project, "..", "work", "il2cpp-3.5.3", "DummyDll"));
         private static string Decode(string name) => Escape.Replace(name, m => ((char)Convert.ToInt32(m.Groups[1].Value, 16)).ToString());
 
         private static bool IsOwned(string assembly)

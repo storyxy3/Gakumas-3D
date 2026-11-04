@@ -25,6 +25,11 @@ public static class LiveBuild
             PlayerSettings.SetUseDefaultGraphicsAPIs(target, false);
             PlayerSettings.SetGraphicsAPIs(target, new[] { UnityEngine.Rendering.GraphicsDeviceType.Direct3D11 });
         }
+        else
+        {
+            PlayerSettings.SetUseDefaultGraphicsAPIs(target, false);
+            PlayerSettings.SetGraphicsAPIs(target, new[] { UnityEngine.Rendering.GraphicsDeviceType.Vulkan, UnityEngine.Rendering.GraphicsDeviceType.OpenGLCore });
+        }
         Directory.CreateDirectory(Path.GetDirectoryName(destination));
         var result = BuildPipeline.BuildPlayer(new[] { "Assets/Main.unity" }, destination, target, BuildOptions.None);
         Debug.Log("LIVE_BUILD " + result.summary.result + " errors=" + result.summary.totalErrors);
