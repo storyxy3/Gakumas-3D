@@ -17,7 +17,7 @@ namespace VL.Animation.Timeline
         {
             get
             {
-                return motion == null ? ClipCaps.None : ClipCaps.ClipIn | ClipCaps.SpeedMultiplier | ClipCaps.Blending | (motion.isLoop ? ClipCaps.Looping : ClipCaps.None);
+                return motion == null ? ClipCaps.None : ClipCaps.Extrapolation | ClipCaps.SpeedMultiplier | ClipCaps.Blending | (motion.isLoop ? ClipCaps.Looping : ClipCaps.None);
             }
         }
 

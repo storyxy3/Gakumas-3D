@@ -12,6 +12,8 @@ namespace VL
 
         public static void DestroyObject(Object target)
         {
+            if (Application.isPlaying) UnityEngine.Object.Destroy(target);
+            else UnityEngine.Object.DestroyImmediate(target, true);
         }
 
         public static (int, int) GetLimitedResolution(int screenWidth, int screenHeight, Vector2 aspectRatio, int maxBufferPixel, float bufferScale)
@@ -61,7 +63,9 @@ namespace VL
 
         public static GraphicsFormat GetHDRFormat(bool needsAlpha = false, FormatUsage flags = FormatUsage.Blend)
         {
-            return default(GraphicsFormat);
+            if (!needsAlpha && UnityEngine.Rendering.Universal.RenderingUtils.SupportsGraphicsFormat(GraphicsFormat.B10G11R11_UFloatPack32, flags)) return GraphicsFormat.B10G11R11_UFloatPack32;
+            if (UnityEngine.Rendering.Universal.RenderingUtils.SupportsGraphicsFormat(GraphicsFormat.R16G16B16A16_SFloat, flags)) return GraphicsFormat.R16G16B16A16_SFloat;
+            return SystemInfo.GetGraphicsFormat(DefaultFormat.HDR);
         }
     }
 }

@@ -32,10 +32,18 @@ namespace VL
 
         public void SetAdditiveAnimation(MotionDefine motion)
         {
+            _motions = new[] { motion };
+            // TODO(qa-recon): needs vl-unity.Runtime::VLActorBodyAdditiveAnimation.Dispose/Initialize (outside the supplied method census).
+            Dispose();
+            Initialize();
         }
 
         public void SetAdditiveAnimation(MotionDefine[] motions)
         {
+            _motions = motions;
+            // TODO(qa-recon): needs vl-unity.Runtime::VLActorBodyAdditiveAnimation.Dispose/Initialize (outside the supplied method census).
+            Dispose();
+            Initialize();
         }
 
         private void OnPrepareFrameEvent(VLAnimationClipParam currentParam, VLAnimationClipParamMixerPlayable playable, float currentTime, FrameData info)

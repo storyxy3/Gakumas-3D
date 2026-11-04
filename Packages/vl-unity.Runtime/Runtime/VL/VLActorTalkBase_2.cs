@@ -74,11 +74,12 @@ namespace VL
         {
             get
             {
-                return default(float);
+                return talkSpeed;
             }
 
             set
             {
+                talkSpeed = value;
             }
         }
 
@@ -86,11 +87,12 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return _talkEnabled;
             }
 
             set
             {
+                _talkEnabled = value;
             }
         }
 
@@ -98,7 +100,7 @@ namespace VL
         {
             get
             {
-                return default(TActorTalkFFT);
+                return _fft;
             }
         }
 
@@ -106,11 +108,12 @@ namespace VL
         {
             get
             {
-                return default(float);
+                return additiveScale;
             }
 
             set
             {
+                additiveScale = value;
             }
         }
 
@@ -118,11 +121,12 @@ namespace VL
         {
             get
             {
-                return default(bool);
+                return autoAdditiveDisabled;
             }
 
             set
             {
+                autoAdditiveDisabled = value;
             }
         }
 
@@ -131,12 +135,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CtalkWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CtalkWeight_003Ek__BackingField = value;
             }
         }
 
@@ -145,12 +150,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CdeltaTalkWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CdeltaTalkWeight_003Ek__BackingField = value;
             }
         }
 
@@ -159,12 +165,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CadditiveWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CadditiveWeight_003Ek__BackingField = value;
             }
         }
 
@@ -173,12 +180,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CcurrentNodAdditiveNeckFrontBackRot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcurrentNodAdditiveNeckFrontBackRot_003Ek__BackingField = value;
             }
         }
 
@@ -187,12 +195,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CcurrentNodAdditiveNeckLeftRightRot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcurrentNodAdditiveNeckLeftRightRot_003Ek__BackingField = value;
             }
         }
 
@@ -201,12 +210,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CcurrentNodAdditiveHeadFrontBackRot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcurrentNodAdditiveHeadFrontBackRot_003Ek__BackingField = value;
             }
         }
 
@@ -215,12 +225,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CcurrentNodAdditiveHeadLeftRightRot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CcurrentNodAdditiveHeadLeftRightRot_003Ek__BackingField = value;
             }
         }
 
@@ -266,38 +277,78 @@ namespace VL
 
         public void UpdateAdditive(float time, float weight)
         {
+            _currentAdditiveTime = time;
+            _currentAdditiveWeight = weight;
+            _isUpdateAdditive = true;
         }
 
         private void InitializeAdditive(Transform transform, int index, float scale)
         {
+            if (_animationPlayer == null || _animationPlayer.animator == null) return;
+            if (_data.additiveDatas == null || _data.additiveDatas.Length <= index || _additiveIndex == index) return;
+            _additiveIndex = index;
+            _additiveTime = Time.time;
+            additiveScale = scale;
+            var data = _data.additiveDatas[index];
+            if (_additiveTransforms == null || _additiveTransforms.Length != data.bindings.Length)
+                _additiveTransforms = new Transform[data.bindings.Length];
+            for (int i = 0; i < data.bindings.Length; ++i)
+                _additiveTransforms[i] = transform.Find(data.bindings[i].path);
         }
 
         protected abstract void CreateVLActorTalkFFT();
         public void PlayTalk(TAudioSource source, Transform sourceTarget, bool lipSyncEnabled, [global::System.Runtime.InteropServices.Optional, global::System.Runtime.InteropServices.DefaultParameterValue(false)] bool skipPlayState, [Optional] VLTalkMotionSelector selector)
         {
+            PlayTalk(selector);
+            if (source != null)
+            {
+                _sourceTarget = sourceTarget;
+                _fft.SetAudioSource(source);
+                OnPlayTalk(source);
+                if (_sourceTarget) _defaultSourcePosition = source.transform.position;
+            }
+            isTalk = lipSyncEnabled;
+            skipPlayStateCheck = skipPlayState;
         }
 
         protected abstract void OnPlayTalk(TAudioSource source);
         public void PlayTalk([Optional] VLTalkMotionSelector selector)
         {
+            if (_data == null) return;
+            if (selector == null) selector = DefaultAdditiveClipSelector;
+            InitializeAdditive(transform, selector(_data.additiveDatas?.Length ?? 0), additiveScale);
+            isTalk = true;
+            skipPlayStateCheck = true;
         }
 
         public void StopTalk()
         {
+            Reset();
         }
 
         private void Reset()
         {
+            if (_sourceTarget && _fft.audioSource != null)
+                _fft.audioSource.transform.position = _defaultSourcePosition;
+            if (_fft != null) _fft.Reset();
+            isTalk = false;
+            OnReset();
         }
 
         protected abstract void OnReset();
         public static int DefaultAdditiveClipSelector(int length)
         {
-            return default(int);
+            return UnityEngine.Random.Range(0, length);
         }
 
         public void SetTalkSpeed(float speed)
         {
+            if (!_scriptPlayable.IsValid()) return;
+            for (int i = 0; i < _data.talks.Length; ++i)
+            {
+                var input = _scriptPlayable.GetInput(i);
+                if (input.IsValid()) input.SetSpeed(speed);
+            }
         }
 
         protected VLActorTalkBase()

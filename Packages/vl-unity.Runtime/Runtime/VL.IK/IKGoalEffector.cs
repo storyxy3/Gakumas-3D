@@ -12,11 +12,12 @@ namespace VL.IK
         {
             get
             {
-                return default(ActorAnimationIKHandleType);
+                return handleType;
             }
 
             set
             {
+                handleType = value;
             }
         }
 

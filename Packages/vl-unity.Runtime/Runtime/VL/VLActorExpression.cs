@@ -2,6 +2,7 @@ namespace VL
 {
     using global::Unity.Collections;
     using global::UnityEngine;
+    using global::UnityEngine.Playables;
     using global::UnityEngine.Animations;
     using global::VL;
     using global::VL.Animation;
@@ -29,7 +30,11 @@ namespace VL
 
         public bool Setup(VLActorExpressionBone[] expressionBones)
         {
-            return default(bool);
+            _expressionBones = expressionBones;
+            // TODO(qa-recon): needs vl-unity.Runtime::VLActorExpression.Dispose/Initialize (outside the supplied method census).
+            Dispose();
+            Initialize();
+            return _scriptPlayable.IsValid();
         }
 
         public override void OnUpdate()

@@ -9,7 +9,7 @@ namespace VL
         {
             get
             {
-                return null;
+                return GetType().Name;
             }
         }
 
@@ -17,7 +17,7 @@ namespace VL
         {
             get
             {
-                return null;
+                return GetType().Name;
             }
         }
 

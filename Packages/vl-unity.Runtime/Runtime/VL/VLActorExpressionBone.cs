@@ -40,11 +40,12 @@ namespace VL
         public class AxisData
         {
             public float coefficient;
-            public float min;
-            public float max;
+            public float min = -180;
+            public float max = 180;
             public AxisType outputAxisType;
             public AxisData()
             {
+
             }
         }
 
@@ -62,15 +63,15 @@ namespace VL
         [SerializeField]
         private float _coefficient;
         [SerializeField]
-        private float _min;
+        private float _min = -180;
         [SerializeField]
-        private float _max;
+        private float _max = 180;
         [SerializeField]
         private bool _useAxisMask;
         [SerializeField]
         private AxisMaskType _axisMask;
         [SerializeField]
-        private AxisData[] _axisData;
+        private AxisData[] _axisData = new AxisData[3];
         [SerializeField]
         private math.RotationOrder _rotationOrder;
         [SerializeField]
@@ -357,6 +358,7 @@ namespace VL
 
         public VLActorExpressionBone()
         {
+
         }
     }
 }

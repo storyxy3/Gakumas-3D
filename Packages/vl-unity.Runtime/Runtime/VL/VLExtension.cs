@@ -6,7 +6,7 @@ namespace VL
     {
         public static bool IsValid(this IVLActorController actor)
         {
-            return default(bool);
+            return actor != null && actor as UnityEngine.MonoBehaviour != null;
         }
     }
 }
