@@ -15,27 +15,36 @@ namespace ActorAnimation
         {
             get
             {
-                return default(bool);
+                return _isActive;
             }
         }
 
         public bool IsValid(AnimationStream stream)
         {
-            return default(bool);
+            return rootHandle.IsValid(stream) && rootReferenceHandle.IsValid(stream);
         }
 
         public bool Resolve(AnimationStream stream)
         {
-            return default(bool);
+            if (!rootHandle.IsResolved(stream)) rootHandle.Resolve(stream);
+            return rootHandle.IsResolved(stream);
         }
 
         public void Execute(AnimationStream stream)
         {
+            rootReferenceHandle.GetGlobalTR(stream, out var position, out var rotation);
+            rootHandle.SetGlobalTR(stream, position, rotation, false);
         }
 
         public ActorAnimationRootControllerJobLocator(Transform root, Transform rootReference, Animator animator)
         {
             this = default;
+            _isActive = true;
+            if (root != null && rootReference != null)
+            {
+                rootHandle = ReadWriteTransformHandle.Bind(animator, root);
+                rootReferenceHandle = animator.BindSceneTransform(rootReference);
+            }
         }
 
         public void SetupRootController(Transform root, Transform rootReference, Animator animator)

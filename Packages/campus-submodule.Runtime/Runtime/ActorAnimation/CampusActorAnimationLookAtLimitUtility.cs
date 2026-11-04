@@ -8,6 +8,7 @@ namespace ActorAnimation
         public static void ProcessLookAtLimit<TDriver>(this TDriver driver, AnimationStream stream, ref CampusActorAnimationLookAtLimit lookAtLimit)
             where TDriver : struct, ICampusActorAnimationLookAtLimit
         {
+            lookAtLimit.Execute(stream);
         }
     }
 }

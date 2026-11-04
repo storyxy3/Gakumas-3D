@@ -8,6 +8,7 @@ namespace ActorAnimation
         public static void ProcessSwingSkeleton<TDriver>(this TDriver driver, AnimationStream stream, ref ActorAnimationSwingJobSkeleton swingJobSkeleton)
             where TDriver : struct, IActorAnimationSwingSkeleton
         {
+            swingJobSkeleton.Execute(stream);
         }
     }
 }

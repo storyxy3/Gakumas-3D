@@ -39,12 +39,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             set
             {
+                _003CjobWeight_003Ek__BackingField = value;
             }
 
             // TODO(qa-recon): Getter stripped from game metadata; required for C# interface/attribute compilation.
             get
             {
-                throw null;
+                return _003CjobWeight_003Ek__BackingField;
             }
         }
 
@@ -52,11 +53,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationConstraintTransformJobBone>);
+                return _constraintTransformJobBones;
             }
 
             set
             {
+                _constraintTransformJobBones = value;
             }
         }
 
@@ -64,11 +66,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverRotationJobBone>);
+                return _quartzDriverRotationJobBones;
             }
 
             set
             {
+                _quartzDriverRotationJobBones = value;
             }
         }
 
@@ -76,11 +79,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverFrillJobBone>);
+                return _quartzDriverFrillJobBones;
             }
 
             set
             {
+                _quartzDriverFrillJobBones = value;
             }
         }
 
@@ -88,11 +92,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverSkirtJobBone>);
+                return _quartzDriverSkirtJobBones;
             }
 
             set
             {
+                _quartzDriverSkirtJobBones = value;
             }
         }
 
@@ -100,11 +105,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverHairJobBone>);
+                return _quartzDriverHairJobBones;
             }
 
             set
             {
+                _quartzDriverHairJobBones = value;
             }
         }
 
@@ -112,11 +118,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverHumanoidHandJobBone>);
+                return _quartzDriverHumanoidHandJobBones;
             }
 
             set
             {
+                _quartzDriverHumanoidHandJobBones = value;
             }
         }
 
@@ -124,11 +131,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverHumanoidSleeveJobBone>);
+                return _quartzDriverHumanoidSleeveJobBones;
             }
 
             set
             {
+                _quartzDriverHumanoidSleeveJobBones = value;
             }
         }
 
@@ -136,11 +144,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverHumanoidUpLegJobBone>);
+                return _quartzDriverHumanoidUpLegJobBones;
             }
 
             set
             {
+                _quartzDriverHumanoidUpLegJobBones = value;
             }
         }
 
@@ -148,11 +157,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverHumanoidArmJobBone>);
+                return _quartzDriverHumanoidArmJobBones;
             }
 
             set
             {
+                _quartzDriverHumanoidArmJobBones = value;
             }
         }
 
@@ -160,11 +170,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverWaistJobBone>);
+                return _quartzDriverWaistJobBones;
             }
 
             set
             {
+                _quartzDriverWaistJobBones = value;
             }
         }
 
@@ -172,11 +183,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverFurisodeJobBone>);
+                return _quartzDriverFurisodeJobBones;
             }
 
             set
             {
+                _quartzDriverFurisodeJobBones = value;
             }
         }
 
@@ -184,11 +196,12 @@ namespace ActorAnimation
         {
             get
             {
-                return default(NativeArray<ActorAnimationQuartzDriverPonchoJobBone>);
+                return _quartzDriverPonchoJobBones;
             }
 
             set
             {
+                _quartzDriverPonchoJobBones = value;
             }
         }
 
@@ -196,7 +209,7 @@ namespace ActorAnimation
         {
             get
             {
-                return default(ActorAnimationSwingJobSkeleton);
+                return _swingJobSkeleton;
             }
         }
 
@@ -204,57 +217,158 @@ namespace ActorAnimation
         {
             get
             {
-                return default(ActorAnimationFullBodyIKJobSkeleton);
+                return _fullBodyIKJobSkeleton;
             }
         }
 
         public void ProcessAnimation(AnimationStream stream)
         {
+            if (!stream.isValid || !quartzDriverRotationJobBones.IsCreated) return;
+            ProcessFullBodyIK(stream);
+            ProcessLookAtLimit(stream);
+            ProcessJointLimit(stream);
+            ProcessConstraint(stream);
+            ProcessQuartzDriver(stream);
+            ProcessSwingSkeleton(stream);
         }
 
         public void ProcessFullBodyIK(AnimationStream stream)
         {
+            this.ProcessFullBodyIK(stream, ref _fullBodyIKJobSkeleton);
         }
 
         public void ProcessLookAtLimit(AnimationStream stream)
         {
+            if (_lookAtLimit.IsValid(stream))
+                this.ProcessLookAtLimit(stream, ref _lookAtLimit);
         }
 
         public void ProcessJointLimit(AnimationStream stream)
         {
+            if (_jointLimit.IsValid(stream))
+                this.ProcessJointLimit(stream, ref _jointLimit);
         }
 
         public void ProcessConstraint(AnimationStream stream)
         {
+            this.ProcessConstraintParts(stream, constraintTransformJobBones);
         }
 
         public void ProcessQuartzDriver(AnimationStream stream)
         {
+            this.ProcessQuartzDriverParts(stream, quartzDriverRotationJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverFrillJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverSkirtJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverHairJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverHumanoidHandJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverHumanoidSleeveJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverHumanoidUpLegJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverHumanoidArmJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverWaistJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverFurisodeJobBones);
+            this.ProcessQuartzDriverParts(stream, quartzDriverPonchoJobBones);
         }
 
         public void ProcessSwingSkeleton(AnimationStream stream)
         {
+            this.ProcessSwingSkeleton(stream, ref _swingJobSkeleton);
         }
 
         public void ProcessRootMotion(AnimationStream stream)
         {
+            ProcessRoot(stream);
         }
 
         public void ProcessRoot(AnimationStream stream)
         {
+            this.ProcessRoot(stream, ref _rootController);
         }
 
         public void Create<TData>(Animator animator, ref TData rigData)
             where TData : struct, IActorAnimationRigData
         {
+            CreateFullBodyIK(animator, rigData);
+            CreateConstraint(animator, rigData);
+            CreateQuartzDriver(animator, rigData);
+            CreateSwingSkeleton(animator, rigData);
+            CreateRoot(animator, rigData);
         }
 
         public void CreateConstraint(Animator animator, IActorAnimationRigData rigData)
         {
+            constraintTransformJobBones = new NativeArray<ActorAnimationConstraintTransformJobBone>(8, Allocator.Persistent);
+            for (int i = 0; i < rigData.constraintTransformBones.Count; i++)
+                _constraintTransformJobBones[i] = new ActorAnimationConstraintTransformJobBone(rigData.constraintTransformBones[i], animator);
         }
 
         public void CreateQuartzDriver(Animator animator, IActorAnimationRigData rigData)
         {
+            quartzDriverRotationJobBones = new NativeArray<ActorAnimationQuartzDriverRotationJobBone>(16, Allocator.Persistent);
+            quartzDriverFrillJobBones = new NativeArray<ActorAnimationQuartzDriverFrillJobBone>(4, Allocator.Persistent);
+            quartzDriverSkirtJobBones = new NativeArray<ActorAnimationQuartzDriverSkirtJobBone>(12, Allocator.Persistent);
+            quartzDriverHairJobBones = new NativeArray<ActorAnimationQuartzDriverHairJobBone>(10, Allocator.Persistent);
+            quartzDriverHumanoidHandJobBones = new NativeArray<ActorAnimationQuartzDriverHumanoidHandJobBone>(4, Allocator.Persistent);
+            quartzDriverHumanoidSleeveJobBones = new NativeArray<ActorAnimationQuartzDriverHumanoidSleeveJobBone>(8, Allocator.Persistent);
+            quartzDriverHumanoidUpLegJobBones = new NativeArray<ActorAnimationQuartzDriverHumanoidUpLegJobBone>(4, Allocator.Persistent);
+            quartzDriverHumanoidArmJobBones = new NativeArray<ActorAnimationQuartzDriverHumanoidArmJobBone>(4, Allocator.Persistent);
+            quartzDriverWaistJobBones = new NativeArray<ActorAnimationQuartzDriverWaistJobBone>(2, Allocator.Persistent);
+            quartzDriverFurisodeJobBones = new NativeArray<ActorAnimationQuartzDriverFurisodeJobBone>(4, Allocator.Persistent);
+            quartzDriverPonchoJobBones = new NativeArray<ActorAnimationQuartzDriverPonchoJobBone>(6, Allocator.Persistent);
+            for (int i = 0; i < rigData.quartzDriverRotationBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverRotationBones[i];
+                _quartzDriverRotationJobBones[i] = new ActorAnimationQuartzDriverRotationJobBone(bone.setting, bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverFrillBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverFrillBones[i];
+                _quartzDriverFrillJobBones[i] = new ActorAnimationQuartzDriverFrillJobBone(bone.setting.ConvertToUnity(), bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverSkirtBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverSkirtBones[i];
+                _quartzDriverSkirtJobBones[i] = new ActorAnimationQuartzDriverSkirtJobBone(bone.setting.ConvertToUnity(), bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverHairBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverHairBones[i];
+                _quartzDriverHairJobBones[i] = new ActorAnimationQuartzDriverHairJobBone(bone.setting.ConvertToUnity(), bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverHumanoidHandBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverHumanoidHandBones[i];
+                _quartzDriverHumanoidHandJobBones[i] = new ActorAnimationQuartzDriverHumanoidHandJobBone(bone.setting, bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverHumanoidSleeveBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverHumanoidSleeveBones[i];
+                _quartzDriverHumanoidSleeveJobBones[i] = new ActorAnimationQuartzDriverHumanoidSleeveJobBone(bone.setting.ConvertToUnity(), bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverHumanoidUpLegBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverHumanoidUpLegBones[i];
+                _quartzDriverHumanoidUpLegJobBones[i] = new ActorAnimationQuartzDriverHumanoidUpLegJobBone(bone.setting, bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverHumanoidArmBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverHumanoidArmBones[i];
+                _quartzDriverHumanoidArmJobBones[i] = new ActorAnimationQuartzDriverHumanoidArmJobBone(bone.setting, bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverWaistBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverWaistBones[i];
+                _quartzDriverWaistJobBones[i] = new ActorAnimationQuartzDriverWaistJobBone(bone.setting, bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverFurisodeBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverFurisodeBones[i];
+                _quartzDriverFurisodeJobBones[i] = new ActorAnimationQuartzDriverFurisodeJobBone(bone.setting, bone.transform, animator);
+            }
+            for (int i = 0; i < rigData.quartzDriverPonchoBones.Count; i++)
+            {
+                var bone = rigData.quartzDriverPonchoBones[i];
+                _quartzDriverPonchoJobBones[i] = new ActorAnimationQuartzDriverPonchoJobBone(bone.setting, bone.transform, animator);
+            }
         }
 
         public void CreateFullBodyIK(Animator animator, IActorAnimationRigData rigData)
@@ -267,6 +381,8 @@ namespace ActorAnimation
 
         public void CreateRoot(Animator animator, IActorAnimationRigData rigData)
         {
+            if (rigData is CampusActorAnimationRigData campusData)
+                _rootController = new ActorAnimationRootControllerJobLocator(campusData.root.parent, campusData.rootReference, animator);
         }
 
         public void UpdateConstraintSource<TData>(ref TData rigData, Animator animator)
@@ -281,6 +397,7 @@ namespace ActorAnimation
 
         public void UpdateManageProperty(ActorAnimationManageProperty manageProperty)
         {
+            _swingJobSkeleton.manageProperty = manageProperty;
         }
 
         public void UpdateRigData<TData>(ref TData rigData)
@@ -404,6 +521,10 @@ namespace ActorAnimation
 
         public void Destroy()
         {
+            DestroyIK();
+            DestroyConstraint();
+            DestroyQuartzDriver();
+            DestroySwing();
         }
 
         public void ApplyActorSwingCmmnHeightCorrection(bool enabled)
@@ -413,18 +534,50 @@ namespace ActorAnimation
 
         private void DestroyIK()
         {
+            if (fullBodyIKJobSkeleton.correctionColliders.IsCreated)
+                fullBodyIKJobSkeleton.correctionColliders.Dispose();
         }
 
         private void DestroyConstraint()
         {
+            if (constraintTransformJobBones.IsCreated)
+                constraintTransformJobBones.Dispose();
         }
 
         private void DestroyQuartzDriver()
         {
+            if (quartzDriverRotationJobBones.IsCreated)
+                quartzDriverRotationJobBones.Dispose();
+            if (quartzDriverFrillJobBones.IsCreated)
+                quartzDriverFrillJobBones.Dispose();
+            if (quartzDriverSkirtJobBones.IsCreated)
+                quartzDriverSkirtJobBones.Dispose();
+            if (quartzDriverHairJobBones.IsCreated)
+                quartzDriverHairJobBones.Dispose();
+            if (quartzDriverHumanoidHandJobBones.IsCreated)
+                quartzDriverHumanoidHandJobBones.Dispose();
+            if (quartzDriverHumanoidSleeveJobBones.IsCreated)
+                quartzDriverHumanoidSleeveJobBones.Dispose();
+            if (quartzDriverHumanoidUpLegJobBones.IsCreated)
+                quartzDriverHumanoidUpLegJobBones.Dispose();
+            if (quartzDriverHumanoidArmJobBones.IsCreated)
+                quartzDriverHumanoidArmJobBones.Dispose();
+            if (quartzDriverWaistJobBones.IsCreated)
+                quartzDriverWaistJobBones.Dispose();
+            if (quartzDriverFurisodeJobBones.IsCreated)
+                quartzDriverFurisodeJobBones.Dispose();
+            if (quartzDriverPonchoJobBones.IsCreated)
+                quartzDriverPonchoJobBones.Dispose();
         }
 
         private void DestroySwing()
         {
+            if (swingJobSkeleton.dynamicBones.IsCreated) swingJobSkeleton.dynamicBones.Dispose();
+            if (swingJobSkeleton.staticBones.IsCreated) swingJobSkeleton.staticBones.Dispose();
+            if (swingJobSkeleton.breastBones.IsCreated) swingJobSkeleton.breastBones.Dispose();
+            swingJobSkeleton.breastBoneCurve.Dispose();
+            if (swingJobSkeleton.chainBones.IsCreated) swingJobSkeleton.chainBones.Dispose();
+            if (swingJobSkeleton.instanceIDToDynamicBoneIndex.IsCreated) swingJobSkeleton.instanceIDToDynamicBoneIndex.Dispose();
         }
     }
 }

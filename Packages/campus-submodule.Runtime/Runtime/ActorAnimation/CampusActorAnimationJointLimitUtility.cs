@@ -8,6 +8,7 @@ namespace ActorAnimation
         public static void ProcessJointLimit<TJointLimitJob>(this TJointLimitJob jointLimitJob, AnimationStream stream, ref CampusActorAnimationJointLimit jointLimit)
             where TJointLimitJob : struct, ICampusActorAnimationJointLimit
         {
+            jointLimit.Execute(stream);
         }
     }
 }

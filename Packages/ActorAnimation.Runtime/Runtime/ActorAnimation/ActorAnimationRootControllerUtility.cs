@@ -8,6 +8,8 @@ namespace ActorAnimation
         public static void ProcessRoot<TDriver>(this TDriver driver, AnimationStream stream, ref ActorAnimationRootControllerJobLocator rootLocator)
             where TDriver : struct, IActorAnimation
         {
+            if (rootLocator.IsActive && rootLocator.IsValid(stream) && rootLocator.Resolve(stream))
+                rootLocator.Execute(stream);
         }
     }
 }
