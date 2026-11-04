@@ -1,0 +1,437 @@
+{
+ "addedOverloads": [],
+ "same": 252,
+ "changed": [
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$BindActor",
+   "similarity": 0.882,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$BindAudio",
+   "similarity": 0.861,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$BindCamera",
+   "similarity": 0.933,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$DebugSetMuteTracks",
+   "similarity": 0.89,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$DisableJointLimitIfNeeded",
+   "similarity": 0.618,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$IsAllLiveScene",
+   "similarity": 0.806,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$ReplaceBGM",
+   "similarity": 0.848,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$SetLiveOverrideAsset",
+   "similarity": 0.312,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder$$SetupAsync",
+   "similarity": 0.611,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39$$MoveNext",
+   "similarity": 0.402,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveBinder.TrackName$$.cctor",
+   "similarity": 0.724,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorRim$$.ctor",
+   "similarity": 0.824,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareBatchForSRP$$ForceRefresh",
+   "similarity": 0.754,
+   "note": "layout"
+  },
+  {
+   "method": "ProFlareBatchForSRP$$TryGetScheduledFlareData",
+   "similarity": 0.794,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareBatchForSRPData$$ComputeFlares",
+   "similarity": 0.924,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareBatchForSRPData$$Initialize",
+   "similarity": 0.919,
+   "note": "layout"
+  },
+  {
+   "method": "ProFlareBatchForSRPData$$RenderFlares",
+   "similarity": 0.709,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareBatchForSRPData$$ScheduleFlares",
+   "similarity": 0.27,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareBatchForSRPData$$UpdateElementData",
+   "similarity": 0.967,
+   "note": "layout"
+  },
+  {
+   "method": "ProFlareUpdateElementJob$$Execute",
+   "similarity": 0.976,
+   "note": "layout"
+  },
+  {
+   "method": "ProFlareUpdateElementJob$$GetElementJobData",
+   "similarity": 0.174,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareUpdateElementJob$$GetOffsetPosition",
+   "similarity": 0.27,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareUpdateJob$$Angle",
+   "similarity": 0.892,
+   "note": "semantic"
+  },
+  {
+   "method": "ProFlareUpdateJob$$Execute",
+   "similarity": 0.791,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.BoneLinkData$$.ctor",
+   "similarity": 0.8,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Build",
+   "similarity": 0.577,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$CheckResourceObjects",
+   "similarity": 0.851,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Create<object>",
+   "similarity": 0.887,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$PostBuild",
+   "similarity": 0.789,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$PreBuild",
+   "similarity": 0.913,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, object>$$CheckResourceObjects",
+   "similarity": 0.851,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.VLActorController<object, object, object>$$Create<object>",
+   "similarity": 0.887,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$.ctor",
+   "similarity": 0.942,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildAvatar",
+   "similarity": 0.745,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildModel",
+   "similarity": 0.785,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedPosition",
+   "similarity": 0.677,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedRotation",
+   "similarity": 0.677,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, object>$$BuildAvatar",
+   "similarity": 0.755,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, object>$$BuildModel",
+   "similarity": 0.801,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, object>$$GetAnimatedPosition",
+   "similarity": 0.677,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLDefaultActorController<object, object, object>$$GetAnimatedRotation",
+   "similarity": 0.677,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.Chunk$$ResizeArray<Bounds>",
+   "similarity": 0.033,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.CullingJob$$Execute",
+   "similarity": 0.875,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.EntityIndexer$$UpdateIndex",
+   "similarity": 0.8,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.GlobalMeshSD$$Get",
+   "similarity": 0.631,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.MeshGenerator$$GenerateConeZ_Radii",
+   "similarity": 0.54,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.MeshGenerator$$GenerateConeZ_Radii_DoubleCaps",
+   "similarity": 0.456,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.MeshGenerator.<>c__DisplayClass6_1$$<GenerateConeZ_Radii_DoubleCaps>b__2",
+   "similarity": 0.972,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.SharedVLBEntityManager$$Dispose",
+   "similarity": 0.786,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.SharedVLBEntityManager$$Get",
+   "similarity": 0.894,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.Utils$$TestPlanesAABB",
+   "similarity": 0.875,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.Utils$$TransformAABB",
+   "similarity": 0.304,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBCullingSystem$$Execute",
+   "similarity": 0.83,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VLBDrawCallSystem$$Execute",
+   "similarity": 0.868,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VLBDrawCallSystem.DrawCallJob$$Execute",
+   "similarity": 0.927,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VLBDrawCallSystem.DrawCallJob$$GetInsideBeamFactorFromObjectSpacePos",
+   "similarity": 0.683,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBDrawCallSystem.DrawCallJob$$UpdateParams",
+   "similarity": 0.398,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBDrawSystem$$Execute",
+   "similarity": 0.621,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBDrawSystem$$ExecuteHD",
+   "similarity": 0.475,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBEntityManager$$CreateChunkIndex",
+   "similarity": 0.888,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VLBEntityManager$$CreateEntity",
+   "similarity": 0.795,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBEntityManager$$UpdateEntityData",
+   "similarity": 0.569,
+   "note": "semantic"
+  },
+  {
+   "method": "VLB.VLBUpdateCachedSystem.UpdateTransformsJob$$Execute",
+   "similarity": 0.5,
+   "note": "layout"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "Campus.Common.Live.CampusLiveBinder",
+   9
+  ],
+  [
+   "ProFlareBatchForSRPData",
+   5
+  ],
+  [
+   "VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>",
+   5
+  ],
+  [
+   "VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>",
+   4
+  ],
+  [
+   "VL.VLDefaultActorController<object, object, object>",
+   4
+  ],
+  [
+   "ProFlareUpdateElementJob",
+   3
+  ],
+  [
+   "VLB.VLBDrawCallSystem.DrawCallJob",
+   3
+  ],
+  [
+   "VLB.VLBEntityManager",
+   3
+  ],
+  [
+   "ProFlareBatchForSRP",
+   2
+  ],
+  [
+   "ProFlareUpdateJob",
+   2
+  ],
+  [
+   "VL.Core.VLActorController<object, object, object>",
+   2
+  ],
+  [
+   "VLB.MeshGenerator",
+   2
+  ],
+  [
+   "VLB.SharedVLBEntityManager",
+   2
+  ],
+  [
+   "VLB.Utils",
+   2
+  ],
+  [
+   "VLB.VLBDrawSystem",
+   2
+  ],
+  [
+   "Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39",
+   1
+  ],
+  [
+   "Campus.Common.Live.CampusLiveBinder.TrackName",
+   1
+  ],
+  [
+   "Campus.Rendering.CampusActorRim",
+   1
+  ],
+  [
+   "VL.Core.BoneLinkData",
+   1
+  ],
+  [
+   "VL.Rendering.DownscalePass",
+   1
+  ],
+  [
+   "VLB.Chunk",
+   1
+  ],
+  [
+   "VLB.CullingJob",
+   1
+  ],
+  [
+   "VLB.EntityIndexer",
+   1
+  ],
+  [
+   "VLB.GlobalMeshSD",
+   1
+  ],
+  [
+   "VLB.MeshGenerator.<>c__DisplayClass6_1",
+   1
+  ],
+  [
+   "VLB.VLBCullingSystem",
+   1
+  ],
+  [
+   "VLB.VLBDrawCallSystem",
+   1
+  ],
+  [
+   "VLB.VLBUpdateCachedSystem.UpdateTransformsJob",
+   1
+  ]
+ ]
+}

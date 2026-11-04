@@ -1,0 +1,570 @@
+
+== VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor semantic
+--- game
++++ rebuilt
+@@ -14,2 +14,27 @@
+ bl FN
+ bl FN
++bl FN
++and #0x1fffffff0
++bl System.IntPtr$$op_Explicit
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++and #0x1fffffff0
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++and #0xffffffff
++and #0x1fffffff0
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++cmp #0
+
+== ActorAnimation.CampusActorAnimationJob$$ApplyActorSwingCmmnHeightCorrection layout
+--- game
++++ rebuilt
+@@ -1,2 +1,29 @@
+ strb w1, [x0,#F]
+ ret
++ldp x8, x1, [x0]
++mov x0, x8
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
++stp x1, x2, [x0,#F]
++ret
+
+== ActorAnimation.CampusActorAnimationJob$$ProcessJointLimit layout
+--- game
++++ rebuilt
+@@ -18,9 +18,10 @@
+ ldr x8, [x20,#F]
+ mov x1, sp
++mov x2, xzr
+ stp q0, q1, [sp]
+ str q2, [sp, #0x20]
+ str x8, [sp, #0x30]
+ bl ActorAnimation.CampusActorAnimationJointLimit$$IsValid
+-tbz w0, +164
++tbz w0, +168
+ adrp x21,PAGE
+ add x0, sp, #0x80
+
+== ActorAnimation.CampusActorAnimationJob$$ProcessLookAtLimit layout
+--- game
++++ rebuilt
+@@ -18,9 +18,10 @@
+ ldr x8, [x20,#F]
+ mov x1, sp
++mov x2, xzr
+ stp q0, q1, [sp]
+ str q2, [sp, #0x20]
+ str x8, [sp, #0x30]
+ bl ActorAnimation.CampusActorAnimationLookAtLimit$$IsValid
+-tbz w0, +164
++tbz w0, +168
+ adrp x21,PAGE
+ add x0, sp, #0x80
+
+== ActorAnimation.CampusActorAnimationJob$$SetupCampusJointLimit semantic
+--- game
++++ rebuilt
+@@ -32,2 +32,3 @@
+ mov #8
+ bl UnityEngine.Animations.MuscleHandle$$.ctor
++bl ActorAnimation.CampusActorAnimationJointLimit$$.ctor
+
+== ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit semantic
+--- game
++++ rebuilt
+@@ -51,4 +51,5 @@
+ ldr  STR headLeftRightLimit
+ ldr  STR headFrontLimit
++ldr  STR headBackLimit
+ bl UnityEngine.Component$$get_transform
+ bl System.Type$$GetTypeFromHandle
+@@ -71,5 +72,4 @@
+ bl UnityEngine.Component$$get_transform
+ bl System.Type$$GetTypeFromHandle
+-ldr  STR headBackLimit
+ bl UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+ bl UnityEngine.Component$$get_transform
+@@ -145,2 +145,7 @@
+ mov #8
+ bl UnityEngine.Animations.MuscleHandle$$.ctor
++mov #0x128
++bl FN
++bl ActorAnimation.CampusActorAnimationLookAtLimit$$.ctor
++mov #0x128
++bl FN
+
+== ActorAnimation.CampusActorAnimationRig$$ResetTime layout
+--- game
++++ rebuilt
+@@ -25,7 +25,7 @@
+ bl UnityEngine.Animations.Rigging.RigConstraint<CampusActorAnimationJob, CampusActorAnimationRigData, object>$$get_data
+ ldr x8, [x0,#F]
+-cbz x8, +176
++cbz x8, +180
+ ldr x0, [x19,#F]
+-cbz x0, +176
++cbz x0, +180
+ adrp x8,PAGE
+ ldr x8, META ActorAnimation.CampusActorAnimationJob_TypeInfo
+@@ -35,5 +35,5 @@
+ ldr x9, [x1,#F]
+ cmp x8, x9
+-b.ne +196
++b.ne +200
+ bl FN
+ mov x1, x0
+@@ -42,4 +42,5 @@
+ bl FN
+ mov x0, sp
++mov x1, xzr
+ bl ActorAnimation.CampusActorAnimationJob$$ResetTime
+ add sp, sp, #0xa00
+
+== Campus.Common.CampusActorController$$InitializeActorAnimation semantic
+--- game
++++ rebuilt
+@@ -182,11 +182,12 @@
+ bl FN
+ ldr  ActorAnimationConstraintTransformBone>()
+-ldr  MMETH Method$System.Linq.Enumerable.ToList<ActorAnimationConstraintTransformBone>()
+-bl FN
+-bl FN
+-ldr  MMETH Method$Campus.Common.CampusActorController.<>c.<gen>()
+-bl System.Func<object, object>$$.ctor
+-bl FN
+-bl System.Linq.Enumerable$$SelectMany<object, object>
++b FN
++bl FN
++bl FN
++ldr  MMETH Method$Campus.Common.CampusActorController.<>c.<gen>()
++bl System.Func<object, object>$$.ctor
++bl FN
++bl System.Linq.Enumerable$$SelectMany<object, object>
++ldr  MMETH Method$Campus.Crowd.PenlightMeshRenderSystem.<>c.<gen>()
+ bl System.Linq.Enumerable$$ToList<object>
+ bl System.Linq.Enumerable$$OfType<object>
+
+== Campus.Common.Live.CampusLiveTimelineController$$GetAllPanoramaCameras layout
+--- game
++++ rebuilt
+@@ -30,10 +30,9 @@
+ mov x2, xzr
+ bl UnityEngine.Object$$op_Inequality
+-tbz w0, +156
++tbz w0, +152
+ mov x0, x19
+ bl Campus.Common.Live.CampusLiveTimelineController$$get_CameraHolder
+-cbz x0, +208
++cbz x0, +204
+ ldp x20, x19, [sp, #0x10]
+-mov x1, xzr
+ ldp x30, x21, [sp], #0x20
+ b Campus.Common.Panorama.PanoramaCameraHolder$$GetAllPanoramaCameras
+
+== Campus.Common.Live.CampusLiveTimelineController$$ResolveCamera layout
+--- game
++++ rebuilt
+@@ -27,11 +27,10 @@
+ mov x2, xzr
+ bl UnityEngine.Object$$op_Inequality
+-tbz w0, +156
++tbz w0, +152
+ mov x0, x21
+ bl Campus.Common.Live.CampusLiveTimelineController$$get_CameraHolder
+-cbz x0, +176
++cbz x0, +172
+ mov w1, w20
+ mov w2, w19
+-mov x3, xzr
+ ldp x20, x19, [sp, #0x20]
+ ldp x22, x21, [sp, #0x10]
+
+== Campus.Crowd.CrowdTimelineTrack$$CreateLayerMixer layout
+--- game
++++ rebuilt
+@@ -72,5 +72,5 @@
+ stp xzr, xzr, [sp, #0x20]
+ stp xzr, xzr, [sp, #0x10]
+-cbz x22, +2224
++cbz x22, +2232
+ adrp x8,PAGE
+ add x1, sp, #0x28
+@@ -96,5 +96,5 @@
+ ldr x0, [sp, #0x28]
+ stp x8, x1, [sp, #0x18]
+-cbz x0, +2224
++cbz x0, +2232
+ mov x1, x20
+ mov x2, xzr
+
+== VLB.Chunk$$ResizeArray<Bounds> semantic
+--- game
++++ rebuilt
+@@ -4,2 +4,331 @@
+ bl Unity.Collections.NativeArray<Bounds>$$Copy
+ bl Unity.Collections.NativeArray<Bounds>$$Dispose
++mov #0x4b0
++b FN
++mov #0x230
++b FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Nullable<Decimal>>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Nullable<Decimal>>
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Nullable<double>>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Nullable<double>>
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Nullable<float>>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Nullable<float>>
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Decimal>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Decimal>
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<double>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<double>
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++b Cysharp.Threading.Tasks.UniTask$$FromException<float>
++bl FN
++bl FN
++b Cysharp.Threading.Tasks.UniTask$$FromResult<float>
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #0x34
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #0x2c
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #0x2c
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Collections.Generic.List<RaycastHit2D>$$get_Capacity
++bl FN
++bl UnityEngine.Debug$$Assert
++bl Unity.Collections.LowLevel.Unsafe.UnsafeUtility$$As<object>

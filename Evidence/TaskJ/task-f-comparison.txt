@@ -1,0 +1,79 @@
+same 631, changed 74, only in game 0, only in stock 0
+changed by class: VLB.VolumetricLightBeamSD 17, VLB.BeamGeometrySD 9, VL.FaceSystem.VLActorFaceModel 3, VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType> 3, VL.Animation.MotionDefinePlayer 2, VL.Animation.Timeline.MotionDefinePlayerTimelineTrackLayerBehaviour 2, VL.Core.VLActorController 2, VL.AABB.AABBJobData 1, VL.ActorMotionDefine 1, VL.Animation.ClipParam 1, VL.Animation.LayerParam 1, VL.Animation.MotionEffectPlayable 1, VL.Animation.Timeline.MotionDefinePlayerTimelineAsset 1, VL.Animation.Timeline.MotionDefinePlayerTimelineTrack 1, VL.AnimationData 1, VL.Core.MaterialInfo 1, VL.Core.SerializedDictionary<Int32Enum, object> 1, VL.Core.SerializedDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType> 1, VL.Core.SerializedDictionary<int, int> 1, VL.Core.SerializedDictionary<int, object> 1, VL.Core.SerializedDictionary<object, object> 1, VL.Ease.EaseFunctions 1, VL.FaceSystem.VLActorFaceModel.<>c 1, VL.JobUtility.Array2DInfo 1, VL.MotionDefine.MotionDefineEnumerator 1, VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4> 1, VL.VLActorBlendShapeLimitDataRuntime 1, VL.VLActorCollider 1, VL.VLActorFaceModelBlendShapeLimitDataRuntime 1, VL.VLCinemachineFocusPoint 1, VL.VLCinemachineFocusPoint.VcamFocusPointState 1, VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType> 1, VL.VLDefaultActorController<object, object, object> 1, VL.VLDefaultActorModelParts<object> 1, VL.VLExtension 1, VL.VLMeshUtility 1, VL.VLVirtualActorController 1, VLB.Config 1, VLB.MaterialManager 1, VLB.MaterialManager.StaticPropertiesHD 1, VLB.MaterialManager.StaticPropertiesSD 1, VLB.Utils 1, VLB.VolumetricLightBeamSD.<CoPlaytimeUpdate>d__221 1
+
+0.000 VL.VLDefaultActorModelParts<object>$$.ctor semantic
+0.047 VLB.VolumetricLightBeamSD$$ClampProperties layout
+0.270 VL.AnimationData$$CreatePlayable semantic
+0.354 VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor semantic
+0.370 VLB.BeamGeometrySD$$get_isNoiseEnabled semantic
+0.432 VLB.BeamGeometrySD$$ComputeLocalMatrix semantic
+0.500 VL.FaceSystem.VLActorFaceModel$$.ctor semantic
+0.555 VL.Ease.EaseFunctions$$GetEaseFunction semantic
+0.567 VL.VLCinemachineFocusPoint.VcamFocusPointState$$CreateProfile semantic
+0.571 VL.JobUtility.Array2DInfo$$get_end layout
+0.603 VLB.VolumetricLightBeamSD$$get_coneVolume layout
+0.609 VL.Animation.MotionDefinePlayer$$GetSpeed semantic
+0.613 VL.Animation.MotionDefinePlayer$$SetSpeed semantic
+0.646 VLB.BeamGeometrySD$$UpdateMaterialAndBounds semantic
+0.712 VL.Animation.Timeline.MotionDefinePlayerTimelineTrack$$CreateLayerMixer layout
+0.731 VL.MotionDefine.MotionDefineEnumerator$$MoveNext semantic
+0.743 VLB.BeamGeometrySD$$get_shouldUseGPUInstancedMaterial layout
+0.745 VLB.Config$$GetActualRenderingMode layout
+0.754 VL.Animation.MotionEffectPlayable$$PrepareFrame semantic
+0.764 VL.Animation.Timeline.MotionDefinePlayerTimelineTrackLayerBehaviour$$ProcessFrame semantic
+0.769 VLB.BeamGeometrySD$$RestartFadeOutCoroutine semantic
+0.793 VLB.BeamGeometrySD$$ComputeMaterialStaticProperties semantic
+0.803 VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$ScheduleSkinning layout
+0.812 VLB.Utils$$SampleInMatrix layout
+0.813 VL.VLExtension$$IsValid semantic
+0.833 VLB.VolumetricLightBeamSD$$get__INTERNAL_DynamicOcclusionMode semantic
+0.833 VLB.VolumetricLightBeamSD$$get_usedColorMode semantic
+0.838 VLB.VolumetricLightBeamSD$$GetStaticProps layout
+0.842 VL.Core.VLActorController$$InitializeAABB layout
+0.846 VL.Core.MaterialInfo$$.ctor layout
+0.846 VLB.VolumetricLightBeamSD$$get_geomSegments semantic
+0.846 VLB.VolumetricLightBeamSD$$get_geomSides semantic
+0.850 VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$OnActorDestroy semantic
+0.850 VL.VLDefaultActorController<object, object, object>$$OnActorDestroy semantic
+0.857 VL.ActorMotionDefine$$get_count semantic
+0.861 VLB.MaterialManager.StaticPropertiesSD$$ApplyToMaterial layout
+0.863 VL.AABB.AABBJobData$$.ctor layout
+0.868 VLB.VolumetricLightBeamSD$$set_sortingLayerID semantic
+0.868 VLB.VolumetricLightBeamSD$$set_sortingOrder semantic
+0.873 VL.VLVirtualActorController$$AddBone layout
+0.873 VLB.BeamGeometrySD$$CoUpdateFadeOut semantic
+0.877 VLB.VolumetricLightBeamSD$$OnFadeOutStateChanged layout
+0.879 VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$ScheduleSkinning layout
+0.892 VL.VLMeshUtility$$CopyMesh layout
+0.893 VL.FaceSystem.VLActorFaceModel$$SetupBindVertices layout
+0.895 VLB.VolumetricLightBeamSD$$get_useColorTemperatureFromAttachedLightSpot semantic
+0.906 VLB.BeamGeometrySD$$UpdateMatricesPropertiesForGPUInstancingSRP layout
+0.912 VLB.MaterialManager.StaticPropertiesHD$$ApplyToMaterial layout
+0.914 VL.Animation.Timeline.MotionDefinePlayerTimelineAsset$$get_clipCaps semantic
+0.915 VL.FaceSystem.VLActorFaceModel.<>c$$<Setup>b__36_3 semantic
+0.924 VL.Animation.LayerParam$$ToString layout
+0.925 VL.Animation.ClipParam$$EvaluateWeight layout
+0.928 VLB.VolumetricLightBeamSD$$OnDisable layout
+0.928 VLB.VolumetricLightBeamSD$$UpdateAfterManualPropertyChange layout
+0.930 VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor semantic
+0.938 VLB.VolumetricLightBeamSD$$_INTERNAL_SetDynamicOcclusionCallback layout
+0.943 VLB.VolumetricLightBeamSD.<CoPlaytimeUpdate>d__221$$MoveNext semantic
+0.944 VL.VLActorBlendShapeLimitDataRuntime$$IsValid semantic
+0.944 VL.VLActorFaceModelBlendShapeLimitDataRuntime$$IsValid semantic
+0.948 VLB.VolumetricLightBeamSD$$OnEnable layout
+0.953 VLB.BeamGeometrySD$$SetDynamicOcclusionCallback layout
+0.969 VLB.MaterialManager$$.cctor semantic
+0.971 VLB.VolumetricLightBeamSD$$get_hasMeshSkewing semantic
+0.976 VL.Core.VLActorController$$SetupSkinningModels semantic
+0.977 VL.VLCinemachineFocusPoint$$PostPipelineStageCallback layout
+0.983 VL.Core.SerializedDictionary<Int32Enum, object>$$.ctor layout
+0.983 VL.Core.SerializedDictionary<int, int>$$.ctor layout
+0.983 VL.Core.SerializedDictionary<int, object>$$.ctor layout
+0.983 VL.Core.SerializedDictionary<object, object>$$.ctor layout
+0.984 VL.Core.SerializedDictionary<__Il2CppFullySharedGenericType, __Il2CppFullySharedGenericType>$$.ctor layout
+0.986 VL.Animation.Timeline.MotionDefinePlayerTimelineTrackLayerBehaviour$$PrepareFrame layout
+0.991 VLB.VolumetricLightBeamSD$$GetInsideBeamFactorFromObjectSpacePos layout
+0.993 VL.FaceSystem.VLActorFaceModel$$Setup semantic
+0.995 VL.VLActorCollider$$_ApplyCollider semantic
+
+only in game:

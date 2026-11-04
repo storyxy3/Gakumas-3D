@@ -1,0 +1,104 @@
+{
+  "f": {
+    "baseline": "Task I final",
+    "same": 631,
+    "changed": 74,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": [
+      {
+        "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor",
+        "similarity": 0.354,
+        "note": "semantic",
+        "review": "Inferred native method interval includes following code. The appended instructions are visible in parity-new-flags.txt. Source of this method was unchanged by Task J."
+      }
+    ],
+    "conclusion": "No reconstructed-source regression identified from these new flags. Raw semantic flags remain open."
+  },
+  "h": {
+    "baseline": "Task I final",
+    "same": 1272,
+    "changed": 279,
+    "onlyGame": 125,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": [
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$ApplyActorSwingCmmnHeightCorrection",
+        "similarity": 0.129,
+        "note": "layout",
+        "review": "Inferred native method interval includes following code. The appended instructions are visible in parity-new-flags.txt. Source of this method was unchanged by Task J."
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$ProcessJointLimit",
+        "similarity": 0.968,
+        "note": "layout",
+        "review": "Raw layout flag. Changes involve unused MethodInfo arguments, branch targets, or inferred method intervals. Method source was unchanged by Task J."
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$ProcessLookAtLimit",
+        "similarity": 0.968,
+        "note": "layout",
+        "review": "Raw layout flag. Changes involve unused MethodInfo arguments, branch targets, or inferred method intervals. Method source was unchanged by Task J."
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusJointLimit",
+        "similarity": 0.783,
+        "note": "semantic",
+        "review": "Constructor call/inlining and metadata/constant placement differ. Task J did not edit this method or its constructors."
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit",
+        "similarity": 0.342,
+        "note": "semantic",
+        "review": "Constructor call/inlining and metadata/constant placement differ. Task J did not edit this method or its constructors."
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationRig$$ResetTime",
+        "similarity": 0.929,
+        "note": "layout",
+        "review": "Raw layout flag. Changes involve unused MethodInfo arguments, branch targets, or inferred method intervals. Method source was unchanged by Task J."
+      },
+      {
+        "method": "Campus.Common.CampusActorController$$InitializeActorAnimation",
+        "similarity": 0.988,
+        "note": "semantic",
+        "review": "Far call/thunk and generic metadata naming differ in the normalization. Task J changed other methods in CampusActorController, while this method source is unchanged."
+      },
+      {
+        "method": "Campus.Common.Live.CampusLiveTimelineController$$GetAllPanoramaCameras",
+        "similarity": 0.951,
+        "note": "layout",
+        "review": "Raw layout flag. Changes involve unused MethodInfo arguments, branch targets, or inferred method intervals. Method source was unchanged by Task J."
+      },
+      {
+        "method": "Campus.Common.Live.CampusLiveTimelineController$$ResolveCamera",
+        "similarity": 0.943,
+        "note": "layout",
+        "review": "Raw layout flag. Changes involve unused MethodInfo arguments, branch targets, or inferred method intervals. Method source was unchanged by Task J."
+      },
+      {
+        "method": "Campus.Crowd.CrowdTimelineTrack$$CreateLayerMixer",
+        "similarity": 0.986,
+        "note": "layout",
+        "review": "Raw layout flag. Changes involve unused MethodInfo arguments, branch targets, or inferred method intervals. Method source was unchanged by Task J."
+      }
+    ],
+    "conclusion": "No reconstructed-source regression identified from these new flags. Raw semantic flags remain open."
+  },
+  "i": {
+    "baseline": "Task I final",
+    "same": 252,
+    "changed": 63,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": [
+      {
+        "method": "VLB.Chunk$$ResizeArray<Bounds>",
+        "similarity": 0.033,
+        "note": "semantic",
+        "review": "Inferred native method interval includes following code. The appended instructions are visible in parity-new-flags.txt. Source of this method was unchanged by Task J."
+      }
+    ],
+    "conclusion": "No reconstructed-source regression identified from these new flags. Raw semantic flags remain open."
+  }
+}

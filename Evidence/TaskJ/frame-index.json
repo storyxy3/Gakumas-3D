@@ -1,0 +1,2237 @@
+{
+  "alignment": "recording time = logged timeline time + 3.1 seconds; nearest 60 fps recording frame",
+  "dmmCrop": [
+    0,
+    131,
+    1920,
+    818
+  ],
+  "linuxCrop": [
+    0,
+    88,
+    1280,
+    544
+  ],
+  "displaySizePerImage": [
+    640,
+    272
+  ],
+  "frames": [
+    {
+      "requested": 0.0,
+      "actual": 0.0,
+      "recordingTime": 3.1,
+      "recordingFrame": 186,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-0.000.png",
+      "pair": "pairs/pair-000.000.jpg"
+    },
+    {
+      "requested": 0.35,
+      "actual": 0.425009097903967,
+      "recordingTime": 3.525009097903967,
+      "recordingFrame": 212,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-0.350.png",
+      "pair": "pairs/pair-000.350.jpg"
+    },
+    {
+      "requested": 2.5,
+      "actual": 2.53559761401266,
+      "recordingTime": 5.63559761401266,
+      "recordingFrame": 338,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-2.500.png",
+      "pair": "pairs/pair-002.500.jpg"
+    },
+    {
+      "requested": 2.817,
+      "actual": 2.84693307802081,
+      "recordingTime": 5.946933078020811,
+      "recordingFrame": 357,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-2.817.png",
+      "pair": "pairs/pair-002.817.jpg"
+    },
+    {
+      "requested": 3.517,
+      "actual": 3.55929778516293,
+      "recordingTime": 6.659297785162931,
+      "recordingFrame": 400,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-3.517.png",
+      "pair": "pairs/pair-003.517.jpg"
+    },
+    {
+      "requested": 4.05,
+      "actual": 4.07092953845859,
+      "recordingTime": 7.170929538458591,
+      "recordingFrame": 430,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-4.050.png",
+      "pair": "pairs/pair-004.050.jpg"
+    },
+    {
+      "requested": 4.683,
+      "actual": 4.78277161903679,
+      "recordingTime": 7.88277161903679,
+      "recordingFrame": 473,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-4.683.png",
+      "pair": "pairs/pair-004.683.jpg"
+    },
+    {
+      "requested": 4.75,
+      "actual": 4.88277162052691,
+      "recordingTime": 7.9827716205269095,
+      "recordingFrame": 479,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-4.750.png",
+      "pair": "pairs/pair-004.750.jpg"
+    },
+    {
+      "requested": 5.0,
+      "actual": 5.0927557721734,
+      "recordingTime": 8.1927557721734,
+      "recordingFrame": 492,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-5.000.png",
+      "pair": "pairs/pair-005.000.jpg"
+    },
+    {
+      "requested": 5.383,
+      "actual": 5.40355591848493,
+      "recordingTime": 8.50355591848493,
+      "recordingFrame": 510,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-5.383.png",
+      "pair": "pairs/pair-005.383.jpg"
+    },
+    {
+      "requested": 7.15,
+      "actual": 7.21442996058613,
+      "recordingTime": 10.31442996058613,
+      "recordingFrame": 619,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-7.150.png",
+      "pair": "pairs/pair-007.150.jpg"
+    },
+    {
+      "requested": 7.5,
+      "actual": 7.52564267069101,
+      "recordingTime": 10.62564267069101,
+      "recordingFrame": 638,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-7.500.png",
+      "pair": "pairs/pair-007.500.jpg"
+    },
+    {
+      "requested": 7.85,
+      "actual": 7.93749333545566,
+      "recordingTime": 11.03749333545566,
+      "recordingFrame": 662,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-7.850.png",
+      "pair": "pairs/pair-007.850.jpg"
+    },
+    {
+      "requested": 7.917,
+      "actual": 8.03749333694577,
+      "recordingTime": 11.13749333694577,
+      "recordingFrame": 668,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-7.917.png",
+      "pair": "pairs/pair-007.917.jpg"
+    },
+    {
+      "requested": 8.617,
+      "actual": 8.64969294890761,
+      "recordingTime": 11.74969294890761,
+      "recordingFrame": 705,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-8.617.png",
+      "pair": "pairs/pair-008.617.jpg"
+    },
+    {
+      "requested": 9.05,
+      "actual": 9.0609967103228,
+      "recordingTime": 12.1609967103228,
+      "recordingFrame": 730,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-9.050.png",
+      "pair": "pairs/pair-009.050.jpg"
+    },
+    {
+      "requested": 9.75,
+      "actual": 9.7715052170679,
+      "recordingTime": 12.8715052170679,
+      "recordingFrame": 772,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-9.750.png",
+      "pair": "pairs/pair-009.750.jpg"
+    },
+    {
+      "requested": 10.0,
+      "actual": 10.0815876480192,
+      "recordingTime": 13.1815876480192,
+      "recordingFrame": 791,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-10.000.png",
+      "pair": "pairs/pair-010.000.jpg"
+    },
+    {
+      "requested": 11.25,
+      "actual": 11.2919768737629,
+      "recordingTime": 14.3919768737629,
+      "recordingFrame": 864,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-11.250.png",
+      "pair": "pairs/pair-011.250.jpg"
+    },
+    {
+      "requested": 11.95,
+      "actual": 12.0019485037774,
+      "recordingTime": 15.1019485037774,
+      "recordingFrame": 906,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-11.950.png",
+      "pair": "pairs/pair-011.950.jpg"
+    },
+    {
+      "requested": 12.5,
+      "actual": 12.5123838642612,
+      "recordingTime": 15.612383864261199,
+      "recordingFrame": 937,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-12.500.png",
+      "pair": "pairs/pair-012.500.jpg"
+    },
+    {
+      "requested": 12.917,
+      "actual": 12.923174594529,
+      "recordingTime": 16.023174594529,
+      "recordingFrame": 961,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-12.917.png",
+      "pair": "pairs/pair-012.917.jpg"
+    },
+    {
+      "requested": 13.617,
+      "actual": 13.6337821725756,
+      "recordingTime": 16.7337821725756,
+      "recordingFrame": 1004,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-13.617.png",
+      "pair": "pairs/pair-013.617.jpg"
+    },
+    {
+      "requested": 13.917,
+      "actual": 13.9441292574629,
+      "recordingTime": 17.0441292574629,
+      "recordingFrame": 1023,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-13.917.png",
+      "pair": "pairs/pair-013.917.jpg"
+    },
+    {
+      "requested": 14.617,
+      "actual": 14.6544890115038,
+      "recordingTime": 17.7544890115038,
+      "recordingFrame": 1065,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-14.617.png",
+      "pair": "pairs/pair-014.617.jpg"
+    },
+    {
+      "requested": 15.0,
+      "actual": 15.0654191831127,
+      "recordingTime": 18.1654191831127,
+      "recordingFrame": 1090,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-15.000.png",
+      "pair": "pairs/pair-015.000.jpg"
+    },
+    {
+      "requested": 15.05,
+      "actual": 15.1654191846028,
+      "recordingTime": 18.265419184602802,
+      "recordingFrame": 1096,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-15.050.png",
+      "pair": "pairs/pair-015.050.jpg"
+    },
+    {
+      "requested": 15.75,
+      "actual": 15.7762745078653,
+      "recordingTime": 18.8762745078653,
+      "recordingFrame": 1133,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-15.750.png",
+      "pair": "pairs/pair-015.750.jpg"
+    },
+    {
+      "requested": 16.183,
+      "actual": 16.1865158611909,
+      "recordingTime": 19.286515861190903,
+      "recordingFrame": 1157,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-16.183.png",
+      "pair": "pairs/pair-016.183.jpg"
+    },
+    {
+      "requested": 16.883,
+      "actual": 16.8967392491177,
+      "recordingTime": 19.996739249117702,
+      "recordingFrame": 1200,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-16.883.png",
+      "pair": "pairs/pair-016.883.jpg"
+    },
+    {
+      "requested": 17.317,
+      "actual": 17.4067543642595,
+      "recordingTime": 20.5067543642595,
+      "recordingFrame": 1230,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-17.317.png",
+      "pair": "pairs/pair-017.317.jpg"
+    },
+    {
+      "requested": 17.5,
+      "actual": 17.5067543657497,
+      "recordingTime": 20.6067543657497,
+      "recordingFrame": 1236,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-17.500.png",
+      "pair": "pairs/pair-017.500.jpg"
+    },
+    {
+      "requested": 18.017,
+      "actual": 18.0172188999131,
+      "recordingTime": 21.1172188999131,
+      "recordingFrame": 1267,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-18.017.png",
+      "pair": "pairs/pair-018.017.jpg"
+    },
+    {
+      "requested": 18.65,
+      "actual": 18.7285581743345,
+      "recordingTime": 21.8285581743345,
+      "recordingFrame": 1310,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-18.650.png",
+      "pair": "pairs/pair-018.650.jpg"
+    },
+    {
+      "requested": 19.35,
+      "actual": 19.4391030687839,
+      "recordingTime": 22.539103068783902,
+      "recordingFrame": 1352,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-19.350.png",
+      "pair": "pairs/pair-019.350.jpg"
+    },
+    {
+      "requested": 20.0,
+      "actual": 20.049593235366,
+      "recordingTime": 23.149593235366,
+      "recordingFrame": 1389,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-20.000.png",
+      "pair": "pairs/pair-020.000.jpg"
+    },
+    {
+      "requested": 20.317,
+      "actual": 20.360583325848,
+      "recordingTime": 23.460583325848003,
+      "recordingFrame": 1408,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-20.317.png",
+      "pair": "pairs/pair-020.317.jpg"
+    },
+    {
+      "requested": 21.017,
+      "actual": 21.0710466867313,
+      "recordingTime": 24.1710466867313,
+      "recordingFrame": 1450,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-21.017.png",
+      "pair": "pairs/pair-021.017.jpg"
+    },
+    {
+      "requested": 22.5,
+      "actual": 22.5814831033349,
+      "recordingTime": 25.6814831033349,
+      "recordingFrame": 1541,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-22.500.png",
+      "pair": "pairs/pair-022.500.jpg"
+    },
+    {
+      "requested": 23.017,
+      "actual": 23.0920655084774,
+      "recordingTime": 26.192065508477402,
+      "recordingFrame": 1572,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-23.017.png",
+      "pair": "pairs/pair-023.017.jpg"
+    },
+    {
+      "requested": 23.717,
+      "actual": 23.8022999931127,
+      "recordingTime": 26.902299993112702,
+      "recordingFrame": 1614,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-23.717.png",
+      "pair": "pairs/pair-023.717.jpg"
+    },
+    {
+      "requested": 24.35,
+      "actual": 24.4123351778835,
+      "recordingTime": 27.5123351778835,
+      "recordingFrame": 1651,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-24.350.png",
+      "pair": "pairs/pair-024.350.jpg"
+    },
+    {
+      "requested": 25.0,
+      "actual": 25.0221572881564,
+      "recordingTime": 28.1221572881564,
+      "recordingFrame": 1687,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-25.000.png",
+      "pair": "pairs/pair-025.000.jpg"
+    },
+    {
+      "requested": 25.05,
+      "actual": 25.1221572896466,
+      "recordingTime": 28.222157289646603,
+      "recordingFrame": 1693,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-25.050.png",
+      "pair": "pairs/pair-025.050.jpg"
+    },
+    {
+      "requested": 25.417,
+      "actual": 25.4326393734664,
+      "recordingTime": 28.532639373466402,
+      "recordingFrame": 1712,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-25.417.png",
+      "pair": "pairs/pair-025.417.jpg"
+    },
+    {
+      "requested": 26.117,
+      "actual": 26.1424263594672,
+      "recordingTime": 29.242426359467203,
+      "recordingFrame": 1755,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-26.117.png",
+      "pair": "pairs/pair-026.117.jpg"
+    },
+    {
+      "requested": 27.217,
+      "actual": 27.252580223605,
+      "recordingTime": 30.352580223605003,
+      "recordingFrame": 1821,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-27.217.png",
+      "pair": "pairs/pair-027.217.jpg"
+    },
+    {
+      "requested": 27.5,
+      "actual": 27.5628417078406,
+      "recordingTime": 30.662841707840602,
+      "recordingFrame": 1840,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-27.500.png",
+      "pair": "pairs/pair-027.500.jpg"
+    },
+    {
+      "requested": 27.917,
+      "actual": 27.9732577921823,
+      "recordingTime": 31.0732577921823,
+      "recordingFrame": 1864,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-27.917.png",
+      "pair": "pairs/pair-027.917.jpg"
+    },
+    {
+      "requested": 28.75,
+      "actual": 28.783692994155,
+      "recordingTime": 31.883692994155002,
+      "recordingFrame": 1913,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-28.750.png",
+      "pair": "pairs/pair-028.750.jpg"
+    },
+    {
+      "requested": 29.45,
+      "actual": 29.4936622716486,
+      "recordingTime": 32.5936622716486,
+      "recordingFrame": 1956,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-29.450.png",
+      "pair": "pairs/pair-029.450.jpg"
+    },
+    {
+      "requested": 30.0,
+      "actual": 30.0049259057269,
+      "recordingTime": 33.1049259057269,
+      "recordingFrame": 1986,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-30.000.png",
+      "pair": "pairs/pair-030.000.jpg"
+    },
+    {
+      "requested": 30.283,
+      "actual": 30.3160360148177,
+      "recordingTime": 33.4160360148177,
+      "recordingFrame": 2005,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-30.283.png",
+      "pair": "pairs/pair-030.283.jpg"
+    },
+    {
+      "requested": 30.983,
+      "actual": 31.0284551652148,
+      "recordingTime": 34.1284551652148,
+      "recordingFrame": 2048,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-30.983.png",
+      "pair": "pairs/pair-030.983.jpg"
+    },
+    {
+      "requested": 31.95,
+      "actual": 32.0395190119743,
+      "recordingTime": 35.1395190119743,
+      "recordingFrame": 2108,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-31.950.png",
+      "pair": "pairs/pair-031.950.jpg"
+    },
+    {
+      "requested": 32.5,
+      "actual": 32.5503806620836,
+      "recordingTime": 35.6503806620836,
+      "recordingFrame": 2139,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-32.500.png",
+      "pair": "pairs/pair-032.500.jpg"
+    },
+    {
+      "requested": 32.65,
+      "actual": 32.6503806635737,
+      "recordingTime": 35.7503806635737,
+      "recordingFrame": 2145,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-32.650.png",
+      "pair": "pairs/pair-032.650.jpg"
+    },
+    {
+      "requested": 33.083,
+      "actual": 33.1614144016057,
+      "recordingTime": 36.2614144016057,
+      "recordingFrame": 2176,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-33.083.png",
+      "pair": "pairs/pair-033.083.jpg"
+    },
+    {
+      "requested": 33.783,
+      "actual": 33.8715798240155,
+      "recordingTime": 36.9715798240155,
+      "recordingFrame": 2218,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-33.783.png",
+      "pair": "pairs/pair-033.783.jpg"
+    },
+    {
+      "requested": 33.95,
+      "actual": 33.9715798255056,
+      "recordingTime": 37.0715798255056,
+      "recordingFrame": 2224,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-33.950.png",
+      "pair": "pairs/pair-033.950.jpg"
+    },
+    {
+      "requested": 34.65,
+      "actual": 34.6815211838111,
+      "recordingTime": 37.7815211838111,
+      "recordingFrame": 2267,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-34.650.png",
+      "pair": "pairs/pair-034.650.jpg"
+    },
+    {
+      "requested": 34.917,
+      "actual": 34.991956201382,
+      "recordingTime": 38.091956201382004,
+      "recordingFrame": 2286,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-34.917.png",
+      "pair": "pairs/pair-034.917.jpg"
+    },
+    {
+      "requested": 35.0,
+      "actual": 35.0919562028721,
+      "recordingTime": 38.1919562028721,
+      "recordingFrame": 2292,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-35.000.png",
+      "pair": "pairs/pair-035.000.jpg"
+    },
+    {
+      "requested": 35.617,
+      "actual": 35.702627569437,
+      "recordingTime": 38.802627569437,
+      "recordingFrame": 2328,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-35.617.png",
+      "pair": "pairs/pair-035.617.jpg"
+    },
+    {
+      "requested": 36.25,
+      "actual": 36.313564681448,
+      "recordingTime": 39.413564681448,
+      "recordingFrame": 2365,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-36.250.png",
+      "pair": "pairs/pair-036.250.jpg"
+    },
+    {
+      "requested": 36.95,
+      "actual": 37.0243177674711,
+      "recordingTime": 40.124317767471105,
+      "recordingFrame": 2407,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-36.950.png",
+      "pair": "pairs/pair-036.950.jpg"
+    },
+    {
+      "requested": 37.217,
+      "actual": 37.2353168418631,
+      "recordingTime": 40.335316841863104,
+      "recordingFrame": 2420,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-37.217.png",
+      "pair": "pairs/pair-037.217.jpg"
+    },
+    {
+      "requested": 37.5,
+      "actual": 37.5460114683956,
+      "recordingTime": 40.6460114683956,
+      "recordingFrame": 2439,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-37.500.png",
+      "pair": "pairs/pair-037.500.jpg"
+    },
+    {
+      "requested": 37.917,
+      "actual": 37.9565569246188,
+      "recordingTime": 41.0565569246188,
+      "recordingFrame": 2463,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-37.917.png",
+      "pair": "pairs/pair-037.917.jpg"
+    },
+    {
+      "requested": 38.117,
+      "actual": 38.1666922522709,
+      "recordingTime": 41.2666922522709,
+      "recordingFrame": 2476,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-38.117.png",
+      "pair": "pairs/pair-038.117.jpg"
+    },
+    {
+      "requested": 38.817,
+      "actual": 38.8780139042065,
+      "recordingTime": 41.9780139042065,
+      "recordingFrame": 2519,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-38.817.png",
+      "pair": "pairs/pair-038.817.jpg"
+    },
+    {
+      "requested": 39.183,
+      "actual": 39.1884102737531,
+      "recordingTime": 42.2884102737531,
+      "recordingFrame": 2537,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-39.183.png",
+      "pair": "pairs/pair-039.183.jpg"
+    },
+    {
+      "requested": 39.883,
+      "actual": 39.8995288219303,
+      "recordingTime": 42.999528821930305,
+      "recordingFrame": 2580,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-39.883.png",
+      "pair": "pairs/pair-039.883.jpg"
+    },
+    {
+      "requested": 40.0,
+      "actual": 40.0101011516526,
+      "recordingTime": 43.1101011516526,
+      "recordingFrame": 2587,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-40.000.png",
+      "pair": "pairs/pair-040.000.jpg"
+    },
+    {
+      "requested": 40.117,
+      "actual": 40.1210468588397,
+      "recordingTime": 43.2210468588397,
+      "recordingFrame": 2593,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-40.117.png",
+      "pair": "pairs/pair-040.117.jpg"
+    },
+    {
+      "requested": 40.817,
+      "actual": 40.8325849082321,
+      "recordingTime": 43.9325849082321,
+      "recordingFrame": 2636,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-40.817.png",
+      "pair": "pairs/pair-040.817.jpg"
+    },
+    {
+      "requested": 41.517,
+      "actual": 41.54227501899,
+      "recordingTime": 44.64227501899,
+      "recordingFrame": 2679,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-41.517.png",
+      "pair": "pairs/pair-041.517.jpg"
+    },
+    {
+      "requested": 41.583,
+      "actual": 41.6422750204802,
+      "recordingTime": 44.7422750204802,
+      "recordingFrame": 2685,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-41.583.png",
+      "pair": "pairs/pair-041.583.jpg"
+    },
+    {
+      "requested": 42.283,
+      "actual": 42.3532428387552,
+      "recordingTime": 45.4532428387552,
+      "recordingFrame": 2727,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-42.283.png",
+      "pair": "pairs/pair-042.283.jpg"
+    },
+    {
+      "requested": 42.383,
+      "actual": 42.4532428402454,
+      "recordingTime": 45.5532428402454,
+      "recordingFrame": 2733,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-42.383.png",
+      "pair": "pairs/pair-042.383.jpg"
+    },
+    {
+      "requested": 42.5,
+      "actual": 42.5532428417355,
+      "recordingTime": 45.653242841735505,
+      "recordingFrame": 2739,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-42.500.png",
+      "pair": "pairs/pair-042.500.jpg"
+    },
+    {
+      "requested": 43.017,
+      "actual": 43.0650459174067,
+      "recordingTime": 46.1650459174067,
+      "recordingFrame": 2770,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-43.017.png",
+      "pair": "pairs/pair-043.017.jpg"
+    },
+    {
+      "requested": 43.083,
+      "actual": 43.1650459188968,
+      "recordingTime": 46.2650459188968,
+      "recordingFrame": 2776,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-43.083.png",
+      "pair": "pairs/pair-043.083.jpg"
+    },
+    {
+      "requested": 43.717,
+      "actual": 43.775946884416,
+      "recordingTime": 46.875946884416,
+      "recordingFrame": 2813,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-43.717.png",
+      "pair": "pairs/pair-043.717.jpg"
+    },
+    {
+      "requested": 44.283,
+      "actual": 44.2862108517438,
+      "recordingTime": 47.386210851743805,
+      "recordingFrame": 2843,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-44.283.png",
+      "pair": "pairs/pair-044.283.jpg"
+    },
+    {
+      "requested": 44.983,
+      "actual": 44.9969412898645,
+      "recordingTime": 48.0969412898645,
+      "recordingFrame": 2886,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-44.983.png",
+      "pair": "pairs/pair-044.983.jpg"
+    },
+    {
+      "requested": 45.0,
+      "actual": 45.0969412913546,
+      "recordingTime": 48.1969412913546,
+      "recordingFrame": 2892,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-45.000.png",
+      "pair": "pairs/pair-045.000.jpg"
+    },
+    {
+      "requested": 46.117,
+      "actual": 46.2081923568621,
+      "recordingTime": 49.3081923568621,
+      "recordingFrame": 2958,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-46.117.png",
+      "pair": "pairs/pair-046.117.jpg"
+    },
+    {
+      "requested": 46.817,
+      "actual": 46.8206080263481,
+      "recordingTime": 49.9206080263481,
+      "recordingFrame": 2995,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-46.817.png",
+      "pair": "pairs/pair-046.817.jpg"
+    },
+    {
+      "requested": 47.5,
+      "actual": 47.5316069237888,
+      "recordingTime": 50.6316069237888,
+      "recordingFrame": 3038,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-47.500.png",
+      "pair": "pairs/pair-047.500.jpg"
+    },
+    {
+      "requested": 47.75,
+      "actual": 47.8430377533659,
+      "recordingTime": 50.9430377533659,
+      "recordingFrame": 3057,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-47.750.png",
+      "pair": "pairs/pair-047.750.jpg"
+    },
+    {
+      "requested": 48.45,
+      "actual": 48.4534861538559,
+      "recordingTime": 51.5534861538559,
+      "recordingFrame": 3093,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-48.450.png",
+      "pair": "pairs/pair-048.450.jpg"
+    },
+    {
+      "requested": 48.683,
+      "actual": 48.7645057300106,
+      "recordingTime": 51.8645057300106,
+      "recordingFrame": 3112,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-48.683.png",
+      "pair": "pairs/pair-048.683.jpg"
+    },
+    {
+      "requested": 49.383,
+      "actual": 49.4756968468428,
+      "recordingTime": 52.5756968468428,
+      "recordingFrame": 3155,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-49.383.png",
+      "pair": "pairs/pair-049.383.jpg"
+    },
+    {
+      "requested": 49.85,
+      "actual": 49.8874766426161,
+      "recordingTime": 52.9874766426161,
+      "recordingFrame": 3179,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-49.850.png",
+      "pair": "pairs/pair-049.850.jpg"
+    },
+    {
+      "requested": 50.0,
+      "actual": 50.0988607155159,
+      "recordingTime": 53.1988607155159,
+      "recordingFrame": 3192,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-50.000.png",
+      "pair": "pairs/pair-050.000.jpg"
+    },
+    {
+      "requested": 50.55,
+      "actual": 50.6102008940652,
+      "recordingTime": 53.7102008940652,
+      "recordingFrame": 3223,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-50.550.png",
+      "pair": "pairs/pair-050.550.jpg"
+    },
+    {
+      "requested": 51.083,
+      "actual": 51.1204659882933,
+      "recordingTime": 54.2204659882933,
+      "recordingFrame": 3253,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-51.083.png",
+      "pair": "pairs/pair-051.083.jpg"
+    },
+    {
+      "requested": 51.75,
+      "actual": 51.8312044693157,
+      "recordingTime": 54.9312044693157,
+      "recordingFrame": 3296,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-51.750.png",
+      "pair": "pairs/pair-051.750.jpg"
+    },
+    {
+      "requested": 51.783,
+      "actual": 51.9312044708058,
+      "recordingTime": 55.031204470805804,
+      "recordingFrame": 3302,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-51.783.png",
+      "pair": "pairs/pair-051.783.jpg"
+    },
+    {
+      "requested": 52.317,
+      "actual": 52.3419948322698,
+      "recordingTime": 55.4419948322698,
+      "recordingFrame": 3327,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-52.317.png",
+      "pair": "pairs/pair-052.317.jpg"
+    },
+    {
+      "requested": 52.45,
+      "actual": 52.4526901496574,
+      "recordingTime": 55.5526901496574,
+      "recordingFrame": 3333,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-52.450.png",
+      "pair": "pairs/pair-052.450.jpg"
+    },
+    {
+      "requested": 52.5,
+      "actual": 52.5526901511475,
+      "recordingTime": 55.6526901511475,
+      "recordingFrame": 3339,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-52.500.png",
+      "pair": "pairs/pair-052.500.jpg"
+    },
+    {
+      "requested": 53.017,
+      "actual": 53.0637262621894,
+      "recordingTime": 56.1637262621894,
+      "recordingFrame": 3370,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-53.017.png",
+      "pair": "pairs/pair-053.017.jpg"
+    },
+    {
+      "requested": 53.65,
+      "actual": 53.6746138557792,
+      "recordingTime": 56.7746138557792,
+      "recordingFrame": 3406,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-53.650.png",
+      "pair": "pairs/pair-053.650.jpg"
+    },
+    {
+      "requested": 54.35,
+      "actual": 54.3849984817207,
+      "recordingTime": 57.4849984817207,
+      "recordingFrame": 3449,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-54.350.png",
+      "pair": "pairs/pair-054.350.jpg"
+    },
+    {
+      "requested": 54.75,
+      "actual": 54.7964720064774,
+      "recordingTime": 57.8964720064774,
+      "recordingFrame": 3474,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-54.750.png",
+      "pair": "pairs/pair-054.750.jpg"
+    },
+    {
+      "requested": 55.0,
+      "actual": 55.0069292234257,
+      "recordingTime": 58.1069292234257,
+      "recordingFrame": 3486,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-55.000.png",
+      "pair": "pairs/pair-055.000.jpg"
+    },
+    {
+      "requested": 55.45,
+      "actual": 55.5188720952719,
+      "recordingTime": 58.618872095271904,
+      "recordingFrame": 3517,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-55.450.png",
+      "pair": "pairs/pair-055.450.jpg"
+    },
+    {
+      "requested": 55.583,
+      "actual": 55.6188720967621,
+      "recordingTime": 58.7188720967621,
+      "recordingFrame": 3523,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-55.583.png",
+      "pair": "pairs/pair-055.583.jpg"
+    },
+    {
+      "requested": 56.283,
+      "actual": 56.3302415655926,
+      "recordingTime": 59.4302415655926,
+      "recordingFrame": 3566,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-56.283.png",
+      "pair": "pairs/pair-056.283.jpg"
+    },
+    {
+      "requested": 57.417,
+      "actual": 57.4411050528288,
+      "recordingTime": 60.541105052828804,
+      "recordingFrame": 3632,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-57.417.png",
+      "pair": "pairs/pair-057.417.jpg"
+    },
+    {
+      "requested": 57.5,
+      "actual": 57.5411050543189,
+      "recordingTime": 60.6411050543189,
+      "recordingFrame": 3638,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-57.500.png",
+      "pair": "pairs/pair-057.500.jpg"
+    },
+    {
+      "requested": 58.117,
+      "actual": 58.1517765559256,
+      "recordingTime": 61.2517765559256,
+      "recordingFrame": 3675,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-58.117.png",
+      "pair": "pairs/pair-058.117.jpg"
+    },
+    {
+      "requested": 59.55,
+      "actual": 59.5628583440557,
+      "recordingTime": 62.6628583440557,
+      "recordingFrame": 3760,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-59.550.png",
+      "pair": "pairs/pair-059.550.jpg"
+    },
+    {
+      "requested": 60.0,
+      "actual": 60.0735635524616,
+      "recordingTime": 63.1735635524616,
+      "recordingFrame": 3790,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-60.000.png",
+      "pair": "pairs/pair-060.000.jpg"
+    },
+    {
+      "requested": 60.25,
+      "actual": 60.2838066956028,
+      "recordingTime": 63.3838066956028,
+      "recordingFrame": 3803,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-60.250.png",
+      "pair": "pairs/pair-060.250.jpg"
+    },
+    {
+      "requested": 61.317,
+      "actual": 61.3951086392626,
+      "recordingTime": 64.4951086392626,
+      "recordingFrame": 3870,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-61.317.png",
+      "pair": "pairs/pair-061.317.jpg"
+    },
+    {
+      "requested": 62.017,
+      "actual": 62.1054945485666,
+      "recordingTime": 65.20549454856659,
+      "recordingFrame": 3912,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-62.017.png",
+      "pair": "pairs/pair-062.017.jpg"
+    },
+    {
+      "requested": 62.117,
+      "actual": 62.2054945500568,
+      "recordingTime": 65.30549455005679,
+      "recordingFrame": 3918,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-62.117.png",
+      "pair": "pairs/pair-062.117.jpg"
+    },
+    {
+      "requested": 62.5,
+      "actual": 62.5166331315413,
+      "recordingTime": 65.61663313154129,
+      "recordingFrame": 3937,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-62.500.png",
+      "pair": "pairs/pair-062.500.jpg"
+    },
+    {
+      "requested": 62.817,
+      "actual": 62.827601864934,
+      "recordingTime": 65.927601864934,
+      "recordingFrame": 3956,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-62.817.png",
+      "pair": "pairs/pair-062.817.jpg"
+    },
+    {
+      "requested": 63.317,
+      "actual": 63.3382368069142,
+      "recordingTime": 66.4382368069142,
+      "recordingFrame": 3986,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-63.317.png",
+      "pair": "pairs/pair-063.317.jpg"
+    },
+    {
+      "requested": 64.017,
+      "actual": 64.0485009187832,
+      "recordingTime": 67.1485009187832,
+      "recordingFrame": 4029,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-64.017.png",
+      "pair": "pairs/pair-064.017.jpg"
+    },
+    {
+      "requested": 65.0,
+      "actual": 65.0597055116668,
+      "recordingTime": 68.1597055116668,
+      "recordingFrame": 4090,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-65.000.png",
+      "pair": "pairs/pair-065.000.jpg"
+    },
+    {
+      "requested": 65.717,
+      "actual": 65.7702483581379,
+      "recordingTime": 68.8702483581379,
+      "recordingFrame": 4132,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-65.717.png",
+      "pair": "pairs/pair-065.717.jpg"
+    },
+    {
+      "requested": 66.417,
+      "actual": 66.4806943153962,
+      "recordingTime": 69.5806943153962,
+      "recordingFrame": 4175,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-66.417.png",
+      "pair": "pairs/pair-066.417.jpg"
+    },
+    {
+      "requested": 66.85,
+      "actual": 66.8911307798699,
+      "recordingTime": 69.99113077986989,
+      "recordingFrame": 4199,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-66.850.png",
+      "pair": "pairs/pair-066.850.jpg"
+    },
+    {
+      "requested": 67.45,
+      "actual": 67.5028144689277,
+      "recordingTime": 70.60281446892769,
+      "recordingFrame": 4236,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-67.450.png",
+      "pair": "pairs/pair-067.450.jpg"
+    },
+    {
+      "requested": 67.5,
+      "actual": 67.6028144704178,
+      "recordingTime": 70.70281447041779,
+      "recordingFrame": 4242,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-67.500.png",
+      "pair": "pairs/pair-067.500.jpg"
+    },
+    {
+      "requested": 67.55,
+      "actual": 67.7028144719079,
+      "recordingTime": 70.8028144719079,
+      "recordingFrame": 4248,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-67.550.png",
+      "pair": "pairs/pair-067.550.jpg"
+    },
+    {
+      "requested": 68.15,
+      "actual": 68.2140006963164,
+      "recordingTime": 71.3140006963164,
+      "recordingFrame": 4279,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-68.150.png",
+      "pair": "pairs/pair-068.150.jpg"
+    },
+    {
+      "requested": 68.417,
+      "actual": 68.4243209799752,
+      "recordingTime": 71.5243209799752,
+      "recordingFrame": 4291,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-68.417.png",
+      "pair": "pairs/pair-068.417.jpg"
+    },
+    {
+      "requested": 69.117,
+      "actual": 69.134648470208,
+      "recordingTime": 72.234648470208,
+      "recordingFrame": 4334,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-69.117.png",
+      "pair": "pairs/pair-069.117.jpg"
+    },
+    {
+      "requested": 70.0,
+      "actual": 70.0483703017235,
+      "recordingTime": 73.14837030172349,
+      "recordingFrame": 4389,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-70.000.png",
+      "pair": "pairs/pair-070.000.jpg"
+    },
+    {
+      "requested": 70.05,
+      "actual": 70.1483703032136,
+      "recordingTime": 73.24837030321359,
+      "recordingFrame": 4395,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-70.050.png",
+      "pair": "pairs/pair-070.050.jpg"
+    },
+    {
+      "requested": 70.75,
+      "actual": 70.7614892041311,
+      "recordingTime": 73.86148920413109,
+      "recordingFrame": 4432,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-70.750.png",
+      "pair": "pairs/pair-070.750.jpg"
+    },
+    {
+      "requested": 72.5,
+      "actual": 72.5737950270995,
+      "recordingTime": 75.67379502709949,
+      "recordingFrame": 4540,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-72.500.png",
+      "pair": "pairs/pair-072.500.jpg"
+    },
+    {
+      "requested": 73.583,
+      "actual": 73.5849005617201,
+      "recordingTime": 76.6849005617201,
+      "recordingFrame": 4601,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-73.583.png",
+      "pair": "pairs/pair-073.583.jpg"
+    },
+    {
+      "requested": 74.283,
+      "actual": 74.2963556107134,
+      "recordingTime": 77.3963556107134,
+      "recordingFrame": 4644,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-74.283.png",
+      "pair": "pairs/pair-074.283.jpg"
+    },
+    {
+      "requested": 75.0,
+      "actual": 75.007974980399,
+      "recordingTime": 78.10797498039899,
+      "recordingFrame": 4686,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-75.000.png",
+      "pair": "pairs/pair-075.000.jpg"
+    },
+    {
+      "requested": 75.383,
+      "actual": 75.419068871066,
+      "recordingTime": 78.519068871066,
+      "recordingFrame": 4711,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-75.383.png",
+      "pair": "pairs/pair-075.383.jpg"
+    },
+    {
+      "requested": 76.083,
+      "actual": 76.1297397995368,
+      "recordingTime": 79.22973979953679,
+      "recordingFrame": 4754,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-76.083.png",
+      "pair": "pairs/pair-076.083.jpg"
+    },
+    {
+      "requested": 76.417,
+      "actual": 76.4414218757302,
+      "recordingTime": 79.5414218757302,
+      "recordingFrame": 4772,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-76.417.png",
+      "pair": "pairs/pair-076.417.jpg"
+    },
+    {
+      "requested": 77.05,
+      "actual": 77.0516160950065,
+      "recordingTime": 80.15161609500649,
+      "recordingFrame": 4809,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-77.050.png",
+      "pair": "pairs/pair-077.050.jpg"
+    },
+    {
+      "requested": 77.117,
+      "actual": 77.1516160964966,
+      "recordingTime": 80.25161609649659,
+      "recordingFrame": 4815,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-77.117.png",
+      "pair": "pairs/pair-077.117.jpg"
+    },
+    {
+      "requested": 77.5,
+      "actual": 77.5623569609597,
+      "recordingTime": 80.6623569609597,
+      "recordingFrame": 4840,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-77.500.png",
+      "pair": "pairs/pair-077.500.jpg"
+    },
+    {
+      "requested": 77.75,
+      "actual": 77.772966359742,
+      "recordingTime": 80.872966359742,
+      "recordingFrame": 4852,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-77.750.png",
+      "pair": "pairs/pair-077.750.jpg"
+    },
+    {
+      "requested": 78.783,
+      "actual": 78.7852098550647,
+      "recordingTime": 81.8852098550647,
+      "recordingFrame": 4913,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-78.783.png",
+      "pair": "pairs/pair-078.783.jpg"
+    },
+    {
+      "requested": 79.483,
+      "actual": 79.4963679509237,
+      "recordingTime": 82.59636795092369,
+      "recordingFrame": 4956,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-79.483.png",
+      "pair": "pairs/pair-079.483.jpg"
+    },
+    {
+      "requested": 80.0,
+      "actual": 80.007339890115,
+      "recordingTime": 83.107339890115,
+      "recordingFrame": 4986,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-80.000.png",
+      "pair": "pairs/pair-080.000.jpg"
+    },
+    {
+      "requested": 80.017,
+      "actual": 80.1073398916051,
+      "recordingTime": 83.20733989160509,
+      "recordingFrame": 4992,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-80.017.png",
+      "pair": "pairs/pair-080.017.jpg"
+    },
+    {
+      "requested": 80.717,
+      "actual": 80.7182824248448,
+      "recordingTime": 83.8182824248448,
+      "recordingFrame": 5029,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-80.717.png",
+      "pair": "pairs/pair-080.717.jpg"
+    },
+    {
+      "requested": 82.25,
+      "actual": 82.3295695735142,
+      "recordingTime": 85.4295695735142,
+      "recordingFrame": 5126,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-82.250.png",
+      "pair": "pairs/pair-082.250.jpg"
+    },
+    {
+      "requested": 82.5,
+      "actual": 82.5399617394432,
+      "recordingTime": 85.6399617394432,
+      "recordingFrame": 5138,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-82.500.png",
+      "pair": "pairs/pair-082.500.jpg"
+    },
+    {
+      "requested": 82.95,
+      "actual": 82.951072034426,
+      "recordingTime": 86.051072034426,
+      "recordingFrame": 5163,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-82.950.png",
+      "pair": "pairs/pair-082.950.jpg"
+    },
+    {
+      "requested": 84.05,
+      "actual": 84.0623731138185,
+      "recordingTime": 87.16237311381849,
+      "recordingFrame": 5230,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-84.050.png",
+      "pair": "pairs/pair-084.050.jpg"
+    },
+    {
+      "requested": 84.75,
+      "actual": 84.7740336051211,
+      "recordingTime": 87.8740336051211,
+      "recordingFrame": 5272,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-84.750.png",
+      "pair": "pairs/pair-084.750.jpg"
+    },
+    {
+      "requested": 84.883,
+      "actual": 84.8856268674135,
+      "recordingTime": 87.9856268674135,
+      "recordingFrame": 5279,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-84.883.png",
+      "pair": "pairs/pair-084.883.jpg"
+    },
+    {
+      "requested": 85.0,
+      "actual": 85.0970302075148,
+      "recordingTime": 88.1970302075148,
+      "recordingFrame": 5292,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-85.000.png",
+      "pair": "pairs/pair-085.000.jpg"
+    },
+    {
+      "requested": 85.583,
+      "actual": 85.6078099552542,
+      "recordingTime": 88.70780995525419,
+      "recordingFrame": 5322,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-85.583.png",
+      "pair": "pairs/pair-085.583.jpg"
+    },
+    {
+      "requested": 86.083,
+      "actual": 86.1184190399945,
+      "recordingTime": 89.2184190399945,
+      "recordingFrame": 5353,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-86.083.png",
+      "pair": "pairs/pair-086.083.jpg"
+    },
+    {
+      "requested": 86.783,
+      "actual": 86.8292325995862,
+      "recordingTime": 89.9292325995862,
+      "recordingFrame": 5396,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-86.783.png",
+      "pair": "pairs/pair-086.783.jpg"
+    },
+    {
+      "requested": 87.5,
+      "actual": 87.5401017572731,
+      "recordingTime": 90.6401017572731,
+      "recordingFrame": 5438,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-87.500.png",
+      "pair": "pairs/pair-087.500.jpg"
+    },
+    {
+      "requested": 90.0,
+      "actual": 90.0506079308689,
+      "recordingTime": 93.1506079308689,
+      "recordingFrame": 5589,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-90.000.png",
+      "pair": "pairs/pair-090.000.jpg"
+    },
+    {
+      "requested": 92.5,
+      "actual": 92.5618660962209,
+      "recordingTime": 95.66186609622089,
+      "recordingFrame": 5740,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-92.500.png",
+      "pair": "pairs/pair-092.500.jpg"
+    },
+    {
+      "requested": 94.083,
+      "actual": 94.173018890433,
+      "recordingTime": 97.273018890433,
+      "recordingFrame": 5836,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-94.083.png",
+      "pair": "pairs/pair-094.083.jpg"
+    },
+    {
+      "requested": 94.783,
+      "actual": 94.7838280620053,
+      "recordingTime": 97.88382806200529,
+      "recordingFrame": 5873,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-94.783.png",
+      "pair": "pairs/pair-094.783.jpg"
+    },
+    {
+      "requested": 95.0,
+      "actual": 95.0944899432361,
+      "recordingTime": 98.19448994323609,
+      "recordingFrame": 5892,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-95.000.png",
+      "pair": "pairs/pair-095.000.jpg"
+    },
+    {
+      "requested": 96.15,
+      "actual": 96.206029436551,
+      "recordingTime": 99.306029436551,
+      "recordingFrame": 5958,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-96.150.png",
+      "pair": "pairs/pair-096.150.jpg"
+    },
+    {
+      "requested": 96.85,
+      "actual": 96.916616493836,
+      "recordingTime": 100.016616493836,
+      "recordingFrame": 6001,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-96.850.png",
+      "pair": "pairs/pair-096.850.jpg"
+    },
+    {
+      "requested": 97.5,
+      "actual": 97.5273684300482,
+      "recordingTime": 100.6273684300482,
+      "recordingFrame": 6038,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-97.500.png",
+      "pair": "pairs/pair-097.500.jpg"
+    },
+    {
+      "requested": 97.717,
+      "actual": 97.7375741517171,
+      "recordingTime": 100.83757415171709,
+      "recordingFrame": 6050,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-97.717.png",
+      "pair": "pairs/pair-097.717.jpg"
+    },
+    {
+      "requested": 98.417,
+      "actual": 98.4481596993282,
+      "recordingTime": 101.5481596993282,
+      "recordingFrame": 6093,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-98.417.png",
+      "pair": "pairs/pair-098.417.jpg"
+    },
+    {
+      "requested": 99.683,
+      "actual": 99.7608035895973,
+      "recordingTime": 102.8608035895973,
+      "recordingFrame": 6172,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-99.683.png",
+      "pair": "pairs/pair-099.683.jpg"
+    },
+    {
+      "requested": 100.0,
+      "actual": 100.071861523204,
+      "recordingTime": 103.171861523204,
+      "recordingFrame": 6190,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-100.000.png",
+      "pair": "pairs/pair-100.000.jpg"
+    },
+    {
+      "requested": 100.383,
+      "actual": 100.482783871703,
+      "recordingTime": 103.582783871703,
+      "recordingFrame": 6215,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-100.383.png",
+      "pair": "pairs/pair-100.383.jpg"
+    },
+    {
+      "requested": 100.45,
+      "actual": 100.582783873193,
+      "recordingTime": 103.68278387319299,
+      "recordingFrame": 6221,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-100.450.png",
+      "pair": "pairs/pair-100.450.jpg"
+    },
+    {
+      "requested": 101.15,
+      "actual": 101.193973501213,
+      "recordingTime": 104.29397350121299,
+      "recordingFrame": 6258,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-101.150.png",
+      "pair": "pairs/pair-101.150.jpg"
+    },
+    {
+      "requested": 101.717,
+      "actual": 101.804878803901,
+      "recordingTime": 104.904878803901,
+      "recordingFrame": 6294,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-101.717.png",
+      "pair": "pairs/pair-101.717.jpg"
+    },
+    {
+      "requested": 102.417,
+      "actual": 102.515667370521,
+      "recordingTime": 105.615667370521,
+      "recordingFrame": 6337,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-102.417.png",
+      "pair": "pairs/pair-102.417.jpg"
+    },
+    {
+      "requested": 102.5,
+      "actual": 102.615667372011,
+      "recordingTime": 105.715667372011,
+      "recordingFrame": 6343,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-102.500.png",
+      "pair": "pairs/pair-102.500.jpg"
+    },
+    {
+      "requested": 102.883,
+      "actual": 102.926694743335,
+      "recordingTime": 106.026694743335,
+      "recordingFrame": 6362,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-102.883.png",
+      "pair": "pairs/pair-102.883.jpg"
+    },
+    {
+      "requested": 103.583,
+      "actual": 103.636919626035,
+      "recordingTime": 106.73691962603499,
+      "recordingFrame": 6404,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-103.583.png",
+      "pair": "pairs/pair-103.583.jpg"
+    },
+    {
+      "requested": 104.217,
+      "actual": 104.248081114143,
+      "recordingTime": 107.348081114143,
+      "recordingFrame": 6441,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-104.217.png",
+      "pair": "pairs/pair-104.217.jpg"
+    },
+    {
+      "requested": 104.917,
+      "actual": 104.959012509324,
+      "recordingTime": 108.05901250932399,
+      "recordingFrame": 6484,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-104.917.png",
+      "pair": "pairs/pair-104.917.jpg"
+    },
+    {
+      "requested": 105.0,
+      "actual": 105.059012510814,
+      "recordingTime": 108.159012510814,
+      "recordingFrame": 6490,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-105.000.png",
+      "pair": "pairs/pair-105.000.jpg"
+    },
+    {
+      "requested": 106.283,
+      "actual": 106.369730168022,
+      "recordingTime": 109.469730168022,
+      "recordingFrame": 6568,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-106.283.png",
+      "pair": "pairs/pair-106.283.jpg"
+    },
+    {
+      "requested": 106.983,
+      "actual": 107.080991892144,
+      "recordingTime": 110.180991892144,
+      "recordingFrame": 6611,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-106.983.png",
+      "pair": "pairs/pair-106.983.jpg"
+    },
+    {
+      "requested": 107.5,
+      "actual": 107.594078506343,
+      "recordingTime": 110.69407850634299,
+      "recordingFrame": 6642,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-107.500.png",
+      "pair": "pairs/pair-107.500.jpg"
+    },
+    {
+      "requested": 108.383,
+      "actual": 108.405269716866,
+      "recordingTime": 111.505269716866,
+      "recordingFrame": 6690,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-108.383.png",
+      "pair": "pairs/pair-108.383.jpg"
+    },
+    {
+      "requested": 109.083,
+      "actual": 109.117361819372,
+      "recordingTime": 112.21736181937199,
+      "recordingFrame": 6733,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-109.083.png",
+      "pair": "pairs/pair-109.083.jpg"
+    },
+    {
+      "requested": 109.717,
+      "actual": 109.728425015695,
+      "recordingTime": 112.82842501569499,
+      "recordingFrame": 6770,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-109.717.png",
+      "pair": "pairs/pair-109.717.jpg"
+    },
+    {
+      "requested": 110.0,
+      "actual": 110.039621689357,
+      "recordingTime": 113.139621689357,
+      "recordingFrame": 6788,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-110.000.png",
+      "pair": "pairs/pair-110.000.jpg"
+    },
+    {
+      "requested": 110.417,
+      "actual": 110.451609974727,
+      "recordingTime": 113.551609974727,
+      "recordingFrame": 6813,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-110.417.png",
+      "pair": "pairs/pair-110.417.jpg"
+    },
+    {
+      "requested": 111.25,
+      "actual": 111.262112466618,
+      "recordingTime": 114.362112466618,
+      "recordingFrame": 6862,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-111.250.png",
+      "pair": "pairs/pair-111.250.jpg"
+    },
+    {
+      "requested": 111.95,
+      "actual": 111.973222482949,
+      "recordingTime": 115.07322248294899,
+      "recordingFrame": 6904,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-111.950.png",
+      "pair": "pairs/pair-111.950.jpg"
+    },
+    {
+      "requested": 112.5,
+      "actual": 112.584598086774,
+      "recordingTime": 115.68459808677399,
+      "recordingFrame": 6941,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-112.500.png",
+      "pair": "pairs/pair-112.500.jpg"
+    },
+    {
+      "requested": 112.55,
+      "actual": 112.684598088264,
+      "recordingTime": 115.78459808826399,
+      "recordingFrame": 6947,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-112.550.png",
+      "pair": "pairs/pair-112.550.jpg"
+    },
+    {
+      "requested": 113.25,
+      "actual": 113.296371296979,
+      "recordingTime": 116.396371296979,
+      "recordingFrame": 6984,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-113.250.png",
+      "pair": "pairs/pair-113.250.jpg"
+    },
+    {
+      "requested": 113.383,
+      "actual": 113.39637129847,
+      "recordingTime": 116.49637129847,
+      "recordingFrame": 6990,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-113.383.png",
+      "pair": "pairs/pair-113.383.jpg"
+    },
+    {
+      "requested": 114.083,
+      "actual": 114.106697633862,
+      "recordingTime": 117.20669763386199,
+      "recordingFrame": 7032,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-114.083.png",
+      "pair": "pairs/pair-114.083.jpg"
+    },
+    {
+      "requested": 115.0,
+      "actual": 115.01764770411,
+      "recordingTime": 118.11764770411,
+      "recordingFrame": 7087,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-115.000.png",
+      "pair": "pairs/pair-115.000.jpg"
+    },
+    {
+      "requested": 115.65,
+      "actual": 115.728711652569,
+      "recordingTime": 118.828711652569,
+      "recordingFrame": 7130,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-115.650.png",
+      "pair": "pairs/pair-115.650.jpg"
+    },
+    {
+      "requested": 116.35,
+      "actual": 116.440097214654,
+      "recordingTime": 119.540097214654,
+      "recordingFrame": 7172,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-116.350.png",
+      "pair": "pairs/pair-116.350.jpg"
+    },
+    {
+      "requested": 117.5,
+      "actual": 117.550431804731,
+      "recordingTime": 120.650431804731,
+      "recordingFrame": 7239,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-117.500.png",
+      "pair": "pairs/pair-117.500.jpg"
+    },
+    {
+      "requested": 117.583,
+      "actual": 117.650431806222,
+      "recordingTime": 120.750431806222,
+      "recordingFrame": 7245,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-117.583.png",
+      "pair": "pairs/pair-117.583.jpg"
+    },
+    {
+      "requested": 118.283,
+      "actual": 118.361048681661,
+      "recordingTime": 121.461048681661,
+      "recordingFrame": 7288,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-118.283.png",
+      "pair": "pairs/pair-118.283.jpg"
+    },
+    {
+      "requested": 118.883,
+      "actual": 118.97276495304,
+      "recordingTime": 122.07276495304,
+      "recordingFrame": 7324,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-118.883.png",
+      "pair": "pairs/pair-118.883.jpg"
+    },
+    {
+      "requested": 119.583,
+      "actual": 119.583931975998,
+      "recordingTime": 122.683931975998,
+      "recordingFrame": 7361,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-119.583.png",
+      "pair": "pairs/pair-119.583.jpg"
+    },
+    {
+      "requested": 120.0,
+      "actual": 120.094868016429,
+      "recordingTime": 123.194868016429,
+      "recordingFrame": 7392,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-120.000.png",
+      "pair": "pairs/pair-120.000.jpg"
+    },
+    {
+      "requested": 120.783,
+      "actual": 120.805516283959,
+      "recordingTime": 123.90551628395899,
+      "recordingFrame": 7434,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-120.783.png",
+      "pair": "pairs/pair-120.783.jpg"
+    },
+    {
+      "requested": 121.483,
+      "actual": 121.516626520082,
+      "recordingTime": 124.616626520082,
+      "recordingFrame": 7477,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-121.483.png",
+      "pair": "pairs/pair-121.483.jpg"
+    },
+    {
+      "requested": 122.5,
+      "actual": 122.527976138517,
+      "recordingTime": 125.627976138517,
+      "recordingFrame": 7538,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-122.500.png",
+      "pair": "pairs/pair-122.500.jpg"
+    },
+    {
+      "requested": 123.583,
+      "actual": 123.63939738553,
+      "recordingTime": 126.73939738553,
+      "recordingFrame": 7604,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-123.583.png",
+      "pair": "pairs/pair-123.583.jpg"
+    },
+    {
+      "requested": 124.283,
+      "actual": 124.351081069559,
+      "recordingTime": 127.451081069559,
+      "recordingFrame": 7647,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-124.283.png",
+      "pair": "pairs/pair-124.283.jpg"
+    },
+    {
+      "requested": 125.0,
+      "actual": 125.061871938407,
+      "recordingTime": 128.161871938407,
+      "recordingFrame": 7690,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-125.000.png",
+      "pair": "pairs/pair-125.000.jpg"
+    },
+    {
+      "requested": 127.183,
+      "actual": 127.272590182722,
+      "recordingTime": 130.372590182722,
+      "recordingFrame": 7822,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-127.183.png",
+      "pair": "pairs/pair-127.183.jpg"
+    },
+    {
+      "requested": 127.5,
+      "actual": 127.583390924148,
+      "recordingTime": 130.683390924148,
+      "recordingFrame": 7841,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-127.500.png",
+      "pair": "pairs/pair-127.500.jpg"
+    },
+    {
+      "requested": 127.883,
+      "actual": 127.894147462212,
+      "recordingTime": 130.994147462212,
+      "recordingFrame": 7860,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-127.883.png",
+      "pair": "pairs/pair-127.883.jpg"
+    },
+    {
+      "requested": 128.817,
+      "actual": 128.905283383094,
+      "recordingTime": 132.005283383094,
+      "recordingFrame": 7920,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-128.817.png",
+      "pair": "pairs/pair-128.817.jpg"
+    },
+    {
+      "requested": 129.517,
+      "actual": 129.616204624064,
+      "recordingTime": 132.716204624064,
+      "recordingFrame": 7963,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-129.517.png",
+      "pair": "pairs/pair-129.517.jpg"
+    },
+    {
+      "requested": 130.0,
+      "actual": 130.027011673898,
+      "recordingTime": 133.12701167389798,
+      "recordingFrame": 7988,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-130.000.png",
+      "pair": "pairs/pair-130.000.jpg"
+    },
+    {
+      "requested": 130.15,
+      "actual": 130.237849418074,
+      "recordingTime": 133.337849418074,
+      "recordingFrame": 8000,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-130.150.png",
+      "pair": "pairs/pair-130.150.jpg"
+    },
+    {
+      "requested": 130.85,
+      "actual": 130.949568561278,
+      "recordingTime": 134.049568561278,
+      "recordingFrame": 8043,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-130.850.png",
+      "pair": "pairs/pair-130.850.jpg"
+    },
+    {
+      "requested": 131.117,
+      "actual": 131.160000714473,
+      "recordingTime": 134.260000714473,
+      "recordingFrame": 8056,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-131.117.png",
+      "pair": "pairs/pair-131.117.jpg"
+    },
+    {
+      "requested": 131.817,
+      "actual": 131.870247174986,
+      "recordingTime": 134.97024717498599,
+      "recordingFrame": 8098,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-131.817.png",
+      "pair": "pairs/pair-131.817.jpg"
+    },
+    {
+      "requested": 132.5,
+      "actual": 132.580646292306,
+      "recordingTime": 135.680646292306,
+      "recordingFrame": 8141,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-132.500.png",
+      "pair": "pairs/pair-132.500.jpg"
+    },
+    {
+      "requested": 132.583,
+      "actual": 132.680646293797,
+      "recordingTime": 135.780646293797,
+      "recordingFrame": 8147,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-132.583.png",
+      "pair": "pairs/pair-132.583.jpg"
+    },
+    {
+      "requested": 133.283,
+      "actual": 133.291178835556,
+      "recordingTime": 136.391178835556,
+      "recordingFrame": 8183,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-133.283.png",
+      "pair": "pairs/pair-133.283.jpg"
+    },
+    {
+      "requested": 133.55,
+      "actual": 133.601748758927,
+      "recordingTime": 136.70174875892698,
+      "recordingFrame": 8202,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-133.550.png",
+      "pair": "pairs/pair-133.550.jpg"
+    },
+    {
+      "requested": 134.25,
+      "actual": 134.312195084989,
+      "recordingTime": 137.412195084989,
+      "recordingFrame": 8245,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-134.250.png",
+      "pair": "pairs/pair-134.250.jpg"
+    },
+    {
+      "requested": 134.317,
+      "actual": 134.412195086479,
+      "recordingTime": 137.51219508647898,
+      "recordingFrame": 8251,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-134.317.png",
+      "pair": "pairs/pair-134.317.jpg"
+    },
+    {
+      "requested": 135.0,
+      "actual": 135.02343311999,
+      "recordingTime": 138.12343311998998,
+      "recordingFrame": 8287,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-135.000.png",
+      "pair": "pairs/pair-135.000.jpg"
+    },
+    {
+      "requested": 135.017,
+      "actual": 135.12343312148,
+      "recordingTime": 138.22343312147999,
+      "recordingFrame": 8293,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-135.017.png",
+      "pair": "pairs/pair-135.017.jpg"
+    },
+    {
+      "requested": 135.317,
+      "actual": 135.334305771627,
+      "recordingTime": 138.43430577162698,
+      "recordingFrame": 8306,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-135.317.png",
+      "pair": "pairs/pair-135.317.jpg"
+    },
+    {
+      "requested": 136.017,
+      "actual": 136.044718530029,
+      "recordingTime": 139.144718530029,
+      "recordingFrame": 8349,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-136.017.png",
+      "pair": "pairs/pair-136.017.jpg"
+    },
+    {
+      "requested": 136.517,
+      "actual": 136.555991298519,
+      "recordingTime": 139.65599129851898,
+      "recordingFrame": 8379,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-136.517.png",
+      "pair": "pairs/pair-136.517.jpg"
+    },
+    {
+      "requested": 137.117,
+      "actual": 137.166524442844,
+      "recordingTime": 140.266524442844,
+      "recordingFrame": 8416,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-137.117.png",
+      "pair": "pairs/pair-137.117.jpg"
+    },
+    {
+      "requested": 137.217,
+      "actual": 137.266524444334,
+      "recordingTime": 140.366524444334,
+      "recordingFrame": 8422,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-137.217.png",
+      "pair": "pairs/pair-137.217.jpg"
+    },
+    {
+      "requested": 137.5,
+      "actual": 137.578009922057,
+      "recordingTime": 140.678009922057,
+      "recordingFrame": 8441,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-137.500.png",
+      "pair": "pairs/pair-137.500.jpg"
+    },
+    {
+      "requested": 137.55,
+      "actual": 137.678009923548,
+      "recordingTime": 140.77800992354798,
+      "recordingFrame": 8447,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-137.550.png",
+      "pair": "pairs/pair-137.550.jpg"
+    },
+    {
+      "requested": 137.817,
+      "actual": 137.889364390634,
+      "recordingTime": 140.989364390634,
+      "recordingFrame": 8459,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-137.817.png",
+      "pair": "pairs/pair-137.817.jpg"
+    },
+    {
+      "requested": 138.25,
+      "actual": 138.299902633764,
+      "recordingTime": 141.399902633764,
+      "recordingFrame": 8484,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-138.250.png",
+      "pair": "pairs/pair-138.250.jpg"
+    },
+    {
+      "requested": 138.317,
+      "actual": 138.399902635254,
+      "recordingTime": 141.499902635254,
+      "recordingFrame": 8490,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-138.317.png",
+      "pair": "pairs/pair-138.317.jpg"
+    },
+    {
+      "requested": 139.017,
+      "actual": 139.113499215804,
+      "recordingTime": 142.213499215804,
+      "recordingFrame": 8533,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-139.017.png",
+      "pair": "pairs/pair-139.017.jpg"
+    },
+    {
+      "requested": 140.0,
+      "actual": 140.02452219557,
+      "recordingTime": 143.12452219557,
+      "recordingFrame": 8587,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-140.000.png",
+      "pair": "pairs/pair-140.000.jpg"
+    },
+    {
+      "requested": 140.783,
+      "actual": 140.834896328859,
+      "recordingTime": 143.934896328859,
+      "recordingFrame": 8636,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-140.783.png",
+      "pair": "pairs/pair-140.783.jpg"
+    },
+    {
+      "requested": 141.483,
+      "actual": 141.54549648799,
+      "recordingTime": 144.64549648799,
+      "recordingFrame": 8679,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-141.483.png",
+      "pair": "pairs/pair-141.483.jpg"
+    },
+    {
+      "requested": 142.5,
+      "actual": 142.55617960915,
+      "recordingTime": 145.65617960915,
+      "recordingFrame": 8739,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-142.500.png",
+      "pair": "pairs/pair-142.500.jpg"
+    },
+    {
+      "requested": 142.683,
+      "actual": 142.766703641042,
+      "recordingTime": 145.866703641042,
+      "recordingFrame": 8752,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-142.683.png",
+      "pair": "pairs/pair-142.683.jpg"
+    },
+    {
+      "requested": 143.383,
+      "actual": 143.477097933181,
+      "recordingTime": 146.577097933181,
+      "recordingFrame": 8795,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-143.383.png",
+      "pair": "pairs/pair-143.383.jpg"
+    },
+    {
+      "requested": 143.85,
+      "actual": 143.888539967127,
+      "recordingTime": 146.988539967127,
+      "recordingFrame": 8819,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-143.850.png",
+      "pair": "pairs/pair-143.850.jpg"
+    },
+    {
+      "requested": 144.55,
+      "actual": 144.59950765036,
+      "recordingTime": 147.69950765036,
+      "recordingFrame": 8862,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-144.550.png",
+      "pair": "pairs/pair-144.550.jpg"
+    },
+    {
+      "requested": 145.0,
+      "actual": 145.010227370076,
+      "recordingTime": 148.110227370076,
+      "recordingFrame": 8887,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-145.000.png",
+      "pair": "pairs/pair-145.000.jpg"
+    },
+    {
+      "requested": 145.717,
+      "actual": 145.720671463758,
+      "recordingTime": 148.820671463758,
+      "recordingFrame": 8929,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-145.717.png",
+      "pair": "pairs/pair-145.717.jpg"
+    },
+    {
+      "requested": 146.383,
+      "actual": 146.431543370709,
+      "recordingTime": 149.531543370709,
+      "recordingFrame": 8972,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-146.383.png",
+      "pair": "pairs/pair-146.383.jpg"
+    },
+    {
+      "requested": 146.417,
+      "actual": 146.531543372199,
+      "recordingTime": 149.631543372199,
+      "recordingFrame": 8978,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-146.417.png",
+      "pair": "pairs/pair-146.417.jpg"
+    },
+    {
+      "requested": 146.717,
+      "actual": 146.743179741316,
+      "recordingTime": 149.843179741316,
+      "recordingFrame": 8991,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-146.717.png",
+      "pair": "pairs/pair-146.717.jpg"
+    },
+    {
+      "requested": 147.05,
+      "actual": 147.054886193946,
+      "recordingTime": 150.154886193946,
+      "recordingFrame": 9009,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.050.png",
+      "pair": "pairs/pair-147.050.jpg"
+    },
+    {
+      "requested": 147.083,
+      "actual": 147.154886195436,
+      "recordingTime": 150.254886195436,
+      "recordingFrame": 9015,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.083.png",
+      "pair": "pairs/pair-147.083.jpg"
+    },
+    {
+      "requested": 147.317,
+      "actual": 147.366401263513,
+      "recordingTime": 150.466401263513,
+      "recordingFrame": 9028,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.317.png",
+      "pair": "pairs/pair-147.317.jpg"
+    },
+    {
+      "requested": 147.417,
+      "actual": 147.466401265003,
+      "recordingTime": 150.56640126500298,
+      "recordingFrame": 9034,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.417.png",
+      "pair": "pairs/pair-147.417.jpg"
+    },
+    {
+      "requested": 147.5,
+      "actual": 147.566401266493,
+      "recordingTime": 150.66640126649298,
+      "recordingFrame": 9040,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.500.png",
+      "pair": "pairs/pair-147.500.jpg"
+    },
+    {
+      "requested": 147.65,
+      "actual": 147.666401267983,
+      "recordingTime": 150.76640126798299,
+      "recordingFrame": 9046,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.650.png",
+      "pair": "pairs/pair-147.650.jpg"
+    },
+    {
+      "requested": 147.75,
+      "actual": 147.766401269473,
+      "recordingTime": 150.866401269473,
+      "recordingFrame": 9052,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.750.png",
+      "pair": "pairs/pair-147.750.jpg"
+    },
+    {
+      "requested": 147.883,
+      "actual": 147.978008486331,
+      "recordingTime": 151.078008486331,
+      "recordingFrame": 9065,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-147.883.png",
+      "pair": "pairs/pair-147.883.jpg"
+    },
+    {
+      "requested": 148.017,
+      "actual": 148.078008487821,
+      "recordingTime": 151.178008487821,
+      "recordingFrame": 9071,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-148.017.png",
+      "pair": "pairs/pair-148.017.jpg"
+    },
+    {
+      "requested": 148.35,
+      "actual": 148.388482159935,
+      "recordingTime": 151.488482159935,
+      "recordingFrame": 9089,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-148.350.png",
+      "pair": "pairs/pair-148.350.jpg"
+    },
+    {
+      "requested": 148.583,
+      "actual": 148.5989694288,
+      "recordingTime": 151.69896942879998,
+      "recordingFrame": 9102,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-148.583.png",
+      "pair": "pairs/pair-148.583.jpg"
+    },
+    {
+      "requested": 149.283,
+      "actual": 149.309628800489,
+      "recordingTime": 152.409628800489,
+      "recordingFrame": 9145,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-149.283.png",
+      "pair": "pairs/pair-149.283.jpg"
+    },
+    {
+      "requested": 149.983,
+      "actual": 150.019400941208,
+      "recordingTime": 153.119400941208,
+      "recordingFrame": 9187,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-149.983.png",
+      "pair": "pairs/pair-149.983.jpg"
+    },
+    {
+      "requested": 150.0,
+      "actual": 150.119400942698,
+      "recordingTime": 153.219400942698,
+      "recordingFrame": 9193,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-150.000.png",
+      "pair": "pairs/pair-150.000.jpg"
+    },
+    {
+      "requested": 150.583,
+      "actual": 150.630681002513,
+      "recordingTime": 153.730681002513,
+      "recordingFrame": 9224,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-150.583.png",
+      "pair": "pairs/pair-150.583.jpg"
+    },
+    {
+      "requested": 151.283,
+      "actual": 151.340770801529,
+      "recordingTime": 154.440770801529,
+      "recordingFrame": 9266,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-151.283.png",
+      "pair": "pairs/pair-151.283.jpg"
+    },
+    {
+      "requested": 152.5,
+      "actual": 152.550924610347,
+      "recordingTime": 155.650924610347,
+      "recordingFrame": 9339,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-152.500.png",
+      "pair": "pairs/pair-152.500.jpg"
+    },
+    {
+      "requested": 155.0,
+      "actual": 155.061877255328,
+      "recordingTime": 158.161877255328,
+      "recordingFrame": 9490,
+      "linuxCapture": "/data/xy/gakumas/live-urp-codex/.recon/task-j/final-captures/ttmr001-155.000.png",
+      "pair": "pairs/pair-155.000.jpg"
+    }
+  ]
+}

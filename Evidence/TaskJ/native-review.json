@@ -1,0 +1,239 @@
+{
+  "scope": "All 39 raw changed entries remain reported. These notes explain observed instruction differences and do not establish complete native equivalence.",
+  "methods": [
+    {
+      "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$CalculateBillboardMatrix",
+      "similarity": 0.723,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$Execute",
+      "similarity": 0.569,
+      "note": "semantic",
+      "review": "Loop comparisons and constant placement differ in optimized code. Retained billboard-matrices.asm was used for the matrix equations."
+    },
+    {
+      "method": "Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard",
+      "similarity": 0.962,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.BillboardMeshRenderSystem$$CreateBillboardMesh",
+      "similarity": 0.78,
+      "note": "semantic",
+      "review": "Private array initializer metadata uses the reconstruction assembly name. Vector/UV construction has different helper and constant placement."
+    },
+    {
+      "method": "Campus.Crowd.CrowdMeshRenderSystem$$.ctor",
+      "similarity": 0.969,
+      "note": "semantic",
+      "review": "The rebuilt allocation reads vertexCount before vertex stride. Both queries feed the same buffer allocation."
+    },
+    {
+      "method": "Campus.Crowd.CrowdMeshRenderSystem$$ComputeSkinning",
+      "similarity": 0.756,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdMeshRenderSystem$$Render",
+      "similarity": 0.623,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdMeshRenderSystem$$SetMaxInstanceCounts",
+      "similarity": 0.476,
+      "note": "semantic",
+      "review": "Array-length comparison lowering differs. Source uses positive submesh length and max(0,count)/length, matching the recovered operation."
+    },
+    {
+      "method": "Campus.Crowd.CrowdRendererFeature$$OnCameraPreCull",
+      "similarity": 0.764,
+      "note": "semantic",
+      "review": "Camera instance ID is cached, and the rebuilt compiler inlines SetDrawCounts. Source contains the call and the original volume-driven counts."
+    },
+    {
+      "method": "Campus.Crowd.CrowdRenderingSetupData$$Update",
+      "similarity": 0.242,
+      "note": "semantic",
+      "review": "The floating-point constant load moves across a getter call."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSortJob$$Execute",
+      "similarity": 0.914,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSortJob$$IsCulledOcclusionSphere",
+      "similarity": 0.789,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$.ctor",
+      "similarity": 0.994,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$BakeBillboardCrowd",
+      "similarity": 0.88,
+      "note": "semantic",
+      "review": "The game interval includes a duplicated tail branch at the inferred method boundary."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$ComputeCrowdSkinning",
+      "similarity": 0.915,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$ComputePenlight",
+      "similarity": 0.872,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$DisposeBillboardMeshRenderSystem",
+      "similarity": 0.857,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$RenderBillboardCrowd",
+      "similarity": 0.783,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$RenderCrowd",
+      "similarity": 0.876,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$ScheduleJobs",
+      "similarity": 0.993,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$SetBillboardResolution",
+      "similarity": 0.246,
+      "note": "semantic",
+      "review": "The game stores the width/height pair directly. The rebuilt method calls the setter with the recovered 0, 16x32, 32x64 and 64x128 sizes."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$SetDrawCounts",
+      "similarity": 0.48,
+      "note": "semantic",
+      "review": "Inlining and array-length comparison lowering differ. The same clamped detail-count division is present in source."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$Setup",
+      "similarity": 0.693,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystem$$SetupRenderingParameter",
+      "similarity": 0.789,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystemData$$.ctor",
+      "similarity": 0.938,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystemData$$ComputeUpdatePerson",
+      "similarity": 0.61,
+      "note": "semantic",
+      "review": "Ceiling division is expressed as (visibleCount+255)/256. Native uses a low-byte remainder and shift. Dispatch is a tail call in the rebuild."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystemData$$EqualData",
+      "similarity": 0.926,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystemData$$InitializeBytesBuffer",
+      "similarity": 0.59,
+      "note": "semantic",
+      "review": "sizeof(uint) supplies the 4-byte buffer stride where the game calls Marshal.SizeOf<uint>."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystemData$$InitializedPenlightInfoBuffer",
+      "similarity": 0.46,
+      "note": "semantic",
+      "review": "The stride uses sizeof(uint). Explicit right/left penlight bit packing compiles differently from the native conditional bit expression. Random seed and weights match the retained decompilation."
+    },
+    {
+      "method": "Campus.Crowd.CrowdSystemData$$UpdatePersonIndexBuffer",
+      "similarity": 0.35,
+      "note": "semantic",
+      "review": "SetData is a tail call in the rebuild."
+    },
+    {
+      "method": "Campus.Crowd.CrowdUtility$$GetCellBounds",
+      "similarity": 0.977,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$.ctor",
+      "similarity": 0.908,
+      "note": "semantic",
+      "review": "The rebuild disposes the unused secondary buffer returned by InitializeAppendBuffer. The recovered constructor retains only the primary append buffer."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$ComputeUpdatePenlight",
+      "similarity": 0.531,
+      "note": "semantic",
+      "review": "sizeof(uint) supplies stride and indirect offsets. Dispatch group ceiling division compiles differently."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$Dispose",
+      "similarity": 0.849,
+      "note": "semantic",
+      "review": "Generated callback metadata and generic ForEach initialization have different placement."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$GetPenlightInfoBytesBuffer",
+      "similarity": 0.417,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$InitializeAppendBuffer",
+      "similarity": 0.689,
+      "note": "semantic",
+      "review": "sizeof(uint) replaces Marshal.SizeOf<uint> for both 4-byte buffer strides. Generic NativeArray metadata initialization is reordered."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$InitializedArgsBuffer",
+      "similarity": 0.594,
+      "note": "semantic",
+      "review": "sizeof(int) supplies the 4-byte indirect-argument stride."
+    },
+    {
+      "method": "Campus.Crowd.PenlightMeshRenderSystem$$Render",
+      "similarity": 0.65,
+      "note": "semantic",
+      "review": "sizeof(uint) supplies byte offsets instead of Marshal.SizeOf<uint> calls."
+    },
+    {
+      "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$LookCamera",
+      "similarity": 0.558,
+      "note": "layout",
+      "review": "Normalized semantic instruction lists match. The comparison still flags register, offset, branch, or layout differences."
+    }
+  ]
+}

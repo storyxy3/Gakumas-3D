@@ -1,0 +1,35 @@
+{
+  "bundle": "Build/Content/ttmr001/eff_cav_mov_ttmr-001.unity3d",
+  "bundleSha256": "2a58c8e1aa48c93321a90a35f782279db496633b5cd2c43e4afcc530eca284aa",
+  "clip": {
+    "m_Name": "eff_cav_mov_ttmr-001",
+    "m_OriginalPath": "Assets/Data/3D/eff/cav/mov/ttmr/001/eff_cav_mov_ttmr-001.mp4",
+    "m_ProxyWidth": 768,
+    "m_ProxyHeight": 432,
+    "Width": 768,
+    "Height": 432,
+    "m_PixelAspecRatioNum": 1,
+    "m_PixelAspecRatioDen": 1,
+    "m_FrameRate": 30.0,
+    "m_FrameCount": 4711,
+    "m_Format": 0,
+    "m_AudioChannelCount": [],
+    "m_AudioSampleRate": [],
+    "m_AudioLanguage": [],
+    "m_VideoShaders": [],
+    "m_ExternalResources": {
+      "m_Source": "archive:/CAB-204480477e2c91b208f26d9b0de75e0b/CAB-204480477e2c91b208f26d9b0de75e0b.resource",
+      "m_Offset": 0,
+      "m_Size": 9980687
+    },
+    "m_HasSplitAlpha": false,
+    "m_sRGB": true
+  },
+  "suppliedWindowsEvidence": {
+    "log": "/data/xy/gakumas/work/dmm-reference/ours-win-20261105/player.log",
+    "logLine": 850,
+    "message": "First video frame not zero: 2 (0.066667s)",
+    "capture": "/data/xy/gakumas/work/dmm-reference/ours-win-20261105/ttmr001-30.000.png",
+    "observation": "The supplied earlier Windows capture displays blue cell/cloud imagery on the central screen. The rebuilt Task J Windows player remains for Claude to verify."
+  }
+}

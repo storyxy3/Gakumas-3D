@@ -1,0 +1,68 @@
+same 252, changed 63, only in game 0, only in stock 0
+changed by class: Campus.Common.Live.CampusLiveBinder 9, ProFlareBatchForSRPData 5, VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType> 5, VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType> 4, VL.VLDefaultActorController<object, object, object> 4, ProFlareUpdateElementJob 3, VLB.VLBDrawCallSystem.DrawCallJob 3, VLB.VLBEntityManager 3, ProFlareBatchForSRP 2, ProFlareUpdateJob 2, VL.Core.VLActorController<object, object, object> 2, VLB.MeshGenerator 2, VLB.SharedVLBEntityManager 2, VLB.Utils 2, VLB.VLBDrawSystem 2, Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39 1, Campus.Common.Live.CampusLiveBinder.TrackName 1, Campus.Rendering.CampusActorRim 1, VL.Core.BoneLinkData 1, VL.Rendering.DownscalePass 1, VLB.Chunk 1, VLB.CullingJob 1, VLB.EntityIndexer 1, VLB.GlobalMeshSD 1, VLB.MeshGenerator.<>c__DisplayClass6_1 1, VLB.VLBCullingSystem 1, VLB.VLBDrawCallSystem 1, VLB.VLBUpdateCachedSystem.UpdateTransformsJob 1
+
+0.033 VLB.Chunk$$ResizeArray<Bounds> semantic
+0.174 ProFlareUpdateElementJob$$GetElementJobData semantic
+0.270 ProFlareBatchForSRPData$$ScheduleFlares semantic
+0.270 ProFlareUpdateElementJob$$GetOffsetPosition semantic
+0.304 VLB.Utils$$TransformAABB semantic
+0.312 Campus.Common.Live.CampusLiveBinder$$SetLiveOverrideAsset layout
+0.398 VLB.VLBDrawCallSystem.DrawCallJob$$UpdateParams semantic
+0.402 Campus.Common.Live.CampusLiveBinder.<SetupAsync>d__39$$MoveNext semantic
+0.456 VLB.MeshGenerator$$GenerateConeZ_Radii_DoubleCaps semantic
+0.475 VLB.VLBDrawSystem$$ExecuteHD semantic
+0.500 VLB.VLBUpdateCachedSystem.UpdateTransformsJob$$Execute layout
+0.540 VLB.MeshGenerator$$GenerateConeZ_Radii semantic
+0.569 VLB.VLBEntityManager$$UpdateEntityData semantic
+0.577 VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Build semantic
+0.611 Campus.Common.Live.CampusLiveBinder$$SetupAsync semantic
+0.618 Campus.Common.Live.CampusLiveBinder$$DisableJointLimitIfNeeded layout
+0.621 VLB.VLBDrawSystem$$Execute semantic
+0.631 VLB.GlobalMeshSD$$Get semantic
+0.677 VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedPosition semantic
+0.677 VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$GetAnimatedRotation semantic
+0.677 VL.VLDefaultActorController<object, object, object>$$GetAnimatedPosition semantic
+0.677 VL.VLDefaultActorController<object, object, object>$$GetAnimatedRotation semantic
+0.683 VLB.VLBDrawCallSystem.DrawCallJob$$GetInsideBeamFactorFromObjectSpacePos semantic
+0.709 ProFlareBatchForSRPData$$RenderFlares semantic
+0.724 Campus.Common.Live.CampusLiveBinder.TrackName$$.cctor semantic
+0.745 VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildAvatar semantic
+0.754 ProFlareBatchForSRP$$ForceRefresh layout
+0.755 VL.VLDefaultActorController<object, object, object>$$BuildAvatar layout
+0.785 VL.VLDefaultActorController<object, object, __Il2CppFullySharedGenericType>$$BuildModel semantic
+0.786 VLB.SharedVLBEntityManager$$Dispose layout
+0.789 VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$PostBuild layout
+0.791 ProFlareUpdateJob$$Execute semantic
+0.794 ProFlareBatchForSRP$$TryGetScheduledFlareData semantic
+0.795 VLB.VLBEntityManager$$CreateEntity semantic
+0.800 VL.Core.BoneLinkData$$.ctor layout
+0.800 VLB.EntityIndexer$$UpdateIndex semantic
+0.801 VL.VLDefaultActorController<object, object, object>$$BuildModel semantic
+0.806 Campus.Common.Live.CampusLiveBinder$$IsAllLiveScene layout
+0.824 Campus.Rendering.CampusActorRim$$.ctor semantic
+0.830 VLB.VLBCullingSystem$$Execute layout
+0.848 Campus.Common.Live.CampusLiveBinder$$ReplaceBGM layout
+0.851 VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$CheckResourceObjects semantic
+0.851 VL.Core.VLActorController<object, object, object>$$CheckResourceObjects semantic
+0.861 Campus.Common.Live.CampusLiveBinder$$BindAudio layout
+0.868 VLB.VLBDrawCallSystem$$Execute layout
+0.875 VLB.CullingJob$$Execute semantic
+0.875 VLB.Utils$$TestPlanesAABB layout
+0.882 Campus.Common.Live.CampusLiveBinder$$BindActor layout
+0.887 VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$Create<object> semantic
+0.887 VL.Core.VLActorController<object, object, object>$$Create<object> semantic
+0.888 VLB.VLBEntityManager$$CreateChunkIndex layout
+0.890 Campus.Common.Live.CampusLiveBinder$$DebugSetMuteTracks semantic
+0.892 ProFlareUpdateJob$$Angle semantic
+0.894 VLB.SharedVLBEntityManager$$Get layout
+0.913 VL.Core.VLActorController<object, object, __Il2CppFullySharedGenericType>$$PreBuild layout
+0.919 ProFlareBatchForSRPData$$Initialize layout
+0.924 ProFlareBatchForSRPData$$ComputeFlares semantic
+0.927 VLB.VLBDrawCallSystem.DrawCallJob$$Execute layout
+0.933 Campus.Common.Live.CampusLiveBinder$$BindCamera semantic
+0.942 VL.Rendering.DownscalePass$$.ctor semantic
+0.967 ProFlareBatchForSRPData$$UpdateElementData layout
+0.972 VLB.MeshGenerator.<>c__DisplayClass6_1$$<GenerateConeZ_Radii_DoubleCaps>b__2 layout
+0.976 ProFlareUpdateElementJob$$Execute layout
+
+only in game:

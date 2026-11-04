@@ -1,0 +1,48 @@
+{
+  "runtimeSourceCommit": "75069602f0bc568c8abee56baf8009295c8b094c",
+  "unity": "6000.0.77f1",
+  "linuxBuild": "Succeeded errors=0",
+  "androidBuild": "Native compilation completed. Gradle packaging failed in lintVitalAnalyzeRelease with For input string 37.0.",
+  "hashes": {
+    "ProjectSettings/TimeManager.asset": {
+      "sha256": "2200e067dcbe741a74ec8e6c8f0d57f85932de41c27e906ad21fcedbb753ed5f",
+      "bytes": 298
+    },
+    "Build/Linux/TrueEnd_Data/Managed/campus-submodule.Runtime.dll": {
+      "sha256": "79d294eafb512f9a5a63899eb81459290685673b28902621e91526d307c75ca3",
+      "bytes": 779264
+    },
+    "Build/Linux/TrueEnd_Data/globalgamemanagers": {
+      "sha256": "b243d6807ade29b14fb73f9f797bec5e3d8355575f8cff0b08571119b4790a28",
+      "bytes": 221924
+    },
+    "Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so": {
+      "sha256": "62511d7d288308634b544c26eeb8bd2d8ac0cb94530c1fc676ae73f8766f48bc",
+      "bytes": 92380248
+    },
+    ".recon/live-dump/script.json": {
+      "sha256": "84af48ae731d79ed38f906801c01d3b9290e51d776497717ee63105735c228cb",
+      "bytes": 98948007
+    },
+    "Build/Content/ttmr001/manifest.json": {
+      "sha256": "53f9c5d76acc45eb047a01d728f6dff377b1e63946bebeca28c8287492e72a90",
+      "bytes": 14495
+    },
+    "Build/Content-Linux/ttmr001/manifest.json": {
+      "sha256": "d2e7143c26788baaa413f5d31a5b27da68c51b5d3f12bee49ced9f714967a34e",
+      "bytes": 16768
+    },
+    "Build/ttmr001-windows-content.tar.gz": {
+      "sha256": "d3267c0fa3a97c95215e7ba457cced42db1b19e2b373e56a4df18f414a13a291",
+      "bytes": 171872621
+    }
+  },
+  "playback": {
+    "exitCode": 0,
+    "timelineEnd": 155.6,
+    "captures": 277,
+    "contactSheetsReviewed": 47,
+    "exceptionCount": 0,
+    "maxCaptureOvershootSeconds": 0.15281447190790232
+  }
+}

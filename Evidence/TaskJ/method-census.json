@@ -884,34 +884,17 @@
     ]
   },
   {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<Int32Enum, int>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "method": "Campus.Common.CampusActorController$$SetPropFieldConstraintTarget",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs",
     "apkAddresses": [
-      "0x91f6810",
-      "0x91f6548"
+      "0xdddeb8c"
     ]
   },
   {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<long, long, bool>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
+    "method": "Campus.Common.CampusActorController$$ClearPropFieldConstraintTarget",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs",
     "apkAddresses": [
-      "0x91f7374"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<int>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f7bfc",
-      "0x91f7934"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<Int32Enum>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f8198",
-      "0x91f7ed0"
+      "0xdddecfc"
     ]
   },
   {
@@ -920,106 +903,6 @@
     "apkAddresses": [
       "0x91f8734",
       "0x91f846c"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<float>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f8a08"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<uint>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f8fa0",
-      "0x91f8cd8"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<__Il2CppFullySharedGenericType>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f9604",
-      "0x91f9274"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<int, Int32Enum>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f5194"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<int, object>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f545c"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<Int32Enum, long>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f5730"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<Int32Enum, object>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f5a04"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<object, bool>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f5cd8"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<KeyValuePair<object, object>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f5fac"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<int, float>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f6280"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<object, object>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f6ae4"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<uint, bool>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f6db8"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<ValueTuple<uint, Color>>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f7080"
-    ]
-  },
-  {
-    "method": "Campus.Common.Extensions.EnumerableExtensions$$ForEach<Color>",
-    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/EnumerableExtensions.cs",
-    "apkAddresses": [
-      "0x91f7670"
     ]
   }
 ]

@@ -1,0 +1,11 @@
+linux
+LIVE_BUILD Succeeded errors=0
+
+android
+> Task :unityLibrary:lintVitalAnalyzeRelease FAILED
+Execution failed for task ':unityLibrary:lintVitalAnalyzeRelease'.
+   > For input string: "37.0"
+Execution failed for task ':unityLibrary:lintVitalAnalyzeRelease'.
+   > For input string: "37.0"
+> Task :unityLibrary:lintVitalAnalyzeRelease FAILED
+LIVE_BUILD Failed errors=3
