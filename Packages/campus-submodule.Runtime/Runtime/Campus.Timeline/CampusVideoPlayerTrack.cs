@@ -15,14 +15,29 @@ namespace Campus.Timeline
     {
         [SerializeField]
         [NotKeyable]
-        public bool Loop;
+        public bool Loop = true;
         public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            if (!go.TryGetComponent<PlayableDirector>(out var director)) return base.CreateTrackMixer(graph, go, inputCount);
+            if (!(director.GetGenericBinding(this) is VideoPlayer videoPlayer) || !videoPlayer.TryGetComponent<global::Campus.Common.VideoImage>(out var videoImage)) return base.CreateTrackMixer(graph, go, inputCount);
+            videoPlayer.skipOnDrop = true;
+            videoPlayer.waitForFirstFrame = false;
+            videoPlayer.playOnAwake = false;
+            videoPlayer.isLooping = Loop;
+            var behaviour = new CampusVideoPlayerTrackBehaviour
+            {
+                VideoPlayer = videoPlayer,
+                VideoImage = videoImage,
+                IsRecording = false,
+                IsPlayMode = Application.isPlaying,
+                Loop = Loop
+            };
+            return ScriptPlayable<CampusVideoPlayerTrackBehaviour>.Create(graph, behaviour, inputCount);
         }
 
         public override void GatherProperties(PlayableDirector director, IPropertyCollector driver)
         {
+            base.GatherProperties(director, driver);
         }
 
         public CampusVideoPlayerTrack()
