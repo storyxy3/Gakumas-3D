@@ -16,6 +16,8 @@ namespace VL.Timeline
             public readonly Object referenceValue;
             public ReferenceBindParam(string referenceName, Object referenceValue)
             {
+                this.referenceName = referenceName;
+                this.referenceValue = referenceValue;
             }
         }
 
@@ -26,7 +28,7 @@ namespace VL.Timeline
         {
             get
             {
-                return null;
+                return _master;
             }
         }
 
@@ -34,28 +36,70 @@ namespace VL.Timeline
         {
             get
             {
-                return null;
+                if (_directors == null)
+                {
+                    _directors = new List<PlayableDirector>();
+                    GetComponentsInChildren(true, _directors);
+                }
+                return _directors;
             }
         }
 
         private void OnEnable()
         {
+            if (_master == null) _master = GetComponent<PlayableDirector>();
         }
 
         private void OnDisable()
         {
+            Destroy();
         }
 
         public void Bind(Dictionary<string, BindAction> onBindTable)
         {
+            if (onBindTable == null) return;
+            if (_master == null)
+            {
+                Debug.LogError("PlayableDirectorが見つかりません");
+                return;
+            }
+            foreach (var director in Directors)
+            {
+                if (director.playableAsset == null) continue;
+                onBindTable.TryGetValue(director.name, out var onBind);
+                foreach (var binding in director.playableAsset.outputs)
+                {
+                    var value = onBind?.Invoke(binding);
+                    if (value != null) director.SetGenericBinding(binding.sourceObject, value);
+                }
+                if (director.playableGraph.IsValid()) director.RebuildGraph();
+            }
         }
 
         public void BindReference(Dictionary<string, ReferenceBindParam[]> bindData)
         {
+            if (bindData == null) return;
+            if (_master == null)
+            {
+                Debug.LogError("PlayableDirectorが見つかりません");
+                return;
+            }
+            foreach (var director in Directors)
+            {
+                if (bindData.TryGetValue(director.name, out var parameters))
+                {
+                    foreach (var parameter in parameters)
+                        director.SetReferenceValue(parameter.referenceName, parameter.referenceValue);
+                }
+            }
         }
 
         public void RebuildGraph()
         {
+            if (_directors != null)
+            {
+                foreach (var director in _directors) director.RebuildGraph();
+            }
         }
 
         protected virtual void Destroy()
@@ -64,6 +108,8 @@ namespace VL.Timeline
 
         public void Play()
         {
+            if (_master == null) return;
+            _master.Play();
         }
 
         public VLTimelineController()

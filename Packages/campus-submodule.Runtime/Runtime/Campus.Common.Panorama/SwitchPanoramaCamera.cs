@@ -50,7 +50,7 @@ namespace Campus.Common.Panorama
         {
             get
             {
-                return null;
+                return _virtualCamera;
             }
         }
 
