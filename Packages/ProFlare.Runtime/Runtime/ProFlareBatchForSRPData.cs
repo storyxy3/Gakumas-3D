@@ -163,6 +163,18 @@ public class ProFlareBatchForSRPData : IDisposable
 
     public void UpdateUVData(ProFlareAtlas atlas)
     {
+        if (atlas == null || atlas.elementsList == null) return;
+        if (_uvData.IsCreated && _uvData.Length != atlas.elementsList.Count)
+        {
+            _uvData.Dispose(_jobHandle);
+            _uvData = default;
+        }
+        if (!_uvData.IsCreated) _uvData = new NativeArray<float4>(atlas.elementsList.Count, Allocator.Persistent);
+        for (int i = 0; i < atlas.elementsList.Count; ++i)
+        {
+            var uv = atlas.elementsList[i].UV;
+            _uvData[i] = new float4(uv.x, uv.y, uv.x + uv.width, uv.y + uv.height);
+        }
     }
 
     private void UpdateElementData(int maxFlareElementSize)

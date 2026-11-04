@@ -7,8 +7,8 @@ public class ProFlareAtlas : MonoBehaviour
     [Serializable]
     public class Element
     {
-        public string name;
-        public Rect UV;
+        public string name = "Flare Element";
+        public Rect UV = new Rect(0, 0, 1, 1);
         public bool Imported;
         public Element()
         {
@@ -19,10 +19,12 @@ public class ProFlareAtlas : MonoBehaviour
     public int elementNumber;
     public bool editElements;
     [SerializeField]
-    public List<Element> elementsList;
+    public List<Element> elementsList = new List<Element>();
     public string[] elementNameList;
     public void UpdateElementNameList()
     {
+        elementNameList = new string[elementsList.Count];
+        for (int i = 0; i < elementNameList.Length; ++i) elementNameList[i] = elementsList[i].name;
     }
 
     public ProFlareAtlas()
