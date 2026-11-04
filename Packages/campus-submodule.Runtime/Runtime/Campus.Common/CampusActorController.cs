@@ -1096,10 +1096,36 @@ namespace Campus.Common
 
         public void SetPropFieldConstraintTarget(string propName, GameObject fieldConstraintTarget)
         {
+            if (!TryGetPartsFromAssetName(propName, out var parts))
+            {
+                UnityEngine.Debug.LogError("アニメーション対象のPropが見つかりませんでした");
+                return;
+            }
+            for (int i = 0; i < parts.transform.childCount; i++)
+            {
+                if (parts.transform.GetChild(i).TryGetComponent<ActorAnimationConstraintTransformBone>(out var constraint))
+                {
+                    constraint.fieldConstraintSource0 = fieldConstraintTarget.transform;
+                    constraint.SetDirty();
+                }
+            }
         }
 
         public void ClearPropFieldConstraintTarget(string propName)
         {
+            if (!TryGetPartsFromAssetName(propName, out var parts))
+            {
+                UnityEngine.Debug.LogError("アニメーション対象のPropが見つかりませんでした");
+                return;
+            }
+            for (int i = 0; i < parts.transform.childCount; i++)
+            {
+                if (parts.transform.GetChild(i).TryGetComponent<ActorAnimationConstraintTransformBone>(out var constraint))
+                {
+                    constraint.ClearFieldSource();
+                    constraint.SetDirty();
+                }
+            }
         }
 
         public void SetupSeatedDynamicCorrection(MotionDefine motionDefine)
