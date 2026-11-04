@@ -7,7 +7,9 @@ namespace Campus.Timeline
         public readonly int After;
         public CurrentActorSignalData(int slotIndex, int before, int after)
         {
-            this = default;
+            SlotIndex = slotIndex;
+            Before = before;
+            After = after;
         }
     }
 }
