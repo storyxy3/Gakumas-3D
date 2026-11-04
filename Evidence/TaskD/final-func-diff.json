@@ -1,0 +1,310 @@
+{
+ "addedOverloads": [],
+ "same": 242,
+ "changed": [
+  {
+   "method": "VL.ActorMesh.CombineMeshJob$$Execute",
+   "similarity": 0.665,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.ActorMesh.VLActorSkinningModel$$Setup",
+   "similarity": 0.849,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.MaterialInfo$$.ctor",
+   "similarity": 0.846,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Core.VLActorController$$get_actorControllers",
+   "similarity": 0.7,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Core.VLMonoBehaviourSingleton<object>$$UpdateInstance",
+   "similarity": 0.926,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.ActorShadowPass$$SetupActorShadowCasterConstants",
+   "similarity": 0.833,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.ActorShadowPass$$SetupActorShadowReceiverConstants",
+   "similarity": 0.896,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.ActorShadowPass$$UpdateShadowData",
+   "similarity": 0.689,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.ActorShadowPass.ActorShadowData$$Clear",
+   "similarity": 0.95,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$.cctor",
+   "similarity": 0.982,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$.ctor",
+   "similarity": 0.942,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$Execute",
+   "similarity": 0.751,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$InitializeHiZ",
+   "similarity": 0.562,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$OnCameraSetupSSAO",
+   "similarity": 0.869,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$RegisterAfterCommand",
+   "similarity": 0.065,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$RenderActorAO",
+   "similarity": 0.956,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$RenderActorAOs",
+   "similarity": 0.746,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$RenderDownscale",
+   "similarity": 0.597,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$RenderShadowAndOcclusion",
+   "similarity": 0.721,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscalePass$$SetupTraceSSR",
+   "similarity": 0.613,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscaleSystemRendererFeature$$AddRenderPasses",
+   "similarity": 0.812,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscaleSystemRendererFeature$$Create",
+   "similarity": 0.911,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.DownscaleSystemRendererFeature$$SetupDownscalePass",
+   "similarity": 0.741,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DownscaleTransparentPass$$Execute",
+   "similarity": 0.867,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.DrawUIBlurPass$$Create",
+   "similarity": 0.992,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.DrawUIBlurPass$$Dispose",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.Skinning.Skinning4$$GetBlendedSkinMatrix",
+   "similarity": 0.794,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$ScheduleSkinning",
+   "similarity": 0.803,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor",
+   "similarity": 0.93,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$ScheduleSkinning",
+   "similarity": 0.879,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Rendering.VLSRPCameraController$$DestroyTextures",
+   "similarity": 0.976,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Rendering.VLSRPCameraController$$UpdateRenderTexture",
+   "similarity": 0.99,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.Subsystems.VLSubsystemRegistration$$FindLoopSystemIndex",
+   "similarity": 0.932,
+   "note": "layout"
+  },
+  {
+   "method": "VL.Subsystems.VLSubsystemRegistration$$InsertSystem",
+   "similarity": 0.976,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLActorAO.UpdateJob$$Execute",
+   "similarity": 0.329,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLActorShadowGroup$$OnDisable",
+   "similarity": 0.95,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLActorShadowGroup$$OnEnable",
+   "similarity": 0.837,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLCameraControllerSingleton<object>$$.ctor",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLMeshUtility$$CopyMesh",
+   "similarity": 0.892,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLMeshUtility$$CreateBoxMesh",
+   "similarity": 0.983,
+   "note": "semantic"
+  },
+  {
+   "method": "VL.VLMeshUtility$$PackWeightAndIndex",
+   "similarity": 0.824,
+   "note": "layout"
+  },
+  {
+   "method": "VL.VLUtility$$GetLimitedResolution",
+   "similarity": 0.787,
+   "note": "layout"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [
+  "VL.Rendering.ActorShadowPass.GetBoundsEvent$$BeginInvoke",
+  "VL.Rendering.ActorShadowPass.GetBoundsEvent$$EndInvoke",
+  "VL.Rendering.VLSRPCameraController.CameraAction$$BeginInvoke",
+  "VL.Rendering.VLSRPCameraController.CameraAction$$EndInvoke",
+  "VL.Subsystems.VLSubsystemRegistration$$.ctor"
+ ],
+ "changedByClass": [
+  [
+   "VL.Rendering.DownscalePass",
+   11
+  ],
+  [
+   "VL.Rendering.ActorShadowPass",
+   3
+  ],
+  [
+   "VL.Rendering.DownscaleSystemRendererFeature",
+   3
+  ],
+  [
+   "VL.VLMeshUtility",
+   3
+  ],
+  [
+   "VL.Rendering.DrawUIBlurPass",
+   2
+  ],
+  [
+   "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>",
+   2
+  ],
+  [
+   "VL.Rendering.VLSRPCameraController",
+   2
+  ],
+  [
+   "VL.Subsystems.VLSubsystemRegistration",
+   2
+  ],
+  [
+   "VL.VLActorShadowGroup",
+   2
+  ],
+  [
+   "VL.ActorMesh.CombineMeshJob",
+   1
+  ],
+  [
+   "VL.ActorMesh.VLActorSkinningModel",
+   1
+  ],
+  [
+   "VL.Core.MaterialInfo",
+   1
+  ],
+  [
+   "VL.Core.VLActorController",
+   1
+  ],
+  [
+   "VL.Core.VLMonoBehaviourSingleton<object>",
+   1
+  ],
+  [
+   "VL.Rendering.ActorShadowPass.ActorShadowData",
+   1
+  ],
+  [
+   "VL.Rendering.DownscaleTransparentPass",
+   1
+  ],
+  [
+   "VL.Rendering.Skinning.Skinning4",
+   1
+  ],
+  [
+   "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>",
+   1
+  ],
+  [
+   "VL.VLActorAO.UpdateJob",
+   1
+  ],
+  [
+   "VL.VLCameraControllerSingleton<object>",
+   1
+  ],
+  [
+   "VL.VLUtility",
+   1
+  ]
+ ]
+}

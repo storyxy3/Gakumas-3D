@@ -1,0 +1,4050 @@
+{
+  "summary": {
+    "same": 242,
+    "layout": 19,
+    "semantic": 23,
+    "notDone": 0
+  },
+  "unit": "method name; overloads and generic instantiations follow canonical comparator aggregation",
+  "methods": [
+    {
+      "method": "VL.ActorMesh.CombineMeshJob$$Execute",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/CombineMeshJob.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12ac5c",
+          "signature": "void VL_ActorMesh_CombineMeshJob__Execute (VL_ActorMesh_CombineMeshJob_o __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375e868"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12aa5c",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel___ctor (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f9fc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$ApplySkinning",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a8e4",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__ApplySkinning (VL_ActorMesh_VLActorSkinningModel_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f884"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a7d4",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__Dispose (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f774"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$GetBones",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a80c",
+          "signature": "UnityEngine_Transform_array* VL_ActorMesh_VLActorSkinningModel__GetBones (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f7ac"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$GetLocalBounds",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a814",
+          "signature": "UnityEngine_Bounds_o VL_ActorMesh_VLActorSkinningModel__GetLocalBounds (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f7b4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$GetRootBone",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a804",
+          "signature": "UnityEngine_Transform_o* VL_ActorMesh_VLActorSkinningModel__GetRootBone (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f7a4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$OnDisable",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a7d0",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__OnDisable (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f770"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$OnEnable",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a344",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__OnEnable (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f2f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$ScheduleSkinning",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a880",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__ScheduleSkinning (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f820"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$Setup",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a348",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__Setup (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f2f4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$SetupSkinning",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a828",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__SetupSkinning (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f7c8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$Update",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12aa4c",
+          "signature": "void VL_ActorMesh_VLActorSkinningModel__Update (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f9ec"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$get_bounds",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a2c8",
+          "signature": "UnityEngine_Bounds_o VL_ActorMesh_VLActorSkinningModel__get_bounds (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f274"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningModel$$get_isSystemActive",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a2b8",
+          "signature": "bool VL_ActorMesh_VLActorSkinningModel__get_isSystemActive (VL_ActorMesh_VLActorSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f264"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningSystem$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningSystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12aa64",
+          "signature": "void VL_ActorMesh_VLActorSkinningSystem___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375fa04"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ActorMesh.VLActorSkinningSystem$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.ActorMesh/VLActorSkinningSystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a944",
+          "signature": "void VL_ActorMesh_VLActorSkinningSystem___ctor (VL_ActorMesh_VLActorSkinningSystem_o* __this, UnityEngine_Transform_o* parent, UnityEngine_Mesh_o* sourceMesh, UnityEngine_Transform_o* rootBone, UnityEngine_Transform_array* bones, UnityEngine_Matrix4x4_array* bindposes, System_UInt32_array* boneWeightAndIndices, UnityEngine_Bounds_o localBounds, UnityEngine_Material_array* materials, uint32_t renderingLayerMask, VL_Core_BlendShapeData_array* blendShapes, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375f8e4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.BlendShapeWeight$$GetPropertyPath",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/BlendShapeWeight.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a110",
+          "signature": "System_String_o* VL_Core_BlendShapeWeight__GetPropertyPath (int32_t index, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c690"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.BlendShapeWeight$$get_Item",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/BlendShapeWeight.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a1bc",
+          "signature": "float VL_Core_BlendShapeWeight__get_Item (VL_Core_BlendShapeWeight_o __this, int32_t index, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c680"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.BlendShapeWeight$$set_Item",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/BlendShapeWeight.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a1c4",
+          "signature": "void VL_Core_BlendShapeWeight__set_Item (VL_Core_BlendShapeWeight_o __this, int32_t index, float value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c688"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$.ctor",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1295d8",
+          "signature": "void VL_Core_MaterialInfo___ctor (VL_Core_MaterialInfo_o* __this, UnityEngine_Material_o* material, UnityEngine_Renderer_o* renderer, int32_t materialIndex, UnityEngine_Material_o* instancedMaterial, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c928"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$ApplyProperty",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a044",
+          "signature": "void VL_Core_MaterialInfo__ApplyProperty (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cdd8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$ClearProperty",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a078",
+          "signature": "void VL_Core_MaterialInfo__ClearProperty (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ce0c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1296a8",
+          "signature": "void VL_Core_MaterialInfo__Dispose (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c9f8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$GetTexture",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe12a000",
+          "signature": "UnityEngine_Texture_o* VL_Core_MaterialInfo__GetTexture (VL_Core_MaterialInfo_o* __this, int32_t nameID, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cd94"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$InitializeProperty",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129d24",
+          "signature": "void VL_Core_MaterialInfo__InitializeProperty (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cab8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$SetColor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129e00",
+          "signature": "void VL_Core_MaterialInfo__SetColor (VL_Core_MaterialInfo_o* __this, int32_t nameID, UnityEngine_Color_o value, bool convertLinear, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cb94"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$SetFloat",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129ee8",
+          "signature": "void VL_Core_MaterialInfo__SetFloat (VL_Core_MaterialInfo_o* __this, int32_t nameID, float value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cc7c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$SetKeyword",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129ce4",
+          "signature": "void VL_Core_MaterialInfo__SetKeyword (VL_Core_MaterialInfo_o* __this, System_String_o* keyword, bool enable, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ca78"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$SetMatrix",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129f20",
+          "signature": "void VL_Core_MaterialInfo__SetMatrix (VL_Core_MaterialInfo_o* __this, int32_t nameID, UnityEngine_Matrix4x4_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ccb4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$SetTexture",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129f90",
+          "signature": "void VL_Core_MaterialInfo__SetTexture (VL_Core_MaterialInfo_o* __this, int32_t nameID, UnityEngine_Texture_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cd24"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$SetVector",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129fc8",
+          "signature": "void VL_Core_MaterialInfo__SetVector (VL_Core_MaterialInfo_o* __this, int32_t nameID, UnityEngine_Vector4_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cd5c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$get_materialIndex",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129ccc",
+          "signature": "int32_t VL_Core_MaterialInfo__get_materialIndex (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c910"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$get_materialProperty",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129cd4",
+          "signature": "UnityEngine_MaterialPropertyBlock_o* VL_Core_MaterialInfo__get_materialProperty (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c918"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$get_name",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129c28",
+          "signature": "System_String_o* VL_Core_MaterialInfo__get_name (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c86c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$get_renderer",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129cc4",
+          "signature": "UnityEngine_Renderer_o* VL_Core_MaterialInfo__get_renderer (VL_Core_MaterialInfo_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c908"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.MaterialInfo$$set_materialProperty",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/MaterialInfo.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe129cdc",
+          "signature": "void VL_Core_MaterialInfo__set_materialProperty (VL_Core_MaterialInfo_o* __this, UnityEngine_MaterialPropertyBlock_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c920"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLActorController$$get_actorControllers",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLActorController_3.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1248a0",
+          "signature": "System_Collections_Generic_IReadOnlyList_IVLActorController__o* VL_Core_VLActorController__get_actorControllers (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375cee8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLMonoBehaviourSingleton<object>$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLMonoBehaviourSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd18674",
+          "signature": "void VL_Core_VLMonoBehaviourSingleton_object____ctor (VL_Core_VLMonoBehaviourSingleton_T__o* __this, const MethodInfo_BD18674* method);",
+          "matchingLiveAddresses": [
+            "0x2389524"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLMonoBehaviourSingleton<object>$$OnDestroy",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLMonoBehaviourSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd180a0",
+          "signature": "void VL_Core_VLMonoBehaviourSingleton_object___OnDestroy (VL_Core_VLMonoBehaviourSingleton_T__o* __this, const MethodInfo_BD180A0* method);",
+          "matchingLiveAddresses": [
+            "0x238904c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLMonoBehaviourSingleton<object>$$OnEnable",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLMonoBehaviourSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd17edc",
+          "signature": "void VL_Core_VLMonoBehaviourSingleton_object___OnEnable (VL_Core_VLMonoBehaviourSingleton_T__o* __this, const MethodInfo_BD17EDC* method);",
+          "matchingLiveAddresses": [
+            "0x2388e88"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLMonoBehaviourSingleton<object>$$UpdateInstance",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLMonoBehaviourSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd181e8",
+          "signature": "void VL_Core_VLMonoBehaviourSingleton_object___UpdateInstance (const MethodInfo_BD181E8* method);",
+          "matchingLiveAddresses": [
+            "0x2389100"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLMonoBehaviourSingleton<object>$$get_HasInstance",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLMonoBehaviourSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd18154",
+          "signature": "bool VL_Core_VLMonoBehaviourSingleton_object___get_HasInstance (const MethodInfo_BD18154* method);",
+          "matchingLiveAddresses": [
+            "0x2388d90"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Core.VLMonoBehaviourSingleton<object>$$get_Instance",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Core/VLMonoBehaviourSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd18610",
+          "signature": "Il2CppObject* VL_Core_VLMonoBehaviourSingleton_object___get_Instance (const MethodInfo_BD18610* method);",
+          "matchingLiveAddresses": [
+            "0x2388e24"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10fb5c",
+          "signature": "void VL_Rendering_ActorShadowPass___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374ed58"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10dc44",
+          "signature": "void VL_Rendering_ActorShadowPass___ctor (VL_Rendering_ActorShadowPass_o* __this, VL_Rendering_DrawActorShadowPass_Settings_o** settings, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374d09c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$<UpdateShadowData>g__UpdateBounds|33_0",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10fa14",
+          "signature": "void VL_Rendering_ActorShadowPass___UpdateShadowData_g__UpdateBounds_33_0 (UnityEngine_Bounds_o b, VL_Rendering_ActorShadowPass___c__DisplayClass33_0_o* , const MethodInfo* method);",
+          "matchingLiveAddresses": []
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$Clear",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10e2d8",
+          "signature": "void VL_Rendering_ActorShadowPass__Clear (VL_Rendering_ActorShadowPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374d508"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$Configure",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f094",
+          "signature": "void VL_Rendering_ActorShadowPass__Configure (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_RenderTextureDescriptor_o cameraTextureDescriptor, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e290"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10dfb4",
+          "signature": "void VL_Rendering_ActorShadowPass__Dispose (VL_Rendering_ActorShadowPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374d3f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$DrawShadow",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f0cc",
+          "signature": "void VL_Rendering_ActorShadowPass__DrawShadow (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e2c8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f570",
+          "signature": "void VL_Rendering_ActorShadowPass__Execute (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e76c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$GetShadowBias",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f30c",
+          "signature": "UnityEngine_Vector4_o VL_Rendering_ActorShadowPass__GetShadowBias (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Matrix4x4_o* lightProjectionMatrix, float shadowResolution, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e508"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$GetShadowTransform",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f894",
+          "signature": "UnityEngine_Matrix4x4_o VL_Rendering_ActorShadowPass__GetShadowTransform (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Matrix4x4_o proj, UnityEngine_Matrix4x4_o view, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374ea90"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$OnCameraCleanup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f714",
+          "signature": "void VL_Rendering_ActorShadowPass__OnCameraCleanup (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e910"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10e01c",
+          "signature": "void VL_Rendering_ActorShadowPass__Setup (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, VL_Rendering_DrawActorShadowPass_Settings_o** settings, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374d404"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$SetupActorShadowCasterConstants",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f340",
+          "signature": "void VL_Rendering_ActorShadowPass__SetupActorShadowCasterConstants (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Matrix4x4_o* lightToWorldMatrix, UnityEngine_Vector4_o shadowBias, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e53c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$SetupActorShadowReceiverConstants",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f3ec",
+          "signature": "void VL_Rendering_ActorShadowPass__SetupActorShadowReceiverConstants (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e5e8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$UpdateShadowData",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10e2e0",
+          "signature": "bool VL_Rendering_ActorShadowPass__UpdateShadowData (VL_Rendering_ActorShadowPass_o* __this, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, VL_Rendering_DrawActorShadowPass_Settings_o** settings, int32_t resolution, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374d510"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$add_getBounds",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10e128",
+          "signature": "void VL_Rendering_ActorShadowPass__add_getBounds (VL_Rendering_ActorShadowPass_GetBoundsEvent_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374a5e0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass$$remove_getBounds",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10e200",
+          "signature": "void VL_Rendering_ActorShadowPass__remove_getBounds (VL_Rendering_ActorShadowPass_GetBoundsEvent_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374a754"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass.ActorShadowData$$Clear",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10f7f4",
+          "signature": "void VL_Rendering_ActorShadowPass_ActorShadowData__Clear (VL_Rendering_ActorShadowPass_ActorShadowData_o __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374e9f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass.GetBoundsEvent$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10fc48",
+          "signature": "void VL_Rendering_ActorShadowPass_GetBoundsEvent___ctor (VL_Rendering_ActorShadowPass_GetBoundsEvent_o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374a52c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.ActorShadowPass.GetBoundsEvent$$Invoke",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/ActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10fcfc",
+          "signature": "UnityEngine_Bounds_o VL_Rendering_ActorShadowPass_GetBoundsEvent__Invoke (VL_Rendering_ActorShadowPass_GetBoundsEvent_o* __this, UnityEngine_Camera_o* camera, float _far_, int32_t resolution, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374ee44"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleApplyPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleApplyPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10604c",
+          "signature": "void VL_Rendering_DownscaleApplyPass___ctor (VL_Rendering_DownscaleApplyPass_o* __this, UnityEngine_Material_o* material, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374ef14"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleApplyPass$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleApplyPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106110",
+          "signature": "void VL_Rendering_DownscaleApplyPass__Execute (VL_Rendering_DownscaleApplyPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374efd8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleBuffers$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleBuffers.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c424",
+          "signature": "void VL_Rendering_DownscaleBuffers___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374f4cc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleBuffers$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleBuffers.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c110",
+          "signature": "void VL_Rendering_DownscaleBuffers___ctor (VL_Rendering_DownscaleBuffers_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374f1b8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleBuffers$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleBuffers.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c08c",
+          "signature": "void VL_Rendering_DownscaleBuffers__Dispose (VL_Rendering_DownscaleBuffers_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374f134"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$.cctor",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10a57c",
+          "signature": "void VL_Rendering_DownscalePass___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3753ad0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$.ctor",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10626c",
+          "signature": "void VL_Rendering_DownscalePass___ctor (VL_Rendering_DownscalePass_o* __this, UnityEngine_Mesh_o* boxMesh, UnityEngine_Material_o* downscaleBufferMaterial, VL_Rendering_DownscaleBuffers_o* buffers, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374f6a4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106d34",
+          "signature": "void VL_Rendering_DownscalePass__Dispose (VL_Rendering_DownscalePass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750160"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$DisposeSSAO",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106dec",
+          "signature": "void VL_Rendering_DownscalePass__DisposeSSAO (VL_Rendering_DownscalePass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750218"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$Execute",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe107c18",
+          "signature": "void VL_Rendering_DownscalePass__Execute (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3751024"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$GetPassOrder",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10a1d0",
+          "signature": "void VL_Rendering_DownscalePass__GetPassOrder (int32_t blurType, System_Int32_array** textureIndices, VL_Rendering_DownscalePass_SSAOShaderPasses_array** shaderPasses, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3753724"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$InitializeHiZ",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106e4c",
+          "signature": "void VL_Rendering_DownscalePass__InitializeHiZ (VL_Rendering_DownscalePass_o* __this, UnityEngine_ComputeShader_o* hizCompute, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750278"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$InitializeSSAO",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10a1b8",
+          "signature": "void VL_Rendering_DownscalePass__InitializeSSAO (VL_Rendering_DownscalePass_o* __this, UnityEngine_Material_o* ssaoMaterial, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375370c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$OnCameraCleanup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe107a10",
+          "signature": "void VL_Rendering_DownscalePass__OnCameraCleanup (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750e1c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$OnCameraCleanupAmplifyOcclusion",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe107b7c",
+          "signature": "void VL_Rendering_DownscalePass__OnCameraCleanupAmplifyOcclusion (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750f88"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$OnCameraCleanupSSAO",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe107b08",
+          "signature": "void VL_Rendering_DownscalePass__OnCameraCleanupSSAO (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750f14"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$OnCameraSetup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106f48",
+          "signature": "void VL_Rendering_DownscalePass__OnCameraSetup (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750358"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$OnCameraSetupSSAO",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106f64",
+          "signature": "void VL_Rendering_DownscalePass__OnCameraSetupSSAO (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750374"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RegisterAfterCommand",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109098",
+          "signature": "void VL_Rendering_DownscalePass__RegisterAfterCommand (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_CameraData_o* cameraData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3752614"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderActorAO",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109db8",
+          "signature": "void VL_Rendering_DownscalePass__RenderActorAO (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, VL_IVLActorController_o* actorController, VL_Rendering_CameraPlanes_o* cullingPlanes, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3753314"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderActorAOs",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109b30",
+          "signature": "void VL_Rendering_DownscalePass__RenderActorAOs (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Camera_o* camera, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37530b8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderAmplifyOcclusion",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe108388",
+          "signature": "void VL_Rendering_DownscalePass__RenderAmplifyOcclusion (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_CameraData_o* cameraData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37518c4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderDirectReflection",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109574",
+          "signature": "void VL_Rendering_DownscalePass__RenderDirectReflection (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3752afc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderDownscale",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1085cc",
+          "signature": "void VL_Rendering_DownscalePass__RenderDownscale (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3751b08"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderSSAO",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe107fd4",
+          "signature": "void VL_Rendering_DownscalePass__RenderSSAO (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3751510"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderSSAOPassAndSetBaseMap",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10a328",
+          "signature": "void VL_Rendering_DownscalePass__RenderSSAOPassAndSetBaseMap (UnityEngine_Rendering_CommandBuffer_o** cmd, UnityEngine_Material_o** mat, UnityEngine_Rendering_RTHandle_o** baseMap, UnityEngine_Rendering_RTHandle_o** target, int32_t pass, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375387c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$RenderShadowAndOcclusion",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109a74",
+          "signature": "void VL_Rendering_DownscalePass__RenderShadowAndOcclusion (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3752ffc"
+          ]
+        },
+        {
+          "gameAddress": "0xe1092ec",
+          "signature": "void VL_Rendering_DownscalePass__RenderShadowAndOcclusion (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3752804"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$ResolveDirectReflection",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109878",
+          "signature": "void VL_Rendering_DownscalePass__ResolveDirectReflection (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3752e00"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$SetPlanarReflectionDrawSystem",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106f38",
+          "signature": "void VL_Rendering_DownscalePass__SetPlanarReflectionDrawSystem (VL_Rendering_DownscalePass_o* __this, VL_Rendering_PlanarReflectionDrawSystem_o* planarReflectionDrawSystem, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3750348"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe106f0c",
+          "signature": "void VL_Rendering_DownscalePass__Setup (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_Universal_Internal_DeferredLights_o* deferredLights, int32_t ssrQuality, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375031c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$SetupAmplifyOcclusion",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10a1a8",
+          "signature": "void VL_Rendering_DownscalePass__SetupAmplifyOcclusion (VL_Rendering_DownscalePass_o* __this, AmplifyOcclusion_AmplifyOcclusionRenderingData_o* amplifyOcclusionRenderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37536fc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$SetupSSAO",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10a1c8",
+          "signature": "void VL_Rendering_DownscalePass__SetupSSAO (VL_Rendering_DownscalePass_o* __this, bool isSSAOActive, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375371c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscalePass$$SetupTraceSSR",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscalePass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe109104",
+          "signature": "void VL_Rendering_DownscalePass__SetupTraceSSR (VL_Rendering_DownscalePass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_CameraData_o* cameraData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375262c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemData$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemData.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10aca0",
+          "signature": "void VL_Rendering_DownscaleSystemData___ctor (VL_Rendering_DownscaleSystemData_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37541f4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10da68",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755ec8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10da60",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature___ctor (VL_Rendering_DownscaleSystemRendererFeature_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755ec0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$AddRenderPasses",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10d598",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature__AddRenderPasses (VL_Rendering_DownscaleSystemRendererFeature_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37559c4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$Create",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c6ac",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature__Create (VL_Rendering_DownscaleSystemRendererFeature_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37542ac"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10d82c",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature__Dispose (VL_Rendering_DownscaleSystemRendererFeature_o* __this, bool disposing, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755c8c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$RecreateSystemsIfNeeded",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10cd6c",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature__RecreateSystemsIfNeeded (VL_Rendering_DownscaleSystemRendererFeature_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_CameraData_o* cameraData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375517c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$SetupDownscalePass",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10d124",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature__SetupDownscalePass (VL_Rendering_DownscaleSystemRendererFeature_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_Universal_Internal_DeferredLights_o* deferredLights, UnityEngine_Matrix4x4_o* vpMatrix, UnityEngine_Matrix4x4_o* viewMatrix, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755534"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$get_sharedPlanarReflectionManager",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c5fc",
+          "signature": "VL_Rendering_SharedPlanarReflectionEntityManager_o* VL_Rendering_DownscaleSystemRendererFeature__get_sharedPlanarReflectionManager (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37541fc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature$$get_sharedVLBEntityManager",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c654",
+          "signature": "VLB_SharedVLBEntityManager_o* VL_Rendering_DownscaleSystemRendererFeature__get_sharedVLBEntityManager (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3754254"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleSystemRendererFeature.Settings$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleSystemRendererFeature.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10ccb8",
+          "signature": "void VL_Rendering_DownscaleSystemRendererFeature_Settings___ctor (VL_Rendering_DownscaleSystemRendererFeature_Settings_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37548b4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10bf94",
+          "signature": "void VL_Rendering_DownscaleTransparentPass___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756a30"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10aca8",
+          "signature": "void VL_Rendering_DownscaleTransparentPass___ctor (VL_Rendering_DownscaleTransparentPass_o* __this, System_String_array* transparentShaderTagIds, UnityEngine_LayerMask_o transparentLayerMask, UnityEngine_Material_o* downscaleMaterial, VL_Rendering_DownscaleBuffers_o* buffers, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3754968"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$Execute",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b828",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__Execute (VL_Rendering_DownscaleTransparentPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37562dc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$OnCameraSetup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b4bc",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__OnCameraSetup (VL_Rendering_DownscaleTransparentPass_o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755fb0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$OnRenderDistortion",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b80c",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__OnRenderDistortion (VL_Rendering_DownscaleTransparentPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37562c0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$OnRenderTransparent",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b524",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__OnRenderTransparent (VL_Rendering_DownscaleTransparentPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755fd8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$SetVLBDrawSystem",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b504",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__SetVLBDrawSystem (VL_Rendering_DownscaleTransparentPass_o* __this, VLB_VLBDrawSystem_o* vlbDrawSystem, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755fb8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b4c4",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__Setup (VL_Rendering_DownscaleTransparentPass_o* __this, UnityEngine_Rendering_Universal_Internal_ForwardLights_o* forwardLights, UnityEngine_Rendering_Universal_Internal_DeferredLights_o* deferredLights, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755c4c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass$$SetupProFlare",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10b514",
+          "signature": "void VL_Rendering_DownscaleTransparentPass__SetupProFlare (VL_Rendering_DownscaleTransparentPass_o* __this, ProFlareBatchForSRPData_o* proFlareData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3755fc8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass.<>c$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10bffc",
+          "signature": "void VL_Rendering_DownscaleTransparentPass___c___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756ac0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass.<>c$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c064",
+          "signature": "void VL_Rendering_DownscaleTransparentPass___c___ctor (VL_Rendering_DownscaleTransparentPass___c_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756a98"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DownscaleTransparentPass.<>c$$<.ctor>b__9_0",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DownscaleTransparentPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10c06c",
+          "signature": "UnityEngine_Rendering_ShaderTagId_o VL_Rendering_DownscaleTransparentPass___c____ctor_b__9_0 (VL_Rendering_DownscaleTransparentPass___c_o* __this, System_String_o* x, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756aa0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawActorShadowPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10e120",
+          "signature": "void VL_Rendering_DrawActorShadowPass___ctor (VL_Rendering_DrawActorShadowPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756c8c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawActorShadowPass$$AddRenderPasses",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10dfc8",
+          "signature": "void VL_Rendering_DrawActorShadowPass__AddRenderPasses (VL_Rendering_DrawActorShadowPass_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756c38"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawActorShadowPass$$Create",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10db50",
+          "signature": "void VL_Rendering_DrawActorShadowPass__Create (VL_Rendering_DrawActorShadowPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756b28"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawActorShadowPass$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10df98",
+          "signature": "void VL_Rendering_DrawActorShadowPass__Dispose (VL_Rendering_DrawActorShadowPass_o* __this, bool disposing, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756c1c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawActorShadowPass.Settings$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawActorShadowPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10dc1c",
+          "signature": "void VL_Rendering_DrawActorShadowPass_Settings___ctor (VL_Rendering_DrawActorShadowPass_Settings_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756bf4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawMultiCameraPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawMultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1107f0",
+          "signature": "void VL_Rendering_DrawMultiCameraPass___ctor (VL_Rendering_DrawMultiCameraPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37577b4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawMultiCameraPass$$AddRenderPasses",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawMultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1104e8",
+          "signature": "void VL_Rendering_DrawMultiCameraPass__AddRenderPasses (VL_Rendering_DrawMultiCameraPass_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375746c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawMultiCameraPass$$Create",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawMultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10fd98",
+          "signature": "void VL_Rendering_DrawMultiCameraPass__Create (VL_Rendering_DrawMultiCameraPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756d1c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawMultiCameraPass$$GetMultiCameraStencil",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawMultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10fd10",
+          "signature": "int32_t VL_Rendering_DrawMultiCameraPass__GetMultiCameraStencil (int32_t index, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756c94"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawMultiCameraPass.Settings$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawMultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1107f8",
+          "signature": "void VL_Rendering_DrawMultiCameraPass_Settings___ctor (VL_Rendering_DrawMultiCameraPass_Settings_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37577bc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawRenderTargetBlurPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawRenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111258",
+          "signature": "void VL_Rendering_DrawRenderTargetBlurPass___ctor (VL_Rendering_DrawRenderTargetBlurPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3757a2c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawRenderTargetBlurPass$$AddRenderPasses",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawRenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111230",
+          "signature": "void VL_Rendering_DrawRenderTargetBlurPass__AddRenderPasses (VL_Rendering_DrawRenderTargetBlurPass_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3757a04"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawRenderTargetBlurPass$$Create",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawRenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe110ff0",
+          "signature": "void VL_Rendering_DrawRenderTargetBlurPass__Create (VL_Rendering_DrawRenderTargetBlurPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37577c4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawRenderTargetBlurPass$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawRenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111200",
+          "signature": "void VL_Rendering_DrawRenderTargetBlurPass__Dispose (VL_Rendering_DrawRenderTargetBlurPass_o* __this, bool disposing, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37579d4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawUIBlurPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawUIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1117f4",
+          "signature": "void VL_Rendering_DrawUIBlurPass___ctor (VL_Rendering_DrawUIBlurPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37580d8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawUIBlurPass$$AddRenderPasses",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawUIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111794",
+          "signature": "void VL_Rendering_DrawUIBlurPass__AddRenderPasses (VL_Rendering_DrawUIBlurPass_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758078"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawUIBlurPass$$Create",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawUIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111684",
+          "signature": "void VL_Rendering_DrawUIBlurPass__Create (VL_Rendering_DrawUIBlurPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3757a34"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawUIBlurPass$$Dispose",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawUIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111780",
+          "signature": "void VL_Rendering_DrawUIBlurPass__Dispose (VL_Rendering_DrawUIBlurPass_o* __this, bool disposing, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758034"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawUIBlurPass.Settings$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawUIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1117fc",
+          "signature": "void VL_Rendering_DrawUIBlurPass_Settings___ctor (VL_Rendering_DrawUIBlurPass_Settings_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37580e0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawVLActor$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawVLActor.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112904",
+          "signature": "void VL_Rendering_DrawVLActor___ctor (VL_Rendering_DrawVLActor_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758304"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawVLActor$$AddRenderPasses",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawVLActor.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1127ec",
+          "signature": "void VL_Rendering_DrawVLActor__AddRenderPasses (VL_Rendering_DrawVLActor_o* __this, UnityEngine_Rendering_Universal_ScriptableRenderer_o* renderer, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37581ec"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawVLActor$$Create",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawVLActor.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1126f0",
+          "signature": "void VL_Rendering_DrawVLActor__Create (VL_Rendering_DrawVLActor_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37580f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.DrawVLActor.Settings$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/DrawVLActor.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112970",
+          "signature": "void VL_Rendering_DrawVLActor_Settings___ctor (VL_Rendering_DrawVLActor_Settings_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758370"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.MultiCameraMaskPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/MultiCameraMaskPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe110074",
+          "signature": "void VL_Rendering_MultiCameraMaskPass___ctor (VL_Rendering_MultiCameraMaskPass_o* __this, int32_t index, UnityEngine_Material_o* material, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3756ff8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.MultiCameraMaskPass$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/MultiCameraMaskPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe110800",
+          "signature": "void VL_Rendering_MultiCameraMaskPass__Execute (VL_Rendering_MultiCameraMaskPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758378"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.MultiCameraMaskPass$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/MultiCameraMaskPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe11076c",
+          "signature": "void VL_Rendering_MultiCameraMaskPass__Setup (VL_Rendering_MultiCameraMaskPass_o* __this, UnityEngine_Camera_o* camera, VL_Rendering_VLMultiCamera_MultiCameraData_o data, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3757730"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.MultiCameraPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/MultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe110188",
+          "signature": "void VL_Rendering_MultiCameraPass___ctor (VL_Rendering_MultiCameraPass_o* __this, int32_t index, int32_t stencilId, int32_t passEvent, VL_Rendering_DrawMultiCameraPass_Settings_o* settings, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375710c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.MultiCameraPass$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/MultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe110a08",
+          "signature": "void VL_Rendering_MultiCameraPass__Execute (VL_Rendering_MultiCameraPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758580"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.MultiCameraPass$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/MultiCameraPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1107ac",
+          "signature": "void VL_Rendering_MultiCameraPass__Setup (VL_Rendering_MultiCameraPass_o* __this, UnityEngine_Camera_o* camera, VL_Rendering_VLMultiCamera_MultiCameraData_o data, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3757770"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.RenderTargetBlurPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/RenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1110d8",
+          "signature": "void VL_Rendering_RenderTargetBlurPass___ctor (VL_Rendering_RenderTargetBlurPass_o* __this, int32_t e, UnityEngine_Material_o* material, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37578ac"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.RenderTargetBlurPass$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/RenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe11121c",
+          "signature": "void VL_Rendering_RenderTargetBlurPass__Dispose (VL_Rendering_RenderTargetBlurPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37579f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.RenderTargetBlurPass$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/RenderTargetBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111260",
+          "signature": "void VL_Rendering_RenderTargetBlurPass__Execute (VL_Rendering_RenderTargetBlurPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758e64"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.BlendShapeJob<VertexLayoutStreamPNT>$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/BlendShapeJob_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0x9773890",
+          "signature": "void VL_Rendering_Skinning_BlendShapeJob_VertexLayoutStreamPNT___Execute (VL_Rendering_Skinning_BlendShapeJob_VertexLayoutStreamPNT__o __this, const MethodInfo_9773890* method);",
+          "matchingLiveAddresses": [
+            "0x23bb380"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.BlendShapeJob<__Il2CppFullySharedGenericStructType>$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/BlendShapeJob_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0x97739d0",
+          "signature": "void VL_Rendering_Skinning_BlendShapeJob___Il2CppFullySharedGenericStructType___Execute (VL_Rendering_Skinning_BlendShapeJob_TStream0__o __this, const MethodInfo_97739D0* method);",
+          "matchingLiveAddresses": [
+            "0x23bb4c0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.CopyJob<VertexLayoutStreamPNT>$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/CopyJob_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0x9983fa8",
+          "signature": "void VL_Rendering_Skinning_CopyJob_VertexLayoutStreamPNT___Execute (VL_Rendering_Skinning_CopyJob_VertexLayoutStreamPNT__o __this, int32_t index, const MethodInfo_9983FA8* method);",
+          "matchingLiveAddresses": [
+            "0x256e464"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.CopyJob<__Il2CppFullySharedGenericStructType>$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/CopyJob_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0x9984034",
+          "signature": "void VL_Rendering_Skinning_CopyJob___Il2CppFullySharedGenericStructType___Execute (VL_Rendering_Skinning_CopyJob_TStream0__o __this, int32_t index, const MethodInfo_9984034* method);",
+          "matchingLiveAddresses": [
+            "0x256e4f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.Skinning4$$GetBlendedSkinMatrix",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/Skinning4.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112cd0",
+          "signature": "Unity_Mathematics_float4x4_o VL_Rendering_Skinning_Skinning4__GetBlendedSkinMatrix (VL_Rendering_Skinning_Skinning4_o __this, Unity_Collections_NativeArray_float4x4__o* matricesArray, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bee8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.SkinningJob<VertexLayoutStreamPNT, Skinning4>$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/SkinningJob_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xb985cf0",
+          "signature": "void VL_Rendering_Skinning_SkinningJob_VertexLayoutStreamPNT__Skinning4___Execute (VL_Rendering_Skinning_SkinningJob_VertexLayoutStreamPNT__Skinning4__o __this, int32_t i, const MethodInfo_B985CF0* method);",
+          "matchingLiveAddresses": [
+            "0x220ca3c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.SkinningJob<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/SkinningJob_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xb985dd4",
+          "signature": "void VL_Rendering_Skinning_SkinningJob___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType___Execute (VL_Rendering_Skinning_SkinningJob_TStream0__TSkinning__o __this, int32_t i, const MethodInfo_B985DD4* method);",
+          "matchingLiveAddresses": [
+            "0x220cb20"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.UpdateMatricesJob$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/UpdateMatricesJob.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112dcc",
+          "signature": "void VL_Rendering_Skinning_UpdateMatricesJob__Execute (VL_Rendering_Skinning_UpdateMatricesJob_o __this, int32_t index, UnityEngine_Jobs_TransformAccess_o transform, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bfe4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningModel$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningModel.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112ec4",
+          "signature": "void VL_Rendering_Skinning_VLSkinningModel___ctor (VL_Rendering_Skinning_VLSkinningModel_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c0dc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem.<>c<VertexLayoutStreamPNT, Skinning4>$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xc8891f4",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___c_VertexLayoutStreamPNT__Skinning4____cctor (const MethodInfo_C8891F4* method);",
+          "matchingLiveAddresses": [
+            "0x20e4d00"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem.<>c<VertexLayoutStreamPNT, Skinning4>$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xc8892cc",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___c_VertexLayoutStreamPNT__Skinning4____ctor (VL_Rendering_Skinning_VLSkinningSystem___c_TStream0__TSkinning__o* __this, const MethodInfo_C8892CC* method);",
+          "matchingLiveAddresses": [
+            "0x20e4cd8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem.<>c<VertexLayoutStreamPNT, Skinning4>$$<.ctor>b__23_0",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xc8892d4",
+          "signature": "int32_t VL_Rendering_Skinning_VLSkinningSystem___c_VertexLayoutStreamPNT__Skinning4_____ctor_b__23_0 (VL_Rendering_Skinning_VLSkinningSystem___c_TStream0__TSkinning__o* __this, VL_Core_BlendShapeData_o* x, const MethodInfo_C8892D4* method);",
+          "matchingLiveAddresses": [
+            "0x20e4ce0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem.<>c<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xc889ef4",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___c___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType____cctor (const MethodInfo_C889EF4* method);",
+          "matchingLiveAddresses": [
+            "0x20e4e00"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem.<>c<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xc88a000",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___c___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType____ctor (VL_Rendering_Skinning_VLSkinningSystem___c_TStream0__TSkinning__o* __this, const MethodInfo_C88A000* method);",
+          "matchingLiveAddresses": [
+            "0x20e4dd8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem.<>c<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$<.ctor>b__23_0",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xc88a008",
+          "signature": "int32_t VL_Rendering_Skinning_VLSkinningSystem___c___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType_____ctor_b__23_0 (VL_Rendering_Skinning_VLSkinningSystem___c_TStream0__TSkinning__o* __this, VL_Core_BlendShapeData_o* x, const MethodInfo_C88A008* method);",
+          "matchingLiveAddresses": [
+            "0x20e4de0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd19ac8",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4____cctor (const MethodInfo_BD19AC8* method);",
+          "matchingLiveAddresses": [
+            "0x238a980"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1872c",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4____ctor (VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4__o* __this, UnityEngine_Transform_o* parent, UnityEngine_Mesh_o* sourceMesh, UnityEngine_Transform_o* rootBone, UnityEngine_Transform_array* bones, UnityEngine_Matrix4x4_array* bindposes, System_UInt32_array* boneWeightAndIndices, UnityEngine_Bounds_o localBounds, UnityEngine_Material_array* materials, uint32_t renderingLayerMask, VL_Core_BlendShapeData_array* blendShapes, const MethodInfo_BD1872C* method);",
+          "matchingLiveAddresses": [
+            "0x23895dc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$ApplySkinning",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd199b0",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4___ApplySkinning (VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4__o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo_BD199B0* method);",
+          "matchingLiveAddresses": [
+            "0x238a868"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd190e8",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4___Dispose (VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4__o* __this, const MethodInfo_BD190E8* method);",
+          "matchingLiveAddresses": [
+            "0x2389f98"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$ScheduleSkinning",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd192d0",
+          "signature": "Unity_Jobs_JobHandle_o VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4___ScheduleSkinning (VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4__o* __this, VL_Core_BlendShapeWeight_o* blendShapeWeights, Unity_Jobs_JobHandle_o dependency, const MethodInfo_BD192D0* method);",
+          "matchingLiveAddresses": [
+            "0x238a180"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$UpdateSharedMaterials",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd19a30",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4___UpdateSharedMaterials (VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4__o* __this, UnityEngine_Material_array* materials, const MethodInfo_BD19A30* method);",
+          "matchingLiveAddresses": [
+            "0x238a8e8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$get_bounds",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1867c",
+          "signature": "UnityEngine_Bounds_o VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4___get_bounds (VL_Rendering_Skinning_VLSkinningSystem_VertexLayoutStreamPNT__Skinning4__o* __this, const MethodInfo_BD1867C* method);",
+          "matchingLiveAddresses": [
+            "0x238952c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1b114",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType____cctor (const MethodInfo_BD1B114* method);",
+          "matchingLiveAddresses": [
+            "0x238bfa4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd19c88",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType____ctor (VL_Rendering_Skinning_VLSkinningSystem_TStream0__TSkinning__o* __this, UnityEngine_Transform_o* parent, UnityEngine_Mesh_o* sourceMesh, UnityEngine_Transform_o* rootBone, UnityEngine_Transform_array* bones, UnityEngine_Matrix4x4_array* bindposes, System_UInt32_array* boneWeightAndIndices, UnityEngine_Bounds_o localBounds, UnityEngine_Material_array* materials, uint32_t renderingLayerMask, VL_Core_BlendShapeData_array* blendShapes, const MethodInfo_BD19C88* method);",
+          "matchingLiveAddresses": [
+            "0x238ab40"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$ApplySkinning",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1aff8",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType___ApplySkinning (VL_Rendering_Skinning_VLSkinningSystem_TStream0__TSkinning__o* __this, UnityEngine_Rendering_CommandBuffer_o* cmd, const MethodInfo_BD1AFF8* method);",
+          "matchingLiveAddresses": [
+            "0x238be88"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1a6c0",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType___Dispose (VL_Rendering_Skinning_VLSkinningSystem_TStream0__TSkinning__o* __this, const MethodInfo_BD1A6C0* method);",
+          "matchingLiveAddresses": [
+            "0x238b54c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$ScheduleSkinning",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1a8b4",
+          "signature": "Unity_Jobs_JobHandle_o VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType___ScheduleSkinning (VL_Rendering_Skinning_VLSkinningSystem_TStream0__TSkinning__o* __this, VL_Core_BlendShapeWeight_o* blendShapeWeights, Unity_Jobs_JobHandle_o dependency, const MethodInfo_BD1A8B4* method);",
+          "matchingLiveAddresses": [
+            "0x238b740"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$UpdateSharedMaterials",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd1b07c",
+          "signature": "void VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType___UpdateSharedMaterials (VL_Rendering_Skinning_VLSkinningSystem_TStream0__TSkinning__o* __this, UnityEngine_Material_array* materials, const MethodInfo_BD1B07C* method);",
+          "matchingLiveAddresses": [
+            "0x238bf0c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$get_bounds",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VLSkinningSystem_2.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd19bd8",
+          "signature": "UnityEngine_Bounds_o VL_Rendering_Skinning_VLSkinningSystem___Il2CppFullySharedGenericStructType____Il2CppFullySharedGenericStructType___get_bounds (VL_Rendering_Skinning_VLSkinningSystem_TStream0__TSkinning__o* __this, const MethodInfo_BD19BD8* method);",
+          "matchingLiveAddresses": [
+            "0x238aa90"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VertexLayoutStreamPNT$$MultiplySkinMatrix",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VertexLayoutStreamPNT.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112b98",
+          "signature": "void VL_Rendering_Skinning_VertexLayoutStreamPNT__MultiplySkinMatrix (VL_Rendering_Skinning_VertexLayoutStreamPNT_o __this, Unity_Mathematics_float4x4_o blendedMatrix, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c0fc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VertexLayoutStreamPNT$$get_Position",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VertexLayoutStreamPNT.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112b80",
+          "signature": "Unity_Mathematics_float3_o VL_Rendering_Skinning_VertexLayoutStreamPNT__get_Position (VL_Rendering_Skinning_VertexLayoutStreamPNT_o __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c0e4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.Skinning.VertexLayoutStreamPNT$$set_Position",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering.Skinning/VertexLayoutStreamPNT.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112b8c",
+          "signature": "void VL_Rendering_Skinning_VertexLayoutStreamPNT__set_Position (VL_Rendering_Skinning_VertexLayoutStreamPNT_o __this, Unity_Mathematics_float3_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375c0f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112688",
+          "signature": "void VL_Rendering_UIBlurPass___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759c34"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe11180c",
+          "signature": "void VL_Rendering_UIBlurPass___ctor (VL_Rendering_UIBlurPass_o* __this, UnityEngine_Material_o* material, VL_Rendering_DrawUIBlurPass_Settings_o* settings, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3757b2c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111d14",
+          "signature": "void VL_Rendering_UIBlurPass__Dispose (VL_Rendering_UIBlurPass_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758044"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$DrawUI",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1120d0",
+          "signature": "void VL_Rendering_UIBlurPass__DrawUI (VL_Rendering_UIBlurPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o* context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_DrawingSettings_o* drawSettings, UnityEngine_Rendering_CommandBuffer_o* cmd, int32_t blurTargetType, UnityEngine_Rendering_RTHandle_o* blurTarget, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375967c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$DrawUIBlur",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111d58",
+          "signature": "UnityEngine_Rendering_RTHandle_o* VL_Rendering_UIBlurPass__DrawUIBlur (VL_Rendering_UIBlurPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o* context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_DrawingSettings_o* drawSettings, UnityEngine_Rendering_CommandBuffer_o* cmd, int32_t blurTargetType, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759304"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$Execute",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1122d4",
+          "signature": "void VL_Rendering_UIBlurPass__Execute (VL_Rendering_UIBlurPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759880"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$HasFlag",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe11267c",
+          "signature": "bool VL_Rendering_UIBlurPass__HasFlag (int32_t mask, int32_t flag, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759c28"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.UIBlurPass$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/UIBlurPass.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe111d48",
+          "signature": "void VL_Rendering_UIBlurPass__Setup (VL_Rendering_UIBlurPass_o* __this, UnityEngine_Rendering_RTHandle_o* colorTexture, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37592f4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLActorShadow$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLActorShadow.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1129d8",
+          "signature": "void VL_Rendering_VLActorShadow___ctor (VL_Rendering_VLActorShadow_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759c9c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLActorShadowDirectionalTypeParameter$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLActorShadowDirectionalTypeParameter.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe112978",
+          "signature": "void VL_Rendering_VLActorShadowDirectionalTypeParameter___ctor (VL_Rendering_VLActorShadowDirectionalTypeParameter_o* __this, int32_t value, bool overrideState, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759e44"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLMultiCamera$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLMultiCamera.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103904",
+          "signature": "void VL_Rendering_VLMultiCamera___ctor (VL_Rendering_VLMultiCamera_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a13c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLMultiCamera$$ClearCameraData",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLMultiCamera.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1037fc",
+          "signature": "void VL_Rendering_VLMultiCamera__ClearCameraData (VL_Rendering_VLMultiCamera_o* __this, int32_t index, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a074"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLMultiCamera$$GetCameraData",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLMultiCamera.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1038c4",
+          "signature": "VL_Rendering_VLMultiCamera_MultiCameraData_o VL_Rendering_VLMultiCamera__GetCameraData (VL_Rendering_VLMultiCamera_o* __this, int32_t index, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37576f0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLMultiCamera$$SetCameraData",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLMultiCamera.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10362c",
+          "signature": "void VL_Rendering_VLMultiCamera__SetCameraData (VL_Rendering_VLMultiCamera_o* __this, int32_t index, Cinemachine_CinemachineVirtualCamera_o* virtualCamera, UnityEngine_MeshRenderer_o* maskRenderer, bool useOffset, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759ea4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLMultiCamera.MultiCameraData$$get_projectionMatrix",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLMultiCamera.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10390c",
+          "signature": "UnityEngine_Matrix4x4_o VL_Rendering_VLMultiCamera_MultiCameraData__get_projectionMatrix (VL_Rendering_VLMultiCamera_MultiCameraData_o __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758b68"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLMultiCamera.MultiCameraData$$get_viewMatrix",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLMultiCamera.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103b88",
+          "signature": "UnityEngine_Matrix4x4_o VL_Rendering_VLMultiCamera_MultiCameraData__get_viewMatrix (VL_Rendering_VLMultiCamera_MultiCameraData_o __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3758d24"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105578",
+          "signature": "void VL_Rendering_VLSRPCameraController___ctor (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bab4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$AddChild",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105500",
+          "signature": "void VL_Rendering_VLSRPCameraController__AddChild (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_GameObject_o* child, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ba3c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$CaptureRequest",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104bf8",
+          "signature": "void VL_Rendering_VLSRPCameraController__CaptureRequest (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b2fc"
+          ]
+        },
+        {
+          "gameAddress": "0xe104c04",
+          "signature": "void VL_Rendering_VLSRPCameraController__CaptureRequest (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Rendering_RenderTargetIdentifier_o target, System_Action_o* onCapture, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b308"
+          ]
+        },
+        {
+          "gameAddress": "0xe104c38",
+          "signature": "void VL_Rendering_VLSRPCameraController__CaptureRequest (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Rendering_RenderTargetIdentifier_o target, int32_t renderPassEvent, System_Action_o* onCapture, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b33c"
+          ]
+        },
+        {
+          "gameAddress": "0xe104d5c",
+          "signature": "void VL_Rendering_VLSRPCameraController__CaptureRequest (VL_Rendering_VLSRPCameraController_o* __this, VL_Rendering_VLSRPCapture_RequestData_o requestData, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b460"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$DestroyTextures",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104390",
+          "signature": "void VL_Rendering_VLSRPCameraController__DestroyTextures (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375aa94"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$GetCameraLayerMask",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1054e4",
+          "signature": "int32_t VL_Rendering_VLSRPCameraController__GetCameraLayerMask (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ba20"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$GetCameraRay",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1053fc",
+          "signature": "UnityEngine_Ray_o VL_Rendering_VLSRPCameraController__GetCameraRay (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b938"
+          ]
+        },
+        {
+          "gameAddress": "0xe105440",
+          "signature": "UnityEngine_Ray_o VL_Rendering_VLSRPCameraController__GetCameraRay (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Vector2_o position, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b97c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$OnBeginCameraRendering",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104e68",
+          "signature": "void VL_Rendering_VLSRPCameraController__OnBeginCameraRendering (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Camera_o* camera, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b56c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$OnDestroy",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1044dc",
+          "signature": "void VL_Rendering_VLSRPCameraController__OnDestroy (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375abe0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$OnDisable",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1042e4",
+          "signature": "void VL_Rendering_VLSRPCameraController__OnDisable (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a9e8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$OnEnable",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104218",
+          "signature": "void VL_Rendering_VLSRPCameraController__OnEnable (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a91c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$ResetHistory",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10467c",
+          "signature": "void VL_Rendering_VLSRPCameraController__ResetHistory (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375af40"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$Update",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10452c",
+          "signature": "void VL_Rendering_VLSRPCameraController__Update (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ac30"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$UpdateCapturedTexture",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104878",
+          "signature": "void VL_Rendering_VLSRPCameraController__UpdateCapturedTexture (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375af7c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$UpdateRenderTarget",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10466c",
+          "signature": "void VL_Rendering_VLSRPCameraController__UpdateRenderTarget (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375af6c"
+          ]
+        },
+        {
+          "gameAddress": "0xe1046a8",
+          "signature": "void VL_Rendering_VLSRPCameraController__UpdateRenderTarget (VL_Rendering_VLSRPCameraController_o* __this, int32_t width, int32_t height, bool forceAlpha, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375ad70"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$UpdateRenderTexture",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104efc",
+          "signature": "void VL_Rendering_VLSRPCameraController__UpdateRenderTexture (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375b600"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$add__onTargetTextureChange",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103cc8",
+          "signature": "void VL_Rendering_VLSRPCameraController__add__onTargetTextureChange (VL_Rendering_VLSRPCameraController_CameraAction_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a714"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$add_onTargetTextureChange",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103e38",
+          "signature": "void VL_Rendering_VLSRPCameraController__add_onTargetTextureChange (VL_Rendering_VLSRPCameraController_CameraAction_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a884"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_additionalCameraData",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103f64",
+          "signature": "UnityEngine_Rendering_Universal_UniversalAdditionalCameraData_o* VL_Rendering_VLSRPCameraController__get_additionalCameraData (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a298"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_audioListener",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103ed0",
+          "signature": "UnityEngine_AudioListener_o* VL_Rendering_VLSRPCameraController__get_audioListener (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a204"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_capturedTexture",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1040f4",
+          "signature": "UnityEngine_RenderTexture_o* VL_Rendering_VLSRPCameraController__get_capturedTexture (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a428"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_eulerAngles",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10530c",
+          "signature": "UnityEngine_Vector3_o VL_Rendering_VLSRPCameraController__get_eulerAngles (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a624"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_forward",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105374",
+          "signature": "UnityEngine_Vector3_o VL_Rendering_VLSRPCameraController__get_forward (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a68c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_hdrTargetTextureDescriptor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10413c",
+          "signature": "UnityEngine_RenderTextureDescriptor_o VL_Rendering_VLSRPCameraController__get_hdrTargetTextureDescriptor (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a470"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_mainCamera",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103ac8",
+          "signature": "UnityEngine_Camera_o* VL_Rendering_VLSRPCameraController__get_mainCamera (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a144"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_position",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105234",
+          "signature": "UnityEngine_Vector3_o VL_Rendering_VLSRPCameraController__get_position (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a54c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_rotation",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10529c",
+          "signature": "UnityEngine_Quaternion_o VL_Rendering_VLSRPCameraController__get_rotation (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a5b4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_scale",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105394",
+          "signature": "UnityEngine_Vector3_o VL_Rendering_VLSRPCameraController__get_scale (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a6ac"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_targetTexture",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1040ec",
+          "signature": "UnityEngine_RenderTexture_o* VL_Rendering_VLSRPCameraController__get_targetTexture (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a420"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_targetTextureDescriptor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1040fc",
+          "signature": "UnityEngine_RenderTextureDescriptor_o VL_Rendering_VLSRPCameraController__get_targetTextureDescriptor (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a430"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$get_vlSrpAdditionalCameraData",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe104004",
+          "signature": "VL_Rendering_VLSRPAdditionalCameraData_o* VL_Rendering_VLSRPCameraController__get_vlSrpAdditionalCameraData (VL_Rendering_VLSRPCameraController_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a338"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$remove__onTargetTextureChange",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103d80",
+          "signature": "void VL_Rendering_VLSRPCameraController__remove__onTargetTextureChange (VL_Rendering_VLSRPCameraController_CameraAction_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a7cc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$remove_onTargetTextureChange",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe103ecc",
+          "signature": "void VL_Rendering_VLSRPCameraController__remove_onTargetTextureChange (VL_Rendering_VLSRPCameraController_CameraAction_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a918"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$set_eulerAngles",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10532c",
+          "signature": "void VL_Rendering_VLSRPCameraController__set_eulerAngles (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Vector3_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a644"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$set_position",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105254",
+          "signature": "void VL_Rendering_VLSRPCameraController__set_position (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Vector3_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a56c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$set_rotation",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1052bc",
+          "signature": "void VL_Rendering_VLSRPCameraController__set_rotation (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Quaternion_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a5d4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$set_scale",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1053b4",
+          "signature": "void VL_Rendering_VLSRPCameraController__set_scale (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_Vector3_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a6cc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController$$set_targetTextureDescriptor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10411c",
+          "signature": "void VL_Rendering_VLSRPCameraController__set_targetTextureDescriptor (VL_Rendering_VLSRPCameraController_o* __this, UnityEngine_RenderTextureDescriptor_o value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375a450"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController.CameraAction$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1055e4",
+          "signature": "void VL_Rendering_VLSRPCameraController_CameraAction___ctor (VL_Rendering_VLSRPCameraController_CameraAction_o* __this, Il2CppObject* object, intptr_t method, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bb20"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPCameraController.CameraAction$$Invoke",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1056ec",
+          "signature": "void VL_Rendering_VLSRPCameraController_CameraAction__Invoke (VL_Rendering_VLSRPCameraController_CameraAction_o* __this, VL_IVLCameraController_o* cameraController, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bc28"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPDrawUIBlurPassSetting$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPDrawUIBlurPassSetting.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105710",
+          "signature": "void VL_Rendering_VLSRPDrawUIBlurPassSetting___ctor (VL_Rendering_VLSRPDrawUIBlurPassSetting_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bc78"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPDrawUIBlurPassSetting$$get_BlurTargetType",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPDrawUIBlurPassSetting.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105700",
+          "signature": "int32_t VL_Rendering_VLSRPDrawUIBlurPassSetting__get_BlurTargetType (VL_Rendering_VLSRPDrawUIBlurPassSetting_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bc68"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPDrawUIBlurPassSetting$$set_BlurTargetType",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPDrawUIBlurPassSetting.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105708",
+          "signature": "void VL_Rendering_VLSRPDrawUIBlurPassSetting__set_BlurTargetType (VL_Rendering_VLSRPDrawUIBlurPassSetting_o* __this, int32_t value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bc70"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPRenderTargetBlur$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPRenderTargetBlur.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1059b0",
+          "signature": "void VL_Rendering_VLSRPRenderTargetBlur___ctor (VL_Rendering_VLSRPRenderTargetBlur_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375beac"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPRenderTargetBlur$$Add",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPRenderTargetBlur.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105760",
+          "signature": "void VL_Rendering_VLSRPRenderTargetBlur__Add (VL_Rendering_VLSRPRenderTargetBlur_o* __this, VL_Rendering_VLSRPRenderTargetBlur_BlurRequest_o target, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bcd0"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPRenderTargetBlur$$Clear",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPRenderTargetBlur.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe105944",
+          "signature": "void VL_Rendering_VLSRPRenderTargetBlur__Clear (VL_Rendering_VLSRPRenderTargetBlur_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3759288"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPRenderTargetBlur$$Remove",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPRenderTargetBlur.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe1058bc",
+          "signature": "bool VL_Rendering_VLSRPRenderTargetBlur__Remove (VL_Rendering_VLSRPRenderTargetBlur_o* __this, VL_Rendering_VLSRPRenderTargetBlur_BlurRequest_o target, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375be2c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Rendering.VLSRPRenderTargetBlur$$get_Requests",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Rendering/VLSRPRenderTargetBlur.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe10593c",
+          "signature": "System_Collections_Generic_List_VLSRPRenderTargetBlur_BlurRequest__o* VL_Rendering_VLSRPRenderTargetBlur__get_Requests (VL_Rendering_VLSRPRenderTargetBlur_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x375bcc8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ShaderIDs$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/ShaderIDs.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fd794",
+          "signature": "void VL_ShaderIDs___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37492c4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.ShaderKeywords$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/ShaderKeywords.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fd9fc",
+          "signature": "void VL_ShaderKeywords___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374952c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystem$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fec14",
+          "signature": "void VL_Subsystems_VLSubsystem___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374c75c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystem$$BeforeRendering",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fe88c",
+          "signature": "void VL_Subsystems_VLSubsystem__BeforeRendering (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374c3d4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystem$$LastLateUpdate",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fe5ec",
+          "signature": "void VL_Subsystems_VLSubsystem__LastLateUpdate (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374c134"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystem$$OnBeginContextRendering",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fe890",
+          "signature": "void VL_Subsystems_VLSubsystem__OnBeginContextRendering (UnityEngine_Rendering_ScriptableRenderContext_o context, System_Collections_Generic_List_Camera__o* cameras, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374c3d8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystem$$RegisterSkinningModel",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystem.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fe518",
+          "signature": "void VL_Subsystems_VLSubsystem__RegisterSkinningModel (VL_Rendering_Skinning_VLSkinningModel_o* model, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374c060"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystemRegistration$$FindLoopSystemIndex",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystemRegistration.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0ff3fc",
+          "signature": "int32_t VL_Subsystems_VLSubsystemRegistration__FindLoopSystemIndex (UnityEngine_LowLevel_PlayerLoopSystem_array* subSystems, System_Type_o* systemType, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374cf40"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystemRegistration$$Initialize",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystemRegistration.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fed48",
+          "signature": "void VL_Subsystems_VLSubsystemRegistration__Initialize (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374c890"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystemRegistration$$InsertSystem",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystemRegistration.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0ff0d8",
+          "signature": "void VL_Subsystems_VLSubsystemRegistration__InsertSystem (UnityEngine_LowLevel_PlayerLoopSystem_array* copyList, System_Type_o* injectType, System_Type_o* loopType, UnityEngine_LowLevel_PlayerLoopSystem_o target, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374cc20"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystemRegistration.<>c__DisplayClass3_0$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystemRegistration.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0ff3f4",
+          "signature": "void VL_Subsystems_VLSubsystemRegistration___c__DisplayClass3_0___ctor (VL_Subsystems_VLSubsystemRegistration___c__DisplayClass3_0_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374cf38"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.Subsystems.VLSubsystemRegistration.<>c__DisplayClass3_0$$<InsertSystem>b__0",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL.Subsystems/VLSubsystemRegistration.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0ff510",
+          "signature": "bool VL_Subsystems_VLSubsystemRegistration___c__DisplayClass3_0___InsertSystem_b__0 (VL_Subsystems_VLSubsystemRegistration___c__DisplayClass3_0_o* __this, UnityEngine_LowLevel_PlayerLoopSystem_o ls, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374d058"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f2bb8",
+          "signature": "void VL_VLActorAO___ctor (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749c80"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$Dispose",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f2850",
+          "signature": "void VL_VLActorAO__Dispose (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749918"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$Initialize",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f25fc",
+          "signature": "void VL_VLActorAO__Initialize (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749624"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$OnLateUpdate",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f2b30",
+          "signature": "void VL_VLActorAO__OnLateUpdate (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749bf8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$Setup",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f291c",
+          "signature": "void VL_VLActorAO__Setup (VL_VLActorAO_o* __this, System_Collections_Generic_Dictionary_HumanBodyBones__Transform__o* humanBodyBoneMap, VL_VLActorAO_CapsuleData_array* data, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37499e4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$UpdateJobData",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f2680",
+          "signature": "void VL_VLActorAO__UpdateJobData (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749748"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$get_capsuleA",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f256c",
+          "signature": "Unity_Collections_NativeArray_Vector4__o VL_VLActorAO__get_capsuleA (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749594"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO$$get_capsuleB",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f25b4",
+          "signature": "Unity_Collections_NativeArray_Vector4__o VL_VLActorAO__get_capsuleB (VL_VLActorAO_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37495dc"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorAO.UpdateJob$$Execute",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorAO.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f2bc0",
+          "signature": "void VL_VLActorAO_UpdateJob__Execute (VL_VLActorAO_UpdateJob_o __this, int32_t index, UnityEngine_Jobs_TransformAccess_o transform, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x3749c90"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorExtension$$get_controller",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorExtension.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0eb42c",
+          "signature": "VL_Core_VLActorController_o* VL_VLActorExtension__get_controller (VL_VLActorExtension_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x37496a8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorShadowGroup$$.ctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorShadowGroup.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f6e70",
+          "signature": "void VL_VLActorShadowGroup___ctor (VL_VLActorShadowGroup_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374aa9c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorShadowGroup$$GetBoundsEvent",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorShadowGroup.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f6c00",
+          "signature": "UnityEngine_Bounds_o VL_VLActorShadowGroup__GetBoundsEvent (VL_VLActorShadowGroup_o* __this, UnityEngine_Camera_o* camera, float _far_, int32_t resolution, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374a82c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorShadowGroup$$OnDisable",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorShadowGroup.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f6b5c",
+          "signature": "void VL_VLActorShadowGroup__OnDisable (VL_VLActorShadowGroup_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374a6b8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLActorShadowGroup$$OnEnable",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLActorShadowGroup.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f6a94",
+          "signature": "void VL_VLActorShadowGroup__OnEnable (VL_VLActorShadowGroup_o* __this, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374a46c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLCameraController$$get_HasInstance",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0f6644",
+          "signature": "bool VL_VLCameraController__get_HasInstance (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374ac10"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLCameraController$$get_Instance",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fbf40",
+          "signature": "VL_IVLCameraController_o* VL_VLCameraController__get_Instance (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374ac60"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLCameraController$$set_Instance",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLCameraController.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fbf88",
+          "signature": "void VL_VLCameraController__set_Instance (VL_IVLCameraController_o* value, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374aca8"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLCameraControllerSingleton<object>$$.ctor",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLCameraControllerSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd0fcec",
+          "signature": "void VL_VLCameraControllerSingleton_object____ctor (VL_VLCameraControllerSingleton_T__o* __this, const MethodInfo_BD0FCEC* method);",
+          "matchingLiveAddresses": [
+            "0x2388b48"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLCameraControllerSingleton<object>$$OnDestroy",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLCameraControllerSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd0fbec",
+          "signature": "void VL_VLCameraControllerSingleton_object___OnDestroy (VL_VLCameraControllerSingleton_T__o* __this, const MethodInfo_BD0FBEC* method);",
+          "matchingLiveAddresses": [
+            "0x2388a48"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLCameraControllerSingleton<object>$$OnEnable",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLCameraControllerSingleton_1.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xbd0f998",
+          "signature": "void VL_VLCameraControllerSingleton_object___OnEnable (VL_VLCameraControllerSingleton_T__o* __this, const MethodInfo_BD0F998* method);",
+          "matchingLiveAddresses": [
+            "0x23887f4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLMeshUtility$$.cctor",
+      "status": "same",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLMeshUtility.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fd5bc",
+          "signature": "void VL_VLMeshUtility___cctor (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374b708"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLMeshUtility$$CopyMesh",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLMeshUtility.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fcdc8",
+          "signature": "UnityEngine_Mesh_o* VL_VLMeshUtility__CopyMesh (UnityEngine_Mesh_o* srcMesh, Unity_Collections_NativeSlice_byte__o vertexBuffer0, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374af14"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLMeshUtility$$CreateBoxMesh",
+      "status": "semantic",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLMeshUtility.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fd3e0",
+          "signature": "UnityEngine_Mesh_o* VL_VLMeshUtility__CreateBoxMesh (const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374b52c"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLMeshUtility$$PackWeightAndIndex",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLMeshUtility.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fcda4",
+          "signature": "uint32_t VL_VLMeshUtility__PackWeightAndIndex (float weight, int32_t index, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374aef4"
+          ]
+        }
+      ]
+    },
+    {
+      "method": "VL.VLUtility$$GetLimitedResolution",
+      "status": "layout",
+      "source": "Packages/vl-unity.Runtime/Runtime/VL/VLUtility.cs",
+      "signatures": [
+        {
+          "gameAddress": "0xe0fdba8",
+          "signature": "System_ValueTuple_int__int__o VL_VLUtility__GetLimitedResolution (int32_t screenWidth, int32_t screenHeight, UnityEngine_Vector2_o aspectRatio, int32_t maxBufferPixel, float bufferScale, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374bab8"
+          ]
+        },
+        {
+          "gameAddress": "0xe0fdbb0",
+          "signature": "System_ValueTuple_int__int__o VL_VLUtility__GetLimitedResolution (int32_t screenWidth, int32_t screenHeight, UnityEngine_Vector2_o aspectRatio, int32_t maxBufferPixel, float bufferScale, bool firstCall, const MethodInfo* method);",
+          "matchingLiveAddresses": [
+            "0x374bac0"
+          ]
+        }
+      ]
+    }
+  ],
+  "unpairedSignatures": [
+    {
+      "method": "VL.Rendering.ActorShadowPass$$<UpdateShadowData>g__UpdateBounds|33_0",
+      "gameAddress": "0xe10fa14",
+      "signature": "void VL_Rendering_ActorShadowPass___UpdateShadowData_g__UpdateBounds_33_0 (UnityEngine_Bounds_o b, VL_Rendering_ActorShadowPass___c__DisplayClass33_0_o* , const MethodInfo* method);",
+      "supplementalStatus": "same",
+      "supplementalEvidence": "update-bounds-comparison.json"
+    }
+  ],
+  "onlyLive": [
+    "VL.Rendering.ActorShadowPass.GetBoundsEvent$$BeginInvoke",
+    "VL.Rendering.ActorShadowPass.GetBoundsEvent$$EndInvoke",
+    "VL.Rendering.VLSRPCameraController.CameraAction$$BeginInvoke",
+    "VL.Rendering.VLSRPCameraController.CameraAction$$EndInvoke",
+    "VL.Subsystems.VLSubsystemRegistration$$.ctor"
+  ]
+}

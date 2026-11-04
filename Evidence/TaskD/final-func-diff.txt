@@ -1,0 +1,48 @@
+same 242, changed 42, only in game 0, only in stock 5
+changed by class: VL.Rendering.DownscalePass 11, VL.Rendering.ActorShadowPass 3, VL.Rendering.DownscaleSystemRendererFeature 3, VL.VLMeshUtility 3, VL.Rendering.DrawUIBlurPass 2, VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType> 2, VL.Rendering.VLSRPCameraController 2, VL.Subsystems.VLSubsystemRegistration 2, VL.VLActorShadowGroup 2, VL.ActorMesh.CombineMeshJob 1, VL.ActorMesh.VLActorSkinningModel 1, VL.Core.MaterialInfo 1, VL.Core.VLActorController 1, VL.Core.VLMonoBehaviourSingleton<object> 1, VL.Rendering.ActorShadowPass.ActorShadowData 1, VL.Rendering.DownscaleTransparentPass 1, VL.Rendering.Skinning.Skinning4 1, VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4> 1, VL.VLActorAO.UpdateJob 1, VL.VLCameraControllerSingleton<object> 1, VL.VLUtility 1
+
+0.000 VL.VLCameraControllerSingleton<object>$$.ctor semantic
+0.065 VL.Rendering.DownscalePass$$RegisterAfterCommand semantic
+0.329 VL.VLActorAO.UpdateJob$$Execute semantic
+0.562 VL.Rendering.DownscalePass$$InitializeHiZ semantic
+0.597 VL.Rendering.DownscalePass$$RenderDownscale semantic
+0.613 VL.Rendering.DownscalePass$$SetupTraceSSR semantic
+0.665 VL.ActorMesh.CombineMeshJob$$Execute semantic
+0.667 VL.Rendering.DrawUIBlurPass$$Dispose layout
+0.689 VL.Rendering.ActorShadowPass$$UpdateShadowData semantic
+0.700 VL.Core.VLActorController$$get_actorControllers semantic
+0.721 VL.Rendering.DownscalePass$$RenderShadowAndOcclusion semantic
+0.741 VL.Rendering.DownscaleSystemRendererFeature$$SetupDownscalePass semantic
+0.746 VL.Rendering.DownscalePass$$RenderActorAOs semantic
+0.751 VL.Rendering.DownscalePass$$Execute semantic
+0.787 VL.VLUtility$$GetLimitedResolution layout
+0.794 VL.Rendering.Skinning.Skinning4$$GetBlendedSkinMatrix layout
+0.803 VL.Rendering.Skinning.VLSkinningSystem<VertexLayoutStreamPNT, Skinning4>$$ScheduleSkinning layout
+0.812 VL.Rendering.DownscaleSystemRendererFeature$$AddRenderPasses semantic
+0.824 VL.VLMeshUtility$$PackWeightAndIndex layout
+0.833 VL.Rendering.ActorShadowPass$$SetupActorShadowCasterConstants layout
+0.837 VL.VLActorShadowGroup$$OnEnable layout
+0.846 VL.Core.MaterialInfo$$.ctor layout
+0.849 VL.ActorMesh.VLActorSkinningModel$$Setup semantic
+0.867 VL.Rendering.DownscaleTransparentPass$$Execute semantic
+0.869 VL.Rendering.DownscalePass$$OnCameraSetupSSAO semantic
+0.879 VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$ScheduleSkinning layout
+0.892 VL.VLMeshUtility$$CopyMesh layout
+0.896 VL.Rendering.ActorShadowPass$$SetupActorShadowReceiverConstants layout
+0.911 VL.Rendering.DownscaleSystemRendererFeature$$Create layout
+0.926 VL.Core.VLMonoBehaviourSingleton<object>$$UpdateInstance layout
+0.930 VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor semantic
+0.932 VL.Subsystems.VLSubsystemRegistration$$FindLoopSystemIndex layout
+0.942 VL.Rendering.DownscalePass$$.ctor semantic
+0.950 VL.Rendering.ActorShadowPass.ActorShadowData$$Clear layout
+0.950 VL.VLActorShadowGroup$$OnDisable layout
+0.956 VL.Rendering.DownscalePass$$RenderActorAO layout
+0.976 VL.Rendering.VLSRPCameraController$$DestroyTextures semantic
+0.976 VL.Subsystems.VLSubsystemRegistration$$InsertSystem layout
+0.982 VL.Rendering.DownscalePass$$.cctor semantic
+0.983 VL.VLMeshUtility$$CreateBoxMesh semantic
+0.990 VL.Rendering.VLSRPCameraController$$UpdateRenderTexture semantic
+0.992 VL.Rendering.DrawUIBlurPass$$Create layout
+
+only in game:
+

@@ -2,7 +2,9 @@
 
 Unity 6000.0.77f1 project targeting Android IL2CPP ARM64, with the game's URP14
 fork and rendering assembly names. The project preserves structural metadata;
-local game/third-party method bodies remain DummyDll stubs.
+VL rendering method bodies are reconstructed from APK 3.5.3 with the remaining
+native parity gaps recorded in [TASK_D_REPORT.md](TASK_D_REPORT.md). Other local
+game/third-party method bodies remain DummyDll stubs.
 
 - [PACKAGES.md](PACKAGES.md): package sources, version evidence and unresolved exact patches.
 - [CLOSURE.md](CLOSURE.md): included assemblies, exact dependency cuts and reproducible compiler repairs.
@@ -27,6 +29,9 @@ The four embedded rendering package paths point to
 checkpoint and native artifact hashes are recorded by the layout report.
 
 ## Regenerate source
+
+These commands regenerate the original skeleton and overwrite reconstructed
+method bodies. Preserve the Task D commits before intentionally regenerating.
 
 ```sh
 python3 Tools/skeleton_from_dummydll.py

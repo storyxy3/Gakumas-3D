@@ -1,0 +1,505 @@
+VL.ActorMesh.CombineMeshJob$$Execute
+--- game
+
++++ live
+
+@@ -65,10 +65,11 @@
+
+ mov #0x7ffff000
+ movk #0x4d77, lsl #16
++mov #0x7c00
++mov #0x7e00
++bl UnityEngine.Mesh.MeshDataArray$$get_Item
+ ldr  MMETH Method$Unity.Collections.NativeArray<float3>.Reinterpret<Vector3>()
+-mov #0x7e00
+-mov #0xc
+-bl UnityEngine.Mesh.MeshDataArray$$get_Item
+ bl Unity.Collections.NativeArray<float3>$$Reinterpret<Vector3>
+ bl UnityEngine.Mesh.MeshData$$GetVertices
++ldr  MMETH Method$Unity.Collections.NativeArray<float3>.Reinterpret<Vector3>()
+ bl Unity.Collections.NativeArray<float3>$$Reinterpret<Vector3>
+ bl UnityEngine.Mesh.MeshData$$GetNormals
+@@ -89,9 +90,7 @@
+
+ bl UnityEngine.Mesh.MeshData$$GetUVs
+ bl UnityEngine.Mesh.MeshData$$get_vertexCount
++mov #0xc
++mov #0x3f800000
+ mov #0x28
+-mov #0x3f800000
+-mov #0x7f800000
+-mov #0x7c00
+-mov #0x7f7fffff
+ mov #0x7800000
+ and #0x7ffff000
+@@ -102,10 +101,9 @@
+
+ orr #16
+ and #0x80000000
++orr #15
+ and #0xffff
+-orr #15
+ orr #16
+ ldr  MMETH Method$UnityEngine.Mesh.MeshData.GetIndexData<ushort>()
+ bl UnityEngine.Mesh.MeshData$$GetIndexData<ushort>
+-ldr  MMETH Method$Unity.Collections.NativeArray<float3>.Reinterpret<Vector3>()
+ cmp #1
+ and #0xffffffff
+@@ -125,5 +123,6 @@
+
+ ldr  MMETH Method$Unity.Collections.NativeArray<float4>.Dispose()
+ bl Unity.Collections.NativeArray<float4>$$Dispose
+-ldr  MMETH Method$Unity.Collections.NativeArray<float3>.Dispose()
++b FN
++ldr  VolumeComponent>.MoveNext()
+ bl Unity.Collections.NativeArray<float3>$$Dispose
+ ldr  MMETH Method$Unity.Collections.NativeArray<float3>.Dispose()
+VL.ActorMesh.VLActorSkinningModel$$Setup
+--- game
+
++++ live
+
+@@ -26,4 +26,5 @@
+
+ bl UnityEngine.Mesh$$GetBoneWeights
+ ldr  MMETH Method$System.Collections.Generic.List<BoneWeight>.get_Item()
++mov #3
+ bl System.Collections.Generic.List<BoneWeight>$$get_Item
+ bl UnityEngine.BoneWeight$$get_weight0
+VL.Core.VLActorController$$get_actorControllers
+--- game
+
++++ live
+
+@@ -1,3 +1,2 @@
+
+ bl FN
+ mov #1
+-bl FN
+VL.Rendering.ActorShadowPass$$UpdateShadowData
+--- game
+
++++ live
+
+@@ -1,3 +1,2 @@
+
+-bl FN
+ bl FN
+ bl FN
+@@ -19,7 +18,5 @@
+
+ bl UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+ bl FN
+-bl FN
+ mov #1
+-bl FN
+ bl UnityEngine.Camera$$get_worldToCameraMatrix
+ bl UnityEngine.Camera$$get_projectionMatrix
+VL.Rendering.DownscalePass$$.cctor
+--- game
+
++++ live
+
+@@ -10,11 +10,11 @@
+
+ bl FN
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D
++ldr  META Field$<QAReconstructionImplementationDetails>.4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137
++ldr  META Field$<QAReconstructionImplementationDetails>.B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE
++ldr  META Field$<QAReconstructionImplementationDetails>.BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101
++ldr  META Field$<QAReconstructionImplementationDetails>.C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101
+ bl FN
+ ldr  STR _DIRECT_REFLECTION
+@@ -110,20 +110,20 @@
+
+ mov #4
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE
++ldr  META Field$<QAReconstructionImplementationDetails>.BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
+ bl FN
+ mov #3
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D
++ldr  META Field$<QAReconstructionImplementationDetails>.4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
+ bl FN
+ mov #3
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137
++ldr  META Field$<QAReconstructionImplementationDetails>.B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
+ bl FN
+ mov #4
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101
++ldr  META Field$<QAReconstructionImplementationDetails>.C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
+ bl FN
+VL.Rendering.DownscalePass$$.ctor
+--- game
+
++++ live
+
+@@ -18,6 +18,4 @@
+
+ bl FN
+ bl FN
+-bl FN
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<ShaderVariablesScreenSpaceReflection>()
+ bl FN
+ bl FN
+VL.Rendering.DownscalePass$$Execute
+--- game
+
++++ live
+
+@@ -1,3 +1,2 @@
+
+-bl FN
+ bl FN
+ bl FN
+@@ -15,8 +14,9 @@
+
+ bl FN
+ fmov #1.00000000
++tst #1
++fmov #1.00000000
+ bl UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+-bl FN
+ fmov #0.50000000
+-bl VL.Rendering.RenderingUtility$$SetGlobalMipBias
++bl VL.Rendering.VLRenderingCompatibility$$SetGlobalMipBias
+ mov #-1
+ bl VL.Rendering.MipChainBuffer$$UpdateMipChainParams
+@@ -35,5 +35,6 @@
+
+ bl UnityEngine.Rendering.CommandBuffer$$Clear
+ bl VL.Rendering.DownscalePass$$RenderDownscale
+-bl VL.Rendering.DownscalePass$$RegisterAfterCommand
++fmov #1.00000000
++bl VL.Rendering.VLRenderingCompatibility$$SetGlobalMipBias
+ bl UnityEngine.Rendering.ProfilingScope$$Dispose
+ bl FN
+VL.Rendering.DownscalePass$$InitializeHiZ
+--- game
+
++++ live
+
+@@ -3,5 +3,4 @@
+
+ bl FN
+ mov #1
+-bl FN
+ mov #0x31
+ bl VL.Rendering.MipChainBuffer$$IsSupported
+VL.Rendering.DownscalePass$$OnCameraSetupSSAO
+--- game
+
++++ live
+
+@@ -112,5 +112,4 @@
+
+ cmp #0
+ cmp #0
+-mov #0x10
+ bl UnityEngine.RenderTextureDescriptor$$set_colorFormat
+ bl FN
+@@ -128,5 +127,4 @@
+
+ mov #1
+ bl UnityEngine.Rendering.Universal.RenderingUtils$$ReAllocateIfNeeded
+-cmp #0
+ bl FN
+ cmp #2
+VL.Rendering.DownscalePass$$RegisterAfterCommand
+--- game
+
++++ live
+
+@@ -1,5 +1,2 @@
+
+-bl FN
+-mov #1
+-bl FN
+ fmov #1.00000000
+-b VL.Rendering.RenderingUtility$$SetGlobalMipBias
++b VL.Rendering.VLRenderingCompatibility$$SetGlobalMipBias
+VL.Rendering.DownscalePass$$RenderActorAOs
+--- game
+
++++ live
+
+@@ -1,10 +1,7 @@
+
+-bl FN
+ bl FN
+ bl FN
+ mov #1
+ bl FN
+-bl FN
+ mov #1
+-bl FN
+ bl UnityEngine.Camera$$get_worldToCameraMatrix
+ bl UnityEngine.Camera$$get_projectionMatrix
+VL.Rendering.DownscalePass$$RenderDownscale
+--- game
+
++++ live
+
+@@ -52,8 +52,9 @@
+
+ bl UnityEngine.Rendering.Universal.RenderingUtils$$ReAllocateIfNeeded
+ bl UnityEngine.Rendering.CommandBuffer$$SetGlobalTexture
+-fmov #1.00000000
+ cmp #0
+ bl FN
+ bl FN
++bl UnityEngine.Rendering.CoreUtils$$SetKeyword
++fmov #1.00000000
+ bl VL.Rendering.DownscalePass$$SetupTraceSSR
+ bl FN
+@@ -61,4 +62,6 @@
+
+ bl FN
+ mov #1
++bl FN
++bl FN
+ bl UnityEngine.Rendering.CoreUtils$$SetKeyword
+ bl FN
+@@ -102,4 +105,5 @@
+
+ mov #3
+ bl UnityEngine.Rendering.HaltonSequence$$Get
++fmov #-0.50000000
+ bl FN
+ mov #2
+VL.Rendering.DownscalePass$$RenderShadowAndOcclusion
+--- game
+
++++ live
+
+@@ -11,9 +11,9 @@
+
+ bl FN
+ bl UnityEngine.Rendering.ProfilingScope$$.ctor
++bl FN
+ cmp #0
+-cmp #1
+-bl FN
+ ldr  STR _MAIN_LIGHT_SHADOWS
+ bl UnityEngine.Rendering.CoreUtils$$SetKeyword
++cmp #0
+ ldr  STR _MAIN_LIGHT_SHADOWS_CASCADE
+ bl UnityEngine.Rendering.CoreUtils$$SetKeyword
+VL.Rendering.DownscalePass$$SetupTraceSSR
+--- game
+
++++ live
+
+@@ -1,4 +1,3 @@
+
+ ldr  MMETH Method$UnityEngine.Rendering.ConstantBuffer.Push<ShaderVariablesScreenSpaceReflection>()
+-bl FN
+ bl FN
+ bl FN
+@@ -6,8 +5,8 @@
+
+ mov #1
+ cmp #3
+-bl FN
+-bl VL.Rendering.RenderingUtility$$GetMotionVectorData
++bl VL.Rendering.VLRenderingCompatibility$$GetMotionVectorData
+ bl UnityEngine.Rendering.Universal.MotionVectorsPersistentData$$get_previousViewProjection
+ bl UnityEngine.Camera$$get_previousViewProjectionMatrix
++bl VL.Rendering.MipChainBuffer$$get_MipCount
+ bl VL.Rendering.Shaders.ShaderVariablesScreenSpaceReflection$$get_MipMinMaxSpan
+ bl VL.Rendering.MipChainBuffer$$CopyToMipMinMax
+VL.Rendering.DownscaleSystemRendererFeature$$AddRenderPasses
+--- game
+
++++ live
+
+@@ -10,6 +10,4 @@
+
+ cmp #4
+ cmp #0x10
+-cmp #4
+-cmp #0x10
+ bl VLB.VLBEntityManager$$Update
+ bl VLB.VLBEntityManager$$UpdateAllEntityData
+@@ -20,4 +18,5 @@
+
+ bl ProFlareRenderingSystem$$TryGetFlareData
+ bl FN
++bl VL.Rendering.VLSRPRenderer$$get_forwardLights
+ bl FN
+ bl FN
+VL.Rendering.DownscaleSystemRendererFeature$$SetupDownscalePass
+--- game
+
++++ live
+
+@@ -22,5 +22,4 @@
+
+ bl UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+ cmp #4
+-mov #1
+ cmp #0x10
+ bl FN
+@@ -35,4 +34,6 @@
+
+ ldr  MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<PlanarReflectionVolumeComponent>()
+ bl UnityEngine.Rendering.VolumeStack$$GetComponent<object>
++cmp #4
++cmp #0x10
+ ldr  PlanarReflectionEntityChunk>.Update()
+ bl VL.EntitySystem.SingleEntityManager<object, object, object>$$Update
+@@ -48,4 +49,7 @@
+
+ ldr  MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<AmplifyOcclusion>()
+ bl UnityEngine.Rendering.VolumeStack$$GetComponent<object>
++cmp #4
++cmp #0x10
++bl FN
+ bl AmplifyOcclusion.AmplifyOcclusion$$IsActive
+ bl AmplifyOcclusion.AmplifyOcclusionRenderingData$$Setup
+@@ -53,11 +57,10 @@
+
+ mov #0xa
+ bl FN
+-cmp #0
+ ldr  MMETH Method$UnityEngine.Rendering.VolumeStack.GetComponent<VLScreenSpaceAmbientOcclusion>()
+ bl UnityEngine.Rendering.VolumeStack$$GetComponent<object>
+ bl VL.Rendering.VLScreenSpaceAmbientOcclusion$$IsActive
+-cmp #0
+ and #1
+ bl VL.Rendering.VLScreenSpaceAmbientOcclusion$$IsActive
++cmp #0
+ tst #1
+ mov #2
+VL.Rendering.DownscaleTransparentPass$$Execute
+--- game
+
++++ live
+
+@@ -1,3 +1,2 @@
+
+-bl FN
+ bl FN
+ bl FN
+@@ -42,9 +41,9 @@
+
+ bl UnityEngine.Rendering.CommandBuffer$$SetGlobalTexture
+ bl ProFlareBatchForSRPData$$CompleteJob
++bl ProFlareBatchForSRPData$$get_VisibleFlareElementCount
+ cmp #1
+ bl ProFlareBatchForSRPData$$ComputeFlares
+-bl FN
+ fmov #0.50000000
+-bl VL.Rendering.RenderingUtility$$SetGlobalMipBias
++bl VL.Rendering.VLRenderingCompatibility$$SetGlobalMipBias
+ bl UnityEngine.Rendering.Universal.Internal.ForwardLights$$SetFPParams1
+ bl FN
+@@ -56,5 +55,5 @@
+
+ bl VL.CustomRenderPassUtility$$Execute
+ fmov #1.00000000
+-bl VL.Rendering.RenderingUtility$$SetGlobalMipBias
++bl VL.Rendering.VLRenderingCompatibility$$SetGlobalMipBias
+ bl UnityEngine.Rendering.CommandBuffer$$SetGlobalTexture
+ bl UnityEngine.Rendering.CommandBuffer$$SetGlobalTexture
+VL.Rendering.Skinning.VLSkinningSystem<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>$$.ctor
+--- game
+
++++ live
+
+@@ -112,5 +112,5 @@
+
+ mov #1
+ bl Unity.Collections.NativeArray<Matrix4x4>$$.ctor
+-cmp #0
++cmp #2
+ mov #4
+ mov #1
+VL.Rendering.VLSRPCameraController$$DestroyTextures
+--- game
+
++++ live
+
+@@ -7,5 +7,5 @@
+
+ bl FN
+ bl UnityEngine.Object$$op_Inequality
+-bl FN
++bl VL.Rendering.VLSRPAdditionalCameraData$$set_targetTexture
+ bl FN
+ bl UnityEngine.Rendering.CoreUtils$$Destroy
+VL.Rendering.VLSRPCameraController$$UpdateRenderTexture
+--- game
+
++++ live
+
+@@ -31,5 +31,5 @@
+
+ bl UnityEngine.Texture$$set_filterMode
+ bl VL.Rendering.VLSRPCameraController$$get_vlSrpAdditionalCameraData
+-bl FN
++bl VL.Rendering.VLSRPAdditionalCameraData$$set_targetTexture
+ bl VL.Rendering.VLSRPCameraController$$get_mainCamera
+ bl UnityEngine.Camera$$set_targetTexture
+VL.VLActorAO.UpdateJob$$Execute
+--- game
+
++++ live
+
+@@ -1,8 +1,9 @@
+
+ bl UnityEngine.Jobs.TransformAccess$$get_isValid
+ cmp #0
++mov #0x24
+ tst #1
+-mov #0x24
++tst #1
++mov #0x20
+ mov #0x10
+-mov #0x20
+ bl UnityEngine.Jobs.TransformAccess$$get_position
+ bl Unity.Mathematics.float3$$op_Implicit
+VL.VLCameraControllerSingleton<object>$$.ctor
+--- game
+
++++ live
+
+@@ -1 +1 @@
+
+-b VL.Core.VLMonoBehaviourSingleton<object>$$.ctor
++b UnityEngine.MonoBehaviour$$.ctor
+VL.VLMeshUtility$$CreateBoxMesh
+--- game
+
++++ live
+
+@@ -1,5 +1,5 @@
+
+ bl FN
+ bl FN
+-ldr  META Field$<PrivateImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
++ldr  META Field$<QAReconstructionImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
+ bl FN
+ bl FN
+@@ -19,5 +19,5 @@
+
+ cmp #7
+ mov #0x24
+-ldr  META Field$<PrivateImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
++ldr  META Field$<QAReconstructionImplementationDetails>.28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA
+ bl FN
+ bl System.Runtime.CompilerServices.RuntimeHelpers$$InitializeArray
