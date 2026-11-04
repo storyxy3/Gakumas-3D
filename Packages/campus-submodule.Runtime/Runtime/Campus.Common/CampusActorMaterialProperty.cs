@@ -11,9 +11,9 @@ namespace Campus.Common
         public Texture col;
         public Texture sdw;
         public Texture def;
-        public int tileX;
-        public int tileY;
-        public int tileFPS;
+        public int tileX = 1;
+        public int tileY = 1;
+        public int tileFPS = 1;
         [CompilerGenerated]
         private double _003CCurrentTime_003Ek__BackingField;
         public double CurrentTime
@@ -21,12 +21,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(double);
+                return _003CCurrentTime_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CCurrentTime_003Ek__BackingField = value;
             }
         }
 

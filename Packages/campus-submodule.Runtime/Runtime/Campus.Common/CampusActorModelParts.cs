@@ -52,6 +52,10 @@ namespace Campus.Common
 
         internal void UpdateDecalProperty()
         {
+            if (decalProjectors != null)
+            {
+                foreach (var projector in decalProjectors) projector.UpdateDecalProperty();
+            }
         }
 
         public CampusActorModelParts()

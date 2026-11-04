@@ -285,6 +285,8 @@ namespace Campus.Common
 
         public override void OnUpdate()
         {
+            _builder?.Update();
+            if (_actorAnimationRig != null && _actorAnimationRig.job != null) _actorAnimationRig.UpdateRig();
         }
 
         public void SetInactiveBones(IEnumerable<int> inactiveBones)

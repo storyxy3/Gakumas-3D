@@ -49,6 +49,43 @@ namespace ActorAnimation
         public Transform rootReference;
         public CampusActorAnimationInitializeData(List<ActorAnimationConstraintTransformBone> constraintTransformBones, List<ActorAnimationQuartzDriverRotationBone> quartzDriverRotationBones, List<ActorAnimationQuartzDriverFrillBone> quartzDriverFrillBones, List<ActorAnimationQuartzDriverSkirtBone> quartzDriverSkirtBones, List<ActorAnimationQuartzDriverHairBone> quartzDriverHairBones, List<ActorAnimationQuartzDriverHumanoidHandBone> quartzDriverHumanoidHandBones, List<ActorAnimationQuartzDriverHumanoidSleeveBone> quartzDriverHumanoidSleeveBones, List<ActorAnimationQuartzDriverHumanoidUpLegBone> quartzDriverHumanoidUpLegBones, List<ActorAnimationQuartzDriverHumanoidArmBone> quartzDriverHumanoidArmBones, List<ActorAnimationQuartzDriverWaistBone> quartzDriverWaistBones, List<ActorAnimationQuartzDriverFurisodeBone> quartzDriverFurisodeBones, List<ActorAnimationQuartzDriverPonchoBone> quartzDriverPonchoBones, List<InitialTransform> initialTransforms, List<ActorSwingDynamicBone> swingDynamicBones, List<ActorSwingStaticBone> swingStaticBones, List<ActorSwingBreastBone> swingBreastBones, List<InitialTransform> initialLeftBreastTransforms, List<InitialTransform> initialRightBreastTransforms, List<InitialTransform> initialLeftBreastEndTransforms, List<InitialTransform> initialRightBreastEndTransforms, List<ActorSwingChain> swingChains, Transform leftUpLeg, Transform leftLeg, Transform leftFoot, Transform rightUpLeg, Transform rightLeg, Transform rightFoot, List<EffectorBase> effectors, Transform moveReference, Transform hips, Transform head, List<ActorAnimationIKCorrectionCollider> iKCorrectionColliders, [Optional] ActorAnimationIKCorrectionGoal correctionRightHandGoal, [Optional] ActorAnimationIKCorrectionGoal correctionLeftHandGoal, [Optional] Transform root, [Optional] Transform rootReference)
         {
+            this.constraintTransformBones = constraintTransformBones;
+            this.quartzDriverRotationBones = quartzDriverRotationBones;
+            this.quartzDriverFrillBones = quartzDriverFrillBones;
+            this.quartzDriverSkirtBones = quartzDriverSkirtBones;
+            this.quartzDriverHairBones = quartzDriverHairBones;
+            this.quartzDriverHumanoidHandBones = quartzDriverHumanoidHandBones;
+            this.quartzDriverHumanoidSleeveBones = quartzDriverHumanoidSleeveBones;
+            this.quartzDriverHumanoidUpLegBones = quartzDriverHumanoidUpLegBones;
+            this.quartzDriverHumanoidArmBones = quartzDriverHumanoidArmBones;
+            this.quartzDriverWaistBones = quartzDriverWaistBones;
+            this.quartzDriverFurisodeBones = quartzDriverFurisodeBones;
+            this.quartzDriverPonchoBones = quartzDriverPonchoBones;
+            this.initialTransforms = initialTransforms;
+            this.swingDynamicBones = swingDynamicBones;
+            this.swingStaticBones = swingStaticBones;
+            this.swingBreastBones = swingBreastBones;
+            this.initialLeftBreastTransforms = initialLeftBreastTransforms;
+            this.initialRightBreastTransforms = initialRightBreastTransforms;
+            this.initialLeftBreastEndTransforms = initialLeftBreastEndTransforms;
+            this.initialRightBreastEndTransforms = initialRightBreastEndTransforms;
+            this.swingChains = swingChains;
+            this.leftUpLeg = leftUpLeg;
+            this.leftLeg = leftLeg;
+            this.leftFoot = leftFoot;
+            this.rightUpLeg = rightUpLeg;
+            this.rightLeg = rightLeg;
+            this.rightFoot = rightFoot;
+            this.effectors = effectors;
+            this.moveReference = moveReference;
+            this.hips = hips;
+            this.head = head;
+            reference = hips.parent;
+            this.iKCorrectionColliders = iKCorrectionColliders;
+            this.correctionRightHandGoal = correctionRightHandGoal;
+            this.correctionLeftHandGoal = correctionLeftHandGoal;
+            this.root = root;
+            this.rootReference = rootReference;
         }
     }
 }

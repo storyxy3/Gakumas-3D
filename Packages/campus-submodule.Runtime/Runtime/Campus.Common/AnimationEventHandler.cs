@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: get_IsInitialized.
 namespace Campus.Common
 {
     using global::System;
@@ -77,7 +76,7 @@ namespace Campus.Common
         {
             get
             {
-                return default(bool);
+                return _actorController != null;
             }
         }
 
@@ -91,6 +90,7 @@ namespace Campus.Common
 
         public void Initialize(CampusActorController actorController)
         {
+            _actorController = actorController;
         }
 
         public void SetAnimationEventActive(bool active)

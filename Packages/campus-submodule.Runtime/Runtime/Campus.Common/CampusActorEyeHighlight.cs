@@ -21,7 +21,17 @@ namespace Campus.Common
         public LimitData[] blendShapes;
         public float GetHighlightOffset()
         {
-            return default(float);
+            float offset = 0f;
+            if (target == null) return offset;
+            if (blendShapes != null && blendShapes.Length > 0)
+            {
+                for (int i = 0; i < blendShapes.Length; i++)
+                {
+                    var shape = blendShapes[i];
+                    offset += shape.value * Mathf.Clamp01(target.GetBlendShapeWeight(shape.index) / 100f);
+                }
+            }
+            return offset;
         }
 
         public CampusActorEyeHighlight()
