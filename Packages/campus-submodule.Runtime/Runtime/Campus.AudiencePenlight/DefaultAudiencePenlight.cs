@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, get_ProjectionUvRectMax, get_ProjectionUvRectMin.
 namespace Campus.AudiencePenlight
 {
     using global::System.Runtime.CompilerServices;

@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: Calc.
 namespace ActorAnimation
 {
     using global::ActorAnimation;

@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, AddDependencyJob, ClearProperty, GetDependencyJobCount, GetMaterialInfo, GetMaterialInfoHash, OnDisable, OnEnable, StoreInitialData, Update, UpdateEquipment, get_StreamData, set_StreamData.
 namespace Campus.Live.Equipment
 {
     using global::System;

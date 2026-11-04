@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: LateUpdate, OnDisable, OnEnable.
 namespace Campus.Common
 {
     using global::System.Runtime.CompilerServices;

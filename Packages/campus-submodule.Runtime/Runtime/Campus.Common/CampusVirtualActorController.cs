@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, OnBind, OnLateUpdate, Setup, get_ActorController, get_Color, get_HipRootTransform, get_HumanScale, get_OutlineColor, get_rootPosition, get_rootRotation, set_Color, set_OutlineColor.
 namespace Campus.Common
 {
     using global::Campus.Common;

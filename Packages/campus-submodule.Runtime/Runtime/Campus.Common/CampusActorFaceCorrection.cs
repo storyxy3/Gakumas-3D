@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, ClampEuler, LateUpdate, OnDisable.
 namespace Campus.Common
 {
     using global::UnityEngine;

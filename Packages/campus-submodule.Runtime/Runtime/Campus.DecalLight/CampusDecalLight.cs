@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, OnDisable, OnEnable, OnValidate, VL.EntitySystem.IEntityComponent.get_transform, get_Area, get_BoxSize, get_Color, get_Pivot, get_Size, get_SizeOffset, get_UvScaleBias, get_entity, get_isChunkChanged, set_BoxSize, set_Color, set_Intensity, set_IsFlatColor, set_LightType, set_Size, set_SpecularOn, set_UvScaleBias, set_entity.
 namespace Campus.DecalLight
 {
     using global::System.Runtime.CompilerServices;

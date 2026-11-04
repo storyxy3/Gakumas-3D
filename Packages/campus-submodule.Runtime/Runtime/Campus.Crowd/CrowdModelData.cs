@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: get_BoundingSphere, set_BoundingSphere.
 namespace Campus.Crowd
 {
     using global::System;

@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: ResetAllIKGoalToOriginalTarget, ResetIKGoalToOriginalTarget, SetupAllIKGoalToOverrideTarget, SetupPropConstraintAnimation, SetupPropConstraintSource, UpdateLookAtEyePitchCorrection.
 namespace Campus.Common
 {
     using global::System;
@@ -1298,7 +1297,7 @@ namespace Campus.Common
         public void SetRendererActiveByReference(bool isActive, bool isReset = false)
         {
             if (isActive) _renderActiveCount = isReset ? 1 : _renderActiveCount + 1;
-            else _renderActiveCount = isReset ? 0 : Mathf.Max(_renderActiveCount - 1, 0);
+            else _renderActiveCount = isReset ? 0 : System.Math.Max(_renderActiveCount - 1, 0);
             SetRendererAndCollidersActive(_renderActiveCount > 0);
         }
 

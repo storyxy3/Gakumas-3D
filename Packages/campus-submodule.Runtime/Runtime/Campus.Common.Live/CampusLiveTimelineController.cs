@@ -569,7 +569,6 @@ namespace Campus.Common.Live
 
         public void SetUserCamera(SwitchPanoramaCamera camera)
         {
-            // TODO(qa-recon): SwitchPanoramaCamera.VirtualCamera is outside the selected census.
             if (camera != null && camera.VirtualCamera == null)
                 Debug.LogWarning("[PanoramaCamera] SetUserCamera: SwitchPanoramaCamera '" + camera.name + "' に VirtualCamera がアサインされていません。", camera);
             if (camera != null && CinemachineCore.Instance.GetActiveBrain(0) == null)
@@ -973,7 +972,6 @@ namespace Campus.Common.Live
 
         private void Update()
         {
-            // TODO(qa-recon): needs VLTimelineController.master outside the owned assemblies.
             ShaderTimeManager.SetCustomTime((float)master.time);
         }
 

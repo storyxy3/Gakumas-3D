@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .ctor, SetController.
 namespace Campus.Live.Equipment
 {
     using global::Campus.Live.Equipment;
@@ -14,7 +13,7 @@ namespace Campus.Live.Equipment
         private int _selectedIdGroupIndex;
         [FormerlySerializedAs("customSceneTransform")]
         public Transform targetTransform;
-        public float intensity;
+        public float intensity = 1f;
         [ColorUsage(false, true)]
         public Color color;
         [FormerlySerializedAs("strobe")]
@@ -39,7 +38,6 @@ namespace Campus.Live.Equipment
 
         public EquipmentValue()
         {
-            intensity = 1f;
         }
     }
 }

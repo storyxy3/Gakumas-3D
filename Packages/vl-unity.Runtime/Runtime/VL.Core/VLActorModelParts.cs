@@ -228,6 +228,9 @@ namespace VL.Core
 
         public void SetRendererActive(bool active)
         {
+            if (_rendererActive == active) return;
+            _rendererActive = active;
+            foreach (var renderer in renderers) renderer.enabled = active;
         }
 
         public void AllowOcclusionWhenDynamic(bool active)

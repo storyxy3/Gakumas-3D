@@ -15,11 +15,11 @@ namespace Campus.Common
     {
         [Tooltip("0.0の場合、モーションの制限が無くなり、無理やり向こうとします。1.0の場合、可能な限りモーションを使用し少しだけ適用されます。0.5はその中間です")]
         [Range(0f, 1f)]
-        public float lookAtClampWeight;
+        public float lookAtClampWeight = 0.5f;
         [Range(0f, 1.5f)]
-        public float stiffness;
+        public float stiffness = 1f;
         [Range(1f, 50f)]
-        public int maxPullIteration;
+        public int maxPullIteration = 5;
         [Range(-0.2f, 0.2f)]
         public float handDown;
         [SerializeField]

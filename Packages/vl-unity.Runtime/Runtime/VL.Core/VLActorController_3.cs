@@ -107,6 +107,9 @@ namespace VL.Core
 
         public override void SetRendererActive(bool active)
         {
+            base.SetRendererActive(active);
+            if (_children == null) return;
+            foreach (var child in _children) child.SetRendererActive(active);
         }
 
         public void SetChildRendererActive(string assetName, bool active)

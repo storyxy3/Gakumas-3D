@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: .cctor, .ctor, GetCanvasRenderTexture, GetTextureName, OnDisable, OnEnable, RegisterInstance, RegisterMonitor3D, Start, UnRegisterInstance, UnregisterMonitor3D, UpdateParameter, UpdateTexture.
 namespace CanvasRT
 {
     using global::System;
