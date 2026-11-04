@@ -55,8 +55,8 @@ public class ProFlareBatchForSRPData : IDisposable
     private static readonly int _OcclusionParams = Shader.PropertyToID("_OcclusionParams");
     internal static readonly int _ElementBuffer = Shader.PropertyToID("_ElementBuffer");
     internal static readonly int _MainTex = Shader.PropertyToID("_MainTex");
-    private readonly ProfilingSampler _computeProfilingSampler;
-    private readonly ProfilingSampler _renderProfilingSampler;
+    private readonly ProfilingSampler _computeProfilingSampler = new ProfilingSampler("ComputeProFlare");
+    private readonly ProfilingSampler _renderProfilingSampler = new ProfilingSampler("Draw ProFlare");
     public const int DisposeFrame = 4;
     public ProFlareBatchForSRP flareBatchForSrp;
     public Camera camera;
@@ -137,8 +137,6 @@ public class ProFlareBatchForSRPData : IDisposable
 
     public ProFlareBatchForSRPData(ProFlareBatchForSRP flareBatchForSrp, Camera camera)
     {
-        _computeProfilingSampler = new ProfilingSampler("ComputeProFlare");
-        _renderProfilingSampler = new ProfilingSampler("Draw ProFlare");
         this.flareBatchForSrp = flareBatchForSrp;
         this.camera = camera;
         _materialPropertyBlock = new MaterialPropertyBlock();
@@ -178,11 +176,12 @@ public class ProFlareBatchForSRPData : IDisposable
             if (input.isVisible) input.offScreenFadeDist = flare.OffScreenFadeDist;
             _flareUpdateInoutData[i] = input;
         }
-        Vector3 cameraPosition = camera.transform.position;
+        var cameraTransform = camera.transform;
+        Vector3 cameraPosition = cameraTransform.position;
         var transformJob = new ProFlareUpdateJob
         {
             reversedZ = SystemInfo.usesReversedZBuffer,
-            cameraPosition = cameraPosition, cameraForward = camera.transform.forward,
+            cameraPosition = cameraPosition, cameraForward = cameraTransform.forward,
             vpMatrix = GL.GetGPUProjectionMatrix(camera.projectionMatrix, false) * camera.worldToCameraMatrix,
             inoutData = _flareUpdateInoutData
         };
@@ -264,8 +263,9 @@ public class ProFlareBatchForSRPData : IDisposable
                 flare = flare, scaleMulti = flare.MultiplyScaleByTransformScale ? transformData.localScale : 1f,
                 lensPosition = new float3(2f * aspect * (lens.x - 0.5f), 2f * (lens.y - 0.5f), 0f)
             };
-            foreach (var element in flare.Elements)
+            for (int elementIndex = 0; elementIndex < flare.Elements.Count; elementIndex++)
             {
+                var element = flare.Elements[elementIndex];
                 var state = new _003C_003Ec__DisplayClass48_3
                 {
                     element = element, globalColor = flare.GlobalTintColor,
@@ -295,8 +295,9 @@ public class ProFlareBatchForSRPData : IDisposable
                             _003CScheduleFlares_003Eg__UpdateElementJobData_007C48_0(element.ElementTint, 1f, element.angle, element.position, ref shared, ref flareState, ref context, ref state);
                         else if (element.type == ProFlareElement.Type.Multi)
                         {
-                            foreach (var sub in element.subElements)
+                            for (int subIndex = 0; subIndex < element.subElements.Count; subIndex++)
                             {
+                                var sub = element.subElements[subIndex];
                                 _003CScheduleFlares_003Eg__UpdateElementJobData_007C48_0(sub.color, sub.scale, element.angle + sub.angle,
                                     element.useRangeOffset ? sub.position : element.position, ref shared, ref flareState, ref context, ref state);
                                 if (shared.visibleFlareElementCount >= _flareElementsData.Length) break;

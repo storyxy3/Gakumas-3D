@@ -100,7 +100,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return GetActualRenderingMode(ShaderMode.SD) != RenderingMode.Default;
             }
         }
 

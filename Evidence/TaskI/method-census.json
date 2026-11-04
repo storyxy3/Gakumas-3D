@@ -2203,5 +2203,12 @@
     "apkAddresses": [
       "0x90ab58c"
     ]
+  },
+  {
+    "method": "VLB.Config$$get_SD_requiresDoubleSidedMesh",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Config.cs",
+    "apkAddresses": [
+      "0xe0c73b0"
+    ]
   }
 ]

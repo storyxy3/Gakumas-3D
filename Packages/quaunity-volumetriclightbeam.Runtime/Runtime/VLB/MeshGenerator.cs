@@ -20,13 +20,13 @@ namespace VLB
 
             internal int _003CGenerateConeZ_Radii_DoubleCaps_003Eb__0(int slideID)
             {
-            return numSides * slideID;
-        }
+                return numSides * slideID;
+            }
 
             internal int _003CGenerateConeZ_Radii_DoubleCaps_003Eb__1(int slideID)
             {
-            return vertCountSides + slideID;
-        }
+                return vertCountSides + slideID;
+            }
         }
 
         [CompilerGenerated]
@@ -41,21 +41,21 @@ namespace VLB
 
             internal void _003CGenerateConeZ_Radii_DoubleCaps_003Eb__2(int slideID, bool invert)
             {
-            int start = CS_0024_003C_003E8__locals1.vertSidesStartFromSlide(slideID);
-            int nextOffset = invert ? 1 : 2;
-            int currentOffset = invert ? 2 : 1;
-            for (int i = 0; i < CS_0024_003C_003E8__locals1.numSides - 1; i++)
-            {
+                int start = CS_0024_003C_003E8__locals1.vertSidesStartFromSlide(slideID);
+                int nextOffset = invert ? 1 : 2;
+                int currentOffset = invert ? 2 : 1;
+                for (int i = 0; i < CS_0024_003C_003E8__locals1.numSides - 1; i++)
+                {
+                    indices[ind] = CS_0024_003C_003E8__locals1.vertCenterFromSlide(slideID);
+                    indices[ind + nextOffset] = start + i + 1;
+                    indices[ind + currentOffset] = start + i;
+                    ind += 3;
+                }
                 indices[ind] = CS_0024_003C_003E8__locals1.vertCenterFromSlide(slideID);
-                indices[ind + nextOffset] = start + i + 1;
-                indices[ind + currentOffset] = start + i;
+                indices[ind + nextOffset] = start;
+                indices[ind + currentOffset] = start + CS_0024_003C_003E8__locals1.numSides - 1;
                 ind += 3;
             }
-            indices[ind] = CS_0024_003C_003E8__locals1.vertCenterFromSlide(slideID);
-            indices[ind + nextOffset] = start;
-            indices[ind + currentOffset] = start + CS_0024_003C_003E8__locals1.numSides - 1;
-            ind += 3;
-        }
         }
 
         private static float GetAngleOffset(int numSides)

@@ -78,7 +78,7 @@ namespace VL.Core
         {
             if (descriptor.gameObjects == null)
             {
-                Debug.LogError("descripter.gameObject not found");
+                Debug.LogError("descripter gameObject not found");
                 return false;
             }
             if (CheckResourceObjects(descriptor.gameObjects)) return true;

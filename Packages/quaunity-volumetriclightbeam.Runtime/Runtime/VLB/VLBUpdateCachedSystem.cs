@@ -25,12 +25,12 @@ namespace VLB
             public NativeArray<Bounds> bounds;
             public void Execute(int index, TransformAccess transform)
             {
-            float4x4 localToWorld = transform.localToWorldMatrix;
-            float4x4 geometryLocalToWorld = math.mul(localToWorld, float4x4.TRS(float3.zero, rotations[index], scales[index]));
-            localToWorlds[index] = localToWorld;
-            geometryLocalToWorlds[index] = geometryLocalToWorld;
-            bounds[index] = Utils.TransformAABB(new Bounds(new Vector3(0f, 0f, 0.5f), new Vector3(2f, 2f, 1f)), geometryLocalToWorld);
-        }
+                float4x4 localToWorld = transform.localToWorldMatrix;
+                float4x4 geometryLocalToWorld = math.mul(localToWorld, float4x4.TRS(float3.zero, rotations[index], scales[index]));
+                localToWorlds[index] = localToWorld;
+                geometryLocalToWorlds[index] = geometryLocalToWorld;
+                bounds[index] = Utils.TransformAABB(new Bounds(new Vector3(0f, 0f, 0.5f), new Vector3(2f, 2f, 1f)), geometryLocalToWorld);
+            }
         }
 
         private VLBEntityManager _entityManager;

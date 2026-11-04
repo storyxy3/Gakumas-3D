@@ -12,8 +12,8 @@ namespace VLB
             public int version;
         }
 
-        private readonly List<EntityItem> _entities;
-        private readonly Queue<int> _freeIndices;
+        private readonly List<EntityItem> _entities = new List<EntityItem>();
+        private readonly Queue<int> _freeIndices = new Queue<int>();
         public bool IsValid(Entity entity)
         {
             return entity.index < _entities.Count && _entities[entity.index].version == entity.version;
@@ -75,8 +75,6 @@ namespace VLB
 
         public EntityIndexer()
         {
-            _entities = new List<EntityItem>();
-            _freeIndices = new Queue<int>();
         }
     }
 }

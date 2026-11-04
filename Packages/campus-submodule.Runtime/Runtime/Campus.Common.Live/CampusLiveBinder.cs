@@ -171,7 +171,7 @@ namespace Campus.Common.Live
 
             internal PlayableDirector _003CSetupAsync_003Eb__3(CampusDirectorControlAsset x)
             {
-                return x.directorReference.Resolve(master);
+                return master.GetReferenceValue(x.directorReference.exposedName, out _) as PlayableDirector;
             }
 
             internal void _003CSetupAsync_003Eb__5(PlayableDirector x)
@@ -221,7 +221,7 @@ namespace Campus.Common.Live
             private List<CampusTimelineCriVideoPlayer>.Enumerator _003C_003E7__wrap1;
             private CampusTimelineCriVideoPlayer _003CcampusTimelineCriVideoPlayer_003E5__3;
             private UniTask.Awaiter _003C_003Eu__1;
-            void global::System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext()
+            public void MoveNext()
             {
                 var binder = _003C_003E4__this;
                 try
@@ -400,7 +400,7 @@ namespace Campus.Common.Live
             }
 
             [DebuggerHidden]
-            void global::System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+            public void SetStateMachine(IAsyncStateMachine stateMachine)
             {
                 _003C_003Et__builder.SetStateMachine(stateMachine);
             }

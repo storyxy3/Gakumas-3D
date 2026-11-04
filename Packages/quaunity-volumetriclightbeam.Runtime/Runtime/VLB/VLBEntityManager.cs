@@ -32,22 +32,22 @@ namespace VLB
 
             internal int _003CUpdate_003Eb__19_0(CombinedChunks a, CombinedChunks b)
             {
-            if (a.valid && !b.valid) return -1;
+                if (a.valid && !b.valid) return -1;
                 if (!a.valid && b.valid) return 1;
                 return a.entityChunk.materialID.CompareTo(b.entityChunk.materialID);
-        }
+            }
         }
 
         public const int MaxVLBSize = 200;
-        private Dictionary<int, int> _materialIDToChunkIndex;
-        internal List<VLBEntityChunk> entityChunks;
-        internal List<VLBCachedChunk> cachedChunks;
-        internal List<VLBCulledChunk> culledChunks;
-        internal List<VLBDrawCallChunk> drawCallChunks;
+        private Dictionary<int, int> _materialIDToChunkIndex = new Dictionary<int, int>();
+        internal List<VLBEntityChunk> entityChunks = new List<VLBEntityChunk>();
+        internal List<VLBCachedChunk> cachedChunks = new List<VLBCachedChunk>();
+        internal List<VLBCulledChunk> culledChunks = new List<VLBCulledChunk>();
+        internal List<VLBDrawCallChunk> drawCallChunks = new List<VLBDrawCallChunk>();
         internal int chunkCount;
-        private EntityIndexer _entityIndexer;
-        private List<CombinedChunks> _combinedChunks;
-        private List<int> _combinedChunkRemmap;
+        private EntityIndexer _entityIndexer = new EntityIndexer();
+        private List<CombinedChunks> _combinedChunks = new List<CombinedChunks>();
+        private List<int> _combinedChunkRemmap = new List<int>();
         private CustomSampler _samplerUpdateAllEntity;
         public bool IsValid(Entity entity)
         {
@@ -84,14 +84,6 @@ namespace VLB
 
         public VLBEntityManager()
         {
-            _materialIDToChunkIndex = new Dictionary<int, int>();
-            entityChunks = new List<VLBEntityChunk>();
-            cachedChunks = new List<VLBCachedChunk>();
-            culledChunks = new List<VLBCulledChunk>();
-            drawCallChunks = new List<VLBDrawCallChunk>();
-            _entityIndexer = new EntityIndexer();
-            _combinedChunks = new List<CombinedChunks>();
-            _combinedChunkRemmap = new List<int>();
             _samplerUpdateAllEntity = CustomSampler.Create("VLBUpdateAllEntity.Execute");
         }
 
@@ -249,6 +241,8 @@ namespace VLB
             foreach (var chunk in cachedChunks) chunk.Dispose();
             foreach (var chunk in culledChunks) chunk.Dispose();
             foreach (var chunk in drawCallChunks) chunk.Dispose();
+            _entityIndexer.Clear();
+            _materialIDToChunkIndex.Clear();
             entityChunks.Clear();
             cachedChunks.Clear();
             culledChunks.Clear();

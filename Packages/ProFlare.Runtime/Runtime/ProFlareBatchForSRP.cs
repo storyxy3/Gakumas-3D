@@ -110,7 +110,7 @@ public class ProFlareBatchForSRP : MonoBehaviour
             if (!_transformAccessArray.isCreated) _transformAccessArray = new TransformAccessArray(1024);
             for (int i = 0; i < FlaresList.Count; i++)
             {
-                var transform = FlaresList[i] != null ? FlaresList[i].thisTransform : null;
+                var transform = FlaresList[i]?.thisTransform;
                 if (i < _transformAccessArray.length) _transformAccessArray[i] = transform;
                 else _transformAccessArray.Add(transform);
             }
