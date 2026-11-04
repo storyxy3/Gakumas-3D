@@ -1,6 +1,8 @@
 namespace Campus.Crowd
 {
     using global::UnityEngine;
+    using global::System;
+    using global::Qua.Extensions;
     using global::VL;
 
     [CreateAssetMenu(fileName = "CrowdMotionDefine.asset", menuName = "Campus/CrowdMotionDefine")]
@@ -12,7 +14,7 @@ namespace Campus.Crowd
         {
             get
             {
-                return null;
+                return _animationDataArray[index];
             }
         }
 
@@ -20,12 +22,15 @@ namespace Campus.Crowd
         {
             get
             {
-                return default(int);
+                return _animationDataArray.IsNullOrEmpty() ? 0 : _animationDataArray.Length;
             }
         }
 
         public void SetAnimationData(AnimationData animationData, int index)
         {
+            if (_animationDataArray.IsNullOrEmpty()) _animationDataArray = new AnimationData[1];
+            if (count <= index) Array.Resize(ref _animationDataArray, index + 1);
+            _animationDataArray[index] = animationData;
         }
 
         public CrowdMotionDefine()
