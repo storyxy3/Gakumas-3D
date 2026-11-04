@@ -34,10 +34,12 @@ namespace Campus.Live.Equipment
 
         public void SetController(LiveEquipmentController controller)
         {
+            _controller = controller;
         }
 
         public EquipmentValue()
         {
+            intensity = 1f;
         }
     }
 }

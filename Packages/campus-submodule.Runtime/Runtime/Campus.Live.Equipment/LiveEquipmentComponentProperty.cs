@@ -9,7 +9,8 @@ namespace Campus.Live.Equipment
         public readonly string name;
         public LiveEquipmentComponentProperty(Component component, string name)
         {
-            this = default;
+            this.component = component;
+            this.name = name;
         }
     }
 }

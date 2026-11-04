@@ -30,12 +30,13 @@ namespace Campus.Live.Equipment
             [CompilerGenerated]
             readonly get
             {
-                return default(int);
+                return _003CUseFlags_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CUseFlags_003Ek__BackingField = value;
             }
         }
     }
