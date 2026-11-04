@@ -364,5 +364,185 @@
     "sourceStatus": "reconstructed",
     "evidence": "h4-limits-resets-native-review.txt; APK decompilation .recon/task-h3/animation-decomp",
     "reason": "APK handle accessor, limit range, clamp or execution flow restored. IsValid flags are boolean return materialization (mov #1 versus and #1); Execute flags are register/stack scheduling."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationRig$$SetInactiveBones",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationRig$$ResetDynamicBone",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationRig$$ResetBreastBone",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationRig$$ResetDynamicSkin",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.CampusActorAnimationRig$$ResetTime",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$get_isDirty",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$set_isDirty",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$get_hierarchyDepth",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$set_hierarchyDepth",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$SetDirty",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$ResetDirty",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$GetHierarchyDepth",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$UpdateHierarchyDepth",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$CompareTo",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBoneCash$$EnqueueCachedTranslation",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBoneCash$$IsAlreadyStable",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBone$$Reset",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBone$$EnqueueCachedTransform",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobDynamicBone$$IsAlreadyStable",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobBreastBone$$Reset",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingJobBreastBoneCurve$$Dispose",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$.ctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$Set",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$Transform",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$Inverse",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$op_Multiply",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$get_identity",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingAffineTransform$$.cctor",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-limits-resets-native-review.txt; .recon/task-h4/{rig,reset,affine}.disasm.txt",
+    "reason": "APK field writes, pointer traversal, initial-pose reset, five-entry cache, affine operation or Quartz hierarchy traversal restored. Breast Reset includes an unnamed slerp helper after its return in the raw comparator boundary; the actual body has constructor inlining. IsAlreadyStable differs in boolean materialization. Final comparison will follow the direct affine expression and zero-value metadata refinements."
   }
 ]

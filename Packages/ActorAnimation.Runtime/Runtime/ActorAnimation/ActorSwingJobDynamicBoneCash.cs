@@ -15,11 +15,25 @@ namespace ActorAnimation
         public int cachedTranslationStart;
         public void EnqueueCachedTranslation(float3 data)
         {
+            switch (cachedTranslationStart % CachedTranslationCount)
+            {
+                case 0: cachedTranslation0 = data; break;
+                case 1: cachedTranslation1 = data; break;
+                case 2: cachedTranslation2 = data; break;
+                case 3: cachedTranslation3 = data; break;
+                case 4: cachedTranslation4 = data; break;
+            }
+            cachedTranslationStart++;
         }
 
         public bool IsAlreadyStable()
         {
-            return default(bool);
+            if (cachedTranslationStart < CachedTranslationCount) return false;
+            return math.lengthsq(cachedTranslation0 - cachedTranslation1)
+                + math.lengthsq(cachedTranslation1 - cachedTranslation2)
+                + math.lengthsq(cachedTranslation2 - cachedTranslation3)
+                + math.lengthsq(cachedTranslation3 - cachedTranslation4)
+                + math.lengthsq(cachedTranslation4 - cachedTranslation0) < 0.000001f;
         }
     }
 }

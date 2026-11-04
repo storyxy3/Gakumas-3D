@@ -30,12 +30,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003ChierarchyDepth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003ChierarchyDepth_003Ek__BackingField = value;
             }
         }
 
@@ -51,16 +52,19 @@ namespace ActorAnimation
 
         public int GetHierarchyDepth()
         {
-            return default(int);
+            int depth = -1;
+            for (var current = transform; current != null; current = current.parent) depth++;
+            return depth;
         }
 
         public void UpdateHierarchyDepth()
         {
+            hierarchyDepth = GetHierarchyDepth();
         }
 
         public int CompareTo(ActorAnimationQuartzDriverBoneBase other)
         {
-            return default(int);
+            return hierarchyDepth - other.hierarchyDepth;
         }
 
         protected ActorAnimationQuartzDriverBoneBase()

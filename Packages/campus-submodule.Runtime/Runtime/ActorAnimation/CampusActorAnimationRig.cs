@@ -3,6 +3,7 @@ namespace ActorAnimation
     using global::System.Collections.Generic;
     using global::ActorAnimation;
     using global::UnityEngine;
+    using global::Unity.Collections.LowLevel.Unsafe;
 
     public class CampusActorAnimationRig : ActorAnimationRig<CampusActorAnimationJob, CampusActorAnimationRigData, ActorAnimationJobBinder<CampusActorAnimationJob, CampusActorAnimationRigData>>
     {
@@ -74,22 +75,90 @@ namespace ActorAnimation
 
         public override void SetInactiveBones(IEnumerable<int> inactiveBones)
         {
+            if (_job == null) return;
+            var animationJob = (CampusActorAnimationJob)_job;
+            if (!animationJob.swingJobSkeleton.dynamicBones.IsCreated || !animationJob.swingJobSkeleton.instanceIDToDynamicBoneIndex.IsCreated)
+            {
+                Debug.LogWarning("データ構造が生成されていません");
+                return;
+            }
+            unsafe
+            {
+                var bone = (ActorSwingJobDynamicBone*)animationJob.swingJobSkeleton.dynamicBones.GetUnsafePtr();
+                for (int i = 0; i < animationJob.swingJobSkeleton.dynamicBones.Length; i++) bone[i].active = true;
+                foreach (int id in inactiveBones)
+                    if (animationJob.swingJobSkeleton.instanceIDToDynamicBoneIndex.TryGetValue(id, out int index)) bone[index].active = false;
+            }
         }
 
         public override void ResetDynamicBone()
         {
+            if (data.swingDynamicBones == null || _job == null) return;
+            var animationJob = (CampusActorAnimationJob)_job;
+            if (animationJob.swingJobSkeleton.dynamicBones.Length != data.swingDynamicBones.Count)
+            {
+                Debug.LogWarning("JobとC#の配列サイズがずれています");
+                return;
+            }
+            unsafe
+            {
+                var ptr = (ActorSwingJobDynamicBone*)animationJob.swingJobSkeleton.dynamicBones.GetUnsafePtr();
+                foreach (var bone in data.swingDynamicBones)
+                {
+                    ptr->Reset(bone.initialTransform, manageData != null ? manageData.propertyData.prewarmCount : 5);
+                    ptr++;
+                }
+            }
         }
 
         public override void ResetBreastBone()
         {
+            if (data.swingBreastBones == null || _job == null) return;
+            var animationJob = (CampusActorAnimationJob)_job;
+            if (animationJob.swingJobSkeleton.breastBones.Length != data.swingBreastBones.Count)
+            {
+                Debug.LogWarning("JobとC#の配列サイズがずれています");
+                return;
+            }
+            unsafe
+            {
+                var ptr = (ActorSwingJobBreastBone*)animationJob.swingJobSkeleton.breastBones.GetUnsafePtr();
+                foreach (var bone in data.swingBreastBones)
+                {
+                    ptr->Reset(bone.initialLeftEndTransform, bone.initialRightEndTransform, manageData != null ? manageData.propertyData.prewarmCount : 5);
+                    ptr++;
+                }
+            }
         }
 
         public override void ResetDynamicSkin()
         {
+            if (data.swingDynamicBones == null || _job == null) return;
+            var animationJob = (CampusActorAnimationJob)_job;
+            if (animationJob.swingJobSkeleton.dynamicBones.Length != data.swingDynamicBones.Count)
+            {
+                Debug.LogWarning("JobとC#の配列サイズがずれています");
+                return;
+            }
+            unsafe
+            {
+                var ptr = (ActorSwingJobDynamicBone*)animationJob.swingJobSkeleton.dynamicBones.GetUnsafePtr();
+                foreach (var bone in data.swingDynamicBones)
+                {
+                    if ((bone.resetType & ResetType.Skin) != 0)
+                    ptr->Reset(bone.initialTransform, manageData != null ? manageData.propertyData.prewarmCount : 5);
+                    ptr++;
+                }
+            }
         }
 
         public override void ResetTime()
         {
+            if (data.swingDynamicBones != null && _job != null)
+            {
+                var animationJob = (CampusActorAnimationJob)_job;
+                animationJob.ResetTime();
+            }
         }
 
         public void UpdateIKCorrectionColliderProperty(Animator animator)

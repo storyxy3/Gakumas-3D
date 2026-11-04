@@ -19,7 +19,15 @@ namespace ActorAnimation
         public ReadOnlyTransformHandle lowerArm;
         public ActorSwingJobBreastBoneSetting(ReadOnlyTransformHandle lowerArm, ReadWriteTransformHandle breast, ActorSwingAffineTransform initialSelfTx, ActorSwingAffineTransform localEndTx, ActorSwingAffineTransform selfEndTx, ActorSwingAffineTransform modelingLocalTx)
         {
-            this = default;
+            this.lowerArm = lowerArm;
+            this.breast = breast;
+            this.initialSelfTx = initialSelfTx;
+            this.localEndTx = localEndTx;
+            this.selfEndTx = selfEndTx;
+            this.modelingLocalTx = modelingLocalTx;
+            boneEndAxis = math.normalize(localEndTx.translation);
+            boneEndLength = 0f;
+            childSpeed = default;
         }
     }
 }

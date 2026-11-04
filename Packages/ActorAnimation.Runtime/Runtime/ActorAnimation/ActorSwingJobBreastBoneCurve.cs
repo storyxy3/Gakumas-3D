@@ -13,6 +13,8 @@ namespace ActorAnimation
         public NativeArray<KeyframeData> sideKeyFrames;
         public void Dispose()
         {
+            if (upKeyFrames.IsCreated) upKeyFrames.Dispose();
+            if (sideKeyFrames.IsCreated) sideKeyFrames.Dispose();
         }
     }
 }

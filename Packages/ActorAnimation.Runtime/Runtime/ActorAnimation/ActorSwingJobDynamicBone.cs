@@ -56,15 +56,23 @@ namespace ActorAnimation
         public ActorSwingJobDynamicBoneCash cachedTransform;
         public void Reset(InitialTransform initialTransform, int prewarmCount)
         {
+            float3 localPosition = initialTransform.localPosition;
+            boneAxis = math.length(localPosition) > 0.00001f ? math.normalize(localPosition) : new float3(1f, 0f, 0f);
+            boneLength = math.length(localPosition);
+            localTx = new ActorSwingAffineTransform(initialTransform.localPosition, initialTransform.localRotation);
+            selfTx = new ActorSwingAffineTransform(initialTransform.position, initialTransform.rotation);
+            this.prewarmCount = prewarmCount;
+            cachedTransform = default;
         }
 
         public void EnqueueCachedTransform(ActorSwingAffineTransform data)
         {
+            cachedTransform.EnqueueCachedTranslation(data.translation);
         }
 
         public bool IsAlreadyStable()
         {
-            return default(bool);
+            return cachedTransform.IsAlreadyStable();
         }
     }
 }
