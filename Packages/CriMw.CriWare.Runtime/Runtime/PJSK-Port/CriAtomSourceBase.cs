@@ -4,7 +4,7 @@ namespace CriWare
 {
     // CriWare.CriAtomSourceBase (TypeDefIndex 31678), the Android build's members on the game's paths (StageSoundManager's
     // CriAtomSource objects bound to the SekaiAtom timeline tracks).
-    public abstract class CriAtomSourceBase : CriMonoBehaviour
+    public abstract partial class CriAtomSourceBase : CriMonoBehaviour
     {
         public enum Status
         {

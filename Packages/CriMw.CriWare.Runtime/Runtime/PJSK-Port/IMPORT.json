@@ -289,5 +289,61 @@
    "AudioTrack",
    "SubtitleCallbackFromNativeDelegate"
   ]
- }
+ },
+ "gakumasMembersAdded": {
+  "CriWare.CriAtomListener": 1,
+  "CriWare.CriAtomExAcbLoader": 17,
+  "CriWare.CriFsPlugin": 11,
+  "CriWare.CriFsServer": 15,
+  "CriWare.CriAtomExPlayer": 168,
+  "CriWare.CriFsBinder": 25,
+  "CriWare.CriAtomExLatencyEstimator": 2,
+  "CriWare.CriAtomEx": 62,
+  "CriWare.CriManaConfig": 1,
+  "CriWare.CriAtom": 34,
+  "CriWare.CriManaMovieMaterialBase": 1,
+  "CriWare.Common": 11,
+  "CriWare.CriAtomEx3dSource": 32,
+  "CriWare.CriAtomPlugin": 21,
+  "CriWare.CriWareInitializer": 7,
+  "CriWare.CriManaAmbisonicSource": 1,
+  "CriWare.CriManaMovieMaterial": 1,
+  "CriWare.CriMonoBehaviourManager": 1,
+  "CriWare.CriManaPlugin": 26,
+  "CriWare.CriAtomExOutputAnalyzer": 18,
+  "CriWare.CriFsUtility": 19,
+  "CriWare.CriFsConfig": 1,
+  "CriWare.CriWareErrorHandler": 3,
+  "CriWare.CriAtomConfig": 8,
+  "CriWare.CriAtomExPlayback": 17,
+  "CriWare.CriAtomExAcb": 44,
+  "CriWare.CriAtomRegion": 8,
+  "CriWare.CriAtomExAsr": 45,
+  "CriWare.CriAtomCueSheet": 3,
+  "CriWare.CriAtomEx3dListener": 19,
+  "CriWare.CriAtomExCategory": 93,
+  "CriWare.CriAtomSource": 1,
+  "CriWare.CriAtomEx3dRegion": 4,
+  "CriWare.CriAtomSourceBase": 21,
+  "CriWare.CriManaMoviePlayerHolder": 1,
+  "CriWare.CriAtomServer": 3,
+  "CriWare.CriMana.FrameInfo": 1,
+  "CriWare.CriMana.MovieInfo": 2,
+  "CriWare.CriMana.Player": 103,
+  "CriWare.CriMana.Detail.RendererResource": 2,
+  "CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuvRawData": 1,
+  "CriWare.CriMana.Detail.RendererResourceFactory": 1
+ },
+ "gakumasMembersSkipped": [
+  [
+   "CriWare.CriAtomExAcbLoader",
+   "Dispose",
+   "port base class differs"
+  ],
+  [
+   "CriWare.CriAtomExAsr",
+   "CriAtomExAsr",
+   "port class is static"
+  ]
+ ]
 }

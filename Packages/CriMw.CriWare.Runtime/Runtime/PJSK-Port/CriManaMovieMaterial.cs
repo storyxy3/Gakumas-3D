@@ -6,7 +6,7 @@ namespace CriWare
 {
     // CriWare.CriManaMovieMaterialBase (TypeDefIndex 31865): owns a CriMana.Player and keeps its movie material
     // updated; StreamingLive drives it manually (MovieMaterialPlayer: PlayerManualInitialize/Setup/Update/Finalize).
-    public abstract class CriManaMovieMaterialBase : CriMonoBehaviour
+    public abstract partial class CriManaMovieMaterialBase : CriMonoBehaviour
     {
         public enum MaxFrameDrop
         {
@@ -333,7 +333,7 @@ namespace CriWare
 
     // CriWare.CriManaMovieMaterial (TypeDefIndex 31860).
     [AddComponentMenu("CRIWARE/CriManaMovieMaterial")]
-    public class CriManaMovieMaterial : CriManaMovieMaterialBase
+    public partial class CriManaMovieMaterial : CriManaMovieMaterialBase
     {
         [SerializeField]
         private string _moviePath;
@@ -513,7 +513,7 @@ namespace CriWare
 
     // CriWare.CriManaMoviePlayerHolder (TypeDefIndex 31866): the "CriManaMovieResources" object each player creates;
     // it outlives the player for the native destroy frames.
-    public class CriManaMoviePlayerHolder : CriMonoBehaviour
+    public partial class CriManaMoviePlayerHolder : CriMonoBehaviour
     {
         private Player _player;
 
@@ -541,7 +541,7 @@ namespace CriWare
     }
 
     // CriWare.CriManaAmbisonicSource (TypeDefIndex 31857): turns the player's ambisonics 3D source with its transform.
-    public class CriManaAmbisonicSource : CriMonoBehaviour
+    public partial class CriManaAmbisonicSource : CriMonoBehaviour
     {
         private CriAtomEx3dSource atomEx3DsourceForAmbisonics;
         private Vector3 ambisonicSourceOrientationFront;

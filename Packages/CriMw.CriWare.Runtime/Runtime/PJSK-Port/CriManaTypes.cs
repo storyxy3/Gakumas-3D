@@ -33,7 +33,7 @@ namespace CriWare.CriMana
     // CriWare.CriMana.MovieInfo (TypeDefIndex 31949): filled by the native player (criManaUnityPlayer_GetMovieInfo).
     [Serializable]
     [StructLayout(LayoutKind.Sequential)]
-    public class MovieInfo
+    public partial class MovieInfo
     {
         internal uint _reserved1;
         public uint numAlphaStreams;
@@ -56,7 +56,7 @@ namespace CriWare.CriMana
 
     // CriWare.CriMana.FrameInfo (TypeDefIndex 31950): filled by the native player for each decoded frame.
     [StructLayout(LayoutKind.Sequential)]
-    public class FrameInfo
+    public partial class FrameInfo
     {
         public int frameNo;
         public int frameNoPerFile;

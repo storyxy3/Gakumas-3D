@@ -1,0 +1,41 @@
+// Gakumas (CriWare 2.44.49) members missing from the PJSK port, copied from the DummyDll skeleton.
+// TODO(qa-recon): bodies are skeleton placeholders until reconstructed from the game.
+#pragma warning disable 0067, 0169, 0414, 0649
+using AOT;
+using System;
+using UnityEngine.Scripting;
+using UnityEngine;
+using global::CriWare;
+using global::System;
+
+namespace CriWare
+{
+    public partial class CriAtomConfig
+    {
+
+        public bool switch2InitializeSocket;
+
+
+        public bool enableAtomSoundDisabledMode;
+
+
+        public bool enableAtomSoundDisabledModeLinux;
+
+
+        public bool iosEnableOSNotificationHandling;
+
+
+        public int ps5Mp3StreamingVoices;
+
+
+        public Switch2OpusVoicePoolConfig switch2OpusVoicePoolConfig;
+
+
+        public int ps4Mp3StreamingVoices;
+
+
+        public CriAtomConfig()
+        {
+        }
+    }
+}

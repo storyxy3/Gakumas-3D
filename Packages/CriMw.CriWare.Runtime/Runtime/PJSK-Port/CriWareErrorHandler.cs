@@ -6,7 +6,7 @@ namespace CriWare
 {
     // CriWare.CriWareErrorHandler (TypeDefIndex 31874), added by CP.CRI.CriCore.Setup next to the initializer.
     [AddComponentMenu("CRIWARE/Error Handler")]
-    public class CriWareErrorHandler : CriMonoBehaviour
+    public partial class CriWareErrorHandler : CriMonoBehaviour
     {
         public delegate void Callback(string message);
 

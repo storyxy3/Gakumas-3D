@@ -5,7 +5,7 @@ namespace CriWare
 {
     // CriWare.CriAtomListener (TypeDefIndex 31667; 0x66a66b4..0x66a84d4).
     [AddComponentMenu("CRIWARE/CRI Atom Listener")]
-    public class CriAtomListener : CriMonoBehaviour
+    public partial class CriAtomListener : CriMonoBehaviour
     {
         [SerializeField] private CriAtomRegion regionOnStart;
         public bool activateListenerOnEnable;

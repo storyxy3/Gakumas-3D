@@ -5,7 +5,7 @@ namespace CriWare
 {
     // CriWare.CriAtomExAcb (TypeDefIndex 31751): a loaded cue sheet. LoadAcbData pins the ACB bytes for the life of
     // the handle.
-    public class CriAtomExAcb : CriDisposable
+    public partial class CriAtomExAcb : CriDisposable
     {
         private IntPtr handle;
         private GCHandle dataHandle;

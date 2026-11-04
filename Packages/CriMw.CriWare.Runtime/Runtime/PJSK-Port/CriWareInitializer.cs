@@ -6,7 +6,7 @@ namespace CriWare
     // CriWare.CriWareInitializer (TypeDefIndex 31900), on the APK boot prefab (fs 64 loaders, atom 32 virtual voices,
     // 16+8 standard voices, 60 Hz server, native renderer; mana 32 decoders; no decrypter).
     [AddComponentMenu("CRIWARE/Library Initializer")]
-    public class CriWareInitializer : CriMonoBehaviour
+    public partial class CriWareInitializer : CriMonoBehaviour
     {
         public bool initializesFileSystem = true;
         public CriFsConfig fileSystemConfig = new CriFsConfig();

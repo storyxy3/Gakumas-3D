@@ -15,7 +15,7 @@ namespace CriWare
     }
 
     // CriWare.CriAtomExLatencyEstimator: the Android latency estimator, finalized before the Atom library.
-    public static class CriAtomExLatencyEstimator
+    public static partial class CriAtomExLatencyEstimator
     {
         public enum Status
         {

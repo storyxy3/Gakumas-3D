@@ -30,7 +30,7 @@ namespace CriWare
     }
 
     // CriWare.CriMonoBehaviourManager (TypeDefIndex 31926), on the "CRIWARE" manager object.
-    public class CriMonoBehaviourManager : MonoBehaviour
+    public partial class CriMonoBehaviourManager : MonoBehaviour
     {
         private static CriMonoBehaviourManager _instance;
         private static List<CriMonoBehaviour> criMonoBehaviourList = new List<CriMonoBehaviour>();

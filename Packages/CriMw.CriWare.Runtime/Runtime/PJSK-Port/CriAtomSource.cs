@@ -5,7 +5,7 @@ namespace CriWare
 {
     // CriWare.CriAtomSource (TypeDefIndex 31676).
     [AddComponentMenu("CRIWARE/CRI Atom Source")]
-    public class CriAtomSource : CriAtomSourceBase
+    public partial class CriAtomSource : CriAtomSourceBase
     {
         [SerializeField]
         private string _cueName = "";

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace CriWare
 {
     // CriWare.CriAtomEx3dSource (TypeDefIndex 31744): created by every CriAtomSource.
-    public class CriAtomEx3dSource : CriDisposable
+    public partial class CriAtomEx3dSource : CriDisposable
     {
         public struct Config
         {
@@ -115,7 +115,7 @@ namespace CriWare
     }
 
     // CriWare.CriAtomEx3dListener (TypeDefIndex 31742): CriAtomListener's dummy native listener.
-    public class CriAtomEx3dListener : CriDisposable
+    public partial class CriAtomEx3dListener : CriDisposable
     {
         public struct Config
         {
@@ -212,7 +212,7 @@ namespace CriWare
     // touches are declared.
     [AddComponentMenu("CRIWARE/CRI Atom Region")]
     [DisallowMultipleComponent]
-    public class CriAtomRegion : CriMonoBehaviour
+    public partial class CriAtomRegion : CriMonoBehaviour
     {
         public CriAtomEx3dRegion region3dHn { get; private set; }
         internal List<CriAtomSourceBase> referringSources = new List<CriAtomSourceBase>();

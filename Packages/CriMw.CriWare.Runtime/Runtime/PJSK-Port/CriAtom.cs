@@ -7,7 +7,7 @@ namespace CriWare
 {
     // CriWare.CriAtomCueSheet (TypeDefIndex 31666).
     [Serializable]
-    public class CriAtomCueSheet
+    public partial class CriAtomCueSheet
     {
         public string name = "";
         public string acbFile = "";

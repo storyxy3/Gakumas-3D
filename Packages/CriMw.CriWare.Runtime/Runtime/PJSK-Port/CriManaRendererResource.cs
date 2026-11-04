@@ -34,7 +34,7 @@ namespace CriWare.CriMana.Detail
 
     // CriWare.CriMana.Detail.RendererResource (TypeDefIndex 31976): the textures and material setup of one movie
     // player; the native player decodes into the native textures on the render thread.
-    public abstract class RendererResource : IDisposable
+    public abstract partial class RendererResource : IDisposable
     {
         private bool disposed;
         protected Shader shader;
@@ -999,7 +999,7 @@ namespace CriWare.CriMana.Detail
 
     // JP7 RVAs 0x66EB308, 0x66EF330..0x66EFE2C. This factory is shadowed by
     // LegacyGles2 on Android. Its CPU upload path uses one texture set in JP7.
-    public class RendererResourceSofdecPrimeYuvRawData : RendererResource
+    public partial class RendererResourceSofdecPrimeYuvRawData : RendererResource
     {
         private int width, height, chromaWidth, chromaHeight, alphaWidth, alphaHeight;
         private bool useUserShader;

@@ -3,7 +3,7 @@ using UnityEngine;
 namespace CriWare
 {
     // CriWare.CriFsPlugin (TypeDefIndex 31848), the members on the library initialization path.
-    public static class CriFsPlugin
+    public static partial class CriFsPlugin
     {
         private static int initializationCount = 0;
         private static bool isConfigured = false;
@@ -73,7 +73,7 @@ namespace CriWare
     }
 
     // CriWare.CriFsUtility: the user agent setter used by CriWareInitializer.
-    public static class CriFsUtility
+    public static partial class CriFsUtility
     {
         public static bool SetUserAgentString(string userAgentString)
         {
@@ -86,7 +86,7 @@ namespace CriWare
 
     // CriWare.CriFsServer: only DestroyInstance is on the StreamingLive paths (the server is created lazily by the file
     // system request API, which is not used there).
-    public class CriFsServer : CriMonoBehaviour
+    public partial class CriFsServer : CriMonoBehaviour
     {
         private static CriFsServer _instance;
 

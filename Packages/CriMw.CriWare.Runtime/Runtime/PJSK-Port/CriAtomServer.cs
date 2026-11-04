@@ -4,7 +4,7 @@ namespace CriWare
 {
     // CriWare.CriAtomServer (TypeDefIndex 31674), on the "CRIWARE" manager object: dispatches the queued native
     // callbacks every frame and forwards application pause according to the platform's native wrapper.
-    public class CriAtomServer : CriMonoBehaviour
+    public partial class CriAtomServer : CriMonoBehaviour
     {
         private static CriAtomServer _instance;
         public Action<bool> onApplicationPausePreProcess;

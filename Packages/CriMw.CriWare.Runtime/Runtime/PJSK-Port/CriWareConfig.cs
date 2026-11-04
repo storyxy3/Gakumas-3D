@@ -4,7 +4,7 @@ namespace CriWare
 {
     // CriWare.CriFsConfig (TypeDefIndex 31879).
     [Serializable]
-    public class CriFsConfig
+    public partial class CriFsConfig
     {
         public const int defaultAndroidDeviceReadBitrate = 50000000;
         public int numberOfLoaders = 16;
@@ -184,7 +184,7 @@ namespace CriWare
 
     // CriWare.CriManaConfig (TypeDefIndex 31899).
     [Serializable]
-    public class CriManaConfig
+    public partial class CriManaConfig
     {
         [Serializable]
         public class PCH264PlaybackConfig
