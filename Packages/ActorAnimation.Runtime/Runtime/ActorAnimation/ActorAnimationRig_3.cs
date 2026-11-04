@@ -22,7 +22,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.constraintTransformBones;
             }
         }
 
@@ -30,7 +30,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverRotationBones;
             }
         }
 
@@ -38,7 +38,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverFrillBones;
             }
         }
 
@@ -46,7 +46,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverSkirtBones;
             }
         }
 
@@ -54,7 +54,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverHairBones;
             }
         }
 
@@ -62,7 +62,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverHumanoidHandBones;
             }
         }
 
@@ -70,7 +70,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverHumanoidSleeveBones;
             }
         }
 
@@ -78,7 +78,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverHumanoidUpLegBones;
             }
         }
 
@@ -86,7 +86,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverHumanoidArmBones;
             }
         }
 
@@ -94,7 +94,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverWaistBones;
             }
         }
 
@@ -102,7 +102,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverFurisodeBones;
             }
         }
 
@@ -110,7 +110,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.quartzDriverPonchoBones;
             }
         }
 
@@ -118,7 +118,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.swingDynamicBones;
             }
         }
 
@@ -126,7 +126,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.swingStaticBones;
             }
         }
 
@@ -134,7 +134,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return data.swingBreastBones;
             }
         }
 
@@ -142,7 +142,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return isInitialized ? _job : null;
             }
         }
 
@@ -150,7 +150,7 @@ namespace ActorAnimation
         {
             get
             {
-                return null;
+                return isInitialized ? _animator : null;
             }
         }
 
@@ -159,58 +159,93 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisInitialized_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CisInitialized_003Ek__BackingField = value;
             }
         }
 
         private void OnEnable()
         {
+            onAddRig?.Invoke(this);
         }
 
         private void OnDisable()
         {
+            onRemoveRig?.Invoke(this);
         }
 
         public void UpdateRig()
         {
+            UpdateManageProperty(animator);
+            if (isInitialized) UpdateJob(_job);
         }
 
         public void Clear()
         {
+            data.Clear();
         }
 
         public bool Initialize(Animator animator)
         {
-            return default(bool);
+            if (!isInitialized)
+            {
+                _animator = animator;
+                _job = CreateJob(animator);
+                UpdateManageProperty(animator);
+                isInitialized = true;
+            }
+            return true;
         }
 
         public void Destroy()
         {
+            if (isInitialized)
+            {
+                if (_job != null) DestroyJob(_job);
+                _job = null;
+                isInitialized = false;
+            }
         }
 
         public void UpdateManageProperty(Animator animator)
         {
+            if (manageData == null && animator != null)
+            {
+                var cameras = Camera.allCameras;
+                for (int i = 0; i < Camera.allCamerasCount; i++)
+                {
+                    if (cameras[i].TryGetComponent(out manageData) && _job is IActorAnimationJob animationJob)
+                    {
+                        animationJob.UpdateManageProperty(ActorAnimationManageProperty.Bind(animator, manageData));
+                        return;
+                    }
+                }
+            }
         }
 
         public void UpdateConstraints()
         {
+            if (isInitialized) UpdateJob(_job);
         }
 
         public void UpdateConstraintSource(Animator animator)
         {
+            ( _job as IActorAnimationJob).UpdateConstraintSource(ref data, animator);
         }
 
         public void UpdateSwing()
         {
+            if (isInitialized) UpdateJob(_job);
         }
 
         public void SetRootTransform(Transform root)
         {
+            data.root = root;
         }
 
         public virtual void SetInactiveBones(IEnumerable<int> inactiveBones)
@@ -223,7 +258,6 @@ namespace ActorAnimation
 
         public new void Reset()
         {
-            // TODO(qa-recon): ResetDynamicBone and ResetBreastBone remain outside the selected census.
             ResetDynamicBone();
             ResetBreastBone();
         }

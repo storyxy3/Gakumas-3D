@@ -13,7 +13,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]

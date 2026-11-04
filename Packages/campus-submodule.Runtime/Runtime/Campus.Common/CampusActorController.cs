@@ -1034,6 +1034,17 @@ namespace Campus.Common
 
         private void SetupPropConstraintSource(ActorAnimationConstraintTransformBone transformConstraint, string[] constraintTargets, bool isAdaptScale)
         {
+            transformConstraint.ClearCharacterSource();
+            transformConstraint.ClearOffset();
+            foreach (var target in constraintTargets)
+            {
+                if (TryGetBoneTransformByName(target, out var bone)) transformConstraint.AddSource(bone);
+                else UnityEngine.Debug.LogError("コンストレイント先が見つかりませんでした");
+                float scale = isAdaptScale ? GetHumanScale() / HeightCoefficient : 1f;
+                transformConstraint.offsetScale = new float3(scale);
+                transformConstraint.constraintWeight0 = new float3(1f);
+            }
+            transformConstraint.SetDirty();
         }
 
         public void SetPropFieldConstraintTarget(string propName, GameObject fieldConstraintTarget)
@@ -1054,15 +1065,42 @@ namespace Campus.Common
         [ContextMenu("SetupAllIKGoalToOverrideTarget")]
         public void SetupAllIKGoalToOverrideTarget()
         {
+            for (int i = 0; i < _children.Count; i++)
+            {
+                if (_children[i].TryGetComponent<CampusActorAnimationFullBodyIKOverrideSettingHolder>(out var holder))
+                {
+                    _effectors = holder.OverrideEffectorBases(_effectors);
+                    foreach (var effector in _effectors)
+                    {
+                        if (effector is IKGoalEffector goal)
+                        {
+                            _actorAnimation.DisableIKGoalForOverride(goal.goal);
+                            _actorAnimation.SetupIKGoalForOverride(_animator, goal.transform, goal.goal, goal.HandleType);
+                        }
+                    }
+                }
+            }
         }
 
         [ContextMenu("ResetAllIKGoalToOriginalTarget")]
         public void ResetAllIKGoalToOriginalTarget()
         {
+            ResetIKGoalToOriginalTarget(AvatarIKGoal.LeftHand);
+            ResetIKGoalToOriginalTarget(AvatarIKGoal.RightHand);
+            ResetIKGoalToOriginalTarget(AvatarIKGoal.LeftFoot);
+            ResetIKGoalToOriginalTarget(AvatarIKGoal.RightFoot);
         }
 
         public void ResetIKGoalToOriginalTarget(AvatarIKGoal ikGoal)
         {
+            foreach (var effector in _originalEffectors)
+            {
+                if (effector is IKGoalEffector goal && goal.goal == ikGoal)
+                {
+                    _actorAnimation.DisableIKGoalForOverride(ikGoal);
+                    _actorAnimation.SetupIKGoalForOverride(_animator, goal.transform, goal.goal, goal.HandleType);
+                }
+            }
         }
 
         private void OnClipPlay(LayerParam layerParam, ClipParam clipParam, in FrameData info)

@@ -37,6 +37,13 @@ namespace ActorAnimation
 
         public void Destroy(PlayableGraph graph)
         {
+            if (_syncLayerPlayable.IsValid()) _syncLayerPlayable.Destroy();
+            if (_playable.IsValid()) _playable.Destroy();
+            if (graph.IsValid())
+            {
+                if (_syncLayerOutput.IsOutputValid()) graph.DestroyOutput(_syncLayerOutput);
+                if (_output.IsOutputValid()) graph.DestroyOutput(_output);
+            }
         }
 
         public ActorAnimationBuilder()

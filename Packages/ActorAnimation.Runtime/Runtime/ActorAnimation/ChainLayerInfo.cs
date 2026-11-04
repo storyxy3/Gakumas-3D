@@ -24,12 +24,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(short);
+                return _003ChierarchyDepth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003ChierarchyDepth_003Ek__BackingField = value;
             }
         }
 
@@ -38,12 +39,13 @@ namespace ActorAnimation
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisDirty_003Ek__BackingField = value;
             }
         }
 
@@ -60,10 +62,12 @@ namespace ActorAnimation
 
         public void SetHierarchyDepth(int depth)
         {
+            hierarchyDepth = (short)depth;
         }
 
         public void ResetDirty()
         {
+            isDirty = false;
         }
 
         public int CompareTo(ChainLayerInfo other)
