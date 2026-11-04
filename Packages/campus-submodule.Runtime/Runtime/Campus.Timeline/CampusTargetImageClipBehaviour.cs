@@ -8,9 +8,9 @@ namespace Campus.Timeline
     public class CampusTargetImageClipBehaviour : PlayableBehaviour
     {
         public Transform trackingTarget;
-        public float alpha;
+        public float alpha = 1f;
         public Vector2 center;
-        public float scale;
+        public float scale = 1f;
         public CampusTargetImageClipBehaviour()
         {
         }

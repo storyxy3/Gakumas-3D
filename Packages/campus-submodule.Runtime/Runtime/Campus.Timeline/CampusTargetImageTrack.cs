@@ -15,11 +15,12 @@ namespace Campus.Timeline
     {
         public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            return ScriptPlayable<CampusTargetImageTrackBehaviour>.Create(graph, inputCount);
         }
 
         public override void GatherProperties(PlayableDirector director, IPropertyCollector driver)
         {
+            base.GatherProperties(director, driver);
         }
 
         public CampusTargetImageTrack()

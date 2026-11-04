@@ -10,14 +10,17 @@ namespace Campus.Timeline
         public double startTime;
         public void SetVolumeWeight(float weight)
         {
+            if (volume != null) volume.weight = weight;
         }
 
         public void OffsetVolumePriority(float offset)
         {
+            if (volume != null) volume.priority = initialVolumePriority + offset;
         }
 
         public void ResetVolumePriority()
         {
+            if (volume != null) volume.priority = initialVolumePriority;
         }
 
         public CampusVolumeTimelineBehaviour()

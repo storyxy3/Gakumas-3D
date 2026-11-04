@@ -12,13 +12,13 @@ namespace Campus.Timeline
         {
             get
             {
-                return default(ClipCaps);
+                return ClipCaps.Looping;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
         {
-            return default(Playable);
+            return Playable.Create(graph);
         }
 
         public CampusVideoPlayerClip()

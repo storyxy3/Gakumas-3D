@@ -7,18 +7,18 @@ namespace Campus.Timeline
 
     public class CampusSubTitleTimelineAsset : PlayableAsset, ITimelineClipAsset
     {
-        public CampusSubtitleBehaviour behaviour;
+        public CampusSubtitleBehaviour behaviour = new CampusSubtitleBehaviour();
         public ClipCaps clipCaps
         {
             get
             {
-                return default(ClipCaps);
+                return ClipCaps.ClipIn;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            return ScriptPlayable<CampusSubtitleBehaviour>.Create(graph, behaviour);
         }
 
         public CampusSubTitleTimelineAsset()

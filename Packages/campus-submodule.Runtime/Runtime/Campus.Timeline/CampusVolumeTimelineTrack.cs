@@ -12,12 +12,17 @@ namespace Campus.Timeline
     {
         public override Playable CreateTrackMixer(PlayableGraph graph, GameObject go, int inputCount)
         {
-            return default(Playable);
+            return ScriptPlayable<CampusVolumeTimelineMixerBehaviour>.Create(graph, inputCount);
         }
 
         protected override Playable CreatePlayable(PlayableGraph graph, GameObject gameObject, TimelineClip clip)
         {
-            return default(Playable);
+            var asset = clip.asset as CampusVolumeTimelineAsset;
+            if (asset == null) return Playable.Null;
+            asset.startTime = clip.start;
+            var volume = asset.volume.Resolve(graph.GetResolver());
+            if (volume != null) asset.initialVolumePriority = volume.priority;
+            return base.CreatePlayable(graph, gameObject, clip);
         }
 
         public CampusVolumeTimelineTrack()

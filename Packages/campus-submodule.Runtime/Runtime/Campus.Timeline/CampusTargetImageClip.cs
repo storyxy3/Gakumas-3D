@@ -11,18 +11,19 @@ namespace Campus.Timeline
     {
         [SerializeField]
         public ExposedReference<Transform> trackingTargetReference;
-        public CampusTargetImageClipBehaviour behaviour;
+        public CampusTargetImageClipBehaviour behaviour = new CampusTargetImageClipBehaviour();
         public ClipCaps clipCaps
         {
             get
             {
-                return default(ClipCaps);
+                return ClipCaps.None;
             }
         }
 
         public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
         {
-            return default(Playable);
+            behaviour.trackingTarget = trackingTargetReference.Resolve(graph.GetResolver());
+            return ScriptPlayable<CampusTargetImageClipBehaviour>.Create(graph, behaviour);
         }
 
         public CampusTargetImageClip()

@@ -11,6 +11,9 @@ namespace Campus.Timeline
     {
         public override void GatherProperties(PlayableDirector director, IPropertyCollector driver)
         {
+            var text = director.GetGenericBinding(this) as global::TMPro.TMP_Text;
+            if (text != null) driver.AddFromName<global::TMPro.TMP_Text>(text.gameObject, "m_text");
+            base.GatherProperties(director, driver);
         }
 
         public CampusSubtitleTrack()

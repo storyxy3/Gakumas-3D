@@ -8,6 +8,7 @@ namespace Campus.Timeline
         public CampusBpmInfo bpmInfo;
         public override void PrepareFrame(Playable playable, FrameData info)
         {
+            bpmInfo?.SetTime((float)playable.GetTime());
         }
 
         public CampusBpmTimelineMixer()

@@ -12,7 +12,7 @@ namespace Campus.Timeline
         public CampusBpmTimelineBehaviour behaviour;
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            return Playable.Null;
         }
 
         public CampusBpmTimelineAsset()

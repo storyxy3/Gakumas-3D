@@ -8,7 +8,8 @@ namespace Campus.Timeline
         public ExposedReference<PlayableDirector> directorReference;
         public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
         {
-            return default(Playable);
+            var director = directorReference.Resolve(graph.GetResolver());
+            return director == null ? Playable.Null : global::UnityEngine.Timeline.DirectorControlPlayable.Create(graph, director);
         }
 
         public CampusDirectorControlAsset()

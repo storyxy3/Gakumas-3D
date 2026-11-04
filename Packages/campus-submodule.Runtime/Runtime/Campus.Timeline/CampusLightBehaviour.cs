@@ -14,28 +14,29 @@ namespace Campus.Timeline
         [NonSerialized]
         [CanBeNull]
         public Transform anchor;
-        public bool controlTransform;
+        public bool controlTransform = true;
         public Vector3 anchorOffset;
         public float yaw;
-        public float pitch;
+        public float pitch = 90f;
         public float roll;
         [Min(0f)]
-        public float distance;
+        public float distance = 5f;
         public bool useCamera;
         public CampusTransformAnchor.UpDirection upDirection;
         [ColorUsage(false)]
-        public Color color;
-        public float intensity;
-        public float range;
+        public Color color = Color.white;
+        public float intensity = 20f;
+        public float range = 10f;
         public bool useShadow;
         [Range(0f, 1f)]
         public float shadowStrength;
         [Range(0f, 180f)]
-        public float spotAngle;
+        public float spotAngle = 45f;
         [Range(0f, 1f)]
-        public float innerSpotAngleRatio;
+        public float innerSpotAngleRatio = 0.5f;
         public override void OnPlayableCreate(Playable playable)
         {
+            anchor = _anchorReference.Resolve(playable.GetGraph().GetResolver());
         }
 
         public CampusLightBehaviour()

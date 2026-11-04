@@ -10,20 +10,24 @@ namespace Campus.Timeline
         private float _time;
         public CampusBpmInfo(AnimationCurve bpmCurve, AnimationCurve beatNumeratorCurve, AnimationCurve beatDenominatorCurve)
         {
+            BpmCurve = bpmCurve;
+            this.beatDenominatorCurve = beatDenominatorCurve;
+            this.beatNumeratorCurve = beatNumeratorCurve;
         }
 
         public void SetTime(float time)
         {
+            _time = time;
         }
 
         public float EvaluateBpm()
         {
-            return default(float);
+            return BpmCurve.Evaluate(_time);
         }
 
         public float EvaluateBpmAtTime(float time)
         {
-            return default(float);
+            return BpmCurve.Evaluate(time);
         }
     }
 }
