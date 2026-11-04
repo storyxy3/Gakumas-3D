@@ -1,16 +1,16 @@
 {
-  "project_commit": "5919a931532783d18b6f09d87e589ea6f2fa4815",
-  "fork_commit": "f6ba270eafd5e0eac86669559af0a0e0cc1a6e70",
+  "project_commit": "a5a8ea3a633aad7d6c5ae02812410d5f36e73abc",
+  "fork_commit": "03f6b35f92be52d98a11ab58a15452ff416da537",
   "artifacts": {
     "libil2cpp.so": {
       "path": "Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so",
-      "sha256": "26e9b9f550bfcbd3beb06dd795bcaba4bc58fd80452453cf4e606382acc5e9e9",
-      "size": 62351424
+      "sha256": "6cb006322125b56d6e9ef32326bf935afcf66b1631461386fe533685cabd2255",
+      "size": 90013328
     },
     "global-metadata.dat": {
       "path": "Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat",
-      "sha256": "17adb230d790940c169c2bd39ffa4993e386cf51385c7c1c329d409b17881410",
-      "size": 10631788
+      "sha256": "2c6cb512769a62cbbe5bfb97f3c781f37d8ba732638664f4182a9ed2c19ade2e",
+      "size": 12579048
     }
   }
 }

@@ -4,9 +4,9 @@ Original: `/data/xy/gakumas/work/il2cpp-3.5.3/dump.cs`
 SHA-256: `4bdd8715472c84f81f895f2fb373c724c787da3afc7a0c5b1e539a04c4387c46`
 
 Build: `/data/xy/gakumas/live-urp/.recon/live-dump/dump.cs`
-SHA-256: `b78cea3e9774d581a7596233125bfb7ff8d03a4dc528c337c0432056cb69821f`
+SHA-256: `2fa6ec978b0b08070326ac01688904896ae49ffeec417e15bb3e78e7db3e7c8c`
 
-Assembly selection: `^(?:ActorAnimation\.Runtime\.dll&#124;AmplifyOcclusion\.Runtime\.dll&#124;Cinemachine\.dll&#124;CriMw\.CriWare\.Runtime\.dll&#124;DOTween\.dll&#124;Mono\.Security\.dll&#124;Octo\.dll&#124;ProFlare\.Runtime\.dll&#124;Qua\.Base\.Runtime\.dll&#124;Qua\.PolygonUtility\.dll&#124;Qua\.Utility\.dll&#124;Qua\.VectorUI\.Runtime\.dll&#124;System\.Configuration\.dll&#124;System\.Core\.dll&#124;System\.Xml\.dll&#124;System\.dll&#124;Titan\.Runtime\.dll&#124;Uguiss\-Timeline\.Runtime\.dll&#124;Uguiss\.Runtime\.dll&#124;UniRx\.dll&#124;UniTask\.Linq\.dll&#124;UniTask\.dll&#124;Unity\.Animation\.Rigging\.dll&#124;Unity\.Burst\.Unsafe\.dll&#124;Unity\.Burst\.dll&#124;Unity\.Collections\.LowLevel\.ILSupport\.dll&#124;Unity\.Collections\.dll&#124;Unity\.Mathematics\.dll&#124;Unity\.Profiling\.Core\.dll&#124;Unity\.RenderPipeline\.Universal\.ShaderLibrary\.dll&#124;Unity\.RenderPipelines\.Core\.Runtime\.dll&#124;Unity\.RenderPipelines\.Universal\.Runtime\.dll&#124;Unity\.TextMeshPro\.dll&#124;Unity\.Timeline\.dll&#124;Unity\.VisualEffectGraph\.Runtime\.dll&#124;UnityEngine\.AIModule\.dll&#124;UnityEngine\.AndroidJNIModule\.dll&#124;UnityEngine\.AnimationModule\.dll&#124;UnityEngine\.AssetBundleModule\.dll&#124;UnityEngine\.AudioModule\.dll&#124;UnityEngine\.CoreModule\.dll&#124;UnityEngine\.DirectorModule\.dll&#124;UnityEngine\.GridModule\.dll&#124;UnityEngine\.HierarchyCoreModule\.dll&#124;UnityEngine\.IMGUIModule\.dll&#124;UnityEngine\.InputForUIModule\.dll&#124;UnityEngine\.InputLegacyModule\.dll&#124;UnityEngine\.InputModule\.dll&#124;UnityEngine\.ParticleSystemModule\.dll&#124;UnityEngine\.Physics2DModule\.dll&#124;UnityEngine\.PhysicsModule\.dll&#124;UnityEngine\.PropertiesModule\.dll&#124;UnityEngine\.SharedInternalsModule\.dll&#124;UnityEngine\.SpriteShapeModule\.dll&#124;UnityEngine\.SubsystemsModule\.dll&#124;UnityEngine\.TerrainModule\.dll&#124;UnityEngine\.TextCoreFontEngineModule\.dll&#124;UnityEngine\.TextCoreTextEngineModule\.dll&#124;UnityEngine\.TextRenderingModule\.dll&#124;UnityEngine\.TilemapModule\.dll&#124;UnityEngine\.UI\.dll&#124;UnityEngine\.UIElementsModule\.dll&#124;UnityEngine\.UIModule\.dll&#124;UnityEngine\.UnityAnalyticsCommonModule\.dll&#124;UnityEngine\.UnityWebRequestAssetBundleModule\.dll&#124;UnityEngine\.UnityWebRequestModule\.dll&#124;UnityEngine\.VFXModule\.dll&#124;UnityEngine\.VRModule\.dll&#124;UnityEngine\.VideoModule\.dll&#124;UnityEngine\.XRModule\.dll&#124;UnityEngine\.dll&#124;__Generated&#124;campus\-submodule\.Runtime\.dll&#124;campus\-submodule\.Shader\.Runtime\.dll&#124;mscorlib\.dll&#124;netstandard\.dll&#124;quaunity\-crypto\.dll&#124;quaunity\-global\.dll&#124;quaunity\-ui\.Runtime\.dll&#124;quaunity\-volumetriclightbeam\.Runtime\.dll&#124;vl\-unity\.Runtime\.dll)$`
+Assembly selection: `^(?:ActorAnimation\.Runtime\.dll&#124;AmplifyOcclusion\.Runtime\.dll&#124;Cinemachine\.dll&#124;Coffee\.UIParticle\.dll&#124;CriMw\.CriWare\.Runtime\.dll&#124;DOTween\.Modules\.dll&#124;DOTween\.dll&#124;Mono\.Security\.dll&#124;Octo\.dll&#124;ProFlare\.Runtime\.dll&#124;Qua\.Base\.Runtime\.dll&#124;Qua\.PolygonUtility\.dll&#124;Qua\.Utility\.dll&#124;Qua\.VectorUI\.Runtime\.dll&#124;System\.Configuration\.dll&#124;System\.Core\.dll&#124;System\.Numerics\.dll&#124;System\.Xml\.dll&#124;System\.dll&#124;Titan\.Runtime\.dll&#124;Uguiss\-Timeline\.Runtime\.dll&#124;Uguiss\.Runtime\.dll&#124;UniRx\.dll&#124;UniTask\.Linq\.dll&#124;UniTask\.dll&#124;Unity\.Animation\.Rigging\.dll&#124;Unity\.Burst\.Unsafe\.dll&#124;Unity\.Burst\.dll&#124;Unity\.Collections\.LowLevel\.ILSupport\.dll&#124;Unity\.Collections\.dll&#124;Unity\.Mathematics\.dll&#124;Unity\.Profiling\.Core\.dll&#124;Unity\.RenderPipeline\.Universal\.ShaderLibrary\.dll&#124;Unity\.RenderPipelines\.Core\.Runtime\.dll&#124;Unity\.RenderPipelines\.Universal\.Runtime\.dll&#124;Unity\.TextMeshPro\.dll&#124;Unity\.Timeline\.dll&#124;Unity\.VisualEffectGraph\.Runtime\.dll&#124;UnityEngine\.AIModule\.dll&#124;UnityEngine\.AndroidJNIModule\.dll&#124;UnityEngine\.AnimationModule\.dll&#124;UnityEngine\.AssetBundleModule\.dll&#124;UnityEngine\.AudioModule\.dll&#124;UnityEngine\.CoreModule\.dll&#124;UnityEngine\.DirectorModule\.dll&#124;UnityEngine\.GridModule\.dll&#124;UnityEngine\.HierarchyCoreModule\.dll&#124;UnityEngine\.IMGUIModule\.dll&#124;UnityEngine\.InputForUIModule\.dll&#124;UnityEngine\.InputLegacyModule\.dll&#124;UnityEngine\.InputModule\.dll&#124;UnityEngine\.ParticleSystemModule\.dll&#124;UnityEngine\.Physics2DModule\.dll&#124;UnityEngine\.PhysicsModule\.dll&#124;UnityEngine\.PropertiesModule\.dll&#124;UnityEngine\.SharedInternalsModule\.dll&#124;UnityEngine\.SpriteShapeModule\.dll&#124;UnityEngine\.SubsystemsModule\.dll&#124;UnityEngine\.TerrainModule\.dll&#124;UnityEngine\.TextCoreFontEngineModule\.dll&#124;UnityEngine\.TextCoreTextEngineModule\.dll&#124;UnityEngine\.TextRenderingModule\.dll&#124;UnityEngine\.TilemapModule\.dll&#124;UnityEngine\.UI\.dll&#124;UnityEngine\.UIElementsModule\.dll&#124;UnityEngine\.UIModule\.dll&#124;UnityEngine\.UnityAnalyticsCommonModule\.dll&#124;UnityEngine\.UnityWebRequestAssetBundleModule\.dll&#124;UnityEngine\.UnityWebRequestModule\.dll&#124;UnityEngine\.UnityWebRequestWWWModule\.dll&#124;UnityEngine\.VFXModule\.dll&#124;UnityEngine\.VRModule\.dll&#124;UnityEngine\.VideoModule\.dll&#124;UnityEngine\.XRModule\.dll&#124;UnityEngine\.dll&#124;__Generated&#124;campus\-submodule\.Runtime\.dll&#124;campus\-submodule\.Shader\.Runtime\.dll&#124;mscorlib\.dll&#124;netstandard\.dll&#124;quaunity\-crypto\.dll&#124;quaunity\-global\.dll&#124;quaunity\-ui\.Runtime\.dll&#124;quaunity\-volumetriclightbeam\.Runtime\.dll&#124;vl\-unity\.Runtime\.dll)$`
 
 Names are matched exactly within each assembly, including nested and compiler-generated types. Matching means equal type kind/base declarations and declared field names, types, order, storage kind and available offsets. Instance, static and thread-static offsets belong to separate storage areas; constants have no storage. Missing/extra types remain visible; stripping and compiler-generated renaming can cause these outcomes.
 
@@ -16,10 +16,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `ActorAnimation.Runtime.dll` | 163 | 0 | 1 | 0 | 5 |
 | `AmplifyOcclusion.Runtime.dll` | 18 | 0 | 0 | 0 | 5 |
-| `Cinemachine.dll` | 177 | 6 | 0 | 1 | 12 |
-| `CriMw.CriWare.Runtime.dll` | 343 | 0 | 1 | 0 | 3 |
-| `DOTween.dll` | 139 | 0 | 1 | 0 | 5 |
-| `Mono.Security.dll` | 5 | 0 | 0 | 80 | 0 |
+| `Cinemachine.dll` | 178 | 6 | 0 | 0 | 11 |
+| `Coffee.UIParticle.dll` | 20 | 0 | 0 | 0 | 6 |
+| `CriMw.CriWare.Runtime.dll` | 310 | 28 | 0 | 6 | 131 |
+| `DOTween.Modules.dll` | 33 | 0 | 0 | 0 | 64 |
+| `DOTween.dll` | 121 | 17 | 0 | 2 | 66 |
+| `Mono.Security.dll` | 85 | 0 | 0 | 0 | 0 |
 | `Octo.dll` | 209 | 4 | 40 | 0 | 5 |
 | `ProFlare.Runtime.dll` | 27 | 0 | 0 | 0 | 5 |
 | `Qua.Base.Runtime.dll` | 12 | 1 | 0 | 0 | 5 |
@@ -27,34 +29,35 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 | `Qua.Utility.dll` | 25 | 0 | 8 | 0 | 5 |
 | `Qua.VectorUI.Runtime.dll` | 29 | 0 | 4 | 0 | 5 |
 | `System.Configuration.dll` | 0 | 0 | 0 | 0 | 10 |
-| `System.Core.dll` | 12 | 0 | 25 | 666 | 0 |
+| `System.Core.dll` | 27 | 0 | 29 | 647 | 1 |
+| `System.Numerics.dll` | 10 | 0 | 0 | 3 | 0 |
 | `System.Xml.dll` | 1 | 2 | 0 | 666 | 0 |
-| `System.dll` | 124 | 10 | 9 | 620 | 20 |
+| `System.dll` | 524 | 11 | 17 | 211 | 20 |
 | `Titan.Runtime.dll` | 286 | 0 | 24 | 0 | 5 |
 | `Uguiss-Timeline.Runtime.dll` | 60 | 0 | 3 | 0 | 3 |
 | `Uguiss.Runtime.dll` | 81 | 0 | 2 | 0 | 3 |
-| `UniRx.dll` | 154 | 0 | 145 | 0 | 5 |
-| `UniTask.Linq.dll` | 5 | 0 | 3 | 0 | 5 |
-| `UniTask.dll` | 296 | 0 | 64 | 0 | 5 |
-| `Unity.Animation.Rigging.dll` | 44 | 9 | 1 | 1 | 87 |
+| `UniRx.dll` | 148 | 11 | 140 | 0 | 500 |
+| `UniTask.Linq.dll` | 5 | 0 | 3 | 0 | 562 |
+| `UniTask.dll` | 289 | 11 | 60 | 0 | 246 |
+| `Unity.Animation.Rigging.dll` | 46 | 8 | 1 | 0 | 87 |
 | `Unity.Burst.Unsafe.dll` | 3 | 0 | 0 | 0 | 1 |
 | `Unity.Burst.dll` | 23 | 9 | 0 | 0 | 68 |
 | `Unity.Collections.LowLevel.ILSupport.dll` | 0 | 0 | 0 | 0 | 7 |
 | `Unity.Collections.dll` | 63 | 34 | 11 | 0 | 234 |
 | `Unity.Mathematics.dll` | 19 | 21 | 0 | 0 | 64 |
 | `Unity.Profiling.Core.dll` | 4 | 0 | 0 | 0 | 14 |
-| `Unity.RenderPipeline.Universal.ShaderLibrary.dll` | 14 | 2 | 0 | 0 | 6 |
+| `Unity.RenderPipeline.Universal.ShaderLibrary.dll` | 16 | 0 | 0 | 0 | 6 |
 | `Unity.RenderPipelines.Core.Runtime.dll` | 257 | 23 | 24 | 8 | 208 |
-| `Unity.RenderPipelines.Universal.Runtime.dll` | 543 | 31 | 10 | 4 | 184 |
-| `Unity.TextMeshPro.dll` | 115 | 11 | 7 | 0 | 61 |
+| `Unity.RenderPipelines.Universal.Runtime.dll` | 543 | 34 | 10 | 1 | 184 |
+| `Unity.TextMeshPro.dll` | 120 | 6 | 7 | 0 | 61 |
 | `Unity.Timeline.dll` | 102 | 2 | 1 | 0 | 30 |
 | `Unity.VisualEffectGraph.Runtime.dll` | 24 | 2 | 0 | 3 | 81 |
 | `UnityEngine.AIModule.dll` | 3 | 0 | 0 | 0 | 0 |
 | `UnityEngine.AndroidJNIModule.dll` | 44 | 1 | 0 | 4 | 0 |
 | `UnityEngine.AnimationModule.dll` | 67 | 1 | 2 | 28 | 0 |
-| `UnityEngine.AssetBundleModule.dll` | 6 | 0 | 0 | 2 | 0 |
-| `UnityEngine.AudioModule.dll` | 19 | 0 | 0 | 15 | 0 |
-| `UnityEngine.CoreModule.dll` | 852 | 2 | 35 | 91 | 17 |
+| `UnityEngine.AssetBundleModule.dll` | 8 | 0 | 0 | 0 | 0 |
+| `UnityEngine.AudioModule.dll` | 20 | 0 | 0 | 14 | 0 |
+| `UnityEngine.CoreModule.dll` | 861 | 1 | 35 | 83 | 23 |
 | `UnityEngine.DirectorModule.dll` | 9 | 0 | 0 | 0 | 0 |
 | `UnityEngine.GridModule.dll` | 2 | 0 | 0 | 0 | 0 |
 | `UnityEngine.HierarchyCoreModule.dll` | 42 | 0 | 2 | 0 | 0 |
@@ -62,7 +65,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 | `UnityEngine.InputForUIModule.dll` | 48 | 0 | 0 | 0 | 0 |
 | `UnityEngine.InputLegacyModule.dll` | 13 | 1 | 0 | 1 | 0 |
 | `UnityEngine.InputModule.dll` | 5 | 0 | 0 | 0 | 0 |
-| `UnityEngine.ParticleSystemModule.dll` | 17 | 0 | 0 | 51 | 0 |
+| `UnityEngine.ParticleSystemModule.dll` | 26 | 0 | 0 | 42 | 0 |
 | `UnityEngine.Physics2DModule.dll` | 12 | 0 | 0 | 0 | 0 |
 | `UnityEngine.PhysicsModule.dll` | 24 | 0 | 0 | 8 | 0 |
 | `UnityEngine.PropertiesModule.dll` | 137 | 0 | 28 | 0 | 0 |
@@ -74,28 +77,29 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 | `UnityEngine.TextCoreTextEngineModule.dll` | 105 | 0 | 4 | 0 | 0 |
 | `UnityEngine.TextRenderingModule.dll` | 15 | 0 | 0 | 1 | 0 |
 | `UnityEngine.TilemapModule.dll` | 3 | 0 | 0 | 0 | 0 |
-| `UnityEngine.UI.dll` | 182 | 2 | 3 | 1 | 21 |
+| `UnityEngine.UI.dll` | 183 | 2 | 3 | 0 | 20 |
 | `UnityEngine.UIElementsModule.dll` | 1440 | 0 | 109 | 0 | 0 |
 | `UnityEngine.UIModule.dll` | 11 | 0 | 0 | 1 | 0 |
 | `UnityEngine.UnityAnalyticsCommonModule.dll` | 35 | 0 | 0 | 0 | 0 |
-| `UnityEngine.UnityWebRequestAssetBundleModule.dll` | 2 | 0 | 0 | 2 | 0 |
-| `UnityEngine.UnityWebRequestModule.dll` | 14 | 0 | 0 | 9 | 0 |
+| `UnityEngine.UnityWebRequestAssetBundleModule.dll` | 4 | 0 | 0 | 0 | 0 |
+| `UnityEngine.UnityWebRequestModule.dll` | 20 | 0 | 0 | 3 | 0 |
+| `UnityEngine.UnityWebRequestWWWModule.dll` | 1 | 1 | 0 | 0 | 0 |
 | `UnityEngine.VFXModule.dll` | 14 | 1 | 0 | 0 | 4 |
 | `UnityEngine.VRModule.dll` | 3 | 0 | 0 | 0 | 1 |
 | `UnityEngine.VideoModule.dll` | 16 | 0 | 0 | 0 | 0 |
 | `UnityEngine.XRModule.dll` | 32 | 0 | 0 | 3 | 0 |
 | `UnityEngine.dll` | 1 | 0 | 0 | 0 | 0 |
 | `__Generated` | 5 | 0 | 0 | 0 | 0 |
-| `campus-submodule.Runtime.dll` | 1089 | 1 | 40 | 0 | 5 |
+| `campus-submodule.Runtime.dll` | 1088 | 2 | 40 | 0 | 5 |
 | `campus-submodule.Shader.Runtime.dll` | 7 | 0 | 0 | 0 | 5 |
-| `mscorlib.dll` | 1284 | 42 | 84 | 347 | 9 |
+| `mscorlib.dll` | 1494 | 23 | 122 | 118 | 9 |
 | `netstandard.dll` | 0 | 0 | 0 | 0 | 12 |
 | `quaunity-crypto.dll` | 1 | 1 | 3 | 0 | 5 |
-| `quaunity-global.dll` | 14 | 1 | 0 | 0 | 5 |
+| `quaunity-global.dll` | 15 | 0 | 0 | 0 | 5 |
 | `quaunity-ui.Runtime.dll` | 229 | 0 | 69 | 0 | 5 |
 | `quaunity-volumetriclightbeam.Runtime.dll` | 138 | 0 | 0 | 0 | 5 |
-| `vl-unity.Runtime.dll` | 321 | 0 | 17 | 0 | 5 |
-| **Total** | 9805 | 224 | 788 | 2616 | 1274 |
+| `vl-unity.Runtime.dll` | 321 | 0 | 17 | 0 | 9 |
+| **Total** | 10550 | 268 | 827 | 1856 | 2835 |
 
 ## ActorAnimation.Runtime.dll
 
@@ -325,7 +329,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## Cinemachine.dll
 
-<details><summary>Matching: 177</summary>
+<details><summary>Matching: 178</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
@@ -418,6 +422,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CinemachineBlendDefinition.Style`
 - `CinemachineBlendListCamera.Instruction`
 - `CinemachineBlenderSettings.CustomBlend`
+- `CinemachineBrain.<AfterPhysics>d__32` (compiler-generated name)
 - `CinemachineBrain.BrainEvent`
 - `CinemachineBrain.BrainFrame`
 - `CinemachineBrain.BrainUpdateMethod`
@@ -546,13 +551,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 1</summary>
-
-- `CinemachineBrain.<AfterPhysics>d__32` (compiler-generated name)
-
-</details>
-
-<details><summary>Extra: 12</summary>
+<details><summary>Extra: 11</summary>
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5907`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6031`
@@ -563,7 +562,45 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cinemachine.Utility.GaussianWindow1D_Vector3`
 - `Cinemachine.Utility.GaussianWindow1d<T>`
 - `Cinemachine.Utility.UnityRectExtensions`
-- `CinemachineBrain.<AfterPhysics>d__30` (compiler-generated name)
+- `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
+- `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+
+</details>
+
+
+## Coffee.UIParticle.dll
+
+<details><summary>Matching: 20</summary>
+
+- `<Module>`
+- `AnimatableProperty.ShaderPropertyType`
+- `Coffee.UIExtensions.AnimatableProperty`
+- `Coffee.UIExtensions.UIParticle`
+- `Coffee.UIExtensions.UIParticleAttractor`
+- `Coffee.UIExtensions.UIParticleRenderer`
+- `Coffee.UIExtensions.UIParticleUpdater`
+- `Coffee.UIParticleExtensions.Misc`
+- `Coffee.UIParticleExtensions.ModifiedMaterial`
+- `Coffee.UIParticleExtensions.ParticleSystemExtensions`
+- `Coffee.UIParticleExtensions.SpriteExtensions`
+- `Coffee.UIParticleExtensions.Vector3Extensions`
+- `ModifiedMaterial.MatEntry`
+- `ParticleSystemExtensions.<>c` (compiler-generated name)
+- `UIParticle.<>c` (compiler-generated name)
+- `UIParticle.<get_materials>d__55` (compiler-generated name)
+- `UIParticle.MeshSharing`
+- `UIParticle.PositionMode`
+- `UIParticleAttractor.Movement`
+- `UIParticleAttractor.UpdateMode`
+
+</details>
+
+<details><summary>Extra: 6</summary>
+
+- `<PrivateImplementationDetails>` (compiler-generated name)
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=432`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=507`
+- `ParticleSystemExtensions.<>c__DisplayClass6_0` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
 
@@ -572,7 +609,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## CriMw.CriWare.Runtime.dll
 
-<details><summary>Matching: 343</summary>
+<details><summary>Matching: 310</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>` (compiler-generated name)
@@ -584,11 +621,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `AutoResisterRendererResourceFactories.RendererResourceFactoryAndroidSofdecPrimeYuvLegacyGles2`
 - `AutoResisterRendererResourceFactories.RendererResourceFactorySofdecPrimeYuvRawData`
 - `Common.CpuUsage`
-- `CriAtom.<>c__DisplayClass68_0` (compiler-generated name)
-- `CriAtom.<LoadAcbDataCoroutine>d__74` (compiler-generated name)
-- `CriAtom.<LoadAcbFileCoroutine>d__72` (compiler-generated name)
 - `CriAtom.NativeMethods`
-- `CriAtom.SpeakerMapping`
 - `CriAtomConfig.AndroidLowLatencyStandardVoicePoolConfig`
 - `CriAtomConfig.EditorPcmOutputConfig`
 - `CriAtomConfig.HcaMxVoicePoolConfig`
@@ -608,13 +641,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriAtomEx.AisacInfo`
 - `CriAtomEx.BiquadFilterType`
 - `CriAtomEx.CharacterEncoding`
-- `CriAtomEx.CueInfo`
 - `CriAtomEx.CueLinkCbFunc`
 - `CriAtomEx.CueLinkInfo`
 - `CriAtomEx.CuePos3dInfo`
 - `CriAtomEx.CueType`
 - `CriAtomEx.CurveType`
-- `CriAtomEx.Format`
 - `CriAtomEx.FormatInfo`
 - `CriAtomEx.GameVariableInfo`
 - `CriAtomEx.NativeVector`
@@ -622,7 +653,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriAtomEx.Parameter`
 - `CriAtomEx.PerformanceInfo`
 - `CriAtomEx.Randomize3dCalcType`
-- `CriAtomEx.Randomize3dConfig`
 - `CriAtomEx.Randomize3dParamType`
 - `CriAtomEx.ResourceUsage`
 - `CriAtomEx.ResumeMode`
@@ -744,7 +774,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriAtomOutputDeviceObserver.UnsafeNativeMethods`
 - `CriAtomPlugin.CallbackFromNativeDelegate`
 - `CriAtomPlugin.FileOpenCondition`
-- `CriAtomSource.<PlayAsync>d__11` (compiler-generated name)
 - `CriAtomSourceBase.Status`
 - `CriAtomTimelinePreviewer.PlayerSource`
 - `CriAtomTimelinePreviewer.PreviewListener`
@@ -782,23 +811,16 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriManaMixerBehaviour.<ProcessFrameOnSeeking>d__27` (compiler-generated name)
 - `CriManaMixerBehaviour.ClipState`
 - `CriManaMixerBehaviour.MovieMixerState`
-- `CriManaMovieMaterialBase.<RestartPlayerRoutine>d__60` (compiler-generated name)
-- `CriManaMovieMaterialBase.MaxFrameDrop`
 - `CriManaMovieMaterialBase.OnApplicationPauseCallback`
 - `CriManaMovieMaterialBase.RenderMode`
-- `CriWare.Common`
-- `CriWare.CriAtom`
-- `CriWare.CriAtomConfig`
 - `CriWare.CriAtomCueSheet`
 - `CriWare.CriAtomDebugDetail.Utility`
-- `CriWare.CriAtomEx`
 - `CriWare.CriAtomEx3dListener`
 - `CriWare.CriAtomEx3dRegion`
 - `CriWare.CriAtomEx3dSource`
 - `CriWare.CriAtomEx3dTransceiver`
 - `CriWare.CriAtomExAcb`
 - `CriWare.CriAtomExAcbDebug`
-- `CriWare.CriAtomExAcbLoader`
 - `CriWare.CriAtomExAcf`
 - `CriWare.CriAtomExAcfDebug`
 - `CriWare.CriAtomExAsr`
@@ -809,11 +831,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriAtomExDebug`
 - `CriWare.CriAtomExLatencyEstimator`
 - `CriWare.CriAtomExMic`
-- `CriWare.CriAtomExOutputAnalyzer`
 - `CriWare.CriAtomExOutputPort`
-- `CriWare.CriAtomExPlayback`
 - `CriWare.CriAtomExPlaybackDebug`
-- `CriWare.CriAtomExPlayer`
 - `CriWare.CriAtomExPlayerOutputAnalyzer`
 - `CriWare.CriAtomExRawPcmVoicePool`
 - `CriWare.CriAtomExSequencer`
@@ -822,13 +841,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriAtomExTween`
 - `CriWare.CriAtomExVoicePool`
 - `CriWare.CriAtomExWaveVoicePool`
-- `CriWare.CriAtomListener`
 - `CriWare.CriAtomOutputDeviceObserver`
-- `CriWare.CriAtomPlugin`
-- `CriWare.CriAtomRegion`
-- `CriWare.CriAtomServer`
 - `CriWare.CriAtomSource`
-- `CriWare.CriAtomSourceBase`
 - `CriWare.CriAtomTransceiver`
 - `CriWare.CriAudioReadStream`
 - `CriWare.CriAudioWriteStream`
@@ -848,13 +862,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriFsLoader`
 - `CriWare.CriFsPlugin`
 - `CriWare.CriFsRequest`
-- `CriWare.CriFsServer`
 - `CriWare.CriFsUtility`
 - `CriWare.CriFsWebInstallRequest`
 - `CriWare.CriFsWebInstaller`
 - `CriWare.CriMana.AlphaType`
 - `CriWare.CriMana.AudioInfo`
-- `CriWare.CriMana.CodecType`
 - `CriWare.CriMana.Detail.AutoResisterRendererResourceFactories`
 - `CriWare.CriMana.Detail.RendererResource`
 - `CriWare.CriMana.Detail.RendererResourceAndroidH264Rgb`
@@ -862,7 +874,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriMana.Detail.RendererResourceAndroidSofdecPrimeYuvLegacyGles2`
 - `CriWare.CriMana.Detail.RendererResourceFactory`
 - `CriWare.CriMana.Detail.RendererResourceFactoryPriorityAttribute`
-- `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuvRawData`
 - `CriWare.CriMana.EventPoint`
 - `CriWare.CriMana.FrameInfo`
 - `CriWare.CriMana.MovieInfo`
@@ -870,12 +881,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriMana.Settings`
 - `CriWare.CriManaAmbisonicSource`
 - `CriWare.CriManaConfig`
-- `CriWare.CriManaMovieController`
-- `CriWare.CriManaMovieControllerForUI`
-- `CriWare.CriManaMovieMaterial`
-- `CriWare.CriManaMovieMaterialBase`
 - `CriWare.CriManaMoviePlayerHolder`
-- `CriWare.CriManaPlugin`
 - `CriWare.CriMonoBehaviour`
 - `CriWare.CriMonoBehaviourManager`
 - `CriWare.CriTimeline.Atom.CriAtomBehaviour`
@@ -891,7 +897,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriTimeline.Mana.CriManaMixerBehaviour`
 - `CriWare.CriTimeline.Mana.CriManaTrack`
 - `CriWare.CriWareDecrypter`
-- `CriWare.CriWareErrorHandler`
 - `CriWare.CriWareInitializer`
 - `CriWare.CriWareMemoryReporter`
 - `CriWare.CriWareProfilerReporter`
@@ -901,7 +906,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWareErrorHandler.NativeMethod`
 - `CriWareProfilerReporter.<>c` (compiler-generated name)
 - `CriWareProfilerReporter.TargetReporterName`
-- `Player.<IssuePluginUpdatesForFrames>d__157` (compiler-generated name)
 - `Player.AudioTrack`
 - `Player.CriManaUnityPlayer_RenderEventAction`
 - `Player.CuePointCallback`
@@ -920,30 +924,576 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Indeterminate: 1</summary>
+<details><summary>Mismatching: 28</summary>
+
+- `CriAtom.SpeakerMapping`
+
+  - `field declaration order/names: ['value__', 'Auto', 'Monaural', 'Stereo', 'Ch5_1', 'Ch7_1', 'Ch5_1_2', 'Ch7_1_2', 'Ch7_1_4', 'Ch7_1_4_4', 'Ambisonics1p', 'Ambisonics2p', 'Ambisonics3p', 'Object', 'Custom'] → ['value__', 'Auto', 'Monaural', 'Stereo', 'Ch5_1', 'Ch7_1', 'Ch5_1_2', 'Ch7_1_2', 'Ch7_1_4', 'Ambisonics1p']`
+  - `missing field constant CriAtom.SpeakerMapping Ch7_1_4_4`
+  - `missing field constant CriAtom.SpeakerMapping Ambisonics2p`
+  - `missing field constant CriAtom.SpeakerMapping Ambisonics3p`
+  - `missing field constant CriAtom.SpeakerMapping Object`
+  - `missing field constant CriAtom.SpeakerMapping Custom`
+
+- `CriAtomEx.CueInfo`
+
+  - `field declaration order/names: ['id', 'type', 'name', 'userData', 'length', 'categories', 'numLimits', 'numBlocks', 'numTracks', 'numRelatedWaveForms', 'priority', 'headerVisibility', 'ignore_player_parameter', 'probability', 'panType', 'pos3dInfo', 'gameVariableInfo', 'volume', 'silentMode', 'pitch', 'selectorIndex'] → ['id', 'type', 'name', 'userData', 'length', 'categories', 'numLimits', 'numBlocks', 'numTracks', 'numRelatedWaveForms', 'priority', 'headerVisibility', 'ignore_player_parameter', 'probability', 'panType', 'pos3dInfo', 'gameVariableInfo', 'volume', 'silentMode']`
+  - `missing field instance float pitch`
+  - `missing field instance ushort selectorIndex`
+
+- `CriAtomEx.Format`
+
+  - `field declaration order/names: ['value__', 'ADX', 'HCA', 'HCA_MX', 'WAVE', 'RAW_PCM', 'AUDIO_BUFFER', 'HW1', 'HW2', 'HW3', 'MP3'] → ['value__', 'ADX', 'HCA', 'HCA_MX', 'WAVE', 'RAW_PCM', 'AUDIO_BUFFER']`
+  - `missing field constant CriAtomEx.Format HW1`
+  - `missing field constant CriAtomEx.Format HW2`
+  - `missing field constant CriAtomEx.Format HW3`
+  - `missing field constant CriAtomEx.Format MP3`
+
+- `CriAtomEx.Randomize3dConfig`
+
+  - `field declaration order/names: ['NumOfCalcParams', 'followsOriginalSource', 'calculationType', 'calculationParameters'] → ['followsOriginalSource', 'calculationType', 'calculationParameters', 'NumOfCalcParams']`
+
+- `CriManaMovieMaterialBase.MaxFrameDrop`
+
+  - `field declaration order/names: ['value__', 'Disabled', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'] → ['value__', 'Disabled', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Infinite']`
+  - `extra field constant CriManaMovieMaterialBase.MaxFrameDrop Infinite`
+
+- `CriWare.Common`
+
+  - `field declaration order/names: ['scriptVersionString', 'supportsCriFsInstaller', 'supportsCriFsWebInstaller', 'pluginName', 'pluginCallingConvention', 'engineName', '_managerObject'] → ['engineName', 'scriptVersionString', 'supportsCriFsInstaller', 'supportsCriFsWebInstaller', 'pluginName', 'pluginCallingConvention', '_managerObject']`
+
+- `CriWare.CriAtom`
+
+  - `field declaration order/names: ['acfFile', 'acfIsLoading', 'cueSheets', 'dspBusSetting', 'dontDestroyOnLoad', 'eventUserCallback', 'eventUserCbFunc', 'beatsyncUserCbFunc', 'obsoleteBeatSyncFunc', 'cueLinkUserCbFunc', '<instance>k__BackingField', 'acfRegisterGCHandle', 'dontRemoveExistsCueSheet'] → ['acfFile', 'acfIsLoading', 'cueSheets', 'dspBusSetting', 'dontDestroyOnLoad', 'eventUserCallback', 'eventUserCbFunc', 'beatsyncUserCbFunc', 'obsoleteBeatSyncFunc', 'cueLinkUserCbFunc', 'acfRegisterGCHandle', 'dontRemoveExistsCueSheet', '<instance>k__BackingField']`
+  - `eventUserCallback: type 'CriAtomExSequencer.EventCallback' → 'Delegate'`
+  - `eventUserCbFunc: type 'CriAtomExSequencer.EventCbFunc' → 'Delegate'`
+  - `beatsyncUserCbFunc: type 'CriAtomExBeatSync.CbFunc' → 'Delegate'`
+  - `obsoleteBeatSyncFunc: type 'CriAtomExBeatSync.CbFunc' → 'Delegate'`
+  - `cueLinkUserCbFunc: type 'CriAtomEx.CueLinkCbFunc' → 'Delegate'`
+
+- `CriWare.CriAtomConfig`
+
+  - `field declaration order/names: ['acfFileName', 'maxVirtualVoices', 'maxVoiceLimitGroups', 'maxCategories', 'maxAisacs', 'maxBusSends', 'maxSequenceEventsPerFrame', 'maxBeatSyncCallbacksPerFrame', 'maxCueLinkCallbacksPerFrame', 'standardVoicePoolConfig', 'hcaMxVoicePoolConfig', 'outputSamplingRate', 'usesInGamePreview', 'inGamePreviewMode', 'switchInitializeSocket', 'switch2InitializeSocket', 'inGamePreviewConfig', 'serverFrequency', 'speakerMapping', 'asrOutputChannels', 'useRandomSeedWithTime', 'categoriesPerPlayback', 'maxFaders', 'maxBuses', 'maxPitch', 'maxParameterBlocks', 'soundRendererType', 'keepPlayingSoundOnPause', 'enableSonicSync', 'enableAtomSoundDisabledMode', 'enableAtomSoundDisabledModeLinux', 'editorPcmOutputConfig', 'pcBufferingTime', 'useMicrosoftSpatialSound', 'linuxOutput', 'linuxPulseLatencyUsec', 'iosEnableSonicSync', 'iosBufferingTime', 'iosOverrideIPodMusic', 'iosEnableOSNotificationHandling', 'androidEnableSonicSync', 'androidBufferingTime', 'androidStartBufferingTime', 'androidLowLatencyStandardVoicePoolConfig', 'androidUsesAndroidFastMixer', 'androidForceToUseAsrForDefaultPlayback', 'androidUsesAAudio', 'androidStreamType', 'vitaManaVoicePoolConfig', 'vitaAtrac9VoicePoolConfig', 'ps4Atrac9VoicePoolConfig', 'ps5PortConfig', 'ps5Mp3StreamingVoices', 'switchEnableSonicSync', 'switchOpusVoicePoolConfig', 'switch2OpusVoicePoolConfig', 'ps4Audio3dConfig', 'ps4Mp3StreamingVoices'] → ['switch2InitializeSocket', 'enableAtomSoundDisabledMode', 'enableAtomSoundDisabledModeLinux', 'iosEnableOSNotificationHandling', 'ps5Mp3StreamingVoices', 'switch2OpusVoicePoolConfig', 'ps4Mp3StreamingVoices', 'acfFileName', 'maxVirtualVoices', 'maxVoiceLimitGroups', 'maxCategories', 'maxAisacs', 'maxBusSends', 'maxSequenceEventsPerFrame', 'maxBeatSyncCallbacksPerFrame', 'maxCueLinkCallbacksPerFrame', 'standardVoicePoolConfig', 'hcaMxVoicePoolConfig', 'outputSamplingRate', 'usesInGamePreview', 'inGamePreviewMode', 'switchInitializeSocket', 'inGamePreviewConfig', 'serverFrequency', 'speakerMapping', 'asrOutputChannels', 'useRandomSeedWithTime', 'categoriesPerPlayback', 'maxFaders', 'maxBuses', 'maxPitch', 'maxParameterBlocks', 'soundRendererType', 'keepPlayingSoundOnPause', 'enableSonicSync', 'editorPcmOutputConfig', 'pcBufferingTime', 'useMicrosoftSpatialSound', 'linuxOutput', 'linuxPulseLatencyUsec', 'iosEnableSonicSync', 'iosBufferingTime', 'iosOverrideIPodMusic', 'androidEnableSonicSync', 'androidBufferingTime', 'androidStartBufferingTime', 'androidLowLatencyStandardVoicePoolConfig', 'androidUsesAndroidFastMixer', 'androidForceToUseAsrForDefaultPlayback', 'androidUsesAAudio', 'androidStreamType', 'vitaManaVoicePoolConfig', 'vitaAtrac9VoicePoolConfig', 'ps4Atrac9VoicePoolConfig', 'ps5PortConfig', 'switchEnableSonicSync', 'switchOpusVoicePoolConfig', 'ps4Audio3dConfig', 'webglWebAudioVoicePoolConfig']`
+  - `acfFileName: offset '0x10' → '0x28'`
+  - `maxVirtualVoices: offset '0x18' → '0x30'`
+  - `maxVoiceLimitGroups: offset '0x1c' → '0x34'`
+  - `maxCategories: offset '0x20' → '0x38'`
+  - `maxAisacs: offset '0x24' → '0x3c'`
+  - `maxBusSends: offset '0x28' → '0x40'`
+  - `maxSequenceEventsPerFrame: offset '0x2c' → '0x44'`
+  - `maxBeatSyncCallbacksPerFrame: offset '0x30' → '0x48'`
+  - `maxCueLinkCallbacksPerFrame: offset '0x34' → '0x4c'`
+  - `standardVoicePoolConfig: offset '0x38' → '0x50'`
+  - `hcaMxVoicePoolConfig: offset '0x40' → '0x58'`
+  - `outputSamplingRate: offset '0x48' → '0x60'`
+  - `usesInGamePreview: offset '0x4c' → '0x64'`
+  - `inGamePreviewMode: offset '0x50' → '0x68'`
+  - `switchInitializeSocket: offset '0x54' → '0x6c'`
+  - `switch2InitializeSocket: offset '0x55' → '0x10'`
+  - `inGamePreviewConfig: offset '0x58' → '0x70'`
+  - `serverFrequency: offset '0x60' → '0x78'`
+  - `speakerMapping: offset '0x64' → '0x7c'`
+  - `asrOutputChannels: offset '0x68' → '0x80'`
+  - `useRandomSeedWithTime: offset '0x6c' → '0x84'`
+  - `categoriesPerPlayback: offset '0x70' → '0x88'`
+  - `maxFaders: offset '0x74' → '0x8c'`
+  - `maxBuses: offset '0x78' → '0x90'`
+  - `maxPitch: offset '0x7c' → '0x94'`
+  - `maxParameterBlocks: offset '0x80' → '0x98'`
+  - `soundRendererType: offset '0x84' → '0x9c'`
+  - `keepPlayingSoundOnPause: offset '0x88' → '0xa0'`
+  - `enableSonicSync: offset '0x89' → '0xa1'`
+  - `enableAtomSoundDisabledMode: offset '0x8a' → '0x11'`
+  - `enableAtomSoundDisabledModeLinux: offset '0x8b' → '0x12'`
+  - `editorPcmOutputConfig: offset '0x90' → '0xa8'`
+  - `pcBufferingTime: offset '0x98' → '0xb0'`
+  - `useMicrosoftSpatialSound: offset '0x9c' → '0xb4'`
+  - `linuxOutput: offset '0xa0' → '0xb8'`
+  - `linuxPulseLatencyUsec: offset '0xa4' → '0xbc'`
+  - `iosEnableSonicSync: offset '0xa8' → '0xc0'`
+  - `iosBufferingTime: offset '0xac' → '0xc4'`
+  - `iosOverrideIPodMusic: offset '0xb0' → '0xc8'`
+  - `iosEnableOSNotificationHandling: offset '0xb1' → '0x13'`
+  - `androidEnableSonicSync: offset '0xb2' → '0xc9'`
+  - `androidBufferingTime: offset '0xb4' → '0xcc'`
+  - `androidStartBufferingTime: offset '0xb8' → '0xd0'`
+  - `androidLowLatencyStandardVoicePoolConfig: offset '0xc0' → '0xd8'`
+  - `androidUsesAndroidFastMixer: offset '0xc8' → '0xe0'`
+  - `androidForceToUseAsrForDefaultPlayback: offset '0xc9' → '0xe1'`
+  - `androidUsesAAudio: offset '0xca' → '0xe2'`
+  - `androidStreamType: offset '0xcc' → '0xe4'`
+  - `vitaManaVoicePoolConfig: offset '0xd0' → '0xe8'`
+  - `vitaAtrac9VoicePoolConfig: offset '0xd8' → '0xf0'`
+  - `ps4Atrac9VoicePoolConfig: offset '0xe0' → '0xf8'`
+  - `ps5PortConfig: offset '0xe8' → '0x100'`
+  - `ps5Mp3StreamingVoices: offset '0xf0' → '0x14'`
+  - `switchEnableSonicSync: offset '0xf4' → '0x108'`
+  - `switchOpusVoicePoolConfig: offset '0xf8' → '0x110'`
+  - `switch2OpusVoicePoolConfig: offset '0x100' → '0x18'`
+  - `ps4Audio3dConfig: offset '0x108' → '0x118'`
+  - `ps4Mp3StreamingVoices: offset '0x110' → '0x20'`
+  - `extra field instance CriAtomConfig.WebGLWebAudioVoicePoolConfig webglWebAudioVoicePoolConfig`
+
+- `CriWare.CriAtomEx`
+
+  - `field declaration order/names: ['InvalidAisacControlId', 'randomize3dParamTable', 'androidDefaultSoundRendererType'] → ['InvalidAisacControlId', 'androidDefaultSoundRendererType']`
+  - `missing field static Dictionary<CriAtomEx.Randomize3dCalcType, CriAtomEx.Randomize3dParamType[]> randomize3dParamTable`
+  - `androidDefaultSoundRendererType: offset '0x8' → '0x0'`
+
+- `CriWare.CriAtomExAcbLoader`
+
+  - `bases: 'CriDisposable' → ''`
+  - `handle: offset '0x20' → '0x10'`
+  - `gch: offset '0x28' → '0x18'`
+
+- `CriWare.CriAtomExOutputAnalyzer`
+
+  - `field declaration order/names: ['MaximumSpectrumBands', 'handle', 'player', 'busName', 'numBands', 'numCapturedPcmSamples', 'userPcmCaptureCallback', 'dataL', 'dataR', 'pcmCapturerNumMaxData', 'InternalCallbackFunctionPointer', 'DelegateObject', 'DataL', 'DataR', 'UserPcmCaptureCallback'] → ['userPcmCaptureCallback', 'InternalCallbackFunctionPointer', 'DelegateObject', 'DataL', 'DataR', 'UserPcmCaptureCallback', 'MaximumSpectrumBands', 'handle', 'player', 'busName', 'numBands', 'numCapturedPcmSamples', 'dataL', 'dataR', 'pcmCapturerNumMaxData']`
+  - `handle: offset '0x20' → '0x28'`
+  - `player: offset '0x28' → '0x30'`
+  - `busName: offset '0x30' → '0x38'`
+  - `numBands: offset '0x38' → '0x40'`
+  - `numCapturedPcmSamples: offset '0x3c' → '0x44'`
+  - `userPcmCaptureCallback: offset '0x40' → '0x20'`
+
+- `CriWare.CriAtomExPlayback`
+
+  - `field declaration order/names: ['<id>k__BackingField', 'invalidId'] → ['invalidId', '<id>k__BackingField']`
+
+- `CriWare.CriAtomExPlayer`
+
+  - `_onBeatSyncCallback: type 'CriAtomExBeatSync.CbFunc' → 'Delegate'`
+  - `_onSequenceCallback: type 'CriAtomExSequencer.EventCallback' → 'Delegate'`
+
+- `CriWare.CriAtomListener`
+
+  - `field declaration order/names: ['<nativeListener>k__BackingField', 'regionOnStart', 'activateListenerOnEnable', 'listenersList', 'exclusiveListener', 'dummyNativeListener', 'lastPosition', 'currentRegion', '_isActive'] → ['regionOnStart', 'activateListenerOnEnable', 'listenersList', 'exclusiveListener', 'dummyNativeListener', 'lastPosition', 'currentRegion', '_isActive', '<nativeListener>k__BackingField']`
+  - `<nativeListener>k__BackingField: offset '0x30' → '0x58'`
+  - `regionOnStart: offset '0x38' → '0x30'`
+  - `activateListenerOnEnable: offset '0x40' → '0x38'`
+  - `lastPosition: offset '0x44' → '0x3c'`
+  - `currentRegion: offset '0x50' → '0x48'`
+  - `_isActive: offset '0x58' → '0x50'`
+
+- `CriWare.CriAtomPlugin`
+
+  - `field declaration order/names: ['initializationCount', 'OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'OnFinalized', 'effectInterfaceList', 'isConfigured', 'timeSinceStartup', 'cpuUsage', 'CRIATOMUNITY_PARAMETER_ID_LOOP_COUNT', 'CRIATOMPARAMETER2_ID_INVALID', 'temporalStorage'] → ['cpuUsage', 'temporalStorage', 'OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'initializationCount', 'OnFinalized', 'effectInterfaceList', 'isConfigured', 'timeSinceStartup', 'CRIATOMUNITY_PARAMETER_ID_LOOP_COUNT', 'CRIATOMPARAMETER2_ID_INVALID']`
+  - `initializationCount: offset '0x0' → '0x30'`
+  - `OnBeforeInitialize: offset '0x8' → '0x18'`
+  - `OnInitialized: offset '0x10' → '0x20'`
+  - `OnBeforeFinalize: offset '0x18' → '0x28'`
+  - `OnFinalized: offset '0x20' → '0x38'`
+  - `effectInterfaceList: offset '0x28' → '0x40'`
+  - `isConfigured: offset '0x30' → '0x48'`
+  - `timeSinceStartup: offset '0x34' → '0x4c'`
+  - `cpuUsage: offset '0x38' → '0x0'`
+  - `CRIATOMUNITY_PARAMETER_ID_LOOP_COUNT: offset '0x44' → '0x50'`
+  - `CRIATOMPARAMETER2_ID_INVALID: offset '0x48' → '0x54'`
+  - `temporalStorage: offset '0x50' → '0x10'`
+
+- `CriWare.CriAtomRegion`
+
+  - `field declaration order/names: ['<region3dHn>k__BackingField', 'referringSources', 'referringListeners', 'referringTransceivers'] → ['referringTransceivers', '<region3dHn>k__BackingField', 'referringSources', 'referringListeners']`
+  - `<region3dHn>k__BackingField: offset '0x30' → '0x38'`
+  - `referringSources: offset '0x38' → '0x40'`
+  - `referringListeners: offset '0x40' → '0x48'`
+  - `referringTransceivers: offset '0x48' → '0x30'`
+
+- `CriWare.CriAtomServer`
+
+  - `field declaration order/names: ['_instance', 'profilerReporterInstance', 'onApplicationPausePreProcess', 'onApplicationPausePostProcess', 'KeepPlayingSoundOnPause', 'EnableAutoConsumePcmOutput', 'EnableBackgroundPlayback_ANDROID'] → ['profilerReporterInstance', 'EnableBackgroundPlayback_ANDROID', '_instance', 'onApplicationPausePreProcess', 'onApplicationPausePostProcess', 'KeepPlayingSoundOnPause', 'EnableAutoConsumePcmOutput']`
+  - `_instance: offset '0x0' → '0x10'`
+  - `profilerReporterInstance: offset '0x8' → '0x0'`
+  - `KeepPlayingSoundOnPause: offset '0x10' → '0x18'`
+  - `EnableAutoConsumePcmOutput: offset '0x11' → '0x19'`
+  - `EnableBackgroundPlayback_ANDROID: offset '0x12' → '0x8'`
+
+- `CriWare.CriAtomSourceBase`
+
+  - `field declaration order/names: ['<player>k__BackingField', '<source>k__BackingField', 'initialized', 'lastPosition', 'hasValidPosition', 'currentRegion', 'currentListener', '_playOnStart', '_regionOnStart', '_listenerOnStart', '_use3dPositioning', '_freezeOrientation', '_loop', '_volume', '_pitch', '_androidUseLowLatencyVoicePool', 'need_to_player_update_all', '_use3dRandomization', '_randomPositionListMaxLength', 'randomize3dConfig'] → ['initialized', 'lastPosition', 'hasValidPosition', 'currentRegion', 'currentListener', '_playOnStart', '_regionOnStart', '_listenerOnStart', '_use3dPositioning', '_freezeOrientation', '_loop', '_volume', '_pitch', '_androidUseLowLatencyVoicePool', 'need_to_player_update_all', '_use3dRandomization', '_randomPositionListMaxLength', 'randomize3dConfig', '<player>k__BackingField', '<source>k__BackingField']`
+  - `<player>k__BackingField: offset '0x30' → '0x98'`
+  - `<source>k__BackingField: offset '0x38' → '0xa0'`
+  - `initialized: offset '0x40' → '0x30'`
+  - `lastPosition: offset '0x44' → '0x34'`
+  - `hasValidPosition: offset '0x50' → '0x40'`
+  - `currentRegion: offset '0x58' → '0x48'`
+  - `currentListener: offset '0x60' → '0x50'`
+  - `_playOnStart: offset '0x68' → '0x58'`
+  - `_regionOnStart: offset '0x70' → '0x60'`
+  - `_listenerOnStart: offset '0x78' → '0x68'`
+  - `_use3dPositioning: offset '0x80' → '0x70'`
+  - `_freezeOrientation: offset '0x81' → '0x71'`
+  - `_loop: offset '0x82' → '0x72'`
+  - `_volume: offset '0x84' → '0x74'`
+  - `_pitch: offset '0x88' → '0x78'`
+  - `_androidUseLowLatencyVoicePool: offset '0x8c' → '0x7c'`
+  - `need_to_player_update_all: offset '0x8d' → '0x7d'`
+  - `_use3dRandomization: offset '0x8e' → '0x7e'`
+  - `_randomPositionListMaxLength: offset '0x90' → '0x80'`
+  - `randomize3dConfig: offset '0x98' → '0x88'`
+
+- `CriWare.CriFsServer`
+
+  - `field declaration order/names: ['_instance', 'requestList', '<installBufferSize>k__BackingField'] → ['requestList', '_instance']`
+  - `missing field instance int <installBufferSize>k__BackingField`
+
+- `CriWare.CriMana.CodecType`
+
+  - `field declaration order/names: ['value__', 'Unknown', 'SofdecPrime', 'H264', 'VP9', 'AV1'] → ['value__', 'Unknown', 'SofdecPrime', 'H264', 'VP9']`
+  - `missing field constant CodecType AV1`
+
+- `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuvRawData`
+
+  - `field declaration order/names: ['width', 'height', 'chromaWidth', 'chromaHeight', 'alphaWidth', 'alphaHeight', 'useUserShader', 'codecType', 'movieTextureST', 'movieChromaTextureST', 'movieAlphaTextureST', 'textures', 'currentTextureSet', 'drawTextureSet', 'nativePixels', 'playerID', 'hasTextureUpdated', 'isTextureReady', 'hasRenderedNewFrame'] → ['isTextureReady', 'width', 'height', 'chromaWidth', 'chromaHeight', 'alphaWidth', 'alphaHeight', 'useUserShader', 'codecType', 'movieTextureST', 'movieChromaTextureST', 'movieAlphaTextureST', 'textures', 'currentTextureSet', 'drawTextureSet', 'nativePixels', 'playerID', 'hasTextureUpdated', 'hasRenderedNewFrame', 'isStoppingForSeek']`
+  - `width: offset '0x2c' → '0x30'`
+  - `height: offset '0x30' → '0x34'`
+  - `chromaWidth: offset '0x34' → '0x38'`
+  - `chromaHeight: offset '0x38' → '0x3c'`
+  - `alphaWidth: offset '0x3c' → '0x40'`
+  - `alphaHeight: offset '0x40' → '0x44'`
+  - `useUserShader: offset '0x44' → '0x48'`
+  - `codecType: offset '0x48' → '0x4c'`
+  - `movieTextureST: offset '0x4c' → '0x50'`
+  - `movieChromaTextureST: offset '0x5c' → '0x60'`
+  - `movieAlphaTextureST: offset '0x6c' → '0x70'`
+  - `isTextureReady: offset '0x9d' → '0x2c'`
+  - `hasRenderedNewFrame: offset '0x9e' → '0x9d'`
+  - `extra field instance bool isStoppingForSeek`
+
+- `CriWare.CriManaMovieController`
+
+  - `target: offset '0xa0' → '0xa8'`
+  - `useOriginalMaterial: offset '0xa8' → '0xb0'`
+  - `originalMaterial: offset '0xb0' → '0xb8'`
+
+- `CriWare.CriManaMovieControllerForUI`
+
+  - `target: offset '0xa0' → '0xa8'`
+  - `useOriginalMaterial: offset '0xa8' → '0xb0'`
+  - `originalMaterial: offset '0xb0' → '0xb8'`
+
+- `CriWare.CriManaMovieMaterial`
+
+  - `_moviePath: offset '0x88' → '0x90'`
+  - `_loop: offset '0x90' → '0x98'`
+  - `_audioBaseConcatenation: offset '0x91' → '0x99'`
+  - `_additiveMode: offset '0x92' → '0x9a'`
+  - `_advancedAudio: offset '0x93' → '0x9b'`
+  - `_ambisonics: offset '0x94' → '0x9c'`
+  - `_applyTargetAlpha: offset '0x95' → '0x9d'`
+  - `_uiRenderMode: offset '0x96' → '0x9e'`
+  - `ambisonicSource: offset '0x98' → '0xa0'`
+
+- `CriWare.CriManaMovieMaterialBase`
+
+  - `field declaration order/names: ['playOnStart', 'restartOnEnable', '<isMaterialAvailable>k__BackingField', '<player>k__BackingField', 'renderMode', 'onApplicationPauseCallback', '_timerType', '_material', '_maxFrameDrop', 'materialOwn', 'isMonoBehaviourStartCalled', 'wasDisabled', 'wasPausedOnDisable', 'previousOnApplicationPauseStatus', 'frameEnd', 'unpauseOnApplicationUnpause', '<HaveRendererOwner>k__BackingField', 'playerHolder'] → ['playOnStart', 'restartOnEnable', 'renderMode', 'onApplicationPauseCallback', '_timerType', '_material', '_maxFrameDrop', 'materialOwn', 'isMonoBehaviourStartCalled', 'wasDisabled', 'wasPausedOnDisable', 'previousOnApplicationPauseStatus', 'frameEnd', 'unpauseOnApplicationUnpause', 'playerHolder', '<isMaterialAvailable>k__BackingField', '<player>k__BackingField', '<HaveRendererOwner>k__BackingField']`
+  - `<isMaterialAvailable>k__BackingField: offset '0x32' → '0x78'`
+  - `<player>k__BackingField: offset '0x38' → '0x80'`
+  - `renderMode: offset '0x40' → '0x34'`
+  - `onApplicationPauseCallback: offset '0x48' → '0x38'`
+  - `_timerType: offset '0x50' → '0x40'`
+  - `_material: offset '0x58' → '0x48'`
+  - `_maxFrameDrop: offset '0x60' → '0x50'`
+  - `materialOwn: offset '0x64' → '0x54'`
+  - `isMonoBehaviourStartCalled: offset '0x65' → '0x55'`
+  - `wasDisabled: offset '0x66' → '0x56'`
+  - `wasPausedOnDisable: offset '0x67' → '0x57'`
+  - `previousOnApplicationPauseStatus: offset '0x68' → '0x58'`
+  - `frameEnd: offset '0x70' → '0x60'`
+  - `unpauseOnApplicationUnpause: offset '0x78' → '0x68'`
+  - `<HaveRendererOwner>k__BackingField: offset '0x79' → '0x88'`
+  - `playerHolder: offset '0x80' → '0x70'`
+
+- `CriWare.CriManaPlugin`
+
+  - `field declaration order/names: ['initializationCount', 'isConfigured', 'enabledMultithreadedRendering', 'renderingEventOffset', 'OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'OnFinalized'] → ['OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'OnFinalized', 'initializationCount', 'isConfigured', 'enabledMultithreadedRendering', 'renderingEventOffset']`
+  - `initializationCount: offset '0x0' → '0x20'`
+  - `isConfigured: offset '0x4' → '0x24'`
+  - `enabledMultithreadedRendering: offset '0x5' → '0x25'`
+  - `renderingEventOffset: offset '0x8' → '0x28'`
+  - `OnBeforeInitialize: offset '0x10' → '0x0'`
+  - `OnInitialized: offset '0x18' → '0x8'`
+  - `OnBeforeFinalize: offset '0x20' → '0x10'`
+  - `OnFinalized: offset '0x28' → '0x18'`
 
 - `CriWare.CriStructMemory<Type>`
 
+  - `field declaration order/names: ['<bytes>k__BackingField', 'gch'] → ['gch', '<bytes>k__BackingField']`
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `CriWare.CriWareErrorHandler`
+
+  - `field declaration order/names: ['enableDebugPrintOnTerminal', 'enableForceCrashOnError', 'dontDestroyOnLoad', '<errorMessage>k__BackingField', 'logPrefix', '_onCallback', 'callback', 'messageBufferCounts', 'unThreadSafeMessages', '_enableDebugPrintOnTerminal', 'initializationCount'] → ['_enableDebugPrintOnTerminal', 'enableDebugPrintOnTerminal', 'enableForceCrashOnError', 'dontDestroyOnLoad', 'logPrefix', '_onCallback', 'callback', 'messageBufferCounts', 'unThreadSafeMessages', 'initializationCount', '<errorMessage>k__BackingField']`
+  - `<errorMessage>k__BackingField: offset '0x0' → '0x28'`
+  - `_enableDebugPrintOnTerminal: offset '0x20' → '0x0'`
+  - `initializationCount: offset '0x24' → '0x20'`
 
 
 </details>
 
-<details><summary>Extra: 3</summary>
+<details><summary>Missing: 6</summary>
+
+- `CriAtom.<>c__DisplayClass68_0` (compiler-generated name)
+- `CriAtom.<LoadAcbDataCoroutine>d__74` (compiler-generated name)
+- `CriAtom.<LoadAcbFileCoroutine>d__72` (compiler-generated name)
+- `CriAtomSource.<PlayAsync>d__11` (compiler-generated name)
+- `CriManaMovieMaterialBase.<RestartPlayerRoutine>d__60` (compiler-generated name)
+- `Player.<IssuePluginUpdatesForFrames>d__157` (compiler-generated name)
+
+</details>
+
+<details><summary>Extra: 131</summary>
 
 - `<QAReconstructionImplementationDetails>` (compiler-generated name)
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=10587`
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=8770`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=1008`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=112`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=128`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=14422`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=15742`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=176`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=1792`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=20`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=24`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=256`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=32`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=36`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=48`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=512`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=544`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=64`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=640`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=66`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=68`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=96`
+- `CriAtom.<>c__DisplayClass76_0` (compiler-generated name)
+- `CriAtomAcbData.<>c` (compiler-generated name)
+- `CriAtomAcbData.<>c__DisplayClass42_0` (compiler-generated name)
+- `CriAtomAcbData.<ReadCommands>d__48` (compiler-generated name)
+- `CriAtomAcbData.<SelectTracks>d__41` (compiler-generated name)
+- `CriAtomAcbData.BiquadSetting`
+- `CriAtomAcbData.BusSend`
+- `CriAtomAcbData.Command`
+- `CriAtomAcbData.Cue`
+- `CriAtomAcbData.OffsetChoice`
+- `CriAtomAcbData.ParameterLayer`
+- `CriAtomAcbData.RandomState`
+- `CriAtomAcbData.SelectionState`
+- `CriAtomAcbData.WaveEvent`
+- `CriAtomAcbData.Waveform`
+- `CriAtomAfs2.<>c__DisplayClass18_0` (compiler-generated name)
+- `CriAtomAfs2.Entry`
+- `CriAtomCategoryState.<>c__DisplayClass26_0` (compiler-generated name)
+- `CriAtomCategoryState.Category`
+- `CriAtomCategoryState.CategoryConfig`
+- `CriAtomCategoryState.LimitPool`
+- `CriAtomCategoryState.React`
+- `CriAtomCategoryState.ReactConfig`
+- `CriAtomCategoryState.ReactPhase`
+- `CriAtomCategoryState.Reservation`
+- `CriAtomConfig.WebGLWebAudioVoicePoolConfig`
+- `CriAtomDsp.Limiter`
+- `CriAtomDsp.StereoMultiTap`
+- `CriAtomDspI3dl2Reverb.SmoothDelay`
+- `CriAtomDspMath.Biquad`
+- `CriAtomDspMath.Complex`
+- `CriAtomDspMath.Delay`
+- `CriAtomDspReverb.Comb`
+- `CriAtomFader.Command`
+- `CriAtomFader.CommandKind`
+- `CriAtomFader.Phase`
+- `CriAtomLibm.Poly`
+- `CriAtomMixer.<>c` (compiler-generated name)
+- `CriAtomMixer.<>c__DisplayClass6_0` (compiler-generated name)
+- `CriAtomMixer.<>c__DisplayClass6_1` (compiler-generated name)
+- `CriAtomMixer.Bus`
+- `CriAtomMixer.Link`
+- `CriAtomNativeBackend.<>c` (compiler-generated name)
+- `CriAtomNativeBackend.<>c__DisplayClass36_0` (compiler-generated name)
+- `CriAtomNativeBackend.Aisac`
+- `CriAtomNativeBackend.Analyzer`
+- `CriAtomNativeBackend.AudioGroup`
+- `CriAtomNativeBackend.Bank`
+- `CriAtomNativeBackend.Binder`
+- `CriAtomNativeBackend.Graph`
+- `CriAtomNativeBackend.ManaAudioSource`
+- `CriAtomNativeBackend.ManaEntry`
+- `CriAtomNativeBackend.ManaFrame`
+- `CriAtomNativeBackend.ManaPlayer`
+- `CriAtomNativeBackend.Parameters`
+- `CriAtomNativeBackend.Playback`
+- `CriAtomNativeBackend.Player`
+- `CriAtomNativeBackend.Spatial`
+- `CriAtomNativeBackend.Voice`
+- `CriAtomNativeBackend.Voice.PcmBlock`
+- `CriAtomNativeBackend.Voice.SourceProgress`
+- `CriAtomNativeBackend.VoiceFilter`
+- `CriAtomNativeBackend.VoiceSlot`
+- `CriAtomSource.<PlayAsync>d__10` (compiler-generated name)
+- `CriAtomUtf.Column`
+- `CriAtomUtf.Row`
+- `CriAtomUtf.Table`
+- `CriHcaDecoder`
+- `CriHcaDecoderUnity`
+- `CriHcaDecoderUnity.Handle`
+- `CriHcaDecoderUnity.HcaDecoder`
+- `CriHcaDecoderUnity.HcaDecoder.Channel`
+- `CriHcaDecoderUnity.HcaDecoder.Config`
+- `CriManaMovieMaterialBase.<RestartPlayerRoutine>d__61` (compiler-generated name)
+- `CriManaMpeg1Decoder.Frame`
+- `CriManaUsm.AudioInfo`
+- `CriManaUsm.Packet`
+- `CriManaUsm.SeekEntry`
+- `CriManaUsm.VideoInfo`
+- `CriWare.CriAtomAcbData`
+- `CriWare.CriAtomAfs2`
+- `CriWare.CriAtomAisacGraph`
+- `CriWare.CriAtomAudioClock`
+- `CriWare.CriAtomCategoryState`
+- `CriWare.CriAtomDsp`
+- `CriWare.CriAtomDspI3dl2Reverb`
+- `CriWare.CriAtomDspMath`
+- `CriWare.CriAtomDspReverb`
+- `CriWare.CriAtomFader`
+- `CriWare.CriAtomLevelMeter`
+- `CriWare.CriAtomLibm`
+- `CriWare.CriAtomMixer`
+- `CriWare.CriAtomNativeBackend`
+- `CriWare.CriAtomResampler`
+- `CriWare.CriAtomSequenceClock`
+- `CriWare.CriAtomUtf`
+- `CriWare.CriMana.CriManaClock`
+- `CriWare.CriMana.CriManaMpeg1Decoder`
+- `CriWare.CriMana.Detail.RendererResourceIOSH264Yuv`
+- `CriWare.CriMana.Detail.RendererResourcePlatform`
+- `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuv`
+- `CriWare.CriManaAdxDecoder`
+- `CriWare.CriManaAudioClock`
+- `CriWare.CriManaUsm`
+- `CriWare.CriWareNative`
+- `CriWare.ICriWareNativeBackend`
+- `HcaFileDecoder`
+- `HcaFileDecoder.Metadata`
+- `Player.<IssuePluginUpdatesForFrames>d__205` (compiler-generated name)
+
+</details>
+
+
+## DOTween.Modules.dll
+
+<details><summary>Matching: 33</summary>
+
+- `<Module>`
+- `DG.Tweening.DOTweenModulePhysics`
+- `DG.Tweening.DOTweenModulePhysics2D`
+- `DG.Tweening.DOTweenModuleSprite`
+- `DG.Tweening.DOTweenModuleUI`
+- `DG.Tweening.DOTweenModuleUtils`
+- `DOTweenModulePhysics.<>c__DisplayClass0_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass10_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass4_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass9_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass0_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass3_0` (compiler-generated name)
+- `DOTweenModuleSprite.<>c__DisplayClass0_0` (compiler-generated name)
+- `DOTweenModuleSprite.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass0_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass13_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass14_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass15_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass16_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass25_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass26_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass28_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass2_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass33_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass34_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass36_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass37_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass4_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass5_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass9_0` (compiler-generated name)
+- `DOTweenModuleUI.Utils`
+- `DOTweenModuleUtils.Physics`
+
+</details>
+
+<details><summary>Extra: 64</summary>
+
+- `<PrivateImplementationDetails>` (compiler-generated name)
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=452`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=689`
+- `DG.Tweening.DOTweenCYInstruction`
+- `DG.Tweening.DOTweenModuleAudio`
+- `DG.Tweening.DOTweenModuleUnityVersion`
+- `DOTweenCYInstruction.WaitForCompletion`
+- `DOTweenCYInstruction.WaitForElapsedLoops`
+- `DOTweenCYInstruction.WaitForKill`
+- `DOTweenCYInstruction.WaitForPosition`
+- `DOTweenCYInstruction.WaitForRewind`
+- `DOTweenCYInstruction.WaitForStart`
+- `DOTweenModuleAudio.<>c__DisplayClass0_0` (compiler-generated name)
+- `DOTweenModuleAudio.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOTweenModuleAudio.<>c__DisplayClass2_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass2_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass3_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass5_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass6_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass7_0` (compiler-generated name)
+- `DOTweenModulePhysics.<>c__DisplayClass8_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass2_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass4_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass5_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass6_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass7_0` (compiler-generated name)
+- `DOTweenModulePhysics2D.<>c__DisplayClass8_0` (compiler-generated name)
+- `DOTweenModuleSprite.<>c__DisplayClass3_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass10_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass11_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass12_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass17_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass18_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass19_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass20_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass21_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass22_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass23_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass24_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass27_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass29_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass30_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass31_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass32_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass35_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass38_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass39_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass3_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass40_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass41_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass7_0` (compiler-generated name)
+- `DOTweenModuleUI.<>c__DisplayClass8_0` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<>c__DisplayClass8_0` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<>c__DisplayClass9_0` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<AsyncWaitForCompletion>d__10` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<AsyncWaitForElapsedLoops>d__13` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<AsyncWaitForKill>d__12` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<AsyncWaitForPosition>d__14` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<AsyncWaitForRewind>d__11` (compiler-generated name)
+- `DOTweenModuleUnityVersion.<AsyncWaitForStart>d__15` (compiler-generated name)
+- `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
+- `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
 
 </details>
 
 
 ## DOTween.dll
 
-<details><summary>Matching: 139</summary>
+<details><summary>Matching: 121</summary>
 
 - `<Module>`
-- `<PrivateImplementationDetails>` (compiler-generated name)
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=120`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=50`
@@ -955,11 +1505,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Core.DOSetter<T>`
 - `DG.Tweening.Core.DOTweenComponent`
 - `DG.Tweening.Core.DOTweenExternalCommand`
-- `DG.Tweening.Core.DOTweenSettings`
-- `DG.Tweening.Core.Debugger`
 - `DG.Tweening.Core.Easing.Bounce`
 - `DG.Tweening.Core.Easing.EaseCurve`
-- `DG.Tweening.Core.Easing.EaseManager`
 - `DG.Tweening.Core.Easing.Flash`
 - `DG.Tweening.Core.Enums.FilterType`
 - `DG.Tweening.Core.Enums.NestedTweenFailureBehaviour`
@@ -972,10 +1519,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Core.SafeModeReport`
 - `DG.Tweening.Core.SequenceCallback`
 - `DG.Tweening.Core.TweenLink`
-- `DG.Tweening.Core.TweenManager`
-- `DG.Tweening.Core.Utils`
 - `DG.Tweening.CustomPlugins.PureQuaternionPlugin`
-- `DG.Tweening.DOTween`
 - `DG.Tweening.DOVirtual`
 - `DG.Tweening.Ease`
 - `DG.Tweening.EaseFunction`
@@ -994,8 +1538,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Plugins.Core.PathCore.ControlPoint`
 - `DG.Tweening.Plugins.Core.PathCore.CubicBezierDecoder`
 - `DG.Tweening.Plugins.Core.PathCore.LinearDecoder`
-- `DG.Tweening.Plugins.Core.PathCore.Path`
-- `DG.Tweening.Plugins.Core.PluginsManager`
 - `DG.Tweening.Plugins.Core.SpecialPluginsUtils`
 - `DG.Tweening.Plugins.DoublePlugin`
 - `DG.Tweening.Plugins.FloatPlugin`
@@ -1006,14 +1548,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Plugins.Options.IPlugOptions`
 - `DG.Tweening.Plugins.Options.NoOptions`
 - `DG.Tweening.Plugins.Options.OrientType`
-- `DG.Tweening.Plugins.Options.PathOptions`
-- `DG.Tweening.Plugins.Options.QuaternionOptions`
 - `DG.Tweening.Plugins.Options.RectOptions`
 - `DG.Tweening.Plugins.Options.StringOptions`
 - `DG.Tweening.Plugins.Options.UintOptions`
 - `DG.Tweening.Plugins.Options.Vector3ArrayOptions`
 - `DG.Tweening.Plugins.Options.VectorOptions`
-- `DG.Tweening.Plugins.PathPlugin`
 - `DG.Tweening.Plugins.QuaternionPlugin`
 - `DG.Tweening.Plugins.RectOffsetPlugin`
 - `DG.Tweening.Plugins.RectPlugin`
@@ -1029,7 +1568,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.ScrambleMode`
 - `DG.Tweening.Sequence`
 - `DG.Tweening.ShortcutExtensions`
-- `DG.Tweening.Tween`
 - `DG.Tweening.TweenCallback`
 - `DG.Tweening.TweenCallback<T>`
 - `DG.Tweening.TweenExtensions`
@@ -1043,8 +1581,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DOTweenComponent.<WaitForPosition>d__21` (compiler-generated name)
 - `DOTweenComponent.<WaitForRewind>d__18` (compiler-generated name)
 - `DOTweenComponent.<WaitForStart>d__22` (compiler-generated name)
-- `DOTweenSettings.ModulesSetup`
-- `DOTweenSettings.SafeModeOptions`
 - `DOTweenSettings.SettingsLocation`
 - `DOVirtual.<>c__DisplayClass0_0` (compiler-generated name)
 - `SafeModeReport.SafeModeReportType`
@@ -1067,15 +1603,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ShortcutExtensions.<>c__DisplayClass45_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass46_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass47_0` (compiler-generated name)
-- `ShortcutExtensions.<>c__DisplayClass50_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass51_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass52_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass54_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass56_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass58_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass5_0` (compiler-generated name)
-- `ShortcutExtensions.<>c__DisplayClass61_0` (compiler-generated name)
-- `ShortcutExtensions.<>c__DisplayClass62_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass63_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass64_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass6_0` (compiler-generated name)
@@ -1084,20 +1617,231 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Indeterminate: 1</summary>
+<details><summary>Mismatching: 17</summary>
+
+- `<PrivateImplementationDetails>` (compiler-generated name)
+
+  - `field declaration order/names: ['4EF0676A416B9CCF117C378BDCB6C5CA0EA9505154E3F0F7CC8570285DB79663', '921D53955C220A863C9C5D33DD45329C6F74471C522EA5D46EA838D8D4838055', 'A203B1199E78DE3BB75B28FC520ED2F86ADB2749BFC52E3ACA275A3BE2587678', 'C845A807AA8EC73757DC1B07EA49311061FEDECA35AFFE91C5474E0814925020'] → ['4EF0676A416B9CCF117C378BDCB6C5CA0EA9505154E3F0F7CC8570285DB79663', '921D53955C220A863C9C5D33DD45329C6F74471C522EA5D46EA838D8D4838055', '9262857CAD283202CA84B75E1CA9CC199A95E7D878F98BB9EAFB1E2F2AE67618', 'A203B1199E78DE3BB75B28FC520ED2F86ADB2749BFC52E3ACA275A3BE2587678', 'BEEF07BD55BBFB8B3AD6B8AAE4F8A07CF328AD0A16641540F61FC7F690990DF4', 'C845A807AA8EC73757DC1B07EA49311061FEDECA35AFFE91C5474E0814925020']`
+  - `A203B1199E78DE3BB75B28FC520ED2F86ADB2749BFC52E3ACA275A3BE2587678: offset '0x46' → '0xbf1'`
+  - `C845A807AA8EC73757DC1B07EA49311061FEDECA35AFFE91C5474E0814925020: offset '0xbe' → '0x1c99'`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2987 9262857CAD283202CA84B75E1CA9CC199A95E7D878F98BB9EAFB1E2F2AE67618`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4144 BEEF07BD55BBFB8B3AD6B8AAE4F8A07CF328AD0A16641540F61FC7F690990DF4`
+
+- `DG.Tweening.Core.DOTweenSettings`
+
+  - `field declaration order/names: ['AssetName', 'AssetFullFilename', 'useSafeMode', 'safeModeOptions', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', 'showUnityEditorReport', 'logBehaviour', 'drawGizmos', 'defaultRecyclable', 'defaultAutoPlay', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'defaultAutoKill', 'defaultLoopType', 'debugMode', 'debugStoreTargetId', 'showPreviewPanel', 'storeSettingsLocation', 'modules', 'showPlayingTweens', 'showPausedTweens'] → ['AssetName', 'AssetFullFilename', 'useSafeMode', 'safeModeOptions', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', 'showUnityEditorReport', 'logBehaviour', 'drawGizmos', 'defaultRecyclable', 'defaultAutoPlay', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'defaultAutoKill', 'defaultLoopType', 'debugMode', 'debugStoreTargetId', 'showPreviewPanel', 'storeSettingsLocation', 'modules', 'createASMDEF', 'showPlayingTweens', 'showPausedTweens']`
+  - `showPlayingTweens: offset '0x78' → '0x79'`
+  - `showPausedTweens: offset '0x79' → '0x7a'`
+  - `extra field instance bool createASMDEF`
+
+- `DG.Tweening.Core.Debugger`
+
+  - `field declaration order/names: ['_logPriority'] → ['_logPriority', '_LogPrefix']`
+  - `extra field constant string _LogPrefix`
+
+- `DG.Tweening.Core.Easing.EaseManager`
+
+  - `field declaration order/names: [] → ['_PiOver2', '_TwoPi']`
+  - `extra field constant float _PiOver2`
+  - `extra field constant float _TwoPi`
+
+- `DG.Tweening.Core.TweenManager`
+
+  - `field declaration order/names: ['isUnityEditor', 'maxActive', 'maxTweeners', 'maxSequences', 'hasActiveTweens', 'hasActiveDefaultTweens', 'hasActiveLateTweens', 'hasActiveFixedTweens', 'hasActiveManualTweens', 'totActiveTweens', 'totActiveDefaultTweens', 'totActiveLateTweens', 'totActiveFixedTweens', 'totActiveManualTweens', 'totActiveTweeners', 'totActiveSequences', 'totPooledTweeners', 'totPooledSequences', 'totTweeners', 'totSequences', 'isUpdateLoop', '_activeTweens', '_pooledTweeners', '_PooledSequences', '_KillList', '_TweenLinks', '_totTweenLinks', '_maxActiveLookupId', '_requiresActiveReorganization', '_reorganizeFromId', '_minPooledTweenerId', '_maxPooledTweenerId', '_despawnAllCalledFromUpdateLoopCallback'] → ['_DefaultMaxTweeners', '_DefaultMaxSequences', '_MaxTweensReached', '_EpsilonVsTimeCheck', 'isUnityEditor', 'isDebugBuild', 'maxActive', 'maxTweeners', 'maxSequences', 'hasActiveTweens', 'hasActiveDefaultTweens', 'hasActiveLateTweens', 'hasActiveFixedTweens', 'hasActiveManualTweens', 'totActiveTweens', 'totActiveDefaultTweens', 'totActiveLateTweens', 'totActiveFixedTweens', 'totActiveManualTweens', 'totActiveTweeners', 'totActiveSequences', 'totPooledTweeners', 'totPooledSequences', 'totTweeners', 'totSequences', 'isUpdateLoop', '_activeTweens', '_pooledTweeners', '_PooledSequences', '_KillList', '_TweenLinks', '_totTweenLinks', '_maxActiveLookupId', '_requiresActiveReorganization', '_reorganizeFromId', '_minPooledTweenerId', '_maxPooledTweenerId', '_despawnAllCalledFromUpdateLoopCallback']`
+  - `extra field constant int _DefaultMaxTweeners`
+  - `extra field constant int _DefaultMaxSequences`
+  - `extra field constant string _MaxTweensReached`
+  - `extra field constant float _EpsilonVsTimeCheck`
+  - `extra field static bool isDebugBuild`
 
 - `DG.Tweening.Core.TweenerCore<T1, T2, TPlugOptions>`
 
+  - `field declaration order/names: ['startValue', 'endValue', 'changeValue', 'plugOptions', 'getter', 'setter', 'tweenPlugin', '_TxtCantChangeSequencedValues'] → ['startValue', 'endValue', 'changeValue', 'plugOptions', 'getter', 'setter', 'tweenPlugin', '_TxtCantChangeSequencedValues', '_colorType', '_color32Type']`
+  - `extra field instance Type _colorType`
+  - `extra field instance Type _color32Type`
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `DG.Tweening.DOTween`
+
+  - `field declaration order/names: ['Version', 'useSafeMode', 'nestedTweenFailureBehaviour', 'showUnityEditorReport', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', '_logBehaviour', 'onWillLog', 'drawGizmos', 'debugMode', '_fooDebugStoreTargetId', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultAutoPlay', 'defaultAutoKill', 'defaultLoopType', 'defaultRecyclable', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'instance', 'maxActiveTweenersReached', 'maxActiveSequencesReached', 'safeModeReport', 'GizmosDelegates', 'initialized', 'isQuitting'] → ['Version', 'useSafeMode', 'safeModeLogBehaviour', 'nestedTweenFailureBehaviour', 'showUnityEditorReport', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', '_logBehaviour', 'onWillLog', 'drawGizmos', 'debugMode', '_fooDebugStoreTargetId', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultAutoPlay', 'defaultAutoKill', 'defaultLoopType', 'defaultRecyclable', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'instance', '_foo_isQuitting', 'maxActiveTweenersReached', 'maxActiveSequencesReached', 'safeModeReport', 'GizmosDelegates', 'initialized', '_isQuittingFrame']`
+  - `nestedTweenFailureBehaviour: offset '0xc' → '0x10'`
+  - `showUnityEditorReport: offset '0x10' → '0x14'`
+  - `timeScale: offset '0x14' → '0x18'`
+  - `useSmoothDeltaTime: offset '0x18' → '0x1c'`
+  - `maxSmoothUnscaledTime: offset '0x1c' → '0x20'`
+  - `rewindCallbackMode: offset '0x20' → '0x24'`
+  - `_logBehaviour: offset '0x24' → '0x28'`
+  - `onWillLog: offset '0x28' → '0x30'`
+  - `drawGizmos: offset '0x30' → '0x38'`
+  - `debugMode: offset '0x31' → '0x39'`
+  - `_fooDebugStoreTargetId: offset '0x32' → '0x3a'`
+  - `defaultUpdateType: offset '0x34' → '0x3c'`
+  - `defaultTimeScaleIndependent: offset '0x38' → '0x40'`
+  - `defaultAutoPlay: offset '0x3c' → '0x44'`
+  - `defaultAutoKill: offset '0x40' → '0x48'`
+  - `defaultLoopType: offset '0x44' → '0x4c'`
+  - `defaultRecyclable: offset '0x48' → '0x50'`
+  - `defaultEaseType: offset '0x4c' → '0x54'`
+  - `defaultEaseOvershootOrAmplitude: offset '0x50' → '0x58'`
+  - `defaultEasePeriod: offset '0x54' → '0x5c'`
+  - `instance: offset '0x58' → '0x60'`
+  - `maxActiveTweenersReached: offset '0x60' → '0x6c'`
+  - `maxActiveSequencesReached: offset '0x64' → '0x70'`
+  - `safeModeReport: offset '0x68' → '0x74'`
+  - `GizmosDelegates: offset '0x78' → '0x88'`
+  - `initialized: offset '0x80' → '0x90'`
+  - `missing field static bool isQuitting`
+  - `extra field static SafeModeLogBehaviour safeModeLogBehaviour`
+  - `extra field static bool _foo_isQuitting`
+  - `extra field static int _isQuittingFrame`
+
+- `DG.Tweening.Plugins.Core.PathCore.Path`
+
+  - `field declaration order/names: ['_catmullRomDecoder', '_linearDecoder', '_cubicBezierDecoder', 'wpLengths', 'wps', 'type', 'subdivisionsXSegment', 'subdivisions', 'controlPoints', 'length', 'isFinalized', 'timesTable', 'lengthsTable', 'linearWPIndex', 'addedExtraStartWp', 'addedExtraEndWp', '_incrementalClone', '_incrementalIndex', '_decoder', '_changed', 'nonLinearDrawWps', 'targetPosition', 'lookAtPosition', 'gizmoColor'] → ['_catmullRomDecoder', '_linearDecoder', '_cubicBezierDecoder', 'wpLengths', 'wps', 'type', 'subdivisionsXSegment', 'subdivisions', 'controlPoints', 'length', 'isFinalized', 'timesTable', 'lengthsTable', 'linearWPIndex', 'addedExtraStartWp', 'addedExtraEndWp', 'plugOptions', '_incrementalClone', '_incrementalIndex', '_decoder', '_changed', 'nonLinearDrawWps', 'targetPosition', 'lookAtPosition', 'gizmoColor']`
+  - `_incrementalClone: offset '0x58' → '0xc8'`
+  - `_incrementalIndex: offset '0x60' → '0xd0'`
+  - `_decoder: offset '0x68' → '0xd8'`
+  - `_changed: offset '0x70' → '0xe0'`
+  - `nonLinearDrawWps: offset '0x78' → '0xe8'`
+  - `targetPosition: offset '0x80' → '0xf0'`
+  - `lookAtPosition: offset '0x8c' → '0xfc'`
+  - `gizmoColor: offset '0x9c' → '0x10c'`
+  - `extra field instance PathOptions plugOptions`
+
+- `DG.Tweening.Plugins.Core.PluginsManager`
+
+  - `field declaration order/names: ['_floatPlugin', '_doublePlugin', '_intPlugin', '_uintPlugin', '_longPlugin', '_ulongPlugin', '_vector2Plugin', '_vector3Plugin', '_vector4Plugin', '_quaternionPlugin', '_colorPlugin', '_rectPlugin', '_rectOffsetPlugin', '_stringPlugin', '_vector3ArrayPlugin', '_color2Plugin', '_customPlugins'] → ['_floatPlugin', '_doublePlugin', '_intPlugin', '_uintPlugin', '_longPlugin', '_ulongPlugin', '_vector2Plugin', '_vector3Plugin', '_vector4Plugin', '_quaternionPlugin', '_colorPlugin', '_rectPlugin', '_rectOffsetPlugin', '_stringPlugin', '_vector3ArrayPlugin', '_color2Plugin', '_MaxCustomPlugins', '_customPlugins']`
+  - `extra field constant int _MaxCustomPlugins`
+
+- `DG.Tweening.Plugins.Options.PathOptions`
+
+  - `field declaration order/names: ['mode', 'orientType', 'lockPositionAxis', 'lockRotationAxis', 'isClosedPath', 'lookAtPosition', 'lookAtTransform', 'lookAhead', 'hasCustomForwardDirection', 'forward', 'useLocalPosition', 'parent', 'isRigidbody', 'stableZRotation', 'startupRot', 'startupZRot', 'addedExtraStartWp', 'addedExtraEndWp'] → ['mode', 'orientType', 'lockPositionAxis', 'lockRotationAxis', 'isClosedPath', 'lookAtPosition', 'lookAtTransform', 'lookAhead', 'hasCustomForwardDirection', 'forward', 'useLocalPosition', 'parent', 'isRigidbody', 'isRigidbody2D', 'stableZRotation', 'startupRot', 'startupZRot', 'addedExtraStartWp', 'addedExtraEndWp']`
+  - `stableZRotation: offset '0x51' → '0x52'`
+  - `extra field instance bool isRigidbody2D`
+
+- `DG.Tweening.Plugins.Options.QuaternionOptions`
+
+  - `field declaration order/names: ['rotateMode', 'axisConstraint', 'up'] → ['rotateMode', 'axisConstraint', 'up', 'dynamicLookAt', 'dynamicLookAtWorldPosition']`
+  - `extra field instance bool dynamicLookAt`
+  - `extra field instance Vector3 dynamicLookAtWorldPosition`
+
+- `DG.Tweening.Plugins.PathPlugin`
+
+  - `field declaration order/names: [] → ['MinLookAhead']`
+  - `extra field constant float MinLookAhead`
+
+- `DG.Tweening.Tween`
+
+  - `field declaration order/names: ['timeScale', 'isBackwards', 'id', 'stringId', 'intId', 'target', 'updateType', 'isIndependentUpdate', 'onPlay', 'onPause', 'onRewind', 'onUpdate', 'onStepComplete', 'onComplete', 'onKill', 'onWaypointChange', 'isFrom', 'isBlendable', 'isRecyclable', 'isSpeedBased', 'autoKill', 'duration', 'loops', 'loopType', 'delay', '<isRelative>k__BackingField', 'easeType', 'customEase', 'easeOvershootOrAmplitude', 'easePeriod', 'debugTargetId', 'typeofT1', 'typeofT2', 'typeofTPlugOptions', '<active>k__BackingField', 'isSequenced', 'sequenceParent', 'activeId', 'specialStartupMode', 'creationLocked', 'startupDone', '<playedOnce>k__BackingField', '<position>k__BackingField', 'fullDuration', 'completedLoops', 'isPlaying', 'isComplete', 'elapsedDelay', 'delayComplete', 'miscInt'] → ['timeScale', 'isBackwards', 'isInverted', 'id', 'stringId', 'intId', 'target', 'updateType', 'isIndependentUpdate', 'onPlay', 'onPause', 'onRewind', 'onUpdate', 'onStepComplete', 'onComplete', 'onKill', 'onWaypointChange', 'isFrom', 'isBlendable', 'isRecyclable', 'isSpeedBased', 'autoKill', 'duration', 'loops', 'loopType', 'delay', '<isRelative>k__BackingField', 'easeType', 'customEase', 'easeOvershootOrAmplitude', 'easePeriod', 'debugTargetId', 'typeofT1', 'typeofT2', 'typeofTPlugOptions', '<active>k__BackingField', 'isSequenced', 'sequenceParent', 'activeId', 'specialStartupMode', 'creationLocked', 'startupDone', '<playedOnce>k__BackingField', '<position>k__BackingField', 'fullDuration', 'completedLoops', 'isPlaying', 'isComplete', 'elapsedDelay', 'delayComplete', 'miscInt']`
+  - `extra field instance bool isInverted`
+
+- `DOTweenSettings.ModulesSetup`
+
+  - `field declaration order/names: ['showPanel', 'audioEnabled', 'physicsEnabled', 'physics2DEnabled', 'spriteEnabled', 'uiEnabled', 'textMeshProEnabled', 'tk2DEnabled', 'deAudioEnabled', 'deUnityExtendedEnabled'] → ['showPanel', 'audioEnabled', 'physicsEnabled', 'physics2DEnabled', 'spriteEnabled', 'uiEnabled', 'textMeshProEnabled', 'tk2DEnabled', 'deAudioEnabled', 'deUnityExtendedEnabled', 'epoOutlineEnabled']`
+  - `extra field instance bool epoOutlineEnabled`
+
+- `DOTweenSettings.SafeModeOptions`
+
+  - `field declaration order/names: ['nestedTweenFailureBehaviour'] → ['logBehaviour', 'nestedTweenFailureBehaviour']`
+  - `nestedTweenFailureBehaviour: offset '0x10' → '0x14'`
+  - `extra field instance SafeModeLogBehaviour logBehaviour`
+
+- `ShortcutExtensions.<>c__DisplayClass61_0` (compiler-generated name)
+
+  - `field declaration order/names: ['target'] → ['target', 'startPosY', 'offsetYSet', 'offsetY', 's', 'endValue', 'yTween']`
+  - `extra field instance float startPosY`
+  - `extra field instance bool offsetYSet`
+  - `extra field instance float offsetY`
+  - `extra field instance Sequence s`
+  - `extra field instance Vector3 endValue`
+  - `extra field instance Tween yTween`
+
+- `ShortcutExtensions.<>c__DisplayClass62_0` (compiler-generated name)
+
+  - `field declaration order/names: ['target'] → ['target', 'startPosY', 'offsetYSet', 'offsetY', 's', 'endValue', 'yTween']`
+  - `extra field instance float startPosY`
+  - `extra field instance bool offsetYSet`
+  - `extra field instance float offsetY`
+  - `extra field instance Sequence s`
+  - `extra field instance Vector3 endValue`
+  - `extra field instance Tween yTween`
 
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Missing: 2</summary>
 
-- `<QAReconstructionImplementationDetails>` (compiler-generated name)
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=4751`
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=5484`
+- `DG.Tweening.Core.Utils`
+- `ShortcutExtensions.<>c__DisplayClass50_0` (compiler-generated name)
+
+</details>
+
+<details><summary>Extra: 66</summary>
+
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=2987`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4144`
+- `DG.Tweening.Core.DOTweenUtils`
+- `DG.Tweening.Core.Enums.SafeModeLogBehaviour`
+- `DG.Tweening.DOCurve`
+- `DG.Tweening.EaseFactory`
+- `DG.Tweening.Plugins.CircleOptions`
+- `DG.Tweening.Plugins.CirclePlugin`
+- `DG.Tweening.Plugins.Core.IPlugSetter<T1, T2, TPlugin, TPlugOptions>`
+- `DG.Tweening.Plugins.Core.ITPlugin<T1, T2, TPlugOptions, TPlugin>`
+- `DG.Tweening.TweenParams`
+- `DOCurve.CubicBezier`
+- `DOTween.<>c__DisplayClass66_0` (compiler-generated name)
+- `DOVirtual.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOVirtual.<>c__DisplayClass2_0` (compiler-generated name)
+- `DOVirtual.<>c__DisplayClass3_0` (compiler-generated name)
+- `Debugger.Sequence`
+- `EaseFactory.<>c__DisplayClass2_0` (compiler-generated name)
+- `EaseManager.<>c` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass10_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass11_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass14_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass15_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass17_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass18_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass20_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass21_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass22_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass23_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass24_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass25_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass26_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass27_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass28_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass29_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass2_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass30_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass31_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass35_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass39_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass41_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass43_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass48_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass4_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass53_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass55_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass57_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass59_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass60_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass65_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass66_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass67_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass68_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass69_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass70_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass71_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass72_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass73_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass74_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass75_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass76_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass77_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass8_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass9_0` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
 
@@ -1106,18 +1850,9 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## Mono.Security.dll
 
-<details><summary>Matching: 5</summary>
+<details><summary>Matching: 85</summary>
 
 - `<Module>`
-- `Mono.Security.ASN1`
-- `Mono.Security.ASN1Convert`
-- `Mono.Security.BitConverterLE`
-- `Mono.Security.Cryptography.CryptoConvert`
-
-</details>
-
-<details><summary>Missing: 80</summary>
-
 - `<PrivateImplementationDetails>` (compiler-generated name)
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=18`
@@ -1139,8 +1874,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase`
 - `Mono.Math.Prime.PrimalityTest`
 - `Mono.Math.Prime.PrimalityTests`
+- `Mono.Security.ASN1`
+- `Mono.Security.ASN1Convert`
 - `Mono.Security.Authenticode.AuthenticodeBase`
 - `Mono.Security.Authenticode.AuthenticodeDeformatter`
+- `Mono.Security.BitConverterLE`
+- `Mono.Security.Cryptography.CryptoConvert`
 - `Mono.Security.Cryptography.MD2`
 - `Mono.Security.Cryptography.MD2Managed`
 - `Mono.Security.Cryptography.MD4`
@@ -1973,30 +2712,49 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## System.Core.dll
 
-<details><summary>Matching: 12</summary>
+<details><summary>Matching: 27</summary>
 
 - `<Module>`
+- `<PrivateImplementationDetails>` (compiler-generated name)
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=120`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=256`
 - `Enumerable.<RangeIterator>d__115` (compiler-generated name)
 - `ReaderWriterLockSlim.TimeoutTracker`
 - `SR`
 - `System.Collections.Generic.ICollectionDebugView<T>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>`
 - `System.Linq.Enumerable`
 - `System.Linq.EnumerableSorter<TElement>`
 - `System.Linq.Error`
 - `System.Linq.IGrouping<TKey, TElement>`
 - `System.Linq.IOrderedEnumerable<TElement>`
+- `System.Security.Cryptography.AesCryptoServiceProvider`
+- `System.Security.Cryptography.AesManaged`
+- `System.Security.Cryptography.AesTransform`
+- `System.Security.Cryptography.X509Certificates.RSACertificateExtensions`
 - `System.Threading.LockRecursionPolicy`
 - `System.Threading.ReaderWriterCount`
 
 </details>
 
-<details><summary>Indeterminate: 25</summary>
+<details><summary>Indeterminate: 29</summary>
 
 - `Enumerable.<>c__DisplayClass6_0<TSource>` (compiler-generated name)
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `Enumerable.<>c__DisplayClass7_0<TSource, TMiddle, TResult>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Enumerable.<AppendIterator>d__61<TSource>` (compiler-generated name)
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -2008,11 +2766,23 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `Enumerable.<RepeatIterator>d__117<TResult>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `Enumerable.<ReverseIterator>d__79<TSource>` (compiler-generated name)
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `Enumerable.<SelectIterator>d__5<TSource, TResult>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `Enumerable.<SelectManyIterator>d__17<TSource, TResult>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Enumerable.<TakeIterator>d__25<TSource>` (compiler-generated name)
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -2095,12 +2865,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 666</summary>
+<details><summary>Missing: 647</summary>
 
-- `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=120`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=256`
 - `AddInstruction.AddDouble`
 - `AddInstruction.AddInt16`
 - `AddInstruction.AddInt32`
@@ -2166,19 +2932,15 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DivInstruction.DivUInt16`
 - `DivInstruction.DivUInt32`
 - `DivInstruction.DivUInt64`
-- `Enumerable.<AppendIterator>d__61<TSource>` (compiler-generated name)
 - `Enumerable.<ConcatIterator>d__59<TSource>` (compiler-generated name)
 - `Enumerable.<ExceptIterator>d__77<TSource>` (compiler-generated name)
 - `Enumerable.<IntersectIterator>d__74<TSource>` (compiler-generated name)
 - `Enumerable.<OfTypeIterator>d__97<TResult>` (compiler-generated name)
 - `Enumerable.<PrependIterator>d__63<TSource>` (compiler-generated name)
-- `Enumerable.<RepeatIterator>d__117<TResult>` (compiler-generated name)
-- `Enumerable.<SelectIterator>d__5<TSource, TResult>` (compiler-generated name)
 - `Enumerable.<SelectManyIterator>d__19<TSource, TResult>` (compiler-generated name)
 - `Enumerable.<SelectManyIterator>d__23<TSource, TCollection, TResult>` (compiler-generated name)
 - `Enumerable.<SkipIterator>d__31<TSource>` (compiler-generated name)
 - `Enumerable.<SkipLastIterator>d__216<TSource>` (compiler-generated name)
-- `Enumerable.<TakeIterator>d__25<TSource>` (compiler-generated name)
 - `Enumerable.<TakeLastIterator>d__218<TSource>` (compiler-generated name)
 - `Enumerable.<TakeWhileIterator>d__27<TSource>` (compiler-generated name)
 - `Enumerable.<UnionIterator>d__71<TSource>` (compiler-generated name)
@@ -2490,13 +3252,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Dynamic.Utils.TypeExtensions`
 - `System.Dynamic.Utils.TypeUtils`
 - `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>`
 - `System.Linq.Expressions.AnalyzeTypeIsResult`
 - `System.Linq.Expressions.ArrayBuilderExtensions`
 - `System.Linq.Expressions.AssignBinaryExpression`
@@ -2756,13 +3511,41 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Runtime.CompilerServices.RuntimeOps`
 - `System.Runtime.CompilerServices.StrongBox<T>`
 - `System.Runtime.CompilerServices.TrueReadOnlyCollection<T>`
-- `System.Security.Cryptography.AesCryptoServiceProvider`
-- `System.Security.Cryptography.AesManaged`
-- `System.Security.Cryptography.AesTransform`
 - `System.Security.Cryptography.SHA256CryptoServiceProvider`
-- `System.Security.Cryptography.X509Certificates.RSACertificateExtensions`
 - `System.Threading.Tasks.TaskExtensions`
 - `TypeUtils.<>c` (compiler-generated name)
+
+</details>
+
+<details><summary>Extra: 1</summary>
+
+- `System.Linq.ILookup<TKey, TElement>`
+
+</details>
+
+
+## System.Numerics.dll
+
+<details><summary>Matching: 10</summary>
+
+- `<Module>`
+- `BigInteger.GetBytesMode`
+- `FormatProvider.Number`
+- `FormatProvider.Number.NumberBuffer`
+- `System.Globalization.FormatProvider`
+- `System.Numerics.BigInteger`
+- `System.Numerics.BigIntegerCalculator`
+- `System.Numerics.BigNumber`
+- `System.Numerics.NumericsHelpers`
+- `System.Text.ValueStringBuilder`
+
+</details>
+
+<details><summary>Missing: 3</summary>
+
+- `BigNumber.BigNumberBuffer`
+- `SR`
+- `System.Numerics.DoubleUlong`
 
 </details>
 
@@ -3464,296 +4247,45 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## System.dll
 
-<details><summary>Matching: 124</summary>
+<details><summary>Matching: 524</summary>
 
 - `<Module>`
+- `<PrivateImplementationDetails>` (compiler-generated name)
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=128`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=14`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=256`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=32`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=44`
-- `CaptureCollection.Enumerator`
-- `GroupCollection.Enumerator`
-- `IPAddress.ReadOnlyIPAddress`
-- `Internal.Cryptography.OidLookup`
-- `NameObjectCollectionBase.NameObjectEntry`
-- `NameObjectCollectionBase.NameObjectKeysEnumerator`
-- `OidLookup.<>c` (compiler-generated name)
-- `Regex.CachedCodeEntry`
-- `Regex.CachedCodeEntryKey`
-- `RegexCharClass.LowerCaseMapping`
-- `RegexCharClass.SingleRange`
-- `RegexCharClass.SingleRangeComparer`
-- `System.CodeDom.Compiler.GeneratedCodeAttribute`
-- `System.Collections.Generic.DictionaryKeyCollectionDebugView<TKey, TValue>`
-- `System.Collections.Generic.DictionaryValueCollectionDebugView<TKey, TValue>`
-- `System.Collections.Generic.ICollectionDebugView<T>`
-- `System.Collections.Generic.IDictionaryDebugView<K, V>`
-- `System.Collections.Generic.ISet<T>`
-- `System.Collections.HashtableExtensions`
-- `System.Collections.Specialized.CompatibleComparer`
-- `System.Collections.Specialized.NameObjectCollectionBase`
-- `System.Collections.Specialized.NameValueCollection`
-- `System.Collections.Specialized.StringCollection`
-- `System.ComponentModel.ArrayConverter`
-- `System.ComponentModel.BaseNumberConverter`
-- `System.ComponentModel.BooleanConverter`
-- `System.ComponentModel.CollectionConverter`
-- `System.ComponentModel.DecimalConverter`
-- `System.ComponentModel.DefaultValueAttribute`
-- `System.ComponentModel.DisplayNameAttribute`
-- `System.ComponentModel.DoubleConverter`
-- `System.ComponentModel.EditorBrowsableAttribute`
-- `System.ComponentModel.EditorBrowsableState`
-- `System.ComponentModel.EnumConverter`
-- `System.ComponentModel.Int16Converter`
-- `System.ComponentModel.Int32Converter`
-- `System.ComponentModel.Int64Converter`
-- `System.ComponentModel.SingleConverter`
-- `System.ComponentModel.StringConverter`
-- `System.ComponentModel.TimeSpanConverter`
-- `System.ComponentModel.TypeConverter`
-- `System.ComponentModel.TypeConverterAttribute`
-- `System.Diagnostics.Stopwatch`
-- `System.DomainNameHelper`
-- `System.IOAsyncCallback`
-- `System.IOOperation`
-- `System.IPv4AddressHelper`
-- `System.IPv6AddressHelper`
-- `System.IriHelper`
-- `System.Net.CaseInsensitiveAscii`
-- `System.Net.HeaderInfo`
-- `System.Net.HeaderInfoTable`
-- `System.Net.HeaderParser`
-- `System.Net.IPAddressParser`
-- `System.Net.Sockets.AddressFamily`
-- `System.Net.ValidationHelper`
-- `System.Net.WebHeaderCollection`
-- `System.Net.WebHeaderCollectionType`
-- `System.NotImplemented`
-- `System.ParsingError`
-- `System.Security.Cryptography.AsnDecodeStatus`
-- `System.Security.Cryptography.AsnEncodedData`
-- `System.Security.Cryptography.Oid`
-- `System.Security.Cryptography.OidCollection`
-- `System.Security.Cryptography.OidEnumerator`
-- `System.Security.Cryptography.OidGroup`
-- `System.Security.Cryptography.X509Certificates.PublicKey`
-- `System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension`
-- `System.Security.Cryptography.X509Certificates.X509Extension`
-- `System.Security.Cryptography.X509Certificates.X509KeyUsageFlags`
-- `System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm`
-- `System.Text.RegularExpressions.Capture`
-- `System.Text.RegularExpressions.CaptureCollection`
-- `System.Text.RegularExpressions.CollectionDebuggerProxy<T>`
-- `System.Text.RegularExpressions.ExclusiveReference`
-- `System.Text.RegularExpressions.Group`
-- `System.Text.RegularExpressions.GroupCollection`
-- `System.Text.RegularExpressions.Match`
-- `System.Text.RegularExpressions.MatchEvaluator`
-- `System.Text.RegularExpressions.MatchSparse`
-- `System.Text.RegularExpressions.Regex`
-- `System.Text.RegularExpressions.RegexBoyerMoore`
-- `System.Text.RegularExpressions.RegexCharClass`
-- `System.Text.RegularExpressions.RegexCode`
-- `System.Text.RegularExpressions.RegexFC`
-- `System.Text.RegularExpressions.RegexFCD`
-- `System.Text.RegularExpressions.RegexInterpreter`
-- `System.Text.RegularExpressions.RegexMatchTimeoutException`
-- `System.Text.RegularExpressions.RegexNode`
-- `System.Text.RegularExpressions.RegexOptions`
-- `System.Text.RegularExpressions.RegexParser`
-- `System.Text.RegularExpressions.RegexPrefix`
-- `System.Text.RegularExpressions.RegexReplacement`
-- `System.Text.RegularExpressions.RegexRunner`
-- `System.Text.RegularExpressions.RegexRunnerFactory`
-- `System.Text.RegularExpressions.RegexTree`
-- `System.Text.RegularExpressions.RegexWriter`
-- `System.UncNameHelper`
-- `System.UnescapeMode`
-- `System.Uri`
-- `System.UriComponents`
-- `System.UriFormat`
-- `System.UriFormatException`
-- `System.UriHelper`
-- `System.UriIdnScope`
-- `System.UriKind`
-- `System.UriParser`
-- `System.UriSyntaxFlags`
-- `System.UriTypeConverter`
-- `Unity.ThrowStub`
-- `Uri.Check`
-- `Uri.Flags`
-- `Uri.Offset`
-- `Uri.UriInfo`
-- `UriParser.BuiltInUriParser`
-- `UriParser.UriQuirksVersion`
-- `WebHeaderCollection.RfcChar`
-
-</details>
-
-<details><summary>Mismatching: 10</summary>
-
-- `<PrivateImplementationDetails>` (compiler-generated name)
-
-  - `field declaration order/names: ['00C700F38385659BA060672F86D4A9A5376EADF9ED1CABB1C63290A0FDEFE36A', '04D9D643E5A26924DC98C9906714082D395DCB17CEE9674D5EBFEC15D098C2B5', '063691760A57230E8119DF650327304D68AE1C009E476E48BE8C73DCA199D374', '1417FCAA8455DC8E3C88BF916DD5C75746A2597CC052F212A8E4394C890E012B', '27625E383C3A91E8B65BC745FF5D4048C82B883CCD293B07DED697BF82733811', '2EF83B43314F8CD03190EEE30ECCF048DA37791237F27C62A579F23EACE9FD70', '3505B8A2248AC03FE41ACADF8F29294572BBADEE1DD2E1A45D025766681C012C', '356A582FCE68ACAE8FC944F7B4F0C0DA2BFF4A90D3767C75905F3EDE2E4E66CF', '6C8F647E1FCD63826D12272FF0930E9C16F1FFEF719948703A4C0F3B90052885', '8109EF063456779751E8A4AEE94A0BE9AE32827B6EB153ABD7F40057FF2C9CE3', '9001C3EDE1D7E939C07996B84F82F7CBE59A7266C1FC2735E959E3C8609602E8', '9F58F1261D211553DE8FBC1AFA477C84EA3974B9BFF38223D771D0CDA787E15A', 'B849624EC20707184A433E21DAAC963906D4B261A19BD8F139F0E269E59E308C', 'BB6BB42AC5453BD8AA992CCB8929F1CB7D4E112E3FC56E57D711E106D1F72859', 'DFA7289CF8D8029ACEE90F30530C6926950E8DD20285772458F271AFD015BAD5', 'E478CC6C0579E2198C99BFDE0ABAADC66644AF69312CB9D6E94E2D4E3559482A'] → ['00C700F38385659BA060672F86D4A9A5376EADF9ED1CABB1C63290A0FDEFE36A', '04D9D643E5A26924DC98C9906714082D395DCB17CEE9674D5EBFEC15D098C2B5', '063691760A57230E8119DF650327304D68AE1C009E476E48BE8C73DCA199D374', '1417FCAA8455DC8E3C88BF916DD5C75746A2597CC052F212A8E4394C890E012B', '2EF83B43314F8CD03190EEE30ECCF048DA37791237F27C62A579F23EACE9FD70', '3505B8A2248AC03FE41ACADF8F29294572BBADEE1DD2E1A45D025766681C012C', '356A582FCE68ACAE8FC944F7B4F0C0DA2BFF4A90D3767C75905F3EDE2E4E66CF', '8109EF063456779751E8A4AEE94A0BE9AE32827B6EB153ABD7F40057FF2C9CE3', '9001C3EDE1D7E939C07996B84F82F7CBE59A7266C1FC2735E959E3C8609602E8', 'B849624EC20707184A433E21DAAC963906D4B261A19BD8F139F0E269E59E308C', 'E478CC6C0579E2198C99BFDE0ABAADC66644AF69312CB9D6E94E2D4E3559482A']`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=9 27625E383C3A91E8B65BC745FF5D4048C82B883CCD293B07DED697BF82733811`
-  - `2EF83B43314F8CD03190EEE30ECCF048DA37791237F27C62A579F23EACE9FD70: offset '0x151' → '0x148'`
-  - `3505B8A2248AC03FE41ACADF8F29294572BBADEE1DD2E1A45D025766681C012C: offset '0x178' → '0x168'`
-  - `356A582FCE68ACAE8FC944F7B4F0C0DA2BFF4A90D3767C75905F3EDE2E4E66CF: offset '0x180' → '0x170'`
-  - `missing field static long 6C8F647E1FCD63826D12272FF0930E9C16F1FFEF719948703A4C0F3B90052885`
-  - `8109EF063456779751E8A4AEE94A0BE9AE32827B6EB153ABD7F40057FF2C9CE3: offset '0x198' → '0x17c'`
-  - `9001C3EDE1D7E939C07996B84F82F7CBE59A7266C1FC2735E959E3C8609602E8: offset '0x218' → '0x1fc'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 9F58F1261D211553DE8FBC1AFA477C84EA3974B9BFF38223D771D0CDA787E15A`
-  - `B849624EC20707184A433E21DAAC963906D4B261A19BD8F139F0E269E59E308C: offset '0x24a' → '0x228'`
-  - `missing field static long BB6BB42AC5453BD8AA992CCB8929F1CB7D4E112E3FC56E57D711E106D1F72859`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=14 DFA7289CF8D8029ACEE90F30530C6926950E8DD20285772458F271AFD015BAD5`
-  - `E478CC6C0579E2198C99BFDE0ABAADC66644AF69312CB9D6E94E2D4E3559482A: offset '0x2e6' → '0x2a8'`
-
-- `System.Collections.Generic.SortedList<TKey, TValue>`
-
-  - `field declaration order/names: ['keys', 'values', '_size', 'version', 'comparer', 'keyList', 'valueList', '_syncRoot', 'DefaultCapacity', 'MaxArrayLength'] → ['keys', 'values', '_size', 'version', 'comparer', 'keyList', 'valueList', '_syncRoot']`
-  - `missing field constant int DefaultCapacity`
-  - `missing field constant int MaxArrayLength`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.IOAsyncResult`
-
-  - `bases: 'IAsyncResult' → ''`
-
-- `System.IOSelectorJob`
-
-  - `bases: 'IThreadPoolWorkItem' → ''`
-
-- `System.Net.IPAddress`
-
-  - `field declaration order/names: ['Any', 'Loopback', 'Broadcast', 'None', 'IPv6Any', 'IPv6Loopback', 'IPv6None', '_addressOrScopeId', '_numbers', '_toString', '_hashCode'] → ['Any', 'Loopback', 'Broadcast', 'None', 'LoopbackMask', 'IPv6Any', 'IPv6Loopback', 'IPv6None', '_addressOrScopeId', '_numbers', '_toString', '_hashCode', 'NumberOfLabels']`
-  - `extra field constant long LoopbackMask`
-  - `extra field constant int NumberOfLabels`
-
-- `System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension`
-
-  - `field declaration order/names: ['_certificateAuthority', '_hasPathLengthConstraint', '_pathLengthConstraint', '_status'] → ['oid', 'friendlyName', '_certificateAuthority', '_hasPathLengthConstraint', '_pathLengthConstraint', '_status']`
-  - `extra field constant string oid`
-  - `extra field constant string friendlyName`
-
-- `System.Security.Cryptography.X509Certificates.X509KeyUsageExtension`
-
-  - `field declaration order/names: ['_keyUsages', '_status'] → ['oid', 'friendlyName', 'all', '_keyUsages', '_status']`
-  - `extra field constant string oid`
-  - `extra field constant string friendlyName`
-  - `extra field constant X509KeyUsageFlags all`
-
-- `System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension`
-
-  - `field declaration order/names: ['_subjectKeyIdentifier', '_ski', '_status'] → ['oid', 'friendlyName', '_subjectKeyIdentifier', '_ski', '_status']`
-  - `extra field constant string oid`
-  - `extra field constant string friendlyName`
-
-- `TypeConverter.StandardValuesCollection`
-
-  - `bases: 'ICollection, IEnumerable' → ''`
-  - `field declaration order/names: ['values', 'valueArray'] → []`
-  - `missing field instance ICollection values`
-  - `missing field instance Array valueArray`
-
-- `Uri.MoreInfo`
-
-  - `field declaration order/names: ['Path', 'Query', 'Fragment', 'AbsoluteUri', 'Hash', 'RemoteUrl'] → ['AbsoluteUri', 'Hash', 'RemoteUrl']`
-  - `missing field instance string Path`
-  - `missing field instance string Query`
-  - `missing field instance string Fragment`
-  - `AbsoluteUri: offset '0x28' → '0x10'`
-  - `Hash: offset '0x30' → '0x18'`
-  - `RemoteUrl: offset '0x38' → '0x20'`
-
-
-</details>
-
-<details><summary>Indeterminate: 9</summary>
-
-- `LinkedList.Enumerator<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `SortedList.Enumerator<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `SortedList.KeyList<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `SortedList.SortedListKeyEnumerator<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `SortedList.SortedListValueEnumerator<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `SortedList.ValueList<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.Collections.Generic.LinkedList<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.Collections.Generic.LinkedListNode<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.Collections.Generic.ValueListBuilder<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-
-</details>
-
-<details><summary>Missing: 620</summary>
-
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=14`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=9`
-- `ArrayConverter.ArrayPropertyDescriptor`
 - `AsyncProtocolRequest.<InnerRead>d__25` (compiler-generated name)
 - `AsyncProtocolRequest.<ProcessOperation>d__24` (compiler-generated name)
 - `AsyncProtocolRequest.<StartOperation>d__23` (compiler-generated name)
-- `AttributeCollection.AttributeEntry`
 - `BufferedReadStream.<ProcessReadAsync>d__2` (compiler-generated name)
 - `CallbackHelpers.<>c__DisplayClass0_0` (compiler-generated name)
 - `CallbackHelpers.<>c__DisplayClass6_0` (compiler-generated name)
+- `CaptureCollection.Enumerator`
 - `CertificateData.<ReadReverseRdns>d__21` (compiler-generated name)
 - `CertificateData.AlgorithmIdentifier`
 - `ChainValidationHelper.<>c__DisplayClass11_0` (compiler-generated name)
 - `CommandStream.PipelineEntry`
 - `CommandStream.PipelineEntryFlags`
 - `CommandStream.PipelineInstruction`
-- `ConcurrentBag.Enumerator<T>`
-- `ConcurrentBag.WorkStealingQueue<T>`
 - `ContentDecodeStream.Mode`
 - `ContextAwareResult.<>c` (compiler-generated name)
 - `ContextAwareResult.StateFlags`
 - `CookieCollection.CookieCollectionEnumerator`
 - `CookieCollection.Stamp`
 - `CookieTokenizer.RecognizedAttribute`
-- `CultureInfoConverter.CultureComparer`
-- `CultureInfoConverter.CultureInfoMapper`
 - `DeflateStream.ReadMethod`
 - `DeflateStream.WriteMethod`
 - `DeflateStreamNative.SafeDeflateStreamHandle`
 - `DeflateStreamNative.UnmanagedReadOrWrite`
 - `DerSequenceReader.<>c` (compiler-generated name)
 - `DerSequenceReader.DerTag`
-- `DesignerOptionService.DesignerOptionCollection`
-- `DesignerOptionService.DesignerOptionCollection.WrappedPropertyDescriptor`
-- `DesignerOptionService.DesignerOptionConverter`
-- `DesignerOptionService.DesignerOptionConverter.OptionPropertyDescriptor`
 - `Dns.GetHostAddressesCallback`
-- `EventDescriptorCollection.ArraySubsetEnumerator`
-- `EventHandlerList.ListEntry`
 - `FixedSizeReadStream.<ProcessReadAsync>d__5` (compiler-generated name)
 - `FtpControlStream.<>c__DisplayClass31_0` (compiler-generated name)
 - `FtpControlStream.GetPathOption`
@@ -3761,15 +4293,14 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `FtpWebRequest.<CreateConnectionAsync>d__86` (compiler-generated name)
 - `FtpWebRequest.RequestStage`
 - `FtpWebResponse.EmptyStream`
-- `HttpEncoder.<>c` (compiler-generated name)
-- `HttpUtility.HttpQSCollection`
+- `GroupCollection.Enumerator`
 - `HttpWebRequest.<<GetRewriteHandler>b__271_0>d` (compiler-generated name)
-- `HttpWebRequest.<>c__241<T>` (compiler-generated name)
 - `HttpWebRequest.<GetResponseFromData>d__244` (compiler-generated name)
 - `HttpWebRequest.<MyGetResponseAsync>d__243` (compiler-generated name)
-- `HttpWebRequest.<RunWithTimeoutWorker>d__241<T>` (compiler-generated name)
 - `HttpWebRequest.AuthorizationState`
 - `HttpWebRequest.NtlmAuthState`
+- `IPAddress.ReadOnlyIPAddress`
+- `Internal.Cryptography.OidLookup`
 - `Internal.Cryptography.Pal.CertificateData`
 - `Internal.Cryptography.Pal.GeneralNameType`
 - `LazyAsyncResult.ThreadContext`
@@ -3777,9 +4308,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ListDictionary.NodeEnumerator`
 - `ListDictionary.NodeKeyValueCollection`
 - `ListDictionary.NodeKeyValueCollection.NodeKeyValueEnumerator`
-- `MatchCollection.Enumerator`
-- `Microsoft.Win32.NativeMethods`
-- `Microsoft.Win32.SafeHandles.SafeProcessHandle`
 - `MobileAuthenticatedStream.<>c__DisplayClass66_0` (compiler-generated name)
 - `MobileAuthenticatedStream.<InnerRead>d__66` (compiler-generated name)
 - `MobileAuthenticatedStream.<InnerWrite>d__67` (compiler-generated name)
@@ -3828,18 +4356,17 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `MonoChunkStream.<FinishReading>d__8` (compiler-generated name)
 - `MonoChunkStream.<ProcessReadAsync>d__7` (compiler-generated name)
 - `MonoTlsStream.<CreateStream>d__18` (compiler-generated name)
+- `NameObjectCollectionBase.NameObjectEntry`
+- `NameObjectCollectionBase.NameObjectKeysEnumerator`
 - `NetEventSource.Keywords`
 - `NtlmClient.<>c` (compiler-generated name)
-- `ObservableCollection.SimpleMonitor<T>`
-- `OrderedDictionary.OrderedDictionaryEnumerator`
-- `OrderedDictionary.OrderedDictionaryKeyValueCollection`
+- `OidLookup.<>c` (compiler-generated name)
 - `PathList.PathListComparer`
-- `Process.ProcInfo`
-- `Process.State`
-- `Process.StreamReadMode`
-- `PropertyDescriptorCollection.PropertyDescriptorEnumerator`
-- `ReferenceConverter.ReferenceComparer`
-- `ReflectTypeDescriptionProvider.ReflectedTypeData`
+- `Regex.CachedCodeEntry`
+- `Regex.CachedCodeEntryKey`
+- `RegexCharClass.LowerCaseMapping`
+- `RegexCharClass.SingleRange`
+- `RegexCharClass.SingleRangeComparer`
 - `ServerCertValidationCallback.CallbackContext`
 - `ServicePointManager.SPKey`
 - `ServicePointScheduler.<RunScheduler>d__32` (compiler-generated name)
@@ -3855,9 +4382,678 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Socket.AwaitableSocketAsyncEventArgs.<>c` (compiler-generated name)
 - `Socket.CachedEventArgs`
 - `Socket.Int32TaskSocketAsyncEventArgs`
-- `Socket.TaskSocketAsyncEventArgs<TResult>`
 - `Socket.WSABUF`
 - `SocketAsyncResult.<>c` (compiler-generated name)
+- `SslStream.<>c__DisplayClass21_0` (compiler-generated name)
+- `System.CodeDom.Compiler.GeneratedCodeAttribute`
+- `System.Collections.Generic.DictionaryKeyCollectionDebugView<TKey, TValue>`
+- `System.Collections.Generic.DictionaryValueCollectionDebugView<TKey, TValue>`
+- `System.Collections.Generic.ICollectionDebugView<T>`
+- `System.Collections.Generic.IDictionaryDebugView<K, V>`
+- `System.Collections.Generic.ISet<T>`
+- `System.Collections.HashtableExtensions`
+- `System.Collections.Specialized.CompatibleComparer`
+- `System.Collections.Specialized.ListDictionary`
+- `System.Collections.Specialized.NameObjectCollectionBase`
+- `System.Collections.Specialized.NameValueCollection`
+- `System.Collections.Specialized.StringCollection`
+- `System.ComponentModel.ArrayConverter`
+- `System.ComponentModel.BaseNumberConverter`
+- `System.ComponentModel.BooleanConverter`
+- `System.ComponentModel.CollectionConverter`
+- `System.ComponentModel.DecimalConverter`
+- `System.ComponentModel.DefaultValueAttribute`
+- `System.ComponentModel.DisplayNameAttribute`
+- `System.ComponentModel.DoubleConverter`
+- `System.ComponentModel.EditorBrowsableAttribute`
+- `System.ComponentModel.EditorBrowsableState`
+- `System.ComponentModel.EnumConverter`
+- `System.ComponentModel.Int16Converter`
+- `System.ComponentModel.Int32Converter`
+- `System.ComponentModel.Int64Converter`
+- `System.ComponentModel.SingleConverter`
+- `System.ComponentModel.StringConverter`
+- `System.ComponentModel.TimeSpanConverter`
+- `System.ComponentModel.TypeConverter`
+- `System.ComponentModel.TypeConverterAttribute`
+- `System.ComponentModel.Win32Exception`
+- `System.Diagnostics.Stopwatch`
+- `System.DomainNameHelper`
+- `System.IO.Compression.CompressionMode`
+- `System.IO.Compression.DeflateStream`
+- `System.IO.Compression.DeflateStreamNative`
+- `System.IO.Compression.GZipStream`
+- `System.IO.InvalidDataException`
+- `System.IOAsyncCallback`
+- `System.IOAsyncResult`
+- `System.IOOperation`
+- `System.IOSelector`
+- `System.IOSelectorJob`
+- `System.IPv4AddressHelper`
+- `System.IPv6AddressHelper`
+- `System.IriHelper`
+- `System.Net.AuthenticationManager`
+- `System.Net.Authorization`
+- `System.Net.AutoWebProxyScriptEngine`
+- `System.Net.BasicClient`
+- `System.Net.BindIPEndPoint`
+- `System.Net.BufferOffsetSize`
+- `System.Net.BufferedReadStream`
+- `System.Net.Cache.RequestCacheLevel`
+- `System.Net.Cache.RequestCachePolicy`
+- `System.Net.CaseInsensitiveAscii`
+- `System.Net.CloseExState`
+- `System.Net.CommandStream`
+- `System.Net.Comparer`
+- `System.Net.Configuration.DefaultProxySectionInternal`
+- `System.Net.Configuration.SettingsSectionInternal`
+- `System.Net.ContentDecodeStream`
+- `System.Net.ContextAwareResult`
+- `System.Net.Cookie`
+- `System.Net.CookieCollection`
+- `System.Net.CookieContainer`
+- `System.Net.CookieException`
+- `System.Net.CookieParser`
+- `System.Net.CookieToken`
+- `System.Net.CookieTokenizer`
+- `System.Net.CookieVariant`
+- `System.Net.CredentialCache`
+- `System.Net.DecompressionMethods`
+- `System.Net.DefaultCertificatePolicy`
+- `System.Net.DigestClient`
+- `System.Net.DigestHeaderParser`
+- `System.Net.DigestSession`
+- `System.Net.Dns`
+- `System.Net.EndPoint`
+- `System.Net.ExceptionHelper`
+- `System.Net.FileWebRequestCreator`
+- `System.Net.FileWebResponse`
+- `System.Net.FileWebStream`
+- `System.Net.FixedSizeReadStream`
+- `System.Net.FtpControlStream`
+- `System.Net.FtpDataStream`
+- `System.Net.FtpLoginState`
+- `System.Net.FtpMethodFlags`
+- `System.Net.FtpMethodInfo`
+- `System.Net.FtpOperation`
+- `System.Net.FtpStatusCode`
+- `System.Net.FtpWebRequestCreator`
+- `System.Net.FtpWebResponse`
+- `System.Net.HeaderInfo`
+- `System.Net.HeaderInfoTable`
+- `System.Net.HeaderParser`
+- `System.Net.HeaderVariantInfo`
+- `System.Net.HttpContinueDelegate`
+- `System.Net.HttpRequestCreator`
+- `System.Net.HttpRequestHeader`
+- `System.Net.HttpStatusCode`
+- `System.Net.HttpStatusDescription`
+- `System.Net.HttpValidationHelpers`
+- `System.Net.HttpVersion`
+- `System.Net.HttpWebResponse`
+- `System.Net.IAuthenticationModule`
+- `System.Net.ICertificatePolicy`
+- `System.Net.ICloseEx`
+- `System.Net.ICredentialPolicy`
+- `System.Net.ICredentials`
+- `System.Net.IPAddressParser`
+- `System.Net.IPEndPoint`
+- `System.Net.IPHostEntry`
+- `System.Net.IWebProxy`
+- `System.Net.IWebRequestCreate`
+- `System.Net.InternalException`
+- `System.Net.KnownHttpVerb`
+- `System.Net.Logging`
+- `System.Net.MonoChunkParser`
+- `System.Net.MonoChunkStream`
+- `System.Net.NclUtilities`
+- `System.Net.NetEventSource`
+- `System.Net.NetRes`
+- `System.Net.NetworkCredential`
+- `System.Net.NetworkInformation.CommonUnixIPGlobalProperties`
+- `System.Net.NetworkInformation.IPGlobalProperties`
+- `System.Net.NetworkInformation.IPGlobalPropertiesFactoryPal`
+- `System.Net.NetworkInformation.MibIPGlobalProperties`
+- `System.Net.NetworkInformation.NetworkInformationException`
+- `System.Net.NetworkInformation.NetworkInterfaceComponent`
+- `System.Net.NetworkInformation.UnixIPGlobalProperties`
+- `System.Net.NetworkInformation.UnixIPGlobalPropertiesFactoryPal`
+- `System.Net.NetworkInformation.UnixNoLibCIPGlobalProperties`
+- `System.Net.NetworkStreamWrapper`
+- `System.Net.NtlmClient`
+- `System.Net.PathList`
+- `System.Net.ProtocolViolationException`
+- `System.Net.ReadState`
+- `System.Net.ReceiveState`
+- `System.Net.ResponseDescription`
+- `System.Net.Security.AuthenticatedStream`
+- `System.Net.Security.AuthenticationLevel`
+- `System.Net.Security.EncryptionPolicy`
+- `System.Net.Security.LocalCertSelectionCallback`
+- `System.Net.Security.LocalCertificateSelectionCallback`
+- `System.Net.Security.RemoteCertificateValidationCallback`
+- `System.Net.Security.ServerCertSelectionCallback`
+- `System.Net.Security.SslPolicyErrors`
+- `System.Net.Security.SslStream`
+- `System.Net.SecurityProtocolType`
+- `System.Net.ServerCertValidationCallback`
+- `System.Net.ServicePoint`
+- `System.Net.ServicePointManager`
+- `System.Net.ServicePointScheduler`
+- `System.Net.SocketAddress`
+- `System.Net.Sockets.AddressFamily`
+- `System.Net.Sockets.IOControlCode`
+- `System.Net.Sockets.IPProtectionLevel`
+- `System.Net.Sockets.LingerOption`
+- `System.Net.Sockets.MulticastOption`
+- `System.Net.Sockets.NetworkStream`
+- `System.Net.Sockets.ProtocolType`
+- `System.Net.Sockets.SafeSocketHandle`
+- `System.Net.Sockets.SelectMode`
+- `System.Net.Sockets.Socket`
+- `System.Net.Sockets.SocketAsyncEventArgs`
+- `System.Net.Sockets.SocketAsyncOperation`
+- `System.Net.Sockets.SocketAsyncResult`
+- `System.Net.Sockets.SocketError`
+- `System.Net.Sockets.SocketException`
+- `System.Net.Sockets.SocketFlags`
+- `System.Net.Sockets.SocketOperation`
+- `System.Net.Sockets.SocketOptionLevel`
+- `System.Net.Sockets.SocketOptionName`
+- `System.Net.Sockets.SocketShutdown`
+- `System.Net.Sockets.SocketType`
+- `System.Net.Sockets.TcpClient`
+- `System.Net.SystemNetworkCredential`
+- `System.Net.TcpValidationHelpers`
+- `System.Net.TimerThread`
+- `System.Net.TlsStream`
+- `System.Net.TriState`
+- `System.Net.UnsafeNclNativeMethods`
+- `System.Net.ValidationHelper`
+- `System.Net.WebCompletionSource`
+- `System.Net.WebConnection`
+- `System.Net.WebConnectionStream`
+- `System.Net.WebConnectionTunnel`
+- `System.Net.WebException`
+- `System.Net.WebExceptionInternalStatus`
+- `System.Net.WebExceptionMapping`
+- `System.Net.WebExceptionStatus`
+- `System.Net.WebHeaderCollection`
+- `System.Net.WebHeaderCollectionType`
+- `System.Net.WebOperation`
+- `System.Net.WebProxy`
+- `System.Net.WebReadStream`
+- `System.Net.WebRequestPrefixElement`
+- `System.Net.WebRequestStream`
+- `System.Net.WebResponse`
+- `System.Net.WebResponseStream`
+- `System.NotImplemented`
+- `System.ParsingError`
+- `System.Security.Authentication.AuthenticationException`
+- `System.Security.Authentication.SslProtocols`
+- `System.Security.Cryptography.AsnDecodeStatus`
+- `System.Security.Cryptography.AsnEncodedData`
+- `System.Security.Cryptography.DerSequenceReader`
+- `System.Security.Cryptography.Oid`
+- `System.Security.Cryptography.OidCollection`
+- `System.Security.Cryptography.OidEnumerator`
+- `System.Security.Cryptography.OidGroup`
+- `System.Security.Cryptography.X509Certificates.OpenFlags`
+- `System.Security.Cryptography.X509Certificates.PublicKey`
+- `System.Security.Cryptography.X509Certificates.StoreLocation`
+- `System.Security.Cryptography.X509Certificates.StoreName`
+- `System.Security.Cryptography.X509Certificates.X500DistinguishedName`
+- `System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags`
+- `System.Security.Cryptography.X509Certificates.X509Certificate2`
+- `System.Security.Cryptography.X509Certificates.X509Certificate2Collection`
+- `System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator`
+- `System.Security.Cryptography.X509Certificates.X509Certificate2Impl`
+- `System.Security.Cryptography.X509Certificates.X509Certificate2ImplMono`
+- `System.Security.Cryptography.X509Certificates.X509Certificate2ImplUnix`
+- `System.Security.Cryptography.X509Certificates.X509CertificateCollection`
+- `System.Security.Cryptography.X509Certificates.X509CertificateImplCollection`
+- `System.Security.Cryptography.X509Certificates.X509Chain`
+- `System.Security.Cryptography.X509Certificates.X509ChainElement`
+- `System.Security.Cryptography.X509Certificates.X509ChainElementCollection`
+- `System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator`
+- `System.Security.Cryptography.X509Certificates.X509ChainImpl`
+- `System.Security.Cryptography.X509Certificates.X509ChainImplMono`
+- `System.Security.Cryptography.X509Certificates.X509ChainPolicy`
+- `System.Security.Cryptography.X509Certificates.X509ChainStatus`
+- `System.Security.Cryptography.X509Certificates.X509ChainStatusFlags`
+- `System.Security.Cryptography.X509Certificates.X509EnhancedKeyUsageExtension`
+- `System.Security.Cryptography.X509Certificates.X509Extension`
+- `System.Security.Cryptography.X509Certificates.X509ExtensionCollection`
+- `System.Security.Cryptography.X509Certificates.X509ExtensionEnumerator`
+- `System.Security.Cryptography.X509Certificates.X509FindType`
+- `System.Security.Cryptography.X509Certificates.X509Helper2`
+- `System.Security.Cryptography.X509Certificates.X509KeyUsageFlags`
+- `System.Security.Cryptography.X509Certificates.X509NameType`
+- `System.Security.Cryptography.X509Certificates.X509RevocationFlag`
+- `System.Security.Cryptography.X509Certificates.X509RevocationMode`
+- `System.Security.Cryptography.X509Certificates.X509Store`
+- `System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm`
+- `System.Security.Cryptography.X509Certificates.X509VerificationFlags`
+- `System.Text.RegularExpressions.Capture`
+- `System.Text.RegularExpressions.CaptureCollection`
+- `System.Text.RegularExpressions.CollectionDebuggerProxy<T>`
+- `System.Text.RegularExpressions.ExclusiveReference`
+- `System.Text.RegularExpressions.Group`
+- `System.Text.RegularExpressions.GroupCollection`
+- `System.Text.RegularExpressions.Match`
+- `System.Text.RegularExpressions.MatchEvaluator`
+- `System.Text.RegularExpressions.MatchSparse`
+- `System.Text.RegularExpressions.Regex`
+- `System.Text.RegularExpressions.RegexBoyerMoore`
+- `System.Text.RegularExpressions.RegexCharClass`
+- `System.Text.RegularExpressions.RegexCode`
+- `System.Text.RegularExpressions.RegexFC`
+- `System.Text.RegularExpressions.RegexFCD`
+- `System.Text.RegularExpressions.RegexInterpreter`
+- `System.Text.RegularExpressions.RegexMatchTimeoutException`
+- `System.Text.RegularExpressions.RegexNode`
+- `System.Text.RegularExpressions.RegexOptions`
+- `System.Text.RegularExpressions.RegexParser`
+- `System.Text.RegularExpressions.RegexPrefix`
+- `System.Text.RegularExpressions.RegexReplacement`
+- `System.Text.RegularExpressions.RegexRunner`
+- `System.Text.RegularExpressions.RegexRunnerFactory`
+- `System.Text.RegularExpressions.RegexTree`
+- `System.Text.RegularExpressions.RegexWriter`
+- `System.UncNameHelper`
+- `System.UnescapeMode`
+- `System.Uri`
+- `System.UriBuilder`
+- `System.UriComponents`
+- `System.UriFormat`
+- `System.UriFormatException`
+- `System.UriHelper`
+- `System.UriHostNameType`
+- `System.UriIdnScope`
+- `System.UriKind`
+- `System.UriParser`
+- `System.UriSyntaxFlags`
+- `System.UriTypeConverter`
+- `TimerThread.Callback`
+- `TimerThread.InfiniteTimer`
+- `TimerThread.InfiniteTimerQueue`
+- `TimerThread.Queue`
+- `TimerThread.Timer`
+- `TimerThread.TimerNode`
+- `TimerThread.TimerNode.TimerState`
+- `TimerThread.TimerQueue`
+- `Unity.ThrowStub`
+- `UnityTls.unitytls_ciphersuite`
+- `UnityTls.unitytls_error_code`
+- `UnityTls.unitytls_errorstate`
+- `UnityTls.unitytls_interface_struct`
+- `UnityTls.unitytls_interface_struct.unitytls_errorstate_create_t`
+- `UnityTls.unitytls_interface_struct.unitytls_errorstate_raise_error_t`
+- `UnityTls.unitytls_interface_struct.unitytls_key_free_t`
+- `UnityTls.unitytls_interface_struct.unitytls_key_get_ref_t`
+- `UnityTls.unitytls_interface_struct.unitytls_key_parse_der_t`
+- `UnityTls.unitytls_interface_struct.unitytls_key_parse_pem_t`
+- `UnityTls.unitytls_interface_struct.unitytls_random_generate_bytes_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_client_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_server_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_free_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_ciphersuite_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_protocol_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_notify_close_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_process_handshake_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_read_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_server_require_client_authentication_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_certificate_callback_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_supported_ciphersuites_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_trace_callback_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_trace_level_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_x509verify_callback_t`
+- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_write_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509_export_der_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509list_append_der_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509list_append_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509list_create_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509list_free_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509list_get_ref_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509list_get_x509_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509verify_default_ca_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509verify_explicit_ca_t`
+- `UnityTls.unitytls_interface_struct.unitytls_x509verify_result_to_string_t`
+- `UnityTls.unitytls_key`
+- `UnityTls.unitytls_key_ref`
+- `UnityTls.unitytls_log_level`
+- `UnityTls.unitytls_protocol`
+- `UnityTls.unitytls_tlsctx`
+- `UnityTls.unitytls_tlsctx_callbacks`
+- `UnityTls.unitytls_tlsctx_certificate_callback`
+- `UnityTls.unitytls_tlsctx_protocolrange`
+- `UnityTls.unitytls_tlsctx_read_callback`
+- `UnityTls.unitytls_tlsctx_trace_callback`
+- `UnityTls.unitytls_tlsctx_write_callback`
+- `UnityTls.unitytls_tlsctx_x509verify_callback`
+- `UnityTls.unitytls_x509_ref`
+- `UnityTls.unitytls_x509list`
+- `UnityTls.unitytls_x509list_ref`
+- `UnityTls.unitytls_x509name`
+- `UnityTls.unitytls_x509verify_callback`
+- `UnityTls.unitytls_x509verify_result`
+- `UnsafeNclNativeMethods.HttpApi`
+- `UnsafeNclNativeMethods.HttpApi.HTTP_REQUEST_HEADER_ID`
+- `UnsafeNclNativeMethods.SecureStringHelper`
+- `Uri.Check`
+- `Uri.Flags`
+- `Uri.MoreInfo`
+- `Uri.Offset`
+- `Uri.UriInfo`
+- `UriParser.BuiltInUriParser`
+- `UriParser.UriQuirksVersion`
+- `WebConnection.<>c` (compiler-generated name)
+- `WebConnection.<Connect>d__16` (compiler-generated name)
+- `WebConnection.<CreateStream>d__18` (compiler-generated name)
+- `WebConnection.<InitConnection>d__19` (compiler-generated name)
+- `WebConnectionTunnel.<Initialize>d__42` (compiler-generated name)
+- `WebConnectionTunnel.<ReadHeaders>d__43` (compiler-generated name)
+- `WebConnectionTunnel.NtlmAuthState`
+- `WebHeaderCollection.RfcChar`
+- `WebOperation.<GetRequestStream>d__50` (compiler-generated name)
+- `WebOperation.<Run>d__58` (compiler-generated name)
+- `WebReadStream.<ReadAsync>d__28` (compiler-generated name)
+- `WebRequest.DesignerWebRequestCreate`
+- `WebRequestStream.<FinishWriting>d__31` (compiler-generated name)
+- `WebRequestStream.<Initialize>d__36` (compiler-generated name)
+- `WebRequestStream.<ProcessWrite>d__34` (compiler-generated name)
+- `WebRequestStream.<SetHeadersAsync>d__37` (compiler-generated name)
+- `WebRequestStream.<WriteAsyncInner>d__33` (compiler-generated name)
+- `WebRequestStream.<WriteChunkTrailer>d__40` (compiler-generated name)
+- `WebRequestStream.<WriteChunkTrailer_inner>d__39` (compiler-generated name)
+- `WebRequestStream.<WriteRequestAsync>d__38` (compiler-generated name)
+- `WebResponseStream.<>c__DisplayClass41_0` (compiler-generated name)
+- `WebResponseStream.<InitReadAsync>d__52` (compiler-generated name)
+- `WebResponseStream.<ReadAllAsync>d__48` (compiler-generated name)
+- `WebResponseStream.<ReadAllAsyncInner>d__47` (compiler-generated name)
+- `WebResponseStream.<ReadAsync>d__40` (compiler-generated name)
+- `X509CertificateCollection.X509CertificateEnumerator`
+
+</details>
+
+<details><summary>Mismatching: 11</summary>
+
+- `System.Collections.Generic.SortedList<TKey, TValue>`
+
+  - `field declaration order/names: ['keys', 'values', '_size', 'version', 'comparer', 'keyList', 'valueList', '_syncRoot', 'DefaultCapacity', 'MaxArrayLength'] → ['keys', 'values', '_size', 'version', 'comparer', 'keyList', 'valueList', '_syncRoot']`
+  - `missing field constant int DefaultCapacity`
+  - `missing field constant int MaxArrayLength`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Net.FileWebRequest`
+
+  - `field declaration order/names: ['s_GetRequestStreamCallback', 's_GetResponseCallback', 'm_connectionGroupName', 'm_contentLength', 'm_credentials', 'm_fileAccess', 'm_headers', 'm_method', 'm_preauthenticate', 'm_proxy', 'm_readerEvent', 'm_readPending', 'm_response', 'm_stream', 'm_syncHint', 'm_timeout', 'm_uri', 'm_writePending', 'm_writing', 'm_WriteAResult', 'm_ReadAResult', 'm_Aborted'] → ['s_GetRequestStreamCallback', 's_GetResponseCallback', 'm_connectionGroupName', 'm_contentLength', 'm_credentials', 'm_fileAccess', 'm_headers', 'm_method', 'm_proxy', 'm_readerEvent', 'm_readPending', 'm_response', 'm_stream', 'm_syncHint', 'm_timeout', 'm_uri', 'm_writePending', 'm_writing', 'm_WriteAResult', 'm_ReadAResult', 'm_Aborted']`
+  - `m_connectionGroupName: offset '0x38' → '0x20'`
+  - `m_contentLength: offset '0x40' → '0x28'`
+  - `m_credentials: offset '0x48' → '0x30'`
+  - `m_fileAccess: offset '0x50' → '0x38'`
+  - `m_headers: offset '0x58' → '0x40'`
+  - `m_method: offset '0x60' → '0x48'`
+  - `missing field instance bool m_preauthenticate`
+  - `m_proxy: offset '0x70' → '0x50'`
+  - `m_readerEvent: offset '0x78' → '0x58'`
+  - `m_readPending: offset '0x80' → '0x60'`
+  - `m_response: offset '0x88' → '0x68'`
+  - `m_stream: offset '0x90' → '0x70'`
+  - `m_syncHint: offset '0x98' → '0x78'`
+  - `m_timeout: offset '0x9c' → '0x7c'`
+  - `m_uri: offset '0xa0' → '0x80'`
+  - `m_writePending: offset '0xa8' → '0x88'`
+  - `m_writing: offset '0xa9' → '0x89'`
+  - `m_WriteAResult: offset '0xb0' → '0x90'`
+  - `m_ReadAResult: offset '0xb8' → '0x98'`
+  - `m_Aborted: offset '0xc0' → '0xa0'`
+
+- `System.Net.FtpWebRequest`
+
+  - `field declaration order/names: ['_syncObject', '_authInfo', '_uri', '_methodInfo', '_renameTo', '_getRequestStreamStarted', '_getResponseStarted', '_startTime', '_timeout', '_remainingTimeout', '_contentLength', '_contentOffset', '_clientCertificates', '_passive', '_binary', '_connectionGroupName', '_async', '_aborted', '_timedOut', '_exception', '_timerQueue', '_timerCallback', '_enableSsl', '_connection', '_stream', '_requestStage', '_onceFailed', '_ftpRequestHeaders', '_ftpWebResponse', '_readWriteTimeout', '_writeAsyncResult', '_readAsyncResult', '_requestCompleteAsyncResult', 's_defaultFtpNetworkCredential', 's_DefaultTimerQueue'] → ['_syncObject', '_authInfo', '_uri', '_methodInfo', '_renameTo', '_getRequestStreamStarted', '_getResponseStarted', '_startTime', '_timeout', '_remainingTimeout', '_contentLength', '_contentOffset', '_clientCertificates', '_passive', '_binary', '_async', '_aborted', '_timedOut', '_exception', '_timerQueue', '_timerCallback', '_enableSsl', '_connection', '_stream', '_requestStage', '_onceFailed', '_ftpRequestHeaders', '_ftpWebResponse', '_readWriteTimeout', '_writeAsyncResult', '_readAsyncResult', '_requestCompleteAsyncResult', 's_defaultFtpNetworkCredential', 's_DefaultTimerQueue']`
+  - `_syncObject: offset '0x38' → '0x20'`
+  - `_authInfo: offset '0x40' → '0x28'`
+  - `_uri: offset '0x48' → '0x30'`
+  - `_methodInfo: offset '0x50' → '0x38'`
+  - `_renameTo: offset '0x58' → '0x40'`
+  - `_getRequestStreamStarted: offset '0x60' → '0x48'`
+  - `_getResponseStarted: offset '0x61' → '0x49'`
+  - `_startTime: offset '0x68' → '0x50'`
+  - `_timeout: offset '0x70' → '0x58'`
+  - `_remainingTimeout: offset '0x74' → '0x5c'`
+  - `_contentLength: offset '0x78' → '0x60'`
+  - `_contentOffset: offset '0x80' → '0x68'`
+  - `_clientCertificates: offset '0x88' → '0x70'`
+  - `_passive: offset '0x90' → '0x78'`
+  - `_binary: offset '0x91' → '0x79'`
+  - `missing field instance string _connectionGroupName`
+  - `_async: offset '0xa0' → '0x7a'`
+  - `_aborted: offset '0xa1' → '0x7b'`
+  - `_timedOut: offset '0xa2' → '0x7c'`
+  - `_exception: offset '0xa8' → '0x80'`
+  - `_timerQueue: offset '0xb0' → '0x88'`
+  - `_timerCallback: offset '0xb8' → '0x90'`
+  - `_enableSsl: offset '0xc0' → '0x98'`
+  - `_connection: offset '0xc8' → '0xa0'`
+  - `_stream: offset '0xd0' → '0xa8'`
+  - `_requestStage: offset '0xd8' → '0xb0'`
+  - `_onceFailed: offset '0xdc' → '0xb4'`
+  - `_ftpRequestHeaders: offset '0xe0' → '0xb8'`
+  - `_ftpWebResponse: offset '0xe8' → '0xc0'`
+  - `_readWriteTimeout: offset '0xf0' → '0xc8'`
+  - `_writeAsyncResult: offset '0xf8' → '0xd0'`
+  - `_readAsyncResult: offset '0x100' → '0xd8'`
+  - `_requestCompleteAsyncResult: offset '0x108' → '0xe0'`
+
+- `System.Net.HttpWebRequest`
+
+  - `requestUri: offset '0x38' → '0x20'`
+  - `actualUri: offset '0x40' → '0x28'`
+  - `hostChanged: offset '0x48' → '0x30'`
+  - `allowAutoRedirect: offset '0x49' → '0x31'`
+  - `allowBuffering: offset '0x4a' → '0x32'`
+  - `certificates: offset '0x50' → '0x38'`
+  - `connectionGroup: offset '0x58' → '0x40'`
+  - `haveContentLength: offset '0x60' → '0x48'`
+  - `contentLength: offset '0x68' → '0x50'`
+  - `continueDelegate: offset '0x70' → '0x58'`
+  - `cookieContainer: offset '0x78' → '0x60'`
+  - `credentials: offset '0x80' → '0x68'`
+  - `haveResponse: offset '0x88' → '0x70'`
+  - `requestSent: offset '0x89' → '0x71'`
+  - `webHeaders: offset '0x90' → '0x78'`
+  - `keepAlive: offset '0x98' → '0x80'`
+  - `maxAutoRedirect: offset '0x9c' → '0x84'`
+  - `mediaType: offset '0xa0' → '0x88'`
+  - `method: offset '0xa8' → '0x90'`
+  - `initialMethod: offset '0xb0' → '0x98'`
+  - `pipelined: offset '0xb8' → '0xa0'`
+  - `preAuthenticate: offset '0xb9' → '0xa1'`
+  - `usedPreAuth: offset '0xba' → '0xa2'`
+  - `version: offset '0xc0' → '0xa8'`
+  - `force_version: offset '0xc8' → '0xb0'`
+  - `actualVersion: offset '0xd0' → '0xb8'`
+  - `proxy: offset '0xd8' → '0xc0'`
+  - `sendChunked: offset '0xe0' → '0xc8'`
+  - `servicePoint: offset '0xe8' → '0xd0'`
+  - `timeout: offset '0xf0' → '0xd8'`
+  - `continueTimeout: offset '0xf4' → '0xdc'`
+  - `writeStream: offset '0xf8' → '0xe0'`
+  - `webResponse: offset '0x100' → '0xe8'`
+  - `responseTask: offset '0x108' → '0xf0'`
+  - `currentOperation: offset '0x110' → '0xf8'`
+  - `aborted: offset '0x118' → '0x100'`
+  - `gotRequestStream: offset '0x11c' → '0x104'`
+  - `redirects: offset '0x120' → '0x108'`
+  - `expectContinue: offset '0x124' → '0x10c'`
+  - `getResponseCalled: offset '0x125' → '0x10d'`
+  - `locker: offset '0x128' → '0x110'`
+  - `finished_reading: offset '0x130' → '0x118'`
+  - `auto_decomp: offset '0x134' → '0x11c'`
+  - `readWriteTimeout: offset '0x138' → '0x120'`
+  - `tlsProvider: offset '0x140' → '0x128'`
+  - `tlsSettings: offset '0x148' → '0x130'`
+  - `certValidationCallback: offset '0x150' → '0x138'`
+  - `hostHasPort: offset '0x158' → '0x140'`
+  - `hostUri: offset '0x160' → '0x148'`
+  - `auth_state: offset '0x168' → '0x150'`
+  - `proxy_auth_state: offset '0x178' → '0x160'`
+  - `ResendContentFactory: offset '0x188' → '0x170'`
+  - `<ThrowOnError>k__BackingField: offset '0x190' → '0x178'`
+  - `unsafe_auth_blah: offset '0x191' → '0x179'`
+
+- `System.Net.IPAddress`
+
+  - `field declaration order/names: ['Any', 'Loopback', 'Broadcast', 'None', 'IPv6Any', 'IPv6Loopback', 'IPv6None', '_addressOrScopeId', '_numbers', '_toString', '_hashCode'] → ['Any', 'Loopback', 'Broadcast', 'None', 'LoopbackMask', 'IPv6Any', 'IPv6Loopback', 'IPv6None', '_addressOrScopeId', '_numbers', '_toString', '_hashCode', 'NumberOfLabels']`
+  - `extra field constant long LoopbackMask`
+  - `extra field constant int NumberOfLabels`
+
+- `System.Net.Security.SslClientAuthenticationOptions`
+
+  - `field declaration order/names: ['_encryptionPolicy', '_checkCertificateRevocation', '_enabledSslProtocols', '_allowRenegotiation', '<LocalCertificateSelectionCallback>k__BackingField', '<RemoteCertificateValidationCallback>k__BackingField', '<TargetHost>k__BackingField', '<ClientCertificates>k__BackingField'] → ['_encryptionPolicy', '_checkCertificateRevocation', '_enabledSslProtocols', '_allowRenegotiation', '<TargetHost>k__BackingField', '<ClientCertificates>k__BackingField']`
+  - `missing field instance LocalCertificateSelectionCallback <LocalCertificateSelectionCallback>k__BackingField`
+  - `missing field instance RemoteCertificateValidationCallback <RemoteCertificateValidationCallback>k__BackingField`
+  - `<TargetHost>k__BackingField: offset '0x30' → '0x20'`
+  - `<ClientCertificates>k__BackingField: offset '0x38' → '0x28'`
+
+- `System.Net.WebRequest`
+
+  - `field declaration order/names: ['s_PrefixList', 's_InternalSyncObject', 's_DefaultTimerQueue', 'm_AuthenticationLevel', 'm_ImpersonationLevel', 'm_CachePolicy', 'm_CacheProtocol', 'm_CacheBinding', 'webRequestCreate', 's_DefaultWebProxy', 's_DefaultWebProxyInitialized'] → ['s_PrefixList', 's_InternalSyncObject', 's_DefaultTimerQueue', 'm_AuthenticationLevel', 'm_ImpersonationLevel', 'webRequestCreate', 's_DefaultWebProxy', 's_DefaultWebProxyInitialized']`
+  - `missing field instance RequestCachePolicy m_CachePolicy`
+  - `missing field instance RequestCacheProtocol m_CacheProtocol`
+  - `missing field instance RequestCacheBinding m_CacheBinding`
+
+- `System.Security.Cryptography.X509Certificates.X509BasicConstraintsExtension`
+
+  - `field declaration order/names: ['_certificateAuthority', '_hasPathLengthConstraint', '_pathLengthConstraint', '_status'] → ['oid', 'friendlyName', '_certificateAuthority', '_hasPathLengthConstraint', '_pathLengthConstraint', '_status']`
+  - `extra field constant string oid`
+  - `extra field constant string friendlyName`
+
+- `System.Security.Cryptography.X509Certificates.X509KeyUsageExtension`
+
+  - `field declaration order/names: ['_keyUsages', '_status'] → ['oid', 'friendlyName', 'all', '_keyUsages', '_status']`
+  - `extra field constant string oid`
+  - `extra field constant string friendlyName`
+  - `extra field constant X509KeyUsageFlags all`
+
+- `System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension`
+
+  - `field declaration order/names: ['_subjectKeyIdentifier', '_ski', '_status'] → ['oid', 'friendlyName', '_subjectKeyIdentifier', '_ski', '_status']`
+  - `extra field constant string oid`
+  - `extra field constant string friendlyName`
+
+- `TypeConverter.StandardValuesCollection`
+
+  - `bases: 'ICollection, IEnumerable' → ''`
+  - `field declaration order/names: ['values', 'valueArray'] → []`
+  - `missing field instance ICollection values`
+  - `missing field instance Array valueArray`
+
+
+</details>
+
+<details><summary>Indeterminate: 17</summary>
+
+- `HttpWebRequest.<>c__241<T>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `HttpWebRequest.<RunWithTimeoutWorker>d__241<T>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `LinkedList.Enumerator<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Socket.TaskSocketAsyncEventArgs<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `SortedList.Enumerator<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `SortedList.KeyList<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `SortedList.SortedListKeyEnumerator<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `SortedList.SortedListValueEnumerator<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `SortedList.ValueList<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Collections.Generic.LinkedList<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Collections.Generic.LinkedListNode<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Collections.Generic.ValueListBuilder<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Net.LazyAsyncResult`
+
+  - Limitation: t_ThreadContext: no comparable storage offset
+
+- `System.Net.WebCompletionSource<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `WebCompletionSource.<WaitForCompletion>d__15<T>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `WebCompletionSource.Result<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `WebCompletionSource.Status<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+
+</details>
+
+<details><summary>Missing: 211</summary>
+
+- `ArrayConverter.ArrayPropertyDescriptor`
+- `AttributeCollection.AttributeEntry`
+- `ConcurrentBag.Enumerator<T>`
+- `ConcurrentBag.WorkStealingQueue<T>`
+- `CultureInfoConverter.CultureComparer`
+- `CultureInfoConverter.CultureInfoMapper`
+- `DesignerOptionService.DesignerOptionCollection`
+- `DesignerOptionService.DesignerOptionCollection.WrappedPropertyDescriptor`
+- `DesignerOptionService.DesignerOptionConverter`
+- `DesignerOptionService.DesignerOptionConverter.OptionPropertyDescriptor`
+- `EventDescriptorCollection.ArraySubsetEnumerator`
+- `EventHandlerList.ListEntry`
+- `HttpEncoder.<>c` (compiler-generated name)
+- `HttpUtility.HttpQSCollection`
+- `MatchCollection.Enumerator`
+- `Microsoft.Win32.NativeMethods`
+- `Microsoft.Win32.SafeHandles.SafeProcessHandle`
+- `ObservableCollection.SimpleMonitor<T>`
+- `OrderedDictionary.OrderedDictionaryEnumerator`
+- `OrderedDictionary.OrderedDictionaryKeyValueCollection`
+- `Process.ProcInfo`
+- `Process.State`
+- `Process.StreamReadMode`
+- `PropertyDescriptorCollection.PropertyDescriptorEnumerator`
+- `ReferenceConverter.ReferenceComparer`
+- `ReflectTypeDescriptionProvider.ReflectedTypeData`
 - `SortedDictionary.<>c__DisplayClass34_0<TKey, TValue>` (compiler-generated name)
 - `SortedDictionary.<>c__DisplayClass34_1<TKey, TValue>` (compiler-generated name)
 - `SortedDictionary.Enumerator<TKey, TValue>`
@@ -3874,7 +5070,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `SortedSet.<>c__DisplayClass53_0<T>` (compiler-generated name)
 - `SortedSet.Enumerator<T>`
 - `SortedSet.Node<T>`
-- `SslStream.<>c__DisplayClass21_0` (compiler-generated name)
 - `System.Collections.Concurrent.ConcurrentBag<T>`
 - `System.Collections.Generic.CollectionDebugView<T>`
 - `System.Collections.Generic.NodeColor`
@@ -3889,7 +5084,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Collections.Specialized.BitVector32`
 - `System.Collections.Specialized.CaseSensitiveStringDictionary`
 - `System.Collections.Specialized.INotifyCollectionChanged`
-- `System.Collections.Specialized.ListDictionary`
 - `System.Collections.Specialized.NotifyCollectionChangedAction`
 - `System.Collections.Specialized.NotifyCollectionChangedEventArgs`
 - `System.Collections.Specialized.NotifyCollectionChangedEventHandler`
@@ -3987,7 +5181,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.ComponentModel.UInt32Converter`
 - `System.ComponentModel.UInt64Converter`
 - `System.ComponentModel.WeakHashtable`
-- `System.ComponentModel.Win32Exception`
 - `System.Diagnostics.AsyncStreamReader`
 - `System.Diagnostics.BooleanSwitch`
 - `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute`
@@ -4004,92 +5197,15 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Diagnostics.TraceLevel`
 - `System.Diagnostics.TraceSwitch`
 - `System.IO.Compression.CompressionLevel`
-- `System.IO.Compression.CompressionMode`
-- `System.IO.Compression.DeflateStream`
-- `System.IO.Compression.DeflateStreamNative`
-- `System.IO.Compression.GZipStream`
-- `System.IO.InvalidDataException`
-- `System.IOSelector`
 - `System.InvariantComparer`
 - `System.LocalAppContextSwitches`
-- `System.Net.AuthenticationManager`
-- `System.Net.Authorization`
-- `System.Net.AutoWebProxyScriptEngine`
-- `System.Net.BasicClient`
-- `System.Net.BindIPEndPoint`
-- `System.Net.BufferOffsetSize`
-- `System.Net.BufferedReadStream`
 - `System.Net.Cache.RequestCache`
 - `System.Net.Cache.RequestCacheBinding`
-- `System.Net.Cache.RequestCacheLevel`
 - `System.Net.Cache.RequestCacheManager`
-- `System.Net.Cache.RequestCachePolicy`
 - `System.Net.Cache.RequestCacheProtocol`
 - `System.Net.Cache.RequestCacheValidator`
 - `System.Net.Cache.RequestCachingSectionInternal`
-- `System.Net.CloseExState`
-- `System.Net.CommandStream`
-- `System.Net.Comparer`
-- `System.Net.Configuration.DefaultProxySectionInternal`
-- `System.Net.Configuration.SettingsSectionInternal`
-- `System.Net.ContentDecodeStream`
-- `System.Net.ContextAwareResult`
-- `System.Net.Cookie`
-- `System.Net.CookieCollection`
-- `System.Net.CookieContainer`
-- `System.Net.CookieException`
-- `System.Net.CookieParser`
-- `System.Net.CookieToken`
-- `System.Net.CookieTokenizer`
-- `System.Net.CookieVariant`
-- `System.Net.CredentialCache`
-- `System.Net.DecompressionMethods`
-- `System.Net.DefaultCertificatePolicy`
-- `System.Net.DigestClient`
-- `System.Net.DigestHeaderParser`
-- `System.Net.DigestSession`
-- `System.Net.Dns`
-- `System.Net.EndPoint`
-- `System.Net.ExceptionHelper`
-- `System.Net.FileWebRequest`
-- `System.Net.FileWebRequestCreator`
-- `System.Net.FileWebResponse`
-- `System.Net.FileWebStream`
-- `System.Net.FixedSizeReadStream`
-- `System.Net.FtpControlStream`
-- `System.Net.FtpDataStream`
-- `System.Net.FtpLoginState`
-- `System.Net.FtpMethodFlags`
-- `System.Net.FtpMethodInfo`
-- `System.Net.FtpOperation`
-- `System.Net.FtpStatusCode`
-- `System.Net.FtpWebRequest`
-- `System.Net.FtpWebRequestCreator`
-- `System.Net.FtpWebResponse`
-- `System.Net.HeaderVariantInfo`
-- `System.Net.HttpContinueDelegate`
 - `System.Net.HttpProtocolUtils`
-- `System.Net.HttpRequestCreator`
-- `System.Net.HttpRequestHeader`
-- `System.Net.HttpStatusCode`
-- `System.Net.HttpStatusDescription`
-- `System.Net.HttpValidationHelpers`
-- `System.Net.HttpVersion`
-- `System.Net.HttpWebRequest`
-- `System.Net.HttpWebResponse`
-- `System.Net.IAuthenticationModule`
-- `System.Net.ICertificatePolicy`
-- `System.Net.ICloseEx`
-- `System.Net.ICredentialPolicy`
-- `System.Net.ICredentials`
-- `System.Net.IPEndPoint`
-- `System.Net.IPHostEntry`
-- `System.Net.IWebProxy`
-- `System.Net.IWebRequestCreate`
-- `System.Net.InternalException`
-- `System.Net.KnownHttpVerb`
-- `System.Net.LazyAsyncResult`
-- `System.Net.Logging`
 - `System.Net.Mail.DomainLiteralReader`
 - `System.Net.Mail.DotAtomReader`
 - `System.Net.Mail.MailAddress`
@@ -4099,141 +5215,15 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Net.Mail.WhitespaceReader`
 - `System.Net.Mime.EncodedStreamFactory`
 - `System.Net.Mime.MailBnfHelper`
-- `System.Net.MonoChunkParser`
-- `System.Net.MonoChunkStream`
-- `System.Net.NclUtilities`
-- `System.Net.NetEventSource`
-- `System.Net.NetRes`
-- `System.Net.NetworkCredential`
-- `System.Net.NetworkInformation.CommonUnixIPGlobalProperties`
-- `System.Net.NetworkInformation.IPGlobalProperties`
-- `System.Net.NetworkInformation.IPGlobalPropertiesFactoryPal`
-- `System.Net.NetworkInformation.MibIPGlobalProperties`
-- `System.Net.NetworkInformation.NetworkInformationException`
-- `System.Net.NetworkInformation.NetworkInterfaceComponent`
-- `System.Net.NetworkInformation.UnixIPGlobalProperties`
-- `System.Net.NetworkInformation.UnixIPGlobalPropertiesFactoryPal`
-- `System.Net.NetworkInformation.UnixNoLibCIPGlobalProperties`
-- `System.Net.NetworkStreamWrapper`
-- `System.Net.NtlmClient`
-- `System.Net.PathList`
-- `System.Net.ProtocolViolationException`
-- `System.Net.ReadState`
-- `System.Net.ReceiveState`
-- `System.Net.ResponseDescription`
-- `System.Net.Security.AuthenticatedStream`
-- `System.Net.Security.AuthenticationLevel`
 - `System.Net.Security.CertificateHelper`
-- `System.Net.Security.EncryptionPolicy`
-- `System.Net.Security.LocalCertSelectionCallback`
-- `System.Net.Security.LocalCertificateSelectionCallback`
-- `System.Net.Security.RemoteCertificateValidationCallback`
-- `System.Net.Security.ServerCertSelectionCallback`
-- `System.Net.Security.SslClientAuthenticationOptions`
-- `System.Net.Security.SslPolicyErrors`
-- `System.Net.Security.SslStream`
-- `System.Net.SecurityProtocolType`
-- `System.Net.ServerCertValidationCallback`
-- `System.Net.ServicePoint`
-- `System.Net.ServicePointManager`
-- `System.Net.ServicePointScheduler`
-- `System.Net.SocketAddress`
-- `System.Net.Sockets.IOControlCode`
-- `System.Net.Sockets.IPProtectionLevel`
-- `System.Net.Sockets.LingerOption`
-- `System.Net.Sockets.MulticastOption`
-- `System.Net.Sockets.NetworkStream`
-- `System.Net.Sockets.ProtocolType`
-- `System.Net.Sockets.SafeSocketHandle`
-- `System.Net.Sockets.SelectMode`
-- `System.Net.Sockets.Socket`
-- `System.Net.Sockets.SocketAsyncEventArgs`
-- `System.Net.Sockets.SocketAsyncOperation`
-- `System.Net.Sockets.SocketAsyncResult`
-- `System.Net.Sockets.SocketError`
-- `System.Net.Sockets.SocketException`
-- `System.Net.Sockets.SocketFlags`
-- `System.Net.Sockets.SocketOperation`
-- `System.Net.Sockets.SocketOptionLevel`
-- `System.Net.Sockets.SocketOptionName`
-- `System.Net.Sockets.SocketShutdown`
-- `System.Net.Sockets.SocketType`
-- `System.Net.Sockets.TcpClient`
-- `System.Net.SystemNetworkCredential`
-- `System.Net.TcpValidationHelpers`
-- `System.Net.TimerThread`
-- `System.Net.TlsStream`
 - `System.Net.TransportContext`
-- `System.Net.TriState`
-- `System.Net.UnsafeNclNativeMethods`
-- `System.Net.WebCompletionSource`
-- `System.Net.WebCompletionSource<T>`
-- `System.Net.WebConnection`
-- `System.Net.WebConnectionStream`
-- `System.Net.WebConnectionTunnel`
-- `System.Net.WebException`
-- `System.Net.WebExceptionInternalStatus`
-- `System.Net.WebExceptionMapping`
-- `System.Net.WebExceptionStatus`
-- `System.Net.WebOperation`
-- `System.Net.WebProxy`
-- `System.Net.WebReadStream`
-- `System.Net.WebRequest`
-- `System.Net.WebRequestPrefixElement`
-- `System.Net.WebRequestStream`
-- `System.Net.WebResponse`
-- `System.Net.WebResponseStream`
 - `System.PasteArguments`
-- `System.Security.Authentication.AuthenticationException`
-- `System.Security.Authentication.SslProtocols`
-- `System.Security.Cryptography.DerSequenceReader`
-- `System.Security.Cryptography.X509Certificates.OpenFlags`
-- `System.Security.Cryptography.X509Certificates.StoreLocation`
-- `System.Security.Cryptography.X509Certificates.StoreName`
-- `System.Security.Cryptography.X509Certificates.X500DistinguishedName`
-- `System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags`
-- `System.Security.Cryptography.X509Certificates.X509Certificate2`
-- `System.Security.Cryptography.X509Certificates.X509Certificate2Collection`
-- `System.Security.Cryptography.X509Certificates.X509Certificate2Enumerator`
-- `System.Security.Cryptography.X509Certificates.X509Certificate2Impl`
-- `System.Security.Cryptography.X509Certificates.X509Certificate2ImplMono`
-- `System.Security.Cryptography.X509Certificates.X509Certificate2ImplUnix`
-- `System.Security.Cryptography.X509Certificates.X509CertificateCollection`
-- `System.Security.Cryptography.X509Certificates.X509CertificateImplCollection`
-- `System.Security.Cryptography.X509Certificates.X509Chain`
-- `System.Security.Cryptography.X509Certificates.X509ChainElement`
-- `System.Security.Cryptography.X509Certificates.X509ChainElementCollection`
-- `System.Security.Cryptography.X509Certificates.X509ChainElementEnumerator`
-- `System.Security.Cryptography.X509Certificates.X509ChainImpl`
-- `System.Security.Cryptography.X509Certificates.X509ChainImplMono`
-- `System.Security.Cryptography.X509Certificates.X509ChainPolicy`
-- `System.Security.Cryptography.X509Certificates.X509ChainStatus`
-- `System.Security.Cryptography.X509Certificates.X509ChainStatusFlags`
-- `System.Security.Cryptography.X509Certificates.X509ExtensionCollection`
-- `System.Security.Cryptography.X509Certificates.X509ExtensionEnumerator`
-- `System.Security.Cryptography.X509Certificates.X509FindType`
-- `System.Security.Cryptography.X509Certificates.X509Helper2`
-- `System.Security.Cryptography.X509Certificates.X509NameType`
-- `System.Security.Cryptography.X509Certificates.X509RevocationFlag`
-- `System.Security.Cryptography.X509Certificates.X509RevocationMode`
-- `System.Security.Cryptography.X509Certificates.X509Store`
-- `System.Security.Cryptography.X509Certificates.X509VerificationFlags`
 - `System.SecurityUtils`
 - `System.StringExtensions`
 - `System.Text.RegularExpressions.MatchCollection`
-- `System.UriBuilder`
-- `System.UriHostNameType`
 - `System.Web.HttpUtility`
 - `System.Web.Util.Helpers`
 - `System.Web.Util.HttpEncoder`
-- `TimerThread.Callback`
-- `TimerThread.InfiniteTimer`
-- `TimerThread.InfiniteTimerQueue`
-- `TimerThread.Queue`
-- `TimerThread.Timer`
-- `TimerThread.TimerNode`
-- `TimerThread.TimerNode.TimerState`
-- `TimerThread.TimerQueue`
 - `TypeConverter.SimplePropertyDescriptor`
 - `TypeDescriptionProvider.EmptyCustomTypeDescriptor`
 - `TypeDescriptor.AttributeFilterCacheItem`
@@ -4246,94 +5236,9 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TypeDescriptor.TypeDescriptionNode.DefaultTypeDescriptor`
 - `TypeDescriptor.TypeDescriptorComObject`
 - `TypeDescriptor.TypeDescriptorInterface`
-- `UnityTls.unitytls_ciphersuite`
-- `UnityTls.unitytls_error_code`
-- `UnityTls.unitytls_errorstate`
-- `UnityTls.unitytls_interface_struct`
-- `UnityTls.unitytls_interface_struct.unitytls_errorstate_create_t`
-- `UnityTls.unitytls_interface_struct.unitytls_errorstate_raise_error_t`
-- `UnityTls.unitytls_interface_struct.unitytls_key_free_t`
-- `UnityTls.unitytls_interface_struct.unitytls_key_get_ref_t`
-- `UnityTls.unitytls_interface_struct.unitytls_key_parse_der_t`
-- `UnityTls.unitytls_interface_struct.unitytls_key_parse_pem_t`
-- `UnityTls.unitytls_interface_struct.unitytls_random_generate_bytes_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_client_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_create_server_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_free_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_ciphersuite_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_get_protocol_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_notify_close_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_process_handshake_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_read_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_server_require_client_authentication_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_certificate_callback_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_supported_ciphersuites_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_trace_callback_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_trace_level_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_set_x509verify_callback_t`
-- `UnityTls.unitytls_interface_struct.unitytls_tlsctx_write_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509_export_der_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509list_append_der_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509list_append_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509list_create_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509list_free_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509list_get_ref_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509list_get_x509_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509verify_default_ca_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509verify_explicit_ca_t`
-- `UnityTls.unitytls_interface_struct.unitytls_x509verify_result_to_string_t`
-- `UnityTls.unitytls_key`
-- `UnityTls.unitytls_key_ref`
-- `UnityTls.unitytls_log_level`
-- `UnityTls.unitytls_protocol`
-- `UnityTls.unitytls_tlsctx`
-- `UnityTls.unitytls_tlsctx_callbacks`
-- `UnityTls.unitytls_tlsctx_certificate_callback`
-- `UnityTls.unitytls_tlsctx_protocolrange`
-- `UnityTls.unitytls_tlsctx_read_callback`
-- `UnityTls.unitytls_tlsctx_trace_callback`
-- `UnityTls.unitytls_tlsctx_write_callback`
-- `UnityTls.unitytls_tlsctx_x509verify_callback`
-- `UnityTls.unitytls_x509_ref`
-- `UnityTls.unitytls_x509list`
-- `UnityTls.unitytls_x509list_ref`
-- `UnityTls.unitytls_x509name`
-- `UnityTls.unitytls_x509verify_callback`
-- `UnityTls.unitytls_x509verify_result`
-- `UnsafeNclNativeMethods.HttpApi`
-- `UnsafeNclNativeMethods.HttpApi.HTTP_REQUEST_HEADER_ID`
-- `UnsafeNclNativeMethods.SecureStringHelper`
 - `WeakHashtable.WeakKeyComparer`
-- `WebCompletionSource.<WaitForCompletion>d__15<T>` (compiler-generated name)
-- `WebCompletionSource.Result<T>`
-- `WebCompletionSource.Status<T>`
-- `WebConnection.<>c` (compiler-generated name)
-- `WebConnection.<Connect>d__16` (compiler-generated name)
-- `WebConnection.<CreateStream>d__18` (compiler-generated name)
-- `WebConnection.<InitConnection>d__19` (compiler-generated name)
-- `WebConnectionTunnel.<Initialize>d__42` (compiler-generated name)
-- `WebConnectionTunnel.<ReadHeaders>d__43` (compiler-generated name)
-- `WebConnectionTunnel.NtlmAuthState`
-- `WebOperation.<GetRequestStream>d__50` (compiler-generated name)
-- `WebOperation.<Run>d__58` (compiler-generated name)
-- `WebReadStream.<ReadAsync>d__28` (compiler-generated name)
 - `WebRequest.<>c__DisplayClass78_0` (compiler-generated name)
 - `WebRequest.<>c__DisplayClass79_0` (compiler-generated name)
-- `WebRequest.DesignerWebRequestCreate`
-- `WebRequestStream.<FinishWriting>d__31` (compiler-generated name)
-- `WebRequestStream.<Initialize>d__36` (compiler-generated name)
-- `WebRequestStream.<ProcessWrite>d__34` (compiler-generated name)
-- `WebRequestStream.<SetHeadersAsync>d__37` (compiler-generated name)
-- `WebRequestStream.<WriteAsyncInner>d__33` (compiler-generated name)
-- `WebRequestStream.<WriteChunkTrailer>d__40` (compiler-generated name)
-- `WebRequestStream.<WriteChunkTrailer_inner>d__39` (compiler-generated name)
-- `WebRequestStream.<WriteRequestAsync>d__38` (compiler-generated name)
-- `WebResponseStream.<>c__DisplayClass41_0` (compiler-generated name)
-- `WebResponseStream.<InitReadAsync>d__52` (compiler-generated name)
-- `WebResponseStream.<ReadAllAsync>d__48` (compiler-generated name)
-- `WebResponseStream.<ReadAllAsyncInner>d__47` (compiler-generated name)
-- `WebResponseStream.<ReadAsync>d__40` (compiler-generated name)
-- `X509CertificateCollection.X509CertificateEnumerator`
 
 </details>
 
@@ -4973,7 +5878,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UniRx.dll
 
-<details><summary>Matching: 154</summary>
+<details><summary>Matching: 148</summary>
 
 - `<Module>`
 - `AsObservableObservable.AsObservable<T>`
@@ -4991,7 +5896,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `MainThreadDispatcher.<RunFixedUpdateMicroCoroutine>d__32` (compiler-generated name)
 - `MainThreadDispatcher.<RunUpdateMicroCoroutine>d__31` (compiler-generated name)
 - `MainThreadDispatcher.CullingMode`
-- `Observable.<>c` (compiler-generated name)
 - `Observable.<>c__DisplayClass318_0` (compiler-generated name)
 - `Observable.<>c__DisplayClass319_0` (compiler-generated name)
 - `Observable.<EveryCycleCore>d__311` (compiler-generated name)
@@ -5007,9 +5911,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Scheduler.<>c__DisplayClass12_0` (compiler-generated name)
 - `Scheduler.<>c__DisplayClass12_1` (compiler-generated name)
 - `Scheduler.CurrentThreadScheduler.Trampoline`
-- `Scheduler.DefaultSchedulers`
 - `Scheduler.ImmediateScheduler`
-- `Scheduler.MainThreadScheduler`
 - `Scheduler.MainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
 - `Scheduler.MainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
 - `Scheduler.ThreadPoolScheduler`
@@ -5044,7 +5946,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UniRx.IReadOnlyReactiveProperty<T>`
 - `UniRx.IScheduler`
 - `UniRx.ISchedulerPeriodic`
-- `UniRx.ISubject<T>`
 - `UniRx.IntReactiveProperty`
 - `UniRx.InternalUtil.AsyncLock`
 - `UniRx.InternalUtil.ExceptionExtensions`
@@ -5068,7 +5969,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UniRx.Operators.TimerObservable`
 - `UniRx.OptimizedObservableExtensions`
 - `UniRx.ReactivePropertyExtensions`
-- `UniRx.Scheduler`
 - `UniRx.SerialDisposable`
 - `UniRx.SingleAssignmentDisposable`
 - `UniRx.StableCompositeDisposable`
@@ -5128,11 +6028,82 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEqualityComparer.Vector3EqualityComparer`
 - `UnityEqualityComparer.Vector3IntEqualityComparer`
 - `UnityEqualityComparer.Vector4EqualityComparer`
-- `UnityUIComponentExtensions.<>c` (compiler-generated name)
 
 </details>
 
-<details><summary>Indeterminate: 145</summary>
+<details><summary>Mismatching: 11</summary>
+
+- `Observable.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__308_0'] → ['<>9', '<>9__308_0', '<>9__309_0', '<>9__310_0', '<>9__312_0', '<>9__313_0', '<>9__314_0', '<>9__315_0']`
+  - `extra field static Func<IObserver<long>, CancellationToken, IEnumerator> <>9__309_0`
+  - `extra field static Func<IObserver<long>, CancellationToken, IEnumerator> <>9__310_0`
+  - `extra field static Func<long, Unit, long> <>9__312_0`
+  - `extra field static Func<long, Unit, long> <>9__313_0`
+  - `extra field static Func<IObserver<long>, CancellationToken, IEnumerator> <>9__314_0`
+  - `extra field static Func<IObserver<Unit>, CancellationToken, IEnumerator> <>9__315_0`
+
+- `Scheduler.DefaultSchedulers`
+
+  - `field declaration order/names: ['constantTime', 'tailRecursion', 'iteration', 'timeBasedOperations'] → ['constantTime', 'tailRecursion', 'iteration', 'timeBasedOperations', 'asyncConversions']`
+  - `extra field static IScheduler asyncConversions`
+
+- `Scheduler.MainThreadScheduler`
+
+  - `bases: 'IScheduler, ISchedulerPeriodic' → 'IScheduler, ISchedulerPeriodic, ISchedulerQueueing'`
+
+- `UniRx.BehaviorSubject<T>`
+
+  - `bases: 'ISubject<T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>' → 'ISubject<T>, ISubject<T, T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.ISubject<T>`
+
+  - `bases: 'IObserver<T>, IObservable<T>' → 'ISubject<T, T>, IObserver<T>, IObservable<T>'`
+
+- `UniRx.ReactiveCollection<T>`
+
+  - `bases: 'Collection<T>, IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnlyReactiveCollection<T>, IDisposable' → 'Collection<T>, IReactiveCollection<T>, IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnlyReactiveCollection<T>, IDisposable'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.ReactiveDictionary<TKey, TValue>`
+
+  - `bases: 'IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IDictionary, ICollection, IDisposable, ISerializable, IDeserializationCallback' → 'IReactiveDictionary<TKey, TValue>, IReadOnlyReactiveDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IDictionary, ICollection, IDisposable, ISerializable, IDeserializationCallback'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.ReplaySubject<T>`
+
+  - `bases: 'ISubject<T>, IObserver<T>, IObservable<T>, IOptimizedObservable<T>, IDisposable' → 'ISubject<T>, ISubject<T, T>, IObserver<T>, IObservable<T>, IOptimizedObservable<T>, IDisposable'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.Scheduler`
+
+  - `field declaration order/names: ['CurrentThread', 'Immediate', 'ThreadPool', 'mainThread'] → ['CurrentThread', 'Immediate', 'ThreadPool', 'mainThread', 'mainThreadIgnoreTimeScale', 'mainThreadFixedUpdate', 'mainThreadEndOfFrame']`
+  - `extra field static IScheduler mainThreadIgnoreTimeScale`
+  - `extra field static IScheduler mainThreadFixedUpdate`
+  - `extra field static IScheduler mainThreadEndOfFrame`
+
+- `UniRx.Subject<T>`
+
+  - `bases: 'ISubject<T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>' → 'ISubject<T>, ISubject<T, T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UnityUIComponentExtensions.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__7_0'] → ['<>9', '<>9__0_0', '<>9__3_0', '<>9__5_0', '<>9__6_0', '<>9__7_0', '<>9__8_0', '<>9__10_0', '<>9__11_0']`
+  - `<>9__7_0: offset '0x8' → '0x28'`
+  - `extra field static Action<string, Text> <>9__0_0`
+  - `extra field static Action<bool, Selectable> <>9__3_0`
+  - `extra field static Func<Toggle, IObserver<bool>, IDisposable> <>9__5_0`
+  - `extra field static Func<Scrollbar, IObserver<float>, IDisposable> <>9__6_0`
+  - `extra field static Func<Slider, IObserver<float>, IDisposable> <>9__8_0`
+  - `extra field static Func<InputField, IObserver<string>, IDisposable> <>9__10_0`
+  - `extra field static Func<Dropdown, IObserver<int>, IDisposable> <>9__11_0`
+
+
+</details>
+
+<details><summary>Indeterminate: 140</summary>
 
 - `BehaviorSubject.Subscription<T>`
 
@@ -5403,10 +6374,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `UniRx.BehaviorSubject<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `UniRx.CollectionAddEvent<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -5639,14 +6606,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `UniRx.ReactiveCollection<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `UniRx.ReactiveDictionary<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `UniRx.ReactiveProperty<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -5655,19 +6614,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `UniRx.ReplaySubject<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `UniRx.ScheduledNotifier<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `UniRx.Stubs<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `UniRx.Subject<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -5718,13 +6669,508 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 500</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10429`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=13528`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=14237`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=26188`
+- `AggregateObservable.Aggregate<TSource, TAccumulate, TResult>`
+- `AggregateObservable.Aggregate<TSource, TAccumulate>`
+- `AggregateObservable.Aggregate<TSource>`
+- `AmbObservable.AmbOuterObserver.Amb<T>`
+- `AmbObservable.AmbOuterObserver.AmbDecisionObserver<T>`
+- `AmbObservable.AmbOuterObserver.AmbState<T>`
+- `AmbObservable.AmbOuterObserver<T>`
+- `AsSingleUnitObservableObservable.AsSingleUnitObservable<T>`
+- `AsyncMessageBroker.Subscription<T>`
+- `AsyncObjectPool.<>c__DisplayClass13_0<T>` (compiler-generated name)
+- `AsyncObjectPool.<>c__DisplayClass15_0<T>` (compiler-generated name)
+- `AsyncObjectPool.<PreloadCore>d__16<T>` (compiler-generated name)
+- `AsyncOperationExtensions.<>c__DisplayClass0_0` (compiler-generated name)
+- `AsyncOperationExtensions.<>c__DisplayClass1_0<T>` (compiler-generated name)
+- `AsyncOperationExtensions.<AsObservableCore>d__2<T>` (compiler-generated name)
+- `AsyncReactiveCommand.<>c<T>` (compiler-generated name)
+- `AsyncReactiveCommand.Subscription<T>`
+- `AsyncReactiveCommandExtensions.<>c` (compiler-generated name)
+- `AsyncReactiveCommandExtensions.<>c__DisplayClass4_0<T>` (compiler-generated name)
+- `AsyncSubject.<>c__DisplayClass25_0<T>` (compiler-generated name)
+- `AsyncSubject.AwaitObserver.<>c<T>` (compiler-generated name)
+- `AsyncSubject.AwaitObserver<T>`
+- `AsyncSubject.Subscription<T>`
+- `BatchFrameObservable.BatchFrame`
+- `BatchFrameObservable.BatchFrame.ReusableEnumerator`
+- `BatchFrameObservable.BatchFrame.ReusableEnumerator<T>`
+- `BatchFrameObservable.BatchFrame<T>`
+- `BufferObservable.Buffer.Buffer_<TSource, TWindowBoundary>`
+- `BufferObservable.Buffer<TSource, TWindowBoundary>`
+- `CastObservable.Cast<TSource, TResult>`
+- `CatchObservable.Catch<T, TException>`
+- `CatchObservable.Catch<T>`
+- `CombineLatestObservable.CombineLatest<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `CombineLatestObservable.CombineLatest<T1, T2, T3, T4, T5, T6, TR>`
+- `ConcatObservable.<CombineSources>d__3<T>` (compiler-generated name)
+- `ContinueWithObservable.ContinueWith<TSource, TResult>`
+- `CoroutineAsyncBridge.<Run>d__7<T>` (compiler-generated name)
+- `CoroutineAsyncBridge.<Run>d__8<T>` (compiler-generated name)
+- `CountNotifier.<>c__DisplayClass10_0` (compiler-generated name)
+- `CreateObservable.Create<T>`
+- `CreateSafeObservable.CreateSafe<T>`
+- `DefaultIfEmptyObservable.DefaultIfEmpty<T>`
+- `DeferObservable.Defer<T>`
+- `DelayFrameSubscriptionObservable.<>c<T>` (compiler-generated name)
+- `DelayObservable.Delay<T>`
+- `DelaySubscriptionObservable.<>c__DisplayClass6_0<T>` (compiler-generated name)
+- `DelaySubscriptionObservable.<>c__DisplayClass6_1<T>` (compiler-generated name)
+- `DelaySubscriptionObservable.<>c__DisplayClass6_2<T>` (compiler-generated name)
+- `DematerializeObservable.Dematerialize<T>`
+- `Disposable.AnonymousDisposable<T>`
+- `DistinctObservable.Distinct<T, TKey>`
+- `DistinctObservable.Distinct<T>`
+- `DoObserverObservable.Do<T>`
+- `DoOnCancelObservable.DoOnCancel<T>`
+- `DoOnCompletedObservable.DoOnCompleted<T>`
+- `DoOnErrorObservable.DoOnError<T>`
+- `DoOnSubscribeObservable.DoOnSubscribe<T>`
+- `DoOnTerminateObservable.DoOnTerminate<T>`
+- `FinallyObservable.Finally<T>`
+- `ForEachAsyncObservable.ForEachAsync<T>`
+- `ForEachAsyncObservable.ForEachAsync_<T>`
+- `FrameIntervalObservable.FrameInterval<T>`
+- `FrameTimeIntervalObservable.FrameTimeInterval<T>`
+- `FromCoroutineObservable.FromCoroutine<T>`
+- `FromEventPatternObservable.FromEventPattern<TDelegate, TEventArgs>`
+- `GroupByObservable.GroupBy<TSource, TKey, TElement>`
+- `IgnoreElementsObservable.IgnoreElements<T>`
+- `LastObservable.Last<T>`
+- `LastObservable.Last_<T>`
+- `MaterializeObservable.Materialize<T>`
+- `Notification.<>c__DisplayClass21_0<T>` (compiler-generated name)
+- `Notification.<>c__DisplayClass21_1<T>` (compiler-generated name)
+- `Notification.OnCompletedNotification<T>`
+- `Notification.OnErrorNotification<T>`
+- `Notification.OnNextNotification<T>`
+- `ObjectPool.<>c__DisplayClass14_0<T>` (compiler-generated name)
+- `ObjectPool.<>c__DisplayClass15_0<T>` (compiler-generated name)
+- `ObjectPool.<PreloadCore>d__16<T>` (compiler-generated name)
+- `Observable.<>c__342<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass0_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass13_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass142_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass142_1<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass144_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass144_1` (compiler-generated name)
+- `Observable.<>c__DisplayClass149_0<TSource, TException>` (compiler-generated name)
+- `Observable.<>c__DisplayClass157_0<TSource, TException>` (compiler-generated name)
+- `Observable.<>c__DisplayClass157_1<TSource, TException>` (compiler-generated name)
+- `Observable.<>c__DisplayClass163_0<TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass163_1<TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass164_0<T1, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass164_1<T1, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass165_0<T1, T2, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass165_1<T1, T2, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass166_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass167_0<T1>` (compiler-generated name)
+- `Observable.<>c__DisplayClass168_0<T1, T2>` (compiler-generated name)
+- `Observable.<>c__DisplayClass246_0<T, TR>` (compiler-generated name)
+- `Observable.<>c__DisplayClass248_0<T, TR>` (compiler-generated name)
+- `Observable.<>c__DisplayClass287_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass288_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass289_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass290_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass292_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass293_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass295_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass296_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass300_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass301_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass302_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass302_1<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass303_0` (compiler-generated name)
+- `Observable.<NextFrameCore>d__316` (compiler-generated name)
+- `Observable.<RepeatInfinite>d__130<T>` (compiler-generated name)
+- `Observable.<ToAwaitableEnumerator>d__336<T>` (compiler-generated name)
+- `Observable.<WrapEnumerator>d__291` (compiler-generated name)
+- `Observable.<WrapEnumeratorYieldValue>d__294<T>` (compiler-generated name)
+- `Observable.<WrapToCancellableEnumerator>d__297<T>` (compiler-generated name)
+- `Observable.EveryAfterUpdateInvoker`
+- `ObservableWWW.<>c__DisplayClass0_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass10_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass11_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass12_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass13_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass14_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass15_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass16_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass17_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass18_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass1_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass2_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass3_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass4_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass5_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass6_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass7_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass8_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass9_0` (compiler-generated name)
+- `ObservableWWW.<Fetch>d__20` (compiler-generated name)
+- `ObservableWWW.<FetchAssetBundle>d__23` (compiler-generated name)
+- `ObservableWWW.<FetchBytes>d__22` (compiler-generated name)
+- `ObservableWWW.<FetchText>d__21` (compiler-generated name)
+- `ObservableYieldInstruction.ToYieldInstruction<T>`
+- `ObserveOnObservable.ObserveOn.<>c__DisplayClass10_0<T>` (compiler-generated name)
+- `ObserveOnObservable.ObserveOn.SchedulableAction<T>`
+- `ObserveOnObservable.ObserveOn<T>`
+- `ObserveOnObservable.ObserveOn_<T>`
+- `Observer.AnonymousObserver<T>`
+- `Observer.AutoDetachObserver<T>`
+- `Observer.EmptyOnNextAnonymousObserver<T>`
+- `Observer.Subscribe<T, TState1, TState2, TState3>`
+- `Observer.Subscribe<T, TState1, TState2>`
+- `Observer.Subscribe<T, TState>`
+- `PairwiseObservable.Pairwise<T, TR>`
+- `RangeObservable.<>c__DisplayClass4_0` (compiler-generated name)
+- `RangeObservable.Range`
+- `ReactiveCommand.<>c<T>` (compiler-generated name)
+- `ReactiveCommandExtensions.<>c` (compiler-generated name)
+- `ReactiveCommandExtensions.<>c__DisplayClass4_0<T>` (compiler-generated name)
+- `ReactivePropertyExtensions.<>c` (compiler-generated name)
+- `ReactivePropertyExtensions.<>c__DisplayClass5_0<T>` (compiler-generated name)
+- `ReactivePropertyExtensions.<>c__DisplayClass5_1<T>` (compiler-generated name)
+- `RefCountDisposable.InnerDisposable`
+- `RepeatObservable.<>c__DisplayClass4_0<T>` (compiler-generated name)
+- `RepeatObservable.<>c__DisplayClass4_1<T>` (compiler-generated name)
+- `RepeatObservable.Repeat<T>`
+- `RepeatSafeObservable.RepeatSafe<T>`
+- `RepeatUntilObservable.RepeatUntil.<SubscribeAfterEndOfFrame>d__13<T>` (compiler-generated name)
+- `RepeatUntilObservable.RepeatUntil<T>`
+- `SampleFrameObservable.SampleFrame.SampleFrameTick<T>`
+- `SampleFrameObservable.SampleFrame<T>`
+- `SampleObservable.Sample.SampleTick<T, T2>`
+- `SampleObservable.Sample<T, T2>`
+- `SampleObservable.Sample<T>`
+- `ScanObservable.Scan<TSource, TAccumulate>`
+- `ScanObservable.Scan<TSource>`
+- `ScheduledNotifier.<>c__DisplayClass5_0<T>` (compiler-generated name)
+- `ScheduledNotifier.<>c__DisplayClass6_0<T>` (compiler-generated name)
+- `Scheduler.<>c__DisplayClass13_0` (compiler-generated name)
+- `Scheduler.<>c__DisplayClass13_1` (compiler-generated name)
+- `Scheduler.EndOfFrameMainThreadScheduler`
+- `Scheduler.EndOfFrameMainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
+- `Scheduler.EndOfFrameMainThreadScheduler.<ImmediateAction>d__1<T>` (compiler-generated name)
+- `Scheduler.EndOfFrameMainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
+- `Scheduler.FixedUpdateMainThreadScheduler`
+- `Scheduler.FixedUpdateMainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
+- `Scheduler.FixedUpdateMainThreadScheduler.<ImmediateAction>d__1<T>` (compiler-generated name)
+- `Scheduler.FixedUpdateMainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler`
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler.QueuedAction<T>`
+- `Scheduler.MainThreadScheduler.QueuedAction<T>`
+- `Scheduler.ThreadPoolScheduler.<>c__DisplayClass7_0<T>` (compiler-generated name)
+- `SelectManyObservable.SelectManyEnumerableObserver<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyEnumerableObserver<TSource, TResult>`
+- `SelectManyObservable.SelectManyEnumerableObserverWithIndex<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyEnumerableObserverWithIndex<TSource, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex.SelectMany<TSource, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex.SelectManyObserver<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex<TSource, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver.SelectMany<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver.SelectMany<TSource, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver<TSource, TResult>`
+- `SingleObservable.Single<T>`
+- `SingleObservable.Single_<T>`
+- `SkipUntilObservable.SkipUntilOuterObserver.SkipUntil<T, TOther>`
+- `SkipUntilObservable.SkipUntilOuterObserver.SkipUntilOther<T, TOther>`
+- `SkipUntilObservable.SkipUntilOuterObserver<T, TOther>`
+- `SkipWhileObservable.SkipWhile<T>`
+- `SkipWhileObservable.SkipWhile_<T>`
+- `StartObservable.StartObserver<T>`
+- `Stubs.<>c<T1, T2, T3>` (compiler-generated name)
+- `Stubs.<>c<T1, T2>` (compiler-generated name)
+- `SubjectExtensions.AnonymousSubject<T, U>`
+- `SubjectExtensions.AnonymousSubject<T>`
+- `SubscribeOnMainThreadObservable.<>c<T>` (compiler-generated name)
+- `SubscribeOnObservable.<>c__DisplayClass3_0<T>` (compiler-generated name)
+- `SynchronizeObservable.Synchronize<T>`
+- `TakeLastObservable.TakeLast<T>`
+- `TakeLastObservable.TakeLast_<T>`
+- `TakeObservable.Take<T>`
+- `TakeObservable.Take_<T>`
+- `TakeUntilObservable.TakeUntil.TakeUntilOther<T, TOther>`
+- `TakeUntilObservable.TakeUntil<T, TOther>`
+- `TakeWhileObservable.TakeWhile<T>`
+- `TakeWhileObservable.TakeWhile_<T>`
+- `TaskObservableExtensions.<>c__DisplayClass15_0<TResult>` (compiler-generated name)
+- `TaskObservableExtensions.<>c__DisplayClass3_0` (compiler-generated name)
+- `TaskObservableExtensions.<>c__DisplayClass8_0<TResult>` (compiler-generated name)
+- `ThrottleFirstFrameObservable.ThrottleFirstFrame.ThrottleFirstFrameTick<T>`
+- `ThrottleFirstFrameObservable.ThrottleFirstFrame<T>`
+- `ThrottleFirstObservable.ThrottleFirst<T>`
+- `ThrowObservable.<>c__DisplayClass3_0<T>` (compiler-generated name)
+- `ThrowObservable.Throw<T>`
+- `TimeIntervalObservable.TimeInterval<T>`
+- `TimeoutFrameObservable.TimeoutFrame.TimeoutFrameTick<T>`
+- `TimeoutFrameObservable.TimeoutFrame<T>`
+- `TimeoutObservable.Timeout.<>c__DisplayClass8_0<T>` (compiler-generated name)
+- `TimeoutObservable.Timeout<T>`
+- `TimeoutObservable.Timeout_<T>`
+- `TimestampObservable.Timestamp<T>`
+- `ToArrayObservable.ToArray<TSource>`
+- `ToListObservable.ToList<TSource>`
+- `UniRx.AnimationCurveReactiveProperty`
+- `UniRx.AsyncMessageBroker`
+- `UniRx.AsyncOperationExtensions`
+- `UniRx.AsyncReactiveCommand`
+- `UniRx.AsyncReactiveCommand<T>`
+- `UniRx.AsyncReactiveCommandExtensions`
+- `UniRx.AsyncSubject<T>`
+- `UniRx.BooleanNotifier`
+- `UniRx.BoundsReactiveProperty`
+- `UniRx.ByteReactiveProperty`
+- `UniRx.ColorReactiveProperty`
+- `UniRx.CoroutineAsyncBridge`
+- `UniRx.CoroutineAsyncBridge<T>`
+- `UniRx.CoroutineAsyncExtensions`
+- `UniRx.CountChangedStatus`
+- `UniRx.CountNotifier`
+- `UniRx.Diagnostics.LogEntry`
+- `UniRx.Diagnostics.LogEntryExtensions`
+- `UniRx.Diagnostics.Logger`
+- `UniRx.Diagnostics.ObservableDebugExtensions`
+- `UniRx.Diagnostics.ObservableLogger`
+- `UniRx.Diagnostics.UnityDebugSink`
+- `UniRx.DictionaryDisposable<TKey, TValue>`
+- `UniRx.DoubleReactiveProperty`
+- `UniRx.EventPattern<TEventArgs>`
+- `UniRx.EventPattern<TSender, TEventArgs>`
+- `UniRx.FrameCountTypeExtensions`
+- `UniRx.FrameInterval<T>`
+- `UniRx.IAsyncMessageBroker`
+- `UniRx.IAsyncMessagePublisher`
+- `UniRx.IAsyncMessageReceiver`
+- `UniRx.IAsyncReactiveCommand<T>`
+- `UniRx.ICustomYieldInstructionErrorHandler`
+- `UniRx.IEventPattern<TSender, TEventArgs>`
+- `UniRx.IGroupedObservable<TKey, TElement>`
+- `UniRx.IMessageBroker`
+- `UniRx.IMessagePublisher`
+- `UniRx.IMessageReceiver`
+- `UniRx.IObserver<TValue, TResult>`
+- `UniRx.IReactiveCollection<T>`
+- `UniRx.IReactiveCommand<T>`
+- `UniRx.IReactiveDictionary<TKey, TValue>`
+- `UniRx.IReadOnlyReactiveDictionary<TKey, TValue>`
+- `UniRx.ISchedulerLongRunning`
+- `UniRx.ISchedulerQueueing`
+- `UniRx.ISubject<TSource, TResult>`
+- `UniRx.InspectorDisplayAttribute`
+- `UniRx.InternalUtil.CancellableTaskCompletionSource<T>`
+- `UniRx.InternalUtil.PromiseHelper`
+- `UniRx.LongReactiveProperty`
+- `UniRx.MainThreadDispatchType`
+- `UniRx.MessageBroker`
+- `UniRx.MultilineReactivePropertyAttribute`
+- `UniRx.MultipleAssignmentDisposable`
+- `UniRx.Notification`
+- `UniRx.Notification<T>`
+- `UniRx.NotificationKind`
+- `UniRx.ObservableWWW`
+- `UniRx.ObservableYieldInstruction<T>`
+- `UniRx.ObserverExtensions`
+- `UniRx.Operators.AggregateObservable<TSource, TAccumulate, TResult>`
+- `UniRx.Operators.AggregateObservable<TSource, TAccumulate>`
+- `UniRx.Operators.AggregateObservable<TSource>`
+- `UniRx.Operators.AmbObservable<T>`
+- `UniRx.Operators.AsSingleUnitObservableObservable<T>`
+- `UniRx.Operators.BatchFrameObservable`
+- `UniRx.Operators.BatchFrameObservable<T>`
+- `UniRx.Operators.BufferObservable<TSource, TWindowBoundary>`
+- `UniRx.Operators.CastObservable<TSource, TResult>`
+- `UniRx.Operators.CatchObservable<T, TException>`
+- `UniRx.Operators.CatchObservable<T>`
+- `UniRx.Operators.CombineLatestFunc<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.CombineLatestFunc<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.CombineLatestObservable<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.CombineLatestObservable<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ContinueWithObservable<TSource, TResult>`
+- `UniRx.Operators.CreateObservable<T>`
+- `UniRx.Operators.CreateSafeObservable<T>`
+- `UniRx.Operators.DefaultIfEmptyObservable<T>`
+- `UniRx.Operators.DeferObservable<T>`
+- `UniRx.Operators.DelayFrameSubscriptionObservable<T>`
+- `UniRx.Operators.DelayObservable<T>`
+- `UniRx.Operators.DelaySubscriptionObservable<T>`
+- `UniRx.Operators.DematerializeObservable<T>`
+- `UniRx.Operators.DistinctObservable<T, TKey>`
+- `UniRx.Operators.DistinctObservable<T>`
+- `UniRx.Operators.DoObserverObservable<T>`
+- `UniRx.Operators.DoOnCancelObservable<T>`
+- `UniRx.Operators.DoOnCompletedObservable<T>`
+- `UniRx.Operators.DoOnErrorObservable<T>`
+- `UniRx.Operators.DoOnSubscribeObservable<T>`
+- `UniRx.Operators.DoOnTerminateObservable<T>`
+- `UniRx.Operators.FinallyObservable<T>`
+- `UniRx.Operators.ForEachAsyncObservable<T>`
+- `UniRx.Operators.FrameIntervalObservable<T>`
+- `UniRx.Operators.FrameTimeIntervalObservable<T>`
+- `UniRx.Operators.FromCoroutineObservable<T>`
+- `UniRx.Operators.FromEventPatternObservable<TDelegate, TEventArgs>`
+- `UniRx.Operators.GroupByObservable<TSource, TKey, TElement>`
+- `UniRx.Operators.GroupedObservable<TKey, TElement>`
+- `UniRx.Operators.IZipLatestObservable`
+- `UniRx.Operators.IZipObservable`
+- `UniRx.Operators.IgnoreElementsObservable<T>`
+- `UniRx.Operators.ImmutableNeverObservable<T>`
+- `UniRx.Operators.ImmutableReturnFalseObservable`
+- `UniRx.Operators.ImmutableReturnInt32Observable`
+- `UniRx.Operators.ImmutableReturnTrueObservable`
+- `UniRx.Operators.LastObservable<T>`
+- `UniRx.Operators.MaterializeObservable<T>`
+- `UniRx.Operators.NeverObservable<T>`
+- `UniRx.Operators.NthZipLatestObserverBase<T>`
+- `UniRx.Operators.NthZipObserverBase<T>`
+- `UniRx.Operators.ObserveOnObservable<T>`
+- `UniRx.Operators.PairwiseObservable<T, TR>`
+- `UniRx.Operators.RangeObservable`
+- `UniRx.Operators.RepeatObservable<T>`
+- `UniRx.Operators.RepeatSafeObservable<T>`
+- `UniRx.Operators.RepeatUntilObservable<T>`
+- `UniRx.Operators.SampleFrameObservable<T>`
+- `UniRx.Operators.SampleObservable<T, T2>`
+- `UniRx.Operators.SampleObservable<T>`
+- `UniRx.Operators.ScanObservable<TSource, TAccumulate>`
+- `UniRx.Operators.ScanObservable<TSource>`
+- `UniRx.Operators.SelectManyObservable<TSource, TCollection, TResult>`
+- `UniRx.Operators.SelectManyObservable<TSource, TResult>`
+- `UniRx.Operators.SingleObservable<T>`
+- `UniRx.Operators.SkipUntilObservable<T, TOther>`
+- `UniRx.Operators.SkipWhileObservable<T>`
+- `UniRx.Operators.StartObservable<T>`
+- `UniRx.Operators.SubscribeOnMainThreadObservable<T>`
+- `UniRx.Operators.SubscribeOnObservable<T>`
+- `UniRx.Operators.SynchronizeObservable<T>`
+- `UniRx.Operators.SynchronizedObserver<T>`
+- `UniRx.Operators.TakeLastObservable<T>`
+- `UniRx.Operators.TakeObservable<T>`
+- `UniRx.Operators.TakeUntilObservable<T, TOther>`
+- `UniRx.Operators.TakeWhileObservable<T>`
+- `UniRx.Operators.ThrottleFirstFrameObservable<T>`
+- `UniRx.Operators.ThrottleFirstObservable<T>`
+- `UniRx.Operators.ThrowObservable<T>`
+- `UniRx.Operators.TimeIntervalObservable<T>`
+- `UniRx.Operators.TimeoutFrameObservable<T>`
+- `UniRx.Operators.TimeoutObservable<T>`
+- `UniRx.Operators.TimestampObservable<T>`
+- `UniRx.Operators.ToArrayObservable<TSource>`
+- `UniRx.Operators.ToListObservable<TSource>`
+- `UniRx.Operators.Wait<T>`
+- `UniRx.Operators.WhenAllObservable`
+- `UniRx.Operators.WhenAllObservable<T>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipLatestObservable<T>`
+- `UniRx.Operators.ZipLatestObservable<TLeft, TRight, TResult>`
+- `UniRx.Operators.ZipLatestObserver<T>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipObservable<T>`
+- `UniRx.Operators.ZipObservable<TLeft, TRight, TResult>`
+- `UniRx.Operators.ZipObserver<T>`
+- `UniRx.QuaternionReactiveProperty`
+- `UniRx.RangeReactivePropertyAttribute`
+- `UniRx.ReactiveCollectionExtensions`
+- `UniRx.ReactiveCommand`
+- `UniRx.ReactiveCommand<T>`
+- `UniRx.ReactiveCommandExtensions`
+- `UniRx.ReactiveDictionaryExtensions`
+- `UniRx.RectReactiveProperty`
+- `UniRx.RefCountDisposable`
+- `UniRx.ScheduledDisposable`
+- `UniRx.Stubs<T1, T2, T3>`
+- `UniRx.Stubs<T1, T2>`
+- `UniRx.SubjectExtensions`
+- `UniRx.TaskObservableExtensions`
+- `UniRx.Timestamped`
+- `UniRx.Timestamped<T>`
+- `UniRx.Toolkit.AsyncObjectPool<T>`
+- `UniRx.Toolkit.ObjectPool<T>`
+- `UniRx.UnityGraphicExtensions`
+- `UniRx.Vector2ReactiveProperty`
+- `UniRx.Vector3ReactiveProperty`
+- `UniRx.Vector4ReactiveProperty`
+- `UniRx.WWWErrorException`
+- `UniRx.WebRequestExtensions`
+- `UnityEventExtensions.<>c` (compiler-generated name)
+- `UnityEventExtensions.<>c__2<T0, T1>` (compiler-generated name)
+- `UnityEventExtensions.<>c__3<T0, T1, T2>` (compiler-generated name)
+- `UnityEventExtensions.<>c__4<T0, T1, T2, T3>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass0_0` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass2_0<T0, T1>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass2_1<T0, T1>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass3_0<T0, T1, T2>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass3_1<T0, T1, T2>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass4_0<T0, T1, T2, T3>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass4_1<T0, T1, T2, T3>` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass0_0` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass0_1` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass1_0` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass1_1` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass2_0` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass2_1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `UnityUIComponentExtensions.<>c__1<T>` (compiler-generated name)
+- `UnityUIComponentExtensions.<>c__2<T>` (compiler-generated name)
+- `WebRequestExtensions.<>c__DisplayClass0_0<TResult>` (compiler-generated name)
+- `WebRequestExtensions.<>c__DisplayClass0_1<TResult>` (compiler-generated name)
+- `WebRequestExtensions.<>c__DisplayClass2_0` (compiler-generated name)
+- `WhenAllObservable.WhenAll`
+- `WhenAllObservable.WhenAll.WhenAllCollectionObserver`
+- `WhenAllObservable.WhenAll.WhenAllCollectionObserver<T>`
+- `WhenAllObservable.WhenAll<T>`
+- `WhenAllObservable.WhenAll_`
+- `WhenAllObservable.WhenAll_.WhenAllCollectionObserver`
+- `WhenAllObservable.WhenAll_.WhenAllCollectionObserver<T>`
+- `WhenAllObservable.WhenAll_<T>`
+- `ZipLatestObservable.ZipLatest.LeftObserver<TLeft, TRight, TResult>`
+- `ZipLatestObservable.ZipLatest.RightObserver<TLeft, TRight, TResult>`
+- `ZipLatestObservable.ZipLatest.ZipLatestObserver<T>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, T5, T6, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, T5, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, TR>`
+- `ZipLatestObservable.ZipLatest<T>`
+- `ZipLatestObservable.ZipLatest<TLeft, TRight, TResult>`
+- `ZipObservable.Zip.LeftZipObserver<TLeft, TRight, TResult>`
+- `ZipObservable.Zip.RightZipObserver<TLeft, TRight, TResult>`
+- `ZipObservable.Zip.ZipObserver<T>`
+- `ZipObservable.Zip<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `ZipObservable.Zip<T1, T2, T3, T4, T5, T6, TR>`
+- `ZipObservable.Zip<T1, T2, T3, T4, T5, TR>`
+- `ZipObservable.Zip<T1, T2, T3, T4, TR>`
+- `ZipObservable.Zip<T1, T2, T3, TR>`
+- `ZipObservable.Zip<T>`
+- `ZipObservable.Zip<TLeft, TRight, TResult>`
 
 </details>
 
@@ -5758,20 +7204,577 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 562</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=378`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=463`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=17792`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=3707`
+- `Aggregate.<AggregateAsync>d__0<TSource>` (compiler-generated name)
+- `Aggregate.<AggregateAsync>d__1<TSource, TAccumulate>` (compiler-generated name)
+- `Aggregate.<AggregateAsync>d__2<TSource, TAccumulate, TResult>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitAsync>d__3<TSource>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitAsync>d__4<TSource, TAccumulate>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitAsync>d__5<TSource, TAccumulate, TResult>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitWithCancellationAsync>d__6<TSource>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitWithCancellationAsync>d__7<TSource, TAccumulate>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitWithCancellationAsync>d__8<TSource, TAccumulate, TResult>` (compiler-generated name)
+- `All.<AllAsync>d__0<TSource>` (compiler-generated name)
+- `All.<AllAwaitAsync>d__1<TSource>` (compiler-generated name)
+- `All.<AllAwaitWithCancellationAsync>d__2<TSource>` (compiler-generated name)
+- `Any.<AnyAsync>d__0<TSource>` (compiler-generated name)
+- `Any.<AnyAsync>d__1<TSource>` (compiler-generated name)
+- `Any.<AnyAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Any.<AnyAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `AppendPrepend._AppendPrepend.State<TSource>`
+- `AppendPrepend._AppendPrepend<TSource>`
+- `AsyncEnumerableSorter.<SortAsync>d__2<TElement>` (compiler-generated name)
+- `AsyncSelectorEnumerableSorter.<ComputeKeysAsync>d__6<TElement, TKey>` (compiler-generated name)
+- `AsyncSelectorWithCancellationEnumerableSorter.<ComputeKeysAsync>d__7<TElement, TKey>` (compiler-generated name)
+- `Average.<AverageAsync>d__0` (compiler-generated name)
+- `Average.<AverageAsync>d__12` (compiler-generated name)
+- `Average.<AverageAsync>d__13<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__16` (compiler-generated name)
+- `Average.<AverageAsync>d__17<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__1<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__20` (compiler-generated name)
+- `Average.<AverageAsync>d__21<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__24` (compiler-generated name)
+- `Average.<AverageAsync>d__25<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__28` (compiler-generated name)
+- `Average.<AverageAsync>d__29<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__32` (compiler-generated name)
+- `Average.<AverageAsync>d__33<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__36` (compiler-generated name)
+- `Average.<AverageAsync>d__37<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__4` (compiler-generated name)
+- `Average.<AverageAsync>d__5<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__8` (compiler-generated name)
+- `Average.<AverageAsync>d__9<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `Buffer._Buffer<TSource>`
+- `BufferSkip._BufferSkip<TSource>`
+- `Cast._Cast<TResult>`
+- `CombineLatest._CombineLatest.<DisposeAsync>d__107<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__115<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__123<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__131<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__27<T1, T2, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__35<T1, T2, T3, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__43<T1, T2, T3, T4, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__51<T1, T2, T3, T4, T5, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__59<T1, T2, T3, T4, T5, T6, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__67<T1, T2, T3, T4, T5, T6, T7, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__75<T1, T2, T3, T4, T5, T6, T7, T8, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__83<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__91<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__99<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, TResult>`
+- `Concat._Concat.<RunSecondAfterDisposeAsync>d__16<TSource>` (compiler-generated name)
+- `Concat._Concat.IteratingState<TSource>`
+- `Concat._Concat<TSource>`
+- `Contains.<ContainsAsync>d__0<TSource>` (compiler-generated name)
+- `Count.<CountAsync>d__0<TSource>` (compiler-generated name)
+- `Count.<CountAsync>d__1<TSource>` (compiler-generated name)
+- `Count.<CountAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Count.<CountAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Create.AsyncWriter<T>`
+- `Create._Create.<RunWriterTask>d__12<T>` (compiler-generated name)
+- `Create._Create<T>`
+- `Cysharp.Threading.Tasks.Linq.Aggregate`
+- `Cysharp.Threading.Tasks.Linq.All`
+- `Cysharp.Threading.Tasks.Linq.Any`
+- `Cysharp.Threading.Tasks.Linq.AppendPrepend<TSource>`
+- `Cysharp.Threading.Tasks.Linq.AsyncEnumerableSorter<TElement>`
+- `Cysharp.Threading.Tasks.Linq.AsyncEnumeratorAwaitSelectorBase<TSource, TResult, TAwait>`
+- `Cysharp.Threading.Tasks.Linq.AsyncEnumeratorBase<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.AsyncSelectorEnumerableSorter<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.AsyncSelectorWithCancellationEnumerableSorter<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Average`
+- `Cysharp.Threading.Tasks.Linq.Buffer<TSource>`
+- `Cysharp.Threading.Tasks.Linq.BufferSkip<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Cast<TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, TResult>`
+- `Cysharp.Threading.Tasks.Linq.Concat<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Contains`
+- `Cysharp.Threading.Tasks.Linq.Count`
+- `Cysharp.Threading.Tasks.Linq.Create<T>`
+- `Cysharp.Threading.Tasks.Linq.DefaultIfEmpty<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Distinct<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Distinct<TSource>`
+- `Cysharp.Threading.Tasks.Linq.DistinctAwait<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctAwaitWithCancellation<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChanged<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChanged<TSource>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChangedAwait<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChangedAwaitWithCancellation<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Do<TSource>`
+- `Cysharp.Threading.Tasks.Linq.ElementAt`
+- `Cysharp.Threading.Tasks.Linq.Empty<T>`
+- `Cysharp.Threading.Tasks.Linq.EveryUpdate`
+- `Cysharp.Threading.Tasks.Linq.EveryValueChangedStandardObject<TTarget, TProperty>`
+- `Cysharp.Threading.Tasks.Linq.EveryValueChangedUnityObject<TTarget, TProperty>`
+- `Cysharp.Threading.Tasks.Linq.Except<TSource>`
+- `Cysharp.Threading.Tasks.Linq.First`
+- `Cysharp.Threading.Tasks.Linq.ForEach`
+- `Cysharp.Threading.Tasks.Linq.GroupBy<TSource, TKey, TElement, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupBy<TSource, TKey, TElement>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwait<TSource, TKey, TElement, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwait<TSource, TKey, TElement>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwaitWithCancellation<TSource, TKey, TElement, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwaitWithCancellation<TSource, TKey, TElement>`
+- `Cysharp.Threading.Tasks.Linq.GroupJoin<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupJoinAwait<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupJoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.IAsyncWriter<T>`
+- `Cysharp.Threading.Tasks.Linq.Intersect<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Join<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.JoinAwait<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.JoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.Last`
+- `Cysharp.Threading.Tasks.Linq.LongCount`
+- `Cysharp.Threading.Tasks.Linq.Max`
+- `Cysharp.Threading.Tasks.Linq.Merge<T>`
+- `Cysharp.Threading.Tasks.Linq.Min`
+- `Cysharp.Threading.Tasks.Linq.Never<T>`
+- `Cysharp.Threading.Tasks.Linq.OfType<TResult>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerable<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerable<TElement>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerableAwait<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerableAwaitWithCancellation<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Pairwise<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Publish<TSource>`
+- `Cysharp.Threading.Tasks.Linq.QueueOperator<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Range`
+- `Cysharp.Threading.Tasks.Linq.Repeat<TElement>`
+- `Cysharp.Threading.Tasks.Linq.Return<TValue>`
+- `Cysharp.Threading.Tasks.Linq.Reverse<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Select<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectAwait<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectAwaitWithCancellation<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectInt<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectIntAwait<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectIntAwaitWithCancellation<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectMany<TSource, TCollection, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectManyAwait<TSource, TCollection, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectManyAwaitWithCancellation<TSource, TCollection, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SequenceEqual`
+- `Cysharp.Threading.Tasks.Linq.SingleOperator`
+- `Cysharp.Threading.Tasks.Linq.Skip<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipLast<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipUntil<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipUntilCanceled<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhile<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileInt<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileIntAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileIntAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Sum`
+- `Cysharp.Threading.Tasks.Linq.SyncSelectorAsyncEnumerableSorter<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Take<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeLast<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeUntil<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeUntilCanceled<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhile<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileInt<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileIntAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileIntAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Throw<TValue>`
+- `Cysharp.Threading.Tasks.Linq.Timer`
+- `Cysharp.Threading.Tasks.Linq.TimerFrame`
+- `Cysharp.Threading.Tasks.Linq.ToArray`
+- `Cysharp.Threading.Tasks.Linq.ToDictionary`
+- `Cysharp.Threading.Tasks.Linq.ToHashSet`
+- `Cysharp.Threading.Tasks.Linq.ToList`
+- `Cysharp.Threading.Tasks.Linq.ToLookup`
+- `Cysharp.Threading.Tasks.Linq.ToObservable<T>`
+- `Cysharp.Threading.Tasks.Linq.ToUniTaskAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.Linq.ToUniTaskAsyncEnumerableTask<T>`
+- `Cysharp.Threading.Tasks.Linq.ToUniTaskAsyncEnumerableUniTask<T>`
+- `Cysharp.Threading.Tasks.Linq.Where<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereInt<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereIntAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereIntAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Zip<TFirst, TSecond, TResult>`
+- `Cysharp.Threading.Tasks.Linq.ZipAwait<TFirst, TSecond, TResult>`
+- `Cysharp.Threading.Tasks.Linq.ZipAwaitWithCancellation<TFirst, TSecond, TResult>`
+- `DefaultIfEmpty._DefaultIfEmpty.IteratingState<TSource>`
+- `DefaultIfEmpty._DefaultIfEmpty<TSource>`
+- `Distinct._Distinct<TSource, TKey>`
+- `Distinct._Distinct<TSource>`
+- `DistinctAwait._DistinctAwait<TSource, TKey>`
+- `DistinctAwaitWithCancellation._DistinctAwaitWithCancellation<TSource, TKey>`
+- `DistinctUntilChanged._DistinctUntilChanged<TSource, TKey>`
+- `DistinctUntilChanged._DistinctUntilChanged<TSource>`
+- `DistinctUntilChangedAwait._DistinctUntilChangedAwait<TSource, TKey>`
+- `DistinctUntilChangedAwaitWithCancellation._DistinctUntilChangedAwaitWithCancellation<TSource, TKey>`
+- `Do._Do<TSource>`
+- `ElementAt.<ElementAtAsync>d__0<TSource>` (compiler-generated name)
+- `Empty._Empty<T>`
+- `EveryUpdate._EveryUpdate`
+- `EveryUpdate._EveryUpdate.<>c` (compiler-generated name)
+- `EveryValueChangedStandardObject._EveryValueChanged.<>c<TTarget, TProperty>` (compiler-generated name)
+- `EveryValueChangedStandardObject._EveryValueChanged<TTarget, TProperty>`
+- `EveryValueChangedUnityObject._EveryValueChanged.<>c<TTarget, TProperty>` (compiler-generated name)
+- `EveryValueChangedUnityObject._EveryValueChanged<TTarget, TProperty>`
+- `Except._Except<TSource>`
+- `First.<FirstAsync>d__0<TSource>` (compiler-generated name)
+- `First.<FirstAsync>d__1<TSource>` (compiler-generated name)
+- `First.<FirstAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `First.<FirstAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAsync>d__0<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAsync>d__1<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitAsync>d__3<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitWithCancellationAsync>d__4<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitWithCancellationAsync>d__5<TSource>` (compiler-generated name)
+- `GroupBy._GroupBy.<CreateLookup>d__12<TSource, TKey, TElement>` (compiler-generated name)
+- `GroupBy._GroupBy.<CreateLookup>d__13<TSource, TKey, TElement, TResult>` (compiler-generated name)
+- `GroupBy._GroupBy<TSource, TKey, TElement, TResult>`
+- `GroupBy._GroupBy<TSource, TKey, TElement>`
+- `GroupByAwait._GroupByAwait.<CreateLookup>d__12<TSource, TKey, TElement>` (compiler-generated name)
+- `GroupByAwait._GroupByAwait.<CreateLookup>d__15<TSource, TKey, TElement, TResult>` (compiler-generated name)
+- `GroupByAwait._GroupByAwait<TSource, TKey, TElement, TResult>`
+- `GroupByAwait._GroupByAwait<TSource, TKey, TElement>`
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation.<CreateLookup>d__12<TSource, TKey, TElement>` (compiler-generated name)
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation.<CreateLookup>d__15<TSource, TKey, TElement, TResult>` (compiler-generated name)
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation<TSource, TKey, TElement, TResult>`
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation<TSource, TKey, TElement>`
+- `GroupJoin._GroupJoin.<CreateLookup>d__17<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `GroupJoin._GroupJoin<TOuter, TInner, TKey, TResult>`
+- `GroupJoinAwait._GroupJoinAwait.<CreateLookup>d__22<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `GroupJoinAwait._GroupJoinAwait<TOuter, TInner, TKey, TResult>`
+- `GroupJoinAwaitWithCancellation._GroupJoinAwaitWithCancellation.<CreateLookup>d__22<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `GroupJoinAwaitWithCancellation._GroupJoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Intersect._Intersect<TSource>`
+- `Join._Join.<CreateInnerHashSet>d__20<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `Join._Join<TOuter, TInner, TKey, TResult>`
+- `JoinAwait._JoinAwait.<CreateInnerHashSet>d__24<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `JoinAwait._JoinAwait<TOuter, TInner, TKey, TResult>`
+- `JoinAwaitWithCancellation._JoinAwaitWithCancellation.<CreateInnerHashSet>d__24<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `JoinAwaitWithCancellation._JoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Last.<LastAsync>d__0<TSource>` (compiler-generated name)
+- `Last.<LastAsync>d__1<TSource>` (compiler-generated name)
+- `Last.<LastAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Last.<LastAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAsync>d__0<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAsync>d__1<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__0<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__12` (compiler-generated name)
+- `Max.<MaxAsync>d__13<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__16` (compiler-generated name)
+- `Max.<MaxAsync>d__17<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__1<TSource, TResult>` (compiler-generated name)
+- `Max.<MaxAsync>d__20` (compiler-generated name)
+- `Max.<MaxAsync>d__21<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__24` (compiler-generated name)
+- `Max.<MaxAsync>d__25<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__28` (compiler-generated name)
+- `Max.<MaxAsync>d__29<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__32` (compiler-generated name)
+- `Max.<MaxAsync>d__33<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__36` (compiler-generated name)
+- `Max.<MaxAsync>d__37<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__4` (compiler-generated name)
+- `Max.<MaxAsync>d__40` (compiler-generated name)
+- `Max.<MaxAsync>d__41<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__5<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__8` (compiler-generated name)
+- `Max.<MaxAsync>d__9<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__2<TSource, TResult>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__42<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__3<TSource, TResult>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__43<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `Merge.MergeSourceState<T>`
+- `Merge._Merge.<DisposeAsync>d__13<T>` (compiler-generated name)
+- `Merge._Merge<T>`
+- `Min.<MinAsync>d__0<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__12` (compiler-generated name)
+- `Min.<MinAsync>d__13<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__16` (compiler-generated name)
+- `Min.<MinAsync>d__17<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__1<TSource, TResult>` (compiler-generated name)
+- `Min.<MinAsync>d__20` (compiler-generated name)
+- `Min.<MinAsync>d__21<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__24` (compiler-generated name)
+- `Min.<MinAsync>d__25<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__28` (compiler-generated name)
+- `Min.<MinAsync>d__29<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__32` (compiler-generated name)
+- `Min.<MinAsync>d__33<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__36` (compiler-generated name)
+- `Min.<MinAsync>d__37<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__4` (compiler-generated name)
+- `Min.<MinAsync>d__40` (compiler-generated name)
+- `Min.<MinAsync>d__41<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__5<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__8` (compiler-generated name)
+- `Min.<MinAsync>d__9<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__2<TSource, TResult>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__42<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__3<TSource, TResult>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__43<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `Never._Never<T>`
+- `OfType._OfType<TResult>`
+- `OrderedAsyncEnumerable._OrderedAsyncEnumerator.<CreateSortSource>d__11<TElement>` (compiler-generated name)
+- `OrderedAsyncEnumerable._OrderedAsyncEnumerator<TElement>`
+- `Pairwise._Pairwise<TSource>`
+- `Publish.<ConsumeEnumerator>d__8<TSource>` (compiler-generated name)
+- `Publish.ConnectDisposable<TSource>`
+- `Publish._Publish<TSource>`
+- `QueueOperator._Queue.<ConsumeAll>d__10<TSource>` (compiler-generated name)
+- `QueueOperator._Queue.<DisposeAsync>d__11<TSource>` (compiler-generated name)
+- `QueueOperator._Queue<TSource>`
+- `Range._Range`
+- `Repeat._Repeat<TElement>`
+- `Return._Return<TValue>`
+- `Reverse._Reverse.<MoveNextAsync>d__9<TSource>` (compiler-generated name)
+- `Reverse._Reverse<TSource>`
+- `Select._Select<TSource, TResult>`
+- `SelectAwait._SelectAwait<TSource, TResult>`
+- `SelectAwaitWithCancellation._SelectAwaitWithCancellation<TSource, TResult>`
+- `SelectInt._Select<TSource, TResult>`
+- `SelectIntAwait._SelectAwait<TSource, TResult>`
+- `SelectIntAwaitWithCancellation._SelectAwaitWithCancellation<TSource, TResult>`
+- `SelectMany._SelectMany.<DisposeAsync>d__26<TSource, TCollection, TResult>` (compiler-generated name)
+- `SelectMany._SelectMany<TSource, TCollection, TResult>`
+- `SelectManyAwait._SelectManyAwait.<DisposeAsync>d__32<TSource, TCollection, TResult>` (compiler-generated name)
+- `SelectManyAwait._SelectManyAwait<TSource, TCollection, TResult>`
+- `SelectManyAwaitWithCancellation._SelectManyAwaitWithCancellation.<DisposeAsync>d__32<TSource, TCollection, TResult>` (compiler-generated name)
+- `SelectManyAwaitWithCancellation._SelectManyAwaitWithCancellation<TSource, TCollection, TResult>`
+- `SequenceEqual.<SequenceEqualAsync>d__0<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAsync>d__0<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAsync>d__1<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Skip._Skip<TSource>`
+- `SkipLast._SkipLast<TSource>`
+- `SkipUntil._SkipUntil.<RunOther>d__18<TSource>` (compiler-generated name)
+- `SkipUntil._SkipUntil<TSource>`
+- `SkipUntilCanceled._SkipUntilCanceled<TSource>`
+- `SkipWhile._SkipWhile<TSource>`
+- `SkipWhileAwait._SkipWhileAwait<TSource>`
+- `SkipWhileAwaitWithCancellation._SkipWhileAwaitWithCancellation<TSource>`
+- `SkipWhileInt._SkipWhileInt<TSource>`
+- `SkipWhileIntAwait._SkipWhileIntAwait<TSource>`
+- `SkipWhileIntAwaitWithCancellation._SkipWhileIntAwaitWithCancellation<TSource>`
+- `Subscribe.<SubscribeAwaitCore>d__7<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__2<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__3<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__4<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__5<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__0` (compiler-generated name)
+- `Sum.<SumAsync>d__12` (compiler-generated name)
+- `Sum.<SumAsync>d__13<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__16` (compiler-generated name)
+- `Sum.<SumAsync>d__17<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__1<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__20` (compiler-generated name)
+- `Sum.<SumAsync>d__21<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__24` (compiler-generated name)
+- `Sum.<SumAsync>d__25<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__28` (compiler-generated name)
+- `Sum.<SumAsync>d__29<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__32` (compiler-generated name)
+- `Sum.<SumAsync>d__33<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__36` (compiler-generated name)
+- `Sum.<SumAsync>d__37<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__4` (compiler-generated name)
+- `Sum.<SumAsync>d__5<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__8` (compiler-generated name)
+- `Sum.<SumAsync>d__9<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `SyncSelectorAsyncEnumerableSorter.<ComputeKeysAsync>d__6<TElement, TKey>` (compiler-generated name)
+- `Take._Take<TSource>`
+- `TakeLast._TakeLast<TSource>`
+- `TakeUntil._TakeUntil.<RunOther>d__17<TSource>` (compiler-generated name)
+- `TakeUntil._TakeUntil<TSource>`
+- `TakeUntilCanceled._TakeUntilCanceled<TSource>`
+- `TakeWhile._TakeWhile<TSource>`
+- `TakeWhileAwait._TakeWhileAwait<TSource>`
+- `TakeWhileAwaitWithCancellation._TakeWhileAwaitWithCancellation<TSource>`
+- `TakeWhileInt._TakeWhileInt<TSource>`
+- `TakeWhileIntAwait._TakeWhileIntAwait<TSource>`
+- `TakeWhileIntAwaitWithCancellation._TakeWhileIntAwaitWithCancellation<TSource>`
+- `Throw._Throw<TValue>`
+- `Timer._Timer`
+- `Timer._Timer.<>c` (compiler-generated name)
+- `TimerFrame._TimerFrame`
+- `TimerFrame._TimerFrame.<>c` (compiler-generated name)
+- `ToArray.<ToArrayAsync>d__0<TSource>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAsync>d__0<TSource, TKey>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAsync>d__1<TSource, TKey, TElement>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitAsync>d__2<TSource, TKey>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitAsync>d__3<TSource, TKey, TElement>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitWithCancellationAsync>d__4<TSource, TKey>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitWithCancellationAsync>d__5<TSource, TKey, TElement>` (compiler-generated name)
+- `ToHashSet.<ToHashSetAsync>d__0<TSource>` (compiler-generated name)
+- `ToList.<ToListAsync>d__0<TSource>` (compiler-generated name)
+- `ToLookup.<ToLookupAsync>d__0<TSource, TKey>` (compiler-generated name)
+- `ToLookup.<ToLookupAsync>d__1<TSource, TKey, TElement>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitAsync>d__2<TSource, TKey>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitAsync>d__3<TSource, TKey, TElement>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitWithCancellationAsync>d__4<TSource, TKey>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitWithCancellationAsync>d__5<TSource, TKey, TElement>` (compiler-generated name)
+- `ToLookup.Grouping<TKey, TElement>`
+- `ToLookup.Lookup.<CreateAsync>d__6<TKey, TElement>` (compiler-generated name)
+- `ToLookup.Lookup.<CreateAsync>d__7<TKey, TElement, TSource>` (compiler-generated name)
+- `ToLookup.Lookup.<CreateAsync>d__8<TKey, TElement>` (compiler-generated name)
+- `ToLookup.Lookup.<CreateAsync>d__9<TKey, TElement, TSource>` (compiler-generated name)
+- `ToLookup.Lookup<TKey, TElement>`
+- `ToObservable.<RunAsync>d__3<T>` (compiler-generated name)
+- `ToObservable.CancellationTokenDisposable<T>`
+- `ToUniTaskAsyncEnumerable._ToUniTaskAsyncEnumerable<T>`
+- `ToUniTaskAsyncEnumerableTask._ToUniTaskAsyncEnumerableTask.<MoveNextAsync>d__7<T>` (compiler-generated name)
+- `ToUniTaskAsyncEnumerableTask._ToUniTaskAsyncEnumerableTask<T>`
+- `ToUniTaskAsyncEnumerableUniTask._ToUniTaskAsyncEnumerableUniTask.<MoveNextAsync>d__7<T>` (compiler-generated name)
+- `ToUniTaskAsyncEnumerableUniTask._ToUniTaskAsyncEnumerableUniTask<T>`
+- `UniTaskAsyncEnumerable.<>c__128<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__129<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__132<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__133<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__136<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__137<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__140<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__142<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__144<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__145<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__148<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__150<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__309<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__310<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__313<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__314<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__317<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__318<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__471<TFirst, TSecond>` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `Where._Where<TSource>`
+- `WhereAwait._WhereAwait<TSource>`
+- `WhereAwaitWithCancellation._WhereAwaitWithCancellation<TSource>`
+- `WhereInt._Where<TSource>`
+- `WhereIntAwait._WhereAwait<TSource>`
+- `WhereIntAwaitWithCancellation._WhereAwaitWithCancellation<TSource>`
+- `Zip._Zip.<DisposeAsync>d__18<TFirst, TSecond, TResult>` (compiler-generated name)
+- `Zip._Zip<TFirst, TSecond, TResult>`
+- `ZipAwait._ZipAwait.<DisposeAsync>d__21<TFirst, TSecond, TResult>` (compiler-generated name)
+- `ZipAwait._ZipAwait<TFirst, TSecond, TResult>`
+- `ZipAwaitWithCancellation._ZipAwaitWithCancellation.<DisposeAsync>d__21<TFirst, TSecond, TResult>` (compiler-generated name)
+- `ZipAwaitWithCancellation._ZipAwaitWithCancellation<TFirst, TSecond, TResult>`
 
 </details>
 
 
 ## UniTask.dll
 
-<details><summary>Matching: 296</summary>
+<details><summary>Matching: 289</summary>
 
 - `<Module>`
 - `AsyncDestroyTrigger.<>c` (compiler-generated name)
@@ -5779,7 +7782,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `AutoResetUniTaskCompletionSource.<>c` (compiler-generated name)
 - `Cysharp.Threading.Tasks.AsyncLazy`
 - `Cysharp.Threading.Tasks.AsyncUnit`
-- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`
 - `Cysharp.Threading.Tasks.AwaiterActions`
 - `Cysharp.Threading.Tasks.CancellationTokenExtensions`
 - `Cysharp.Threading.Tasks.CancellationTokenSourceExtensions`
@@ -5806,16 +7808,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cysharp.Threading.Tasks.IgnoreTimeScalePlayerLoopTimer`
 - `Cysharp.Threading.Tasks.InjectPlayerLoopTimings`
 - `Cysharp.Threading.Tasks.Internal.ArrayPoolUtil`
-- `Cysharp.Threading.Tasks.Internal.ContinuationQueue`
 - `Cysharp.Threading.Tasks.Internal.Error`
-- `Cysharp.Threading.Tasks.Internal.PlayerLoopRunner`
 - `Cysharp.Threading.Tasks.Internal.RuntimeHelpersAbstraction`
 - `Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable`
 - `Cysharp.Threading.Tasks.Internal.StateTuple`
 - `Cysharp.Threading.Tasks.Internal.UnityWebRequestResultExtensions`
 - `Cysharp.Threading.Tasks.Internal.ValueStopwatch`
 - `Cysharp.Threading.Tasks.MoveNextSource`
-- `Cysharp.Threading.Tasks.PlayerLoopHelper`
 - `Cysharp.Threading.Tasks.PlayerLoopTimer`
 - `Cysharp.Threading.Tasks.PlayerLoopTiming`
 - `Cysharp.Threading.Tasks.RealtimePlayerLoopTimer`
@@ -5963,7 +7962,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cysharp.Threading.Tasks.Triggers.IAsyncUpdateHandler`
 - `Cysharp.Threading.Tasks.UniTask`
 - `Cysharp.Threading.Tasks.UniTaskCancellationExtensions`
-- `Cysharp.Threading.Tasks.UniTaskCompletionSource`
 - `Cysharp.Threading.Tasks.UniTaskCompletionSourceCoreShared`
 - `Cysharp.Threading.Tasks.UniTaskExtensions`
 - `Cysharp.Threading.Tasks.UniTaskLoopRunners`
@@ -5971,7 +7969,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cysharp.Threading.Tasks.UniTaskScheduler`
 - `Cysharp.Threading.Tasks.UniTaskStatus`
 - `Cysharp.Threading.Tasks.UniTaskStatusExtensions`
-- `Cysharp.Threading.Tasks.UniTaskSynchronizationContext`
 - `Cysharp.Threading.Tasks.UniTaskVoid`
 - `Cysharp.Threading.Tasks.UnityAsyncExtensions`
 - `Cysharp.Threading.Tasks.UnityWebRequestException`
@@ -6019,7 +8016,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UniTask.WhenAnyPromise.<>c` (compiler-generated name)
 - `UniTask.YieldPromise`
 - `UniTask.YieldPromise.<>c` (compiler-generated name)
-- `UniTaskExtensions.<>c` (compiler-generated name)
 - `UniTaskExtensions.<ContinueWith>d__58` (compiler-generated name)
 - `UniTaskExtensions.<ContinueWith>d__59` (compiler-generated name)
 - `UniTaskExtensions.<ForgetCoreWithCatch>d__50` (compiler-generated name)
@@ -6072,7 +8068,72 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Indeterminate: 64</summary>
+<details><summary>Mismatching: 11</summary>
+
+- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`
+
+  - `bases: 'IUniTaskSource, IValueTaskSource, ITaskPoolNode<AutoResetUniTaskCompletionSource>' → 'IUniTaskSource, IValueTaskSource, ITaskPoolNode<AutoResetUniTaskCompletionSource>, IPromise, IResolvePromise, IRejectPromise, ICancelPromise'`
+
+- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource<T>`
+
+  - `bases: 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>, ITaskPoolNode<AutoResetUniTaskCompletionSource<T>>' → 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>, ITaskPoolNode<AutoResetUniTaskCompletionSource<T>>, IPromise<T>, IResolvePromise<T>, IRejectPromise, ICancelPromise'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.Internal.ArrayPool<T>`
+
+  - `field declaration order/names: ['EmptyArray', 'Shared', 'buckets', 'locks'] → ['DefaultMaxNumberOfArraysPerBucket', 'EmptyArray', 'Shared', 'buckets', 'locks']`
+  - `extra field constant int DefaultMaxNumberOfArraysPerBucket`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.Internal.ContinuationQueue`
+
+  - `field declaration order/names: ['timing', 'gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList'] → ['MaxArrayLength', 'InitialSize', 'timing', 'gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList']`
+  - `extra field constant int MaxArrayLength`
+  - `extra field constant int InitialSize`
+
+- `Cysharp.Threading.Tasks.Internal.MinimumQueue<T>`
+
+  - `field declaration order/names: ['array', 'head', 'tail', 'size'] → ['MinimumGrow', 'GrowFactor', 'array', 'head', 'tail', 'size']`
+  - `extra field constant int MinimumGrow`
+  - `extra field constant int GrowFactor`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.Internal.PlayerLoopRunner`
+
+  - `field declaration order/names: ['timing', 'runningAndQueueLock', 'arrayLock', 'unhandledExceptionCallback', 'tail', 'running', 'loopItems', 'waitQueue'] → ['InitialSize', 'timing', 'runningAndQueueLock', 'arrayLock', 'unhandledExceptionCallback', 'tail', 'running', 'loopItems', 'waitQueue']`
+  - `extra field constant int InitialSize`
+
+- `Cysharp.Threading.Tasks.PlayerLoopHelper`
+
+  - `field declaration order/names: ['ThrowMarkerContinuationQueue', 'ThrowMarkerPlayerLoopRunner', 'mainThreadId', 'applicationDataPath', 'unitySynchronizationContext', 'yielders', 'runners'] → ['ThrowMarkerContinuationQueue', 'ThrowMarkerPlayerLoopRunner', 'mainThreadId', 'applicationDataPath', 'unitySynchronizationContext', 'yielders', 'runners', '<IsEditorApplicationQuitting>k__BackingField']`
+  - `extra field static bool <IsEditorApplicationQuitting>k__BackingField`
+
+- `Cysharp.Threading.Tasks.UniTaskCompletionSource`
+
+  - `bases: 'IUniTaskSource, IValueTaskSource' → 'IUniTaskSource, IValueTaskSource, IPromise, IResolvePromise, IRejectPromise, ICancelPromise'`
+
+- `Cysharp.Threading.Tasks.UniTaskCompletionSource<T>`
+
+  - `bases: 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>' → 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>, IPromise<T>, IResolvePromise<T>, IRejectPromise, ICancelPromise'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.UniTaskSynchronizationContext`
+
+  - `field declaration order/names: ['gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList'] → ['MaxArrayLength', 'InitialSize', 'gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList', 'opCount']`
+  - `extra field constant int MaxArrayLength`
+  - `extra field constant int InitialSize`
+  - `extra field static int opCount`
+
+- `UniTaskExtensions.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__33_0', '<>9__48_0'] → ['<>9', '<>9__33_0', '<>9__35_0', '<>9__48_0']`
+  - `<>9__48_0: offset '0x10' → '0x18'`
+  - `extra field static Action<object> <>9__35_0`
+
+
+</details>
+
+<details><summary>Indeterminate: 60</summary>
 
 - `ArrayPoolUtil.RentArray<T>`
 
@@ -6102,10 +8163,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<TStateMachine, T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -6119,14 +8176,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid<TStateMachine>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `Cysharp.Threading.Tasks.Internal.ArrayPool<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `Cysharp.Threading.Tasks.Internal.MinimumQueue<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -6175,10 +8224,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `Cysharp.Threading.Tasks.UniTask<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `Cysharp.Threading.Tasks.UniTaskCompletionSource<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -6333,20 +8378,261 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 246</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=19934`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=22196`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=35701`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4485`
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource`
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource.<>c` (compiler-generated name)
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource.<>c<T>` (compiler-generated name)
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource<T>`
+- `AsyncReactiveProperty.Enumerator<T>`
+- `AsyncReactiveProperty.WaitAsyncSource.<>c<T>` (compiler-generated name)
+- `AsyncReactiveProperty.WaitAsyncSource<T>`
+- `AsyncReactiveProperty.WithoutCurrentEnumerable<T>`
+- `AsyncSubject.Subscription<T>`
+- `CancellationTokenAwaitable.Awaiter`
+- `CancellationTokenExtensions.<ToCancellationTokenCore>d__6` (compiler-generated name)
+- `ChannelReader.<ReadAsyncCore>d__5<T>` (compiler-generated name)
+- `Cysharp.Threading.Tasks.AsyncInstantiateOperationExtensions`
+- `Cysharp.Threading.Tasks.AsyncLazy<T>`
+- `Cysharp.Threading.Tasks.AsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.AsyncUnityEventHandler`
+- `Cysharp.Threading.Tasks.AsyncUnityEventHandler<T>`
+- `Cysharp.Threading.Tasks.CancellationTokenAwaitable`
+- `Cysharp.Threading.Tasks.CancellationTokenEqualityComparer`
+- `Cysharp.Threading.Tasks.Channel`
+- `Cysharp.Threading.Tasks.Channel<T>`
+- `Cysharp.Threading.Tasks.Channel<TWrite, TRead>`
+- `Cysharp.Threading.Tasks.ChannelClosedException`
+- `Cysharp.Threading.Tasks.ChannelReader<T>`
+- `Cysharp.Threading.Tasks.ChannelWriter<T>`
+- `Cysharp.Threading.Tasks.CompilerServices.StateMachineUtility`
+- `Cysharp.Threading.Tasks.IAsyncClickEventHandler`
+- `Cysharp.Threading.Tasks.IAsyncDeselectEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncEndEditEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncEndTextSelectionEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.IAsyncSelectEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncSubmitEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncTextSelectionEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler<T>`
+- `Cysharp.Threading.Tasks.ICancelPromise`
+- `Cysharp.Threading.Tasks.IConnectableUniTaskAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.IPromise`
+- `Cysharp.Threading.Tasks.IPromise<T>`
+- `Cysharp.Threading.Tasks.IReadOnlyAsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.IRejectPromise`
+- `Cysharp.Threading.Tasks.IResolvePromise`
+- `Cysharp.Threading.Tasks.IResolvePromise<T>`
+- `Cysharp.Threading.Tasks.IUniTaskOrderedAsyncEnumerable<TElement>`
+- `Cysharp.Threading.Tasks.Internal.ArrayUtil`
+- `Cysharp.Threading.Tasks.Internal.AsyncSubject<T>`
+- `Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions`
+- `Cysharp.Threading.Tasks.Internal.DisposedObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.EmptyDisposable`
+- `Cysharp.Threading.Tasks.Internal.EmptyObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.ImmutableList<T>`
+- `Cysharp.Threading.Tasks.Internal.ListObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.ThrowObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.UnityEqualityComparer`
+- `Cysharp.Threading.Tasks.Internal.WeakDictionary<TKey, TValue>`
+- `Cysharp.Threading.Tasks.Progress`
+- `Cysharp.Threading.Tasks.ReadOnlyAsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.ReturnToMainThread`
+- `Cysharp.Threading.Tasks.ReturnToSynchronizationContext`
+- `Cysharp.Threading.Tasks.SingleConsumerUnboundedChannel<T>`
+- `Cysharp.Threading.Tasks.StateExtensions`
+- `Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable`
+- `Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable`
+- `Cysharp.Threading.Tasks.TaskTracker`
+- `Cysharp.Threading.Tasks.TextSelectionEventConverter`
+- `Cysharp.Threading.Tasks.TimeoutController`
+- `Cysharp.Threading.Tasks.UniTaskAsyncEnumerableExtensions`
+- `Cysharp.Threading.Tasks.UniTaskCancelableAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.UniTaskValueTaskExtensions`
+- `Cysharp.Threading.Tasks.UnityAwaitableExtensions`
+- `Cysharp.Threading.Tasks.UnityBindingExtensions`
+- `Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`
+- `Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.WhenEachEnumerable<T>`
+- `Cysharp.Threading.Tasks.WhenEachResult<T>`
+- `Cysharp.Threading.Tasks.WhenEachState`
+- `DiagnosticsExtensions.<>c` (compiler-generated name)
+- `EnumeratorAsyncExtensions.<Core>d__4` (compiler-generated name)
+- `Progress.AnonymousProgress<T>`
+- `Progress.NullProgress<T>`
+- `Progress.OnlyValueChangedProgress<T>`
+- `ReadOnlyAsyncReactiveProperty.<ConsumeEnumerator>d__7<T>` (compiler-generated name)
+- `ReadOnlyAsyncReactiveProperty.Enumerator<T>`
+- `ReadOnlyAsyncReactiveProperty.WaitAsyncSource.<>c<T>` (compiler-generated name)
+- `ReadOnlyAsyncReactiveProperty.WaitAsyncSource<T>`
+- `ReadOnlyAsyncReactiveProperty.WithoutCurrentEnumerable<T>`
+- `ReturnToMainThread.Awaiter`
+- `ReturnToSynchronizationContext.Awaiter`
+- `SingleConsumerUnboundedChannel.SingleConsumerUnboundedChannelReader.ReadAllAsyncEnumerable<T>`
+- `SingleConsumerUnboundedChannel.SingleConsumerUnboundedChannelReader<T>`
+- `SingleConsumerUnboundedChannel.SingleConsumerUnboundedChannelWriter<T>`
+- `StateMachineUtility.<>c` (compiler-generated name)
+- `SwitchToSynchronizationContextAwaitable.Awaiter`
+- `SwitchToTaskPoolAwaitable.Awaiter`
+- `TaskPool.<GetCacheSizeInfo>d__4` (compiler-generated name)
+- `UniTask.<>c__DisplayClass45_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass46_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass47_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass48_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass49_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass50_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass51_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass52_0<T0, T1>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass53_0<T0, T1, T2>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass54_0<T0, T1, T2, T3>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass55_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass56_0<T0, T1>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass57_0<T0, T1, T2>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass58_0<T0, T1, T2, T3>` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__83` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__85` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__86<T>` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__88<T>` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__89<T>` (compiler-generated name)
+- `UniTask.<WaitForEndOfFrame>d__9` (compiler-generated name)
+- `UniTask.DeferPromise`
+- `UniTask.DeferPromise<T>`
+- `UniTask.DeferPromiseWithState<TState, TResult>`
+- `UniTask.DeferPromiseWithState<TState>`
+- `UniTask.MemoizeSource`
+- `UniTask.MemoizeSource<T>`
+- `UniTask.WaitUntilPromise.<>c<T>` (compiler-generated name)
+- `UniTask.WaitUntilPromise<T>`
+- `UniTask.WaitUntilValueChangedStandardObjectPromise.<>c<T, U>` (compiler-generated name)
+- `UniTask.WaitUntilValueChangedStandardObjectPromise<T, U>`
+- `UniTask.WaitUntilValueChangedUnityObjectPromise.<>c<T, U>` (compiler-generated name)
+- `UniTask.WaitUntilValueChangedUnityObjectPromise<T, U>`
+- `UniTask.WaitWhilePromise.<>c<T>` (compiler-generated name)
+- `UniTask.WaitWhilePromise<T>`
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8>` (compiler-generated name)
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8>`
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T>` (compiler-generated name)
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4>`
+- `UniTask.WhenAnyPromise<T1, T2, T3>`
+- `UniTask.WhenAnyPromise<T>`
+- `UniTaskCancelableAsyncEnumerable.Enumerator<T>`
+- `UniTaskExtensions.<>c__34<T>` (compiler-generated name)
+- `UniTaskExtensions.<ContinueWith>d__55<T>` (compiler-generated name)
+- `UniTaskExtensions.<ContinueWith>d__57<T, TR>` (compiler-generated name)
+- `UniTaskExtensions.<ContinueWith>d__61<T>` (compiler-generated name)
+- `UniTaskExtensions.<ForgetCoreWithCatch>d__53<T>` (compiler-generated name)
+- `UniTaskExtensions.<Timeout>d__44` (compiler-generated name)
+- `UniTaskExtensions.<Timeout>d__45<T>` (compiler-generated name)
+- `UniTaskExtensions.<TimeoutWithoutException>d__46` (compiler-generated name)
+- `UniTaskExtensions.<TimeoutWithoutException>d__47<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__62<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__63` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__64<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__65<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__66` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__67` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__68<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__69<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__70` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__71` (compiler-generated name)
+- `UniTaskExtensions.ToCoroutineEnumerator.<RunTask>d__8<T>` (compiler-generated name)
+- `UniTaskExtensions.ToCoroutineEnumerator<T>`
+- `UniTaskObservableExtensions.<Fire>d__3<T>` (compiler-generated name)
+- `UniTaskObservableExtensions.<Fire>d__4` (compiler-generated name)
+- `UniTaskObservableExtensions.ReturnObservable<T>`
+- `UniTaskObservableExtensions.ThrowObservable<T>`
+- `UniTaskValueTaskExtensions.<AsUniTask>d__2<T>` (compiler-generated name)
+- `UniTaskValueTaskExtensions.<AsUniTask>d__3` (compiler-generated name)
+- `UnityAsyncExtensions.<WaitAsync>d__11` (compiler-generated name)
+- `UnityAsyncExtensions.AssetBundleCreateRequestAwaiter`
+- `UnityAsyncExtensions.AssetBundleCreateRequestConfiguredSource`
+- `UnityAsyncExtensions.AssetBundleCreateRequestConfiguredSource.<>c` (compiler-generated name)
+- `UnityAsyncExtensions.AssetBundleRequestAllAssetsAwaiter`
+- `UnityAsyncExtensions.AssetBundleRequestAllAssetsConfiguredSource`
+- `UnityAsyncExtensions.AssetBundleRequestAllAssetsConfiguredSource.<>c` (compiler-generated name)
+- `UnityAsyncExtensions.AssetBundleRequestAwaiter`
+- `UnityAsyncExtensions.AssetBundleRequestConfiguredSource`
+- `UnityAsyncExtensions.AssetBundleRequestConfiguredSource.<>c` (compiler-generated name)
+- `UnityAsyncExtensions.AsyncOperationAwaiter`
+- `UnityAsyncExtensions.JobHandlePromise`
+- `UnityAsyncExtensions.ResourceRequestConfiguredSource`
+- `UnityAsyncExtensions.ResourceRequestConfiguredSource.<>c` (compiler-generated name)
+- `UnityAwaitableExtensions.<AsUniTask>d__0` (compiler-generated name)
+- `UnityAwaitableExtensions.<AsUniTask>d__1<T>` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__12<TSource, TObject>` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__2` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__6<T>` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__9` (compiler-generated name)
+- `UnityEqualityComparer.BoundsEqualityComparer`
+- `UnityEqualityComparer.BoundsIntEqualityComparer`
+- `UnityEqualityComparer.Cache<T>`
+- `UnityEqualityComparer.Color32EqualityComparer`
+- `UnityEqualityComparer.ColorEqualityComparer`
+- `UnityEqualityComparer.QuaternionEqualityComparer`
+- `UnityEqualityComparer.RangeIntEqualityComparer`
+- `UnityEqualityComparer.RectEqualityComparer`
+- `UnityEqualityComparer.RectIntEqualityComparer`
+- `UnityEqualityComparer.Vector2EqualityComparer`
+- `UnityEqualityComparer.Vector2IntEqualityComparer`
+- `UnityEqualityComparer.Vector3EqualityComparer`
+- `UnityEqualityComparer.Vector3IntEqualityComparer`
+- `UnityEqualityComparer.Vector4EqualityComparer`
+- `UnityEventHandlerAsyncEnumerable.UnityEventHandlerAsyncEnumerator`
+- `UnityEventHandlerAsyncEnumerable.UnityEventHandlerAsyncEnumerator<T>`
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `WeakDictionary.Entry<TKey, TValue>`
+- `WhenEachEnumerable.Enumerator.<DisposeAsync>d__12<T>` (compiler-generated name)
+- `WhenEachEnumerable.Enumerator.<RunWhenEachTask>d__11<T>` (compiler-generated name)
+- `WhenEachEnumerable.Enumerator<T>`
 
 </details>
 
 
 ## Unity.Animation.Rigging.dll
 
-<details><summary>Matching: 44</summary>
+<details><summary>Matching: 46</summary>
 
 - `<Module>`
 - `RigBuilder.OnAddRigBuilderCallback`
@@ -6380,6 +8666,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Animations.Rigging.RigEffectorData`
 - `UnityEngine.Animations.Rigging.RigLayer`
 - `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJob`
+- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinder<T>`
+- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinderConstants`
 - `UnityEngine.Animations.Rigging.RigTransform`
 - `UnityEngine.Animations.Rigging.RigUtils`
 - `UnityEngine.Animations.Rigging.SyncSceneToStreamAttribute`
@@ -6395,7 +8683,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 9</summary>
+<details><summary>Mismatching: 8</summary>
 
 - `UnityEngine.Animations.Rigging.AnimationRuntimeUtils`
 
@@ -6404,8 +8692,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UnityEngine.Animations.Rigging.ConstraintProperties`
 
-  - `field declaration order/names: ['component', 'properties'] → ['s_Weight', 'component', 'properties']`
-  - `extra field static string s_Weight`
+  - `field declaration order/names: ['component', 'properties'] → ['k_Weight', 'component', 'properties']`
+  - `extra field constant string k_Weight`
 
 - `UnityEngine.Animations.Rigging.FloatProperty`
 
@@ -6422,14 +8710,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UnityEngine.Animations.Rigging.RigProperties`
 
-  - `field declaration order/names: ['component'] → ['s_Weight', 'component']`
-  - `extra field static string s_Weight`
-
-- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinder<T>`
-
-  - `field declaration order/names: [] → ['s_PropertyElementNames']`
-  - `extra field static string[] s_PropertyElementNames`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+  - `field declaration order/names: ['component'] → ['k_Weight', 'component']`
+  - `extra field constant string k_Weight`
 
 - `UnityEngine.Animations.Rigging.Vector3Property`
 
@@ -6451,17 +8733,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 1</summary>
-
-- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinderConstants`
-
-</details>
-
 <details><summary>Extra: 87</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5133`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6796`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6870`
 - `BoneRenderer.BoneShape`
 - `ConstraintsUtils.<>c__DisplayClass2_0` (compiler-generated name)
 - `Microsoft.CodeAnalysis.EmbeddedAttribute` (compiler-generated name)
@@ -7729,9 +10005,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## Unity.RenderPipeline.Universal.ShaderLibrary.dll
 
-<details><summary>Matching: 14</summary>
+<details><summary>Matching: 16</summary>
 
 - `<Module>`
+- `ShaderInput.LightData`
+- `UnityEngine.Rendering.Universal.DebugFullScreenMode`
 - `UnityEngine.Rendering.Universal.DebugLightingFeatureFlags`
 - `UnityEngine.Rendering.Universal.DebugLightingMode`
 - `UnityEngine.Rendering.Universal.DebugMaterialMode`
@@ -7745,21 +10023,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.HDRDebugMode`
 - `UnityEngine.Rendering.Universal.PixelValidationChannels`
 - `UnityEngine.Rendering.Universal.ShaderInput`
-
-</details>
-
-<details><summary>Mismatching: 2</summary>
-
-- `ShaderInput.LightData`
-
-  - `field declaration order/names: ['position', 'color', 'attenuation', 'spotDirection', 'occlusionProbeChannels', 'layerMask', 'customLightProperty'] → ['position', 'color', 'attenuation', 'spotDirection', 'occlusionProbeChannels', 'layerMask']`
-  - `missing field instance Vector4 customLightProperty`
-
-- `UnityEngine.Rendering.Universal.DebugFullScreenMode`
-
-  - `field declaration order/names: ['value__', 'None', 'Depth', 'AdditionalLightsShadowMap', 'MainLightShadowMap', 'ReflectionProbeAtlas', 'MotionVector'] → ['value__', 'None', 'Depth', 'AdditionalLightsShadowMap', 'MainLightShadowMap', 'ReflectionProbeAtlas']`
-  - `missing field constant DebugFullScreenMode MotionVector`
-
 
 </details>
 
@@ -8043,15 +10306,15 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
-  - `field declaration order/names: ['FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE'] → ['45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097', '4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A', '90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4', '9B125254C7B9599896154195DAC2A199A7ABA5E0F67A5125B458228929163B97', 'BDFF4BF48DBC7214A392CF884F7F2A6073CCDB77CA3EB11BEBB93DA8ED8B2158', 'C606E03B5FE8EAD2ECA6BCB45AE684039D928B4EE7C4A03C63D0DF9F94F81DAF', 'FD0E21DFA9C6B157C14279741A9DD3F67AC3DE4FE785962540E2A7E0A655BC2A', 'FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE']`
-  - `FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE: offset '0x0' → '0xb671'`
+  - `field declaration order/names: ['FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE'] → ['38793233ADA900082A111C7E55EFE257E4D5F249D46AD2DF189B753957ECB809', '45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097', '4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A', '90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4', 'BDFF4BF48DBC7214A392CF884F7F2A6073CCDB77CA3EB11BEBB93DA8ED8B2158', 'C606E03B5FE8EAD2ECA6BCB45AE684039D928B4EE7C4A03C63D0DF9F94F81DAF', 'EF53164C3F32C788A4FF2947C64BC24931A5C9584E065F82C97B3F809D88CB58', 'FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE']`
+  - `FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE: offset '0x0' → '0xb650'`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20324 38793233ADA900082A111C7E55EFE257E4D5F249D46AD2DF189B753957ECB809`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=512 4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20349 9B125254C7B9599896154195DAC2A199A7ABA5E0F67A5125B458228929163B97`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 BDFF4BF48DBC7214A392CF884F7F2A6073CCDB77CA3EB11BEBB93DA8ED8B2158`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 C606E03B5FE8EAD2ECA6BCB45AE684039D928B4EE7C4A03C63D0DF9F94F81DAF`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20324 FD0E21DFA9C6B157C14279741A9DD3F67AC3DE4FE785962540E2A7E0A655BC2A`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20316 EF53164C3F32C788A4FF2947C64BC24931A5C9584E065F82C97B3F809D88CB58`
 
 - `DebugDisplaySettingsVolume.Strings`
 
@@ -8372,8 +10635,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=144`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20316`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20324`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20349`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=256`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=512`
@@ -8588,8 +10851,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=144`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=16`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=960`
+- `AdditionalLightsShadowCasterPass.<>c` (compiler-generated name)
 - `AdditionalLightsShadowCasterPass.AdditionalShadowsConstantBuffer`
 - `AdditionalLightsShadowCasterPass.PassData`
 - `AdditionalLightsShadowCasterPass.ShadowResolutionRequest`
@@ -8822,6 +11089,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.DecalInstanceData`
 - `UnityEngine.Rendering.Universal.DecalPreviewPass`
 - `UnityEngine.Rendering.Universal.DecalPrioritySystem`
+- `UnityEngine.Rendering.Universal.DecalProjector`
 - `UnityEngine.Rendering.Universal.DecalScaleMode`
 - `UnityEngine.Rendering.Universal.DecalSubDrawCall`
 - `UnityEngine.Rendering.Universal.DecalSurfaceData`
@@ -8857,6 +11125,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.Internal.CopyColorPass`
 - `UnityEngine.Rendering.Universal.Internal.CopyDepthPass`
 - `UnityEngine.Rendering.Universal.Internal.DeferredConfig`
+- `UnityEngine.Rendering.Universal.Internal.DeferredLights`
 - `UnityEngine.Rendering.Universal.Internal.DeferredPass`
 - `UnityEngine.Rendering.Universal.Internal.DepthNormalOnlyPass`
 - `UnityEngine.Rendering.Universal.Internal.DepthOnlyPass`
@@ -8925,7 +11194,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.ShadowCascadesOption`
 - `UnityEngine.Rendering.Universal.ShadowData`
 - `UnityEngine.Rendering.Universal.ShadowQuality`
-- `UnityEngine.Rendering.Universal.ShadowResolution`
 - `UnityEngine.Rendering.Universal.ShadowSliceData`
 - `UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights`
 - `UnityEngine.Rendering.Universal.SharedDecalEntityManager`
@@ -8952,13 +11220,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.UniversalRendererData`
 - `UnityEngine.Rendering.Universal.UpscalingFilterSelection`
 - `UnityEngine.Rendering.Universal.Vignette`
-- `UnityEngine.Rendering.Universal.VolumeFrameworkUpdateMode`
 - `UnityEngine.Rendering.Universal.WhiteBalance`
 - `UnityEngine.Rendering.Universal.XROcclusionMeshPass`
 - `UnityEngine.Rendering.Universal.XRPassUniversal`
 - `UnityEngine.Rendering.Universal.XRSystemData`
 - `UnityEngine.Rendering.Universal.XRSystemUniversal`
-- `UniversalAdditionalCameraData.<>c` (compiler-generated name)
 - `UniversalRenderPipeline.<>c` (compiler-generated name)
 - `UniversalRenderPipeline.Profiling`
 - `UniversalRenderPipeline.SingleCameraRequest`
@@ -9060,7 +11326,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `VL.Rendering.VLDebugDisplaySettingsPreviewRenderPass`
 - `VL.Rendering.VLDecalDrawSystem`
 - `VL.Rendering.VLDecalPass`
-- `VL.Rendering.VLDecalRendererFeature`
 - `VL.Rendering.VLDeferredPass`
 - `VL.Rendering.VLDensityFogVolume`
 - `VL.Rendering.VLDiffusion`
@@ -9077,7 +11342,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `VL.Rendering.VLRGBBlockNoise`
 - `VL.Rendering.VLSRPAdditionalCameraData`
 - `VL.Rendering.VLSRPCapture`
-- `VL.Rendering.VLSRPRenderer`
 - `VL.Rendering.VLSRPRendererData`
 - `VL.Rendering.VLSSRQualitySetting`
 - `VL.Rendering.VLSSRQualitySettingParameter`
@@ -9124,7 +11388,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `VLSRPCapture.<>c__DisplayClass5_0` (compiler-generated name)
 - `VLSRPCapture.RequestData`
 - `VLSRPCapture.SourceType`
-- `VLSRPRenderer.<>c` (compiler-generated name)
 - `VLSimpleRenderer.SimpleFinalBlitPass`
 - `XROcclusionMeshPass.<>c` (compiler-generated name)
 - `XROcclusionMeshPass.PassData`
@@ -9132,40 +11395,29 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 31</summary>
+<details><summary>Mismatching: 34</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
-  - `field declaration order/names: ['05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF', '08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C', '28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA', '29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '636952D3023D8CF5D8245AC30EFB93A443BD4BC23B5E331D51ECB82425FDC30A', '67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01', 'E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A'] → ['08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '18689A54C1FF754BE58500B2ED77A6C75B025BE96F6D01FEF89C42DA1C953F34', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '4DA1D9A416A55C5F9483FAD6A4ADEFCB0806F8917C1868AA1CE3071258665568', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'D254C065C675CC6904C62DA4899F883B0A1776A5F7A834B2B02F8B9A327351AA', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01']`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF`
-  - `08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6: offset '0x14' → '0x0'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E`
-  - `4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D: offset '0xd8' → '0x28'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD`
-  - `6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64: offset '0xea' → '0x96e6'`
+  - `field declaration order/names: ['05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF', '08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C', '28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA', '29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '636952D3023D8CF5D8245AC30EFB93A443BD4BC23B5E331D51ECB82425FDC30A', '67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01', 'E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A'] → ['05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF', '08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C', '18689A54C1FF754BE58500B2ED77A6C75B025BE96F6D01FEF89C42DA1C953F34', '28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA', '29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E', '45D395DCEE2B50B91F9D5904A0B7AD67B9A8092EF84C9413FA530714EFEB41C5', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '97CE6A56520B72FFD4F822EBB03072306ACDAFA96DB437BD907B5A5BF11B5E39', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01', 'E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A']`
+  - `28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA: offset '0x34' → '0x4c'`
+  - `29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E: offset '0xc4' → '0xdc'`
+  - `4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D: offset '0xd8' → '0x7b36'`
+  - `582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD: offset '0xe4' → '0x7b42'`
+  - `6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64: offset '0xea' → '0x7b48'`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 636952D3023D8CF5D8245AC30EFB93A443BD4BC23B5E331D51ECB82425FDC30A`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA`
-  - `888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1: offset '0x4c2' → '0x9aa6'`
-  - `8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80: offset '0x4d2' → '0x9ab6'`
-  - `9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD: offset '0x4de' → '0x9ac2'`
-  - `B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137: offset '0x4ea' → '0x9ace'`
-  - `BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE: offset '0x4f6' → '0x9ada'`
-  - `C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101: offset '0x506' → '0x9aea'`
-  - `E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01: offset '0x516' → '0x116d5'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A`
+  - `67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA: offset '0x4b6' → '0x7f08'`
+  - `888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1: offset '0x4c2' → '0x7f14'`
+  - `8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80: offset '0x4d2' → '0x7f24'`
+  - `9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD: offset '0x4de' → '0x10ffa'`
+  - `B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137: offset '0x4ea' → '0x11006'`
+  - `BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE: offset '0x4f6' → '0x11012'`
+  - `C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101: offset '0x506' → '0x11022'`
+  - `E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01: offset '0x516' → '0x11032'`
+  - `E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A: offset '0x8d6' → '0x113f2'`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 18689A54C1FF754BE58500B2ED77A6C75B025BE96F6D01FEF89C42DA1C953F34`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38578 4DA1D9A416A55C5F9483FAD6A4ADEFCB0806F8917C1868AA1CE3071258665568`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=31707 D254C065C675CC6904C62DA4899F883B0A1776A5F7A834B2B02F8B9A327351AA`
-
-- `AdditionalLightsShadowCasterPass.<>c` (compiler-generated name)
-
-  - `field declaration order/names: ['<>9', '<>9__63_0', '<>9__63_1'] → ['<>9', '<>9__62_0', '<>9__62_1']`
-  - `missing field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__63_0`
-  - `missing field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__63_1`
-  - `extra field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__62_0`
-  - `extra field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__62_1`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=31302 45D395DCEE2B50B91F9D5904A0B7AD67B9A8092EF84C9413FA530714EFEB41C5`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=37066 97CE6A56520B72FFD4F822EBB03072306ACDAFA96DB437BD907B5A5BF11B5E39`
 
 - `DebugDisplaySettingsCommon.SettingsPanel`
 
@@ -9180,7 +11432,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `DebugDisplaySettingsRendering.Strings`
 
-  - `field declaration order/names: ['MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax', 'GameViewOnly'] → ['RangeValidationSettingsContainerName', 'MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax', 'GameViewOnly']`
+  - `field declaration order/names: ['MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax', 'GameViewOnly'] → ['RangeValidationSettingsContainerName', 'MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax']`
+  - `missing field static DebugUI.Widget.NameAndTooltip GameViewOnly`
   - `extra field constant string RangeValidationSettingsContainerName`
 
 - `DrawScreenSpaceUIPass.PassData`
@@ -9236,33 +11489,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `field declaration order/names: ['MaxBatchSize', 'm_EntityManager', 'm_WorldToDecals', 'm_NormalToDecals', 'm_DecalLayerMasks', 'm_Sampler'] → ['MaxBatchSize', 'm_EntityManager', 'm_WorldToDecals', 'm_NormalToDecals', 'm_DecalLayerMasks', 'm_Sampler', '<overrideMaterial>k__BackingField']`
   - `extra field instance Material <overrideMaterial>k__BackingField`
 
-- `UnityEngine.Rendering.Universal.DecalProjector`
-
-  - `field declaration order/names: ['_DecalTypeName', '_DecalType', 'onDecalAdd', 'onDecalRemove', 'onDecalPropertyChange', 'onAllDecalPropertyChange', 'onDecalMaterialChange', '<defaultMaterial>k__BackingField', '<decalEntity>k__BackingField', 'm_Color', 'm_Material', 'm_DrawDistance', 'm_FadeScale', 'm_StartAngleFade', 'm_EndAngleFade', 'm_UVScale', 'm_UVBias', 'm_DecalLayerMask', 'm_DecalPriority', 'm_ScaleMode', 'm_Offset', 'm_Size', 'm_FadeFactor', 'm_OldMaterial'] → ['onDecalAdd', 'onDecalRemove', 'onDecalPropertyChange', 'onAllDecalPropertyChange', 'onDecalMaterialChange', '<defaultMaterial>k__BackingField', '<decalEntity>k__BackingField', '_DecalTypeName', '_DecalType', 'm_Color', 'm_Material', 'm_DrawDistance', 'm_FadeScale', 'm_StartAngleFade', 'm_EndAngleFade', 'm_UVScale', 'm_UVBias', 'm_DecalLayerMask', 'm_DecalPriority', 'm_ScaleMode', 'm_Offset', 'm_Size', 'm_FadeFactor', 'm_OldMaterial', 'm_OldDrawDistance', 'm_OldFadeScale', 'm_OldStartAngleFade', 'm_OldEndAngleFade', 'm_OldUVScale', 'm_OldUVBias', 'm_OldScaleMode', 'm_OldOffset', 'm_OldSize', 'm_OldFadeFactor']`
-  - `_DecalTypeName: offset '0x0' → '0x30'`
-  - `_DecalType: offset '0x8' → '0x38'`
-  - `onDecalAdd: offset '0x10' → '0x0'`
-  - `onDecalRemove: offset '0x18' → '0x8'`
-  - `onDecalPropertyChange: offset '0x20' → '0x10'`
-  - `onAllDecalPropertyChange: offset '0x28' → '0x18'`
-  - `onDecalMaterialChange: offset '0x30' → '0x20'`
-  - `<defaultMaterial>k__BackingField: offset '0x38' → '0x28'`
-  - `extra field instance float m_OldDrawDistance`
-  - `extra field instance float m_OldFadeScale`
-  - `extra field instance float m_OldStartAngleFade`
-  - `extra field instance float m_OldEndAngleFade`
-  - `extra field instance Vector2 m_OldUVScale`
-  - `extra field instance Vector2 m_OldUVBias`
-  - `extra field instance DecalScaleMode m_OldScaleMode`
-  - `extra field instance Vector3 m_OldOffset`
-  - `extra field instance Vector3 m_OldSize`
-  - `extra field instance float m_OldFadeFactor`
-
-- `UnityEngine.Rendering.Universal.Internal.DeferredLights`
-
-  - `field declaration order/names: ['k_GBufferNames', 'k_StencilDeferredPassNames', 'k_InvalidLightOffset', 'k_SetupLights', 'k_DeferredPass', 'k_DeferredStencilPass', 'k_DeferredFogPass', 'k_ClearStencilPartial', 'k_SetupLightConstants', 'kStencilShapeGuard', 'm_ProfilingSetupLights', 'm_ProfilingDeferredPass', 'm_ProfilingSetupLightConstants', '<RenderingLayerMaskSize>k__BackingField', '<UseDecalLayers>k__BackingField', '<UseRenderPass>k__BackingField', '<HasDepthPrepass>k__BackingField', '<HasNormalPrepass>k__BackingField', '<HasRenderingLayerPrepass>k__BackingField', '<IsOverlay>k__BackingField', '<AccurateGbufferNormals>k__BackingField', '<MixedLightingSetup>k__BackingField', '<UseJobSystem>k__BackingField', '<RenderWidth>k__BackingField', '<RenderHeight>k__BackingField', '<GbufferAttachments>k__BackingField', 'GbufferRTHandles', '<GbufferTextureHandles>k__BackingField', '<DeferredInputAttachments>k__BackingField', '<DeferredInputIsTransient>k__BackingField', '<DepthAttachment>k__BackingField', '<DepthCopyTexture>k__BackingField', '<GbufferFormats>k__BackingField', '<DepthAttachmentHandle>k__BackingField', 'm_stencilVisLights', 'm_stencilVisLightOffsets', 'm_AdditionalLightsShadowCasterPass', 'm_SphereMesh', 'm_HemisphereMesh', 'm_FullscreenMesh', 'm_StencilDeferredMaterial', 'm_StencilDeferredPasses', 'm_ScreenToWorld', 'm_ProfilingSamplerDeferredStencilPass', 'm_ProfilingSamplerDeferredFogPass', 'm_ProfilingSamplerClearStencilPartialPass', 'm_LightCookieManager', '_LitColorMultiplier', 'k_vlStencilDeferredPassNames', 'm_ProfilingSamplerCopyGbufferPass', 'm_ProfilingSamplerFillIndirectPass', 'm_ProfilingSamplerCopyLitColor', 'm_ProfilingActorDeferredPass', 'm_ProfilingLightingComplexity', 'm_profilingSamplerActorLightingPass', 'm_ProfilingSamplerCopyDepthPass', 'm_ProfilingSamplerPostRender', 'm_ProfilingDirectReflection', 'm_ProfilingIndirectReflection', 'm_vlStencilDeferredPasses', 'm_BoxMesh', '<storeLitColor>k__BackingField', '<renderedDirectReflection>k__BackingField', 'm_ProfilingPlanarReflection', '<sharedPlanarReflectionManager>k__BackingField', '_planarReflectionEntityManager', '_planarReflectionUpdateCachedSystem', '_planarReflectionCullingSystem', '_planarReflectionResultSystem', '_planarReflectionCount'] → ['k_GBufferNames', 'k_StencilDeferredPassNames', 'k_InvalidLightOffset', 'k_SetupLights', 'k_DeferredPass', 'k_DeferredStencilPass', 'k_DeferredFogPass', 'k_ClearStencilPartial', 'k_SetupLightConstants', 'kStencilShapeGuard', 'm_ProfilingSetupLights', 'm_ProfilingDeferredPass', 'm_ProfilingSetupLightConstants', '<RenderingLayerMaskSize>k__BackingField', '<UseDecalLayers>k__BackingField', '<UseRenderPass>k__BackingField', '<HasDepthPrepass>k__BackingField', '<HasNormalPrepass>k__BackingField', '<HasRenderingLayerPrepass>k__BackingField', '<IsOverlay>k__BackingField', '<AccurateGbufferNormals>k__BackingField', '<MixedLightingSetup>k__BackingField', '<UseJobSystem>k__BackingField', '<RenderWidth>k__BackingField', '<RenderHeight>k__BackingField', '<GbufferAttachments>k__BackingField', 'GbufferRTHandles', '<GbufferTextureHandles>k__BackingField', '<DeferredInputAttachments>k__BackingField', '<DeferredInputIsTransient>k__BackingField', '<DepthAttachment>k__BackingField', '<DepthCopyTexture>k__BackingField', '<GbufferFormats>k__BackingField', '<DepthAttachmentHandle>k__BackingField', 'm_stencilVisLights', 'm_stencilVisLightOffsets', 'm_AdditionalLightsShadowCasterPass', 'm_SphereMesh', 'm_HemisphereMesh', 'm_FullscreenMesh', 'm_StencilDeferredMaterial', 'm_StencilDeferredPasses', 'm_ScreenToWorld', 'm_ProfilingSamplerDeferredStencilPass', 'm_ProfilingSamplerDeferredFogPass', 'm_ProfilingSamplerClearStencilPartialPass', 'm_LightCookieManager', '_LitColorMultiplier', 'k_vlStencilDeferredPassNames', 'm_ProfilingSamplerCopyGbufferPass', 'm_ProfilingSamplerFillIndirectPass', 'm_ProfilingSamplerCopyLitColor', 'm_ProfilingActorDeferredPass', 'm_ProfilingLightingComplexity', 'm_profilingSamplerActorLightingPass', 'm_ProfilingSamplerCopyDepthPass', 'm_ProfilingSamplerPostRender', 'm_ProfilingDirectReflection', 'm_ProfilingIndirectReflection', 'm_vlStencilDeferredPasses', 'm_BoxMesh', '<storeLitColor>k__BackingField', '<renderedDirectReflection>k__BackingField', 'm_ProfilingPlanarReflection', '_planarReflectionEntityManager', '_planarReflectionUpdateCachedSystem', '_planarReflectionCullingSystem', '_planarReflectionResultSystem', '_planarReflectionCount']`
-  - `missing field static SharedPlanarReflectionEntityManager <sharedPlanarReflectionManager>k__BackingField`
-
 - `UnityEngine.Rendering.Universal.Internal.MainLightShadowCasterPass`
 
   - `field declaration order/names: ['m_CascadeBorder', 'm_MaxShadowDistanceSq', 'm_ShadowCasterCascadesCount', 'm_MainLightShadowmapID', 'm_MainLightShadowmapTexture', 'm_EmptyMainLightShadowmapTexture', 's_EmptyShadowParams', 's_EmptyShadowmapSize', 'm_MainLightShadowMatrices', 'm_CascadeSlices', 'm_CascadeSplitDistances', 'm_CreateEmptyShadowmap', 'renderTargetWidth', 'renderTargetHeight', 'm_ProfilingSetupSampler'] → ['k_MaxCascades', 'k_ShadowmapBufferBits', 'm_CascadeBorder', 'm_MaxShadowDistanceSq', 'm_ShadowCasterCascadesCount', 'm_MainLightShadowmapID', 'm_MainLightShadowmapTexture', 'm_EmptyMainLightShadowmapTexture', 'k_EmptyShadowMapDimensions', 'k_MainLightShadowMapTextureName', 'k_EmptyMainLightShadowMapTextureName', 's_EmptyShadowParams', 's_EmptyShadowmapSize', 'm_MainLightShadowMatrices', 'm_CascadeSlices', 'm_CascadeSplitDistances', 'm_CreateEmptyShadowmap', 'renderTargetWidth', 'renderTargetHeight', 'm_ProfilingSetupSampler']`
@@ -9295,6 +11521,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `m_GraphicsFormatSupport: offset '0x90' → '0x98'`
   - `extra field static Material s_ErrorMaterial`
 
+- `UnityEngine.Rendering.Universal.ShadowResolution`
+
+  - `field declaration order/names: ['value__', '_256', '_512', '_1024', '_2048', '_4096', '_8192'] → ['value__', '_256', '_512', '_1024', '_2048', '_4096']`
+  - `missing field constant ShadowResolution _8192`
+
 - `UnityEngine.Rendering.Universal.ShadowUtils`
 
   - `field declaration order/names: ['m_ForceShadowPointSampling', '_ShadowBias', '_LightDirection', '_LightPosition'] → ['m_ForceShadowPointSampling', '_ShadowBias', '_LightDirection', '_LightPosition', 'kMinimumPunctualLightHardShadowResolution', 'kMinimumPunctualLightSoftShadowResolution']`
@@ -9318,17 +11549,59 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UnityEngine.Rendering.Universal.UniversalRenderer`
 
-  - `field declaration order/names: ['k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture'] → ['k_DepthStencilFormat', 'k_DepthBufferBits', 'k_FinalBlitPassQueueOffset', 'k_AfterFinalBlitPassQueueOffset', 'k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture']`
+  - `field declaration order/names: ['k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture'] → ['k_DepthStencilFormat', 'k_DepthBufferBits', 'k_FinalBlitPassQueueOffset', 'k_AfterFinalBlitPassQueueOffset', 'k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ColorFrontBuffer', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture']`
+  - `m_ActiveCameraDepthAttachment: offset '0x288' → '0x290'`
+  - `m_CameraDepthAttachment: offset '0x290' → '0x298'`
+  - `m_XRTargetHandleAlias: offset '0x298' → '0x2a0'`
+  - `m_CameraDepthAttachment_D3d_11: offset '0x2a0' → '0x2a8'`
+  - `m_DepthTexture: offset '0x2a8' → '0x2b0'`
+  - `m_NormalsTexture: offset '0x2b0' → '0x2b8'`
+  - `m_DecalLayersTexture: offset '0x2b8' → '0x2c0'`
+  - `m_OpaqueColor: offset '0x2c0' → '0x2c8'`
+  - `m_MotionVectorColor: offset '0x2c8' → '0x2d0'`
+  - `m_MotionVectorDepth: offset '0x2d0' → '0x2d8'`
+  - `m_ForwardLights: offset '0x2d8' → '0x2e0'`
+  - `m_DeferredLights: offset '0x2e0' → '0x2e8'`
+  - `m_RenderingMode: offset '0x2e8' → '0x2f0'`
+  - `m_DepthPrimingMode: offset '0x2ec' → '0x2f4'`
+  - `m_CopyDepthMode: offset '0x2f0' → '0x2f8'`
+  - `m_DepthPrimingRecommended: offset '0x2f4' → '0x2fc'`
+  - `m_DefaultStencilState: offset '0x2f5' → '0x2fd'`
+  - `m_LightCookieManager: offset '0x308' → '0x310'`
+  - `m_IntermediateTextureMode: offset '0x310' → '0x318'`
+  - `m_VulkanEnablePreTransform: offset '0x314' → '0x31c'`
+  - `m_BlitMaterial: offset '0x318' → '0x320'`
+  - `m_BlitHDRMaterial: offset '0x320' → '0x328'`
+  - `m_CopyDepthMaterial: offset '0x328' → '0x330'`
+  - `m_SamplingMaterial: offset '0x330' → '0x338'`
+  - `m_StencilDeferredMaterial: offset '0x338' → '0x340'`
+  - `m_CameraMotionVecMaterial: offset '0x340' → '0x348'`
+  - `m_ObjectMotionVecMaterial: offset '0x348' → '0x350'`
+  - `m_PostProcessPasses: offset '0x350' → '0x358'`
+  - `m_TargetIsBackbuffer: offset '0x390' → '0x398'`
+  - `frameResources: offset '0x398' → '0x3a0'`
   - `extra field constant GraphicsFormat k_DepthStencilFormat`
   - `extra field constant int k_DepthBufferBits`
   - `extra field constant int k_FinalBlitPassQueueOffset`
   - `extra field constant int k_AfterFinalBlitPassQueueOffset`
+  - `extra field instance RTHandle m_ColorFrontBuffer`
+
+- `UnityEngine.Rendering.Universal.VolumeFrameworkUpdateMode`
+
+  - `field declaration order/names: ['value__', 'EveryFrame', 'ViaScripting', 'UsePipelineSettings', 'UseMainCamera'] → ['value__', 'EveryFrame', 'ViaScripting', 'UsePipelineSettings']`
+  - `missing field constant VolumeFrameworkUpdateMode UseMainCamera`
 
 - `UnityEngine.Rendering.Universal.ZBinningJob`
 
   - `field declaration order/names: ['bins', 'minMaxZs', 'zBinScale', 'zBinOffset', 'binCount', 'wordsPerTile', 'lightCount', 'reflectionProbeCount', 'batchCount', 'viewCount', 'isOrthographic'] → ['batchSize', 'headerLength', 'bins', 'minMaxZs', 'zBinScale', 'zBinOffset', 'binCount', 'wordsPerTile', 'lightCount', 'reflectionProbeCount', 'batchCount', 'viewCount', 'isOrthographic']`
   - `extra field constant int batchSize`
   - `extra field constant int headerLength`
+
+- `UniversalAdditionalCameraData.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__55_0'] → ['<>9', '<>9__64_0']`
+  - `missing field static Predicate<Camera> <>9__55_0`
+  - `extra field static Predicate<Camera> <>9__64_0`
 
 - `UniversalRenderPipeline.Profiling.Pipeline`
 
@@ -9347,11 +11620,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UniversalRenderer.<>c` (compiler-generated name)
 
-  - `field declaration order/names: ['<>9', '<>9__93_0', '<>9__93_1'] → ['<>9', '<>9__90_0', '<>9__90_1']`
+  - `field declaration order/names: ['<>9', '<>9__93_0', '<>9__93_1'] → ['<>9', '<>9__92_0', '<>9__92_1']`
   - `missing field static Predicate<ScriptableRenderPass> <>9__93_0`
   - `missing field static Predicate<ScriptableRenderPass> <>9__93_1`
-  - `extra field static Predicate<ScriptableRenderPass> <>9__90_0`
-  - `extra field static Predicate<ScriptableRenderPass> <>9__90_1`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__92_0`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__92_1`
 
 - `UniversalRenderer.Profiling`
 
@@ -9364,6 +11637,31 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `extra field instance Shader terrainDetailLitPS`
   - `extra field instance Shader terrainDetailGrassPS`
   - `extra field instance Shader terrainDetailGrassBillboardPS`
+
+- `VL.Rendering.VLDecalRendererFeature`
+
+  - `field declaration order/names: ['MaxDrawDistance', 'layer', '<sharedDecalEntityManager>k__BackingField', 'm_RecreateSystems', 'm_DecalPreviewPass', 'm_LitDecalPass', 'm_ActorDecalPass', 'm_DecalEntityManager', 'm_DecalUpdateCachedSystem', 'm_DecalUpdateCullingGroupSystem', 'm_DecalUpdateCulledSystem', 'm_DecalCreateDrawCallSystem', 'm_DecalPrioritySystem', '_vlLitDecalDrawSystem', '_actorDecalDrawSystem'] → ['MaxDrawDistance', 'layer', 'm_RecreateSystems', 'm_DecalPreviewPass', 'm_LitDecalPass', 'm_ActorDecalPass', 'm_DecalEntityManager', 'm_DecalUpdateCachedSystem', 'm_DecalUpdateCullingGroupSystem', 'm_DecalUpdateCulledSystem', 'm_DecalCreateDrawCallSystem', 'm_DecalPrioritySystem', '_vlLitDecalDrawSystem', '_actorDecalDrawSystem', '<sharedDecalEntityManager>k__BackingField']`
+
+- `VL.Rendering.VLSRPRenderer`
+
+  - `m_VLMotionVectorPass: offset '0x3a0' → '0x3a8'`
+  - `m_DrawSkyboxPass: offset '0x3a8' → '0x3b0'`
+  - `m_LitColorTexture: offset '0x3b0' → '0x3b8'`
+  - `m_AdditionalInfoTexture: offset '0x3b8' → '0x3c0'`
+  - `m_SkyMaterial: offset '0x3c0' → '0x3c8'`
+  - `m_FogMaterial: offset '0x3c8' → '0x3d0'`
+  - `m_VLPostProcessPasses: offset '0x3d0' → '0x3d8'`
+  - `_vlDeferredPass: offset '0x420' → '0x428'`
+  - `m_ActorForward: offset '0x428' → '0x430'`
+  - `_vlPreDepthIDPass: offset '0x430' → '0x438'`
+
+- `VLSRPRenderer.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__27_0', '<>9__27_1'] → ['<>9', '<>9__26_0', '<>9__26_1']`
+  - `missing field static Predicate<ScriptableRenderPass> <>9__27_0`
+  - `missing field static Predicate<ScriptableRenderPass> <>9__27_1`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__26_0`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__26_1`
 
 
 </details>
@@ -9413,11 +11711,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 4</summary>
+<details><summary>Missing: 1</summary>
 
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=144`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
 - `DebugDisplaySettingsRendering.WidgetFactory.<>c__DisplayClass14_0` (compiler-generated name)
 
 </details>
@@ -9425,8 +11720,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 <details><summary>Extra: 184</summary>
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=24`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=31707`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=38578`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=31302`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=37066`
 - `Clipper.NodeType`
 - `DeferredLights.StencilDeferredPasses`
 - `Dict.LessOrEqual<TValue>`
@@ -9614,7 +11909,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## Unity.TextMeshPro.dll
 
-<details><summary>Matching: 115</summary>
+<details><summary>Matching: 120</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
@@ -9639,6 +11934,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMP_Settings.LineBreakingTable`
 - `TMP_SpriteAnimator.<DoSpriteAnimationInternal>d__7` (compiler-generated name)
 - `TMP_SpriteAsset.<>c` (compiler-generated name)
+- `TMP_Text.<>c` (compiler-generated name)
 - `TMP_Text.CharacterSubstitution`
 - `TMP_Text.MissingCharacterEventCallback`
 - `TMP_Text.SpecialCharacter`
@@ -9670,6 +11966,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMPro.MaterialReference`
 - `TMPro.MaterialReferenceManager`
 - `TMPro.MultipleSubstitutionRecord`
+- `TMPro.RichTextTagAttribute`
 - `TMPro.SetPropertyUtility`
 - `TMPro.ShaderUtilities`
 - `TMPro.TMP_Asset`
@@ -9703,6 +12000,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMPro.TMP_StyleSheet`
 - `TMPro.TMP_SubMesh`
 - `TMPro.TMP_SubMeshUI`
+- `TMPro.TMP_Text`
 - `TMPro.TMP_TextElement`
 - `TMPro.TMP_TextElementType`
 - `TMPro.TMP_TextElement_Legacy`
@@ -9719,6 +12017,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMPro.TextContainer`
 - `TMPro.TextContainerAnchors`
 - `TMPro.TextElementType`
+- `TMPro.TextMeshPro`
+- `TMPro.TextMeshProUGUI`
 - `TMPro.TextOverflowModes`
 - `TMPro.TextProcessingElementType`
 - `TMPro.TextRenderFlags`
@@ -9734,7 +12034,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 11</summary>
+<details><summary>Mismatching: 6</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
@@ -9742,23 +12042,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3772 50D8F9B758CA049E70E848EB6297B10698B9DFE1BC09A250619124C983CAC0E8`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4040 CE288FEE87FD0C469553BE04A1827FA38389051875CAC152A072634634D7D780`
 
-- `TMP_Text.<>c` (compiler-generated name)
-
-  - `field declaration order/names: ['<>9', '<>9__645_0'] → ['<>9', '<>9__648_0']`
-  - `missing field static Action<TMP_TextInfo> <>9__645_0`
-  - `extra field static Action<TMP_TextInfo> <>9__648_0`
-
 - `TMPro.Compute_DT_EventArgs`
 
   - `field declaration order/names: [] → ['EventType', 'ProgressPercentage', 'Colors']`
   - `extra field instance Compute_DistanceTransform_EventTypes EventType`
   - `extra field instance float ProgressPercentage`
   - `extra field instance Color[] Colors`
-
-- `TMPro.RichTextTagAttribute`
-
-  - `field declaration order/names: ['nameHashCode', 'valueHashCode', 'valueType', 'valueStartIndex', 'valueLength', 'unitType'] → ['nameHashCode', 'valueHashCode', 'valueType', 'valueStartIndex', 'valueLength', 'unitType', 'k_Default']`
-  - `extra field static RichTextTagAttribute k_Default`
 
 - `TMPro.TMP_Math`
 
@@ -9780,159 +12069,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `k_RegularStyleHashCode: offset '0x20' → '0x28'`
   - `extra field static TMP_Settings s_TextSettings`
 
-- `TMPro.TMP_Text`
-
-  - `field declaration order/names: ['m_text', 'm_IsTextBackingStringDirty', 'm_TextPreprocessor', 'm_isRightToLeft', 'm_fontAsset', 'm_currentFontAsset', 'm_isSDFShader', 'm_sharedMaterial', 'm_currentMaterial', 'm_materialReferences', 'm_materialReferenceIndexLookup', 'm_materialReferenceStack', 'm_currentMaterialIndex', 'm_fontSharedMaterials', 'm_fontMaterial', 'm_fontMaterials', 'm_isMaterialDirty', 'm_fontColor32', 'm_fontColor', 's_colorWhite', 'm_underlineColor', 'm_strikethroughColor', 'm_HighlightState', 'm_ConvertToLinearSpace', 'm_enableVertexGradient', 'm_colorMode', 'm_fontColorGradient', 'm_fontColorGradientPreset', 'm_spriteAsset', 'm_tintAllSprites', 'm_tintSprite', 'm_spriteColor', 'm_StyleSheet', 'm_TextStyle', 'm_TextStyleHashCode', 'm_overrideHtmlColors', 'm_faceColor', 'm_outlineColor', 'm_outlineWidth', 'm_currentEnvMapRotation', 'm_hasEnvMapProperty', 'm_fontSize', 'm_currentFontSize', 'm_fontSizeBase', 'm_sizeStack', 'm_fontWeight', 'm_FontWeightInternal', 'm_FontWeightStack', 'm_enableAutoSizing', 'm_maxFontSize', 'm_minFontSize', 'm_AutoSizeIterationCount', 'm_AutoSizeMaxIterationCount', 'm_IsAutoSizePointSizeSet', 'm_fontSizeMin', 'm_fontSizeMax', 'm_fontStyle', 'm_FontStyleInternal', 'm_fontStyleStack', 'm_isUsingBold', 'm_HorizontalAlignment', 'm_VerticalAlignment', 'm_textAlignment', 'm_lineJustification', 'm_lineJustificationStack', 'm_textContainerLocalCorners', 'm_characterSpacing', 'm_cSpacing', 'm_monoSpacing', 'm_duoSpace', 'm_wordSpacing', 'm_lineSpacing', 'm_lineSpacingDelta', 'm_lineHeight', 'm_IsDrivenLineSpacing', 'm_lineSpacingMax', 'm_paragraphSpacing', 'm_charWidthMaxAdj', 'm_charWidthAdjDelta', 'm_TextWrappingMode', 'm_isCharacterWrappingEnabled', 'm_isNonBreakingSpace', 'm_isIgnoringAlignment', 'm_wordWrappingRatios', 'm_overflowMode', 'm_firstOverflowCharacterIndex', 'm_linkedTextComponent', 'parentLinkedComponent', 'm_isTextTruncated', 'm_enableKerning', 'm_LastBaseGlyphIndex', 'm_ActiveFontFeatures', 'm_enableExtraPadding', 'checkPaddingRequired', 'm_isRichText', 'm_EmojiFallbackSupport', 'm_parseCtrlCharacters', 'm_isOverlay', 'm_isOrthographic', 'm_isCullingEnabled', 'm_isMaskingEnabled', 'isMaskUpdateRequired', 'm_ignoreCulling', 'm_horizontalMapping', 'm_verticalMapping', 'm_uvLineOffset', 'm_renderMode', 'm_geometrySortingOrder', 'm_IsTextObjectScaleStatic', 'm_VertexBufferAutoSizeReduction', 'm_firstVisibleCharacter', 'm_maxVisibleCharacters', 'm_maxVisibleWords', 'm_maxVisibleLines', 'm_useMaxVisibleDescender', 'm_pageToDisplay', 'm_isNewPage', 'm_margin', 'm_marginLeft', 'm_marginRight', 'm_marginWidth', 'm_marginHeight', 'm_width', 'm_textInfo', 'm_havePropertiesChanged', 'm_isUsingLegacyAnimationComponent', 'm_transform', 'm_rectTransform', 'm_PreviousRectTransformSize', 'm_PreviousPivotPosition', '<autoSizeTextContainer>k__BackingField', 'm_autoSizeTextContainer', 'm_mesh', 'm_isVolumetricText', 'OnFontAssetRequest', 'OnSpriteAssetRequest', 'OnMissingCharacter', 'OnPreRenderText', 'm_spriteAnimator', 'm_flexibleHeight', 'm_flexibleWidth', 'm_minWidth', 'm_minHeight', 'm_maxWidth', 'm_maxHeight', 'm_LayoutElement', 'm_preferredWidth', 'm_RenderedWidth', 'm_isPreferredWidthDirty', 'm_preferredHeight', 'm_RenderedHeight', 'm_isPreferredHeightDirty', 'm_isCalculatingPreferredValues', 'm_layoutPriority', 'm_isLayoutDirty', 'm_isAwake', 'm_isWaitingOnResourceLoad', 'm_inputSource', 'm_fontScaleMultiplier', 'm_htmlTag', 'm_xmlAttribute', 'm_attributeParameterValues', 'tag_LineIndent', 'tag_Indent', 'm_indentStack', 'tag_NoParsing', 'm_isTextLayoutPhase', 'm_FXRotation', 'm_FXScale', 'm_TextProcessingArray', 'm_InternalTextProcessingArraySize', 'm_internalCharacterInfo', 'm_totalCharacterCount', 'm_SavedWordWrapState', 'm_SavedLineState', 'm_SavedEllipsisState', 'm_SavedLastValidState', 'm_SavedSoftLineBreakState', 'm_EllipsisInsertionCandidateStack', 'm_characterCount', 'm_firstCharacterOfLine', 'm_firstVisibleCharacterOfLine', 'm_lastCharacterOfLine', 'm_lastVisibleCharacterOfLine', 'm_lineNumber', 'm_lineVisibleCharacterCount', 'm_lineVisibleSpaceCount', 'm_pageNumber', 'm_PageAscender', 'm_maxTextAscender', 'm_maxCapHeight', 'm_ElementAscender', 'm_ElementDescender', 'm_maxLineAscender', 'm_maxLineDescender', 'm_startOfLineAscender', 'm_startOfLineDescender', 'm_lineOffset', 'm_meshExtents', 'm_htmlColor', 'm_colorStack', 'm_underlineColorStack', 'm_strikethroughColorStack', 'm_HighlightStateStack', 'm_colorGradientPreset', 'm_colorGradientStack', 'm_colorGradientPresetIsTinted', 'm_tabSpacing', 'm_spacing', 'm_TextStyleStacks', 'm_TextStyleStackDepth', 'm_ItalicAngleStack', 'm_ItalicAngle', 'm_actionStack', 'm_padding', 'm_baselineOffset', 'm_baselineOffsetStack', 'm_xAdvance', 'm_textElementType', 'm_cached_TextElement', 'm_Ellipsis', 'm_Underline', 'm_defaultSpriteAsset', 'm_currentSpriteAsset', 'm_spriteCount', 'm_spriteIndex', 'm_spriteAnimationID', 'k_ParseTextMarker', 'k_InsertNewLineMarker', 'm_ignoreActiveState', 'm_TextBackingArray', 'k_Power', 'k_LargePositiveVector2', 'k_LargeNegativeVector2', 'k_LargePositiveFloat', 'k_LargeNegativeFloat', 'k_LargePositiveInt', 'k_LargeNegativeInt'] → ['m_text', 'm_IsTextBackingStringDirty', 'm_TextPreprocessor', 'm_isRightToLeft', 'm_fontAsset', 'm_currentFontAsset', 'm_isSDFShader', 'm_sharedMaterial', 'm_currentMaterial', 'm_materialReferences', 'm_materialReferenceIndexLookup', 'm_materialReferenceStack', 'm_currentMaterialIndex', 'm_fontSharedMaterials', 'm_fontMaterial', 'm_fontMaterials', 'm_isMaterialDirty', 'm_fontColor32', 'm_fontColor', 's_colorWhite', 'm_underlineColor', 'm_strikethroughColor', 'm_HighlightState', 'm_ConvertToLinearSpace', 'm_enableVertexGradient', 'm_colorMode', 'm_fontColorGradient', 'm_fontColorGradientPreset', 'm_spriteAsset', 'm_tintAllSprites', 'm_tintSprite', 'm_spriteColor', 'm_StyleSheet', 'm_TextStyle', 'm_TextStyleHashCode', 'm_overrideHtmlColors', 'm_faceColor', 'm_outlineColor', 'm_outlineWidth', 'm_currentEnvMapRotation', 'm_hasEnvMapProperty', 'm_fontSize', 'm_currentFontSize', 'm_fontSizeBase', 'm_sizeStack', 'm_fontWeight', 'm_FontWeightInternal', 'm_FontWeightStack', 'm_enableAutoSizing', 'm_maxFontSize', 'm_minFontSize', 'm_AutoSizeIterationCount', 'm_AutoSizeMaxIterationCount', 'm_IsAutoSizePointSizeSet', 'm_fontSizeMin', 'm_fontSizeMax', 'm_fontStyle', 'm_FontStyleInternal', 'm_fontStyleStack', 'm_isUsingBold', 'm_HorizontalAlignment', 'm_VerticalAlignment', 'm_textAlignment', 'm_lineJustification', 'm_lineJustificationStack', 'm_textContainerLocalCorners', 'm_characterSpacing', 'm_cSpacing', 'm_monoSpacing', 'm_duoSpace', 'm_characterHorizontalScale', 'm_wordSpacing', 'm_lineSpacing', 'm_lineSpacingDelta', 'm_lineHeight', 'm_IsDrivenLineSpacing', 'm_lineSpacingMax', 'm_paragraphSpacing', 'm_charWidthMaxAdj', 'm_charWidthAdjDelta', 'm_TextWrappingMode', 'm_isCharacterWrappingEnabled', 'm_isNonBreakingSpace', 'm_isIgnoringAlignment', 'm_wordWrappingRatios', 'm_overflowMode', 'm_firstOverflowCharacterIndex', 'm_linkedTextComponent', 'parentLinkedComponent', 'm_isTextTruncated', 'm_enableKerning', 'm_LastBaseGlyphIndex', 'm_ActiveFontFeatures', 'm_enableExtraPadding', 'checkPaddingRequired', 'm_isRichText', 'm_EmojiFallbackSupport', 'm_parseCtrlCharacters', 'm_isOverlay', 'm_isOrthographic', 'm_isCullingEnabled', 'm_isMaskingEnabled', 'isMaskUpdateRequired', 'm_ignoreCulling', 'm_horizontalMapping', 'm_verticalMapping', 'm_uvLineOffset', 'm_renderMode', 'm_geometrySortingOrder', 'm_IsTextObjectScaleStatic', 'm_VertexBufferAutoSizeReduction', 'm_firstVisibleCharacter', 'm_maxVisibleCharacters', 'm_maxVisibleWords', 'm_maxVisibleLines', 'm_useMaxVisibleDescender', 'm_pageToDisplay', 'm_isNewPage', 'm_margin', 'm_marginLeft', 'm_marginRight', 'm_marginWidth', 'm_marginHeight', 'm_width', 'm_textInfo', 'm_havePropertiesChanged', 'm_isUsingLegacyAnimationComponent', 'm_transform', 'm_rectTransform', 'm_PreviousRectTransformSize', 'm_PreviousPivotPosition', '<autoSizeTextContainer>k__BackingField', 'm_autoSizeTextContainer', 'm_mesh', 'm_isVolumetricText', 'OnFontAssetRequest', 'OnSpriteAssetRequest', 'OnMissingCharacter', 'OnPreRenderText', 'm_spriteAnimator', 'm_flexibleHeight', 'm_flexibleWidth', 'm_minWidth', 'm_minHeight', 'm_maxWidth', 'm_maxHeight', 'm_LayoutElement', 'm_preferredWidth', 'm_RenderedWidth', 'm_isPreferredWidthDirty', 'm_preferredHeight', 'm_RenderedHeight', 'm_isPreferredHeightDirty', 'm_isCalculatingPreferredValues', 'm_layoutPriority', 'm_isLayoutDirty', 'm_isAwake', 'm_isWaitingOnResourceLoad', 'm_inputSource', 'm_fontScaleMultiplier', 'm_htmlTag', 'm_xmlAttribute', 'm_attributeParameterValues', 'tag_LineIndent', 'tag_Indent', 'm_indentStack', 'tag_NoParsing', 'm_isTextLayoutPhase', 'm_FXRotation', 'm_FXScale', 'm_TextProcessingArray', 'm_InternalTextProcessingArraySize', 'm_internalCharacterInfo', 'm_totalCharacterCount', 'm_SavedWordWrapState', 'm_SavedLineState', 'm_SavedEllipsisState', 'm_SavedLastValidState', 'm_SavedSoftLineBreakState', 'm_EllipsisInsertionCandidateStack', 'm_characterCount', 'm_firstCharacterOfLine', 'm_firstVisibleCharacterOfLine', 'm_lastCharacterOfLine', 'm_lastVisibleCharacterOfLine', 'm_lineNumber', 'm_lineVisibleCharacterCount', 'm_lineVisibleSpaceCount', 'm_pageNumber', 'm_PageAscender', 'm_maxTextAscender', 'm_maxCapHeight', 'm_ElementAscender', 'm_ElementDescender', 'm_maxLineAscender', 'm_maxLineDescender', 'm_startOfLineAscender', 'm_startOfLineDescender', 'm_lineOffset', 'm_meshExtents', 'm_htmlColor', 'm_colorStack', 'm_underlineColorStack', 'm_strikethroughColorStack', 'm_HighlightStateStack', 'm_colorGradientPreset', 'm_colorGradientStack', 'm_colorGradientPresetIsTinted', 'm_tabSpacing', 'm_spacing', 'm_TextStyleStacks', 'm_TextStyleStackDepth', 'm_ItalicAngleStack', 'm_ItalicAngle', 'm_actionStack', 'm_padding', 'm_baselineOffset', 'm_baselineOffsetStack', 'm_xAdvance', 'm_textElementType', 'm_cached_TextElement', 'm_Ellipsis', 'm_Underline', 'm_defaultSpriteAsset', 'm_currentSpriteAsset', 'm_spriteCount', 'm_spriteIndex', 'm_spriteAnimationID', 'k_ParseTextMarker', 'k_InsertNewLineMarker', 'm_ignoreActiveState', 'm_TextBackingArray', 'k_Power', 'k_LargePositiveVector2', 'k_LargeNegativeVector2', 'k_LargePositiveFloat', 'k_LargeNegativeFloat', 'k_LargePositiveInt', 'k_LargeNegativeInt']`
-  - `m_wordSpacing: offset '0x2e8' → '0x2ec'`
-  - `m_lineSpacing: offset '0x2ec' → '0x2f0'`
-  - `m_lineSpacingDelta: offset '0x2f0' → '0x2f4'`
-  - `m_lineHeight: offset '0x2f4' → '0x2f8'`
-  - `m_IsDrivenLineSpacing: offset '0x2f8' → '0x2fc'`
-  - `m_lineSpacingMax: offset '0x2fc' → '0x300'`
-  - `m_paragraphSpacing: offset '0x300' → '0x304'`
-  - `m_charWidthMaxAdj: offset '0x304' → '0x308'`
-  - `m_charWidthAdjDelta: offset '0x308' → '0x30c'`
-  - `m_TextWrappingMode: offset '0x30c' → '0x310'`
-  - `m_isCharacterWrappingEnabled: offset '0x310' → '0x314'`
-  - `m_isNonBreakingSpace: offset '0x311' → '0x315'`
-  - `m_isIgnoringAlignment: offset '0x312' → '0x316'`
-  - `m_wordWrappingRatios: offset '0x314' → '0x318'`
-  - `m_overflowMode: offset '0x318' → '0x31c'`
-  - `m_firstOverflowCharacterIndex: offset '0x31c' → '0x320'`
-  - `m_linkedTextComponent: offset '0x320' → '0x328'`
-  - `parentLinkedComponent: offset '0x328' → '0x330'`
-  - `m_isTextTruncated: offset '0x330' → '0x338'`
-  - `m_enableKerning: offset '0x331' → '0x339'`
-  - `m_LastBaseGlyphIndex: offset '0x334' → '0x33c'`
-  - `m_ActiveFontFeatures: offset '0x338' → '0x340'`
-  - `m_enableExtraPadding: offset '0x340' → '0x348'`
-  - `checkPaddingRequired: offset '0x341' → '0x349'`
-  - `m_isRichText: offset '0x342' → '0x34a'`
-  - `m_EmojiFallbackSupport: offset '0x343' → '0x34b'`
-  - `m_parseCtrlCharacters: offset '0x344' → '0x34c'`
-  - `m_isOverlay: offset '0x345' → '0x34d'`
-  - `m_isOrthographic: offset '0x346' → '0x34e'`
-  - `m_isCullingEnabled: offset '0x347' → '0x34f'`
-  - `m_isMaskingEnabled: offset '0x348' → '0x350'`
-  - `isMaskUpdateRequired: offset '0x349' → '0x351'`
-  - `m_ignoreCulling: offset '0x34a' → '0x352'`
-  - `m_horizontalMapping: offset '0x34c' → '0x354'`
-  - `m_verticalMapping: offset '0x350' → '0x358'`
-  - `m_uvLineOffset: offset '0x354' → '0x35c'`
-  - `m_renderMode: offset '0x358' → '0x360'`
-  - `m_geometrySortingOrder: offset '0x35c' → '0x364'`
-  - `m_IsTextObjectScaleStatic: offset '0x360' → '0x368'`
-  - `m_VertexBufferAutoSizeReduction: offset '0x361' → '0x369'`
-  - `m_firstVisibleCharacter: offset '0x364' → '0x36c'`
-  - `m_maxVisibleCharacters: offset '0x368' → '0x370'`
-  - `m_maxVisibleWords: offset '0x36c' → '0x374'`
-  - `m_maxVisibleLines: offset '0x370' → '0x378'`
-  - `m_useMaxVisibleDescender: offset '0x374' → '0x37c'`
-  - `m_pageToDisplay: offset '0x378' → '0x380'`
-  - `m_isNewPage: offset '0x37c' → '0x384'`
-  - `m_margin: offset '0x380' → '0x388'`
-  - `m_marginLeft: offset '0x390' → '0x398'`
-  - `m_marginRight: offset '0x394' → '0x39c'`
-  - `m_marginWidth: offset '0x398' → '0x3a0'`
-  - `m_marginHeight: offset '0x39c' → '0x3a4'`
-  - `m_width: offset '0x3a0' → '0x3a8'`
-  - `m_textInfo: offset '0x3a8' → '0x3b0'`
-  - `m_havePropertiesChanged: offset '0x3b0' → '0x3b8'`
-  - `m_isUsingLegacyAnimationComponent: offset '0x3b1' → '0x3b9'`
-  - `m_transform: offset '0x3b8' → '0x3c0'`
-  - `m_rectTransform: offset '0x3c0' → '0x3c8'`
-  - `m_PreviousRectTransformSize: offset '0x3c8' → '0x3d0'`
-  - `m_PreviousPivotPosition: offset '0x3d0' → '0x3d8'`
-  - `<autoSizeTextContainer>k__BackingField: offset '0x3d8' → '0x3e0'`
-  - `m_autoSizeTextContainer: offset '0x3d9' → '0x3e1'`
-  - `m_mesh: offset '0x3e0' → '0x3e8'`
-  - `m_isVolumetricText: offset '0x3e8' → '0x3f0'`
-  - `OnPreRenderText: offset '0x3f0' → '0x3f8'`
-  - `m_spriteAnimator: offset '0x3f8' → '0x400'`
-  - `m_flexibleHeight: offset '0x400' → '0x408'`
-  - `m_flexibleWidth: offset '0x404' → '0x40c'`
-  - `m_minWidth: offset '0x408' → '0x410'`
-  - `m_minHeight: offset '0x40c' → '0x414'`
-  - `m_maxWidth: offset '0x410' → '0x418'`
-  - `m_maxHeight: offset '0x414' → '0x41c'`
-  - `m_LayoutElement: offset '0x418' → '0x420'`
-  - `m_preferredWidth: offset '0x420' → '0x428'`
-  - `m_RenderedWidth: offset '0x424' → '0x42c'`
-  - `m_isPreferredWidthDirty: offset '0x428' → '0x430'`
-  - `m_preferredHeight: offset '0x42c' → '0x434'`
-  - `m_RenderedHeight: offset '0x430' → '0x438'`
-  - `m_isPreferredHeightDirty: offset '0x434' → '0x43c'`
-  - `m_isCalculatingPreferredValues: offset '0x435' → '0x43d'`
-  - `m_layoutPriority: offset '0x438' → '0x440'`
-  - `m_isLayoutDirty: offset '0x43c' → '0x444'`
-  - `m_isAwake: offset '0x43d' → '0x445'`
-  - `m_isWaitingOnResourceLoad: offset '0x43e' → '0x446'`
-  - `m_inputSource: offset '0x440' → '0x448'`
-  - `m_fontScaleMultiplier: offset '0x444' → '0x44c'`
-  - `tag_LineIndent: offset '0x448' → '0x450'`
-  - `tag_Indent: offset '0x44c' → '0x454'`
-  - `m_indentStack: offset '0x450' → '0x458'`
-  - `tag_NoParsing: offset '0x470' → '0x478'`
-  - `m_isTextLayoutPhase: offset '0x471' → '0x479'`
-  - `m_FXRotation: offset '0x474' → '0x47c'`
-  - `m_FXScale: offset '0x484' → '0x48c'`
-  - `m_TextProcessingArray: offset '0x490' → '0x498'`
-  - `m_InternalTextProcessingArraySize: offset '0x498' → '0x4a0'`
-  - `m_internalCharacterInfo: offset '0x4a0' → '0x4a8'`
-  - `m_totalCharacterCount: offset '0x4a8' → '0x4b0'`
-  - `m_characterCount: offset '0x4ac' → '0x4b4'`
-  - `m_firstCharacterOfLine: offset '0x4b0' → '0x4b8'`
-  - `m_firstVisibleCharacterOfLine: offset '0x4b4' → '0x4bc'`
-  - `m_lastCharacterOfLine: offset '0x4b8' → '0x4c0'`
-  - `m_lastVisibleCharacterOfLine: offset '0x4bc' → '0x4c4'`
-  - `m_lineNumber: offset '0x4c0' → '0x4c8'`
-  - `m_lineVisibleCharacterCount: offset '0x4c4' → '0x4cc'`
-  - `m_lineVisibleSpaceCount: offset '0x4c8' → '0x4d0'`
-  - `m_pageNumber: offset '0x4cc' → '0x4d4'`
-  - `m_PageAscender: offset '0x4d0' → '0x4d8'`
-  - `m_maxTextAscender: offset '0x4d4' → '0x4dc'`
-  - `m_maxCapHeight: offset '0x4d8' → '0x4e0'`
-  - `m_ElementAscender: offset '0x4dc' → '0x4e4'`
-  - `m_ElementDescender: offset '0x4e0' → '0x4e8'`
-  - `m_maxLineAscender: offset '0x4e4' → '0x4ec'`
-  - `m_maxLineDescender: offset '0x4e8' → '0x4f0'`
-  - `m_startOfLineAscender: offset '0x4ec' → '0x4f4'`
-  - `m_startOfLineDescender: offset '0x4f0' → '0x4f8'`
-  - `m_lineOffset: offset '0x4f4' → '0x4fc'`
-  - `m_meshExtents: offset '0x4f8' → '0x500'`
-  - `m_htmlColor: offset '0x508' → '0x510'`
-  - `m_colorStack: offset '0x510' → '0x518'`
-  - `m_underlineColorStack: offset '0x530' → '0x538'`
-  - `m_strikethroughColorStack: offset '0x550' → '0x558'`
-  - `m_HighlightStateStack: offset '0x570' → '0x578'`
-  - `m_colorGradientPreset: offset '0x5a0' → '0x5a8'`
-  - `m_colorGradientStack: offset '0x5a8' → '0x5b0'`
-  - `m_colorGradientPresetIsTinted: offset '0x5d0' → '0x5d8'`
-  - `m_tabSpacing: offset '0x5d4' → '0x5dc'`
-  - `m_spacing: offset '0x5d8' → '0x5e0'`
-  - `m_TextStyleStacks: offset '0x5e0' → '0x5e8'`
-  - `m_TextStyleStackDepth: offset '0x5e8' → '0x5f0'`
-  - `m_ItalicAngleStack: offset '0x5f0' → '0x5f8'`
-  - `m_ItalicAngle: offset '0x610' → '0x618'`
-  - `m_actionStack: offset '0x618' → '0x620'`
-  - `m_padding: offset '0x638' → '0x640'`
-  - `m_baselineOffset: offset '0x63c' → '0x644'`
-  - `m_baselineOffsetStack: offset '0x640' → '0x648'`
-  - `m_xAdvance: offset '0x660' → '0x668'`
-  - `m_textElementType: offset '0x664' → '0x66c'`
-  - `m_cached_TextElement: offset '0x668' → '0x670'`
-  - `m_Ellipsis: offset '0x670' → '0x678'`
-  - `m_Underline: offset '0x690' → '0x698'`
-  - `m_defaultSpriteAsset: offset '0x6b0' → '0x6b8'`
-  - `m_currentSpriteAsset: offset '0x6b8' → '0x6c0'`
-  - `m_spriteCount: offset '0x6c0' → '0x6c8'`
-  - `m_spriteIndex: offset '0x6c4' → '0x6cc'`
-  - `m_spriteAnimationID: offset '0x6c8' → '0x6d0'`
-  - `m_ignoreActiveState: offset '0x6cc' → '0x6d4'`
-  - `m_TextBackingArray: offset '0x6d0' → '0x6d8'`
-  - `k_Power: offset '0x6e0' → '0x6e8'`
-  - `extra field instance float m_characterHorizontalScale`
-
 - `TMPro.TMP_TextParsingUtilities`
 
   - `field declaration order/names: ['s_Instance', 'k_EmojiLookup', 'k_EmojiPresentationFormLookup'] → ['s_Instance', 'k_LookupStringL', 'k_LookupStringU', 'k_EmojiLookup', 'k_EmojiPresentationFormLookup']`
@@ -9944,51 +12080,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `field declaration order/names: ['m_rectWorldCorners'] → ['m_rectWorldCorners', 'k_lookupStringL', 'k_lookupStringU']`
   - `extra field constant string k_lookupStringL`
   - `extra field constant string k_lookupStringU`
-
-- `TMPro.TextMeshPro`
-
-  - `_SortingLayer: offset '0x6e8' → '0x6f0'`
-  - `_SortingLayerID: offset '0x6ec' → '0x6f4'`
-  - `_SortingOrder: offset '0x6f0' → '0x6f8'`
-  - `OnPreRenderText: offset '0x6f8' → '0x700'`
-  - `m_hasFontAssetChanged: offset '0x700' → '0x708'`
-  - `m_previousLossyScaleY: offset '0x704' → '0x70c'`
-  - `m_renderer: offset '0x708' → '0x710'`
-  - `m_meshFilter: offset '0x710' → '0x718'`
-  - `m_isFirstAllocation: offset '0x718' → '0x720'`
-  - `m_max_characters: offset '0x71c' → '0x724'`
-  - `m_max_numberOfLines: offset '0x720' → '0x728'`
-  - `m_subTextObjects: offset '0x728' → '0x730'`
-  - `m_maskType: offset '0x730' → '0x738'`
-  - `m_EnvMapMatrix: offset '0x734' → '0x73c'`
-  - `m_RectTransformCorners: offset '0x778' → '0x780'`
-  - `m_isRegisteredForEvents: offset '0x780' → '0x788'`
-  - `materialIndexPairs: offset '0x788' → '0x790'`
-
-- `TMPro.TextMeshProUGUI`
-
-  - `m_isRebuildingLayout: offset '0x6e8' → '0x6f0'`
-  - `m_DelayedGraphicRebuild: offset '0x6f0' → '0x6f8'`
-  - `m_DelayedMaterialRebuild: offset '0x6f8' → '0x700'`
-  - `m_ShouldUpdateCulling: offset '0x700' → '0x708'`
-  - `m_ClipRect: offset '0x704' → '0x70c'`
-  - `m_ValidRect: offset '0x714' → '0x71c'`
-  - `OnPreRenderText: offset '0x718' → '0x720'`
-  - `m_hasFontAssetChanged: offset '0x720' → '0x728'`
-  - `m_subTextObjects: offset '0x728' → '0x730'`
-  - `m_previousLossyScaleY: offset '0x730' → '0x738'`
-  - `m_RectTransformCorners: offset '0x738' → '0x740'`
-  - `m_canvasRenderer: offset '0x740' → '0x748'`
-  - `m_canvas: offset '0x748' → '0x750'`
-  - `m_CanvasScaleFactor: offset '0x750' → '0x758'`
-  - `m_isFirstAllocation: offset '0x754' → '0x75c'`
-  - `m_max_characters: offset '0x758' → '0x760'`
-  - `m_baseMaterial: offset '0x760' → '0x768'`
-  - `m_isScrollRegionSet: offset '0x768' → '0x770'`
-  - `m_maskOffset: offset '0x76c' → '0x774'`
-  - `m_EnvMapMatrix: offset '0x77c' → '0x784'`
-  - `m_isRegisteredForEvents: offset '0x7bc' → '0x7c4'`
-  - `materialIndexPairs: offset '0x7c0' → '0x7c8'`
 
 
 </details>
@@ -10628,9 +12719,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.AssetBundleModule.dll
 
-<details><summary>Matching: 6</summary>
+<details><summary>Matching: 8</summary>
 
 - `<Module>`
+- `AssetBundleCreateRequest.BindingsMarshaller`
+- `AssetBundleRequest.BindingsMarshaller`
 - `UnityEngine.AssetBundle`
 - `UnityEngine.AssetBundleCreateRequest`
 - `UnityEngine.AssetBundleRecompressOperation`
@@ -10639,17 +12732,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 2</summary>
-
-- `AssetBundleCreateRequest.BindingsMarshaller`
-- `AssetBundleRequest.BindingsMarshaller`
-
-</details>
-
 
 ## UnityEngine.AudioModule.dll
 
-<details><summary>Matching: 19</summary>
+<details><summary>Matching: 20</summary>
 
 - `<Module>`
 - `AudioClip.PCMReaderCallback`
@@ -10658,6 +12744,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `AudioSettings.AudioConfigurationChangeHandler`
 - `AudioSettings.Mobile`
 - `UnityEngine.Audio.AudioClipPlayable`
+- `UnityEngine.Audio.AudioMixer`
 - `UnityEngine.Audio.AudioMixerPlayable`
 - `UnityEngine.Audio.AudioPlayableBinding`
 - `UnityEngine.Audio.AudioPlayableGraphExtensions`
@@ -10673,11 +12760,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 15</summary>
+<details><summary>Missing: 14</summary>
 
 - `UnityEngine.ActivePlayable`
 - `UnityEngine.Audio.AudioContainerElement`
-- `UnityEngine.Audio.AudioMixer`
 - `UnityEngine.Audio.AudioMixerGroup`
 - `UnityEngine.Audio.AudioMixerSnapshot`
 - `UnityEngine.AudioClipLoadType`
@@ -10696,7 +12782,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.CoreModule.dll
 
-<details><summary>Matching: 852</summary>
+<details><summary>Matching: 861</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>` (compiler-generated name)
@@ -10707,6 +12793,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Application.LogCallback`
 - `Application.LowMemoryCallback`
 - `Application.MemoryUsageChangedCallback`
+- `AsyncOperation.BindingsMarshaller`
+- `Awaitable.<>c` (compiler-generated name)
 - `Awaitable.AwaitableAndFrameIndex`
 - `Awaitable.AwaitableAsyncMethodBuilder`
 - `Awaitable.AwaitableAsyncMethodBuilder.IStateMachineBox`
@@ -10714,6 +12802,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Awaitable.Awaiter`
 - `Awaitable.AwaiterCompletionThreadAffinity`
 - `Awaitable.DoubleBufferedAwaitableList`
+- `Awaitable.DoubleBufferedAwaitableList.<>c__DisplayClass4_0` (compiler-generated name)
 - `BatchRendererGroup.OnFinishedCulling`
 - `BatchRendererGroup.OnPerformCulling`
 - `BeforeRenderHelper.OrderBlock`
@@ -11029,6 +13118,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Assertions.AssertionException`
 - `UnityEngine.Assertions.AssertionMessageUtil`
 - `UnityEngine.AsyncInstantiateOperation`
+- `UnityEngine.AsyncInstantiateOperation<T>`
 - `UnityEngine.AsyncInstantiateOperationHelper`
 - `UnityEngine.AsyncOperation`
 - `UnityEngine.AttributeHelperEngine`
@@ -11045,6 +13135,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Bindings.ThrowHelper`
 - `UnityEngine.Bindings.Unmarshal`
 - `UnityEngine.BoneWeight`
+- `UnityEngine.BoneWeight1`
 - `UnityEngine.BootConfigData`
 - `UnityEngine.BoundingSphere`
 - `UnityEngine.Bounds`
@@ -11090,6 +13181,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.DelayedAttribute`
 - `UnityEngine.DepthTextureMode`
 - `UnityEngine.DeviceType`
+- `UnityEngine.Diagnostics.ForcedCrashCategory`
+- `UnityEngine.Diagnostics.Utils`
 - `UnityEngine.DisallowMultipleComponent`
 - `UnityEngine.Display`
 - `UnityEngine.DrivenRectTransformTracker`
@@ -11209,6 +13302,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.LogOption`
 - `UnityEngine.LogType`
 - `UnityEngine.Logger`
+- `UnityEngine.LowLevel.PlayerLoop`
 - `UnityEngine.LowLevel.PlayerLoopSystem`
 - `UnityEngine.LowLevel.PlayerLoopSystemInternal`
 - `UnityEngine.LowerResBlitTexture`
@@ -11420,6 +13514,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.RendererListParams`
 - `UnityEngine.Rendering.RendererListStatus`
 - `UnityEngine.Rendering.RendererUtils.RendererListDesc`
+- `UnityEngine.Rendering.ScopedRenderPass`
 - `UnityEngine.Rendering.ScriptableCullingParameters`
 - `UnityEngine.Rendering.ScriptableRenderContext`
 - `UnityEngine.Rendering.ShaderKeyword`
@@ -11553,13 +13648,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 2</summary>
-
-- `Awaitable.<>c` (compiler-generated name)
-
-  - `field declaration order/names: ['<>9', '<>9__51_0', '<>9__76_1'] → ['<>9', '<>9__76_1']`
-  - `missing field static Action<object> <>9__51_0`
-  - `<>9__76_1: offset '0x10' → '0x8'`
+<details><summary>Mismatching: 1</summary>
 
 - `UnityEngine.Application`
 
@@ -11714,10 +13803,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 91</summary>
+<details><summary>Missing: 83</summary>
 
-- `AsyncOperation.BindingsMarshaller`
-- `Awaitable.DoubleBufferedAwaitableList.<>c__DisplayClass4_0` (compiler-generated name)
 - `Camera.GateFitMode`
 - `Camera.GateFitParameters`
 - `Camera.ProjectionMatrixMode`
@@ -11733,17 +13820,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ReflectionProbe.<>c__DisplayClass98_0` (compiler-generated name)
 - `ResourceRequest.BindingsMarshaller`
 - `UnityEditor.Experimental.RenderSettings`
-- `UnityEngine.AsyncInstantiateOperation<T>`
 - `UnityEngine.AsyncOperationAwaitableExtensions`
 - `UnityEngine.AudioType`
 - `UnityEngine.AwaitableCompletionSource`
 - `UnityEngine.BlendShape`
 - `UnityEngine.BlendShapeBufferRange`
-- `UnityEngine.BoneWeight1`
 - `UnityEngine.Caching`
 - `UnityEngine.Device.Screen`
-- `UnityEngine.Diagnostics.ForcedCrashCategory`
-- `UnityEngine.Diagnostics.Utils`
 - `UnityEngine.DisableBatchingType`
 - `UnityEngine.EnabledOrientation`
 - `UnityEngine.Experimental.Rendering.GraphicsStateCollection`
@@ -11762,7 +13845,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.LightShadowCasterMode`
 - `UnityEngine.LightmapData`
 - `UnityEngine.LightmapsModeLegacy`
-- `UnityEngine.LowLevel.PlayerLoop`
 - `UnityEngine.MaterialGlobalIlluminationFlags`
 - `UnityEngine.MaterialPropertyType`
 - `UnityEngine.NPOTSupport`
@@ -11783,7 +13865,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.ReflectionProbeMode`
 - `UnityEngine.Rendering.ReflectionProbeTimeSlicingMode`
 - `UnityEngine.Rendering.ReflectionProbeType`
-- `UnityEngine.Rendering.ScopedRenderPass`
 - `UnityEngine.Rendering.ShaderHardwareTier`
 - `UnityEngine.Rendering.ShaderPropertyType`
 - `UnityEngine.Rendering.ShadowMapPass`
@@ -11810,8 +13891,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 17</summary>
+<details><summary>Extra: 23</summary>
 
+- `Awaitable.<>c<T>` (compiler-generated name)
+- `Awaitable.AwaitableAsyncMethodBuilder.IStateMachineBox<T>`
+- `Awaitable.AwaitableAsyncMethodBuilder<T>`
+- `Awaitable.Awaiter<T>`
 - `CustomSampler.BindingsMarshaller`
 - `JetBrains.Annotations.CollectionAccessAttribute`
 - `JetBrains.Annotations.CollectionAccessType`
@@ -11820,11 +13905,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `SpookyHash.U`
 - `Unity.Profiling.LowLevel.Unsafe.ProfilerMarkerData`
 - `Unity.Profiling.ProfilerRecorderSample`
+- `UnityEngine.Awaitable<T>`
 - `UnityEngine.HashUnsafeUtilities`
 - `UnityEngine.HashUtilities`
 - `UnityEngine.Rendering.ShaderKeywordSet`
 - `UnityEngine.Scripting.RequireAttributeUsagesAttribute`
 - `UnityEngine.SpookyHash`
+- `UnityEngine.TrailRenderer`
 - `UnityEngine.U2D.Light2DBase`
 - `UnityEngine.U2D.SpriteChannelInfo`
 - `UnityEngine.U2D.SpriteDataAccessExtensions`
@@ -12145,29 +14232,38 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.ParticleSystemModule.dll
 
-<details><summary>Matching: 17</summary>
+<details><summary>Matching: 26</summary>
 
 - `<Module>`
+- `ParticleSystem.EmissionModule`
 - `ParticleSystem.EmitParams`
 - `ParticleSystem.MainModule`
+- `ParticleSystem.MinMaxCurve`
 - `ParticleSystem.MinMaxCurveBlittable`
 - `ParticleSystem.MinMaxGradient`
 - `ParticleSystem.MinMaxGradientBlittable`
 - `ParticleSystem.Particle`
 - `ParticleSystem.SubEmittersModule`
+- `ParticleSystem.TextureSheetAnimationModule`
+- `ParticleSystem.TrailModule`
 - `UnityEngine.ParticleSystem`
+- `UnityEngine.ParticleSystemAnimationMode`
+- `UnityEngine.ParticleSystemBakeMeshOptions`
 - `UnityEngine.ParticleSystemCurveMode`
 - `UnityEngine.ParticleSystemGradientMode`
 - `UnityEngine.ParticleSystemJobs.ParticleSystemJobData`
 - `UnityEngine.ParticleSystemJobs.ParticleSystemNativeArray3`
 - `UnityEngine.ParticleSystemJobs.ParticleSystemNativeArray4`
+- `UnityEngine.ParticleSystemRenderMode`
 - `UnityEngine.ParticleSystemRenderer`
 - `UnityEngine.ParticleSystemScalingMode`
+- `UnityEngine.ParticleSystemSimulationSpace`
 - `UnityEngine.ParticleSystemStopBehavior`
+- `UnityEngine.Rendering.UVChannelFlags`
 
 </details>
 
-<details><summary>Missing: 51</summary>
+<details><summary>Missing: 42</summary>
 
 - `NativeParticleData.Array3`
 - `NativeParticleData.Array4`
@@ -12175,14 +14271,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ParticleSystem.ColorBySpeedModule`
 - `ParticleSystem.ColorOverLifetimeModule`
 - `ParticleSystem.CustomDataModule`
-- `ParticleSystem.EmissionModule`
 - `ParticleSystem.ExternalForcesModule`
 - `ParticleSystem.ForceOverLifetimeModule`
 - `ParticleSystem.InheritVelocityModule`
 - `ParticleSystem.LifetimeByEmitterSpeedModule`
 - `ParticleSystem.LightsModule`
 - `ParticleSystem.LimitVelocityOverLifetimeModule`
-- `ParticleSystem.MinMaxCurve`
 - `ParticleSystem.NoiseModule`
 - `ParticleSystem.PlaybackState`
 - `ParticleSystem.PlaybackState.Collision`
@@ -12200,26 +14294,19 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ParticleSystem.ShapeModule`
 - `ParticleSystem.SizeBySpeedModule`
 - `ParticleSystem.SizeOverLifetimeModule`
-- `ParticleSystem.TextureSheetAnimationModule`
-- `ParticleSystem.TrailModule`
 - `ParticleSystem.Trails`
 - `ParticleSystem.TriggerModule`
 - `ParticleSystem.VelocityOverLifetimeModule`
 - `ParticleSystemRenderer.BakeTextureOutput`
-- `UnityEngine.ParticleSystemAnimationMode`
-- `UnityEngine.ParticleSystemBakeMeshOptions`
 - `UnityEngine.ParticleSystemBakeTextureOptions`
 - `UnityEngine.ParticleSystemCustomData`
 - `UnityEngine.ParticleSystemJobs.NativeParticleData`
 - `UnityEngine.ParticleSystemMeshDistribution`
-- `UnityEngine.ParticleSystemRenderMode`
 - `UnityEngine.ParticleSystemRenderSpace`
 - `UnityEngine.ParticleSystemShapeType`
-- `UnityEngine.ParticleSystemSimulationSpace`
 - `UnityEngine.ParticleSystemSortMode`
 - `UnityEngine.ParticleSystemVertexStream`
 - `UnityEngine.ParticleSystemVertexStreams`
-- `UnityEngine.Rendering.UVChannelFlags`
 
 </details>
 
@@ -12853,7 +14940,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.UI.dll
 
-<details><summary>Matching: 182</summary>
+<details><summary>Matching: 183</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
@@ -12897,6 +14984,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `InputField.OnChangeEvent`
 - `InputField.OnValidateInput`
 - `InputField.SubmitEvent`
+- `LayoutGroup.<DelayedSetDirty>d__56` (compiler-generated name)
 - `LayoutRebuilder.<>c` (compiler-generated name)
 - `LayoutUtility.<>c` (compiler-generated name)
 - `MaskableGraphic.CullStateChangedEvent`
@@ -13073,13 +15161,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 1</summary>
-
-- `LayoutGroup.<DelayedSetDirty>d__56` (compiler-generated name)
-
-</details>
-
-<details><summary>Extra: 21</summary>
+<details><summary>Extra: 20</summary>
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5699`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6406`
@@ -13091,7 +15173,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Image.Origin90`
 - `Image.OriginHorizontal`
 - `Image.OriginVertical`
-- `LayoutGroup.<DelayedSetDirty>d__57` (compiler-generated name)
 - `UnityEditor.Rendering.BuiltIn.ShaderGraph.MaterialAccess`
 - `UnityEditor.Rendering.Universal.MaterialAccess`
 - `UnityEngine.EventSystems.EventHandle`
@@ -15065,16 +17146,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.UnityWebRequestAssetBundleModule.dll
 
-<details><summary>Matching: 2</summary>
+<details><summary>Matching: 4</summary>
 
 - `<Module>`
-- `UnityEngine.Networking.DownloadHandlerAssetBundle`
-
-</details>
-
-<details><summary>Missing: 2</summary>
-
 - `DownloadHandlerAssetBundle.BindingsMarshaller`
+- `UnityEngine.Networking.DownloadHandlerAssetBundle`
 - `UnityEngine.Networking.UnityWebRequestAssetBundle`
 
 </details>
@@ -15082,7 +17158,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.UnityWebRequestModule.dll
 
-<details><summary>Matching: 14</summary>
+<details><summary>Matching: 20</summary>
 
 - `<Module>`
 - `CertificateHandler.BindingsMarshaller`
@@ -15094,24 +17170,44 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Networking.UnityWebRequest`
 - `UnityEngine.Networking.UnityWebRequestAsyncOperation`
 - `UnityEngine.Networking.UploadHandler`
+- `UnityEngine.Networking.UploadHandlerRaw`
+- `UnityEngine.WWWForm`
+- `UnityEngine.WWWTranscoder`
 - `UnityEngineInternal.WebRequestUtils`
 - `UnityWebRequest.BindingsMarshaller`
 - `UnityWebRequest.Result`
+- `UnityWebRequest.UnityWebRequestError`
+- `UnityWebRequest.UnityWebRequestMethod`
+- `UnityWebRequestAsyncOperation.BindingsMarshaller`
 - `UploadHandler.BindingsMarshaller`
 
 </details>
 
-<details><summary>Missing: 9</summary>
+<details><summary>Missing: 3</summary>
 
 - `DownloadHandlerFile.BindingsMarshaller`
 - `UnityEngine.Networking.DownloadHandlerFile`
 - `UnityEngine.Networking.UploadHandlerFile`
-- `UnityEngine.Networking.UploadHandlerRaw`
-- `UnityEngine.WWWForm`
-- `UnityEngine.WWWTranscoder`
-- `UnityWebRequest.UnityWebRequestError`
-- `UnityWebRequest.UnityWebRequestMethod`
-- `UnityWebRequestAsyncOperation.BindingsMarshaller`
+
+</details>
+
+
+## UnityEngine.UnityWebRequestWWWModule.dll
+
+<details><summary>Matching: 1</summary>
+
+- `<Module>`
+
+</details>
+
+<details><summary>Mismatching: 1</summary>
+
+- `UnityEngine.WWW`
+
+  - `field declaration order/names: ['_uwr'] → ['_uwr', '_assetBundle', '_responseHeaders']`
+  - `extra field instance AssetBundle _assetBundle`
+  - `extra field instance Dictionary<string, string> _responseHeaders`
+
 
 </details>
 
@@ -15271,7 +17367,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## campus-submodule.Runtime.dll
 
-<details><summary>Matching: 1089</summary>
+<details><summary>Matching: 1088</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>` (compiler-generated name)
@@ -15417,6 +17513,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Campus.Common.CampusSoundManager`
 - `Campus.Common.CampusSubmoduleInitializer`
 - `Campus.Common.CampusSwitchableCamera`
+- `Campus.Common.CampusText`
 - `Campus.Common.CampusTextLinkTouchArea`
 - `Campus.Common.CampusTransformAnchor`
 - `Campus.Common.CampusTransformAnchorGroup`
@@ -15531,7 +17628,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Campus.Common.SerializableDictionary<TKey, TValue>`
 - `Campus.Common.SerializableGuid`
 - `Campus.Common.ShaderVariantGroup`
-- `Campus.Common.Sound.CampusSoundPlayer`
 - `Campus.Common.Sound.SoundCache`
 - `Campus.Common.SoundEnum`
 - `Campus.Common.SoundInfo`
@@ -15829,7 +17925,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Campus.Timeline.CampusTargetImageClipBehaviour`
 - `Campus.Timeline.CampusTargetImageTrack`
 - `Campus.Timeline.CampusTargetImageTrackBehaviour`
-- `Campus.Timeline.CampusTimelineCriVideoPlayer`
 - `Campus.Timeline.CampusTimelineEventReceiver`
 - `Campus.Timeline.CampusTweenAsset`
 - `Campus.Timeline.CampusTweenBehaviour`
@@ -16365,21 +18460,29 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 1</summary>
+<details><summary>Mismatching: 2</summary>
 
-- `Campus.Common.CampusText`
+- `Campus.Common.Sound.CampusSoundPlayer`
 
-  - `_styleType: offset '0x7e8' → '0x7f0'`
-  - `_ignoreLineSpacing: offset '0x7f0' → '0x7f8'`
-  - `_ignoreCharacterSpacing: offset '0x7f1' → '0x7f9'`
-  - `_isOutlineEnabled: offset '0x7f2' → '0x7fa'`
-  - `_outlineColor: offset '0x7f4' → '0x7fc'`
-  - `_outlineCustomCategory: offset '0x7f8' → '0x800'`
-  - `_localizeKey: offset '0x800' → '0x808'`
-  - `_autoKerningEnabled: offset '0x808' → '0x810'`
-  - `_autoKerningThreshold: offset '0x80c' → '0x814'`
-  - `_autoKerningRatio: offset '0x810' → '0x818'`
-  - `onFontSharedMaterialSet: offset '0x818' → '0x820'`
+  - `_userData: offset '0xf8' → '0xf0'`
+  - `onSoundPlayed: offset '0x100' → '0xf8'`
+  - `_acb: offset '0x108' → '0x100'`
+  - `_isPreparePlay: offset '0x110' → '0x108'`
+
+- `Campus.Timeline.CampusTimelineCriVideoPlayer`
+
+  - `movieName: offset '0xb8' → '0xc0'`
+  - `downloadOnEnable: offset '0xc0' → '0xc8'`
+  - `_moviePath: offset '0xc8' → '0xd0'`
+  - `_isTimelineClipActive: offset '0xd0' → '0xd8'`
+  - `_lastSyncedTimelineTime: offset '0xd8' → '0xe0'`
+  - `_lastScrubFrame: offset '0xe0' → '0xe8'`
+  - `_scrubTargetFrame: offset '0xe4' → '0xec'`
+  - `_scrubLoopRunning: offset '0xe8' → '0xf0'`
+  - `_scrubLoopCts: offset '0xf0' → '0xf8'`
+  - `_isInteractiveScrubActive: offset '0xf8' → '0x100'`
+  - `_movieInfo: offset '0x100' → '0x108'`
+  - `IsRecording: offset '0x108' → '0x110'`
 
 
 </details>
@@ -16587,9 +18690,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## mscorlib.dll
 
-<details><summary>Matching: 1284</summary>
+<details><summary>Matching: 1494</summary>
 
 - `<Module>`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=1018`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10800`
@@ -16607,6 +18711,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=170`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=172`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=174`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=2100`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=212`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=2176`
@@ -16619,17 +18725,23 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=28`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=288`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=3`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=32`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=336`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=36`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=360`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=38`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=40`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=42`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=44`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=48`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=52`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=56`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5952`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=64`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=640`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=648`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=72`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=76`
@@ -16643,36 +18755,52 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Array.SorterObjectArray`
 - `ArrayList.ArrayListDebugView`
 - `ArrayList.ArrayListEnumeratorSimple`
+- `ArrayList.ReadOnlyArrayList`
 - `ArrayPoolEventSource.BufferAllocatedReason`
 - `Assembly.ResolveEventHolder`
 - `AsyncMethodBuilderCore.<>c` (compiler-generated name)
 - `AsyncMethodBuilderCore.<>c__DisplayClass5_0` (compiler-generated name)
 - `AsyncMethodBuilderCore.ContinuationWrapper`
 - `AsyncMethodBuilderCore.MoveNextRunner`
+- `BigInteger.Kernel`
+- `BigInteger.ModulusRing`
+- `BigInteger.Sign`
 - `BitArray.BitArrayEnumeratorSimple`
 - `BitConverter.<>c` (compiler-generated name)
 - `CancellationCallbackInfo.WithSyncContext`
 - `CancellationToken.<>c` (compiler-generated name)
 - `CancellationTokenSource.Linked1CancellationTokenSource`
 - `CancellationTokenSource.Linked2CancellationTokenSource`
+- `CancellationTokenSource.LinkedNCancellationTokenSource`
 - `CancellationTokenSource.LinkedNCancellationTokenSource.<>c` (compiler-generated name)
 - `CodePointIndexer.TableRange`
 - `ConditionalWeakTable.CreateValueCallback<TKey, TValue>`
+- `ConfiguredTaskAwaitable.ConfiguredTaskAwaiter`
 - `Console.WindowsConsole`
 - `Console.WindowsConsole.WindowsCancelHandler`
 - `CrossAppDomainSink.ProcessMessageRes`
 - `CrossContextChannel.ContextRestoreSink`
+- `CryptoStream.<>c` (compiler-generated name)
+- `CryptoStream.<ReadAsyncCore>d__42` (compiler-generated name)
+- `CryptoStream.<ReadAsyncInternal>d__37` (compiler-generated name)
+- `CryptoStream.<WriteAsyncCore>d__49` (compiler-generated name)
+- `CryptoStream.<WriteAsyncInternal>d__46` (compiler-generated name)
 - `CultureData.NumberFormatEntryManaged`
 - `CultureInfo.Data`
 - `CultureInfo.OnCultureInfoChangedDelegate`
 - `CustomAttributeData.LazyCAttrData`
+- `DSAManaged.KeyGeneratedEventHandler`
 - `DateTimeFormatInfo.TokenHashValue`
 - `DateTimeFormatInfoScanner.FoundDatePattern`
+- `DateTimeParse.<>c` (compiler-generated name)
 - `DateTimeParse.DS`
 - `DateTimeParse.DTT`
+- `DateTimeParse.MatchNumberDelegate`
 - `DateTimeParse.TM`
 - `DebuggableAttribute.DebuggingModes`
 - `Decimal.DecCalc`
+- `Decimal.DecCalc.Buf12`
+- `Decimal.DecCalc.Buf16`
 - `Decimal.DecCalc.Buf24`
 - `Decimal.DecCalc.PowerOvfl`
 - `Decimal.DecCalc.RoundingMode`
@@ -16687,6 +18815,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Enum.EnumResult`
 - `Enum.ParseFailureKind`
 - `Enum.ValuesAndNames`
+- `Environment.SpecialFolder`
+- `Environment.SpecialFolderOption`
 - `EventInfo.AddEventAdapter`
 - `EventSource.EventData`
 - `Evidence.EvidenceEnumerator`
@@ -16696,6 +18826,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ExecutionContext.Reader`
 - `FileStream.ReadDelegate`
 - `FileStream.WriteDelegate`
+- `FileSystemEntry.<_fileNameBuffer>e__FixedBuffer` (compiler-generated name)
+- `FileSystemEnumerable.FindPredicate<TResult>`
+- `FileSystemEnumerable.FindTransform<TResult>`
+- `FileSystemEnumerableFactory.<>c__DisplayClass3_0` (compiler-generated name)
+- `FileSystemEnumerableFactory.<>c__DisplayClass4_0` (compiler-generated name)
+- `FileSystemEnumerableFactory.<>c__DisplayClass5_0` (compiler-generated name)
+- `FormattableStringFactory.ConcreteFormattableString`
 - `FormatterServices.<>c__DisplayClass9_0` (compiler-generated name)
 - `Guid.GuidParseThrowStyle`
 - `Guid.GuidResult`
@@ -16704,11 +18841,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Hashtable.HashtableDebugView`
 - `Hashtable.HashtableEnumerator`
 - `Hashtable.KeyCollection`
+- `Hashtable.SyncHashtable`
 - `Hashtable.ValueCollection`
 - `Hashtable.bucket`
 - `HebrewNumber.HS`
 - `HebrewNumber.HebrewToken`
 - `HebrewNumber.HebrewValue`
+- `Internal.Cryptography.Helpers`
 - `Internal.Runtime.Augments.AsyncStatus`
 - `Internal.Runtime.Augments.ReflectionExecutionDomainCallbacks`
 - `Internal.Runtime.Augments.RuntimeAugments`
@@ -16723,6 +18862,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Interop.Sys.FileStatus`
 - `Interop.Sys.FileStatusFlags`
 - `Interop.Sys.NodeType`
+- `Interop.Sys.Permissions`
+- `InteropErrorExtensions`
 - `Lease.RenewalDelegate`
 - `Locale`
 - `LogicalCallContext.Reader`
@@ -16730,11 +18871,16 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `MSCompatUnicodeTable.<>c` (compiler-generated name)
 - `Marshal.<>c` (compiler-generated name)
 - `Marshal.MarshalerInstanceKeyComparer`
+- `Marshal.SecureStringAllocator`
 - `MessageDictionary.DictionaryEnumerator`
 - `Microsoft.Win32.SafeHandles.SafeFileHandle`
+- `Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid`
 - `Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid`
+- `Microsoft.Win32.SafeHandles.SafePasswordHandle`
 - `Microsoft.Win32.SafeHandles.SafeWaitHandle`
 - `Microsoft.Win32.Win32Native`
+- `Mono.CertificateImportFlags`
+- `Mono.DependencyInjector`
 - `Mono.Globalization.Unicode.CodePointIndexer`
 - `Mono.Globalization.Unicode.Contraction`
 - `Mono.Globalization.Unicode.ContractionComparer`
@@ -16745,7 +18891,15 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Mono.Globalization.Unicode.SimpleCollator`
 - `Mono.Globalization.Unicode.SortKeyBuffer`
 - `Mono.Globalization.Unicode.TailoringInfo`
+- `Mono.ISystemCertificateProvider`
+- `Mono.ISystemDependencyProvider`
 - `Mono.Interop.MonoPInvokeCallbackAttribute`
+- `Mono.Math.BigInteger`
+- `Mono.Math.Prime.ConfidenceFactor`
+- `Mono.Math.Prime.Generator.PrimeGeneratorBase`
+- `Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase`
+- `Mono.Math.Prime.PrimalityTest`
+- `Mono.Math.Prime.PrimalityTests`
 - `Mono.MonoAssemblyName`
 - `Mono.Runtime`
 - `Mono.RuntimeClassHandle`
@@ -16758,8 +18912,20 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Mono.RuntimeStructs`
 - `Mono.SafeGPtrArrayHandle`
 - `Mono.SafeStringMarshal`
+- `Mono.Security.ASN1`
 - `Mono.Security.BitConverterLE`
+- `Mono.Security.Cryptography.DSAManaged`
+- `Mono.Security.Cryptography.KeyBuilder`
+- `Mono.Security.Cryptography.KeyPairPersistence`
+- `Mono.Security.Cryptography.MD2`
+- `Mono.Security.Cryptography.MD2Managed`
+- `Mono.Security.Cryptography.MD4`
+- `Mono.Security.Cryptography.MD4Managed`
+- `Mono.Security.Cryptography.PKCS1`
+- `Mono.Security.Cryptography.RSAManaged`
+- `Mono.Security.Cryptography.SymmetricTransform`
 - `Mono.ValueTuple`
+- `Mono.Xml.SecurityParser`
 - `Mono.Xml.SmallXmlParser`
 - `Mono.Xml.SmallXmlParserException`
 - `MonoAssemblyName.<public_key_token>e__FixedBuffer` (compiler-generated name)
@@ -16773,8 +18939,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ObjectReader.TypeNAssembly`
 - `ParameterizedStrings.FormatParam`
 - `ParameterizedStrings.LowLevelStack`
+- `Path.<>c` (compiler-generated name)
 - `Queue.QueueDebugView`
 - `Queue.QueueEnumerator`
+- `RSAManaged.KeyGeneratedEventHandler`
 - `RemotingServices.CACD`
 - `ResourceManager.ResourceManagerMediator`
 - `ResourceReader.ResourceEnumerator`
@@ -16787,6 +18955,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `RuntimeStructs.RemoteClass`
 - `RuntimeType.MemberListType`
 - `SR`
+- `SecurityElement.SecurityAttribute`
 - `SemaphoreSlim.<WaitUntilCountOrTimeoutAsync>d__32` (compiler-generated name)
 - `SemaphoreSlim.TaskNode`
 - `SerializationEventsCache.<>c` (compiler-generated name)
@@ -16798,11 +18967,18 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `SmallXmlParser.IAttrList`
 - `SmallXmlParser.IContentHandler`
 - `SoapServices.TypeInfo`
+- `SortedList.KeyList`
+- `SortedList.SortedListDebugView`
+- `SortedList.SortedListEnumerator`
+- `SortedList.SyncSortedList`
+- `SortedList.ValueList`
 - `SpinLock.SystemThreading_SpinLockDebugView`
 - `Stack.StackDebugView`
 - `Stack.StackEnumerator`
 - `StackTrace.TraceFormat`
+- `Stream.<<ReadAsync>g__FinishReadAsync&#124;44_0>d` (compiler-generated name)
 - `Stream.<>c` (compiler-generated name)
+- `Stream.<FinishWriteAsync>d__57` (compiler-generated name)
 - `Stream.NullStream`
 - `Stream.ReadWriteParameters`
 - `Stream.ReadWriteTask`
@@ -16810,9 +18986,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Stream.SynchronousAsyncResult.<>c` (compiler-generated name)
 - `StreamReader.NullStreamReader`
 - `SynchronizationContextAwaitTaskContinuation.<>c` (compiler-generated name)
+- `SynchronizationContextTaskScheduler.<>c` (compiler-generated name)
 - `System.Action`
 - `System.Action<T1, T2, T3, T4, T5, T6, T7, T8>`
 - `System.Action<T1, T2, T3, T4, T5, T6>`
+- `System.Action<T1, T2, T3, T4, T5>`
 - `System.Action<T1, T2, T3, T4>`
 - `System.Action<T1, T2, T3>`
 - `System.Action<T1, T2>`
@@ -16838,6 +19016,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.AttributeUsageAttribute`
 - `System.BRECORD`
 - `System.BadImageFormatException`
+- `System.Base64FormattingOptions`
 - `System.BitConverter`
 - `System.Boolean`
 - `System.Buffer`
@@ -16845,6 +19024,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Buffers.ArrayPoolEventSource`
 - `System.Buffers.Binary.BinaryPrimitives`
 - `System.Buffers.IMemoryOwner<T>`
+- `System.Buffers.IPinnable`
+- `System.Buffers.MemoryHandle`
 - `System.Buffers.MemoryManager<T>`
 - `System.Buffers.SpanAction<T, TArg>`
 - `System.Buffers.Text.FormattingHelpers`
@@ -16860,6 +19041,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Collections.BitArray`
 - `System.Collections.CaseInsensitiveComparer`
 - `System.Collections.CaseInsensitiveHashCodeProvider`
+- `System.Collections.CollectionBase`
 - `System.Collections.Comparer`
 - `System.Collections.CompatibleComparer`
 - `System.Collections.Concurrent.CDSCollectionETWBCLProvider`
@@ -16868,10 +19050,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Collections.Concurrent.PaddedHeadAndTail`
 - `System.Collections.DictionaryEntry`
 - `System.Collections.Generic.ByteEqualityComparer`
+- `System.Collections.Generic.CollectionDebugView<T>`
 - `System.Collections.Generic.CollectionExtensions`
+- `System.Collections.Generic.DictionaryDebugView<K, V>`
 - `System.Collections.Generic.DictionaryKeyCollectionDebugView<TKey, TValue>`
 - `System.Collections.Generic.DictionaryValueCollectionDebugView<TKey, TValue>`
 - `System.Collections.Generic.EnumEqualityComparer<T>`
+- `System.Collections.Generic.EnumerableHelpers`
 - `System.Collections.Generic.GenericComparer<T>`
 - `System.Collections.Generic.GenericEqualityComparer<T>`
 - `System.Collections.Generic.ICollection<T>`
@@ -16914,7 +19099,9 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Collections.IList`
 - `System.Collections.IStructuralComparable`
 - `System.Collections.IStructuralEquatable`
+- `System.Collections.ObjectModel.ReadOnlyDictionaryHelpers`
 - `System.Collections.Queue`
+- `System.Collections.SortedList`
 - `System.Collections.Stack`
 - `System.Comparison<T>`
 - `System.CompatibilitySwitches`
@@ -16944,6 +19131,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.DateTimeFormat`
 - `System.DateTimeKind`
 - `System.DateTimeOffset`
+- `System.DateTimeParse`
 - `System.DateTimeRawInfo`
 - `System.DateTimeResult`
 - `System.DateTimeToken`
@@ -16974,15 +19162,18 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Diagnostics.StackFrame`
 - `System.Diagnostics.StackTrace`
 - `System.Diagnostics.StackTraceHiddenAttribute`
+- `System.Diagnostics.Tracing.EventAttribute`
 - `System.Diagnostics.Tracing.EventKeywords`
 - `System.Diagnostics.Tracing.EventLevel`
 - `System.Diagnostics.Tracing.EventSourceAttribute`
+- `System.Diagnostics.Tracing.NonEventAttribute`
 - `System.DivideByZeroException`
 - `System.DllNotFoundException`
 - `System.Double`
 - `System.Empty`
 - `System.EntryPointNotFoundException`
 - `System.Enum`
+- `System.Environment`
 - `System.EventArgs`
 - `System.EventHandler`
 - `System.EventHandler<TEventArgs>`
@@ -16993,7 +19184,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.FieldAccessException`
 - `System.FlagsAttribute`
 - `System.FormatException`
+- `System.FormattableString`
 - `System.Func<T, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, T7, TResult>`
+- `System.Func<T1, T2, T3, T4, T5, T6, TResult>`
 - `System.Func<T1, T2, T3, T4, T5, TResult>`
 - `System.Func<T1, T2, T3, T4, TResult>`
 - `System.Func<T1, T2, T3, TResult>`
@@ -17071,6 +19266,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.IO.DirectoryNotFoundException`
 - `System.IO.DriveNotFoundException`
 - `System.IO.EndOfStreamException`
+- `System.IO.Enumeration.FileSystemEntry`
+- `System.IO.Enumeration.FileSystemEnumerableFactory`
+- `System.IO.Enumeration.FileSystemName`
+- `System.IO.EnumerationOptions`
 - `System.IO.Error`
 - `System.IO.File`
 - `System.IO.FileAccess`
@@ -17086,18 +19285,23 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.IO.FileSystem`
 - `System.IO.FileSystemInfo`
 - `System.IO.IOException`
+- `System.IO.MatchCasing`
+- `System.IO.MatchType`
 - `System.IO.MemoryStream`
 - `System.IO.MonoFileType`
 - `System.IO.MonoIO`
 - `System.IO.MonoIOError`
 - `System.IO.MonoIOStat`
+- `System.IO.MonoLinqHelper`
 - `System.IO.Path`
 - `System.IO.PathInternal`
 - `System.IO.PathTooLongException`
 - `System.IO.PinnedBufferMemoryStream`
+- `System.IO.SearchTarget`
 - `System.IO.SeekOrigin`
 - `System.IO.StreamReader`
 - `System.IO.StreamWriter`
+- `System.IO.StringReader`
 - `System.IO.TextReader`
 - `System.IO.UnexceptionalStreamReader`
 - `System.IO.UnexceptionalStreamWriter`
@@ -17107,6 +19311,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.IObserver<T>`
 - `System.IProgress<T>`
 - `System.ISpanFormattable`
+- `System.ITupleInternal`
+- `System.IValueTupleInternal`
 - `System.IndexOutOfRangeException`
 - `System.InputRecord`
 - `System.InsufficientExecutionStackException`
@@ -17138,6 +19344,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.MissingMethodException`
 - `System.ModifierSpec`
 - `System.MonoAsyncCall`
+- `System.MonoLimitationAttribute`
 - `System.MonoListItem`
 - `System.MonoTODOAttribute`
 - `System.MonoType`
@@ -17159,6 +19366,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Object`
 - `System.ObjectDisposedException`
 - `System.ObsoleteAttribute`
+- `System.OperatingSystem`
 - `System.OperationCanceledException`
 - `System.OrdinalCaseSensitiveComparer`
 - `System.OrdinalComparer`
@@ -17170,6 +19378,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.ParseFailureKind`
 - `System.ParseFlags`
 - `System.ParseNumbers`
+- `System.ParsingInfo`
 - `System.PlatformID`
 - `System.PlatformNotSupportedException`
 - `System.PointerSpec`
@@ -17295,11 +19504,14 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Runtime.CompilerServices.AsyncStateMachineAttribute`
 - `System.Runtime.CompilerServices.AsyncTaskCache`
 - `System.Runtime.CompilerServices.AsyncTaskMethodBuilder`
+- `System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`
 - `System.Runtime.CompilerServices.AsyncVoidMethodBuilder`
 - `System.Runtime.CompilerServices.CallerFilePathAttribute`
+- `System.Runtime.CompilerServices.CallerMemberNameAttribute`
 - `System.Runtime.CompilerServices.CompilationRelaxations`
 - `System.Runtime.CompilerServices.CompilationRelaxationsAttribute`
 - `System.Runtime.CompilerServices.CompilerGeneratedAttribute`
+- `System.Runtime.CompilerServices.ConfiguredTaskAwaitable`
 - `System.Runtime.CompilerServices.CustomConstantAttribute`
 - `System.Runtime.CompilerServices.DateTimeConstantAttribute`
 - `System.Runtime.CompilerServices.DecimalConstantAttribute`
@@ -17307,10 +19519,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Runtime.CompilerServices.Ephemeron`
 - `System.Runtime.CompilerServices.ExtensionAttribute`
 - `System.Runtime.CompilerServices.FixedBufferAttribute`
+- `System.Runtime.CompilerServices.FormattableStringFactory`
 - `System.Runtime.CompilerServices.FriendAccessAllowedAttribute`
 - `System.Runtime.CompilerServices.IAsyncStateMachine`
 - `System.Runtime.CompilerServices.ICriticalNotifyCompletion`
 - `System.Runtime.CompilerServices.INotifyCompletion`
+- `System.Runtime.CompilerServices.ITuple`
 - `System.Runtime.CompilerServices.InternalsVisibleToAttribute`
 - `System.Runtime.CompilerServices.IntrinsicAttribute`
 - `System.Runtime.CompilerServices.IsByRefLikeAttribute`
@@ -17332,6 +19546,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Runtime.CompilerServices.TypeForwardedFromAttribute`
 - `System.Runtime.CompilerServices.Unsafe`
 - `System.Runtime.CompilerServices.UnsafeValueTypeAttribute`
+- `System.Runtime.CompilerServices.ValueTaskAwaiter`
+- `System.Runtime.CompilerServices.YieldAwaitable`
 - `System.Runtime.ConstrainedExecution.Cer`
 - `System.Runtime.ConstrainedExecution.Consistency`
 - `System.Runtime.ConstrainedExecution.CriticalFinalizerObject`
@@ -17616,25 +19832,104 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.SByte`
 - `System.SByteEnum`
 - `System.STAThreadAttribute`
+- `System.Security.Cryptography.Aes`
+- `System.Security.Cryptography.AsymmetricAlgorithm`
+- `System.Security.Cryptography.AsymmetricSignatureDeformatter`
+- `System.Security.Cryptography.AsymmetricSignatureFormatter`
 - `System.Security.Cryptography.CipherMode`
+- `System.Security.Cryptography.CryptoConfig`
+- `System.Security.Cryptography.CryptoConfigForwarder`
+- `System.Security.Cryptography.CryptoStream`
+- `System.Security.Cryptography.CryptoStreamMode`
 - `System.Security.Cryptography.CryptographicException`
+- `System.Security.Cryptography.CryptographicOperations`
 - `System.Security.Cryptography.CryptographicUnexpectedOperationException`
+- `System.Security.Cryptography.CspParameters`
+- `System.Security.Cryptography.CspProviderFlags`
+- `System.Security.Cryptography.DES`
+- `System.Security.Cryptography.DESCryptoServiceProvider`
+- `System.Security.Cryptography.DESTransform`
+- `System.Security.Cryptography.DSA`
+- `System.Security.Cryptography.DSACryptoServiceProvider`
+- `System.Security.Cryptography.DSAParameters`
+- `System.Security.Cryptography.DSASignatureDeformatter`
+- `System.Security.Cryptography.DSASignatureDescription`
+- `System.Security.Cryptography.DSASignatureFormatter`
+- `System.Security.Cryptography.HMAC`
+- `System.Security.Cryptography.HMACMD5`
+- `System.Security.Cryptography.HMACRIPEMD160`
+- `System.Security.Cryptography.HMACSHA1`
+- `System.Security.Cryptography.HMACSHA256`
+- `System.Security.Cryptography.HMACSHA384`
+- `System.Security.Cryptography.HMACSHA512`
+- `System.Security.Cryptography.HashAlgorithm`
+- `System.Security.Cryptography.ICryptoTransform`
 - `System.Security.Cryptography.KeySizes`
+- `System.Security.Cryptography.KeyedHashAlgorithm`
+- `System.Security.Cryptography.MACTripleDES`
 - `System.Security.Cryptography.MD5`
 - `System.Security.Cryptography.MD5CryptoServiceProvider`
 - `System.Security.Cryptography.PaddingMode`
+- `System.Security.Cryptography.RC2`
+- `System.Security.Cryptography.RC2CryptoServiceProvider`
+- `System.Security.Cryptography.RC2Transform`
+- `System.Security.Cryptography.RIPEMD160`
+- `System.Security.Cryptography.RIPEMD160Managed`
 - `System.Security.Cryptography.RNGCryptoServiceProvider`
+- `System.Security.Cryptography.RSA`
+- `System.Security.Cryptography.RSACryptoServiceProvider`
+- `System.Security.Cryptography.RSAPKCS1SHA1SignatureDescription`
+- `System.Security.Cryptography.RSAPKCS1SHA256SignatureDescription`
+- `System.Security.Cryptography.RSAPKCS1SHA384SignatureDescription`
+- `System.Security.Cryptography.RSAPKCS1SHA512SignatureDescription`
+- `System.Security.Cryptography.RSAPKCS1SignatureDeformatter`
+- `System.Security.Cryptography.RSAPKCS1SignatureDescription`
+- `System.Security.Cryptography.RSAPKCS1SignatureFormatter`
+- `System.Security.Cryptography.RSAParameters`
 - `System.Security.Cryptography.RandomNumberGenerator`
 - `System.Security.Cryptography.Rijndael`
 - `System.Security.Cryptography.RijndaelManaged`
+- `System.Security.Cryptography.RijndaelManagedTransform`
+- `System.Security.Cryptography.RijndaelManagedTransformMode`
 - `System.Security.Cryptography.SHA1`
 - `System.Security.Cryptography.SHA1CryptoServiceProvider`
 - `System.Security.Cryptography.SHA1Internal`
+- `System.Security.Cryptography.SHA1Managed`
+- `System.Security.Cryptography.SHA256`
+- `System.Security.Cryptography.SHA256Managed`
+- `System.Security.Cryptography.SHA384`
+- `System.Security.Cryptography.SHA384Managed`
+- `System.Security.Cryptography.SHA512`
+- `System.Security.Cryptography.SHA512Managed`
+- `System.Security.Cryptography.SignatureDescription`
+- `System.Security.Cryptography.SymmetricAlgorithm`
+- `System.Security.Cryptography.TailStream`
+- `System.Security.Cryptography.TripleDES`
+- `System.Security.Cryptography.TripleDESCryptoServiceProvider`
+- `System.Security.Cryptography.TripleDESTransform`
+- `System.Security.Cryptography.Utils`
+- `System.Security.Cryptography.X509Certificates.X509Certificate`
+- `System.Security.Cryptography.X509Certificates.X509CertificateImpl`
+- `System.Security.Cryptography.X509Certificates.X509ContentType`
+- `System.Security.Cryptography.X509Certificates.X509Helper`
+- `System.Security.Cryptography.X509Certificates.X509KeyStorageFlags`
 - `System.Security.Policy.Evidence`
 - `System.Security.Principal.IPrincipal`
+- `System.Security.Principal.TokenImpersonationLevel`
+- `System.Security.SecureString`
+- `System.Security.SecurityDocument`
+- `System.Security.SecurityElement`
+- `System.Security.SecurityElementType`
 - `System.Security.SecurityException`
 - `System.Security.SecurityManager`
+- `System.Security.Util.Parser`
+- `System.Security.Util.Tokenizer`
+- `System.Security.Util.TokenizerShortBlock`
+- `System.Security.Util.TokenizerStream`
+- `System.Security.Util.TokenizerStringBlock`
+- `System.Security.XmlSyntaxException`
 - `System.SerializableAttribute`
+- `System.SharedStatics`
 - `System.Single`
 - `System.SmallRect`
 - `System.SpanDebugView<T>`
@@ -17689,6 +19984,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Text.ValueUtf8Converter`
 - `System.ThreadStaticAttribute`
 - `System.Threading.AbandonedMutexException`
+- `System.Threading.AsyncFlowControl`
 - `System.Threading.AutoResetEvent`
 - `System.Threading.CancellationCallbackCoreWorkArguments`
 - `System.Threading.CancellationCallbackInfo`
@@ -17737,6 +20033,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Threading.Tasks.CompletionActionInvoker`
 - `System.Threading.Tasks.ContinuationTaskFromTask`
 - `System.Threading.Tasks.DebuggerSupport`
+- `System.Threading.Tasks.ForceAsyncAwaiter`
 - `System.Threading.Tasks.ITaskCompletionAction`
 - `System.Threading.Tasks.InternalTaskOptions`
 - `System.Threading.Tasks.Sources.IValueTaskSource`
@@ -17746,8 +20043,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Threading.Tasks.StackGuard`
 - `System.Threading.Tasks.StandardTaskContinuation`
 - `System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation`
+- `System.Threading.Tasks.SynchronizationContextTaskScheduler`
 - `System.Threading.Tasks.SystemThreadingTasks_FutureDebugView<TResult>`
 - `System.Threading.Tasks.SystemThreadingTasks_TaskDebugView`
+- `System.Threading.Tasks.TaskAwaiters`
 - `System.Threading.Tasks.TaskCanceledException`
 - `System.Threading.Tasks.TaskContinuation`
 - `System.Threading.Tasks.TaskContinuationOptions`
@@ -17758,8 +20057,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Threading.Tasks.TaskSchedulerAwaitTaskContinuation`
 - `System.Threading.Tasks.TaskSchedulerException`
 - `System.Threading.Tasks.TaskStatus`
+- `System.Threading.Tasks.TaskToApm`
 - `System.Threading.Tasks.ThreadPoolTaskScheduler`
 - `System.Threading.Tasks.UnobservedTaskExceptionEventArgs`
+- `System.Threading.Tasks.ValueTask`
 - `System.Threading.Tasks.VoidTaskResult`
 - `System.Threading.ThreadAbortException`
 - `System.Threading.ThreadHelper`
@@ -17812,6 +20113,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.UnhandledExceptionEventArgs`
 - `System.UnhandledExceptionEventHandler`
 - `System.UnitySerializationHolder`
+- `System.ValueTuple`
 - `System.ValueType`
 - `System.Variant`
 - `System.Version`
@@ -17828,6 +20130,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TaskFactory.CompleteOnInvokePromise`
 - `TaskScheduler.SystemThreadingTasks_TaskSchedulerDebugView`
 - `TaskSchedulerAwaitTaskContinuation.<>c` (compiler-generated name)
+- `TaskToApm.<>c__DisplayClass3_0` (compiler-generated name)
+- `TaskToApm.TaskWrapperAsyncResult`
 - `TextReader.NullTextReader`
 - `TextReader.SyncTextReader`
 - `TextWriter.NullTextWriter`
@@ -17855,6 +20159,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TimeZoneInfo.TransitionTime`
 - `Timer.Scheduler`
 - `Timer.TimerComparer`
+- `Tokenizer.ITokenReader`
+- `Tokenizer.StreamTokenReader`
+- `Tokenizer.StringMaker`
+- `Tokenizer.TokenSource`
 - `TypeIdentifiers.Display`
 - `TypeNames.ATypeName`
 - `TypeSpec.DisplayNameFormat`
@@ -17869,149 +20177,129 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UmAlQuraCalendar.DateMapping`
 - `UnicodeEncoding.Decoder`
 - `Unity.ThrowStub`
+- `ValueTask.ValueTaskSourceAsTask`
+- `ValueTask.ValueTaskSourceAsTask.<>c` (compiler-generated name)
+- `ValueTaskAwaiter.<>c` (compiler-generated name)
+- `Volatile.VolatileBoolean`
 - `Volatile.VolatileInt32`
 - `Volatile.VolatileObject`
+- `YieldAwaitable.YieldAwaiter`
 - `string.ProbabilisticMap`
 - `string.TrimType`
 
 </details>
 
-<details><summary>Mismatching: 42</summary>
+<details><summary>Mismatching: 23</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
-  - `field declaration order/names: ['001D686DB504E20C792EAA07FE09224A45FF328E24A80072D04D16ABC5C2B5D2', '021022D5891F99B3B525763EB77BAEC69B107268F560721F5060FCDBD4D5AAE8', '042957A0DB5FF2D38A343AC5AE5F8635B88F10C32EB87A238B1DFB4756468476', '07FA6E88C946B2528C09C16C2FB8E9CDA49AFFAFC601774C437FD9F2DF3ECE01', '0C496C9AE05419BD25256D0EF4F31AFD291119F14B8BD683BF1774F91E08659D', '0E499E7743BCDFF289B85890E4DFDD635594DB16246DC094C3C19556B6C1262C', '0F9E3C7E66CDEF5C44FA29E65CA676C480F7A2A4A067F70107FDC292C68D38B0', '1199C3B39A2FA058EFF5B3829616AE81EE2B59A51D89C107A5FA4B6FEF95DD16', '125CF2084D7EEC18DC9795BE4BAA221655C0EABAB89E90A74FB0370378A60293', '12D518BA10F3DD1A331E65FBD4C330930C0A0BD9F50F37BE0BDF596E964B9A78', '195ABC1ABB69B6BD65F20ACAFA79EED2D330BF513E25C830F24B8A78D8703446', '1A07BC77B9912D8D87E9B28E0167F53A9B09BB017B35A35F3913989C9440A60B', '1B9CC34A0CF8DBCC350E200673FAC4124DDAD581F1FC2C16FF9A1C0154691687', '1C4B3A80ED7AEC83916479BCE280E1258D5785D07F0EA22A5E27592ACCAE692B', '1F38DEB3F70291588D06D3830D0D4241CE0570C9F4EE8B00F606C4753EB016E2', '20CD2802EDA4ADAD1D749ABFE753256D8754EB845C973830A5556ECCAF1ADD6E', '215E3E0B11A214B3198654E87B3D953AC8FB1ABC7045AF841A7C4892624BDE49', '2403FBEA85D0741C5727760E97EF16C9BF23294F21C0F1265A4BAF7F22202A64', '24CB9F17C8326D8BB8EC908716519DF7F265AE825F0DD13BB04E03A90B07D90E', '25308BAB47481701F1E861B1EA4F2409E73ABB14E9579C26DF4ABE440A0DCF0A', '25E3E48132FBDBE9B7C0C6C54D7C10A5DE12A105AA3E5DE2A0DC808BF245B7A5', '2CCF4119215BDAD102DA7AD5B57E0E6CA19CC8FF5524856FC58907E824213E1F', '3444EB31231B2CCC1B05C7A44EBD1B2A009C1D9977A99B453F52E2F81DD6C32F', '3D95E4501B1964D7FCE16E3F5682A038752B462357D87343880B1E819F6163FE', '3F62692E2AD5078353EC4471A13421A61EE493294CF59DC66626A6EF9CCCD2C4', '42E1421FC2A5A6A33E964D7EB9603EB101818D858DDA09B2BC9B5A888C1C351C', '44D066BAE9848B4A4B2C31F1854666526A32D0588635569423BDA1DA303C97DF', '4623CA5867960AA898AA1F65E720CD5ECD3552542E0C6F6FB65B21D14DD1CBC2', '4800FBFC4566EB02D1727A4B1C949CCBC7535C216A0766564C199308631B5DD6', '493402F3E4397B2945B16273E795816C0BDF80F76F42FCAA75F3DF2E215ABC1B', '494C32E1A18F6E8AD8ED5FAB0A5AF07F801BE7AF3C936942B020918CE2953046', '4E0B9E024FA510B6F03C92D95BB204E78CDC6E3FD2EC8D35787B7BC76F0655A0', '508085E0DDEEA9CE48BFAE98CEC779F8D06301AE973555D37680D08190CAFA70', '510FDFA4743E58DD45DCDD7CB4F8509BF6294CC1D1D4958CA30A9E7604973006', '5292FD0A8E62FCCBE41F34EFE7575D097990A66FE23B3507971C5BF272A4362E', '533B8C444F951E83EFF7305E3807B66CE0005DE0A2D0A44873C130895A3BE6AA', '543172FF9822CE5240DF89FF3AD8C7FD9824F97D0EED9B1432E60345FBBDE9A9', '55D0BF716B334D123E0088CFB3F8E2FEA17AF5025BB527F95EEB09BA978EA329', '56073E3CC3FC817690CC306D0DB7EA63EBCB0801359567CA44CA3D3B9BF63854', '5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA', '5DF6E0E2761359D30A8275058E299FCC0381534545F55CF43E41983F5D4C9456', '5EC4E50DA95A113769D73E5F7F8221A876185CEE6498ABB16FBB9F0563C15BBF', '61D639BE11384EE21CDE2B40357F4F9D80A106C97C592D18A9F4CAA442CA5D31', '62E6F13B53D67FDD780E20D89A6E8EE503B197AC16AC3F1D2571C147FDD324C9', '668BB69E184E0C32DC3BC488001C506C87EE5A95C7E7B6B87D24C3A6DC779956', '6708B572BDBE5D5E79701DBB9744AF74B50FED7608218F2D7BF1B5D87E5A53ED', '67856A16DB0550FDAB4D1A9B208B0C155C4679CA116BF867B74ED2A0AA4D2955', '6DC92D3617F0357376502FBA4CDD465B5423818DABE8B2CA1A06E1351F2F1C85', '71F7F6B226CBC11C8B26D506869FAE022928427389882579DB316F36FF34A096', '71F993C1E0FB950AAACBC0B9A2B0975B213EF14C8AA693F413336D46E9EAB8E9', '73F5D95C401726B2C92EC96A696BA15F0E5A5C6DD9AC6BEB3736A81772A11531', '74BCD6ED20AF2231F2BB1CDE814C5F4FF48E54BAC46029EEF90DDF4A208E2B20', '74EF7306E7452D6859B6463CE496B8DF30925F69E1B2969E1F3F34BBC9C6AF04', '7543B37FA53FDE2C84F07FD39F368555966AA1C0EB2F2FD26B294D79966E290E', '78AD7906208AA1E531D0C1100062DE3D252210B1E4214061294A0BB7C94762B8', '7BEC6AD454781FDCD8D475B3418629CBABB3BF9CA66FA80009D608A1A60D0696', '7F777906B0704EB248888E491577584D5BEBE71B375BD595A06444390B471915', '801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780', '805796429D6E812E01657F32029A8103B7C27B5203C2EFC9C0001E3EBAD7F24C', '819B40F8CF7DC49B4275955A17C10239F1BBBB3BF96E26E25ED844B96B645D7F', '8259E3EBA4D41CA02AE5322BBD280034A9C9860D9CD0D2038139FC9EBE6B6C77', '82B100804CE219CD73E155C7C6457FCF04EA539DE5B19F4736E800098714EB21', '861FD05B0EAD3D0AA9418B140CC37846BBC5F195214D90CEF42919D1E36EED10', '86BDA34D2165AC08F2DE4918B302E44205CDEA674FCA7F2C7F56D4F12D8B0C73', '8BFD94DEAAC0F168DC8B50A00AC120A113B550B68FEF344F807D503D1A6E5DED', '8C7DD76CF6FAC1893ED057E9FC91B995F9379B69E0796CAB7DE38ADAE3D2C568', '8CCE27079B32C13BB310169A6AD26AE419CDC98B7E2EFD3CC9997257F4BC1DEF', '9086502742CE7F0595B57A4E5B32901FF4CF97959B92F7E91A435E4765AC1115', '93B42898102ACB2421875C45676880B8A07390D8DF0E1EE85C5D1AA26964B0C6', '93F28AF88A06482BE13F8D0354B6A7676DDAED573EA3938C50F6E53E6D6BB0B6', '95BDE712712F10D07813AE3DEEA40D1F38E3FCF1A92CC435F17A326CC22242EB', '964889A5283FD0A3DFC8AE256721E6F67B8212FD6841AB1C821DE3134DE79B07', '96E3FDE919EC36694EFBEC22FEF80F84EE640CC5E46CED07C3E65AC04607C7D6', '9960C7FC60CDD325C8A2A00995BE7064EAC3F6295C6A5C4E797D2281846131E4', '99E66DACA3EFF94776AF1258E0E5B2F4DF2900E4EA32351B0DF37A87F2426B1F', 'A252A93D042C5E2453990C2829A425C6DD749CCDCDF13DB58C11BBC78E8D3CE9', 'A2DFDF9C2CED8BB1C0B9B06064345ACC9C22DFE5FEC9976FF061F0994451519B', 'A2EC7CB9B0FE89F9A9BEA547D773225AFE6E4535DF28325A0D6CD7A5E2D20376', 'A30E1152CFB528AE968FAC58E83BBEB3611BFDE2E6CF60B4FA9535A7D0A9B8EA', 'A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2', 'AAF4528994DD7C464F43C131F6CD44DF41ACC18462C95877252FFC7EAC0164EF', 'B215DD70A77190680641703C6DF73729B4583E285AF8B51ACF9086655FB2D0F3', 'B21802DE889E5F4F5344C8E0D366F59B68F886F88EFE45EA5CE01534A3F5C0E5', 'B55F94CD2F415D0279D7A1AF2265C4D9A90CE47F8C900D5D09AD088796210838', 'BABD01C34E7E65E57E4C431281E782B4101CE0644A8090AD6E501F1C6CF2C9DF', 'BB425A9B43E10C921902A25D07A4317DEFF9F606A788672E1B21633C143407F0', 'C250CAD28060A4EB63B4C4A643DDA196CCD35FD2FC67FB749ADF4BAC6D62E1A0', 'C2D8E5EED6CBEBD8625FC18F81486A7733C04F9B0129FFBE974C68B90308B4F2', 'C5733A1245383FBF067B4A9BDB41E3FB8E3A6BDEF37B3D5418F389422875783F', 'C8EC70AC5A448C3A45CF1DFCC1375BE4E80DC6793E97D5E89BD97A0DC232B2E3', 'C95D810E738DB5F591EE691CE884EED2F110D9F82B1F7A8BE6ED257FDF4CDBEB', 'C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063', 'CAF8A46B3A07E26F84FE849B57A877051A0D06194B1C057985446B64BCC6E016', 'CAFFFC9D15E4037EE8FBDB1A45DFE456F0936BDC7310F1882EAF14B706A76658', 'CE11D6DEAFFC6D6EF6030E30E7444C933E6261F32AA737064EF0446C219ECE22', 'D1A99909A2923269BB67E72C1AED693F74961BDA58360FCC133007740CEBF5F1', 'D3B16F8D71CB719B941527D5A1ADA7ED83F4EB967FEE117DDA2FE4021E1D283F', 'D503954AE2C3616EA32CEB0D66F5B2E119D03CE722773E5D7E1A8BC8F1803631', 'D6691EE5A533DE7E0859066942261B24D0C836D7EE016D2251377BFEE40FEA15', 'D870074914025E855AA5985A2D6778F1E277036BF9C9F03DEC61F3C496FEC35C', 'D896D464C3726A21162F271ACB711464AD07EA9C9CE78E0297FD0DE934471FA6', 'D8A29F3D197FBB54CF9F4B105AFBA6B1257ADF6449F0184F843380AAAA24639C', 'DCDCF594464B904F763D4CE53B1DBE08A47E551AE86FD5D61F63FD0C3313FDC3', 'DCE88EE5233B9D0FD0D7A6222C82BC3AEE83B15E9992F939B17AB40530DB555C', 'DD471F12FFA94CC557A02A91C2CBB95F551AB28C8BBF297B2F953B8886BCCF6D', 'DF29A050CD2EBD9DFDC783DB1CC74D3D716DAEC1630A337EE31B9E2E03D34D2D', 'E148B2057CF0C1595155635E761FB66AAE634C40D8FABC4CE79A2DB8886525D4', 'E2C673A3A737B04369A63F1FB1A30F6E742B066E2CCCD9B1838793CBB5590598', 'E32C465157D21F39B3DBF186A98FB02185C63B0260B47247A7A5FDF2B061EAA8', 'E5F4F6214036DF103321A8A0CE30C2EF935694B4199D52BC538E7EF3F045CB92', 'E768EDCAE10BAB68BB5DF102FDBB8CF4F31B9D60159B44DA3F33ABC36388308B', 'E8588351183F6F6A7DAD54DC28357628F3C4D4B358AB92A18AE7D08B0D9B0092', 'EBE07C3718876777F609CD22058F4C3A6CCCC695F5BDE90998DC1E12E0CBE63D', 'EE415D5C3ECC6C8C19F71BCD4E03847F5A15931374A7F5BF88C24B722F04B8FE', 'EF39C5A882F9477B2A250BA257247825CEB07FC53C3C984385F2C2E5F8222431', 'EF82B163CA8252A793A6E73F57775D843C9A21F65586926EB11893FA8BB603E9', 'F0CF66F9B123DCEBB39C38C5D8E4821D4E94DB593889C506BCA0827036F1B7EB', 'F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5', 'F2830F044682E33B39018B5912634835B641562914E192CA66C654F5E4492FA8', 'F4BD8144313C3B67E191C6F3CD8B00540FF1809837C5BCA5C2FDA0D518681563', 'F7D381AF73D85950E0B064CF1AA8F14938A1F38084B46CE36AAEFE81BEF739F3', 'FADB218011E7702BB9575D0C32A685DA10B5C72EB809BD9A955DB1C76E4D8315', 'FB2089AF82E09593374B65EC2440779FDCF5DD6DA07D26E57AF6790667B937CD', 'FD68700E95459C5E7A49C5830F8BD0A9BA4BD171252663D8066B09E7768C5C5D', 'FEC387BA57A54BB6066E4CA8A4F9C0FF9C36B9CBD6600C3683F6FB1BDB5077EB'] → ['021022D5891F99B3B525763EB77BAEC69B107268F560721F5060FCDBD4D5AAE8', '042957A0DB5FF2D38A343AC5AE5F8635B88F10C32EB87A238B1DFB4756468476', '0C496C9AE05419BD25256D0EF4F31AFD291119F14B8BD683BF1774F91E08659D', '0E499E7743BCDFF289B85890E4DFDD635594DB16246DC094C3C19556B6C1262C', '0F9E3C7E66CDEF5C44FA29E65CA676C480F7A2A4A067F70107FDC292C68D38B0', '1199C3B39A2FA058EFF5B3829616AE81EE2B59A51D89C107A5FA4B6FEF95DD16', '12D518BA10F3DD1A331E65FBD4C330930C0A0BD9F50F37BE0BDF596E964B9A78', '195ABC1ABB69B6BD65F20ACAFA79EED2D330BF513E25C830F24B8A78D8703446', '1B9CC34A0CF8DBCC350E200673FAC4124DDAD581F1FC2C16FF9A1C0154691687', '1C4B3A80ED7AEC83916479BCE280E1258D5785D07F0EA22A5E27592ACCAE692B', '1F38DEB3F70291588D06D3830D0D4241CE0570C9F4EE8B00F606C4753EB016E2', '2403FBEA85D0741C5727760E97EF16C9BF23294F21C0F1265A4BAF7F22202A64', '25308BAB47481701F1E861B1EA4F2409E73ABB14E9579C26DF4ABE440A0DCF0A', '2CCF4119215BDAD102DA7AD5B57E0E6CA19CC8FF5524856FC58907E824213E1F', '3444EB31231B2CCC1B05C7A44EBD1B2A009C1D9977A99B453F52E2F81DD6C32F', '3D95E4501B1964D7FCE16E3F5682A038752B462357D87343880B1E819F6163FE', '3F62692E2AD5078353EC4471A13421A61EE493294CF59DC66626A6EF9CCCD2C4', '42E1421FC2A5A6A33E964D7EB9603EB101818D858DDA09B2BC9B5A888C1C351C', '4623CA5867960AA898AA1F65E720CD5ECD3552542E0C6F6FB65B21D14DD1CBC2', '494C32E1A18F6E8AD8ED5FAB0A5AF07F801BE7AF3C936942B020918CE2953046', '4E0B9E024FA510B6F03C92D95BB204E78CDC6E3FD2EC8D35787B7BC76F0655A0', '508085E0DDEEA9CE48BFAE98CEC779F8D06301AE973555D37680D08190CAFA70', '510FDFA4743E58DD45DCDD7CB4F8509BF6294CC1D1D4958CA30A9E7604973006', '5292FD0A8E62FCCBE41F34EFE7575D097990A66FE23B3507971C5BF272A4362E', '543172FF9822CE5240DF89FF3AD8C7FD9824F97D0EED9B1432E60345FBBDE9A9', '56073E3CC3FC817690CC306D0DB7EA63EBCB0801359567CA44CA3D3B9BF63854', '5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA', '5EC4E50DA95A113769D73E5F7F8221A876185CEE6498ABB16FBB9F0563C15BBF', '61D639BE11384EE21CDE2B40357F4F9D80A106C97C592D18A9F4CAA442CA5D31', '62E6F13B53D67FDD780E20D89A6E8EE503B197AC16AC3F1D2571C147FDD324C9', '64A0AD5A7BF0B569FABE66AF3006423DA81FF79CD282E8D781CD013B1FD7D5CE', '67856A16DB0550FDAB4D1A9B208B0C155C4679CA116BF867B74ED2A0AA4D2955', '6DC92D3617F0357376502FBA4CDD465B5423818DABE8B2CA1A06E1351F2F1C85', '71F7F6B226CBC11C8B26D506869FAE022928427389882579DB316F36FF34A096', '74BCD6ED20AF2231F2BB1CDE814C5F4FF48E54BAC46029EEF90DDF4A208E2B20', '7BEC6AD454781FDCD8D475B3418629CBABB3BF9CA66FA80009D608A1A60D0696', '7F777906B0704EB248888E491577584D5BEBE71B375BD595A06444390B471915', '801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780', '819B40F8CF7DC49B4275955A17C10239F1BBBB3BF96E26E25ED844B96B645D7F', '8259E3EBA4D41CA02AE5322BBD280034A9C9860D9CD0D2038139FC9EBE6B6C77', '82B100804CE219CD73E155C7C6457FCF04EA539DE5B19F4736E800098714EB21', '861FD05B0EAD3D0AA9418B140CC37846BBC5F195214D90CEF42919D1E36EED10', '86BDA34D2165AC08F2DE4918B302E44205CDEA674FCA7F2C7F56D4F12D8B0C73', '8CCE27079B32C13BB310169A6AD26AE419CDC98B7E2EFD3CC9997257F4BC1DEF', '9086502742CE7F0595B57A4E5B32901FF4CF97959B92F7E91A435E4765AC1115', '93B42898102ACB2421875C45676880B8A07390D8DF0E1EE85C5D1AA26964B0C6', '93F28AF88A06482BE13F8D0354B6A7676DDAED573EA3938C50F6E53E6D6BB0B6', '95BDE712712F10D07813AE3DEEA40D1F38E3FCF1A92CC435F17A326CC22242EB', '964889A5283FD0A3DFC8AE256721E6F67B8212FD6841AB1C821DE3134DE79B07', '96E3FDE919EC36694EFBEC22FEF80F84EE640CC5E46CED07C3E65AC04607C7D6', '9960C7FC60CDD325C8A2A00995BE7064EAC3F6295C6A5C4E797D2281846131E4', '99E66DACA3EFF94776AF1258E0E5B2F4DF2900E4EA32351B0DF37A87F2426B1F', 'A252A93D042C5E2453990C2829A425C6DD749CCDCDF13DB58C11BBC78E8D3CE9', 'A2DFDF9C2CED8BB1C0B9B06064345ACC9C22DFE5FEC9976FF061F0994451519B', 'A2EC7CB9B0FE89F9A9BEA547D773225AFE6E4535DF28325A0D6CD7A5E2D20376', 'A30E1152CFB528AE968FAC58E83BBEB3611BFDE2E6CF60B4FA9535A7D0A9B8EA', 'A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2', 'AAF4528994DD7C464F43C131F6CD44DF41ACC18462C95877252FFC7EAC0164EF', 'B21802DE889E5F4F5344C8E0D366F59B68F886F88EFE45EA5CE01534A3F5C0E5', 'B55F94CD2F415D0279D7A1AF2265C4D9A90CE47F8C900D5D09AD088796210838', 'BABD01C34E7E65E57E4C431281E782B4101CE0644A8090AD6E501F1C6CF2C9DF', 'BB425A9B43E10C921902A25D07A4317DEFF9F606A788672E1B21633C143407F0', 'C250CAD28060A4EB63B4C4A643DDA196CCD35FD2FC67FB749ADF4BAC6D62E1A0', 'C5733A1245383FBF067B4A9BDB41E3FB8E3A6BDEF37B3D5418F389422875783F', 'C8EC70AC5A448C3A45CF1DFCC1375BE4E80DC6793E97D5E89BD97A0DC232B2E3', 'C95D810E738DB5F591EE691CE884EED2F110D9F82B1F7A8BE6ED257FDF4CDBEB', 'C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063', 'CAF8A46B3A07E26F84FE849B57A877051A0D06194B1C057985446B64BCC6E016', 'CAFFFC9D15E4037EE8FBDB1A45DFE456F0936BDC7310F1882EAF14B706A76658', 'D1A99909A2923269BB67E72C1AED693F74961BDA58360FCC133007740CEBF5F1', 'D503954AE2C3616EA32CEB0D66F5B2E119D03CE722773E5D7E1A8BC8F1803631', 'D6691EE5A533DE7E0859066942261B24D0C836D7EE016D2251377BFEE40FEA15', 'D896D464C3726A21162F271ACB711464AD07EA9C9CE78E0297FD0DE934471FA6', 'D8A29F3D197FBB54CF9F4B105AFBA6B1257ADF6449F0184F843380AAAA24639C', 'DCDCF594464B904F763D4CE53B1DBE08A47E551AE86FD5D61F63FD0C3313FDC3', 'DCE88EE5233B9D0FD0D7A6222C82BC3AEE83B15E9992F939B17AB40530DB555C', 'DD471F12FFA94CC557A02A91C2CBB95F551AB28C8BBF297B2F953B8886BCCF6D', 'DF29A050CD2EBD9DFDC783DB1CC74D3D716DAEC1630A337EE31B9E2E03D34D2D', 'E2C673A3A737B04369A63F1FB1A30F6E742B066E2CCCD9B1838793CBB5590598', 'E32C465157D21F39B3DBF186A98FB02185C63B0260B47247A7A5FDF2B061EAA8', 'E5F4F6214036DF103321A8A0CE30C2EF935694B4199D52BC538E7EF3F045CB92', 'E768EDCAE10BAB68BB5DF102FDBB8CF4F31B9D60159B44DA3F33ABC36388308B', 'E8588351183F6F6A7DAD54DC28357628F3C4D4B358AB92A18AE7D08B0D9B0092', 'EBE07C3718876777F609CD22058F4C3A6CCCC695F5BDE90998DC1E12E0CBE63D', 'EE415D5C3ECC6C8C19F71BCD4E03847F5A15931374A7F5BF88C24B722F04B8FE', 'EF82B163CA8252A793A6E73F57775D843C9A21F65586926EB11893FA8BB603E9', 'F0CF66F9B123DCEBB39C38C5D8E4821D4E94DB593889C506BCA0827036F1B7EB', 'F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5', 'F2830F044682E33B39018B5912634835B641562914E192CA66C654F5E4492FA8', 'F4BD8144313C3B67E191C6F3CD8B00540FF1809837C5BCA5C2FDA0D518681563', 'F7D381AF73D85950E0B064CF1AA8F14938A1F38084B46CE36AAEFE81BEF739F3', 'FADB218011E7702BB9575D0C32A685DA10B5C72EB809BD9A955DB1C76E4D8315', 'FB2089AF82E09593374B65EC2440779FDCF5DD6DA07D26E57AF6790667B937CD', 'FD68700E95459C5E7A49C5830F8BD0A9BA4BD171252663D8066B09E7768C5C5D', 'FEC387BA57A54BB6066E4CA8A4F9C0FF9C36B9CBD6600C3683F6FB1BDB5077EB']`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 001D686DB504E20C792EAA07FE09224A45FF328E24A80072D04D16ABC5C2B5D2`
-  - `021022D5891F99B3B525763EB77BAEC69B107268F560721F5060FCDBD4D5AAE8: offset '0x40' → '0x0'`
-  - `042957A0DB5FF2D38A343AC5AE5F8635B88F10C32EB87A238B1DFB4756468476: offset '0xea' → '0xaa'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=56 07FA6E88C946B2528C09C16C2FB8E9CDA49AFFAFC601774C437FD9F2DF3ECE01`
-  - `0C496C9AE05419BD25256D0EF4F31AFD291119F14B8BD683BF1774F91E08659D: offset '0x12e' → '0xb6'`
-  - `0E499E7743BCDFF289B85890E4DFDD635594DB16246DC094C3C19556B6C1262C: offset '0x182' → '0x10a'`
-  - `0F9E3C7E66CDEF5C44FA29E65CA676C480F7A2A4A067F70107FDC292C68D38B0: offset '0x1ca' → '0x152'`
-  - `1199C3B39A2FA058EFF5B3829616AE81EE2B59A51D89C107A5FA4B6FEF95DD16: offset '0x1d6' → '0x15e'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=640 125CF2084D7EEC18DC9795BE4BAA221655C0EABAB89E90A74FB0370378A60293`
-  - `12D518BA10F3DD1A331E65FBD4C330930C0A0BD9F50F37BE0BDF596E964B9A78: offset '0x4a2' → '0x1aa'`
-  - `195ABC1ABB69B6BD65F20ACAFA79EED2D330BF513E25C830F24B8A78D8703446: offset '0xcd6' → '0x9de'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 1A07BC77B9912D8D87E9B28E0167F53A9B09BB017B35A35F3913989C9440A60B`
-  - `1B9CC34A0CF8DBCC350E200673FAC4124DDAD581F1FC2C16FF9A1C0154691687: offset '0xd60' → '0xa5e'`
-  - `1C4B3A80ED7AEC83916479BCE280E1258D5785D07F0EA22A5E27592ACCAE692B: offset '0x130a' → '0x1008'`
-  - `1F38DEB3F70291588D06D3830D0D4241CE0570C9F4EE8B00F606C4753EB016E2: offset '0x1472' → '0x1170'`
+  - `field declaration order/names: ['001D686DB504E20C792EAA07FE09224A45FF328E24A80072D04D16ABC5C2B5D2', '021022D5891F99B3B525763EB77BAEC69B107268F560721F5060FCDBD4D5AAE8', '042957A0DB5FF2D38A343AC5AE5F8635B88F10C32EB87A238B1DFB4756468476', '07FA6E88C946B2528C09C16C2FB8E9CDA49AFFAFC601774C437FD9F2DF3ECE01', '0C496C9AE05419BD25256D0EF4F31AFD291119F14B8BD683BF1774F91E08659D', '0E499E7743BCDFF289B85890E4DFDD635594DB16246DC094C3C19556B6C1262C', '0F9E3C7E66CDEF5C44FA29E65CA676C480F7A2A4A067F70107FDC292C68D38B0', '1199C3B39A2FA058EFF5B3829616AE81EE2B59A51D89C107A5FA4B6FEF95DD16', '125CF2084D7EEC18DC9795BE4BAA221655C0EABAB89E90A74FB0370378A60293', '12D518BA10F3DD1A331E65FBD4C330930C0A0BD9F50F37BE0BDF596E964B9A78', '195ABC1ABB69B6BD65F20ACAFA79EED2D330BF513E25C830F24B8A78D8703446', '1A07BC77B9912D8D87E9B28E0167F53A9B09BB017B35A35F3913989C9440A60B', '1B9CC34A0CF8DBCC350E200673FAC4124DDAD581F1FC2C16FF9A1C0154691687', '1C4B3A80ED7AEC83916479BCE280E1258D5785D07F0EA22A5E27592ACCAE692B', '1F38DEB3F70291588D06D3830D0D4241CE0570C9F4EE8B00F606C4753EB016E2', '20CD2802EDA4ADAD1D749ABFE753256D8754EB845C973830A5556ECCAF1ADD6E', '215E3E0B11A214B3198654E87B3D953AC8FB1ABC7045AF841A7C4892624BDE49', '2403FBEA85D0741C5727760E97EF16C9BF23294F21C0F1265A4BAF7F22202A64', '24CB9F17C8326D8BB8EC908716519DF7F265AE825F0DD13BB04E03A90B07D90E', '25308BAB47481701F1E861B1EA4F2409E73ABB14E9579C26DF4ABE440A0DCF0A', '25E3E48132FBDBE9B7C0C6C54D7C10A5DE12A105AA3E5DE2A0DC808BF245B7A5', '2CCF4119215BDAD102DA7AD5B57E0E6CA19CC8FF5524856FC58907E824213E1F', '3444EB31231B2CCC1B05C7A44EBD1B2A009C1D9977A99B453F52E2F81DD6C32F', '3D95E4501B1964D7FCE16E3F5682A038752B462357D87343880B1E819F6163FE', '3F62692E2AD5078353EC4471A13421A61EE493294CF59DC66626A6EF9CCCD2C4', '42E1421FC2A5A6A33E964D7EB9603EB101818D858DDA09B2BC9B5A888C1C351C', '44D066BAE9848B4A4B2C31F1854666526A32D0588635569423BDA1DA303C97DF', '4623CA5867960AA898AA1F65E720CD5ECD3552542E0C6F6FB65B21D14DD1CBC2', '4800FBFC4566EB02D1727A4B1C949CCBC7535C216A0766564C199308631B5DD6', '493402F3E4397B2945B16273E795816C0BDF80F76F42FCAA75F3DF2E215ABC1B', '494C32E1A18F6E8AD8ED5FAB0A5AF07F801BE7AF3C936942B020918CE2953046', '4E0B9E024FA510B6F03C92D95BB204E78CDC6E3FD2EC8D35787B7BC76F0655A0', '508085E0DDEEA9CE48BFAE98CEC779F8D06301AE973555D37680D08190CAFA70', '510FDFA4743E58DD45DCDD7CB4F8509BF6294CC1D1D4958CA30A9E7604973006', '5292FD0A8E62FCCBE41F34EFE7575D097990A66FE23B3507971C5BF272A4362E', '533B8C444F951E83EFF7305E3807B66CE0005DE0A2D0A44873C130895A3BE6AA', '543172FF9822CE5240DF89FF3AD8C7FD9824F97D0EED9B1432E60345FBBDE9A9', '55D0BF716B334D123E0088CFB3F8E2FEA17AF5025BB527F95EEB09BA978EA329', '56073E3CC3FC817690CC306D0DB7EA63EBCB0801359567CA44CA3D3B9BF63854', '5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA', '5DF6E0E2761359D30A8275058E299FCC0381534545F55CF43E41983F5D4C9456', '5EC4E50DA95A113769D73E5F7F8221A876185CEE6498ABB16FBB9F0563C15BBF', '61D639BE11384EE21CDE2B40357F4F9D80A106C97C592D18A9F4CAA442CA5D31', '62E6F13B53D67FDD780E20D89A6E8EE503B197AC16AC3F1D2571C147FDD324C9', '668BB69E184E0C32DC3BC488001C506C87EE5A95C7E7B6B87D24C3A6DC779956', '6708B572BDBE5D5E79701DBB9744AF74B50FED7608218F2D7BF1B5D87E5A53ED', '67856A16DB0550FDAB4D1A9B208B0C155C4679CA116BF867B74ED2A0AA4D2955', '6DC92D3617F0357376502FBA4CDD465B5423818DABE8B2CA1A06E1351F2F1C85', '71F7F6B226CBC11C8B26D506869FAE022928427389882579DB316F36FF34A096', '71F993C1E0FB950AAACBC0B9A2B0975B213EF14C8AA693F413336D46E9EAB8E9', '73F5D95C401726B2C92EC96A696BA15F0E5A5C6DD9AC6BEB3736A81772A11531', '74BCD6ED20AF2231F2BB1CDE814C5F4FF48E54BAC46029EEF90DDF4A208E2B20', '74EF7306E7452D6859B6463CE496B8DF30925F69E1B2969E1F3F34BBC9C6AF04', '7543B37FA53FDE2C84F07FD39F368555966AA1C0EB2F2FD26B294D79966E290E', '78AD7906208AA1E531D0C1100062DE3D252210B1E4214061294A0BB7C94762B8', '7BEC6AD454781FDCD8D475B3418629CBABB3BF9CA66FA80009D608A1A60D0696', '7F777906B0704EB248888E491577584D5BEBE71B375BD595A06444390B471915', '801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780', '805796429D6E812E01657F32029A8103B7C27B5203C2EFC9C0001E3EBAD7F24C', '819B40F8CF7DC49B4275955A17C10239F1BBBB3BF96E26E25ED844B96B645D7F', '8259E3EBA4D41CA02AE5322BBD280034A9C9860D9CD0D2038139FC9EBE6B6C77', '82B100804CE219CD73E155C7C6457FCF04EA539DE5B19F4736E800098714EB21', '861FD05B0EAD3D0AA9418B140CC37846BBC5F195214D90CEF42919D1E36EED10', '86BDA34D2165AC08F2DE4918B302E44205CDEA674FCA7F2C7F56D4F12D8B0C73', '8BFD94DEAAC0F168DC8B50A00AC120A113B550B68FEF344F807D503D1A6E5DED', '8C7DD76CF6FAC1893ED057E9FC91B995F9379B69E0796CAB7DE38ADAE3D2C568', '8CCE27079B32C13BB310169A6AD26AE419CDC98B7E2EFD3CC9997257F4BC1DEF', '9086502742CE7F0595B57A4E5B32901FF4CF97959B92F7E91A435E4765AC1115', '93B42898102ACB2421875C45676880B8A07390D8DF0E1EE85C5D1AA26964B0C6', '93F28AF88A06482BE13F8D0354B6A7676DDAED573EA3938C50F6E53E6D6BB0B6', '95BDE712712F10D07813AE3DEEA40D1F38E3FCF1A92CC435F17A326CC22242EB', '964889A5283FD0A3DFC8AE256721E6F67B8212FD6841AB1C821DE3134DE79B07', '96E3FDE919EC36694EFBEC22FEF80F84EE640CC5E46CED07C3E65AC04607C7D6', '9960C7FC60CDD325C8A2A00995BE7064EAC3F6295C6A5C4E797D2281846131E4', '99E66DACA3EFF94776AF1258E0E5B2F4DF2900E4EA32351B0DF37A87F2426B1F', 'A252A93D042C5E2453990C2829A425C6DD749CCDCDF13DB58C11BBC78E8D3CE9', 'A2DFDF9C2CED8BB1C0B9B06064345ACC9C22DFE5FEC9976FF061F0994451519B', 'A2EC7CB9B0FE89F9A9BEA547D773225AFE6E4535DF28325A0D6CD7A5E2D20376', 'A30E1152CFB528AE968FAC58E83BBEB3611BFDE2E6CF60B4FA9535A7D0A9B8EA', 'A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2', 'AAF4528994DD7C464F43C131F6CD44DF41ACC18462C95877252FFC7EAC0164EF', 'B215DD70A77190680641703C6DF73729B4583E285AF8B51ACF9086655FB2D0F3', 'B21802DE889E5F4F5344C8E0D366F59B68F886F88EFE45EA5CE01534A3F5C0E5', 'B55F94CD2F415D0279D7A1AF2265C4D9A90CE47F8C900D5D09AD088796210838', 'BABD01C34E7E65E57E4C431281E782B4101CE0644A8090AD6E501F1C6CF2C9DF', 'BB425A9B43E10C921902A25D07A4317DEFF9F606A788672E1B21633C143407F0', 'C250CAD28060A4EB63B4C4A643DDA196CCD35FD2FC67FB749ADF4BAC6D62E1A0', 'C2D8E5EED6CBEBD8625FC18F81486A7733C04F9B0129FFBE974C68B90308B4F2', 'C5733A1245383FBF067B4A9BDB41E3FB8E3A6BDEF37B3D5418F389422875783F', 'C8EC70AC5A448C3A45CF1DFCC1375BE4E80DC6793E97D5E89BD97A0DC232B2E3', 'C95D810E738DB5F591EE691CE884EED2F110D9F82B1F7A8BE6ED257FDF4CDBEB', 'C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063', 'CAF8A46B3A07E26F84FE849B57A877051A0D06194B1C057985446B64BCC6E016', 'CAFFFC9D15E4037EE8FBDB1A45DFE456F0936BDC7310F1882EAF14B706A76658', 'CE11D6DEAFFC6D6EF6030E30E7444C933E6261F32AA737064EF0446C219ECE22', 'D1A99909A2923269BB67E72C1AED693F74961BDA58360FCC133007740CEBF5F1', 'D3B16F8D71CB719B941527D5A1ADA7ED83F4EB967FEE117DDA2FE4021E1D283F', 'D503954AE2C3616EA32CEB0D66F5B2E119D03CE722773E5D7E1A8BC8F1803631', 'D6691EE5A533DE7E0859066942261B24D0C836D7EE016D2251377BFEE40FEA15', 'D870074914025E855AA5985A2D6778F1E277036BF9C9F03DEC61F3C496FEC35C', 'D896D464C3726A21162F271ACB711464AD07EA9C9CE78E0297FD0DE934471FA6', 'D8A29F3D197FBB54CF9F4B105AFBA6B1257ADF6449F0184F843380AAAA24639C', 'DCDCF594464B904F763D4CE53B1DBE08A47E551AE86FD5D61F63FD0C3313FDC3', 'DCE88EE5233B9D0FD0D7A6222C82BC3AEE83B15E9992F939B17AB40530DB555C', 'DD471F12FFA94CC557A02A91C2CBB95F551AB28C8BBF297B2F953B8886BCCF6D', 'DF29A050CD2EBD9DFDC783DB1CC74D3D716DAEC1630A337EE31B9E2E03D34D2D', 'E148B2057CF0C1595155635E761FB66AAE634C40D8FABC4CE79A2DB8886525D4', 'E2C673A3A737B04369A63F1FB1A30F6E742B066E2CCCD9B1838793CBB5590598', 'E32C465157D21F39B3DBF186A98FB02185C63B0260B47247A7A5FDF2B061EAA8', 'E5F4F6214036DF103321A8A0CE30C2EF935694B4199D52BC538E7EF3F045CB92', 'E768EDCAE10BAB68BB5DF102FDBB8CF4F31B9D60159B44DA3F33ABC36388308B', 'E8588351183F6F6A7DAD54DC28357628F3C4D4B358AB92A18AE7D08B0D9B0092', 'EBE07C3718876777F609CD22058F4C3A6CCCC695F5BDE90998DC1E12E0CBE63D', 'EE415D5C3ECC6C8C19F71BCD4E03847F5A15931374A7F5BF88C24B722F04B8FE', 'EF39C5A882F9477B2A250BA257247825CEB07FC53C3C984385F2C2E5F8222431', 'EF82B163CA8252A793A6E73F57775D843C9A21F65586926EB11893FA8BB603E9', 'F0CF66F9B123DCEBB39C38C5D8E4821D4E94DB593889C506BCA0827036F1B7EB', 'F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5', 'F2830F044682E33B39018B5912634835B641562914E192CA66C654F5E4492FA8', 'F4BD8144313C3B67E191C6F3CD8B00540FF1809837C5BCA5C2FDA0D518681563', 'F7D381AF73D85950E0B064CF1AA8F14938A1F38084B46CE36AAEFE81BEF739F3', 'FADB218011E7702BB9575D0C32A685DA10B5C72EB809BD9A955DB1C76E4D8315', 'FB2089AF82E09593374B65EC2440779FDCF5DD6DA07D26E57AF6790667B937CD', 'FD68700E95459C5E7A49C5830F8BD0A9BA4BD171252663D8066B09E7768C5C5D', 'FEC387BA57A54BB6066E4CA8A4F9C0FF9C36B9CBD6600C3683F6FB1BDB5077EB'] → ['001D686DB504E20C792EAA07FE09224A45FF328E24A80072D04D16ABC5C2B5D2', '021022D5891F99B3B525763EB77BAEC69B107268F560721F5060FCDBD4D5AAE8', '042957A0DB5FF2D38A343AC5AE5F8635B88F10C32EB87A238B1DFB4756468476', '07FA6E88C946B2528C09C16C2FB8E9CDA49AFFAFC601774C437FD9F2DF3ECE01', '0C496C9AE05419BD25256D0EF4F31AFD291119F14B8BD683BF1774F91E08659D', '0E499E7743BCDFF289B85890E4DFDD635594DB16246DC094C3C19556B6C1262C', '0F9E3C7E66CDEF5C44FA29E65CA676C480F7A2A4A067F70107FDC292C68D38B0', '1199C3B39A2FA058EFF5B3829616AE81EE2B59A51D89C107A5FA4B6FEF95DD16', '125CF2084D7EEC18DC9795BE4BAA221655C0EABAB89E90A74FB0370378A60293', '12D518BA10F3DD1A331E65FBD4C330930C0A0BD9F50F37BE0BDF596E964B9A78', '195ABC1ABB69B6BD65F20ACAFA79EED2D330BF513E25C830F24B8A78D8703446', '1A07BC77B9912D8D87E9B28E0167F53A9B09BB017B35A35F3913989C9440A60B', '1B9CC34A0CF8DBCC350E200673FAC4124DDAD581F1FC2C16FF9A1C0154691687', '1C4B3A80ED7AEC83916479BCE280E1258D5785D07F0EA22A5E27592ACCAE692B', '1F38DEB3F70291588D06D3830D0D4241CE0570C9F4EE8B00F606C4753EB016E2', '215E3E0B11A214B3198654E87B3D953AC8FB1ABC7045AF841A7C4892624BDE49', '2403FBEA85D0741C5727760E97EF16C9BF23294F21C0F1265A4BAF7F22202A64', '24CB9F17C8326D8BB8EC908716519DF7F265AE825F0DD13BB04E03A90B07D90E', '25308BAB47481701F1E861B1EA4F2409E73ABB14E9579C26DF4ABE440A0DCF0A', '25E3E48132FBDBE9B7C0C6C54D7C10A5DE12A105AA3E5DE2A0DC808BF245B7A5', '2CCF4119215BDAD102DA7AD5B57E0E6CA19CC8FF5524856FC58907E824213E1F', '3444EB31231B2CCC1B05C7A44EBD1B2A009C1D9977A99B453F52E2F81DD6C32F', '3D95E4501B1964D7FCE16E3F5682A038752B462357D87343880B1E819F6163FE', '3F62692E2AD5078353EC4471A13421A61EE493294CF59DC66626A6EF9CCCD2C4', '42E1421FC2A5A6A33E964D7EB9603EB101818D858DDA09B2BC9B5A888C1C351C', '44D066BAE9848B4A4B2C31F1854666526A32D0588635569423BDA1DA303C97DF', '4623CA5867960AA898AA1F65E720CD5ECD3552542E0C6F6FB65B21D14DD1CBC2', '4800FBFC4566EB02D1727A4B1C949CCBC7535C216A0766564C199308631B5DD6', '493402F3E4397B2945B16273E795816C0BDF80F76F42FCAA75F3DF2E215ABC1B', '494C32E1A18F6E8AD8ED5FAB0A5AF07F801BE7AF3C936942B020918CE2953046', '4E0B9E024FA510B6F03C92D95BB204E78CDC6E3FD2EC8D35787B7BC76F0655A0', '508085E0DDEEA9CE48BFAE98CEC779F8D06301AE973555D37680D08190CAFA70', '510FDFA4743E58DD45DCDD7CB4F8509BF6294CC1D1D4958CA30A9E7604973006', '5292FD0A8E62FCCBE41F34EFE7575D097990A66FE23B3507971C5BF272A4362E', '533B8C444F951E83EFF7305E3807B66CE0005DE0A2D0A44873C130895A3BE6AA', '543172FF9822CE5240DF89FF3AD8C7FD9824F97D0EED9B1432E60345FBBDE9A9', '55D0BF716B334D123E0088CFB3F8E2FEA17AF5025BB527F95EEB09BA978EA329', '56073E3CC3FC817690CC306D0DB7EA63EBCB0801359567CA44CA3D3B9BF63854', '5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA', '5DF6E0E2761359D30A8275058E299FCC0381534545F55CF43E41983F5D4C9456', '5EC4E50DA95A113769D73E5F7F8221A876185CEE6498ABB16FBB9F0563C15BBF', '61D639BE11384EE21CDE2B40357F4F9D80A106C97C592D18A9F4CAA442CA5D31', '62E6F13B53D67FDD780E20D89A6E8EE503B197AC16AC3F1D2571C147FDD324C9', '64A0AD5A7BF0B569FABE66AF3006423DA81FF79CD282E8D781CD013B1FD7D5CE', '668BB69E184E0C32DC3BC488001C506C87EE5A95C7E7B6B87D24C3A6DC779956', '6708B572BDBE5D5E79701DBB9744AF74B50FED7608218F2D7BF1B5D87E5A53ED', '67856A16DB0550FDAB4D1A9B208B0C155C4679CA116BF867B74ED2A0AA4D2955', '6DC92D3617F0357376502FBA4CDD465B5423818DABE8B2CA1A06E1351F2F1C85', '71F7F6B226CBC11C8B26D506869FAE022928427389882579DB316F36FF34A096', '73F5D95C401726B2C92EC96A696BA15F0E5A5C6DD9AC6BEB3736A81772A11531', '74BCD6ED20AF2231F2BB1CDE814C5F4FF48E54BAC46029EEF90DDF4A208E2B20', '74EF7306E7452D6859B6463CE496B8DF30925F69E1B2969E1F3F34BBC9C6AF04', '78AD7906208AA1E531D0C1100062DE3D252210B1E4214061294A0BB7C94762B8', '7BEC6AD454781FDCD8D475B3418629CBABB3BF9CA66FA80009D608A1A60D0696', '7F777906B0704EB248888E491577584D5BEBE71B375BD595A06444390B471915', '801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780', '819B40F8CF7DC49B4275955A17C10239F1BBBB3BF96E26E25ED844B96B645D7F', '8259E3EBA4D41CA02AE5322BBD280034A9C9860D9CD0D2038139FC9EBE6B6C77', '82B100804CE219CD73E155C7C6457FCF04EA539DE5B19F4736E800098714EB21', '861FD05B0EAD3D0AA9418B140CC37846BBC5F195214D90CEF42919D1E36EED10', '86BDA34D2165AC08F2DE4918B302E44205CDEA674FCA7F2C7F56D4F12D8B0C73', '8BFD94DEAAC0F168DC8B50A00AC120A113B550B68FEF344F807D503D1A6E5DED', '8CCE27079B32C13BB310169A6AD26AE419CDC98B7E2EFD3CC9997257F4BC1DEF', '9086502742CE7F0595B57A4E5B32901FF4CF97959B92F7E91A435E4765AC1115', '93B42898102ACB2421875C45676880B8A07390D8DF0E1EE85C5D1AA26964B0C6', '93F28AF88A06482BE13F8D0354B6A7676DDAED573EA3938C50F6E53E6D6BB0B6', '95BDE712712F10D07813AE3DEEA40D1F38E3FCF1A92CC435F17A326CC22242EB', '964889A5283FD0A3DFC8AE256721E6F67B8212FD6841AB1C821DE3134DE79B07', '96E3FDE919EC36694EFBEC22FEF80F84EE640CC5E46CED07C3E65AC04607C7D6', '9960C7FC60CDD325C8A2A00995BE7064EAC3F6295C6A5C4E797D2281846131E4', '99E66DACA3EFF94776AF1258E0E5B2F4DF2900E4EA32351B0DF37A87F2426B1F', 'A252A93D042C5E2453990C2829A425C6DD749CCDCDF13DB58C11BBC78E8D3CE9', 'A2DFDF9C2CED8BB1C0B9B06064345ACC9C22DFE5FEC9976FF061F0994451519B', 'A2EC7CB9B0FE89F9A9BEA547D773225AFE6E4535DF28325A0D6CD7A5E2D20376', 'A30E1152CFB528AE968FAC58E83BBEB3611BFDE2E6CF60B4FA9535A7D0A9B8EA', 'A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2', 'AAF4528994DD7C464F43C131F6CD44DF41ACC18462C95877252FFC7EAC0164EF', 'B215DD70A77190680641703C6DF73729B4583E285AF8B51ACF9086655FB2D0F3', 'B21802DE889E5F4F5344C8E0D366F59B68F886F88EFE45EA5CE01534A3F5C0E5', 'B55F94CD2F415D0279D7A1AF2265C4D9A90CE47F8C900D5D09AD088796210838', 'BABD01C34E7E65E57E4C431281E782B4101CE0644A8090AD6E501F1C6CF2C9DF', 'BB425A9B43E10C921902A25D07A4317DEFF9F606A788672E1B21633C143407F0', 'C250CAD28060A4EB63B4C4A643DDA196CCD35FD2FC67FB749ADF4BAC6D62E1A0', 'C2D8E5EED6CBEBD8625FC18F81486A7733C04F9B0129FFBE974C68B90308B4F2', 'C5733A1245383FBF067B4A9BDB41E3FB8E3A6BDEF37B3D5418F389422875783F', 'C8EC70AC5A448C3A45CF1DFCC1375BE4E80DC6793E97D5E89BD97A0DC232B2E3', 'C95D810E738DB5F591EE691CE884EED2F110D9F82B1F7A8BE6ED257FDF4CDBEB', 'C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063', 'CAF8A46B3A07E26F84FE849B57A877051A0D06194B1C057985446B64BCC6E016', 'CAFFFC9D15E4037EE8FBDB1A45DFE456F0936BDC7310F1882EAF14B706A76658', 'CE11D6DEAFFC6D6EF6030E30E7444C933E6261F32AA737064EF0446C219ECE22', 'D1A99909A2923269BB67E72C1AED693F74961BDA58360FCC133007740CEBF5F1', 'D3B16F8D71CB719B941527D5A1ADA7ED83F4EB967FEE117DDA2FE4021E1D283F', 'D503954AE2C3616EA32CEB0D66F5B2E119D03CE722773E5D7E1A8BC8F1803631', 'D6691EE5A533DE7E0859066942261B24D0C836D7EE016D2251377BFEE40FEA15', 'D870074914025E855AA5985A2D6778F1E277036BF9C9F03DEC61F3C496FEC35C', 'D896D464C3726A21162F271ACB711464AD07EA9C9CE78E0297FD0DE934471FA6', 'D8A29F3D197FBB54CF9F4B105AFBA6B1257ADF6449F0184F843380AAAA24639C', 'DCDCF594464B904F763D4CE53B1DBE08A47E551AE86FD5D61F63FD0C3313FDC3', 'DCE88EE5233B9D0FD0D7A6222C82BC3AEE83B15E9992F939B17AB40530DB555C', 'DD471F12FFA94CC557A02A91C2CBB95F551AB28C8BBF297B2F953B8886BCCF6D', 'DF29A050CD2EBD9DFDC783DB1CC74D3D716DAEC1630A337EE31B9E2E03D34D2D', 'E148B2057CF0C1595155635E761FB66AAE634C40D8FABC4CE79A2DB8886525D4', 'E2C673A3A737B04369A63F1FB1A30F6E742B066E2CCCD9B1838793CBB5590598', 'E32C465157D21F39B3DBF186A98FB02185C63B0260B47247A7A5FDF2B061EAA8', 'E5F4F6214036DF103321A8A0CE30C2EF935694B4199D52BC538E7EF3F045CB92', 'E768EDCAE10BAB68BB5DF102FDBB8CF4F31B9D60159B44DA3F33ABC36388308B', 'E8588351183F6F6A7DAD54DC28357628F3C4D4B358AB92A18AE7D08B0D9B0092', 'EBE07C3718876777F609CD22058F4C3A6CCCC695F5BDE90998DC1E12E0CBE63D', 'EE415D5C3ECC6C8C19F71BCD4E03847F5A15931374A7F5BF88C24B722F04B8FE', 'EF39C5A882F9477B2A250BA257247825CEB07FC53C3C984385F2C2E5F8222431', 'EF82B163CA8252A793A6E73F57775D843C9A21F65586926EB11893FA8BB603E9', 'F0CF66F9B123DCEBB39C38C5D8E4821D4E94DB593889C506BCA0827036F1B7EB', 'F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5', 'F2830F044682E33B39018B5912634835B641562914E192CA66C654F5E4492FA8', 'F4BD8144313C3B67E191C6F3CD8B00540FF1809837C5BCA5C2FDA0D518681563', 'F7D381AF73D85950E0B064CF1AA8F14938A1F38084B46CE36AAEFE81BEF739F3', 'FADB218011E7702BB9575D0C32A685DA10B5C72EB809BD9A955DB1C76E4D8315', 'FB2089AF82E09593374B65EC2440779FDCF5DD6DA07D26E57AF6790667B937CD', 'FD68700E95459C5E7A49C5830F8BD0A9BA4BD171252663D8066B09E7768C5C5D', 'FEC387BA57A54BB6066E4CA8A4F9C0FF9C36B9CBD6600C3683F6FB1BDB5077EB']`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 20CD2802EDA4ADAD1D749ABFE753256D8754EB845C973830A5556ECCAF1ADD6E`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=10 215E3E0B11A214B3198654E87B3D953AC8FB1ABC7045AF841A7C4892624BDE49`
-  - `2403FBEA85D0741C5727760E97EF16C9BF23294F21C0F1265A4BAF7F22202A64: offset '0x14c2' → '0x119a'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 24CB9F17C8326D8BB8EC908716519DF7F265AE825F0DD13BB04E03A90B07D90E`
-  - `25308BAB47481701F1E861B1EA4F2409E73ABB14E9579C26DF4ABE440A0DCF0A: offset '0x14de' → '0x11a6'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132 25E3E48132FBDBE9B7C0C6C54D7C10A5DE12A105AA3E5DE2A0DC808BF245B7A5`
-  - `2CCF4119215BDAD102DA7AD5B57E0E6CA19CC8FF5524856FC58907E824213E1F: offset '0x2166' → '0x11f2'`
-  - `3444EB31231B2CCC1B05C7A44EBD1B2A009C1D9977A99B453F52E2F81DD6C32F: offset '0x21ae' → '0x123a'`
-  - `3D95E4501B1964D7FCE16E3F5682A038752B462357D87343880B1E819F6163FE: offset '0x21f6' → '0x1282'`
-  - `3F62692E2AD5078353EC4471A13421A61EE493294CF59DC66626A6EF9CCCD2C4: offset '0x2206' → '0x1292'`
-  - `42E1421FC2A5A6A33E964D7EB9603EB101818D858DDA09B2BC9B5A888C1C351C: offset '0x224e' → '0x12da'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 44D066BAE9848B4A4B2C31F1854666526A32D0588635569423BDA1DA303C97DF`
-  - `4623CA5867960AA898AA1F65E720CD5ECD3552542E0C6F6FB65B21D14DD1CBC2: offset '0x2260' → '0x12e6'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 4800FBFC4566EB02D1727A4B1C949CCBC7535C216A0766564C199308631B5DD6`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 493402F3E4397B2945B16273E795816C0BDF80F76F42FCAA75F3DF2E215ABC1B`
-  - `494C32E1A18F6E8AD8ED5FAB0A5AF07F801BE7AF3C936942B020918CE2953046: offset '0x3308' → '0x135e'`
-  - `4E0B9E024FA510B6F03C92D95BB204E78CDC6E3FD2EC8D35787B7BC76F0655A0: offset '0x33b6' → '0x140c'`
-  - `508085E0DDEEA9CE48BFAE98CEC779F8D06301AE973555D37680D08190CAFA70: offset '0x3d04' → '0x1d5a'`
-  - `510FDFA4743E58DD45DCDD7CB4F8509BF6294CC1D1D4958CA30A9E7604973006: offset '0x3d30' → '0x1d86'`
-  - `5292FD0A8E62FCCBE41F34EFE7575D097990A66FE23B3507971C5BF272A4362E: offset '0x3d78' → '0x1dce'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 533B8C444F951E83EFF7305E3807B66CE0005DE0A2D0A44873C130895A3BE6AA`
-  - `543172FF9822CE5240DF89FF3AD8C7FD9824F97D0EED9B1432E60345FBBDE9A9: offset '0x3db6' → '0x1df8'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 55D0BF716B334D123E0088CFB3F8E2FEA17AF5025BB527F95EEB09BA978EA329`
-  - `56073E3CC3FC817690CC306D0DB7EA63EBCB0801359567CA44CA3D3B9BF63854: offset '0x3eea' → '0x1e2c'`
-  - `5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA: offset '0x691a' → '0x485c'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=32 5DF6E0E2761359D30A8275058E299FCC0381534545F55CF43E41983F5D4C9456`
-  - `5EC4E50DA95A113769D73E5F7F8221A876185CEE6498ABB16FBB9F0563C15BBF: offset '0x696e' → '0x4890'`
-  - `61D639BE11384EE21CDE2B40357F4F9D80A106C97C592D18A9F4CAA442CA5D31: offset '0x69b6' → '0x48d8'`
-  - `62E6F13B53D67FDD780E20D89A6E8EE503B197AC16AC3F1D2571C147FDD324C9: offset '0x6a14' → '0x4936'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 668BB69E184E0C32DC3BC488001C506C87EE5A95C7E7B6B87D24C3A6DC779956`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 6708B572BDBE5D5E79701DBB9744AF74B50FED7608218F2D7BF1B5D87E5A53ED`
-  - `67856A16DB0550FDAB4D1A9B208B0C155C4679CA116BF867B74ED2A0AA4D2955: offset '0x7344' → '0x4a52'`
-  - `6DC92D3617F0357376502FBA4CDD465B5423818DABE8B2CA1A06E1351F2F1C85: offset '0x75cc' → '0x4cda'`
-  - `71F7F6B226CBC11C8B26D506869FAE022928427389882579DB316F36FF34A096: offset '0x7614' → '0x4d22'`
+  - `215E3E0B11A214B3198654E87B3D953AC8FB1ABC7045AF841A7C4892624BDE49: offset '0x14b8' → '0x149c'`
+  - `2403FBEA85D0741C5727760E97EF16C9BF23294F21C0F1265A4BAF7F22202A64: offset '0x14c2' → '0x14a6'`
+  - `24CB9F17C8326D8BB8EC908716519DF7F265AE825F0DD13BB04E03A90B07D90E: offset '0x14ce' → '0x14b2'`
+  - `25308BAB47481701F1E861B1EA4F2409E73ABB14E9579C26DF4ABE440A0DCF0A: offset '0x14de' → '0x14c2'`
+  - `25E3E48132FBDBE9B7C0C6C54D7C10A5DE12A105AA3E5DE2A0DC808BF245B7A5: offset '0x152a' → '0x150e'`
+  - `2CCF4119215BDAD102DA7AD5B57E0E6CA19CC8FF5524856FC58907E824213E1F: offset '0x2166' → '0x214a'`
+  - `3444EB31231B2CCC1B05C7A44EBD1B2A009C1D9977A99B453F52E2F81DD6C32F: offset '0x21ae' → '0x2192'`
+  - `3D95E4501B1964D7FCE16E3F5682A038752B462357D87343880B1E819F6163FE: offset '0x21f6' → '0x21da'`
+  - `3F62692E2AD5078353EC4471A13421A61EE493294CF59DC66626A6EF9CCCD2C4: offset '0x2206' → '0x21ea'`
+  - `42E1421FC2A5A6A33E964D7EB9603EB101818D858DDA09B2BC9B5A888C1C351C: offset '0x224e' → '0x2232'`
+  - `44D066BAE9848B4A4B2C31F1854666526A32D0588635569423BDA1DA303C97DF: offset '0x225a' → '0x223e'`
+  - `4623CA5867960AA898AA1F65E720CD5ECD3552542E0C6F6FB65B21D14DD1CBC2: offset '0x2260' → '0x2244'`
+  - `4800FBFC4566EB02D1727A4B1C949CCBC7535C216A0766564C199308631B5DD6: offset '0x22d8' → '0x22bc'`
+  - `493402F3E4397B2945B16273E795816C0BDF80F76F42FCAA75F3DF2E215ABC1B: offset '0x2308' → '0x22ec'`
+  - `494C32E1A18F6E8AD8ED5FAB0A5AF07F801BE7AF3C936942B020918CE2953046: offset '0x3308' → '0x32ec'`
+  - `4E0B9E024FA510B6F03C92D95BB204E78CDC6E3FD2EC8D35787B7BC76F0655A0: offset '0x33b6' → '0x339a'`
+  - `508085E0DDEEA9CE48BFAE98CEC779F8D06301AE973555D37680D08190CAFA70: offset '0x3d04' → '0x3ce8'`
+  - `510FDFA4743E58DD45DCDD7CB4F8509BF6294CC1D1D4958CA30A9E7604973006: offset '0x3d30' → '0x3d14'`
+  - `5292FD0A8E62FCCBE41F34EFE7575D097990A66FE23B3507971C5BF272A4362E: offset '0x3d78' → '0x3d5c'`
+  - `533B8C444F951E83EFF7305E3807B66CE0005DE0A2D0A44873C130895A3BE6AA: offset '0x3da2' → '0x3d86'`
+  - `543172FF9822CE5240DF89FF3AD8C7FD9824F97D0EED9B1432E60345FBBDE9A9: offset '0x3db6' → '0x3d9a'`
+  - `55D0BF716B334D123E0088CFB3F8E2FEA17AF5025BB527F95EEB09BA978EA329: offset '0x3dea' → '0x3dce'`
+  - `56073E3CC3FC817690CC306D0DB7EA63EBCB0801359567CA44CA3D3B9BF63854: offset '0x3eea' → '0x3ece'`
+  - `5857EE4CE98BFABBD62B385C1098507DD0052FF3951043AAD6A1DABD495F18AA: offset '0x691a' → '0x68fe'`
+  - `5DF6E0E2761359D30A8275058E299FCC0381534545F55CF43E41983F5D4C9456: offset '0x694e' → '0x6932'`
+  - `5EC4E50DA95A113769D73E5F7F8221A876185CEE6498ABB16FBB9F0563C15BBF: offset '0x696e' → '0x6952'`
+  - `61D639BE11384EE21CDE2B40357F4F9D80A106C97C592D18A9F4CAA442CA5D31: offset '0x69b6' → '0x699a'`
+  - `62E6F13B53D67FDD780E20D89A6E8EE503B197AC16AC3F1D2571C147FDD324C9: offset '0x6a14' → '0x69f8'`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 71F993C1E0FB950AAACBC0B9A2B0975B213EF14C8AA693F413336D46E9EAB8E9`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 73F5D95C401726B2C92EC96A696BA15F0E5A5C6DD9AC6BEB3736A81772A11531`
-  - `74BCD6ED20AF2231F2BB1CDE814C5F4FF48E54BAC46029EEF90DDF4A208E2B20: offset '0x7f18' → '0x4df6'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 74EF7306E7452D6859B6463CE496B8DF30925F69E1B2969E1F3F34BBC9C6AF04`
+  - `73F5D95C401726B2C92EC96A696BA15F0E5A5C6DD9AC6BEB3736A81772A11531: offset '0x7718' → '0x76e8'`
+  - `74BCD6ED20AF2231F2BB1CDE814C5F4FF48E54BAC46029EEF90DDF4A208E2B20: offset '0x7f18' → '0x7ee8'`
+  - `74EF7306E7452D6859B6463CE496B8DF30925F69E1B2969E1F3F34BBC9C6AF04: offset '0x8038' → '0x8008'`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=64 7543B37FA53FDE2C84F07FD39F368555966AA1C0EB2F2FD26B294D79966E290E`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=120 78AD7906208AA1E531D0C1100062DE3D252210B1E4214061294A0BB7C94762B8`
-  - `7BEC6AD454781FDCD8D475B3418629CBABB3BF9CA66FA80009D608A1A60D0696: offset '0x81f0' → '0x4f16'`
-  - `7F777906B0704EB248888E491577584D5BEBE71B375BD595A06444390B471915: offset '0x87b0' → '0x54d6'`
-  - `801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780: offset '0x87f8' → '0x551e'`
+  - `78AD7906208AA1E531D0C1100062DE3D252210B1E4214061294A0BB7C94762B8: offset '0x8178' → '0x8108'`
+  - `7BEC6AD454781FDCD8D475B3418629CBABB3BF9CA66FA80009D608A1A60D0696: offset '0x81f0' → '0x8180'`
+  - `7F777906B0704EB248888E491577584D5BEBE71B375BD595A06444390B471915: offset '0x87b0' → '0x8740'`
+  - `801494072CDD59E61F9AA9345A80D045378705DFDCE94902C22EAEAE049BE780: offset '0x87f8' → '0x8788'`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 805796429D6E812E01657F32029A8103B7C27B5203C2EFC9C0001E3EBAD7F24C`
-  - `819B40F8CF7DC49B4275955A17C10239F1BBBB3BF96E26E25ED844B96B645D7F: offset '0x8918' → '0x5620'`
-  - `8259E3EBA4D41CA02AE5322BBD280034A9C9860D9CD0D2038139FC9EBE6B6C77: offset '0x8920' → '0x5628'`
-  - `82B100804CE219CD73E155C7C6457FCF04EA539DE5B19F4736E800098714EB21: offset '0x8968' → '0x5670'`
-  - `861FD05B0EAD3D0AA9418B140CC37846BBC5F195214D90CEF42919D1E36EED10: offset '0x8970' → '0x5678'`
-  - `86BDA34D2165AC08F2DE4918B302E44205CDEA674FCA7F2C7F56D4F12D8B0C73: offset '0x89b8' → '0x56c0'`
-  - `missing field static long 8BFD94DEAAC0F168DC8B50A00AC120A113B550B68FEF344F807D503D1A6E5DED`
+  - `819B40F8CF7DC49B4275955A17C10239F1BBBB3BF96E26E25ED844B96B645D7F: offset '0x8918' → '0x8888'`
+  - `8259E3EBA4D41CA02AE5322BBD280034A9C9860D9CD0D2038139FC9EBE6B6C77: offset '0x8920' → '0x8890'`
+  - `82B100804CE219CD73E155C7C6457FCF04EA539DE5B19F4736E800098714EB21: offset '0x8968' → '0x88d8'`
+  - `861FD05B0EAD3D0AA9418B140CC37846BBC5F195214D90CEF42919D1E36EED10: offset '0x8970' → '0x88e0'`
+  - `86BDA34D2165AC08F2DE4918B302E44205CDEA674FCA7F2C7F56D4F12D8B0C73: offset '0x89b8' → '0x8928'`
+  - `8BFD94DEAAC0F168DC8B50A00AC120A113B550B68FEF344F807D503D1A6E5DED: offset '0x8da0' → '0x8d10'`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=48 8C7DD76CF6FAC1893ED057E9FC91B995F9379B69E0796CAB7DE38ADAE3D2C568`
-  - `8CCE27079B32C13BB310169A6AD26AE419CDC98B7E2EFD3CC9997257F4BC1DEF: offset '0x8dd8' → '0x5aa6'`
-  - `9086502742CE7F0595B57A4E5B32901FF4CF97959B92F7E91A435E4765AC1115: offset '0x9459' → '0x6127'`
-  - `93B42898102ACB2421875C45676880B8A07390D8DF0E1EE85C5D1AA26964B0C6: offset '0xab99' → '0x7867'`
-  - `93F28AF88A06482BE13F8D0354B6A7676DDAED573EA3938C50F6E53E6D6BB0B6: offset '0xace9' → '0x79b7'`
-  - `95BDE712712F10D07813AE3DEEA40D1F38E3FCF1A92CC435F17A326CC22242EB: offset '0xad1d' → '0x79eb'`
-  - `964889A5283FD0A3DFC8AE256721E6F67B8212FD6841AB1C821DE3134DE79B07: offset '0xadcb' → '0x7a99'`
-  - `96E3FDE919EC36694EFBEC22FEF80F84EE640CC5E46CED07C3E65AC04607C7D6: offset '0xaed1' → '0x7b9f'`
-  - `9960C7FC60CDD325C8A2A00995BE7064EAC3F6295C6A5C4E797D2281846131E4: offset '0xaee0' → '0x7bae'`
-  - `99E66DACA3EFF94776AF1258E0E5B2F4DF2900E4EA32351B0DF37A87F2426B1F: offset '0xaf04' → '0x7bd2'`
-  - `A252A93D042C5E2453990C2829A425C6DD749CCDCDF13DB58C11BBC78E8D3CE9: offset '0xaf30' → '0x7bfe'`
-  - `A2DFDF9C2CED8BB1C0B9B06064345ACC9C22DFE5FEC9976FF061F0994451519B: offset '0xaf78' → '0x7c46'`
-  - `A2EC7CB9B0FE89F9A9BEA547D773225AFE6E4535DF28325A0D6CD7A5E2D20376: offset '0xaff0' → '0x7cbe'`
-  - `A30E1152CFB528AE968FAC58E83BBEB3611BFDE2E6CF60B4FA9535A7D0A9B8EA: offset '0xb03c' → '0x7d0a'`
-  - `A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2: offset '0xb084' → '0x7d52'`
-  - `AAF4528994DD7C464F43C131F6CD44DF41ACC18462C95877252FFC7EAC0164EF: offset '0xb0ac' → '0x7d7a'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 B215DD70A77190680641703C6DF73729B4583E285AF8B51ACF9086655FB2D0F3`
-  - `B21802DE889E5F4F5344C8E0D366F59B68F886F88EFE45EA5CE01534A3F5C0E5: offset '0xc0f4' → '0x7dc2'`
-  - `B55F94CD2F415D0279D7A1AF2265C4D9A90CE47F8C900D5D09AD088796210838: offset '0xc128' → '0x7df6'`
-  - `BABD01C34E7E65E57E4C431281E782B4101CE0644A8090AD6E501F1C6CF2C9DF: offset '0xc9a8' → '0x8676'`
-  - `BB425A9B43E10C921902A25D07A4317DEFF9F606A788672E1B21633C143407F0: offset '0xc9cc' → '0x869a'`
-  - `C250CAD28060A4EB63B4C4A643DDA196CCD35FD2FC67FB749ADF4BAC6D62E1A0: offset '0xc9dc' → '0x86aa'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 C2D8E5EED6CBEBD8625FC18F81486A7733C04F9B0129FFBE974C68B90308B4F2`
-  - `C5733A1245383FBF067B4A9BDB41E3FB8E3A6BDEF37B3D5418F389422875783F: offset '0xcb00' → '0x86ce'`
-  - `C8EC70AC5A448C3A45CF1DFCC1375BE4E80DC6793E97D5E89BD97A0DC232B2E3: offset '0xcb48' → '0x8716'`
-  - `C95D810E738DB5F591EE691CE884EED2F110D9F82B1F7A8BE6ED257FDF4CDBEB: offset '0xcf48' → '0x8b16'`
-  - `C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063: offset '0xcf58' → '0x8b26'`
-  - `CAF8A46B3A07E26F84FE849B57A877051A0D06194B1C057985446B64BCC6E016: offset '0xcfda' → '0x8ba8'`
-  - `CAFFFC9D15E4037EE8FBDB1A45DFE456F0936BDC7310F1882EAF14B706A76658: offset '0xd022' → '0x8bf0'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 CE11D6DEAFFC6D6EF6030E30E7444C933E6261F32AA737064EF0446C219ECE22`
-  - `D1A99909A2923269BB67E72C1AED693F74961BDA58360FCC133007740CEBF5F1: offset '0xe046' → '0x8c14'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 D3B16F8D71CB719B941527D5A1ADA7ED83F4EB967FEE117DDA2FE4021E1D283F`
-  - `D503954AE2C3616EA32CEB0D66F5B2E119D03CE722773E5D7E1A8BC8F1803631: offset '0xe094' → '0x8c5c'`
-  - `D6691EE5A533DE7E0859066942261B24D0C836D7EE016D2251377BFEE40FEA15: offset '0xe0dc' → '0x8ca4'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048 D870074914025E855AA5985A2D6778F1E277036BF9C9F03DEC61F3C496FEC35C`
-  - `D896D464C3726A21162F271ACB711464AD07EA9C9CE78E0297FD0DE934471FA6: offset '0xe988' → '0x8d50'`
-  - `D8A29F3D197FBB54CF9F4B105AFBA6B1257ADF6449F0184F843380AAAA24639C: offset '0xe994' → '0x8d5c'`
-  - `DCDCF594464B904F763D4CE53B1DBE08A47E551AE86FD5D61F63FD0C3313FDC3: offset '0xe9dc' → '0x8da4'`
-  - `DCE88EE5233B9D0FD0D7A6222C82BC3AEE83B15E9992F939B17AB40530DB555C: offset '0xea24' → '0x8dec'`
-  - `DD471F12FFA94CC557A02A91C2CBB95F551AB28C8BBF297B2F953B8886BCCF6D: offset '0xf352' → '0x971a'`
-  - `DF29A050CD2EBD9DFDC783DB1CC74D3D716DAEC1630A337EE31B9E2E03D34D2D: offset '0xf3ea' → '0x97b2'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 E148B2057CF0C1595155635E761FB66AAE634C40D8FABC4CE79A2DB8886525D4`
-  - `E2C673A3A737B04369A63F1FB1A30F6E742B066E2CCCD9B1838793CBB5590598: offset '0x10432' → '0x97fa'`
-  - `E32C465157D21F39B3DBF186A98FB02185C63B0260B47247A7A5FDF2B061EAA8: offset '0x10458' → '0x9820'`
-  - `E5F4F6214036DF103321A8A0CE30C2EF935694B4199D52BC538E7EF3F045CB92: offset '0x10464' → '0x982c'`
-  - `E768EDCAE10BAB68BB5DF102FDBB8CF4F31B9D60159B44DA3F33ABC36388308B: offset '0x1047c' → '0x9844'`
-  - `E8588351183F6F6A7DAD54DC28357628F3C4D4B358AB92A18AE7D08B0D9B0092: offset '0x104bc' → '0x9884'`
-  - `EBE07C3718876777F609CD22058F4C3A6CCCC695F5BDE90998DC1E12E0CBE63D: offset '0x108b6' → '0x9c7e'`
-  - `EE415D5C3ECC6C8C19F71BCD4E03847F5A15931374A7F5BF88C24B722F04B8FE: offset '0x108c2' → '0x9c8a'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 EF39C5A882F9477B2A250BA257247825CEB07FC53C3C984385F2C2E5F8222431`
-  - `EF82B163CA8252A793A6E73F57775D843C9A21F65586926EB11893FA8BB603E9: offset '0x109e2' → '0x9caa'`
-  - `F0CF66F9B123DCEBB39C38C5D8E4821D4E94DB593889C506BCA0827036F1B7EB: offset '0x109f2' → '0x9cba'`
-  - `F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5: offset '0x10ae2' → '0x9daa'`
-  - `F2830F044682E33B39018B5912634835B641562914E192CA66C654F5E4492FA8: offset '0x10ae5' → '0x9dad'`
-  - `F4BD8144313C3B67E191C6F3CD8B00540FF1809837C5BCA5C2FDA0D518681563: offset '0x10be5' → '0x9ead'`
-  - `F7D381AF73D85950E0B064CF1AA8F14938A1F38084B46CE36AAEFE81BEF739F3: offset '0x10c2d' → '0x9ef5'`
-  - `FADB218011E7702BB9575D0C32A685DA10B5C72EB809BD9A955DB1C76E4D8315: offset '0x10d01' → '0x9fc9'`
-  - `FB2089AF82E09593374B65EC2440779FDCF5DD6DA07D26E57AF6790667B937CD: offset '0x10d35' → '0x9ffd'`
-  - `FD68700E95459C5E7A49C5830F8BD0A9BA4BD171252663D8066B09E7768C5C5D: offset '0x111ed' → '0xa4b5'`
-  - `FEC387BA57A54BB6066E4CA8A4F9C0FF9C36B9CBD6600C3683F6FB1BDB5077EB: offset '0x112dd' → '0xa5a5'`
+  - `8CCE27079B32C13BB310169A6AD26AE419CDC98B7E2EFD3CC9997257F4BC1DEF: offset '0x8dd8' → '0x8d18'`
+  - `9086502742CE7F0595B57A4E5B32901FF4CF97959B92F7E91A435E4765AC1115: offset '0x9459' → '0x9399'`
+  - `93B42898102ACB2421875C45676880B8A07390D8DF0E1EE85C5D1AA26964B0C6: offset '0xab99' → '0xaad9'`
+  - `93F28AF88A06482BE13F8D0354B6A7676DDAED573EA3938C50F6E53E6D6BB0B6: offset '0xace9' → '0xac29'`
+  - `95BDE712712F10D07813AE3DEEA40D1F38E3FCF1A92CC435F17A326CC22242EB: offset '0xad1d' → '0xac5d'`
+  - `964889A5283FD0A3DFC8AE256721E6F67B8212FD6841AB1C821DE3134DE79B07: offset '0xadcb' → '0xad0b'`
+  - `96E3FDE919EC36694EFBEC22FEF80F84EE640CC5E46CED07C3E65AC04607C7D6: offset '0xaed1' → '0xae11'`
+  - `9960C7FC60CDD325C8A2A00995BE7064EAC3F6295C6A5C4E797D2281846131E4: offset '0xaee0' → '0xae20'`
+  - `99E66DACA3EFF94776AF1258E0E5B2F4DF2900E4EA32351B0DF37A87F2426B1F: offset '0xaf04' → '0xae44'`
+  - `A252A93D042C5E2453990C2829A425C6DD749CCDCDF13DB58C11BBC78E8D3CE9: offset '0xaf30' → '0xae70'`
+  - `A2DFDF9C2CED8BB1C0B9B06064345ACC9C22DFE5FEC9976FF061F0994451519B: offset '0xaf78' → '0xaeb8'`
+  - `A2EC7CB9B0FE89F9A9BEA547D773225AFE6E4535DF28325A0D6CD7A5E2D20376: offset '0xaff0' → '0xaf30'`
+  - `A30E1152CFB528AE968FAC58E83BBEB3611BFDE2E6CF60B4FA9535A7D0A9B8EA: offset '0xb03c' → '0xaf7c'`
+  - `A516EECB41051151F0183A8B0B6F6693C43F7D9E1815F85CAAAB18E00A5269A2: offset '0xb084' → '0xafc4'`
+  - `AAF4528994DD7C464F43C131F6CD44DF41ACC18462C95877252FFC7EAC0164EF: offset '0xb0ac' → '0xafec'`
+  - `B215DD70A77190680641703C6DF73729B4583E285AF8B51ACF9086655FB2D0F3: offset '0xb0f4' → '0xb034'`
+  - `B21802DE889E5F4F5344C8E0D366F59B68F886F88EFE45EA5CE01534A3F5C0E5: offset '0xc0f4' → '0xc034'`
+  - `B55F94CD2F415D0279D7A1AF2265C4D9A90CE47F8C900D5D09AD088796210838: offset '0xc128' → '0xc068'`
+  - `BABD01C34E7E65E57E4C431281E782B4101CE0644A8090AD6E501F1C6CF2C9DF: offset '0xc9a8' → '0xc8e8'`
+  - `BB425A9B43E10C921902A25D07A4317DEFF9F606A788672E1B21633C143407F0: offset '0xc9cc' → '0xc90c'`
+  - `C250CAD28060A4EB63B4C4A643DDA196CCD35FD2FC67FB749ADF4BAC6D62E1A0: offset '0xc9dc' → '0xc91c'`
+  - `C2D8E5EED6CBEBD8625FC18F81486A7733C04F9B0129FFBE974C68B90308B4F2: offset '0xca00' → '0xc940'`
+  - `C5733A1245383FBF067B4A9BDB41E3FB8E3A6BDEF37B3D5418F389422875783F: offset '0xcb00' → '0xca40'`
+  - `C8EC70AC5A448C3A45CF1DFCC1375BE4E80DC6793E97D5E89BD97A0DC232B2E3: offset '0xcb48' → '0xca88'`
+  - `C95D810E738DB5F591EE691CE884EED2F110D9F82B1F7A8BE6ED257FDF4CDBEB: offset '0xcf48' → '0xce88'`
+  - `C9830DF6956357ACE51CE1F82298578B36EB45A0CFDB8AEC5B9FDA7DB17E8063: offset '0xcf58' → '0xce98'`
+  - `CAF8A46B3A07E26F84FE849B57A877051A0D06194B1C057985446B64BCC6E016: offset '0xcfda' → '0xcf1a'`
+  - `CAFFFC9D15E4037EE8FBDB1A45DFE456F0936BDC7310F1882EAF14B706A76658: offset '0xd022' → '0xcf62'`
+  - `CE11D6DEAFFC6D6EF6030E30E7444C933E6261F32AA737064EF0446C219ECE22: offset '0xd046' → '0xcf86'`
+  - `D1A99909A2923269BB67E72C1AED693F74961BDA58360FCC133007740CEBF5F1: offset '0xe046' → '0xdf86'`
+  - `D3B16F8D71CB719B941527D5A1ADA7ED83F4EB967FEE117DDA2FE4021E1D283F: offset '0xe08e' → '0xdfce'`
+  - `D503954AE2C3616EA32CEB0D66F5B2E119D03CE722773E5D7E1A8BC8F1803631: offset '0xe094' → '0xdfd4'`
+  - `D6691EE5A533DE7E0859066942261B24D0C836D7EE016D2251377BFEE40FEA15: offset '0xe0dc' → '0xe01c'`
+  - `D870074914025E855AA5985A2D6778F1E277036BF9C9F03DEC61F3C496FEC35C: offset '0xe188' → '0xe0c8'`
+  - `D896D464C3726A21162F271ACB711464AD07EA9C9CE78E0297FD0DE934471FA6: offset '0xe988' → '0xe8c8'`
+  - `D8A29F3D197FBB54CF9F4B105AFBA6B1257ADF6449F0184F843380AAAA24639C: offset '0xe994' → '0xe8d4'`
+  - `DCDCF594464B904F763D4CE53B1DBE08A47E551AE86FD5D61F63FD0C3313FDC3: offset '0xe9dc' → '0xe91c'`
+  - `DCE88EE5233B9D0FD0D7A6222C82BC3AEE83B15E9992F939B17AB40530DB555C: offset '0xea24' → '0xe964'`
+  - `DD471F12FFA94CC557A02A91C2CBB95F551AB28C8BBF297B2F953B8886BCCF6D: offset '0xf352' → '0xf292'`
+  - `DF29A050CD2EBD9DFDC783DB1CC74D3D716DAEC1630A337EE31B9E2E03D34D2D: offset '0xf3ea' → '0xf32a'`
+  - `E148B2057CF0C1595155635E761FB66AAE634C40D8FABC4CE79A2DB8886525D4: offset '0xf432' → '0xf372'`
+  - `E2C673A3A737B04369A63F1FB1A30F6E742B066E2CCCD9B1838793CBB5590598: offset '0x10432' → '0x10372'`
+  - `E32C465157D21F39B3DBF186A98FB02185C63B0260B47247A7A5FDF2B061EAA8: offset '0x10458' → '0x10398'`
+  - `E5F4F6214036DF103321A8A0CE30C2EF935694B4199D52BC538E7EF3F045CB92: offset '0x10464' → '0x103a4'`
+  - `E768EDCAE10BAB68BB5DF102FDBB8CF4F31B9D60159B44DA3F33ABC36388308B: offset '0x1047c' → '0x103bc'`
+  - `E8588351183F6F6A7DAD54DC28357628F3C4D4B358AB92A18AE7D08B0D9B0092: offset '0x104bc' → '0x103fc'`
+  - `EBE07C3718876777F609CD22058F4C3A6CCCC695F5BDE90998DC1E12E0CBE63D: offset '0x108b6' → '0x107f6'`
+  - `EE415D5C3ECC6C8C19F71BCD4E03847F5A15931374A7F5BF88C24B722F04B8FE: offset '0x108c2' → '0x10802'`
+  - `EF39C5A882F9477B2A250BA257247825CEB07FC53C3C984385F2C2E5F8222431: offset '0x108e2' → '0x10822'`
+  - `EF82B163CA8252A793A6E73F57775D843C9A21F65586926EB11893FA8BB603E9: offset '0x109e2' → '0x10922'`
+  - `F0CF66F9B123DCEBB39C38C5D8E4821D4E94DB593889C506BCA0827036F1B7EB: offset '0x109f2' → '0x10932'`
+  - `F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5: offset '0x10ae2' → '0x10a22'`
+  - `F2830F044682E33B39018B5912634835B641562914E192CA66C654F5E4492FA8: offset '0x10ae5' → '0x10a25'`
+  - `F4BD8144313C3B67E191C6F3CD8B00540FF1809837C5BCA5C2FDA0D518681563: offset '0x10be5' → '0x10b25'`
+  - `F7D381AF73D85950E0B064CF1AA8F14938A1F38084B46CE36AAEFE81BEF739F3: offset '0x10c2d' → '0x10b6d'`
+  - `FADB218011E7702BB9575D0C32A685DA10B5C72EB809BD9A955DB1C76E4D8315: offset '0x10d01' → '0x10c41'`
+  - `FB2089AF82E09593374B65EC2440779FDCF5DD6DA07D26E57AF6790667B937CD: offset '0x10d35' → '0x10c75'`
+  - `FD68700E95459C5E7A49C5830F8BD0A9BA4BD171252663D8066B09E7768C5C5D: offset '0x111ed' → '0x1112d'`
+  - `FEC387BA57A54BB6066E4CA8A4F9C0FF9C36B9CBD6600C3683F6FB1BDB5077EB: offset '0x112dd' → '0x1121d'`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=28 64A0AD5A7BF0B569FABE66AF3006423DA81FF79CD282E8D781CD013B1FD7D5CE`
-
-- `CancellationTokenSource.LinkedNCancellationTokenSource`
-
-  - `field declaration order/names: ['s_linkedTokenCancelDelegate', '_linkingRegistrations'] → ['s_linkedTokenCancelDelegate']`
-  - `missing field instance CancellationTokenRegistration[] _linkingRegistrations`
 
 - `DynamicPropertyCollection.DynamicPropertyReg`
 
@@ -18019,10 +20307,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `Sink: offset '0x10' → '0x18'`
   - `extra field instance IDynamicProperty Property`
 
-- `Path.<>c` (compiler-generated name)
+- `FileSystemEnumerableFactory.<>c` (compiler-generated name)
 
-  - `field declaration order/names: ['<>9', '<>9__56_0', '<>9__57_0'] → ['<>9', '<>9__56_0']`
-  - `missing field static SpanAction<char, ValueTuple<IntPtr, int, IntPtr, int, IntPtr, int, bool, ValueTuple<bool>>> <>9__57_0`
+  - `field declaration order/names: ['<>9', '<>9__3_0', '<>9__4_0', '<>9__5_0', '<>9__6_0', '<>9__7_0', '<>9__8_0'] → ['<>9', '<>9__3_0', '<>9__4_0', '<>9__5_0']`
+  - `missing field static FileSystemEnumerable.FindTransform<FileInfo> <>9__6_0`
+  - `missing field static FileSystemEnumerable.FindTransform<DirectoryInfo> <>9__7_0`
+  - `missing field static FileSystemEnumerable.FindTransform<FileSystemInfo> <>9__8_0`
 
 - `ResourceManager.CultureNameResourceSetPair`
 
@@ -18039,27 +20329,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `FormatJapaneseFirstYearAsANumber: offset '0x3' → '0x1'`
   - `EnforceLegacyJapaneseDateParsing: offset '0x4' → '0x2'`
 
-- `System.DateTimeParse`
-
-  - `field declaration order/names: ['m_hebrewNumberParser', 'dateParsingStates'] → ['dateParsingStates']`
-  - `missing field static DateTimeParse.MatchNumberDelegate m_hebrewNumberParser`
-  - `dateParsingStates: offset '0x8' → '0x0'`
-
-- `System.Diagnostics.Tracing.EventAttribute`
-
-  - `field declaration order/names: ['<EventId>k__BackingField', '<Level>k__BackingField', '<Keywords>k__BackingField', '<Message>k__BackingField'] → ['<EventId>k__BackingField', '<Level>k__BackingField']`
-  - `missing field instance EventKeywords <Keywords>k__BackingField`
-  - `missing field instance string <Message>k__BackingField`
-
 - `System.Diagnostics.Tracing.EventSource`
 
   - `field declaration order/names: ['<Name>k__BackingField', '<Settings>k__BackingField'] → ['<Name>k__BackingField']`
   - `missing field instance EventSourceSettings <Settings>k__BackingField`
-
-- `System.Environment`
-
-  - `field declaration order/names: ['mono_corlib_version', 'nl', 'os'] → ['mono_corlib_version', 'nl']`
-  - `missing field static OperatingSystem os`
 
 - `System.Globalization.CalendarData`
 
@@ -18068,10 +20341,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `System.Globalization.CodePageDataItem`
 
-  - `field declaration order/names: ['m_dataIndex', 'm_uiFamilyCodePage', 'm_webName', 'm_headerName', 'm_flags', 'sep'] → ['m_dataIndex', 'm_uiFamilyCodePage', 'm_flags', 'sep']`
+  - `field declaration order/names: ['m_dataIndex', 'm_uiFamilyCodePage', 'm_webName', 'm_headerName', 'm_flags', 'sep'] → ['m_dataIndex', 'm_uiFamilyCodePage', 'm_headerName', 'm_flags', 'sep']`
   - `missing field instance string m_webName`
-  - `missing field instance string m_headerName`
-  - `m_flags: offset '0x28' → '0x18'`
+  - `m_headerName: offset '0x20' → '0x18'`
+  - `m_flags: offset '0x28' → '0x20'`
 
 - `System.IO.BinaryWriter`
 
@@ -18096,10 +20369,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.IO.TextWriter`
 
   - `bases: 'MarshalByRefObject, IDisposable, IAsyncDisposable' → 'MarshalByRefObject, IDisposable'`
-
-- `System.ITupleInternal`
-
-  - `bases: 'ITuple' → ''`
 
 - `System.LocalDataStore`
 
@@ -18162,29 +20431,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `field declaration order/names: ['_resCache', '_defaultReader', '_caseInsensitiveTable', '_haveReadFromReader'] → ['Version', '_resCache', '_defaultReader', '_caseInsensitiveTable', '_haveReadFromReader']`
   - `extra field constant int Version`
 
-- `System.Security.Cryptography.CryptoConfig`
-
-  - `field declaration order/names: ['lockObject', 'algorithms'] → ['lockObject']`
-  - `missing field static Dictionary<string, Type> algorithms`
-
-- `System.Security.Cryptography.HashAlgorithm`
-
-  - `bases: 'IDisposable, ICryptoTransform' → 'IDisposable'`
-
-- `System.Security.Cryptography.SymmetricAlgorithm`
-
-  - `bases: 'IDisposable' → ''`
-  - `field declaration order/names: ['BlockSizeValue', 'FeedbackSizeValue', 'IVValue', 'KeyValue', 'LegalBlockSizesValue', 'LegalKeySizesValue', 'KeySizeValue', 'ModeValue', 'PaddingValue'] → []`
-  - `missing field instance int BlockSizeValue`
-  - `missing field instance int FeedbackSizeValue`
-  - `missing field instance byte[] IVValue`
-  - `missing field instance byte[] KeyValue`
-  - `missing field instance KeySizes[] LegalBlockSizesValue`
-  - `missing field instance KeySizes[] LegalKeySizesValue`
-  - `missing field instance int KeySizeValue`
-  - `missing field instance CipherMode ModeValue`
-  - `missing field instance PaddingMode PaddingValue`
-
 - `System.Threading.AsyncLocal<T>`
 
   - `bases: 'IAsyncLocal' → ''`
@@ -18196,74 +20442,14 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - `bases: 'IEquatable<CancellationTokenRegistration>, IDisposable, IAsyncDisposable' → 'IEquatable<CancellationTokenRegistration>, IDisposable'`
 
-- `System.Threading.Tasks.Task<TResult>`
-
-  - `field declaration order/names: ['m_result', 's_defaultFactory'] → ['m_result']`
-  - `missing field static TaskFactory<TResult> s_defaultFactory`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.Threading.Tasks.TaskCompletionSource<TResult>`
-
-  - `field declaration order/names: ['_task'] → []`
-  - `missing field instance Task<TResult> _task`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.Threading.Tasks.TaskFactory<TResult>`
-
-  - `field declaration order/names: ['m_defaultCancellationToken', 'm_defaultScheduler', 'm_defaultCreationOptions', 'm_defaultContinuationOptions'] → []`
-  - `missing field instance CancellationToken m_defaultCancellationToken`
-  - `missing field instance TaskScheduler m_defaultScheduler`
-  - `missing field instance TaskCreationOptions m_defaultCreationOptions`
-  - `missing field instance TaskContinuationOptions m_defaultContinuationOptions`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `System.Threading.Timer`
 
   - `bases: 'MarshalByRefObject, IDisposable, IAsyncDisposable' → 'MarshalByRefObject, IDisposable'`
 
-- `System.Tuple<T1, T2, T3>`
-
-  - `bases: 'IStructuralEquatable, IStructuralComparable, IComparable, ITupleInternal, ITuple' → 'IStructuralEquatable, IStructuralComparable, IComparable, ITupleInternal'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.ValueTuple`
-
-  - `bases: 'IEquatable<ValueTuple>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple>'`
-
-- `System.ValueTuple<T1, T2, T3, T4, T5, T6, T7>`
-
-  - `bases: 'IEquatable<ValueTuple<T1, T2, T3, T4, T5, T6, T7>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4, T5, T6, T7>>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple<T1, T2, T3, T4, T5, T6, T7>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4, T5, T6, T7>>'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.ValueTuple<T1, T2, T3, T4, T5, T6>`
-
-  - `bases: 'IEquatable<ValueTuple<T1, T2, T3, T4, T5, T6>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4, T5, T6>>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple<T1, T2, T3, T4, T5, T6>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4, T5, T6>>'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.ValueTuple<T1, T2, T3, T4, T5>`
-
-  - `bases: 'IEquatable<ValueTuple<T1, T2, T3, T4, T5>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4, T5>>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple<T1, T2, T3, T4, T5>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4, T5>>'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.ValueTuple<T1, T2, T3, T4>`
-
-  - `bases: 'IEquatable<ValueTuple<T1, T2, T3, T4>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4>>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple<T1, T2, T3, T4>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3, T4>>'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.ValueTuple<T1, T2, T3>`
-
-  - `bases: 'IEquatable<ValueTuple<T1, T2, T3>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3>>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple<T1, T2, T3>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2, T3>>'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `System.ValueTuple<T1, T2>`
-
-  - `bases: 'IEquatable<ValueTuple<T1, T2>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2>>, IValueTupleInternal, ITuple' → 'IEquatable<ValueTuple<T1, T2>>, IStructuralEquatable, IStructuralComparable, IComparable, IComparable<ValueTuple<T1, T2>>'`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 
 </details>
 
-<details><summary>Indeterminate: 84</summary>
+<details><summary>Indeterminate: 122</summary>
 
 - `Array.EmptyInternalEnumerator<T>`
 
@@ -18274,6 +20460,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `ArrayMemoryPool.ArrayMemoryPoolBuffer<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `ArraySegment.Enumerator<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -18337,6 +20527,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `FileSystemEnumerable.DelegateEnumerator<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `List.Enumerator<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -18346,6 +20540,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `LowLevelListWithIList.Enumerator<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Microsoft.Win32.SafeHandles.SafeHandleCache<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -18373,6 +20571,18 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `ReadOnlyDictionary.DictionaryEnumerator<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `ReadOnlyDictionary.KeyCollection<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `ReadOnlyDictionary.ValueCollection<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `RuntimeType.ListBuilder<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -18386,6 +20596,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: type_resolve_in_progress: no comparable storage offset
   - Limitation: assembly_resolve_in_progress: no comparable storage offset
   - Limitation: assembly_resolve_in_progress_refonly: no comparable storage offset
+
+- `System.ArraySegment<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `System.Buffers.ArrayPool<T>`
 
@@ -18412,6 +20626,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `System.Collections.Generic.ArrayBuilder<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `System.Collections.Generic.ArraySortHelper<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -18433,6 +20651,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `System.Collections.Generic.KeyValuePair<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Collections.Generic.LargeArrayBuilder<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -18468,7 +20690,19 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `System.EmptyArray<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.IO.Enumeration.FileSystemEnumerable<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.IO.Enumeration.FileSystemEnumerator<TResult>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -18512,6 +20746,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -18521,6 +20759,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `System.Runtime.CompilerServices.TaskAwaiter<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -18544,10 +20786,38 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `System.Threading.Tasks.ContinuationResultTaskFromResultTask<TAntecedentResult, TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Threading.Tasks.ContinuationTaskFromResultTask<TAntecedentResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `System.Threading.Tasks.Task`
 
   - Limitation: t_currentTask: no comparable storage offset
   - Limitation: t_stackGuard: no comparable storage offset
+
+- `System.Threading.Tasks.Task<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Threading.Tasks.TaskCompletionSource<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Threading.Tasks.TaskFactory<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Threading.Tasks.UnwrapPromise<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Threading.Tasks.ValueTask<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `System.Threading.Thread`
 
@@ -18566,7 +20836,59 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: threadLocals: no comparable storage offset
 
+- `System.Tuple<T1, T2, T3, T4>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Tuple<T1, T2, T3>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.Tuple<T1, T2>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2, T3, T4, T5, T6, T7, TRest>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2, T3, T4, T5, T6, T7>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2, T3, T4, T5, T6>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2, T3, T4, T5>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2, T3, T4>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2, T3>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1, T2>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `System.ValueTuple<T1>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `System.WeakReference<T>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `TaskFactory.<>c__DisplayClass38_0<TResult, TArg1>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2>` (compiler-generated name)
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -18590,6 +20912,10 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `ThreadPool.<>c__DisplayClass17_0<TState>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `ThreadPoolWorkQueue.SparseArray<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -18606,6 +20932,18 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
+- `UnwrapPromise.<>c<TResult>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `ValueTask.ValueTaskSourceAsTask.<>c<TResult>` (compiler-generated name)
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `ValueTask.ValueTaskSourceAsTask<TResult>`
+
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
 - `Vector.VectorSizeHelper<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -18613,126 +20951,42 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 347</summary>
+<details><summary>Missing: 118</summary>
 
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=2048`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=3132`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=48`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=56`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=640`
 - `AppContext.SwitchValueState`
 - `ArrayList.IListWrapper`
-- `ArrayList.ReadOnlyArrayList`
-- `ArraySegment.Enumerator<T>`
-- `BigInteger.Kernel`
-- `BigInteger.ModulusRing`
-- `BigInteger.Sign`
 - `ClaimsIdentity.<get_Claims>d__51` (compiler-generated name)
-- `ConfiguredTaskAwaitable.ConfiguredTaskAwaiter`
 - `ConfiguredValueTaskAwaitable.ConfiguredValueTaskAwaiter`
 - `ConfiguredValueTaskAwaitable.ConfiguredValueTaskAwaiter<TResult>`
-- `CryptoStream.<>c` (compiler-generated name)
-- `CryptoStream.<ReadAsyncCore>d__42` (compiler-generated name)
-- `CryptoStream.<ReadAsyncInternal>d__37` (compiler-generated name)
-- `CryptoStream.<WriteAsyncCore>d__49` (compiler-generated name)
-- `CryptoStream.<WriteAsyncInternal>d__46` (compiler-generated name)
-- `DSAManaged.KeyGeneratedEventHandler`
-- `DateTimeParse.<>c` (compiler-generated name)
-- `DateTimeParse.MatchNumberDelegate`
-- `Decimal.DecCalc.Buf12`
-- `Decimal.DecCalc.Buf16`
-- `Environment.SpecialFolder`
-- `Environment.SpecialFolderOption`
 - `File.<InternalWriteAllBytesAsync>d__74` (compiler-generated name)
-- `FileSystemEntry.<_fileNameBuffer>e__FixedBuffer` (compiler-generated name)
-- `FileSystemEnumerable.DelegateEnumerator<TResult>`
-- `FileSystemEnumerable.FindPredicate<TResult>`
-- `FileSystemEnumerable.FindTransform<TResult>`
-- `FileSystemEnumerableFactory.<>c` (compiler-generated name)
-- `FileSystemEnumerableFactory.<>c__DisplayClass3_0` (compiler-generated name)
-- `FileSystemEnumerableFactory.<>c__DisplayClass4_0` (compiler-generated name)
-- `FileSystemEnumerableFactory.<>c__DisplayClass5_0` (compiler-generated name)
 - `FileSystemEnumerableFactory.<>c__DisplayClass6_0` (compiler-generated name)
 - `FileSystemEnumerableFactory.<>c__DisplayClass7_0` (compiler-generated name)
 - `FileSystemEnumerableFactory.<>c__DisplayClass8_0` (compiler-generated name)
-- `FormattableStringFactory.ConcreteFormattableString`
 - `FormattingHelpers.HexCasing`
-- `Hashtable.SyncHashtable`
-- `Internal.Cryptography.Helpers`
-- `Interop.Sys.Permissions`
-- `InteropErrorExtensions`
 - `ListDictionaryInternal.DictionaryNode`
 - `ListDictionaryInternal.NodeEnumerator`
 - `ListDictionaryInternal.NodeKeyValueCollection`
 - `ListDictionaryInternal.NodeKeyValueCollection.NodeKeyValueEnumerator`
-- `Marshal.SecureStringAllocator`
 - `MemoryMarshal.<ToEnumerable>d__14<T>` (compiler-generated name)
-- `Microsoft.Win32.SafeHandles.SafeHandleCache<T>`
-- `Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid`
-- `Microsoft.Win32.SafeHandles.SafePasswordHandle`
-- `Mono.CertificateImportFlags`
-- `Mono.DependencyInjector`
-- `Mono.ISystemCertificateProvider`
-- `Mono.ISystemDependencyProvider`
-- `Mono.Math.BigInteger`
-- `Mono.Math.Prime.ConfidenceFactor`
-- `Mono.Math.Prime.Generator.PrimeGeneratorBase`
-- `Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase`
-- `Mono.Math.Prime.PrimalityTest`
-- `Mono.Math.Prime.PrimalityTests`
-- `Mono.Security.ASN1`
-- `Mono.Security.Cryptography.DSAManaged`
-- `Mono.Security.Cryptography.KeyBuilder`
-- `Mono.Security.Cryptography.KeyPairPersistence`
-- `Mono.Security.Cryptography.MD2`
-- `Mono.Security.Cryptography.MD2Managed`
-- `Mono.Security.Cryptography.MD4`
-- `Mono.Security.Cryptography.MD4Managed`
-- `Mono.Security.Cryptography.PKCS1`
-- `Mono.Security.Cryptography.RSAManaged`
-- `Mono.Security.Cryptography.SymmetricTransform`
-- `Mono.Xml.SecurityParser`
-- `RSAManaged.KeyGeneratedEventHandler`
-- `ReadOnlyDictionary.DictionaryEnumerator<TKey, TValue>`
-- `ReadOnlyDictionary.KeyCollection<TKey, TValue>`
-- `ReadOnlyDictionary.ValueCollection<TKey, TValue>`
 - `ReadOnlySequence.<>c<T>` (compiler-generated name)
 - `ReadOnlySequence.Enumerator<T>`
 - `ReadOnlySequence.SequenceType<T>`
 - `ResourceFallbackManager.<GetEnumerator>d__5` (compiler-generated name)
 - `RuntimeAssembly.UnmanagedMemoryStreamForModule`
-- `SecurityElement.SecurityAttribute`
-- `SortedList.KeyList`
-- `SortedList.SortedListDebugView`
-- `SortedList.SortedListEnumerator`
-- `SortedList.SyncSortedList`
-- `SortedList.ValueList`
-- `Stream.<<ReadAsync>g__FinishReadAsync&#124;44_0>d` (compiler-generated name)
 - `Stream.<CopyToAsyncInternal>d__28` (compiler-generated name)
-- `Stream.<FinishWriteAsync>d__57` (compiler-generated name)
 - `StreamReader.<ReadAsyncInternal>d__66` (compiler-generated name)
 - `StreamReader.<ReadBufferAsync>d__69` (compiler-generated name)
 - `StreamReader.<ReadToEndAsyncInternal>d__63` (compiler-generated name)
 - `StreamWriter.<DisposeAsyncCore>d__33` (compiler-generated name)
 - `StreamWriter.<FlushAsyncInternal>d__74` (compiler-generated name)
 - `StreamWriter.<WriteAsyncInternal>d__59` (compiler-generated name)
-- `SynchronizationContextTaskScheduler.<>c` (compiler-generated name)
 - `System.AccessViolationException`
 - `System.Action<T1, T2, T3, T4, T5, T6, T7>`
-- `System.Action<T1, T2, T3, T4, T5>`
 - `System.AppContext`
 - `System.AppContextDefaultValues`
-- `System.ArraySegment<T>`
-- `System.Base64FormattingOptions`
 - `System.Buffers.ArrayBufferWriter<T>`
 - `System.Buffers.BuffersExtensions`
 - `System.Buffers.IBufferWriter<T>`
-- `System.Buffers.IPinnable`
-- `System.Buffers.MemoryHandle`
 - `System.Buffers.OperationStatus`
 - `System.Buffers.ReadOnlySequence`
 - `System.Buffers.ReadOnlySequence<T>`
@@ -18744,52 +20998,23 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Buffers.Text.NumberBuffer`
 - `System.Buffers.Text.Utf8Constants`
 - `System.Buffers.Text.Utf8Formatter`
-- `System.Collections.CollectionBase`
-- `System.Collections.Generic.ArrayBuilder<T>`
-- `System.Collections.Generic.CollectionDebugView<T>`
-- `System.Collections.Generic.DictionaryDebugView<K, V>`
-- `System.Collections.Generic.EnumerableHelpers`
-- `System.Collections.Generic.LargeArrayBuilder<T>`
 - `System.Collections.ListDictionaryInternal`
 - `System.Collections.ObjectModel.KeyedCollection<TKey, TItem>`
-- `System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue>`
-- `System.Collections.ObjectModel.ReadOnlyDictionaryHelpers`
 - `System.Collections.ReadOnlyCollectionBase`
-- `System.Collections.SortedList`
 - `System.Collections.StructuralComparisons`
 - `System.Collections.StructuralEqualityComparer`
 - `System.DecimalDecCalc`
 - `System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute`
 - `System.Diagnostics.Tracing.EventSourceSettings`
-- `System.Diagnostics.Tracing.NonEventAttribute`
-- `System.FormattableString`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, T8, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, T7, TResult>`
-- `System.Func<T1, T2, T3, T4, T5, T6, TResult>`
 - `System.Globalization.CalendarWeekRule`
 - `System.Globalization.CultureTypes`
 - `System.IAsyncDisposable`
-- `System.IO.Enumeration.FileSystemEntry`
-- `System.IO.Enumeration.FileSystemEnumerable<TResult>`
-- `System.IO.Enumeration.FileSystemEnumerableFactory`
-- `System.IO.Enumeration.FileSystemEnumerator<TResult>`
-- `System.IO.Enumeration.FileSystemName`
-- `System.IO.EnumerationOptions`
-- `System.IO.MatchCasing`
-- `System.IO.MatchType`
-- `System.IO.MonoLinqHelper`
 - `System.IO.SearchOption`
-- `System.IO.SearchTarget`
 - `System.IO.StreamHelpers`
-- `System.IO.StringReader`
 - `System.IO.StringWriter`
 - `System.IServiceProvider`
-- `System.IValueTupleInternal`
 - `System.Index`
-- `System.MonoLimitationAttribute`
 - `System.MutableDecimal`
-- `System.OperatingSystem`
-- `System.ParsingInfo`
 - `System.Range`
 - `System.Reflection.IReflectableType`
 - `System.Reflection.IntrospectionExtensions`
@@ -18800,18 +21025,9 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Resources.MissingManifestResourceException`
 - `System.Resources.MissingSatelliteAssemblyException`
 - `System.Resources.ResourceFallbackManager`
-- `System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`
-- `System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder<TResult>`
-- `System.Runtime.CompilerServices.CallerMemberNameAttribute`
-- `System.Runtime.CompilerServices.ConfiguredTaskAwaitable`
 - `System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable`
 - `System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable<TResult>`
 - `System.Runtime.CompilerServices.DependencyAttribute`
-- `System.Runtime.CompilerServices.FormattableStringFactory`
-- `System.Runtime.CompilerServices.ITuple`
-- `System.Runtime.CompilerServices.ValueTaskAwaiter`
-- `System.Runtime.CompilerServices.ValueTaskAwaiter<TResult>`
-- `System.Runtime.CompilerServices.YieldAwaitable`
 - `System.Runtime.InteropServices.Architecture`
 - `System.Runtime.InteropServices.HandleRef`
 - `System.Runtime.InteropServices.OSPlatform`
@@ -18822,80 +21038,16 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Security.Claims.Claim`
 - `System.Security.Claims.ClaimsIdentity`
 - `System.Security.CodeAccessPermission`
-- `System.Security.Cryptography.Aes`
-- `System.Security.Cryptography.AsymmetricAlgorithm`
 - `System.Security.Cryptography.AsymmetricKeyExchangeFormatter`
-- `System.Security.Cryptography.AsymmetricSignatureDeformatter`
-- `System.Security.Cryptography.AsymmetricSignatureFormatter`
-- `System.Security.Cryptography.CryptoConfigForwarder`
-- `System.Security.Cryptography.CryptoStream`
-- `System.Security.Cryptography.CryptoStreamMode`
-- `System.Security.Cryptography.CryptographicOperations`
-- `System.Security.Cryptography.CspParameters`
-- `System.Security.Cryptography.CspProviderFlags`
-- `System.Security.Cryptography.DES`
-- `System.Security.Cryptography.DESCryptoServiceProvider`
-- `System.Security.Cryptography.DESTransform`
-- `System.Security.Cryptography.DSA`
-- `System.Security.Cryptography.DSACryptoServiceProvider`
-- `System.Security.Cryptography.DSAParameters`
-- `System.Security.Cryptography.DSASignatureDeformatter`
-- `System.Security.Cryptography.DSASignatureDescription`
-- `System.Security.Cryptography.DSASignatureFormatter`
 - `System.Security.Cryptography.DeriveBytes`
-- `System.Security.Cryptography.HMAC`
-- `System.Security.Cryptography.HMACMD5`
-- `System.Security.Cryptography.HMACRIPEMD160`
-- `System.Security.Cryptography.HMACSHA1`
-- `System.Security.Cryptography.HMACSHA256`
-- `System.Security.Cryptography.HMACSHA384`
-- `System.Security.Cryptography.HMACSHA512`
 - `System.Security.Cryptography.HashAlgorithmName`
-- `System.Security.Cryptography.ICryptoTransform`
-- `System.Security.Cryptography.KeyedHashAlgorithm`
-- `System.Security.Cryptography.MACTripleDES`
 - `System.Security.Cryptography.MaskGenerationMethod`
 - `System.Security.Cryptography.PKCS1MaskGenerationMethod`
-- `System.Security.Cryptography.RC2`
-- `System.Security.Cryptography.RC2CryptoServiceProvider`
-- `System.Security.Cryptography.RC2Transform`
-- `System.Security.Cryptography.RIPEMD160`
-- `System.Security.Cryptography.RIPEMD160Managed`
-- `System.Security.Cryptography.RSA`
-- `System.Security.Cryptography.RSACryptoServiceProvider`
 - `System.Security.Cryptography.RSAEncryptionPadding`
 - `System.Security.Cryptography.RSAEncryptionPaddingMode`
 - `System.Security.Cryptography.RSAOAEPKeyExchangeFormatter`
 - `System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter`
-- `System.Security.Cryptography.RSAPKCS1SHA1SignatureDescription`
-- `System.Security.Cryptography.RSAPKCS1SHA256SignatureDescription`
-- `System.Security.Cryptography.RSAPKCS1SHA384SignatureDescription`
-- `System.Security.Cryptography.RSAPKCS1SHA512SignatureDescription`
-- `System.Security.Cryptography.RSAPKCS1SignatureDeformatter`
-- `System.Security.Cryptography.RSAPKCS1SignatureDescription`
-- `System.Security.Cryptography.RSAPKCS1SignatureFormatter`
-- `System.Security.Cryptography.RSAParameters`
 - `System.Security.Cryptography.Rfc2898DeriveBytes`
-- `System.Security.Cryptography.RijndaelManagedTransform`
-- `System.Security.Cryptography.RijndaelManagedTransformMode`
-- `System.Security.Cryptography.SHA1Managed`
-- `System.Security.Cryptography.SHA256`
-- `System.Security.Cryptography.SHA256Managed`
-- `System.Security.Cryptography.SHA384`
-- `System.Security.Cryptography.SHA384Managed`
-- `System.Security.Cryptography.SHA512`
-- `System.Security.Cryptography.SHA512Managed`
-- `System.Security.Cryptography.SignatureDescription`
-- `System.Security.Cryptography.TailStream`
-- `System.Security.Cryptography.TripleDES`
-- `System.Security.Cryptography.TripleDESCryptoServiceProvider`
-- `System.Security.Cryptography.TripleDESTransform`
-- `System.Security.Cryptography.Utils`
-- `System.Security.Cryptography.X509Certificates.X509Certificate`
-- `System.Security.Cryptography.X509Certificates.X509CertificateImpl`
-- `System.Security.Cryptography.X509Certificates.X509ContentType`
-- `System.Security.Cryptography.X509Certificates.X509Helper`
-- `System.Security.Cryptography.X509Certificates.X509KeyStorageFlags`
 - `System.Security.IPermission`
 - `System.Security.ISecurityEncodable`
 - `System.Security.NamedPermissionSet`
@@ -18903,65 +21055,22 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `System.Security.Permissions.PermissionState`
 - `System.Security.Permissions.SecurityAction`
 - `System.Security.Principal.IIdentity`
-- `System.Security.Principal.TokenImpersonationLevel`
 - `System.Security.Principal.WindowsAccountType`
 - `System.Security.Principal.WindowsIdentity`
 - `System.Security.Principal.WindowsImpersonationContext`
-- `System.Security.SecureString`
-- `System.Security.SecurityDocument`
-- `System.Security.SecurityElement`
-- `System.Security.SecurityElementType`
-- `System.Security.Util.Parser`
-- `System.Security.Util.Tokenizer`
-- `System.Security.Util.TokenizerShortBlock`
-- `System.Security.Util.TokenizerStream`
-- `System.Security.Util.TokenizerStringBlock`
-- `System.Security.XmlSyntaxException`
 - `System.SequencePosition`
-- `System.SharedStatics`
-- `System.Threading.AsyncFlowControl`
 - `System.Threading.AsyncLocalValueChangedArgs<T>`
 - `System.Threading.LockQueue`
 - `System.Threading.ReaderWriterLock`
-- `System.Threading.Tasks.ContinuationResultTaskFromResultTask<TAntecedentResult, TResult>`
 - `System.Threading.Tasks.ContinuationResultTaskFromTask<TResult>`
-- `System.Threading.Tasks.ContinuationTaskFromResultTask<TAntecedentResult>`
-- `System.Threading.Tasks.ForceAsyncAwaiter`
-- `System.Threading.Tasks.SynchronizationContextTaskScheduler`
-- `System.Threading.Tasks.TaskAwaiters`
-- `System.Threading.Tasks.TaskToApm`
-- `System.Threading.Tasks.UnwrapPromise<TResult>`
-- `System.Threading.Tasks.ValueTask`
-- `System.Threading.Tasks.ValueTask<TResult>`
 - `System.Threading.ThreadPriority`
-- `System.Tuple<T1, T2, T3, T4>`
-- `System.Tuple<T1, T2>`
-- `System.ValueTuple<T1, T2, T3, T4, T5, T6, T7, TRest>`
-- `System.ValueTuple<T1>`
 - `Task.WhenAllPromise`
 - `Task.WhenAllPromise<T>`
 - `TaskFactory.<>c__DisplayClass35_0<TResult>` (compiler-generated name)
-- `TaskFactory.<>c__DisplayClass38_0<TResult, TArg1>` (compiler-generated name)
-- `TaskFactory.<>c__DisplayClass41_0<TResult, TArg1, TArg2>` (compiler-generated name)
-- `TaskToApm.<>c__DisplayClass3_0` (compiler-generated name)
-- `TaskToApm.TaskWrapperAsyncResult`
 - `TextReader.<>c` (compiler-generated name)
 - `TextReader.<ReadToEndAsync>d__14` (compiler-generated name)
 - `TextWriter.<>c` (compiler-generated name)
-- `ThreadPool.<>c__DisplayClass17_0<TState>` (compiler-generated name)
-- `Tokenizer.ITokenReader`
-- `Tokenizer.StreamTokenReader`
-- `Tokenizer.StringMaker`
-- `Tokenizer.TokenSource`
-- `UnwrapPromise.<>c<TResult>` (compiler-generated name)
 - `Utf8Formatter.DecomposedGuid`
-- `ValueTask.ValueTaskSourceAsTask`
-- `ValueTask.ValueTaskSourceAsTask.<>c` (compiler-generated name)
-- `ValueTask.ValueTaskSourceAsTask.<>c<TResult>` (compiler-generated name)
-- `ValueTask.ValueTaskSourceAsTask<TResult>`
-- `ValueTaskAwaiter.<>c` (compiler-generated name)
-- `Volatile.VolatileBoolean`
-- `YieldAwaitable.YieldAwaiter`
 
 </details>
 
@@ -19047,12 +21156,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## quaunity-global.dll
 
-<details><summary>Matching: 14</summary>
+<details><summary>Matching: 15</summary>
 
 - `<Module>`
 - `Qua.Global.IFontLoader`
 - `Qua.Global.QuaGlobalManager`
 - `Qua.Global.QuaGlobalSetting`
+- `Qua.Global.QuaGlobalTextMeshProUGUI`
 - `Qua.Global.ResourcesFontLoader`
 - `QuaGlobalManager.<LoadCorrectFontAsync>d__24` (compiler-generated name)
 - `QuaGlobalManager.<LoadFontAsync>d__25` (compiler-generated name)
@@ -19063,18 +21173,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `QuaGlobalTextMeshProUGUI.<ChangedDefaultFontId>d__5` (compiler-generated name)
 - `QuaGlobalTextMeshProUGUI.<UpdateFont>d__6` (compiler-generated name)
 - `ResourcesFontLoader.<LoadAsync>d__0` (compiler-generated name)
-
-</details>
-
-<details><summary>Mismatching: 1</summary>
-
-- `Qua.Global.QuaGlobalTextMeshProUGUI`
-
-  - `_fontId: offset '0x7c8' → '0x7d0'`
-  - `_loadedFontId: offset '0x7d0' → '0x7d8'`
-  - `_loadedFont: offset '0x7d8' → '0x7e0'`
-  - `_isSetupFont: offset '0x7e0' → '0x7e8'`
-
 
 </details>
 
@@ -20174,13 +22272,17 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 9</summary>
 
 - `<QAReconstructionImplementationDetails>` (compiler-generated name)
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=11306`
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16364`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=11348`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=12`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=144`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16447`
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `VL.Rendering.VLRenderingCompatibility`
 
 </details>
 

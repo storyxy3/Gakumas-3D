@@ -10,9 +10,9 @@ Unity **6000.0.77f1**, Android **IL2CPP ARM64**, compared with APK **3.5.3**.
 
 ## Rendering-closure result
 
-Local skeleton assemblies including Octo: **3695 matching**, **8 mismatching**, **433 indeterminate**, **0 missing**, **109 extra**.
+Local skeleton assemblies including Octo: **3631 matching**, **75 mismatching**, **422 indeterminate**, **8 missing**, **1595 extra**.
 
-Across the local skeleton, registry and fork assemblies below, **12 types** have differing offsets for same-named declared instance fields; **12 types** have differing static-storage offsets. Other mismatches include field names/types/order, constants, interface/base declarations and explicit closure cuts. Inherited storage is evaluated in each declaring type.
+Across the local skeleton, registry and fork assemblies below, **26 types** have differing offsets for same-named declared instance fields; **20 types** have differing static-storage offsets. Other mismatches include field names/types/order, constants, interface/base declarations and explicit closure cuts. Inherited storage is evaluated in each declaring type.
 
 Generic definitions with unavailable concrete offsets remain indeterminate. Compiler/linker-generated additions and stripping differences remain visible. This is a structural skeleton, not evidence of reconstructed runtime behavior.
 
@@ -20,16 +20,31 @@ Generic definitions with unavailable concrete offsets remain indeterminate. Comp
 
 ## Build provenance
 
-- Project source/report checkpoint: `5919a931532783d18b6f09d87e589ea6f2fa4815`.
-- URP/Core fork: `f6ba270eafd5e0eac86669559af0a0e0cc1a6e70`.
+- Project source/report checkpoint: `a5a8ea3a633aad7d6c5ae02812410d5f36e73abc`.
+- URP/Core fork: `03f6b35f92be52d98a11ab58a15452ff416da537`.
 - Rebuild: `bash Tools/build_android.sh`; dump and compare: `bash Tools/dump_layout.sh`.
 - Input DummyDll hashes: [Tools/skeleton-inputs.json](Tools/skeleton-inputs.json). Package evidence: [PACKAGES.md](PACKAGES.md). Exact dependency cuts and compiler repairs: [CLOSURE.md](CLOSURE.md).
 
-- `libil2cpp.so`: `Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so`; SHA-256 `26e9b9f550bfcbd3beb06dd795bcaba4bc58fd80452453cf4e606382acc5e9e9`.
-- `global-metadata.dat`: `Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat`; SHA-256 `17adb230d790940c169c2bd39ffa4993e386cf51385c7c1c329d409b17881410`.
+- `libil2cpp.so`: `Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so`; SHA-256 `6cb006322125b56d6e9ef32326bf935afcf66b1631461386fe533685cabd2255`.
+- `global-metadata.dat`: `Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat`; SHA-256 `2c6cb512769a62cbbe5bfb97f3c781f37d8ba732638664f4182a9ed2c19ade2e`.
 
 ## Types with remaining instance-offset differences
 
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriAtomConfig`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriAtomExAcbLoader`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriAtomExOutputAnalyzer`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriAtomListener`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriAtomRegion`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriAtomSourceBase`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuvRawData`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriManaMovieController`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriManaMovieControllerForUI`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriManaMovieMaterial`
+- `CriMw.CriWare.Runtime.dll` — `CriWare.CriManaMovieMaterialBase`
+- `DOTween.dll` — `DG.Tweening.Core.DOTweenSettings`
+- `DOTween.dll` — `DG.Tweening.Plugins.Core.PathCore.Path`
+- `DOTween.dll` — `DG.Tweening.Plugins.Options.PathOptions`
+- `DOTween.dll` — `DOTweenSettings.SafeModeOptions`
 - `Unity.Burst.dll` — `Unity.Burst.BurstCompileAttribute`
 - `Unity.Burst.dll` — `Unity.Burst.BurstCompilerOptions`
 - `Unity.RenderPipelines.Core.Runtime.dll` — `DebugUI.EnumField`
@@ -37,11 +52,10 @@ Generic definitions with unavailable concrete offsets remain indeterminate. Comp
 - `Unity.RenderPipelines.Core.Runtime.dll` — `UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphDebugParams`
 - `Unity.RenderPipelines.Core.Runtime.dll` — `UnityEngine.Rendering.DynamicResolutionHandler`
 - `Unity.RenderPipelines.Universal.Runtime.dll` — `UnityEngine.Rendering.Universal.DBufferRenderPass`
-- `Unity.TextMeshPro.dll` — `TMPro.TMP_Text`
-- `Unity.TextMeshPro.dll` — `TMPro.TextMeshPro`
-- `Unity.TextMeshPro.dll` — `TMPro.TextMeshProUGUI`
-- `campus-submodule.Runtime.dll` — `Campus.Common.CampusText`
-- `quaunity-global.dll` — `Qua.Global.QuaGlobalTextMeshProUGUI`
+- `Unity.RenderPipelines.Universal.Runtime.dll` — `UnityEngine.Rendering.Universal.UniversalRenderer`
+- `Unity.RenderPipelines.Universal.Runtime.dll` — `VL.Rendering.VLSRPRenderer`
+- `campus-submodule.Runtime.dll` — `Campus.Common.Sound.CampusSoundPlayer`
+- `campus-submodule.Runtime.dll` — `Campus.Timeline.CampusTimelineCriVideoPlayer`
 
 # IL2CPP field layout comparison
 
@@ -49,7 +63,7 @@ Original: `/data/xy/gakumas/work/il2cpp-3.5.3/dump.cs`
 SHA-256: `4bdd8715472c84f81f895f2fb373c724c787da3afc7a0c5b1e539a04c4387c46`
 
 Build: `/data/xy/gakumas/live-urp/.recon/live-dump/dump.cs`
-SHA-256: `b78cea3e9774d581a7596233125bfb7ff8d03a4dc528c337c0432056cb69821f`
+SHA-256: `2fa6ec978b0b08070326ac01688904896ae49ffeec417e15bb3e78e7db3e7c8c`
 
 Assembly selection: `^(?:ActorAnimation\.Runtime\.dll&#124;AmplifyOcclusion\.Runtime\.dll&#124;Cinemachine\.dll&#124;CriMw\.CriWare\.Runtime\.dll&#124;DOTween\.dll&#124;Octo\.dll&#124;ProFlare\.Runtime\.dll&#124;Qua\.Base\.Runtime\.dll&#124;Qua\.PolygonUtility\.dll&#124;Qua\.Utility\.dll&#124;Qua\.VectorUI\.Runtime\.dll&#124;Titan\.Runtime\.dll&#124;Uguiss\-Timeline\.Runtime\.dll&#124;Uguiss\.Runtime\.dll&#124;UniRx\.dll&#124;UniTask\.Linq\.dll&#124;UniTask\.dll&#124;Unity\.Animation\.Rigging\.dll&#124;Unity\.Burst\.dll&#124;Unity\.Collections\.dll&#124;Unity\.Mathematics\.dll&#124;Unity\.Profiling\.Core\.dll&#124;Unity\.RenderPipelines\.Core\.Runtime\.dll&#124;Unity\.RenderPipelines\.Universal\.Runtime\.dll&#124;Unity\.TextMeshPro\.dll&#124;Unity\.Timeline\.dll&#124;Unity\.VisualEffectGraph\.Runtime\.dll&#124;UnityEngine\.UI\.dll&#124;campus\-submodule\.Runtime\.dll&#124;campus\-submodule\.Shader\.Runtime\.dll&#124;quaunity\-crypto\.dll&#124;quaunity\-global\.dll&#124;quaunity\-ui\.Runtime\.dll&#124;quaunity\-volumetriclightbeam\.Runtime\.dll&#124;vl\-unity\.Runtime\.dll)$`
 
@@ -61,9 +75,9 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `ActorAnimation.Runtime.dll` | 163 | 0 | 1 | 0 | 5 |
 | `AmplifyOcclusion.Runtime.dll` | 18 | 0 | 0 | 0 | 5 |
-| `Cinemachine.dll` | 177 | 6 | 0 | 1 | 12 |
-| `CriMw.CriWare.Runtime.dll` | 343 | 0 | 1 | 0 | 3 |
-| `DOTween.dll` | 139 | 0 | 1 | 0 | 5 |
+| `Cinemachine.dll` | 178 | 6 | 0 | 0 | 11 |
+| `CriMw.CriWare.Runtime.dll` | 310 | 28 | 0 | 6 | 131 |
+| `DOTween.dll` | 121 | 17 | 0 | 2 | 66 |
 | `Octo.dll` | 209 | 4 | 40 | 0 | 5 |
 | `ProFlare.Runtime.dll` | 27 | 0 | 0 | 0 | 5 |
 | `Qua.Base.Runtime.dll` | 12 | 1 | 0 | 0 | 5 |
@@ -73,28 +87,28 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 | `Titan.Runtime.dll` | 286 | 0 | 24 | 0 | 5 |
 | `Uguiss-Timeline.Runtime.dll` | 60 | 0 | 3 | 0 | 3 |
 | `Uguiss.Runtime.dll` | 81 | 0 | 2 | 0 | 3 |
-| `UniRx.dll` | 154 | 0 | 145 | 0 | 5 |
-| `UniTask.Linq.dll` | 5 | 0 | 3 | 0 | 5 |
-| `UniTask.dll` | 296 | 0 | 64 | 0 | 5 |
-| `Unity.Animation.Rigging.dll` | 44 | 9 | 1 | 1 | 87 |
+| `UniRx.dll` | 148 | 11 | 140 | 0 | 500 |
+| `UniTask.Linq.dll` | 5 | 0 | 3 | 0 | 562 |
+| `UniTask.dll` | 289 | 11 | 60 | 0 | 246 |
+| `Unity.Animation.Rigging.dll` | 46 | 8 | 1 | 0 | 87 |
 | `Unity.Burst.dll` | 23 | 9 | 0 | 0 | 68 |
 | `Unity.Collections.dll` | 63 | 34 | 11 | 0 | 234 |
 | `Unity.Mathematics.dll` | 19 | 21 | 0 | 0 | 64 |
 | `Unity.Profiling.Core.dll` | 4 | 0 | 0 | 0 | 14 |
 | `Unity.RenderPipelines.Core.Runtime.dll` | 257 | 23 | 24 | 8 | 208 |
-| `Unity.RenderPipelines.Universal.Runtime.dll` | 543 | 31 | 10 | 4 | 184 |
-| `Unity.TextMeshPro.dll` | 115 | 11 | 7 | 0 | 61 |
+| `Unity.RenderPipelines.Universal.Runtime.dll` | 543 | 34 | 10 | 1 | 184 |
+| `Unity.TextMeshPro.dll` | 120 | 6 | 7 | 0 | 61 |
 | `Unity.Timeline.dll` | 102 | 2 | 1 | 0 | 30 |
 | `Unity.VisualEffectGraph.Runtime.dll` | 24 | 2 | 0 | 3 | 81 |
-| `UnityEngine.UI.dll` | 182 | 2 | 3 | 1 | 21 |
-| `campus-submodule.Runtime.dll` | 1089 | 1 | 40 | 0 | 5 |
+| `UnityEngine.UI.dll` | 183 | 2 | 3 | 0 | 20 |
+| `campus-submodule.Runtime.dll` | 1088 | 2 | 40 | 0 | 5 |
 | `campus-submodule.Shader.Runtime.dll` | 7 | 0 | 0 | 0 | 5 |
 | `quaunity-crypto.dll` | 1 | 1 | 3 | 0 | 5 |
-| `quaunity-global.dll` | 14 | 1 | 0 | 0 | 5 |
+| `quaunity-global.dll` | 15 | 0 | 0 | 0 | 5 |
 | `quaunity-ui.Runtime.dll` | 229 | 0 | 69 | 0 | 5 |
 | `quaunity-volumetriclightbeam.Runtime.dll` | 138 | 0 | 0 | 0 | 5 |
-| `vl-unity.Runtime.dll` | 321 | 0 | 17 | 0 | 5 |
-| **Total** | 5248 | 158 | 490 | 18 | 1173 |
+| `vl-unity.Runtime.dll` | 321 | 0 | 17 | 0 | 9 |
+| **Total** | 5193 | 222 | 479 | 20 | 2657 |
 
 ## ActorAnimation.Runtime.dll
 
@@ -324,7 +338,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## Cinemachine.dll
 
-<details><summary>Matching: 177</summary>
+<details><summary>Matching: 178</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
@@ -417,6 +431,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CinemachineBlendDefinition.Style`
 - `CinemachineBlendListCamera.Instruction`
 - `CinemachineBlenderSettings.CustomBlend`
+- `CinemachineBrain.<AfterPhysics>d__32` (compiler-generated name)
 - `CinemachineBrain.BrainEvent`
 - `CinemachineBrain.BrainFrame`
 - `CinemachineBrain.BrainUpdateMethod`
@@ -545,13 +560,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 1</summary>
-
-- `CinemachineBrain.<AfterPhysics>d__32` (compiler-generated name)
-
-</details>
-
-<details><summary>Extra: 12</summary>
+<details><summary>Extra: 11</summary>
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5907`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6031`
@@ -562,7 +571,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cinemachine.Utility.GaussianWindow1D_Vector3`
 - `Cinemachine.Utility.GaussianWindow1d<T>`
 - `Cinemachine.Utility.UnityRectExtensions`
-- `CinemachineBrain.<AfterPhysics>d__30` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
 
@@ -571,7 +579,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## CriMw.CriWare.Runtime.dll
 
-<details><summary>Matching: 343</summary>
+<details><summary>Matching: 310</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>` (compiler-generated name)
@@ -583,11 +591,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `AutoResisterRendererResourceFactories.RendererResourceFactoryAndroidSofdecPrimeYuvLegacyGles2`
 - `AutoResisterRendererResourceFactories.RendererResourceFactorySofdecPrimeYuvRawData`
 - `Common.CpuUsage`
-- `CriAtom.<>c__DisplayClass68_0` (compiler-generated name)
-- `CriAtom.<LoadAcbDataCoroutine>d__74` (compiler-generated name)
-- `CriAtom.<LoadAcbFileCoroutine>d__72` (compiler-generated name)
 - `CriAtom.NativeMethods`
-- `CriAtom.SpeakerMapping`
 - `CriAtomConfig.AndroidLowLatencyStandardVoicePoolConfig`
 - `CriAtomConfig.EditorPcmOutputConfig`
 - `CriAtomConfig.HcaMxVoicePoolConfig`
@@ -607,13 +611,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriAtomEx.AisacInfo`
 - `CriAtomEx.BiquadFilterType`
 - `CriAtomEx.CharacterEncoding`
-- `CriAtomEx.CueInfo`
 - `CriAtomEx.CueLinkCbFunc`
 - `CriAtomEx.CueLinkInfo`
 - `CriAtomEx.CuePos3dInfo`
 - `CriAtomEx.CueType`
 - `CriAtomEx.CurveType`
-- `CriAtomEx.Format`
 - `CriAtomEx.FormatInfo`
 - `CriAtomEx.GameVariableInfo`
 - `CriAtomEx.NativeVector`
@@ -621,7 +623,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriAtomEx.Parameter`
 - `CriAtomEx.PerformanceInfo`
 - `CriAtomEx.Randomize3dCalcType`
-- `CriAtomEx.Randomize3dConfig`
 - `CriAtomEx.Randomize3dParamType`
 - `CriAtomEx.ResourceUsage`
 - `CriAtomEx.ResumeMode`
@@ -743,7 +744,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriAtomOutputDeviceObserver.UnsafeNativeMethods`
 - `CriAtomPlugin.CallbackFromNativeDelegate`
 - `CriAtomPlugin.FileOpenCondition`
-- `CriAtomSource.<PlayAsync>d__11` (compiler-generated name)
 - `CriAtomSourceBase.Status`
 - `CriAtomTimelinePreviewer.PlayerSource`
 - `CriAtomTimelinePreviewer.PreviewListener`
@@ -781,23 +781,16 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriManaMixerBehaviour.<ProcessFrameOnSeeking>d__27` (compiler-generated name)
 - `CriManaMixerBehaviour.ClipState`
 - `CriManaMixerBehaviour.MovieMixerState`
-- `CriManaMovieMaterialBase.<RestartPlayerRoutine>d__60` (compiler-generated name)
-- `CriManaMovieMaterialBase.MaxFrameDrop`
 - `CriManaMovieMaterialBase.OnApplicationPauseCallback`
 - `CriManaMovieMaterialBase.RenderMode`
-- `CriWare.Common`
-- `CriWare.CriAtom`
-- `CriWare.CriAtomConfig`
 - `CriWare.CriAtomCueSheet`
 - `CriWare.CriAtomDebugDetail.Utility`
-- `CriWare.CriAtomEx`
 - `CriWare.CriAtomEx3dListener`
 - `CriWare.CriAtomEx3dRegion`
 - `CriWare.CriAtomEx3dSource`
 - `CriWare.CriAtomEx3dTransceiver`
 - `CriWare.CriAtomExAcb`
 - `CriWare.CriAtomExAcbDebug`
-- `CriWare.CriAtomExAcbLoader`
 - `CriWare.CriAtomExAcf`
 - `CriWare.CriAtomExAcfDebug`
 - `CriWare.CriAtomExAsr`
@@ -808,11 +801,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriAtomExDebug`
 - `CriWare.CriAtomExLatencyEstimator`
 - `CriWare.CriAtomExMic`
-- `CriWare.CriAtomExOutputAnalyzer`
 - `CriWare.CriAtomExOutputPort`
-- `CriWare.CriAtomExPlayback`
 - `CriWare.CriAtomExPlaybackDebug`
-- `CriWare.CriAtomExPlayer`
 - `CriWare.CriAtomExPlayerOutputAnalyzer`
 - `CriWare.CriAtomExRawPcmVoicePool`
 - `CriWare.CriAtomExSequencer`
@@ -821,13 +811,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriAtomExTween`
 - `CriWare.CriAtomExVoicePool`
 - `CriWare.CriAtomExWaveVoicePool`
-- `CriWare.CriAtomListener`
 - `CriWare.CriAtomOutputDeviceObserver`
-- `CriWare.CriAtomPlugin`
-- `CriWare.CriAtomRegion`
-- `CriWare.CriAtomServer`
 - `CriWare.CriAtomSource`
-- `CriWare.CriAtomSourceBase`
 - `CriWare.CriAtomTransceiver`
 - `CriWare.CriAudioReadStream`
 - `CriWare.CriAudioWriteStream`
@@ -847,13 +832,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriFsLoader`
 - `CriWare.CriFsPlugin`
 - `CriWare.CriFsRequest`
-- `CriWare.CriFsServer`
 - `CriWare.CriFsUtility`
 - `CriWare.CriFsWebInstallRequest`
 - `CriWare.CriFsWebInstaller`
 - `CriWare.CriMana.AlphaType`
 - `CriWare.CriMana.AudioInfo`
-- `CriWare.CriMana.CodecType`
 - `CriWare.CriMana.Detail.AutoResisterRendererResourceFactories`
 - `CriWare.CriMana.Detail.RendererResource`
 - `CriWare.CriMana.Detail.RendererResourceAndroidH264Rgb`
@@ -861,7 +844,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriMana.Detail.RendererResourceAndroidSofdecPrimeYuvLegacyGles2`
 - `CriWare.CriMana.Detail.RendererResourceFactory`
 - `CriWare.CriMana.Detail.RendererResourceFactoryPriorityAttribute`
-- `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuvRawData`
 - `CriWare.CriMana.EventPoint`
 - `CriWare.CriMana.FrameInfo`
 - `CriWare.CriMana.MovieInfo`
@@ -869,12 +851,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriMana.Settings`
 - `CriWare.CriManaAmbisonicSource`
 - `CriWare.CriManaConfig`
-- `CriWare.CriManaMovieController`
-- `CriWare.CriManaMovieControllerForUI`
-- `CriWare.CriManaMovieMaterial`
-- `CriWare.CriManaMovieMaterialBase`
 - `CriWare.CriManaMoviePlayerHolder`
-- `CriWare.CriManaPlugin`
 - `CriWare.CriMonoBehaviour`
 - `CriWare.CriMonoBehaviourManager`
 - `CriWare.CriTimeline.Atom.CriAtomBehaviour`
@@ -890,7 +867,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWare.CriTimeline.Mana.CriManaMixerBehaviour`
 - `CriWare.CriTimeline.Mana.CriManaTrack`
 - `CriWare.CriWareDecrypter`
-- `CriWare.CriWareErrorHandler`
 - `CriWare.CriWareInitializer`
 - `CriWare.CriWareMemoryReporter`
 - `CriWare.CriWareProfilerReporter`
@@ -900,7 +876,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `CriWareErrorHandler.NativeMethod`
 - `CriWareProfilerReporter.<>c` (compiler-generated name)
 - `CriWareProfilerReporter.TargetReporterName`
-- `Player.<IssuePluginUpdatesForFrames>d__157` (compiler-generated name)
 - `Player.AudioTrack`
 - `Player.CriManaUnityPlayer_RenderEventAction`
 - `Player.CuePointCallback`
@@ -919,30 +894,466 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Indeterminate: 1</summary>
+<details><summary>Mismatching: 28</summary>
+
+- `CriAtom.SpeakerMapping`
+
+  - `field declaration order/names: ['value__', 'Auto', 'Monaural', 'Stereo', 'Ch5_1', 'Ch7_1', 'Ch5_1_2', 'Ch7_1_2', 'Ch7_1_4', 'Ch7_1_4_4', 'Ambisonics1p', 'Ambisonics2p', 'Ambisonics3p', 'Object', 'Custom'] → ['value__', 'Auto', 'Monaural', 'Stereo', 'Ch5_1', 'Ch7_1', 'Ch5_1_2', 'Ch7_1_2', 'Ch7_1_4', 'Ambisonics1p']`
+  - `missing field constant CriAtom.SpeakerMapping Ch7_1_4_4`
+  - `missing field constant CriAtom.SpeakerMapping Ambisonics2p`
+  - `missing field constant CriAtom.SpeakerMapping Ambisonics3p`
+  - `missing field constant CriAtom.SpeakerMapping Object`
+  - `missing field constant CriAtom.SpeakerMapping Custom`
+
+- `CriAtomEx.CueInfo`
+
+  - `field declaration order/names: ['id', 'type', 'name', 'userData', 'length', 'categories', 'numLimits', 'numBlocks', 'numTracks', 'numRelatedWaveForms', 'priority', 'headerVisibility', 'ignore_player_parameter', 'probability', 'panType', 'pos3dInfo', 'gameVariableInfo', 'volume', 'silentMode', 'pitch', 'selectorIndex'] → ['id', 'type', 'name', 'userData', 'length', 'categories', 'numLimits', 'numBlocks', 'numTracks', 'numRelatedWaveForms', 'priority', 'headerVisibility', 'ignore_player_parameter', 'probability', 'panType', 'pos3dInfo', 'gameVariableInfo', 'volume', 'silentMode']`
+  - `missing field instance float pitch`
+  - `missing field instance ushort selectorIndex`
+
+- `CriAtomEx.Format`
+
+  - `field declaration order/names: ['value__', 'ADX', 'HCA', 'HCA_MX', 'WAVE', 'RAW_PCM', 'AUDIO_BUFFER', 'HW1', 'HW2', 'HW3', 'MP3'] → ['value__', 'ADX', 'HCA', 'HCA_MX', 'WAVE', 'RAW_PCM', 'AUDIO_BUFFER']`
+  - `missing field constant CriAtomEx.Format HW1`
+  - `missing field constant CriAtomEx.Format HW2`
+  - `missing field constant CriAtomEx.Format HW3`
+  - `missing field constant CriAtomEx.Format MP3`
+
+- `CriAtomEx.Randomize3dConfig`
+
+  - `field declaration order/names: ['NumOfCalcParams', 'followsOriginalSource', 'calculationType', 'calculationParameters'] → ['followsOriginalSource', 'calculationType', 'calculationParameters', 'NumOfCalcParams']`
+
+- `CriManaMovieMaterialBase.MaxFrameDrop`
+
+  - `field declaration order/names: ['value__', 'Disabled', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'] → ['value__', 'Disabled', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Infinite']`
+  - `extra field constant CriManaMovieMaterialBase.MaxFrameDrop Infinite`
+
+- `CriWare.Common`
+
+  - `field declaration order/names: ['scriptVersionString', 'supportsCriFsInstaller', 'supportsCriFsWebInstaller', 'pluginName', 'pluginCallingConvention', 'engineName', '_managerObject'] → ['engineName', 'scriptVersionString', 'supportsCriFsInstaller', 'supportsCriFsWebInstaller', 'pluginName', 'pluginCallingConvention', '_managerObject']`
+
+- `CriWare.CriAtom`
+
+  - `field declaration order/names: ['acfFile', 'acfIsLoading', 'cueSheets', 'dspBusSetting', 'dontDestroyOnLoad', 'eventUserCallback', 'eventUserCbFunc', 'beatsyncUserCbFunc', 'obsoleteBeatSyncFunc', 'cueLinkUserCbFunc', '<instance>k__BackingField', 'acfRegisterGCHandle', 'dontRemoveExistsCueSheet'] → ['acfFile', 'acfIsLoading', 'cueSheets', 'dspBusSetting', 'dontDestroyOnLoad', 'eventUserCallback', 'eventUserCbFunc', 'beatsyncUserCbFunc', 'obsoleteBeatSyncFunc', 'cueLinkUserCbFunc', 'acfRegisterGCHandle', 'dontRemoveExistsCueSheet', '<instance>k__BackingField']`
+  - `eventUserCallback: type 'CriAtomExSequencer.EventCallback' → 'Delegate'`
+  - `eventUserCbFunc: type 'CriAtomExSequencer.EventCbFunc' → 'Delegate'`
+  - `beatsyncUserCbFunc: type 'CriAtomExBeatSync.CbFunc' → 'Delegate'`
+  - `obsoleteBeatSyncFunc: type 'CriAtomExBeatSync.CbFunc' → 'Delegate'`
+  - `cueLinkUserCbFunc: type 'CriAtomEx.CueLinkCbFunc' → 'Delegate'`
+
+- `CriWare.CriAtomConfig`
+
+  - `field declaration order/names: ['acfFileName', 'maxVirtualVoices', 'maxVoiceLimitGroups', 'maxCategories', 'maxAisacs', 'maxBusSends', 'maxSequenceEventsPerFrame', 'maxBeatSyncCallbacksPerFrame', 'maxCueLinkCallbacksPerFrame', 'standardVoicePoolConfig', 'hcaMxVoicePoolConfig', 'outputSamplingRate', 'usesInGamePreview', 'inGamePreviewMode', 'switchInitializeSocket', 'switch2InitializeSocket', 'inGamePreviewConfig', 'serverFrequency', 'speakerMapping', 'asrOutputChannels', 'useRandomSeedWithTime', 'categoriesPerPlayback', 'maxFaders', 'maxBuses', 'maxPitch', 'maxParameterBlocks', 'soundRendererType', 'keepPlayingSoundOnPause', 'enableSonicSync', 'enableAtomSoundDisabledMode', 'enableAtomSoundDisabledModeLinux', 'editorPcmOutputConfig', 'pcBufferingTime', 'useMicrosoftSpatialSound', 'linuxOutput', 'linuxPulseLatencyUsec', 'iosEnableSonicSync', 'iosBufferingTime', 'iosOverrideIPodMusic', 'iosEnableOSNotificationHandling', 'androidEnableSonicSync', 'androidBufferingTime', 'androidStartBufferingTime', 'androidLowLatencyStandardVoicePoolConfig', 'androidUsesAndroidFastMixer', 'androidForceToUseAsrForDefaultPlayback', 'androidUsesAAudio', 'androidStreamType', 'vitaManaVoicePoolConfig', 'vitaAtrac9VoicePoolConfig', 'ps4Atrac9VoicePoolConfig', 'ps5PortConfig', 'ps5Mp3StreamingVoices', 'switchEnableSonicSync', 'switchOpusVoicePoolConfig', 'switch2OpusVoicePoolConfig', 'ps4Audio3dConfig', 'ps4Mp3StreamingVoices'] → ['switch2InitializeSocket', 'enableAtomSoundDisabledMode', 'enableAtomSoundDisabledModeLinux', 'iosEnableOSNotificationHandling', 'ps5Mp3StreamingVoices', 'switch2OpusVoicePoolConfig', 'ps4Mp3StreamingVoices', 'acfFileName', 'maxVirtualVoices', 'maxVoiceLimitGroups', 'maxCategories', 'maxAisacs', 'maxBusSends', 'maxSequenceEventsPerFrame', 'maxBeatSyncCallbacksPerFrame', 'maxCueLinkCallbacksPerFrame', 'standardVoicePoolConfig', 'hcaMxVoicePoolConfig', 'outputSamplingRate', 'usesInGamePreview', 'inGamePreviewMode', 'switchInitializeSocket', 'inGamePreviewConfig', 'serverFrequency', 'speakerMapping', 'asrOutputChannels', 'useRandomSeedWithTime', 'categoriesPerPlayback', 'maxFaders', 'maxBuses', 'maxPitch', 'maxParameterBlocks', 'soundRendererType', 'keepPlayingSoundOnPause', 'enableSonicSync', 'editorPcmOutputConfig', 'pcBufferingTime', 'useMicrosoftSpatialSound', 'linuxOutput', 'linuxPulseLatencyUsec', 'iosEnableSonicSync', 'iosBufferingTime', 'iosOverrideIPodMusic', 'androidEnableSonicSync', 'androidBufferingTime', 'androidStartBufferingTime', 'androidLowLatencyStandardVoicePoolConfig', 'androidUsesAndroidFastMixer', 'androidForceToUseAsrForDefaultPlayback', 'androidUsesAAudio', 'androidStreamType', 'vitaManaVoicePoolConfig', 'vitaAtrac9VoicePoolConfig', 'ps4Atrac9VoicePoolConfig', 'ps5PortConfig', 'switchEnableSonicSync', 'switchOpusVoicePoolConfig', 'ps4Audio3dConfig', 'webglWebAudioVoicePoolConfig']`
+  - `acfFileName: offset '0x10' → '0x28'`
+  - `maxVirtualVoices: offset '0x18' → '0x30'`
+  - `maxVoiceLimitGroups: offset '0x1c' → '0x34'`
+  - `maxCategories: offset '0x20' → '0x38'`
+  - `maxAisacs: offset '0x24' → '0x3c'`
+  - `maxBusSends: offset '0x28' → '0x40'`
+  - `maxSequenceEventsPerFrame: offset '0x2c' → '0x44'`
+  - `maxBeatSyncCallbacksPerFrame: offset '0x30' → '0x48'`
+  - `maxCueLinkCallbacksPerFrame: offset '0x34' → '0x4c'`
+  - `standardVoicePoolConfig: offset '0x38' → '0x50'`
+  - `hcaMxVoicePoolConfig: offset '0x40' → '0x58'`
+  - `outputSamplingRate: offset '0x48' → '0x60'`
+  - `usesInGamePreview: offset '0x4c' → '0x64'`
+  - `inGamePreviewMode: offset '0x50' → '0x68'`
+  - `switchInitializeSocket: offset '0x54' → '0x6c'`
+  - `switch2InitializeSocket: offset '0x55' → '0x10'`
+  - `inGamePreviewConfig: offset '0x58' → '0x70'`
+  - `serverFrequency: offset '0x60' → '0x78'`
+  - `speakerMapping: offset '0x64' → '0x7c'`
+  - `asrOutputChannels: offset '0x68' → '0x80'`
+  - `useRandomSeedWithTime: offset '0x6c' → '0x84'`
+  - `categoriesPerPlayback: offset '0x70' → '0x88'`
+  - `maxFaders: offset '0x74' → '0x8c'`
+  - `maxBuses: offset '0x78' → '0x90'`
+  - `maxPitch: offset '0x7c' → '0x94'`
+  - `maxParameterBlocks: offset '0x80' → '0x98'`
+  - `soundRendererType: offset '0x84' → '0x9c'`
+  - `keepPlayingSoundOnPause: offset '0x88' → '0xa0'`
+  - `enableSonicSync: offset '0x89' → '0xa1'`
+  - `enableAtomSoundDisabledMode: offset '0x8a' → '0x11'`
+  - `enableAtomSoundDisabledModeLinux: offset '0x8b' → '0x12'`
+  - `editorPcmOutputConfig: offset '0x90' → '0xa8'`
+  - `pcBufferingTime: offset '0x98' → '0xb0'`
+  - `useMicrosoftSpatialSound: offset '0x9c' → '0xb4'`
+  - `linuxOutput: offset '0xa0' → '0xb8'`
+  - `linuxPulseLatencyUsec: offset '0xa4' → '0xbc'`
+  - `iosEnableSonicSync: offset '0xa8' → '0xc0'`
+  - `iosBufferingTime: offset '0xac' → '0xc4'`
+  - `iosOverrideIPodMusic: offset '0xb0' → '0xc8'`
+  - `iosEnableOSNotificationHandling: offset '0xb1' → '0x13'`
+  - `androidEnableSonicSync: offset '0xb2' → '0xc9'`
+  - `androidBufferingTime: offset '0xb4' → '0xcc'`
+  - `androidStartBufferingTime: offset '0xb8' → '0xd0'`
+  - `androidLowLatencyStandardVoicePoolConfig: offset '0xc0' → '0xd8'`
+  - `androidUsesAndroidFastMixer: offset '0xc8' → '0xe0'`
+  - `androidForceToUseAsrForDefaultPlayback: offset '0xc9' → '0xe1'`
+  - `androidUsesAAudio: offset '0xca' → '0xe2'`
+  - `androidStreamType: offset '0xcc' → '0xe4'`
+  - `vitaManaVoicePoolConfig: offset '0xd0' → '0xe8'`
+  - `vitaAtrac9VoicePoolConfig: offset '0xd8' → '0xf0'`
+  - `ps4Atrac9VoicePoolConfig: offset '0xe0' → '0xf8'`
+  - `ps5PortConfig: offset '0xe8' → '0x100'`
+  - `ps5Mp3StreamingVoices: offset '0xf0' → '0x14'`
+  - `switchEnableSonicSync: offset '0xf4' → '0x108'`
+  - `switchOpusVoicePoolConfig: offset '0xf8' → '0x110'`
+  - `switch2OpusVoicePoolConfig: offset '0x100' → '0x18'`
+  - `ps4Audio3dConfig: offset '0x108' → '0x118'`
+  - `ps4Mp3StreamingVoices: offset '0x110' → '0x20'`
+  - `extra field instance CriAtomConfig.WebGLWebAudioVoicePoolConfig webglWebAudioVoicePoolConfig`
+
+- `CriWare.CriAtomEx`
+
+  - `field declaration order/names: ['InvalidAisacControlId', 'randomize3dParamTable', 'androidDefaultSoundRendererType'] → ['InvalidAisacControlId', 'androidDefaultSoundRendererType']`
+  - `missing field static Dictionary<CriAtomEx.Randomize3dCalcType, CriAtomEx.Randomize3dParamType[]> randomize3dParamTable`
+  - `androidDefaultSoundRendererType: offset '0x8' → '0x0'`
+
+- `CriWare.CriAtomExAcbLoader`
+
+  - `bases: 'CriDisposable' → ''`
+  - `handle: offset '0x20' → '0x10'`
+  - `gch: offset '0x28' → '0x18'`
+
+- `CriWare.CriAtomExOutputAnalyzer`
+
+  - `field declaration order/names: ['MaximumSpectrumBands', 'handle', 'player', 'busName', 'numBands', 'numCapturedPcmSamples', 'userPcmCaptureCallback', 'dataL', 'dataR', 'pcmCapturerNumMaxData', 'InternalCallbackFunctionPointer', 'DelegateObject', 'DataL', 'DataR', 'UserPcmCaptureCallback'] → ['userPcmCaptureCallback', 'InternalCallbackFunctionPointer', 'DelegateObject', 'DataL', 'DataR', 'UserPcmCaptureCallback', 'MaximumSpectrumBands', 'handle', 'player', 'busName', 'numBands', 'numCapturedPcmSamples', 'dataL', 'dataR', 'pcmCapturerNumMaxData']`
+  - `handle: offset '0x20' → '0x28'`
+  - `player: offset '0x28' → '0x30'`
+  - `busName: offset '0x30' → '0x38'`
+  - `numBands: offset '0x38' → '0x40'`
+  - `numCapturedPcmSamples: offset '0x3c' → '0x44'`
+  - `userPcmCaptureCallback: offset '0x40' → '0x20'`
+
+- `CriWare.CriAtomExPlayback`
+
+  - `field declaration order/names: ['<id>k__BackingField', 'invalidId'] → ['invalidId', '<id>k__BackingField']`
+
+- `CriWare.CriAtomExPlayer`
+
+  - `_onBeatSyncCallback: type 'CriAtomExBeatSync.CbFunc' → 'Delegate'`
+  - `_onSequenceCallback: type 'CriAtomExSequencer.EventCallback' → 'Delegate'`
+
+- `CriWare.CriAtomListener`
+
+  - `field declaration order/names: ['<nativeListener>k__BackingField', 'regionOnStart', 'activateListenerOnEnable', 'listenersList', 'exclusiveListener', 'dummyNativeListener', 'lastPosition', 'currentRegion', '_isActive'] → ['regionOnStart', 'activateListenerOnEnable', 'listenersList', 'exclusiveListener', 'dummyNativeListener', 'lastPosition', 'currentRegion', '_isActive', '<nativeListener>k__BackingField']`
+  - `<nativeListener>k__BackingField: offset '0x30' → '0x58'`
+  - `regionOnStart: offset '0x38' → '0x30'`
+  - `activateListenerOnEnable: offset '0x40' → '0x38'`
+  - `lastPosition: offset '0x44' → '0x3c'`
+  - `currentRegion: offset '0x50' → '0x48'`
+  - `_isActive: offset '0x58' → '0x50'`
+
+- `CriWare.CriAtomPlugin`
+
+  - `field declaration order/names: ['initializationCount', 'OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'OnFinalized', 'effectInterfaceList', 'isConfigured', 'timeSinceStartup', 'cpuUsage', 'CRIATOMUNITY_PARAMETER_ID_LOOP_COUNT', 'CRIATOMPARAMETER2_ID_INVALID', 'temporalStorage'] → ['cpuUsage', 'temporalStorage', 'OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'initializationCount', 'OnFinalized', 'effectInterfaceList', 'isConfigured', 'timeSinceStartup', 'CRIATOMUNITY_PARAMETER_ID_LOOP_COUNT', 'CRIATOMPARAMETER2_ID_INVALID']`
+  - `initializationCount: offset '0x0' → '0x30'`
+  - `OnBeforeInitialize: offset '0x8' → '0x18'`
+  - `OnInitialized: offset '0x10' → '0x20'`
+  - `OnBeforeFinalize: offset '0x18' → '0x28'`
+  - `OnFinalized: offset '0x20' → '0x38'`
+  - `effectInterfaceList: offset '0x28' → '0x40'`
+  - `isConfigured: offset '0x30' → '0x48'`
+  - `timeSinceStartup: offset '0x34' → '0x4c'`
+  - `cpuUsage: offset '0x38' → '0x0'`
+  - `CRIATOMUNITY_PARAMETER_ID_LOOP_COUNT: offset '0x44' → '0x50'`
+  - `CRIATOMPARAMETER2_ID_INVALID: offset '0x48' → '0x54'`
+  - `temporalStorage: offset '0x50' → '0x10'`
+
+- `CriWare.CriAtomRegion`
+
+  - `field declaration order/names: ['<region3dHn>k__BackingField', 'referringSources', 'referringListeners', 'referringTransceivers'] → ['referringTransceivers', '<region3dHn>k__BackingField', 'referringSources', 'referringListeners']`
+  - `<region3dHn>k__BackingField: offset '0x30' → '0x38'`
+  - `referringSources: offset '0x38' → '0x40'`
+  - `referringListeners: offset '0x40' → '0x48'`
+  - `referringTransceivers: offset '0x48' → '0x30'`
+
+- `CriWare.CriAtomServer`
+
+  - `field declaration order/names: ['_instance', 'profilerReporterInstance', 'onApplicationPausePreProcess', 'onApplicationPausePostProcess', 'KeepPlayingSoundOnPause', 'EnableAutoConsumePcmOutput', 'EnableBackgroundPlayback_ANDROID'] → ['profilerReporterInstance', 'EnableBackgroundPlayback_ANDROID', '_instance', 'onApplicationPausePreProcess', 'onApplicationPausePostProcess', 'KeepPlayingSoundOnPause', 'EnableAutoConsumePcmOutput']`
+  - `_instance: offset '0x0' → '0x10'`
+  - `profilerReporterInstance: offset '0x8' → '0x0'`
+  - `KeepPlayingSoundOnPause: offset '0x10' → '0x18'`
+  - `EnableAutoConsumePcmOutput: offset '0x11' → '0x19'`
+  - `EnableBackgroundPlayback_ANDROID: offset '0x12' → '0x8'`
+
+- `CriWare.CriAtomSourceBase`
+
+  - `field declaration order/names: ['<player>k__BackingField', '<source>k__BackingField', 'initialized', 'lastPosition', 'hasValidPosition', 'currentRegion', 'currentListener', '_playOnStart', '_regionOnStart', '_listenerOnStart', '_use3dPositioning', '_freezeOrientation', '_loop', '_volume', '_pitch', '_androidUseLowLatencyVoicePool', 'need_to_player_update_all', '_use3dRandomization', '_randomPositionListMaxLength', 'randomize3dConfig'] → ['initialized', 'lastPosition', 'hasValidPosition', 'currentRegion', 'currentListener', '_playOnStart', '_regionOnStart', '_listenerOnStart', '_use3dPositioning', '_freezeOrientation', '_loop', '_volume', '_pitch', '_androidUseLowLatencyVoicePool', 'need_to_player_update_all', '_use3dRandomization', '_randomPositionListMaxLength', 'randomize3dConfig', '<player>k__BackingField', '<source>k__BackingField']`
+  - `<player>k__BackingField: offset '0x30' → '0x98'`
+  - `<source>k__BackingField: offset '0x38' → '0xa0'`
+  - `initialized: offset '0x40' → '0x30'`
+  - `lastPosition: offset '0x44' → '0x34'`
+  - `hasValidPosition: offset '0x50' → '0x40'`
+  - `currentRegion: offset '0x58' → '0x48'`
+  - `currentListener: offset '0x60' → '0x50'`
+  - `_playOnStart: offset '0x68' → '0x58'`
+  - `_regionOnStart: offset '0x70' → '0x60'`
+  - `_listenerOnStart: offset '0x78' → '0x68'`
+  - `_use3dPositioning: offset '0x80' → '0x70'`
+  - `_freezeOrientation: offset '0x81' → '0x71'`
+  - `_loop: offset '0x82' → '0x72'`
+  - `_volume: offset '0x84' → '0x74'`
+  - `_pitch: offset '0x88' → '0x78'`
+  - `_androidUseLowLatencyVoicePool: offset '0x8c' → '0x7c'`
+  - `need_to_player_update_all: offset '0x8d' → '0x7d'`
+  - `_use3dRandomization: offset '0x8e' → '0x7e'`
+  - `_randomPositionListMaxLength: offset '0x90' → '0x80'`
+  - `randomize3dConfig: offset '0x98' → '0x88'`
+
+- `CriWare.CriFsServer`
+
+  - `field declaration order/names: ['_instance', 'requestList', '<installBufferSize>k__BackingField'] → ['requestList', '_instance']`
+  - `missing field instance int <installBufferSize>k__BackingField`
+
+- `CriWare.CriMana.CodecType`
+
+  - `field declaration order/names: ['value__', 'Unknown', 'SofdecPrime', 'H264', 'VP9', 'AV1'] → ['value__', 'Unknown', 'SofdecPrime', 'H264', 'VP9']`
+  - `missing field constant CodecType AV1`
+
+- `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuvRawData`
+
+  - `field declaration order/names: ['width', 'height', 'chromaWidth', 'chromaHeight', 'alphaWidth', 'alphaHeight', 'useUserShader', 'codecType', 'movieTextureST', 'movieChromaTextureST', 'movieAlphaTextureST', 'textures', 'currentTextureSet', 'drawTextureSet', 'nativePixels', 'playerID', 'hasTextureUpdated', 'isTextureReady', 'hasRenderedNewFrame'] → ['isTextureReady', 'width', 'height', 'chromaWidth', 'chromaHeight', 'alphaWidth', 'alphaHeight', 'useUserShader', 'codecType', 'movieTextureST', 'movieChromaTextureST', 'movieAlphaTextureST', 'textures', 'currentTextureSet', 'drawTextureSet', 'nativePixels', 'playerID', 'hasTextureUpdated', 'hasRenderedNewFrame', 'isStoppingForSeek']`
+  - `width: offset '0x2c' → '0x30'`
+  - `height: offset '0x30' → '0x34'`
+  - `chromaWidth: offset '0x34' → '0x38'`
+  - `chromaHeight: offset '0x38' → '0x3c'`
+  - `alphaWidth: offset '0x3c' → '0x40'`
+  - `alphaHeight: offset '0x40' → '0x44'`
+  - `useUserShader: offset '0x44' → '0x48'`
+  - `codecType: offset '0x48' → '0x4c'`
+  - `movieTextureST: offset '0x4c' → '0x50'`
+  - `movieChromaTextureST: offset '0x5c' → '0x60'`
+  - `movieAlphaTextureST: offset '0x6c' → '0x70'`
+  - `isTextureReady: offset '0x9d' → '0x2c'`
+  - `hasRenderedNewFrame: offset '0x9e' → '0x9d'`
+  - `extra field instance bool isStoppingForSeek`
+
+- `CriWare.CriManaMovieController`
+
+  - `target: offset '0xa0' → '0xa8'`
+  - `useOriginalMaterial: offset '0xa8' → '0xb0'`
+  - `originalMaterial: offset '0xb0' → '0xb8'`
+
+- `CriWare.CriManaMovieControllerForUI`
+
+  - `target: offset '0xa0' → '0xa8'`
+  - `useOriginalMaterial: offset '0xa8' → '0xb0'`
+  - `originalMaterial: offset '0xb0' → '0xb8'`
+
+- `CriWare.CriManaMovieMaterial`
+
+  - `_moviePath: offset '0x88' → '0x90'`
+  - `_loop: offset '0x90' → '0x98'`
+  - `_audioBaseConcatenation: offset '0x91' → '0x99'`
+  - `_additiveMode: offset '0x92' → '0x9a'`
+  - `_advancedAudio: offset '0x93' → '0x9b'`
+  - `_ambisonics: offset '0x94' → '0x9c'`
+  - `_applyTargetAlpha: offset '0x95' → '0x9d'`
+  - `_uiRenderMode: offset '0x96' → '0x9e'`
+  - `ambisonicSource: offset '0x98' → '0xa0'`
+
+- `CriWare.CriManaMovieMaterialBase`
+
+  - `field declaration order/names: ['playOnStart', 'restartOnEnable', '<isMaterialAvailable>k__BackingField', '<player>k__BackingField', 'renderMode', 'onApplicationPauseCallback', '_timerType', '_material', '_maxFrameDrop', 'materialOwn', 'isMonoBehaviourStartCalled', 'wasDisabled', 'wasPausedOnDisable', 'previousOnApplicationPauseStatus', 'frameEnd', 'unpauseOnApplicationUnpause', '<HaveRendererOwner>k__BackingField', 'playerHolder'] → ['playOnStart', 'restartOnEnable', 'renderMode', 'onApplicationPauseCallback', '_timerType', '_material', '_maxFrameDrop', 'materialOwn', 'isMonoBehaviourStartCalled', 'wasDisabled', 'wasPausedOnDisable', 'previousOnApplicationPauseStatus', 'frameEnd', 'unpauseOnApplicationUnpause', 'playerHolder', '<isMaterialAvailable>k__BackingField', '<player>k__BackingField', '<HaveRendererOwner>k__BackingField']`
+  - `<isMaterialAvailable>k__BackingField: offset '0x32' → '0x78'`
+  - `<player>k__BackingField: offset '0x38' → '0x80'`
+  - `renderMode: offset '0x40' → '0x34'`
+  - `onApplicationPauseCallback: offset '0x48' → '0x38'`
+  - `_timerType: offset '0x50' → '0x40'`
+  - `_material: offset '0x58' → '0x48'`
+  - `_maxFrameDrop: offset '0x60' → '0x50'`
+  - `materialOwn: offset '0x64' → '0x54'`
+  - `isMonoBehaviourStartCalled: offset '0x65' → '0x55'`
+  - `wasDisabled: offset '0x66' → '0x56'`
+  - `wasPausedOnDisable: offset '0x67' → '0x57'`
+  - `previousOnApplicationPauseStatus: offset '0x68' → '0x58'`
+  - `frameEnd: offset '0x70' → '0x60'`
+  - `unpauseOnApplicationUnpause: offset '0x78' → '0x68'`
+  - `<HaveRendererOwner>k__BackingField: offset '0x79' → '0x88'`
+  - `playerHolder: offset '0x80' → '0x70'`
+
+- `CriWare.CriManaPlugin`
+
+  - `field declaration order/names: ['initializationCount', 'isConfigured', 'enabledMultithreadedRendering', 'renderingEventOffset', 'OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'OnFinalized'] → ['OnBeforeInitialize', 'OnInitialized', 'OnBeforeFinalize', 'OnFinalized', 'initializationCount', 'isConfigured', 'enabledMultithreadedRendering', 'renderingEventOffset']`
+  - `initializationCount: offset '0x0' → '0x20'`
+  - `isConfigured: offset '0x4' → '0x24'`
+  - `enabledMultithreadedRendering: offset '0x5' → '0x25'`
+  - `renderingEventOffset: offset '0x8' → '0x28'`
+  - `OnBeforeInitialize: offset '0x10' → '0x0'`
+  - `OnInitialized: offset '0x18' → '0x8'`
+  - `OnBeforeFinalize: offset '0x20' → '0x10'`
+  - `OnFinalized: offset '0x28' → '0x18'`
 
 - `CriWare.CriStructMemory<Type>`
 
+  - `field declaration order/names: ['<bytes>k__BackingField', 'gch'] → ['gch', '<bytes>k__BackingField']`
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `CriWare.CriWareErrorHandler`
+
+  - `field declaration order/names: ['enableDebugPrintOnTerminal', 'enableForceCrashOnError', 'dontDestroyOnLoad', '<errorMessage>k__BackingField', 'logPrefix', '_onCallback', 'callback', 'messageBufferCounts', 'unThreadSafeMessages', '_enableDebugPrintOnTerminal', 'initializationCount'] → ['_enableDebugPrintOnTerminal', 'enableDebugPrintOnTerminal', 'enableForceCrashOnError', 'dontDestroyOnLoad', 'logPrefix', '_onCallback', 'callback', 'messageBufferCounts', 'unThreadSafeMessages', 'initializationCount', '<errorMessage>k__BackingField']`
+  - `<errorMessage>k__BackingField: offset '0x0' → '0x28'`
+  - `_enableDebugPrintOnTerminal: offset '0x20' → '0x0'`
+  - `initializationCount: offset '0x24' → '0x20'`
 
 
 </details>
 
-<details><summary>Extra: 3</summary>
+<details><summary>Missing: 6</summary>
+
+- `CriAtom.<>c__DisplayClass68_0` (compiler-generated name)
+- `CriAtom.<LoadAcbDataCoroutine>d__74` (compiler-generated name)
+- `CriAtom.<LoadAcbFileCoroutine>d__72` (compiler-generated name)
+- `CriAtomSource.<PlayAsync>d__11` (compiler-generated name)
+- `CriManaMovieMaterialBase.<RestartPlayerRoutine>d__60` (compiler-generated name)
+- `Player.<IssuePluginUpdatesForFrames>d__157` (compiler-generated name)
+
+</details>
+
+<details><summary>Extra: 131</summary>
 
 - `<QAReconstructionImplementationDetails>` (compiler-generated name)
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=10587`
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=8770`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=1008`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=112`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=128`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=14422`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=15742`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=176`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=1792`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=20`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=24`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=256`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=32`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=36`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=48`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=512`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=544`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=64`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=640`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=66`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=68`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=96`
+- `CriAtom.<>c__DisplayClass76_0` (compiler-generated name)
+- `CriAtomAcbData.<>c` (compiler-generated name)
+- `CriAtomAcbData.<>c__DisplayClass42_0` (compiler-generated name)
+- `CriAtomAcbData.<ReadCommands>d__48` (compiler-generated name)
+- `CriAtomAcbData.<SelectTracks>d__41` (compiler-generated name)
+- `CriAtomAcbData.BiquadSetting`
+- `CriAtomAcbData.BusSend`
+- `CriAtomAcbData.Command`
+- `CriAtomAcbData.Cue`
+- `CriAtomAcbData.OffsetChoice`
+- `CriAtomAcbData.ParameterLayer`
+- `CriAtomAcbData.RandomState`
+- `CriAtomAcbData.SelectionState`
+- `CriAtomAcbData.WaveEvent`
+- `CriAtomAcbData.Waveform`
+- `CriAtomAfs2.<>c__DisplayClass18_0` (compiler-generated name)
+- `CriAtomAfs2.Entry`
+- `CriAtomCategoryState.<>c__DisplayClass26_0` (compiler-generated name)
+- `CriAtomCategoryState.Category`
+- `CriAtomCategoryState.CategoryConfig`
+- `CriAtomCategoryState.LimitPool`
+- `CriAtomCategoryState.React`
+- `CriAtomCategoryState.ReactConfig`
+- `CriAtomCategoryState.ReactPhase`
+- `CriAtomCategoryState.Reservation`
+- `CriAtomConfig.WebGLWebAudioVoicePoolConfig`
+- `CriAtomDsp.Limiter`
+- `CriAtomDsp.StereoMultiTap`
+- `CriAtomDspI3dl2Reverb.SmoothDelay`
+- `CriAtomDspMath.Biquad`
+- `CriAtomDspMath.Complex`
+- `CriAtomDspMath.Delay`
+- `CriAtomDspReverb.Comb`
+- `CriAtomFader.Command`
+- `CriAtomFader.CommandKind`
+- `CriAtomFader.Phase`
+- `CriAtomLibm.Poly`
+- `CriAtomMixer.<>c` (compiler-generated name)
+- `CriAtomMixer.<>c__DisplayClass6_0` (compiler-generated name)
+- `CriAtomMixer.<>c__DisplayClass6_1` (compiler-generated name)
+- `CriAtomMixer.Bus`
+- `CriAtomMixer.Link`
+- `CriAtomNativeBackend.<>c` (compiler-generated name)
+- `CriAtomNativeBackend.<>c__DisplayClass36_0` (compiler-generated name)
+- `CriAtomNativeBackend.Aisac`
+- `CriAtomNativeBackend.Analyzer`
+- `CriAtomNativeBackend.AudioGroup`
+- `CriAtomNativeBackend.Bank`
+- `CriAtomNativeBackend.Binder`
+- `CriAtomNativeBackend.Graph`
+- `CriAtomNativeBackend.ManaAudioSource`
+- `CriAtomNativeBackend.ManaEntry`
+- `CriAtomNativeBackend.ManaFrame`
+- `CriAtomNativeBackend.ManaPlayer`
+- `CriAtomNativeBackend.Parameters`
+- `CriAtomNativeBackend.Playback`
+- `CriAtomNativeBackend.Player`
+- `CriAtomNativeBackend.Spatial`
+- `CriAtomNativeBackend.Voice`
+- `CriAtomNativeBackend.Voice.PcmBlock`
+- `CriAtomNativeBackend.Voice.SourceProgress`
+- `CriAtomNativeBackend.VoiceFilter`
+- `CriAtomNativeBackend.VoiceSlot`
+- `CriAtomSource.<PlayAsync>d__10` (compiler-generated name)
+- `CriAtomUtf.Column`
+- `CriAtomUtf.Row`
+- `CriAtomUtf.Table`
+- `CriHcaDecoder`
+- `CriHcaDecoderUnity`
+- `CriHcaDecoderUnity.Handle`
+- `CriHcaDecoderUnity.HcaDecoder`
+- `CriHcaDecoderUnity.HcaDecoder.Channel`
+- `CriHcaDecoderUnity.HcaDecoder.Config`
+- `CriManaMovieMaterialBase.<RestartPlayerRoutine>d__61` (compiler-generated name)
+- `CriManaMpeg1Decoder.Frame`
+- `CriManaUsm.AudioInfo`
+- `CriManaUsm.Packet`
+- `CriManaUsm.SeekEntry`
+- `CriManaUsm.VideoInfo`
+- `CriWare.CriAtomAcbData`
+- `CriWare.CriAtomAfs2`
+- `CriWare.CriAtomAisacGraph`
+- `CriWare.CriAtomAudioClock`
+- `CriWare.CriAtomCategoryState`
+- `CriWare.CriAtomDsp`
+- `CriWare.CriAtomDspI3dl2Reverb`
+- `CriWare.CriAtomDspMath`
+- `CriWare.CriAtomDspReverb`
+- `CriWare.CriAtomFader`
+- `CriWare.CriAtomLevelMeter`
+- `CriWare.CriAtomLibm`
+- `CriWare.CriAtomMixer`
+- `CriWare.CriAtomNativeBackend`
+- `CriWare.CriAtomResampler`
+- `CriWare.CriAtomSequenceClock`
+- `CriWare.CriAtomUtf`
+- `CriWare.CriMana.CriManaClock`
+- `CriWare.CriMana.CriManaMpeg1Decoder`
+- `CriWare.CriMana.Detail.RendererResourceIOSH264Yuv`
+- `CriWare.CriMana.Detail.RendererResourcePlatform`
+- `CriWare.CriMana.Detail.RendererResourceSofdecPrimeYuv`
+- `CriWare.CriManaAdxDecoder`
+- `CriWare.CriManaAudioClock`
+- `CriWare.CriManaUsm`
+- `CriWare.CriWareNative`
+- `CriWare.ICriWareNativeBackend`
+- `HcaFileDecoder`
+- `HcaFileDecoder.Metadata`
+- `Player.<IssuePluginUpdatesForFrames>d__205` (compiler-generated name)
 
 </details>
 
 
 ## DOTween.dll
 
-<details><summary>Matching: 139</summary>
+<details><summary>Matching: 121</summary>
 
 - `<Module>`
-- `<PrivateImplementationDetails>` (compiler-generated name)
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=120`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=50`
@@ -954,11 +1365,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Core.DOSetter<T>`
 - `DG.Tweening.Core.DOTweenComponent`
 - `DG.Tweening.Core.DOTweenExternalCommand`
-- `DG.Tweening.Core.DOTweenSettings`
-- `DG.Tweening.Core.Debugger`
 - `DG.Tweening.Core.Easing.Bounce`
 - `DG.Tweening.Core.Easing.EaseCurve`
-- `DG.Tweening.Core.Easing.EaseManager`
 - `DG.Tweening.Core.Easing.Flash`
 - `DG.Tweening.Core.Enums.FilterType`
 - `DG.Tweening.Core.Enums.NestedTweenFailureBehaviour`
@@ -971,10 +1379,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Core.SafeModeReport`
 - `DG.Tweening.Core.SequenceCallback`
 - `DG.Tweening.Core.TweenLink`
-- `DG.Tweening.Core.TweenManager`
-- `DG.Tweening.Core.Utils`
 - `DG.Tweening.CustomPlugins.PureQuaternionPlugin`
-- `DG.Tweening.DOTween`
 - `DG.Tweening.DOVirtual`
 - `DG.Tweening.Ease`
 - `DG.Tweening.EaseFunction`
@@ -993,8 +1398,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Plugins.Core.PathCore.ControlPoint`
 - `DG.Tweening.Plugins.Core.PathCore.CubicBezierDecoder`
 - `DG.Tweening.Plugins.Core.PathCore.LinearDecoder`
-- `DG.Tweening.Plugins.Core.PathCore.Path`
-- `DG.Tweening.Plugins.Core.PluginsManager`
 - `DG.Tweening.Plugins.Core.SpecialPluginsUtils`
 - `DG.Tweening.Plugins.DoublePlugin`
 - `DG.Tweening.Plugins.FloatPlugin`
@@ -1005,14 +1408,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.Plugins.Options.IPlugOptions`
 - `DG.Tweening.Plugins.Options.NoOptions`
 - `DG.Tweening.Plugins.Options.OrientType`
-- `DG.Tweening.Plugins.Options.PathOptions`
-- `DG.Tweening.Plugins.Options.QuaternionOptions`
 - `DG.Tweening.Plugins.Options.RectOptions`
 - `DG.Tweening.Plugins.Options.StringOptions`
 - `DG.Tweening.Plugins.Options.UintOptions`
 - `DG.Tweening.Plugins.Options.Vector3ArrayOptions`
 - `DG.Tweening.Plugins.Options.VectorOptions`
-- `DG.Tweening.Plugins.PathPlugin`
 - `DG.Tweening.Plugins.QuaternionPlugin`
 - `DG.Tweening.Plugins.RectOffsetPlugin`
 - `DG.Tweening.Plugins.RectPlugin`
@@ -1028,7 +1428,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DG.Tweening.ScrambleMode`
 - `DG.Tweening.Sequence`
 - `DG.Tweening.ShortcutExtensions`
-- `DG.Tweening.Tween`
 - `DG.Tweening.TweenCallback`
 - `DG.Tweening.TweenCallback<T>`
 - `DG.Tweening.TweenExtensions`
@@ -1042,8 +1441,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `DOTweenComponent.<WaitForPosition>d__21` (compiler-generated name)
 - `DOTweenComponent.<WaitForRewind>d__18` (compiler-generated name)
 - `DOTweenComponent.<WaitForStart>d__22` (compiler-generated name)
-- `DOTweenSettings.ModulesSetup`
-- `DOTweenSettings.SafeModeOptions`
 - `DOTweenSettings.SettingsLocation`
 - `DOVirtual.<>c__DisplayClass0_0` (compiler-generated name)
 - `SafeModeReport.SafeModeReportType`
@@ -1066,15 +1463,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `ShortcutExtensions.<>c__DisplayClass45_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass46_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass47_0` (compiler-generated name)
-- `ShortcutExtensions.<>c__DisplayClass50_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass51_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass52_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass54_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass56_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass58_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass5_0` (compiler-generated name)
-- `ShortcutExtensions.<>c__DisplayClass61_0` (compiler-generated name)
-- `ShortcutExtensions.<>c__DisplayClass62_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass63_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass64_0` (compiler-generated name)
 - `ShortcutExtensions.<>c__DisplayClass6_0` (compiler-generated name)
@@ -1083,20 +1477,231 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Indeterminate: 1</summary>
+<details><summary>Mismatching: 17</summary>
+
+- `<PrivateImplementationDetails>` (compiler-generated name)
+
+  - `field declaration order/names: ['4EF0676A416B9CCF117C378BDCB6C5CA0EA9505154E3F0F7CC8570285DB79663', '921D53955C220A863C9C5D33DD45329C6F74471C522EA5D46EA838D8D4838055', 'A203B1199E78DE3BB75B28FC520ED2F86ADB2749BFC52E3ACA275A3BE2587678', 'C845A807AA8EC73757DC1B07EA49311061FEDECA35AFFE91C5474E0814925020'] → ['4EF0676A416B9CCF117C378BDCB6C5CA0EA9505154E3F0F7CC8570285DB79663', '921D53955C220A863C9C5D33DD45329C6F74471C522EA5D46EA838D8D4838055', '9262857CAD283202CA84B75E1CA9CC199A95E7D878F98BB9EAFB1E2F2AE67618', 'A203B1199E78DE3BB75B28FC520ED2F86ADB2749BFC52E3ACA275A3BE2587678', 'BEEF07BD55BBFB8B3AD6B8AAE4F8A07CF328AD0A16641540F61FC7F690990DF4', 'C845A807AA8EC73757DC1B07EA49311061FEDECA35AFFE91C5474E0814925020']`
+  - `A203B1199E78DE3BB75B28FC520ED2F86ADB2749BFC52E3ACA275A3BE2587678: offset '0x46' → '0xbf1'`
+  - `C845A807AA8EC73757DC1B07EA49311061FEDECA35AFFE91C5474E0814925020: offset '0xbe' → '0x1c99'`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=2987 9262857CAD283202CA84B75E1CA9CC199A95E7D878F98BB9EAFB1E2F2AE67618`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4144 BEEF07BD55BBFB8B3AD6B8AAE4F8A07CF328AD0A16641540F61FC7F690990DF4`
+
+- `DG.Tweening.Core.DOTweenSettings`
+
+  - `field declaration order/names: ['AssetName', 'AssetFullFilename', 'useSafeMode', 'safeModeOptions', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', 'showUnityEditorReport', 'logBehaviour', 'drawGizmos', 'defaultRecyclable', 'defaultAutoPlay', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'defaultAutoKill', 'defaultLoopType', 'debugMode', 'debugStoreTargetId', 'showPreviewPanel', 'storeSettingsLocation', 'modules', 'showPlayingTweens', 'showPausedTweens'] → ['AssetName', 'AssetFullFilename', 'useSafeMode', 'safeModeOptions', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', 'showUnityEditorReport', 'logBehaviour', 'drawGizmos', 'defaultRecyclable', 'defaultAutoPlay', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'defaultAutoKill', 'defaultLoopType', 'debugMode', 'debugStoreTargetId', 'showPreviewPanel', 'storeSettingsLocation', 'modules', 'createASMDEF', 'showPlayingTweens', 'showPausedTweens']`
+  - `showPlayingTweens: offset '0x78' → '0x79'`
+  - `showPausedTweens: offset '0x79' → '0x7a'`
+  - `extra field instance bool createASMDEF`
+
+- `DG.Tweening.Core.Debugger`
+
+  - `field declaration order/names: ['_logPriority'] → ['_logPriority', '_LogPrefix']`
+  - `extra field constant string _LogPrefix`
+
+- `DG.Tweening.Core.Easing.EaseManager`
+
+  - `field declaration order/names: [] → ['_PiOver2', '_TwoPi']`
+  - `extra field constant float _PiOver2`
+  - `extra field constant float _TwoPi`
+
+- `DG.Tweening.Core.TweenManager`
+
+  - `field declaration order/names: ['isUnityEditor', 'maxActive', 'maxTweeners', 'maxSequences', 'hasActiveTweens', 'hasActiveDefaultTweens', 'hasActiveLateTweens', 'hasActiveFixedTweens', 'hasActiveManualTweens', 'totActiveTweens', 'totActiveDefaultTweens', 'totActiveLateTweens', 'totActiveFixedTweens', 'totActiveManualTweens', 'totActiveTweeners', 'totActiveSequences', 'totPooledTweeners', 'totPooledSequences', 'totTweeners', 'totSequences', 'isUpdateLoop', '_activeTweens', '_pooledTweeners', '_PooledSequences', '_KillList', '_TweenLinks', '_totTweenLinks', '_maxActiveLookupId', '_requiresActiveReorganization', '_reorganizeFromId', '_minPooledTweenerId', '_maxPooledTweenerId', '_despawnAllCalledFromUpdateLoopCallback'] → ['_DefaultMaxTweeners', '_DefaultMaxSequences', '_MaxTweensReached', '_EpsilonVsTimeCheck', 'isUnityEditor', 'isDebugBuild', 'maxActive', 'maxTweeners', 'maxSequences', 'hasActiveTweens', 'hasActiveDefaultTweens', 'hasActiveLateTweens', 'hasActiveFixedTweens', 'hasActiveManualTweens', 'totActiveTweens', 'totActiveDefaultTweens', 'totActiveLateTweens', 'totActiveFixedTweens', 'totActiveManualTweens', 'totActiveTweeners', 'totActiveSequences', 'totPooledTweeners', 'totPooledSequences', 'totTweeners', 'totSequences', 'isUpdateLoop', '_activeTweens', '_pooledTweeners', '_PooledSequences', '_KillList', '_TweenLinks', '_totTweenLinks', '_maxActiveLookupId', '_requiresActiveReorganization', '_reorganizeFromId', '_minPooledTweenerId', '_maxPooledTweenerId', '_despawnAllCalledFromUpdateLoopCallback']`
+  - `extra field constant int _DefaultMaxTweeners`
+  - `extra field constant int _DefaultMaxSequences`
+  - `extra field constant string _MaxTweensReached`
+  - `extra field constant float _EpsilonVsTimeCheck`
+  - `extra field static bool isDebugBuild`
 
 - `DG.Tweening.Core.TweenerCore<T1, T2, TPlugOptions>`
 
+  - `field declaration order/names: ['startValue', 'endValue', 'changeValue', 'plugOptions', 'getter', 'setter', 'tweenPlugin', '_TxtCantChangeSequencedValues'] → ['startValue', 'endValue', 'changeValue', 'plugOptions', 'getter', 'setter', 'tweenPlugin', '_TxtCantChangeSequencedValues', '_colorType', '_color32Type']`
+  - `extra field instance Type _colorType`
+  - `extra field instance Type _color32Type`
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `DG.Tweening.DOTween`
+
+  - `field declaration order/names: ['Version', 'useSafeMode', 'nestedTweenFailureBehaviour', 'showUnityEditorReport', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', '_logBehaviour', 'onWillLog', 'drawGizmos', 'debugMode', '_fooDebugStoreTargetId', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultAutoPlay', 'defaultAutoKill', 'defaultLoopType', 'defaultRecyclable', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'instance', 'maxActiveTweenersReached', 'maxActiveSequencesReached', 'safeModeReport', 'GizmosDelegates', 'initialized', 'isQuitting'] → ['Version', 'useSafeMode', 'safeModeLogBehaviour', 'nestedTweenFailureBehaviour', 'showUnityEditorReport', 'timeScale', 'useSmoothDeltaTime', 'maxSmoothUnscaledTime', 'rewindCallbackMode', '_logBehaviour', 'onWillLog', 'drawGizmos', 'debugMode', '_fooDebugStoreTargetId', 'defaultUpdateType', 'defaultTimeScaleIndependent', 'defaultAutoPlay', 'defaultAutoKill', 'defaultLoopType', 'defaultRecyclable', 'defaultEaseType', 'defaultEaseOvershootOrAmplitude', 'defaultEasePeriod', 'instance', '_foo_isQuitting', 'maxActiveTweenersReached', 'maxActiveSequencesReached', 'safeModeReport', 'GizmosDelegates', 'initialized', '_isQuittingFrame']`
+  - `nestedTweenFailureBehaviour: offset '0xc' → '0x10'`
+  - `showUnityEditorReport: offset '0x10' → '0x14'`
+  - `timeScale: offset '0x14' → '0x18'`
+  - `useSmoothDeltaTime: offset '0x18' → '0x1c'`
+  - `maxSmoothUnscaledTime: offset '0x1c' → '0x20'`
+  - `rewindCallbackMode: offset '0x20' → '0x24'`
+  - `_logBehaviour: offset '0x24' → '0x28'`
+  - `onWillLog: offset '0x28' → '0x30'`
+  - `drawGizmos: offset '0x30' → '0x38'`
+  - `debugMode: offset '0x31' → '0x39'`
+  - `_fooDebugStoreTargetId: offset '0x32' → '0x3a'`
+  - `defaultUpdateType: offset '0x34' → '0x3c'`
+  - `defaultTimeScaleIndependent: offset '0x38' → '0x40'`
+  - `defaultAutoPlay: offset '0x3c' → '0x44'`
+  - `defaultAutoKill: offset '0x40' → '0x48'`
+  - `defaultLoopType: offset '0x44' → '0x4c'`
+  - `defaultRecyclable: offset '0x48' → '0x50'`
+  - `defaultEaseType: offset '0x4c' → '0x54'`
+  - `defaultEaseOvershootOrAmplitude: offset '0x50' → '0x58'`
+  - `defaultEasePeriod: offset '0x54' → '0x5c'`
+  - `instance: offset '0x58' → '0x60'`
+  - `maxActiveTweenersReached: offset '0x60' → '0x6c'`
+  - `maxActiveSequencesReached: offset '0x64' → '0x70'`
+  - `safeModeReport: offset '0x68' → '0x74'`
+  - `GizmosDelegates: offset '0x78' → '0x88'`
+  - `initialized: offset '0x80' → '0x90'`
+  - `missing field static bool isQuitting`
+  - `extra field static SafeModeLogBehaviour safeModeLogBehaviour`
+  - `extra field static bool _foo_isQuitting`
+  - `extra field static int _isQuittingFrame`
+
+- `DG.Tweening.Plugins.Core.PathCore.Path`
+
+  - `field declaration order/names: ['_catmullRomDecoder', '_linearDecoder', '_cubicBezierDecoder', 'wpLengths', 'wps', 'type', 'subdivisionsXSegment', 'subdivisions', 'controlPoints', 'length', 'isFinalized', 'timesTable', 'lengthsTable', 'linearWPIndex', 'addedExtraStartWp', 'addedExtraEndWp', '_incrementalClone', '_incrementalIndex', '_decoder', '_changed', 'nonLinearDrawWps', 'targetPosition', 'lookAtPosition', 'gizmoColor'] → ['_catmullRomDecoder', '_linearDecoder', '_cubicBezierDecoder', 'wpLengths', 'wps', 'type', 'subdivisionsXSegment', 'subdivisions', 'controlPoints', 'length', 'isFinalized', 'timesTable', 'lengthsTable', 'linearWPIndex', 'addedExtraStartWp', 'addedExtraEndWp', 'plugOptions', '_incrementalClone', '_incrementalIndex', '_decoder', '_changed', 'nonLinearDrawWps', 'targetPosition', 'lookAtPosition', 'gizmoColor']`
+  - `_incrementalClone: offset '0x58' → '0xc8'`
+  - `_incrementalIndex: offset '0x60' → '0xd0'`
+  - `_decoder: offset '0x68' → '0xd8'`
+  - `_changed: offset '0x70' → '0xe0'`
+  - `nonLinearDrawWps: offset '0x78' → '0xe8'`
+  - `targetPosition: offset '0x80' → '0xf0'`
+  - `lookAtPosition: offset '0x8c' → '0xfc'`
+  - `gizmoColor: offset '0x9c' → '0x10c'`
+  - `extra field instance PathOptions plugOptions`
+
+- `DG.Tweening.Plugins.Core.PluginsManager`
+
+  - `field declaration order/names: ['_floatPlugin', '_doublePlugin', '_intPlugin', '_uintPlugin', '_longPlugin', '_ulongPlugin', '_vector2Plugin', '_vector3Plugin', '_vector4Plugin', '_quaternionPlugin', '_colorPlugin', '_rectPlugin', '_rectOffsetPlugin', '_stringPlugin', '_vector3ArrayPlugin', '_color2Plugin', '_customPlugins'] → ['_floatPlugin', '_doublePlugin', '_intPlugin', '_uintPlugin', '_longPlugin', '_ulongPlugin', '_vector2Plugin', '_vector3Plugin', '_vector4Plugin', '_quaternionPlugin', '_colorPlugin', '_rectPlugin', '_rectOffsetPlugin', '_stringPlugin', '_vector3ArrayPlugin', '_color2Plugin', '_MaxCustomPlugins', '_customPlugins']`
+  - `extra field constant int _MaxCustomPlugins`
+
+- `DG.Tweening.Plugins.Options.PathOptions`
+
+  - `field declaration order/names: ['mode', 'orientType', 'lockPositionAxis', 'lockRotationAxis', 'isClosedPath', 'lookAtPosition', 'lookAtTransform', 'lookAhead', 'hasCustomForwardDirection', 'forward', 'useLocalPosition', 'parent', 'isRigidbody', 'stableZRotation', 'startupRot', 'startupZRot', 'addedExtraStartWp', 'addedExtraEndWp'] → ['mode', 'orientType', 'lockPositionAxis', 'lockRotationAxis', 'isClosedPath', 'lookAtPosition', 'lookAtTransform', 'lookAhead', 'hasCustomForwardDirection', 'forward', 'useLocalPosition', 'parent', 'isRigidbody', 'isRigidbody2D', 'stableZRotation', 'startupRot', 'startupZRot', 'addedExtraStartWp', 'addedExtraEndWp']`
+  - `stableZRotation: offset '0x51' → '0x52'`
+  - `extra field instance bool isRigidbody2D`
+
+- `DG.Tweening.Plugins.Options.QuaternionOptions`
+
+  - `field declaration order/names: ['rotateMode', 'axisConstraint', 'up'] → ['rotateMode', 'axisConstraint', 'up', 'dynamicLookAt', 'dynamicLookAtWorldPosition']`
+  - `extra field instance bool dynamicLookAt`
+  - `extra field instance Vector3 dynamicLookAtWorldPosition`
+
+- `DG.Tweening.Plugins.PathPlugin`
+
+  - `field declaration order/names: [] → ['MinLookAhead']`
+  - `extra field constant float MinLookAhead`
+
+- `DG.Tweening.Tween`
+
+  - `field declaration order/names: ['timeScale', 'isBackwards', 'id', 'stringId', 'intId', 'target', 'updateType', 'isIndependentUpdate', 'onPlay', 'onPause', 'onRewind', 'onUpdate', 'onStepComplete', 'onComplete', 'onKill', 'onWaypointChange', 'isFrom', 'isBlendable', 'isRecyclable', 'isSpeedBased', 'autoKill', 'duration', 'loops', 'loopType', 'delay', '<isRelative>k__BackingField', 'easeType', 'customEase', 'easeOvershootOrAmplitude', 'easePeriod', 'debugTargetId', 'typeofT1', 'typeofT2', 'typeofTPlugOptions', '<active>k__BackingField', 'isSequenced', 'sequenceParent', 'activeId', 'specialStartupMode', 'creationLocked', 'startupDone', '<playedOnce>k__BackingField', '<position>k__BackingField', 'fullDuration', 'completedLoops', 'isPlaying', 'isComplete', 'elapsedDelay', 'delayComplete', 'miscInt'] → ['timeScale', 'isBackwards', 'isInverted', 'id', 'stringId', 'intId', 'target', 'updateType', 'isIndependentUpdate', 'onPlay', 'onPause', 'onRewind', 'onUpdate', 'onStepComplete', 'onComplete', 'onKill', 'onWaypointChange', 'isFrom', 'isBlendable', 'isRecyclable', 'isSpeedBased', 'autoKill', 'duration', 'loops', 'loopType', 'delay', '<isRelative>k__BackingField', 'easeType', 'customEase', 'easeOvershootOrAmplitude', 'easePeriod', 'debugTargetId', 'typeofT1', 'typeofT2', 'typeofTPlugOptions', '<active>k__BackingField', 'isSequenced', 'sequenceParent', 'activeId', 'specialStartupMode', 'creationLocked', 'startupDone', '<playedOnce>k__BackingField', '<position>k__BackingField', 'fullDuration', 'completedLoops', 'isPlaying', 'isComplete', 'elapsedDelay', 'delayComplete', 'miscInt']`
+  - `extra field instance bool isInverted`
+
+- `DOTweenSettings.ModulesSetup`
+
+  - `field declaration order/names: ['showPanel', 'audioEnabled', 'physicsEnabled', 'physics2DEnabled', 'spriteEnabled', 'uiEnabled', 'textMeshProEnabled', 'tk2DEnabled', 'deAudioEnabled', 'deUnityExtendedEnabled'] → ['showPanel', 'audioEnabled', 'physicsEnabled', 'physics2DEnabled', 'spriteEnabled', 'uiEnabled', 'textMeshProEnabled', 'tk2DEnabled', 'deAudioEnabled', 'deUnityExtendedEnabled', 'epoOutlineEnabled']`
+  - `extra field instance bool epoOutlineEnabled`
+
+- `DOTweenSettings.SafeModeOptions`
+
+  - `field declaration order/names: ['nestedTweenFailureBehaviour'] → ['logBehaviour', 'nestedTweenFailureBehaviour']`
+  - `nestedTweenFailureBehaviour: offset '0x10' → '0x14'`
+  - `extra field instance SafeModeLogBehaviour logBehaviour`
+
+- `ShortcutExtensions.<>c__DisplayClass61_0` (compiler-generated name)
+
+  - `field declaration order/names: ['target'] → ['target', 'startPosY', 'offsetYSet', 'offsetY', 's', 'endValue', 'yTween']`
+  - `extra field instance float startPosY`
+  - `extra field instance bool offsetYSet`
+  - `extra field instance float offsetY`
+  - `extra field instance Sequence s`
+  - `extra field instance Vector3 endValue`
+  - `extra field instance Tween yTween`
+
+- `ShortcutExtensions.<>c__DisplayClass62_0` (compiler-generated name)
+
+  - `field declaration order/names: ['target'] → ['target', 'startPosY', 'offsetYSet', 'offsetY', 's', 'endValue', 'yTween']`
+  - `extra field instance float startPosY`
+  - `extra field instance bool offsetYSet`
+  - `extra field instance float offsetY`
+  - `extra field instance Sequence s`
+  - `extra field instance Vector3 endValue`
+  - `extra field instance Tween yTween`
 
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Missing: 2</summary>
 
-- `<QAReconstructionImplementationDetails>` (compiler-generated name)
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=4751`
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=5484`
+- `DG.Tweening.Core.Utils`
+- `ShortcutExtensions.<>c__DisplayClass50_0` (compiler-generated name)
+
+</details>
+
+<details><summary>Extra: 66</summary>
+
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=2987`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4144`
+- `DG.Tweening.Core.DOTweenUtils`
+- `DG.Tweening.Core.Enums.SafeModeLogBehaviour`
+- `DG.Tweening.DOCurve`
+- `DG.Tweening.EaseFactory`
+- `DG.Tweening.Plugins.CircleOptions`
+- `DG.Tweening.Plugins.CirclePlugin`
+- `DG.Tweening.Plugins.Core.IPlugSetter<T1, T2, TPlugin, TPlugOptions>`
+- `DG.Tweening.Plugins.Core.ITPlugin<T1, T2, TPlugOptions, TPlugin>`
+- `DG.Tweening.TweenParams`
+- `DOCurve.CubicBezier`
+- `DOTween.<>c__DisplayClass66_0` (compiler-generated name)
+- `DOVirtual.<>c__DisplayClass1_0` (compiler-generated name)
+- `DOVirtual.<>c__DisplayClass2_0` (compiler-generated name)
+- `DOVirtual.<>c__DisplayClass3_0` (compiler-generated name)
+- `Debugger.Sequence`
+- `EaseFactory.<>c__DisplayClass2_0` (compiler-generated name)
+- `EaseManager.<>c` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass10_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass11_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass14_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass15_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass17_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass18_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass20_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass21_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass22_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass23_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass24_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass25_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass26_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass27_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass28_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass29_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass2_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass30_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass31_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass35_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass39_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass41_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass43_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass48_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass4_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass53_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass55_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass57_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass59_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass60_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass65_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass66_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass67_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass68_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass69_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass70_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass71_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass72_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass73_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass74_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass75_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass76_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass77_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass8_0` (compiler-generated name)
+- `ShortcutExtensions.<>c__DisplayClass9_0` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
 
@@ -2464,7 +3069,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UniRx.dll
 
-<details><summary>Matching: 154</summary>
+<details><summary>Matching: 148</summary>
 
 - `<Module>`
 - `AsObservableObservable.AsObservable<T>`
@@ -2482,7 +3087,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `MainThreadDispatcher.<RunFixedUpdateMicroCoroutine>d__32` (compiler-generated name)
 - `MainThreadDispatcher.<RunUpdateMicroCoroutine>d__31` (compiler-generated name)
 - `MainThreadDispatcher.CullingMode`
-- `Observable.<>c` (compiler-generated name)
 - `Observable.<>c__DisplayClass318_0` (compiler-generated name)
 - `Observable.<>c__DisplayClass319_0` (compiler-generated name)
 - `Observable.<EveryCycleCore>d__311` (compiler-generated name)
@@ -2498,9 +3102,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Scheduler.<>c__DisplayClass12_0` (compiler-generated name)
 - `Scheduler.<>c__DisplayClass12_1` (compiler-generated name)
 - `Scheduler.CurrentThreadScheduler.Trampoline`
-- `Scheduler.DefaultSchedulers`
 - `Scheduler.ImmediateScheduler`
-- `Scheduler.MainThreadScheduler`
 - `Scheduler.MainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
 - `Scheduler.MainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
 - `Scheduler.ThreadPoolScheduler`
@@ -2535,7 +3137,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UniRx.IReadOnlyReactiveProperty<T>`
 - `UniRx.IScheduler`
 - `UniRx.ISchedulerPeriodic`
-- `UniRx.ISubject<T>`
 - `UniRx.IntReactiveProperty`
 - `UniRx.InternalUtil.AsyncLock`
 - `UniRx.InternalUtil.ExceptionExtensions`
@@ -2559,7 +3160,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UniRx.Operators.TimerObservable`
 - `UniRx.OptimizedObservableExtensions`
 - `UniRx.ReactivePropertyExtensions`
-- `UniRx.Scheduler`
 - `UniRx.SerialDisposable`
 - `UniRx.SingleAssignmentDisposable`
 - `UniRx.StableCompositeDisposable`
@@ -2619,11 +3219,82 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEqualityComparer.Vector3EqualityComparer`
 - `UnityEqualityComparer.Vector3IntEqualityComparer`
 - `UnityEqualityComparer.Vector4EqualityComparer`
-- `UnityUIComponentExtensions.<>c` (compiler-generated name)
 
 </details>
 
-<details><summary>Indeterminate: 145</summary>
+<details><summary>Mismatching: 11</summary>
+
+- `Observable.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__308_0'] → ['<>9', '<>9__308_0', '<>9__309_0', '<>9__310_0', '<>9__312_0', '<>9__313_0', '<>9__314_0', '<>9__315_0']`
+  - `extra field static Func<IObserver<long>, CancellationToken, IEnumerator> <>9__309_0`
+  - `extra field static Func<IObserver<long>, CancellationToken, IEnumerator> <>9__310_0`
+  - `extra field static Func<long, Unit, long> <>9__312_0`
+  - `extra field static Func<long, Unit, long> <>9__313_0`
+  - `extra field static Func<IObserver<long>, CancellationToken, IEnumerator> <>9__314_0`
+  - `extra field static Func<IObserver<Unit>, CancellationToken, IEnumerator> <>9__315_0`
+
+- `Scheduler.DefaultSchedulers`
+
+  - `field declaration order/names: ['constantTime', 'tailRecursion', 'iteration', 'timeBasedOperations'] → ['constantTime', 'tailRecursion', 'iteration', 'timeBasedOperations', 'asyncConversions']`
+  - `extra field static IScheduler asyncConversions`
+
+- `Scheduler.MainThreadScheduler`
+
+  - `bases: 'IScheduler, ISchedulerPeriodic' → 'IScheduler, ISchedulerPeriodic, ISchedulerQueueing'`
+
+- `UniRx.BehaviorSubject<T>`
+
+  - `bases: 'ISubject<T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>' → 'ISubject<T>, ISubject<T, T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.ISubject<T>`
+
+  - `bases: 'IObserver<T>, IObservable<T>' → 'ISubject<T, T>, IObserver<T>, IObservable<T>'`
+
+- `UniRx.ReactiveCollection<T>`
+
+  - `bases: 'Collection<T>, IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnlyReactiveCollection<T>, IDisposable' → 'Collection<T>, IReactiveCollection<T>, IList<T>, ICollection<T>, IEnumerable<T>, IEnumerable, IReadOnlyReactiveCollection<T>, IDisposable'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.ReactiveDictionary<TKey, TValue>`
+
+  - `bases: 'IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IDictionary, ICollection, IDisposable, ISerializable, IDeserializationCallback' → 'IReactiveDictionary<TKey, TValue>, IReadOnlyReactiveDictionary<TKey, TValue>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable, IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IDictionary, ICollection, IDisposable, ISerializable, IDeserializationCallback'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.ReplaySubject<T>`
+
+  - `bases: 'ISubject<T>, IObserver<T>, IObservable<T>, IOptimizedObservable<T>, IDisposable' → 'ISubject<T>, ISubject<T, T>, IObserver<T>, IObservable<T>, IOptimizedObservable<T>, IDisposable'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UniRx.Scheduler`
+
+  - `field declaration order/names: ['CurrentThread', 'Immediate', 'ThreadPool', 'mainThread'] → ['CurrentThread', 'Immediate', 'ThreadPool', 'mainThread', 'mainThreadIgnoreTimeScale', 'mainThreadFixedUpdate', 'mainThreadEndOfFrame']`
+  - `extra field static IScheduler mainThreadIgnoreTimeScale`
+  - `extra field static IScheduler mainThreadFixedUpdate`
+  - `extra field static IScheduler mainThreadEndOfFrame`
+
+- `UniRx.Subject<T>`
+
+  - `bases: 'ISubject<T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>' → 'ISubject<T>, ISubject<T, T>, IObserver<T>, IObservable<T>, IDisposable, IOptimizedObservable<T>'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `UnityUIComponentExtensions.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__7_0'] → ['<>9', '<>9__0_0', '<>9__3_0', '<>9__5_0', '<>9__6_0', '<>9__7_0', '<>9__8_0', '<>9__10_0', '<>9__11_0']`
+  - `<>9__7_0: offset '0x8' → '0x28'`
+  - `extra field static Action<string, Text> <>9__0_0`
+  - `extra field static Action<bool, Selectable> <>9__3_0`
+  - `extra field static Func<Toggle, IObserver<bool>, IDisposable> <>9__5_0`
+  - `extra field static Func<Scrollbar, IObserver<float>, IDisposable> <>9__6_0`
+  - `extra field static Func<Slider, IObserver<float>, IDisposable> <>9__8_0`
+  - `extra field static Func<InputField, IObserver<string>, IDisposable> <>9__10_0`
+  - `extra field static Func<Dropdown, IObserver<int>, IDisposable> <>9__11_0`
+
+
+</details>
+
+<details><summary>Indeterminate: 140</summary>
 
 - `BehaviorSubject.Subscription<T>`
 
@@ -2894,10 +3565,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `UniRx.BehaviorSubject<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `UniRx.CollectionAddEvent<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -3130,14 +3797,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `UniRx.ReactiveCollection<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `UniRx.ReactiveDictionary<TKey, TValue>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `UniRx.ReactiveProperty<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -3146,19 +3805,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `UniRx.ReplaySubject<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `UniRx.ScheduledNotifier<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `UniRx.Stubs<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `UniRx.Subject<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -3209,13 +3860,508 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 500</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=10429`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=13528`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=14237`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=26188`
+- `AggregateObservable.Aggregate<TSource, TAccumulate, TResult>`
+- `AggregateObservable.Aggregate<TSource, TAccumulate>`
+- `AggregateObservable.Aggregate<TSource>`
+- `AmbObservable.AmbOuterObserver.Amb<T>`
+- `AmbObservable.AmbOuterObserver.AmbDecisionObserver<T>`
+- `AmbObservable.AmbOuterObserver.AmbState<T>`
+- `AmbObservable.AmbOuterObserver<T>`
+- `AsSingleUnitObservableObservable.AsSingleUnitObservable<T>`
+- `AsyncMessageBroker.Subscription<T>`
+- `AsyncObjectPool.<>c__DisplayClass13_0<T>` (compiler-generated name)
+- `AsyncObjectPool.<>c__DisplayClass15_0<T>` (compiler-generated name)
+- `AsyncObjectPool.<PreloadCore>d__16<T>` (compiler-generated name)
+- `AsyncOperationExtensions.<>c__DisplayClass0_0` (compiler-generated name)
+- `AsyncOperationExtensions.<>c__DisplayClass1_0<T>` (compiler-generated name)
+- `AsyncOperationExtensions.<AsObservableCore>d__2<T>` (compiler-generated name)
+- `AsyncReactiveCommand.<>c<T>` (compiler-generated name)
+- `AsyncReactiveCommand.Subscription<T>`
+- `AsyncReactiveCommandExtensions.<>c` (compiler-generated name)
+- `AsyncReactiveCommandExtensions.<>c__DisplayClass4_0<T>` (compiler-generated name)
+- `AsyncSubject.<>c__DisplayClass25_0<T>` (compiler-generated name)
+- `AsyncSubject.AwaitObserver.<>c<T>` (compiler-generated name)
+- `AsyncSubject.AwaitObserver<T>`
+- `AsyncSubject.Subscription<T>`
+- `BatchFrameObservable.BatchFrame`
+- `BatchFrameObservable.BatchFrame.ReusableEnumerator`
+- `BatchFrameObservable.BatchFrame.ReusableEnumerator<T>`
+- `BatchFrameObservable.BatchFrame<T>`
+- `BufferObservable.Buffer.Buffer_<TSource, TWindowBoundary>`
+- `BufferObservable.Buffer<TSource, TWindowBoundary>`
+- `CastObservable.Cast<TSource, TResult>`
+- `CatchObservable.Catch<T, TException>`
+- `CatchObservable.Catch<T>`
+- `CombineLatestObservable.CombineLatest<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `CombineLatestObservable.CombineLatest<T1, T2, T3, T4, T5, T6, TR>`
+- `ConcatObservable.<CombineSources>d__3<T>` (compiler-generated name)
+- `ContinueWithObservable.ContinueWith<TSource, TResult>`
+- `CoroutineAsyncBridge.<Run>d__7<T>` (compiler-generated name)
+- `CoroutineAsyncBridge.<Run>d__8<T>` (compiler-generated name)
+- `CountNotifier.<>c__DisplayClass10_0` (compiler-generated name)
+- `CreateObservable.Create<T>`
+- `CreateSafeObservable.CreateSafe<T>`
+- `DefaultIfEmptyObservable.DefaultIfEmpty<T>`
+- `DeferObservable.Defer<T>`
+- `DelayFrameSubscriptionObservable.<>c<T>` (compiler-generated name)
+- `DelayObservable.Delay<T>`
+- `DelaySubscriptionObservable.<>c__DisplayClass6_0<T>` (compiler-generated name)
+- `DelaySubscriptionObservable.<>c__DisplayClass6_1<T>` (compiler-generated name)
+- `DelaySubscriptionObservable.<>c__DisplayClass6_2<T>` (compiler-generated name)
+- `DematerializeObservable.Dematerialize<T>`
+- `Disposable.AnonymousDisposable<T>`
+- `DistinctObservable.Distinct<T, TKey>`
+- `DistinctObservable.Distinct<T>`
+- `DoObserverObservable.Do<T>`
+- `DoOnCancelObservable.DoOnCancel<T>`
+- `DoOnCompletedObservable.DoOnCompleted<T>`
+- `DoOnErrorObservable.DoOnError<T>`
+- `DoOnSubscribeObservable.DoOnSubscribe<T>`
+- `DoOnTerminateObservable.DoOnTerminate<T>`
+- `FinallyObservable.Finally<T>`
+- `ForEachAsyncObservable.ForEachAsync<T>`
+- `ForEachAsyncObservable.ForEachAsync_<T>`
+- `FrameIntervalObservable.FrameInterval<T>`
+- `FrameTimeIntervalObservable.FrameTimeInterval<T>`
+- `FromCoroutineObservable.FromCoroutine<T>`
+- `FromEventPatternObservable.FromEventPattern<TDelegate, TEventArgs>`
+- `GroupByObservable.GroupBy<TSource, TKey, TElement>`
+- `IgnoreElementsObservable.IgnoreElements<T>`
+- `LastObservable.Last<T>`
+- `LastObservable.Last_<T>`
+- `MaterializeObservable.Materialize<T>`
+- `Notification.<>c__DisplayClass21_0<T>` (compiler-generated name)
+- `Notification.<>c__DisplayClass21_1<T>` (compiler-generated name)
+- `Notification.OnCompletedNotification<T>`
+- `Notification.OnErrorNotification<T>`
+- `Notification.OnNextNotification<T>`
+- `ObjectPool.<>c__DisplayClass14_0<T>` (compiler-generated name)
+- `ObjectPool.<>c__DisplayClass15_0<T>` (compiler-generated name)
+- `ObjectPool.<PreloadCore>d__16<T>` (compiler-generated name)
+- `Observable.<>c__342<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass0_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass13_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass142_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass142_1<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass144_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass144_1` (compiler-generated name)
+- `Observable.<>c__DisplayClass149_0<TSource, TException>` (compiler-generated name)
+- `Observable.<>c__DisplayClass157_0<TSource, TException>` (compiler-generated name)
+- `Observable.<>c__DisplayClass157_1<TSource, TException>` (compiler-generated name)
+- `Observable.<>c__DisplayClass163_0<TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass163_1<TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass164_0<T1, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass164_1<T1, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass165_0<T1, T2, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass165_1<T1, T2, TResult>` (compiler-generated name)
+- `Observable.<>c__DisplayClass166_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass167_0<T1>` (compiler-generated name)
+- `Observable.<>c__DisplayClass168_0<T1, T2>` (compiler-generated name)
+- `Observable.<>c__DisplayClass246_0<T, TR>` (compiler-generated name)
+- `Observable.<>c__DisplayClass248_0<T, TR>` (compiler-generated name)
+- `Observable.<>c__DisplayClass287_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass288_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass289_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass290_0` (compiler-generated name)
+- `Observable.<>c__DisplayClass292_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass293_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass295_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass296_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass300_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass301_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass302_0<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass302_1<T>` (compiler-generated name)
+- `Observable.<>c__DisplayClass303_0` (compiler-generated name)
+- `Observable.<NextFrameCore>d__316` (compiler-generated name)
+- `Observable.<RepeatInfinite>d__130<T>` (compiler-generated name)
+- `Observable.<ToAwaitableEnumerator>d__336<T>` (compiler-generated name)
+- `Observable.<WrapEnumerator>d__291` (compiler-generated name)
+- `Observable.<WrapEnumeratorYieldValue>d__294<T>` (compiler-generated name)
+- `Observable.<WrapToCancellableEnumerator>d__297<T>` (compiler-generated name)
+- `Observable.EveryAfterUpdateInvoker`
+- `ObservableWWW.<>c__DisplayClass0_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass10_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass11_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass12_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass13_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass14_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass15_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass16_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass17_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass18_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass1_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass2_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass3_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass4_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass5_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass6_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass7_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass8_0` (compiler-generated name)
+- `ObservableWWW.<>c__DisplayClass9_0` (compiler-generated name)
+- `ObservableWWW.<Fetch>d__20` (compiler-generated name)
+- `ObservableWWW.<FetchAssetBundle>d__23` (compiler-generated name)
+- `ObservableWWW.<FetchBytes>d__22` (compiler-generated name)
+- `ObservableWWW.<FetchText>d__21` (compiler-generated name)
+- `ObservableYieldInstruction.ToYieldInstruction<T>`
+- `ObserveOnObservable.ObserveOn.<>c__DisplayClass10_0<T>` (compiler-generated name)
+- `ObserveOnObservable.ObserveOn.SchedulableAction<T>`
+- `ObserveOnObservable.ObserveOn<T>`
+- `ObserveOnObservable.ObserveOn_<T>`
+- `Observer.AnonymousObserver<T>`
+- `Observer.AutoDetachObserver<T>`
+- `Observer.EmptyOnNextAnonymousObserver<T>`
+- `Observer.Subscribe<T, TState1, TState2, TState3>`
+- `Observer.Subscribe<T, TState1, TState2>`
+- `Observer.Subscribe<T, TState>`
+- `PairwiseObservable.Pairwise<T, TR>`
+- `RangeObservable.<>c__DisplayClass4_0` (compiler-generated name)
+- `RangeObservable.Range`
+- `ReactiveCommand.<>c<T>` (compiler-generated name)
+- `ReactiveCommandExtensions.<>c` (compiler-generated name)
+- `ReactiveCommandExtensions.<>c__DisplayClass4_0<T>` (compiler-generated name)
+- `ReactivePropertyExtensions.<>c` (compiler-generated name)
+- `ReactivePropertyExtensions.<>c__DisplayClass5_0<T>` (compiler-generated name)
+- `ReactivePropertyExtensions.<>c__DisplayClass5_1<T>` (compiler-generated name)
+- `RefCountDisposable.InnerDisposable`
+- `RepeatObservable.<>c__DisplayClass4_0<T>` (compiler-generated name)
+- `RepeatObservable.<>c__DisplayClass4_1<T>` (compiler-generated name)
+- `RepeatObservable.Repeat<T>`
+- `RepeatSafeObservable.RepeatSafe<T>`
+- `RepeatUntilObservable.RepeatUntil.<SubscribeAfterEndOfFrame>d__13<T>` (compiler-generated name)
+- `RepeatUntilObservable.RepeatUntil<T>`
+- `SampleFrameObservable.SampleFrame.SampleFrameTick<T>`
+- `SampleFrameObservable.SampleFrame<T>`
+- `SampleObservable.Sample.SampleTick<T, T2>`
+- `SampleObservable.Sample<T, T2>`
+- `SampleObservable.Sample<T>`
+- `ScanObservable.Scan<TSource, TAccumulate>`
+- `ScanObservable.Scan<TSource>`
+- `ScheduledNotifier.<>c__DisplayClass5_0<T>` (compiler-generated name)
+- `ScheduledNotifier.<>c__DisplayClass6_0<T>` (compiler-generated name)
+- `Scheduler.<>c__DisplayClass13_0` (compiler-generated name)
+- `Scheduler.<>c__DisplayClass13_1` (compiler-generated name)
+- `Scheduler.EndOfFrameMainThreadScheduler`
+- `Scheduler.EndOfFrameMainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
+- `Scheduler.EndOfFrameMainThreadScheduler.<ImmediateAction>d__1<T>` (compiler-generated name)
+- `Scheduler.EndOfFrameMainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
+- `Scheduler.FixedUpdateMainThreadScheduler`
+- `Scheduler.FixedUpdateMainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
+- `Scheduler.FixedUpdateMainThreadScheduler.<ImmediateAction>d__1<T>` (compiler-generated name)
+- `Scheduler.FixedUpdateMainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler`
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler.<DelayAction>d__2` (compiler-generated name)
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler.<PeriodicAction>d__3` (compiler-generated name)
+- `Scheduler.IgnoreTimeScaleMainThreadScheduler.QueuedAction<T>`
+- `Scheduler.MainThreadScheduler.QueuedAction<T>`
+- `Scheduler.ThreadPoolScheduler.<>c__DisplayClass7_0<T>` (compiler-generated name)
+- `SelectManyObservable.SelectManyEnumerableObserver<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyEnumerableObserver<TSource, TResult>`
+- `SelectManyObservable.SelectManyEnumerableObserverWithIndex<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyEnumerableObserverWithIndex<TSource, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex.SelectMany<TSource, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex.SelectManyObserver<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyObserverWithIndex<TSource, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver.SelectMany<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver.SelectMany<TSource, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver<TSource, TCollection, TResult>`
+- `SelectManyObservable.SelectManyOuterObserver<TSource, TResult>`
+- `SingleObservable.Single<T>`
+- `SingleObservable.Single_<T>`
+- `SkipUntilObservable.SkipUntilOuterObserver.SkipUntil<T, TOther>`
+- `SkipUntilObservable.SkipUntilOuterObserver.SkipUntilOther<T, TOther>`
+- `SkipUntilObservable.SkipUntilOuterObserver<T, TOther>`
+- `SkipWhileObservable.SkipWhile<T>`
+- `SkipWhileObservable.SkipWhile_<T>`
+- `StartObservable.StartObserver<T>`
+- `Stubs.<>c<T1, T2, T3>` (compiler-generated name)
+- `Stubs.<>c<T1, T2>` (compiler-generated name)
+- `SubjectExtensions.AnonymousSubject<T, U>`
+- `SubjectExtensions.AnonymousSubject<T>`
+- `SubscribeOnMainThreadObservable.<>c<T>` (compiler-generated name)
+- `SubscribeOnObservable.<>c__DisplayClass3_0<T>` (compiler-generated name)
+- `SynchronizeObservable.Synchronize<T>`
+- `TakeLastObservable.TakeLast<T>`
+- `TakeLastObservable.TakeLast_<T>`
+- `TakeObservable.Take<T>`
+- `TakeObservable.Take_<T>`
+- `TakeUntilObservable.TakeUntil.TakeUntilOther<T, TOther>`
+- `TakeUntilObservable.TakeUntil<T, TOther>`
+- `TakeWhileObservable.TakeWhile<T>`
+- `TakeWhileObservable.TakeWhile_<T>`
+- `TaskObservableExtensions.<>c__DisplayClass15_0<TResult>` (compiler-generated name)
+- `TaskObservableExtensions.<>c__DisplayClass3_0` (compiler-generated name)
+- `TaskObservableExtensions.<>c__DisplayClass8_0<TResult>` (compiler-generated name)
+- `ThrottleFirstFrameObservable.ThrottleFirstFrame.ThrottleFirstFrameTick<T>`
+- `ThrottleFirstFrameObservable.ThrottleFirstFrame<T>`
+- `ThrottleFirstObservable.ThrottleFirst<T>`
+- `ThrowObservable.<>c__DisplayClass3_0<T>` (compiler-generated name)
+- `ThrowObservable.Throw<T>`
+- `TimeIntervalObservable.TimeInterval<T>`
+- `TimeoutFrameObservable.TimeoutFrame.TimeoutFrameTick<T>`
+- `TimeoutFrameObservable.TimeoutFrame<T>`
+- `TimeoutObservable.Timeout.<>c__DisplayClass8_0<T>` (compiler-generated name)
+- `TimeoutObservable.Timeout<T>`
+- `TimeoutObservable.Timeout_<T>`
+- `TimestampObservable.Timestamp<T>`
+- `ToArrayObservable.ToArray<TSource>`
+- `ToListObservable.ToList<TSource>`
+- `UniRx.AnimationCurveReactiveProperty`
+- `UniRx.AsyncMessageBroker`
+- `UniRx.AsyncOperationExtensions`
+- `UniRx.AsyncReactiveCommand`
+- `UniRx.AsyncReactiveCommand<T>`
+- `UniRx.AsyncReactiveCommandExtensions`
+- `UniRx.AsyncSubject<T>`
+- `UniRx.BooleanNotifier`
+- `UniRx.BoundsReactiveProperty`
+- `UniRx.ByteReactiveProperty`
+- `UniRx.ColorReactiveProperty`
+- `UniRx.CoroutineAsyncBridge`
+- `UniRx.CoroutineAsyncBridge<T>`
+- `UniRx.CoroutineAsyncExtensions`
+- `UniRx.CountChangedStatus`
+- `UniRx.CountNotifier`
+- `UniRx.Diagnostics.LogEntry`
+- `UniRx.Diagnostics.LogEntryExtensions`
+- `UniRx.Diagnostics.Logger`
+- `UniRx.Diagnostics.ObservableDebugExtensions`
+- `UniRx.Diagnostics.ObservableLogger`
+- `UniRx.Diagnostics.UnityDebugSink`
+- `UniRx.DictionaryDisposable<TKey, TValue>`
+- `UniRx.DoubleReactiveProperty`
+- `UniRx.EventPattern<TEventArgs>`
+- `UniRx.EventPattern<TSender, TEventArgs>`
+- `UniRx.FrameCountTypeExtensions`
+- `UniRx.FrameInterval<T>`
+- `UniRx.IAsyncMessageBroker`
+- `UniRx.IAsyncMessagePublisher`
+- `UniRx.IAsyncMessageReceiver`
+- `UniRx.IAsyncReactiveCommand<T>`
+- `UniRx.ICustomYieldInstructionErrorHandler`
+- `UniRx.IEventPattern<TSender, TEventArgs>`
+- `UniRx.IGroupedObservable<TKey, TElement>`
+- `UniRx.IMessageBroker`
+- `UniRx.IMessagePublisher`
+- `UniRx.IMessageReceiver`
+- `UniRx.IObserver<TValue, TResult>`
+- `UniRx.IReactiveCollection<T>`
+- `UniRx.IReactiveCommand<T>`
+- `UniRx.IReactiveDictionary<TKey, TValue>`
+- `UniRx.IReadOnlyReactiveDictionary<TKey, TValue>`
+- `UniRx.ISchedulerLongRunning`
+- `UniRx.ISchedulerQueueing`
+- `UniRx.ISubject<TSource, TResult>`
+- `UniRx.InspectorDisplayAttribute`
+- `UniRx.InternalUtil.CancellableTaskCompletionSource<T>`
+- `UniRx.InternalUtil.PromiseHelper`
+- `UniRx.LongReactiveProperty`
+- `UniRx.MainThreadDispatchType`
+- `UniRx.MessageBroker`
+- `UniRx.MultilineReactivePropertyAttribute`
+- `UniRx.MultipleAssignmentDisposable`
+- `UniRx.Notification`
+- `UniRx.Notification<T>`
+- `UniRx.NotificationKind`
+- `UniRx.ObservableWWW`
+- `UniRx.ObservableYieldInstruction<T>`
+- `UniRx.ObserverExtensions`
+- `UniRx.Operators.AggregateObservable<TSource, TAccumulate, TResult>`
+- `UniRx.Operators.AggregateObservable<TSource, TAccumulate>`
+- `UniRx.Operators.AggregateObservable<TSource>`
+- `UniRx.Operators.AmbObservable<T>`
+- `UniRx.Operators.AsSingleUnitObservableObservable<T>`
+- `UniRx.Operators.BatchFrameObservable`
+- `UniRx.Operators.BatchFrameObservable<T>`
+- `UniRx.Operators.BufferObservable<TSource, TWindowBoundary>`
+- `UniRx.Operators.CastObservable<TSource, TResult>`
+- `UniRx.Operators.CatchObservable<T, TException>`
+- `UniRx.Operators.CatchObservable<T>`
+- `UniRx.Operators.CombineLatestFunc<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.CombineLatestFunc<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.CombineLatestObservable<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.CombineLatestObservable<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ContinueWithObservable<TSource, TResult>`
+- `UniRx.Operators.CreateObservable<T>`
+- `UniRx.Operators.CreateSafeObservable<T>`
+- `UniRx.Operators.DefaultIfEmptyObservable<T>`
+- `UniRx.Operators.DeferObservable<T>`
+- `UniRx.Operators.DelayFrameSubscriptionObservable<T>`
+- `UniRx.Operators.DelayObservable<T>`
+- `UniRx.Operators.DelaySubscriptionObservable<T>`
+- `UniRx.Operators.DematerializeObservable<T>`
+- `UniRx.Operators.DistinctObservable<T, TKey>`
+- `UniRx.Operators.DistinctObservable<T>`
+- `UniRx.Operators.DoObserverObservable<T>`
+- `UniRx.Operators.DoOnCancelObservable<T>`
+- `UniRx.Operators.DoOnCompletedObservable<T>`
+- `UniRx.Operators.DoOnErrorObservable<T>`
+- `UniRx.Operators.DoOnSubscribeObservable<T>`
+- `UniRx.Operators.DoOnTerminateObservable<T>`
+- `UniRx.Operators.FinallyObservable<T>`
+- `UniRx.Operators.ForEachAsyncObservable<T>`
+- `UniRx.Operators.FrameIntervalObservable<T>`
+- `UniRx.Operators.FrameTimeIntervalObservable<T>`
+- `UniRx.Operators.FromCoroutineObservable<T>`
+- `UniRx.Operators.FromEventPatternObservable<TDelegate, TEventArgs>`
+- `UniRx.Operators.GroupByObservable<TSource, TKey, TElement>`
+- `UniRx.Operators.GroupedObservable<TKey, TElement>`
+- `UniRx.Operators.IZipLatestObservable`
+- `UniRx.Operators.IZipObservable`
+- `UniRx.Operators.IgnoreElementsObservable<T>`
+- `UniRx.Operators.ImmutableNeverObservable<T>`
+- `UniRx.Operators.ImmutableReturnFalseObservable`
+- `UniRx.Operators.ImmutableReturnInt32Observable`
+- `UniRx.Operators.ImmutableReturnTrueObservable`
+- `UniRx.Operators.LastObservable<T>`
+- `UniRx.Operators.MaterializeObservable<T>`
+- `UniRx.Operators.NeverObservable<T>`
+- `UniRx.Operators.NthZipLatestObserverBase<T>`
+- `UniRx.Operators.NthZipObserverBase<T>`
+- `UniRx.Operators.ObserveOnObservable<T>`
+- `UniRx.Operators.PairwiseObservable<T, TR>`
+- `UniRx.Operators.RangeObservable`
+- `UniRx.Operators.RepeatObservable<T>`
+- `UniRx.Operators.RepeatSafeObservable<T>`
+- `UniRx.Operators.RepeatUntilObservable<T>`
+- `UniRx.Operators.SampleFrameObservable<T>`
+- `UniRx.Operators.SampleObservable<T, T2>`
+- `UniRx.Operators.SampleObservable<T>`
+- `UniRx.Operators.ScanObservable<TSource, TAccumulate>`
+- `UniRx.Operators.ScanObservable<TSource>`
+- `UniRx.Operators.SelectManyObservable<TSource, TCollection, TResult>`
+- `UniRx.Operators.SelectManyObservable<TSource, TResult>`
+- `UniRx.Operators.SingleObservable<T>`
+- `UniRx.Operators.SkipUntilObservable<T, TOther>`
+- `UniRx.Operators.SkipWhileObservable<T>`
+- `UniRx.Operators.StartObservable<T>`
+- `UniRx.Operators.SubscribeOnMainThreadObservable<T>`
+- `UniRx.Operators.SubscribeOnObservable<T>`
+- `UniRx.Operators.SynchronizeObservable<T>`
+- `UniRx.Operators.SynchronizedObserver<T>`
+- `UniRx.Operators.TakeLastObservable<T>`
+- `UniRx.Operators.TakeObservable<T>`
+- `UniRx.Operators.TakeUntilObservable<T, TOther>`
+- `UniRx.Operators.TakeWhileObservable<T>`
+- `UniRx.Operators.ThrottleFirstFrameObservable<T>`
+- `UniRx.Operators.ThrottleFirstObservable<T>`
+- `UniRx.Operators.ThrowObservable<T>`
+- `UniRx.Operators.TimeIntervalObservable<T>`
+- `UniRx.Operators.TimeoutFrameObservable<T>`
+- `UniRx.Operators.TimeoutObservable<T>`
+- `UniRx.Operators.TimestampObservable<T>`
+- `UniRx.Operators.ToArrayObservable<TSource>`
+- `UniRx.Operators.ToListObservable<TSource>`
+- `UniRx.Operators.Wait<T>`
+- `UniRx.Operators.WhenAllObservable`
+- `UniRx.Operators.WhenAllObservable<T>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipFunc<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipLatestFunc<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipLatestObservable<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipLatestObservable<T>`
+- `UniRx.Operators.ZipLatestObservable<TLeft, TRight, TResult>`
+- `UniRx.Operators.ZipLatestObserver<T>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, T5, T6, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, T5, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, T4, TR>`
+- `UniRx.Operators.ZipObservable<T1, T2, T3, TR>`
+- `UniRx.Operators.ZipObservable<T>`
+- `UniRx.Operators.ZipObservable<TLeft, TRight, TResult>`
+- `UniRx.Operators.ZipObserver<T>`
+- `UniRx.QuaternionReactiveProperty`
+- `UniRx.RangeReactivePropertyAttribute`
+- `UniRx.ReactiveCollectionExtensions`
+- `UniRx.ReactiveCommand`
+- `UniRx.ReactiveCommand<T>`
+- `UniRx.ReactiveCommandExtensions`
+- `UniRx.ReactiveDictionaryExtensions`
+- `UniRx.RectReactiveProperty`
+- `UniRx.RefCountDisposable`
+- `UniRx.ScheduledDisposable`
+- `UniRx.Stubs<T1, T2, T3>`
+- `UniRx.Stubs<T1, T2>`
+- `UniRx.SubjectExtensions`
+- `UniRx.TaskObservableExtensions`
+- `UniRx.Timestamped`
+- `UniRx.Timestamped<T>`
+- `UniRx.Toolkit.AsyncObjectPool<T>`
+- `UniRx.Toolkit.ObjectPool<T>`
+- `UniRx.UnityGraphicExtensions`
+- `UniRx.Vector2ReactiveProperty`
+- `UniRx.Vector3ReactiveProperty`
+- `UniRx.Vector4ReactiveProperty`
+- `UniRx.WWWErrorException`
+- `UniRx.WebRequestExtensions`
+- `UnityEventExtensions.<>c` (compiler-generated name)
+- `UnityEventExtensions.<>c__2<T0, T1>` (compiler-generated name)
+- `UnityEventExtensions.<>c__3<T0, T1, T2>` (compiler-generated name)
+- `UnityEventExtensions.<>c__4<T0, T1, T2, T3>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass0_0` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass2_0<T0, T1>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass2_1<T0, T1>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass3_0<T0, T1, T2>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass3_1<T0, T1, T2>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass4_0<T0, T1, T2, T3>` (compiler-generated name)
+- `UnityEventExtensions.<>c__DisplayClass4_1<T0, T1, T2, T3>` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass0_0` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass0_1` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass1_0` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass1_1` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass2_0` (compiler-generated name)
+- `UnityGraphicExtensions.<>c__DisplayClass2_1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `UnityUIComponentExtensions.<>c__1<T>` (compiler-generated name)
+- `UnityUIComponentExtensions.<>c__2<T>` (compiler-generated name)
+- `WebRequestExtensions.<>c__DisplayClass0_0<TResult>` (compiler-generated name)
+- `WebRequestExtensions.<>c__DisplayClass0_1<TResult>` (compiler-generated name)
+- `WebRequestExtensions.<>c__DisplayClass2_0` (compiler-generated name)
+- `WhenAllObservable.WhenAll`
+- `WhenAllObservable.WhenAll.WhenAllCollectionObserver`
+- `WhenAllObservable.WhenAll.WhenAllCollectionObserver<T>`
+- `WhenAllObservable.WhenAll<T>`
+- `WhenAllObservable.WhenAll_`
+- `WhenAllObservable.WhenAll_.WhenAllCollectionObserver`
+- `WhenAllObservable.WhenAll_.WhenAllCollectionObserver<T>`
+- `WhenAllObservable.WhenAll_<T>`
+- `ZipLatestObservable.ZipLatest.LeftObserver<TLeft, TRight, TResult>`
+- `ZipLatestObservable.ZipLatest.RightObserver<TLeft, TRight, TResult>`
+- `ZipLatestObservable.ZipLatest.ZipLatestObserver<T>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, T5, T6, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, T5, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, T4, TR>`
+- `ZipLatestObservable.ZipLatest<T1, T2, T3, TR>`
+- `ZipLatestObservable.ZipLatest<T>`
+- `ZipLatestObservable.ZipLatest<TLeft, TRight, TResult>`
+- `ZipObservable.Zip.LeftZipObserver<TLeft, TRight, TResult>`
+- `ZipObservable.Zip.RightZipObserver<TLeft, TRight, TResult>`
+- `ZipObservable.Zip.ZipObserver<T>`
+- `ZipObservable.Zip<T1, T2, T3, T4, T5, T6, T7, TR>`
+- `ZipObservable.Zip<T1, T2, T3, T4, T5, T6, TR>`
+- `ZipObservable.Zip<T1, T2, T3, T4, T5, TR>`
+- `ZipObservable.Zip<T1, T2, T3, T4, TR>`
+- `ZipObservable.Zip<T1, T2, T3, TR>`
+- `ZipObservable.Zip<T>`
+- `ZipObservable.Zip<TLeft, TRight, TResult>`
 
 </details>
 
@@ -3249,20 +4395,577 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 562</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=378`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=463`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=17792`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=3707`
+- `Aggregate.<AggregateAsync>d__0<TSource>` (compiler-generated name)
+- `Aggregate.<AggregateAsync>d__1<TSource, TAccumulate>` (compiler-generated name)
+- `Aggregate.<AggregateAsync>d__2<TSource, TAccumulate, TResult>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitAsync>d__3<TSource>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitAsync>d__4<TSource, TAccumulate>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitAsync>d__5<TSource, TAccumulate, TResult>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitWithCancellationAsync>d__6<TSource>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitWithCancellationAsync>d__7<TSource, TAccumulate>` (compiler-generated name)
+- `Aggregate.<AggregateAwaitWithCancellationAsync>d__8<TSource, TAccumulate, TResult>` (compiler-generated name)
+- `All.<AllAsync>d__0<TSource>` (compiler-generated name)
+- `All.<AllAwaitAsync>d__1<TSource>` (compiler-generated name)
+- `All.<AllAwaitWithCancellationAsync>d__2<TSource>` (compiler-generated name)
+- `Any.<AnyAsync>d__0<TSource>` (compiler-generated name)
+- `Any.<AnyAsync>d__1<TSource>` (compiler-generated name)
+- `Any.<AnyAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Any.<AnyAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `AppendPrepend._AppendPrepend.State<TSource>`
+- `AppendPrepend._AppendPrepend<TSource>`
+- `AsyncEnumerableSorter.<SortAsync>d__2<TElement>` (compiler-generated name)
+- `AsyncSelectorEnumerableSorter.<ComputeKeysAsync>d__6<TElement, TKey>` (compiler-generated name)
+- `AsyncSelectorWithCancellationEnumerableSorter.<ComputeKeysAsync>d__7<TElement, TKey>` (compiler-generated name)
+- `Average.<AverageAsync>d__0` (compiler-generated name)
+- `Average.<AverageAsync>d__12` (compiler-generated name)
+- `Average.<AverageAsync>d__13<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__16` (compiler-generated name)
+- `Average.<AverageAsync>d__17<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__1<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__20` (compiler-generated name)
+- `Average.<AverageAsync>d__21<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__24` (compiler-generated name)
+- `Average.<AverageAsync>d__25<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__28` (compiler-generated name)
+- `Average.<AverageAsync>d__29<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__32` (compiler-generated name)
+- `Average.<AverageAsync>d__33<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__36` (compiler-generated name)
+- `Average.<AverageAsync>d__37<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__4` (compiler-generated name)
+- `Average.<AverageAsync>d__5<TSource>` (compiler-generated name)
+- `Average.<AverageAsync>d__8` (compiler-generated name)
+- `Average.<AverageAsync>d__9<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Average.<AverageAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `Buffer._Buffer<TSource>`
+- `BufferSkip._BufferSkip<TSource>`
+- `Cast._Cast<TResult>`
+- `CombineLatest._CombineLatest.<DisposeAsync>d__107<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__115<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__123<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__131<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__27<T1, T2, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__35<T1, T2, T3, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__43<T1, T2, T3, T4, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__51<T1, T2, T3, T4, T5, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__59<T1, T2, T3, T4, T5, T6, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__67<T1, T2, T3, T4, T5, T6, T7, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__75<T1, T2, T3, T4, T5, T6, T7, T8, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__83<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__91<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest.<DisposeAsync>d__99<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>` (compiler-generated name)
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, T7, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, T6, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, T5, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, T4, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, T3, TResult>`
+- `CombineLatest._CombineLatest<T1, T2, TResult>`
+- `Concat._Concat.<RunSecondAfterDisposeAsync>d__16<TSource>` (compiler-generated name)
+- `Concat._Concat.IteratingState<TSource>`
+- `Concat._Concat<TSource>`
+- `Contains.<ContainsAsync>d__0<TSource>` (compiler-generated name)
+- `Count.<CountAsync>d__0<TSource>` (compiler-generated name)
+- `Count.<CountAsync>d__1<TSource>` (compiler-generated name)
+- `Count.<CountAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Count.<CountAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Create.AsyncWriter<T>`
+- `Create._Create.<RunWriterTask>d__12<T>` (compiler-generated name)
+- `Create._Create<T>`
+- `Cysharp.Threading.Tasks.Linq.Aggregate`
+- `Cysharp.Threading.Tasks.Linq.All`
+- `Cysharp.Threading.Tasks.Linq.Any`
+- `Cysharp.Threading.Tasks.Linq.AppendPrepend<TSource>`
+- `Cysharp.Threading.Tasks.Linq.AsyncEnumerableSorter<TElement>`
+- `Cysharp.Threading.Tasks.Linq.AsyncEnumeratorAwaitSelectorBase<TSource, TResult, TAwait>`
+- `Cysharp.Threading.Tasks.Linq.AsyncEnumeratorBase<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.AsyncSelectorEnumerableSorter<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.AsyncSelectorWithCancellationEnumerableSorter<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Average`
+- `Cysharp.Threading.Tasks.Linq.Buffer<TSource>`
+- `Cysharp.Threading.Tasks.Linq.BufferSkip<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Cast<TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, T8, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, T7, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, T6, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, T5, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, T4, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, T3, TResult>`
+- `Cysharp.Threading.Tasks.Linq.CombineLatest<T1, T2, TResult>`
+- `Cysharp.Threading.Tasks.Linq.Concat<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Contains`
+- `Cysharp.Threading.Tasks.Linq.Count`
+- `Cysharp.Threading.Tasks.Linq.Create<T>`
+- `Cysharp.Threading.Tasks.Linq.DefaultIfEmpty<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Distinct<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Distinct<TSource>`
+- `Cysharp.Threading.Tasks.Linq.DistinctAwait<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctAwaitWithCancellation<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChanged<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChanged<TSource>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChangedAwait<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.DistinctUntilChangedAwaitWithCancellation<TSource, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Do<TSource>`
+- `Cysharp.Threading.Tasks.Linq.ElementAt`
+- `Cysharp.Threading.Tasks.Linq.Empty<T>`
+- `Cysharp.Threading.Tasks.Linq.EveryUpdate`
+- `Cysharp.Threading.Tasks.Linq.EveryValueChangedStandardObject<TTarget, TProperty>`
+- `Cysharp.Threading.Tasks.Linq.EveryValueChangedUnityObject<TTarget, TProperty>`
+- `Cysharp.Threading.Tasks.Linq.Except<TSource>`
+- `Cysharp.Threading.Tasks.Linq.First`
+- `Cysharp.Threading.Tasks.Linq.ForEach`
+- `Cysharp.Threading.Tasks.Linq.GroupBy<TSource, TKey, TElement, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupBy<TSource, TKey, TElement>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwait<TSource, TKey, TElement, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwait<TSource, TKey, TElement>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwaitWithCancellation<TSource, TKey, TElement, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupByAwaitWithCancellation<TSource, TKey, TElement>`
+- `Cysharp.Threading.Tasks.Linq.GroupJoin<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupJoinAwait<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.GroupJoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.IAsyncWriter<T>`
+- `Cysharp.Threading.Tasks.Linq.Intersect<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Join<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.JoinAwait<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.JoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Cysharp.Threading.Tasks.Linq.Last`
+- `Cysharp.Threading.Tasks.Linq.LongCount`
+- `Cysharp.Threading.Tasks.Linq.Max`
+- `Cysharp.Threading.Tasks.Linq.Merge<T>`
+- `Cysharp.Threading.Tasks.Linq.Min`
+- `Cysharp.Threading.Tasks.Linq.Never<T>`
+- `Cysharp.Threading.Tasks.Linq.OfType<TResult>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerable<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerable<TElement>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerableAwait<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.OrderedAsyncEnumerableAwaitWithCancellation<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Pairwise<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Publish<TSource>`
+- `Cysharp.Threading.Tasks.Linq.QueueOperator<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Range`
+- `Cysharp.Threading.Tasks.Linq.Repeat<TElement>`
+- `Cysharp.Threading.Tasks.Linq.Return<TValue>`
+- `Cysharp.Threading.Tasks.Linq.Reverse<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Select<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectAwait<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectAwaitWithCancellation<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectInt<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectIntAwait<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectIntAwaitWithCancellation<TSource, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectMany<TSource, TCollection, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectManyAwait<TSource, TCollection, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SelectManyAwaitWithCancellation<TSource, TCollection, TResult>`
+- `Cysharp.Threading.Tasks.Linq.SequenceEqual`
+- `Cysharp.Threading.Tasks.Linq.SingleOperator`
+- `Cysharp.Threading.Tasks.Linq.Skip<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipLast<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipUntil<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipUntilCanceled<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhile<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileInt<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileIntAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.SkipWhileIntAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Sum`
+- `Cysharp.Threading.Tasks.Linq.SyncSelectorAsyncEnumerableSorter<TElement, TKey>`
+- `Cysharp.Threading.Tasks.Linq.Take<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeLast<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeUntil<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeUntilCanceled<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhile<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileInt<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileIntAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.TakeWhileIntAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Throw<TValue>`
+- `Cysharp.Threading.Tasks.Linq.Timer`
+- `Cysharp.Threading.Tasks.Linq.TimerFrame`
+- `Cysharp.Threading.Tasks.Linq.ToArray`
+- `Cysharp.Threading.Tasks.Linq.ToDictionary`
+- `Cysharp.Threading.Tasks.Linq.ToHashSet`
+- `Cysharp.Threading.Tasks.Linq.ToList`
+- `Cysharp.Threading.Tasks.Linq.ToLookup`
+- `Cysharp.Threading.Tasks.Linq.ToObservable<T>`
+- `Cysharp.Threading.Tasks.Linq.ToUniTaskAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.Linq.ToUniTaskAsyncEnumerableTask<T>`
+- `Cysharp.Threading.Tasks.Linq.ToUniTaskAsyncEnumerableUniTask<T>`
+- `Cysharp.Threading.Tasks.Linq.Where<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereInt<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereIntAwait<TSource>`
+- `Cysharp.Threading.Tasks.Linq.WhereIntAwaitWithCancellation<TSource>`
+- `Cysharp.Threading.Tasks.Linq.Zip<TFirst, TSecond, TResult>`
+- `Cysharp.Threading.Tasks.Linq.ZipAwait<TFirst, TSecond, TResult>`
+- `Cysharp.Threading.Tasks.Linq.ZipAwaitWithCancellation<TFirst, TSecond, TResult>`
+- `DefaultIfEmpty._DefaultIfEmpty.IteratingState<TSource>`
+- `DefaultIfEmpty._DefaultIfEmpty<TSource>`
+- `Distinct._Distinct<TSource, TKey>`
+- `Distinct._Distinct<TSource>`
+- `DistinctAwait._DistinctAwait<TSource, TKey>`
+- `DistinctAwaitWithCancellation._DistinctAwaitWithCancellation<TSource, TKey>`
+- `DistinctUntilChanged._DistinctUntilChanged<TSource, TKey>`
+- `DistinctUntilChanged._DistinctUntilChanged<TSource>`
+- `DistinctUntilChangedAwait._DistinctUntilChangedAwait<TSource, TKey>`
+- `DistinctUntilChangedAwaitWithCancellation._DistinctUntilChangedAwaitWithCancellation<TSource, TKey>`
+- `Do._Do<TSource>`
+- `ElementAt.<ElementAtAsync>d__0<TSource>` (compiler-generated name)
+- `Empty._Empty<T>`
+- `EveryUpdate._EveryUpdate`
+- `EveryUpdate._EveryUpdate.<>c` (compiler-generated name)
+- `EveryValueChangedStandardObject._EveryValueChanged.<>c<TTarget, TProperty>` (compiler-generated name)
+- `EveryValueChangedStandardObject._EveryValueChanged<TTarget, TProperty>`
+- `EveryValueChangedUnityObject._EveryValueChanged.<>c<TTarget, TProperty>` (compiler-generated name)
+- `EveryValueChangedUnityObject._EveryValueChanged<TTarget, TProperty>`
+- `Except._Except<TSource>`
+- `First.<FirstAsync>d__0<TSource>` (compiler-generated name)
+- `First.<FirstAsync>d__1<TSource>` (compiler-generated name)
+- `First.<FirstAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `First.<FirstAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAsync>d__0<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAsync>d__1<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitAsync>d__3<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitWithCancellationAsync>d__4<TSource>` (compiler-generated name)
+- `ForEach.<ForEachAwaitWithCancellationAsync>d__5<TSource>` (compiler-generated name)
+- `GroupBy._GroupBy.<CreateLookup>d__12<TSource, TKey, TElement>` (compiler-generated name)
+- `GroupBy._GroupBy.<CreateLookup>d__13<TSource, TKey, TElement, TResult>` (compiler-generated name)
+- `GroupBy._GroupBy<TSource, TKey, TElement, TResult>`
+- `GroupBy._GroupBy<TSource, TKey, TElement>`
+- `GroupByAwait._GroupByAwait.<CreateLookup>d__12<TSource, TKey, TElement>` (compiler-generated name)
+- `GroupByAwait._GroupByAwait.<CreateLookup>d__15<TSource, TKey, TElement, TResult>` (compiler-generated name)
+- `GroupByAwait._GroupByAwait<TSource, TKey, TElement, TResult>`
+- `GroupByAwait._GroupByAwait<TSource, TKey, TElement>`
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation.<CreateLookup>d__12<TSource, TKey, TElement>` (compiler-generated name)
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation.<CreateLookup>d__15<TSource, TKey, TElement, TResult>` (compiler-generated name)
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation<TSource, TKey, TElement, TResult>`
+- `GroupByAwaitWithCancellation._GroupByAwaitWithCancellation<TSource, TKey, TElement>`
+- `GroupJoin._GroupJoin.<CreateLookup>d__17<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `GroupJoin._GroupJoin<TOuter, TInner, TKey, TResult>`
+- `GroupJoinAwait._GroupJoinAwait.<CreateLookup>d__22<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `GroupJoinAwait._GroupJoinAwait<TOuter, TInner, TKey, TResult>`
+- `GroupJoinAwaitWithCancellation._GroupJoinAwaitWithCancellation.<CreateLookup>d__22<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `GroupJoinAwaitWithCancellation._GroupJoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Intersect._Intersect<TSource>`
+- `Join._Join.<CreateInnerHashSet>d__20<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `Join._Join<TOuter, TInner, TKey, TResult>`
+- `JoinAwait._JoinAwait.<CreateInnerHashSet>d__24<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `JoinAwait._JoinAwait<TOuter, TInner, TKey, TResult>`
+- `JoinAwaitWithCancellation._JoinAwaitWithCancellation.<CreateInnerHashSet>d__24<TOuter, TInner, TKey, TResult>` (compiler-generated name)
+- `JoinAwaitWithCancellation._JoinAwaitWithCancellation<TOuter, TInner, TKey, TResult>`
+- `Last.<LastAsync>d__0<TSource>` (compiler-generated name)
+- `Last.<LastAsync>d__1<TSource>` (compiler-generated name)
+- `Last.<LastAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Last.<LastAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAsync>d__0<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAsync>d__1<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `LongCount.<LongCountAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__0<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__12` (compiler-generated name)
+- `Max.<MaxAsync>d__13<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__16` (compiler-generated name)
+- `Max.<MaxAsync>d__17<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__1<TSource, TResult>` (compiler-generated name)
+- `Max.<MaxAsync>d__20` (compiler-generated name)
+- `Max.<MaxAsync>d__21<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__24` (compiler-generated name)
+- `Max.<MaxAsync>d__25<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__28` (compiler-generated name)
+- `Max.<MaxAsync>d__29<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__32` (compiler-generated name)
+- `Max.<MaxAsync>d__33<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__36` (compiler-generated name)
+- `Max.<MaxAsync>d__37<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__4` (compiler-generated name)
+- `Max.<MaxAsync>d__40` (compiler-generated name)
+- `Max.<MaxAsync>d__41<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__5<TSource>` (compiler-generated name)
+- `Max.<MaxAsync>d__8` (compiler-generated name)
+- `Max.<MaxAsync>d__9<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__2<TSource, TResult>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__42<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__3<TSource, TResult>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__43<TSource>` (compiler-generated name)
+- `Max.<MaxAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `Merge.MergeSourceState<T>`
+- `Merge._Merge.<DisposeAsync>d__13<T>` (compiler-generated name)
+- `Merge._Merge<T>`
+- `Min.<MinAsync>d__0<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__12` (compiler-generated name)
+- `Min.<MinAsync>d__13<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__16` (compiler-generated name)
+- `Min.<MinAsync>d__17<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__1<TSource, TResult>` (compiler-generated name)
+- `Min.<MinAsync>d__20` (compiler-generated name)
+- `Min.<MinAsync>d__21<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__24` (compiler-generated name)
+- `Min.<MinAsync>d__25<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__28` (compiler-generated name)
+- `Min.<MinAsync>d__29<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__32` (compiler-generated name)
+- `Min.<MinAsync>d__33<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__36` (compiler-generated name)
+- `Min.<MinAsync>d__37<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__4` (compiler-generated name)
+- `Min.<MinAsync>d__40` (compiler-generated name)
+- `Min.<MinAsync>d__41<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__5<TSource>` (compiler-generated name)
+- `Min.<MinAsync>d__8` (compiler-generated name)
+- `Min.<MinAsync>d__9<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__2<TSource, TResult>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__42<TSource>` (compiler-generated name)
+- `Min.<MinAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__3<TSource, TResult>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__43<TSource>` (compiler-generated name)
+- `Min.<MinAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `Never._Never<T>`
+- `OfType._OfType<TResult>`
+- `OrderedAsyncEnumerable._OrderedAsyncEnumerator.<CreateSortSource>d__11<TElement>` (compiler-generated name)
+- `OrderedAsyncEnumerable._OrderedAsyncEnumerator<TElement>`
+- `Pairwise._Pairwise<TSource>`
+- `Publish.<ConsumeEnumerator>d__8<TSource>` (compiler-generated name)
+- `Publish.ConnectDisposable<TSource>`
+- `Publish._Publish<TSource>`
+- `QueueOperator._Queue.<ConsumeAll>d__10<TSource>` (compiler-generated name)
+- `QueueOperator._Queue.<DisposeAsync>d__11<TSource>` (compiler-generated name)
+- `QueueOperator._Queue<TSource>`
+- `Range._Range`
+- `Repeat._Repeat<TElement>`
+- `Return._Return<TValue>`
+- `Reverse._Reverse.<MoveNextAsync>d__9<TSource>` (compiler-generated name)
+- `Reverse._Reverse<TSource>`
+- `Select._Select<TSource, TResult>`
+- `SelectAwait._SelectAwait<TSource, TResult>`
+- `SelectAwaitWithCancellation._SelectAwaitWithCancellation<TSource, TResult>`
+- `SelectInt._Select<TSource, TResult>`
+- `SelectIntAwait._SelectAwait<TSource, TResult>`
+- `SelectIntAwaitWithCancellation._SelectAwaitWithCancellation<TSource, TResult>`
+- `SelectMany._SelectMany.<DisposeAsync>d__26<TSource, TCollection, TResult>` (compiler-generated name)
+- `SelectMany._SelectMany<TSource, TCollection, TResult>`
+- `SelectManyAwait._SelectManyAwait.<DisposeAsync>d__32<TSource, TCollection, TResult>` (compiler-generated name)
+- `SelectManyAwait._SelectManyAwait<TSource, TCollection, TResult>`
+- `SelectManyAwaitWithCancellation._SelectManyAwaitWithCancellation.<DisposeAsync>d__32<TSource, TCollection, TResult>` (compiler-generated name)
+- `SelectManyAwaitWithCancellation._SelectManyAwaitWithCancellation<TSource, TCollection, TResult>`
+- `SequenceEqual.<SequenceEqualAsync>d__0<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAsync>d__0<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAsync>d__1<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `SingleOperator.<SingleAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Skip._Skip<TSource>`
+- `SkipLast._SkipLast<TSource>`
+- `SkipUntil._SkipUntil.<RunOther>d__18<TSource>` (compiler-generated name)
+- `SkipUntil._SkipUntil<TSource>`
+- `SkipUntilCanceled._SkipUntilCanceled<TSource>`
+- `SkipWhile._SkipWhile<TSource>`
+- `SkipWhileAwait._SkipWhileAwait<TSource>`
+- `SkipWhileAwaitWithCancellation._SkipWhileAwaitWithCancellation<TSource>`
+- `SkipWhileInt._SkipWhileInt<TSource>`
+- `SkipWhileIntAwait._SkipWhileIntAwait<TSource>`
+- `SkipWhileIntAwaitWithCancellation._SkipWhileIntAwaitWithCancellation<TSource>`
+- `Subscribe.<SubscribeAwaitCore>d__7<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__2<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__3<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__4<TSource>` (compiler-generated name)
+- `Subscribe.<SubscribeCore>d__5<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__0` (compiler-generated name)
+- `Sum.<SumAsync>d__12` (compiler-generated name)
+- `Sum.<SumAsync>d__13<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__16` (compiler-generated name)
+- `Sum.<SumAsync>d__17<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__1<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__20` (compiler-generated name)
+- `Sum.<SumAsync>d__21<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__24` (compiler-generated name)
+- `Sum.<SumAsync>d__25<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__28` (compiler-generated name)
+- `Sum.<SumAsync>d__29<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__32` (compiler-generated name)
+- `Sum.<SumAsync>d__33<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__36` (compiler-generated name)
+- `Sum.<SumAsync>d__37<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__4` (compiler-generated name)
+- `Sum.<SumAsync>d__5<TSource>` (compiler-generated name)
+- `Sum.<SumAsync>d__8` (compiler-generated name)
+- `Sum.<SumAsync>d__9<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__10<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__14<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__18<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__22<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__26<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__2<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__30<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__34<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__38<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitAsync>d__6<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__11<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__15<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__19<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__23<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__27<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__31<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__35<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__39<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__3<TSource>` (compiler-generated name)
+- `Sum.<SumAwaitWithCancellationAsync>d__7<TSource>` (compiler-generated name)
+- `SyncSelectorAsyncEnumerableSorter.<ComputeKeysAsync>d__6<TElement, TKey>` (compiler-generated name)
+- `Take._Take<TSource>`
+- `TakeLast._TakeLast<TSource>`
+- `TakeUntil._TakeUntil.<RunOther>d__17<TSource>` (compiler-generated name)
+- `TakeUntil._TakeUntil<TSource>`
+- `TakeUntilCanceled._TakeUntilCanceled<TSource>`
+- `TakeWhile._TakeWhile<TSource>`
+- `TakeWhileAwait._TakeWhileAwait<TSource>`
+- `TakeWhileAwaitWithCancellation._TakeWhileAwaitWithCancellation<TSource>`
+- `TakeWhileInt._TakeWhileInt<TSource>`
+- `TakeWhileIntAwait._TakeWhileIntAwait<TSource>`
+- `TakeWhileIntAwaitWithCancellation._TakeWhileIntAwaitWithCancellation<TSource>`
+- `Throw._Throw<TValue>`
+- `Timer._Timer`
+- `Timer._Timer.<>c` (compiler-generated name)
+- `TimerFrame._TimerFrame`
+- `TimerFrame._TimerFrame.<>c` (compiler-generated name)
+- `ToArray.<ToArrayAsync>d__0<TSource>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAsync>d__0<TSource, TKey>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAsync>d__1<TSource, TKey, TElement>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitAsync>d__2<TSource, TKey>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitAsync>d__3<TSource, TKey, TElement>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitWithCancellationAsync>d__4<TSource, TKey>` (compiler-generated name)
+- `ToDictionary.<ToDictionaryAwaitWithCancellationAsync>d__5<TSource, TKey, TElement>` (compiler-generated name)
+- `ToHashSet.<ToHashSetAsync>d__0<TSource>` (compiler-generated name)
+- `ToList.<ToListAsync>d__0<TSource>` (compiler-generated name)
+- `ToLookup.<ToLookupAsync>d__0<TSource, TKey>` (compiler-generated name)
+- `ToLookup.<ToLookupAsync>d__1<TSource, TKey, TElement>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitAsync>d__2<TSource, TKey>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitAsync>d__3<TSource, TKey, TElement>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitWithCancellationAsync>d__4<TSource, TKey>` (compiler-generated name)
+- `ToLookup.<ToLookupAwaitWithCancellationAsync>d__5<TSource, TKey, TElement>` (compiler-generated name)
+- `ToLookup.Grouping<TKey, TElement>`
+- `ToLookup.Lookup.<CreateAsync>d__6<TKey, TElement>` (compiler-generated name)
+- `ToLookup.Lookup.<CreateAsync>d__7<TKey, TElement, TSource>` (compiler-generated name)
+- `ToLookup.Lookup.<CreateAsync>d__8<TKey, TElement>` (compiler-generated name)
+- `ToLookup.Lookup.<CreateAsync>d__9<TKey, TElement, TSource>` (compiler-generated name)
+- `ToLookup.Lookup<TKey, TElement>`
+- `ToObservable.<RunAsync>d__3<T>` (compiler-generated name)
+- `ToObservable.CancellationTokenDisposable<T>`
+- `ToUniTaskAsyncEnumerable._ToUniTaskAsyncEnumerable<T>`
+- `ToUniTaskAsyncEnumerableTask._ToUniTaskAsyncEnumerableTask.<MoveNextAsync>d__7<T>` (compiler-generated name)
+- `ToUniTaskAsyncEnumerableTask._ToUniTaskAsyncEnumerableTask<T>`
+- `ToUniTaskAsyncEnumerableUniTask._ToUniTaskAsyncEnumerableUniTask.<MoveNextAsync>d__7<T>` (compiler-generated name)
+- `ToUniTaskAsyncEnumerableUniTask._ToUniTaskAsyncEnumerableUniTask<T>`
+- `UniTaskAsyncEnumerable.<>c__128<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__129<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__132<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__133<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__136<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__137<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__140<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__142<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__144<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__145<TSource, TKey>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__148<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__150<TSource, TKey, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__309<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__310<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__313<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__314<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__317<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__318<TSource, TResult>` (compiler-generated name)
+- `UniTaskAsyncEnumerable.<>c__471<TFirst, TSecond>` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `Where._Where<TSource>`
+- `WhereAwait._WhereAwait<TSource>`
+- `WhereAwaitWithCancellation._WhereAwaitWithCancellation<TSource>`
+- `WhereInt._Where<TSource>`
+- `WhereIntAwait._WhereAwait<TSource>`
+- `WhereIntAwaitWithCancellation._WhereAwaitWithCancellation<TSource>`
+- `Zip._Zip.<DisposeAsync>d__18<TFirst, TSecond, TResult>` (compiler-generated name)
+- `Zip._Zip<TFirst, TSecond, TResult>`
+- `ZipAwait._ZipAwait.<DisposeAsync>d__21<TFirst, TSecond, TResult>` (compiler-generated name)
+- `ZipAwait._ZipAwait<TFirst, TSecond, TResult>`
+- `ZipAwaitWithCancellation._ZipAwaitWithCancellation.<DisposeAsync>d__21<TFirst, TSecond, TResult>` (compiler-generated name)
+- `ZipAwaitWithCancellation._ZipAwaitWithCancellation<TFirst, TSecond, TResult>`
 
 </details>
 
 
 ## UniTask.dll
 
-<details><summary>Matching: 296</summary>
+<details><summary>Matching: 289</summary>
 
 - `<Module>`
 - `AsyncDestroyTrigger.<>c` (compiler-generated name)
@@ -3270,7 +4973,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `AutoResetUniTaskCompletionSource.<>c` (compiler-generated name)
 - `Cysharp.Threading.Tasks.AsyncLazy`
 - `Cysharp.Threading.Tasks.AsyncUnit`
-- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`
 - `Cysharp.Threading.Tasks.AwaiterActions`
 - `Cysharp.Threading.Tasks.CancellationTokenExtensions`
 - `Cysharp.Threading.Tasks.CancellationTokenSourceExtensions`
@@ -3297,16 +4999,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cysharp.Threading.Tasks.IgnoreTimeScalePlayerLoopTimer`
 - `Cysharp.Threading.Tasks.InjectPlayerLoopTimings`
 - `Cysharp.Threading.Tasks.Internal.ArrayPoolUtil`
-- `Cysharp.Threading.Tasks.Internal.ContinuationQueue`
 - `Cysharp.Threading.Tasks.Internal.Error`
-- `Cysharp.Threading.Tasks.Internal.PlayerLoopRunner`
 - `Cysharp.Threading.Tasks.Internal.RuntimeHelpersAbstraction`
 - `Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable`
 - `Cysharp.Threading.Tasks.Internal.StateTuple`
 - `Cysharp.Threading.Tasks.Internal.UnityWebRequestResultExtensions`
 - `Cysharp.Threading.Tasks.Internal.ValueStopwatch`
 - `Cysharp.Threading.Tasks.MoveNextSource`
-- `Cysharp.Threading.Tasks.PlayerLoopHelper`
 - `Cysharp.Threading.Tasks.PlayerLoopTimer`
 - `Cysharp.Threading.Tasks.PlayerLoopTiming`
 - `Cysharp.Threading.Tasks.RealtimePlayerLoopTimer`
@@ -3454,7 +5153,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cysharp.Threading.Tasks.Triggers.IAsyncUpdateHandler`
 - `Cysharp.Threading.Tasks.UniTask`
 - `Cysharp.Threading.Tasks.UniTaskCancellationExtensions`
-- `Cysharp.Threading.Tasks.UniTaskCompletionSource`
 - `Cysharp.Threading.Tasks.UniTaskCompletionSourceCoreShared`
 - `Cysharp.Threading.Tasks.UniTaskExtensions`
 - `Cysharp.Threading.Tasks.UniTaskLoopRunners`
@@ -3462,7 +5160,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Cysharp.Threading.Tasks.UniTaskScheduler`
 - `Cysharp.Threading.Tasks.UniTaskStatus`
 - `Cysharp.Threading.Tasks.UniTaskStatusExtensions`
-- `Cysharp.Threading.Tasks.UniTaskSynchronizationContext`
 - `Cysharp.Threading.Tasks.UniTaskVoid`
 - `Cysharp.Threading.Tasks.UnityAsyncExtensions`
 - `Cysharp.Threading.Tasks.UnityWebRequestException`
@@ -3510,7 +5207,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UniTask.WhenAnyPromise.<>c` (compiler-generated name)
 - `UniTask.YieldPromise`
 - `UniTask.YieldPromise.<>c` (compiler-generated name)
-- `UniTaskExtensions.<>c` (compiler-generated name)
 - `UniTaskExtensions.<ContinueWith>d__58` (compiler-generated name)
 - `UniTaskExtensions.<ContinueWith>d__59` (compiler-generated name)
 - `UniTaskExtensions.<ForgetCoreWithCatch>d__50` (compiler-generated name)
@@ -3563,7 +5259,72 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Indeterminate: 64</summary>
+<details><summary>Mismatching: 11</summary>
+
+- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`
+
+  - `bases: 'IUniTaskSource, IValueTaskSource, ITaskPoolNode<AutoResetUniTaskCompletionSource>' → 'IUniTaskSource, IValueTaskSource, ITaskPoolNode<AutoResetUniTaskCompletionSource>, IPromise, IResolvePromise, IRejectPromise, ICancelPromise'`
+
+- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource<T>`
+
+  - `bases: 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>, ITaskPoolNode<AutoResetUniTaskCompletionSource<T>>' → 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>, ITaskPoolNode<AutoResetUniTaskCompletionSource<T>>, IPromise<T>, IResolvePromise<T>, IRejectPromise, ICancelPromise'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.Internal.ArrayPool<T>`
+
+  - `field declaration order/names: ['EmptyArray', 'Shared', 'buckets', 'locks'] → ['DefaultMaxNumberOfArraysPerBucket', 'EmptyArray', 'Shared', 'buckets', 'locks']`
+  - `extra field constant int DefaultMaxNumberOfArraysPerBucket`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.Internal.ContinuationQueue`
+
+  - `field declaration order/names: ['timing', 'gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList'] → ['MaxArrayLength', 'InitialSize', 'timing', 'gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList']`
+  - `extra field constant int MaxArrayLength`
+  - `extra field constant int InitialSize`
+
+- `Cysharp.Threading.Tasks.Internal.MinimumQueue<T>`
+
+  - `field declaration order/names: ['array', 'head', 'tail', 'size'] → ['MinimumGrow', 'GrowFactor', 'array', 'head', 'tail', 'size']`
+  - `extra field constant int MinimumGrow`
+  - `extra field constant int GrowFactor`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.Internal.PlayerLoopRunner`
+
+  - `field declaration order/names: ['timing', 'runningAndQueueLock', 'arrayLock', 'unhandledExceptionCallback', 'tail', 'running', 'loopItems', 'waitQueue'] → ['InitialSize', 'timing', 'runningAndQueueLock', 'arrayLock', 'unhandledExceptionCallback', 'tail', 'running', 'loopItems', 'waitQueue']`
+  - `extra field constant int InitialSize`
+
+- `Cysharp.Threading.Tasks.PlayerLoopHelper`
+
+  - `field declaration order/names: ['ThrowMarkerContinuationQueue', 'ThrowMarkerPlayerLoopRunner', 'mainThreadId', 'applicationDataPath', 'unitySynchronizationContext', 'yielders', 'runners'] → ['ThrowMarkerContinuationQueue', 'ThrowMarkerPlayerLoopRunner', 'mainThreadId', 'applicationDataPath', 'unitySynchronizationContext', 'yielders', 'runners', '<IsEditorApplicationQuitting>k__BackingField']`
+  - `extra field static bool <IsEditorApplicationQuitting>k__BackingField`
+
+- `Cysharp.Threading.Tasks.UniTaskCompletionSource`
+
+  - `bases: 'IUniTaskSource, IValueTaskSource' → 'IUniTaskSource, IValueTaskSource, IPromise, IResolvePromise, IRejectPromise, ICancelPromise'`
+
+- `Cysharp.Threading.Tasks.UniTaskCompletionSource<T>`
+
+  - `bases: 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>' → 'IUniTaskSource<T>, IUniTaskSource, IValueTaskSource, IValueTaskSource<T>, IPromise<T>, IResolvePromise<T>, IRejectPromise, ICancelPromise'`
+  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+
+- `Cysharp.Threading.Tasks.UniTaskSynchronizationContext`
+
+  - `field declaration order/names: ['gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList'] → ['MaxArrayLength', 'InitialSize', 'gate', 'dequing', 'actionListCount', 'actionList', 'waitingListCount', 'waitingList', 'opCount']`
+  - `extra field constant int MaxArrayLength`
+  - `extra field constant int InitialSize`
+  - `extra field static int opCount`
+
+- `UniTaskExtensions.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__33_0', '<>9__48_0'] → ['<>9', '<>9__33_0', '<>9__35_0', '<>9__48_0']`
+  - `<>9__48_0: offset '0x10' → '0x18'`
+  - `extra field static Action<object> <>9__35_0`
+
+
+</details>
+
+<details><summary>Indeterminate: 60</summary>
 
 - `ArrayPoolUtil.RentArray<T>`
 
@@ -3593,10 +5354,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
-- `Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
 - `Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<TStateMachine, T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
@@ -3610,14 +5367,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid<TStateMachine>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `Cysharp.Threading.Tasks.Internal.ArrayPool<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `Cysharp.Threading.Tasks.Internal.MinimumQueue<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -3666,10 +5415,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
 - `Cysharp.Threading.Tasks.UniTask<T>`
-
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
-
-- `Cysharp.Threading.Tasks.UniTaskCompletionSource<T>`
 
   - Limitation: generic definition offsets do not establish concrete generic-instance layouts
 
@@ -3824,20 +5569,261 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 246</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=19934`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=22196`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=35701`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4485`
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource`
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource.<>c` (compiler-generated name)
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource.<>c<T>` (compiler-generated name)
+- `AsyncInstantiateOperationExtensions.AsyncInstantiateOperationConfiguredSource<T>`
+- `AsyncReactiveProperty.Enumerator<T>`
+- `AsyncReactiveProperty.WaitAsyncSource.<>c<T>` (compiler-generated name)
+- `AsyncReactiveProperty.WaitAsyncSource<T>`
+- `AsyncReactiveProperty.WithoutCurrentEnumerable<T>`
+- `AsyncSubject.Subscription<T>`
+- `CancellationTokenAwaitable.Awaiter`
+- `CancellationTokenExtensions.<ToCancellationTokenCore>d__6` (compiler-generated name)
+- `ChannelReader.<ReadAsyncCore>d__5<T>` (compiler-generated name)
+- `Cysharp.Threading.Tasks.AsyncInstantiateOperationExtensions`
+- `Cysharp.Threading.Tasks.AsyncLazy<T>`
+- `Cysharp.Threading.Tasks.AsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.AsyncUnityEventHandler`
+- `Cysharp.Threading.Tasks.AsyncUnityEventHandler<T>`
+- `Cysharp.Threading.Tasks.CancellationTokenAwaitable`
+- `Cysharp.Threading.Tasks.CancellationTokenEqualityComparer`
+- `Cysharp.Threading.Tasks.Channel`
+- `Cysharp.Threading.Tasks.Channel<T>`
+- `Cysharp.Threading.Tasks.Channel<TWrite, TRead>`
+- `Cysharp.Threading.Tasks.ChannelClosedException`
+- `Cysharp.Threading.Tasks.ChannelReader<T>`
+- `Cysharp.Threading.Tasks.ChannelWriter<T>`
+- `Cysharp.Threading.Tasks.CompilerServices.StateMachineUtility`
+- `Cysharp.Threading.Tasks.IAsyncClickEventHandler`
+- `Cysharp.Threading.Tasks.IAsyncDeselectEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncEndEditEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncEndTextSelectionEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.IAsyncSelectEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncSubmitEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncTextSelectionEventHandler<T>`
+- `Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler<T>`
+- `Cysharp.Threading.Tasks.ICancelPromise`
+- `Cysharp.Threading.Tasks.IConnectableUniTaskAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.IPromise`
+- `Cysharp.Threading.Tasks.IPromise<T>`
+- `Cysharp.Threading.Tasks.IReadOnlyAsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.IRejectPromise`
+- `Cysharp.Threading.Tasks.IResolvePromise`
+- `Cysharp.Threading.Tasks.IResolvePromise<T>`
+- `Cysharp.Threading.Tasks.IUniTaskOrderedAsyncEnumerable<TElement>`
+- `Cysharp.Threading.Tasks.Internal.ArrayUtil`
+- `Cysharp.Threading.Tasks.Internal.AsyncSubject<T>`
+- `Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions`
+- `Cysharp.Threading.Tasks.Internal.DisposedObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.EmptyDisposable`
+- `Cysharp.Threading.Tasks.Internal.EmptyObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.ImmutableList<T>`
+- `Cysharp.Threading.Tasks.Internal.ListObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.ThrowObserver<T>`
+- `Cysharp.Threading.Tasks.Internal.UnityEqualityComparer`
+- `Cysharp.Threading.Tasks.Internal.WeakDictionary<TKey, TValue>`
+- `Cysharp.Threading.Tasks.Progress`
+- `Cysharp.Threading.Tasks.ReadOnlyAsyncReactiveProperty<T>`
+- `Cysharp.Threading.Tasks.ReturnToMainThread`
+- `Cysharp.Threading.Tasks.ReturnToSynchronizationContext`
+- `Cysharp.Threading.Tasks.SingleConsumerUnboundedChannel<T>`
+- `Cysharp.Threading.Tasks.StateExtensions`
+- `Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable`
+- `Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable`
+- `Cysharp.Threading.Tasks.TaskTracker`
+- `Cysharp.Threading.Tasks.TextSelectionEventConverter`
+- `Cysharp.Threading.Tasks.TimeoutController`
+- `Cysharp.Threading.Tasks.UniTaskAsyncEnumerableExtensions`
+- `Cysharp.Threading.Tasks.UniTaskCancelableAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.UniTaskValueTaskExtensions`
+- `Cysharp.Threading.Tasks.UnityAwaitableExtensions`
+- `Cysharp.Threading.Tasks.UnityBindingExtensions`
+- `Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`
+- `Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable<T>`
+- `Cysharp.Threading.Tasks.WhenEachEnumerable<T>`
+- `Cysharp.Threading.Tasks.WhenEachResult<T>`
+- `Cysharp.Threading.Tasks.WhenEachState`
+- `DiagnosticsExtensions.<>c` (compiler-generated name)
+- `EnumeratorAsyncExtensions.<Core>d__4` (compiler-generated name)
+- `Progress.AnonymousProgress<T>`
+- `Progress.NullProgress<T>`
+- `Progress.OnlyValueChangedProgress<T>`
+- `ReadOnlyAsyncReactiveProperty.<ConsumeEnumerator>d__7<T>` (compiler-generated name)
+- `ReadOnlyAsyncReactiveProperty.Enumerator<T>`
+- `ReadOnlyAsyncReactiveProperty.WaitAsyncSource.<>c<T>` (compiler-generated name)
+- `ReadOnlyAsyncReactiveProperty.WaitAsyncSource<T>`
+- `ReadOnlyAsyncReactiveProperty.WithoutCurrentEnumerable<T>`
+- `ReturnToMainThread.Awaiter`
+- `ReturnToSynchronizationContext.Awaiter`
+- `SingleConsumerUnboundedChannel.SingleConsumerUnboundedChannelReader.ReadAllAsyncEnumerable<T>`
+- `SingleConsumerUnboundedChannel.SingleConsumerUnboundedChannelReader<T>`
+- `SingleConsumerUnboundedChannel.SingleConsumerUnboundedChannelWriter<T>`
+- `StateMachineUtility.<>c` (compiler-generated name)
+- `SwitchToSynchronizationContextAwaitable.Awaiter`
+- `SwitchToTaskPoolAwaitable.Awaiter`
+- `TaskPool.<GetCacheSizeInfo>d__4` (compiler-generated name)
+- `UniTask.<>c__DisplayClass45_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass46_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass47_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass48_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass49_0` (compiler-generated name)
+- `UniTask.<>c__DisplayClass50_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass51_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass52_0<T0, T1>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass53_0<T0, T1, T2>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass54_0<T0, T1, T2, T3>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass55_0<T>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass56_0<T0, T1>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass57_0<T0, T1, T2>` (compiler-generated name)
+- `UniTask.<>c__DisplayClass58_0<T0, T1, T2, T3>` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__83` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__85` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__86<T>` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__88<T>` (compiler-generated name)
+- `UniTask.<RunOnThreadPool>d__89<T>` (compiler-generated name)
+- `UniTask.<WaitForEndOfFrame>d__9` (compiler-generated name)
+- `UniTask.DeferPromise`
+- `UniTask.DeferPromise<T>`
+- `UniTask.DeferPromiseWithState<TState, TResult>`
+- `UniTask.DeferPromiseWithState<TState>`
+- `UniTask.MemoizeSource`
+- `UniTask.MemoizeSource<T>`
+- `UniTask.WaitUntilPromise.<>c<T>` (compiler-generated name)
+- `UniTask.WaitUntilPromise<T>`
+- `UniTask.WaitUntilValueChangedStandardObjectPromise.<>c<T, U>` (compiler-generated name)
+- `UniTask.WaitUntilValueChangedStandardObjectPromise<T, U>`
+- `UniTask.WaitUntilValueChangedUnityObjectPromise.<>c<T, U>` (compiler-generated name)
+- `UniTask.WaitUntilValueChangedUnityObjectPromise<T, U>`
+- `UniTask.WaitWhilePromise.<>c<T>` (compiler-generated name)
+- `UniTask.WaitWhilePromise<T>`
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9>` (compiler-generated name)
+- `UniTask.WhenAllPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8>` (compiler-generated name)
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9>`
+- `UniTask.WhenAllPromise<T1, T2, T3, T4, T5, T6, T7, T8>`
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8, T9>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7, T8>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6, T7>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5, T6>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4, T5>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3, T4>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T1, T2, T3>` (compiler-generated name)
+- `UniTask.WhenAnyPromise.<>c<T>` (compiler-generated name)
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8, T9>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7, T8>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6, T7>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5, T6>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4, T5>`
+- `UniTask.WhenAnyPromise<T1, T2, T3, T4>`
+- `UniTask.WhenAnyPromise<T1, T2, T3>`
+- `UniTask.WhenAnyPromise<T>`
+- `UniTaskCancelableAsyncEnumerable.Enumerator<T>`
+- `UniTaskExtensions.<>c__34<T>` (compiler-generated name)
+- `UniTaskExtensions.<ContinueWith>d__55<T>` (compiler-generated name)
+- `UniTaskExtensions.<ContinueWith>d__57<T, TR>` (compiler-generated name)
+- `UniTaskExtensions.<ContinueWith>d__61<T>` (compiler-generated name)
+- `UniTaskExtensions.<ForgetCoreWithCatch>d__53<T>` (compiler-generated name)
+- `UniTaskExtensions.<Timeout>d__44` (compiler-generated name)
+- `UniTaskExtensions.<Timeout>d__45<T>` (compiler-generated name)
+- `UniTaskExtensions.<TimeoutWithoutException>d__46` (compiler-generated name)
+- `UniTaskExtensions.<TimeoutWithoutException>d__47<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__62<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__63` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__64<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__65<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__66` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__67` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__68<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__69<T>` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__70` (compiler-generated name)
+- `UniTaskExtensions.<Unwrap>d__71` (compiler-generated name)
+- `UniTaskExtensions.ToCoroutineEnumerator.<RunTask>d__8<T>` (compiler-generated name)
+- `UniTaskExtensions.ToCoroutineEnumerator<T>`
+- `UniTaskObservableExtensions.<Fire>d__3<T>` (compiler-generated name)
+- `UniTaskObservableExtensions.<Fire>d__4` (compiler-generated name)
+- `UniTaskObservableExtensions.ReturnObservable<T>`
+- `UniTaskObservableExtensions.ThrowObservable<T>`
+- `UniTaskValueTaskExtensions.<AsUniTask>d__2<T>` (compiler-generated name)
+- `UniTaskValueTaskExtensions.<AsUniTask>d__3` (compiler-generated name)
+- `UnityAsyncExtensions.<WaitAsync>d__11` (compiler-generated name)
+- `UnityAsyncExtensions.AssetBundleCreateRequestAwaiter`
+- `UnityAsyncExtensions.AssetBundleCreateRequestConfiguredSource`
+- `UnityAsyncExtensions.AssetBundleCreateRequestConfiguredSource.<>c` (compiler-generated name)
+- `UnityAsyncExtensions.AssetBundleRequestAllAssetsAwaiter`
+- `UnityAsyncExtensions.AssetBundleRequestAllAssetsConfiguredSource`
+- `UnityAsyncExtensions.AssetBundleRequestAllAssetsConfiguredSource.<>c` (compiler-generated name)
+- `UnityAsyncExtensions.AssetBundleRequestAwaiter`
+- `UnityAsyncExtensions.AssetBundleRequestConfiguredSource`
+- `UnityAsyncExtensions.AssetBundleRequestConfiguredSource.<>c` (compiler-generated name)
+- `UnityAsyncExtensions.AsyncOperationAwaiter`
+- `UnityAsyncExtensions.JobHandlePromise`
+- `UnityAsyncExtensions.ResourceRequestConfiguredSource`
+- `UnityAsyncExtensions.ResourceRequestConfiguredSource.<>c` (compiler-generated name)
+- `UnityAwaitableExtensions.<AsUniTask>d__0` (compiler-generated name)
+- `UnityAwaitableExtensions.<AsUniTask>d__1<T>` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__12<TSource, TObject>` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__2` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__6<T>` (compiler-generated name)
+- `UnityBindingExtensions.<BindToCore>d__9` (compiler-generated name)
+- `UnityEqualityComparer.BoundsEqualityComparer`
+- `UnityEqualityComparer.BoundsIntEqualityComparer`
+- `UnityEqualityComparer.Cache<T>`
+- `UnityEqualityComparer.Color32EqualityComparer`
+- `UnityEqualityComparer.ColorEqualityComparer`
+- `UnityEqualityComparer.QuaternionEqualityComparer`
+- `UnityEqualityComparer.RangeIntEqualityComparer`
+- `UnityEqualityComparer.RectEqualityComparer`
+- `UnityEqualityComparer.RectIntEqualityComparer`
+- `UnityEqualityComparer.Vector2EqualityComparer`
+- `UnityEqualityComparer.Vector2IntEqualityComparer`
+- `UnityEqualityComparer.Vector3EqualityComparer`
+- `UnityEqualityComparer.Vector3IntEqualityComparer`
+- `UnityEqualityComparer.Vector4EqualityComparer`
+- `UnityEventHandlerAsyncEnumerable.UnityEventHandlerAsyncEnumerator`
+- `UnityEventHandlerAsyncEnumerable.UnityEventHandlerAsyncEnumerator<T>`
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `WeakDictionary.Entry<TKey, TValue>`
+- `WhenEachEnumerable.Enumerator.<DisposeAsync>d__12<T>` (compiler-generated name)
+- `WhenEachEnumerable.Enumerator.<RunWhenEachTask>d__11<T>` (compiler-generated name)
+- `WhenEachEnumerable.Enumerator<T>`
 
 </details>
 
 
 ## Unity.Animation.Rigging.dll
 
-<details><summary>Matching: 44</summary>
+<details><summary>Matching: 46</summary>
 
 - `<Module>`
 - `RigBuilder.OnAddRigBuilderCallback`
@@ -3871,6 +5857,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Animations.Rigging.RigEffectorData`
 - `UnityEngine.Animations.Rigging.RigLayer`
 - `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJob`
+- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinder<T>`
+- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinderConstants`
 - `UnityEngine.Animations.Rigging.RigTransform`
 - `UnityEngine.Animations.Rigging.RigUtils`
 - `UnityEngine.Animations.Rigging.SyncSceneToStreamAttribute`
@@ -3886,7 +5874,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 9</summary>
+<details><summary>Mismatching: 8</summary>
 
 - `UnityEngine.Animations.Rigging.AnimationRuntimeUtils`
 
@@ -3895,8 +5883,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UnityEngine.Animations.Rigging.ConstraintProperties`
 
-  - `field declaration order/names: ['component', 'properties'] → ['s_Weight', 'component', 'properties']`
-  - `extra field static string s_Weight`
+  - `field declaration order/names: ['component', 'properties'] → ['k_Weight', 'component', 'properties']`
+  - `extra field constant string k_Weight`
 
 - `UnityEngine.Animations.Rigging.FloatProperty`
 
@@ -3913,14 +5901,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UnityEngine.Animations.Rigging.RigProperties`
 
-  - `field declaration order/names: ['component'] → ['s_Weight', 'component']`
-  - `extra field static string s_Weight`
-
-- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinder<T>`
-
-  - `field declaration order/names: [] → ['s_PropertyElementNames']`
-  - `extra field static string[] s_PropertyElementNames`
-  - Limitation: generic definition offsets do not establish concrete generic-instance layouts
+  - `field declaration order/names: ['component'] → ['k_Weight', 'component']`
+  - `extra field constant string k_Weight`
 
 - `UnityEngine.Animations.Rigging.Vector3Property`
 
@@ -3942,17 +5924,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 1</summary>
-
-- `UnityEngine.Animations.Rigging.RigSyncSceneToStreamJobBinderConstants`
-
-</details>
-
 <details><summary>Extra: 87</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5133`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6796`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6870`
 - `BoneRenderer.BoneShape`
 - `ConstraintsUtils.<>c__DisplayClass2_0` (compiler-generated name)
 - `Microsoft.CodeAnalysis.EmbeddedAttribute` (compiler-generated name)
@@ -5454,15 +7430,15 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
-  - `field declaration order/names: ['FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE'] → ['45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097', '4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A', '90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4', '9B125254C7B9599896154195DAC2A199A7ABA5E0F67A5125B458228929163B97', 'BDFF4BF48DBC7214A392CF884F7F2A6073CCDB77CA3EB11BEBB93DA8ED8B2158', 'C606E03B5FE8EAD2ECA6BCB45AE684039D928B4EE7C4A03C63D0DF9F94F81DAF', 'FD0E21DFA9C6B157C14279741A9DD3F67AC3DE4FE785962540E2A7E0A655BC2A', 'FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE']`
-  - `FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE: offset '0x0' → '0xb671'`
+  - `field declaration order/names: ['FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE'] → ['38793233ADA900082A111C7E55EFE257E4D5F249D46AD2DF189B753957ECB809', '45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097', '4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A', '90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4', 'BDFF4BF48DBC7214A392CF884F7F2A6073CCDB77CA3EB11BEBB93DA8ED8B2158', 'C606E03B5FE8EAD2ECA6BCB45AE684039D928B4EE7C4A03C63D0DF9F94F81DAF', 'EF53164C3F32C788A4FF2947C64BC24931A5C9584E065F82C97B3F809D88CB58', 'FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE']`
+  - `FE78C65211DD0B56A97024FB61111E686EF1FE054AA132BA58E2891AC496F1EE: offset '0x0' → '0xb650'`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20324 38793233ADA900082A111C7E55EFE257E4D5F249D46AD2DF189B753957ECB809`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=256 45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=512 4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024 90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20349 9B125254C7B9599896154195DAC2A199A7ABA5E0F67A5125B458228929163B97`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 BDFF4BF48DBC7214A392CF884F7F2A6073CCDB77CA3EB11BEBB93DA8ED8B2158`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096 C606E03B5FE8EAD2ECA6BCB45AE684039D928B4EE7C4A03C63D0DF9F94F81DAF`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20324 FD0E21DFA9C6B157C14279741A9DD3F67AC3DE4FE785962540E2A7E0A655BC2A`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20316 EF53164C3F32C788A4FF2947C64BC24931A5C9584E065F82C97B3F809D88CB58`
 
 - `DebugDisplaySettingsVolume.Strings`
 
@@ -5783,8 +7759,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=1024`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=144`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20316`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20324`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20349`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=256`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=4096`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=512`
@@ -5999,8 +7975,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=144`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=16`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=960`
+- `AdditionalLightsShadowCasterPass.<>c` (compiler-generated name)
 - `AdditionalLightsShadowCasterPass.AdditionalShadowsConstantBuffer`
 - `AdditionalLightsShadowCasterPass.PassData`
 - `AdditionalLightsShadowCasterPass.ShadowResolutionRequest`
@@ -6233,6 +8213,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.DecalInstanceData`
 - `UnityEngine.Rendering.Universal.DecalPreviewPass`
 - `UnityEngine.Rendering.Universal.DecalPrioritySystem`
+- `UnityEngine.Rendering.Universal.DecalProjector`
 - `UnityEngine.Rendering.Universal.DecalScaleMode`
 - `UnityEngine.Rendering.Universal.DecalSubDrawCall`
 - `UnityEngine.Rendering.Universal.DecalSurfaceData`
@@ -6268,6 +8249,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.Internal.CopyColorPass`
 - `UnityEngine.Rendering.Universal.Internal.CopyDepthPass`
 - `UnityEngine.Rendering.Universal.Internal.DeferredConfig`
+- `UnityEngine.Rendering.Universal.Internal.DeferredLights`
 - `UnityEngine.Rendering.Universal.Internal.DeferredPass`
 - `UnityEngine.Rendering.Universal.Internal.DepthNormalOnlyPass`
 - `UnityEngine.Rendering.Universal.Internal.DepthOnlyPass`
@@ -6336,7 +8318,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.ShadowCascadesOption`
 - `UnityEngine.Rendering.Universal.ShadowData`
 - `UnityEngine.Rendering.Universal.ShadowQuality`
-- `UnityEngine.Rendering.Universal.ShadowResolution`
 - `UnityEngine.Rendering.Universal.ShadowSliceData`
 - `UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights`
 - `UnityEngine.Rendering.Universal.SharedDecalEntityManager`
@@ -6363,13 +8344,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `UnityEngine.Rendering.Universal.UniversalRendererData`
 - `UnityEngine.Rendering.Universal.UpscalingFilterSelection`
 - `UnityEngine.Rendering.Universal.Vignette`
-- `UnityEngine.Rendering.Universal.VolumeFrameworkUpdateMode`
 - `UnityEngine.Rendering.Universal.WhiteBalance`
 - `UnityEngine.Rendering.Universal.XROcclusionMeshPass`
 - `UnityEngine.Rendering.Universal.XRPassUniversal`
 - `UnityEngine.Rendering.Universal.XRSystemData`
 - `UnityEngine.Rendering.Universal.XRSystemUniversal`
-- `UniversalAdditionalCameraData.<>c` (compiler-generated name)
 - `UniversalRenderPipeline.<>c` (compiler-generated name)
 - `UniversalRenderPipeline.Profiling`
 - `UniversalRenderPipeline.SingleCameraRequest`
@@ -6471,7 +8450,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `VL.Rendering.VLDebugDisplaySettingsPreviewRenderPass`
 - `VL.Rendering.VLDecalDrawSystem`
 - `VL.Rendering.VLDecalPass`
-- `VL.Rendering.VLDecalRendererFeature`
 - `VL.Rendering.VLDeferredPass`
 - `VL.Rendering.VLDensityFogVolume`
 - `VL.Rendering.VLDiffusion`
@@ -6488,7 +8466,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `VL.Rendering.VLRGBBlockNoise`
 - `VL.Rendering.VLSRPAdditionalCameraData`
 - `VL.Rendering.VLSRPCapture`
-- `VL.Rendering.VLSRPRenderer`
 - `VL.Rendering.VLSRPRendererData`
 - `VL.Rendering.VLSSRQualitySetting`
 - `VL.Rendering.VLSSRQualitySettingParameter`
@@ -6535,7 +8512,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `VLSRPCapture.<>c__DisplayClass5_0` (compiler-generated name)
 - `VLSRPCapture.RequestData`
 - `VLSRPCapture.SourceType`
-- `VLSRPRenderer.<>c` (compiler-generated name)
 - `VLSimpleRenderer.SimpleFinalBlitPass`
 - `XROcclusionMeshPass.<>c` (compiler-generated name)
 - `XROcclusionMeshPass.PassData`
@@ -6543,40 +8519,29 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 31</summary>
+<details><summary>Mismatching: 34</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
-  - `field declaration order/names: ['05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF', '08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C', '28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA', '29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '636952D3023D8CF5D8245AC30EFB93A443BD4BC23B5E331D51ECB82425FDC30A', '67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01', 'E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A'] → ['08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '18689A54C1FF754BE58500B2ED77A6C75B025BE96F6D01FEF89C42DA1C953F34', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '4DA1D9A416A55C5F9483FAD6A4ADEFCB0806F8917C1868AA1CE3071258665568', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'D254C065C675CC6904C62DA4899F883B0A1776A5F7A834B2B02F8B9A327351AA', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01']`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF`
-  - `08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6: offset '0x14' → '0x0'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=16 0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=144 28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E`
-  - `4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D: offset '0xd8' → '0x28'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=6 582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD`
-  - `6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64: offset '0xea' → '0x96e6'`
+  - `field declaration order/names: ['05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF', '08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C', '28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA', '29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '636952D3023D8CF5D8245AC30EFB93A443BD4BC23B5E331D51ECB82425FDC30A', '67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01', 'E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A'] → ['05FE3BE7BD73808C8574173B558DD5BA6DF28AC65B45EB9E65503BBB699709EF', '08243D32F28C35701F6EA57F52AE707302C8528E8D358F13C6E6915543D265C6', '0ABF8AC68111CEBD27676BF5EF5DD92A3FEE0C68C2FDAB9B259C4795F93C7A8C', '18689A54C1FF754BE58500B2ED77A6C75B025BE96F6D01FEF89C42DA1C953F34', '28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA', '29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E', '45D395DCEE2B50B91F9D5904A0B7AD67B9A8092EF84C9413FA530714EFEB41C5', '4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D', '582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD', '6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64', '67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA', '888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1', '8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80', '97CE6A56520B72FFD4F822EBB03072306ACDAFA96DB437BD907B5A5BF11B5E39', '9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD', 'B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137', 'BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE', 'C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101', 'E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01', 'E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A']`
+  - `28D0A1CE6AB47E8D0C1CC0E9F836A680871AA3942D4B8194B6EC886D038A96AA: offset '0x34' → '0x4c'`
+  - `29450C28965E40169F99DF16D769673DF9CE8F7D5EFB3959EC81642AD034502E: offset '0xc4' → '0xdc'`
+  - `4636993D3E1DA4E9D6B8F87B79E8F7C6D018580D52661950EABC3845C5897A4D: offset '0xd8' → '0x7b36'`
+  - `582A4261FE36A5D1E7D95B57714D681D1E70C11B28807118CEAE1A8DA5F9B4DD: offset '0xe4' → '0x7b42'`
+  - `6322123493378558D4F9DD025993C168685B194246485704DD5B391FDCD77A64: offset '0xea' → '0x7b48'`
   - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 636952D3023D8CF5D8245AC30EFB93A443BD4BC23B5E331D51ECB82425FDC30A`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=12 67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA`
-  - `888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1: offset '0x4c2' → '0x9aa6'`
-  - `8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80: offset '0x4d2' → '0x9ab6'`
-  - `9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD: offset '0x4de' → '0x9ac2'`
-  - `B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137: offset '0x4ea' → '0x9ace'`
-  - `BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE: offset '0x4f6' → '0x9ada'`
-  - `C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101: offset '0x506' → '0x9aea'`
-  - `E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01: offset '0x516' → '0x116d5'`
-  - `missing field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=20 E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A`
+  - `67F97CD57FBAB63018C13EBA31B2DF63BC71EFF185FC0E19E116C63B1954D9EA: offset '0x4b6' → '0x7f08'`
+  - `888955380992D62883B27CC51FDC7E5C290C441026048F403C5618F305AD2BF1: offset '0x4c2' → '0x7f14'`
+  - `8E2129A5F232A49B45FCB149981C3507166B7EE6265A5B90A1C9B0B87B2C0A80: offset '0x4d2' → '0x7f24'`
+  - `9D3A6E7E88415D8C1A0F3887B6384A9A8E4F44A036C5A24796C319751ACACCAD: offset '0x4de' → '0x10ffa'`
+  - `B6599D21CE74F24FA42D57991D6B0D0C5770322C90AF734EEB36A37F74090137: offset '0x4ea' → '0x11006'`
+  - `BAED642339816AFFB3FE8719792D0E4CE82F12DB72B7373D244EAA65445800FE: offset '0x4f6' → '0x11012'`
+  - `C94719FC63BFC7010A8361E8B4D4746BAB3C8AD593769F86532655EE58EBB101: offset '0x506' → '0x11022'`
+  - `E2EF5640DF412939A64301FFA3F66A62A34FA6E45A26E62F6994E5390B380D01: offset '0x516' → '0x11032'`
+  - `E528F4309E1413E6BC35AEA5D8DB8519384D2FCC33F9DD5D1126D73F104CF92A: offset '0x8d6' → '0x113f2'`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=24 18689A54C1FF754BE58500B2ED77A6C75B025BE96F6D01FEF89C42DA1C953F34`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=38578 4DA1D9A416A55C5F9483FAD6A4ADEFCB0806F8917C1868AA1CE3071258665568`
-  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=31707 D254C065C675CC6904C62DA4899F883B0A1776A5F7A834B2B02F8B9A327351AA`
-
-- `AdditionalLightsShadowCasterPass.<>c` (compiler-generated name)
-
-  - `field declaration order/names: ['<>9', '<>9__63_0', '<>9__63_1'] → ['<>9', '<>9__62_0', '<>9__62_1']`
-  - `missing field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__63_0`
-  - `missing field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__63_1`
-  - `extra field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__62_0`
-  - `extra field static RenderFunc<AdditionalLightsShadowCasterPass.PassData> <>9__62_1`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=31302 45D395DCEE2B50B91F9D5904A0B7AD67B9A8092EF84C9413FA530714EFEB41C5`
+  - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=37066 97CE6A56520B72FFD4F822EBB03072306ACDAFA96DB437BD907B5A5BF11B5E39`
 
 - `DebugDisplaySettingsCommon.SettingsPanel`
 
@@ -6591,7 +8556,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `DebugDisplaySettingsRendering.Strings`
 
-  - `field declaration order/names: ['MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax', 'GameViewOnly'] → ['RangeValidationSettingsContainerName', 'MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax', 'GameViewOnly']`
+  - `field declaration order/names: ['MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax', 'GameViewOnly'] → ['RangeValidationSettingsContainerName', 'MapOverlays', 'MapSize', 'AdditionalWireframeModes', 'WireframeNotSupportedWarning', 'OverdrawMode', 'MaxOverdrawCount', 'PostProcessing', 'MSAA', 'HDR', 'TaaDebugMode', 'PixelValidationMode', 'Channels', 'ValueRangeMin', 'ValueRangeMax']`
+  - `missing field static DebugUI.Widget.NameAndTooltip GameViewOnly`
   - `extra field constant string RangeValidationSettingsContainerName`
 
 - `DrawScreenSpaceUIPass.PassData`
@@ -6647,33 +8613,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `field declaration order/names: ['MaxBatchSize', 'm_EntityManager', 'm_WorldToDecals', 'm_NormalToDecals', 'm_DecalLayerMasks', 'm_Sampler'] → ['MaxBatchSize', 'm_EntityManager', 'm_WorldToDecals', 'm_NormalToDecals', 'm_DecalLayerMasks', 'm_Sampler', '<overrideMaterial>k__BackingField']`
   - `extra field instance Material <overrideMaterial>k__BackingField`
 
-- `UnityEngine.Rendering.Universal.DecalProjector`
-
-  - `field declaration order/names: ['_DecalTypeName', '_DecalType', 'onDecalAdd', 'onDecalRemove', 'onDecalPropertyChange', 'onAllDecalPropertyChange', 'onDecalMaterialChange', '<defaultMaterial>k__BackingField', '<decalEntity>k__BackingField', 'm_Color', 'm_Material', 'm_DrawDistance', 'm_FadeScale', 'm_StartAngleFade', 'm_EndAngleFade', 'm_UVScale', 'm_UVBias', 'm_DecalLayerMask', 'm_DecalPriority', 'm_ScaleMode', 'm_Offset', 'm_Size', 'm_FadeFactor', 'm_OldMaterial'] → ['onDecalAdd', 'onDecalRemove', 'onDecalPropertyChange', 'onAllDecalPropertyChange', 'onDecalMaterialChange', '<defaultMaterial>k__BackingField', '<decalEntity>k__BackingField', '_DecalTypeName', '_DecalType', 'm_Color', 'm_Material', 'm_DrawDistance', 'm_FadeScale', 'm_StartAngleFade', 'm_EndAngleFade', 'm_UVScale', 'm_UVBias', 'm_DecalLayerMask', 'm_DecalPriority', 'm_ScaleMode', 'm_Offset', 'm_Size', 'm_FadeFactor', 'm_OldMaterial', 'm_OldDrawDistance', 'm_OldFadeScale', 'm_OldStartAngleFade', 'm_OldEndAngleFade', 'm_OldUVScale', 'm_OldUVBias', 'm_OldScaleMode', 'm_OldOffset', 'm_OldSize', 'm_OldFadeFactor']`
-  - `_DecalTypeName: offset '0x0' → '0x30'`
-  - `_DecalType: offset '0x8' → '0x38'`
-  - `onDecalAdd: offset '0x10' → '0x0'`
-  - `onDecalRemove: offset '0x18' → '0x8'`
-  - `onDecalPropertyChange: offset '0x20' → '0x10'`
-  - `onAllDecalPropertyChange: offset '0x28' → '0x18'`
-  - `onDecalMaterialChange: offset '0x30' → '0x20'`
-  - `<defaultMaterial>k__BackingField: offset '0x38' → '0x28'`
-  - `extra field instance float m_OldDrawDistance`
-  - `extra field instance float m_OldFadeScale`
-  - `extra field instance float m_OldStartAngleFade`
-  - `extra field instance float m_OldEndAngleFade`
-  - `extra field instance Vector2 m_OldUVScale`
-  - `extra field instance Vector2 m_OldUVBias`
-  - `extra field instance DecalScaleMode m_OldScaleMode`
-  - `extra field instance Vector3 m_OldOffset`
-  - `extra field instance Vector3 m_OldSize`
-  - `extra field instance float m_OldFadeFactor`
-
-- `UnityEngine.Rendering.Universal.Internal.DeferredLights`
-
-  - `field declaration order/names: ['k_GBufferNames', 'k_StencilDeferredPassNames', 'k_InvalidLightOffset', 'k_SetupLights', 'k_DeferredPass', 'k_DeferredStencilPass', 'k_DeferredFogPass', 'k_ClearStencilPartial', 'k_SetupLightConstants', 'kStencilShapeGuard', 'm_ProfilingSetupLights', 'm_ProfilingDeferredPass', 'm_ProfilingSetupLightConstants', '<RenderingLayerMaskSize>k__BackingField', '<UseDecalLayers>k__BackingField', '<UseRenderPass>k__BackingField', '<HasDepthPrepass>k__BackingField', '<HasNormalPrepass>k__BackingField', '<HasRenderingLayerPrepass>k__BackingField', '<IsOverlay>k__BackingField', '<AccurateGbufferNormals>k__BackingField', '<MixedLightingSetup>k__BackingField', '<UseJobSystem>k__BackingField', '<RenderWidth>k__BackingField', '<RenderHeight>k__BackingField', '<GbufferAttachments>k__BackingField', 'GbufferRTHandles', '<GbufferTextureHandles>k__BackingField', '<DeferredInputAttachments>k__BackingField', '<DeferredInputIsTransient>k__BackingField', '<DepthAttachment>k__BackingField', '<DepthCopyTexture>k__BackingField', '<GbufferFormats>k__BackingField', '<DepthAttachmentHandle>k__BackingField', 'm_stencilVisLights', 'm_stencilVisLightOffsets', 'm_AdditionalLightsShadowCasterPass', 'm_SphereMesh', 'm_HemisphereMesh', 'm_FullscreenMesh', 'm_StencilDeferredMaterial', 'm_StencilDeferredPasses', 'm_ScreenToWorld', 'm_ProfilingSamplerDeferredStencilPass', 'm_ProfilingSamplerDeferredFogPass', 'm_ProfilingSamplerClearStencilPartialPass', 'm_LightCookieManager', '_LitColorMultiplier', 'k_vlStencilDeferredPassNames', 'm_ProfilingSamplerCopyGbufferPass', 'm_ProfilingSamplerFillIndirectPass', 'm_ProfilingSamplerCopyLitColor', 'm_ProfilingActorDeferredPass', 'm_ProfilingLightingComplexity', 'm_profilingSamplerActorLightingPass', 'm_ProfilingSamplerCopyDepthPass', 'm_ProfilingSamplerPostRender', 'm_ProfilingDirectReflection', 'm_ProfilingIndirectReflection', 'm_vlStencilDeferredPasses', 'm_BoxMesh', '<storeLitColor>k__BackingField', '<renderedDirectReflection>k__BackingField', 'm_ProfilingPlanarReflection', '<sharedPlanarReflectionManager>k__BackingField', '_planarReflectionEntityManager', '_planarReflectionUpdateCachedSystem', '_planarReflectionCullingSystem', '_planarReflectionResultSystem', '_planarReflectionCount'] → ['k_GBufferNames', 'k_StencilDeferredPassNames', 'k_InvalidLightOffset', 'k_SetupLights', 'k_DeferredPass', 'k_DeferredStencilPass', 'k_DeferredFogPass', 'k_ClearStencilPartial', 'k_SetupLightConstants', 'kStencilShapeGuard', 'm_ProfilingSetupLights', 'm_ProfilingDeferredPass', 'm_ProfilingSetupLightConstants', '<RenderingLayerMaskSize>k__BackingField', '<UseDecalLayers>k__BackingField', '<UseRenderPass>k__BackingField', '<HasDepthPrepass>k__BackingField', '<HasNormalPrepass>k__BackingField', '<HasRenderingLayerPrepass>k__BackingField', '<IsOverlay>k__BackingField', '<AccurateGbufferNormals>k__BackingField', '<MixedLightingSetup>k__BackingField', '<UseJobSystem>k__BackingField', '<RenderWidth>k__BackingField', '<RenderHeight>k__BackingField', '<GbufferAttachments>k__BackingField', 'GbufferRTHandles', '<GbufferTextureHandles>k__BackingField', '<DeferredInputAttachments>k__BackingField', '<DeferredInputIsTransient>k__BackingField', '<DepthAttachment>k__BackingField', '<DepthCopyTexture>k__BackingField', '<GbufferFormats>k__BackingField', '<DepthAttachmentHandle>k__BackingField', 'm_stencilVisLights', 'm_stencilVisLightOffsets', 'm_AdditionalLightsShadowCasterPass', 'm_SphereMesh', 'm_HemisphereMesh', 'm_FullscreenMesh', 'm_StencilDeferredMaterial', 'm_StencilDeferredPasses', 'm_ScreenToWorld', 'm_ProfilingSamplerDeferredStencilPass', 'm_ProfilingSamplerDeferredFogPass', 'm_ProfilingSamplerClearStencilPartialPass', 'm_LightCookieManager', '_LitColorMultiplier', 'k_vlStencilDeferredPassNames', 'm_ProfilingSamplerCopyGbufferPass', 'm_ProfilingSamplerFillIndirectPass', 'm_ProfilingSamplerCopyLitColor', 'm_ProfilingActorDeferredPass', 'm_ProfilingLightingComplexity', 'm_profilingSamplerActorLightingPass', 'm_ProfilingSamplerCopyDepthPass', 'm_ProfilingSamplerPostRender', 'm_ProfilingDirectReflection', 'm_ProfilingIndirectReflection', 'm_vlStencilDeferredPasses', 'm_BoxMesh', '<storeLitColor>k__BackingField', '<renderedDirectReflection>k__BackingField', 'm_ProfilingPlanarReflection', '_planarReflectionEntityManager', '_planarReflectionUpdateCachedSystem', '_planarReflectionCullingSystem', '_planarReflectionResultSystem', '_planarReflectionCount']`
-  - `missing field static SharedPlanarReflectionEntityManager <sharedPlanarReflectionManager>k__BackingField`
-
 - `UnityEngine.Rendering.Universal.Internal.MainLightShadowCasterPass`
 
   - `field declaration order/names: ['m_CascadeBorder', 'm_MaxShadowDistanceSq', 'm_ShadowCasterCascadesCount', 'm_MainLightShadowmapID', 'm_MainLightShadowmapTexture', 'm_EmptyMainLightShadowmapTexture', 's_EmptyShadowParams', 's_EmptyShadowmapSize', 'm_MainLightShadowMatrices', 'm_CascadeSlices', 'm_CascadeSplitDistances', 'm_CreateEmptyShadowmap', 'renderTargetWidth', 'renderTargetHeight', 'm_ProfilingSetupSampler'] → ['k_MaxCascades', 'k_ShadowmapBufferBits', 'm_CascadeBorder', 'm_MaxShadowDistanceSq', 'm_ShadowCasterCascadesCount', 'm_MainLightShadowmapID', 'm_MainLightShadowmapTexture', 'm_EmptyMainLightShadowmapTexture', 'k_EmptyShadowMapDimensions', 'k_MainLightShadowMapTextureName', 'k_EmptyMainLightShadowMapTextureName', 's_EmptyShadowParams', 's_EmptyShadowmapSize', 'm_MainLightShadowMatrices', 'm_CascadeSlices', 'm_CascadeSplitDistances', 'm_CreateEmptyShadowmap', 'renderTargetWidth', 'renderTargetHeight', 'm_ProfilingSetupSampler']`
@@ -6706,6 +8645,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `m_GraphicsFormatSupport: offset '0x90' → '0x98'`
   - `extra field static Material s_ErrorMaterial`
 
+- `UnityEngine.Rendering.Universal.ShadowResolution`
+
+  - `field declaration order/names: ['value__', '_256', '_512', '_1024', '_2048', '_4096', '_8192'] → ['value__', '_256', '_512', '_1024', '_2048', '_4096']`
+  - `missing field constant ShadowResolution _8192`
+
 - `UnityEngine.Rendering.Universal.ShadowUtils`
 
   - `field declaration order/names: ['m_ForceShadowPointSampling', '_ShadowBias', '_LightDirection', '_LightPosition'] → ['m_ForceShadowPointSampling', '_ShadowBias', '_LightDirection', '_LightPosition', 'kMinimumPunctualLightHardShadowResolution', 'kMinimumPunctualLightSoftShadowResolution']`
@@ -6729,17 +8673,59 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UnityEngine.Rendering.Universal.UniversalRenderer`
 
-  - `field declaration order/names: ['k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture'] → ['k_DepthStencilFormat', 'k_DepthBufferBits', 'k_FinalBlitPassQueueOffset', 'k_AfterFinalBlitPassQueueOffset', 'k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture']`
+  - `field declaration order/names: ['k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture'] → ['k_DepthStencilFormat', 'k_DepthBufferBits', 'k_FinalBlitPassQueueOffset', 'k_AfterFinalBlitPassQueueOffset', 'k_DepthNormalsOnly', 'm_Clustering', 'm_DepthPrepass', 'm_DepthNormalPrepass', 'm_PrimedDepthCopyPass', 'm_MotionVectorPass', 'm_MainLightShadowCasterPass', 'm_AdditionalLightsShadowCasterPass', 'm_GBufferPass', 'm_GBufferCopyDepthPass', 'm_DeferredPass', 'm_RenderOpaqueForwardOnlyPass', 'm_RenderOpaqueForwardPass', 'm_RenderOpaqueForwardWithRenderingLayersPass', 'm_DrawSkyboxPass', 'm_CopyDepthPass', 'm_CopyColorPass', 'm_TransparentSettingsPass', 'm_RenderTransparentForwardPass', 'm_OnRenderObjectCallbackPass', 'm_FinalBlitPass', 'm_CapturePass', 'm_XROcclusionMeshPass', 'm_XRCopyDepthPass', 'm_DrawOffscreenUIPass', 'm_DrawOverlayUIPass', 'm_ColorBufferSystem', 'm_ActiveCameraColorAttachment', 'm_ColorFrontBuffer', 'm_ActiveCameraDepthAttachment', 'm_CameraDepthAttachment', 'm_XRTargetHandleAlias', 'm_CameraDepthAttachment_D3d_11', 'm_DepthTexture', 'm_NormalsTexture', 'm_DecalLayersTexture', 'm_OpaqueColor', 'm_MotionVectorColor', 'm_MotionVectorDepth', 'm_ForwardLights', 'm_DeferredLights', 'm_RenderingMode', 'm_DepthPrimingMode', 'm_CopyDepthMode', 'm_DepthPrimingRecommended', 'm_DefaultStencilState', 'm_LightCookieManager', 'm_IntermediateTextureMode', 'm_VulkanEnablePreTransform', 'm_BlitMaterial', 'm_BlitHDRMaterial', 'm_CopyDepthMaterial', 'm_SamplingMaterial', 'm_StencilDeferredMaterial', 'm_CameraMotionVecMaterial', 'm_ObjectMotionVecMaterial', 'm_PostProcessPasses', 'm_RenderGraphCameraColorHandle', 'm_RenderGraphCameraDepthHandle', 'm_ActiveRenderGraphColor', 'm_ActiveRenderGraphDepth', 'm_TargetIsBackbuffer', 'frameResources', 'm_UseIntermediateTexture']`
+  - `m_ActiveCameraDepthAttachment: offset '0x288' → '0x290'`
+  - `m_CameraDepthAttachment: offset '0x290' → '0x298'`
+  - `m_XRTargetHandleAlias: offset '0x298' → '0x2a0'`
+  - `m_CameraDepthAttachment_D3d_11: offset '0x2a0' → '0x2a8'`
+  - `m_DepthTexture: offset '0x2a8' → '0x2b0'`
+  - `m_NormalsTexture: offset '0x2b0' → '0x2b8'`
+  - `m_DecalLayersTexture: offset '0x2b8' → '0x2c0'`
+  - `m_OpaqueColor: offset '0x2c0' → '0x2c8'`
+  - `m_MotionVectorColor: offset '0x2c8' → '0x2d0'`
+  - `m_MotionVectorDepth: offset '0x2d0' → '0x2d8'`
+  - `m_ForwardLights: offset '0x2d8' → '0x2e0'`
+  - `m_DeferredLights: offset '0x2e0' → '0x2e8'`
+  - `m_RenderingMode: offset '0x2e8' → '0x2f0'`
+  - `m_DepthPrimingMode: offset '0x2ec' → '0x2f4'`
+  - `m_CopyDepthMode: offset '0x2f0' → '0x2f8'`
+  - `m_DepthPrimingRecommended: offset '0x2f4' → '0x2fc'`
+  - `m_DefaultStencilState: offset '0x2f5' → '0x2fd'`
+  - `m_LightCookieManager: offset '0x308' → '0x310'`
+  - `m_IntermediateTextureMode: offset '0x310' → '0x318'`
+  - `m_VulkanEnablePreTransform: offset '0x314' → '0x31c'`
+  - `m_BlitMaterial: offset '0x318' → '0x320'`
+  - `m_BlitHDRMaterial: offset '0x320' → '0x328'`
+  - `m_CopyDepthMaterial: offset '0x328' → '0x330'`
+  - `m_SamplingMaterial: offset '0x330' → '0x338'`
+  - `m_StencilDeferredMaterial: offset '0x338' → '0x340'`
+  - `m_CameraMotionVecMaterial: offset '0x340' → '0x348'`
+  - `m_ObjectMotionVecMaterial: offset '0x348' → '0x350'`
+  - `m_PostProcessPasses: offset '0x350' → '0x358'`
+  - `m_TargetIsBackbuffer: offset '0x390' → '0x398'`
+  - `frameResources: offset '0x398' → '0x3a0'`
   - `extra field constant GraphicsFormat k_DepthStencilFormat`
   - `extra field constant int k_DepthBufferBits`
   - `extra field constant int k_FinalBlitPassQueueOffset`
   - `extra field constant int k_AfterFinalBlitPassQueueOffset`
+  - `extra field instance RTHandle m_ColorFrontBuffer`
+
+- `UnityEngine.Rendering.Universal.VolumeFrameworkUpdateMode`
+
+  - `field declaration order/names: ['value__', 'EveryFrame', 'ViaScripting', 'UsePipelineSettings', 'UseMainCamera'] → ['value__', 'EveryFrame', 'ViaScripting', 'UsePipelineSettings']`
+  - `missing field constant VolumeFrameworkUpdateMode UseMainCamera`
 
 - `UnityEngine.Rendering.Universal.ZBinningJob`
 
   - `field declaration order/names: ['bins', 'minMaxZs', 'zBinScale', 'zBinOffset', 'binCount', 'wordsPerTile', 'lightCount', 'reflectionProbeCount', 'batchCount', 'viewCount', 'isOrthographic'] → ['batchSize', 'headerLength', 'bins', 'minMaxZs', 'zBinScale', 'zBinOffset', 'binCount', 'wordsPerTile', 'lightCount', 'reflectionProbeCount', 'batchCount', 'viewCount', 'isOrthographic']`
   - `extra field constant int batchSize`
   - `extra field constant int headerLength`
+
+- `UniversalAdditionalCameraData.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__55_0'] → ['<>9', '<>9__64_0']`
+  - `missing field static Predicate<Camera> <>9__55_0`
+  - `extra field static Predicate<Camera> <>9__64_0`
 
 - `UniversalRenderPipeline.Profiling.Pipeline`
 
@@ -6758,11 +8744,11 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 - `UniversalRenderer.<>c` (compiler-generated name)
 
-  - `field declaration order/names: ['<>9', '<>9__93_0', '<>9__93_1'] → ['<>9', '<>9__90_0', '<>9__90_1']`
+  - `field declaration order/names: ['<>9', '<>9__93_0', '<>9__93_1'] → ['<>9', '<>9__92_0', '<>9__92_1']`
   - `missing field static Predicate<ScriptableRenderPass> <>9__93_0`
   - `missing field static Predicate<ScriptableRenderPass> <>9__93_1`
-  - `extra field static Predicate<ScriptableRenderPass> <>9__90_0`
-  - `extra field static Predicate<ScriptableRenderPass> <>9__90_1`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__92_0`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__92_1`
 
 - `UniversalRenderer.Profiling`
 
@@ -6775,6 +8761,31 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `extra field instance Shader terrainDetailLitPS`
   - `extra field instance Shader terrainDetailGrassPS`
   - `extra field instance Shader terrainDetailGrassBillboardPS`
+
+- `VL.Rendering.VLDecalRendererFeature`
+
+  - `field declaration order/names: ['MaxDrawDistance', 'layer', '<sharedDecalEntityManager>k__BackingField', 'm_RecreateSystems', 'm_DecalPreviewPass', 'm_LitDecalPass', 'm_ActorDecalPass', 'm_DecalEntityManager', 'm_DecalUpdateCachedSystem', 'm_DecalUpdateCullingGroupSystem', 'm_DecalUpdateCulledSystem', 'm_DecalCreateDrawCallSystem', 'm_DecalPrioritySystem', '_vlLitDecalDrawSystem', '_actorDecalDrawSystem'] → ['MaxDrawDistance', 'layer', 'm_RecreateSystems', 'm_DecalPreviewPass', 'm_LitDecalPass', 'm_ActorDecalPass', 'm_DecalEntityManager', 'm_DecalUpdateCachedSystem', 'm_DecalUpdateCullingGroupSystem', 'm_DecalUpdateCulledSystem', 'm_DecalCreateDrawCallSystem', 'm_DecalPrioritySystem', '_vlLitDecalDrawSystem', '_actorDecalDrawSystem', '<sharedDecalEntityManager>k__BackingField']`
+
+- `VL.Rendering.VLSRPRenderer`
+
+  - `m_VLMotionVectorPass: offset '0x3a0' → '0x3a8'`
+  - `m_DrawSkyboxPass: offset '0x3a8' → '0x3b0'`
+  - `m_LitColorTexture: offset '0x3b0' → '0x3b8'`
+  - `m_AdditionalInfoTexture: offset '0x3b8' → '0x3c0'`
+  - `m_SkyMaterial: offset '0x3c0' → '0x3c8'`
+  - `m_FogMaterial: offset '0x3c8' → '0x3d0'`
+  - `m_VLPostProcessPasses: offset '0x3d0' → '0x3d8'`
+  - `_vlDeferredPass: offset '0x420' → '0x428'`
+  - `m_ActorForward: offset '0x428' → '0x430'`
+  - `_vlPreDepthIDPass: offset '0x430' → '0x438'`
+
+- `VLSRPRenderer.<>c` (compiler-generated name)
+
+  - `field declaration order/names: ['<>9', '<>9__27_0', '<>9__27_1'] → ['<>9', '<>9__26_0', '<>9__26_1']`
+  - `missing field static Predicate<ScriptableRenderPass> <>9__27_0`
+  - `missing field static Predicate<ScriptableRenderPass> <>9__27_1`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__26_0`
+  - `extra field static Predicate<ScriptableRenderPass> <>9__26_1`
 
 
 </details>
@@ -6824,11 +8835,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 4</summary>
+<details><summary>Missing: 1</summary>
 
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=144`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=20`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6`
 - `DebugDisplaySettingsRendering.WidgetFactory.<>c__DisplayClass14_0` (compiler-generated name)
 
 </details>
@@ -6836,8 +8844,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 <details><summary>Extra: 184</summary>
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=24`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=31707`
-- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=38578`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=31302`
+- `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=37066`
 - `Clipper.NodeType`
 - `DeferredLights.StencilDeferredPasses`
 - `Dict.LessOrEqual<TValue>`
@@ -7025,7 +9033,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## Unity.TextMeshPro.dll
 
-<details><summary>Matching: 115</summary>
+<details><summary>Matching: 120</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
@@ -7050,6 +9058,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMP_Settings.LineBreakingTable`
 - `TMP_SpriteAnimator.<DoSpriteAnimationInternal>d__7` (compiler-generated name)
 - `TMP_SpriteAsset.<>c` (compiler-generated name)
+- `TMP_Text.<>c` (compiler-generated name)
 - `TMP_Text.CharacterSubstitution`
 - `TMP_Text.MissingCharacterEventCallback`
 - `TMP_Text.SpecialCharacter`
@@ -7081,6 +9090,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMPro.MaterialReference`
 - `TMPro.MaterialReferenceManager`
 - `TMPro.MultipleSubstitutionRecord`
+- `TMPro.RichTextTagAttribute`
 - `TMPro.SetPropertyUtility`
 - `TMPro.ShaderUtilities`
 - `TMPro.TMP_Asset`
@@ -7114,6 +9124,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMPro.TMP_StyleSheet`
 - `TMPro.TMP_SubMesh`
 - `TMPro.TMP_SubMeshUI`
+- `TMPro.TMP_Text`
 - `TMPro.TMP_TextElement`
 - `TMPro.TMP_TextElementType`
 - `TMPro.TMP_TextElement_Legacy`
@@ -7130,6 +9141,8 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `TMPro.TextContainer`
 - `TMPro.TextContainerAnchors`
 - `TMPro.TextElementType`
+- `TMPro.TextMeshPro`
+- `TMPro.TextMeshProUGUI`
 - `TMPro.TextOverflowModes`
 - `TMPro.TextProcessingElementType`
 - `TMPro.TextRenderFlags`
@@ -7145,7 +9158,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 11</summary>
+<details><summary>Mismatching: 6</summary>
 
 - `<PrivateImplementationDetails>` (compiler-generated name)
 
@@ -7153,23 +9166,12 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=3772 50D8F9B758CA049E70E848EB6297B10698B9DFE1BC09A250619124C983CAC0E8`
   - `extra field static <PrivateImplementationDetails>.__StaticArrayInitTypeSize=4040 CE288FEE87FD0C469553BE04A1827FA38389051875CAC152A072634634D7D780`
 
-- `TMP_Text.<>c` (compiler-generated name)
-
-  - `field declaration order/names: ['<>9', '<>9__645_0'] → ['<>9', '<>9__648_0']`
-  - `missing field static Action<TMP_TextInfo> <>9__645_0`
-  - `extra field static Action<TMP_TextInfo> <>9__648_0`
-
 - `TMPro.Compute_DT_EventArgs`
 
   - `field declaration order/names: [] → ['EventType', 'ProgressPercentage', 'Colors']`
   - `extra field instance Compute_DistanceTransform_EventTypes EventType`
   - `extra field instance float ProgressPercentage`
   - `extra field instance Color[] Colors`
-
-- `TMPro.RichTextTagAttribute`
-
-  - `field declaration order/names: ['nameHashCode', 'valueHashCode', 'valueType', 'valueStartIndex', 'valueLength', 'unitType'] → ['nameHashCode', 'valueHashCode', 'valueType', 'valueStartIndex', 'valueLength', 'unitType', 'k_Default']`
-  - `extra field static RichTextTagAttribute k_Default`
 
 - `TMPro.TMP_Math`
 
@@ -7191,159 +9193,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `k_RegularStyleHashCode: offset '0x20' → '0x28'`
   - `extra field static TMP_Settings s_TextSettings`
 
-- `TMPro.TMP_Text`
-
-  - `field declaration order/names: ['m_text', 'm_IsTextBackingStringDirty', 'm_TextPreprocessor', 'm_isRightToLeft', 'm_fontAsset', 'm_currentFontAsset', 'm_isSDFShader', 'm_sharedMaterial', 'm_currentMaterial', 'm_materialReferences', 'm_materialReferenceIndexLookup', 'm_materialReferenceStack', 'm_currentMaterialIndex', 'm_fontSharedMaterials', 'm_fontMaterial', 'm_fontMaterials', 'm_isMaterialDirty', 'm_fontColor32', 'm_fontColor', 's_colorWhite', 'm_underlineColor', 'm_strikethroughColor', 'm_HighlightState', 'm_ConvertToLinearSpace', 'm_enableVertexGradient', 'm_colorMode', 'm_fontColorGradient', 'm_fontColorGradientPreset', 'm_spriteAsset', 'm_tintAllSprites', 'm_tintSprite', 'm_spriteColor', 'm_StyleSheet', 'm_TextStyle', 'm_TextStyleHashCode', 'm_overrideHtmlColors', 'm_faceColor', 'm_outlineColor', 'm_outlineWidth', 'm_currentEnvMapRotation', 'm_hasEnvMapProperty', 'm_fontSize', 'm_currentFontSize', 'm_fontSizeBase', 'm_sizeStack', 'm_fontWeight', 'm_FontWeightInternal', 'm_FontWeightStack', 'm_enableAutoSizing', 'm_maxFontSize', 'm_minFontSize', 'm_AutoSizeIterationCount', 'm_AutoSizeMaxIterationCount', 'm_IsAutoSizePointSizeSet', 'm_fontSizeMin', 'm_fontSizeMax', 'm_fontStyle', 'm_FontStyleInternal', 'm_fontStyleStack', 'm_isUsingBold', 'm_HorizontalAlignment', 'm_VerticalAlignment', 'm_textAlignment', 'm_lineJustification', 'm_lineJustificationStack', 'm_textContainerLocalCorners', 'm_characterSpacing', 'm_cSpacing', 'm_monoSpacing', 'm_duoSpace', 'm_wordSpacing', 'm_lineSpacing', 'm_lineSpacingDelta', 'm_lineHeight', 'm_IsDrivenLineSpacing', 'm_lineSpacingMax', 'm_paragraphSpacing', 'm_charWidthMaxAdj', 'm_charWidthAdjDelta', 'm_TextWrappingMode', 'm_isCharacterWrappingEnabled', 'm_isNonBreakingSpace', 'm_isIgnoringAlignment', 'm_wordWrappingRatios', 'm_overflowMode', 'm_firstOverflowCharacterIndex', 'm_linkedTextComponent', 'parentLinkedComponent', 'm_isTextTruncated', 'm_enableKerning', 'm_LastBaseGlyphIndex', 'm_ActiveFontFeatures', 'm_enableExtraPadding', 'checkPaddingRequired', 'm_isRichText', 'm_EmojiFallbackSupport', 'm_parseCtrlCharacters', 'm_isOverlay', 'm_isOrthographic', 'm_isCullingEnabled', 'm_isMaskingEnabled', 'isMaskUpdateRequired', 'm_ignoreCulling', 'm_horizontalMapping', 'm_verticalMapping', 'm_uvLineOffset', 'm_renderMode', 'm_geometrySortingOrder', 'm_IsTextObjectScaleStatic', 'm_VertexBufferAutoSizeReduction', 'm_firstVisibleCharacter', 'm_maxVisibleCharacters', 'm_maxVisibleWords', 'm_maxVisibleLines', 'm_useMaxVisibleDescender', 'm_pageToDisplay', 'm_isNewPage', 'm_margin', 'm_marginLeft', 'm_marginRight', 'm_marginWidth', 'm_marginHeight', 'm_width', 'm_textInfo', 'm_havePropertiesChanged', 'm_isUsingLegacyAnimationComponent', 'm_transform', 'm_rectTransform', 'm_PreviousRectTransformSize', 'm_PreviousPivotPosition', '<autoSizeTextContainer>k__BackingField', 'm_autoSizeTextContainer', 'm_mesh', 'm_isVolumetricText', 'OnFontAssetRequest', 'OnSpriteAssetRequest', 'OnMissingCharacter', 'OnPreRenderText', 'm_spriteAnimator', 'm_flexibleHeight', 'm_flexibleWidth', 'm_minWidth', 'm_minHeight', 'm_maxWidth', 'm_maxHeight', 'm_LayoutElement', 'm_preferredWidth', 'm_RenderedWidth', 'm_isPreferredWidthDirty', 'm_preferredHeight', 'm_RenderedHeight', 'm_isPreferredHeightDirty', 'm_isCalculatingPreferredValues', 'm_layoutPriority', 'm_isLayoutDirty', 'm_isAwake', 'm_isWaitingOnResourceLoad', 'm_inputSource', 'm_fontScaleMultiplier', 'm_htmlTag', 'm_xmlAttribute', 'm_attributeParameterValues', 'tag_LineIndent', 'tag_Indent', 'm_indentStack', 'tag_NoParsing', 'm_isTextLayoutPhase', 'm_FXRotation', 'm_FXScale', 'm_TextProcessingArray', 'm_InternalTextProcessingArraySize', 'm_internalCharacterInfo', 'm_totalCharacterCount', 'm_SavedWordWrapState', 'm_SavedLineState', 'm_SavedEllipsisState', 'm_SavedLastValidState', 'm_SavedSoftLineBreakState', 'm_EllipsisInsertionCandidateStack', 'm_characterCount', 'm_firstCharacterOfLine', 'm_firstVisibleCharacterOfLine', 'm_lastCharacterOfLine', 'm_lastVisibleCharacterOfLine', 'm_lineNumber', 'm_lineVisibleCharacterCount', 'm_lineVisibleSpaceCount', 'm_pageNumber', 'm_PageAscender', 'm_maxTextAscender', 'm_maxCapHeight', 'm_ElementAscender', 'm_ElementDescender', 'm_maxLineAscender', 'm_maxLineDescender', 'm_startOfLineAscender', 'm_startOfLineDescender', 'm_lineOffset', 'm_meshExtents', 'm_htmlColor', 'm_colorStack', 'm_underlineColorStack', 'm_strikethroughColorStack', 'm_HighlightStateStack', 'm_colorGradientPreset', 'm_colorGradientStack', 'm_colorGradientPresetIsTinted', 'm_tabSpacing', 'm_spacing', 'm_TextStyleStacks', 'm_TextStyleStackDepth', 'm_ItalicAngleStack', 'm_ItalicAngle', 'm_actionStack', 'm_padding', 'm_baselineOffset', 'm_baselineOffsetStack', 'm_xAdvance', 'm_textElementType', 'm_cached_TextElement', 'm_Ellipsis', 'm_Underline', 'm_defaultSpriteAsset', 'm_currentSpriteAsset', 'm_spriteCount', 'm_spriteIndex', 'm_spriteAnimationID', 'k_ParseTextMarker', 'k_InsertNewLineMarker', 'm_ignoreActiveState', 'm_TextBackingArray', 'k_Power', 'k_LargePositiveVector2', 'k_LargeNegativeVector2', 'k_LargePositiveFloat', 'k_LargeNegativeFloat', 'k_LargePositiveInt', 'k_LargeNegativeInt'] → ['m_text', 'm_IsTextBackingStringDirty', 'm_TextPreprocessor', 'm_isRightToLeft', 'm_fontAsset', 'm_currentFontAsset', 'm_isSDFShader', 'm_sharedMaterial', 'm_currentMaterial', 'm_materialReferences', 'm_materialReferenceIndexLookup', 'm_materialReferenceStack', 'm_currentMaterialIndex', 'm_fontSharedMaterials', 'm_fontMaterial', 'm_fontMaterials', 'm_isMaterialDirty', 'm_fontColor32', 'm_fontColor', 's_colorWhite', 'm_underlineColor', 'm_strikethroughColor', 'm_HighlightState', 'm_ConvertToLinearSpace', 'm_enableVertexGradient', 'm_colorMode', 'm_fontColorGradient', 'm_fontColorGradientPreset', 'm_spriteAsset', 'm_tintAllSprites', 'm_tintSprite', 'm_spriteColor', 'm_StyleSheet', 'm_TextStyle', 'm_TextStyleHashCode', 'm_overrideHtmlColors', 'm_faceColor', 'm_outlineColor', 'm_outlineWidth', 'm_currentEnvMapRotation', 'm_hasEnvMapProperty', 'm_fontSize', 'm_currentFontSize', 'm_fontSizeBase', 'm_sizeStack', 'm_fontWeight', 'm_FontWeightInternal', 'm_FontWeightStack', 'm_enableAutoSizing', 'm_maxFontSize', 'm_minFontSize', 'm_AutoSizeIterationCount', 'm_AutoSizeMaxIterationCount', 'm_IsAutoSizePointSizeSet', 'm_fontSizeMin', 'm_fontSizeMax', 'm_fontStyle', 'm_FontStyleInternal', 'm_fontStyleStack', 'm_isUsingBold', 'm_HorizontalAlignment', 'm_VerticalAlignment', 'm_textAlignment', 'm_lineJustification', 'm_lineJustificationStack', 'm_textContainerLocalCorners', 'm_characterSpacing', 'm_cSpacing', 'm_monoSpacing', 'm_duoSpace', 'm_characterHorizontalScale', 'm_wordSpacing', 'm_lineSpacing', 'm_lineSpacingDelta', 'm_lineHeight', 'm_IsDrivenLineSpacing', 'm_lineSpacingMax', 'm_paragraphSpacing', 'm_charWidthMaxAdj', 'm_charWidthAdjDelta', 'm_TextWrappingMode', 'm_isCharacterWrappingEnabled', 'm_isNonBreakingSpace', 'm_isIgnoringAlignment', 'm_wordWrappingRatios', 'm_overflowMode', 'm_firstOverflowCharacterIndex', 'm_linkedTextComponent', 'parentLinkedComponent', 'm_isTextTruncated', 'm_enableKerning', 'm_LastBaseGlyphIndex', 'm_ActiveFontFeatures', 'm_enableExtraPadding', 'checkPaddingRequired', 'm_isRichText', 'm_EmojiFallbackSupport', 'm_parseCtrlCharacters', 'm_isOverlay', 'm_isOrthographic', 'm_isCullingEnabled', 'm_isMaskingEnabled', 'isMaskUpdateRequired', 'm_ignoreCulling', 'm_horizontalMapping', 'm_verticalMapping', 'm_uvLineOffset', 'm_renderMode', 'm_geometrySortingOrder', 'm_IsTextObjectScaleStatic', 'm_VertexBufferAutoSizeReduction', 'm_firstVisibleCharacter', 'm_maxVisibleCharacters', 'm_maxVisibleWords', 'm_maxVisibleLines', 'm_useMaxVisibleDescender', 'm_pageToDisplay', 'm_isNewPage', 'm_margin', 'm_marginLeft', 'm_marginRight', 'm_marginWidth', 'm_marginHeight', 'm_width', 'm_textInfo', 'm_havePropertiesChanged', 'm_isUsingLegacyAnimationComponent', 'm_transform', 'm_rectTransform', 'm_PreviousRectTransformSize', 'm_PreviousPivotPosition', '<autoSizeTextContainer>k__BackingField', 'm_autoSizeTextContainer', 'm_mesh', 'm_isVolumetricText', 'OnFontAssetRequest', 'OnSpriteAssetRequest', 'OnMissingCharacter', 'OnPreRenderText', 'm_spriteAnimator', 'm_flexibleHeight', 'm_flexibleWidth', 'm_minWidth', 'm_minHeight', 'm_maxWidth', 'm_maxHeight', 'm_LayoutElement', 'm_preferredWidth', 'm_RenderedWidth', 'm_isPreferredWidthDirty', 'm_preferredHeight', 'm_RenderedHeight', 'm_isPreferredHeightDirty', 'm_isCalculatingPreferredValues', 'm_layoutPriority', 'm_isLayoutDirty', 'm_isAwake', 'm_isWaitingOnResourceLoad', 'm_inputSource', 'm_fontScaleMultiplier', 'm_htmlTag', 'm_xmlAttribute', 'm_attributeParameterValues', 'tag_LineIndent', 'tag_Indent', 'm_indentStack', 'tag_NoParsing', 'm_isTextLayoutPhase', 'm_FXRotation', 'm_FXScale', 'm_TextProcessingArray', 'm_InternalTextProcessingArraySize', 'm_internalCharacterInfo', 'm_totalCharacterCount', 'm_SavedWordWrapState', 'm_SavedLineState', 'm_SavedEllipsisState', 'm_SavedLastValidState', 'm_SavedSoftLineBreakState', 'm_EllipsisInsertionCandidateStack', 'm_characterCount', 'm_firstCharacterOfLine', 'm_firstVisibleCharacterOfLine', 'm_lastCharacterOfLine', 'm_lastVisibleCharacterOfLine', 'm_lineNumber', 'm_lineVisibleCharacterCount', 'm_lineVisibleSpaceCount', 'm_pageNumber', 'm_PageAscender', 'm_maxTextAscender', 'm_maxCapHeight', 'm_ElementAscender', 'm_ElementDescender', 'm_maxLineAscender', 'm_maxLineDescender', 'm_startOfLineAscender', 'm_startOfLineDescender', 'm_lineOffset', 'm_meshExtents', 'm_htmlColor', 'm_colorStack', 'm_underlineColorStack', 'm_strikethroughColorStack', 'm_HighlightStateStack', 'm_colorGradientPreset', 'm_colorGradientStack', 'm_colorGradientPresetIsTinted', 'm_tabSpacing', 'm_spacing', 'm_TextStyleStacks', 'm_TextStyleStackDepth', 'm_ItalicAngleStack', 'm_ItalicAngle', 'm_actionStack', 'm_padding', 'm_baselineOffset', 'm_baselineOffsetStack', 'm_xAdvance', 'm_textElementType', 'm_cached_TextElement', 'm_Ellipsis', 'm_Underline', 'm_defaultSpriteAsset', 'm_currentSpriteAsset', 'm_spriteCount', 'm_spriteIndex', 'm_spriteAnimationID', 'k_ParseTextMarker', 'k_InsertNewLineMarker', 'm_ignoreActiveState', 'm_TextBackingArray', 'k_Power', 'k_LargePositiveVector2', 'k_LargeNegativeVector2', 'k_LargePositiveFloat', 'k_LargeNegativeFloat', 'k_LargePositiveInt', 'k_LargeNegativeInt']`
-  - `m_wordSpacing: offset '0x2e8' → '0x2ec'`
-  - `m_lineSpacing: offset '0x2ec' → '0x2f0'`
-  - `m_lineSpacingDelta: offset '0x2f0' → '0x2f4'`
-  - `m_lineHeight: offset '0x2f4' → '0x2f8'`
-  - `m_IsDrivenLineSpacing: offset '0x2f8' → '0x2fc'`
-  - `m_lineSpacingMax: offset '0x2fc' → '0x300'`
-  - `m_paragraphSpacing: offset '0x300' → '0x304'`
-  - `m_charWidthMaxAdj: offset '0x304' → '0x308'`
-  - `m_charWidthAdjDelta: offset '0x308' → '0x30c'`
-  - `m_TextWrappingMode: offset '0x30c' → '0x310'`
-  - `m_isCharacterWrappingEnabled: offset '0x310' → '0x314'`
-  - `m_isNonBreakingSpace: offset '0x311' → '0x315'`
-  - `m_isIgnoringAlignment: offset '0x312' → '0x316'`
-  - `m_wordWrappingRatios: offset '0x314' → '0x318'`
-  - `m_overflowMode: offset '0x318' → '0x31c'`
-  - `m_firstOverflowCharacterIndex: offset '0x31c' → '0x320'`
-  - `m_linkedTextComponent: offset '0x320' → '0x328'`
-  - `parentLinkedComponent: offset '0x328' → '0x330'`
-  - `m_isTextTruncated: offset '0x330' → '0x338'`
-  - `m_enableKerning: offset '0x331' → '0x339'`
-  - `m_LastBaseGlyphIndex: offset '0x334' → '0x33c'`
-  - `m_ActiveFontFeatures: offset '0x338' → '0x340'`
-  - `m_enableExtraPadding: offset '0x340' → '0x348'`
-  - `checkPaddingRequired: offset '0x341' → '0x349'`
-  - `m_isRichText: offset '0x342' → '0x34a'`
-  - `m_EmojiFallbackSupport: offset '0x343' → '0x34b'`
-  - `m_parseCtrlCharacters: offset '0x344' → '0x34c'`
-  - `m_isOverlay: offset '0x345' → '0x34d'`
-  - `m_isOrthographic: offset '0x346' → '0x34e'`
-  - `m_isCullingEnabled: offset '0x347' → '0x34f'`
-  - `m_isMaskingEnabled: offset '0x348' → '0x350'`
-  - `isMaskUpdateRequired: offset '0x349' → '0x351'`
-  - `m_ignoreCulling: offset '0x34a' → '0x352'`
-  - `m_horizontalMapping: offset '0x34c' → '0x354'`
-  - `m_verticalMapping: offset '0x350' → '0x358'`
-  - `m_uvLineOffset: offset '0x354' → '0x35c'`
-  - `m_renderMode: offset '0x358' → '0x360'`
-  - `m_geometrySortingOrder: offset '0x35c' → '0x364'`
-  - `m_IsTextObjectScaleStatic: offset '0x360' → '0x368'`
-  - `m_VertexBufferAutoSizeReduction: offset '0x361' → '0x369'`
-  - `m_firstVisibleCharacter: offset '0x364' → '0x36c'`
-  - `m_maxVisibleCharacters: offset '0x368' → '0x370'`
-  - `m_maxVisibleWords: offset '0x36c' → '0x374'`
-  - `m_maxVisibleLines: offset '0x370' → '0x378'`
-  - `m_useMaxVisibleDescender: offset '0x374' → '0x37c'`
-  - `m_pageToDisplay: offset '0x378' → '0x380'`
-  - `m_isNewPage: offset '0x37c' → '0x384'`
-  - `m_margin: offset '0x380' → '0x388'`
-  - `m_marginLeft: offset '0x390' → '0x398'`
-  - `m_marginRight: offset '0x394' → '0x39c'`
-  - `m_marginWidth: offset '0x398' → '0x3a0'`
-  - `m_marginHeight: offset '0x39c' → '0x3a4'`
-  - `m_width: offset '0x3a0' → '0x3a8'`
-  - `m_textInfo: offset '0x3a8' → '0x3b0'`
-  - `m_havePropertiesChanged: offset '0x3b0' → '0x3b8'`
-  - `m_isUsingLegacyAnimationComponent: offset '0x3b1' → '0x3b9'`
-  - `m_transform: offset '0x3b8' → '0x3c0'`
-  - `m_rectTransform: offset '0x3c0' → '0x3c8'`
-  - `m_PreviousRectTransformSize: offset '0x3c8' → '0x3d0'`
-  - `m_PreviousPivotPosition: offset '0x3d0' → '0x3d8'`
-  - `<autoSizeTextContainer>k__BackingField: offset '0x3d8' → '0x3e0'`
-  - `m_autoSizeTextContainer: offset '0x3d9' → '0x3e1'`
-  - `m_mesh: offset '0x3e0' → '0x3e8'`
-  - `m_isVolumetricText: offset '0x3e8' → '0x3f0'`
-  - `OnPreRenderText: offset '0x3f0' → '0x3f8'`
-  - `m_spriteAnimator: offset '0x3f8' → '0x400'`
-  - `m_flexibleHeight: offset '0x400' → '0x408'`
-  - `m_flexibleWidth: offset '0x404' → '0x40c'`
-  - `m_minWidth: offset '0x408' → '0x410'`
-  - `m_minHeight: offset '0x40c' → '0x414'`
-  - `m_maxWidth: offset '0x410' → '0x418'`
-  - `m_maxHeight: offset '0x414' → '0x41c'`
-  - `m_LayoutElement: offset '0x418' → '0x420'`
-  - `m_preferredWidth: offset '0x420' → '0x428'`
-  - `m_RenderedWidth: offset '0x424' → '0x42c'`
-  - `m_isPreferredWidthDirty: offset '0x428' → '0x430'`
-  - `m_preferredHeight: offset '0x42c' → '0x434'`
-  - `m_RenderedHeight: offset '0x430' → '0x438'`
-  - `m_isPreferredHeightDirty: offset '0x434' → '0x43c'`
-  - `m_isCalculatingPreferredValues: offset '0x435' → '0x43d'`
-  - `m_layoutPriority: offset '0x438' → '0x440'`
-  - `m_isLayoutDirty: offset '0x43c' → '0x444'`
-  - `m_isAwake: offset '0x43d' → '0x445'`
-  - `m_isWaitingOnResourceLoad: offset '0x43e' → '0x446'`
-  - `m_inputSource: offset '0x440' → '0x448'`
-  - `m_fontScaleMultiplier: offset '0x444' → '0x44c'`
-  - `tag_LineIndent: offset '0x448' → '0x450'`
-  - `tag_Indent: offset '0x44c' → '0x454'`
-  - `m_indentStack: offset '0x450' → '0x458'`
-  - `tag_NoParsing: offset '0x470' → '0x478'`
-  - `m_isTextLayoutPhase: offset '0x471' → '0x479'`
-  - `m_FXRotation: offset '0x474' → '0x47c'`
-  - `m_FXScale: offset '0x484' → '0x48c'`
-  - `m_TextProcessingArray: offset '0x490' → '0x498'`
-  - `m_InternalTextProcessingArraySize: offset '0x498' → '0x4a0'`
-  - `m_internalCharacterInfo: offset '0x4a0' → '0x4a8'`
-  - `m_totalCharacterCount: offset '0x4a8' → '0x4b0'`
-  - `m_characterCount: offset '0x4ac' → '0x4b4'`
-  - `m_firstCharacterOfLine: offset '0x4b0' → '0x4b8'`
-  - `m_firstVisibleCharacterOfLine: offset '0x4b4' → '0x4bc'`
-  - `m_lastCharacterOfLine: offset '0x4b8' → '0x4c0'`
-  - `m_lastVisibleCharacterOfLine: offset '0x4bc' → '0x4c4'`
-  - `m_lineNumber: offset '0x4c0' → '0x4c8'`
-  - `m_lineVisibleCharacterCount: offset '0x4c4' → '0x4cc'`
-  - `m_lineVisibleSpaceCount: offset '0x4c8' → '0x4d0'`
-  - `m_pageNumber: offset '0x4cc' → '0x4d4'`
-  - `m_PageAscender: offset '0x4d0' → '0x4d8'`
-  - `m_maxTextAscender: offset '0x4d4' → '0x4dc'`
-  - `m_maxCapHeight: offset '0x4d8' → '0x4e0'`
-  - `m_ElementAscender: offset '0x4dc' → '0x4e4'`
-  - `m_ElementDescender: offset '0x4e0' → '0x4e8'`
-  - `m_maxLineAscender: offset '0x4e4' → '0x4ec'`
-  - `m_maxLineDescender: offset '0x4e8' → '0x4f0'`
-  - `m_startOfLineAscender: offset '0x4ec' → '0x4f4'`
-  - `m_startOfLineDescender: offset '0x4f0' → '0x4f8'`
-  - `m_lineOffset: offset '0x4f4' → '0x4fc'`
-  - `m_meshExtents: offset '0x4f8' → '0x500'`
-  - `m_htmlColor: offset '0x508' → '0x510'`
-  - `m_colorStack: offset '0x510' → '0x518'`
-  - `m_underlineColorStack: offset '0x530' → '0x538'`
-  - `m_strikethroughColorStack: offset '0x550' → '0x558'`
-  - `m_HighlightStateStack: offset '0x570' → '0x578'`
-  - `m_colorGradientPreset: offset '0x5a0' → '0x5a8'`
-  - `m_colorGradientStack: offset '0x5a8' → '0x5b0'`
-  - `m_colorGradientPresetIsTinted: offset '0x5d0' → '0x5d8'`
-  - `m_tabSpacing: offset '0x5d4' → '0x5dc'`
-  - `m_spacing: offset '0x5d8' → '0x5e0'`
-  - `m_TextStyleStacks: offset '0x5e0' → '0x5e8'`
-  - `m_TextStyleStackDepth: offset '0x5e8' → '0x5f0'`
-  - `m_ItalicAngleStack: offset '0x5f0' → '0x5f8'`
-  - `m_ItalicAngle: offset '0x610' → '0x618'`
-  - `m_actionStack: offset '0x618' → '0x620'`
-  - `m_padding: offset '0x638' → '0x640'`
-  - `m_baselineOffset: offset '0x63c' → '0x644'`
-  - `m_baselineOffsetStack: offset '0x640' → '0x648'`
-  - `m_xAdvance: offset '0x660' → '0x668'`
-  - `m_textElementType: offset '0x664' → '0x66c'`
-  - `m_cached_TextElement: offset '0x668' → '0x670'`
-  - `m_Ellipsis: offset '0x670' → '0x678'`
-  - `m_Underline: offset '0x690' → '0x698'`
-  - `m_defaultSpriteAsset: offset '0x6b0' → '0x6b8'`
-  - `m_currentSpriteAsset: offset '0x6b8' → '0x6c0'`
-  - `m_spriteCount: offset '0x6c0' → '0x6c8'`
-  - `m_spriteIndex: offset '0x6c4' → '0x6cc'`
-  - `m_spriteAnimationID: offset '0x6c8' → '0x6d0'`
-  - `m_ignoreActiveState: offset '0x6cc' → '0x6d4'`
-  - `m_TextBackingArray: offset '0x6d0' → '0x6d8'`
-  - `k_Power: offset '0x6e0' → '0x6e8'`
-  - `extra field instance float m_characterHorizontalScale`
-
 - `TMPro.TMP_TextParsingUtilities`
 
   - `field declaration order/names: ['s_Instance', 'k_EmojiLookup', 'k_EmojiPresentationFormLookup'] → ['s_Instance', 'k_LookupStringL', 'k_LookupStringU', 'k_EmojiLookup', 'k_EmojiPresentationFormLookup']`
@@ -7355,51 +9204,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
   - `field declaration order/names: ['m_rectWorldCorners'] → ['m_rectWorldCorners', 'k_lookupStringL', 'k_lookupStringU']`
   - `extra field constant string k_lookupStringL`
   - `extra field constant string k_lookupStringU`
-
-- `TMPro.TextMeshPro`
-
-  - `_SortingLayer: offset '0x6e8' → '0x6f0'`
-  - `_SortingLayerID: offset '0x6ec' → '0x6f4'`
-  - `_SortingOrder: offset '0x6f0' → '0x6f8'`
-  - `OnPreRenderText: offset '0x6f8' → '0x700'`
-  - `m_hasFontAssetChanged: offset '0x700' → '0x708'`
-  - `m_previousLossyScaleY: offset '0x704' → '0x70c'`
-  - `m_renderer: offset '0x708' → '0x710'`
-  - `m_meshFilter: offset '0x710' → '0x718'`
-  - `m_isFirstAllocation: offset '0x718' → '0x720'`
-  - `m_max_characters: offset '0x71c' → '0x724'`
-  - `m_max_numberOfLines: offset '0x720' → '0x728'`
-  - `m_subTextObjects: offset '0x728' → '0x730'`
-  - `m_maskType: offset '0x730' → '0x738'`
-  - `m_EnvMapMatrix: offset '0x734' → '0x73c'`
-  - `m_RectTransformCorners: offset '0x778' → '0x780'`
-  - `m_isRegisteredForEvents: offset '0x780' → '0x788'`
-  - `materialIndexPairs: offset '0x788' → '0x790'`
-
-- `TMPro.TextMeshProUGUI`
-
-  - `m_isRebuildingLayout: offset '0x6e8' → '0x6f0'`
-  - `m_DelayedGraphicRebuild: offset '0x6f0' → '0x6f8'`
-  - `m_DelayedMaterialRebuild: offset '0x6f8' → '0x700'`
-  - `m_ShouldUpdateCulling: offset '0x700' → '0x708'`
-  - `m_ClipRect: offset '0x704' → '0x70c'`
-  - `m_ValidRect: offset '0x714' → '0x71c'`
-  - `OnPreRenderText: offset '0x718' → '0x720'`
-  - `m_hasFontAssetChanged: offset '0x720' → '0x728'`
-  - `m_subTextObjects: offset '0x728' → '0x730'`
-  - `m_previousLossyScaleY: offset '0x730' → '0x738'`
-  - `m_RectTransformCorners: offset '0x738' → '0x740'`
-  - `m_canvasRenderer: offset '0x740' → '0x748'`
-  - `m_canvas: offset '0x748' → '0x750'`
-  - `m_CanvasScaleFactor: offset '0x750' → '0x758'`
-  - `m_isFirstAllocation: offset '0x754' → '0x75c'`
-  - `m_max_characters: offset '0x758' → '0x760'`
-  - `m_baseMaterial: offset '0x760' → '0x768'`
-  - `m_isScrollRegionSet: offset '0x768' → '0x770'`
-  - `m_maskOffset: offset '0x76c' → '0x774'`
-  - `m_EnvMapMatrix: offset '0x77c' → '0x784'`
-  - `m_isRegisteredForEvents: offset '0x7bc' → '0x7c4'`
-  - `materialIndexPairs: offset '0x7c0' → '0x7c8'`
 
 
 </details>
@@ -7824,7 +9628,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## UnityEngine.UI.dll
 
-<details><summary>Matching: 182</summary>
+<details><summary>Matching: 183</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=12`
@@ -7868,6 +9672,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `InputField.OnChangeEvent`
 - `InputField.OnValidateInput`
 - `InputField.SubmitEvent`
+- `LayoutGroup.<DelayedSetDirty>d__56` (compiler-generated name)
 - `LayoutRebuilder.<>c` (compiler-generated name)
 - `LayoutUtility.<>c` (compiler-generated name)
 - `MaskableGraphic.CullStateChangedEvent`
@@ -8044,13 +9849,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Missing: 1</summary>
-
-- `LayoutGroup.<DelayedSetDirty>d__56` (compiler-generated name)
-
-</details>
-
-<details><summary>Extra: 21</summary>
+<details><summary>Extra: 20</summary>
 
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=5699`
 - `<PrivateImplementationDetails>.__StaticArrayInitTypeSize=6406`
@@ -8062,7 +9861,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Image.Origin90`
 - `Image.OriginHorizontal`
 - `Image.OriginVertical`
-- `LayoutGroup.<DelayedSetDirty>d__57` (compiler-generated name)
 - `UnityEditor.Rendering.BuiltIn.ShaderGraph.MaterialAccess`
 - `UnityEditor.Rendering.Universal.MaterialAccess`
 - `UnityEngine.EventSystems.EventHandle`
@@ -8079,7 +9877,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## campus-submodule.Runtime.dll
 
-<details><summary>Matching: 1089</summary>
+<details><summary>Matching: 1088</summary>
 
 - `<Module>`
 - `<PrivateImplementationDetails>` (compiler-generated name)
@@ -8225,6 +10023,7 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Campus.Common.CampusSoundManager`
 - `Campus.Common.CampusSubmoduleInitializer`
 - `Campus.Common.CampusSwitchableCamera`
+- `Campus.Common.CampusText`
 - `Campus.Common.CampusTextLinkTouchArea`
 - `Campus.Common.CampusTransformAnchor`
 - `Campus.Common.CampusTransformAnchorGroup`
@@ -8339,7 +10138,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Campus.Common.SerializableDictionary<TKey, TValue>`
 - `Campus.Common.SerializableGuid`
 - `Campus.Common.ShaderVariantGroup`
-- `Campus.Common.Sound.CampusSoundPlayer`
 - `Campus.Common.Sound.SoundCache`
 - `Campus.Common.SoundEnum`
 - `Campus.Common.SoundInfo`
@@ -8637,7 +10435,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `Campus.Timeline.CampusTargetImageClipBehaviour`
 - `Campus.Timeline.CampusTargetImageTrack`
 - `Campus.Timeline.CampusTargetImageTrackBehaviour`
-- `Campus.Timeline.CampusTimelineCriVideoPlayer`
 - `Campus.Timeline.CampusTimelineEventReceiver`
 - `Campus.Timeline.CampusTweenAsset`
 - `Campus.Timeline.CampusTweenBehaviour`
@@ -9173,21 +10970,29 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Mismatching: 1</summary>
+<details><summary>Mismatching: 2</summary>
 
-- `Campus.Common.CampusText`
+- `Campus.Common.Sound.CampusSoundPlayer`
 
-  - `_styleType: offset '0x7e8' → '0x7f0'`
-  - `_ignoreLineSpacing: offset '0x7f0' → '0x7f8'`
-  - `_ignoreCharacterSpacing: offset '0x7f1' → '0x7f9'`
-  - `_isOutlineEnabled: offset '0x7f2' → '0x7fa'`
-  - `_outlineColor: offset '0x7f4' → '0x7fc'`
-  - `_outlineCustomCategory: offset '0x7f8' → '0x800'`
-  - `_localizeKey: offset '0x800' → '0x808'`
-  - `_autoKerningEnabled: offset '0x808' → '0x810'`
-  - `_autoKerningThreshold: offset '0x80c' → '0x814'`
-  - `_autoKerningRatio: offset '0x810' → '0x818'`
-  - `onFontSharedMaterialSet: offset '0x818' → '0x820'`
+  - `_userData: offset '0xf8' → '0xf0'`
+  - `onSoundPlayed: offset '0x100' → '0xf8'`
+  - `_acb: offset '0x108' → '0x100'`
+  - `_isPreparePlay: offset '0x110' → '0x108'`
+
+- `Campus.Timeline.CampusTimelineCriVideoPlayer`
+
+  - `movieName: offset '0xb8' → '0xc0'`
+  - `downloadOnEnable: offset '0xc0' → '0xc8'`
+  - `_moviePath: offset '0xc8' → '0xd0'`
+  - `_isTimelineClipActive: offset '0xd0' → '0xd8'`
+  - `_lastSyncedTimelineTime: offset '0xd8' → '0xe0'`
+  - `_lastScrubFrame: offset '0xe0' → '0xe8'`
+  - `_scrubTargetFrame: offset '0xe4' → '0xec'`
+  - `_scrubLoopRunning: offset '0xe8' → '0xf0'`
+  - `_scrubLoopCts: offset '0xf0' → '0xf8'`
+  - `_isInteractiveScrubActive: offset '0xf8' → '0x100'`
+  - `_movieInfo: offset '0x100' → '0x108'`
+  - `IsRecording: offset '0x108' → '0x110'`
 
 
 </details>
@@ -9440,12 +11245,13 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 ## quaunity-global.dll
 
-<details><summary>Matching: 14</summary>
+<details><summary>Matching: 15</summary>
 
 - `<Module>`
 - `Qua.Global.IFontLoader`
 - `Qua.Global.QuaGlobalManager`
 - `Qua.Global.QuaGlobalSetting`
+- `Qua.Global.QuaGlobalTextMeshProUGUI`
 - `Qua.Global.ResourcesFontLoader`
 - `QuaGlobalManager.<LoadCorrectFontAsync>d__24` (compiler-generated name)
 - `QuaGlobalManager.<LoadFontAsync>d__25` (compiler-generated name)
@@ -9456,18 +11262,6 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 - `QuaGlobalTextMeshProUGUI.<ChangedDefaultFontId>d__5` (compiler-generated name)
 - `QuaGlobalTextMeshProUGUI.<UpdateFont>d__6` (compiler-generated name)
 - `ResourcesFontLoader.<LoadAsync>d__0` (compiler-generated name)
-
-</details>
-
-<details><summary>Mismatching: 1</summary>
-
-- `Qua.Global.QuaGlobalTextMeshProUGUI`
-
-  - `_fontId: offset '0x7c8' → '0x7d0'`
-  - `_loadedFontId: offset '0x7d0' → '0x7d8'`
-  - `_loadedFont: offset '0x7d8' → '0x7e0'`
-  - `_isSetupFont: offset '0x7e0' → '0x7e8'`
-
 
 </details>
 
@@ -10567,13 +12361,17 @@ This report cannot establish object size, tail padding, concrete generic-instanc
 
 </details>
 
-<details><summary>Extra: 5</summary>
+<details><summary>Extra: 9</summary>
 
 - `<QAReconstructionImplementationDetails>` (compiler-generated name)
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=11306`
-- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16364`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=11348`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=12`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=144`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16`
+- `<QAReconstructionImplementationDetails>.__StaticArrayInitTypeSize=16447`
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1` (compiler-generated name)
 - `UnitySourceGeneratedAssemblyMonoScriptTypes_v1.MonoScriptData`
+- `VL.Rendering.VLRenderingCompatibility`
 
 </details>
 
