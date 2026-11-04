@@ -165,7 +165,7 @@ namespace TMPro
         static string GetPackageFullPath()
         {
             // Check for potential UPM package
-            string packagePath = Path.GetFullPath("Packages/com.unity.ugui");
+            string packagePath = Path.GetFullPath("Packages/com.unity.textmeshpro");
             if (Directory.Exists(packagePath))
             {
                 return packagePath;
@@ -175,9 +175,9 @@ namespace TMPro
             if (Directory.Exists(packagePath))
             {
                 // Search default location for development package
-                if (Directory.Exists(packagePath + "/Assets/Packages/com.unity.ugui/Editor Resources"))
+                if (Directory.Exists(packagePath + "/Assets/Packages/com.unity.TextMeshPro/Editor Resources"))
                 {
-                    return packagePath + "/Assets/Packages/com.unity.ugui";
+                    return packagePath + "/Assets/Packages/com.unity.TextMeshPro";
                 }
 
                 // Search for default location of normal TextMesh Pro AssetStore package

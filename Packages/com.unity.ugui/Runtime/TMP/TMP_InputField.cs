@@ -1764,10 +1764,6 @@ namespace TMPro
                             OnSubmit(null);
                             break;
                     }
-
-#if UNITY_ANDROID || UNITY_IOS
-                    DeactivateInputField();
-#endif
                 }
 
                 return;
@@ -1810,9 +1806,6 @@ namespace TMPro
                             OnDeselect(null);
                             return;
                         }
-
-                        if (!m_AllowInput)
-                            return;
 
                         // In the case of a Custom Validator, the user is expected to modify the m_Text where as such we do not append c.
                         // However we will append c if the user did not modify the m_Text (UUM-42147)
@@ -1947,9 +1940,9 @@ namespace TMPro
                 if (multiLine)
                 {
                     if (localMousePos.y > rect.yMax)
-                        MoveUp(true, false);
+                        MoveUp(true, true);
                     else if (localMousePos.y < rect.yMin)
-                        MoveDown(true, false);
+                        MoveDown(true, true);
                 }
                 else
                 {
@@ -2533,7 +2526,7 @@ namespace TMPro
                 }
                 else
                 {
-                    // Special handling for \r\n: if we are on the \r character, we want to move to the end of the \r\n pair, not just after the \r character.
+                    // Special handling for <CR><LF>
                     if (m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal].character == '\r' && m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal + 1].character == '\n')
                         position = m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal + 1].index + m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal + 1].stringLength;
                     else
@@ -2610,8 +2603,8 @@ namespace TMPro
                         ? m_TextComponent.textInfo.characterInfo[0].index
                         : m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal - 1].index;
 
-                    // Special handling for \r\n: if we are on the \n character, we want to move to the start of the \r\n pair, not just before the \n character.
-                    if (position > 0 && caretSelectPositionInternal > 1 && m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal - 1].character == '\n' && m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal - 2].character == '\r')
+                    // Special handling for <CR><LF>
+                    if (position > 0 && m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal - 1].character == '\n' && m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal - 2].character == '\r')
                         position = m_TextComponent.textInfo.characterInfo[caretSelectPositionInternal - 2].index;
                 }
             }
@@ -4465,16 +4458,6 @@ namespace TMPro
 
         public override void OnDeselect(BaseEventData eventData)
         {
-            // Commit any pending IME composition string before deactivating.
-            // When focus is changed programmatically, OnUpdateSelected is not called,
-            // so the composition is never processed. DeactivateInputField resets the
-            // IME mode and discards the composition, causing the last composed character
-            // (e.g., the final Hangul syllable) to be lost.
-            if (compositionLength > 0)
-            {
-                Append(compositionString);
-            }
-
             DeactivateInputField();
 
             base.OnDeselect(eventData);
@@ -4492,12 +4475,6 @@ namespace TMPro
                 m_ShouldActivateNextUpdate = true;
 
             SendOnSubmit();
-#if PLATFORM_TVOS
-            // When a keyboard is open in tvOS, the submit button is used for typing.
-            // Only actually close the keyboard on tvOS if "Done" was pressed in the soft keyboard.
-            if (m_SoftKeyboard != null && m_SoftKeyboard.status == TouchScreenKeyboard.Status.Visible)
-                return;
-#endif
             DeactivateInputField();
             eventData?.Use();
         }
