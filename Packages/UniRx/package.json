@@ -1,6 +1,7 @@
 {
-  "name": "com.qa-recon.unirx",
-  "version": "0.0.1",
-  "displayName": "UniRx (DummyDll skeleton)",
-  "unity": "6000.0"
+  "name": "com.thirdparty.unirx",
+  "version": "7.1.0",
+  "displayName": "UniRx",
+  "unity": "6000.0",
+  "description": "Original source: https://github.com/neuecc/UniRx/tree/7.1.0/Assets/Plugins/UniRx/Scripts"
 }

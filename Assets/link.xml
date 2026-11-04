@@ -1,6 +1,8 @@
 <linker>
   <assembly fullname="ActorAnimation.Runtime" preserve="all" />
   <assembly fullname="AmplifyOcclusion.Runtime" preserve="all" />
+  <assembly fullname="Coffee.UIParticle" preserve="all" />
+  <assembly fullname="DOTween.Modules" preserve="all" />
   <assembly fullname="Cinemachine" preserve="all" />
   <assembly fullname="CriMw.CriWare.Runtime" preserve="all" />
   <assembly fullname="DOTween" preserve="all" />

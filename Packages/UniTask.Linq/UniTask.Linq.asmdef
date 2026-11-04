@@ -1,8 +1,0 @@
-{
-  "name": "UniTask.Linq",
-  "references": [
-    "UniTask"
-  ],
-  "allowUnsafeCode": true,
-  "autoReferenced": true
-}

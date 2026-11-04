@@ -1,6 +1,7 @@
 {
-  "name": "com.qa-recon.unitask",
-  "version": "0.0.1",
-  "displayName": "UniTask (DummyDll skeleton)",
-  "unity": "6000.0"
+  "name": "com.thirdparty.unitask",
+  "version": "2.5.10",
+  "displayName": "UniTask",
+  "unity": "6000.0",
+  "description": "Original source: https://github.com/Cysharp/UniTask/tree/2.5.10/src/UniTask/Assets/Plugins/UniTask/Runtime"
 }

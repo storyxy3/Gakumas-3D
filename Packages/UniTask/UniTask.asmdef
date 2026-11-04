@@ -1,8 +1,0 @@
-{
-  "name": "UniTask",
-  "references": [
-    "UnityEngine.UI"
-  ],
-  "allowUnsafeCode": true,
-  "autoReferenced": true
-}

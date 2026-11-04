@@ -1,0 +1,7 @@
+{
+  "name": "com.thirdparty.dotween.modules",
+  "version": "1.2.420",
+  "displayName": "DOTween Modules",
+  "unity": "6000.0",
+  "description": "Original source: https://github.com/Demigiant/dotween/tree/v1.2.420/_DOTween.Assembly/bin/Modules"
+}

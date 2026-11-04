@@ -1,0 +1,7 @@
+{
+  "name": "com.thirdparty.coffee.uiparticle",
+  "version": "4.2.2",
+  "displayName": "UIParticle",
+  "unity": "6000.0",
+  "description": "Original source: https://github.com/mob-sakai/ParticleEffectForUGUI/tree/4.2.2/Scripts"
+}
