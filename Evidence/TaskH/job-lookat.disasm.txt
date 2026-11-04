@@ -1,0 +1,274 @@
+=== ActorAnimation.CampusActorAnimationJob$$SetupCustomLookAtEffector @ 0xdd33938 (272 insns)
+    void ActorAnimation_CampusActorAnimationJob__SetupCustomLookAtEffector (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, VL_IK_CustomLookAtEffector_o* customLookAtEffector, const MethodInfo* method);
+  0dd33938  sub     sp, sp, #0x140
+  0dd3393c  stp     x29, x30, [sp, #0xe0]
+  0dd33940  stp     x28, x27, [sp, #0xf0]
+  0dd33944  stp     x26, x25, [sp, #0x100]
+  0dd33948  stp     x24, x23, [sp, #0x110]
+  0dd3394c  stp     x22, x21, [sp, #0x120]
+  0dd33950  stp     x20, x19, [sp, #0x130]
+  0dd33954  adrp    x19, #0xf43b000
+  0dd33958  mov     x21, x2
+  0dd3395c  mov     x20, x1
+  0dd33960  ldrb    w8, [x19, #0x83c]
+  0dd33964  mov     x23, x0
+  0dd33968  tbnz    w8, #0, #0xdd339f8
+  0dd3396c  adrp    x0, #0xebc2000
+  0dd33970  ldr     x0, [x0, #0xd30]  ; META VL.IK.CustomLookAtEffector_var
+  0dd33974  bl      #0x63cee78
+  0dd33978  adrp    x0, #0xea65000
+  0dd3397c  ldr     x0, [x0, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd33980  bl      #0x63cee78
+  0dd33984  adrp    x0, #0xea6a000
+  0dd33988  ldr     x0, [x0, #0x9e0]  ; STR "eyesWeight"
+  0dd3398c  bl      #0x63cee78
+  0dd33990  adrp    x0, #0xebc2000
+  0dd33994  ldr     x0, [x0, #0xd38]  ; STR "customTargetPosition.x"
+  0dd33998  bl      #0x63cee78
+  0dd3399c  adrp    x0, #0xea6a000
+  0dd339a0  ldr     x0, [x0, #0x9e8]  ; STR "headWeight"
+  0dd339a4  bl      #0x63cee78
+  0dd339a8  adrp    x0, #0xebc2000
+  0dd339ac  ldr     x0, [x0, #0xd40]  ; STR "customTargetPosition.y"
+  0dd339b0  bl      #0x63cee78
+  0dd339b4  adrp    x0, #0xea6a000
+  0dd339b8  ldr     x0, [x0, #0x9f0]  ; STR "bodyWeight"
+  0dd339bc  bl      #0x63cee78
+  0dd339c0  adrp    x0, #0xebc2000
+  0dd339c4  ldr     x0, [x0, #0xd48]  ; STR "customTargetPosition.z"
+  0dd339c8  bl      #0x63cee78
+  0dd339cc  adrp    x0, #0xebc2000
+  0dd339d0  ldr     x0, [x0, #0xd50]  ; STR "weight"
+  0dd339d4  bl      #0x63cee78
+  0dd339d8  adrp    x0, #0xebc2000
+  0dd339dc  ldr     x0, [x0, #0xd58]  ; STR "customUseWeight"
+  0dd339e0  bl      #0x63cee78
+  0dd339e4  adrp    x0, #0xebc2000
+  0dd339e8  ldr     x0, [x0, #0xd60]  ; STR "useCustomTargetPosition"
+  0dd339ec  bl      #0x63cee78
+  0dd339f0  mov     w8, #1
+  0dd339f4  strb    w8, [x19, #0x83c]
+  0dd339f8  add     x0, sp, #0x80
+  0dd339fc  add     x1, x23, #0x494
+  0dd33a00  mov     w2, #0x60
+  0dd33a04  stp     xzr, xzr, [sp, #0x68]
+  0dd33a08  str     xzr, [sp, #0x78]
+  0dd33a0c  bl      #0xe1b8430
+  0dd33a10  stp     xzr, xzr, [sp, #0x70]
+  0dd33a14  str     xzr, [sp, #0x68]
+  0dd33a18  cbz     x21, #0xdd33d74
+  0dd33a1c  adrp    x8, #0xea65000
+  0dd33a20  ldr     x8, [x8, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd33a24  ldr     x22, [x21, #0x20]
+  0dd33a28  ldr     x0, [x8]
+  0dd33a2c  ldr     w8, [x0, #0xe4]
+  0dd33a30  cbnz    w8, #0xdd33a38
+  0dd33a34  bl      #0x63ceff4
+  0dd33a38  str     x23, [sp, #0x28]
+  0dd33a3c  adrp    x19, #0xebc2000
+  0dd33a40  mov     x0, x22
+  0dd33a44  ldr     x19, [x19, #0xd30]  ; META VL.IK.CustomLookAtEffector_var
+  0dd33a48  mov     x1, xzr
+  0dd33a4c  mov     x2, xzr
+  0dd33a50  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd33a54  tbz     w0, #0, #0xdd33a78
+  0dd33a58  mov     x0, x21
+  0dd33a5c  mov     x1, xzr
+  0dd33a60  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33a64  mov     x1, x0
+  0dd33a68  add     x8, sp, #0x68
+  0dd33a6c  mov     x0, x20
+  0dd33a70  mov     x2, xzr
+  0dd33a74  bl      #0xd6f3d60  ; -> UnityEngine.Animations.Rigging.ReadOnlyTransformHandle$$Bind
+  0dd33a78  adrp    x29, #0xebc2000
+  0dd33a7c  adrp    x24, #0xebc2000
+  0dd33a80  adrp    x25, #0xebc2000
+  0dd33a84  adrp    x26, #0xebc2000
+  0dd33a88  adrp    x27, #0xea6a000
+  0dd33a8c  adrp    x28, #0xea6a000
+  0dd33a90  ldr     x29, [x29, #0xd60]  ; STR "useCustomTargetPosition"
+  0dd33a94  ldr     x24, [x24, #0xd38]  ; STR "customTargetPosition.x"
+  0dd33a98  ldr     x25, [x25, #0xd40]  ; STR "customTargetPosition.y"
+  0dd33a9c  ldr     x26, [x26, #0xd48]  ; STR "customTargetPosition.z"
+  0dd33aa0  ldr     x27, [x27, #0x9e0]  ; STR "eyesWeight"
+  0dd33aa4  ldr     x28, [x28, #0x9e8]  ; STR "headWeight"
+  0dd33aa8  ldur    q0, [sp, #0x68]
+  0dd33aac  ldr     x8, [sp, #0x78]
+  0dd33ab0  mov     x0, x21
+  0dd33ab4  mov     x1, xzr
+  0dd33ab8  str     q0, [sp, #0x50]
+  0dd33abc  str     x8, [sp, #0x60]
+  0dd33ac0  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33ac4  adrp    x8, #0xea65000
+  0dd33ac8  mov     x22, x0
+  0dd33acc  ldr     x8, [x8, #0x6b0]
+  0dd33ad0  ldr     x23, [x19]
+  0dd33ad4  ldr     x8, [x8, #0xe0]
+  0dd33ad8  ldr     w9, [x8, #0xe4]
+  0dd33adc  cbnz    w9, #0xdd33ae8
+  0dd33ae0  mov     x0, x8
+  0dd33ae4  bl      #0x63ceff4
+  0dd33ae8  mov     x0, x23
+  0dd33aec  mov     x1, xzr
+  0dd33af0  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33af4  ldr     x3, [x29]
+  0dd33af8  mov     x2, x0
+  0dd33afc  mov     x0, x20
+  0dd33b00  mov     x1, x22
+  0dd33b04  mov     x4, xzr
+  0dd33b08  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33b0c  mov     x22, x0
+  0dd33b10  mov     x0, x21
+  0dd33b14  mov     x1, xzr
+  0dd33b18  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33b1c  ldr     x8, [x19]
+  0dd33b20  mov     x23, x0
+  0dd33b24  mov     x1, xzr
+  0dd33b28  mov     x0, x8
+  0dd33b2c  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33b30  ldr     x3, [x24]
+  0dd33b34  mov     x2, x0
+  0dd33b38  mov     x0, x20
+  0dd33b3c  mov     x1, x23
+  0dd33b40  mov     x4, xzr
+  0dd33b44  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33b48  mov     x23, x0
+  0dd33b4c  mov     x0, x21
+  0dd33b50  mov     x1, xzr
+  0dd33b54  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33b58  ldr     x8, [x19]
+  0dd33b5c  mov     x24, x0
+  0dd33b60  mov     x1, xzr
+  0dd33b64  mov     x0, x8
+  0dd33b68  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33b6c  ldr     x3, [x25]
+  0dd33b70  mov     x2, x0
+  0dd33b74  mov     x0, x20
+  0dd33b78  mov     x1, x24
+  0dd33b7c  mov     x4, xzr
+  0dd33b80  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33b84  mov     x24, x0
+  0dd33b88  mov     x0, x21
+  0dd33b8c  mov     x1, xzr
+  0dd33b90  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33b94  ldr     x8, [x19]
+  0dd33b98  mov     x25, x0
+  0dd33b9c  mov     x1, xzr
+  0dd33ba0  mov     x0, x8
+  0dd33ba4  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33ba8  ldr     x3, [x26]
+  0dd33bac  mov     x2, x0
+  0dd33bb0  mov     x0, x20
+  0dd33bb4  mov     x1, x25
+  0dd33bb8  mov     x4, xzr
+  0dd33bbc  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33bc0  mov     x25, x0
+  0dd33bc4  mov     x0, x21
+  0dd33bc8  mov     x1, xzr
+  0dd33bcc  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33bd0  ldr     x8, [x19]
+  0dd33bd4  mov     x26, x0
+  0dd33bd8  mov     x1, xzr
+  0dd33bdc  mov     x0, x8
+  0dd33be0  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33be4  ldr     x3, [x27]
+  0dd33be8  mov     x2, x0
+  0dd33bec  mov     x0, x20
+  0dd33bf0  mov     x1, x26
+  0dd33bf4  mov     x4, xzr
+  0dd33bf8  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33bfc  mov     x26, x0
+  0dd33c00  mov     x0, x21
+  0dd33c04  mov     x1, xzr
+  0dd33c08  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33c0c  ldr     x8, [x19]
+  0dd33c10  mov     x27, x0
+  0dd33c14  mov     x1, xzr
+  0dd33c18  mov     x0, x8
+  0dd33c1c  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33c20  ldr     x3, [x28]
+  0dd33c24  mov     x2, x0
+  0dd33c28  mov     x0, x20
+  0dd33c2c  mov     x1, x27
+  0dd33c30  mov     x4, xzr
+  0dd33c34  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33c38  mov     x27, x0
+  0dd33c3c  mov     x0, x21
+  0dd33c40  mov     x1, xzr
+  0dd33c44  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33c48  ldr     x8, [x19]
+  0dd33c4c  mov     x28, x0
+  0dd33c50  mov     x1, xzr
+  0dd33c54  mov     x0, x8
+  0dd33c58  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33c5c  adrp    x8, #0xea6a000
+  0dd33c60  mov     x2, x0
+  0dd33c64  mov     x0, x20
+  0dd33c68  ldr     x8, [x8, #0x9f0]  ; STR "bodyWeight"
+  0dd33c6c  mov     x1, x28
+  0dd33c70  mov     x4, xzr
+  0dd33c74  ldr     x3, [x8]
+  0dd33c78  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33c7c  mov     x28, x0
+  0dd33c80  mov     x0, x21
+  0dd33c84  mov     x1, xzr
+  0dd33c88  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33c8c  ldr     x8, [x19]
+  0dd33c90  mov     x29, x0
+  0dd33c94  mov     x1, xzr
+  0dd33c98  mov     x0, x8
+  0dd33c9c  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33ca0  adrp    x8, #0xebc2000
+  0dd33ca4  mov     x2, x0
+  0dd33ca8  mov     x0, x20
+  0dd33cac  ldr     x8, [x8, #0xd58]  ; STR "customUseWeight"
+  0dd33cb0  mov     x1, x29
+  0dd33cb4  mov     x4, xzr
+  0dd33cb8  ldr     x3, [x8]
+  0dd33cbc  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33cc0  mov     x29, x0
+  0dd33cc4  mov     x0, x21
+  0dd33cc8  mov     x1, xzr
+  0dd33ccc  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd33cd0  ldr     x8, [x19]
+  0dd33cd4  mov     x21, x0
+  0dd33cd8  mov     x1, xzr
+  0dd33cdc  mov     x0, x8
+  0dd33ce0  bl      #0xdfeda30  ; -> System.Type$$GetTypeFromHandle
+  0dd33ce4  adrp    x8, #0xebc2000
+  0dd33ce8  mov     x2, x0
+  0dd33cec  mov     x0, x20
+  0dd33cf0  ldr     x8, [x8, #0xd50]  ; STR "weight"
+  0dd33cf4  mov     x1, x21
+  0dd33cf8  mov     x4, xzr
+  0dd33cfc  ldr     x3, [x8]
+  0dd33d00  bl      #0xd943958  ; -> UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+  0dd33d04  ldr     q0, [sp, #0x50]
+  0dd33d08  ldr     x8, [sp, #0x60]
+  0dd33d0c  add     x1, sp, #0x30
+  0dd33d10  stp     x0, xzr, [sp, #0x10]
+  0dd33d14  add     x0, sp, #0x80
+  0dd33d18  mov     x2, x22
+  0dd33d1c  mov     x3, x23
+  0dd33d20  mov     x4, x24
+  0dd33d24  mov     x5, x25
+  0dd33d28  mov     x6, x26
+  0dd33d2c  mov     x7, x27
+  0dd33d30  str     q0, [sp, #0x30]
+  0dd33d34  str     x8, [sp, #0x40]
+  0dd33d38  stp     x28, x29, [sp]
+  0dd33d3c  bl      #0x6569638  ; -> ActorAnimation.ActorAnimationIKCustomLookAtEffector$$Setup
+  0dd33d40  ldr     x8, [sp, #0x28]
+  0dd33d44  add     x1, sp, #0x80
+  0dd33d48  mov     w2, #0x60
+  0dd33d4c  add     x0, x8, #0x494
+  0dd33d50  bl      #0xe1b8430
+  0dd33d54  ldp     x20, x19, [sp, #0x130]
+  0dd33d58  ldp     x22, x21, [sp, #0x120]
+  0dd33d5c  ldp     x24, x23, [sp, #0x110]
+  0dd33d60  ldp     x26, x25, [sp, #0x100]
+  0dd33d64  ldp     x28, x27, [sp, #0xf0]
+  0dd33d68  ldp     x29, x30, [sp, #0xe0]
+  0dd33d6c  add     sp, sp, #0x140
+  0dd33d70  ret
+  0dd33d74  bl      #0x63cf120

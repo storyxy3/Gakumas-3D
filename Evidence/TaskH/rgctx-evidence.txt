@@ -1,0 +1,12 @@
+Applying relocations...
+WARNING: find JNI_OnLoad
+ERROR: This file may be protected.
+System.Collections.Generic.IEnumerable<T>
+IL2CPP_RGCTX_DATA_CLASS type_pre29=0 type_post29=2 data= _data=57577028
+System.Collections.Generic.ICollection<T>
+IL2CPP_RGCTX_DATA_CLASS type_pre29=0 type_post29=2 data= _data=57573960
+System.Collections.Generic.IReadOnlyCollection<T>
+IL2CPP_RGCTX_DATA_CLASS type_pre29=0 type_post29=2 data= _data=57583320
+IL2CPP_RGCTX_DATA_METHOD type_pre29=0 type_post29=3 data= _data=57573796
+IL2CPP_RGCTX_DATA_METHOD type_pre29=0 type_post29=3 data= _data=57583248
+IL2CPP_RGCTX_DATA_METHOD type_pre29=0 type_post29=3 data= _data=57560136

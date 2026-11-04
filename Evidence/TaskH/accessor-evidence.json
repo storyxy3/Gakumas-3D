@@ -1,0 +1,754 @@
+[
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_BasHeight",
+    "address": "0xdd26084",
+    "offset": "0x24",
+    "field": "_baseHeight",
+    "body": "return _baseHeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$set_BasHeight",
+    "address": "0xdd2608c",
+    "offset": "0x24",
+    "field": "_baseHeight",
+    "body": "_baseHeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_AspectRatio",
+    "address": "0xdd26094",
+    "offset": "0x28",
+    "field": "_aspectRatio",
+    "body": "return _aspectRatio;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$set_AspectRatio",
+    "address": "0xdd2609c",
+    "offset": "0x28",
+    "field": "_aspectRatio",
+    "body": "_aspectRatio = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_IsHDRFormat",
+    "address": "0xdd260a4",
+    "offset": "0x58",
+    "field": "_isHDRFormat",
+    "body": "return _isHDRFormat;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$set_IsHDRFormat",
+    "address": "0xdd260ac",
+    "offset": "0x58",
+    "field": "_isHDRFormat",
+    "body": "_isHDRFormat = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_TargetTexture",
+    "address": "0xdd260b4",
+    "offset": "0x60",
+    "field": "_target",
+    "body": "return _target;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_Canvas",
+    "address": "0xdd260bc",
+    "offset": "0x30",
+    "field": "_canvas",
+    "body": "return _canvas;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_threeDImages",
+    "address": "0xdd260c4",
+    "offset": "0x78",
+    "field": "_threeDImages",
+    "body": "return _threeDImages;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$get_InstanceIndex",
+    "address": "0xdd260cc",
+    "offset": "0x70",
+    "field": "_instanceIndex",
+    "body": "return _instanceIndex;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/CanvasRT/CanvasRenderTexture.cs"
+  },
+  {
+    "method": "Campus.Live.Monitor.MonitorRepeatImage$$get_Time",
+    "address": "0xddadc7c",
+    "offset": "0x128",
+    "field": "_time",
+    "body": "return _time;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Monitor/MonitorRepeatImage.cs"
+  },
+  {
+    "method": "Campus.Live.Monitor.MonitorRepeatImage$$get_sprite2",
+    "address": "0xddadd50",
+    "offset": "0x118",
+    "field": "_sprite2",
+    "body": "return _sprite2;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Monitor/MonitorRepeatImage.cs"
+  },
+  {
+    "method": "Campus.Live.Equipment.EquipmentValue$$get_EquipmentController",
+    "address": "0xddafc0c",
+    "offset": "0xc8",
+    "field": "_controller",
+    "body": "return _controller;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Equipment/EquipmentValue.cs"
+  },
+  {
+    "method": "Campus.Live.Equipment.LiveEquipmentController$$get_s",
+    "address": "0xddafc2c",
+    "offset": "0x20",
+    "field": "serializeFieldWg",
+    "body": "return serializeFieldWg;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Equipment/LiveEquipmentController.cs"
+  },
+  {
+    "method": "Campus.Live.Equipment.LiveEquipmentController$$get_Receiver",
+    "address": "0xddafc34",
+    "offset": "0x28",
+    "field": "_receiver",
+    "body": "return _receiver;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Equipment/LiveEquipmentController.cs"
+  },
+  {
+    "method": "Campus.Live.Equipment.LiveEquipmentReceiver$$get_receivedFrame",
+    "address": "0xddb129c",
+    "offset": "0x59",
+    "field": "_receivedFrame",
+    "body": "return _receivedFrame;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Live.Equipment/LiveEquipmentReceiver.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_LightType",
+    "address": "0xddbaa60",
+    "offset": "0x20",
+    "field": "_lightType",
+    "body": "return _lightType;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_IsFlatColor",
+    "address": "0xddbaf24",
+    "offset": "0x48",
+    "field": "_isFlatColor",
+    "body": "return _isFlatColor;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_Intensity",
+    "address": "0xddbaf34",
+    "offset": "0x4c",
+    "field": "_intensity",
+    "body": "return _intensity;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_SpecularOn",
+    "address": "0xddbaf5c",
+    "offset": "0x60",
+    "field": "_specularOn",
+    "body": "return _specularOn;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_chunkKey",
+    "address": "0xddbaf7c",
+    "offset": "0x20",
+    "field": "_lightType",
+    "body": "return _lightType;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$get_oldChunkKey",
+    "address": "0xddbaf84",
+    "offset": "0x6c",
+    "field": "<oldChunkKey>k__BackingField",
+    "body": "return _003ColdChunkKey_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.DecalLight.CampusDecalLight$$set_oldChunkKey",
+    "address": "0xddbaf8c",
+    "offset": "0x6c",
+    "field": "<oldChunkKey>k__BackingField",
+    "body": "_003ColdChunkKey_003Ek__BackingField = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.DecalLight/CampusDecalLight.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimationTimeline$$get_HidePenlight",
+    "address": "0xddc1600",
+    "offset": "0x20",
+    "field": "<HidePenlight>k__BackingField",
+    "body": "return _003CHidePenlight_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdAnimationTimeline.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimationTimeline$$set_HidePenlight",
+    "address": "0xddc1608",
+    "offset": "0x20",
+    "field": "<HidePenlight>k__BackingField",
+    "body": "_003CHidePenlight_003Ek__BackingField = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdAnimationTimeline.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimationTimeline$$get_UseColorProjection",
+    "address": "0xddc1610",
+    "offset": "0x21",
+    "field": "<UseColorProjection>k__BackingField",
+    "body": "return _003CUseColorProjection_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdAnimationTimeline.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimationTimeline$$set_UseColorProjection",
+    "address": "0xddc1618",
+    "offset": "0x21",
+    "field": "<UseColorProjection>k__BackingField",
+    "body": "_003CUseColorProjection_003Ek__BackingField = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdAnimationTimeline.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimationTimeline$$get_ColorTable",
+    "address": "0xddc1620",
+    "offset": "0x28",
+    "field": "<ColorTable>k__BackingField",
+    "body": "return _003CColorTable_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdAnimationTimeline.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimationTimeline$$set_ColorTable",
+    "address": "0xddc1628",
+    "offset": "0x28",
+    "field": "<ColorTable>k__BackingField",
+    "body": "_003CColorTable_003Ek__BackingField = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdAnimationTimeline.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdModelData$$get_Bones",
+    "address": "0xddc38b8",
+    "offset": "0x40",
+    "field": "bones",
+    "body": "return bones;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdModelData.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdModelData$$set_Bones",
+    "address": "0xddc38c0",
+    "offset": "0x40",
+    "field": "bones",
+    "body": "bones = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdModelData.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdModelData$$get_BindPoses",
+    "address": "0xddc38c8",
+    "offset": "0x60",
+    "field": "bindPoses",
+    "body": "return bindPoses;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdModelData.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdModelData$$set_BindPoses",
+    "address": "0xddc38d0",
+    "offset": "0x60",
+    "field": "bindPoses",
+    "body": "bindPoses = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdModelData.cs"
+  },
+  {
+    "method": "Campus.Crowd.CrowdVolume$$get_Crowd",
+    "address": "0xddcd8f8",
+    "offset": "0x78",
+    "field": "_crowd",
+    "body": "return _crowd;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Crowd/CrowdVolume.cs"
+  },
+  {
+    "method": "Campus.AudiencePenlight.AudiencePenlightTimeline$$get_UseColorProjection",
+    "address": "0xddce084",
+    "offset": "0x20",
+    "field": "useColorProjection",
+    "body": "return useColorProjection;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.AudiencePenlight/AudiencePenlightTimeline.cs"
+  },
+  {
+    "method": "Campus.AudiencePenlight.AudiencePenlightTimeline$$get_ColorTable",
+    "address": "0xddce08c",
+    "offset": "0x28",
+    "field": "colorTable",
+    "body": "return colorTable;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.AudiencePenlight/AudiencePenlightTimeline.cs"
+  },
+  {
+    "method": "Campus.AudiencePenlight.DefaultAudiencePenlight$$get_UseColorProjection",
+    "address": "0xddce5f0",
+    "offset": "0x10",
+    "field": "<UseColorProjection>k__BackingField",
+    "body": "return _003CUseColorProjection_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.AudiencePenlight/DefaultAudiencePenlight.cs"
+  },
+  {
+    "method": "Campus.AudiencePenlight.DefaultAudiencePenlight$$get_ColorTable",
+    "address": "0xddce5f8",
+    "offset": "0x18",
+    "field": "<ColorTable>k__BackingField",
+    "body": "return _003CColorTable_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.AudiencePenlight/DefaultAudiencePenlight.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$get_TalkAnimationSpeed",
+    "address": "0xddd847c",
+    "offset": "0x220",
+    "field": "_talkAnimationSpeed",
+    "body": "return _talkAnimationSpeed;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$set_TalkAnimationSpeed",
+    "address": "0xddd8484",
+    "offset": "0x220",
+    "field": "_talkAnimationSpeed",
+    "body": "_talkAnimationSpeed = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$get_SweatWeight",
+    "address": "0xddd848c",
+    "offset": "0x224",
+    "field": "_sweatWeight",
+    "body": "return _sweatWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$set_SweatWeight",
+    "address": "0xddd8494",
+    "offset": "0x224",
+    "field": "_sweatWeight",
+    "body": "_sweatWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$get_HighlightWeight",
+    "address": "0xddd849c",
+    "offset": "0x228",
+    "field": "_highlightWeight",
+    "body": "return _highlightWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$set_HighlightWeight",
+    "address": "0xddd84a4",
+    "offset": "0x228",
+    "field": "_highlightWeight",
+    "body": "_highlightWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$get_TargetCorrectionWeight",
+    "address": "0xddd84ac",
+    "offset": "0x22c",
+    "field": "_targetCorrectionWeight",
+    "body": "return _targetCorrectionWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$set_TargetCorrectionWeight",
+    "address": "0xddd84b4",
+    "offset": "0x22c",
+    "field": "_targetCorrectionWeight",
+    "body": "_targetCorrectionWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$get_LookAtEyeSideCorrectionWeight",
+    "address": "0xddd84d4",
+    "offset": "0x248",
+    "field": "_lookAtEyeSideCorrectionWeight",
+    "body": "return _lookAtEyeSideCorrectionWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$set_LookAtEyeSideCorrectionWeight",
+    "address": "0xddd84dc",
+    "offset": "0x248",
+    "field": "_lookAtEyeSideCorrectionWeight",
+    "body": "_lookAtEyeSideCorrectionWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$get_IsBuildSuccess",
+    "address": "0xddd856c",
+    "offset": "0x290",
+    "field": "<IsBuildSuccess>k__BackingField",
+    "body": "return _003CIsBuildSuccess_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorFaceCorrection$$get_globalWeight",
+    "address": "0xdde5adc",
+    "offset": "0x40",
+    "field": "_globalWeight",
+    "body": "return _globalWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorFaceCorrection.cs"
+  },
+  {
+    "method": "Campus.Common.CampusActorFaceCorrection$$set_globalWeight",
+    "address": "0xdde5ae4",
+    "offset": "0x40",
+    "field": "_globalWeight",
+    "body": "_globalWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusActorFaceCorrection.cs"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$get_SweatWeight",
+    "address": "0xddedbf0",
+    "offset": "0x60",
+    "field": "_sweatWeight",
+    "body": "return _sweatWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusVirtualActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$set_SweatWeight",
+    "address": "0xddedbf8",
+    "offset": "0x60",
+    "field": "_sweatWeight",
+    "body": "_sweatWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusVirtualActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$get_HighlightWeight",
+    "address": "0xddedc00",
+    "offset": "0x64",
+    "field": "_highlightWeight",
+    "body": "return _highlightWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusVirtualActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$set_HighlightWeight",
+    "address": "0xddedc08",
+    "offset": "0x64",
+    "field": "_highlightWeight",
+    "body": "_highlightWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusVirtualActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$get_TargetCorrectionWeight",
+    "address": "0xddedc10",
+    "offset": "0x68",
+    "field": "_targetCorrectionWeight",
+    "body": "return _targetCorrectionWeight;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusVirtualActorController.cs"
+  },
+  {
+    "method": "Campus.Common.CampusVirtualActorController$$set_TargetCorrectionWeight",
+    "address": "0xddedc18",
+    "offset": "0x68",
+    "field": "_targetCorrectionWeight",
+    "body": "_targetCorrectionWeight = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/CampusVirtualActorController.cs"
+  },
+  {
+    "method": "Campus.Common.VideoImage$$get_DisableAutoResumeOnApplicationPause",
+    "address": "0xde37698",
+    "offset": "0x100",
+    "field": "<DisableAutoResumeOnApplicationPause>k__BackingField",
+    "body": "return _003CDisableAutoResumeOnApplicationPause_003Ek__BackingField;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/VideoImage.cs"
+  },
+  {
+    "method": "Campus.Common.VideoImage$$set_DisableAutoResumeOnApplicationPause",
+    "address": "0xde376a0",
+    "offset": "0x100",
+    "field": "<DisableAutoResumeOnApplicationPause>k__BackingField",
+    "body": "_003CDisableAutoResumeOnApplicationPause_003Ek__BackingField = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common/VideoImage.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveEnvironment$$get_equipmentReceiver",
+    "address": "0xdd6e9b4",
+    "offset": "0x20",
+    "field": "_equipmentReceiver",
+    "body": "return _equipmentReceiver;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveEnvironment.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveEnvironment$$set_equipmentReceiver",
+    "address": "0xdd6e9bc",
+    "offset": "0x20",
+    "field": "_equipmentReceiver",
+    "body": "_equipmentReceiver = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveEnvironment.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_OnForcedCameraChanged",
+    "address": "0xdd6fa38",
+    "offset": "0x48",
+    "field": "_forcedCameraChangedSubject",
+    "body": "return _forcedCameraChangedSubject;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_OnLookAtProhibitChanged",
+    "address": "0xdd6ff84",
+    "offset": "0xa0",
+    "field": "_lookAtProhibitChanged",
+    "body": "return _lookAtProhibitChanged;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_OnLookAtEnableProhibitChanged",
+    "address": "0xdd6ff8c",
+    "offset": "0xa8",
+    "field": "_lookAtEnableProhibitChanged",
+    "body": "return _lookAtEnableProhibitChanged;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_actorLayout",
+    "address": "0xdd70910",
+    "offset": "0xc0",
+    "field": "_actorLayout",
+    "body": "return _actorLayout;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$set_actorLayout",
+    "address": "0xdd70918",
+    "offset": "0xc0",
+    "field": "_actorLayout",
+    "body": "_actorLayout = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_virtualActors",
+    "address": "0xdd70920",
+    "offset": "0xc8",
+    "field": "_virtualActors",
+    "body": "return _virtualActors;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$set_virtualActors",
+    "address": "0xdd70928",
+    "offset": "0xc8",
+    "field": "_virtualActors",
+    "body": "_virtualActors = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_actorPropSettings",
+    "address": "0xdd70930",
+    "offset": "0xd0",
+    "field": "_actorPropSettings",
+    "body": "return _actorPropSettings;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$set_actorPropSettings",
+    "address": "0xdd70938",
+    "offset": "0xd0",
+    "field": "_actorPropSettings",
+    "body": "_actorPropSettings = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_IsCmmnHeightCorrectionNeededForActorSwing",
+    "address": "0xdd70940",
+    "offset": "0xd8",
+    "field": "_isCmmnHeightCorrectionNeededForActorSwing",
+    "body": "return _isCmmnHeightCorrectionNeededForActorSwing;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_equipmentController",
+    "address": "0xdd70948",
+    "offset": "0xe0",
+    "field": "_equipmentController",
+    "body": "return _equipmentController;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$set_equipmentController",
+    "address": "0xdd70950",
+    "offset": "0xe0",
+    "field": "_equipmentController",
+    "body": "_equipmentController = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_equipmentReceiver",
+    "address": "0xdd70958",
+    "offset": "0xe8",
+    "field": "_equipmentReceiver",
+    "body": "return _equipmentReceiver;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$set_equipmentReceiver",
+    "address": "0xdd70960",
+    "offset": "0xe8",
+    "field": "_equipmentReceiver",
+    "body": "_equipmentReceiver = value;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_overlayCanvas",
+    "address": "0xdd70968",
+    "offset": "0xf0",
+    "field": "_overlayCanvas",
+    "body": "return _overlayCanvas;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_BackgroundCanvas",
+    "address": "0xdd70970",
+    "offset": "0xf8",
+    "field": "_backgroundCanvas",
+    "body": "return _backgroundCanvas;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_overlayImage",
+    "address": "0xdd70978",
+    "offset": "0x100",
+    "field": "_overlayImage",
+    "body": "return _overlayImage;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_MonitorVideoPlayer",
+    "address": "0xdd70980",
+    "offset": "0x108",
+    "field": "monitorVideoPlayer",
+    "body": "return monitorVideoPlayer;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_OverrideMonitorImages",
+    "address": "0xdd70988",
+    "offset": "0x110",
+    "field": "overrideMonitorImages",
+    "body": "return overrideMonitorImages;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "Campus.Common.Live.CampusLiveTimelineController$$get_criVideoPlayers",
+    "address": "0xdd70990",
+    "offset": "0x118",
+    "field": "_criVideoPlayers",
+    "body": "return _criVideoPlayers;",
+    "file": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Live/CampusLiveTimelineController.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKCorrectionCollider$$get_hierarchyDepth",
+    "address": "0x655d220",
+    "offset": "0x50",
+    "field": "<hierarchyDepth>k__BackingField",
+    "body": "return _003ChierarchyDepth_003Ek__BackingField;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationIKCorrectionCollider.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationIKCorrectionCollider$$set_hierarchyDepth",
+    "address": "0x655d228",
+    "offset": "0x50",
+    "field": "<hierarchyDepth>k__BackingField",
+    "body": "_003ChierarchyDepth_003Ek__BackingField = value;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorAnimationIKCorrectionCollider.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingBreastBone$$get_isDirty",
+    "address": "0x65615f4",
+    "offset": "0x250",
+    "field": "<isDirty>k__BackingField",
+    "body": "return _003CisDirty_003Ek__BackingField;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingBreastBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingBreastBone$$set_isDirty",
+    "address": "0x65615fc",
+    "offset": "0x250",
+    "field": "<isDirty>k__BackingField",
+    "body": "_003CisDirty_003Ek__BackingField = value;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingBreastBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingBreastBone$$get_swingCollider",
+    "address": "0x6561604",
+    "offset": "0x20",
+    "field": "breastCollider",
+    "body": "return breastCollider;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingBreastBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingDynamicBone$$get_swingCollider",
+    "address": "0x6562868",
+    "offset": "0x20",
+    "field": "dynamicCollider",
+    "body": "return dynamicCollider;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingDynamicBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingDynamicBone$$get_hierarchyDepth",
+    "address": "0x6562870",
+    "offset": "0x78",
+    "field": "<hierarchyDepth>k__BackingField",
+    "body": "return _003ChierarchyDepth_003Ek__BackingField;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingDynamicBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingDynamicBone$$set_hierarchyDepth",
+    "address": "0x6562878",
+    "offset": "0x78",
+    "field": "<hierarchyDepth>k__BackingField",
+    "body": "_003ChierarchyDepth_003Ek__BackingField = value;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingDynamicBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingDynamicBone$$get_isDirty",
+    "address": "0x65628c0",
+    "offset": "0xec",
+    "field": "<isDirty>k__BackingField",
+    "body": "return _003CisDirty_003Ek__BackingField;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingDynamicBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingDynamicBone$$set_isDirty",
+    "address": "0x65628c8",
+    "offset": "0xec",
+    "field": "<isDirty>k__BackingField",
+    "body": "_003CisDirty_003Ek__BackingField = value;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingDynamicBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingStaticBone$$get_swingCollider",
+    "address": "0x65637f4",
+    "offset": "0x20",
+    "field": "staticCollider",
+    "body": "return staticCollider;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingStaticBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingStaticBone$$get_isDirty",
+    "address": "0x6563814",
+    "offset": "0x28",
+    "field": "<isDirty>k__BackingField",
+    "body": "return _003CisDirty_003Ek__BackingField;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingStaticBone.cs"
+  },
+  {
+    "method": "ActorAnimation.ActorSwingStaticBone$$set_isDirty",
+    "address": "0x656381c",
+    "offset": "0x28",
+    "field": "<isDirty>k__BackingField",
+    "body": "_003CisDirty_003Ek__BackingField = value;",
+    "file": "Packages/ActorAnimation.Runtime/Runtime/ActorAnimation/ActorSwingStaticBone.cs"
+  }
+]

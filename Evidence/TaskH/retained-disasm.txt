@@ -1,0 +1,357 @@
+=== ActorAnimation.ActorSwingChain.<>c__DisplayClass4_0$$.ctor @ 0x6562690 (2 insns)
+    void ActorAnimation_ActorSwingChain___c__DisplayClass4_0___ctor (ActorAnimation_ActorSwingChain___c__DisplayClass4_0_o* __this, const MethodInfo* method);
+  06562690  mov     x1, xzr
+  06562694  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Live.Equipment.Timeline.LiveEquipmentClipBase<object>$$.ctor @ 0xaefef0c (2 insns)
+    void Campus_Live_Equipment_Timeline_LiveEquipmentClipBase_object____ctor (Campus_Live_Equipment_Timeline_LiveEquipmentClipBase_T__o* __this, const MethodInfo_AEFEF0C* method);
+  0aefef0c  mov     x1, xzr
+  0aefef10  b       #0xddb53f0  ; -> Campus.Live.Equipment.Timeline.LiveEquipmentClipBase$$.ctor
+=== CanvasRT.CanvasRenderTextureImage$$.ctor @ 0xdd274b4 (2 insns)
+    void CanvasRT_CanvasRenderTextureImage___ctor (CanvasRT_CanvasRenderTextureImage_o* __this, const MethodInfo* method);
+  0dd274b4  mov     x1, xzr
+  0dd274b8  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Timeline.CampusBpmTimelineAsset$$.ctor @ 0xdd41c28 (2 insns)
+    void Campus_Timeline_CampusBpmTimelineAsset___ctor (Campus_Timeline_CampusBpmTimelineAsset_o* __this, const MethodInfo* method);
+  0dd41c28  mov     x1, xzr
+  0dd41c2c  b       #0xd9fcea0  ; -> UnityEngine.Playables.PlayableAsset$$.ctor
+=== Campus.Timeline.CampusBpmTimelineTrack$$.ctor @ 0xdd427e8 (2 insns)
+    void Campus_Timeline_CampusBpmTimelineTrack___ctor (Campus_Timeline_CampusBpmTimelineTrack_o* __this, const MethodInfo* method);
+  0dd427e8  mov     x1, xzr
+  0dd427ec  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.Timeline.BeatDenominatorMarker$$.ctor @ 0xdd427f0 (2 insns)
+    void Campus_Timeline_BeatDenominatorMarker___ctor (Campus_Timeline_BeatDenominatorMarker_o* __this, const MethodInfo* method);
+  0dd427f0  mov     x1, xzr
+  0dd427f4  b       #0xd904428  ; -> UnityEngine.Timeline.Marker$$.ctor
+=== Campus.Timeline.BeatNumeratorMarker$$.ctor @ 0xdd427f8 (2 insns)
+    void Campus_Timeline_BeatNumeratorMarker___ctor (Campus_Timeline_BeatNumeratorMarker_o* __this, const MethodInfo* method);
+  0dd427f8  mov     x1, xzr
+  0dd427fc  b       #0xd904428  ; -> UnityEngine.Timeline.Marker$$.ctor
+=== Campus.Timeline.CampusBpmMarkerTrack$$.ctor @ 0xdd42800 (22 insns)
+    void Campus_Timeline_CampusBpmMarkerTrack___ctor (Campus_Timeline_CampusBpmMarkerTrack_o* __this, const MethodInfo* method);
+  0dd42800  stp     x30, x21, [sp, #-0x20]!
+  0dd42804  stp     x20, x19, [sp, #0x10]
+  0dd42808  adrp    x20, #0xf43b000
+  0dd4280c  adrp    x21, #0xeb67000
+  0dd42810  mov     x19, x0
+  0dd42814  ldrb    w8, [x20, #0x8b9]
+  0dd42818  ldr     x21, [x21, #0xc30]  ; META UnityEngine.Timeline.TrackAsset_TypeInfo
+  0dd4281c  tbnz    w8, #0, #0xdd42834
+  0dd42820  adrp    x0, #0xeb67000
+  0dd42824  ldr     x0, [x0, #0xc30]  ; META UnityEngine.Timeline.TrackAsset_TypeInfo
+  0dd42828  bl      #0x63cee78
+  0dd4282c  mov     w8, #1
+  0dd42830  strb    w8, [x20, #0x8b9]
+  0dd42834  ldr     x0, [x21]
+  0dd42838  ldr     w8, [x0, #0xe4]
+  0dd4283c  cbnz    w8, #0xdd42844
+  0dd42840  bl      #0x63ceff4
+  0dd42844  mov     x0, x19
+  0dd42848  ldp     x20, x19, [sp, #0x10]
+  0dd4284c  mov     x1, xzr
+  0dd42850  ldp     x30, x21, [sp], #0x20
+  0dd42854  b       #0xd8ebeb0  ; -> UnityEngine.Timeline.TrackAsset$$.ctor
+=== Campus.Timeline.CampusDirectorControlAsset$$.ctor @ 0xdd4b000 (2 insns)
+    void Campus_Timeline_CampusDirectorControlAsset___ctor (Campus_Timeline_CampusDirectorControlAsset_o* __this, const MethodInfo* method);
+  0dd4b000  mov     x1, xzr
+  0dd4b004  b       #0xd9fcea0  ; -> UnityEngine.Playables.PlayableAsset$$.ctor
+=== Campus.Timeline.CampusDirectorControlTrack$$.ctor @ 0xdd4b008 (2 insns)
+    void Campus_Timeline_CampusDirectorControlTrack___ctor (Campus_Timeline_CampusDirectorControlTrack_o* __this, const MethodInfo* method);
+  0dd4b008  mov     x1, xzr
+  0dd4b00c  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.Timeline.CampusCutMarker$$.ctor @ 0xdd4cb0c (2 insns)
+    void Campus_Timeline_CampusCutMarker___ctor (Campus_Timeline_CampusCutMarker_o* __this, const MethodInfo* method);
+  0dd4cb0c  mov     x1, xzr
+  0dd4cb10  b       #0xd904428  ; -> UnityEngine.Timeline.Marker$$.ctor
+=== Campus.Timeline.CampusTargetImageClip$$get_clipCaps @ 0xdd4d7c4 (2 insns)
+    int32_t Campus_Timeline_CampusTargetImageClip__get_clipCaps (Campus_Timeline_CampusTargetImageClip_o* __this, const MethodInfo* method);
+  0dd4d7c4  mov     w0, wzr
+  0dd4d7c8  ret
+=== Campus.Timeline.CampusTargetImageTrack$$.ctor @ 0xdd4e178 (22 insns)
+    void Campus_Timeline_CampusTargetImageTrack___ctor (Campus_Timeline_CampusTargetImageTrack_o* __this, const MethodInfo* method);
+  0dd4e178  stp     x30, x21, [sp, #-0x20]!
+  0dd4e17c  stp     x20, x19, [sp, #0x10]
+  0dd4e180  adrp    x20, #0xf43b000
+  0dd4e184  adrp    x21, #0xeb67000
+  0dd4e188  mov     x19, x0
+  0dd4e18c  ldrb    w8, [x20, #0x920]
+  0dd4e190  ldr     x21, [x21, #0xc30]  ; META UnityEngine.Timeline.TrackAsset_TypeInfo
+  0dd4e194  tbnz    w8, #0, #0xdd4e1ac
+  0dd4e198  adrp    x0, #0xeb67000
+  0dd4e19c  ldr     x0, [x0, #0xc30]  ; META UnityEngine.Timeline.TrackAsset_TypeInfo
+  0dd4e1a0  bl      #0x63cee78
+  0dd4e1a4  mov     w8, #1
+  0dd4e1a8  strb    w8, [x20, #0x920]
+  0dd4e1ac  ldr     x0, [x21]
+  0dd4e1b0  ldr     w8, [x0, #0xe4]
+  0dd4e1b4  cbnz    w8, #0xdd4e1bc
+  0dd4e1b8  bl      #0x63ceff4
+  0dd4e1bc  mov     x0, x19
+  0dd4e1c0  ldp     x20, x19, [sp, #0x10]
+  0dd4e1c4  mov     x1, xzr
+  0dd4e1c8  ldp     x30, x21, [sp], #0x20
+  0dd4e1cc  b       #0xd8ebeb0  ; -> UnityEngine.Timeline.TrackAsset$$.ctor
+=== Campus.Timeline.CampusSubtitleTrack$$.ctor @ 0xdd4e764 (2 insns)
+    void Campus_Timeline_CampusSubtitleTrack___ctor (Campus_Timeline_CampusSubtitleTrack_o* __this, const MethodInfo* method);
+  0dd4e764  mov     x1, xzr
+  0dd4e768  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.Timeline.CampusLightAsset$$.ctor @ 0xdd4e814 (2 insns)
+    void Campus_Timeline_CampusLightAsset___ctor (Campus_Timeline_CampusLightAsset_o* __this, const MethodInfo* method);
+  0dd4e814  mov     x1, xzr
+  0dd4e818  b       #0xd9fcea0  ; -> UnityEngine.Playables.PlayableAsset$$.ctor
+=== Campus.Timeline.CampusLightTrack$$.ctor @ 0xdd500ac (2 insns)
+    void Campus_Timeline_CampusLightTrack___ctor (Campus_Timeline_CampusLightTrack_o* __this, const MethodInfo* method);
+  0dd500ac  mov     x1, xzr
+  0dd500b0  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.Timeline.CampusVideoPlayerClip$$.ctor @ 0xdd50814 (2 insns)
+    void Campus_Timeline_CampusVideoPlayerClip___ctor (Campus_Timeline_CampusVideoPlayerClip_o* __this, const MethodInfo* method);
+  0dd50814  mov     x1, xzr
+  0dd50818  b       #0xd9fcea0  ; -> UnityEngine.Playables.PlayableAsset$$.ctor
+=== Campus.Common.Live.CampusLiveEnvironment$$.ctor @ 0xdd6e9c4 (2 insns)
+    void Campus_Common_Live_CampusLiveEnvironment___ctor (Campus_Common_Live_CampusLiveEnvironment_o* __this, const MethodInfo* method);
+  0dd6e9c4  mov     x1, xzr
+  0dd6e9c8  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Timeline.CampusVolumeTimelineBehaviour$$.ctor @ 0xdd7e614 (2 insns)
+    void Campus_Timeline_CampusVolumeTimelineBehaviour___ctor (Campus_Timeline_CampusVolumeTimelineBehaviour_o* __this, const MethodInfo* method);
+  0dd7e614  mov     x1, xzr
+  0dd7e618  b       #0xd904d24  ; -> UnityEngine.Timeline.ActivationControlPlayable$$.ctor
+=== Campus.Timeline.CampusVolumeTimelineAsset$$.ctor @ 0xdd7e620 (2 insns)
+    void Campus_Timeline_CampusVolumeTimelineAsset___ctor (Campus_Timeline_CampusVolumeTimelineAsset_o* __this, const MethodInfo* method);
+  0dd7e620  mov     x1, xzr
+  0dd7e624  b       #0xd9fcea0  ; -> UnityEngine.Playables.PlayableAsset$$.ctor
+=== Campus.Timeline.CampusVolumeTimelineTrack$$.ctor @ 0xdd7ecc0 (2 insns)
+    void Campus_Timeline_CampusVolumeTimelineTrack___ctor (Campus_Timeline_CampusVolumeTimelineTrack_o* __this, const MethodInfo* method);
+  0dd7ecc0  mov     x1, xzr
+  0dd7ecc4  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.MobAudience.MobAudiencePenlightController.RuntimeMobPenlightSetting$$.ctor @ 0xdda81b0 (2 insns)
+    void Campus_MobAudience_MobAudiencePenlightController_RuntimeMobPenlightSetting___ctor (Campus_MobAudience_MobAudiencePenlightController_RuntimeMobPenlightSetting_o* __this, const MethodInfo* method);
+  0dda81b0  mov     x1, xzr
+  0dda81b4  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.MobAudience.MobAudiencePenlightController.<>c$$.ctor @ 0xdda906c (2 insns)
+    void Campus_MobAudience_MobAudiencePenlightController___c___ctor (Campus_MobAudience_MobAudiencePenlightController___c_o* __this, const MethodInfo* method);
+  0dda906c  mov     x1, xzr
+  0dda9070  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Live.SRTSubtitle$$.ctor @ 0xddad820 (2 insns)
+    void Campus_Live_SRTSubtitle___ctor (Campus_Live_SRTSubtitle_o* __this, const MethodInfo* method);
+  0ddad820  mov     x1, xzr
+  0ddad824  b       #0xd9e043c  ; -> UnityEngine.ScriptableObject$$.ctor
+=== Campus.Live.Equipment.LiveEquipmentController$$.ctor @ 0xddb1164 (2 insns)
+    void Campus_Live_Equipment_LiveEquipmentController___ctor (Campus_Live_Equipment_LiveEquipmentController_o* __this, const MethodInfo* method);
+  0ddb1164  mov     x1, xzr
+  0ddb1168  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Live.Equipment.LiveEquipmentController.<>c$$.ctor @ 0xddb11d4 (2 insns)
+    void Campus_Live_Equipment_LiveEquipmentController___c___ctor (Campus_Live_Equipment_LiveEquipmentController___c_o* __this, const MethodInfo* method);
+  0ddb11d4  mov     x1, xzr
+  0ddb11d8  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Live.Equipment.Timeline.LiveEquipmentDirectionalLightClip$$.ctor @ 0xddb1a50 (18 insns)
+    void Campus_Live_Equipment_Timeline_LiveEquipmentDirectionalLightClip___ctor (Campus_Live_Equipment_Timeline_LiveEquipmentDirectionalLightClip_o* __this, const MethodInfo* method);
+  0ddb1a50  stp     x30, x21, [sp, #-0x20]!
+  0ddb1a54  stp     x20, x19, [sp, #0x10]
+  0ddb1a58  adrp    x20, #0xf43b000
+  0ddb1a5c  adrp    x21, #0xebc6000
+  0ddb1a60  mov     x19, x0
+  0ddb1a64  ldrb    w8, [x20, #0xc50]
+  0ddb1a68  ldr     x21, [x21, #0xc0]  ; MMETH Method$Campus.Live.Equipment.Timeline.LiveEquipmentClipBase<LiveEquipmentDirectionalLightAssetBehaviour>..ctor()
+  0ddb1a6c  tbnz    w8, #0, #0xddb1a84
+  0ddb1a70  adrp    x0, #0xebc6000
+  0ddb1a74  ldr     x0, [x0, #0xc0]  ; MMETH Method$Campus.Live.Equipment.Timeline.LiveEquipmentClipBase<LiveEquipmentDirectionalLightAssetBehaviour>..ctor()
+  0ddb1a78  bl      #0x63cee78
+  0ddb1a7c  mov     w8, #1
+  0ddb1a80  strb    w8, [x20, #0xc50]
+  0ddb1a84  mov     x0, x19
+  0ddb1a88  ldp     x20, x19, [sp, #0x10]
+  0ddb1a8c  ldr     x1, [x21]
+  0ddb1a90  ldp     x30, x21, [sp], #0x20
+  0ddb1a94  b       #0xaefef0c  ; -> Campus.Live.Equipment.Timeline.LiveEquipmentClipBase<object>$$.ctor
+=== Campus.Live.Equipment.Timeline.LiveEquipmentTrackBase$$.ctor @ 0xddb5f64 (22 insns)
+    void Campus_Live_Equipment_Timeline_LiveEquipmentTrackBase___ctor (Campus_Live_Equipment_Timeline_LiveEquipmentTrackBase_o* __this, const MethodInfo* method);
+  0ddb5f64  stp     x30, x21, [sp, #-0x20]!
+  0ddb5f68  stp     x20, x19, [sp, #0x10]
+  0ddb5f6c  adrp    x20, #0xf43b000
+  0ddb5f70  adrp    x21, #0xeb67000
+  0ddb5f74  mov     x19, x0
+  0ddb5f78  ldrb    w8, [x20, #0xc6c]
+  0ddb5f7c  ldr     x21, [x21, #0xc30]  ; META UnityEngine.Timeline.TrackAsset_TypeInfo
+  0ddb5f80  tbnz    w8, #0, #0xddb5f98
+  0ddb5f84  adrp    x0, #0xeb67000
+  0ddb5f88  ldr     x0, [x0, #0xc30]  ; META UnityEngine.Timeline.TrackAsset_TypeInfo
+  0ddb5f8c  bl      #0x63cee78
+  0ddb5f90  mov     w8, #1
+  0ddb5f94  strb    w8, [x20, #0xc6c]
+  0ddb5f98  ldr     x0, [x21]
+  0ddb5f9c  ldr     w8, [x0, #0xe4]
+  0ddb5fa0  cbnz    w8, #0xddb5fa8
+  0ddb5fa4  bl      #0x63ceff4
+  0ddb5fa8  mov     x0, x19
+  0ddb5fac  ldp     x20, x19, [sp, #0x10]
+  0ddb5fb0  mov     x1, xzr
+  0ddb5fb4  ldp     x30, x21, [sp], #0x20
+  0ddb5fb8  b       #0xd8ebeb0  ; -> UnityEngine.Timeline.TrackAsset$$.ctor
+=== Campus.Live.Equipment.Timeline.LiveEquipmentDirectionalLightTrack$$.ctor @ 0xddb61a8 (1 insns)
+    void Campus_Live_Equipment_Timeline_LiveEquipmentDirectionalLightTrack___ctor (Campus_Live_Equipment_Timeline_LiveEquipmentDirectionalLightTrack_o* __this, const MethodInfo* method);
+  0ddb61a8  b       #0xddb5f64  ; -> Campus.Live.Equipment.Timeline.LiveEquipmentTrackBase$$.ctor
+=== Campus.Live.Equipment.Timeline.LiveEquipmentLaserTrack$$.ctor @ 0xddb61c0 (1 insns)
+    void Campus_Live_Equipment_Timeline_LiveEquipmentLaserTrack___ctor (Campus_Live_Equipment_Timeline_LiveEquipmentLaserTrack_o* __this, const MethodInfo* method);
+  0ddb61c0  b       #0xddb5f64  ; -> Campus.Live.Equipment.Timeline.LiveEquipmentTrackBase$$.ctor
+=== Campus.Live.Equipment.Timeline.LiveEquipmentLightTrack$$.ctor @ 0xddb61cc (1 insns)
+    void Campus_Live_Equipment_Timeline_LiveEquipmentLightTrack___ctor (Campus_Live_Equipment_Timeline_LiveEquipmentLightTrack_o* __this, const MethodInfo* method);
+  0ddb61cc  b       #0xddb5f64  ; -> Campus.Live.Equipment.Timeline.LiveEquipmentTrackBase$$.ctor
+=== Campus.Crowd.CrowdAnimationBehaviour$$.ctor @ 0xddbffe0 (2 insns)
+    void Campus_Crowd_CrowdAnimationBehaviour___ctor (Campus_Crowd_CrowdAnimationBehaviour_o* __this, const MethodInfo* method);
+  0ddbffe0  mov     x1, xzr
+  0ddbffe4  b       #0xd9fcea8  ; -> UnityEngine.Playables.PlayableBehaviour$$.ctor
+=== Campus.Crowd.CrowdAnimationTimeline$$.ctor @ 0xddc2bac (2 insns)
+    void Campus_Crowd_CrowdAnimationTimeline___ctor (Campus_Crowd_CrowdAnimationTimeline_o* __this, const MethodInfo* method);
+  0ddc2bac  mov     x1, xzr
+  0ddc2bb0  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Crowd.CrowdAnimator.<>c$$.ctor @ 0xddc3618 (2 insns)
+    void Campus_Crowd_CrowdAnimator___c___ctor (Campus_Crowd_CrowdAnimator___c_o* __this, const MethodInfo* method);
+  0ddc3618  mov     x1, xzr
+  0ddc361c  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Crowd.CrowdMotionDefine$$.ctor @ 0xddc3800 (2 insns)
+    void Campus_Crowd_CrowdMotionDefine___ctor (Campus_Crowd_CrowdMotionDefine_o* __this, const MethodInfo* method);
+  0ddc3800  mov     x1, xzr
+  0ddc3804  b       #0xe0fa8a0  ; -> VL.MotionDefine$$.ctor
+=== Campus.Crowd.CrowdData$$.ctor @ 0xddc3884 (2 insns)
+    void Campus_Crowd_CrowdData___ctor (Campus_Crowd_CrowdData_o* __this, const MethodInfo* method);
+  0ddc3884  mov     x1, xzr
+  0ddc3888  b       #0xd9e043c  ; -> UnityEngine.ScriptableObject$$.ctor
+=== Campus.Crowd.CrowdModelData$$.ctor @ 0xddc38f0 (2 insns)
+    void Campus_Crowd_CrowdModelData___ctor (Campus_Crowd_CrowdModelData_o* __this, const MethodInfo* method);
+  0ddc38f0  mov     x1, xzr
+  0ddc38f4  b       #0xd9e043c  ; -> UnityEngine.ScriptableObject$$.ctor
+=== Campus.Crowd.CrowdModelData.SubMeshData$$.ctor @ 0xddc38f8 (2 insns)
+    void Campus_Crowd_CrowdModelData_SubMeshData___ctor (Campus_Crowd_CrowdModelData_SubMeshData_o* __this, const MethodInfo* method);
+  0ddc38f8  mov     x1, xzr
+  0ddc38fc  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Crowd.CrowdModelData.MeshData$$.ctor @ 0xddc3900 (2 insns)
+    void Campus_Crowd_CrowdModelData_MeshData___ctor (Campus_Crowd_CrowdModelData_MeshData_o* __this, const MethodInfo* method);
+  0ddc3900  mov     x1, xzr
+  0ddc3904  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Crowd.CrowdModelData.CrowdVolumeBoneData$$.ctor @ 0xddc3908 (2 insns)
+    void Campus_Crowd_CrowdModelData_CrowdVolumeBoneData___ctor (Campus_Crowd_CrowdModelData_CrowdVolumeBoneData_o* __this, const MethodInfo* method);
+  0ddc3908  mov     x1, xzr
+  0ddc390c  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Crowd.CrowdOcclusionVolume$$.ctor @ 0xddc3b20 (2 insns)
+    void Campus_Crowd_CrowdOcclusionVolume___ctor (Campus_Crowd_CrowdOcclusionVolume_o* __this, const MethodInfo* method);
+  0ddc3b20  mov     x1, xzr
+  0ddc3b24  b       #0xd7aa1a8  ; -> UnityEngine.Rendering.Volume$$.ctor
+=== Campus.Crowd.CrowdTimelineBehaviour$$.ctor @ 0xddcc508 (2 insns)
+    void Campus_Crowd_CrowdTimelineBehaviour___ctor (Campus_Crowd_CrowdTimelineBehaviour_o* __this, const MethodInfo* method);
+  0ddcc508  mov     x1, xzr
+  0ddcc50c  b       #0xd9fcea8  ; -> UnityEngine.Playables.PlayableBehaviour$$.ctor
+=== Campus.Crowd.CrowdTimelineTrack$$.ctor @ 0xddcd228 (2 insns)
+    void Campus_Crowd_CrowdTimelineTrack___ctor (Campus_Crowd_CrowdTimelineTrack_o* __this, const MethodInfo* method);
+  0ddcd228  mov     x1, xzr
+  0ddcd22c  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.Crowd.CrowdTimelineTrack.<>c$$.ctor @ 0xddcd298 (2 insns)
+    void Campus_Crowd_CrowdTimelineTrack___c___ctor (Campus_Crowd_CrowdTimelineTrack___c_o* __this, const MethodInfo* method);
+  0ddcd298  mov     x1, xzr
+  0ddcd29c  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Crowd.CrowdVolume$$.ctor @ 0xddcdd18 (2 insns)
+    void Campus_Crowd_CrowdVolume___ctor (Campus_Crowd_CrowdVolume_o* __this, const MethodInfo* method);
+  0ddcdd18  mov     x1, xzr
+  0ddcdd1c  b       #0xd7aa1a8  ; -> UnityEngine.Rendering.Volume$$.ctor
+=== Campus.AudiencePenlight.AudiencePenlightTimeline$$.ctor @ 0xddce1f4 (2 insns)
+    void Campus_AudiencePenlight_AudiencePenlightTimeline___ctor (Campus_AudiencePenlight_AudiencePenlightTimeline_o* __this, const MethodInfo* method);
+  0ddce1f4  mov     x1, xzr
+  0ddce1f8  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.AudiencePenlight.AudiencePenlightVolume$$.ctor @ 0xddce520 (2 insns)
+    void Campus_AudiencePenlight_AudiencePenlightVolume___ctor (Campus_AudiencePenlight_AudiencePenlightVolume_o* __this, const MethodInfo* method);
+  0ddce520  mov     x1, xzr
+  0ddce524  b       #0xd7aa1a8  ; -> UnityEngine.Rendering.Volume$$.ctor
+=== Campus.AudiencePenlight.AudiencePenlightTimelineTrack$$.ctor @ 0xddceba0 (2 insns)
+    void Campus_AudiencePenlight_AudiencePenlightTimelineTrack___ctor (Campus_AudiencePenlight_AudiencePenlightTimelineTrack_o* __this, const MethodInfo* method);
+  0ddceba0  mov     x1, xzr
+  0ddceba4  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.AudiencePenlight.MobAudiencePenlightOverrideAsset$$get_clipCaps @ 0xddceba8 (2 insns)
+    int32_t Campus_AudiencePenlight_MobAudiencePenlightOverrideAsset__get_clipCaps (Campus_AudiencePenlight_MobAudiencePenlightOverrideAsset_o* __this, const MethodInfo* method);
+  0ddceba8  mov     w0, wzr
+  0ddcebac  ret
+=== Campus.AudiencePenlight.MobAudiencePenlightOverrideAsset$$.ctor @ 0xddcec58 (2 insns)
+    void Campus_AudiencePenlight_MobAudiencePenlightOverrideAsset___ctor (Campus_AudiencePenlight_MobAudiencePenlightOverrideAsset_o* __this, const MethodInfo* method);
+  0ddcec58  mov     x1, xzr
+  0ddcec5c  b       #0xd9fcea0  ; -> UnityEngine.Playables.PlayableAsset$$.ctor
+=== Campus.AudiencePenlight.MobAudiencePenlightOverrideTrack$$.ctor @ 0xddcf044 (2 insns)
+    void Campus_AudiencePenlight_MobAudiencePenlightOverrideTrack___ctor (Campus_AudiencePenlight_MobAudiencePenlightOverrideTrack_o* __this, const MethodInfo* method);
+  0ddcf044  mov     x1, xzr
+  0ddcf048  b       #0xd9078c4  ; -> UnityEngine.Timeline.PlayableTrack$$.ctor
+=== Campus.Common.CampusActorEffectController$$.ctor @ 0xdddbb8c (2 insns)
+    void Campus_Common_CampusActorEffectController___ctor (Campus_Common_CampusActorEffectController_o* __this, const MethodInfo* method);
+  0dddbb8c  mov     x1, xzr
+  0dddbb90  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorController.OverrideActorMaterialPropertyData$$.ctor @ 0xdddd434 (2 insns)
+    void Campus_Common_CampusActorController_OverrideActorMaterialPropertyData___ctor (Campus_Common_CampusActorController_OverrideActorMaterialPropertyData_o* __this, const MethodInfo* method);
+  0dddd434  mov     x1, xzr
+  0dddd438  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorController.<>c$$.ctor @ 0xdde19d4 (2 insns)
+    void Campus_Common_CampusActorController___c___ctor (Campus_Common_CampusActorController___c_o* __this, const MethodInfo* method);
+  0dde19d4  mov     x1, xzr
+  0dde19d8  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorEyeHighlight$$.ctor @ 0xdde5acc (2 insns)
+    void Campus_Common_CampusActorEyeHighlight___ctor (Campus_Common_CampusActorEyeHighlight_o* __this, const MethodInfo* method);
+  0dde5acc  mov     x1, xzr
+  0dde5ad0  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Common.CampusActorEyeHighlight.LimitData$$.ctor @ 0xdde5ad4 (2 insns)
+    void Campus_Common_CampusActorEyeHighlight_LimitData___ctor (Campus_Common_CampusActorEyeHighlight_LimitData_o* __this, const MethodInfo* method);
+  0dde5ad4  mov     x1, xzr
+  0dde5ad8  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorLayout$$.ctor @ 0xdde6988 (2 insns)
+    void Campus_Common_CampusActorLayout___ctor (Campus_Common_CampusActorLayout_o* __this, const MethodInfo* method);
+  0dde6988  mov     x1, xzr
+  0dde698c  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Common.CampusActorLayout.Constraint$$.ctor @ 0xdde69f8 (2 insns)
+    void Campus_Common_CampusActorLayout_Constraint___ctor (Campus_Common_CampusActorLayout_Constraint_o* __this, const MethodInfo* method);
+  0dde69f8  mov     x1, xzr
+  0dde69fc  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorLayout.Data$$.ctor @ 0xdde6a00 (2 insns)
+    void Campus_Common_CampusActorLayout_Data___ctor (Campus_Common_CampusActorLayout_Data_o* __this, const MethodInfo* method);
+  0dde6a00  mov     x1, xzr
+  0dde6a04  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorLayout.<>c$$.ctor @ 0xdde6a70 (2 insns)
+    void Campus_Common_CampusActorLayout___c___ctor (Campus_Common_CampusActorLayout___c_o* __this, const MethodInfo* method);
+  0dde6a70  mov     x1, xzr
+  0dde6a74  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusActorTalkModel$$.ctor @ 0xdded8b4 (2 insns)
+    void Campus_Common_CampusActorTalkModel___ctor (Campus_Common_CampusActorTalkModel_o* __this, const MethodInfo* method);
+  0dded8b4  mov     x1, xzr
+  0dded8b8  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Common.CampusVirtualActorController.FocusedEyeBoneResult$$.ctor @ 0xddee70c (2 insns)
+    void Campus_Common_CampusVirtualActorController_FocusedEyeBoneResult___ctor (Campus_Common_CampusVirtualActorController_FocusedEyeBoneResult_o* __this, const MethodInfo* method);
+  0ddee70c  mov     x1, xzr
+  0ddee710  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusVirtualActorController.HipsPosXZResult$$.ctor @ 0xddee714 (2 insns)
+    void Campus_Common_CampusVirtualActorController_HipsPosXZResult___ctor (Campus_Common_CampusVirtualActorController_HipsPosXZResult_o* __this, const MethodInfo* method);
+  0ddee714  mov     x1, xzr
+  0ddee718  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.CampusVirtualActorController.ScaleResult$$.ctor @ 0xddee71c (2 insns)
+    void Campus_Common_CampusVirtualActorController_ScaleResult___ctor (Campus_Common_CampusVirtualActorController_ScaleResult_o* __this, const MethodInfo* method);
+  0ddee71c  mov     x1, xzr
+  0ddee720  b       #0xe01f020  ; -> System.Object$$.ctor
+=== Campus.Common.LayoutMotionDefine$$.ctor @ 0xddefcbc (2 insns)
+    void Campus_Common_LayoutMotionDefine___ctor (Campus_Common_LayoutMotionDefine_o* __this, const MethodInfo* method);
+  0ddefcbc  mov     x1, xzr
+  0ddefcc0  b       #0xe0fa8a0  ; -> VL.MotionDefine$$.ctor
+=== Campus.Common.CampusActorMaterialEffectPlayable$$.ctor @ 0xddf20bc (2 insns)
+    void Campus_Common_CampusActorMaterialEffectPlayable___ctor (Campus_Common_CampusActorMaterialEffectPlayable_o* __this, const MethodInfo* method);
+  0ddf20bc  mov     x1, xzr
+  0ddf20c0  b       #0xd9fcea8  ; -> UnityEngine.Playables.PlayableBehaviour$$.ctor
+=== Campus.Common.CampusActorMaterialEffect$$.ctor @ 0xddf20c4 (2 insns)
+    void Campus_Common_CampusActorMaterialEffect___ctor (Campus_Common_CampusActorMaterialEffect_o* __this, const MethodInfo* method);
+  0ddf20c4  mov     x1, xzr
+  0ddf20c8  b       #0xe0fb37c  ; -> VL.MotionEffectBase$$.ctor
+=== Campus.Common.CampusLightAnchor$$.ctor @ 0xde1bbfc (2 insns)
+    void Campus_Common_CampusLightAnchor___ctor (Campus_Common_CampusLightAnchor_o* __this, const MethodInfo* method);
+  0de1bbfc  mov     x1, xzr
+  0de1bc00  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Common.CampusLightAnchorBase$$.ctor @ 0xde1bc04 (2 insns)
+    void Campus_Common_CampusLightAnchorBase___ctor (Campus_Common_CampusLightAnchorBase_o* __this, const MethodInfo* method);
+  0de1bc04  mov     x1, xzr
+  0de1bc08  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Common.CampusTransformAnchor$$.ctor @ 0xde1d148 (2 insns)
+    void Campus_Common_CampusTransformAnchor___ctor (Campus_Common_CampusTransformAnchor_o* __this, const MethodInfo* method);
+  0de1d148  mov     x1, xzr
+  0de1d14c  b       #0xd9e03c8  ; -> UnityEngine.MonoBehaviour$$.ctor
+=== Campus.Common.VideoImage$$.ctor @ 0xde37874 (2 insns)
+    void Campus_Common_VideoImage___ctor (Campus_Common_VideoImage_o* __this, const MethodInfo* method);
+  0de37874  mov     x1, xzr
+  0de37878  b       #0xdcb8324  ; -> UnityEngine.UI.RawImage$$.ctor

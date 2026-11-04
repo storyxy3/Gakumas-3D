@@ -1,0 +1,670 @@
+[
+  {
+    "method": "FasterLinq$$Select<ValueTuple<int, object>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, object>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, bool>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, int>, object>",
+    "signature": "(System_ValueTuple_object__int__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, int>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, Int32Enum>, object>",
+    "signature": "(System_ValueTuple_object__Int32Enum__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>",
+    "signature": "(System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<object, object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, object>",
+    "signature": "(System_ValueTuple_object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, ValueTuple<int, object>>",
+    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, int>",
+    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object>, object>",
+    "signature": "(System_ValueTuple_int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, int, object>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<Int32Enum, object, object>, ValueTuple<object, object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, int, int>, object>",
+    "signature": "(System_ValueTuple_object__int__int__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
+    "signature": "(System_ValueTuple_object__object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>",
+    "signature": "(System_ValueTuple_int__int__object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<int, object, object, object, object>, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ValueTuple<object, int, object, object, object>, object>",
+    "signature": "(System_ValueTuple_object__int__object__object__object__array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ExamBattleResult, int>",
+    "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<ExamBattleResult, object>",
+    "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<int, int>",
+    "signature": "(System_Int32_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<int, int>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<int, object>",
+    "signature": "(System_Int32_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<int, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, long>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
+    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, ValueTuple<object, Int32Enum, long, long>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, object>",
+    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<Int32Enum, UniTask>",
+    "signature": "(System_Int32Enum_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<MessageLogSoundInfo, UniTask>",
+    "signature": "(Campus_Common_MessageLogSoundInfo_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, Nullable<int>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, UniTask<bool>>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, UniTask<object>>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, UniTask<object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<Int32Enum, object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, bool>>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, bool>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, int>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, object>>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, object, object>>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<Int32Enum, int, object, object>>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ValueTuple<object, int, object, object, object>>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, bool>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, bool>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, Color>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, int>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, int>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, Int32Enum>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, Int32Enum>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, long>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, MessageLogSoundInfo>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, object>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ProduceCardFilterElement>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, float>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, float>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, UniTask>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, UniTask>",
+    "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, Vector2>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<object, Vector3>",
+    "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<uint, bool>",
+    "signature": "(System_UInt32_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "FasterLinq$$Select<uint, Color>",
+    "signature": "(System_UInt32_array* source, System_Func_TSource__TResult__o* selector);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, int>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, VLActorPropFixConstraint>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+    "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, bool>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Nullable<bool>>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int, object>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, object, bool>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, int, object>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, bool, bool>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, object>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, int>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, bool, bool>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, bool, int>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, int, int>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, Int32Enum, Int32Enum, Int32Enum, Int32Enum, object>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<bool>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<byte>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Color>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<int>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Int32Enum>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<long>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<MobAudiencePenlightOverride>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<object>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<float>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<UniTask>",
+    "signature": "(System_Collections_Generic_IEnumerable_T__o* self);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, int>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, Int32Enum>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, ValueTuple<int, object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, int>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<int, object, object>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, int, int>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, object, object>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ValueTuple<object, int, object, object, object>, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<int, int>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<int, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<Int32Enum, ValueTuple<Int32Enum, object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<Int32Enum, object>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<Int32Enum, UniTask>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, UniTask<bool>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, UniTask<object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<object, bool>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<object, object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<Int32Enum, int, object, object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, ValueTuple<object, int, object, object, object>>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, bool>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, Color>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, int>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, Int32Enum>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, long>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, float>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, UniTask>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, Vector2>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<object, Vector3>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<uint, bool>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "FasterLinq.SelectArray<uint, Color>$$ToArray",
+    "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTexture$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "CanvasRT.CanvasRenderTextureImage$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.MobAudience.MobAudiencePenlightController$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.MobAudience.MobAudiencePenlightController.<>c$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Live.Equipment.LiveEquipmentController.<>c$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveDirectionalLight__get_GatherProperties_d__3_o* __this);"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLaser__get_GatherProperties_d__31_o* __this);"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightBasic$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightBasic__get_GatherProperties_d__13_o* __this);"
+  },
+  {
+    "method": "Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$MoveNext",
+    "signature": "(Campus_Live_Equipment_Environment_LiveLightComponent__get_GatherProperties_d__6_o* __this);"
+  },
+  {
+    "method": "Campus.Crowd.CrowdAnimator.<>c$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Crowd.CrowdTimelineTrack.<>c$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Common.CampusActorController$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Common.CampusActorController.ShaderIDs$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Common.CampusActorController.<>c$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Common.CampusActorLayout$$.cctor",
+    "signature": "();"
+  },
+  {
+    "method": "Campus.Common.CampusActorLayout.<>c$$.cctor",
+    "signature": "();"
+  }
+]

@@ -1,0 +1,10 @@
+Build command: Tools/build_android.sh
+Source commit: d9f3fef (later changes are reporting/comments only)
+C# error count: 0
+[1530/1542  1s] Link_Android_arm64 Library/Bee/artifacts/Android/d8kzr/libil2cpp.so
+Execution failed for task ':unityLibrary:lintVitalAnalyzeRelease'.
+   > For input string: "37.0"
+Execution failed for task ':unityLibrary:lintVitalAnalyzeRelease'.
+   > For input string: "37.0"
+Build Finished, Result: Failure.
+Full log (local, ignored): .recon/task-h/build-final-unity.log
