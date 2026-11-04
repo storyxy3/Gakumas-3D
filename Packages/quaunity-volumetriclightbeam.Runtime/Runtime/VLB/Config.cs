@@ -10,11 +10,11 @@ namespace VLB
         public const string ClassName = "Config";
         public const string kAssetName = "VLBConfigOverride";
         public const string kAssetNameExt = ".asset";
-        public bool geometryOverrideLayer;
-        public int geometryLayerID;
-        public string geometryTag;
-        public int geometryRenderQueue;
-        public int geometryRenderQueueHD;
+        public bool geometryOverrideLayer = true;
+        public int geometryLayerID = 1;
+        public string geometryTag = "Untagged";
+        public int geometryRenderQueue = 3000;
+        public int geometryRenderQueueHD = 3100;
         [FormerlySerializedAs("renderPipeline")]
         [FormerlySerializedAs("_RenderPipeline")]
         [SerializeField]
@@ -22,16 +22,16 @@ namespace VLB
         [FormerlySerializedAs("renderingMode")]
         [FormerlySerializedAs("_RenderingMode")]
         [SerializeField]
-        private RenderingMode m_RenderingMode;
+        private RenderingMode m_RenderingMode = RenderingMode.Default;
         public float ditheringFactor;
-        public bool useLightColorTemperature;
-        public int sharedMeshSides;
-        public int sharedMeshSegments;
-        public float hdBeamsCameraBlendingDistance;
+        public bool useLightColorTemperature = true;
+        public int sharedMeshSides = 24;
+        public int sharedMeshSegments = 5;
+        public float hdBeamsCameraBlendingDistance = 0.5f;
         [Range(0.01f, 2f)]
-        public float globalNoiseScale;
-        public Vector3 globalNoiseVelocity;
-        public string fadeOutCameraTag;
+        public float globalNoiseScale = 0.5f;
+        public Vector3 globalNoiseVelocity = Consts.Beam.NoiseVelocityDefault;
+        public string fadeOutCameraTag = "MainCamera";
         [HighlightNull]
         public Texture3D noiseTexture3D;
         [HighlightNull]
@@ -42,20 +42,20 @@ namespace VLB
         public Texture2D jitteringNoiseTexture;
         [HighlightNull]
         public Texture2D noiseTexture2D;
-        public FeatureEnabledColorGradient featureEnabledColorGradient;
-        public bool featureEnabledDepthBlend;
-        public bool featureEnabledNoise3D;
-        public bool featureEnabledDynamicOcclusion;
-        public bool featureEnabledMeshSkewing;
-        public bool featureEnabledShaderAccuracyHigh;
-        public bool featureEnabledShadow;
-        public bool featureEnabledCookie;
+        public FeatureEnabledColorGradient featureEnabledColorGradient = FeatureEnabledColorGradient.HighOnly;
+        public bool featureEnabledDepthBlend = true;
+        public bool featureEnabledNoise3D = true;
+        public bool featureEnabledDynamicOcclusion = true;
+        public bool featureEnabledMeshSkewing = true;
+        public bool featureEnabledShaderAccuracyHigh = true;
+        public bool featureEnabledShadow = true;
+        public bool featureEnabledCookie = true;
         [SerializeField]
         private RaymarchingQuality[] m_RaymarchingQualities;
         [SerializeField]
         private int m_DefaultRaymarchingQualityUniqueID;
         [SerializeField]
-        private int pluginVersion;
+        private int pluginVersion = -1;
         [SerializeField]
         private Material _DummyMaterial;
         [SerializeField]
@@ -68,7 +68,7 @@ namespace VLB
         {
             get
             {
-                return default(RenderPipeline);
+                return m_RenderPipeline;
             }
 
             set
@@ -80,7 +80,7 @@ namespace VLB
         {
             get
             {
-                return default(RenderingMode);
+                return m_RenderingMode;
             }
 
             set
@@ -108,7 +108,9 @@ namespace VLB
         {
             get
             {
-                return null;
+                if (m_CachedFadeOutCamera == null)
+                    ForceUpdateFadeOutCamera();
+                return m_CachedFadeOutCamera;
             }
         }
 
@@ -124,7 +126,7 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return Mathf.Max(m_RaymarchingQualities != null ? m_RaymarchingQualities.Length : 1, 1);
             }
         }
 
@@ -148,42 +150,62 @@ namespace VLB
         {
             get
             {
-                return null;
+                return GetInstance(false);
             }
         }
 
         public bool IsSRPBatcherSupported()
         {
-            return default(bool);
+            if (renderPipeline == RenderPipeline.BuiltIn)
+                return false;
+            var pipeline = SRPHelper.projectRenderPipeline;
+            return pipeline == RenderPipeline.URP || pipeline == RenderPipeline.HDRP;
         }
 
         public RenderingMode GetActualRenderingMode(ShaderMode shaderMode)
         {
-            return default(RenderingMode);
+            if (renderingMode == RenderingMode.SRPBatcher && !IsSRPBatcherSupported())
+                return RenderingMode.Default;
+            if (renderPipeline != RenderPipeline.BuiltIn && renderingMode == RenderingMode.MultiPass)
+                return RenderingMode.Default;
+            if (shaderMode == ShaderMode.HD && renderingMode == RenderingMode.MultiPass)
+                return RenderingMode.Default;
+            return renderingMode;
         }
 
         public Shader GetBeamShader(ShaderMode mode)
         {
-            return null;
+            return GetBeamShaderInternal(mode);
         }
 
         private unsafe ref Shader GetBeamShaderInternal(ShaderMode mode)
         {
-            throw null;
+            if (mode == ShaderMode.SD)
+                return ref _BeamShader;
+            return ref _BeamShaderHD;
         }
 
         private int GetRenderQueueInternal(ShaderMode mode)
         {
-            return default(int);
+            return mode == ShaderMode.SD ? geometryRenderQueue : geometryRenderQueueHD;
         }
 
         public Material NewMaterialTransient(ShaderMode mode, bool gpuInstanced)
         {
-            return null;
+            Material material = MaterialManager.NewMaterialPersistent(GetBeamShader(mode), gpuInstanced);
+            if (material)
+            {
+                material.hideFlags = Consts.Internal.ProceduralObjectsHideFlags;
+                material.renderQueue = GetRenderQueueInternal(mode);
+            }
+            return material;
         }
 
         public void ForceUpdateFadeOutCamera()
         {
+            GameObject camera = GameObject.FindGameObjectWithTag(fadeOutCameraTag);
+            if (camera)
+                m_CachedFadeOutCamera = camera.transform;
         }
 
         public RaymarchingQuality GetRaymarchingQualityForIndex(int index)
@@ -242,12 +264,20 @@ namespace VLB
 
         private static Config LoadAssetInternal(string assetName)
         {
-            return null;
+            return Resources.Load<Config>(assetName);
         }
 
         private static Config GetInstance(bool assertIfNotFound)
         {
-            return null;
+            if (ms_Instance == null)
+            {
+                Config config = LoadAssetInternal(kAssetName + PlatformHelper.GetCurrentPlatformSuffix());
+                if (config == null)
+                    config = LoadAssetInternal(kAssetName);
+                ms_Instance = config;
+                _ = ms_Instance == null;
+            }
+            return ms_Instance;
         }
 
         public Config()

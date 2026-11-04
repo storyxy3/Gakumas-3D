@@ -18,12 +18,12 @@ namespace VLB
         private static FloatPackingPrecision ms_FloatPackingPrecision;
         public static float ComputeConeRadiusEnd(float fallOffEnd, float spotAngle)
         {
-            return default(float);
+            return Mathf.Tan(spotAngle * Mathf.Deg2Rad * 0.5f) * fallOffEnd;
         }
 
         public static float ComputeSpotAngle(float fallOffEnd, float coneRadiusEnd)
         {
-            return default(float);
+            return Mathf.Atan2(coneRadiusEnd, fallOffEnd) * Mathf.Rad2Deg * 2f;
         }
 
         public static string GetPath(Transform current)
@@ -75,7 +75,7 @@ namespace VLB
 
         public static bool Approximately(this Vector2 a, Vector2 b, float epsilon = 1E-05f)
         {
-            return default(bool);
+            return (a - b).sqrMagnitude < epsilon;
         }
 
         public static Vector4 AsVector4(this Vector3 vec3, float w)
@@ -85,7 +85,7 @@ namespace VLB
 
         public static Vector4 PlaneEquation(Vector3 normalizedNormal, Vector3 pt)
         {
-            return default(Vector4);
+            return new Vector4(normalizedNormal.x, normalizedNormal.y, normalizedNormal.z, -Vector3.Dot(normalizedNormal, pt));
         }
 
         public static float GetMaxArea2D(this Bounds self)
@@ -115,11 +115,18 @@ namespace VLB
 
         public static void SetKeywordEnabled(this Material mat, string name, bool enabled)
         {
+            if (enabled)
+                mat.EnableKeyword(name);
+            else
+                mat.DisableKeyword(name);
         }
 
         public static Matrix4x4 SampleInMatrix(this Gradient self, int floatPackingPrecision)
         {
-            return default(Matrix4x4);
+            Matrix4x4 matrix = new Matrix4x4();
+            for (int i = 0; i < 16; ++i)
+                matrix[i] = self.Evaluate(Mathf.Clamp01(i / 15f)).PackToFloat(floatPackingPrecision);
+            return matrix;
         }
 
         private static Vector4 Vector4_Floor(Vector4 vec)
@@ -129,12 +136,21 @@ namespace VLB
 
         public static float PackToFloat(this Color color, int floatPackingPrecision)
         {
-            return default(float);
+            float precision = floatPackingPrecision;
+            float scale = floatPackingPrecision - 1;
+            float packed = 0f;
+            packed += Mathf.Floor(color.r * scale) * precision * precision * precision;
+            packed += Mathf.Floor(color.g * scale) * precision * precision;
+            packed += Mathf.Floor(color.b * scale) * precision;
+            packed += Mathf.Floor(color.a * scale);
+            return packed;
         }
 
         public static FloatPackingPrecision GetFloatPackingPrecision()
         {
-            return default(FloatPackingPrecision);
+            if (ms_FloatPackingPrecision == FloatPackingPrecision.Undef)
+                ms_FloatPackingPrecision = SystemInfo.graphicsShaderLevel >= 35 ? FloatPackingPrecision.High : FloatPackingPrecision.Low;
+            return ms_FloatPackingPrecision;
         }
 
         public static bool HasAtLeastOneFlag(this Enum mask, Enum flags)

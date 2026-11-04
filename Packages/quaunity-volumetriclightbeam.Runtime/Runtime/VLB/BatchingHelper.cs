@@ -8,12 +8,14 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                var mode = Config.Instance.GetActualRenderingMode(ShaderMode.SD);
+                return mode == RenderingMode.GPUInstancing || mode == RenderingMode.SRPBatcher;
             }
         }
 
         public static void SetMaterialProperties(Material material, bool enableGpuInstancing)
         {
+            material.enableInstancing = enableGpuInstancing;
         }
     }
 }

@@ -12,12 +12,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CmeshRenderer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CmeshRenderer_003Ek__BackingField = value;
             }
         }
 

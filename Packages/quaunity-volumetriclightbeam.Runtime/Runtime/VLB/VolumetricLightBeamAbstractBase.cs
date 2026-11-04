@@ -14,7 +14,7 @@ namespace VLB
 
         public const string ClassName = "VolumetricLightBeamAbstractBase";
         [SerializeField]
-        protected int pluginVersion;
+        protected int pluginVersion = -1;
         protected Light m_CachedLightSpot;
         public bool hasGeometry
         {
@@ -44,7 +44,7 @@ namespace VLB
         {
             get
             {
-                return null;
+                return m_CachedLightSpot;
             }
         }
 
@@ -53,11 +53,23 @@ namespace VLB
         public abstract Vector3 GetLossyScale();
         public Light GetLightSpotAttachedSlow(out AttachedLightType lightType)
         {
-            throw null;
+            if (TryGetComponent<Light>(out Light light))
+            {
+                if (light.type == LightType.Spot)
+                {
+                    lightType = AttachedLightType.SpotLight;
+                    return light;
+                }
+                lightType = AttachedLightType.OtherLight;
+                return null;
+            }
+            lightType = AttachedLightType.NoLight;
+            return null;
         }
 
         protected void InitLightSpotAttachedCached()
         {
+            m_CachedLightSpot = GetLightSpotAttachedSlow(out AttachedLightType lightType);
         }
 
         protected VolumetricLightBeamAbstractBase()

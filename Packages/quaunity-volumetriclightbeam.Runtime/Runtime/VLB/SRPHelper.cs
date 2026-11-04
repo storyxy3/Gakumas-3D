@@ -13,18 +13,32 @@ namespace VLB
         {
             get
             {
-                return default(VLB.RenderPipeline);
+                if (!m_IsRenderPipelineCached)
+                {
+                    m_RenderPipelineCached = ComputeRenderPipeline();
+                    m_IsRenderPipelineCached = true;
+                }
+                return m_RenderPipelineCached;
             }
         }
 
         private static VLB.RenderPipeline ComputeRenderPipeline()
         {
-            return default(VLB.RenderPipeline);
+            var pipeline = GraphicsSettings.defaultRenderPipeline;
+            if (pipeline)
+            {
+                string name = pipeline.GetType().ToString();
+                if (name.Contains("Universal") || name.Contains("Lightweight"))
+                    return VLB.RenderPipeline.URP;
+                if (name.Contains("HD"))
+                    return VLB.RenderPipeline.HDRP;
+            }
+            return VLB.RenderPipeline.BuiltIn;
         }
 
         public static bool IsUsingCustomRenderPipeline()
         {
-            return default(bool);
+            return RenderPipelineManager.currentPipeline != null || GraphicsSettings.defaultRenderPipeline != null;
         }
 
         public static void RegisterOnBeginCameraRendering(Action<ScriptableRenderContext, Camera> cb)

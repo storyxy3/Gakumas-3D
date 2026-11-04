@@ -6,12 +6,12 @@ namespace VLB
     {
         public static string GetCurrentPlatformSuffix()
         {
-            return null;
+            return GetPlatformSuffix(Application.platform);
         }
 
         private static string GetPlatformSuffix(RuntimePlatform platform)
         {
-            return null;
+            return platform.ToString();
         }
     }
 }

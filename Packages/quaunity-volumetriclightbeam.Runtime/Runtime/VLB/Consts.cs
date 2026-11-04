@@ -7,12 +7,12 @@ namespace VLB
     {
         public static class Internal
         {
-            public static readonly bool ProceduralObjectsVisibleInEditor;
+            public static readonly bool ProceduralObjectsVisibleInEditor = true;
             public static HideFlags ProceduralObjectsHideFlags
             {
                 get
                 {
-                    return default(HideFlags);
+                    return ProceduralObjectsVisibleInEditor ? HideFlags.DontSave | HideFlags.NotEditable : HideFlags.HideAndDontSave;
                 }
             }
         }
@@ -21,8 +21,8 @@ namespace VLB
         {
             public static class SD
             {
-                public static readonly Vector2 TiltDefault;
-                public static readonly Vector3 SkewingLocalForwardDirectionDefault;
+                public static readonly Vector2 TiltDefault = Vector2.zero;
+                public static readonly Vector3 SkewingLocalForwardDirectionDefault = Vector3.forward;
             }
 
             public static class HD
@@ -30,8 +30,8 @@ namespace VLB
                 public static readonly MinMaxRangeFloat JitteringLerpRange;
             }
 
-            public static readonly Color FlatColor;
-            public static readonly Vector3 NoiseVelocityDefault;
+            public static readonly Color FlatColor = Color.white;
+            public static readonly Vector3 NoiseVelocityDefault = new Vector3(0.07f, 0.18f, 0.05f);
         }
 
         public static class DustParticles

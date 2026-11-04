@@ -6,7 +6,7 @@ namespace VLB
         {
             public static string GetRaymarchingQuality(int id)
             {
-                return null;
+                return "VLB_RAYMARCHING_QUALITY_" + id.ToString();
             }
         }
     }

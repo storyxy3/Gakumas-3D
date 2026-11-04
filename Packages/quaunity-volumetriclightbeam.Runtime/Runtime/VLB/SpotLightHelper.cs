@@ -6,17 +6,17 @@ namespace VLB
     {
         public static float GetIntensity(Light light)
         {
-            return default(float);
+            return light != null ? light.intensity : 0f;
         }
 
         public static float GetSpotAngle(Light light)
         {
-            return default(float);
+            return light != null ? light.spotAngle : 0f;
         }
 
         public static float GetFallOffEnd(Light light)
         {
-            return default(float);
+            return light != null ? light.range : 0f;
         }
     }
 }

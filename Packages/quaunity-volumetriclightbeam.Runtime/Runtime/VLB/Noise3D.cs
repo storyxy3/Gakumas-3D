@@ -11,7 +11,14 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                if (!ms_IsSupportedChecked)
+                {
+                    ms_IsSupported = SystemInfo.graphicsShaderLevel >= 35;
+                    if (!ms_IsSupported)
+                        Debug.LogWarning(isNotSupportedString);
+                    ms_IsSupportedChecked = true;
+                }
+                return ms_IsSupported;
             }
         }
 
@@ -19,7 +26,7 @@ namespace VLB
         {
             get
             {
-                return null;
+                return string.Format("3D Noise requires higher shader capabilities (Shader Model 3.5 / OpenGL ES 3.0), which are not available on the current platform: graphicsShaderLevel (current/required) = {0} / {1}", SystemInfo.graphicsShaderLevel, 35);
             }
         }
 
@@ -30,6 +37,12 @@ namespace VLB
 
         public static void LoadIfNeeded()
         {
+            if (isSupported && ms_NoiseTexture == null)
+            {
+                ms_NoiseTexture = Config.Instance.noiseTexture3D;
+                Shader.SetGlobalTexture(ShaderProperties.GlobalNoiseTex3D, ms_NoiseTexture);
+                Shader.SetGlobalFloat(ShaderProperties.GlobalNoiseCustomTime, -1f);
+            }
         }
     }
 }
