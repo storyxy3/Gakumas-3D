@@ -12,6 +12,7 @@ namespace VL
         public AnimationCurve curve;
         public void SetBlendShapeWeight(float value)
         {
+            if (faceModel != null && blendShapeIndex >= 0) faceModel.SetBlendShapeWeight(blendShapeIndex, value);
         }
 
         public VLActorFaceModelEyeBlinkDataRuntime()

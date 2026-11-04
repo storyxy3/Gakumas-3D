@@ -13,7 +13,7 @@ namespace VL
             {
                 get
                 {
-                    return default(int);
+                    return start + length;
                 }
             }
         }

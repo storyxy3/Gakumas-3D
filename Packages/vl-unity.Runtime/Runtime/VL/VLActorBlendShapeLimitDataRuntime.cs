@@ -13,31 +13,42 @@ namespace VL
         {
             get
             {
-                return default(int);
+                return blendShapes?.Length ?? 0;
             }
         }
 
         public bool IsLimit()
         {
-            return default(bool);
+            if (renderer == null || blendShapes == null) return false;
+            for (int i = 0; i < blendShapes.Length; ++i)
+            {
+                var data = blendShapes[i];
+                if (renderer.GetBlendShapeWeight(data.index) >= data.limit) return true;
+            }
+            return false;
         }
 
         public bool IsValid(int index)
         {
-            return default(bool);
+            return renderer != null && blendShapes != null && blendShapes.Length > index;
         }
 
         public bool IsLimit(int index)
         {
-            return default(bool);
+            if (!IsValid(index)) return false;
+            var data = blendShapes[index];
+            return renderer.GetBlendShapeWeight(data.index) >= data.limit;
         }
 
         public void Update()
         {
+            for (int i = 0; i < Length; ++i)
+                if (!IsLimit(i)) SetBlendShapeWeight(i, 0);
         }
 
         public void SetBlendShapeWeight(int index, float value)
         {
+            if (IsValid(index)) renderer.SetBlendShapeWeight(blendShapes[index].index, value);
         }
 
         public VLActorBlendShapeLimitDataRuntime()
