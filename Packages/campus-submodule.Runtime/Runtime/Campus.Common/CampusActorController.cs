@@ -1191,6 +1191,33 @@ namespace Campus.Common
 
         private void UpdateLookAtEyePitchCorrection()
         {
+            if (_actorAnimation == null || _actorAnimation.CustomLookAtEffector == null) return;
+            var effector = _actorAnimation.CustomLookAtEffector;
+            if (effector.weight == 0f || _lookAtEyeSideCorrectionWeight == 1f) return;
+            float weight = _lookAtEyeSideCorrectionWeight;
+            if (effector is CampusCustomLookAtEffector campusEffector)
+            {
+                switch (campusEffector.customLookAtEyeCorrectionType)
+                {
+                    case CampusCustomLookAtEyeCorrectionType.AlwaysSideCorrection: break;
+                    case CampusCustomLookAtEyeCorrectionType.ReferEyeWeightSideCorrection:
+                        float eyeWeight = 0f;
+                        foreach (var pose in campusEffector.poseSettings) eyeWeight += pose.setting.eyeEnableWeight * pose.weight;
+                        weight = (_lookAtEyeSideCorrectionWeight - 1f) * (effector.eyesWeight / eyeWeight) + 1f;
+                        break;
+                    default: weight = 1f; break;
+                }
+            }
+            foreach (var bone in new[] { HumanBodyBones.LeftEye, HumanBodyBones.RightEye })
+            {
+                var eye = GetHumanBodyBoneTransform(bone);
+                var euler = ActorAnimationMathUtility.ToUnityEuler(eye.localRotation);
+                var bendRoll = ActorAnimationMathUtility.EulerToBendrollZRoll(euler);
+                float pitch = weight * bendRoll[1] * 0.017453292f;
+                float yaw = bendRoll[2] * 0.017453292f;
+                float roll = bendRoll[0] * 0.017453292f;
+                eye.localRotation = ActorAnimationMathUtility.AxisrotationToQuaternionWithBendRoll(yaw, pitch, roll);
+            }
         }
 
         public void ExecuteEyeBlink(bool forceBlink = false)

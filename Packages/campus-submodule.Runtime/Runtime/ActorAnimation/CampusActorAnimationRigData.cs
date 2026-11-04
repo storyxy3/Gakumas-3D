@@ -22,7 +22,7 @@ namespace ActorAnimation
 
             internal bool _003CSortChainLayers_003Eb__0(ActorSwingDynamicBone x)
             {
-                return default(bool);
+                return secondaryDynamicList.Contains(x);
             }
         }
 
@@ -572,27 +572,71 @@ namespace ActorAnimation
 
         public void Sort()
         {
+            SortQuartzDriverBone();
+            SortDynamicBone(out var secondaryDynamicList);
+            SortChainLayers(secondaryDynamicList);
+            SortIKCorrectionCollider();
         }
 
         private void SortQuartzDriverBone()
         {
+            _quartzDriverRotationBones.Sort();
+            _quartzDriverFrillBones.Sort();
+            _quartzDriverSkirtBones.Sort();
+            _quartzDriverHairBones.Sort();
+            _quartzDriverHumanoidHandBones.Sort();
+            _quartzDriverHumanoidSleeveBones.Sort();
+            _quartzDriverHumanoidUpLegBones.Sort();
+            _quartzDriverHumanoidArmBones.Sort();
+            _quartzDriverWaistBones.Sort();
+            _quartzDriverFurisodeBones.Sort();
+            _quartzDriverPonchoBones.Sort();
         }
 
         private void SortSwingBone()
         {
+            SortDynamicBone(out var secondaryDynamicList);
+            SortChainLayers(secondaryDynamicList);
         }
 
         private void SortDynamicBone(out List<ActorSwingDynamicBone> secondaryDynamicLayer)
         {
-            throw null;
+            _swingDynamicBones.Sort();
+            var primary = new List<ActorSwingDynamicBone>(64);
+            secondaryDynamicLayer = new List<ActorSwingDynamicBone>(64);
+            foreach (var bone in _swingDynamicBones)
+            {
+                if (bone.referenceLimitInfo.bone)
+                    secondaryDynamicLayer.Add(bone);
+                else if (bone.transform.parent && bone.transform.parent.TryGetComponent<ActorSwingDynamicBone>(out var parent) && secondaryDynamicLayer.Contains(parent))
+                    secondaryDynamicLayer.Add(bone);
+                else primary.Add(bone);
+            }
+            _swingDynamicBones.Clear();
+            _swingDynamicBones.AddRange(primary);
+            _swingDynamicBones.AddRange(secondaryDynamicLayer);
         }
 
         private void SortChainLayers(List<ActorSwingDynamicBone> secondaryDynamicList)
         {
+            var closure = new _003C_003Ec__DisplayClass133_0 { secondaryDynamicList = secondaryDynamicList };
+            _swingChainLayers.Sort();
+            var primary = new List<ChainLayerInfo>(64);
+            var secondary = new List<ChainLayerInfo>(64);
+            foreach (var layer in _swingChainLayers)
+            {
+                if (layer.bones.Find(closure._003C_003E9__0 ?? (closure._003C_003E9__0 = closure._003CSortChainLayers_003Eb__0)))
+                    secondary.Add(layer);
+                else primary.Add(layer);
+            }
+            _swingChainLayers.Clear();
+            _swingChainLayers.AddRange(primary);
+            _swingChainLayers.AddRange(secondary);
         }
 
         private void SortIKCorrectionCollider()
         {
+            _ikCorrectionColliders.Sort();
         }
     }
 }

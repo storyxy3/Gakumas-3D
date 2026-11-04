@@ -280,7 +280,20 @@ namespace ActorAnimation
 
         protected bool CheckChain(ActorSwingChain chain)
         {
-            return default(bool);
+            if (chain.chains == null || chain.chains.layers == null) return false;
+            for (int layerIndex = 0; layerIndex < chain.chains.layers.Count; layerIndex++)
+            {
+                var bones = chain.chains.layers[layerIndex].bones;
+                for (int boneIndex = 0; boneIndex < bones.Count; boneIndex++)
+                {
+                    if (bones[boneIndex] == null)
+                    {
+                        Debug.LogError(string.Format("ChainにDynamicBoneが指定されていない階層があります ({0} Layer={1} Index={2}", chain.name, layerIndex, boneIndex));
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         public ActorAnimationRig()
