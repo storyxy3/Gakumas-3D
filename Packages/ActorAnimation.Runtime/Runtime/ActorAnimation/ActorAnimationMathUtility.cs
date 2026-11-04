@@ -1,4 +1,3 @@
-// TODO(qa-recon): Selected APK bodies still need reconstruction: AxisrotationToEuler, AxisrotationToQuaternionWithBendRoll, AxisrotationToQuaternionWithMatrix, AxisrotationToQuaternionWithRollBend, EulerToBendroll, EulerToBendrollQuaternionInverse, EulerToBendrollQuaternionInverseYRoll, EulerToBendrollYRoll, FromToRotation.
 namespace ActorAnimation
 {
     using global::System.Runtime.CompilerServices;
@@ -9,22 +8,73 @@ namespace ActorAnimation
     {
         public static float3 AxisrotationToEuler(float roll, float pitch, float yaw)
         {
-            return default(float3);
+            var x = Matrix4x4.identity;
+            x.m00 = 1f;
+            x.m11 = math.cos(roll);
+            x.m12 = -math.sin(roll);
+            x.m21 = math.sin(roll);
+            x.m22 = math.cos(roll);
+            var y = Matrix4x4.identity;
+            y.m00 = math.cos(pitch);
+            y.m02 = math.sin(pitch);
+            y.m11 = 1f;
+            y.m20 = -math.sin(pitch);
+            y.m22 = math.cos(pitch);
+            var z = Matrix4x4.identity;
+            z.m00 = math.cos(yaw);
+            z.m01 = -math.sin(yaw);
+            z.m10 = math.sin(yaw);
+            z.m11 = math.cos(yaw);
+            z.m22 = 1f;
+            var matrix = z * y * x;
+            float rollAngle = math.atan2(matrix[9], matrix[10]);
+            float pitchAngle = math.asin(-matrix[8]);
+            float yawAngle = math.atan2(matrix[4], matrix[0]);
+            return new float3(rollAngle, pitchAngle, yawAngle) * 57.29578f;
         }
 
         public static quaternion AxisrotationToQuaternionWithBendRoll(float roll, float pitch, float yaw)
         {
-            return default(quaternion);
+            float pitchTangent = math.tan(pitch * 0.5f);
+            float yawTangent = math.tan(yaw * -0.5f);
+            float scale = 2f / (pitchTangent * pitchTangent + yawTangent * yawTangent + 1f);
+            var bendRotation = FromToRotation(new float3(1f, 0f, 0f), new float3(scale - 1f, scale * yawTangent, scale * pitchTangent));
+            var rollRotation = ToUnityQuaternion(new float3(roll * -57.29578f, 0f, 0f));
+            return math.mul(rollRotation, bendRotation);
         }
 
         public static Quaternion AxisrotationToQuaternionWithRollBend(float roll, float pitch, float yaw)
         {
-            return default(Quaternion);
+            float pitchTangent = math.tan(pitch * 0.5f);
+            float yawTangent = math.tan(yaw * -0.5f);
+            float scale = 2f / (pitchTangent * pitchTangent + yawTangent * yawTangent + 1f);
+            var bendRotation = FromToRotation(new float3(1f, 0f, 0f), new float3(scale - 1f, scale * yawTangent, scale * pitchTangent));
+            var rollRotation = ToUnityQuaternion(new float3(roll * -57.29578f, 0f, 0f));
+            return math.mul(bendRotation, rollRotation);
         }
 
         public static quaternion AxisrotationToQuaternionWithMatrix(float roll, float pitch, float yaw)
         {
-            return default(quaternion);
+            var x = Matrix4x4.identity;
+            x.m00 = 1f;
+            x.m11 = math.cos(roll);
+            x.m12 = -math.sin(roll);
+            x.m21 = math.sin(roll);
+            x.m22 = math.cos(roll);
+            var y = Matrix4x4.identity;
+            y.m00 = math.cos(pitch);
+            y.m02 = math.sin(pitch);
+            y.m11 = 1f;
+            y.m20 = -math.sin(pitch);
+            y.m22 = math.cos(pitch);
+            var z = Matrix4x4.identity;
+            z.m00 = math.cos(yaw);
+            z.m01 = -math.sin(yaw);
+            z.m10 = math.sin(yaw);
+            z.m11 = math.cos(yaw);
+            z.m22 = 1f;
+            var matrix = z * y * x;
+            return matrix.rotation;
         }
 
         public static float SingleCoefficientConversion(float degree, float coef, float minLimit, float maxLimit)
@@ -65,27 +115,50 @@ namespace ActorAnimation
 
         public static float3 EulerToBendroll(float3 euler)
         {
-            return default(float3);
+            var direction = math.mul(ToUnityQuaternion(euler), new float3(1f, 0f, 0f));
+            float pitch = -2f * math.atan2(direction.z, direction.x + 1f);
+            float yaw = 2f * math.atan2(direction.y, direction.x + 1f);
+            return new float3(euler.x, pitch * 57.29578f, yaw * 57.29578f);
         }
 
         public static float3 EulerToBendrollYRoll(float3 euler)
         {
-            return default(float3);
+            var direction = math.mul(ToQuaternion(euler, math.RotationOrder.YXZ), new float3(0f, 1f, 0f));
+            float pitch = 2f * math.atan2(direction.z, direction.y + 1f);
+            float yaw = -2f * math.atan2(direction.x, direction.y + 1f);
+            return new float3(euler.y, pitch * 57.29578f, yaw * 57.29578f);
         }
 
         public static float3 EulerToBendrollZRoll(float3 euler)
         {
-            return default(float3);
+            var direction = math.mul(ToQuaternion(euler, math.RotationOrder.YXZ), new float3(0f, 0f, 1f));
+            float pitch = -2f * math.atan2(direction.x, direction.z + 1f);
+            float yaw = 2f * math.atan2(direction.y, direction.z + 1f);
+            return new float3(euler.z, pitch * 57.29578f, yaw * 57.29578f);
         }
 
         public static float3 EulerToBendrollQuaternionInverse(float3 euler)
         {
-            return default(float3);
+            var direction = math.mul(ToUnityQuaternion(euler), new float3(1f, 0f, 0f));
+            float pitch = -2f * math.atan2(direction.z, direction.x + 1f);
+            float yaw = 2f * math.atan2(direction.y, direction.x + 1f);
+            Quaternion twist = math.mul(ToUnityQuaternion(euler), math.inverse(FromToRotation(new float3(1f, 0f, 0f), direction)));
+            twist.ToAngleAxis(out float angle, out Vector3 twistAxis);
+            float roll = angle * 0.017453292f;
+            if (math.dot((float3)twistAxis, direction) < 0f) roll = -roll;
+            return new float3(roll, pitch, yaw) * 57.29578f;
         }
 
         public static float3 EulerToBendrollQuaternionInverseYRoll(float3 euler, math.RotationOrder rotationOrder)
         {
-            return default(float3);
+            var direction = math.mul(ToQuaternion(euler, rotationOrder), new float3(0f, 1f, 0f));
+            float pitch = 2f * math.atan2(direction.z, direction.y + 1f);
+            float yaw = -2f * math.atan2(direction.x, direction.y + 1f);
+            Quaternion twist = math.mul(ToUnityQuaternion(euler), math.inverse(FromToRotation(new float3(0f, 1f, 0f), direction)));
+            twist.ToAngleAxis(out float angle, out Vector3 twistAxis);
+            float roll = angle * 0.017453292f;
+            if (math.dot((float3)twistAxis, direction) < 0f) roll = -roll;
+            return new float3(roll, pitch, yaw) * 57.29578f;
         }
 
         public static float FormatRangeDegree(float degree)
@@ -124,7 +197,11 @@ namespace ActorAnimation
         [MethodImpl(256)]
         public static float3 ToUnityEuler(quaternion q)
         {
-            return default(float3);
+            float x = q.value.x, y = q.value.y, z = q.value.z, w = q.value.w;
+            float yaw = math.atan2(-2f * (x * z + w * y), z * z + ((w * w - x * x) - y * y));
+            float pitch = math.asin(2f * (y * z - w * x));
+            float roll = math.atan2(-2f * (x * y + w * z), (y * y + (w * w - x * x)) - z * z);
+            return new float3(pitch, yaw, roll) * -57.29578f;
         }
 
         public static quaternion ToUnityQuaternion(float3 euler)
@@ -167,7 +244,15 @@ namespace ActorAnimation
 
         public static quaternion FromToRotation(float3 from, float3 to)
         {
-            return default(quaternion);
+            float cosine = math.dot(math.normalizesafe(from), math.normalizesafe(to));
+            if (cosine >= 1f) return quaternion.identity;
+            if (cosine <= -1f)
+            {
+                var axis = math.cross(from, new float3(0f, 1f, 0f));
+                if (math.lengthsq(axis) < 1e-10f) axis = math.cross(from, new float3(1f, 0f, 0f));
+                return quaternion.AxisAngle(axis, math.PI);
+            }
+            return quaternion.AxisAngle(math.normalizesafe(math.cross(from, to)), math.acos(cosine));
         }
     }
 }
