@@ -1,0 +1,229 @@
+
+== ActorAnimation.AnimationCurveEvaluator$$Evaluate 0x6576314 (float time, ActorAnimation_AnimationCurveData_o* curve, ActorAnimation_KeyframeData_o* keyframe);
+native: 68 66
+--- game
++++ ref
+@@ -4,5 +4,8 @@
+ mov #0x18
+ mov #0x7f800000
++and #0x7fffffff
++mov #0x18
+ mov #0x7f800000
++and #0x7fffffff
+ bl System.Single$$Equals
+ bl System.Single$$Equals
+
+== ActorAnimation.ActorAnimationWindUtility$$CalcWindPower 0x65768a0 (Unity_Mathematics_float3_o jointWorldPosition, ActorAnimation_ActorAnimationManagePropertyData_o* managePropertyData, float time);
+native: 196 187
+--- game
++++ ref
+@@ -11,7 +11,7 @@
+ fmov #0.50000000
+ bl FN
++fmov #1.00000000
+ mov #0x7f800000
+-fmov #1.00000000
+-tst #1
+-tst #1
++and #0x7fffffff
++cmp #0
+ bl Unity.Mathematics.noise$$cnoise
+
+== ActorAnimation.AnimationCurveEvaluator$$FastCbrt 0x657d5f8 (float x);
+native: 80 9
+--- game
++++ ref
+@@ -1,18 +1,2 @@
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-fmov #3.00000000
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-fmov #3.00000000
+-bl FN
+-mov #1
+-bl FN
+-bl FN
++bl ActorAnimation.AnimationCurveEvaluator$$FastCbrtPositive
++b ActorAnimation.AnimationCurveEvaluator$$FastCbrtPositive
+
+== ActorAnimation.AnimationCurveEvaluator$$BezierExtractU 0x657d738 (float t, float w1, float w2);
+native: 263 247
+--- game
++++ ref
+@@ -10,6 +10,4 @@
+ bl FN
+ fmov #1.00000000
+-fmov #0.50000000
+-fmov #1.00000000
+ bl FN
+ mov #1
+@@ -17,6 +15,4 @@
+ bl ActorAnimation.AnimationCurveEvaluator$$FastCbrt
+ bl ActorAnimation.AnimationCurveEvaluator$$FastCbrt
+-fmov #1.00000000
+-fmov #0.50000000
+ bl FN
+ bl FN
+@@ -32,5 +28,5 @@
+ mov #1
+ bl FN
+-cmp #0
++bl FN
+ bl FN
+ bl FN
+
+== ActorAnimation.CurveConversion$$KeyframeConversion 0x657dca0 (UnityEngine_Keyframe_o key);
+native: 1466 63
+--- game
++++ ref
+@@ -13,141 +13,2 @@
+ cmp #3
+ bl UnityEngine.Keyframe$$get_outWeight
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-fmov #-2.00000000
+-bl FN
+-bl FN
+-bl FN
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()
+-bl FN
+-ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+-bl FN
+-mov #1
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()
+-bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>
+-mov #0x58
+-bl FN
+-ldr  MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+-bl FN
+-and #1
+-bl FN
+-mov #1
+-bl FN
+-bl ActorAnimation.ActorSwingColliderUtility$$UpdateCollider
+-mov #0x58
+-bl FN
+-bl FN
+-add MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()
+-bl FN
+-add MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+-bl FN
+-mov #1
+-ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()
+-bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>
+-mov #0x58
+-bl FN
+-add MMETH Method$Unity.Collections.NativeList<ActorSwingJobStaticBone>.get_Length()
+-bl FN
+-and #1
+-bl FN
+-mov #1
+-bl FN
+-fmov #1.00000000
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-mov #0x3bc
+-fmov #1.00000000
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl ActorAnimation.ActorSwingColliderUtility$$UpdateCollider
+-mov #0x58
+-bl FN
+-mov #0x58
+-bl FN
+-bl FN
+-cmp #4
+-cmp #4
+-cmp #3
+-cmp #2
+-cmp #2
+-cmp #2
+-mov #1
+-cmp #2
+-mov #1
+-mov #1
+-bl FN
+-mov #1
+-bl FN
+-mov #1
+-bl FN
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl FN
+-mov #1
+-fmov #1.00000000
+-fmov #1.00000000
+-tst #1
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-mov #0x7f800000
+-fmov #1.00000000
+-and #0x7fffffff
+-and #0x7fffffff
+-mov #0x7f800000
+-fmov #1.00000000
+-and #0x7fffffff
+-and #0x7fffffff
+-fmov #1.00000000
+-mov #0x7f800000
+-and #0x7fffffff
+-and #0x7fffffff
+-fmov #1.00000000
+-bl FN
+-mov #1
+-bl FN
+-mov #0x7f800000
+-fmov #1.00000000
+-and #0x7fffffff
+-and #0x7fffffff
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-mov #1
+-bl FN
+-bl FN
+-bl FN
+-bl FN

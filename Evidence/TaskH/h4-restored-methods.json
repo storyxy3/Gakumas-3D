@@ -748,5 +748,95 @@
     "sourceStatus": "reconstructed",
     "evidence": "h4-ik-final-semantic-review.txt; h4-ik-execution.disasm.txt; h4-ik-collision.disasm.txt",
     "reason": "APK solver flow, property binding or field assignment restored; remaining differences are register/stack allocation, inlining and metadata-init ordering."
+  },
+  {
+    "method": "ActorAnimation.ActorAnimationWindUtility$$CalcWindPower",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "Same force/noise/wave/range/random operations and constants; min/max/NaN handling and SIMD register scheduling differ."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingUtility$$UpdateSpringPosition",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingUtility$$ToUnityEuler",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingUtility$$ToUnityQuaternion",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingUtility$$FromToRotation",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$Evaluate",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK remainder wrapping, cached binary search, infinite tangent step and exact 1/3-weight dispatch restored; Infinity comparisons use equivalent explicit bit masks."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FindSurroundingKeyframes",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$HermiteInterpolate",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$BezierInterpolate",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FastCbrtPositive",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$FastCbrt",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "Same signed exp(log(abs(x))/3); APK inlines FastCbrtPositive into both branches while rebuilt calls/tail-calls it."
+  },
+  {
+    "method": "ActorAnimation.AnimationCurveEvaluator$$BezierExtractU",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "Same cubic, quadratic and linear branches, roots and range fallback; compiler merges range fallback blocks and reorders metadata setup."
+  },
+  {
+    "method": "ActorAnimation.CurveConversion$$CurveToKeyframes",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "APK arithmetic, key conversion or curve lookup restored; raw layout differences are register/stack allocation and inlining."
+  },
+  {
+    "method": "ActorAnimation.CurveConversion$$KeyframeConversion",
+    "sourceStatus": "reconstructed",
+    "evidence": "h4-curves-wind-native-review.txt; h4-swing-utility.disasm.txt; .recon/task-h4/curve-decomp",
+    "reason": "Actual key conversion matches; APK raw boundary includes unnamed Euler and collision helper clones after its return."
   }
 ]

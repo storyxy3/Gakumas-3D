@@ -1,0 +1,9 @@
+same 7  changed 8  only-in-game 0  re-signed 0
+  ~ 0.07 [semantic] ActorAnimation.AnimationCurveEvaluator$$FastCbrt
+  ~ 0.08 [semantic] ActorAnimation.CurveConversion$$KeyframeConversion
+  ~ 0.31 [layout] ActorAnimation.AnimationCurveEvaluator$$FindSurroundingKeyframes
+  ~ 0.47 [semantic] ActorAnimation.ActorAnimationWindUtility$$CalcWindPower
+  ~ 0.47 [layout] ActorAnimation.AnimationCurveEvaluator$$BezierInterpolate
+  ~ 0.63 [semantic] ActorAnimation.AnimationCurveEvaluator$$Evaluate
+  ~ 0.68 [layout] ActorAnimation.ActorSwingUtility$$ToUnityQuaternion
+  ~ 0.77 [semantic] ActorAnimation.AnimationCurveEvaluator$$BezierExtractU

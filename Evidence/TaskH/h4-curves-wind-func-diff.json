@@ -1,0 +1,66 @@
+{
+ "addedOverloads": [],
+ "same": 7,
+ "changed": [
+  {
+   "method": "ActorAnimation.ActorAnimationWindUtility$$CalcWindPower",
+   "similarity": 0.465,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$ToUnityQuaternion",
+   "similarity": 0.68,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.AnimationCurveEvaluator$$BezierExtractU",
+   "similarity": 0.769,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.AnimationCurveEvaluator$$BezierInterpolate",
+   "similarity": 0.474,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.AnimationCurveEvaluator$$Evaluate",
+   "similarity": 0.627,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.AnimationCurveEvaluator$$FastCbrt",
+   "similarity": 0.067,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.AnimationCurveEvaluator$$FindSurroundingKeyframes",
+   "similarity": 0.306,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CurveConversion$$KeyframeConversion",
+   "similarity": 0.082,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "ActorAnimation.AnimationCurveEvaluator",
+   5
+  ],
+  [
+   "ActorAnimation.ActorAnimationWindUtility",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingUtility",
+   1
+  ],
+  [
+   "ActorAnimation.CurveConversion",
+   1
+  ]
+ ]
+}
