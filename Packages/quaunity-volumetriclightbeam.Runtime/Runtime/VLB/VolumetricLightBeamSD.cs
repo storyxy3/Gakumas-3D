@@ -29,7 +29,7 @@ namespace VLB
                 [DebuggerHidden]
                 get
                 {
-                    return null;
+                    return _003C_003E2__current;
                 }
             }
 
@@ -38,13 +38,14 @@ namespace VLB
                 [DebuggerHidden]
                 get
                 {
-                    return null;
+                    return _003C_003E2__current;
                 }
             }
 
             [DebuggerHidden]
             public _003CCoPlaytimeUpdate_003Ed__221(int _003C_003E1__state)
             {
+                this._003C_003E1__state = _003C_003E1__state;
             }
 
             [DebuggerHidden]
@@ -52,83 +53,97 @@ namespace VLB
             {
             }
 
-            bool global::System.Collections.IEnumerator.MoveNext()
+            public bool MoveNext()
             {
-                return default(bool);
+                int state = _003C_003E1__state;
+                VolumetricLightBeamSD beam = _003C_003E4__this;
+                if (state != 0 && state != 1)
+                    return false;
+                _003C_003E1__state = -1;
+                if (beam.trackChangesDuringPlaytime && beam.enabled)
+                {
+                    beam.UpdateAfterManualPropertyChange();
+                    _003C_003E2__current = null;
+                    _003C_003E1__state = 1;
+                    return true;
+                }
+                beam.m_CoPlaytimeUpdate = null;
+                return false;
             }
 
             [DebuggerHidden]
             void System.Collections.IEnumerator.Reset()
             {
+                throw new NotSupportedException();
             }
         }
 
         public new const string ClassName = "VolumetricLightBeamSD";
-        public bool colorFromLight;
+        public bool colorFromLight = true;
         public ColorMode colorMode;
         [ColorUsage(false, true)]
         [FormerlySerializedAs("colorValue")]
-        public Color color;
+        public Color color = Consts.Beam.FlatColor;
         public Gradient colorGradient;
-        public bool intensityFromLight;
+        public bool intensityFromLight = true;
         public bool intensityModeAdvanced;
         [FormerlySerializedAs("alphaInside")]
         [Min(0f)]
-        public float intensityInside;
+        public float intensityInside = 1f;
         [FormerlySerializedAs("alphaOutside")]
         [FormerlySerializedAs("alpha")]
         [Min(0f)]
-        public float intensityOutside;
+        public float intensityOutside = 1f;
         [Min(0f)]
-        public float intensityMultiplier;
+        public float intensityMultiplier = 1f;
         [Range(0f, 1f)]
         public float hdrpExposureWeight;
         public BlendingMode blendingMode;
         [FormerlySerializedAs("angleFromLight")]
-        public bool spotAngleFromLight;
+        public bool spotAngleFromLight = true;
         [Range(0.1f, 179.9f)]
-        public float spotAngle;
+        public float spotAngle = 35f;
         [Min(0f)]
-        public float spotAngleMultiplier;
+        public float spotAngleMultiplier = 1f;
         [FormerlySerializedAs("radiusStart")]
-        public float coneRadiusStart;
+        public float coneRadiusStart = 0.1f;
         public ShaderAccuracy shaderAccuracy;
         public MeshType geomMeshType;
         [FormerlySerializedAs("geomSides")]
-        public int geomCustomSides;
-        public int geomCustomSegments;
-        public Vector3 skewingLocalForwardDirection;
+        public int geomCustomSides = 18;
+        public int geomCustomSegments = 5;
+        public Vector3 skewingLocalForwardDirection = Consts.Beam.SD.SkewingLocalForwardDirectionDefault;
         public Transform clippingPlaneTransform;
         public bool geomCap;
-        public AttenuationEquation attenuationEquation;
+        public AttenuationEquation attenuationEquation = AttenuationEquation.Quadratic;
         [Range(0f, 1f)]
-        public float attenuationCustomBlending;
+        public float attenuationCustomBlending = 0.5f;
         [FormerlySerializedAs("fadeStart")]
         public float fallOffStart;
         [FormerlySerializedAs("fadeEnd")]
-        public float fallOffEnd;
+        public float fallOffEnd = 3f;
         [FormerlySerializedAs("fadeEndFromLight")]
-        public bool fallOffEndFromLight;
+        public bool fallOffEndFromLight = true;
         [Min(0f)]
-        public float fallOffEndMultiplier;
-        public float depthBlendDistance;
-        public float cameraClippingDistance;
+        public float fallOffEndMultiplier = 1f;
+        public float depthBlendDistance = 2f;
+        public float cameraClippingDistance = 0.5f;
         [Range(0f, 1f)]
-        public float glareFrontal;
+        public float glareFrontal = 0.5f;
         [Range(0f, 1f)]
-        public float glareBehind;
+        public float glareBehind = 0.5f;
         [FormerlySerializedAs("fresnelPowOutside")]
-        public float fresnelPow;
+        public float fresnelPow = 8f;
         public NoiseMode noiseMode;
         [Range(0f, 1f)]
-        public float noiseIntensity;
-        public bool noiseScaleUseGlobal;
+        public float noiseIntensity = 0.5f;
+        public bool noiseScaleUseGlobal = true;
         [Range(0.01f, 2f)]
-        public float noiseScaleLocal;
-        public bool noiseVelocityUseGlobal;
-        public Vector3 noiseVelocityLocal;
+        public float noiseScaleLocal = 0.5f;
+        public bool noiseVelocityUseGlobal = true;
+        public Vector3 noiseVelocityLocal = Consts.Beam.NoiseVelocityDefault;
         public Dimensions dimensions;
-        public Vector2 tiltFactor;
+        public Vector2 tiltFactor = Consts.Beam.SD.TiltDefault;
         private MaterialManager.SD.DynamicOcclusion m_INTERNAL_DynamicOcclusionMode;
         private bool m_INTERNAL_DynamicOcclusionMode_Runtime;
         [CompilerGenerated]
@@ -143,10 +158,10 @@ namespace VLB
         private int _SortingOrder;
         [FormerlySerializedAs("fadeOutBegin")]
         [SerializeField]
-        private float _FadeOutBegin;
+        private float _FadeOutBegin = -150f;
         [FormerlySerializedAs("fadeOutEnd")]
         [SerializeField]
-        private float _FadeOutEnd;
+        private float _FadeOutEnd = -200f;
         [CompilerGenerated]
         private uint _003C_INTERNAL_InstancedMaterialGroupID_003Ek__BackingField;
         private BeamGeometrySD m_BeamGeom;
@@ -169,7 +184,7 @@ namespace VLB
         {
             get
             {
-                return default(ColorMode);
+                return Config.Instance.featureEnabledColorGradient != FeatureEnabledColorGradient.Off ? colorMode : ColorMode.Flat;
             }
         }
 
@@ -177,7 +192,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return colorFromLight && lightSpotAttached != null;
             }
         }
 
@@ -185,7 +200,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return useColorFromAttachedLightSpot && lightSpotAttached.useColorTemperature && Config.Instance.useLightColorTemperature;
             }
         }
 
@@ -194,11 +209,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return intensityInside;
             }
 
             set
             {
+                intensityInside = value;
             }
         }
 
@@ -207,11 +223,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return intensityOutside;
             }
 
             set
             {
+                intensityOutside = value;
             }
         }
 
@@ -219,11 +236,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return intensityOutside;
             }
 
             set
             {
+                intensityInside = intensityOutside = value;
             }
         }
 
@@ -231,7 +249,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return intensityFromLight && lightSpotAttached != null;
             }
         }
 
@@ -239,7 +257,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return spotAngleFromLight && lightSpotAttached != null;
             }
         }
 
@@ -247,7 +265,7 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return Utils.ComputeSpotAngle(maxGeometryDistance, coneRadiusEnd - coneRadiusStart);
             }
         }
 
@@ -255,11 +273,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return Utils.ComputeConeRadiusEnd(maxGeometryDistance, spotAngle);
             }
 
             set
             {
+                spotAngle = Utils.ComputeSpotAngle(maxGeometryDistance, value);
             }
         }
 
@@ -267,7 +286,8 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                float radiusEnd = coneRadiusEnd;
+                return (coneRadiusStart * coneRadiusStart + coneRadiusStart * radiusEnd + radiusEnd * radiusEnd) * (Mathf.PI / 3f) * fallOffEnd;
             }
         }
 
@@ -275,7 +295,8 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                float ratio = coneRadiusStart / coneRadiusEnd;
+                return ratio == 1f ? float.MaxValue : maxGeometryDistance * ratio / (1f - ratio);
             }
         }
 
@@ -283,7 +304,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return new Vector3(0f, 0f, -coneApexOffsetZ);
             }
         }
 
@@ -291,7 +312,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return transform.localToWorldMatrix.MultiplyPoint(coneApexPositionLocal);
             }
         }
 
@@ -299,11 +320,13 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return geomMeshType == MeshType.Custom ? geomCustomSides : Config.Instance.sharedMeshSides;
             }
 
             set
             {
+                geomCustomSides = value;
+                UnityEngine.Debug.LogWarningFormat("The setter VLB.{0}.geomSides is OBSOLETE and has been renamed to geomCustomSides.", ClassName);
             }
         }
 
@@ -311,11 +334,13 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return geomMeshType == MeshType.Custom ? geomCustomSegments : Config.Instance.sharedMeshSegments;
             }
 
             set
             {
+                geomCustomSegments = value;
+                UnityEngine.Debug.LogWarningFormat("The setter VLB.{0}.geomSegments is OBSOLETE and has been renamed to geomCustomSegments.", ClassName);
             }
         }
 
@@ -323,7 +348,12 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                if (Mathf.Approximately(skewingLocalForwardDirection.z, 0f))
+                {
+                    UnityEngine.Debug.LogErrorFormat("Beam {0} has a skewingLocalForwardDirection with a null Z, which is forbidden", name);
+                    return Vector3.forward;
+                }
+                return skewingLocalForwardDirection.normalized;
             }
         }
 
@@ -331,7 +361,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return geomMeshType == MeshType.Custom;
             }
         }
 
@@ -339,7 +369,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return Config.Instance.featureEnabledMeshSkewing && canHaveMeshSkewing && !Mathf.Approximately(Vector3.Dot(skewingLocalForwardDirectionNormalized, Vector3.forward), 1f);
             }
         }
 
@@ -347,7 +377,9 @@ namespace VLB
         {
             get
             {
-                return default(Vector4);
+                if (clippingPlaneTransform == null)
+                    return Vector4.zero;
+                return Utils.PlaneEquation(clippingPlaneTransform.forward, clippingPlaneTransform.position);
             }
         }
 
@@ -355,7 +387,11 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                if (attenuationEquation == AttenuationEquation.Linear)
+                    return 0f;
+                if (attenuationEquation == AttenuationEquation.Quadratic)
+                    return 1f;
+                return attenuationCustomBlending;
             }
         }
 
@@ -364,11 +400,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return fallOffStart;
             }
 
             set
             {
+                fallOffStart = value;
             }
         }
 
@@ -377,11 +414,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return fallOffEnd;
             }
 
             set
             {
+                fallOffEnd = value;
             }
         }
 
@@ -390,11 +428,12 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return fallOffEndFromLight;
             }
 
             set
             {
+                fallOffEndFromLight = value;
             }
         }
 
@@ -402,7 +441,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return fallOffEndFromLight && lightSpotAttached != null;
             }
         }
 
@@ -410,7 +449,7 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return fallOffEnd + Mathf.Max(Mathf.Abs(tiltFactor.x), Mathf.Abs(tiltFactor.y));
             }
         }
 
@@ -418,7 +457,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return noiseMode != NoiseMode.Disabled;
             }
         }
 
@@ -427,11 +466,12 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return isNoiseEnabled;
             }
 
             set
             {
+                noiseMode = value ? NoiseMode.WorldSpace : NoiseMode.Disabled;
             }
         }
 
@@ -439,11 +479,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return _FadeOutBegin;
             }
 
             set
             {
+                SetFadeOutValue(ref _FadeOutBegin, value);
             }
         }
 
@@ -451,11 +492,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                return _FadeOutEnd;
             }
 
             set
             {
+                SetFadeOutValue(ref _FadeOutEnd, value);
             }
         }
 
@@ -463,7 +505,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return _FadeOutBegin >= 0f && _FadeOutEnd >= 0f;
             }
         }
 
@@ -471,7 +513,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return !tiltFactor.Approximately(Vector2.zero);
             }
         }
 
@@ -479,11 +521,14 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return _SortingLayerID;
             }
 
             set
             {
+                _SortingLayerID = value;
+                if (m_BeamGeom)
+                    m_BeamGeom.sortingLayerID = value;
             }
         }
 
@@ -491,11 +536,12 @@ namespace VLB
         {
             get
             {
-                return null;
+                return SortingLayer.IDToName(_SortingLayerID);
             }
 
             set
             {
+                sortingLayerID = SortingLayer.NameToID(value);
             }
         }
 
@@ -503,11 +549,14 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return _SortingOrder;
             }
 
             set
             {
+                _SortingOrder = value;
+                if (m_BeamGeom)
+                    m_BeamGeom.sortingOrder = value;
             }
         }
 
@@ -515,11 +564,13 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return _TrackChangesDuringPlaytime;
             }
 
             set
             {
+                _TrackChangesDuringPlaytime = value;
+                StartPlaytimeUpdateIfNeeded();
             }
         }
 
@@ -527,7 +578,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return m_CoPlaytimeUpdate != null;
             }
         }
 
@@ -535,7 +586,7 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return Mathf.Clamp((int)blendingMode, 0, Enum.GetValues(typeof(BlendingMode)).Length);
             }
         }
 
@@ -543,7 +594,7 @@ namespace VLB
         {
             get
             {
-                return default(Quaternion);
+                return dimensions == Dimensions.Dim3D ? Quaternion.identity : Quaternion.LookRotation(Vector3.right, Vector3.up);
             }
         }
 
@@ -551,7 +602,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return dimensions == Dimensions.Dim3D ? Vector3.forward : Vector3.right;
             }
         }
 
@@ -559,7 +610,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return transform.TransformDirection(beamLocalForward);
             }
         }
 
@@ -567,7 +618,12 @@ namespace VLB
         {
             get
             {
-                return default(float);
+                if (hasMeshSkewing)
+                {
+                    float z = skewingLocalForwardDirectionNormalized.z;
+                    return Mathf.Approximately(z, 0f) ? maxGeometryDistance : maxGeometryDistance / z;
+                }
+                return maxGeometryDistance;
             }
         }
 
@@ -575,7 +631,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return ComputeRaycastGlobalVector(hasMeshSkewing ? skewingLocalForwardDirectionNormalized : Vector3.forward);
             }
         }
 
@@ -583,7 +639,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return ComputeRaycastGlobalVector(Vector3.up);
             }
         }
 
@@ -591,7 +647,7 @@ namespace VLB
         {
             get
             {
-                return default(Vector3);
+                return ComputeRaycastGlobalVector(Vector3.right);
             }
         }
 
@@ -599,11 +655,12 @@ namespace VLB
         {
             get
             {
-                return default(MaterialManager.SD.DynamicOcclusion);
+                return Config.Instance.featureEnabledDynamicOcclusion ? m_INTERNAL_DynamicOcclusionMode : MaterialManager.SD.DynamicOcclusion.Off;
             }
 
             set
             {
+                m_INTERNAL_DynamicOcclusionMode = value;
             }
         }
 
@@ -611,7 +668,7 @@ namespace VLB
         {
             get
             {
-                return default(MaterialManager.SD.DynamicOcclusion);
+                return m_INTERNAL_DynamicOcclusionMode_Runtime ? _INTERNAL_DynamicOcclusionMode : MaterialManager.SD.DynamicOcclusion.Off;
             }
         }
 
@@ -620,12 +677,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return default(uint);
+                return _003C_INTERNAL_InstancedMaterialGroupID_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003C_INTERNAL_InstancedMaterialGroupID_003Ek__BackingField = value;
             }
         }
 
@@ -633,7 +691,8 @@ namespace VLB
         {
             get
             {
-                return null;
+                Mesh mesh = m_BeamGeom ? m_BeamGeom.coneMesh : null;
+                return mesh ? string.Format("Cone angle: {0:0.0} degrees\nMesh: {1} vertices, {2} triangles", coneAngle, mesh.vertexCount, mesh.triangles.Length / 3) : "no mesh available";
             }
         }
 
@@ -641,7 +700,7 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return m_BeamGeom && m_BeamGeom.coneMesh ? m_BeamGeom.coneMesh.vertexCount : 0;
             }
         }
 
@@ -649,7 +708,7 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return m_BeamGeom && m_BeamGeom.coneMesh ? m_BeamGeom.coneMesh.triangles.Length / 3 : 0;
             }
         }
 
@@ -658,12 +717,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return default(Entity);
+                return _003Centity_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003Centity_003Ek__BackingField = value;
             }
         }
 
@@ -672,12 +732,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CmaterialID_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CmaterialID_003Ek__BackingField = value;
             }
         }
 
@@ -686,11 +747,29 @@ namespace VLB
             [CompilerGenerated]
             add
             {
+                OnWillCameraRenderCB previous = m_onWillCameraRenderThisBeam;
+                OnWillCameraRenderCB current;
+                do
+                {
+                    current = previous;
+                    var updated = (OnWillCameraRenderCB)Delegate.Combine(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onWillCameraRenderThisBeam, updated, current);
+                }
+                while ((object)previous != current);
             }
 
             [CompilerGenerated]
             remove
             {
+                OnWillCameraRenderCB previous = m_onWillCameraRenderThisBeam;
+                OnWillCameraRenderCB current;
+                do
+                {
+                    current = previous;
+                    var updated = (OnWillCameraRenderCB)Delegate.Remove(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onWillCameraRenderThisBeam, updated, current);
+                }
+                while ((object)previous != current);
             }
         }
 
@@ -699,11 +778,29 @@ namespace VLB
             [CompilerGenerated]
             add
             {
+                VolumetricLightBeamAction previous = m_onVLBAdd;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Combine(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBAdd, updated, current);
+                }
+                while ((object)previous != current);
             }
 
             [CompilerGenerated]
             remove
             {
+                VolumetricLightBeamAction previous = m_onVLBAdd;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Remove(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBAdd, updated, current);
+                }
+                while ((object)previous != current);
             }
         }
 
@@ -712,11 +809,29 @@ namespace VLB
             [CompilerGenerated]
             add
             {
+                VolumetricLightBeamAction previous = m_onVLBRemove;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Combine(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBRemove, updated, current);
+                }
+                while ((object)previous != current);
             }
 
             [CompilerGenerated]
             remove
             {
+                VolumetricLightBeamAction previous = m_onVLBRemove;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Remove(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBRemove, updated, current);
+                }
+                while ((object)previous != current);
             }
         }
 
@@ -725,11 +840,29 @@ namespace VLB
             [CompilerGenerated]
             add
             {
+                VolumetricLightBeamAction previous = m_onVLBPropertyChange;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Combine(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBPropertyChange, updated, current);
+                }
+                while ((object)previous != current);
             }
 
             [CompilerGenerated]
             remove
             {
+                VolumetricLightBeamAction previous = m_onVLBPropertyChange;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Remove(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBPropertyChange, updated, current);
+                }
+                while ((object)previous != current);
             }
         }
 
@@ -738,135 +871,286 @@ namespace VLB
             [CompilerGenerated]
             add
             {
+                VolumetricLightBeamAction previous = m_onVLBMaterialChange;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Combine(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBMaterialChange, updated, current);
+                }
+                while ((object)previous != current);
             }
 
             [CompilerGenerated]
             remove
             {
+                VolumetricLightBeamAction previous = m_onVLBMaterialChange;
+                VolumetricLightBeamAction current;
+                do
+                {
+                    current = previous;
+                    var updated = (VolumetricLightBeamAction)Delegate.Remove(current, value);
+                    previous = System.Threading.Interlocked.CompareExchange(ref m_onVLBMaterialChange, updated, current);
+                }
+                while ((object)previous != current);
             }
         }
 
         public void GetInsideAndOutsideIntensity(out float inside, out float outside)
         {
-            throw null;
+            if (intensityModeAdvanced)
+            {
+                inside = intensityInside;
+                outside = intensityOutside;
+            }
+            else
+            {
+                inside = outside = intensityGlobal;
+            }
         }
 
         public override bool IsScalable()
         {
-            return default(bool);
+            return true;
         }
 
         public override BeamGeometryAbstractBase GetBeamGeometry()
         {
-            return null;
+            return m_BeamGeom;
         }
 
         public override Vector3 GetLossyScale()
         {
-            return default(Vector3);
+            return dimensions == Dimensions.Dim3D ? transform.lossyScale : new Vector3(transform.lossyScale.z, transform.lossyScale.y, transform.lossyScale.x);
         }
 
         private Vector3 ComputeRaycastGlobalVector(Vector3 localVec)
         {
-            return default(Vector3);
+            return (transform.rotation * beamInternalLocalRotation) * localVec;
         }
 
         public void _INTERNAL_SetDynamicOcclusionCallback(string shaderKeyword, MaterialModifier.Callback cb)
         {
+            m_INTERNAL_DynamicOcclusionMode_Runtime = cb != null;
+            if (m_BeamGeom)
+                m_BeamGeom.SetDynamicOcclusionCallback(shaderKeyword, cb);
         }
 
         public void _INTERNAL_OnWillCameraRenderThisBeam(Camera cam)
         {
+            m_onWillCameraRenderThisBeam?.Invoke(cam);
         }
 
         public void RegisterOnBeamGeometryInitializedCallback(OnBeamGeometryInitialized cb)
         {
+            m_OnBeamGeometryInitialized += cb;
+            if (m_BeamGeom)
+                CallOnBeamGeometryInitializedCallback();
         }
 
         private void CallOnBeamGeometryInitializedCallback()
         {
+            if (m_OnBeamGeometryInitialized != null)
+            {
+                m_OnBeamGeometryInitialized();
+                m_OnBeamGeometryInitialized = null;
+            }
         }
 
         private void SetFadeOutValue(ref float propToChange, float value)
         {
+            bool wasEnabled = isFadeOutEnabled;
+            propToChange = value;
+            if (wasEnabled != isFadeOutEnabled)
+                OnFadeOutStateChanged();
         }
 
         private void OnFadeOutStateChanged()
         {
+            if (isFadeOutEnabled && m_BeamGeom)
+                m_BeamGeom.RestartFadeOutCoroutine();
         }
 
         public float GetInsideBeamFactor(Vector3 posWS)
         {
-            return default(float);
+            return GetInsideBeamFactorFromObjectSpacePos(transform.InverseTransformPoint(posWS));
         }
 
         public float GetInsideBeamFactorFromObjectSpacePos(Vector3 posOS)
         {
-            return default(float);
+            if (dimensions == Dimensions.Dim2D)
+                posOS = new Vector3(posOS.z, posOS.y, posOS.x);
+            if (posOS.z < 0f)
+                return -1f;
+            if (hasMeshSkewing)
+            {
+                Vector3 forward = skewingLocalForwardDirectionNormalized;
+                posOS.x -= forward.x * (posOS.z / forward.z);
+                posOS.y -= forward.y * (posOS.z / forward.z);
+            }
+            Vector2 direction = new Vector2(new Vector2(posOS.x, posOS.y).magnitude, posOS.z + coneApexOffsetZ).normalized;
+            float slope = Mathf.Sin(coneAngle * Mathf.Deg2Rad * 0.5f);
+            return Mathf.Clamp((Mathf.Abs(slope) - Mathf.Abs(direction.x)) / 0.1f, -1f, 1f);
         }
 
         [Obsolete("Use 'GenerateGeometry()' instead")]
         public void Generate()
         {
+            GenerateGeometry();
         }
 
         public virtual void GenerateGeometry()
         {
+            HandleBackwardCompatibility(pluginVersion, 20000);
+            pluginVersion = 20000;
+            ValidateProperties();
         }
 
         public virtual void UpdateAfterManualPropertyChange()
         {
+            ValidateProperties();
+            if (m_BeamGeom)
+                m_BeamGeom.UpdateMaterialAndBounds();
         }
 
         private void Start()
         {
+            InitLightSpotAttachedCached();
+            GenerateGeometry();
         }
 
         public MaterialManager.StaticPropertiesSD GetStaticProps()
         {
-            return default(MaterialManager.StaticPropertiesSD);
+            bool noise = isNoiseEnabled && noiseIntensity > 0f && Noise3D.isSupported;
+            bool depthBlend = BatchingHelper.forceEnableDepthBlend || depthBlendDistance > 0f;
+            Light light = lightSpotAttached;
+            bool shadow = light != null && shadowIntensity > 0f && light.shadows != LightShadows.None;
+            return new MaterialManager.StaticPropertiesSD
+            {
+                blendingMode = (MaterialManager.BlendingMode)blendingMode,
+                noise3D = noise ? MaterialManager.Noise3D.On : MaterialManager.Noise3D.Off,
+                depthBlend = depthBlend ? MaterialManager.SD.DepthBlend.On : MaterialManager.SD.DepthBlend.Off,
+                colorGradient = MaterialManager.ColorGradient.Off,
+                dynamicOcclusion = _INTERNAL_DynamicOcclusionMode_Runtime,
+                meshSkewing = hasMeshSkewing ? MaterialManager.SD.MeshSkewing.On : MaterialManager.SD.MeshSkewing.Off,
+                shaderAccuracy = shaderAccuracy == ShaderAccuracy.Fast ? MaterialManager.SD.ShaderAccuracy.Fast : MaterialManager.SD.ShaderAccuracy.High,
+                depthShadow = shadow
+            };
         }
 
         private void OnEnable()
         {
+            if (Application.isPlaying)
+                InitLightSpotAttachedCached();
+            if (m_BeamGeom)
+                m_BeamGeom.OnMasterEnable();
+            m_onVLBAdd?.Invoke(this);
         }
 
         private void OnDisable()
         {
+            if (m_BeamGeom)
+                m_BeamGeom.OnMasterDisable();
+            m_CoPlaytimeUpdate = null;
+            m_onVLBRemove?.Invoke(this);
         }
 
         private void StartPlaytimeUpdateIfNeeded()
         {
+            if (Application.isPlaying && _TrackChangesDuringPlaytime && m_CoPlaytimeUpdate == null)
+                m_CoPlaytimeUpdate = StartCoroutine(CoPlaytimeUpdate());
         }
 
         [IteratorStateMachine(typeof(_003CCoPlaytimeUpdate_003Ed__221))]
         private IEnumerator CoPlaytimeUpdate()
         {
-            return null;
+            return new _003CCoPlaytimeUpdate_003Ed__221(0) { _003C_003E4__this = this };
         }
 
         private void OnDestroy()
         {
+            DestroyBeam();
         }
 
         private void DestroyBeam()
         {
+            if (m_BeamGeom)
+                DestroyImmediate(m_BeamGeom.gameObject);
+            m_BeamGeom = null;
         }
 
         private void AssignPropertiesFromAttachedSpotLight()
         {
+            Light light = lightSpotAttached;
+            if (light)
+            {
+                _ = light.type;
+                if (intensityFromLight)
+                {
+                    intensityModeAdvanced = false;
+                    intensityGlobal = SpotLightHelper.GetIntensity(light) * intensityMultiplier;
+                }
+                if (fallOffEndFromLight)
+                    fallOffEnd = SpotLightHelper.GetFallOffEnd(light) * fallOffEndMultiplier;
+                if (spotAngleFromLight)
+                    spotAngle = Mathf.Clamp(SpotLightHelper.GetSpotAngle(light) * spotAngleMultiplier, 0.1f, 179.9f);
+                if (colorFromLight)
+                {
+                    colorMode = ColorMode.Flat;
+                    color = useColorTemperatureFromAttachedLightSpot
+                        ? (Mathf.CorrelatedColorTemperatureToRGB(light.colorTemperature) * light.color.linear).gamma
+                        : light.color;
+                }
+            }
         }
 
         private void ClampProperties()
         {
+            intensityInside = Mathf.Max(intensityInside, 0f);
+            intensityOutside = Mathf.Max(intensityOutside, 0f);
+            intensityMultiplier = Mathf.Max(intensityMultiplier, 0f);
+            fallOffEnd = Mathf.Max(0.01f, fallOffEnd);
+            spotAngle = Mathf.Clamp(spotAngle, 0.1f, 179.9f);
+            spotAngleMultiplier = Mathf.Max(spotAngleMultiplier, 0f);
+            coneRadiusStart = Mathf.Max(coneRadiusStart, 0f);
+            geomCustomSides = Mathf.Clamp(geomCustomSides, 3, 256);
+            geomCustomSegments = Mathf.Clamp(geomCustomSegments, 0, 64);
+            attenuationCustomBlending = Mathf.Clamp01(attenuationCustomBlending);
+            fallOffStart = Mathf.Clamp(fallOffStart, 0f, fallOffEnd - 0.01f);
+            fallOffEndMultiplier = Mathf.Max(fallOffEndMultiplier, 0f);
+            depthBlendDistance = Mathf.Max(depthBlendDistance, 0f);
+            cameraClippingDistance = Mathf.Max(cameraClippingDistance, 0f);
+            glareFrontal = Mathf.Clamp01(glareFrontal);
+            glareBehind = Mathf.Clamp01(glareBehind);
+            fresnelPow = Mathf.Max(fresnelPow, 0f);
+            noiseIntensity = Mathf.Clamp01(noiseIntensity);
         }
 
         private void ValidateProperties()
         {
+            AssignPropertiesFromAttachedSpotLight();
+            ClampProperties();
         }
 
         private void HandleBackwardCompatibility(int serializedVersion, int newVersion)
         {
+            if (serializedVersion == -1 || serializedVersion == newVersion)
+                return;
+            if (serializedVersion <= 1300)
+                attenuationEquation = AttenuationEquation.Linear;
+            if (serializedVersion <= 1500)
+            {
+                geomMeshType = MeshType.Custom;
+                geomCustomSegments = 5;
+            }
+            if (serializedVersion <= 1609)
+            {
+                intensityFromLight = false;
+                intensityModeAdvanced = !Mathf.Approximately(intensityInside, intensityOutside);
+            }
+            if (serializedVersion <= 1909 && !intensityModeAdvanced && !Mathf.Approximately(intensityInside, intensityOutside))
+                intensityInside = intensityOutside;
         }
 
         public VolumetricLightBeamSD()
