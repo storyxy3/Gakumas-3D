@@ -1,0 +1,130 @@
+=== ActorAnimation.ActorSwingBreastBone$$.ctor (ActorAnimation_ActorSwingBreastBone_o* __this); game 11 ref 8
+--- game
++++ ref
+@@ -2,8 +2,5 @@
+ mov #1
+ bl FN
+-mov #0xff4c
+-movk #0xffff, lsl #16
+-movk #0xb4, lsl #32
+-bl System.Object$$.ctor
++bl ActorAnimation.LimitInfo$$.ctor
+ bl FN
+ mov #0x3f800000
+=== ActorAnimation.ActorSwingDynamicBone$$.ctor (ActorAnimation_ActorSwingDynamicBone_o* __this); game 11 ref 8
+--- game
++++ ref
+@@ -4,8 +4,5 @@
+ mov #1
+ bl FN
+-mov #0xff4c
+-movk #0xffff, lsl #16
+-movk #0xb4, lsl #32
+-bl System.Object$$.ctor
++bl ActorAnimation.LimitInfo$$.ctor
+ bl FN
+ b UnityEngine.MonoBehaviour$$.ctor
+=== ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, Campus_Common_CampusCustomLookAtEffector_o* campusCustomLookAtEffector, ActorAnimation_CampusActorAnimationInitializeData_o* initializeData); game 146 ref 151
+--- game
++++ ref
+@@ -51,4 +51,5 @@
+ ldr  STR headLeftRightLimit
+ ldr  STR headFrontLimit
++ldr  STR headBackLimit
+ bl UnityEngine.Component$$get_transform
+ bl System.Type$$GetTypeFromHandle
+@@ -71,5 +72,4 @@
+ bl UnityEngine.Component$$get_transform
+ bl System.Type$$GetTypeFromHandle
+-ldr  STR headBackLimit
+ bl UnityEngine.Animations.AnimatorJobExtensions$$BindSceneProperty
+ bl UnityEngine.Component$$get_transform
+@@ -145,2 +145,7 @@
+ mov #8
+ bl UnityEngine.Animations.MuscleHandle$$.ctor
++mov #0x128
++bl FN
++bl ActorAnimation.CampusActorAnimationLookAtLimit$$.ctor
++mov #0x128
++bl FN
+=== ActorAnimation.CampusActorAnimationJob$$SetupCampusJointLimit (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator); game 33 ref 34
+--- game
++++ ref
+@@ -32,2 +32,3 @@
+ mov #8
+ bl UnityEngine.Animations.MuscleHandle$$.ctor
++bl ActorAnimation.CampusActorAnimationJointLimit$$.ctor
+=== Campus.Common.Live.CampusLiveTimelineController$$IsLookAtEnableProhibited (Campus_Common_Live_CampusLiveTimelineController_o* __this, int32_t actorIndex); game 26 ref 26
+--- game
++++ ref
+@@ -19,5 +19,5 @@
+ bl System.Collections.Generic.Dictionary<int, object>$$GetEnumerator
+ ldr  HashSet<int>>.MoveNext()
+-ldr  MMETH Method$System.Collections.Generic.HashSet<int>.Contains()
++b FN
+ bl System.Collections.Generic.Dictionary.Enumerator<int, object>$$MoveNext
+ bl System.Collections.Generic.HashSet<int>$$Contains
+=== Campus.Common.Live.CampusLiveTimelineController$$DisableAllCharacterTracks (Campus_Common_Live_CampusLiveTimelineController_o* __this); game 28 ref 29
+--- game
++++ ref
+@@ -25,4 +25,5 @@
+ bl FN
+ bl FN
++b FN
+ bl FN
+ bl UnityEngine.Playables.PlayableDirector$$RebuildGraph
+=== Campus.Common.CampusActorController$$SetOverrideMaterialProperty (Campus_Common_CampusActorController_o* __this, System_String_o* materialName, Campus_Common_CampusActorMaterialProperty_o* property); game 24 ref 24
+--- game
++++ ref
+@@ -18,5 +18,5 @@
+ bl FN
+ bl FN
+-bl System.Object$$.ctor
++bl Campus.Common.CampusActorController.OverrideActorMaterialPropertyData$$.ctor
+ bl FN
+ bl FN
+=== Campus.Common.CampusActorController$$.cctor (); game 10 ref 27
+--- game
++++ ref
+@@ -9,2 +9,19 @@
+ bl FN
+ mov #0x432a0000
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++fmov #0.50000000
++bl FN
++bl FN
++mov #1
++bl FN
++fmov #1.00000000
++bl Unity.Mathematics.quaternion$$.ctor
+=== VLB.SRPHelper$$IsUsingCustomRenderPipeline (); game 13 ref 14
+--- game
++++ ref
+@@ -1,2 +1,3 @@
++b FN
+ bl FN
+ bl FN
+=== VL.Animation.MotionLayerPlayable$$OnPlayableDestroy (VL_Animation_MotionLayerPlayable_o* __this, UnityEngine_Playables_Playable_o playable); game 14 ref 15
+--- game
++++ ref
+@@ -1,4 +1,4 @@
+ ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.DisconnectInput<Playable>()
+-ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.Destroy<AnimationMixerPlayable>()
++b FN
+ ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.Destroy<AnimationMixerPlayable>()
+ bl FN
+@@ -9,4 +9,5 @@
+ mov #1
+ bl UnityEngine.Playables.PlayableExtensions$$DisconnectInput<Playable>
++ldr  Transform>.Release()
+ bl UnityEngine.Playables.PlayableExtensions$$Destroy<AnimationMixerPlayable>
+ ldr  MMETH Method$UnityEngine.Playables.PlayableExtensions.Destroy<ScriptPlayable<MotionClipPlayable>>()

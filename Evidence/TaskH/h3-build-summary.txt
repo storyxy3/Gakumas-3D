@@ -1,0 +1,10 @@
+Compiled source 018e55987e614ba4c199a8d01a1918c124c6b94f
+Build command Tools/build_android.sh
+Full local log .recon/task-h3/build-final-unity.log
+C# errors 0
+Native linking completed at Link_Android_arm64 Library/Bee/artifacts/Android/d8kzr/libil2cpp.so
+Unity build result LIVE_BUILD Failed errors=3
+APK packaging failed at unityLibrary:lintVitalAnalyzeRelease
+Gradle diagnostic For input string: "37.0"
+Final comparison used the linked library and metadata from this build.
+No tests or runtime harnesses were written or run.

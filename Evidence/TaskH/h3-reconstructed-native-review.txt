@@ -1,0 +1,778 @@
+=== ActorAnimation.ActorAnimationQuartzDriverFrillBone$$Calc (Unity_Mathematics_quaternion_o referenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o outerMinusCoefficient, Unity_Mathematics_float3_o innerCoefficient, Unity_Mathematics_float3_o outerPlusCoefficient, Unity_Mathematics_float3_o switchMinus, Unity_Mathematics_float3_o switchPlus, uint8_t connectionAxis, int32_t decomposeType, int32_t composeType); game 54 ref 60
+--- game
++++ ref
+@@ -7,5 +7,8 @@
+ bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+@@ -13,8 +16,10 @@
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -27,8 +32,10 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+@@ -41,11 +48,10 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion
++cmp #2
+ cmp #1
+-cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithRollBend
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+=== ActorAnimation.ActorAnimationQuartzDriverFurisodeBone$$Calc (UnityEngine_Vector3_o handWorldPosition, UnityEngine_Vector3_o forearmWorldPosition, UnityEngine_Quaternion_o furisodeOffsetWorldRotation, UnityEngine_Quaternion_o spineWorldRotation, Unity_Mathematics_float3_o backWay, float apexAngle, float coefficient, float min, float max); game 34 ref 32
+--- game
++++ ref
+@@ -1,4 +1,2 @@
+-bl FN
+-mov #1
+ bl FN
+ mov #1
+@@ -15,4 +13,8 @@
+ bl FN
+ bl FN
++bl UnityEngine.Quaternion$$Inverse
++bl Unity.Mathematics.float3$$op_Implicit
++bl UnityEngine.Quaternion$$op_Multiply
++bl UnityEngine.Quaternion$$op_Multiply
+ bl FN
+ mov #1
+@@ -21,8 +23,4 @@
+ and #0x7fffffff
+ and #0x7fffffff
+-bl Unity.Mathematics.float3$$op_Implicit
+-bl UnityEngine.Quaternion$$op_Multiply
+-bl UnityEngine.Quaternion$$Inverse
+-bl UnityEngine.Quaternion$$op_Multiply
+ bl UnityEngine.Quaternion$$FromToRotation
+ bl UnityEngine.Quaternion$$Internal_ToEulerRad
+=== ActorAnimation.ActorAnimationQuartzDriverHairBone$$Calc (Unity_Mathematics_quaternion_o referenceHeadRotation, Unity_Mathematics_quaternion_o referenceNeckRotation, uint8_t translateConnectionAxis, Unity_Mathematics_float3_o headTranslateCoefficient, Unity_Mathematics_float3_o headTranslateLimitMin, Unity_Mathematics_float3_o headTranslateLimitMax, uint8_t rotationOrder, Unity_Mathematics_float3_o headRotateCoefficient, Unity_Mathematics_float3_o headRotateLimitMin, Unity_Mathematics_float3_o headRotateLimitMax, uint8_t rotateConnectionAxis, Unity_Mathematics_float3_o neckRotateCoefficient, Unity_Mathematics_float3_o neckRotateLimitMin, Unity_Mathematics_float3_o neckRotateLimitMax, int32_t composeType); game 103 ref 146
+--- game
++++ ref
+@@ -3,5 +3,4 @@
+ mov #1
+ mov #2
+-ldr  float3>..ctor()
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
+ mov #2
+@@ -11,11 +10,16 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -24,8 +28,10 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+@@ -34,15 +40,21 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+-bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -51,8 +63,13 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
+ mov #2
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+@@ -61,14 +78,24 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
+ mov #1
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -77,9 +104,15 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
+ mov #2
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
++ldr  float3>..ctor()
+ bl Unity.Mathematics.float3$$get_Item
+ mov #2
+@@ -87,15 +120,25 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
++cmp #2
+ cmp #1
+-cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithRollBend
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+=== ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$Calc (Unity_Mathematics_float3_o referenceRollPitchYaw, Unity_Mathematics_float3_o outerMinusCoefficient, Unity_Mathematics_float3_o innerCoefficient, Unity_Mathematics_float3_o outerPlusCoefficient, Unity_Mathematics_float3_o switchMinus, Unity_Mathematics_float3_o switchPlus, int32_t composeType); game 46 ref 52
+--- game
++++ ref
+@@ -1,4 +1,7 @@
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+@@ -6,8 +9,10 @@
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+@@ -20,8 +25,10 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+@@ -34,11 +41,10 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion
++cmp #2
+ cmp #1
+-cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithRollBend
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToEuler
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+=== ActorAnimation.ActorAnimationQuartzDriverPonchoBone$$CalcPosition (UnityEngine_Quaternion_o armLocalRotation, UnityEngine_Vector3_o innerOffsetLocalPosition, UnityEngine_Vector3_o outerOffsetLocalPosition, float lerpCoefficient, float innerLimit, float outerLimit); game 21 ref 21
+--- game
++++ ref
+@@ -7,14 +7,14 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
++bl Unity.Mathematics.float3$$op_Implicit
++fmov #1.00000000
+ mov #0x7f800000
+-fmov #1.00000000
+ and #0x7fffffff
+ and #0x7fffffff
+ bl Unity.Mathematics.float3$$op_Implicit
++fmov #1.00000000
+ mov #0x7f800000
+-fmov #1.00000000
+ and #0x7fffffff
+ and #0x7fffffff
+-bl Unity.Mathematics.float3$$op_Implicit
+ bl FN
+ mov #1
+=== ActorAnimation.ActorAnimationQuartzDriverRotationBone$$Calc (Unity_Mathematics_quaternion_o referenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o coefficient, Unity_Mathematics_float3_o limitMin, Unity_Mathematics_float3_o limitMax, uint8_t connectionAxis, int32_t decomposeType, int32_t composeType); game 19 ref 34
+--- game
++++ ref
+@@ -1,19 +1,34 @@
++bl FN
++mov #1
+ bl ActorAnimation.ActorAnimationMathUtility$$ToEuler
++cmp #2
+ cmp #1
++bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendroll
++bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
++mov #0x43340000
++mov #-0x3c4c0000
++mov #0x43b40000
++mov #-0x3ccc0000
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
++mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
++and #0x7fffffff
+ cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse
+-bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendroll
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+-bl ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion
+ cmp #1
+-cmp #2
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
+ bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithRollBend
+ bl Unity.Mathematics.quaternion$$op_Implicit
+-bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithBendRoll
++bl ActorAnimation.ActorAnimationMathUtility$$AxisrotationToQuaternionWithMatrix
+ bl ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection
+ bl ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion
+=== ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$Calc (Unity_Mathematics_quaternion_o initialReferenceRotation, Unity_Mathematics_quaternion_o currentReferenceRotation, uint8_t rotationOrder, Unity_Mathematics_float3_o innerCoefficient, Unity_Mathematics_float3_o outerCoefficient, Unity_Mathematics_float3_o limitMin, Unity_Mathematics_float3_o limitMax, uint8_t connectionAxis); game 65 ref 78
+--- game
++++ ref
+@@ -13,11 +13,20 @@
+ bl ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverseYRoll
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #-0x3ccc0000
++mov #0x43b40000
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$FormatRangeDegree
++mov #0x43340000
++mov #-0x3c4c0000
++mov #0x43b40000
++mov #-0x3ccc0000
+ bl Unity.Mathematics.float3$$set_Item
+ mov #1
+@@ -30,6 +39,8 @@
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion
++and #0x7fffffff
++mov #0x7f800000
+ mov #1
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+ mov #1
+@@ -41,6 +52,7 @@
+ mov #1
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion
++and #0x7fffffff
+ mov #2
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+ mov #2
+@@ -52,5 +64,6 @@
+ mov #2
+ bl Unity.Mathematics.float3$$get_Item
+-bl ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion
++and #0x7fffffff
++and #0x7fffffff
+ bl Unity.Mathematics.float3$$get_Item
+ bl Unity.Mathematics.float3$$get_Item
+=== ActorAnimation.ActorAnimationQuartzDriverHumanoidArmJobBone$$Execute (ActorAnimation_ActorAnimationQuartzDriverHumanoidArmJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream); game 12 ref 11
+--- game
++++ ref
+@@ -4,5 +4,4 @@
+ bl UnityEngine.Animations.AnimationHumanStream$$GetMuscle
+ bl FN
+-bl ActorAnimation.ActorAnimationQuartzDriverHumanoidArmBone$$Calc
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$GetLocalRotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+=== ActorAnimation.ActorAnimationQuartzDriverHumanoidHandJobBone$$Execute (ActorAnimation_ActorAnimationQuartzDriverHumanoidHandJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream); game 12 ref 11
+--- game
++++ ref
+@@ -4,5 +4,4 @@
+ bl UnityEngine.Animations.AnimationHumanStream$$GetMuscle
+ bl FN
+-bl ActorAnimation.ActorAnimationQuartzDriverHumanoidHandBone$$Calc
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$GetLocalRotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+=== ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone$$Resolve (ActorAnimation_ActorAnimationQuartzDriverHumanoidSleeveJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream); game 4 ref 5
+--- game
++++ ref
+@@ -1,4 +1,5 @@
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$IsResolved
++mov #1
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$Resolve
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$IsResolved
+-mov #1
++and #1
+=== ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegJobBone$$Execute (ActorAnimation_ActorAnimationQuartzDriverHumanoidUpLegJobBone_o __this, UnityEngine_Animations_AnimationStream_o stream); game 12 ref 11
+--- game
++++ ref
+@@ -4,5 +4,4 @@
+ bl UnityEngine.Animations.AnimationHumanStream$$GetMuscle
+ bl FN
+-bl ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegBone$$Calc
+ bl UnityEngine.Animations.Rigging.ReadWriteTransformHandle$$GetLocalRotation
+ bl Unity.Mathematics.quaternion$$op_Implicit
+=== ActorAnimation.ActorSwingColliderUtility$$UpdateCollider (ActorAnimation_ActorSwingJobCollider_o* jobCollider, Unity_Mathematics_float3_o position, Unity_Mathematics_float3_o subPosition, Unity_Mathematics_quaternion_o rotation); game 7 ref 9
+--- game
++++ ref
+@@ -5,3 +5,5 @@
+ bl FN
+ mov #0x7f800000
++and #0x7fffffff
++and #0x7fffffff
+ b ActorAnimation.ActorSwingColliderUtility$$UpdateFastHitCollider
+=== ActorAnimation.CampusActorAnimationJob$$UpdateRigData<ActorAnimationRigData> (ActorAnimation_CampusActorAnimationJob_o __this, ActorAnimation_ActorAnimationRigData_o* rigData); game 484 ref 474
+--- game
++++ ref
+@@ -171,4 +171,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationConstraintTransformJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationConstraintTransformJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_constraintTransformBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationConstraintTransformBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -182,4 +183,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverRotationJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverRotationJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverRotationBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverRotationBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -193,4 +195,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverFrillJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverFrillJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverFrillBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverFrillBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -205,4 +208,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverSkirtJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverSkirtJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverSkirtBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverSkirtBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -217,4 +221,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHairJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHairJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHairBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverHairBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -229,4 +234,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidHandJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidHandJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidHandBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverHumanoidHandBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -240,4 +246,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidSleeveJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidSleeveJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidSleeveBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverHumanoidSleeveBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -253,4 +260,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidUpLegJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidUpLegJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidUpLegBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverHumanoidUpLegBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -264,4 +272,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidArmJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverHumanoidArmJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverHumanoidArmBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverHumanoidArmBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -275,4 +284,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverWaistJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverWaistJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverWaistBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverWaistBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -286,4 +296,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverFurisodeJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverFurisodeJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverFurisodeBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverFurisodeBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -306,28 +317,4 @@
+ bl FN
+ bl FN
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHumanoidSleeveBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHairBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverSkirtBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverFrillBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+ cmp #1
+@@ -338,4 +325,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverPonchoJobBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorAnimationQuartzDriverPonchoJobBone>
++bl ActorAnimation.ActorAnimationRigData$$get_quartzDriverPonchoBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorAnimationQuartzDriverPonchoBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -353,4 +341,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobBreastBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobBreastBone>
++bl ActorAnimation.ActorAnimationRigData$$get_swingBreastBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorSwingBreastBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -369,4 +358,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobDynamicBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobDynamicBone>
++bl ActorAnimation.ActorAnimationRigData$$get_swingDynamicBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorSwingDynamicBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -390,6 +380,5 @@
+ bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+ bl ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+-mov #-1
+-bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
++cmp #0
+ bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+ bl ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider
+@@ -412,4 +401,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobStaticBone>
++bl ActorAnimation.ActorAnimationRigData$$get_swingStaticBones
+ ldr  MMETH Method$System.Collections.Generic.List<ActorSwingStaticBone>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -432,4 +422,5 @@
+ ldr  MMETH Method$Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility.GetUnsafeReadOnlyPtr<ActorSwingJobChainBone>()
+ bl Unity.Collections.LowLevel.Unsafe.NativeListUnsafeUtility$$GetUnsafeReadOnlyPtr<ActorSwingJobChainBone>
++bl ActorAnimation.ActorAnimationRigData$$get_swingChainLayers
+ ldr  MMETH Method$System.Collections.Generic.List<ChainLayerInfo>.GetEnumerator()
+ bl System.Collections.Generic.List<object>$$GetEnumerator
+@@ -478,7 +469,6 @@
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-bl FN
++cmp #1
++bl FN
++bl FN
++bl FN
+=== ActorAnimation.CampusActorAnimationJob$$UpdateRigData<CampusActorAnimationRigData> (ActorAnimation_CampusActorAnimationJob_o __this, ActorAnimation_CampusActorAnimationRigData_o* rigData); game 484 ref 458
+--- game
++++ ref
+@@ -306,28 +306,4 @@
+ bl FN
+ bl FN
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHumanoidSleeveBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHairBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverSkirtBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverFrillBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+ cmp #1
+@@ -390,6 +366,5 @@
+ bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+ bl ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+-mov #-1
+-bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
++cmp #0
+ bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+ bl ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider
+@@ -478,7 +453,6 @@
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-bl FN
++cmp #1
++bl FN
++bl FN
++bl FN
+=== ActorAnimation.CampusActorAnimationJob$$UpdateRigData<__Il2CppFullySharedGenericStructType> (ActorAnimation_CampusActorAnimationJob_o __this, Unity_IL2CPP_Metadata___Il2CppFullySharedGenericStructType_o* rigData); game 551 ref 524
+--- game
++++ ref
+@@ -359,29 +359,4 @@
+ bl FN
+ bl FN
+-bl FN
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHumanoidSleeveBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverHairBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverSkirtBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+-bl FN
+-cmp #1
+-bl FN
+-bl FN
+-ldr  MMETH Method$System.Collections.Generic.List.Enumerator<ActorAnimationQuartzDriverFrillBone>.Dispose()
+-bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+ bl FN
+@@ -451,6 +426,5 @@
+ bl Unity.Collections.NativeHashMap<int, int>$$TryGetValue
+ bl ActorAnimation.ActorSwingJobLimitInfo$$.ctor
+-mov #-1
+-bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
++cmp #0
+ bl ActorAnimation.ActorSwingJobReferenceLimitInfo$$.ctor
+ bl ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider
+@@ -531,5 +505,4 @@
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
+ bl FN
+-bl FN
+ cmp #1
+ bl FN
+=== CanvasRT.CanvasRenderTextureRendererPass$$Draw3DImage (CanvasRT_CanvasRenderTextureRendererPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_CommandBuffer_o* cmd, Campus_Live_Monitor_Monitor3DImage_o* image); game 54 ref 51
+--- game
++++ ref
+@@ -1,3 +1,2 @@
+-bl FN
+ bl FN
+ bl FN
+@@ -16,6 +15,4 @@
+ bl UnityEngine.Rendering.VolumeManager$$get_instance
+ bl UnityEngine.Rendering.VolumeManager$$Update
+-bl FN
+-bl Campus.Rendering.CampusActorParameterPass$$UpdateActorCommand
+ bl FN
+ bl UnityEngine.Rendering.ScriptableRenderContext$$ExecuteCommandBuffer
+=== CanvasRT.CanvasRenderTextureRendererPass$$OnRenderCanvasRenderTexture (CanvasRT_CanvasRenderTextureRendererPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData); game 52 ref 54
+--- game
++++ ref
+@@ -7,4 +7,5 @@
+ bl FN
+ bl FN
++ldr  STR _WorldSpaceCameraPos
+ bl FN
+ mov #1
+@@ -39,5 +40,6 @@
+ bl UnityEngine.Rendering.Universal.CameraData$$GetProjectionMatrix
+ bl UnityEngine.Rendering.CommandBuffer$$SetViewProjectionMatrices
+-bl FN
++ldr  STR _WorldSpaceCameraPos
++bl UnityEngine.Shader$$PropertyToID
+ bl UnityEngine.Rendering.CommandBuffer$$SetGlobalVector
+ bl FN
+=== ActorAnimation.CampusActorAnimationJob$$CreateFullBodyIK (ActorAnimation_CampusActorAnimationJob_o __this, UnityEngine_Animator_o* animator, ActorAnimation_IActorAnimationRigData_o* rigData); game 205 ref 205
+--- game
++++ ref
+@@ -74,18 +74,18 @@
+ mov #3
+ bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
++cmp #2
+ cmp #3
+-cmp #2
+-bl UnityEngine.Component$$get_transform
+-mov #2
+-bl ActorAnimation.ActorAnimationIKHintEffector$$.ctor
+-bl UnityEngine.Component$$get_transform
+-bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
+-bl UnityEngine.Component$$get_transform
+-mov #2
+-bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
+-bl UnityEngine.Component$$get_transform
+-bl ActorAnimation.ActorAnimationIKHintEffector$$.ctor
+-bl UnityEngine.Component$$get_transform
+-mov #3
++bl UnityEngine.Component$$get_transform
++mov #3
++bl ActorAnimation.ActorAnimationIKHintEffector$$.ctor
++bl UnityEngine.Component$$get_transform
++bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
++bl UnityEngine.Component$$get_transform
++mov #2
++bl ActorAnimation.ActorAnimationIKGoalEffector$$.ctor
++bl UnityEngine.Component$$get_transform
++bl ActorAnimation.ActorAnimationIKHintEffector$$.ctor
++bl UnityEngine.Component$$get_transform
++mov #2
+ bl ActorAnimation.ActorAnimationIKHintEffector$$.ctor
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<EffectorBase>.Dispose()

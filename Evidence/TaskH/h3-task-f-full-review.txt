@@ -1,0 +1,46 @@
+== VLB.SRPHelper$$IsUsingCustomRenderPipeline ();  game 64 ref 64
+   --- game
+   +++ ref
+   @@ -4,5 +4,5 @@
+    adrp x19,PAGE
+    ldrb w8, DATA
+   -ldr x19, META UnityEngine.Rendering.RenderPipelineManager_TypeInfo
+   +b FN
+    tbnz w8, +N
+    adrp x0,PAGE
+   @@ -17,5 +17,5 @@
+    mov w8, #1
+    strb w8, DATA
+   -ldr x0, [x19]
+   +ldr x0, DATA
+    ldr w8, [x0,#F]
+    cbnz w8, +N
+   @@ -29,9 +29,9 @@
+    mov w8, #1
+    strb w8, DATA
+   -ldr x0, [x19]
+   +ldr x0, DATA
+    ldr w8, [x0,#F]
+    cbnz w8, +N
+    bl FN
+   -ldr x0, [x19]
+   +ldr x0, DATA
+    ldr x8, [x0,#F]
+    ldr x8, [x8,#F]
+== VL.Animation.MotionLayerPlayable$$OnPlayableDestroy (VL_Animation_MotionLayerPlayable_o* __this, UnityEngine_Playables_Playable_o playable);  game 59 ref 59
+   --- game
+   +++ ref
+   @@ -8,5 +8,5 @@
+    ldrb w8, DATA
+    ldr x24, MMETH Method$UnityEngine.Playables.PlayableExtensions.DisconnectInput<Playable>()
+   -ldr x22, MMETH Method$UnityEngine.Playables.PlayableExtensions.Destroy<AnimationMixerPlayable>()
+   +b FN
+    mov x20, x2
+    mov x21, x1
+   @@ -30,5 +30,5 @@
+    bl UnityEngine.Playables.PlayableExtensions$$DisconnectInput<Playable>
+    ldp x0, x1, [x19,#F]
+   -ldr x2, [x22]
+   +ldr x2, MMETH Method$UnityEngine.Pool.CollectionPool<HashSet<Transform>, Transform>.Release()
+    bl UnityEngine.Playables.PlayableExtensions$$Destroy<AnimationMixerPlayable>
+    ldr x8, [x19,#F]

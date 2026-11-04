@@ -1,0 +1,213 @@
+{
+  "H": {
+    "previousSame": 797,
+    "currentSame": 793,
+    "newFlags": [
+      {
+        "method": "ActorAnimation.ActorSwingBreastBone$$.ctor",
+        "similarity": 0.892,
+        "note": "semantic"
+      },
+      {
+        "method": "ActorAnimation.ActorSwingChain$$.ctor",
+        "similarity": 0.989,
+        "note": "layout"
+      },
+      {
+        "method": "ActorAnimation.ActorSwingDynamicBone$$.ctor",
+        "similarity": 0.897,
+        "note": "semantic"
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$ApplyActorSwingCmmnHeightCorrection",
+        "similarity": 0.129,
+        "note": "layout"
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusJointLimit",
+        "similarity": 0.783,
+        "note": "semantic"
+      },
+      {
+        "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit",
+        "similarity": 0.342,
+        "note": "semantic"
+      },
+      {
+        "method": "Campus.Common.CampusActorController$$.cctor",
+        "similarity": 0.31,
+        "note": "semantic"
+      },
+      {
+        "method": "Campus.Common.CampusActorController$$SetOverrideMaterialProperty",
+        "similarity": 0.989,
+        "note": "semantic"
+      },
+      {
+        "method": "Campus.Common.Live.CampusLiveTimelineController$$DisableAllCharacterTracks",
+        "similarity": 0.99,
+        "note": "semantic"
+      },
+      {
+        "method": "Campus.Common.Live.CampusLiveTimelineController$$IsLookAtEnableProhibited",
+        "similarity": 0.974,
+        "note": "semantic"
+      }
+    ],
+    "nowSame": [
+      "Campus.Common.CampusActorController.<>c$$.cctor",
+      "Campus.Common.Live.CampusLiveTimelineController$$GetFieldConstraintTargets",
+      "Campus.Live.Equipment.Environment.LiveDirectionalLight$$.ctor",
+      "Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3$$MoveNext",
+      "Campus.Live.Equipment.Environment.LiveLaser$$.ctor",
+      "Campus.Live.Equipment.Environment.LiveLaser$$get_GatherProperties"
+    ],
+    "missing": [
+      "FasterLinq$$Select<ExamBattleResult, int>",
+      "FasterLinq$$Select<ExamBattleResult, object>",
+      "FasterLinq$$Select<Int32Enum, UniTask>",
+      "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, long>>",
+      "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
+      "FasterLinq$$Select<Int32Enum, ValueTuple<object, Int32Enum, long, long>>",
+      "FasterLinq$$Select<Int32Enum, object>",
+      "FasterLinq$$Select<MessageLogSoundInfo, UniTask>",
+      "FasterLinq$$Select<ValueTuple<Int32Enum, int, object>, object>",
+      "FasterLinq$$Select<ValueTuple<Int32Enum, object, object>, ValueTuple<object, object>>",
+      "FasterLinq$$Select<ValueTuple<Int32Enum, object>, object>",
+      "FasterLinq$$Select<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>",
+      "FasterLinq$$Select<ValueTuple<int, object, object, object, object>, object>",
+      "FasterLinq$$Select<ValueTuple<int, object, object>, ValueTuple<int, object>>",
+      "FasterLinq$$Select<ValueTuple<int, object, object>, int>",
+      "FasterLinq$$Select<ValueTuple<int, object, object>, object>",
+      "FasterLinq$$Select<ValueTuple<int, object>, object>",
+      "FasterLinq$$Select<ValueTuple<object, Int32Enum>, object>",
+      "FasterLinq$$Select<ValueTuple<object, bool>, object>",
+      "FasterLinq$$Select<ValueTuple<object, int, int>, object>",
+      "FasterLinq$$Select<ValueTuple<object, int, object, object, object>, object>",
+      "FasterLinq$$Select<ValueTuple<object, int>, object>",
+      "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
+      "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>",
+      "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<object, object>>",
+      "FasterLinq$$Select<ValueTuple<object, object>, object>",
+      "FasterLinq$$Select<int, int>",
+      "FasterLinq$$Select<int, object>",
+      "FasterLinq$$Select<object, Color>",
+      "FasterLinq$$Select<object, Int32Enum>",
+      "FasterLinq$$Select<object, MessageLogSoundInfo>",
+      "FasterLinq$$Select<object, Nullable<int>>",
+      "FasterLinq$$Select<object, ProduceCardFilterElement>",
+      "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>",
+      "FasterLinq$$Select<object, UniTask<bool>>",
+      "FasterLinq$$Select<object, UniTask<object>>",
+      "FasterLinq$$Select<object, UniTask>",
+      "FasterLinq$$Select<object, ValueTuple<Int32Enum, int, object, object>>",
+      "FasterLinq$$Select<object, ValueTuple<Int32Enum, object>>",
+      "FasterLinq$$Select<object, ValueTuple<object, bool>>",
+      "FasterLinq$$Select<object, ValueTuple<object, int, object, object, object>>",
+      "FasterLinq$$Select<object, ValueTuple<object, int>>",
+      "FasterLinq$$Select<object, ValueTuple<object, object, object>>",
+      "FasterLinq$$Select<object, ValueTuple<object, object>>",
+      "FasterLinq$$Select<object, Vector2>",
+      "FasterLinq$$Select<object, bool>",
+      "FasterLinq$$Select<object, float>",
+      "FasterLinq$$Select<object, long>",
+      "FasterLinq$$Select<uint, Color>",
+      "FasterLinq$$Select<uint, bool>",
+      "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray",
+      "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray",
+      "FasterLinq.SelectArray<Int32Enum, UniTask>$$ToArray",
+      "FasterLinq.SelectArray<Int32Enum, ValueTuple<Int32Enum, object>>$$ToArray",
+      "FasterLinq.SelectArray<Int32Enum, object>$$ToArray",
+      "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<int, object, object>, ValueTuple<int, object>>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<int, object, object>, int>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<int, object, object>, object>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, Int32Enum>, object>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, int, int>, object>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, int, object, object, object>, object>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, int>, object>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, object, object>, object>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToArray",
+      "FasterLinq.SelectArray<ValueTuple<object, object>, object>$$ToArray",
+      "FasterLinq.SelectArray<int, int>$$ToArray",
+      "FasterLinq.SelectArray<int, object>$$ToArray",
+      "FasterLinq.SelectArray<object, Color>$$ToArray",
+      "FasterLinq.SelectArray<object, Int32Enum>$$ToArray",
+      "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray",
+      "FasterLinq.SelectArray<object, UniTask<bool>>$$ToArray",
+      "FasterLinq.SelectArray<object, UniTask<object>>$$ToArray",
+      "FasterLinq.SelectArray<object, UniTask>$$ToArray",
+      "FasterLinq.SelectArray<object, ValueTuple<Int32Enum, int, object, object>>$$ToArray",
+      "FasterLinq.SelectArray<object, ValueTuple<object, bool>>$$ToArray",
+      "FasterLinq.SelectArray<object, ValueTuple<object, int, object, object, object>>$$ToArray",
+      "FasterLinq.SelectArray<object, ValueTuple<object, object>>$$ToArray",
+      "FasterLinq.SelectArray<object, Vector2>$$ToArray",
+      "FasterLinq.SelectArray<object, bool>$$ToArray",
+      "FasterLinq.SelectArray<object, float>$$ToArray",
+      "FasterLinq.SelectArray<object, long>$$ToArray",
+      "FasterLinq.SelectArray<uint, Color>$$ToArray",
+      "FasterLinq.SelectArray<uint, bool>$$ToArray",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool>",
+      "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Int32Enum>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<UniTask>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, Int32Enum, Int32Enum, Int32Enum, Int32Enum, object>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, int, object>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, bool>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int, object>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, object, bool>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, int, int>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Nullable<bool>>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, bool, bool>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, bool, int>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, int>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, bool, bool>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, object>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object>>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<bool>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<byte>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<float>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<int>",
+      "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<long>"
+    ]
+  },
+  "F": {
+    "previousSame": 630,
+    "currentSame": 629,
+    "newFlags": [
+      {
+        "method": "VL.Animation.MotionLayerPlayable$$OnPlayableDestroy",
+        "similarity": 0.966,
+        "note": "semantic"
+      },
+      {
+        "method": "VLB.SRPHelper$$IsUsingCustomRenderPipeline",
+        "similarity": 0.938,
+        "note": "semantic"
+      }
+    ],
+    "nowSame": [
+      "VL.MotionDefinePlayable$$OnBehaviourPause"
+    ],
+    "missing": []
+  }
+}

@@ -1,0 +1,375 @@
+=== CanvasRT.CanvasRenderTextureRendererPass$$Draw3DImage @ 0xdd27dc8 (373 insns)
+    void CanvasRT_CanvasRenderTextureRendererPass__Draw3DImage (CanvasRT_CanvasRenderTextureRendererPass_o* __this, UnityEngine_Rendering_ScriptableRenderContext_o context, UnityEngine_Rendering_Universal_RenderingData_o* renderingData, UnityEngine_Rendering_CommandBuffer_o* cmd, Campus_Live_Monitor_Monitor3DImage_o* image, const MethodInfo* method);
+  0dd27dc8  stp     d15, d14, [sp, #-0xa0]!
+  0dd27dcc  stp     d13, d12, [sp, #0x10]
+  0dd27dd0  stp     d11, d10, [sp, #0x20]
+  0dd27dd4  stp     d9, d8, [sp, #0x30]
+  0dd27dd8  str     x29, [sp, #0x40]
+  0dd27ddc  stp     x30, x27, [sp, #0x50]
+  0dd27de0  stp     x26, x25, [sp, #0x60]
+  0dd27de4  stp     x24, x23, [sp, #0x70]
+  0dd27de8  stp     x22, x21, [sp, #0x80]
+  0dd27dec  stp     x20, x19, [sp, #0x90]
+  0dd27df0  sub     sp, sp, #0x470
+  0dd27df4  mrs     x26, tpidr_el0
+  0dd27df8  adrp    x21, #0xf43b000
+  0dd27dfc  mov     x22, x4
+  0dd27e00  ldr     x8, [x26, #0x28]
+  0dd27e04  mov     x24, x3
+  0dd27e08  mov     x19, x2
+  0dd27e0c  mov     x20, x0
+  0dd27e10  str     x8, [sp, #0x468]
+  0dd27e14  ldrb    w8, [x21, #0x807]
+  0dd27e18  str     x1, [sp, #0x2d8]
+  0dd27e1c  tbnz    w8, #0, #0xdd27e70
+  0dd27e20  adrp    x0, #0xea66000
+  0dd27e24  ldr     x0, [x0, #0xdb0]  ; META Campus.Common.CampusActorController_TypeInfo
+  0dd27e28  bl      #0x63cee78
+  0dd27e2c  adrp    x0, #0xebc2000
+  0dd27e30  ldr     x0, [x0, #0xb08]  ; META Campus.Rendering.CampusActorParameterPass_TypeInfo
+  0dd27e34  bl      #0x63cee78
+  0dd27e38  adrp    x0, #0xeac2000
+  0dd27e3c  ldr     x0, [x0, #0xc80]  ; META Cinemachine.LensSettings_TypeInfo
+  0dd27e40  bl      #0x63cee78
+  0dd27e44  adrp    x0, #0xea65000
+  0dd27e48  ldr     x0, [x0, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd27e4c  bl      #0x63cee78
+  0dd27e50  adrp    x0, #0xea6a000
+  0dd27e54  ldr     x0, [x0, #0xcd0]  ; META UnityEngine.Rendering.ScriptableRenderContext_TypeInfo
+  0dd27e58  bl      #0x63cee78
+  0dd27e5c  adrp    x0, #0xea69000
+  0dd27e60  ldr     x0, [x0, #0xfa0]  ; META UnityEngine.Rendering.VolumeManager_TypeInfo
+  0dd27e64  bl      #0x63cee78
+  0dd27e68  mov     w8, #1
+  0dd27e6c  strb    w8, [x21, #0x807]
+  0dd27e70  movi    v0.2d, #0000000000000000
+  0dd27e74  add     x0, sp, #0x3a4
+  0dd27e78  mov     w1, wzr
+  0dd27e7c  mov     w2, #0xc4
+  0dd27e80  stp     q0, q0, [sp, #0x1e0]
+  0dd27e84  stp     q0, q0, [sp, #0x210]
+  0dd27e88  stp     q0, q0, [sp, #0x230]
+  0dd27e8c  stp     q0, q0, [sp, #0x250]
+  0dd27e90  stp     q0, q0, [sp, #0x270]
+  0dd27e94  stp     q0, q0, [sp, #0x290]
+  0dd27e98  stp     q0, q0, [sp, #0x2b0]
+  0dd27e9c  str     q0, [sp, #0x200]
+  0dd27ea0  bl      #0xe1b83e0
+  0dd27ea4  movi    v0.2d, #0000000000000000
+  0dd27ea8  stp     q0, q0, [sp, #0x1a0]
+  0dd27eac  stp     q0, q0, [sp, #0x1c0]
+  0dd27eb0  cbz     x22, #0xdd28384
+  0dd27eb4  ldr     x21, [x22, #0x20]
+  0dd27eb8  cbz     x21, #0xdd28384
+  0dd27ebc  adrp    x25, #0xea69000
+  0dd27ec0  mov     x0, x21
+  0dd27ec4  mov     x1, xzr
+  0dd27ec8  ldr     x25, [x25, #0xfa0]  ; META UnityEngine.Rendering.VolumeManager_TypeInfo
+  0dd27ecc  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd27ed0  ldr     x8, [x20, #0x1b8]
+  0dd27ed4  mov     x23, x0
+  0dd27ed8  cbnz    x8, #0xdd27f10
+  0dd27edc  ldr     x0, [x25]
+  0dd27ee0  ldr     w8, [x0, #0xe4]
+  0dd27ee4  cbnz    w8, #0xdd27eec
+  0dd27ee8  bl      #0x63ceff4
+  0dd27eec  mov     x0, xzr
+  0dd27ef0  bl      #0xd7a995c  ; -> UnityEngine.Rendering.VolumeManager$$get_instance
+  0dd27ef4  cbz     x0, #0xdd28384
+  0dd27ef8  mov     x1, xzr
+  0dd27efc  bl      #0xd7ac198  ; -> UnityEngine.Rendering.VolumeManager$$CreateStack
+  0dd27f00  mov     x1, x0
+  0dd27f04  str     x0, [x20, #0x1b8]
+  0dd27f08  add     x0, x20, #0x1b8
+  0dd27f0c  bl      #0x63cee24
+  0dd27f10  ldr     x0, [x25]
+  0dd27f14  ldr     w8, [x0, #0xe4]
+  0dd27f18  cbnz    w8, #0xdd27f20
+  0dd27f1c  bl      #0x63ceff4
+  0dd27f20  mov     x0, xzr
+  0dd27f24  bl      #0xd7a995c  ; -> UnityEngine.Rendering.VolumeManager$$get_instance
+  0dd27f28  cbz     x0, #0xdd28384
+  0dd27f2c  adrp    x25, #0xebc2000
+  0dd27f30  adrp    x27, #0xea6a000
+  0dd27f34  mov     x2, x23
+  0dd27f38  ldr     x25, [x25, #0xb08]  ; META Campus.Rendering.CampusActorParameterPass_TypeInfo
+  0dd27f3c  ldr     x27, [x27, #0xcd0]  ; META UnityEngine.Rendering.ScriptableRenderContext_TypeInfo
+  0dd27f40  ldr     w3, [x20, #0x1c0]
+  0dd27f44  ldr     x1, [x20, #0x1b8]
+  0dd27f48  mov     x4, xzr
+  0dd27f4c  bl      #0xd7ac99c  ; -> UnityEngine.Rendering.VolumeManager$$Update
+  0dd27f50  ldr     x0, [x25]
+  0dd27f54  ldr     x25, [x20, #0x1b8]
+  0dd27f58  ldr     w8, [x0, #0xe4]
+  0dd27f5c  cbnz    w8, #0xdd27f64
+  0dd27f60  bl      #0x63ceff4
+  0dd27f64  mov     x0, x24
+  0dd27f68  mov     x1, x25
+  0dd27f6c  mov     x2, x23
+  0dd27f70  mov     x3, xzr
+  0dd27f74  bl      #0xddcf4d8  ; -> Campus.Rendering.CampusActorParameterPass$$UpdateActorCommand
+  0dd27f78  ldr     x0, [x27]
+  0dd27f7c  ldr     w8, [x0, #0xe4]
+  0dd27f80  cbnz    w8, #0xdd27f88
+  0dd27f84  bl      #0x63ceff4
+  0dd27f88  add     x0, sp, #0x2d8
+  0dd27f8c  mov     x1, x24
+  0dd27f90  mov     x2, xzr
+  0dd27f94  bl      #0xda14ca4  ; -> UnityEngine.Rendering.ScriptableRenderContext$$ExecuteCommandBuffer
+  0dd27f98  cbz     x24, #0xdd28384
+  0dd27f9c  mov     x0, x24
+  0dd27fa0  mov     x1, xzr
+  0dd27fa4  bl      #0xda04cfc  ; -> UnityEngine.Rendering.CommandBuffer$$Clear
+  0dd27fa8  mov     x0, x22
+  0dd27fac  mov     x1, xzr
+  0dd27fb0  bl      #0xddadab8  ; -> Campus.Live.Monitor.Monitor3DImage$$GetViewportRect
+  0dd27fb4  cbz     x23, #0xdd28384
+  0dd27fb8  adrp    x24, #0xea65000
+  0dd27fbc  mov     x0, x23
+  0dd27fc0  mov     x1, xzr
+  0dd27fc4  ldr     x24, [x24, #0x718]  ; META UnityEngine.Object_TypeInfo
+  0dd27fc8  fmov    s8, s0
+  0dd27fcc  fmov    s9, s1
+  0dd27fd0  fmov    s10, s2
+  0dd27fd4  fmov    s11, s3
+  0dd27fd8  bl      #0xd9eee58  ; -> UnityEngine.Transform$$get_position
+  0dd27fdc  add     x8, sp, #0x2e0
+  0dd27fe0  mov     x0, x23
+  0dd27fe4  mov     x1, xzr
+  0dd27fe8  fmov    s12, s0
+  0dd27fec  fmov    s13, s1
+  0dd27ff0  fmov    s14, s2
+  0dd27ff4  bl      #0xd9effc4  ; -> UnityEngine.Transform$$get_worldToLocalMatrix
+  0dd27ff8  ldp     q0, q1, [sp, #0x2e0]
+  0dd27ffc  ldr     x0, [x24]
+  0dd28000  ldr     x24, [x22, #0x28]
+  0dd28004  ldr     w8, [x0, #0xe4]
+  0dd28008  stp     q0, q1, [sp, #0x290]
+  0dd2800c  ldp     q2, q0, [sp, #0x300]
+  0dd28010  stp     q2, q0, [sp, #0x2b0]
+  0dd28014  cbnz    w8, #0xdd2801c
+  0dd28018  bl      #0x63ceff4
+  0dd2801c  mov     x0, x24
+  0dd28020  mov     x1, xzr
+  0dd28024  mov     x2, xzr
+  0dd28028  bl      #0xd9db6c4  ; -> UnityEngine.Object$$op_Inequality
+  0dd2802c  tbz     w0, #0, #0xdd281e0
+  0dd28030  ldr     x0, [x22, #0x28]
+  0dd28034  cbz     x0, #0xdd28384
+  0dd28038  mov     x1, xzr
+  0dd2803c  bl      #0xddedd50  ; -> Campus.Common.CampusVirtualActorController$$get_HumanScale
+  0dd28040  adrp    x24, #0xea66000
+  0dd28044  fmov    s15, s0
+  0dd28048  ldr     x24, [x24, #0xdb0]  ; META Campus.Common.CampusActorController_TypeInfo
+  0dd2804c  ldr     x0, [x24]
+  0dd28050  ldr     w8, [x0, #0xe4]
+  0dd28054  cbnz    w8, #0xdd28060
+  0dd28058  bl      #0x63ceff4
+  0dd2805c  ldr     x0, [x24]
+  0dd28060  ldr     x8, [x22, #0x28]
+  0dd28064  str     s11, [sp, #0x1c]
+  0dd28068  cbz     x8, #0xdd28384
+  0dd2806c  ldr     x9, [x0, #0xb8]
+  0dd28070  mov     x0, x8
+  0dd28074  mov     x1, xzr
+  0dd28078  stp     s10, s9, [sp, #0x10]
+  0dd2807c  ldr     s11, [x9, #8]
+  0dd28080  str     s8, [sp, #0x18]
+  0dd28084  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd28088  cbz     x0, #0xdd28384
+  0dd2808c  add     x8, sp, #0x2e0
+  0dd28090  mov     x1, xzr
+  0dd28094  bl      #0xd9effc4  ; -> UnityEngine.Transform$$get_worldToLocalMatrix
+  0dd28098  ldp     q0, q1, [sp, #0x2e0]
+  0dd2809c  add     x0, sp, #0x1a0
+  0dd280a0  mov     x1, xzr
+  0dd280a4  stp     q0, q1, [sp, #0x1a0]
+  0dd280a8  ldp     q0, q2, [sp, #0x300]
+  0dd280ac  fmov    s1, s13
+  0dd280b0  stp     q0, q2, [sp, #0x1c0]
+  0dd280b4  fmov    s0, s12
+  0dd280b8  fmov    s2, s14
+  0dd280bc  bl      #0xd9c8380  ; -> UnityEngine.Matrix4x4$$MultiplyPoint
+  0dd280c0  ldr     x0, [x22, #0x28]
+  0dd280c4  cbz     x0, #0xdd28384
+  0dd280c8  mov     x1, xzr
+  0dd280cc  fmov    s8, s0
+  0dd280d0  fmov    s9, s1
+  0dd280d4  fmov    s10, s2
+  0dd280d8  bl      #0xd9d7844  ; -> UnityEngine.Component$$get_transform
+  0dd280dc  cbz     x0, #0xdd28384
+  0dd280e0  fdiv    s0, s15, s11
+  0dd280e4  add     x8, sp, #0x160
+  0dd280e8  mov     x1, xzr
+  0dd280ec  fmul    s8, s0, s8
+  0dd280f0  fmul    s9, s0, s9
+  0dd280f4  fmul    s10, s0, s10
+  0dd280f8  bl      #0xd9ee838  ; -> UnityEngine.Transform$$get_localToWorldMatrix
+  0dd280fc  ldp     q0, q1, [sp, #0x160]
+  0dd28100  add     x0, sp, #0x1a0
+  0dd28104  mov     x1, xzr
+  0dd28108  stp     q0, q1, [sp, #0x1a0]
+  0dd2810c  ldp     q0, q2, [sp, #0x180]
+  0dd28110  fmov    s1, s9
+  0dd28114  stp     q0, q2, [sp, #0x1c0]
+  0dd28118  fmov    s0, s8
+  0dd2811c  fmov    s2, s10
+  0dd28120  bl      #0xd9c8380  ; -> UnityEngine.Matrix4x4$$MultiplyPoint
+  0dd28124  mov     x0, x23
+  0dd28128  mov     x1, xzr
+  0dd2812c  fmov    s12, s0
+  0dd28130  fmov    s13, s1
+  0dd28134  fmov    s14, s2
+  0dd28138  bl      #0xd9ef374  ; -> UnityEngine.Transform$$get_rotation
+  0dd2813c  fmov    s15, s0
+  0dd28140  fmov    s8, s1
+  0dd28144  adrp    x22, #0xf400000
+  0dd28148  fmov    s9, s2
+  0dd2814c  fmov    s10, s3
+  0dd28150  ldrb    w8, [x22, #0x251]
+  0dd28154  cbnz    w8, #0xdd2816c
+  0dd28158  adrp    x0, #0xea67000
+  0dd2815c  ldr     x0, [x0, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0dd28160  bl      #0x63cee78
+  0dd28164  mov     w8, #1
+  0dd28168  strb    w8, [x22, #0x251]
+  0dd2816c  adrp    x8, #0xea67000
+  0dd28170  fmov    s1, s13
+  0dd28174  fmov    s2, s14
+  0dd28178  ldr     x8, [x8, #0x438]  ; META UnityEngine.Vector3_TypeInfo
+  0dd2817c  fmov    s3, s15
+  0dd28180  fmov    s4, s8
+  0dd28184  fmov    s5, s9
+  0dd28188  fmov    s6, s10
+  0dd2818c  mov     x0, xzr
+  0dd28190  ldr     x8, [x8]
+  0dd28194  ldr     x8, [x8, #0xb8]
+  0dd28198  ldr     s0, [x8, #0x14]
+  0dd2819c  ldur    x9, [x8, #0xc]
+  0dd281a0  add     x8, sp, #0x120
+  0dd281a4  str     s0, [sp, #8]
+  0dd281a8  fmov    s0, s12
+  0dd281ac  str     x9, [sp]
+  0dd281b0  bl      #0xd9c720c  ; -> UnityEngine.Matrix4x4$$TRS
+  0dd281b4  ldp     q0, q1, [sp, #0x120]
+  0dd281b8  add     x8, sp, #0x290
+  0dd281bc  add     x0, sp, #0x1a0
+  0dd281c0  mov     x1, xzr
+  0dd281c4  stp     q0, q1, [sp, #0x1a0]
+  0dd281c8  ldp     q0, q2, [sp, #0x140]
+  0dd281cc  stp     q0, q2, [sp, #0x1c0]
+  0dd281d0  bl      #0xd9c7430  ; -> UnityEngine.Matrix4x4$$get_inverse
+  0dd281d4  ldp     s9, s8, [sp, #0x14]
+  0dd281d8  ldr     s10, [sp, #0x10]
+  0dd281dc  ldr     s11, [sp, #0x1c]
+  0dd281e0  fmov    s0, #1.00000000
+  0dd281e4  fmov    s1, #1.00000000
+  0dd281e8  adrp    x22, #0xeac2000
+  0dd281ec  fmov    s2, #-1.00000000
+  0dd281f0  ldr     x22, [x22, #0xc80]  ; META Cinemachine.LensSettings_TypeInfo
+  0dd281f4  add     x8, sp, #0x2e0
+  0dd281f8  mov     x0, xzr
+  0dd281fc  bl      #0xd9c84ac  ; -> UnityEngine.Matrix4x4$$Scale
+  0dd28200  ldp     q0, q1, [sp, #0x290]
+  0dd28204  add     x8, sp, #0x160
+  0dd28208  add     x0, sp, #0xe0
+  0dd2820c  add     x1, sp, #0xa0
+  0dd28210  mov     x2, xzr
+  0dd28214  stp     q0, q1, [sp, #0xa0]
+  0dd28218  ldp     q0, q2, [sp, #0x2b0]
+  0dd2821c  stp     q0, q2, [sp, #0xc0]
+  0dd28220  ldp     q1, q0, [sp, #0x2e0]
+  0dd28224  stp     q1, q0, [sp, #0xe0]
+  0dd28228  ldp     q2, q0, [sp, #0x300]
+  0dd2822c  stp     q2, q0, [sp, #0x100]
+  0dd28230  bl      #0xd9c8008  ; -> UnityEngine.Matrix4x4$$op_Multiply
+  0dd28234  ldp     q0, q1, [sp, #0x160]
+  0dd28238  ldr     x0, [x22]
+  0dd2823c  ldr     w8, [x0, #0xe4]
+  0dd28240  stp     q0, q1, [sp, #0x250]
+  0dd28244  ldp     q0, q2, [sp, #0x180]
+  0dd28248  stp     q0, q2, [sp, #0x270]
+  0dd2824c  ldp     q1, q0, [x21, #0x80]
+  0dd28250  ldr     q2, [x21, #0xa0]
+  0dd28254  stp     q1, q0, [sp, #0x220]
+  0dd28258  str     q2, [sp, #0x240]
+  0dd2825c  cbnz    w8, #0xdd28264
+  0dd28260  bl      #0x63ceff4
+  0dd28264  ldrb    w8, [sp, #0x244]
+  0dd28268  cbz     w8, #0xdd2828c
+  0dd2826c  ldr     x0, [x22]
+  0dd28270  ldr     w8, [x0, #0xe4]
+  0dd28274  cbnz    w8, #0xdd2827c
+  0dd28278  bl      #0x63ceff4
+  0dd2827c  add     x0, sp, #0x220
+  0dd28280  mov     x1, xzr
+  0dd28284  bl      #0x879911c  ; -> Cinemachine.LensSettings$$FocalLengthToVerticalFOV
+  0dd28288  b       #0xdd28290
+  0dd2828c  ldr     s0, [sp, #0x220]
+  0dd28290  fdiv    s1, s10, s11
+  0dd28294  ldr     s2, [sp, #0x228]
+  0dd28298  ldr     s3, [sp, #0x22c]
+  0dd2829c  add     x8, sp, #0x160
+  0dd282a0  mov     x0, xzr
+  0dd282a4  bl      #0xd9c7720  ; -> UnityEngine.Matrix4x4$$Perspective
+  0dd282a8  ldp     q0, q1, [sp, #0x160]
+  0dd282ac  add     x8, sp, #0x2e0
+  0dd282b0  ldr     x1, [x20, #0x190]
+  0dd282b4  mov     x0, x20
+  0dd282b8  mov     x2, x19
+  0dd282bc  mov     w3, #0x12
+  0dd282c0  mov     x4, xzr
+  0dd282c4  stp     q0, q1, [sp, #0x1e0]
+  0dd282c8  ldp     q0, q2, [sp, #0x180]
+  0dd282cc  stp     q0, q2, [sp, #0x200]
+  0dd282d0  bl      #0xd8075f0  ; -> UnityEngine.Rendering.Universal.ScriptableRenderPass$$CreateDrawingSettings
+  0dd282d4  add     x0, sp, #0x3a4
+  0dd282d8  add     x1, sp, #0x2e0
+  0dd282dc  mov     w2, #0xc4
+  0dd282e0  bl      #0xe1b8430
+  0dd282e4  ldr     x0, [x20, #0x1a0]
+  0dd282e8  cbz     x0, #0xdd28384
+  0dd282ec  ldp     q0, q1, [sp, #0x250]
+  0dd282f0  fmov    s3, s8
+  0dd282f4  fmov    s4, s9
+  0dd282f8  fmov    s5, s10
+  0dd282fc  fmov    s6, s11
+  0dd28300  ldr     x1, [sp, #0x2d8]
+  0dd28304  add     x3, sp, #0x3a4
+  0dd28308  add     x4, sp, #0x60
+  0dd2830c  stp     q0, q1, [sp, #0x60]
+  0dd28310  ldp     q0, q2, [sp, #0x270]
+  0dd28314  add     x5, sp, #0x20
+  0dd28318  mov     x2, x19
+  0dd2831c  mov     x6, xzr
+  0dd28320  stp     q0, q2, [sp, #0x80]
+  0dd28324  ldp     q1, q0, [sp, #0x1e0]
+  0dd28328  stp     q1, q0, [sp, #0x20]
+  0dd2832c  ldp     q2, q0, [sp, #0x200]
+  0dd28330  fmov    s1, s13
+  0dd28334  stp     q2, q0, [sp, #0x40]
+  0dd28338  fmov    s0, s12
+  0dd2833c  fmov    s2, s14
+  0dd28340  bl      #0xde2ffa4  ; -> Campus.Common.UIDrawObjects$$Execute
+  0dd28344  ldr     x8, [x26, #0x28]
+  0dd28348  ldr     x9, [sp, #0x468]
+  0dd2834c  cmp     x8, x9
+  0dd28350  b.ne    #0xdd28398
+  0dd28354  add     sp, sp, #0x470
+  0dd28358  ldp     x20, x19, [sp, #0x90]
+  0dd2835c  ldr     x29, [sp, #0x40]
+  0dd28360  ldp     x22, x21, [sp, #0x80]
+  0dd28364  ldp     x24, x23, [sp, #0x70]
+  0dd28368  ldp     x26, x25, [sp, #0x60]
+  0dd2836c  ldp     x30, x27, [sp, #0x50]
+  0dd28370  ldp     d9, d8, [sp, #0x30]
+  0dd28374  ldp     d11, d10, [sp, #0x20]
+  0dd28378  ldp     d13, d12, [sp, #0x10]
+  0dd2837c  ldp     d15, d14, [sp], #0xa0
+  0dd28380  ret     
+  0dd28384  ldr     x8, [x26, #0x28]
+  0dd28388  ldr     x9, [sp, #0x468]
+  0dd2838c  cmp     x8, x9
+  0dd28390  b.ne    #0xdd28398
+  0dd28394  bl      #0x63cf120
+  0dd28398  bl      #0xe1b8490

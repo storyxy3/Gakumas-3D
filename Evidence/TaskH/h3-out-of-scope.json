@@ -1,0 +1,597 @@
+[
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq",
+    "method": "FasterLinq$$Select<ExamBattleResult, int>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x92183c4"
+    ],
+    "missingSignatures": [
+      "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "exam battle / contest",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq$$Select<ExamBattleResult, int>",
+        "apkAddress": "0x92183c4",
+        "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);",
+        "callers": [
+          {
+            "callAddress": "0x6aef65c",
+            "callerAddress": "0x6aef558",
+            "callerNames": [
+              "Campus.InGame.AngyaExamParam$$get_PlayerScoreList"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq$$Select<ExamBattleResult, int>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq",
+    "method": "FasterLinq$$Select<ExamBattleResult, object>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x921842c"
+    ],
+    "missingSignatures": [
+      "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "exam battle / contest",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq$$Select<ExamBattleResult, object>",
+        "apkAddress": "0x921842c",
+        "signature": "(Campus_InGame_Contest_ExamBattleResult_array* source, System_Func_TSource__TResult__o* selector);",
+        "callers": [
+          {
+            "callAddress": "0x81f3d1c",
+            "callerAddress": "0x81f3ba0",
+            "callerNames": [
+              "Campus.InGame.Exam.ExamScreenModel$$SetExamBattleAutoPlayerSelectIndexList"
+            ]
+          },
+          {
+            "callAddress": "0x81f3dd0",
+            "callerAddress": "0x81f3ba0",
+            "callerNames": [
+              "Campus.InGame.Exam.ExamScreenModel$$SetExamBattleAutoPlayerSelectIndexList"
+            ]
+          },
+          {
+            "callAddress": "0x84390ec",
+            "callerAddress": "0x8439028",
+            "callerNames": [
+              "Campus.OutGame.AngyaUtility$$ConvertToServerResult"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq$$Select<ExamBattleResult, object>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq",
+    "method": "FasterLinq$$Select<MessageLogSoundInfo, UniTask>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x921890c"
+    ],
+    "missingSignatures": [
+      "(Campus_Common_MessageLogSoundInfo_array* source, System_Func_TSource__TResult__o* selector);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "message-log / ADV log",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq$$Select<MessageLogSoundInfo, UniTask>",
+        "apkAddress": "0x921890c",
+        "signature": "(Campus_Common_MessageLogSoundInfo_array* source, System_Func_TSource__TResult__o* selector);",
+        "callers": [
+          {
+            "callAddress": "0x724f920",
+            "callerAddress": "0x724f66c",
+            "callerNames": [
+              "Campus.Common.MessageLogGroupPresenter.<ToggleVoiceAsync>d__7$$MoveNext"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq$$Select<MessageLogSoundInfo, UniTask>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq",
+    "method": "FasterLinq$$Select<object, MessageLogSoundInfo>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x92191fc"
+    ],
+    "missingSignatures": [
+      "(System_Object_array* source, System_Func_TSource__TResult__o* selector);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "message-log / ADV log",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq$$Select<object, MessageLogSoundInfo>",
+        "apkAddress": "0x92191fc",
+        "signature": "(System_Object_array* source, System_Func_TSource__TResult__o* selector);",
+        "callers": [
+          {
+            "callAddress": "0x711776c",
+            "callerAddress": "0x7117674",
+            "callerNames": [
+              "Campus.Common.AdvLogModel$$CreateSoundInfo"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq$$Select<object, MessageLogSoundInfo>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq",
+    "method": "FasterLinq$$Select<object, ProduceCardFilterElement>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x9219334"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "produce progression / card selection",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq$$Select<object, ProduceCardFilterElement>",
+        "apkAddress": "0x9219334",
+        "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+        "callers": [
+          {
+            "callAddress": "0x68c6f10",
+            "callerAddress": "0x68c6558",
+            "callerNames": [
+              "Campus.OutGame.MemoryFilterSheetPresenter.<OpenProduceCardNameSheetAsync>d__22$$MoveNext"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq$$Select<object, ProduceCardFilterElement>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq",
+    "method": "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x921939c"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "produce progression / card selection",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>",
+        "apkAddress": "0x921939c",
+        "signature": "(System_Collections_Generic_List_TSource__o* source, System_Func_TSource__TResult__o* selector);",
+        "callers": [
+          {
+            "callAddress": "0x74c5380",
+            "callerAddress": "0x74c5174",
+            "callerNames": [
+              "Campus.Common.Data.ProduceGrowthPanelExtensions$$GetPanelDescriptionInfo"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq.SelectArray<ExamBattleResult, int>",
+    "method": "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0xb9040a8"
+    ],
+    "missingSignatures": [
+      "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "exam battle / contest",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray",
+        "apkAddress": "0xb9040a8",
+        "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+        "callers": [],
+        "nativeAliases": [
+          "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq.SelectArray<ExamBattleResult, object>",
+    "method": "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0xb9043ec"
+    ],
+    "missingSignatures": [
+      "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "exam battle / contest",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray",
+        "apkAddress": "0xb9043ec",
+        "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+        "callers": [
+          {
+            "callAddress": "0x81f3d30",
+            "callerAddress": "0x81f3ba0",
+            "callerNames": [
+              "Campus.InGame.Exam.ExamScreenModel$$SetExamBattleAutoPlayerSelectIndexList"
+            ]
+          },
+          {
+            "callAddress": "0x81f3de4",
+            "callerAddress": "0x81f3ba0",
+            "callerNames": [
+              "Campus.InGame.Exam.ExamScreenModel$$SetExamBattleAutoPlayerSelectIndexList"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>",
+    "method": "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0xb905684"
+    ],
+    "missingSignatures": [
+      "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "message-log / ADV log",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray",
+        "apkAddress": "0xb905684",
+        "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+        "callers": [],
+        "nativeAliases": [
+          "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "campus-submodule.Runtime",
+    "type": "FasterLinq.SelectArray<object, MessageLogSoundInfo>",
+    "method": "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0xb907c14"
+    ],
+    "missingSignatures": [
+      "(FasterLinq_SelectArray_TSource__TResult__o* __this);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "message-log / ADV log",
+    "scopeEvidence": [
+      {
+        "method": "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray",
+        "apkAddress": "0xb907c14",
+        "signature": "(FasterLinq_SelectArray_TSource__TResult__o* __this);",
+        "callers": [
+          {
+            "callAddress": "0x711778c",
+            "callerAddress": "0x7117674",
+            "callerNames": [
+              "Campus.Common.AdvLogModel$$CreateSoundInfo"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "Qua.Utility",
+    "type": "Qua.Extensions.IDictionaryExtensions",
+    "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x92337e8"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "exam battle / contest",
+    "scopeEvidence": [
+      {
+        "method": "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+        "apkAddress": "0x92337e8",
+        "signature": "(System_Collections_Generic_IDictionary_TKey__TValue__o* self);",
+        "callers": [
+          {
+            "callAddress": "0x7fb7b3c",
+            "callerAddress": "0x7fb7a00",
+            "callerNames": [
+              "Campus.InGame.Contest.ExamDepthFirstSearchSimulator$$GetSearchResult"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "Qua.Utility",
+    "type": "Qua.Extensions.IEnumerableExtensions",
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x923892c"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_IEnumerable_T__o* self);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "April Fool story playback",
+    "scopeEvidence": [
+      {
+        "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
+        "apkAddress": "0x923892c",
+        "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+        "callers": [
+          {
+            "callAddress": "0x6f212a8",
+            "callerAddress": "0x6f21120",
+            "callerNames": [
+              "Campus.OutGame.TourTopScreenPresenter.<WaitEndAprilFoolStoryPlayerWhenIfNeedAsync>d__33$$MoveNext"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "Qua.Utility",
+    "type": "Qua.Extensions.IEnumerableExtensions",
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x9238f1c"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_IEnumerable_T__o* self);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "gasha timeline / model",
+    "scopeEvidence": [
+      {
+        "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
+        "apkAddress": "0x9238f1c",
+        "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+        "callers": [
+          {
+            "callAddress": "0xdd8518c",
+            "callerAddress": "0xdd84b6c",
+            "callerNames": [
+              "Campus.Gasha.GashaTimelineController.<Bind>d__20$$MoveNext"
+            ]
+          },
+          {
+            "callAddress": "0xdd8640c",
+            "callerAddress": "0xdd86178",
+            "callerNames": [
+              "Campus.Gasha.GashaSceneModel$$BuildModelV2"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "Qua.Utility",
+    "type": "Qua.Extensions.IEnumerableExtensions",
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x9239804"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_IEnumerable_T__o* self);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "produce progression / card selection",
+    "scopeEvidence": [
+      {
+        "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
+        "apkAddress": "0x9239804",
+        "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+        "callers": [
+          {
+            "callAddress": "0x68ca0d8",
+            "callerAddress": "0x68c9f2c",
+            "callerNames": [
+              "Campus.OutGame.MemoryFilterSheetPresenter.<SetProduceCardNameAsync>d__17$$MoveNext"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "Qua.Utility",
+    "type": "Qua.Extensions.IEnumerableExtensions",
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x9239980"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_IEnumerable_T__o* self);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "produce progression / card selection",
+    "scopeEvidence": [
+      {
+        "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
+        "apkAddress": "0x9239980",
+        "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+        "callers": [
+          {
+            "callAddress": "0x74c53a8",
+            "callerAddress": "0x74c5174",
+            "callerNames": [
+              "Campus.Common.Data.ProduceGrowthPanelExtensions$$GetPanelDescriptionInfo"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>"
+        ]
+      }
+    ]
+  },
+  {
+    "assembly": "Qua.Utility",
+    "type": "Qua.Extensions.IEnumerableExtensions",
+    "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
+    "status": "out of scope",
+    "sourceStatus": "reconstructed",
+    "rawComparatorStatus": "missing",
+    "apkAddresses": [
+      "0x9239afc"
+    ],
+    "missingSignatures": [
+      "(System_Collections_Generic_IEnumerable_T__o* self);"
+    ],
+    "previousStatus": "not done",
+    "previousSourceStatus": "reconstructed",
+    "scope": "produce progression / card selection",
+    "scopeEvidence": [
+      {
+        "method": "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
+        "apkAddress": "0x9239afc",
+        "signature": "(System_Collections_Generic_IEnumerable_T__o* self);",
+        "callers": [
+          {
+            "callAddress": "0x74be188",
+            "callerAddress": "0x74be000",
+            "callerNames": [
+              "Campus.Common.Data.ProduceGrowthPanelParameterData$$GetFinalParameter"
+            ]
+          },
+          {
+            "callAddress": "0x74be9c4",
+            "callerAddress": "0x74be8ec",
+            "callerNames": [
+              "Campus.Common.Data.ProduceGrowthPanelParameterData$$GetSelectionParameter"
+            ]
+          }
+        ],
+        "nativeAliases": [
+          "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>"
+        ]
+      }
+    ]
+  }
+]

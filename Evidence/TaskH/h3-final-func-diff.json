@@ -1,0 +1,2661 @@
+{
+ "addedOverloads": [],
+ "same": 1108,
+ "changed": [
+  {
+   "method": "ActorAnimation.ActorAnimationConstraintTransformBone$$Calc",
+   "similarity": 0.588,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationConstraintTransformBone$$LateUpdate",
+   "similarity": 0.295,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationConstraintTransformJobBone$$Execute",
+   "similarity": 0.262,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationConstraintTransformJobBone$$Resolve",
+   "similarity": 0.954,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationConstraintUtility$$ProcessConstraintParts<CampusActorAnimationJob, ActorAnimationConstraintTransformJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationConstraintUtility$$ProcessConstraintParts<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>",
+   "similarity": 0.841,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$Execute",
+   "similarity": 0.005,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetDeltaBodyPosition",
+   "similarity": 0.004,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetEffectorHandle",
+   "similarity": 0.105,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetIKLimbHandle",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$GetLimbPart",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$HasLookAtBodyWeight",
+   "similarity": 0.015,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$NodAdditive",
+   "similarity": 0.009,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$PrepareSolvePull",
+   "similarity": 0.02,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$PrepareSolvePullUpdateLimbPart",
+   "similarity": 0.009,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetBodyEffector",
+   "similarity": 0.016,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetGaolEffector",
+   "similarity": 0.003,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetHintEffector",
+   "similarity": 0.02,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetLimbPart",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetLookAtEffector",
+   "similarity": 0.005,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SetMaximumExtension",
+   "similarity": 0.007,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$Solve",
+   "similarity": 0.044,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$SolvePull",
+   "similarity": 0.014,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateHipsHorizon",
+   "similarity": 0.036,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateMove",
+   "similarity": 0.028,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$UpdateMoveDelta",
+   "similarity": 0.023,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton$$WriteBack",
+   "similarity": 0.011,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKLimbPart$$.ctor",
+   "similarity": 0.82,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKMovePart$$.ctor",
+   "similarity": 0.917,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationFullBodyIKPullPart$$.ctor",
+   "similarity": 0.017,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationIKCorrectionJobCollider$$.ctor",
+   "similarity": 0.911,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationIKCorrectionJobCollider$$UpdateProperty",
+   "similarity": 0.911,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationIKCorrectionJobGoal$$.ctor",
+   "similarity": 0.929,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationIKLookAtEffector$$.ctor",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationManageProperty$$Get",
+   "similarity": 0.95,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion",
+   "similarity": 0.214,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse",
+   "similarity": 0.242,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverseYRoll",
+   "similarity": 0.238,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection",
+   "similarity": 0.129,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$FromToRotation",
+   "similarity": 0.906,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion",
+   "similarity": 0.154,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToEuler",
+   "similarity": 0.858,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToQuaternion",
+   "similarity": 0.195,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler",
+   "similarity": 0.444,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion",
+   "similarity": 0.72,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion",
+   "similarity": 0.727,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$CompareTo",
+   "similarity": 0.286,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$GetHierarchyDepth",
+   "similarity": 0.05,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$UpdateHierarchyDepth",
+   "similarity": 0.286,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$get_hierarchyDepth",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverBoneBase$$set_hierarchyDepth",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillBone$$Calc",
+   "similarity": 0.56,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillJobBone$$Execute",
+   "similarity": 0.689,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSetting$$ConvertToUnity",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeBone$$Calc",
+   "similarity": 0.637,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeJobBone$$Execute",
+   "similarity": 0.871,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairBone$$Calc",
+   "similarity": 0.209,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairJobBone$$Execute",
+   "similarity": 0.989,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairJobBone$$Update",
+   "similarity": 0.956,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmJobBone$$Execute",
+   "similarity": 0.859,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandJobBone$$Execute",
+   "similarity": 0.859,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$Calc",
+   "similarity": 0.537,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$GetRollPitchYawDegreeFromMuscleValue",
+   "similarity": 0.054,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone$$Execute",
+   "similarity": 0.909,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone$$Resolve",
+   "similarity": 0.897,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$.ctor",
+   "similarity": 0.053,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$ConvertToUnity",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegJobBone$$Execute",
+   "similarity": 0.859,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoBone$$CalcPosition",
+   "similarity": 0.603,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoJobBone$$Execute",
+   "similarity": 0.997,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationBone$$Calc",
+   "similarity": 0.13,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationJobBone$$Execute",
+   "similarity": 0.646,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$Calc",
+   "similarity": 0.559,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtJobBone$$Execute",
+   "similarity": 0.714,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSetting$$ConvertToUnity",
+   "similarity": 0.967,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverFrillJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverFurisodeJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHairJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidArmJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidHandJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidSleeveJobBone>",
+   "similarity": 0.71,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidUpLegJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverPonchoJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverRotationJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverSkirtJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverWaistJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>",
+   "similarity": 0.841,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc",
+   "similarity": 0.366,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistJobBone$$Execute",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationRootControllerJobLocator$$.ctor",
+   "similarity": 0.885,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationRootControllerJobLocator$$Resolve",
+   "similarity": 0.897,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSlide",
+   "similarity": 0.014,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing",
+   "similarity": 0.007,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$Execute",
+   "similarity": 0.143,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation",
+   "similarity": 0.005,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBoneLayer",
+   "similarity": 0.014,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones",
+   "similarity": 0.001,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBone",
+   "similarity": 0.035,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider",
+   "similarity": 0.009,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection",
+   "similarity": 0.004,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSmoothing",
+   "similarity": 0.047,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBoneLayer",
+   "similarity": 0.015,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones",
+   "similarity": 0.001,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones",
+   "similarity": 0.007,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleCollider",
+   "similarity": 0.05,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleDirectionVector",
+   "similarity": 0.25,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScalePositionVector",
+   "similarity": 0.143,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleScalar",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationWindUtility$$CalcWindPower",
+   "similarity": 0.02,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$.ctor",
+   "similarity": 0.222,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$Inverse",
+   "similarity": 0.032,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$Set",
+   "similarity": 0.154,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$Transform",
+   "similarity": 0.047,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$get_identity",
+   "similarity": 0.067,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$op_Multiply",
+   "similarity": 0.026,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingBreastBone$$.ctor",
+   "similarity": 0.892,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingChain$$.ctor",
+   "similarity": 0.989,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingChain$$UpdateChainInfo",
+   "similarity": 0.804,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingChain$$UpdateHierarchyDepth",
+   "similarity": 0.625,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider",
+   "similarity": 0.919,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingColliderUtility$$UpdateCollider",
+   "similarity": 0.916,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingColliderUtility$$UpdateFastHitCollider",
+   "similarity": 0.811,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision",
+   "similarity": 0.006,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckDynamicCollision",
+   "similarity": 0.012,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckFastCollision",
+   "similarity": 0.091,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule",
+   "similarity": 0.01,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsulePlane",
+   "similarity": 0.023,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereCapsule",
+   "similarity": 0.016,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSpherePlane",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereSphere",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessCapsuleToCapsule",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessCapsuleToCirclePlane",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessCapsuleToSphere",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider",
+   "similarity": 0.021,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToCapsule",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToCirclePlane",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToSphere",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingDynamicBone$$.ctor",
+   "similarity": 0.897,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobBreastBone$$Reset",
+   "similarity": 0.011,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobBreastBoneCurve$$Dispose",
+   "similarity": 0.062,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBone$$EnqueueCachedTransform",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBone$$IsAlreadyStable",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBone$$Reset",
+   "similarity": 0.016,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBoneCash$$EnqueueCachedTranslation",
+   "similarity": 0.051,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBoneCash$$IsAlreadyStable",
+   "similarity": 0.061,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$FromToRotation",
+   "similarity": 0.015,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$GetRootCorrectionCancelPosition",
+   "similarity": 0.018,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$ToUnityEuler",
+   "similarity": 0.021,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$ToUnityQuaternion",
+   "similarity": 0.036,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$UpdateSpringPosition",
+   "similarity": 0.034,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$ApplyActorSwingCmmnHeightCorrection",
+   "similarity": 0.129,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$CreateFullBodyIK",
+   "similarity": 0.842,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton",
+   "similarity": 0.001,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$DisableIKGoal",
+   "similarity": 0.9,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$ProcessJointLimit",
+   "similarity": 0.968,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$ProcessLookAtLimit",
+   "similarity": 0.968,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusJointLimit",
+   "similarity": 0.783,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit",
+   "similarity": 0.342,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$SetupIKGoalEffector",
+   "similarity": 0.97,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateConstraintSource<ActorAnimationRigData>",
+   "similarity": 0.8,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<ActorAnimationRigData>",
+   "similarity": 0.474,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<CampusActorAnimationRigData>",
+   "similarity": 0.676,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<__Il2CppFullySharedGenericStructType>",
+   "similarity": 0.814,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$ClampMuscle",
+   "similarity": 0.056,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$Execute",
+   "similarity": 0.02,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$ExecuteEye",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$GetEyeLimitRange",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$GetLimit",
+   "similarity": 0.067,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$IsValid",
+   "similarity": 0.103,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitEyeDownLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitEyeEnable",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitEyeUpLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_jointLimitNowLimitedHandle",
+   "similarity": 0.333,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_leftEyeDownUpMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJointLimit$$get_rightEyeDownUpMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ClampMuscle",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$Execute",
+   "similarity": 0.008,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ExecuteBody",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ExecuteEye",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$ExecuteHead",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetBodyLimitRange",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetEyeLimitRange",
+   "similarity": 0.03,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetHeadLimitRange",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetLimit",
+   "similarity": 0.067,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$GetNeckLimitRange",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$IsValid",
+   "similarity": 0.062,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyBackLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyFrontLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyLeftRightLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_bodyTwistLeftRightLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_chestFrontBackMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_chestLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_chestRollLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_enableLimitWeightHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_eyeDownLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_eyeInOutLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_eyeUpLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headBackLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headFrontBackMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headFrontLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headLeftRightLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headRollLeftRightLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_headRollLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_isCustomLookAtLimitEnablePoseHandle",
+   "similarity": 0.333,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_leftEyeDownUpMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_leftEyeInOutMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckBackLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckFrontBackMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckFrontLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckLeftRightLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckRollLeftRightLimitHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_neckRollLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_rightEyeDownUpMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_rightEyeInOutMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_spineFrontBackMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_spineLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_spineRollLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_upperChestFrontBackMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_upperChestLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationLookAtLimit$$get_upperChestRollLeftRightMuscleHandle",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$RegisterBones",
+   "similarity": 0.534,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetBreastBone",
+   "similarity": 0.01,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetDynamicBone",
+   "similarity": 0.011,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetDynamicSkin",
+   "similarity": 0.011,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetTime",
+   "similarity": 0.04,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$SetInactiveBones",
+   "similarity": 0.007,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.AudiencePenlight.AudiencePenlightVolume$$get_AudiencePenlight",
+   "similarity": 0.764,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetCustomLookAt",
+   "similarity": 0.8,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$.cctor",
+   "similarity": 0.31,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$CorrectSkeleton",
+   "similarity": 0.985,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$DisableJointLimitSetting",
+   "similarity": 0.811,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$EnableBakedSwingBone",
+   "similarity": 0.881,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ExecuteEyeBlink",
+   "similarity": 0.636,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$GetAnimationController",
+   "similarity": 0.837,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalForward",
+   "similarity": 0.923,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalPosition",
+   "similarity": 0.779,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$GetFullBodyIkHeadOriginalRotation",
+   "similarity": 0.784,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$InitializeActorAnimation",
+   "similarity": 0.989,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$InitializeRenderer",
+   "similarity": 0.749,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$LateUpdate",
+   "similarity": 0.911,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$OnBuildModelSuccess",
+   "similarity": 0.949,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$OnClipPlay",
+   "similarity": 0.877,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$OnUpdateMaterial",
+   "similarity": 0.713,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$OverrideActorMaterialProperty",
+   "similarity": 0.755,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$PlayEffect",
+   "similarity": 0.903,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$RemoveOverrideMaterialProperty",
+   "similarity": 0.825,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ResetBakeSwingBone",
+   "similarity": 0.948,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ResetCustomLookAt",
+   "similarity": 0.783,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ResetDynamicSkin",
+   "similarity": 0.762,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ResetIKGoalToOriginalTarget",
+   "similarity": 0.948,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ResetModel",
+   "similarity": 0.952,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$ResetTime",
+   "similarity": 0.762,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetActorLayout",
+   "similarity": 0.932,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetAndEnableJointLimitSetting",
+   "similarity": 0.938,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetCampusCustomLookAtEffector",
+   "similarity": 0.932,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetCustomLookAt",
+   "similarity": 0.92,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetCustomLookAtEffector",
+   "similarity": 0.821,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetEnableColliders",
+   "similarity": 0.838,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetEyeBlinkEnable",
+   "similarity": 0.939,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetEyeBlinkWeight",
+   "similarity": 0.838,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetOverrideMaterialProperty",
+   "similarity": 0.989,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetupAllIKGoalToOverrideTarget",
+   "similarity": 0.871,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetupMoveConstraint",
+   "similarity": 0.885,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetupPropConstraintAnimation",
+   "similarity": 0.89,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$SetupSeatedDynamicCorrection",
+   "similarity": 0.953,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$StopEffects",
+   "similarity": 0.571,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$UpdateHighLightMaterial",
+   "similarity": 0.897,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$UpdateLookAtEyePitchCorrection",
+   "similarity": 0.582,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorEyeHighlight$$GetHighlightOffset",
+   "similarity": 0.687,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorLayout$$GetDataTransforms",
+   "similarity": 0.982,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorMaterialEffectPlayable$$OverrideMaterialProperty",
+   "similarity": 0.867,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorModelParts$$InitializeCampusMaterials",
+   "similarity": 0.988,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorModelParts$$OnRegisterBone",
+   "similarity": 0.759,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusLightAnchor$$SetShadow",
+   "similarity": 0.824,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusTransformAnchor$$GetCameraBasedAxes",
+   "similarity": 0.998,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusVirtualActorController$$OnBind",
+   "similarity": 0.98,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusVirtualActorController.FocusedEyeBoneResult$$LateUpdate",
+   "similarity": 0.924,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$ApplyOverrideMotionTracks",
+   "similarity": 0.761,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$Campus.Timeline.IForcedCameraInternal.SetForcedCamera",
+   "similarity": 0.677,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$CollectTracksResolvedByPaths",
+   "similarity": 0.98,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$DisableAllCharacterTracks",
+   "similarity": 0.99,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$EnableCharacterTrack",
+   "similarity": 0.916,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$GetAllPanoramaCameras",
+   "similarity": 0.951,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$IsLookAtEnableProhibited",
+   "similarity": 0.974,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$ResolveCamera",
+   "similarity": 0.943,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$ResolveTracksByPathSegments",
+   "similarity": 0.864,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$UpdateCameraOverride",
+   "similarity": 0.919,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$get_ControlDirectors",
+   "similarity": 0.863,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Live.CampusLiveTimelineController$$get_CurrentForcedCamera",
+   "similarity": 0.971,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.Panorama.PanoramaCameraHolder$$ResolveCamera",
+   "similarity": 0.531,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.UIDrawObjects$$Execute",
+   "similarity": 0.924,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.ClipData$$.ctor",
+   "similarity": 0.907,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.ClipData$$SetTime",
+   "similarity": 0.973,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationBehaviour$$ConnectAnimation",
+   "similarity": 0.826,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationBehaviour$$ConnectOverrideAnimation",
+   "similarity": 0.826,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationBehaviour$$SetAnimationCount",
+   "similarity": 0.925,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationBehaviour$$SetAnimationTime",
+   "similarity": 0.609,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationBehaviour$$SetOverrideAnimationCount",
+   "similarity": 0.925,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationBehaviour$$SetOverrideAnimationTime",
+   "similarity": 0.609,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationTimeline$$SetAnimationData",
+   "similarity": 0.8,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimationTimeline$$SetOverrideAnimationData",
+   "similarity": 0.8,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$.ctor",
+   "similarity": 0.992,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$ConnectAnimation",
+   "similarity": 0.893,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$ConnectOverrideAnimation",
+   "similarity": 0.934,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$SetAnimationCount",
+   "similarity": 0.933,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$SetAnimationTime",
+   "similarity": 0.941,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$SetAnimationWeight",
+   "similarity": 0.941,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$SetOverrideAnimationCount",
+   "similarity": 0.933,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$SetOverrideAnimationTime",
+   "similarity": 0.941,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdAnimator$$SetOverrideAnimationWeight",
+   "similarity": 0.941,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdVolume$$get_AnimationComponent",
+   "similarity": 0.764,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdVolume$$get_CrowdPenlight",
+   "similarity": 0.764,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLight$$get_Pivot",
+   "similarity": 0.596,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLight$$set_BoxSize",
+   "similarity": 0.542,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$Dispose",
+   "similarity": 0.026,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$RemoveAtSwapBack",
+   "similarity": 0.019,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCachedChunk$$SetCapacity",
+   "similarity": 0.023,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Create",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$CreateEntityChunk",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Dispose",
+   "similarity": 0.036,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$Push",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$RemoveAtSwapBack",
+   "similarity": 0.032,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$SetCapacity",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_CachedChunk",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_CulledChunk",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_ResultChunk",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$get_entityChunk",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_CachedChunk",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_CulledChunk",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_ResultChunk",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCombinedChunks$$set_entityChunk",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$.ctor",
+   "similarity": 0.062,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$Dispose",
+   "similarity": 0.077,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$RemoveAtSwapBack",
+   "similarity": 0.069,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCulledChunk$$SetCapacity",
+   "similarity": 0.08,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCullingSystem$$.ctor",
+   "similarity": 0.048,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCullingSystem$$Execute",
+   "similarity": 0.02,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightCullingSystem.CullingJob$$Execute",
+   "similarity": 0.083,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$.ctor",
+   "similarity": 0.017,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$CompleteJob",
+   "similarity": 0.029,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Dispose",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$Execute",
+   "similarity": 0.005,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightDrawSystem$$get_IsActive",
+   "similarity": 0.333,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightEntityManager$$CreateBoxMesh",
+   "similarity": 0.018,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightEntityManager$$Dispose",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightEntityManager$$UpdateChunk",
+   "similarity": 0.016,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$AddRenderPasses",
+   "similarity": 0.017,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$Create",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$Dispose",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$OnLitLighting",
+   "similarity": 0.039,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$RecreateSystemsIfNeeded",
+   "similarity": 0.016,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightRendererFeature$$get_sharedManager",
+   "similarity": 0.083,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultChunk$$Dispose",
+   "similarity": 0.05,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultChunk$$RemoveAtSwapBack",
+   "similarity": 0.034,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultChunk$$SetCapacity",
+   "similarity": 0.043,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultSystem$$.ctor",
+   "similarity": 0.041,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultSystem$$Execute",
+   "similarity": 0.02,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$Execute",
+   "similarity": 0.062,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob$$UpdateParams",
+   "similarity": 0.013,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightUpdateSystem$$.ctor",
+   "similarity": 0.034,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightUpdateSystem$$Execute",
+   "similarity": 0.025,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$Execute",
+   "similarity": 0.009,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3$$System.Collections.IEnumerable.GetEnumerator",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser$$OnApply",
+   "similarity": 0.726,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser$$OnEnable",
+   "similarity": 0.689,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser$$UpdateLaserVertex",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser$$UpdateMesh",
+   "similarity": 0.934,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$MoveNext",
+   "similarity": 0.508,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31$$System.Collections.IEnumerable.GetEnumerator",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$Execute",
+   "similarity": 0.532,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$GetLaserColor",
+   "similarity": 0.939,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$LookCamera",
+   "similarity": 0.357,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdateCone",
+   "similarity": 0.689,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$UpdatePlane",
+   "similarity": 0.954,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightBasic$$ApplyMaterial",
+   "similarity": 0.883,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightBasic$$OnApply",
+   "similarity": 0.569,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$MoveNext",
+   "similarity": 0.441,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13$$System.Collections.IEnumerable.GetEnumerator",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightComponent$$OnApply",
+   "similarity": 0.485,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$MoveNext",
+   "similarity": 0.967,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6$$System.Collections.IEnumerable.GetEnumerator",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.EnvironmentBase$$GetMaterialInfo",
+   "similarity": 0.928,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Equipment.LiveEquipmentController$$get_IsPlaying",
+   "similarity": 0.854,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.LiveEquipmentReceiver$$AddDependencyJob",
+   "similarity": 0.893,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Equipment.LiveEquipmentReceiver$$UpdateEquipment",
+   "similarity": 0.906,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Live.Monitor.MonitorRepeatImage$$GetDrawingDimensions2",
+   "similarity": 0.787,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Monitor.MonitorRepeatImage$$OnPopulateMesh",
+   "similarity": 0.349,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.MobAudience.MobAudiencePenlightController$$CalcPenlightParams",
+   "similarity": 0.975,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.MobAudience.MobAudiencePenlightController.<>c$$.cctor",
+   "similarity": 0.846,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$.ctor",
+   "similarity": 0.455,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$CalcLightVector",
+   "similarity": 0.018,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$Execute",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$Setup",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$UpdateActorCommand",
+   "similarity": 0.002,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$UpdateOutlineCommand",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Rendering.CampusActorParameterPass$$UpdateVirtualEffectCommand",
+   "similarity": 0.011,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusBpmTimelineTrack$$InjectBpmBehaviour",
+   "similarity": 0.768,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusLightTrack$$GatherPropertiesLightAnchor",
+   "similarity": 0.87,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusLightTrack$$GatherPropertiesLightAnchorGroup",
+   "similarity": 0.976,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusLightTrack$$GatherPropertiesTransformAnchor",
+   "similarity": 0.982,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrack$$CreateTrackMixer",
+   "similarity": 0.847,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$IsDriftedFromExpectedTime",
+   "similarity": 0.802,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$NormalizeClipTime",
+   "similarity": 0.979,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$PauseVideo",
+   "similarity": 0.95,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$PrepareFrame",
+   "similarity": 0.871,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$ProcessFrame",
+   "similarity": 0.867,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$TryGetClipLocalTime",
+   "similarity": 0.975,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Timeline.CampusVideoPlayerTrackBehaviour$$TrySetFrame",
+   "similarity": 0.807,
+   "note": "semantic"
+  },
+  {
+   "method": "CanvasRT.CanvasRenderTextureRendererPass$$Draw3DImage",
+   "similarity": 0.717,
+   "note": "semantic"
+  },
+  {
+   "method": "CanvasRT.CanvasRenderTextureRendererPass$$OnRenderCanvasRenderTexture",
+   "similarity": 0.734,
+   "note": "semantic"
+  },
+  {
+   "method": "Uguiss.Timeline.AbstractScriptPlayableCommand<object, object, object>$$GetPlayableBehaviour",
+   "similarity": 0.964,
+   "note": "layout"
+  },
+  {
+   "method": "Uguiss.Timeline.TimelineEngineUtility$$GetPlayableBehaviour<object>",
+   "similarity": 0.953,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [
+  "ActorAnimation.ActorSwingAffineTransform$$.cctor",
+  "Campus.DecalLight.CampusDecalLightDrawSystem$$.cctor",
+  "Campus.DecalLight.CampusDecalLightRendererFeature$$.cctor",
+  "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob$$.cctor",
+  "Campus.Rendering.CampusActorParameterPass$$.cctor",
+  "FasterLinq$$Select<ExamBattleResult, int>",
+  "FasterLinq$$Select<ExamBattleResult, object>",
+  "FasterLinq$$Select<Int32Enum, UniTask>",
+  "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, long>>",
+  "FasterLinq$$Select<Int32Enum, ValueTuple<Int32Enum, object>>",
+  "FasterLinq$$Select<Int32Enum, ValueTuple<object, Int32Enum, long, long>>",
+  "FasterLinq$$Select<Int32Enum, object>",
+  "FasterLinq$$Select<MessageLogSoundInfo, UniTask>",
+  "FasterLinq$$Select<ValueTuple<Int32Enum, int, object>, object>",
+  "FasterLinq$$Select<ValueTuple<Int32Enum, object, object>, ValueTuple<object, object>>",
+  "FasterLinq$$Select<ValueTuple<Int32Enum, object>, object>",
+  "FasterLinq$$Select<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>",
+  "FasterLinq$$Select<ValueTuple<int, object, object, object, object>, object>",
+  "FasterLinq$$Select<ValueTuple<int, object, object>, ValueTuple<int, object>>",
+  "FasterLinq$$Select<ValueTuple<int, object, object>, int>",
+  "FasterLinq$$Select<ValueTuple<int, object, object>, object>",
+  "FasterLinq$$Select<ValueTuple<int, object>, object>",
+  "FasterLinq$$Select<ValueTuple<object, Int32Enum>, object>",
+  "FasterLinq$$Select<ValueTuple<object, bool>, object>",
+  "FasterLinq$$Select<ValueTuple<object, int, int>, object>",
+  "FasterLinq$$Select<ValueTuple<object, int, object, object, object>, object>",
+  "FasterLinq$$Select<ValueTuple<object, int>, object>",
+  "FasterLinq$$Select<ValueTuple<object, object, object>, object>",
+  "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>",
+  "FasterLinq$$Select<ValueTuple<object, object>, ValueTuple<object, object>>",
+  "FasterLinq$$Select<ValueTuple<object, object>, object>",
+  "FasterLinq$$Select<int, int>",
+  "FasterLinq$$Select<int, object>",
+  "FasterLinq$$Select<object, Color>",
+  "FasterLinq$$Select<object, Int32Enum>",
+  "FasterLinq$$Select<object, MessageLogSoundInfo>",
+  "FasterLinq$$Select<object, Nullable<int>>",
+  "FasterLinq$$Select<object, ProduceCardFilterElement>",
+  "FasterLinq$$Select<object, ProduceGrowthPanelDescriptionData>",
+  "FasterLinq$$Select<object, UniTask<bool>>",
+  "FasterLinq$$Select<object, UniTask<object>>",
+  "FasterLinq$$Select<object, UniTask>",
+  "FasterLinq$$Select<object, ValueTuple<Int32Enum, int, object, object>>",
+  "FasterLinq$$Select<object, ValueTuple<Int32Enum, object>>",
+  "FasterLinq$$Select<object, ValueTuple<object, bool>>",
+  "FasterLinq$$Select<object, ValueTuple<object, int, object, object, object>>",
+  "FasterLinq$$Select<object, ValueTuple<object, int>>",
+  "FasterLinq$$Select<object, ValueTuple<object, object, object>>",
+  "FasterLinq$$Select<object, ValueTuple<object, object>>",
+  "FasterLinq$$Select<object, Vector2>",
+  "FasterLinq$$Select<object, bool>",
+  "FasterLinq$$Select<object, float>",
+  "FasterLinq$$Select<object, long>",
+  "FasterLinq$$Select<uint, Color>",
+  "FasterLinq$$Select<uint, bool>",
+  "FasterLinq.SelectArray<ExamBattleResult, int>$$ToArray",
+  "FasterLinq.SelectArray<ExamBattleResult, object>$$ToArray",
+  "FasterLinq.SelectArray<Int32Enum, UniTask>$$ToArray",
+  "FasterLinq.SelectArray<Int32Enum, ValueTuple<Int32Enum, object>>$$ToArray",
+  "FasterLinq.SelectArray<Int32Enum, object>$$ToArray",
+  "FasterLinq.SelectArray<MessageLogSoundInfo, UniTask>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<int, int, object, object>, UniTask<ValueTuple<bool, object>>>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<int, object, object>, ValueTuple<int, object>>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<int, object, object>, int>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<int, object, object>, object>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, Int32Enum>, object>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, int, int>, object>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, int, object, object, object>, object>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, int>, object>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, object, object>, object>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<ValueTuple<object, object>, object>>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, object>, ValueTuple<object, Int32Enum, bool, bool, int, int, int>>$$ToArray",
+  "FasterLinq.SelectArray<ValueTuple<object, object>, object>$$ToArray",
+  "FasterLinq.SelectArray<int, int>$$ToArray",
+  "FasterLinq.SelectArray<int, object>$$ToArray",
+  "FasterLinq.SelectArray<object, Color>$$ToArray",
+  "FasterLinq.SelectArray<object, Int32Enum>$$ToArray",
+  "FasterLinq.SelectArray<object, MessageLogSoundInfo>$$ToArray",
+  "FasterLinq.SelectArray<object, UniTask<bool>>$$ToArray",
+  "FasterLinq.SelectArray<object, UniTask<object>>$$ToArray",
+  "FasterLinq.SelectArray<object, UniTask>$$ToArray",
+  "FasterLinq.SelectArray<object, ValueTuple<Int32Enum, int, object, object>>$$ToArray",
+  "FasterLinq.SelectArray<object, ValueTuple<object, bool>>$$ToArray",
+  "FasterLinq.SelectArray<object, ValueTuple<object, int, object, object, object>>$$ToArray",
+  "FasterLinq.SelectArray<object, ValueTuple<object, object>>$$ToArray",
+  "FasterLinq.SelectArray<object, Vector2>$$ToArray",
+  "FasterLinq.SelectArray<object, bool>$$ToArray",
+  "FasterLinq.SelectArray<object, float>$$ToArray",
+  "FasterLinq.SelectArray<object, long>$$ToArray",
+  "FasterLinq.SelectArray<uint, Color>$$ToArray",
+  "FasterLinq.SelectArray<uint, bool>$$ToArray",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Color>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, Vector2>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, float>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, int>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<Int32Enum, object>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<int, object>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ExamDepthFirstSearchSimulator.ExamNodeTurnResult>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, ValueTuple<object, object>>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, bool>",
+  "Qua.Extensions.IDictionaryExtensions$$IsNullOrEmpty<object, object>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<AprilFoolStoryInfo>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<GashaId>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<Int32Enum>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceCardFilterElement>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelDescriptionData>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ProduceGrowthPanelGroupInfo>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<UniTask>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, Int32Enum, Int32Enum, Int32Enum, Int32Enum, object>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<Int32Enum, int, object>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, bool>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int, object>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, int>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<int, object, bool>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, bool, int, int, int>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool, int, int>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Int32Enum, bool>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, Nullable<bool>>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, bool, bool>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, bool, int>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int, object, int>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, int>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, bool, bool>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object, object>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<ValueTuple<object, object>>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<bool>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<byte>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<float>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<int>",
+  "Qua.Extensions.IEnumerableExtensions$$IsNullOrEmpty<long>"
+ ],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "ActorAnimation.CampusActorAnimationLookAtLimit",
+   47
+  ],
+  [
+   "Campus.Common.CampusActorController",
+   40
+  ],
+  [
+   "ActorAnimation.ActorAnimationFullBodyIKJobSkeleton",
+   21
+  ],
+  [
+   "ActorAnimation.ActorAnimationSwingJobSkeleton",
+   18
+  ],
+  [
+   "ActorAnimation.ActorSwingCollisionUtility",
+   15
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightCombinedChunks",
+   14
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationJob",
+   13
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverUtility",
+   12
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationJointLimit",
+   12
+  ],
+  [
+   "Campus.Common.Live.CampusLiveTimelineController",
+   12
+  ],
+  [
+   "ActorAnimation.ActorAnimationMathUtility",
+   11
+  ],
+  [
+   "Campus.Crowd.CrowdAnimator",
+   9
+  ],
+  [
+   "Campus.Rendering.CampusActorParameterPass",
+   7
+  ],
+  [
+   "Campus.Timeline.CampusVideoPlayerTrackBehaviour",
+   7
+  ],
+  [
+   "ActorAnimation.ActorSwingAffineTransform",
+   6
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationRig",
+   6
+  ],
+  [
+   "Campus.Crowd.CrowdAnimationBehaviour",
+   6
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightRendererFeature",
+   6
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverBoneBase",
+   5
+  ],
+  [
+   "ActorAnimation.ActorSwingUtility",
+   5
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightDrawSystem",
+   5
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob",
+   5
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightCulledChunk",
+   4
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLaser",
+   4
+  ],
+  [
+   "ActorAnimation.ActorSwingChain",
+   3
+  ],
+  [
+   "ActorAnimation.ActorSwingColliderUtility",
+   3
+  ],
+  [
+   "ActorAnimation.ActorSwingJobDynamicBone",
+   3
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightCachedChunk",
+   3
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightEntityManager",
+   3
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightResultChunk",
+   3
+  ],
+  [
+   "Campus.Timeline.CampusLightTrack",
+   3
+  ],
+  [
+   "ActorAnimation.ActorAnimationConstraintTransformBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationConstraintTransformJobBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationConstraintUtility",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationIKCorrectionJobCollider",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHairJobBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationRootControllerJobLocator",
+   2
+  ],
+  [
+   "ActorAnimation.ActorSwingJobDynamicBoneCash",
+   2
+  ],
+  [
+   "Campus.Common.CampusActorModelParts",
+   2
+  ],
+  [
+   "Campus.Crowd.ClipData",
+   2
+  ],
+  [
+   "Campus.Crowd.CrowdAnimationTimeline",
+   2
+  ],
+  [
+   "Campus.Crowd.CrowdVolume",
+   2
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLight",
+   2
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightCullingSystem",
+   2
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightResultSystem",
+   2
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightResultSystem.ResultJob",
+   2
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightUpdateSystem",
+   2
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLaser.<get_GatherProperties>d__31",
+   2
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLightBasic",
+   2
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLightBasic.<get_GatherProperties>d__13",
+   2
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLightComponent.<get_GatherProperties>d__6",
+   2
+  ],
+  [
+   "Campus.Live.Equipment.LiveEquipmentReceiver",
+   2
+  ],
+  [
+   "Campus.Live.Monitor.MonitorRepeatImage",
+   2
+  ],
+  [
+   "CanvasRT.CanvasRenderTextureRendererPass",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationFullBodyIKLimbPart",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationFullBodyIKMovePart",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationFullBodyIKPullPart",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationIKCorrectionJobGoal",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationIKLookAtEffector",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationManageProperty",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFurisodeBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFurisodeJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHairBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverPonchoBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverPonchoJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverRotationBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverRotationJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverWaistBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverWaistJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationWindUtility",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingBreastBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingDynamicBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobBreastBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobBreastBoneCurve",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobBreastBoneSetting",
+   1
+  ],
+  [
+   "Campus.AudiencePenlight.AudiencePenlightVolume",
+   1
+  ],
+  [
+   "Campus.Common.CampusActorAnimation",
+   1
+  ],
+  [
+   "Campus.Common.CampusActorEyeHighlight",
+   1
+  ],
+  [
+   "Campus.Common.CampusActorLayout",
+   1
+  ],
+  [
+   "Campus.Common.CampusActorMaterialEffectPlayable",
+   1
+  ],
+  [
+   "Campus.Common.CampusLightAnchor",
+   1
+  ],
+  [
+   "Campus.Common.CampusTransformAnchor",
+   1
+  ],
+  [
+   "Campus.Common.CampusVirtualActorController",
+   1
+  ],
+  [
+   "Campus.Common.CampusVirtualActorController.FocusedEyeBoneResult",
+   1
+  ],
+  [
+   "Campus.Common.Panorama.PanoramaCameraHolder",
+   1
+  ],
+  [
+   "Campus.Common.UIDrawObjects",
+   1
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightCullingSystem.CullingJob",
+   1
+  ],
+  [
+   "Campus.DecalLight.CampusDecalLightUpdateSystem.UpdateJob",
+   1
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveDirectionalLight.<get_GatherProperties>d__3",
+   1
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLightComponent",
+   1
+  ],
+  [
+   "Campus.Live.Equipment.EnvironmentBase",
+   1
+  ],
+  [
+   "Campus.Live.Equipment.LiveEquipmentController",
+   1
+  ],
+  [
+   "Campus.MobAudience.MobAudiencePenlightController",
+   1
+  ],
+  [
+   "Campus.MobAudience.MobAudiencePenlightController.<>c",
+   1
+  ],
+  [
+   "Campus.Timeline.CampusBpmTimelineTrack",
+   1
+  ],
+  [
+   "Campus.Timeline.CampusVideoPlayerTrack",
+   1
+  ],
+  [
+   "Uguiss.Timeline.AbstractScriptPlayableCommand<object, object, object>",
+   1
+  ],
+  [
+   "Uguiss.Timeline.TimelineEngineUtility",
+   1
+  ]
+ ]
+}
