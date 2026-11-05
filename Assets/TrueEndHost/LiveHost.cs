@@ -58,6 +58,7 @@ namespace TrueEnd.Host
             {
                 options = LiveOptions.Parse(Environment.GetCommandLineArgs());
                 Application.runInBackground = true;
+                if (options.CaptureFps > 0) Time.captureFramerate = options.CaptureFps;
                 if (options.Mute) AudioListener.volume = 0;
                 Debug.Log($"LIVE_HOST sample=ttmr001 mute={options.Mute} data={options.DataDirectory}");
                 var manifest = JsonUtility.FromJson<ContentManifest>(File.ReadAllText(Path.Combine(options.DataDirectory, "manifest.json")));
@@ -152,7 +153,7 @@ namespace TrueEnd.Host
                 double pausedAt = 0;
                 // Match LivePresenter.CheckLiveEnd's float duration and subtraction.
                 float endTime = (float)timeline.master.duration - TimelineEndMargin;
-                while (presentationTime < timeline.master.duration && Time.realtimeSinceStartupAsDouble - started < options.QuitAfter)
+                while (presentationTime < Math.Min(timeline.master.duration, options.StopTime) && Time.realtimeSinceStartupAsDouble - started < options.QuitAfter)
                 {
                     await UniTask.WaitForEndOfFrame(this);
                     poseRecorder?.Record(timeline.master.time);

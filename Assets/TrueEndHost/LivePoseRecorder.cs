@@ -45,6 +45,7 @@ namespace TrueEnd.Host
             public Dynamic[] dynamics;
             public Static[] statics;
             public ActorSwingJobChainBone[] chains;
+            public int[] chainHits;
         }
         private readonly CampusActorAnimationRig rig;
         private readonly StreamWriter writer;
@@ -75,7 +76,8 @@ namespace TrueEnd.Host
                 transforms = transforms.Select(t => new Pose(t)).ToArray(),
                 dynamics = new Dynamic[skeleton.dynamicBones.Length],
                 statics = new Static[skeleton.staticBones.Length],
-                chains = new ActorSwingJobChainBone[skeleton.chainBones.Length]
+                chains = new ActorSwingJobChainBone[skeleton.chainBones.Length],
+                chainHits = new int[skeleton.chainBones.Length]
             };
             for (int i = 0; i < frame.dynamics.Length; i++)
             {
@@ -90,7 +92,11 @@ namespace TrueEnd.Host
             }
             for (int i = 0; i < frame.statics.Length; i++)
                 frame.statics[i] = new Static { name = data.swingStaticBones[i].name, collider = skeleton.staticBones[i].collider };
-            for (int i = 0; i < frame.chains.Length; i++) frame.chains[i] = skeleton.chainBones[i];
+            for (int i = 0; i < frame.chains.Length; i++)
+            {
+                frame.chains[i] = skeleton.chainBones[i];
+                frame.chainHits[i] = skeleton.chainBones[i].collision.hitCheckCount;
+            }
             writer.WriteLine(JsonUtility.ToJson(frame));
             writer.Flush();
         }

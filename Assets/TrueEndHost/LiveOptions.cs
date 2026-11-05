@@ -11,6 +11,8 @@ namespace TrueEnd.Host
         public string DataDirectory = Path.Combine(Application.streamingAssetsPath, "ttmr001");
         public string CaptureDirectory = Path.GetFullPath("captures");
         public string PoseLog;
+        public int CaptureFps;
+        public double StopTime = double.PositiveInfinity;
         public double StartTime;
         public double QuitAfter = double.PositiveInfinity;
         public double[] ScreenshotTimes = Array.Empty<double>();
@@ -32,6 +34,12 @@ namespace TrueEnd.Host
                     case "--data": options.DataDirectory = Path.GetFullPath(Value(arguments, ref i)); break;
                     case "--capture-dir": options.CaptureDirectory = Path.GetFullPath(Value(arguments, ref i)); break;
                     case "--pose-log": options.PoseLog = Path.GetFullPath(Value(arguments, ref i)); break;
+                    case "--capture-fps":
+                        options.CaptureFps = int.Parse(Value(arguments, ref i), CultureInfo.InvariantCulture);
+                        if (options.CaptureFps < 1 || options.CaptureFps > 240)
+                            throw new ArgumentException("Capture FPS must be between 1 and 240.");
+                        break;
+                    case "--stop-time": options.StopTime = Seconds(Value(arguments, ref i)); options.QuitAtEnd = true; break;
                     case "--start-time": options.StartTime = Seconds(Value(arguments, ref i)); break;
                     case "--quit-after": options.QuitAfter = Seconds(Value(arguments, ref i)); break;
                     case "--quit-at-end": options.QuitAtEnd = true; break;
@@ -46,6 +54,8 @@ namespace TrueEnd.Host
                         break;
                 }
             }
+            if (options.StopTime <= options.StartTime)
+                throw new ArgumentException("Stop time must be after start time.");
             return options;
         }
 

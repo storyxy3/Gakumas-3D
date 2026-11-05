@@ -63,3 +63,5 @@ the host retains a presentation clock through the remaining duration so screensh
 `LIVE_CAPTURE actual` reports that presentation clock; `LIVE_END_FADE time` records where the director paused.
 `LIVE_STOPPED` is followed by `LIVE_QUIT` for automatic runs or `LIVE_IDLE` for interactive runs.
 Linux playback must remain silent (`--mute -noaudio`).
+
+Optional playback recording: `--pose-log /absolute/path/poses.jsonl` copies completed bone transforms and Swing collider/chain state at approximately 0.1-second intervals. It does not evaluate or modify the animation graph. World transforms are after frame completion; job collider coordinates are in the Swing root space, and dynamic state retains root-motion cancellation. `--capture-fps 60` uses Unity's capture clock for repeatable offline playback; it does not change the Swing solver. `--stop-time 50` stops and exits at that timeline time, allowing bounded capture intervals with `--start-time`. Keep Linux capture runs silent with `--mute -noaudio` and the documented dummy audio environment.
