@@ -39,6 +39,7 @@ namespace TrueEnd.Host
         private const float TimelineEndMargin = 0.4f;
         private const float FadeDuration = 0.3f;
         private CanvasGroup fadeGroup;
+        private UniversalRenderPipelineAsset pipelineAsset;
         private LiveOptions options;
         private CampusLiveTimelineController timeline;
         private VL.Rendering.VLSRPCameraController cameraController;
@@ -78,6 +79,7 @@ namespace TrueEnd.Host
                 var pipeline = resources.LoadAsset<UniversalRenderPipelineAsset>("assets/campusrenderpipelineultimateasset");
                 if (pipeline == null)
                     throw new InvalidDataException("Original Ultimate pipeline asset is missing. Available assets " + string.Join(", ", resources.GetAllAssetNames()));
+                pipelineAsset = pipeline;
                 GraphicsSettings.defaultRenderPipeline = pipeline;
                 QualitySettings.renderPipeline = pipeline;
                 Debug.Log($"LIVE_PIPELINE {pipeline.name} renderer={pipeline.scriptableRenderer.GetType().FullName}");
@@ -171,7 +173,7 @@ namespace TrueEnd.Host
                         var capture = ScreenCapture.CaptureScreenshotAsTexture();
                         File.WriteAllBytes(path, capture.EncodeToPNG());
                         Destroy(capture);
-                        Debug.Log($"LIVE_CAPTURE requested={requested} actual={presentationTime} path={path} director={timeline.master.time}");
+                        Debug.Log($"LIVE_CAPTURE requested={requested} actual={presentationTime} path={path}");
                     }
                 }
                 Debug.Log($"LIVE_STOPPED time={timeline.master.time} presentation={presentationTime}");
@@ -179,7 +181,8 @@ namespace TrueEnd.Host
                 musicSource.Stop();
                 if (options.QuitAtEnd || Time.realtimeSinceStartupAsDouble - started >= options.QuitAfter)
                 {
-                    // Request exit before any asynchronous scene unload. Unity owns teardown on quit.
+                    // Release renderer-owned buffers synchronously; quit never waits on scene unloading.
+                    ReleaseRendering();
                     Debug.Log("LIVE_QUIT");
                     Application.Quit();
                 }
@@ -190,6 +193,24 @@ namespace TrueEnd.Host
                 Debug.LogException(exception);
                 Application.Quit(1);
             }
+        }
+
+        private void OnApplicationQuit()
+        {
+            ReleaseRendering();
+        }
+
+        private void ReleaseRendering()
+        {
+            if (pipelineAsset == null) return;
+            if (cameraController != null) cameraController.mainCamera.enabled = false;
+            // UniversalRenderPipelineAsset owns its renderer array. This is the same cleanup
+            // called by its OnDisable, dispatched now before the process tears down graphics.
+            typeof(UniversalRenderPipelineAsset).GetMethod("DestroyRenderers",
+                System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(pipelineAsset, null);
+            QualitySettings.renderPipeline = null;
+            GraphicsSettings.defaultRenderPipeline = null;
+            pipelineAsset = null;
         }
 
         private void OnGUI()

@@ -60,6 +60,6 @@ The standalone host keeps its window open on the final black frame by default. C
 `--quit-after <seconds>` is a wall-clock playback limit and also exits when reached.
 The client presentation pauses the director 0.4 seconds before its duration and fades black over 0.3 seconds;
 the host retains a presentation clock through the remaining duration so screenshot requests can capture the fade.
-`LIVE_CAPTURE actual` reports that presentation clock; `director` reports the paused director time during the fade.
+`LIVE_CAPTURE actual` reports that presentation clock; `LIVE_END_FADE time` records where the director paused.
 `LIVE_STOPPED` is followed by `LIVE_QUIT` for automatic runs or `LIVE_IDLE` for interactive runs.
 Linux playback must remain silent (`--mute -noaudio`).
