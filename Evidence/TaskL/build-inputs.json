@@ -1,0 +1,220 @@
+{
+  "runtimeSourceCommit": "7d497cd",
+  "fixCommit": "ece66b1",
+  "unity": "6000.0.77f1",
+  "linuxBuild": "Succeeded errors=0",
+  "androidBuild": "C#/native complete; existing lintVitalAnalyzeRelease packaging error For input string 37.0",
+  "hashes": {
+    "Build/Linux/TrueEnd_Data/Managed/ActorAnimation.Runtime.dll": {
+      "bytes": 147968,
+      "sha256": "603c9f21f0e11b06c583967337c9f1e021411106418984515ee10383ed42bc2b"
+    },
+    "Build/Linux/TrueEnd_Data/Managed/TrueEnd.Host.dll": {
+      "bytes": 28160,
+      "sha256": "24a0dd6f9f6577f874c100c98f2d135c2be772946239eba793ff52991b514975"
+    },
+    "Build/Linux/TrueEnd_Data/Plugins/lib_burst_generated.so": {
+      "bytes": 1900840,
+      "sha256": "15c165e3978240376e76b84062ceafea396320d673dde5be57c93476957a29f0"
+    },
+    ".recon/task-l/before-player/TrueEnd_Data/Managed/ActorAnimation.Runtime.dll": {
+      "bytes": 147968,
+      "sha256": "c6d5625e4be33312db4a40d1203c7fa72177dc8acc405533424a4128191cb05b"
+    },
+    ".recon/task-l/before-player/TrueEnd_Data/Plugins/lib_burst_generated.so": {
+      "bytes": 1898536,
+      "sha256": "3a5865e1d9faeb6ac8233f24af4715947a2d4e3d42de8b5f56dd0c63741d231a"
+    },
+    ".recon/task-l/paired-before-player/TrueEnd_Data/Managed/ActorAnimation.Runtime.dll": {
+      "bytes": 147968,
+      "sha256": "c6d5625e4be33312db4a40d1203c7fa72177dc8acc405533424a4128191cb05b"
+    },
+    ".recon/task-l/paired-before-player/TrueEnd_Data/Plugins/lib_burst_generated.so": {
+      "bytes": 1898536,
+      "sha256": "3a5865e1d9faeb6ac8233f24af4715947a2d4e3d42de8b5f56dd0c63741d231a"
+    },
+    "Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so": {
+      "bytes": 92393608,
+      "sha256": "8635653280aae71901618d0550164ab457b4db7d351475e4e84957c6c02eafe0"
+    },
+    ".recon/live-dump/script.json": {
+      "bytes": 98962445,
+      "sha256": "73b07e233fc84069d0ecd2373a19b0d69a70a2f9e7e04062cd331544acfa805d"
+    },
+    "Build/Content/ttmr001/manifest.json": {
+      "bytes": 14495,
+      "sha256": "53f9c5d76acc45eb047a01d728f6dff377b1e63946bebeca28c8287492e72a90"
+    },
+    "Build/Content-Linux/ttmr001/manifest.json": {
+      "bytes": 16768,
+      "sha256": "d2e7143c26788baaa413f5d31a5b27da68c51b5d3f12bee49ced9f714967a34e"
+    },
+    "Build/ttmr001-windows-content.tar.gz": {
+      "bytes": 171872621,
+      "sha256": "d3267c0fa3a97c95215e7ba457cced42db1b19e2b373e56a4df18f414a13a291"
+    },
+    ".recon/task-l/build-fixed-linux.log": {
+      "bytes": 170706,
+      "sha256": "0435e6ba4a3310acb89aefc09d226dca6a770f2750ff757b186f1835d7acf282"
+    },
+    ".recon/task-l/build-android.log": {
+      "bytes": 339267,
+      "sha256": "521b7328eb1b41cc3804538b0c91cba6b90427d479257f83886f950e0a8f1ada"
+    },
+    ".recon/task-l/before-poses.jsonl": {
+      "bytes": 545148542,
+      "sha256": "6b64f211540ea331046efc9c213807fbf0151514fd17a928409e9c72ac55adb9"
+    },
+    ".recon/task-l/before-scan.log": {
+      "bytes": 27490,
+      "sha256": "75c3cfd842944f66bde0a1e71ac74e58b6eaaac687bddcf3fb9c54392851198e"
+    },
+    ".recon/task-l/after-poses.jsonl": {
+      "bytes": 545081593,
+      "sha256": "8fa1951ae7b7e1ff632559c5aa678e9f487a08ce7bd6739313bebf80f7f34da1"
+    },
+    ".recon/task-l/after-scan.log": {
+      "bytes": 27474,
+      "sha256": "71ae150e0058d9214863c69adc1a32df2fbbf6ce9590fa0bcdead6ddb29704ce"
+    },
+    ".recon/task-l/before-focus-poses.jsonl": {
+      "bytes": 26722692,
+      "sha256": "d24a257703f50cc06e1c1f1e69ea00c6242c71131e3f2b7c90039cf6132abd45"
+    },
+    ".recon/task-l/before-focus.log": {
+      "bytes": 26236,
+      "sha256": "c70ca22b7be5a01ed6bfbb00ec95bd510b88730c18d6f50fa63ab42c4a5ff00c"
+    },
+    ".recon/task-l/after-focus-poses.jsonl": {
+      "bytes": 26728231,
+      "sha256": "dabe4bdebf7d202598df951d62f1b12fa3e8f8c24c0c745c69cc8b0a9eebeef6"
+    },
+    ".recon/task-l/after-focus.log": {
+      "bytes": 26160,
+      "sha256": "2c7189ff44f7fa1f169541ca1b41785dfaaae396e4ef6919e4573235210d891e"
+    },
+    ".recon/task-l/before-late-poses.jsonl": {
+      "bytes": 9135278,
+      "sha256": "c0f1e42be1eaa694f0471f9f900a63d9d32821f6a0ddc3f3139807231b15b735"
+    },
+    ".recon/task-l/before-late.log": {
+      "bytes": 26109,
+      "sha256": "94d9f13841d464e0ef9edc6702530fa482753edec93da72df3fb62c4220754e0"
+    },
+    ".recon/task-l/after-late-poses.jsonl": {
+      "bytes": 9137241,
+      "sha256": "0245f0f39b6aaa2a6f3b3bf50f89717ff3e02c0bc1ce3aa3b167f4e4041ec297"
+    },
+    ".recon/task-l/after-late.log": {
+      "bytes": 26031,
+      "sha256": "0e6dfd640f6227bdffa0a2ed8acc61d90b83340d46b564a75e759941a20ff036"
+    },
+    ".recon/task-l/before-visible-poses.jsonl": {
+      "bytes": 7394000,
+      "sha256": "7a53e6ce94e31bf34c2f0a7d3e13ba8cef1e215c9bac2ad54b5f1a56ffe4b2c0"
+    },
+    ".recon/task-l/before-visible.log": {
+      "bytes": 25981,
+      "sha256": "e29009eb58bce14d1827646e379412eda0fe191ca2bcfa6b0d0dfd7cdda8c121"
+    },
+    ".recon/task-l/after-visible-poses.jsonl": {
+      "bytes": 7394610,
+      "sha256": "910c43d2f7339416da40c61133637ad32ee418be672da596dd942cbc915d1f72"
+    },
+    ".recon/task-l/after-visible.log": {
+      "bytes": 25907,
+      "sha256": "0398a78653cc42eff2c33da15934faca2095f4342636b8fbc026c2ddd567c052"
+    }
+  },
+  "runs": {
+    "before-full": {
+      "raw": ".recon/task-l/before-poses.jsonl",
+      "log": ".recon/task-l/before-scan.log",
+      "captureCount": 15,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=155.292310481891 presentation=155.692310481891 fadeAlpha=1",
+      "silent": true
+    },
+    "after-full": {
+      "raw": ".recon/task-l/after-poses.jsonl",
+      "log": ".recon/task-l/after-scan.log",
+      "captureCount": 15,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=155.228926248848 presentation=155.628926248848 fadeAlpha=1",
+      "silent": true
+    },
+    "before-focus": {
+      "raw": ".recon/task-l/before-focus-poses.jsonl",
+      "log": ".recon/task-l/before-focus.log",
+      "captureCount": 6,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=49.5000003911555 presentation=49.5000003911555 fadeAlpha=0",
+      "silent": true
+    },
+    "after-focus": {
+      "raw": ".recon/task-l/after-focus-poses.jsonl",
+      "log": ".recon/task-l/after-focus.log",
+      "captureCount": 6,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=49.5000003911555 presentation=49.5000003911555 fadeAlpha=0",
+      "silent": true
+    },
+    "before-late": {
+      "raw": ".recon/task-l/before-late-poses.jsonl",
+      "log": ".recon/task-l/before-late.log",
+      "captureCount": 5,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=117.500000130385 presentation=117.500000130385 fadeAlpha=0",
+      "silent": true
+    },
+    "after-late": {
+      "raw": ".recon/task-l/after-late-poses.jsonl",
+      "log": ".recon/task-l/after-late.log",
+      "captureCount": 5,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=117.500000130385 presentation=117.500000130385 fadeAlpha=0",
+      "silent": true
+    },
+    "before-visible": {
+      "raw": ".recon/task-l/before-visible-poses.jsonl",
+      "log": ".recon/task-l/before-visible.log",
+      "captureCount": 4,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=72.0000001043081 presentation=72.0000001043081 fadeAlpha=0",
+      "silent": true
+    },
+    "after-visible": {
+      "raw": ".recon/task-l/after-visible-poses.jsonl",
+      "log": ".recon/task-l/after-visible.log",
+      "captureCount": 4,
+      "exceptions": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "undisposedCullingWarnings": 0,
+      "quitLogged": true,
+      "stop": "LIVE_STOPPED time=72.0000001043081 presentation=72.0000001043081 fadeAlpha=0",
+      "silent": true
+    }
+  },
+  "baselineComposition": "Paired baseline uses final host and original managed ActorAnimation.Runtime plus original Burst library; invalid first attempts sharing fixed Burst excluded."
+}

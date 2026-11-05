@@ -1,3 +1,5 @@
+> Completed after quota resumption. See [TASK_L_REPORT.md](TASK_L_REPORT.md) for final results; the following is the historical interruption checkpoint.
+
 # Task L handoff — 2026-11-05 16:56 HKT
 
 Stopped because HANDOFF_NOW appeared at 16:55:55 (64% / user limit 65%). No new work after saving this handoff. User must raise quota / clear the marker before resuming. Read COMMON.md and check HANDOFF_NOW after every command/edit batch.

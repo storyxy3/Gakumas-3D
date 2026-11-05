@@ -1,0 +1,13 @@
+build-fixed-linux.log
+LIVE_BUILD Succeeded errors=0
+build-android.log
+[1582/1590  0s] NdkObjCopy Library/Bee/artifacts/objcopy_5lmi/stripped/libil2cpp.so
+[1583/1590  0s] NdkObjCopy Library/Bee/artifacts/objcopy_5lmi/libil2cpp.sym.so
+[1585/1590  0s] NdkObjCopy Library/Bee/artifacts/objcopy_5lmi/libil2cpp.so
+> Task :unityLibrary:lintVitalAnalyzeRelease FAILED
+Execution failed for task ':unityLibrary:lintVitalAnalyzeRelease'.
+   > For input string: "37.0"
+Execution failed for task ':unityLibrary:lintVitalAnalyzeRelease'.
+   > For input string: "37.0"
+> Task :unityLibrary:lintVitalAnalyzeRelease FAILED
+LIVE_BUILD Failed errors=3

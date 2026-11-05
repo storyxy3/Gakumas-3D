@@ -1,0 +1,110 @@
+{
+  "before-full": {
+    "samples": 1551,
+    "firstTime": 0.0,
+    "lastTime": 155.29231048189104,
+    "maxJointPenetrationMm": 46.608127792919376,
+    "peakJointTime": 47.96353841293603,
+    "peakJointBone": "LeftFrontSkirt3_S_End",
+    "peakJointCollider": "LeftLeg",
+    "maxSphereOverlapMm": 68.59319826040979,
+    "samplesWithJointPenetrationOver1mm": 224
+  },
+  "after-full": {
+    "samples": 1550,
+    "firstTime": 0.0,
+    "lastTime": 155.22892624884844,
+    "maxJointPenetrationMm": 29.385197317843488,
+    "peakJointTime": 46.478460010141134,
+    "peakJointBone": "RightFrontLSkirt4_S",
+    "peakJointCollider": "LeftLeg",
+    "maxSphereOverlapMm": 59.38519105935579,
+    "samplesWithJointPenetrationOver1mm": 11
+  },
+  "before-focus": {
+    "samples": 76,
+    "firstTime": 42.0,
+    "lastTime": 49.50000039115548,
+    "maxJointPenetrationMm": 40.251617408335605,
+    "peakJointTime": 44.00000010430813,
+    "peakJointBone": "RightFrontSkirt3_S_End",
+    "peakJointCollider": "RightLeg",
+    "maxSphereOverlapMm": 55.25161893570463,
+    "samplesWithJointPenetrationOver1mm": 11
+  },
+  "after-focus": {
+    "samples": 76,
+    "firstTime": 42.0,
+    "lastTime": 49.50000039115548,
+    "maxJointPenetrationMm": 0.0,
+    "peakJointTime": 42.0,
+    "peakJointBone": "",
+    "peakJointCollider": "",
+    "maxSphereOverlapMm": 0.6505310330588293,
+    "samplesWithJointPenetrationOver1mm": 0
+  },
+  "before-late": {
+    "samples": 26,
+    "firstTime": 115.0,
+    "lastTime": 117.50000013038516,
+    "maxJointPenetrationMm": 14.19157727717075,
+    "peakJointTime": 116.80000009387732,
+    "peakJointBone": "RightFrontSkirt3_S_End",
+    "peakJointCollider": "RightLeg",
+    "maxSphereOverlapMm": 32.77977322748485,
+    "samplesWithJointPenetrationOver1mm": 4
+  },
+  "after-late": {
+    "samples": 26,
+    "firstTime": 115.0,
+    "lastTime": 117.50000013038516,
+    "maxJointPenetrationMm": 0.0,
+    "peakJointTime": 115.0,
+    "peakJointBone": "",
+    "peakJointCollider": "",
+    "maxSphereOverlapMm": 0.0,
+    "samplesWithJointPenetrationOver1mm": 0
+  },
+  "before-visible": {
+    "samples": 21,
+    "firstTime": 70.0,
+    "lastTime": 72.00000010430813,
+    "maxJointPenetrationMm": 26.947704908263855,
+    "peakJointTime": 71.40000007301569,
+    "peakJointBone": "RightFrontSkirt3_S_End",
+    "peakJointCollider": "RightLeg",
+    "maxSphereOverlapMm": 41.94770643563288,
+    "samplesWithJointPenetrationOver1mm": 7
+  },
+  "after-visible": {
+    "samples": 21,
+    "firstTime": 70.0,
+    "lastTime": 72.00000010430813,
+    "maxJointPenetrationMm": 0.0,
+    "peakJointTime": 70.0,
+    "peakJointBone": "",
+    "peakJointCollider": "",
+    "maxSphereOverlapMm": 0.0,
+    "samplesWithJointPenetrationOver1mm": 0
+  },
+  "pairedClocks": {
+    "focus": {
+      "beforeSamples": 76,
+      "afterSamples": 76,
+      "maxTimestampDifferenceSeconds": 0.0,
+      "maxPrimaryBonePositionDifferenceMetres": 0.0
+    },
+    "late": {
+      "beforeSamples": 26,
+      "afterSamples": 26,
+      "maxTimestampDifferenceSeconds": 0.0,
+      "maxPrimaryBonePositionDifferenceMetres": 0.0
+    },
+    "visible": {
+      "beforeSamples": 21,
+      "afterSamples": 21,
+      "maxTimestampDifferenceSeconds": 0.0,
+      "maxPrimaryBonePositionDifferenceMetres": 0.0
+    }
+  }
+}

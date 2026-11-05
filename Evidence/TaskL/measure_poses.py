@@ -48,6 +48,6 @@ for line in open(sys.argv[1]):
   angles.append(math.degrees(math.acos(np.clip(-axis[1]/np.linalg.norm(axis),-1,1))))
  rows.append(dict(time=d['time'],dt=d['deltaTime'],left_angle=angles[0],right_angle=angles[1],max_sphere_penetration_mm=worst[0]*1000,max_center_penetration_mm=center[0]*1000,pairs_inside=sum(p[0]>0.001 for p in penetrations),worst_sphere_bone=worst[1] if worst[0] else '',worst_sphere_static=worst[2] if worst[0] else '',worst_center_bone=center[1] if center[0] else '',worst_center_static=center[2] if center[0] else '',dynamic_hits=hits,skirt_chain_hits=chain_hits))
 with open(sys.argv[2],'w') as f:
- w=csv.DictWriter(f,fieldnames=rows[0]);w.writeheader();w.writerows(rows)
+ w=csv.DictWriter(f,fieldnames=rows[0],lineterminator='\n');w.writeheader();w.writerows(rows)
 print('samples',len(rows),'last',rows[-1]['time'])
 for r in sorted(rows,key=lambda r:max(r['left_angle'],r['right_angle']),reverse=True)[:8]:print(r)
