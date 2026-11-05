@@ -1,0 +1,32 @@
+[
+  {
+    "method": "ActorAnimation.ActorSwingGroup$$Initialize",
+    "address": "0x6562c3c",
+    "directBranchCallers": []
+  },
+  {
+    "method": "ActorAnimation.ActorSwingGroup$$SetupJob",
+    "address": "0x6562e20",
+    "directBranchCallers": []
+  },
+  {
+    "method": "ActorAnimation.ActorSwingGroup$$RegisterBones",
+    "address": "0x6562f30",
+    "directBranchCallers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorAnimation$$SetupCampusJointLimitSetting",
+    "address": "0xddd5088",
+    "directBranchCallers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorAnimation$$DisableJointLimitSettingParam",
+    "address": "0xddd5334",
+    "directBranchCallers": []
+  },
+  {
+    "method": "Campus.Common.CampusActorAnimation$$SetEnableIKCollider",
+    "address": "0xddd5384",
+    "directBranchCallers": []
+  }
+]

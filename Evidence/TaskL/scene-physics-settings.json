@@ -1,0 +1,46 @@
+{
+  "mot_live_chr_ttmr_ttmr-001_00_in": {
+    "unresolvedScriptPointers": 0,
+    "physicsComponentCounts": {},
+    "settings": [
+      {
+        "type": "ActorMotionDefine",
+        "path_id": 3740287000205795675,
+        "name": "mot_live_chr_ttmr_ttmr-001_00_in",
+        "fields": {
+          "enableSeatedDynamicCorrection": 0
+        }
+      }
+    ]
+  },
+  "tln_live_ttmr-001": {
+    "unresolvedScriptPointers": 2730,
+    "physicsComponentCounts": {},
+    "settings": [
+      {
+        "type": "?",
+        "path_id": 11357,
+        "name": "",
+        "fields": {
+          "_isCmmnHeightCorrectionNeededForActorSwing": 0
+        }
+      }
+    ]
+  },
+  "mdl_chr_ttmr-cstm-0003_hair": {
+    "unresolvedScriptPointers": 0,
+    "physicsComponentCounts": {
+      "ActorSwingDynamicBone": 96,
+      "ActorAnimationQuartzDriverHairBone": 10,
+      "ActorSwingChain": 1
+    },
+    "settings": []
+  },
+  "mdl_chr_ttmr-base-0000_face": {
+    "unresolvedScriptPointers": 0,
+    "physicsComponentCounts": {
+      "ActorSwingStaticBone": 1
+    },
+    "settings": []
+  }
+}

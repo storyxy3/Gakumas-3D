@@ -1,6 +1,6 @@
 # ToEuler return-register audit (APK 3.5.3)
 
-`ActorAnimation.ActorAnimationMathUtility.ToEuler` at `0x657cb30` calls `ThreeAxisRot`, then rearranges its three float return registers. The previous reconstruction directly returned the helper for every order. Hex-Rays' untyped output did not show the return-register moves. The normalized comparator strips register-to-register moves; its previous accepted result cannot establish this dataflow.
+`ActorAnimation.ActorAnimationMathUtility.ToEuler` at `0x657cb30` calls `ThreeAxisRot`, then rearranges its three float return registers. The previous reconstruction directly returned the helper for every order. Hex-Rays' untyped output did not show the return-register moves. The comparator's semantic summary omits register-to-register moves (the full normalized instruction comparison retains them). Its previous accepted semantic flag therefore did not establish this return dataflow.
 
 Let `(a,b,c)` be the helper's returned `(s0,s1,s2)`.
 
@@ -16,3 +16,5 @@ Let `(a,b,c)` be the helper's returned `(s0,s1,s2)`.
 Common return `0x657ce48–0x657ce60` moves `s3` into `s1` and `s4` into `s2`. The complete raw disassembly is `to-euler-game.asm`.
 
 All eight skirt drivers in Temari's `cstm-0003` body use XYZ. This helper also serves other Quartz drivers; no costume coefficients, capsule geometry, masks, limits or solver iterations were adjusted.
+
+The final arm64 build at source commit `7d497cd` returns the same 205 normalized instructions as the APK. `to-euler-comparison.json` and `to-euler-rebuilt.asm` retain the exact comparison and raw rebuilt register moves. The prior Task H semantic explanation (equivalent dispatch/helper inlining) was incorrect for this method.

@@ -1,0 +1,249 @@
+{
+ "addedOverloads": [],
+ "same": 90,
+ "changed": [
+  {
+   "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$CalculateBillboardMatrix",
+   "similarity": 0.723,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$Execute",
+   "similarity": 0.569,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard",
+   "similarity": 0.962,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.BillboardMeshRenderSystem$$CreateBillboardMesh",
+   "similarity": 0.78,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdMeshRenderSystem$$.ctor",
+   "similarity": 0.969,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdMeshRenderSystem$$ComputeSkinning",
+   "similarity": 0.756,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdMeshRenderSystem$$Render",
+   "similarity": 0.623,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdMeshRenderSystem$$SetMaxInstanceCounts",
+   "similarity": 0.476,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdRendererFeature$$OnCameraPreCull",
+   "similarity": 0.764,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdRenderingSetupData$$Update",
+   "similarity": 0.242,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSortJob$$Execute",
+   "similarity": 0.914,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSortJob$$IsCulledOcclusionSphere",
+   "similarity": 0.789,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$.ctor",
+   "similarity": 0.994,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$BakeBillboardCrowd",
+   "similarity": 0.88,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$ComputeCrowdSkinning",
+   "similarity": 0.915,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$ComputePenlight",
+   "similarity": 0.872,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$DisposeBillboardMeshRenderSystem",
+   "similarity": 0.857,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$RenderBillboardCrowd",
+   "similarity": 0.783,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$RenderCrowd",
+   "similarity": 0.876,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$ScheduleJobs",
+   "similarity": 0.993,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$SetBillboardResolution",
+   "similarity": 0.246,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$SetDrawCounts",
+   "similarity": 0.48,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$Setup",
+   "similarity": 0.693,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystem$$SetupRenderingParameter",
+   "similarity": 0.789,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystemData$$.ctor",
+   "similarity": 0.938,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystemData$$ComputeUpdatePerson",
+   "similarity": 0.61,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystemData$$EqualData",
+   "similarity": 0.926,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystemData$$InitializeBytesBuffer",
+   "similarity": 0.59,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystemData$$InitializedPenlightInfoBuffer",
+   "similarity": 0.46,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdSystemData$$UpdatePersonIndexBuffer",
+   "similarity": 0.35,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.CrowdUtility$$GetCellBounds",
+   "similarity": 0.977,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$.ctor",
+   "similarity": 0.908,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$ComputeUpdatePenlight",
+   "similarity": 0.531,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$Dispose",
+   "similarity": 0.849,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$GetPenlightInfoBytesBuffer",
+   "similarity": 0.417,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$InitializeAppendBuffer",
+   "similarity": 0.689,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$InitializedArgsBuffer",
+   "similarity": 0.594,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Crowd.PenlightMeshRenderSystem$$Render",
+   "similarity": 0.65,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$LookCamera",
+   "similarity": 0.558,
+   "note": "layout"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "Campus.Crowd.CrowdSystem",
+   12
+  ],
+  [
+   "Campus.Crowd.PenlightMeshRenderSystem",
+   7
+  ],
+  [
+   "Campus.Crowd.CrowdSystemData",
+   6
+  ],
+  [
+   "Campus.Crowd.CrowdMeshRenderSystem",
+   4
+  ],
+  [
+   "Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob",
+   2
+  ],
+  [
+   "Campus.Crowd.BillboardMeshRenderSystem",
+   2
+  ],
+  [
+   "Campus.Crowd.CrowdSortJob",
+   2
+  ],
+  [
+   "Campus.Crowd.CrowdRendererFeature",
+   1
+  ],
+  [
+   "Campus.Crowd.CrowdRenderingSetupData",
+   1
+  ],
+  [
+   "Campus.Crowd.CrowdUtility",
+   1
+  ],
+  [
+   "Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob",
+   1
+  ]
+ ]
+}

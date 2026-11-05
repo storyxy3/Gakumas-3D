@@ -1,0 +1,1127 @@
+{
+ "addedOverloads": [],
+ "same": 370,
+ "changed": [
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$DualCoefficientConversion",
+   "similarity": 0.214,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverse",
+   "similarity": 0.242,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$EulerToBendrollQuaternionInverseYRoll",
+   "similarity": 0.238,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ExchangeArrayFromAxisConnection",
+   "similarity": 0.129,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$FromToRotation",
+   "similarity": 0.906,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$SingleCoefficientConversion",
+   "similarity": 0.154,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToQuaternion",
+   "similarity": 0.195,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityEuler",
+   "similarity": 0.444,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$ToUnityQuaternion",
+   "similarity": 0.72,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationMathUtility$$TripleCoefficientConversion",
+   "similarity": 0.727,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillBone$$Calc",
+   "similarity": 0.56,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillJobBone$$Execute",
+   "similarity": 0.689,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSetting$$ConvertToUnity",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$Start",
+   "similarity": 0.051,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$Update",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeBone$$Calc",
+   "similarity": 0.637,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeJobBone$$Execute",
+   "similarity": 0.871,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone$$Update",
+   "similarity": 0.012,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairBone$$Calc",
+   "similarity": 0.209,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairJobBone$$Execute",
+   "similarity": 0.989,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairJobBone$$Update",
+   "similarity": 0.956,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$Start",
+   "similarity": 0.039,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$Update",
+   "similarity": 0.012,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmJobBone$$Execute",
+   "similarity": 0.859,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$Start",
+   "similarity": 0.033,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$Update",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandJobBone$$Execute",
+   "similarity": 0.859,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$Start",
+   "similarity": 0.033,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$Update",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone$$Calc",
+   "similarity": 0.537,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone$$Execute",
+   "similarity": 0.909,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone$$Resolve",
+   "similarity": 0.897,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting$$ConvertToUnity",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone$$Update",
+   "similarity": 0.013,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegJobBone$$Execute",
+   "similarity": 0.859,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$Start",
+   "similarity": 0.033,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$Update",
+   "similarity": 0.022,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone$$LateUpdate",
+   "similarity": 0.024,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoBone$$CalcPosition",
+   "similarity": 0.603,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoJobBone$$Execute",
+   "similarity": 0.997,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone$$Update",
+   "similarity": 0.006,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationBone$$Calc",
+   "similarity": 0.13,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationJobBone$$Execute",
+   "similarity": 0.646,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationJobBone$$Update",
+   "similarity": 0.082,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverRotationSimpleBone$$Update",
+   "similarity": 0.024,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSimpleBoneBase$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtBone$$Calc",
+   "similarity": 0.956,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtJobBone$$Execute",
+   "similarity": 0.714,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSetting$$ConvertToUnity",
+   "similarity": 0.967,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$Start",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$Update",
+   "similarity": 0.021,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverFrillJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverFurisodeJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHairJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidArmJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidHandJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidSleeveJobBone>",
+   "similarity": 0.71,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverHumanoidUpLegJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverPonchoJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverRotationJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverSkirtJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<CampusActorAnimationJob, ActorAnimationQuartzDriverWaistJobBone>",
+   "similarity": 0.58,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<__Il2CppFullySharedGenericStructType, __Il2CppFullySharedGenericStructType>",
+   "similarity": 0.841,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistBone$$Calc",
+   "similarity": 0.366,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistJobBone$$Execute",
+   "similarity": 0.996,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone$$.ctor",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone$$GetBoneType",
+   "similarity": 0.5,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone$$Update",
+   "similarity": 0.014,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSlide",
+   "similarity": 0.692,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcDynamicSwing",
+   "similarity": 0.412,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$CalcStiffnessPendulum",
+   "similarity": 0.799,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessAnimation",
+   "similarity": 0.348,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBoneLayer",
+   "similarity": 0.983,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessBreastBones",
+   "similarity": 0.324,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneCollider",
+   "similarity": 0.506,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSeatedDynamicCorrection",
+   "similarity": 0.38,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessChainBoneSmoothing",
+   "similarity": 0.475,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBoneLayer",
+   "similarity": 0.945,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessDynamicBones",
+   "similarity": 0.32,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ProcessStaticBones",
+   "similarity": 0.436,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorAnimationSwingJobSkeleton$$ScaleCollider",
+   "similarity": 0.846,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$Transform",
+   "similarity": 0.304,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingAffineTransform$$op_Multiply",
+   "similarity": 0.304,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingChain$$UpdateChainInfo",
+   "similarity": 0.81,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingChain$$UpdateHierarchyDepth",
+   "similarity": 0.761,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollider$$.ctor",
+   "similarity": 0.4,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingColliderUtility$$ConvertJobCollider",
+   "similarity": 0.919,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingColliderUtility$$UpdateCollider",
+   "similarity": 0.916,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingColliderUtility$$UpdateFastHitCollider",
+   "similarity": 0.811,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckChainCollision",
+   "similarity": 0.447,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckDynamicCollision",
+   "similarity": 0.988,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CheckFastCollision",
+   "similarity": 0.95,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionCapsuleCapsule",
+   "similarity": 0.326,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereCapsule",
+   "similarity": 0.632,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$CollisionSphereSphere",
+   "similarity": 0.897,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessColliderToCollider",
+   "similarity": 0.509,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingCollisionUtility$$ProcessSphereToSphere",
+   "similarity": 0.897,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingDynamicCollider$$.ctor",
+   "similarity": 0.4,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$.ctor",
+   "similarity": 0.05,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$GetHierarchyDepth",
+   "similarity": 0.069,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$Initialize",
+   "similarity": 0.016,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$OnDisable",
+   "similarity": 0.071,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$OnEnable",
+   "similarity": 0.071,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$RegisterBone",
+   "similarity": 0.012,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$RegisterBones",
+   "similarity": 0.014,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$SetupJob",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$get_breastBones",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$get_dynamicBones",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingGroup$$get_staticBones",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobBreastBone$$Reset",
+   "similarity": 0.467,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobBreastBoneSetting$$.ctor",
+   "similarity": 0.985,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBone$$Reset",
+   "similarity": 0.416,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingJobDynamicBoneCash$$IsAlreadyStable",
+   "similarity": 0.961,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingStaticCollider$$.ctor",
+   "similarity": 0.4,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.ActorSwingUtility$$ToUnityQuaternion",
+   "similarity": 0.68,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$ApplyActorSwingCmmnHeightCorrection",
+   "similarity": 0.129,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$CreateFullBodyIK",
+   "similarity": 0.842,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$CreateSwingSkeleton",
+   "similarity": 0.511,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$DisableIKGoal",
+   "similarity": 0.9,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$ProcessJointLimit",
+   "similarity": 0.968,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$ProcessLookAtLimit",
+   "similarity": 0.968,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusJointLimit",
+   "similarity": 0.783,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$SetupCampusLookAtLimit",
+   "similarity": 0.342,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$SetupIKGoalEffector",
+   "similarity": 0.97,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateConstraintSource<ActorAnimationRigData>",
+   "similarity": 0.8,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<ActorAnimationRigData>",
+   "similarity": 0.474,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<CampusActorAnimationRigData>",
+   "similarity": 0.676,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationJob$$UpdateRigData<__Il2CppFullySharedGenericStructType>",
+   "similarity": 0.814,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$RegisterBones",
+   "similarity": 0.534,
+   "note": "semantic"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetBreastBone",
+   "similarity": 0.598,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetDynamicBone",
+   "similarity": 0.685,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetDynamicSkin",
+   "similarity": 0.678,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$ResetTime",
+   "similarity": 0.929,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRig$$SetInactiveBones",
+   "similarity": 0.987,
+   "note": "layout"
+  },
+  {
+   "method": "ActorAnimation.CampusActorAnimationRigData$$Sort",
+   "similarity": 0.938,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$ClearNodAdditive",
+   "similarity": 0.5,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$DisableJointLimitSettingParam",
+   "similarity": 0.182,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$Initialize",
+   "similarity": 0.714,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetCustomLookAt",
+   "similarity": 0.8,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetEnableIKCollider",
+   "similarity": 0.038,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetNodAdditiveHeadFrontBack",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetNodAdditiveHeadLeftRight",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetNodAdditiveHeadRollLeftRight",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetNodAdditiveNeckFrontBack",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetNodAdditiveNeckLeftRight",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetNodAdditiveNeckRollLeftRight",
+   "similarity": 0.667,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorAnimation$$SetupCampusJointLimitSetting",
+   "similarity": 0.0,
+   "note": "semantic"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$InitializeActorAnimation",
+   "similarity": 0.989,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorController$$OnClipPlay",
+   "similarity": 0.877,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorHipCorrector$$LateUpdate",
+   "similarity": 0.912,
+   "note": "layout"
+  },
+  {
+   "method": "Campus.Common.CampusActorModelParts$$OnRegisterBone",
+   "similarity": 0.759,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverFrillJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverFurisodeJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHairJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidArmJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidHandJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidSleeveJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidUpLegJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverPonchoJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverRotationJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverSkirtJobBone>",
+  "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverWaistJobBone>",
+  "ActorAnimation.ActorAnimationSwingSkeletonUtility$$ProcessSwingSkeleton<ActorAnimationJob>"
+ ],
+ "onlyRef": [
+  "ActorAnimation.CampusActorAnimationJob$$get_jobWeight"
+ ],
+ "changedByClass": [
+  [
+   "ActorAnimation.ActorAnimationSwingJobSkeleton",
+   13
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationJob",
+   13
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverUtility",
+   12
+  ],
+  [
+   "Campus.Common.CampusActorAnimation",
+   12
+  ],
+  [
+   "ActorAnimation.ActorSwingGroup",
+   11
+  ],
+  [
+   "ActorAnimation.ActorAnimationMathUtility",
+   10
+  ],
+  [
+   "ActorAnimation.ActorSwingCollisionUtility",
+   8
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationRig",
+   6
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone",
+   4
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone",
+   4
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone",
+   4
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone",
+   4
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone",
+   4
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone",
+   4
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone",
+   3
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone",
+   3
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone",
+   3
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone",
+   3
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone",
+   3
+  ],
+  [
+   "ActorAnimation.ActorSwingColliderUtility",
+   3
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHairJobBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveJobBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverRotationJobBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverRotationSimpleBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverWaistBone",
+   2
+  ],
+  [
+   "ActorAnimation.ActorSwingAffineTransform",
+   2
+  ],
+  [
+   "ActorAnimation.ActorSwingChain",
+   2
+  ],
+  [
+   "Campus.Common.CampusActorController",
+   2
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFrillSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFurisodeBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverFurisodeJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHairBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverPonchoBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverPonchoJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverRotationBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSimpleBoneBase",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverSkirtSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorAnimationQuartzDriverWaistJobBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingCollider",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingDynamicCollider",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobBreastBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobBreastBoneSetting",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobDynamicBone",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingJobDynamicBoneCash",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingStaticCollider",
+   1
+  ],
+  [
+   "ActorAnimation.ActorSwingUtility",
+   1
+  ],
+  [
+   "ActorAnimation.CampusActorAnimationRigData",
+   1
+  ],
+  [
+   "Campus.Common.CampusActorHipCorrector",
+   1
+  ],
+  [
+   "Campus.Common.CampusActorModelParts",
+   1
+  ]
+ ]
+}

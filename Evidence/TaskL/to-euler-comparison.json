@@ -1,0 +1,10 @@
+{
+  "method": "ActorAnimation.ActorAnimationMathUtility$$ToEuler",
+  "gameAddress": "0x657cb30",
+  "rebuiltAddress": "0x277e050",
+  "signatureMatches": true,
+  "gameNormalizedInstructions": 205,
+  "rebuiltNormalizedInstructions": 205,
+  "sameNormalizedInstructions": true,
+  "scope": "existing urp_func_diff.py normalization; return-register moves additionally retained in raw assembly evidence"
+}

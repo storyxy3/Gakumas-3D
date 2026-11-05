@@ -1,0 +1,54 @@
+{
+  "f": {
+    "baseline": "Task K final",
+    "same": 631,
+    "changed": 74,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": []
+  },
+  "h": {
+    "baseline": "Task K final",
+    "same": 1272,
+    "changed": 279,
+    "onlyGame": 125,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": [
+      {
+        "method": "Campus.Common.CampusActorModelParts$$InitializeCampusMaterials",
+        "similarity": 0.988,
+        "note": "layout"
+      },
+      {
+        "method": "Campus.Timeline.CampusDirectorControlAsset$$CreatePlayable",
+        "similarity": 0.975,
+        "note": "semantic"
+      }
+    ],
+    "review": "ToEuler now matches all 205 normalized instructions. InitializeCampusMaterials only hoists two metadata pointer loads around list reads; the reconstructed source is unchanged. CreatePlayable moves a metadata load into a linker thunk at 0x50a7664 (ldr x20,[x20,#0xe40]; b 0x4e1d01c), producing the extra b FN. All original missing-name lists are unchanged; F/I/J/K flags are unchanged."
+  },
+  "i": {
+    "baseline": "Task K final",
+    "same": 252,
+    "changed": 63,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": []
+  },
+  "j": {
+    "baseline": "Task K final",
+    "same": 90,
+    "changed": 39,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": []
+  },
+  "k": {
+    "baseline": "Task K final",
+    "same": 5,
+    "changed": 2,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": []
+  }
+}

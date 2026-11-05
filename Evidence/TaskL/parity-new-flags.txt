@@ -1,0 +1,47 @@
+
+== Campus.Common.CampusActorModelParts$$InitializeCampusMaterials layout
+--- game
++++ rebuilt
+@@ -178,6 +178,7 @@
+ cbz x22, +1288
+ ldr w8, [x22,#F]
++ldr x25, [x19]
+ cmp w24, w8
+-b.ge +748
++b.ge +752
+ ldr x2, [x20]
+ mov x0, x22
+@@ -185,5 +186,5 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ mov x27, x0
+-b +752
++b +756
+ mov x27, xzr
+ ldr x2, [x20]
+@@ -192,5 +193,4 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ adrp x8,PAGE
+-ldr x25, [x19]
+ mov x28, x0
+ ldr x8, META VL.Core.MaterialInfo_TypeInfo
+@@ -249,4 +249,5 @@
+ b.lt +1180
+ mov w23, wzr
++ldr x24, [x19]
+ ldr x2, [x20]
+ mov x0, x22
+@@ -254,5 +255,4 @@
+ bl System.Collections.Generic.List<object>$$get_Item
+ adrp x8,PAGE
+-ldr x24, [x19]
+ mov x26, x0
+ ldr x8, META VL.Core.MaterialInfo_TypeInfo
+
+== Campus.Timeline.CampusDirectorControlAsset$$CreatePlayable semantic
+--- game
++++ rebuilt
+@@ -1,3 +1,4 @@
+ ldr  MMETH Method$UnityEngine.ExposedReference<PlayableDirector>.Resolve()
++b FN
+ ldr  MMETH Method$UnityEngine.ExposedReference<PlayableDirector>.Resolve()
+ bl FN

@@ -1,0 +1,359 @@
+{
+  "broadMethodNames": 556,
+  "groups": {
+    "runtime_family": {
+      "same": 369,
+      "layout": 56,
+      "semantic": 63
+    },
+    "dormant": {
+      "semantic": 52,
+      "same": 1,
+      "onlyGame": 12,
+      "layout": 3
+    }
+  },
+  "dormantMethods": [
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$Start",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFrillSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverFurisodeSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$Start",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHairSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$Start",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidArmSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$Start",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidHandSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidSleeveSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$Start",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverHumanoidUpLegSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverLateRotationSimpleBone$$LateUpdate",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverPonchoSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverRotationSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverRotationSimpleBone$$GetBoneType",
+      "comparison": "same",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverRotationSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$Start",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverSkirtSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverFrillJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverFurisodeJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHairJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidArmJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidHandJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidSleeveJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverHumanoidUpLegJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverPonchoJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverRotationJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverSkirtJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverUtility$$ProcessQuartzDriverParts<ActorAnimationJob, ActorAnimationQuartzDriverWaistJobBone>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone$$.ctor",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone$$GetBoneType",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationQuartzDriverWaistSimpleBone$$Update",
+      "comparison": "semantic",
+      "reason": "Separate MonoBehaviour-driven Quartz path; no such components in the loaded body, hair, face or host."
+    },
+    {
+      "method": "ActorAnimation.ActorAnimationSwingSkeletonUtility$$ProcessSwingSkeleton<ActorAnimationJob>",
+      "comparison": "onlyGame",
+      "reason": "Non-Campus generic job specialization; this live builds CampusActorAnimationJob."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$.ctor",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$GetHierarchyDepth",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$Initialize",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$OnDisable",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$OnEnable",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$RegisterBone",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$RegisterBones",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$SetupJob",
+      "comparison": "semantic",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$get_breastBones",
+      "comparison": "layout",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$get_dynamicBones",
+      "comparison": "layout",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "ActorAnimation.ActorSwingGroup$$get_staticBones",
+      "comparison": "layout",
+      "reason": "Legacy group component; absent from loaded actor assets; Initialize/SetupJob/RegisterBones have no APK direct branch callers."
+    },
+    {
+      "method": "Campus.Common.CampusActorAnimation$$DisableJointLimitSettingParam",
+      "comparison": "semantic",
+      "reason": "No APK direct branch callers and no reconstructed live caller; context/configuration entry point outside this playback."
+    },
+    {
+      "method": "Campus.Common.CampusActorAnimation$$SetEnableIKCollider",
+      "comparison": "semantic",
+      "reason": "No APK direct branch callers and no reconstructed live caller; context/configuration entry point outside this playback."
+    },
+    {
+      "method": "Campus.Common.CampusActorAnimation$$SetupCampusJointLimitSetting",
+      "comparison": "semantic",
+      "reason": "No APK direct branch callers and no reconstructed live caller; context/configuration entry point outside this playback."
+    }
+  ],
+  "limitations": "Runtime-family labels describe the expanded method families, not proof that every method runs in this costume. Retained differences remain flagged; only ToEuler has newly established full normalized instruction equality. Native direct-branch census cannot exclude reflection or virtual dispatch."
+}

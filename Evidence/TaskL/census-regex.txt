@@ -1,0 +1,1 @@
+^ActorAnimation\.(ActorAnimationMathUtility|ActorAnimationQuartzDriver[^.$]*|ActorAnimationSwing[^.$]*|ActorSwing[^.$]*|CampusActorAnimation(Job|Rig|RigData|Builder))\$\$|^Campus\.Common\.(CampusActorAnimation|CampusActorHipCorrector)\$\$|^Campus\.Common\.CampusActor(ModelParts|Controller)\$\$(OnRegisterBone|InitializeActorAnimation|OnClipPlay)$
