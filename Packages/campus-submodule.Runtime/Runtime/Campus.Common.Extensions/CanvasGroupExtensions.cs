@@ -2,22 +2,11 @@
 // LiveSceneView.FadeBlackTintAsync uses this tween for its black overlay.
 namespace Campus.Common.Extensions
 {
-    using System.Runtime.CompilerServices;
     using DG.Tweening;
     using UnityEngine;
 
     public static class CanvasGroupExtensions
     {
-        [CompilerGenerated]
-        private sealed class _003C_003Ec__DisplayClass1_0
-        {
-            public CanvasGroup canvasGroup;
-            internal float _003CDOFadeBlocking_003Eb__0()
-            {
-                return canvasGroup.alpha;
-            }
-        }
-
         public static void SetBlockingAlpha(this CanvasGroup canvasGroup, float alpha)
         {
             canvasGroup.alpha = alpha;
@@ -30,9 +19,8 @@ namespace Campus.Common.Extensions
 
         public static Tween DOFadeBlocking(this CanvasGroup canvasGroup, float alpha, float duration)
         {
-            var closure = new _003C_003Ec__DisplayClass1_0 { canvasGroup = canvasGroup };
-            return DOTween.To(closure._003CDOFadeBlocking_003Eb__0, closure.canvasGroup.SetBlockingAlpha, alpha, duration)
-                .SetLink(closure.canvasGroup.gameObject);
+            return DOTween.To(() => canvasGroup.alpha, canvasGroup.SetBlockingAlpha, alpha, duration)
+                .SetLink(canvasGroup.gameObject);
         }
     }
 }
