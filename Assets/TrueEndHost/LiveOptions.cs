@@ -13,6 +13,7 @@ namespace TrueEnd.Host
         public double StartTime;
         public double QuitAfter = double.PositiveInfinity;
         public double[] ScreenshotTimes = Array.Empty<double>();
+        public bool QuitAtEnd;
         public bool Mute = Application.platform == RuntimePlatform.LinuxPlayer;
 
         public static LiveOptions Parse(string[] arguments)
@@ -31,7 +32,9 @@ namespace TrueEnd.Host
                     case "--capture-dir": options.CaptureDirectory = Path.GetFullPath(Value(arguments, ref i)); break;
                     case "--start-time": options.StartTime = Seconds(Value(arguments, ref i)); break;
                     case "--quit-after": options.QuitAfter = Seconds(Value(arguments, ref i)); break;
+                    case "--quit-at-end": options.QuitAtEnd = true; break;
                     case "--screenshots":
+                        options.QuitAtEnd = true;
                         options.ScreenshotTimes = Value(arguments, ref i).Split(',').Select(Seconds).Distinct().OrderBy(t => t).ToArray();
                         break;
                     case "--mute": options.Mute = true; break;

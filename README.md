@@ -54,3 +54,12 @@ It restores original compiler-generated and event-field names that C# source
 cannot declare directly.
 
 No tests, test assemblies or Unity Test Framework are included.
+
+The standalone host keeps its window open on the final black frame by default. Close the window to exit.
+`--quit-at-end` exits after the ending presentation, and `--screenshots <times>` implies this option.
+`--quit-after <seconds>` is a wall-clock playback limit and also exits when reached.
+The client presentation pauses the director 0.4 seconds before its duration and fades black over 0.3 seconds;
+the host retains a presentation clock through the remaining duration so screenshot requests can capture the fade.
+`LIVE_CAPTURE actual` reports that presentation clock; `director` reports the paused director time during the fade.
+`LIVE_STOPPED` is followed by `LIVE_QUIT` for automatic runs or `LIVE_IDLE` for interactive runs.
+Linux playback must remain silent (`--mute -noaudio`).

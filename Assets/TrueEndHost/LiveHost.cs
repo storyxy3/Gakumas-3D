@@ -175,20 +175,15 @@ namespace TrueEnd.Host
                     }
                 }
                 Debug.Log($"LIVE_STOPPED time={timeline.master.time} presentation={presentationTime}");
-                timeline.master.Stop();
+                timeline.master.Pause();
                 musicSource.Stop();
-                await SceneManager.UnloadSceneAsync(live);
-                actor.DestroyActor();
-                Destroy(cameraObject);
-                await UniTask.NextFrame();
-                await SceneManager.UnloadSceneAsync(stage);
-                QualitySettings.renderPipeline = null;
-                GraphicsSettings.defaultRenderPipeline = null;
-                Destroy(pipeline);
-                await UniTask.NextFrame();
-                ResourcesAPI.overrideAPI = null;
-                foreach (var bundle in bundles.Values) bundle.Unload(true);
-                Application.Quit();
+                if (options.QuitAtEnd || Time.realtimeSinceStartupAsDouble - started >= options.QuitAfter)
+                {
+                    // Request exit before any asynchronous scene unload. Unity owns teardown on quit.
+                    Debug.Log("LIVE_QUIT");
+                    Application.Quit();
+                }
+                else Debug.Log("LIVE_IDLE close the window to exit, or use --quit-at-end");
             }
             catch (Exception exception)
             {
