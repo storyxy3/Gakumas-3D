@@ -113,7 +113,10 @@ namespace VLB
                     int shadowIndex = GetShadowLightIndex(entityChunk.components[index], lights, shadowCasterPass);
                     if (shadowIndex < 0) continue;
                     var parameters = drawCallChunk.params0[j];
-                    cachedChunk.propertyBlock.SetVector(_ColorParam, drawCallChunk.colors[j]);
+                    // APK 3.5.3 0xe0cc66c: shadow beams bake the larger inside/outside intensity into color.
+                    var intensities = drawCallChunk.params1[j];
+                    float intensity = Mathf.Max(intensities.c0.y, intensities.c1.y);
+                    cachedChunk.propertyBlock.SetVector(_ColorParam, drawCallChunk.colors[j] * intensity);
                     cachedChunk.propertyBlock.SetVector(_CameraParam, drawCallChunk.cameraParams[j]);
                     cachedChunk.propertyBlock.SetVector(_Params0, new Vector4(parameters.c0.y, parameters.c1.y, parameters.c2.y, parameters.c1.x));
                     cachedChunk.propertyBlock.SetVector(_ShadowParam, new Vector4(cachedChunk.shadowIntensity[index], jitter, 0f, 0f));
