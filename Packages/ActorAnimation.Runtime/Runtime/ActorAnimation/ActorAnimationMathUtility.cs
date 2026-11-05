@@ -171,18 +171,19 @@ namespace ActorAnimation
         public static float3 ToEuler(quaternion q, math.RotationOrder rotSeq)
         {
             float x = q.value.x, y = q.value.y, z = q.value.z, w = q.value.w;
+            // APK 3.5.3 0x657cb30: reorder ThreeAxisRot output into XYZ components.
             switch (rotSeq)
             {
                 case math.RotationOrder.XYZ:
-                    return ThreeAxisRot(-2f*(y*z+w*x), z*z+((w*w-x*x)-y*y), 2f*(x*z-w*y), -2f*(x*y+w*z), ((w*w+x*x)-y*y)-z*z);
+                    return ThreeAxisRot(-2f*(y*z+w*x), z*z+((w*w-x*x)-y*y), 2f*(x*z-w*y), -2f*(x*y+w*z), ((w*w+x*x)-y*y)-z*z).zyx;
                 case math.RotationOrder.XZY:
-                    return ThreeAxisRot(2f*(y*z-w*x), (y*y+(w*w-x*x))-z*z, -2f*(x*y+w*z), 2f*(x*z-w*y), ((w*w+x*x)-y*y)-z*z);
+                    return ThreeAxisRot(2f*(y*z-w*x), (y*y+(w*w-x*x))-z*z, -2f*(x*y+w*z), 2f*(x*z-w*y), ((w*w+x*x)-y*y)-z*z).zxy;
                 case math.RotationOrder.YXZ:
-                    return ThreeAxisRot(2f*(x*z-w*y), z*z+((w*w-x*x)-y*y), -2f*(y*z+w*x), 2f*(x*y-w*z), (y*y+(w*w-x*x))-z*z);
+                    return ThreeAxisRot(2f*(x*z-w*y), z*z+((w*w-x*x)-y*y), -2f*(y*z+w*x), 2f*(x*y-w*z), (y*y+(w*w-x*x))-z*z).yzx;
                 case math.RotationOrder.YZX:
-                    return ThreeAxisRot(-2f*(x*z+w*y), ((w*w+x*x)-y*y)-z*z, 2f*(x*y-w*z), -2f*(y*z+w*x), (y*y+(w*w-x*x))-z*z);
+                    return ThreeAxisRot(-2f*(x*z+w*y), ((w*w+x*x)-y*y)-z*z, 2f*(x*y-w*z), -2f*(y*z+w*x), (y*y+(w*w-x*x))-z*z).xzy;
                 case math.RotationOrder.ZXY:
-                    return ThreeAxisRot(-2f*(x*y+w*z), (y*y+(w*w-x*x))-z*z, 2f*(y*z-w*x), -2f*(x*z+w*y), z*z+((w*w-x*x)-y*y));
+                    return ThreeAxisRot(-2f*(x*y+w*z), (y*y+(w*w-x*x))-z*z, 2f*(y*z-w*x), -2f*(x*z+w*y), z*z+((w*w-x*x)-y*y)).yxz;
                 case math.RotationOrder.ZYX:
                     return ThreeAxisRot(2f*(x*y-w*z), ((w*w+x*x)-y*y)-z*z, -2f*(x*z+w*y), 2f*(y*z-w*x), z*z+((w*w-x*x)-y*y));
                 default: return float3.zero;
