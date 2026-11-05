@@ -141,6 +141,7 @@ namespace TrueEnd.Host
                 actor.SetRendererActive(true);
                 fadeGroup = gameObject.AddComponent<CanvasGroup>();
                 fadeGroup.SetBlockingAlpha(0f);
+                using var poseRecorder = options.PoseLog == null ? null : new LivePoseRecorder(actor, options.PoseLog);
                 timeline.Play();
                 Debug.Log($"LIVE_PLAYING time={timeline.master.time} duration={timeline.master.duration}");
                 double started = Time.realtimeSinceStartupAsDouble;
@@ -154,6 +155,7 @@ namespace TrueEnd.Host
                 while (presentationTime < timeline.master.duration && Time.realtimeSinceStartupAsDouble - started < options.QuitAfter)
                 {
                     await UniTask.WaitForEndOfFrame(this);
+                    poseRecorder?.Record(timeline.master.time);
                     // The client pauses its director in OnEndLiveSequence, then fades the UI.
                     // Keep a host presentation clock so captures can also cover that paused fade.
                     presentationTime = fadeStartedAt < 0 ? timeline.master.time : pausedAt + Time.timeAsDouble - fadeStartedAt;

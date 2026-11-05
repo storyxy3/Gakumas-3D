@@ -10,6 +10,7 @@ namespace TrueEnd.Host
     {
         public string DataDirectory = Path.Combine(Application.streamingAssetsPath, "ttmr001");
         public string CaptureDirectory = Path.GetFullPath("captures");
+        public string PoseLog;
         public double StartTime;
         public double QuitAfter = double.PositiveInfinity;
         public double[] ScreenshotTimes = Array.Empty<double>();
@@ -30,6 +31,7 @@ namespace TrueEnd.Host
                         break;
                     case "--data": options.DataDirectory = Path.GetFullPath(Value(arguments, ref i)); break;
                     case "--capture-dir": options.CaptureDirectory = Path.GetFullPath(Value(arguments, ref i)); break;
+                    case "--pose-log": options.PoseLog = Path.GetFullPath(Value(arguments, ref i)); break;
                     case "--start-time": options.StartTime = Seconds(Value(arguments, ref i)); break;
                     case "--quit-after": options.QuitAfter = Seconds(Value(arguments, ref i)); break;
                     case "--quit-at-end": options.QuitAtEnd = true; break;
