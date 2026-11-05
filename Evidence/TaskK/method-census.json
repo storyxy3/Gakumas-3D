@@ -1,0 +1,52 @@
+[
+  {
+    "method": "Campus.Common.Extensions.CanvasGroupExtensions.<>c__DisplayClass1_0$$<DOFadeBlocking>b__0",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/CanvasGroupExtensions.cs",
+    "apkAddresses": [
+      "0x7471288"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.CanvasGroupExtensions$$SetBlockingAlpha",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/CanvasGroupExtensions.cs",
+    "apkAddresses": [
+      "0x7470d0c"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.CanvasGroupExtensions$$DOFadeBlocking",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/CanvasGroupExtensions.cs",
+    "apkAddresses": [
+      "0x7470db0"
+    ]
+  },
+  {
+    "method": "VLB.Config$$RefreshGlobalShaderProperties",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/Config.cs",
+    "apkAddresses": [
+      "0xe0c7d40"
+    ]
+  },
+  {
+    "method": "VLB.VLBDrawSystem$$ExecuteHD",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/VLBDrawSystem.cs",
+    "apkAddresses": [
+      "0xe0cc2e0",
+      "0xe0cc454"
+    ]
+  },
+  {
+    "method": "VLB.ShaderProperties.HD$$.cctor",
+    "sourcePath": "Packages/quaunity-volumetriclightbeam.Runtime/Runtime/VLB/ShaderProperties.cs",
+    "apkAddresses": [
+      "0xe0e1be4"
+    ]
+  },
+  {
+    "method": "Campus.Common.Extensions.CanvasGroupExtensions.<>c__DisplayClass1_0$$.ctor",
+    "sourcePath": "Packages/campus-submodule.Runtime/Runtime/Campus.Common.Extensions/CanvasGroupExtensions.cs",
+    "apkAddresses": [
+      "0x7470f48"
+    ]
+  }
+]

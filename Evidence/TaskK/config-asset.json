@@ -1,0 +1,116 @@
+{
+  "asset": "resources/vlbconfigoverride",
+  "configuration": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": 13660
+    },
+    "m_Name": "VLBConfigOverride",
+    "geometryOverrideLayer": 1,
+    "geometryLayerID": 12,
+    "geometryTag": "Untagged",
+    "geometryRenderQueue": 3100,
+    "geometryRenderQueueHD": 3100,
+    "m_RenderPipeline": 1,
+    "m_RenderingMode": 2,
+    "ditheringFactor": 0.0,
+    "useLightColorTemperature": 0,
+    "sharedMeshSides": 32,
+    "sharedMeshSegments": 10,
+    "hdBeamsCameraBlendingDistance": 0.5,
+    "globalNoiseScale": 0.10000000149011612,
+    "globalNoiseVelocity": {
+      "x": 0.07000000029802322,
+      "y": 0.18000000715255737,
+      "z": 0.05000000074505806
+    },
+    "fadeOutCameraTag": "MainCamera",
+    "noiseTexture3D": {
+      "m_FileID": 0,
+      "m_PathID": 742
+    },
+    "dustParticlesPrefab": {
+      "m_FileID": 0,
+      "m_PathID": 262791
+    },
+    "ditheringNoiseTexture": {
+      "m_FileID": 0,
+      "m_PathID": 376
+    },
+    "jitteringNoiseTexture": {
+      "m_FileID": 0,
+      "m_PathID": 446
+    },
+    "noiseTexture2D": {
+      "m_FileID": 0,
+      "m_PathID": 460
+    },
+    "featureEnabledColorGradient": 0,
+    "featureEnabledDepthBlend": 1,
+    "featureEnabledNoise3D": 1,
+    "featureEnabledDynamicOcclusion": 0,
+    "featureEnabledMeshSkewing": 0,
+    "featureEnabledShaderAccuracyHigh": 0,
+    "featureEnabledShadow": 0,
+    "featureEnabledCookie": 0,
+    "m_RaymarchingQualities": [
+      {
+        "name": "Fast",
+        "stepCount": 5,
+        "_UniqueID": 1
+      },
+      {
+        "name": "Balanced",
+        "stepCount": 10,
+        "_UniqueID": 2
+      },
+      {
+        "name": "High",
+        "stepCount": 20,
+        "_UniqueID": 3
+      }
+    ],
+    "m_DefaultRaymarchingQualityUniqueID": 2,
+    "pluginVersion": 20000,
+    "_DummyMaterial": {
+      "m_FileID": 0,
+      "m_PathID": 170
+    },
+    "_BeamShader": {
+      "m_FileID": 0,
+      "m_PathID": 696
+    },
+    "_BeamShaderHD": {
+      "m_FileID": 0,
+      "m_PathID": 684
+    }
+  },
+  "textures": {
+    "ditheringNoiseTexture": {
+      "name": "VLBDitheringNoise",
+      "width": 8,
+      "height": 8,
+      "format": 3,
+      "sha256": "27244007f3638e9c4ff1d135f1fc11de5ab63673e4cdd286c82df722b1c25b1d"
+    },
+    "jitteringNoiseTexture": {
+      "name": "VLBBlueNoise",
+      "width": 256,
+      "height": 256,
+      "format": 1,
+      "sha256": "276870676108d0e19a6eabff1995979926fac4569cbde0689a524cdd361c88ad"
+    },
+    "noiseTexture2D": {
+      "name": "eff_ps_live_tex_flare_shine_00",
+      "width": 512,
+      "height": 32,
+      "format": 1,
+      "sha256": "41ff8e90a3162a498a771d3550d4e0a858f3a8f3367f47bcaa5443de011750a2"
+    }
+  }
+}

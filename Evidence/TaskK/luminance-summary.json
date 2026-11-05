@@ -1,0 +1,783 @@
+{
+  "metric": "Mean of encoded RGB weighted by Rec.709 coefficients; not scene-linear luminance. Adjacent captured frames, normally 0.1 timeline seconds apart. No pixel differences.",
+  "regionsAt1920x1080": {
+    "background": [
+      1400,
+      200,
+      1900,
+      600
+    ],
+    "character": [
+      500,
+      250,
+      1100,
+      900
+    ],
+    "active_image": [
+      0,
+      132,
+      1920,
+      948
+    ]
+  },
+  "stableEndingWindow": [
+    153.0,
+    154.8
+  ],
+  "ending": {
+    "dmm": {
+      "background": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 0.7898954360000027,
+        "medianAbsoluteDelta": 0.866233919999992,
+        "maximumAbsoluteDelta": 1.308155604000035
+      },
+      "character": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 1.4695810231054134,
+        "medianAbsoluteDelta": 1.002855268461559,
+        "maximumAbsoluteDelta": 4.577576545640994
+      },
+      "active_image": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 0.6244934260110308,
+        "medianAbsoluteDelta": 0.5014704719413317,
+        "maximumAbsoluteDelta": 1.8389386568117203
+      }
+    },
+    "linux_after": {
+      "background": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 0.3435250773110457,
+        "medianAbsoluteDelta": 0.330036695149019,
+        "maximumAbsoluteDelta": 0.5875514499091423
+      },
+      "character": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 1.8287707595586338,
+        "medianAbsoluteDelta": 1.5866714463048766,
+        "maximumAbsoluteDelta": 4.531351353348725
+      },
+      "active_image": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 0.9965325749176664,
+        "medianAbsoluteDelta": 0.7243486201746236,
+        "maximumAbsoluteDelta": 2.4244111744600048
+      }
+    },
+    "linux_before": {
+      "background": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 3.7381070732442634,
+        "medianAbsoluteDelta": 3.4392025140729743,
+        "maximumAbsoluteDelta": 8.587680169997071
+      },
+      "character": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 7.191266935719786,
+        "medianAbsoluteDelta": 3.7951857199769137,
+        "maximumAbsoluteDelta": 25.714897277136302
+      },
+      "active_image": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 6.7015853671204875,
+        "medianAbsoluteDelta": 6.039523918600722,
+        "maximumAbsoluteDelta": 18.582922873965984
+      }
+    },
+    "windows_before": {
+      "background": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 5.265367707444451,
+        "medianAbsoluteDelta": 3.5767663974999735,
+        "maximumAbsoluteDelta": 13.79241754100002
+      },
+      "character": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 5.0762753666951586,
+        "medianAbsoluteDelta": 4.797403707692304,
+        "maximumAbsoluteDelta": 12.650560520512812
+      },
+      "active_image": {
+        "adjacentPairs": 18,
+        "meanAbsoluteDelta": 4.312379644302889,
+        "medianAbsoluteDelta": 3.045283548815334,
+        "maximumAbsoluteDelta": 11.15461403416053
+      }
+    }
+  },
+  "liveWindows": {
+    "5": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 11.468686548701076,
+          "medianAbsoluteDelta": 10.012831859769875,
+          "maximumAbsoluteDelta": 30.603321414983228
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 8.434430846902194,
+          "medianAbsoluteDelta": 5.271255949308795,
+          "maximumAbsoluteDelta": 18.88856821198155
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.968965359987733,
+          "medianAbsoluteDelta": 2.543967877987143,
+          "maximumAbsoluteDelta": 5.446458359374958
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 11.316317203651693,
+          "medianAbsoluteDelta": 10.118116622882482,
+          "maximumAbsoluteDelta": 30.345740556209776
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 8.407837756272404,
+          "medianAbsoluteDelta": 5.256302728110626,
+          "maximumAbsoluteDelta": 18.8338662764977
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.935061713388478,
+          "medianAbsoluteDelta": 2.5628669152113446,
+          "maximumAbsoluteDelta": 5.465771326976096
+        }
+      }
+    },
+    "15": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 8.082667046129384,
+          "medianAbsoluteDelta": 7.425010571609761,
+          "maximumAbsoluteDelta": 18.526850412175037
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 21.144755633896565,
+          "medianAbsoluteDelta": 14.288994124423965,
+          "maximumAbsoluteDelta": 54.6872667926267
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 14.886131631050866,
+          "medianAbsoluteDelta": 19.97049685431986,
+          "maximumAbsoluteDelta": 28.977714572610253
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 8.306241187305611,
+          "medianAbsoluteDelta": 7.757002065404478,
+          "maximumAbsoluteDelta": 19.33857479844187
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 20.92907039426523,
+          "medianAbsoluteDelta": 14.46651225806454,
+          "maximumAbsoluteDelta": 54.79509723963132
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 14.772585166717745,
+          "medianAbsoluteDelta": 20.094938092830887,
+          "maximumAbsoluteDelta": 29.012405971966913
+        }
+      }
+    },
+    "25": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.536119676701784,
+          "medianAbsoluteDelta": 3.5525560829785263,
+          "maximumAbsoluteDelta": 6.351378766192596
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.072430043010758,
+          "medianAbsoluteDelta": 1.818400603686655,
+          "maximumAbsoluteDelta": 4.932880027649759
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.3001306118515097,
+          "medianAbsoluteDelta": 1.5261475528492952,
+          "maximumAbsoluteDelta": 8.795848041130512
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.6938715161397417,
+          "medianAbsoluteDelta": 3.6457457287797865,
+          "maximumAbsoluteDelta": 7.242285379110399
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.0341264751664188,
+          "medianAbsoluteDelta": 1.8946942949308436,
+          "maximumAbsoluteDelta": 5.026263138248851
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.257181953380303,
+          "medianAbsoluteDelta": 1.647120155101078,
+          "maximumAbsoluteDelta": 8.874659127987115
+        }
+      }
+    },
+    "35": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 1.663989045907938,
+          "medianAbsoluteDelta": 1.5680503034695334,
+          "maximumAbsoluteDelta": 5.6081352386991625
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 6.113455561187911,
+          "medianAbsoluteDelta": 2.5603018064516476,
+          "maximumAbsoluteDelta": 19.37511809216589
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 1.8810330112591802,
+          "medianAbsoluteDelta": 1.377345729549603,
+          "maximumAbsoluteDelta": 4.805118714384179
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 1.6193852180652408,
+          "medianAbsoluteDelta": 1.4407053990397571,
+          "maximumAbsoluteDelta": 5.825573303741265
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 5.873305672299029,
+          "medianAbsoluteDelta": 2.627989156682048,
+          "maximumAbsoluteDelta": 19.358790502304174
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 1.7752228982843152,
+          "medianAbsoluteDelta": 1.4468516911764482,
+          "maximumAbsoluteDelta": 4.7671915176929645
+        }
+      }
+    },
+    "45": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 6.5069777987136606,
+          "medianAbsoluteDelta": 3.7351082253827883,
+          "maximumAbsoluteDelta": 29.473753537458123
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 18.593735744239616,
+          "medianAbsoluteDelta": 5.666345099078342,
+          "maximumAbsoluteDelta": 68.17084192626727
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 14.610491992187491,
+          "medianAbsoluteDelta": 3.636441740004571,
+          "maximumAbsoluteDelta": 50.27140207720585
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 6.51033882507474,
+          "medianAbsoluteDelta": 3.594476678141149,
+          "maximumAbsoluteDelta": 28.8227792916025
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 18.654201407834098,
+          "medianAbsoluteDelta": 5.5561360529953845,
+          "maximumAbsoluteDelta": 68.1422107235023
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 14.554459211971505,
+          "medianAbsoluteDelta": 3.647848987247258,
+          "maximumAbsoluteDelta": 50.45604372012866
+        }
+      }
+    },
+    "55": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 8,
+          "meanAbsoluteDelta": 10.914500788114871,
+          "medianAbsoluteDelta": 7.864421940393164,
+          "maximumAbsoluteDelta": 27.77428249841475
+        },
+        "character": {
+          "adjacentPairs": 8,
+          "meanAbsoluteDelta": 6.4853204314516155,
+          "medianAbsoluteDelta": 5.157105066820293,
+          "maximumAbsoluteDelta": 15.483956930875593
+        },
+        "active_image": {
+          "adjacentPairs": 8,
+          "meanAbsoluteDelta": 7.378529642693033,
+          "medianAbsoluteDelta": 3.512311877297833,
+          "maximumAbsoluteDelta": 17.602678491498153
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 8,
+          "meanAbsoluteDelta": 10.970401724567438,
+          "medianAbsoluteDelta": 8.001852790107812,
+          "maximumAbsoluteDelta": 27.8246717546879
+        },
+        "character": {
+          "adjacentPairs": 8,
+          "meanAbsoluteDelta": 6.5443042229262645,
+          "medianAbsoluteDelta": 5.4842275230414685,
+          "maximumAbsoluteDelta": 15.308985751152079
+        },
+        "active_image": {
+          "adjacentPairs": 8,
+          "meanAbsoluteDelta": 7.447695231789986,
+          "medianAbsoluteDelta": 3.560056502757334,
+          "maximumAbsoluteDelta": 17.5567379365809
+        }
+      }
+    },
+    "65": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 8.28790710410565,
+          "medianAbsoluteDelta": 5.297211368783422,
+          "maximumAbsoluteDelta": 18.726401422230282
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 15.78947088581669,
+          "medianAbsoluteDelta": 17.222227847926263,
+          "maximumAbsoluteDelta": 41.90651133179722
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 13.684311448120917,
+          "medianAbsoluteDelta": 14.887328747702242,
+          "maximumAbsoluteDelta": 38.28438764246323
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 9.793731639339304,
+          "medianAbsoluteDelta": 11.291391928616719,
+          "maximumAbsoluteDelta": 19.632719920282653
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 15.928238724526377,
+          "medianAbsoluteDelta": 18.170727294930884,
+          "maximumAbsoluteDelta": 46.61987864516129
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 13.860771671772874,
+          "medianAbsoluteDelta": 15.899400386029441,
+          "maximumAbsoluteDelta": 38.28822171875001
+        }
+      }
+    },
+    "75": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 6.831855826312774,
+          "medianAbsoluteDelta": 4.659045937131964,
+          "maximumAbsoluteDelta": 14.850014548419239
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.182102564260104,
+          "medianAbsoluteDelta": 2.0418538847926584,
+          "maximumAbsoluteDelta": 12.329559866359446
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 1.6247602990961967,
+          "medianAbsoluteDelta": 1.3634868462775955,
+          "maximumAbsoluteDelta": 4.397675628446706
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 6.946807768417029,
+          "medianAbsoluteDelta": 6.069687951807225,
+          "maximumAbsoluteDelta": 14.59747462632484
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.3627179528929867,
+          "medianAbsoluteDelta": 2.469501737327178,
+          "maximumAbsoluteDelta": 12.70140864976959
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 1.5178032074652776,
+          "medianAbsoluteDelta": 1.3602706227021883,
+          "maximumAbsoluteDelta": 3.8437759168198795
+        }
+      }
+    },
+    "85": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 28.19543987076123,
+          "medianAbsoluteDelta": 15.572157885678052,
+          "maximumAbsoluteDelta": 81.95319335990575
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 16.515435764976964,
+          "medianAbsoluteDelta": 11.7654155760369,
+          "maximumAbsoluteDelta": 59.97471546082947
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 18.129504401807605,
+          "medianAbsoluteDelta": 13.839304854090074,
+          "maximumAbsoluteDelta": 57.072659902343744
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 33.14650006139848,
+          "medianAbsoluteDelta": 15.277538200923999,
+          "maximumAbsoluteDelta": 79.76583409729146
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 22.27226581054788,
+          "medianAbsoluteDelta": 16.93307002764979,
+          "maximumAbsoluteDelta": 63.70440927188942
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 24.891672500893588,
+          "medianAbsoluteDelta": 22.645289662224314,
+          "maximumAbsoluteDelta": 59.98020926011026
+        }
+      }
+    },
+    "95": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 6.8573185931696745,
+          "medianAbsoluteDelta": 4.874590809855974,
+          "maximumAbsoluteDelta": 15.346020237340383
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 10.560728381566818,
+          "medianAbsoluteDelta": 4.131263271889388,
+          "maximumAbsoluteDelta": 32.84720705529955
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 5.286531371553306,
+          "medianAbsoluteDelta": 3.0498222863051296,
+          "maximumAbsoluteDelta": 15.839995013786748
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 6.904797305009501,
+          "medianAbsoluteDelta": 6.83697385632756,
+          "maximumAbsoluteDelta": 14.299405616450741
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 10.924351509677424,
+          "medianAbsoluteDelta": 7.411253437788005,
+          "maximumAbsoluteDelta": 33.95389198156683
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 5.523583520335481,
+          "medianAbsoluteDelta": 5.398316921530338,
+          "maximumAbsoluteDelta": 15.751712572380498
+        }
+      }
+    },
+    "105": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 9.543296025908138,
+          "medianAbsoluteDelta": 6.411491466618372,
+          "maximumAbsoluteDelta": 35.062545049370414
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 7.28450807880184,
+          "medianAbsoluteDelta": 5.908622629032251,
+          "maximumAbsoluteDelta": 19.619569774193536
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 5.304041022633285,
+          "medianAbsoluteDelta": 4.31946798540902,
+          "maximumAbsoluteDelta": 10.830925163143405
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 9.48634784310173,
+          "medianAbsoluteDelta": 4.248326388259812,
+          "maximumAbsoluteDelta": 35.7089835039406
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 7.203580500921649,
+          "medianAbsoluteDelta": 5.311655847926247,
+          "maximumAbsoluteDelta": 17.98008390322579
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 5.56601954526653,
+          "medianAbsoluteDelta": 4.274840193014711,
+          "maximumAbsoluteDelta": 13.796508860294097
+        }
+      }
+    },
+    "115": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.6891537216535477,
+          "medianAbsoluteDelta": 3.3919085152640776,
+          "maximumAbsoluteDelta": 6.399645393604516
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 4.694822614951344,
+          "medianAbsoluteDelta": 2.186515101382497,
+          "maximumAbsoluteDelta": 15.754426834101395
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.4524247140522846,
+          "medianAbsoluteDelta": 1.9242561615348848,
+          "maximumAbsoluteDelta": 13.650418247931952
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 2.7963011293293443,
+          "medianAbsoluteDelta": 2.9893389346860886,
+          "maximumAbsoluteDelta": 5.33778197300478
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 4.768763859190999,
+          "medianAbsoluteDelta": 3.0957915760368735,
+          "maximumAbsoluteDelta": 13.664890626728095
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 3.5489369338490695,
+          "medianAbsoluteDelta": 2.3591446760110273,
+          "maximumAbsoluteDelta": 12.91289693244488
+        }
+      }
+    },
+    "125": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 6.067349868647526,
+          "medianAbsoluteDelta": 5.710084192408729,
+          "maximumAbsoluteDelta": 16.063354325572988
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 7.95546911981566,
+          "medianAbsoluteDelta": 4.395702907834092,
+          "maximumAbsoluteDelta": 23.415966115207354
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 4.134866636144307,
+          "medianAbsoluteDelta": 2.3767737069163957,
+          "maximumAbsoluteDelta": 14.25489708754597
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 8.533620901349764,
+          "medianAbsoluteDelta": 7.523274250384972,
+          "maximumAbsoluteDelta": 24.38810893196849
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 7.011227906451597,
+          "medianAbsoluteDelta": 4.101608797235002,
+          "maximumAbsoluteDelta": 23.507727686635917
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 3.58278288258271,
+          "medianAbsoluteDelta": 1.7163506824448405,
+          "maximumAbsoluteDelta": 12.391459748391554
+        }
+      }
+    },
+    "135": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 19.283417167416527,
+          "medianAbsoluteDelta": 7.799683802880679,
+          "maximumAbsoluteDelta": 84.6306911133255
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 15.889243499231952,
+          "medianAbsoluteDelta": 18.284476783410156,
+          "maximumAbsoluteDelta": 40.79428149308757
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 11.389483964460815,
+          "medianAbsoluteDelta": 12.127211085707728,
+          "maximumAbsoluteDelta": 28.341952287454106
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 22.644766548902375,
+          "medianAbsoluteDelta": 10.770575631850704,
+          "maximumAbsoluteDelta": 85.86981550865113
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 12.570571451612912,
+          "medianAbsoluteDelta": 7.512790350230432,
+          "maximumAbsoluteDelta": 32.08238097235022
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 9.822698243591708,
+          "medianAbsoluteDelta": 6.0174834846047816,
+          "maximumAbsoluteDelta": 27.66430124999998
+        }
+      }
+    },
+    "145": {
+      "linux_before": {
+        "background": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 16.88181826614728,
+          "medianAbsoluteDelta": 13.092842639731828,
+          "maximumAbsoluteDelta": 40.15622633390703
+        },
+        "character": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 19.501268051152078,
+          "medianAbsoluteDelta": 20.583739811059925,
+          "maximumAbsoluteDelta": 29.6042212718894
+        },
+        "active_image": {
+          "adjacentPairs": 10,
+          "meanAbsoluteDelta": 14.40198867084099,
+          "medianAbsoluteDelta": 13.472392943474276,
+          "maximumAbsoluteDelta": 22.470321523437505
+        }
+      },
+      "linux_final": {
+        "background": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 17.230116268583103,
+          "medianAbsoluteDelta": 12.92900749162061,
+          "maximumAbsoluteDelta": 40.33643430564365
+        },
+        "character": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 19.935374624679977,
+          "medianAbsoluteDelta": 20.87595235023042,
+          "maximumAbsoluteDelta": 30.094195889400936
+        },
+        "active_image": {
+          "adjacentPairs": 9,
+          "meanAbsoluteDelta": 14.568290375306352,
+          "medianAbsoluteDelta": 13.191341575137855,
+          "maximumAbsoluteDelta": 23.183243150275658
+        }
+      }
+    }
+  },
+  "beamSections": {
+    "100": {
+      "background": {
+        "adjacentPairs": 8,
+        "meanAbsoluteDelta": 30.25590185818462,
+        "medianAbsoluteDelta": 12.294324436090236,
+        "maximumAbsoluteDelta": 143.63723638010688
+      },
+      "character": {
+        "adjacentPairs": 8,
+        "meanAbsoluteDelta": 20.813882764400923,
+        "medianAbsoluteDelta": 13.032584251152088,
+        "maximumAbsoluteDelta": 81.31381711520737
+      },
+      "active_image": {
+        "adjacentPairs": 8,
+        "meanAbsoluteDelta": 23.09831640036191,
+        "medianAbsoluteDelta": 12.128543029067117,
+        "maximumAbsoluteDelta": 95.63516403607538
+      }
+    },
+    "107": {
+      "background": {
+        "adjacentPairs": 19,
+        "meanAbsoluteDelta": 12.26827343914637,
+        "medianAbsoluteDelta": 6.90674287526042,
+        "maximumAbsoluteDelta": 73.47771390524503
+      },
+      "character": {
+        "adjacentPairs": 19,
+        "meanAbsoluteDelta": 6.757220235750669,
+        "medianAbsoluteDelta": 3.04605895852535,
+        "maximumAbsoluteDelta": 51.18115205990782
+      },
+      "active_image": {
+        "adjacentPairs": 19,
+        "meanAbsoluteDelta": 7.33963830700949,
+        "medianAbsoluteDelta": 3.9775036776195236,
+        "maximumAbsoluteDelta": 55.878279516314365
+      }
+    }
+  }
+}

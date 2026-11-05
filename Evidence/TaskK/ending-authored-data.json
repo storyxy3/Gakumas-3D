@@ -1,0 +1,1169 @@
+{
+  "source": "Existing original-bundle export, read-only behavioral reference; original assets unchanged in this task",
+  "config": {
+    "geometryOverrideLayer": 1,
+    "geometryLayerID": 12,
+    "geometryTag": "Untagged",
+    "geometryRenderQueue": 3100,
+    "geometryRenderQueueHD": 3100,
+    "renderPipeline": 1,
+    "renderingMode": 2,
+    "ditheringFactor": 0.0,
+    "useLightColorTemperature": 0,
+    "sharedMeshSides": 32,
+    "sharedMeshSegments": 10,
+    "hdBeamsCameraBlendingDistance": 0.5,
+    "globalNoiseScale": 0.10000000149011612,
+    "globalNoiseVelocity": [
+      0.07000000029802322,
+      0.18000000715255737,
+      0.05000000074505806
+    ],
+    "fadeOutCameraTag": "MainCamera",
+    "featureEnabledColorGradient": 0,
+    "featureEnabledDepthBlend": 1,
+    "featureEnabledNoise3D": 1,
+    "jitter": {
+      "name": "VLBBlueNoise",
+      "width": 256,
+      "height": 256,
+      "depth": 1,
+      "wrap": 0,
+      "filter": 0
+    }
+  },
+  "shadowCapableRealLightBeams": [
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-010",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          1
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 0,
+      "device": -1,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.0,
+      "intensityOutside": 0.0,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 1.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 0.009999999776482582,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    },
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-068",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          3
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 32,
+      "device": -1,
+      "color": [
+        0.800000011920929,
+        0.8833333253860474,
+        1.0,
+        1.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.3499999940395355,
+      "intensityOutside": 0.3499999940395355,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 45.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 7.5,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    },
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-021",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          2
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 69,
+      "device": -1,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.0,
+      "intensityOutside": 0.0,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 1.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 0.009999999776482582,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    },
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-073",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          4
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 71,
+      "device": -1,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.0,
+      "intensityOutside": 0.0,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 1.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 0.009999999776482582,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    },
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-002",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          0
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 87,
+      "device": -1,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.0,
+      "intensityOutside": 0.0,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 1.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 0.009999999776482582,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    },
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-101",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          5
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 91,
+      "device": -1,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.0,
+      "intensityOutside": 0.0,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 1.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 0.009999999776482582,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    },
+    {
+      "path": "RealLight/LightShaft/Spot Light_LightShaft_cut-107",
+      "transform": {
+        "root": "RealLight",
+        "indices": [
+          10,
+          6
+        ]
+      },
+      "active": true,
+      "enabled": true,
+      "light": 109,
+      "device": -1,
+      "color": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "colorFromLight": true,
+      "intensityFromLight": true,
+      "intensityModeAdvanced": false,
+      "intensityInside": 0.0,
+      "intensityOutside": 0.0,
+      "intensityMultiplier": 1.0,
+      "spotAngleFromLight": true,
+      "spotAngle": 1.0,
+      "spotAngleMultiplier": 1.0,
+      "coneRadiusStart": 0.10000000149011612,
+      "attenuationEquation": 1,
+      "attenuationCustomBlending": 0.5,
+      "fallOffStart": 0.0,
+      "fallOffEnd": 0.009999999776482582,
+      "fallOffEndFromLight": true,
+      "fallOffEndMultiplier": 1.0,
+      "depthBlendDistance": 2.0,
+      "cameraClippingDistance": 0.5,
+      "glareFrontal": 0.5,
+      "glareBehind": 0.5,
+      "fresnelPow": 1.9999998807907104,
+      "noiseMode": 0,
+      "noiseIntensity": 0.0,
+      "noiseScaleUseGlobal": true,
+      "noiseScaleLocal": 0.5,
+      "noiseVelocityUseGlobal": true,
+      "noiseVelocityLocal": [
+        0.07000000029802322,
+        0.18000000715255737,
+        0.05000000074505806
+      ],
+      "tiltFactor": [
+        0.0,
+        0.0
+      ],
+      "shadowIntensity": 1.0,
+      "animColor": null,
+      "animIntensity": []
+    }
+  ],
+  "endingLightClips": [
+    {
+      "track": {
+        "name": "Campus Light Track",
+        "light": 78,
+        "transformNode": 93
+      },
+      "clips": [
+        {
+          "start": 150.93333333333334,
+          "duration": 0.9000000000000057,
+          "mixIn": 0.0,
+          "mixOut": 0.8333333333333428,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "RealLight/SL_Controller",
+          "controlTransform": true,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": 0.0,
+          "pitch": 150.0,
+          "roll": 0.0,
+          "distance": 15.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.4000000059604645,
+            0.7490196228027344,
+            1.0,
+            1.0
+          ],
+          "intensity": 22.0,
+          "range": 25.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.75
+        },
+        {
+          "start": 151.0,
+          "duration": 4.6000000000000085,
+          "mixIn": 0.8333333333333428,
+          "mixOut": 0.0,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "RealLight/SL_Controller",
+          "controlTransform": true,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": 0.0,
+          "pitch": 150.0,
+          "roll": 0.0,
+          "distance": 15.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.4000000059604645,
+            0.7490196228027344,
+            1.0,
+            1.0
+          ],
+          "intensity": 25.0,
+          "range": 25.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.75
+        }
+      ]
+    },
+    {
+      "track": {
+        "name": "Campus Light Track (1)",
+        "light": 67,
+        "transformNode": 82
+      },
+      "clips": [
+        {
+          "start": 150.93333333333334,
+          "duration": 0.9000000000000057,
+          "mixIn": 0.0,
+          "mixOut": 0.8333333333333428,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "RealLight/SL_Controller",
+          "controlTransform": true,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": -35.0,
+          "pitch": 150.0,
+          "roll": 0.0,
+          "distance": 15.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.9490196108818054,
+            0.6980392336845398,
+            1.0,
+            1.0
+          ],
+          "intensity": 12.0,
+          "range": 25.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.75
+        },
+        {
+          "start": 151.0,
+          "duration": 4.6000000000000085,
+          "mixIn": 0.8333333333333428,
+          "mixOut": 0.0,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "RealLight/SL_Controller",
+          "controlTransform": true,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": -35.0,
+          "pitch": 150.0,
+          "roll": 0.0,
+          "distance": 15.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.9490196108818054,
+            0.6980392336845398,
+            1.0,
+            1.0
+          ],
+          "intensity": 15.0,
+          "range": 25.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.75
+        }
+      ]
+    },
+    {
+      "track": {
+        "name": "Campus Light Track (2)",
+        "light": 66,
+        "transformNode": 81
+      },
+      "clips": [
+        {
+          "start": 150.93333333333334,
+          "duration": 0.9000000000000057,
+          "mixIn": 0.0,
+          "mixOut": 0.8333333333333428,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "RealLight/SL_Controller",
+          "controlTransform": true,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": 35.0,
+          "pitch": 150.0,
+          "roll": 0.0,
+          "distance": 15.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.6980392336845398,
+            0.8980392217636108,
+            1.0,
+            1.0
+          ],
+          "intensity": 7.0,
+          "range": 25.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.75
+        },
+        {
+          "start": 151.0,
+          "duration": 4.6000000000000085,
+          "mixIn": 0.8333333333333428,
+          "mixOut": 0.0,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "RealLight/SL_Controller",
+          "controlTransform": true,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": 35.0,
+          "pitch": 150.0,
+          "roll": 0.0,
+          "distance": 15.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.6980392336845398,
+            0.8980392217636108,
+            1.0,
+            1.0
+          ],
+          "intensity": 10.0,
+          "range": 25.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.75
+        }
+      ]
+    },
+    {
+      "track": {
+        "name": "Campus Light Track (1)",
+        "light": 50,
+        "transformNode": 65
+      },
+      "clips": [
+        {
+          "start": 150.93333333333334,
+          "duration": 2.066666666666663,
+          "mixIn": 0.0,
+          "mixOut": 2.0,
+          "mixInCurve": [],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "VirtualActor_00/Head",
+          "controlTransform": true,
+          "anchorOffset": [
+            -0.6499999761581421,
+            -0.699999988079071,
+            0.20000000298023224
+          ],
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "roll": 0.0,
+          "distance": 0.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.8745098114013672,
+            0.8509804010391235,
+            1.0,
+            1.0
+          ],
+          "intensity": 0.0,
+          "range": 1.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 0.0,
+          "innerSpotAngleRatio": 1.0
+        },
+        {
+          "start": 151.0,
+          "duration": 4.5999999999989996,
+          "mixIn": 2.0,
+          "mixOut": 0.0,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [],
+          "anchorPath": "VirtualActor_00/Head",
+          "controlTransform": true,
+          "anchorOffset": [
+            -0.6499999761581421,
+            -0.699999988079071,
+            0.20000000298023224
+          ],
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "roll": 0.0,
+          "distance": 0.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.8745098114013672,
+            0.8509804010391235,
+            1.0,
+            1.0
+          ],
+          "intensity": 0.6000000238418579,
+          "range": 1.0,
+          "useShadow": false,
+          "shadowStrength": 0.0,
+          "spotAngle": 0.0,
+          "innerSpotAngleRatio": 1.0
+        }
+      ]
+    },
+    {
+      "track": {
+        "name": "Campus Light Track (7)",
+        "light": 109,
+        "transformNode": 124
+      },
+      "clips": [
+        {
+          "start": 150.93333333333334,
+          "duration": 0.9000000000000057,
+          "mixIn": 0.0,
+          "mixOut": 0.8333333333333428,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "",
+          "controlTransform": false,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "roll": 0.0,
+          "distance": 0.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.5490196347236633,
+            0.886274516582489,
+            1.0,
+            1.0
+          ],
+          "intensity": 0.10000000149011612,
+          "range": 10.0,
+          "useShadow": true,
+          "shadowStrength": 1.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.699999988079071
+        },
+        {
+          "start": 151.0,
+          "duration": 4.600000000000023,
+          "mixIn": 0.8333333333333428,
+          "mixOut": 0.0,
+          "mixInCurve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "mixOutCurve": [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "anchorPath": "",
+          "controlTransform": false,
+          "anchorOffset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "yaw": 0.0,
+          "pitch": 0.0,
+          "roll": 0.0,
+          "distance": 0.0,
+          "useCamera": false,
+          "upDirection": 0,
+          "color": [
+            0.5490196347236633,
+            0.886274516582489,
+            1.0,
+            1.0
+          ],
+          "intensity": 1.0,
+          "range": 10.0,
+          "useShadow": true,
+          "shadowStrength": 1.0,
+          "spotAngle": 30.0,
+          "innerSpotAngleRatio": 0.699999988079071
+        }
+      ]
+    }
+  ],
+  "endingVolumeClips": [
+    {
+      "director": "Light",
+      "track": "Light/rim#129",
+      "volume": 446,
+      "name": "eff_pe_ttmr-001_rim-107",
+      "start": 150.93333333333334,
+      "duration": 0.38333333333332575,
+      "mixIn": 0.0,
+      "mixOut": 0.3166666666666629,
+      "mixInCurve": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mixOutCurve": [],
+      "initialPriority": 250.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/rim#129",
+      "volume": 459,
+      "name": "eff_pe_ttmr-001_rim-107_02",
+      "start": 151.0,
+      "duration": 0.8000000000000114,
+      "mixIn": 0.3166666666666629,
+      "mixOut": 0.45000000000001705,
+      "mixInCurve": [],
+      "mixOutCurve": [],
+      "initialPriority": 250.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/rim#129",
+      "volume": 596,
+      "name": "eff_pe_ttmr-001_rim-107_03",
+      "start": 151.35,
+      "duration": 1.1500000000000057,
+      "mixIn": 0.45000000000001705,
+      "mixOut": 0.5500000000000114,
+      "mixInCurve": [],
+      "mixOutCurve": [],
+      "initialPriority": 250.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/rim#129",
+      "volume": 82,
+      "name": "eff_pe_ttmr-001_rim-107_04",
+      "start": 151.95,
+      "duration": 1.3666666666666742,
+      "mixIn": 0.5500000000000114,
+      "mixOut": 0.5666666666666629,
+      "mixInCurve": [],
+      "mixOutCurve": [],
+      "initialPriority": 250.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/rim#129",
+      "volume": 0,
+      "name": "eff_pe_ttmr-001_rim-107_05",
+      "start": 152.75,
+      "duration": 1.3333333333333428,
+      "mixIn": 0.5666666666666629,
+      "mixOut": 0.3333333333323196,
+      "mixInCurve": [],
+      "mixOutCurve": [],
+      "initialPriority": 250.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/rim#129",
+      "volume": 182,
+      "name": "eff_pe_ttmr-001_rim-107_06",
+      "start": 153.75000000000102,
+      "duration": 1.8499999999989996,
+      "mixIn": 0.3333333333323196,
+      "mixOut": 0.0,
+      "mixInCurve": [],
+      "mixOutCurve": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialPriority": 250.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/cut#131",
+      "volume": 581,
+      "name": "eff_pe_ttmr-001_cut-107",
+      "start": 150.93333333333334,
+      "duration": 0.9000000000000057,
+      "mixIn": 0.0,
+      "mixOut": 0.8333333333333428,
+      "mixInCurve": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mixOutCurve": [],
+      "initialPriority": 200.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/cut#131",
+      "volume": 440,
+      "name": "eff_pe_ttmr-001_cut-107_02",
+      "start": 151.0,
+      "duration": 4.5999999999999925,
+      "mixIn": 0.8333333333333428,
+      "mixOut": 0.0,
+      "mixInCurve": [],
+      "mixOutCurve": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialPriority": 200.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/fog#132",
+      "volume": 215,
+      "name": "eff_pe_ttmr-001_fog-009",
+      "start": 148.43333333333334,
+      "duration": 7.166666666665677,
+      "mixIn": 0.15000000000000568,
+      "mixOut": 0.0,
+      "mixInCurve": [],
+      "mixOutCurve": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialPriority": 100.0
+    },
+    {
+      "director": "Light",
+      "track": "Light/lightmap#133",
+      "volume": 587,
+      "name": "eff_pe_ttmr-001_lightmap-009",
+      "start": 148.43333333333334,
+      "duration": 7.166666666666671,
+      "mixIn": 0.15000000000000568,
+      "mixOut": 0.0,
+      "mixInCurve": [],
+      "mixOutCurve": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initialPriority": 50.0
+    }
+  ],
+  "jitterTextureBytesSHA256": "276870676108d0e19a6eabff1995979926fac4569cbde0689a524cdd361c88ad"
+}

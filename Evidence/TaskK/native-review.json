@@ -1,0 +1,10 @@
+{
+  "VLB.VLBDrawSystem$$ExecuteHD": {
+    "outerOverload": "Original reloads entityChunks[i] for its inner call; reconstruction reuses the same local. The semantic normalizer records one fewer List.get_Item call. This was unchanged in Task K.",
+    "innerOverload": "Original has an additional System.Math class-initialization call ahead of the shadow vector upload. The restored max(params1.c0.y, params1.c1.y) color multiplier was checked against 0xe0cc66c through 0xe0cc6a8. The existing golden-ratio phase calculation is retained.",
+    "status": "Raw semantic flag retained; not full instruction equivalence."
+  },
+  "Campus.Common.Extensions.CanvasGroupExtensions$$SetBlockingAlpha": {
+    "status": "Normalized semantic instructions match; layout-only differences."
+  }
+}

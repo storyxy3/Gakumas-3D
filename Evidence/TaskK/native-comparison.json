@@ -1,0 +1,28 @@
+{
+ "addedOverloads": [],
+ "same": 5,
+ "changed": [
+  {
+   "method": "Campus.Common.Extensions.CanvasGroupExtensions$$SetBlockingAlpha",
+   "similarity": 0.95,
+   "note": "layout"
+  },
+  {
+   "method": "VLB.VLBDrawSystem$$ExecuteHD",
+   "similarity": 0.512,
+   "note": "semantic"
+  }
+ ],
+ "onlyGame": [],
+ "onlyRef": [],
+ "changedByClass": [
+  [
+   "Campus.Common.Extensions.CanvasGroupExtensions",
+   1
+  ],
+  [
+   "VLB.VLBDrawSystem",
+   1
+  ]
+ ]
+}

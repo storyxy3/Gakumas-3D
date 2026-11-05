@@ -1,0 +1,10 @@
+Linux build: .recon/task-k/build-linux-overlay.log
+LIVE_BUILD Succeeded errors=0
+Android build: .recon/task-k/build-android-complete.log
+[1578/1590  1s] Link_Android_arm64 Library/Bee/artifacts/Android/d8kzr/libil2cpp.so
+[1581/1590  0s] CopyFiles /data/xy/gakumas/live-urp-codex/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libil2cpp.so
+[1586/1590  0s] CopyFiles /data/xy/gakumas/live-urp-codex/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so
+[1587/1590  0s] CopyFiles /data/xy/gakumas/live-urp-codex/Library/Bee/artifacts/Android/il2cppOutput/build/arm64-v8a/libil2cpp.so
+   > For input string: "37.0"
+   > For input string: "37.0"
+LIVE_BUILD Failed errors=3

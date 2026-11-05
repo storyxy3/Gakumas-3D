@@ -1,0 +1,494 @@
+
+== Campus.Common.CampusActorController$$InitializeActorAnimation layout
+--- game
++++ rebuilt
+@@ -278,5 +278,5 @@
+ str xzr, [sp, #0x208]
+ stp xzr, xzr, [sp, #0x1f8]
+-cbz x8, +6564
++cbz x8, +6556
+ ldp w2, w9, [x8,#F]
+ add w9, w9, #1
+@@ -289,5 +289,5 @@
+ bl System.Array$$Clear
+ ldr x8, [x19,#F]
+-cbz x8, +6564
++cbz x8, +6556
+ ldp w2, w9, [x8,#F]
+ add w9, w9, #1
+@@ -299,5 +299,5 @@
+ mov x3, xzr
+ bl System.Array$$Clear
+-cbz x21, +6564
++cbz x21, +6556
+ mov x0, x21
+ mov x1, xzr
+@@ -314,5 +314,5 @@
+ mov x2, xzr
+ bl UnityEngine.Transform$$GetChild
+-cbz x0, +6564
++cbz x0, +6556
+ ldr x2, [x22]
+ add x1, sp, #0x1f8
+@@ -320,5 +320,5 @@
+ tbz w0, +1472
+ ldr x0, [x19,#F]
+-cbz x0, +6564
++cbz x0, +6556
+ ldr w10, [x0,#F]
+ ldr x8, [x0,#F]
+@@ -327,5 +327,5 @@
+ add w10, w10, #1
+ str w10, [x0,#F]
+-cbz x8, +6564
++cbz x8, +6556
+ ldrsw x10, [x0,#F]
+ ldr w11, [x8,#F]
+@@ -344,5 +344,5 @@
+ bl System.Collections.Generic.List<object>$$AddWithResize
+ ldr x0, [x19,#F]
+-cbz x0, +6564
++cbz x0, +6556
+ ldr w10, [x0,#F]
+ ldr x8, [x0,#F]
+@@ -351,5 +351,5 @@
+ add w10, w10, #1
+ str w10, [x0,#F]
+-cbz x8, +6564
++cbz x8, +6556
+ ldrsw x10, [x0,#F]
+ ldr w11, [x8,#F]
+@@ -406,5 +406,5 @@
+ ldr x2, [x8,#F]
+ blr x9
+-cbz x0, +6564
++cbz x0, +6556
+ adrp x20,PAGE
+ add x1, sp, #0x208
+@@ -418,5 +418,5 @@
+ ldr x2, [x8,#F]
+ blr x9
+-cbz x0, +6564
++cbz x0, +6556
+ adrp x22,PAGE
+ adrp x27,PAGE
+@@ -1589,8 +1589,7 @@
+ bl ActorAnimation.CampusActorAnimationInitializeData$$.ctor
+ ldr x0, [sp, #0x1d0]
+-cbz x0, +6564
++cbz x0, +6556
+ adrp x21,PAGE
+ mov x2, x28
+-mov x3, xzr
+ ldr x21, MMETH Method$VL.Core.VLActorController<CampusActorModelParts, CampusActorDescriptor, ICampusActorDescriptor>.get_descriptor()
+ ldr x1, [sp, #0x100]
+@@ -1600,5 +1599,5 @@
+ mov x0, x19
+ bl VL.Core.VLActorController<object, object, object>$$get_descriptor
+-cbz x0, +6564
++cbz x0, +6556
+ adrp x10,PAGE
+ ldr x8, [x0]
+@@ -1607,17 +1606,17 @@
+ ldrh w9, [x8,#F]
+ ldr x1, [x10]
+-cbz x9, +6468
++cbz x9, +6464
+ ldr x10, [x8,#F]
+ add x10, x10,#F
+ ldur x11, [x10, #-8]
+ cmp x11, x1
+-b.eq +6484
++b.eq +6480
+ subs x9, x9, #1
+ add x10, x10,#F
+-b.ne +6444
++b.ne +6440
+ mov x0, x19
+ mov w2, #3
+ bl FN
+-b +6500
++b +6496
+ ldr w9, [x10]
+ add w9, w9, #3
+@@ -1627,8 +1626,7 @@
+ mov x0, x19
+ blr x8
+-cbz x20, +6564
++cbz x20, +6556
+ and w1, w0, #1
+ mov x0, x20
+-mov x2, xzr
+ bl Campus.Common.CampusActorAnimation$$ApplyActorSwingCmmnHeightCorrection
+ add sp, sp, #0x210
+
+== Campus.Common.CampusActorController$$InitializeExpression semantic
+--- game
++++ rebuilt
+@@ -21,5 +21,5 @@
+ bl FN
+ ldr  VLActorExpressionBone>()
+-ldr  MMETH Method$System.Linq.Enumerable.ToArray<VLActorExpressionBone>()
++b FN
+ bl FN
+ bl FN
+@@ -28,4 +28,5 @@
+ bl FN
+ bl System.Linq.Enumerable$$SelectMany<object, object>
++ldr  MMETH Method$Unity.Collections.NativeArray<OctreeInfo>.Dispose()
+ bl System.Linq.Enumerable$$ToArray<object>
+ bl VL.VLActorExpression$$Setup
+
+== Campus.Common.CampusActorModelParts$$InitializeCampusMaterials semantic
+--- game
++++ rebuilt
+@@ -77,2 +77,13 @@
+ ldr  MMETH Method$System.Collections.Generic.List.Enumerator<Renderer>.Dispose()
+ bl System.Collections.Generic.List.Enumerator<object>$$Dispose
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++cmp #1
++bl FN
++bl FN
++b FN
+
+== VLB.Chunk$$ResizeArray<__Il2CppFullySharedGenericType> semantic
+--- game
++++ rebuilt
+@@ -3,2 +3,331 @@
+ bl FN
+ b FN
++mov #0x4b0
++b FN
++mov #0x230
++b FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Nullable<Decimal>>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Nullable<Decimal>>
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Nullable<double>>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Nullable<double>>
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Nullable<float>>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Nullable<float>>
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<Decimal>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<Decimal>
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromException<double>
++bl FN
++bl FN
++bl Cysharp.Threading.Tasks.UniTask$$FromResult<double>
++bl FN
++mov #1
++bl FN
++bl FN
++mov #1
++bl FN
++bl FN
++bl FN
++b Cysharp.Threading.Tasks.UniTask$$FromException<float>
++bl FN
++bl FN
++b Cysharp.Threading.Tasks.UniTask$$FromResult<float>
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #0x34
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #0x2c
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++mov #0x2c
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Buffer$$Memmove
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl FN
++bl System.Collections.Generic.List<RaycastHit2D>$$get_Capacity
++bl FN
++bl UnityEngine.Debug$$Assert
++bl Unity.Collections.LowLevel.Unsafe.UnsafeUtility$$As<object>

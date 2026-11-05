@@ -1,0 +1,99 @@
+{
+  "runtimeSourceCommit": "80a0404702e2aa826e66d36907a9591a95ab09ee",
+  "unity": "6000.0.77f1",
+  "linuxBuild": "LIVE_BUILD Succeeded errors=0",
+  "androidBuild": "Native compilation completed; packaging failed in lintVitalAnalyzeRelease: For input string 37.0",
+  "hashes": {
+    "ProjectSettings/TimeManager.asset": {
+      "bytes": 298,
+      "sha256": "2200e067dcbe741a74ec8e6c8f0d57f85932de41c27e906ad21fcedbb753ed5f"
+    },
+    "ProjectSettings/ProjectSettings.asset": {
+      "bytes": 22183,
+      "sha256": "22bb10bda266d645c93f90ac151ed9445c872a726257b6183bf973bc37238933"
+    },
+    "Build/Linux/TrueEnd_Data/Managed/campus-submodule.Runtime.dll": {
+      "bytes": 780288,
+      "sha256": "dccf0c1a24e076a23a5923086071774b9078f324e52a56ab0000cedce883b41b"
+    },
+    "Build/Linux/TrueEnd_Data/Managed/quaunity-volumetriclightbeam.Runtime.dll": {
+      "bytes": 106496,
+      "sha256": "aa4825aea7f6e0fa1c87f7c94248d6874a6567e4f3effc9099078099084d44d2"
+    },
+    "Build/Linux/TrueEnd_Data/Managed/TrueEnd.Host.dll": {
+      "bytes": 23552,
+      "sha256": "b4efa348e059108193c3c594c896458d376fe3a0c73747e54a54a6a4893799e1"
+    },
+    "Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libil2cpp.so": {
+      "bytes": 92380520,
+      "sha256": "cb896046582c973f4d794d42026c16d17bac0ad0a5285de58477ee8f5763c0d7"
+    },
+    ".recon/live-dump/script.json": {
+      "bytes": 98951352,
+      "sha256": "e16a2c37d01301a7990c6ba12ab4c38f66e53cc593ceefb50b8557561612f86a"
+    },
+    "Build/Content/ttmr001/manifest.json": {
+      "bytes": 14495,
+      "sha256": "53f9c5d76acc45eb047a01d728f6dff377b1e63946bebeca28c8287492e72a90"
+    },
+    "Build/Content-Linux/ttmr001/manifest.json": {
+      "bytes": 16768,
+      "sha256": "d2e7143c26788baaa413f5d31a5b27da68c51b5d3f12bee49ced9f714967a34e"
+    },
+    "Build/ttmr001-windows-content.tar.gz": {
+      "bytes": 171872621,
+      "sha256": "d3267c0fa3a97c95215e7ba457cced42db1b19e2b373e56a4df18f414a13a291"
+    }
+  },
+  "logs": {
+    "linux": ".recon/task-k/build-linux-overlay.log",
+    "android": ".recon/task-k/build-android-complete.log"
+  },
+  "playbacks": {
+    "before-ending": {
+      "exitCode": 0,
+      "captures": 76,
+      "exceptions": 0,
+      "undisposedCullingWarnings": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "silent": true,
+      "stop": "LIVE_STOPPED time=155.599999999999"
+    },
+    "before-continuity": {
+      "exitCode": 0,
+      "captures": 165,
+      "exceptions": 0,
+      "undisposedCullingWarnings": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "silent": true,
+      "stop": "LIVE_STOPPED time=155.599999999999"
+    },
+    "final-ending": {
+      "exitCode": 0,
+      "captures": 77,
+      "exceptions": 0,
+      "undisposedCullingWarnings": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "silent": true,
+      "stop": "LIVE_STOPPED time=155.300000153482 presentation=155.600000153482 fadeAlpha=1"
+    },
+    "final-continuity": {
+      "exitCode": 0,
+      "captures": 165,
+      "exceptions": 0,
+      "undisposedCullingWarnings": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "silent": true,
+      "stop": "LIVE_STOPPED time=155.284407639876 presentation=155.684407639876 fadeAlpha=1"
+    },
+    "beam-sections": {
+      "exitCode": 0,
+      "captures": 32,
+      "exceptions": 0,
+      "undisposedCullingWarnings": 0,
+      "graphicsBufferFinalizerWarnings": 0,
+      "silent": true,
+      "stop": "LIVE_STOPPED time=127.822961498052 presentation=127.822961498052 fadeAlpha=0"
+    }
+  }
+}

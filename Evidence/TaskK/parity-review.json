@@ -1,0 +1,64 @@
+{
+  "f": {
+    "baseline": "Task J final",
+    "same": 631,
+    "changed": 74,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": []
+  },
+  "h": {
+    "baseline": "Task J final",
+    "same": 1271,
+    "changed": 280,
+    "onlyGame": 125,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": [
+      {
+        "method": "Campus.Common.CampusActorController$$InitializeActorAnimation",
+        "similarity": 0.989,
+        "note": "layout",
+        "sourceChangedInTaskK": false,
+        "review": "Unused method-info/register setup and branch layout"
+      },
+      {
+        "method": "Campus.Common.CampusActorController$$InitializeExpression",
+        "similarity": 0.983,
+        "note": "semantic",
+        "sourceChangedInTaskK": false,
+        "review": "Metadata/thunk attribution or inferred interval including following functions; raw flag retained"
+      },
+      {
+        "method": "Campus.Common.CampusActorModelParts$$InitializeCampusMaterials",
+        "similarity": 0.932,
+        "note": "semantic",
+        "sourceChangedInTaskK": false,
+        "review": "Metadata/thunk attribution or inferred interval including following functions; raw flag retained"
+      }
+    ]
+  },
+  "i": {
+    "baseline": "Task J final",
+    "same": 252,
+    "changed": 63,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": [
+      {
+        "method": "VLB.Chunk$$ResizeArray<__Il2CppFullySharedGenericType>",
+        "similarity": 0.029,
+        "note": "semantic",
+        "sourceChangedInTaskK": false,
+        "review": "Metadata/thunk attribution or inferred interval including following functions; raw flag retained"
+      }
+    ]
+  },
+  "j": {
+    "baseline": "Task J final",
+    "same": 90,
+    "changed": 39,
+    "onlyGame": 0,
+    "sameExclusionList": true,
+    "newOrReclassifiedFlags": []
+  }
+}

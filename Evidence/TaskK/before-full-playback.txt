@@ -1,0 +1,509 @@
+The selected window backend is x11 
+Mono path[0] = '/data/xy/gakumas/live-urp-codex/Build/Linux/TrueEnd_Data/Managed'
+Mono config path = '/data/xy/gakumas/live-urp-codex/Build/Linux/TrueEnd_Data/MonoBleedingEdge/etc'
+Input System module state changed to: Initialized.
+Display 0 'screen': 640x360 (primary device).
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Desktop is 640 x 360 @ 0 Hz
+[Vulkan init] extensions: count=24
+[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_headless_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=0 xrDevice=(nil)
+[Vulkan init] Physical Device 0x25421690 [0]: "llvmpipe (LLVM 19.1.7, 256 bits)" deviceType=4 vendorID=10005 deviceID=0
+Vulkan detection: 2
+Initialize engine version: 6000.0.77f1 (88f89d0d8b31)
+[Subsystems] Discovering subsystems at path /data/xy/gakumas/live-urp-codex/Build/Linux/TrueEnd_Data/UnitySubsystems
+Forcing GfxDevice: Vulkan
+GfxDevice: creating device client; kGfxThreadingModeClientWorkerNativeJobs
+[Vulkan init] extensions: count=24
+[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_headless_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=0 xrDevice=(nil)
+[Vulkan init] Physical Device 0x26b05870 [0]: "llvmpipe (LLVM 19.1.7, 256 bits)" deviceType=4 vendorID=10005 deviceID=0
+[Vulkan init] Selected physical device 0x26b05870
+[Vulkan init] Graphics queue count=1
+[Vulkan init] extensions: count=156
+[Vulkan init] extensions: name=VK_AMDX_shader_enqueue [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_ANDROID_external_memory_android_hardware_buffer [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_ARM_rasterization_order_attachment_access [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_4444_formats [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_border_color_swizzle [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_color_write_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conditional_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_custom_border_color [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_range_unrestricted [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_indexing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_device_generated_commands [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_dynamic_rendering_unused_attachments [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_dma_buf [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_host [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_graphics_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_image_copy [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_query_reset [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_2d_view_of_3d [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_drm_format_modifier [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_sliced_view_of_3d [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_inline_uniform_block [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_legacy_vertex_attributes [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_load_store_op_none [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_budget [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_priority [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_mesh_shader [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_multi_draw [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_multisampled_render_to_single_sampled [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_mutable_descriptor_type [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_nested_command_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_non_seamless_cube_map [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pageable_device_local_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_library_group_handles [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_protected_access [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_post_depth_coverage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitive_topology_list_restart [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitives_generated_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_private_data [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_provoking_vertex [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_queue_family_foreign [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_rasterization_order_attachment_access [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_robustness2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_scalar_block_layout [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_separate_stencil_usage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_atomic_float [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_atomic_float2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_object [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_replicated_composites [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_stencil_export [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_ballot [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_vote [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_subgroup_size_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_transform_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_2plane_444_formats [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_image_arrays [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_decorate_string [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_GOOGLE_hlsl_functionality1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_16bit_storage [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_8bit_storage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_acceleration_structure [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_bind_memory2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_buffer_device_address [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_compute_shader_derivatives [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_copy_commands2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_create_renderpass2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dedicated_allocation [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_deferred_host_operations [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_descriptor_update_template [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_draw_indirect_count [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_driver_properties [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering_local_read [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_format_feature_flags2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_memory_requirements2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_image_format_list [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_imageless_framebuffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_incremental_present [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_load_store_op_none [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance1 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance5 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance6 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance7 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_map_memory2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_multiview [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_push_descriptor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_tracing_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_tracing_pipeline [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_tracing_position_fetch [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_relaxed_block_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_atomic_int64 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_clock [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_draw_parameters [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_expect_assume [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float16_int8 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_integer_dot_product [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_maximal_reconvergence [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_relaxed_extended_instruction [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_rotate [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_spirv_1_4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain_mutable_format [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_synchronization2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_timeline_semaphore [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_variable_pointers [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vulkan_memory_model [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory [enabled=0, external=0]
+Vulkan API version 1.1.0 (1.4.305 supported by driver, 1.1.0 requested)
+Vulkan vendor=[Unknown (ID=10005)] id=[10005]
+Vulkan renderer=[llvmpipe (LLVM 19.1.7, 256 bits)] id=[0]
+Vulkan device type 4
+Vulkan driverversion=[0.0.1 (0x00000001)] uint=[1]
+Vulkan driverLibraryString=[llvmpipe (13), Mesa 25.0.7-2+deb13u1 (LLVM 19.1.7)]
+Vulkan PSO: cache data not found [path=/data/tmp/qa-recon/live-urp/vulkan_pso_cache.bin]
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+Forced to initialize FMOD to to the device driver's system output rate 48000, this may impact performance and/or give inconsistent experiences compared to selected sample rate 48000
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+FMOD failed to initialize the output device.: "Error initializing output device. " (60)
+FMOD failed to initialize any audio devices, running on emulated software output with no sound. Please check your audio drivers and/or hardware for malfunction.
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.087 seconds
+- Finished resetting the current domain, in  0.002 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+requesting resize 640 x 360
+resizing window to 640 x 360
+Desktop is 640 x 360 @ 0 Hz
+InitializeOrResetSwapChain 640x360 hdr=0 samples=1
+UnloadTime: 0.787477 ms
+LIVE_HOST sample=ttmr001 mute=True data=/data/xy/gakumas/live-urp-codex/Build/Content-Linux/ttmr001
+LIVE_LOADING trueend-resources
+LIVE_BUNDLE trueend-resources source=DMM-PC-player-20261103 + Android Vulkan shader programs
+LIVE_LOADING crw_layout_env_3d_live_ttmr001-00-noon
+LIVE_BUNDLE crw_layout_env_3d_live_ttmr001-00-noon source=DMM-PC
+LIVE_LOADING actor-shader
+LIVE_BUNDLE actor-shader source=DMM-PC + Android Vulkan shader programs
+LIVE_LOADING mdl_prp_microphone-normal-00_microphone
+LIVE_BUNDLE mdl_prp_microphone-normal-00_microphone source=DMM-PC
+LIVE_LOADING mef_mat_chr_ttmr_ehl-move-002
+LIVE_BUNDLE mef_mat_chr_ttmr_ehl-move-002 source=DMM-PC
+LIVE_LOADING mef_mat_chr_ttmr_eye-move-001
+LIVE_BUNDLE mef_mat_chr_ttmr_eye-move-001 source=DMM-PC
+LIVE_LOADING mot_live_chr_ttmr_ttmr-001_00_in
+LIVE_BUNDLE mot_live_chr_ttmr_ttmr-001_00_in source=DMM-PC
+LIVE_LOADING crw_mdl_mix_00-00_02
+LIVE_BUNDLE crw_mdl_mix_00-00_02 source=DMM-PC + Android Vulkan shader programs
+LIVE_LOADING mdl_prp_microphonestand-normal-00_microphonestand
+LIVE_BUNDLE mdl_prp_microphonestand-normal-00_microphonestand source=DMM-PC
+LIVE_LOADING sud_music_live_ttmr-001-ttmr_true-001
+LIVE_BUNDLE sud_music_live_ttmr-001-ttmr_true-001 source=DMM-PC
+LIVE_LOADING crw_mot_live_audience_general-006-b_in
+LIVE_BUNDLE crw_mot_live_audience_general-006-b_in source=DMM-PC
+LIVE_LOADING shader
+LIVE_BUNDLE shader source=DMM-PC + Android Vulkan shader programs
+LIVE_LOADING fbx_mdl_env_cmn-parts_live-equipment-01
+LIVE_BUNDLE fbx_mdl_env_cmn-parts_live-equipment-01 source=DMM-PC
+LIVE_LOADING crw_mot_live_audience_general-001-a_lp
+LIVE_BUNDLE crw_mot_live_audience_general-001-a_lp source=DMM-PC
+LIVE_LOADING eff_cav_mov_ttmr-001
+LIVE_BUNDLE eff_cav_mov_ttmr-001 source=DMM-PC
+LIVE_LOADING crw_mot_live_audience_general-010-a_in
+LIVE_BUNDLE crw_mot_live_audience_general-010-a_in source=DMM-PC
+LIVE_LOADING fbx_mdl_env_cmn-parts_live-camera-00
+LIVE_BUNDLE fbx_mdl_env_cmn-parts_live-camera-00 source=DMM-PC
+LIVE_LOADING crw_mot_live_audience_ttmr-001-000-a_lp
+LIVE_BUNDLE crw_mot_live_audience_ttmr-001-000-a_lp source=DMM-PC
+LIVE_LOADING fbx_mdl_env_cmn-parts_live-equipment-00
+LIVE_BUNDLE fbx_mdl_env_cmn-parts_live-equipment-00 source=DMM-PC
+LIVE_LOADING mot_live_ttmr-001_in_layout
+LIVE_BUNDLE mot_live_ttmr-001_in_layout source=DMM-PC
+LIVE_LOADING tln_live_ttmr-001
+LIVE_BUNDLE tln_live_ttmr-001 source=DMM-PC + Android Vulkan shader programs
+LIVE_LOADING fbx_mdl_env_stg-parts_auditorium-00-00
+LIVE_BUNDLE fbx_mdl_env_stg-parts_auditorium-00-00 source=DMM-PC
+LIVE_LOADING t_evm_chr-eye_cub_spclit_general-00
+LIVE_BUNDLE t_evm_chr-eye_cub_spclit_general-00 source=DMM-PC
+LIVE_LOADING fbx_mdl_env_stg-parts_auditorium-01-00
+LIVE_BUNDLE fbx_mdl_env_stg-parts_auditorium-01-00 source=DMM-PC
+LIVE_LOADING fbx_mdl_env_stg-parts_livestg-ttmr001-00
+LIVE_BUNDLE fbx_mdl_env_stg-parts_livestg-ttmr001-00 source=DMM-PC
+LIVE_LOADING fbx_mdl_env_cmn-parts_live-truss-00
+LIVE_BUNDLE fbx_mdl_env_cmn-parts_live-truss-00 source=DMM-PC
+LIVE_LOADING t_evm_chr-all_cub_spclit_general-00
+LIVE_BUNDLE t_evm_chr-all_cub_spclit_general-00 source=DMM-PC
+LIVE_LOADING env_3d_live_ttmr001-00-noon
+LIVE_BUNDLE env_3d_live_ttmr001-00-noon source=DMM-PC + Android Vulkan shader programs
+LIVE_LOADING mdl_chr_ttmr-cstm-0003_body
+LIVE_BUNDLE mdl_chr_ttmr-cstm-0003_body source=DMM-PC
+LIVE_LOADING mdl_chr_ttmr-cstm-0003_hair
+LIVE_BUNDLE mdl_chr_ttmr-cstm-0003_hair source=DMM-PC
+LIVE_LOADING m_fdc
+LIVE_BUNDLE m_fdc source=DMM-PC
+LIVE_LOADING mdl_chr_ttmr-base-0000_face
+LIVE_BUNDLE mdl_chr_ttmr-base-0000_face source=DMM-PC
+The referenced script (ColliderVisualizer.ColliderVisualizeRendererFeature) on this Behaviour is missing!
+The referenced script (ColliderVisualizer.ColliderVisualizeRendererFeature) on this Behaviour is missing!
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+LIVE_PIPELINE CampusRenderPipelineUltimateAsset renderer=VL.Rendering.VLSRPRenderer
+Request UpdateRenderTarget
+Update RenderTarget 640x272
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+LIVE_LOADED bundles=32 stage=env_3d_live_ttmr001-00-noon timeline=tln_live_ttmr-001 duration=155.599999999999
+LIVE_ACTOR CampusActorController[0] avatar=True humanoid=True parts=5 renderers=8 layer=0 cameraMask=104448
+LIVE_AUDIO clip=sud_music_live_ttmr-001-ttmr_true-001 duration=154.5833 frequency=48000 channels=2 clock=GameTime
+Bind Actor_00 -> CampusActorController[0]
+LIVE_PLAYING time=0 duration=155.599999999999
+Adding null Transform to TransformAccessArray will result in degraded performance.
+Adding null Transform to TransformAccessArray will result in degraded performance.
+Adding null Transform to TransformAccessArray will result in degraded performance.
+VideoPlayer cannot play clip : Assets/Data/3D/eff/cav/mov/ttmr/001/eff_cav_mov_ttmr-001.mp4
+LIVE_CAPTURE requested=5 actual=5.00000007450581 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.000.png
+LIVE_CAPTURE requested=5.1 actual=5.10000007599592 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.100.png
+LIVE_CAPTURE requested=5.2 actual=5.20000007748604 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.200.png
+LIVE_CAPTURE requested=5.3 actual=5.30000007897615 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.300.png
+LIVE_CAPTURE requested=5.4 actual=5.40000008046627 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.400.png
+LIVE_CAPTURE requested=5.5 actual=5.50000008195639 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.500.png
+LIVE_CAPTURE requested=5.6 actual=5.6000000834465 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.600.png
+LIVE_CAPTURE requested=5.7 actual=5.70000008493662 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.700.png
+LIVE_CAPTURE requested=5.8 actual=5.80000008642673 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.800.png
+LIVE_CAPTURE requested=5.9 actual=5.90000008791685 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-5.900.png
+LIVE_CAPTURE requested=6 actual=6.00000008940697 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-6.000.png
+LIVE_CAPTURE requested=15 actual=15.0109656713903 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.000.png
+LIVE_CAPTURE requested=15.1 actual=15.1109656728804 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.100.png
+LIVE_CAPTURE requested=15.2 actual=15.2109656743705 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.200.png
+LIVE_CAPTURE requested=15.3 actual=15.3109656758606 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.300.png
+LIVE_CAPTURE requested=15.4 actual=15.4109656773508 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.400.png
+LIVE_CAPTURE requested=15.5 actual=15.5109656788409 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.500.png
+LIVE_CAPTURE requested=15.6 actual=15.610965680331 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.600.png
+LIVE_CAPTURE requested=15.7 actual=15.7109656818211 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.700.png
+LIVE_CAPTURE requested=15.8 actual=15.8109656833112 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.800.png
+LIVE_CAPTURE requested=15.9 actual=15.9109656848013 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-15.900.png
+LIVE_CAPTURE requested=16 actual=16.0109656862915 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-16.000.png
+LIVE_CAPTURE requested=25 actual=25.0222287671641 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.000.png
+LIVE_CAPTURE requested=25.1 actual=25.1222287686542 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.100.png
+LIVE_CAPTURE requested=25.2 actual=25.2222287701443 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.200.png
+LIVE_CAPTURE requested=25.3 actual=25.3222287716344 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.300.png
+LIVE_CAPTURE requested=25.4 actual=25.4222287731245 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.400.png
+LIVE_CAPTURE requested=25.5 actual=25.5222287746146 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.500.png
+LIVE_CAPTURE requested=25.6 actual=25.6222287761047 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.600.png
+LIVE_CAPTURE requested=25.7 actual=25.7222287775949 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.700.png
+LIVE_CAPTURE requested=25.8 actual=25.822228779085 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.800.png
+LIVE_CAPTURE requested=25.9 actual=25.9222287805751 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-25.900.png
+LIVE_CAPTURE requested=26 actual=26.0222287820652 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-26.000.png
+LIVE_CAPTURE requested=35 actual=35.0333727011457 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.000.png
+LIVE_CAPTURE requested=35.1 actual=35.1333727026358 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.100.png
+LIVE_CAPTURE requested=35.2 actual=35.2333727041259 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.200.png
+LIVE_CAPTURE requested=35.3 actual=35.3333727056161 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.300.png
+LIVE_CAPTURE requested=35.4 actual=35.4333727071062 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.400.png
+LIVE_CAPTURE requested=35.5 actual=35.5333727085963 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.500.png
+LIVE_CAPTURE requested=35.6 actual=35.6333727100864 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.600.png
+LIVE_CAPTURE requested=35.7 actual=35.7333727115765 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.700.png
+LIVE_CAPTURE requested=35.8 actual=35.8333727130666 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.800.png
+LIVE_CAPTURE requested=35.9 actual=35.9333727145568 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-35.900.png
+LIVE_CAPTURE requested=36 actual=36.0333727160469 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-36.000.png
+LIVE_CAPTURE requested=45 actual=45.0443618949503 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.000.png
+LIVE_CAPTURE requested=45.1 actual=45.1443618964404 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.100.png
+LIVE_CAPTURE requested=45.2 actual=45.2443618979305 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.200.png
+LIVE_CAPTURE requested=45.3 actual=45.3443618994206 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.300.png
+LIVE_CAPTURE requested=45.4 actual=45.4443619009107 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.400.png
+LIVE_CAPTURE requested=45.5 actual=45.5443619024009 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.500.png
+LIVE_CAPTURE requested=45.6 actual=45.644361903891 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.600.png
+LIVE_CAPTURE requested=45.7 actual=45.7443619053811 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.700.png
+LIVE_CAPTURE requested=45.8 actual=45.8443619068712 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.800.png
+LIVE_CAPTURE requested=45.9 actual=45.9443619083613 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-45.900.png
+LIVE_CAPTURE requested=46 actual=46.0443619098514 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-46.000.png
+LIVE_CAPTURE requested=55 actual=55.0549072111025 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.000.png
+LIVE_CAPTURE requested=55.1 actual=55.1549072125927 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.100.png
+LIVE_CAPTURE requested=55.2 actual=55.2549072140828 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.200.png
+LIVE_CAPTURE requested=55.3 actual=55.3549072155729 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.300.png
+LIVE_CAPTURE requested=55.4 actual=55.454907217063 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.400.png
+LIVE_CAPTURE requested=55.5 actual=55.5549072185531 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.500.png
+LIVE_CAPTURE requested=55.6 actual=55.6549072200432 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.600.png
+LIVE_CAPTURE requested=55.7 actual=55.7549072215334 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.700.png
+LIVE_CAPTURE requested=55.8 actual=55.8549072230235 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.800.png
+LIVE_CAPTURE requested=55.9 actual=55.9549072245136 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-55.900.png
+LIVE_CAPTURE requested=56 actual=56.0549072260037 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-56.000.png
+LIVE_CAPTURE requested=65 actual=65.0676979068667 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.000.png
+LIVE_CAPTURE requested=65.1 actual=65.1676979083568 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.100.png
+LIVE_CAPTURE requested=65.2 actual=65.2676979098469 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.200.png
+LIVE_CAPTURE requested=65.3 actual=65.367697911337 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.300.png
+LIVE_CAPTURE requested=65.4 actual=65.4676979128271 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.400.png
+LIVE_CAPTURE requested=65.5 actual=65.5676979143173 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.500.png
+LIVE_CAPTURE requested=65.6 actual=65.6676979158074 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.600.png
+LIVE_CAPTURE requested=65.7 actual=65.7676979172975 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.700.png
+LIVE_CAPTURE requested=65.8 actual=65.8676979187876 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.800.png
+LIVE_CAPTURE requested=65.9 actual=65.9676979202777 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-65.900.png
+LIVE_CAPTURE requested=66 actual=66.0676979217678 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-66.000.png
+LIVE_CAPTURE requested=75 actual=75.0787428757176 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.000.png
+LIVE_CAPTURE requested=75.1 actual=75.1787428772077 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.100.png
+LIVE_CAPTURE requested=75.2 actual=75.2787428786978 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.200.png
+LIVE_CAPTURE requested=75.3 actual=75.3787428801879 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.300.png
+LIVE_CAPTURE requested=75.4 actual=75.478742881678 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.400.png
+LIVE_CAPTURE requested=75.5 actual=75.5787428831682 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.500.png
+LIVE_CAPTURE requested=75.6 actual=75.6787428846583 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.600.png
+LIVE_CAPTURE requested=75.7 actual=75.7787428861484 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.700.png
+LIVE_CAPTURE requested=75.8 actual=75.8787428876385 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.800.png
+LIVE_CAPTURE requested=75.9 actual=75.9787428891286 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-75.900.png
+LIVE_CAPTURE requested=76 actual=76.0787428906187 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-76.000.png
+LIVE_CAPTURE requested=85 actual=85.0894877593964 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.000.png
+LIVE_CAPTURE requested=85.1 actual=85.1894877608865 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.100.png
+LIVE_CAPTURE requested=85.2 actual=85.2894877623767 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.200.png
+LIVE_CAPTURE requested=85.3 actual=85.3894877638668 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.300.png
+LIVE_CAPTURE requested=85.4 actual=85.4894877653569 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.400.png
+LIVE_CAPTURE requested=85.5 actual=85.589487766847 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.500.png
+LIVE_CAPTURE requested=85.6 actual=85.6894877683371 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.600.png
+LIVE_CAPTURE requested=85.7 actual=85.7894877698272 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.700.png
+LIVE_CAPTURE requested=85.8 actual=85.8894877713174 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.800.png
+LIVE_CAPTURE requested=85.9 actual=85.9894877728075 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-85.900.png
+LIVE_CAPTURE requested=86 actual=86.0894877742976 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-86.000.png
+LIVE_CAPTURE requested=95 actual=95.0003983806819 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.000.png
+LIVE_CAPTURE requested=95.1 actual=95.100398382172 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.100.png
+LIVE_CAPTURE requested=95.2 actual=95.2003983836621 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.200.png
+LIVE_CAPTURE requested=95.3 actual=95.3003983851522 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.300.png
+LIVE_CAPTURE requested=95.4 actual=95.4003983866423 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.400.png
+LIVE_CAPTURE requested=95.5 actual=95.5003983881325 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.500.png
+LIVE_CAPTURE requested=95.6 actual=95.6003983896226 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.600.png
+LIVE_CAPTURE requested=95.7 actual=95.7003983911127 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.700.png
+LIVE_CAPTURE requested=95.8 actual=95.8003983926028 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.800.png
+LIVE_CAPTURE requested=95.9 actual=95.9003983940929 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-95.900.png
+LIVE_CAPTURE requested=96 actual=96.000398395583 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-96.000.png
+LIVE_CAPTURE requested=105 actual=105.012357642874 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.000.png
+LIVE_CAPTURE requested=105.1 actual=105.112357644364 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.100.png
+LIVE_CAPTURE requested=105.2 actual=105.212357645854 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.200.png
+LIVE_CAPTURE requested=105.3 actual=105.312357647344 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.300.png
+LIVE_CAPTURE requested=105.4 actual=105.412357648835 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.400.png
+LIVE_CAPTURE requested=105.5 actual=105.512357650325 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.500.png
+LIVE_CAPTURE requested=105.6 actual=105.612357651815 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.600.png
+LIVE_CAPTURE requested=105.7 actual=105.712357653305 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.700.png
+LIVE_CAPTURE requested=105.8 actual=105.812357654795 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.800.png
+LIVE_CAPTURE requested=105.9 actual=105.912357656285 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-105.900.png
+LIVE_CAPTURE requested=106 actual=106.012357657775 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-106.000.png
+LIVE_CAPTURE requested=115 actual=115.02514178399 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.000.png
+LIVE_CAPTURE requested=115.1 actual=115.12514178548 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.100.png
+LIVE_CAPTURE requested=115.2 actual=115.22514178697 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.200.png
+LIVE_CAPTURE requested=115.3 actual=115.32514178846 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.300.png
+LIVE_CAPTURE requested=115.4 actual=115.42514178995 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.400.png
+LIVE_CAPTURE requested=115.5 actual=115.525141791441 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.500.png
+LIVE_CAPTURE requested=115.6 actual=115.625141792931 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.600.png
+LIVE_CAPTURE requested=115.7 actual=115.725141794421 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.700.png
+LIVE_CAPTURE requested=115.8 actual=115.825141795911 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.800.png
+LIVE_CAPTURE requested=115.9 actual=115.925141797401 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-115.900.png
+LIVE_CAPTURE requested=116 actual=116.025141798891 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-116.000.png
+LIVE_CAPTURE requested=125 actual=125.037838368677 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.000.png
+LIVE_CAPTURE requested=125.1 actual=125.137838370167 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.100.png
+LIVE_CAPTURE requested=125.2 actual=125.237838371657 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.200.png
+LIVE_CAPTURE requested=125.3 actual=125.337838373147 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.300.png
+LIVE_CAPTURE requested=125.4 actual=125.437838374637 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.400.png
+LIVE_CAPTURE requested=125.5 actual=125.537838376127 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.500.png
+LIVE_CAPTURE requested=125.6 actual=125.637838377617 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.600.png
+LIVE_CAPTURE requested=125.7 actual=125.737838379107 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.700.png
+LIVE_CAPTURE requested=125.8 actual=125.837838380598 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.800.png
+LIVE_CAPTURE requested=125.9 actual=125.937838382088 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-125.900.png
+LIVE_CAPTURE requested=126 actual=126.037838383578 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-126.000.png
+LIVE_CAPTURE requested=135 actual=135.049364148639 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.000.png
+LIVE_CAPTURE requested=135.1 actual=135.149364150129 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.100.png
+LIVE_CAPTURE requested=135.2 actual=135.249364151619 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.200.png
+LIVE_CAPTURE requested=135.3 actual=135.349364153109 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.300.png
+LIVE_CAPTURE requested=135.4 actual=135.4493641546 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.400.png
+LIVE_CAPTURE requested=135.5 actual=135.54936415609 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.500.png
+LIVE_CAPTURE requested=135.6 actual=135.64936415758 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.600.png
+LIVE_CAPTURE requested=135.7 actual=135.74936415907 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.700.png
+LIVE_CAPTURE requested=135.8 actual=135.84936416056 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.800.png
+LIVE_CAPTURE requested=135.9 actual=135.94936416205 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-135.900.png
+LIVE_CAPTURE requested=136 actual=136.04936416354 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-136.000.png
+LIVE_CAPTURE requested=145 actual=145.061291345395 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.000.png
+LIVE_CAPTURE requested=145.1 actual=145.161291346885 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.100.png
+LIVE_CAPTURE requested=145.2 actual=145.261291348375 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.200.png
+LIVE_CAPTURE requested=145.3 actual=145.361291349865 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.300.png
+LIVE_CAPTURE requested=145.4 actual=145.461291351356 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.400.png
+LIVE_CAPTURE requested=145.5 actual=145.561291352846 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.500.png
+LIVE_CAPTURE requested=145.6 actual=145.661291354336 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.600.png
+LIVE_CAPTURE requested=145.7 actual=145.761291355826 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.700.png
+LIVE_CAPTURE requested=145.8 actual=145.861291357316 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.800.png
+LIVE_CAPTURE requested=145.9 actual=145.961291358806 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-145.900.png
+LIVE_CAPTURE requested=146 actual=146.061291360296 path=/data/xy/gakumas/live-urp-codex/.recon/task-k/before-continuity/ttmr001-146.000.png
+LIVE_STOPPED time=155.599999999999
+Dispose FlareData (Game3DManager(Clone))
+Dispose FlareData (Game3DManager(Clone))
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+Vulkan PSO: No pipeline cache data available, skipping save to disk. Size[32]

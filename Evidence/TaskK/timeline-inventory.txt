@@ -1,0 +1,77 @@
+types: {'MonoBehaviour': 25853, 'GameObject': 4266, 'Transform': 4230, 'MeshRenderer': 516, 'MeshFilter': 516, 'Light': 218, 'AnimationClip': 185, 'Animator': 173, 'ParticleSystem': 150, 'ParticleSystemRenderer': 150, 'MonoScript': 99, 'ParentConstraint': 50, 'Texture2D': 37, 'RectTransform': 36}
+
+15 TimelineAssets
+  ttmr-001_Actor                                   dur    0.000 mode 0  tracks    2  clips     2
+      MotionDefinePlayerTimelineTrack            tracks    2 clips     2
+  ttmr-001_AudiencePenlight                        dur    0.000 mode 0  tracks    2  clips     2
+      AudiencePenlightTimelineTrack              tracks    1 clips     1
+      MobAudiencePenlightOverrideTrack           tracks    1 clips     1
+  ttmr-001_Audio                                   dur    0.000 mode 0  tracks    1  clips     1
+      AudioTrack                                 tracks    1 clips     1
+  ttmr-001_Camera                                  dur    0.000 mode 0  tracks  110  clips   216
+      CinemachineTrack                           tracks    1 clips   108
+      GroupTrack                                 tracks    1 clips     0
+      AnimationTrack                             tracks  108 clips   108
+  ttmr-001_Crowd                                   dur    0.000 mode 0  tracks    3  clips    41
+      CrowdTimelineTrack                         tracks    1 clips    28
+      AnimationTrack                             tracks    1 clips     0
+      CampusVolumeTimelineTrack                  tracks    1 clips    13
+  ttmr-001_Effect                                  dur    0.000 mode 0  tracks   40  clips    58
+      GroupTrack                                 tracks    7 clips     0
+      ControlTrack                               tracks   23 clips    58
+      AnimationTrack                             tracks   10 clips     0
+  ttmr-001_Environment                             dur    0.000 mode 0  tracks    5  clips     5
+      AnimationTrack                             tracks    5 clips     5
+  ttmr-001_Equipment                               dur    0.000 mode 0  tracks  523  clips 13830
+      CampusBpmMarkerTrack                       tracks    1 clips     0
+      GroupTrack                                 tracks   26 clips     0
+      AnimationTrack                             tracks    2 clips     0
+      LiveEquipmentLightTrack                    tracks  443 clips 13636
+      LiveEquipmentLaserTrack                    tracks   50 clips   173
+      LiveEquipmentDirectionalLightTrack         tracks    1 clips    21
+      marker BeatDenominatorMarker               91
+      marker BeatNumeratorMarker                 270
+  ttmr-001_Gobo                                    dur    0.000 mode 0  tracks    0  clips     0
+  ttmr-001_Light                                   dur    0.000 mode 0  tracks  145  clips  1879
+      GroupTrack                                 tracks   14 clips     0
+      AnimationTrack                             tracks   13 clips     1
+      CampusLightTrack                           tracks  109 clips   776
+      CampusVolumeTimelineTrack                  tracks    7 clips  1090
+      ControlTrack                               tracks    1 clips    12
+      ?                                          tracks    1 clips     0
+  ttmr-001_Master                                  dur    0.000 mode 0  tracks   16  clips    15
+      CampusBpmTimelineTrack                     tracks    1 clips     1
+      CampusBpmMarkerTrack                       tracks    1 clips     0
+      CampusDirectorControlTrack                 tracks   14 clips    14
+      marker BeatDenominatorMarker               91
+      marker BeatNumeratorMarker                 270
+  ttmr-001_Mob                                     dur    0.000 mode 0  tracks   15  clips    29
+      AnimationTrack                             tracks    8 clips     8
+      ActivationTrack                            tracks    7 clips    21
+  ttmr-001_Monitor                                 dur    0.000 mode 0  tracks   37  clips   444
+      CampusVideoPlayerTrack                     tracks    1 clips     1
+      AnimationTrack                             tracks   31 clips   440
+      GroupTrack                                 tracks    2 clips     0
+      CampusTargetImageTrack                     tracks    3 clips     3
+  ttmr-001_Other                                   dur    0.000 mode 0  tracks   17  clips    13
+      GroupTrack                                 tracks    2 clips     0
+      AnimationTrack                             tracks   15 clips    13
+  ttmr-001_Subtitle                                dur    0.000 mode 0  tracks    1  clips     1
+      CampusSubtitleTrack                        tracks    1 clips     1
+
+15 PlayableDirectors
+  Environment                              asset ttmr-001_Environment  wrap 0 initialTime 0.0 bindings 5
+  Audio                                    asset ttmr-001_Audio  wrap 0 initialTime 0.0 bindings 1
+  Light                                    asset ttmr-001_Light  wrap 0 initialTime 0.0 bindings 126
+  Monitor                                  asset ttmr-001_Monitor  wrap 0 initialTime 0.0 bindings 10
+  AudiencePenlight                         asset ttmr-001_AudiencePenlight  wrap 0 initialTime 0.0 bindings 2
+  MasterTimeline                           asset ttmr-001_Master  wrap 0 initialTime 0.0 bindings 0
+  EquipmentController                      asset ttmr-001_Equipment  wrap 0 initialTime 0.0 bindings 237
+  Subtitle                                 asset ttmr-001_Subtitle  wrap 0 initialTime 0.0 bindings 0
+  Camera                                   asset ttmr-001_Camera  wrap 0 initialTime 0.0 bindings 109
+  Effect                                   asset ttmr-001_Effect  wrap 0 initialTime 0.0 bindings 11
+  Actor                                    asset ttmr-001_Actor  wrap 0 initialTime 0.0 bindings 2
+  Mob                                      asset ttmr-001_Mob  wrap 0 initialTime 0.0 bindings 15
+  Other                                    asset ttmr-001_Other  wrap 0 initialTime 0.0 bindings 10
+  Gobo                                     asset ttmr-001_Gobo  wrap 0 initialTime 0.0 bindings 0
+  Crowd                                    asset ttmr-001_Crowd  wrap 0 initialTime 0.0 bindings 2

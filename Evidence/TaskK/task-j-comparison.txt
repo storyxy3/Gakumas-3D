@@ -1,0 +1,42 @@
+same 90, changed 39, only in game 0, only in stock 0
+changed by class: Campus.Crowd.CrowdSystem 12, Campus.Crowd.PenlightMeshRenderSystem 7, Campus.Crowd.CrowdSystemData 6, Campus.Crowd.CrowdMeshRenderSystem 4, Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob 2, Campus.Crowd.BillboardMeshRenderSystem 2, Campus.Crowd.CrowdSortJob 2, Campus.Crowd.CrowdRendererFeature 1, Campus.Crowd.CrowdRenderingSetupData 1, Campus.Crowd.CrowdUtility 1, Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob 1
+
+0.242 Campus.Crowd.CrowdRenderingSetupData$$Update semantic
+0.246 Campus.Crowd.CrowdSystem$$SetBillboardResolution semantic
+0.350 Campus.Crowd.CrowdSystemData$$UpdatePersonIndexBuffer semantic
+0.417 Campus.Crowd.PenlightMeshRenderSystem$$GetPenlightInfoBytesBuffer layout
+0.460 Campus.Crowd.CrowdSystemData$$InitializedPenlightInfoBuffer semantic
+0.476 Campus.Crowd.CrowdMeshRenderSystem$$SetMaxInstanceCounts semantic
+0.480 Campus.Crowd.CrowdSystem$$SetDrawCounts semantic
+0.531 Campus.Crowd.PenlightMeshRenderSystem$$ComputeUpdatePenlight semantic
+0.558 Campus.Live.Equipment.Environment.LiveLaser.LaserVertexJob$$LookCamera layout
+0.569 Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$Execute semantic
+0.590 Campus.Crowd.CrowdSystemData$$InitializeBytesBuffer semantic
+0.594 Campus.Crowd.PenlightMeshRenderSystem$$InitializedArgsBuffer semantic
+0.610 Campus.Crowd.CrowdSystemData$$ComputeUpdatePerson semantic
+0.623 Campus.Crowd.CrowdMeshRenderSystem$$Render layout
+0.650 Campus.Crowd.PenlightMeshRenderSystem$$Render semantic
+0.689 Campus.Crowd.PenlightMeshRenderSystem$$InitializeAppendBuffer semantic
+0.693 Campus.Crowd.CrowdSystem$$Setup layout
+0.723 Campus.Crowd.BillboardMatricesJobHandler.BillboardMatricesJob$$CalculateBillboardMatrix layout
+0.756 Campus.Crowd.CrowdMeshRenderSystem$$ComputeSkinning layout
+0.764 Campus.Crowd.CrowdRendererFeature$$OnCameraPreCull semantic
+0.780 Campus.Crowd.BillboardMeshRenderSystem$$CreateBillboardMesh semantic
+0.783 Campus.Crowd.CrowdSystem$$RenderBillboardCrowd layout
+0.789 Campus.Crowd.CrowdSortJob$$IsCulledOcclusionSphere layout
+0.789 Campus.Crowd.CrowdSystem$$SetupRenderingParameter layout
+0.849 Campus.Crowd.PenlightMeshRenderSystem$$Dispose semantic
+0.857 Campus.Crowd.CrowdSystem$$DisposeBillboardMeshRenderSystem layout
+0.872 Campus.Crowd.CrowdSystem$$ComputePenlight layout
+0.876 Campus.Crowd.CrowdSystem$$RenderCrowd layout
+0.880 Campus.Crowd.CrowdSystem$$BakeBillboardCrowd semantic
+0.908 Campus.Crowd.PenlightMeshRenderSystem$$.ctor semantic
+0.914 Campus.Crowd.CrowdSortJob$$Execute layout
+0.915 Campus.Crowd.CrowdSystem$$ComputeCrowdSkinning layout
+0.926 Campus.Crowd.CrowdSystemData$$EqualData layout
+0.938 Campus.Crowd.CrowdSystemData$$.ctor layout
+0.962 Campus.Crowd.BillboardMeshRenderSystem$$BakeBillboard layout
+0.969 Campus.Crowd.CrowdMeshRenderSystem$$.ctor semantic
+0.977 Campus.Crowd.CrowdUtility$$GetCellBounds layout
+0.993 Campus.Crowd.CrowdSystem$$ScheduleJobs layout
+0.994 Campus.Crowd.Crowd
