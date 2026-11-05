@@ -27,19 +27,19 @@ namespace VLB
 
         public static class HD
         {
-            public static readonly int Intensity;
-            public static readonly int SideSoftness;
-            public static readonly int CameraForwardOS;
-            public static readonly int CameraForwardWS;
-            public static readonly int TransformScale;
-            public static readonly int ShadowDepthTexture;
-            public static readonly int ShadowProps;
-            public static readonly int Jittering;
-            public static readonly int CookieTexture;
-            public static readonly int CookieProperties;
-            public static readonly int CookiePosAndScale;
-            public static readonly int GlobalCameraBlendingDistance;
-            public static readonly int GlobalJitteringNoiseTex;
+            public static readonly int Intensity = UnityEngine.Shader.PropertyToID("_Intensity");
+            public static readonly int SideSoftness = UnityEngine.Shader.PropertyToID("_SideSoftness");
+            public static readonly int CameraForwardOS = UnityEngine.Shader.PropertyToID("_CameraForwardOS");
+            public static readonly int CameraForwardWS = UnityEngine.Shader.PropertyToID("_CameraForwardWS");
+            public static readonly int TransformScale = UnityEngine.Shader.PropertyToID("_TransformScale");
+            public static readonly int ShadowDepthTexture = UnityEngine.Shader.PropertyToID("_ShadowDepthTexture");
+            public static readonly int ShadowProps = UnityEngine.Shader.PropertyToID("_ShadowProps");
+            public static readonly int Jittering = UnityEngine.Shader.PropertyToID("_Jittering");
+            public static readonly int CookieTexture = UnityEngine.Shader.PropertyToID("_CookieTexture");
+            public static readonly int CookieProperties = UnityEngine.Shader.PropertyToID("_CookieProperties");
+            public static readonly int CookiePosAndScale = UnityEngine.Shader.PropertyToID("_CookiePosAndScale");
+            public static readonly int GlobalCameraBlendingDistance = UnityEngine.Shader.PropertyToID("_VLB_CameraBlendingDistance");
+            public static readonly int GlobalJitteringNoiseTex = UnityEngine.Shader.PropertyToID("_VLB_JitteringNoiseTex");
         }
 
         public static readonly int ConeRadius = UnityEngine.Shader.PropertyToID("_ConeRadius");

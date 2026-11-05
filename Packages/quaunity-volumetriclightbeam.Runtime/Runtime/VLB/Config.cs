@@ -243,6 +243,13 @@ namespace VLB
 
         private void RefreshGlobalShaderProperties()
         {
+            Shader.SetGlobalFloat(ShaderProperties.GlobalUsesReversedZBuffer, SystemInfo.usesReversedZBuffer ? 1f : 0f);
+            Shader.SetGlobalFloat(ShaderProperties.GlobalDitheringFactor, ditheringFactor);
+            Shader.SetGlobalTexture(ShaderProperties.GlobalDitheringNoiseTex, ditheringNoiseTexture);
+            Shader.SetGlobalTexture(ShaderProperties.GlobalNoiseTex2D, ditheringNoiseTexture);
+            Shader.SetGlobalTexture(ShaderProperties.GlobalNoiseTex2D, noiseTexture2D);
+            Shader.SetGlobalFloat(ShaderProperties.HD.GlobalCameraBlendingDistance, hdBeamsCameraBlendingDistance);
+            Shader.SetGlobalTexture(ShaderProperties.HD.GlobalJitteringNoiseTex, jitteringNoiseTexture);
         }
 
         public void ResetInternalData()
