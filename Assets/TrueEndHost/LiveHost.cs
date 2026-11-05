@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Campus.Common;
+using Campus.Common.Extensions;
 using Campus.Common.Live;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -34,6 +35,10 @@ namespace TrueEnd.Host
         }
 
         private readonly Dictionary<string, AssetBundle> bundles = new Dictionary<string, AssetBundle>();
+        // LiveDefine.TimelineEndMargin / FadeDuration in APK 3.5.3.
+        private const float TimelineEndMargin = 0.4f;
+        private const float FadeDuration = 0.3f;
+        private CanvasGroup fadeGroup;
         private LiveOptions options;
         private CampusLiveTimelineController timeline;
         private VL.Rendering.VLSRPCameraController cameraController;
@@ -132,25 +137,44 @@ namespace TrueEnd.Host
                 await binder.SetupAsync(this.GetCancellationTokenOnDestroy());
                 // Live3DPresenter.SetActorsActive dispatches this interface call after loading.
                 actor.SetRendererActive(true);
+                fadeGroup = gameObject.AddComponent<CanvasGroup>();
+                fadeGroup.SetBlockingAlpha(0f);
                 timeline.Play();
                 Debug.Log($"LIVE_PLAYING time={timeline.master.time} duration={timeline.master.duration}");
                 double started = Time.realtimeSinceStartupAsDouble;
                 int screenshotIndex = 0;
                 Directory.CreateDirectory(options.CaptureDirectory);
-                while (timeline.master.time < timeline.master.duration && Time.realtimeSinceStartupAsDouble - started < options.QuitAfter)
+                double presentationTime = timeline.master.time;
+                double fadeStartedAt = -1;
+                double pausedAt = 0;
+                // Match LivePresenter.CheckLiveEnd's float duration and subtraction.
+                float endTime = (float)timeline.master.duration - TimelineEndMargin;
+                while (presentationTime < timeline.master.duration && Time.realtimeSinceStartupAsDouble - started < options.QuitAfter)
                 {
                     await UniTask.WaitForEndOfFrame(this);
-                    if (screenshotIndex < options.ScreenshotTimes.Length && timeline.master.time >= options.ScreenshotTimes[screenshotIndex])
+                    // The client pauses its director in OnEndLiveSequence, then fades the UI.
+                    // Keep a host presentation clock so captures can also cover that paused fade.
+                    presentationTime = fadeStartedAt < 0 ? timeline.master.time : pausedAt + Time.timeAsDouble - fadeStartedAt;
+                    if (fadeStartedAt < 0 && (float)timeline.master.time >= endTime)
+                    {
+                        pausedAt = timeline.master.time;
+                        fadeStartedAt = Time.timeAsDouble;
+                        timeline.master.Pause();
+                        musicSource.Pause();
+                        fadeGroup.DOFadeBlocking(1f, FadeDuration);
+                        Debug.Log($"LIVE_END_FADE time={pausedAt} duration={FadeDuration}");
+                    }
+                    if (screenshotIndex < options.ScreenshotTimes.Length && presentationTime >= options.ScreenshotTimes[screenshotIndex])
                     {
                         double requested = options.ScreenshotTimes[screenshotIndex++];
                         string path = Path.Combine(options.CaptureDirectory, $"ttmr001-{requested:F3}.png");
                         var capture = ScreenCapture.CaptureScreenshotAsTexture();
                         File.WriteAllBytes(path, capture.EncodeToPNG());
                         Destroy(capture);
-                        Debug.Log($"LIVE_CAPTURE requested={requested} actual={timeline.master.time} path={path}");
+                        Debug.Log($"LIVE_CAPTURE requested={requested} actual={presentationTime} path={path} director={timeline.master.time}");
                     }
                 }
-                Debug.Log($"LIVE_STOPPED time={timeline.master.time}");
+                Debug.Log($"LIVE_STOPPED time={timeline.master.time} presentation={presentationTime}");
                 timeline.master.Stop();
                 musicSource.Stop();
                 await SceneManager.UnloadSceneAsync(live);
@@ -177,6 +201,14 @@ namespace TrueEnd.Host
         {
             if (cameraController != null && cameraController.targetTexture != null)
                 GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), cameraController.targetTexture, ScaleMode.ScaleToFit, false);
+            // Host compositor for LiveSceneView's black Image / CanvasGroup overlay.
+            if (fadeGroup != null && fadeGroup.alpha > 0f)
+            {
+                Color previous = GUI.color;
+                GUI.color = new Color(1f, 1f, 1f, fadeGroup.alpha);
+                GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), Texture2D.blackTexture);
+                GUI.color = previous;
+            }
         }
 
         private async UniTask<Scene> LoadScene(string bundleName)

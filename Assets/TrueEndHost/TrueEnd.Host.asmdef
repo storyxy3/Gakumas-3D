@@ -8,6 +8,8 @@
     "Cinemachine",
     "CriMw.CriWare.Runtime",
     "Unity.RenderPipelines.Core.Runtime",
-    "Unity.RenderPipelines.Universal.Runtime"
+    "Unity.RenderPipelines.Universal.Runtime",
+    "DOTween",
+    "UnityEngine.UI"
   ]
 }
