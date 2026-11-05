@@ -176,7 +176,7 @@ namespace TrueEnd.Host
                         Debug.Log($"LIVE_CAPTURE requested={requested} actual={presentationTime} path={path}");
                     }
                 }
-                Debug.Log($"LIVE_STOPPED time={timeline.master.time} presentation={presentationTime}");
+                Debug.Log($"LIVE_STOPPED time={timeline.master.time} presentation={presentationTime} fadeAlpha={fadeGroup.alpha}");
                 timeline.master.Pause();
                 musicSource.Stop();
                 if (options.QuitAtEnd || Time.realtimeSinceStartupAsDouble - started >= options.QuitAfter)
@@ -221,8 +221,8 @@ namespace TrueEnd.Host
             if (fadeGroup != null && fadeGroup.alpha > 0f)
             {
                 Color previous = GUI.color;
-                GUI.color = new Color(1f, 1f, 1f, fadeGroup.alpha);
-                GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), Texture2D.blackTexture);
+                GUI.color = new Color(0f, 0f, 0f, fadeGroup.alpha);
+                GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), Texture2D.whiteTexture);
                 GUI.color = previous;
             }
         }
