@@ -173,6 +173,14 @@ namespace TrueEnd.Host
                         Debug.Log($"LIVE_END_FADE time={pausedAt} duration={FadeDuration}");
                     }
                     frameRecorder?.Record(cameraController.targetTexture, presentationTime, fadeGroup.alpha);
+                    // Capture clock only: the monitors' VideoPlayers run Freerun on their own clock; let them follow game
+                    // time and wait for each frame so the dumped monitor content matches the timeline (host glue).
+                    if (options.CaptureFps > 0)
+                        foreach (var video in FindObjectsByType<UnityEngine.Video.VideoPlayer>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+                        {
+                            video.timeUpdateMode = UnityEngine.Video.VideoTimeUpdateMode.GameTime;
+                            video.skipOnDrop = false;
+                        }
                     if (screenshotIndex < options.ScreenshotTimes.Length && presentationTime >= options.ScreenshotTimes[screenshotIndex])
                     {
                         double requested = options.ScreenshotTimes[screenshotIndex++];

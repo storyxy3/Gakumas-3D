@@ -70,4 +70,6 @@ Frame dump for frame-by-frame comparison: `--record-frames <dir>` writes every r
 host fade composited) as `f??????.jpg` plus `frames.tsv` (frame, timeline/presentation time, fade) and `geometry.txt`.
 It runs on the capture clock (`--capture-fps`, default 60 with this option; the director then uses GameTime on every
 platform), mutes audio and exits at the end. `--record-width N` scales frames to N pixels wide (default 960, 0 = native).
+With the capture clock the host also switches every VideoPlayer to game time without frame skipping, so the monitor
+video stays on the timeline (the game's players run Freerun on their own clock, which only matches in real time).
 Bound it with `--start-time` / `--stop-time`. `/data/xy/gakumas/scripts/framecmp.py` compares a dump with the DMM recording.
