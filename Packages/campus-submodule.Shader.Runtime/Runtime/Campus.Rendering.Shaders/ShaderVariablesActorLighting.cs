@@ -20,43 +20,43 @@ namespace Campus.Rendering.Shaders
         public unsafe fixed float _LightAttenuations[32];
         [HLSLArray(8, typeof(Vector4))]
         public unsafe fixed float _LightDirections[32];
-        public Span<float4> LightPositions
+        public unsafe Span<float4> LightPositions
         {
             get
             {
-                return default(Span<float4>);
+                fixed (float* p = _LightPositions) return new Span<float4>(p, 8);
             }
         }
 
-        public Span<float4> LightColors
+        public unsafe Span<float4> LightColors
         {
             get
             {
-                return default(Span<float4>);
+                fixed (float* p = _LightColors) return new Span<float4>(p, 8);
             }
         }
 
-        public Span<float4> LightAttenuations
+        public unsafe Span<float4> LightAttenuations
         {
             get
             {
-                return default(Span<float4>);
+                fixed (float* p = _LightAttenuations) return new Span<float4>(p, 8);
             }
         }
 
-        public Span<float4> LightDirections
+        public unsafe Span<float4> LightDirections
         {
             get
             {
-                return default(Span<float4>);
+                fixed (float* p = _LightDirections) return new Span<float4>(p, 8);
             }
         }
 
-        public Span<uint4> LightData
+        public unsafe Span<uint4> LightData
         {
             get
             {
-                return default(Span<uint4>);
+                fixed (uint* p = _LightData) return new Span<uint4>(p, 1);
             }
         }
     }
