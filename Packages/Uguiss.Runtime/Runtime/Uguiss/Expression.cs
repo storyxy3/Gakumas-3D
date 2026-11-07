@@ -238,12 +238,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CSymbol_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CSymbol_003Ek__BackingField = value;
                 }
             }
 
@@ -252,12 +253,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return default(OperatorType);
+                    return _003CType_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CType_003Ek__BackingField = value;
                 }
             }
 
@@ -266,12 +268,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return default(ArityType);
+                    return _003CArity_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CArity_003Ek__BackingField = value;
                 }
             }
 
@@ -280,12 +283,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return default(AssociativityType);
+                    return _003CAssociativity_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CAssociativity_003Ek__BackingField = value;
                 }
             }
 
@@ -294,12 +298,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return default(int);
+                    return _003CPriority_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CPriority_003Ek__BackingField = value;
                 }
             }
 
@@ -351,7 +356,7 @@ namespace Uguiss
             [CompilerGenerated]
             private sealed class _003C_003Ec
             {
-                public static readonly _003C_003Ec _003C_003E9;
+                public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
                 public static MatchEvaluator _003C_003E9__8_0;
                 public _003C_003Ec()
                 {
@@ -379,12 +384,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CLiteral_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CLiteral_003Ek__BackingField = value;
                 }
             }
 
@@ -445,12 +451,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CVariableName_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CVariableName_003Ek__BackingField = value;
                 }
             }
 

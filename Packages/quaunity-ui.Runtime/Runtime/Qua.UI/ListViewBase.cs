@@ -85,12 +85,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CReusableCellCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CReusableCellCount_003Ek__BackingField = value;
             }
         }
 

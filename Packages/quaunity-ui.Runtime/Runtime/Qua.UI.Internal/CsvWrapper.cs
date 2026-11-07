@@ -17,12 +17,13 @@ namespace Qua.UI.Internal
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CLineCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CLineCount_003Ek__BackingField = value;
             }
         }
 
@@ -31,12 +32,13 @@ namespace Qua.UI.Internal
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CColumnCountPerLine_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CColumnCountPerLine_003Ek__BackingField = value;
             }
         }
 

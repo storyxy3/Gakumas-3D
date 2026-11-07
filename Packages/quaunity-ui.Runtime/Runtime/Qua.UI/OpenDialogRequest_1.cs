@@ -33,12 +33,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(TDialogId);
+                return _003CId_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CId_003Ek__BackingField = value;
             }
         }
 
@@ -47,6 +48,7 @@ namespace Qua.UI
             [CompilerGenerated]
             set
             {
+                _003COptionalData_003Ek__BackingField = value;
             }
         }
 
@@ -55,12 +57,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDialog_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDialog_003Ek__BackingField = value;
             }
         }
 
@@ -69,12 +72,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCompletionSource_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CCompletionSource_003Ek__BackingField = value;
             }
         }
 
@@ -83,12 +87,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(CancellationToken);
+                return _003CCt_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CCt_003Ek__BackingField = value;
             }
         }
 

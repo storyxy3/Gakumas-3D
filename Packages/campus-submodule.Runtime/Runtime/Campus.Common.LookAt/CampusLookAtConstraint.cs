@@ -25,12 +25,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsDisabled_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsDisabled_003Ek__BackingField = value;
             }
         }
 

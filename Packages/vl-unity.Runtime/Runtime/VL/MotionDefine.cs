@@ -132,6 +132,8 @@ namespace VL
 
         private void OnEnable()
         {
+            if (baseAnimation == null)
+                baseAnimation = new AnimationData();
         }
 
         protected virtual void OnDestroy()
@@ -141,12 +143,21 @@ namespace VL
 
         public bool ContainAnimationClip(AnimationClip clip)
         {
-            return default(bool);
+            if (clip == null)
+                return false;
+            for (int i = 0; i < count; i++)
+            {
+                if (this[i]?.clip == clip)
+                    return true;
+            }
+            return false;
         }
 
         public IEnumerable<AnimationData> SharedEnumerable()
         {
-            return null;
+            if (_sharedEnumerator == null)
+                _sharedEnumerator = new MotionDefineEnumerator(this, true);
+            return _sharedEnumerator;
         }
 
         public IEnumerator<AnimationData> GetEnumerator()
@@ -161,6 +172,8 @@ namespace VL
 
         public void Validate()
         {
+            if (effects != null && effects.Length >= 2)
+                Array.Sort(effects);
         }
 
         public MotionDefine()

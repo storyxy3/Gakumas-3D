@@ -176,12 +176,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsInitialize_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsInitialize_003Ek__BackingField = value;
             }
         }
 
@@ -190,12 +191,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsOpen_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsOpen_003Ek__BackingField = value;
             }
         }
 
@@ -204,12 +206,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsClose_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsClose_003Ek__BackingField = value;
             }
         }
 
@@ -218,12 +221,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsFront_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsFront_003Ek__BackingField = value;
             }
         }
 

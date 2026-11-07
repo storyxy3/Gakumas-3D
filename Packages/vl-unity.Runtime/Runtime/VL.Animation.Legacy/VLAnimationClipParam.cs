@@ -118,7 +118,7 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003ConPlay_003Ek__BackingField;
             }
         }
 
@@ -127,7 +127,7 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003ConComplete_003Ek__BackingField;
             }
         }
 
@@ -136,7 +136,7 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003ConStepComplete_003Ek__BackingField;
             }
         }
 

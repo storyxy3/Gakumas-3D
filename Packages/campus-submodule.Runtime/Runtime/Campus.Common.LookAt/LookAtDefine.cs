@@ -12,7 +12,7 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLookAtEasingAnimationCurve_003Ek__BackingField;
             }
         }
     }

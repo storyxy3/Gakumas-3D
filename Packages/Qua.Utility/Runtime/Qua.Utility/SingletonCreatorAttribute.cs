@@ -11,7 +11,9 @@ namespace Qua.Utility
         protected static T Instantiate<T>(T prefab)
             where T : MonoBehaviour
         {
-            return null;
+            T instance = UnityEngine.Object.Instantiate(prefab);
+            instance.name = prefab.name;
+            return instance;
         }
 
         protected SingletonCreatorAttribute()

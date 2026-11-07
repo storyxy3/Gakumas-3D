@@ -14,6 +14,7 @@ namespace Campus.Live
             [CompilerGenerated]
             set
             {
+                _003CLightCount_003Ek__BackingField = value;
             }
         }
 
@@ -22,12 +23,13 @@ namespace Campus.Live
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CVisibleLights_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CVisibleLights_003Ek__BackingField = value;
             }
         }
     }

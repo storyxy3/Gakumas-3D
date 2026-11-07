@@ -24,12 +24,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CDeltaScale_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDeltaScale_003Ek__BackingField = value;
             }
         }
 
@@ -38,12 +39,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CCenter_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCenter_003Ek__BackingField = value;
             }
         }
 
@@ -52,12 +54,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsScaling_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsScaling_003Ek__BackingField = value;
             }
         }
 

@@ -25,12 +25,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsDragging_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CIsDragging_003Ek__BackingField = value;
             }
         }
 
@@ -47,12 +48,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(MouseButtonType);
+                return _003CInputMouseButton_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CInputMouseButton_003Ek__BackingField = value;
             }
         }
 

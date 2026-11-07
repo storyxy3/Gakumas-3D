@@ -14,7 +14,7 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CExpression_003Ek__BackingField;
             }
         }
 
@@ -23,7 +23,7 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CInternalException_003Ek__BackingField;
             }
         }
     }

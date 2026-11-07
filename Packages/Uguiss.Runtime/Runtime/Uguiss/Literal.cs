@@ -14,7 +14,7 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CValue_003Ek__BackingField;
             }
         }
 
@@ -23,7 +23,7 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(LiteralType);
+                return _003CType_003Ek__BackingField;
             }
         }
 

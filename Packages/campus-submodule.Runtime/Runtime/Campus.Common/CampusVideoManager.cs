@@ -14,12 +14,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsGlobalVolumeDirty_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsGlobalVolumeDirty_003Ek__BackingField = value;
             }
         }
 

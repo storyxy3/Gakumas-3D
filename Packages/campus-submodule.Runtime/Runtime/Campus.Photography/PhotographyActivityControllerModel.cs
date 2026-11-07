@@ -30,12 +30,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CZoomRatio_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CZoomRatio_003Ek__BackingField = value;
             }
         }
 
@@ -44,12 +45,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CFNumber_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CFNumber_003Ek__BackingField = value;
             }
         }
 
@@ -58,12 +60,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CFocusTarget_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CFocusTarget_003Ek__BackingField = value;
             }
         }
 
@@ -72,12 +75,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CFocusActor_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CFocusActor_003Ek__BackingField = value;
             }
         }
 
@@ -100,12 +104,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsSetDataFrame_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsSetDataFrame_003Ek__BackingField = value;
             }
         }
 
@@ -114,12 +119,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CFrameDeltaPositionXZ_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CFrameDeltaPositionXZ_003Ek__BackingField = value;
             }
         }
 
@@ -128,12 +134,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CFrameDeltaPositionY_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CFrameDeltaPositionY_003Ek__BackingField = value;
             }
         }
 

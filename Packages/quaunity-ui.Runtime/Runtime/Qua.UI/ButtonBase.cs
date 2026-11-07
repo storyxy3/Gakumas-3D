@@ -57,12 +57,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CClickCancelDragThreshold_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CClickCancelDragThreshold_003Ek__BackingField = value;
             }
         }
 
@@ -71,12 +72,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CLongTapCancelDragThreshold_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLongTapCancelDragThreshold_003Ek__BackingField = value;
             }
         }
 

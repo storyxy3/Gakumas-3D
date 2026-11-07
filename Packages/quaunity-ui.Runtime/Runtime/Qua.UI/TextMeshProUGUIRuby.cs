@@ -106,12 +106,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRubyInfos_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRubyInfos_003Ek__BackingField = value;
             }
         }
 
@@ -120,12 +121,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTargetTextInfo_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CTargetTextInfo_003Ek__BackingField = value;
             }
         }
 
@@ -134,12 +136,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRubyTextInfo_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRubyTextInfo_003Ek__BackingField = value;
             }
         }
 
@@ -212,12 +215,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CHasRuby_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CHasRuby_003Ek__BackingField = value;
             }
         }
 

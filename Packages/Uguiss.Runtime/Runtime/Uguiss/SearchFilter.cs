@@ -27,7 +27,7 @@ namespace Uguiss
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public _003C_003Ec()
             {
             }
@@ -38,7 +38,7 @@ namespace Uguiss
         private sealed class _003C_003Ec__7<T>
             where T : ISearchTarget
         {
-            public static readonly _003C_003Ec__7<T> _003C_003E9;
+            public static readonly _003C_003Ec__7<T> _003C_003E9 = new _003C_003Ec__7<T>();
             public _003C_003Ec__7()
             {
             }

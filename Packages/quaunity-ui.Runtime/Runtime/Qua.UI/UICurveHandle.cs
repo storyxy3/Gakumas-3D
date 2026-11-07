@@ -22,12 +22,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnDragCallback_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnDragCallback_003Ek__BackingField = value;
             }
         }
 

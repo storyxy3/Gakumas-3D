@@ -12,7 +12,7 @@ namespace Octo
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Action _003C_003E9__46_0;
             public static Action<string, DownloadError> _003C_003E9__46_1;
             public _003C_003Ec()
@@ -108,12 +108,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CTaskCompletedCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CTaskCompletedCount_003Ek__BackingField = value;
             }
         }
 
@@ -122,12 +123,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CDownloadedCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CDownloadedCount_003Ek__BackingField = value;
             }
         }
 
@@ -168,12 +170,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CCanAutoDelete_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CCanAutoDelete_003Ek__BackingField = value;
             }
         }
 
@@ -182,12 +185,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLastError_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CLastError_003Ek__BackingField = value;
             }
         }
 

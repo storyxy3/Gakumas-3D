@@ -23,6 +23,7 @@ namespace VL.Unsafe.Jobs
             [CompilerGenerated]
             set
             {
+                _003Chandle_003Ek__BackingField = value;
             }
         }
 
@@ -37,6 +38,7 @@ namespace VL.Unsafe.Jobs
             [CompilerGenerated]
             set
             {
+                _003CshapeVector_003Ek__BackingField = value;
             }
         }
 
@@ -51,6 +53,7 @@ namespace VL.Unsafe.Jobs
             [CompilerGenerated]
             set
             {
+                _003CcalcTemp_003Ek__BackingField = value;
             }
         }
 

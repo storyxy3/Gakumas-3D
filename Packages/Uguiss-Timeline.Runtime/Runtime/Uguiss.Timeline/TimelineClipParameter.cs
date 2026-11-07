@@ -13,12 +13,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             private get
             {
-                return null;
+                return _003COnUpdateValue_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnUpdateValue_003Ek__BackingField = value;
             }
         }
 

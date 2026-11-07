@@ -27,7 +27,7 @@ namespace Campus.Titan
             [CompilerGenerated]
             private sealed class _003C_003Ec
             {
-                public static readonly _003C_003Ec _003C_003E9;
+                public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
                 public static Func<Action, TweenCallback> _003C_003E9__10_4;
                 public _003C_003Ec()
                 {
@@ -82,7 +82,7 @@ namespace Campus.Titan
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CIsAdv_003Ek__BackingField;
                 }
             }
 

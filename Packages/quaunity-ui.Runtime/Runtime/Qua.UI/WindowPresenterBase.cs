@@ -378,7 +378,7 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CWindowNodePool_003Ek__BackingField;
             }
         }
 

@@ -12,7 +12,7 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CChildren_003Ek__BackingField;
             }
         }
 

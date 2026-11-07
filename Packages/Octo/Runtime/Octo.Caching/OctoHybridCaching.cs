@@ -18,12 +18,13 @@ namespace Octo.Caching
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CStorageCaching_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CStorageCaching_003Ek__BackingField = value;
             }
         }
 

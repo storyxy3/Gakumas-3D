@@ -20,12 +20,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CanimationIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CanimationIndex_003Ek__BackingField = value;
             }
         }
 
@@ -34,12 +35,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(Color);
+                return _003CmainColor_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CmainColor_003Ek__BackingField = value;
             }
         }
 
@@ -48,12 +50,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CpsylliumColors_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CpsylliumColors_003Ek__BackingField = value;
             }
         }
 
@@ -62,12 +65,13 @@ namespace Campus.Live.Equipment.Timeline
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CuseDefaultPsylliumColors_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CuseDefaultPsylliumColors_003Ek__BackingField = value;
             }
         }
 

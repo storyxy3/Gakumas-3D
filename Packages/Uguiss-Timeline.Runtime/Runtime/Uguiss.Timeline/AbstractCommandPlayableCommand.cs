@@ -14,6 +14,7 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             set
             {
+                _003CElements_003Ek__BackingField = value;
             }
         }
 

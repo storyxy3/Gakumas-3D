@@ -114,12 +114,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCriMana_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCriMana_003Ek__BackingField = value;
             }
         }
 
@@ -128,12 +129,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTargetImage_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CTargetImage_003Ek__BackingField = value;
             }
         }
 

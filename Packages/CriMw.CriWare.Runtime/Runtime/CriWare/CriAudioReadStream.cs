@@ -37,12 +37,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(IntPtr);
+                return _003CcallbackFunction_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CcallbackFunction_003Ek__BackingField = value;
             }
         }
 
@@ -51,12 +52,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(IntPtr);
+                return _003CcallbackPointer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CcallbackPointer_003Ek__BackingField = value;
             }
         }
 

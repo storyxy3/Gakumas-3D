@@ -33,12 +33,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRawData_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRawData_003Ek__BackingField = value;
             }
         }
 
@@ -63,12 +64,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAssetBundle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAssetBundle_003Ek__BackingField = value;
             }
         }
 
@@ -77,12 +79,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CReferenceCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CReferenceCount_003Ek__BackingField = value;
             }
         }
 
@@ -91,12 +94,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsUnloadRequested_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsUnloadRequested_003Ek__BackingField = value;
             }
         }
 
@@ -105,12 +109,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsUnloaded_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsUnloaded_003Ek__BackingField = value;
             }
         }
 

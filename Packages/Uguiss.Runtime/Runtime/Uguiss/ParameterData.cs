@@ -13,12 +13,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsExpression_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsExpression_003Ek__BackingField = value;
             }
         }
 
@@ -27,12 +28,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CValue_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CValue_003Ek__BackingField = value;
             }
         }
 

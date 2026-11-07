@@ -27,7 +27,7 @@ namespace Campus.Gasha
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<GashaCardModel.CardInfo, LightParam> _003C_003E9__1_2;
             public static Predicate<(GashaId gashaId, GashaSequenceBase sequence)> _003C_003E9__1_0;
             public static Predicate<(GashaId gashaId, GashaSequenceBase sequence)> _003C_003E9__1_1;

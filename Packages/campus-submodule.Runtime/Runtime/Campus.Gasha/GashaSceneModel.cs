@@ -36,12 +36,13 @@ namespace Campus.Gasha
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CSequences_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CSequences_003Ek__BackingField = value;
             }
         }
 
@@ -50,12 +51,13 @@ namespace Campus.Gasha
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGlobalEffect_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CGlobalEffect_003Ek__BackingField = value;
             }
         }
 

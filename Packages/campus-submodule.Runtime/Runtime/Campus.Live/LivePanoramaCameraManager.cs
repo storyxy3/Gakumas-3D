@@ -23,7 +23,7 @@ namespace Campus.Live
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Action<bool> _003C_003E9__41_0;
             public static Action<SwitchPanoramaCamera> _003C_003E9__42_0;
             public static Action<PanoramaActorLookAtController> _003C_003E9__54_0;
@@ -184,12 +184,13 @@ namespace Campus.Live
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAllSwitchPanoramaCameras_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAllSwitchPanoramaCameras_003Ek__BackingField = value;
             }
         }
 
@@ -198,12 +199,13 @@ namespace Campus.Live
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDroneCamera_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDroneCamera_003Ek__BackingField = value;
             }
         }
 
@@ -212,12 +214,13 @@ namespace Campus.Live
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCurrentSelectCamera_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCurrentSelectCamera_003Ek__BackingField = value;
             }
         }
 
@@ -226,12 +229,13 @@ namespace Campus.Live
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCurrentLiveCamera_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCurrentLiveCamera_003Ek__BackingField = value;
             }
         }
 

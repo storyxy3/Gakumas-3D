@@ -62,12 +62,13 @@ namespace Campus.Common.Octo
             [CompilerGenerated]
             private get
             {
-                return null;
+                return _003COnPostProcess_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnPostProcess_003Ek__BackingField = value;
             }
         }
 

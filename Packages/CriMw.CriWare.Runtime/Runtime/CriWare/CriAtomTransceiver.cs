@@ -72,12 +72,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CtransceiverHn_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CtransceiverHn_003Ek__BackingField = value;
             }
         }
 
@@ -86,12 +87,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CinputPos_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinputPos_003Ek__BackingField = value;
             }
         }
 
@@ -100,12 +102,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CinputFront_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinputFront_003Ek__BackingField = value;
             }
         }
 
@@ -114,12 +117,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CinputUp_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CinputUp_003Ek__BackingField = value;
             }
         }
 

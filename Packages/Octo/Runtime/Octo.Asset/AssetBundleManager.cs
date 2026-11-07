@@ -25,12 +25,13 @@ namespace Octo.Asset
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CCurrent_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CCurrent_003Ek__BackingField = value;
                 }
             }
 

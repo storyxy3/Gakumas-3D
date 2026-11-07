@@ -16,12 +16,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsCapture_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsCapture_003Ek__BackingField = value;
             }
         }
 
@@ -30,12 +31,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CViewportPoint_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CViewportPoint_003Ek__BackingField = value;
             }
         }
 
@@ -44,12 +46,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COutputBuffer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COutputBuffer_003Ek__BackingField = value;
             }
         }
 

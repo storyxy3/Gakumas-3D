@@ -17,12 +17,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CState_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CState_003Ek__BackingField = value;
             }
         }
 
@@ -31,12 +32,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CParam_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CParam_003Ek__BackingField = value;
             }
         }
 
@@ -45,12 +47,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CChildren_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CChildren_003Ek__BackingField = value;
             }
         }
 

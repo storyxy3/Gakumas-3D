@@ -41,7 +41,7 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003ConComplete_003Ek__BackingField;
             }
         }
 

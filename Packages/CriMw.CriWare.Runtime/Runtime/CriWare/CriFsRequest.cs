@@ -69,12 +69,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CdoneDelegate_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CdoneDelegate_003Ek__BackingField = value;
             }
         }
 
@@ -83,12 +84,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDone_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisDone_003Ek__BackingField = value;
             }
         }
 
@@ -97,12 +99,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003Cerror_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003Cerror_003Ek__BackingField = value;
             }
         }
 
@@ -111,12 +114,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisDisposed_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CisDisposed_003Ek__BackingField = value;
             }
         }
 

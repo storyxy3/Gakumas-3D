@@ -83,12 +83,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CInitialZoomRatio_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInitialZoomRatio_003Ek__BackingField = value;
             }
         }
 
@@ -105,12 +106,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CInitialCameraPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInitialCameraPosition_003Ek__BackingField = value;
             }
         }
 
@@ -119,12 +121,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CInitialCameraLocalPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInitialCameraLocalPosition_003Ek__BackingField = value;
             }
         }
 
@@ -133,12 +136,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CInitialCameraLocalAngle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInitialCameraLocalAngle_003Ek__BackingField = value;
             }
         }
 
@@ -147,12 +151,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CInitialFocusLength_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInitialFocusLength_003Ek__BackingField = value;
             }
         }
 

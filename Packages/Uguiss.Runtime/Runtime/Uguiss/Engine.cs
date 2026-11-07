@@ -173,12 +173,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CCurrentIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CCurrentIndex_003Ek__BackingField = value;
             }
         }
 
@@ -187,12 +188,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsPlaying_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CIsPlaying_003Ek__BackingField = value;
             }
         }
 
@@ -201,12 +203,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsSkip_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CIsSkip_003Ek__BackingField = value;
             }
         }
 

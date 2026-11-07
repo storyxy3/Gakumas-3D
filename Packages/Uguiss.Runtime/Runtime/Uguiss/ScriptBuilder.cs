@@ -11,7 +11,7 @@ namespace Uguiss
         private sealed class _003C_003Ec__4<T>
             where T : AbstractCommand
         {
-            public static readonly _003C_003Ec__4<T> _003C_003E9;
+            public static readonly _003C_003Ec__4<T> _003C_003E9 = new _003C_003Ec__4<T>();
             public _003C_003Ec__4()
             {
             }

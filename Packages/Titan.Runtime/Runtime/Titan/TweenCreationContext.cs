@@ -16,7 +16,7 @@ namespace Titan
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static DOGetter<float> _003C_003E9__63_0;
             public static DOGetter<float> _003C_003E9__64_2;
             public static DOGetter<float> _003C_003E9__64_0;
@@ -162,12 +162,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CSequence_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CSequence_003Ek__BackingField = value;
             }
         }
 
@@ -184,12 +185,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDirector_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDirector_003Ek__BackingField = value;
             }
         }
 
@@ -198,12 +200,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CValueResolver_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CValueResolver_003Ek__BackingField = value;
             }
         }
 
@@ -212,12 +215,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCallbackEntries_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCallbackEntries_003Ek__BackingField = value;
             }
         }
 
@@ -226,12 +230,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CInfiniteTweens_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInfiniteTweens_003Ek__BackingField = value;
             }
         }
 
@@ -248,12 +253,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIgnoreInitialValue_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIgnoreInitialValue_003Ek__BackingField = value;
             }
         }
 
@@ -262,7 +268,7 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsTimeline_003Ek__BackingField;
             }
         }
 
@@ -271,12 +277,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CPositionOffset_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CPositionOffset_003Ek__BackingField = value;
             }
         }
 
@@ -285,12 +292,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsRoot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsRoot_003Ek__BackingField = value;
             }
         }
 
@@ -299,12 +307,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CDuration_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDuration_003Ek__BackingField = value;
             }
         }
 
@@ -313,12 +322,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRoot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRoot_003Ek__BackingField = value;
             }
         }
 

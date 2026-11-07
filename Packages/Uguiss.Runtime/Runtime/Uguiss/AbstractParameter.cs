@@ -19,12 +19,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CRequired_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRequired_003Ek__BackingField = value;
             }
         }
 
@@ -33,12 +34,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CName_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CName_003Ek__BackingField = value;
             }
         }
 
@@ -47,12 +49,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CEngine_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CEngine_003Ek__BackingField = value;
             }
         }
 
@@ -61,12 +64,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRawValues_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRawValues_003Ek__BackingField = value;
             }
         }
 

@@ -20,12 +20,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CCurrentIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CCurrentIndex_003Ek__BackingField = value;
             }
         }
 
@@ -34,12 +35,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CCurrentLineStartIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CCurrentLineStartIndex_003Ek__BackingField = value;
             }
         }
 
@@ -48,12 +50,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CCurrentOtherSizeSum_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CCurrentOtherSizeSum_003Ek__BackingField = value;
             }
         }
 
@@ -62,12 +65,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003COtherAreaSize_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003COtherAreaSize_003Ek__BackingField = value;
             }
         }
 

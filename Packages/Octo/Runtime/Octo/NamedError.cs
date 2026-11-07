@@ -16,12 +16,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CName_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CName_003Ek__BackingField = value;
             }
         }
 
@@ -30,12 +31,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCode_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCode_003Ek__BackingField = value;
             }
         }
 
@@ -44,12 +46,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CMessage_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CMessage_003Ek__BackingField = value;
             }
         }
 

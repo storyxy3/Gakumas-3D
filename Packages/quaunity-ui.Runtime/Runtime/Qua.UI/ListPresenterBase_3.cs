@@ -169,12 +169,13 @@ namespace Qua.UI
             [CompilerGenerated]
             private get
             {
-                return default(int);
+                return _003CMaxCellCountForInitialize_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CMaxCellCountForInitialize_003Ek__BackingField = value;
             }
         }
 
@@ -183,12 +184,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CEnableCellOrderSorting_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CEnableCellOrderSorting_003Ek__BackingField = value;
             }
         }
 
@@ -197,12 +199,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CFirstCellSiblingIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CFirstCellSiblingIndex_003Ek__BackingField = value;
             }
         }
 
@@ -211,12 +214,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CLastCellSiblingIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLastCellSiblingIndex_003Ek__BackingField = value;
             }
         }
 

@@ -117,12 +117,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return default(LoadStaus);
+                return _003Cstatus_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003Cstatus_003Ek__BackingField = value;
             }
         }
 
@@ -131,12 +132,13 @@ namespace Octo.Asset
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CerrorInfo_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CerrorInfo_003Ek__BackingField = value;
             }
         }
 

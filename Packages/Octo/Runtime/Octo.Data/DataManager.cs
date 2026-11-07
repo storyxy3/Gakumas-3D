@@ -15,7 +15,7 @@ namespace Octo.Data
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<Item, bool> _003C_003E9__39_0;
             public static Func<Item, string> _003C_003E9__39_1;
             public static Func<Item, bool> _003C_003E9__40_0;
@@ -82,12 +82,13 @@ namespace Octo.Data
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsUsingEmbeddedDb_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsUsingEmbeddedDb_003Ek__BackingField = value;
             }
         }
 
@@ -96,12 +97,13 @@ namespace Octo.Data
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CRevision_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRevision_003Ek__BackingField = value;
             }
         }
 
@@ -110,12 +112,13 @@ namespace Octo.Data
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAssetBundleUrlFormat_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CAssetBundleUrlFormat_003Ek__BackingField = value;
             }
         }
 
@@ -124,12 +127,13 @@ namespace Octo.Data
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CResourceUrlFormat_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CResourceUrlFormat_003Ek__BackingField = value;
             }
         }
 

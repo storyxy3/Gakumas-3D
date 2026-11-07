@@ -2,6 +2,7 @@ namespace Campus.Common.Extensions
 {
     using global::System;
     using global::System.Collections.Generic;
+    using global::System.Linq;
     using global::System.Runtime.CompilerServices;
     using global::Campus.Common.Extensions;
 
@@ -12,16 +13,17 @@ namespace Campus.Common.Extensions
             private readonly Func<T, TKey> _selector;
             public CompareSelector(Func<T, TKey> selector)
             {
+                _selector = selector;
             }
 
             public bool Equals(T x, T y)
             {
-                return default(bool);
+                return _selector(x).Equals(_selector(y));
             }
 
             public int GetHashCode(T obj)
             {
-                return default(int);
+                return _selector(obj).GetHashCode();
             }
         }
 
@@ -29,7 +31,7 @@ namespace Campus.Common.Extensions
         [CompilerGenerated]
         private sealed class _003C_003Ec__7<T>
         {
-            public static readonly _003C_003Ec__7<T> _003C_003E9;
+            public static readonly _003C_003Ec__7<T> _003C_003E9 = new _003C_003Ec__7<T>();
             public static Func<T, string> _003C_003E9__7_0;
             public _003C_003Ec__7()
             {
@@ -37,18 +39,24 @@ namespace Campus.Common.Extensions
 
             internal string _003CRandom_003Eb__7_0(T _)
             {
-                return null;
+                return Guid.NewGuid().ToString();
             }
         }
 
-        private static Random _rand;
+        private static Random _rand = new Random();
         public static IEnumerable<T> Distinct<T, TKey>(this IEnumerable<T> source, Func<T, TKey> selector)
         {
-            return null;
+            return Enumerable.Distinct(source, new CompareSelector<T, TKey>(selector));
         }
 
         public static void ForEach<T>(this IEnumerable<T> enumerable, Action<T, int> action)
         {
+            int index = 0;
+            foreach (var item in enumerable)
+            {
+                action?.Invoke(item, index);
+                index++;
+            }
         }
 
         public static void ForEach<T>(this IEnumerable<T> enumerable, Action<T> action)
@@ -58,22 +66,29 @@ namespace Campus.Common.Extensions
 
         public static int FindIndex<T>(this IEnumerable<T> items, Predicate<T> match)
         {
-            return default(int);
+            int index = 0;
+            foreach (var item in items)
+            {
+                if (match(item))
+                    return index;
+                index++;
+            }
+            return -1;
         }
 
         public static IEnumerable<T> Random<T>(this IEnumerable<T> items, int count)
         {
-            return null;
+            return Enumerable.Take(Enumerable.OrderBy(items, _003C_003Ec__7<T>._003C_003E9__7_0 ??= _003C_003Ec__7<T>._003C_003E9._003CRandom_003Eb__7_0), count);
         }
 
         public static T MinBy<T, TKey>(this IEnumerable<T> enumerable, Func<T, TKey> keySelector)
         {
-            return default(T);
+            return Enumerable.FirstOrDefault(Enumerable.OrderBy(enumerable, keySelector));
         }
 
         public static T MaxBy<T, TKey>(this IEnumerable<T> enumerable, Func<T, TKey> keySelector)
         {
-            return default(T);
+            return Enumerable.FirstOrDefault(Enumerable.OrderByDescending(enumerable, keySelector));
         }
     }
 }

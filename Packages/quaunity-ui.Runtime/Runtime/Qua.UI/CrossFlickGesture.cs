@@ -24,7 +24,7 @@ namespace Qua.UI
                 [CompilerGenerated]
                 get
                 {
-                    return default(CrossFlickDirection);
+                    return _003CFlickDirection_003Ek__BackingField;
                 }
             }
 
@@ -33,7 +33,7 @@ namespace Qua.UI
                 [CompilerGenerated]
                 get
                 {
-                    return default(float);
+                    return _003CStartAngle_003Ek__BackingField;
                 }
             }
 
@@ -42,7 +42,7 @@ namespace Qua.UI
                 [CompilerGenerated]
                 get
                 {
-                    return default(float);
+                    return _003CEndAngle_003Ek__BackingField;
                 }
             }
 
@@ -51,7 +51,7 @@ namespace Qua.UI
                 [CompilerGenerated]
                 get
                 {
-                    return default(float);
+                    return _003CThreshold_003Ek__BackingField;
                 }
             }
 

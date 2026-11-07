@@ -27,12 +27,13 @@ namespace ClipperLib
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CReverseSolution_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CReverseSolution_003Ek__BackingField = value;
             }
         }
 
@@ -41,12 +42,13 @@ namespace ClipperLib
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CStrictlySimple_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CStrictlySimple_003Ek__BackingField = value;
             }
         }
 

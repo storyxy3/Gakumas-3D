@@ -12,12 +12,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(TItemModel);
+                return _003CItemModel_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CItemModel_003Ek__BackingField = value;
             }
         }
 

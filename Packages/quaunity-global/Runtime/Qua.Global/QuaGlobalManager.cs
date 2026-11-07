@@ -26,7 +26,7 @@ namespace Qua.Global
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003Cfont_003Ek__BackingField;
                 }
             }
 
@@ -35,7 +35,7 @@ namespace Qua.Global
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CloadKey_003Ek__BackingField;
                 }
             }
 
@@ -44,12 +44,13 @@ namespace Qua.Global
                 [CompilerGenerated]
                 get
                 {
-                    return default(int);
+                    return _003CrefCount_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CrefCount_003Ek__BackingField = value;
                 }
             }
 

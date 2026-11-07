@@ -43,12 +43,13 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003Cparam_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003Cparam_003Ek__BackingField = value;
             }
         }
 
@@ -57,12 +58,13 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003Clayer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003Clayer_003Ek__BackingField = value;
             }
         }
 
@@ -71,12 +73,13 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CplayingLayerIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CplayingLayerIndex_003Ek__BackingField = value;
             }
         }
 
@@ -85,12 +88,13 @@ namespace VL.Animation.Legacy
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003Cplayer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003Cplayer_003Ek__BackingField = value;
             }
         }
 

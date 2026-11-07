@@ -32,7 +32,7 @@ namespace Octo.Network
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsDone_003Ek__BackingField;
             }
         }
 

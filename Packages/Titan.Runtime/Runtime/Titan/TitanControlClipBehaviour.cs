@@ -16,12 +16,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CStart_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CStart_003Ek__BackingField = value;
             }
         }
 
@@ -30,12 +31,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CDuration_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDuration_003Ek__BackingField = value;
             }
         }
 

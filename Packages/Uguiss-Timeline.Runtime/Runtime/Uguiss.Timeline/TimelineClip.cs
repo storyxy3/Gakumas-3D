@@ -30,12 +30,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return default(EasingType);
+                    return _003CMixOutEaseType_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CMixOutEaseType_003Ek__BackingField = value;
                 }
             }
 
@@ -44,12 +45,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CMixOutCurve_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CMixOutCurve_003Ek__BackingField = value;
                 }
             }
 
@@ -58,12 +60,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return default(double);
+                    return _003CBlendOutDuration_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CBlendOutDuration_003Ek__BackingField = value;
                 }
             }
 
@@ -72,12 +75,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return default(double);
+                    return _003CAdditionalDuration_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CAdditionalDuration_003Ek__BackingField = value;
                 }
             }
 

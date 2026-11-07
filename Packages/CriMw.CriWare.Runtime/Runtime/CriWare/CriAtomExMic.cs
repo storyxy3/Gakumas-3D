@@ -45,12 +45,13 @@ namespace CriWare
                 [CompilerGenerated]
                 get
                 {
-                    return default(IntPtr);
+                    return _003Chandle_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003Chandle_003Ek__BackingField = value;
                 }
             }
 
@@ -59,12 +60,13 @@ namespace CriWare
                 [CompilerGenerated]
                 get
                 {
-                    return default(IntPtr);
+                    return _003CafxInstance_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CafxInstance_003Ek__BackingField = value;
                 }
             }
 
@@ -90,12 +92,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisInitialized_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisInitialized_003Ek__BackingField = value;
             }
         }
 

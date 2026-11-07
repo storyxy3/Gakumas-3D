@@ -13,7 +13,7 @@ namespace Titan
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<EaseSetting, int, (EaseSetting x, int i)> _003C_003E9__10_0;
             public static Func<(EaseSetting x, int i), string> _003C_003E9__10_1;
             public static Func<EaseSetting, string> _003C_003E9__13_0;

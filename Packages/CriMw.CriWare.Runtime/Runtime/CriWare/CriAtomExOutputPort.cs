@@ -62,12 +62,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(IntPtr);
+                return _003CNativeHandle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CNativeHandle_003Ek__BackingField = value;
             }
         }
 

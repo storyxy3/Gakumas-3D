@@ -65,12 +65,13 @@ namespace Campus.Crowd
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CColorTable_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CColorTable_003Ek__BackingField = value;
             }
         }
 

@@ -21,12 +21,13 @@ namespace ClipperLib
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CPreserveCollinear_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CPreserveCollinear_003Ek__BackingField = value;
             }
         }
 

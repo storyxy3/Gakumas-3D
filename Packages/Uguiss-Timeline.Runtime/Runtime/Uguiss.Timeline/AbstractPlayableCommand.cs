@@ -48,12 +48,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(Playable);
+                return _003CMixer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CMixer_003Ek__BackingField = value;
             }
         }
 
@@ -62,6 +63,7 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             set
             {
+                _003CPrevMixerId_003Ek__BackingField = value;
             }
         }
 
@@ -70,12 +72,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CInputPort_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CInputPort_003Ek__BackingField = value;
             }
         }
 

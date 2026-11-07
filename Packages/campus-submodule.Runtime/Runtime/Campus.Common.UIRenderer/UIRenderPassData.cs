@@ -23,6 +23,7 @@ namespace Campus.Common.UIRenderer
             [CompilerGenerated]
             set
             {
+                _003CLayerId_003Ek__BackingField = value;
             }
         }
 
@@ -31,12 +32,13 @@ namespace Campus.Common.UIRenderer
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CLayerValue_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CLayerValue_003Ek__BackingField = value;
             }
         }
 
@@ -45,12 +47,13 @@ namespace Campus.Common.UIRenderer
             [CompilerGenerated]
             get
             {
-                return default(UIRenderPassType);
+                return _003CRenderPassType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRenderPassType_003Ek__BackingField = value;
             }
         }
 

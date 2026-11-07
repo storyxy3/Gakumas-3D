@@ -55,12 +55,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsOpen_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CIsOpen_003Ek__BackingField = value;
             }
         }
 

@@ -117,12 +117,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CgyroSupported_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CgyroSupported_003Ek__BackingField = value;
             }
         }
 

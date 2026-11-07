@@ -12,12 +12,13 @@ namespace Qua.UI
             [CompilerGenerated]
             private get
             {
-                return null;
+                return _003CDefaultProvider_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDefaultProvider_003Ek__BackingField = value;
             }
         }
 

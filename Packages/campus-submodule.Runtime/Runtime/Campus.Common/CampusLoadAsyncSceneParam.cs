@@ -21,12 +21,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CAllowSceneActivation_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAllowSceneActivation_003Ek__BackingField = value;
             }
         }
 
@@ -35,7 +36,7 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnPrepareSceneTask_003Ek__BackingField;
             }
         }
 
@@ -44,12 +45,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnActivationTask_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnActivationTask_003Ek__BackingField = value;
             }
         }
 
@@ -58,12 +60,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnActivationAction_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnActivationAction_003Ek__BackingField = value;
             }
         }
 

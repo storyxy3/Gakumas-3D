@@ -41,12 +41,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CUrl_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CUrl_003Ek__BackingField = value;
             }
         }
 
@@ -55,12 +56,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CAppId_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAppId_003Ek__BackingField = value;
             }
         }
 
@@ -69,12 +71,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CClientSecretKey_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CClientSecretKey_003Ek__BackingField = value;
             }
         }
 
@@ -83,12 +86,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAesKey_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAesKey_003Ek__BackingField = value;
             }
         }
 
@@ -97,12 +101,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CA_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CA_003Ek__BackingField = value;
             }
         }
 
@@ -111,12 +116,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(CachingType);
+                return _003CCachingType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CCachingType_003Ek__BackingField = value;
             }
         }
 
@@ -125,12 +131,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CVersion_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CVersion_003Ek__BackingField = value;
             }
         }
 
@@ -151,12 +158,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CMaxParallelDownload_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CMaxParallelDownload_003Ek__BackingField = value;
             }
         }
 
@@ -165,12 +173,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CMaxParallelLoad_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CMaxParallelLoad_003Ek__BackingField = value;
             }
         }
 
@@ -179,12 +188,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(long);
+                return _003CMaximumAvailableDiskSpace_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CMaximumAvailableDiskSpace_003Ek__BackingField = value;
             }
         }
 
@@ -193,12 +203,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CExpirationDelay_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CExpirationDelay_003Ek__BackingField = value;
             }
         }
 
@@ -207,12 +218,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CAllowDeleted_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAllowDeleted_003Ek__BackingField = value;
             }
         }
 
@@ -221,6 +233,7 @@ namespace Octo
             [CompilerGenerated]
             set
             {
+                _003CEnableAssetDatabase_003Ek__BackingField = value;
             }
         }
 
@@ -229,12 +242,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(AssetLoader.LoadPriority);
+                return _003CAssetLoaderPriority_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAssetLoaderPriority_003Ek__BackingField = value;
             }
         }
 

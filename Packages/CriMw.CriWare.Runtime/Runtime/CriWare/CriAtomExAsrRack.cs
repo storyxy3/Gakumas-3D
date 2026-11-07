@@ -101,7 +101,7 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDefault_003Ek__BackingField;
             }
         }
 

@@ -18,12 +18,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnClickedCallback_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnClickedCallback_003Ek__BackingField = value;
             }
         }
 

@@ -322,12 +322,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLogger_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLogger_003Ek__BackingField = value;
             }
         }
 
@@ -336,12 +337,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTransitionData_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CTransitionData_003Ek__BackingField = value;
             }
         }
 

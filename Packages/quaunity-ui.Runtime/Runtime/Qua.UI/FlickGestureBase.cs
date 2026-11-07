@@ -24,12 +24,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CThresholdCoefficient_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CThresholdCoefficient_003Ek__BackingField = value;
             }
         }
 
@@ -50,12 +51,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(MouseButtonType);
+                return _003CInputMouseButton_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CInputMouseButton_003Ek__BackingField = value;
             }
         }
 

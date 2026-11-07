@@ -100,12 +100,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CLongTapTime_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLongTapTime_003Ek__BackingField = value;
             }
         }
 
@@ -114,12 +115,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsDragged_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsDragged_003Ek__BackingField = value;
             }
         }
 
@@ -128,12 +130,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsPressed_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsPressed_003Ek__BackingField = value;
             }
         }
 
@@ -142,12 +145,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CPressedPointerId_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CPressedPointerId_003Ek__BackingField = value;
             }
         }
 
@@ -156,12 +160,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CPosition_003Ek__BackingField = value;
             }
         }
 
@@ -170,12 +175,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CClickedPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CClickedPosition_003Ek__BackingField = value;
             }
         }
 
@@ -184,12 +190,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CDragDelta_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDragDelta_003Ek__BackingField = value;
             }
         }
 
@@ -198,12 +205,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsMultiTouchDisabled_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsMultiTouchDisabled_003Ek__BackingField = value;
             }
         }
 
@@ -212,12 +220,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CLongTapCancelDragThreshold_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLongTapCancelDragThreshold_003Ek__BackingField = value;
             }
         }
 
@@ -226,12 +235,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CShouldPenetrateDragEvent_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CShouldPenetrateDragEvent_003Ek__BackingField = value;
             }
         }
 
@@ -240,12 +250,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(ClickDetectType);
+                return _003CClickType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CClickType_003Ek__BackingField = value;
             }
         }
 
@@ -254,12 +265,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CSuppressLongTapClick_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CSuppressLongTapClick_003Ek__BackingField = value;
             }
         }
 
@@ -268,12 +280,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(MouseButtonType);
+                return _003CInputMouseButton_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CInputMouseButton_003Ek__BackingField = value;
             }
         }
 

@@ -58,12 +58,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnKeyframeDraggedCallback_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnKeyframeDraggedCallback_003Ek__BackingField = value;
             }
         }
 
@@ -72,12 +73,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnHandleDraggedCallback_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnHandleDraggedCallback_003Ek__BackingField = value;
             }
         }
 
@@ -86,12 +88,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnKeyframeDoubleTappedCallback_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnKeyframeDoubleTappedCallback_003Ek__BackingField = value;
             }
         }
 

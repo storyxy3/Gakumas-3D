@@ -45,12 +45,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(double);
+                return _003CDurationAdjustment_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDurationAdjustment_003Ek__BackingField = value;
             }
         }
 
@@ -75,12 +76,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsWaiting_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsWaiting_003Ek__BackingField = value;
             }
         }
 
@@ -89,12 +91,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsComplete_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CIsComplete_003Ek__BackingField = value;
             }
         }
 

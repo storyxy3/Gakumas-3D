@@ -26,6 +26,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CCategory_003Ek__BackingField = value;
                 }
             }
 
@@ -34,6 +35,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CName_003Ek__BackingField = value;
                 }
             }
 
@@ -42,6 +44,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CDescription_003Ek__BackingField = value;
                 }
             }
 
@@ -50,6 +53,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CCommandType_003Ek__BackingField = value;
                 }
             }
 
@@ -76,12 +80,13 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CRequired_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CRequired_003Ek__BackingField = value;
                 }
             }
 
@@ -90,7 +95,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CName_003Ek__BackingField;
                 }
             }
 
@@ -99,6 +104,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CDescription_003Ek__BackingField = value;
                 }
             }
 
@@ -107,6 +113,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CDefaultValue_003Ek__BackingField = value;
                 }
             }
 
@@ -115,6 +122,7 @@ namespace Uguiss
                 [CompilerGenerated]
                 set
                 {
+                    _003CHideInInspector_003Ek__BackingField = value;
                 }
 
                 // TODO(qa-recon): Getter stripped from game metadata; required for C# interface/attribute compilation.
@@ -202,12 +210,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CParameters_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CParameters_003Ek__BackingField = value;
             }
         }
 
@@ -216,12 +225,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CEngine_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CEngine_003Ek__BackingField = value;
             }
         }
 
@@ -230,12 +240,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsInvalid_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CIsInvalid_003Ek__BackingField = value;
             }
         }
 
@@ -244,12 +255,13 @@ namespace Uguiss
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsActive_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsActive_003Ek__BackingField = value;
             }
         }
 

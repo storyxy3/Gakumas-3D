@@ -88,12 +88,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTargetCommand_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CTargetCommand_003Ek__BackingField = value;
             }
         }
 
@@ -102,12 +103,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CBranchList_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CBranchList_003Ek__BackingField = value;
             }
         }
 
@@ -116,12 +118,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CSelectedIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CSelectedIndex_003Ek__BackingField = value;
             }
         }
 

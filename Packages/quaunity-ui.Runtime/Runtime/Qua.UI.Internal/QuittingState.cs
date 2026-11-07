@@ -12,6 +12,7 @@ namespace Qua.UI.Internal
             [CompilerGenerated]
             set
             {
+                _003CIsQuitting_003Ek__BackingField = value;
             }
         }
 

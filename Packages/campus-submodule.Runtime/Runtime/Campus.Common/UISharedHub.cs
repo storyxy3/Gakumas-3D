@@ -18,12 +18,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CSkipSetBlendMode_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CSkipSetBlendMode_003Ek__BackingField = value;
             }
         }
 

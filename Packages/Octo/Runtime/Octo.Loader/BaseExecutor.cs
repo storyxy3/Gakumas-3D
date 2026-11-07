@@ -155,12 +155,13 @@ namespace Octo.Loader
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CQueuedCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CQueuedCount_003Ek__BackingField = value;
             }
         }
 

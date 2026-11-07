@@ -26,12 +26,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnTimelineReady_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnTimelineReady_003Ek__BackingField = value;
             }
         }
 
@@ -40,12 +41,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnTimelineStart_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnTimelineStart_003Ek__BackingField = value;
             }
         }
 
@@ -54,12 +56,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnTimelineComplete_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnTimelineComplete_003Ek__BackingField = value;
             }
         }
 

@@ -120,12 +120,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnBeforeChangeOrientationAsync_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnBeforeChangeOrientationAsync_003Ek__BackingField = value;
             }
         }
 
@@ -134,12 +135,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnAfterChangeOrientationAsync_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnAfterChangeOrientationAsync_003Ek__BackingField = value;
             }
         }
 

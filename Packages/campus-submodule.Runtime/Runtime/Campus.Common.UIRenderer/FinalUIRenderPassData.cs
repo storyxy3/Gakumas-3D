@@ -24,12 +24,13 @@ namespace Campus.Common.UIRenderer
             [CompilerGenerated]
             get
             {
-                return default(UIRenderPassType);
+                return _003CRenderPassType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRenderPassType_003Ek__BackingField = value;
             }
         }
 
@@ -46,12 +47,13 @@ namespace Campus.Common.UIRenderer
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CBackgroundBlurRefCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CBackgroundBlurRefCount_003Ek__BackingField = value;
             }
         }
 

@@ -200,12 +200,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CSceneName_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CSceneName_003Ek__BackingField = value;
             }
         }
 

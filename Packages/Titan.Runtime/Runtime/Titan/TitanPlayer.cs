@@ -98,12 +98,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCurrent_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCurrent_003Ek__BackingField = value;
             }
         }
 
@@ -112,12 +113,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCurrentGroupName_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCurrentGroupName_003Ek__BackingField = value;
             }
         }
 
@@ -134,12 +136,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsRevertEnabled_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsRevertEnabled_003Ek__BackingField = value;
             }
         }
 
@@ -148,12 +151,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CAutoRevert_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAutoRevert_003Ek__BackingField = value;
             }
         }
 

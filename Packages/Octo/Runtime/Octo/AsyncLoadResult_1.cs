@@ -16,7 +16,7 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(T);
+                return _003CLoadObject_003Ek__BackingField;
             }
         }
 
@@ -25,7 +25,7 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CError_003Ek__BackingField;
             }
         }
 

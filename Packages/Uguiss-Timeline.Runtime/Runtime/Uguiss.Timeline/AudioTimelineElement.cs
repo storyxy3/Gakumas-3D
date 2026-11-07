@@ -14,7 +14,7 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CVolume_003Ek__BackingField;
             }
         }
 

@@ -36,12 +36,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CminWidth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CminWidth_003Ek__BackingField = value;
             }
         }
 
@@ -50,12 +51,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CpreferredWidth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CpreferredWidth_003Ek__BackingField = value;
             }
         }
 
@@ -64,12 +66,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CflexibleWidth_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CflexibleWidth_003Ek__BackingField = value;
             }
         }
 
@@ -78,12 +81,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CminHeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CminHeight_003Ek__BackingField = value;
             }
         }
 
@@ -92,12 +96,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CpreferredHeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CpreferredHeight_003Ek__BackingField = value;
             }
         }
 
@@ -106,12 +111,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CflexibleHeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CflexibleHeight_003Ek__BackingField = value;
             }
         }
 

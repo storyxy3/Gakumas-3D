@@ -31,7 +31,7 @@ namespace Campus.Common
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<(ICampusActorController actor, bool isCorrectionLayoutHeight), ICampusActorController> _003C_003E9__19_0;
             public static Func<Transform, float> _003C_003E9__34_0;
             public _003C_003Ec()

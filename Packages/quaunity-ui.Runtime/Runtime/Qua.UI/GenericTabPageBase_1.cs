@@ -38,12 +38,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(TTabItem);
+                return _003CTabItem_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CTabItem_003Ek__BackingField = value;
             }
         }
 

@@ -29,12 +29,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CSnappedIndex_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CSnappedIndex_003Ek__BackingField = value;
             }
         }
 
@@ -43,12 +44,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsSnapping_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsSnapping_003Ek__BackingField = value;
             }
         }
 

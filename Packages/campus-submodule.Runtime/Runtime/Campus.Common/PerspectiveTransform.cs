@@ -87,12 +87,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CViewport_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CViewport_003Ek__BackingField = value;
             }
         }
 

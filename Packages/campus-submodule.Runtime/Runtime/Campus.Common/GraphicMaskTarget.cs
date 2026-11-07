@@ -42,12 +42,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(MaskUtility.ClippingType);
+                return _003CClippingType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CClippingType_003Ek__BackingField = value;
             }
         }
 

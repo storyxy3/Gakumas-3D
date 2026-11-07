@@ -37,12 +37,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CDeltaPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDeltaPosition_003Ek__BackingField = value;
             }
         }
 
@@ -75,12 +76,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CDeltaStartPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDeltaStartPosition_003Ek__BackingField = value;
             }
         }
 
@@ -89,12 +91,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CDeltaEndPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDeltaEndPosition_003Ek__BackingField = value;
             }
         }
 
@@ -103,12 +106,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CTotalDelta_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CTotalDelta_003Ek__BackingField = value;
             }
         }
 
@@ -141,12 +145,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CFingerCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CFingerCount_003Ek__BackingField = value;
             }
         }
 
@@ -179,12 +184,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CFrameCountForRecentSpeed_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CFrameCountForRecentSpeed_003Ek__BackingField = value;
             }
         }
 
@@ -193,12 +199,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(MouseButtonType);
+                return _003CInputMouseButton_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CInputMouseButton_003Ek__BackingField = value;
             }
         }
 

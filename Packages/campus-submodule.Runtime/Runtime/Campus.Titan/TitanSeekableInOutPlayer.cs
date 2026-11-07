@@ -26,7 +26,7 @@ namespace Campus.Titan
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CInDuration_003Ek__BackingField;
             }
         }
 

@@ -16,12 +16,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CsourcePath_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CsourcePath_003Ek__BackingField = value;
             }
         }
 
@@ -30,12 +31,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CdestinationPath_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CdestinationPath_003Ek__BackingField = value;
             }
         }
 
@@ -44,12 +46,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003Cprogress_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003Cprogress_003Ek__BackingField = value;
             }
         }
 

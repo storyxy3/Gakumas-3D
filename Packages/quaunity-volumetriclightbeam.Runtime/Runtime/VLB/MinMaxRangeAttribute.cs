@@ -14,6 +14,7 @@ namespace VLB
             [CompilerGenerated]
             set
             {
+                _003CminValue_003Ek__BackingField = value;
             }
         }
 
@@ -22,6 +23,7 @@ namespace VLB
             [CompilerGenerated]
             set
             {
+                _003CmaxValue_003Ek__BackingField = value;
             }
         }
 

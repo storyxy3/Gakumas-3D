@@ -34,12 +34,13 @@ namespace Qua.Extensions
             [CompilerGenerated]
             private get
             {
-                return null;
+                return _003CExceptionHandler_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CExceptionHandler_003Ek__BackingField = value;
             }
         }
 

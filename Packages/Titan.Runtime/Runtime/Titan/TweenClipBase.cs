@@ -19,12 +19,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTimelineClip_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CTimelineClip_003Ek__BackingField = value;
             }
         }
 

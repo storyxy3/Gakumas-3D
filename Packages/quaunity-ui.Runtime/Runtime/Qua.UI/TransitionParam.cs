@@ -13,12 +13,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsTopNode_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CIsTopNode_003Ek__BackingField = value;
             }
         }
 
@@ -27,6 +28,7 @@ namespace Qua.UI
             [CompilerGenerated]
             set
             {
+                _003CIsLeafNode_003Ek__BackingField = value;
             }
         }
 

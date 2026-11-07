@@ -37,12 +37,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(StateType);
+                return _003CState_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CState_003Ek__BackingField = value;
             }
         }
 
@@ -51,12 +52,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(Vector2);
+                return _003CPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CPosition_003Ek__BackingField = value;
             }
         }
 
@@ -65,12 +67,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(MouseButtonType);
+                return _003CInputMouseButton_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CInputMouseButton_003Ek__BackingField = value;
             }
         }
 

@@ -34,12 +34,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsBlockingHit_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsBlockingHit_003Ek__BackingField = value;
             }
         }
 
@@ -48,12 +49,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsRightPosition_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsRightPosition_003Ek__BackingField = value;
             }
         }
 
@@ -62,12 +64,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CAddAngle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CAddAngle_003Ek__BackingField = value;
             }
         }
 

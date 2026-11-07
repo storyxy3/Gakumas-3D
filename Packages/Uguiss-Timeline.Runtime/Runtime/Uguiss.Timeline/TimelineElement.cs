@@ -26,12 +26,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CClip_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CClip_003Ek__BackingField = value;
             }
         }
 
@@ -40,12 +41,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(WaitMode);
+                return _003CWaitMode_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CWaitMode_003Ek__BackingField = value;
             }
         }
 
@@ -54,12 +56,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(SkipTargets);
+                return _003CSkipTargets_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CSkipTargets_003Ek__BackingField = value;
             }
         }
 
@@ -68,6 +71,7 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             set
             {
+                _003CClipCaps_003Ek__BackingField = value;
             }
         }
 
@@ -76,12 +80,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(Playable);
+                return _003CPlayable_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CPlayable_003Ek__BackingField = value;
             }
         }
 
@@ -90,12 +95,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(Playable);
+                return _003CMixer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CMixer_003Ek__BackingField = value;
             }
         }
 
@@ -104,12 +110,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CWeight_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CWeight_003Ek__BackingField = value;
             }
         }
 

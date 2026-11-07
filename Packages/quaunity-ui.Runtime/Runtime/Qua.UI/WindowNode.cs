@@ -31,12 +31,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CBaseState_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CBaseState_003Ek__BackingField = value;
             }
         }
 
@@ -45,12 +46,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CParent_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CParent_003Ek__BackingField = value;
             }
         }
 
@@ -59,12 +61,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRoot_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CRoot_003Ek__BackingField = value;
             }
         }
 
@@ -75,7 +78,7 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CCanPool_003Ek__BackingField;
             }
         }
 
@@ -84,12 +87,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsInitialized_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsInitialized_003Ek__BackingField = value;
             }
         }
 

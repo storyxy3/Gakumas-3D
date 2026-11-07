@@ -14,12 +14,13 @@ namespace Octo.Data
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTags_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CTags_003Ek__BackingField = value;
             }
         }
 

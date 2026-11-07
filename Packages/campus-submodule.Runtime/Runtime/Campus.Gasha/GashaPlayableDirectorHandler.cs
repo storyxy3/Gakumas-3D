@@ -136,6 +136,7 @@ namespace Campus.Gasha
             [CompilerGenerated]
             set
             {
+                _003CIsPlaying_003Ek__BackingField = value;
             }
         }
 

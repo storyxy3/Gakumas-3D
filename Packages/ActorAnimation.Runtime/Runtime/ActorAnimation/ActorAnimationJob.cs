@@ -33,6 +33,7 @@ namespace ActorAnimation
             [CompilerGenerated]
             set
             {
+                _003CjobWeight_003Ek__BackingField = value;
             }
 
             // TODO(qa-recon): Getter stripped from game metadata; required for C# interface/attribute compilation.

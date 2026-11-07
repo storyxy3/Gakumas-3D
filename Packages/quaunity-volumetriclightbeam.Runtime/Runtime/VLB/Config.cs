@@ -73,6 +73,7 @@ namespace VLB
 
             set
             {
+                Debug.LogError("Modifying the RenderPipeline in standalone builds is not permitted");
             }
         }
 
@@ -85,6 +86,7 @@ namespace VLB
 
             set
             {
+                Debug.LogError("Modifying the RenderingMode in standalone builds is not permitted");
             }
         }
 
@@ -92,7 +94,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return GetActualRenderingMode(ShaderMode.SD) != RenderingMode.MultiPass;
             }
         }
 
@@ -118,7 +120,7 @@ namespace VLB
         {
             get
             {
-                return default(int);
+                return m_DefaultRaymarchingQualityUniqueID;
             }
         }
 
@@ -134,7 +136,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return renderPipeline == RenderPipeline.HDRP;
             }
         }
 
@@ -142,7 +144,7 @@ namespace VLB
         {
             get
             {
-                return default(bool);
+                return (SRPHelper.projectRenderPipeline == RenderPipeline.BuiltIn) != (m_RenderPipeline == RenderPipeline.BuiltIn);
             }
         }
 
@@ -210,35 +212,80 @@ namespace VLB
 
         public RaymarchingQuality GetRaymarchingQualityForIndex(int index)
         {
-            return null;
+            return m_RaymarchingQualities[index];
         }
 
         public RaymarchingQuality GetRaymarchingQualityForUniqueID(int id)
         {
+            int index = GetRaymarchingQualityIndexForUniqueID(id);
+            if (index >= 0)
+                return GetRaymarchingQualityForIndex(index);
             return null;
         }
 
         public int GetRaymarchingQualityIndexForUniqueID(int id)
         {
-            return default(int);
+            for (int i = 0; i < m_RaymarchingQualities.Length; i++)
+            {
+                var quality = m_RaymarchingQualities[i];
+                if (quality != null && quality.uniqueID == id)
+                    return i;
+            }
+            Debug.LogErrorFormat("Failed to find RaymarchingQualityIndex for Unique ID {0}", id);
+            return -1;
         }
 
         public bool IsRaymarchingQualityUniqueIDValid(int id)
         {
-            return default(bool);
+            return GetRaymarchingQualityIndexForUniqueID(id) >= 0;
         }
 
         private void CreateDefaultRaymarchingQualityPreset(bool onlyIfNeeded)
         {
+            if (m_RaymarchingQualities == null || m_RaymarchingQualities.Length == 0 || !onlyIfNeeded)
+            {
+                m_RaymarchingQualities = new RaymarchingQuality[3];
+                m_RaymarchingQualities[0] = RaymarchingQuality.New("Fast", 1, 5);
+                m_RaymarchingQualities[1] = RaymarchingQuality.New("Balanced", 2, 10);
+                m_RaymarchingQualities[2] = RaymarchingQuality.New("High", 3, 20);
+                m_DefaultRaymarchingQualityUniqueID = m_RaymarchingQualities[1].uniqueID;
+            }
         }
 
         [RuntimeInitializeOnLoadMethod]
         private static void OnStartup()
         {
+            Instance.m_CachedFadeOutCamera = null;
+            Instance.RefreshGlobalShaderProperties();
+            if (Instance.hasRenderPipelineMismatch)
+                Debug.LogError("It looks like the 'Render Pipeline' is not correctly set in the config. Please make sure to select the proper value depending on your pipeline in use.", Instance);
         }
 
         public void Reset()
         {
+            geometryOverrideLayer = true;
+            geometryLayerID = 1;
+            geometryTag = "Untagged";
+            geometryRenderQueue = 3000;
+            geometryRenderQueueHD = 3100;
+            sharedMeshSides = 24;
+            sharedMeshSegments = 5;
+            globalNoiseScale = 0.5f;
+            globalNoiseVelocity = Consts.Beam.NoiseVelocityDefault;
+            renderPipeline = RenderPipeline.BuiltIn;
+            renderingMode = RenderingMode.Default;
+            ditheringFactor = 0f;
+            useLightColorTemperature = true;
+            fadeOutCameraTag = "MainCamera";
+            featureEnabledColorGradient = FeatureEnabledColorGradient.HighOnly;
+            featureEnabledDepthBlend = true;
+            featureEnabledNoise3D = true;
+            featureEnabledDynamicOcclusion = true;
+            featureEnabledMeshSkewing = true;
+            featureEnabledShaderAccuracyHigh = true;
+            hdBeamsCameraBlendingDistance = 0.5f;
+            CreateDefaultRaymarchingQualityPreset(false);
+            ResetInternalData();
         }
 
         private void RefreshGlobalShaderProperties()
@@ -254,15 +301,33 @@ namespace VLB
 
         public void ResetInternalData()
         {
+            noiseTexture3D = Resources.Load("Noise3D_64x64x64") as Texture3D;
+            dustParticlesPrefab = Resources.Load("DustParticles", typeof(ParticleSystem)) as ParticleSystem;
+            ditheringNoiseTexture = Resources.Load("VLBDitheringNoise", typeof(Texture2D)) as Texture2D;
+            jitteringNoiseTexture = Resources.Load("VLBBlueNoise", typeof(Texture2D)) as Texture2D;
         }
 
         public ParticleSystem NewVolumetricDustParticles()
         {
-            return null;
+            if (!dustParticlesPrefab)
+            {
+                if (Application.isPlaying)
+                    Debug.LogError("Failed to instantiate VolumetricDustParticles prefab.");
+                return null;
+            }
+            var instance = Instantiate(dustParticlesPrefab);
+            instance.useAutoRandomSeed = false;
+            instance.name = "Dust Particles";
+            instance.gameObject.hideFlags = Consts.Internal.ProceduralObjectsHideFlags;
+            instance.gameObject.SetActive(true);
+            return instance;
         }
 
         private void OnEnable()
         {
+            CreateDefaultRaymarchingQualityPreset(true);
+            HandleBackwardCompatibility(pluginVersion, 20000);
+            pluginVersion = 20000;
         }
 
         private void HandleBackwardCompatibility(int serializedVersion, int newVersion)

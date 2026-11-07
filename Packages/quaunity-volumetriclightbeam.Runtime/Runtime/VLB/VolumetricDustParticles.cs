@@ -15,7 +15,7 @@ namespace VLB
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Action<ParticleSystem> _003C_003E9__37_0;
             public _003C_003Ec()
             {
@@ -61,12 +61,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisCulled_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisCulled_003Ek__BackingField = value;
             }
         }
 

@@ -20,12 +20,13 @@ namespace Campus.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CparticleSystem_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CparticleSystem_003Ek__BackingField = value;
             }
         }
 

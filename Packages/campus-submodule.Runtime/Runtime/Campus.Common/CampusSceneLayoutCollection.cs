@@ -23,12 +23,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLastGetSceneLayoutCache_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CLastGetSceneLayoutCache_003Ek__BackingField = value;
             }
         }
 

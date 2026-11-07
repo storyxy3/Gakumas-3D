@@ -526,12 +526,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return default(uint);
+                return _003C_INTERNAL_InstancedMaterialGroupID_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003C_INTERNAL_InstancedMaterialGroupID_003Ek__BackingField = value;
             }
         }
 

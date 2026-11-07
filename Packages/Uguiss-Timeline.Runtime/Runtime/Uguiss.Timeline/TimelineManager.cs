@@ -27,12 +27,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return default(double);
+                    return _003CStart_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CStart_003Ek__BackingField = value;
                 }
             }
 
@@ -41,12 +42,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return default(double);
+                    return _003CEnd_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CEnd_003Ek__BackingField = value;
                 }
             }
 
@@ -55,12 +57,13 @@ namespace Uguiss.Timeline
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CIsTimelineEnd_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CIsTimelineEnd_003Ek__BackingField = value;
                 }
             }
 
@@ -89,7 +92,7 @@ namespace Uguiss.Timeline
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<TimelineClip, double> _003C_003E9__10_0;
             public static Func<KeyValuePair<string, List<AbstractPlayableCommand>>, int> _003C_003E9__51_0;
             public _003C_003Ec()
@@ -112,7 +115,7 @@ namespace Uguiss.Timeline
         private sealed class _003C_003Ec__49<T>
             where T : AbstractPlayableCommand
         {
-            public static readonly _003C_003Ec__49<T> _003C_003E9;
+            public static readonly _003C_003Ec__49<T> _003C_003E9 = new _003C_003Ec__49<T>();
             public static Predicate<AbstractPlayableCommand> _003C_003E9__49_0;
             public _003C_003Ec__49()
             {
@@ -230,12 +233,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CBranchGroupList_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CBranchGroupList_003Ek__BackingField = value;
             }
         }
 
@@ -276,7 +280,7 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CController_003Ek__BackingField;
             }
         }
 
@@ -285,12 +289,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(double);
+                return _003CInitializeTime_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CInitializeTime_003Ek__BackingField = value;
             }
         }
 
@@ -299,12 +304,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsUpdateGraph_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsUpdateGraph_003Ek__BackingField = value;
             }
         }
 

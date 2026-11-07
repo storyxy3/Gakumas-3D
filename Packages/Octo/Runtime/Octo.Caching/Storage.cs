@@ -56,12 +56,13 @@ namespace Octo.Caching
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CBucket_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CBucket_003Ek__BackingField = value;
             }
         }
 
@@ -70,12 +71,13 @@ namespace Octo.Caching
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CFileName_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CFileName_003Ek__BackingField = value;
             }
         }
 

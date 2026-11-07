@@ -28,7 +28,7 @@ namespace Campus.Common
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CDescriptor_003Ek__BackingField;
                 }
             }
 
@@ -37,7 +37,7 @@ namespace Campus.Common
                 [CompilerGenerated]
                 get
                 {
-                    return default(int);
+                    return _003CIndex_003Ek__BackingField;
                 }
             }
 
@@ -46,12 +46,13 @@ namespace Campus.Common
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CIsGenerating_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CIsGenerating_003Ek__BackingField = value;
                 }
             }
 
@@ -60,12 +61,13 @@ namespace Campus.Common
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CIsSuccess_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 set
                 {
+                    _003CIsSuccess_003Ek__BackingField = value;
                 }
             }
 
@@ -78,7 +80,7 @@ namespace Campus.Common
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<ActorInfo, bool> _003C_003E9__17_0;
             public static Func<ICampusActorController, int> _003C_003E9__25_0;
             public _003C_003Ec()

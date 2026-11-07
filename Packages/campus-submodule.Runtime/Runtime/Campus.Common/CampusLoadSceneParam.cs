@@ -16,12 +16,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(LoadSceneParameters);
+                return _003CParameters_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CParameters_003Ek__BackingField = value;
             }
         }
 
@@ -30,7 +31,7 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CSceneName_003Ek__BackingField;
             }
         }
 
@@ -39,7 +40,7 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CSceneBuildIndex_003Ek__BackingField;
             }
         }
 

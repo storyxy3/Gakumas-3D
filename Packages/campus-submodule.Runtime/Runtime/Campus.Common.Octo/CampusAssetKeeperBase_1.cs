@@ -109,12 +109,13 @@ namespace Campus.Common.Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsBusy_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsBusy_003Ek__BackingField = value;
             }
         }
 
@@ -123,12 +124,13 @@ namespace Campus.Common.Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAsset_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CAsset_003Ek__BackingField = value;
             }
         }
 
@@ -137,12 +139,13 @@ namespace Campus.Common.Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CRequestedAssetBundleName_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CRequestedAssetBundleName_003Ek__BackingField = value;
             }
         }
 
@@ -151,12 +154,13 @@ namespace Campus.Common.Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsSuccess_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsSuccess_003Ek__BackingField = value;
             }
         }
 

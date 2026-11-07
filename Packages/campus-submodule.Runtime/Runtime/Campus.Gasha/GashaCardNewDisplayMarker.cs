@@ -16,7 +16,7 @@ namespace Campus.Gasha
             [CompilerGenerated]
             get
             {
-                return default(PropertyName);
+                return _003Cid_003Ek__BackingField;
             }
         }
 

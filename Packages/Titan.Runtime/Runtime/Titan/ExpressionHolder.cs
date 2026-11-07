@@ -12,7 +12,7 @@ namespace Titan
         [CompilerGenerated]
         private sealed class _003C_003Ec
         {
-            public static readonly _003C_003Ec _003C_003E9;
+            public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
             public static Func<ExpressionWithName, string> _003C_003E9__7_0;
             public static Func<ExpressionWithName, ExpressionWithName> _003C_003E9__7_1;
             public _003C_003Ec()
@@ -39,7 +39,7 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLogHint_003Ek__BackingField;
             }
         }
 

@@ -563,6 +563,7 @@ namespace Campus.Common
             [CompilerGenerated]
             private set
             {
+                _003CIsBuildSuccess_003Ek__BackingField = value;
             }
         }
 

@@ -26,12 +26,13 @@ namespace Titan
             [CompilerGenerated]
             get
             {
-                return default(TokenType);
+                return _003CType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CType_003Ek__BackingField = value;
             }
         }
 

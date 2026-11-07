@@ -220,12 +220,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CLogger_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CLogger_003Ek__BackingField = value;
             }
         }
 
@@ -234,12 +235,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAssetBundleLoader_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CAssetBundleLoader_003Ek__BackingField = value;
             }
         }
 
@@ -248,12 +250,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CResourceLoader_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CResourceLoader_003Ek__BackingField = value;
             }
         }
 
@@ -262,12 +265,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDatabase_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDatabase_003Ek__BackingField = value;
             }
         }
 
@@ -276,12 +280,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDownloadExecutor_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CDownloadExecutor_003Ek__BackingField = value;
             }
         }
 
@@ -290,6 +295,7 @@ namespace Octo
             [CompilerGenerated]
             set
             {
+                _003CLoadExecutor_003Ek__BackingField = value;
             }
         }
 
@@ -298,6 +304,7 @@ namespace Octo
             [CompilerGenerated]
             set
             {
+                _003CDbUpdateTimeAfterStartup_003Ek__BackingField = value;
             }
         }
 
@@ -314,12 +321,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsSetupped_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsSetupped_003Ek__BackingField = value;
             }
         }
 
@@ -328,12 +336,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CAllowDeleted_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAllowDeleted_003Ek__BackingField = value;
             }
         }
 
@@ -342,12 +351,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CDownloadErrorInteceptor_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDownloadErrorInteceptor_003Ek__BackingField = value;
             }
         }
 
@@ -356,6 +366,7 @@ namespace Octo
             [CompilerGenerated]
             set
             {
+                _003CLoadErrorInterceptor_003Ek__BackingField = value;
             }
         }
 
@@ -364,12 +375,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAssetBundleLoadInterceptor_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAssetBundleLoadInterceptor_003Ek__BackingField = value;
             }
         }
 
@@ -378,7 +390,7 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CAssetBundleImplicitDownloadInterceptor_003Ek__BackingField;
             }
         }
 
@@ -387,7 +399,7 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CResourceImplicitDownloadInterceptor_003Ek__BackingField;
             }
         }
 
@@ -396,12 +408,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnAssetBundleUnloadCompleted_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnAssetBundleUnloadCompleted_003Ek__BackingField = value;
             }
         }
 
@@ -410,12 +423,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGetResourceExtensionOverrider_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CGetResourceExtensionOverrider_003Ek__BackingField = value;
             }
         }
 
@@ -424,7 +438,7 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnDatabaseNameNotFoundError_003Ek__BackingField;
             }
         }
 
@@ -433,12 +447,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(AssetLoader.LoadPriority);
+                return _003CAssetLoaderPriority_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAssetLoaderPriority_003Ek__BackingField = value;
             }
         }
 
@@ -447,7 +462,7 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CDownloadStallTimeout_003Ek__BackingField;
             }
         }
 

@@ -87,6 +87,7 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             set
             {
+                _003CTargetCommand_003Ek__BackingField = value;
             }
         }
 
@@ -95,12 +96,13 @@ namespace Uguiss.Timeline
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCommands_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CCommands_003Ek__BackingField = value;
             }
         }
 

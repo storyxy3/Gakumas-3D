@@ -53,12 +53,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CActor_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CActor_003Ek__BackingField = value;
             }
         }
 
@@ -75,12 +76,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COnConstrainStatusChange_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COnConstrainStatusChange_003Ek__BackingField = value;
             }
         }
 
@@ -89,12 +91,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CIsLookAtCamera_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsLookAtCamera_003Ek__BackingField = value;
             }
         }
 
@@ -103,12 +106,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGetActorLookTargetType_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CGetActorLookTargetType_003Ek__BackingField = value;
             }
         }
 
@@ -117,12 +121,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGetActorLookTargetTransform_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CGetActorLookTargetTransform_003Ek__BackingField = value;
             }
         }
 
@@ -131,12 +136,13 @@ namespace Campus.Common.LookAt
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsDisableAutoUpdate_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsDisableAutoUpdate_003Ek__BackingField = value;
             }
         }
 

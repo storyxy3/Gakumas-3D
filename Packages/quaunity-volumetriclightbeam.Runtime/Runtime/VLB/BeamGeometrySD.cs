@@ -91,12 +91,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CmeshFilter_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CmeshFilter_003Ek__BackingField = value;
             }
         }
 
@@ -111,6 +112,7 @@ namespace VLB
             [CompilerGenerated]
             private set
             {
+                _003CconeMesh_003Ek__BackingField = value;
             }
         }
 

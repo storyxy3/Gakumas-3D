@@ -35,6 +35,7 @@ namespace Campus.AnimationRigging
             [CompilerGenerated]
             set
             {
+                _003CjobWeight_003Ek__BackingField = value;
             }
         }
 

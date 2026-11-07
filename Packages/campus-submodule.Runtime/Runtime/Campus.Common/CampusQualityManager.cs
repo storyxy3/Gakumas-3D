@@ -57,12 +57,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(float);
+                return _003CFrameChangeScale_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CFrameChangeScale_003Ek__BackingField = value;
             }
         }
 
@@ -71,12 +72,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(QualityLevel);
+                return _003CThreeD_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CThreeD_003Ek__BackingField = value;
             }
         }
 
@@ -129,12 +131,13 @@ namespace Campus.Common
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsAutoDynamicResolution_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsAutoDynamicResolution_003Ek__BackingField = value;
             }
         }
 

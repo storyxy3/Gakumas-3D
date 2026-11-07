@@ -36,12 +36,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsAutoLookEnable_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsAutoLookEnable_003Ek__BackingField = value;
             }
         }
 
@@ -50,12 +51,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(Vector3);
+                return _003CAutoLookAdjustAngle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CAutoLookAdjustAngle_003Ek__BackingField = value;
             }
         }
 
@@ -64,12 +66,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsGyroActive_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CIsGyroActive_003Ek__BackingField = value;
             }
         }
 
@@ -78,12 +81,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGetGyroParameter_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CGetGyroParameter_003Ek__BackingField = value;
             }
         }
 
@@ -92,12 +96,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGetClampAngleLimit_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CGetClampAngleLimit_003Ek__BackingField = value;
             }
         }
 

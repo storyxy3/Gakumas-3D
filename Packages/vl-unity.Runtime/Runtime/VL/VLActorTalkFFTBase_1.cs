@@ -31,12 +31,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CaudioSource_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CaudioSource_003Ek__BackingField = value;
             }
         }
 
@@ -61,12 +62,13 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisTalk_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CisTalk_003Ek__BackingField = value;
             }
         }
 
@@ -75,7 +77,7 @@ namespace VL
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CisPlaying_003Ek__BackingField;
             }
         }
 
@@ -84,6 +86,7 @@ namespace VL
             [CompilerGenerated]
             set
             {
+                _003CtalkPower_003Ek__BackingField = value;
             }
         }
 

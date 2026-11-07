@@ -46,12 +46,13 @@ namespace Campus.Common.UIRenderer
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CDrawFrameBuffer_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CDrawFrameBuffer_003Ek__BackingField = value;
             }
         }
 

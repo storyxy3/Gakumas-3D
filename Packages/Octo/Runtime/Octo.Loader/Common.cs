@@ -23,7 +23,7 @@ namespace Octo.Loader
             [CompilerGenerated]
             private sealed class _003C_003Ec
             {
-                public static readonly _003C_003Ec _003C_003E9;
+                public static readonly _003C_003Ec _003C_003E9 = new _003C_003Ec();
                 public static Action<T> _003C_003E9__6_0;
                 public static OnDownloadProgress _003C_003E9__6_1;
                 public _003C_003Ec()

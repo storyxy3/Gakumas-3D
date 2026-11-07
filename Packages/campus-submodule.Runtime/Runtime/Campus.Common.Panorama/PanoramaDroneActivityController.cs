@@ -30,12 +30,13 @@ namespace Campus.Common.Panorama
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CGetGyroParameterFunc_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CGetGyroParameterFunc_003Ek__BackingField = value;
             }
         }
 

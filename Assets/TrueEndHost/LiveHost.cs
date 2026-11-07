@@ -84,12 +84,13 @@ namespace TrueEnd.Host
                 GraphicsSettings.defaultRenderPipeline = pipeline;
                 QualitySettings.renderPipeline = pipeline;
                 Debug.Log($"LIVE_PIPELINE {pipeline.name} renderer={pipeline.scriptableRenderer.GetType().FullName}");
-                // Config.OnStartup (APK 0xe0c7c64) refreshes these globals during client startup.
-                // This host loads Resources asynchronously, so dispatch the same method after loading.
+                // Config.OnStartup (APK 0xe0c7c64, [RuntimeInitializeOnLoadMethod]) runs during client startup, when the
+                // client's Resources already hold the config. This host serves Resources from the bundle loaded above, so the
+                // automatic call at player start finds no config; dispatch the same method again now that it is available.
                 var beamConfig = Resources.Load<ScriptableObject>("VLBConfigOverride");
                 if (beamConfig == null) throw new InvalidDataException("Original VLB configuration is missing.");
-                beamConfig.GetType().GetMethod("RefreshGlobalShaderProperties",
-                    System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).Invoke(beamConfig, null);
+                beamConfig.GetType().GetMethod("OnStartup",
+                    System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).Invoke(null, null);
                 var cameraObject = Instantiate(Resources.Load<GameObject>("Game3DManager"));
                 cameraController = cameraObject.GetComponent<VL.Rendering.VLSRPCameraController>();
                 cameraController.aspectRatio = new Vector2(2.35f, 1f);

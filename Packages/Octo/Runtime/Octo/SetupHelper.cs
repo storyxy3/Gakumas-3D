@@ -42,12 +42,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CSettings_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003CSettings_003Ek__BackingField = value;
             }
         }
 
@@ -64,12 +65,13 @@ namespace Octo
             [CompilerGenerated]
             get
             {
-                return default(bool);
+                return _003CIsAutoUpdateFinished_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CIsAutoUpdateFinished_003Ek__BackingField = value;
             }
         }
 

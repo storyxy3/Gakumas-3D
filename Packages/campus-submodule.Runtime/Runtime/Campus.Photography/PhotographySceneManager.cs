@@ -165,12 +165,13 @@ namespace Campus.Photography
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CCurrentSceneLayout_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CCurrentSceneLayout_003Ek__BackingField = value;
             }
         }
 

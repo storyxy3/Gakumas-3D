@@ -74,12 +74,13 @@ namespace VLB
             [CompilerGenerated]
             get
             {
-                return default(Plane);
+                return _003CplaneEquationWS_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CplaneEquationWS_003Ek__BackingField = value;
             }
         }
 

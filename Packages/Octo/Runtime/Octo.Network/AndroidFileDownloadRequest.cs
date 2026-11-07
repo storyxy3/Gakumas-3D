@@ -41,12 +41,13 @@ namespace Octo.Network
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CResult_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CResult_003Ek__BackingField = value;
                 }
             }
 
@@ -174,12 +175,13 @@ namespace Octo.Network
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CIsError_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CIsError_003Ek__BackingField = value;
                 }
             }
 
@@ -188,12 +190,13 @@ namespace Octo.Network
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CErrorMessage_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CErrorMessage_003Ek__BackingField = value;
                 }
             }
 
@@ -202,12 +205,13 @@ namespace Octo.Network
                 [CompilerGenerated]
                 get
                 {
-                    return default(bool);
+                    return _003CIsHashDiffered_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CIsHashDiffered_003Ek__BackingField = value;
                 }
             }
 
@@ -216,12 +220,13 @@ namespace Octo.Network
                 [CompilerGenerated]
                 get
                 {
-                    return null;
+                    return _003CRealHash_003Ek__BackingField;
                 }
 
                 [CompilerGenerated]
                 private set
                 {
+                    _003CRealHash_003Ek__BackingField = value;
                 }
             }
 

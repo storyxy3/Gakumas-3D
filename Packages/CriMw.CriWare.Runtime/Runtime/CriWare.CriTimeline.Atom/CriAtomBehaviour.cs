@@ -28,12 +28,13 @@ namespace CriWare.CriTimeline.Atom
             [CompilerGenerated]
             get
             {
-                return default(CriAtomExPlayback);
+                return _003Cplayback_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003Cplayback_003Ek__BackingField = value;
             }
         }
 

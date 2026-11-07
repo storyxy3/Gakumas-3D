@@ -29,12 +29,13 @@ namespace CriWare.CriTimeline.Atom
             [CompilerGenerated]
             get
             {
-                return default(Guid);
+                return _003Cm_Guid_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003Cm_Guid_003Ek__BackingField = value;
             }
         }
 

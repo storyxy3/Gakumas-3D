@@ -17,12 +17,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003Cpath_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003Cpath_003Ek__BackingField = value;
             }
         }
 
@@ -31,12 +32,13 @@ namespace CriWare
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CassetBundle_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CassetBundle_003Ek__BackingField = value;
             }
         }
 

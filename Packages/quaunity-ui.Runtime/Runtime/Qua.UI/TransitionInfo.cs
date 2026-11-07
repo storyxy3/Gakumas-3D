@@ -26,12 +26,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return default(int);
+                return _003CCloseCount_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CCloseCount_003Ek__BackingField = value;
             }
         }
 
@@ -40,12 +41,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CStateForClose_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CStateForClose_003Ek__BackingField = value;
             }
         }
 
@@ -54,6 +56,7 @@ namespace Qua.UI
             [CompilerGenerated]
             set
             {
+                _003CStartTopNodeState_003Ek__BackingField = value;
             }
         }
 
@@ -62,12 +65,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CStartTopNode_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CStartTopNode_003Ek__BackingField = value;
             }
         }
 
@@ -76,12 +80,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CStartTopScreenState_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CStartTopScreenState_003Ek__BackingField = value;
             }
         }
 
@@ -90,12 +95,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CStartTopScreen_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             private set
             {
+                _003CStartTopScreen_003Ek__BackingField = value;
             }
         }
 
@@ -104,12 +110,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CTree_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             internal set
             {
+                _003CTree_003Ek__BackingField = value;
             }
         }
 
@@ -118,12 +125,13 @@ namespace Qua.UI
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003COptionalData_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             set
             {
+                _003COptionalData_003Ek__BackingField = value;
             }
         }
 

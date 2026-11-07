@@ -22,12 +22,13 @@ namespace Octo.Data
             [CompilerGenerated]
             get
             {
-                return null;
+                return _003CPath_003Ek__BackingField;
             }
 
             [CompilerGenerated]
             protected set
             {
+                _003CPath_003Ek__BackingField = value;
             }
         }
 
