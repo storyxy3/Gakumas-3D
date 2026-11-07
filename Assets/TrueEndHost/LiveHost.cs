@@ -81,6 +81,12 @@ namespace TrueEnd.Host
                 if (pipeline == null)
                     throw new InvalidDataException("Original Ultimate pipeline asset is missing. Available assets " + string.Join(", ", resources.GetAllAssetNames()));
                 pipelineAsset = pipeline;
+                // CampusQualityManager.ApplySetting (APK 0xddf6c1c): QualitySettings level of the selected tier, then the
+                // texture streaming budget by system memory. DMM logs "[Quality Level] Ultimate (4)"; the level data is DMM's own
+                // (ProjectSettings/QualitySettings.asset from its globalgamemanagers). The tier's pipeline asset is set below.
+                QualitySettings.SetQualityLevel(4);
+                QualitySettings.streamingMipmapsMemoryBudget = SystemInfo.systemMemorySize >= 3500 ? 320f : 128f;
+                Debug.Log($"LIVE_QUALITY level={QualitySettings.GetQualityLevel()} name={QualitySettings.names[QualitySettings.GetQualityLevel()]} budget={QualitySettings.streamingMipmapsMemoryBudget}");
                 GraphicsSettings.defaultRenderPipeline = pipeline;
                 QualitySettings.renderPipeline = pipeline;
                 Debug.Log($"LIVE_PIPELINE {pipeline.name} renderer={pipeline.scriptableRenderer.GetType().FullName}");
