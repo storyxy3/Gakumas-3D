@@ -65,3 +65,9 @@ the host retains a presentation clock through the remaining duration so screensh
 Linux playback must remain silent (`--mute -noaudio`).
 
 Optional playback recording: `--pose-log /absolute/path/poses.jsonl` copies completed bone transforms and Swing collider/chain state at approximately 0.1-second intervals. It does not evaluate or modify the animation graph. World transforms are after frame completion; job collider coordinates are in the Swing root space, and dynamic state retains root-motion cancellation. `--capture-fps 60` uses Unity's capture clock for repeatable offline playback; it does not change the Swing solver. `--stop-time 50` stops and exits at that timeline time, allowing bounded capture intervals with `--start-time`. Keep Linux capture runs silent with `--mute -noaudio` and the documented dummy audio environment.
+
+Frame dump for frame-by-frame comparison: `--record-frames <dir>` writes every rendered frame (camera output texture,
+host fade composited) as `f??????.jpg` plus `frames.tsv` (frame, timeline/presentation time, fade) and `geometry.txt`.
+It runs on the capture clock (`--capture-fps`, default 60 with this option; the director then uses GameTime on every
+platform), mutes audio and exits at the end. `--record-width N` scales frames to N pixels wide (default 960, 0 = native).
+Bound it with `--start-time` / `--stop-time`. `/data/xy/gakumas/scripts/framecmp.py` compares a dump with the DMM recording.

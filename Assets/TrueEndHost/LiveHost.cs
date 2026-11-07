@@ -122,7 +122,9 @@ namespace TrueEnd.Host
                 musicSource.mute = options.Mute;
                 musicSource.outputAudioMixerGroup = resources.LoadAsset<UnityEngine.Audio.AudioMixerGroup>("assets/campuslivemixergroup");
                 // The native live uses DSP time. Linux's disabled audio device needs a running frame clock.
-                var updateMode = Application.platform == RuntimePlatform.LinuxPlayer ? DirectorUpdateMode.GameTime : DirectorUpdateMode.DSPClock;
+                // The capture clock only drives GameTime; the audio clock would keep wall-clock pace.
+                var updateMode = Application.platform == RuntimePlatform.LinuxPlayer || options.CaptureFps > 0
+                    ? DirectorUpdateMode.GameTime : DirectorUpdateMode.DSPClock;
                 Debug.Log($"LIVE_AUDIO clip={music.name} duration={music.length} frequency={music.frequency} channels={music.channels} clock={updateMode}");
                 var binder = new CampusLiveBinder(new CampusLiveBinder.BindParams
                 {
@@ -143,6 +145,7 @@ namespace TrueEnd.Host
                 fadeGroup = gameObject.AddComponent<CanvasGroup>();
                 fadeGroup.SetBlockingAlpha(0f);
                 using var poseRecorder = options.PoseLog == null ? null : new LivePoseRecorder(actor, options.PoseLog);
+                using var frameRecorder = options.FrameDirectory == null ? null : new LiveFrameRecorder(options.FrameDirectory, options.FrameWidth);
                 timeline.Play();
                 Debug.Log($"LIVE_PLAYING time={timeline.master.time} duration={timeline.master.duration}");
                 double started = Time.realtimeSinceStartupAsDouble;
@@ -169,6 +172,7 @@ namespace TrueEnd.Host
                         fadeGroup.DOFadeBlocking(1f, FadeDuration);
                         Debug.Log($"LIVE_END_FADE time={pausedAt} duration={FadeDuration}");
                     }
+                    frameRecorder?.Record(cameraController.targetTexture, presentationTime, fadeGroup.alpha);
                     if (screenshotIndex < options.ScreenshotTimes.Length && presentationTime >= options.ScreenshotTimes[screenshotIndex])
                     {
                         double requested = options.ScreenshotTimes[screenshotIndex++];

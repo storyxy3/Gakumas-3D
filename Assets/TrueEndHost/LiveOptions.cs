@@ -11,6 +11,8 @@ namespace TrueEnd.Host
         public string DataDirectory = Path.Combine(Application.streamingAssetsPath, "ttmr001");
         public string CaptureDirectory = Path.GetFullPath("captures");
         public string PoseLog;
+        public string FrameDirectory;
+        public int FrameWidth = 960;
         public int CaptureFps;
         public double StopTime = double.PositiveInfinity;
         public double StartTime;
@@ -47,6 +49,16 @@ namespace TrueEnd.Host
                         options.QuitAtEnd = true;
                         options.ScreenshotTimes = Value(arguments, ref i).Split(',').Select(Seconds).Distinct().OrderBy(t => t).ToArray();
                         break;
+                    case "--record-frames":
+                        options.FrameDirectory = Path.GetFullPath(Value(arguments, ref i));
+                        options.QuitAtEnd = true;
+                        options.Mute = true;
+                        break;
+                    case "--record-width":
+                        options.FrameWidth = int.Parse(Value(arguments, ref i), CultureInfo.InvariantCulture);
+                        if (options.FrameWidth < 0 || options.FrameWidth > 7680)
+                            throw new ArgumentException("Record width must be 0 (native) to 7680.");
+                        break;
                     case "--mute": options.Mute = true; break;
                     default:
                         if (argument.StartsWith("--", StringComparison.Ordinal))
@@ -54,6 +66,9 @@ namespace TrueEnd.Host
                         break;
                 }
             }
+            // Frame dumps are offline: one frame per capture-clock step, never wall-clock paced.
+            if (options.FrameDirectory != null && options.CaptureFps == 0)
+                options.CaptureFps = 60;
             if (options.StopTime <= options.StartTime)
                 throw new ArgumentException("Stop time must be after start time.");
             return options;
