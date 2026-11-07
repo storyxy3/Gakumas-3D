@@ -1,8 +1,8 @@
 using System;
+using System.Collections.Concurrent;
 using System.Globalization;
 using System.IO;
 using System.Threading;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering;
@@ -12,19 +12,23 @@ namespace TrueEnd.Host
     // Host-only frame dump for frame-by-frame comparison with a recording of the game.
     // Every completed frame of the camera's output texture is scaled, read back synchronously
     // (offline playback runs on the capture clock, so stalling the GPU does not change timing)
-    // and encoded to JPEG on worker threads. The host's black fade overlay is composited
+    // and encoded to JPEG on the recorder's own threads (joined on dispose; no thread-pool work
+    // is left behind when the IL2CPP player shuts down). The host's black fade overlay is composited
     // the same way OnGUI draws it (black with alpha over the frame).
     internal sealed class LiveFrameRecorder : IDisposable
     {
         private const int Quality = 92;
-        private const int MaxPendingEncodes = 8;
+        private const int Workers = 4;
         private readonly string directory;
         private readonly int width;
         private readonly StreamWriter index;
-        private readonly SemaphoreSlim slots = new SemaphoreSlim(MaxPendingEncodes);
+        private readonly BlockingCollection<(byte[] pixels, float fade, int w, int h, string file)> queue =
+            new BlockingCollection<(byte[], float, int, int, string)>(Workers * 2);
+        private readonly Thread[] threads = new Thread[Workers];
         private RenderTexture scaled;
         private int frame;
         private int failures;
+        private bool disposed;
 
         public LiveFrameRecorder(string directory, int width)
         {
@@ -33,6 +37,11 @@ namespace TrueEnd.Host
             Directory.CreateDirectory(directory);
             index = new StreamWriter(Path.Combine(directory, "frames.tsv"));
             index.WriteLine("frame\ttime\tfade\tfile");
+            for (int i = 0; i < Workers; i++)
+            {
+                threads[i] = new Thread(Encode) { IsBackground = true, Name = "LiveFrameEncoder" + i };
+                threads[i].Start();
+            }
         }
 
         public void Record(RenderTexture source, double time, float fade)
@@ -61,15 +70,19 @@ namespace TrueEnd.Host
                 Debug.LogError($"LIVE_FRAME readback failed frame={number}");
                 return;
             }
-            byte[] pixels = request.GetData<byte>().ToArray();
-            slots.Wait();
-            Task.Run(() =>
+            // Blocks while all workers are busy, so memory stays bounded.
+            queue.Add((request.GetData<byte>().ToArray(), fade, w, h, file));
+        }
+
+        private void Encode()
+        {
+            foreach (var (pixels, fade, w, h, file) in queue.GetConsumingEnumerable())
             {
                 try
                 {
                     if (fade > 0f)
                     {
-                        float keep = 1f - Mathf.Clamp01(fade);
+                        float keep = 1f - Math.Min(1f, fade);
                         for (int i = 0; i < pixels.Length; i += 4)
                         {
                             pixels[i] = (byte)(pixels[i] * keep + 0.5f);
@@ -85,16 +98,16 @@ namespace TrueEnd.Host
                     Interlocked.Increment(ref failures);
                     Debug.LogException(exception);
                 }
-                finally
-                {
-                    slots.Release();
-                }
-            });
+            }
         }
 
         public void Dispose()
         {
-            for (int i = 0; i < MaxPendingEncodes; i++) slots.Wait();
+            if (disposed) return;
+            disposed = true;
+            queue.CompleteAdding();
+            foreach (var thread in threads) thread.Join();
+            queue.Dispose();
             index.Dispose();
             if (scaled != null) scaled.Release();
             Debug.Log($"LIVE_FRAMES frames={frame} failures={failures} dir={directory}");

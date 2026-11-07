@@ -183,6 +183,8 @@ namespace TrueEnd.Host
                         Debug.Log($"LIVE_CAPTURE requested={requested} actual={presentationTime} path={path}");
                     }
                 }
+                // Finish the frame dump before shutdown starts.
+                frameRecorder?.Dispose();
                 Debug.Log($"LIVE_STOPPED time={timeline.master.time} presentation={presentationTime} fadeAlpha={fadeGroup.alpha}");
                 timeline.master.Pause();
                 musicSource.Stop();
