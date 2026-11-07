@@ -208,7 +208,10 @@ namespace AmplifyOcclusion
             float AO_BufDepthToLinearEye = cameraData.camera.farClipPlane * m_oneOverDepthScale;
             cb.SetGlobalFloat(PropertyID._AO_BufDepthToLinearEye, AO_BufDepthToLinearEye);
             if (_settings.BlurEnabled.value)
-                cb.SetGlobalFloat(PropertyID._AO_BlurSharpness, AO_BufDepthToLinearEye * (_settings.BlurSharpness.value * 100f));
+            {
+                float blurSharpness = AO_BufDepthToLinearEye * (_settings.BlurSharpness.value * 100f);
+                cb.SetGlobalFloat(PropertyID._AO_BlurSharpness, blurSharpness);
+            }
             if (_settings.FadeEnabled.value)
             {
                 float fadeLength = _settings.FadeLength.value;
@@ -265,7 +268,7 @@ namespace AmplifyOcclusion
 
         private void PerformBlit(CommandBuffer cb, RTHandle destination, Material mat, int pass)
         {
-            cb.SetRenderTarget(destination, RenderBufferLoadAction.DontCare, RenderBufferStoreAction.Store);
+            cb.SetRenderTarget(destination.nameID, RenderBufferLoadAction.DontCare, RenderBufferStoreAction.Store);
             Blitter.BlitTexture(cb, Vector2.one, mat, pass);
         }
 
@@ -276,9 +279,9 @@ namespace AmplifyOcclusion
                 RenderingUtils.ReAllocateIfNeeded(ref m_tmpBlurRT, new RenderTextureDescriptor(aSourceWidth, aSourceHeight, m_occlusionRTFormat, 0), FilterMode.Point, TextureWrapMode.Repeat, false, 1, 0f, "_AO_BlurTmp");
                 for (int i = 0; i < _settings.BlurPasses.value; i++)
                 {
-                    cb.SetGlobalTexture(PropertyID._AO_CurrOcclusionDepth, aSourceRT);
+                    cb.SetGlobalTexture(PropertyID._AO_CurrOcclusionDepth, aSourceRT.nameID);
                     PerformBlit(cb, m_tmpBlurRT, m_blurMat, (_settings.BlurRadius.value - 1) * 2);
-                    cb.SetGlobalTexture(PropertyID._AO_CurrOcclusionDepth, m_tmpBlurRT);
+                    cb.SetGlobalTexture(PropertyID._AO_CurrOcclusionDepth, m_tmpBlurRT.nameID);
                     PerformBlit(cb, aSourceRT, m_blurMat, (_settings.BlurRadius.value - 1) * 2 + 1);
                 }
             }
@@ -290,10 +293,24 @@ namespace AmplifyOcclusion
             bool downsample = _settings.Downsample.value;
             using (new ProfilingScope(cb, m_ComputeOcclusionSampler))
             {
-                SampleCountLevel sampleCount = _settings.SampleCount.value;
-                CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_MEDIUM", sampleCount == SampleCountLevel.Medium);
-                CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_HIGH", sampleCount == SampleCountLevel.High);
-                CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_VERY_HIGH", sampleCount == SampleCountLevel.VeryHigh);
+                bool medium = false, high = false, veryHigh = false;
+                switch (_settings.SampleCount.value)
+                {
+                    case SampleCountLevel.Low:
+                        break;
+                    case SampleCountLevel.Medium:
+                        medium = true;
+                        break;
+                    case SampleCountLevel.High:
+                        high = true;
+                        break;
+                    case SampleCountLevel.VeryHigh:
+                        veryHigh = true;
+                        break;
+                }
+                CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_MEDIUM", medium);
+                CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_HIGH", high);
+                CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_VERY_HIGH", veryHigh);
                 CoreUtils.SetKeyword(m_occlusionMat, "_USE_DYNAMIC_DEPTH_MIPS", m_cacheAware);
                 CoreUtils.SetKeyword(m_occlusionMat, "_GTAO_RECONSTRUCT_NORMAL", _settings.PerPixelNormals.value == PerPixelNormalSource.None);
                 if (m_cacheAware)
@@ -316,10 +333,10 @@ namespace AmplifyOcclusion
                             mipDescriptor.width >>= 1;
                             mipDescriptor.height >>= 1;
                             RenderingUtils.ReAllocateIfNeeded(ref m_tmpMipRTs[i], mipDescriptor, FilterMode.Bilinear, TextureWrapMode.Repeat, false, 1, 0f, m_tmpMipRTs[i].name);
-                            cb.SetRenderTarget(m_tmpMipRTs[i]);
+                            cb.SetRenderTarget(m_tmpMipRTs[i].nameID);
                             Blitter.BlitTexture(cb, Vector2.one, m_occlusionMat, i == 0 ? 5 : 4);
-                            cb.CopyTexture(m_tmpMipRTs[i], 0, 0, m_depthMipmap, 0, i);
-                            cb.SetGlobalTexture(PropertyID._AO_CurrDepthSource, m_tmpMipRTs[i]);
+                            cb.CopyTexture(m_tmpMipRTs[i].nameID, 0, 0, m_depthMipmap, 0, i);
+                            cb.SetGlobalTexture(PropertyID._AO_CurrDepthSource, m_tmpMipRTs[i].nameID);
                         }
                         cb.SetGlobalTexture(PropertyID._AO_SourceDepthMipmap, m_depthMipmap);
                     }
@@ -404,11 +421,11 @@ namespace AmplifyOcclusion
             cb.SetGlobalVector("_AO_Target_TexelSize", new Vector4(1.0f / quarterWidth, 1.0f / quarterHeight, quarterWidth, quarterHeight));
             PerformBlit(cb, m_tmpAOIntensityRT, m_occlusionMat, 2);
             RenderingUtils.ReAllocateIfNeeded(ref m_tmpAOBlurIntensityRT, intensityDescriptor, FilterMode.Bilinear, TextureWrapMode.Repeat, false, 1, 0f, "_AO_BlurIntensityTmp");
-            cb.SetGlobalTexture(PropertyID._AO_CurrMotionIntensity, m_tmpAOIntensityRT);
+            cb.SetGlobalTexture(PropertyID._AO_CurrMotionIntensity, m_tmpAOIntensityRT.nameID);
             PerformBlit(cb, m_tmpAOBlurIntensityRT, m_blurMat, 8);
-            cb.SetGlobalTexture(PropertyID._AO_CurrMotionIntensity, m_tmpAOBlurIntensityRT);
+            cb.SetGlobalTexture(PropertyID._AO_CurrMotionIntensity, m_tmpAOBlurIntensityRT.nameID);
             PerformBlit(cb, m_tmpAOIntensityRT, m_blurMat, 9);
-            cb.SetGlobalTexture(PropertyID._AO_CurrMotionIntensity, m_tmpAOIntensityRT);
+            cb.SetGlobalTexture(PropertyID._AO_CurrMotionIntensity, m_tmpAOIntensityRT.nameID);
         }
 
         public void RenderTemporal(CommandBuffer cb, ref CameraData cameraData)
@@ -422,7 +439,7 @@ namespace AmplifyOcclusion
                         NeighborMotionIntensity(cb, m_target.fullWidth, m_target.fullHeight);
                     if (UsingFilterDownsample(cameraData.isSceneViewCamera))
                     {
-                        RenderTargetIdentifier temporalTarget = m_temporalAccumRT[m_curStepIdx];
+                        RenderTargetIdentifier temporalTarget = m_temporalAccumRT[m_curStepIdx].nameID;
                         cb.SetRenderTarget(temporalTarget, RenderBufferLoadAction.DontCare, RenderBufferStoreAction.Store);
                         Blitter.BlitTexture(cb, Vector2.one, m_occlusionMat, 6);
                         cb.SetGlobalTexture(PropertyID._AO_TemporalAccumm, temporalTarget);
@@ -441,21 +458,21 @@ namespace AmplifyOcclusion
                 {
                     if (UsingFilterDownsample(cameraData.isSceneViewCamera))
                     {
-                        cb.SetRenderTarget(aDestinyRT);
+                        cb.SetRenderTarget(aDestinyRT.nameID);
                         Blitter.BlitTexture(cb, Vector2.one, m_applyOcclusionMat, applyMethod == ApplicationMethod.Debug ? 4 : 5);
                     }
                     else
                     {
-                        applyDebugTargetsTemporal[0] = aDestinyRT;
-                        applyDebugTargetsTemporal[1] = m_temporalAccumRT[m_curStepIdx];
+                        applyDebugTargetsTemporal[0] = aDestinyRT.nameID;
+                        applyDebugTargetsTemporal[1] = m_temporalAccumRT[m_curStepIdx].nameID;
                         cb.SetRenderTarget(applyDebugTargetsTemporal, applyDebugTargetsTemporal[0]);
                         Blitter.BlitTexture(cb, Vector2.one, m_applyOcclusionMat, applyMethod == ApplicationMethod.Debug ? 1 : 3);
                     }
                 }
                 else
                 {
-                    cb.SetGlobalTexture(PropertyID._AO_CurrOcclusionDepth, m_occlusionDepthRT);
-                    cb.SetRenderTarget(aDestinyRT);
+                    cb.SetGlobalTexture(PropertyID._AO_CurrOcclusionDepth, m_occlusionDepthRT.nameID);
+                    cb.SetRenderTarget(aDestinyRT.nameID);
                     Blitter.BlitTexture(cb, Vector2.one, m_applyOcclusionMat, applyMethod == ApplicationMethod.Debug ? 0 : 2);
                 }
             }

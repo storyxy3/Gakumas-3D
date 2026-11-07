@@ -19,11 +19,13 @@ namespace Qua.Utility
         public override T CreateInstance<T>()
         {
             T prefab = Resources.Load<T>(path);
-            if (prefab != null)
-                return Instantiate(prefab);
-            if (canRaiseNotFoundException)
-                throw new FileNotFoundException("Not found prefab: " + path);
-            return null;
+            if (prefab == null)
+            {
+                if (canRaiseNotFoundException)
+                    throw new FileNotFoundException("Not found prefab: " + path);
+                return null;
+            }
+            return Instantiate(prefab);
         }
     }
 }

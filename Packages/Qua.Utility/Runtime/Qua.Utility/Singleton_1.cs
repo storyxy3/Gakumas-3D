@@ -44,7 +44,7 @@ namespace Qua.Utility
             if (_instance != null || QuittingState.IsQuitting)
                 return;
             T instance = FindAnyObjectByType<T>();
-            if (instance == null)
+            if (!(instance != null))
             {
                 if (System.Attribute.GetCustomAttribute(typeof(T), typeof(SingletonCreatorAttribute)) is SingletonCreatorAttribute creator)
                 {
@@ -89,7 +89,8 @@ namespace Qua.Utility
             string category = instance.GetCategory();
             if (!string.IsNullOrEmpty(category))
                 path = PathUtility.Combine(path, category);
-            instance.transform.SetParent(HierarchyUtility.FindOrCreateTransform(path));
+            Transform parent = HierarchyUtility.FindOrCreateTransform(path);
+            instance.transform.SetParent(parent);
         }
 
         private static void Finalize(T instance)
@@ -111,11 +112,10 @@ namespace Qua.Utility
 
         public static void DestroyInstance()
         {
-            if (_instance != null)
-            {
-                DestroyImmediate(_instance.gameObject);
-                _instance = null;
-            }
+            if (_instance == null)
+                return;
+            DestroyImmediate(_instance.gameObject);
+            _instance = null;
         }
 
         protected virtual bool IsDontDestroy()

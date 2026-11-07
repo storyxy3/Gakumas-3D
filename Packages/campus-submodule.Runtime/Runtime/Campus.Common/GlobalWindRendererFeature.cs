@@ -22,13 +22,24 @@ namespace Campus.Common
                 var parameter = VolumeManager.instance.stack.GetComponent<GlobalWindParameter>();
                 if (!renderingData.cameraData.camera.TryGetComponent(out ActorAnimationManageData manageData))
                     return;
-                var data = new ActorAnimationManagePropertyData(1f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
-                    parameter.constantPower.value,
-                    new float3(parameter.directionX.value, parameter.directionY.value, parameter.directionZ.value),
-                    parameter.wavePower.value, parameter.waveFrequency.value,
-                    parameter.windWaveAmplitude.value, parameter.windWaveFrequency.value, parameter.windWavePhase.value,
-                    parameter.windRangeMax.value, parameter.windRangeMin.value, parameter.windRangeFrequency.value, parameter.windRangePhase.value,
-                    parameter.randomPower.value, parameter.randomFrequency.value, 30);
+                var data = new ActorAnimationManagePropertyData
+                {
+                    weight = 1f,
+                    windDirection = new float3(parameter.directionX.value, parameter.directionY.value, parameter.directionZ.value),
+                    globalForce = parameter.constantPower.value,
+                    windPower = parameter.wavePower.value,
+                    windFluctuation = parameter.waveFrequency.value,
+                    windWaveAmplitude = parameter.windWaveAmplitude.value,
+                    windWaveFrequency = parameter.windWaveFrequency.value,
+                    windWavePhase = parameter.windWavePhase.value,
+                    windRangeMax = parameter.windRangeMax.value,
+                    windRangeMin = parameter.windRangeMin.value,
+                    windRangeFrequency = parameter.windRangeFrequency.value,
+                    windRangePhase = parameter.windRangePhase.value,
+                    randomPower = parameter.randomPower.value,
+                    randomFluctuation = parameter.randomFrequency.value,
+                    prewarmCount = 30
+                };
                 manageData.SetWindPropertyData(ref data);
             }
         }

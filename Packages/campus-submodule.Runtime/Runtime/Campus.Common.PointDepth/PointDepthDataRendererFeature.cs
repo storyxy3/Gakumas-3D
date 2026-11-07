@@ -10,16 +10,14 @@ namespace Campus.Common.PointDepth
     {
         private class PointDepthDataPass : ScriptableRenderPass
         {
-            private readonly int _outputBufferId;
-            private readonly int _viewportPointId;
+            private readonly int _outputBufferId = Shader.PropertyToID("_OutputBuffer");
+            private readonly int _viewportPointId = Shader.PropertyToID("_ViewportPoint");
             private readonly int _kernelIndex;
             private readonly ComputeShader _depthComputeShader;
             public GraphicsBuffer OutputBuffer;
             public Vector2 ViewportPoint;
             public PointDepthDataPass(ComputeShader computeShader)
             {
-                _outputBufferId = Shader.PropertyToID("_OutputBuffer");
-                _viewportPointId = Shader.PropertyToID("_ViewportPoint");
                 profilingSampler = new ProfilingSampler("PointDepthDataPass");
                 _depthComputeShader = computeShader;
                 renderPassEvent = RenderPassEvent.BeforeRenderingPostProcessing;

@@ -86,7 +86,7 @@ namespace Campus.Common
                 CoreUtils.SetKeyword(cmd, ActorLightCookieKeyword, false);
             }
 
-            private void SetupActorLighting(VLSRPRenderer vlSrpRenderer, IReadOnlyList<IVLActorController> visibleActorControllers, NativeArray<VisibleLight> visibleLights, out bool enableAdditionalActorLight, out bool enableActorLightCookie)
+            private unsafe void SetupActorLighting(VLSRPRenderer vlSrpRenderer, IReadOnlyList<IVLActorController> visibleActorControllers, NativeArray<VisibleLight> visibleLights, out bool enableAdditionalActorLight, out bool enableActorLightCookie)
             {
                 if (visibleActorControllers.Any(_003C_003Ec._003C_003E9__9_0 ?? (_003C_003Ec._003C_003E9__9_0 = _003C_003Ec._003C_003E9._003CSetupActorLighting_003Eb__9_0)))
                 {
@@ -98,7 +98,8 @@ namespace Campus.Common
                 var lightIndices = ListPool<int>.Get();
                 for (int i = 0; i < visibleLights.Length; i++)
                 {
-                    var additionalData = visibleLights[i].light.GetUniversalAdditionalLightData();
+                    ref VisibleLight visibleLight = ref UnsafeUtility.ArrayElementAsRef<VisibleLight>(NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr(visibleLights), i);
+                    var additionalData = visibleLight.light.GetUniversalAdditionalLightData();
                     if ((additionalData.renderingLayers & ActorShaderLayerMask) != 0) lightIndices.Add(i);
                     if (lightIndices.Count == ShaderVariablesActorLighting.k_ACTOR_LIGHT_COUNT) break;
                 }
@@ -111,8 +112,9 @@ namespace Campus.Common
                 for (int i = 0; i < lightIndices.Count; i++)
                 {
                     int visibleLightIndex = lightIndices[i];
-                    var additionalData = visibleLights[visibleLightIndex].light.GetUniversalAdditionalLightData();
-                    float range = visibleLights[visibleLightIndex].lightType == LightType.Directional ? 1000f : visibleLights[visibleLightIndex].range;
+                    ref VisibleLight visibleLight = ref UnsafeUtility.ArrayElementAsRef<VisibleLight>(NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr(visibleLights), visibleLightIndex);
+                    var additionalData = visibleLight.light.GetUniversalAdditionalLightData();
+                    float range = visibleLight.lightType == LightType.Directional ? 1000f : visibleLight.range;
                     var customLightingType = additionalData.customLightingType;
                     int cookieIndex = vlSrpRenderer != null ? vlSrpRenderer.GetLightCookieShaderDataIndex(visibleLightIndex) : -1;
                     UniversalRenderPipeline.InitializeLightConstants_Common(visibleLights, visibleLightIndex,
@@ -123,7 +125,7 @@ namespace Campus.Common
                     directions[i] = new float4(lightSpotDir.x, lightSpotDir.y, lightSpotDir.z, (float)(int)customLightingType);
                     spheres[i] = new BoundingSphere(new Vector3(lightPos.x, lightPos.y, lightPos.z), range);
                 }
-                uint4 data = uint4.zero;
+                uint4 data = default;
                 enableAdditionalActorLight = false;
                 enableActorLightCookie = false;
                 for (int a = 0; a < visibleActorControllers.Count; a++)
