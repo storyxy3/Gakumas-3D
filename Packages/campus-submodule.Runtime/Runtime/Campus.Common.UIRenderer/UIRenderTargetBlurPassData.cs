@@ -11,12 +11,18 @@ namespace Campus.Common.UIRenderer
         public readonly int blurSize;
         public UIRenderTargetBlurPassData(RTHandle src, RTHandle dst, RenderTextureDescriptor descriptor, int blurSize)
         {
-            this = default;
+            this.src = src;
+            this.dst = dst;
+            this.descriptor = descriptor;
+            this.blurSize = blurSize;
         }
 
         public UIRenderTargetBlurPassData(Texture src, RTHandle dst, RenderTextureDescriptor descriptor, int blurSize)
         {
-            this = default;
+            this.src = src;
+            this.dst = dst;
+            this.descriptor = descriptor;
+            this.blurSize = blurSize;
         }
     }
 }

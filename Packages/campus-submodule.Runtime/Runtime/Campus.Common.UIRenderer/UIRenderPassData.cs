@@ -10,14 +10,14 @@ namespace Campus.Common.UIRenderer
     public class UIRenderPassData : IUIRenderPassData, IComparable<UIRenderPassData>
     {
         private const int DefaultBackgroundBlurSize = 50;
-        private static readonly Vector3 DefaultHsvOffset;
+        private static readonly Vector3 DefaultHsvOffset = new Vector3(0f, 0.1f, 0.5f);
         [CompilerGenerated]
         private int _003CLayerId_003Ek__BackingField;
         [CompilerGenerated]
         private int _003CLayerValue_003Ek__BackingField;
         [CompilerGenerated]
         private UIRenderPassType _003CRenderPassType_003Ek__BackingField;
-        private HashSet<CampusCanvas> _backgroundBlurRefs;
+        private HashSet<CampusCanvas> _backgroundBlurRefs = new HashSet<CampusCanvas>();
         private int LayerId
         {
             [CompilerGenerated]
@@ -61,7 +61,7 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(bool);
+                return RenderPassType != UIRenderPassType.None;
             }
         }
 
@@ -69,7 +69,7 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(int);
+                return _backgroundBlurRefs.Count;
             }
         }
 
@@ -77,7 +77,7 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(int);
+                return GetBackgroundBlurSize();
             }
         }
 
@@ -85,44 +85,67 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(Vector3);
+                return GetHsvOffset();
             }
         }
 
         public void Initialize(CampusCanvas canvas)
         {
+            LayerId = canvas.LayerId;
+            LayerValue = canvas.LayerValue;
         }
 
         public void Reset()
         {
+            LayerId = 0;
+            LayerValue = 0;
+            RenderPassType = UIRenderPassType.None;
+            _backgroundBlurRefs.Clear();
         }
 
         public void AddBackgroundBlur(CampusCanvas canvas)
         {
+            _backgroundBlurRefs.Add(canvas);
+            RenderPassType |= UIRenderPassType.BackgroundBlur;
         }
 
         public void RemoveBackgroundBlur(CampusCanvas canvas)
         {
+            _backgroundBlurRefs.Remove(canvas);
+            if (BackgroundBlurRefCount <= 0)
+                RenderPassType &= ~UIRenderPassType.BackgroundBlur;
         }
 
         private int GetBackgroundBlurSize()
         {
-            return default(int);
+            foreach (var canvas in _backgroundBlurRefs)
+            {
+                var size = canvas.OverrideBlurSize;
+                if (size.HasValue)
+                    return size.Value;
+            }
+            return DefaultBackgroundBlurSize;
         }
 
         private Vector3 GetHsvOffset()
         {
-            return default(Vector3);
+            foreach (var canvas in _backgroundBlurRefs)
+            {
+                var offset = canvas.OverrideHsvOffset;
+                if (offset.HasValue)
+                    return offset.Value;
+            }
+            return DefaultHsvOffset;
         }
 
         public bool HasRenderPassType(UIRenderPassType flag)
         {
-            return default(bool);
+            return (RenderPassType & flag) == flag;
         }
 
         public int CompareTo(UIRenderPassData other)
         {
-            return default(int);
+            return LayerValue.CompareTo(other.LayerValue);
         }
 
         public UIRenderPassData()

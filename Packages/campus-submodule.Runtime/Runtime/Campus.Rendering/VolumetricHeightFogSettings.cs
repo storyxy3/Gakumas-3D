@@ -13,9 +13,9 @@ namespace Campus.Rendering
         public LayerMask Mask;
         public bool Hdr;
         [Range(0f, 3f)]
-        public int Downsample;
+        public int Downsample = 1;
         public VolumetricHeightFogRaymarchMode RaymarchMode;
-        public MsaaQuality Msaa;
+        public MsaaQuality Msaa = MsaaQuality.Disabled;
         public VolumetricHeightFogSettings()
         {
         }

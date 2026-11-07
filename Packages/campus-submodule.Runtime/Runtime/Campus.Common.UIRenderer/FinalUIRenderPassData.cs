@@ -15,7 +15,7 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(int);
+                return _srcData.LayerValue;
             }
         }
 
@@ -38,7 +38,7 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(bool);
+                return RenderPassType != UIRenderPassType.None;
             }
         }
 
@@ -61,7 +61,7 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(int);
+                return _srcData.BackgroundBlurSize;
             }
         }
 
@@ -69,25 +69,33 @@ namespace Campus.Common.UIRenderer
         {
             get
             {
-                return default(Vector3);
+                return _srcData.HsvOffset;
             }
         }
 
         public void Initialize(UIRenderPassData target)
         {
+            _srcData = target;
+            RenderPassType = target.RenderPassType;
+            BackgroundBlurRefCount = target.BackgroundBlurRefCount;
         }
 
         public void Reset()
         {
+            _srcData = null;
+            RenderPassType = UIRenderPassType.None;
+            BackgroundBlurRefCount = 0;
         }
 
         public bool HasRenderPassType(UIRenderPassType flag)
         {
-            return default(bool);
+            return (RenderPassType & flag) == flag;
         }
 
         public void RemoveBackgroundBlur()
         {
+            RenderPassType &= ~UIRenderPassType.BackgroundBlur;
+            BackgroundBlurRefCount--;
         }
 
         public FinalUIRenderPassData()
