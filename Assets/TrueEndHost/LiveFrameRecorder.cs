@@ -14,7 +14,7 @@ namespace TrueEnd.Host
     // (offline playback runs on the capture clock, so stalling the GPU does not change timing)
     // and encoded to JPEG on the recorder's own threads (joined on dispose; no thread-pool work
     // is left behind when the IL2CPP player shuts down). The host's black fade overlay is composited
-    // the same way OnGUI draws it (black with alpha over the frame).
+    // like the client's uGUI black tint (black with alpha, blended in linear space).
     internal sealed class LiveFrameRecorder : IDisposable
     {
         private const int Quality = 92;
@@ -82,12 +82,22 @@ namespace TrueEnd.Host
                 {
                     if (fade > 0f)
                     {
+                        // The client's black tint is a uGUI image blended in linear space (linear colour space project),
+                        // so darken in linear light and re-encode to sRGB.
                         float keep = 1f - Math.Min(1f, fade);
+                        var lut = new byte[256];
+                        for (int v = 0; v < 256; v++)
+                        {
+                            double c = v / 255.0;
+                            double lin = (c <= 0.04045 ? c / 12.92 : Math.Pow((c + 0.055) / 1.055, 2.4)) * keep;
+                            double srgb = lin <= 0.0031308 ? lin * 12.92 : 1.055 * Math.Pow(lin, 1 / 2.4) - 0.055;
+                            lut[v] = (byte)Math.Min(255, (int)(srgb * 255 + 0.5));
+                        }
                         for (int i = 0; i < pixels.Length; i += 4)
                         {
-                            pixels[i] = (byte)(pixels[i] * keep + 0.5f);
-                            pixels[i + 1] = (byte)(pixels[i + 1] * keep + 0.5f);
-                            pixels[i + 2] = (byte)(pixels[i + 2] * keep + 0.5f);
+                            pixels[i] = lut[pixels[i]];
+                            pixels[i + 1] = lut[pixels[i + 1]];
+                            pixels[i + 2] = lut[pixels[i + 2]];
                         }
                     }
                     byte[] jpg = ImageConversion.EncodeArrayToJPG(pixels, GraphicsFormat.R8G8B8A8_SRGB, (uint)w, (uint)h, 0, Quality);

@@ -58,11 +58,18 @@ No tests, test assemblies or Unity Test Framework are included.
 The standalone host keeps its window open on the final black frame by default. Close the window to exit.
 `--quit-at-end` exits after the ending presentation, and `--screenshots <times>` implies this option.
 `--quit-after <seconds>` is a wall-clock playback limit and also exits when reached.
-The client presentation pauses the director 0.4 seconds before its duration and fades black over 0.3 seconds;
+The client fades its black tint in over 0.3 seconds when the timeline crosses 0.8 seconds before its duration (LiveScenePresenter.Bind), then pauses the director 0.4 seconds before its duration and fades again over 0.3 seconds (both linear: the client's DOTweenSettings default ease is Linear, shipped as Assets/TrueEndHost/Resources/DOTweenSettings.asset);
 the host retains a presentation clock through the remaining duration so screenshot requests can capture the fade.
 `LIVE_CAPTURE actual` reports that presentation clock; `LIVE_END_FADE time` records where the director paused.
 `LIVE_STOPPED` is followed by `LIVE_QUIT` for automatic runs or `LIVE_IDLE` for interactive runs.
 Linux playback must remain silent (`--mute -noaudio`).
+
+Real-time playback applies the client's frame-rate settings (GameSetting.ApplySetting / CampusQualityManager.ApplyVsync):
+target 60 fps with vsync on by default, so the vsync interval follows the display (every second refresh when the display
+is at least twice as fast as the target, e.g. ~89.5 fps on 179 Hz). `--low-frame-rate` selects the 30 fps setting and
+`--no-vsync` turns vsync off (plain 60 fps cap). Capture runs (`--capture-fps`, `--record-frames`) keep the capture clock.
+Swing (hair/skirt) and particles step once per rendered frame, as in the client, so frame dumps must use the frame rate of
+the reference recording.
 
 Optional playback recording: `--pose-log /absolute/path/poses.jsonl` copies completed bone transforms and Swing collider/chain state at approximately 0.1-second intervals. It does not evaluate or modify the animation graph. World transforms are after frame completion; job collider coordinates are in the Swing root space, and dynamic state retains root-motion cancellation. `--capture-fps 60` uses Unity's capture clock for repeatable offline playback; it does not change the Swing solver. `--stop-time 50` stops and exits at that timeline time, allowing bounded capture intervals with `--start-time`. Keep Linux capture runs silent with `--mute -noaudio` and the documented dummy audio environment.
 

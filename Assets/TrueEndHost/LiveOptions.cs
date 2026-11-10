@@ -19,6 +19,10 @@ namespace TrueEnd.Host
         public double QuitAfter = double.PositiveInfinity;
         public double[] ScreenshotTimes = Array.Empty<double>();
         public bool QuitAtEnd;
+        public string QualityTier;
+        // The client's frame-rate settings (GameSetting): high frame rate (60, else 30) and vsync; defaults = high + vsync on.
+        public bool HighFrameRate = true;
+        public bool Vsync = true;
         public bool Mute = Application.platform == RuntimePlatform.LinuxPlayer;
 
         public static LiveOptions Parse(string[] arguments)
@@ -60,6 +64,9 @@ namespace TrueEnd.Host
                             throw new ArgumentException("Record width must be 0 (native) to 7680.");
                         break;
                     case "--mute": options.Mute = true; break;
+                    case "--quality-tier": options.QualityTier = Value(arguments, ref i).ToLowerInvariant(); break;
+                    case "--low-frame-rate": options.HighFrameRate = false; break;
+                    case "--no-vsync": options.Vsync = false; break;
                     default:
                         if (argument.StartsWith("--", StringComparison.Ordinal))
                             throw new ArgumentException("Unknown live option " + argument);
