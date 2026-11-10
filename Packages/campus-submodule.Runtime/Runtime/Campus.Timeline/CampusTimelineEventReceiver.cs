@@ -9,6 +9,7 @@ namespace Campus.Timeline
     {
         public void OnNotify(Playable origin, INotification notification, object context)
         {
+            if (notification is CampusActorResetMarker) controller.ResetModel();
         }
 
         public CampusTimelineEventReceiver()

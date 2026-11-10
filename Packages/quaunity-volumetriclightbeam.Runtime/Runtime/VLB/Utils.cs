@@ -207,14 +207,15 @@ namespace VLB
             {
                 Vector3 n = planes[i].normal;
                 float d = planes[i].distance;
-                if (d + (min.z * n.z + (min.x * n.x + min.y * n.y)) <= 0f &&
-                    d + (min.z * n.z + (max.x * n.x + min.y * n.y)) <= 0f &&
-                    d + (min.z * n.z + (min.x * n.x + max.y * n.y)) <= 0f &&
-                    d + (min.z * n.z + (max.x * n.x + max.y * n.y)) <= 0f &&
-                    d + (max.z * n.z + (min.x * n.x + min.y * n.y)) <= 0f &&
-                    d + (max.z * n.z + (max.x * n.x + min.y * n.y)) <= 0f &&
-                    d + (max.z * n.z + (min.x * n.x + max.y * n.y)) <= 0f &&
-                    d + (max.z * n.z + (max.x * n.x + max.y * n.y)) <= 0f) return false;
+                // Original accepts a plane only on an ordered positive corner distance (ARM b.gt / x64 ja): NaN fails it.
+                if (!(d + (min.z * n.z + (min.x * n.x + min.y * n.y)) > 0f) &&
+                    !(d + (min.z * n.z + (max.x * n.x + min.y * n.y)) > 0f) &&
+                    !(d + (min.z * n.z + (min.x * n.x + max.y * n.y)) > 0f) &&
+                    !(d + (min.z * n.z + (max.x * n.x + max.y * n.y)) > 0f) &&
+                    !(d + (max.z * n.z + (min.x * n.x + min.y * n.y)) > 0f) &&
+                    !(d + (max.z * n.z + (max.x * n.x + min.y * n.y)) > 0f) &&
+                    !(d + (max.z * n.z + (min.x * n.x + max.y * n.y)) > 0f) &&
+                    !(d + (max.z * n.z + (max.x * n.x + max.y * n.y)) > 0f)) return false;
             }
             return true;
         }

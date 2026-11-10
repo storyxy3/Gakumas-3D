@@ -10,7 +10,7 @@ namespace ActorAnimation
     {
         [SerializeField]
         [HideInInspector]
-        public ActorAnimationManagePropertyData propertyData = new ActorAnimationManagePropertyData(1f, 0f, 1f, 1f, 1f, 1f, 1f, 1f, global::Unity.Mathematics.float3.zero, Vector3.down, 0f, 1f, 0f, 1f, 0f, 10f, -10f, 0f, 0f, 0f, 0f, 30);
+        public ActorAnimationManagePropertyData propertyData = new ActorAnimationManagePropertyData(1f, 0f, 1f, 1f, 1f, 1f, 1f, 1f, global::Unity.Mathematics.float3.zero, Vector3.right, 0f, 1f, 0f, 1f, 0f, 10f, -10f, 0f, 0f, 0f, 0f, 30);
         private void OnEnable()
         {
             RenderPipelineManager.endCameraRendering += OnEndCameraRendering;

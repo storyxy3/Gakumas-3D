@@ -15,6 +15,14 @@ namespace VL.Rendering
 
     public class DownscaleTransparentPass : ScriptableRenderPass
     {
+        // DMM PC (D32) vs APK (D24): the platform switch of UniversalRenderer.k_DepthStencilFormat.
+#if (UNITY_SWITCH || UNITY_ANDROID) && !UNITY_EDITOR
+        const GraphicsFormat k_DepthStencilFormat = GraphicsFormat.D24_UNorm_S8_UInt;
+        const GraphicsFormat k_DepthFormat = GraphicsFormat.D24_UNorm;
+#else
+        const GraphicsFormat k_DepthStencilFormat = GraphicsFormat.D32_SFloat_S8_UInt;
+        const GraphicsFormat k_DepthFormat = GraphicsFormat.D32_SFloat;
+#endif
         [Serializable]
         [CompilerGenerated]
         private sealed class _003C_003Ec
@@ -56,7 +64,7 @@ namespace VL.Rendering
                 {
                     new AttachmentDescriptor((GraphicsFormat)48) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store, clearColor = Color.black },
                     new AttachmentDescriptor((GraphicsFormat)46) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store, clearColor = Color.black },
-                    new AttachmentDescriptor((GraphicsFormat)92) { loadAction = RenderBufferLoadAction.DontCare, storeAction = RenderBufferStoreAction.DontCare }
+                    new AttachmentDescriptor(k_DepthStencilFormat) { loadAction = RenderBufferLoadAction.DontCare, storeAction = RenderBufferStoreAction.DontCare }
                 },
                 depthAttachmentIndex = 2,
                 memoryless = new[] { false, false, true }
@@ -137,7 +145,7 @@ namespace VL.Rendering
                 descriptor.graphicsFormat = (GraphicsFormat)46;
                 RenderingUtils.ReAllocateIfNeeded(ref _buffers.distortion, descriptor, FilterMode.Bilinear, TextureWrapMode.Repeat, name: _buffers.distortion.name);
                 descriptor.graphicsFormat = GraphicsFormat.None;
-                descriptor.depthStencilFormat = (GraphicsFormat)91;
+                descriptor.depthStencilFormat = k_DepthFormat;
                 RenderingUtils.ReAllocateIfNeeded(ref _buffers.depthTexture, descriptor, FilterMode.Point, TextureWrapMode.Clamp, name: _buffers.depthTexture.name);
                 CoreUtils.SetRenderTarget(cmd, _buffers.depthTexture, RenderBufferLoadAction.DontCare, RenderBufferStoreAction.Store);
                 Vector2 scale = Vector2.one;

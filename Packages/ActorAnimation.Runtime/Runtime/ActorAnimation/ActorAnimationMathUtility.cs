@@ -249,8 +249,8 @@ namespace ActorAnimation
             if (cosine >= 1f) return quaternion.identity;
             if (cosine <= -1f)
             {
-                var axis = math.cross(from, new float3(0f, 1f, 0f));
-                if (math.lengthsq(axis) < 1e-10f) axis = math.cross(from, new float3(1f, 0f, 0f));
+                var axis = math.cross(from, new float3(1f, 0f, 0f));
+                if (math.lengthsq(axis) < 1e-10f) axis = math.cross(from, new float3(0f, 1f, 0f));
                 return quaternion.AxisAngle(axis, math.PI);
             }
             return quaternion.AxisAngle(math.normalizesafe(math.cross(from, to)), math.acos(cosine));

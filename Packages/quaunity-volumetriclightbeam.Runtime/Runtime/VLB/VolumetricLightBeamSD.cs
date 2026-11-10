@@ -1123,7 +1123,7 @@ namespace VLB
             cameraClippingDistance = Mathf.Max(cameraClippingDistance, 0f);
             glareFrontal = Mathf.Clamp01(glareFrontal);
             glareBehind = Mathf.Clamp01(glareBehind);
-            fresnelPow = Mathf.Max(fresnelPow, 0f);
+            fresnelPow = Mathf.Max(0f, fresnelPow); // original maxss(0, fresnelPow): NaN kept
             noiseIntensity = Mathf.Clamp01(noiseIntensity);
         }
 

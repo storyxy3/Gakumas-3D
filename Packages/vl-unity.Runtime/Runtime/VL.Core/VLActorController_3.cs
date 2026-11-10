@@ -155,6 +155,8 @@ namespace VL.Core
 
         private void OnDestroy()
         {
+            OnActorDestroy();
+            if (_settings != null) _settings.OnActorDestroy(this);
         }
 
         public override bool IsRendererActive()

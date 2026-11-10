@@ -16,6 +16,8 @@ namespace Campus.Common
             public T target;
             public CreatedEntry(string id, T target)
             {
+                this.id = id;
+                this.target = target;
             }
         }
 
@@ -67,11 +69,11 @@ namespace Campus.Common
         [SerializeField]
         [HideInInspector]
         private CampusActorController _actorController;
-        private readonly List<CreatedEntry<ParticleSystem>> _createdParticles;
-        private readonly List<CreatedEntry<AudioClip>> _createdSounds;
+        private readonly List<CreatedEntry<ParticleSystem>> _createdParticles = new List<CreatedEntry<ParticleSystem>>();
+        private readonly List<CreatedEntry<AudioClip>> _createdSounds = new List<CreatedEntry<AudioClip>>();
         [SerializeField]
         [HideInInspector]
-        private bool _isActiveAnimationEvent;
+        private bool _isActiveAnimationEvent = true;
         public bool IsInitialized
         {
             get
@@ -144,6 +146,11 @@ namespace Campus.Common
 
         private void AllEffectDestroyInternal()
         {
+            foreach (var entry in _createdParticles)
+            {
+                if (entry.target != null) Destroy(entry.target.gameObject);
+            }
+            _createdParticles.Clear();
         }
 
         public void AllEffectStopInternal()
@@ -152,6 +159,7 @@ namespace Campus.Common
 
         protected void OnDestroy()
         {
+            AllEffectDestroyInternal();
         }
 
         public AnimationEventHandler()

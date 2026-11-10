@@ -18,7 +18,7 @@ namespace Campus.Live.Equipment.Timeline
         private static void UpdateIntensity(ref LiveEquipmentAnimationData animationData, ref LiveEquipmentStreamData streamData)
         {
             streamData.intensity = animationData.IsFlag(EquipmentValueType.Intensity)
-                ? (animationData.intensity <= 0.004f ? 0f : animationData.intensity) : 1f;
+                ? (animationData.intensity > 0.004f ? animationData.intensity : 0f) : 1f; // original: NaN -> 0 (DMM 0x2afc2c0)
         }
 
         private static void UpdateHVRotation(ref LiveEquipmentAnimationData animationData, ref LiveEquipmentStreamData streamData, ref LiveEquipmentInitialData initialData)

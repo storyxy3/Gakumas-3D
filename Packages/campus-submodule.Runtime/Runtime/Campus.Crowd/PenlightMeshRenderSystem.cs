@@ -178,6 +178,7 @@ namespace Campus.Crowd
 
         private GraphicsBuffer GetPenlightInfoBytesBuffer(int index)
         {
+            if (index < 0 || index >= _subMeshCount || _penlightInfoBytesBuffers == null) return null;
             return _penlightInfoBytesBuffers[index];
         }
     }

@@ -10,7 +10,7 @@ namespace ActorAnimation
         {
             float3 delta = childPosition - selfPosition;
             float lengthSquared = math.lengthsq(delta);
-            if (lengthSquared > 1e-10f) return selfPosition + delta / math.sqrt(lengthSquared) * length;
+            if (lengthSquared > 0.00001f * 0.00001f) return selfPosition + delta / math.sqrt(lengthSquared) * length;
             return selfPosition;
         }
 

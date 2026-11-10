@@ -75,7 +75,35 @@ namespace Campus.Common.Panorama
         {
             get
             {
-                return null;
+                if (_current != null)
+                {
+                    LogLoadedOnce("Cached", _current);
+                    return _current;
+                }
+                _current = Resources.Load<PanoramaGamepadInputSettings>(AssetName);
+                if (_current != null)
+                {
+                    LogLoadedOnce("Resources", _current);
+                    return _current;
+                }
+                _current = LoadAssetByGuid();
+                if (_current != null)
+                {
+                    LogLoadedOnce("AssetDatabase GUID", _current);
+                    return _current;
+                }
+                if (_fallback == null)
+                {
+                    _fallback = CreateInstance<PanoramaGamepadInputSettings>();
+                    _fallback.hideFlags = HideFlags.HideAndDontSave;
+                }
+                if (!_fallbackLogged)
+                {
+                    Debug.LogWarning(LogPrefix + " Asset was not found. Using fallback defaults.");
+                    LogLoadedOnce("Fallback", _fallback);
+                    _fallbackLogged = true;
+                }
+                return _fallback;
             }
         }
 
@@ -226,24 +254,41 @@ namespace Campus.Common.Panorama
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetCacheOnRuntimeStart()
         {
+            _current = null;
+            _fallback = null;
+            _fallbackLogged = false;
+            _loadLogged = false;
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void LoadOnRuntimeStart()
         {
+            _ = Current;
         }
 
         private static void LogLoadedOnce(string source, PanoramaGamepadInputSettings settings)
         {
+            if (_loadLogged) return;
+            LogLoaded(source, settings);
+            _loadLogged = true;
         }
 
         private static void LogLoaded(string source, PanoramaGamepadInputSettings settings)
         {
+            Debug.Log(string.Concat(new[]
+            {
+                LogPrefix + " Loaded from ", source, ". asset=", settings.name, ", path=", GetAssetPathForLog(settings),
+                ", leftStick=(", settings._leftStickXAxis, ", ", settings._leftStickYAxis,
+                "), rightStick=(", settings._rightStickXAxis, ", ", settings._rightStickYAxis,
+                "), triggers=(", settings._leftTriggerInput, ", ", settings._rightTriggerInput,
+                "), shoulders=(", settings._leftShoulderInput, ", ", settings._rightShoulderInput,
+                "), ", string.Format("cameraRotationInvert=(horizontal:{0}, vertical:{1})", settings._cameraRotationInputInvertHorizontal, settings._cameraRotationInputInvertVertical)
+            }), settings);
         }
 
         private static string GetAssetPathForLog(PanoramaGamepadInputSettings settings)
         {
-            return null;
+            return "(not available)";
         }
 
         private static PanoramaGamepadInputSettings LoadAssetByGuid()
@@ -253,6 +298,22 @@ namespace Campus.Common.Panorama
 
         public PanoramaGamepadInputSettings()
         {
+            _leftStickXAxis = DefaultLeftStickXAxis;
+            _leftStickYAxis = DefaultLeftStickYAxis;
+            _rightStickXAxis = DefaultRightStickXAxis;
+            _rightStickYAxis = DefaultRightStickYAxis;
+            _leftTriggerInput = DefaultLeftTriggerInput;
+            _rightTriggerInput = DefaultRightTriggerInput;
+            _leftShoulderInput = DefaultLeftShoulderInput;
+            _rightShoulderInput = DefaultRightShoulderInput;
+            _leftStickDeadzone = 0.15f;
+            _rightStickDeadzone = 0.15f;
+            _triggerDeadzone = 0.15f;
+            _gamepadMoveInputScale = 1f;
+            _gamepadHeightInputScale = 1f;
+            _gamepadHeightInputSmoothTime = 0.12f;
+            _cameraRotationInputSpeed = 25f;
+            _zoomRatioInputSpeed = 0.1f;
         }
     }
 }

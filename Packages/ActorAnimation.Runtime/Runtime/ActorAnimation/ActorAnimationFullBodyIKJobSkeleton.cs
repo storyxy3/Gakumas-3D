@@ -180,7 +180,7 @@ namespace ActorAnimation
                     var nearest = new ActorAnimationIKCorrectionColliderCollisionInfo { Distance = float.MaxValue };
                     foreach (var collider in correctionColliders)
                     {
-                        if (collider.radius < 0.00001f) continue;
+                        if (collider.radius < 1E-05) continue;
                         ActorAnimationIKCorrectionColliderCollisionInfo info;
                         switch (collider.type)
                         {
@@ -214,7 +214,7 @@ namespace ActorAnimation
         {
             if (!hintEffector.IsValid(stream)) return;
             float weight = hintEffector.GetLocalScale(stream).x;
-            if (weight < 0.00001f) return;
+            if (weight < 1E-05) return;
             var human = stream.AsHuman();
             float3 position = human.GetHintPosition(hintEffector.hint);
             float3 target = hintEffector.GetPosition(stream);

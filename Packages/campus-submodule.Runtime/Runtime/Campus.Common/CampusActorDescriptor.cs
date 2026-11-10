@@ -72,7 +72,7 @@ namespace Campus.Common
         [CompilerGenerated]
         private CampusActorAnimationJointLimitSetting _003CjointLimitSetting_003Ek__BackingField;
         [CompilerGenerated]
-        private static readonly IEqualityComparer<CampusActorDescriptor> _003CUniqueIdTypeComparer_003Ek__BackingField;
+        private static readonly IEqualityComparer<CampusActorDescriptor> _003CUniqueIdTypeComparer_003Ek__BackingField = new UniqueIdTypeEqualityComparer();
         public string uniqueId
         {
             get

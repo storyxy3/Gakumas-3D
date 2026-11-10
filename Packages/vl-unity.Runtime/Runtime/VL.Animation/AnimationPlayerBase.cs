@@ -18,7 +18,7 @@ namespace VL.Animation
 
             internal bool _003CInsertRootPlayable_003Eb__0(KeyValuePair<int, RootPlayableData> pair)
             {
-                return default(bool);
+                return pair.Key == order;
             }
         }
 
@@ -32,7 +32,7 @@ namespace VL.Animation
 
             internal bool _003CGetRootPlayable_003Eb__0(KeyValuePair<int, RootPlayableData> x)
             {
-                return default(bool);
+                return x.Key == order;
             }
         }
 
@@ -46,7 +46,7 @@ namespace VL.Animation
 
             internal bool _003CRemoveRootPlayable_003Eb__0(KeyValuePair<int, RootPlayableData> pair)
             {
-                return default(bool);
+                return pair.Key == order;
             }
         }
 
@@ -98,15 +98,70 @@ namespace VL.Animation
 
         public void InsertRootPlayable(int order, OnInsertRootPlayable onConnect)
         {
+            Setup();
+            if (!_graph.IsValid()) return;
+            if (_insertedList == null) _insertedList = new List<KeyValuePair<int, RootPlayableData>>();
+            if (_insertedList.Exists(pair => pair.Key == order))
+            {
+                Debug.LogError("既に接続されています:" + order.ToString());
+                return;
+            }
+            var output = _graph.GetOutput(0);
+            var child = output.GetSourcePlayable();
+            var parent = new RootPlayableData { baseInputIndex = -1, playable = Playable.Null };
+            int index = _insertedList.Count;
+            for (int i = _insertedList.Count - 1; i >= 0; i--)
+            {
+                if (_insertedList[i].Key <= order) break;
+                parent = _insertedList[i].Value;
+                child = parent.GetBaseInput();
+                index = i;
+            }
+            if (parent.IsValid()) parent.DisconnectBaseInput();
+            var data = onConnect(_graph, child);
+            _insertedList.Insert(index, new KeyValuePair<int, RootPlayableData>(order, data));
+            if (parent.IsValid()) parent.ConnectBaseInput(data.playable);
+            else output.SetSourcePlayable(data.playable);
         }
 
         public Playable GetRootPlayable(int order)
         {
-            return default(Playable);
+            if (!_graph.IsValid() || _insertedList == null) return Playable.Null;
+            return _insertedList.Find(x => x.Key == order).Value.playable;
         }
 
         public void RemoveRootPlayable(int order, OnDisconnectRootPlayable onDisconnect)
         {
+            if (!_graph.IsValid()) return;
+            if (_insertedList == null) _insertedList = new List<KeyValuePair<int, RootPlayableData>>();
+            if (!_insertedList.Exists(pair => pair.Key == order))
+            {
+                Debug.LogError("接続されていません:" + order.ToString());
+                return;
+            }
+            var output = _graph.GetOutput(0);
+            for (int i = 0; i < _insertedList.Count; i++)
+            {
+                if (_insertedList[i].Key != order) continue;
+                var data = _insertedList[i].Value;
+                var parent = data.playable.GetOutput(0);
+                if (parent.IsValid())
+                {
+                    for (int j = 0; j < parent.GetInputCount(); j++)
+                    {
+                        if (parent.GetInput(j).Equals(data.playable))
+                        {
+                            parent.DisconnectInput(j);
+                            break;
+                        }
+                    }
+                }
+                var child = onDisconnect(_graph, data);
+                if (parent.IsValid()) parent.ConnectInput(0, child, 0);
+                else output.SetSourcePlayable(child);
+                _insertedList.RemoveAt(i);
+                return;
+            }
         }
 
         private void DestroyGraph()
@@ -117,10 +172,12 @@ namespace VL.Animation
 
         protected virtual void OnDisable()
         {
+            DestroyGraph();
         }
 
         protected virtual void OnDestroy()
         {
+            DestroyGraph();
         }
 
         protected AnimationPlayerBase()

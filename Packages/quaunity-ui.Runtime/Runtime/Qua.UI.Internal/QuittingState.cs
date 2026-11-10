@@ -19,10 +19,14 @@ namespace Qua.UI.Internal
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void OnInitialize()
         {
+            Application.quitting += OnQuitting;
+            IsQuitting = false;
         }
 
         private static void OnQuitting()
         {
+            IsQuitting = true;
+            Application.quitting -= OnQuitting;
         }
     }
 }

@@ -409,7 +409,7 @@ namespace Campus.Live.Equipment.Timeline
                 float localTime = time;
                 if (FireType == FireType.Normal) localTime = FireParameter.y - FireParameter.x * i + time;
                 else if (FireType == FireType.Reverse) localTime = FireParameter.y - FireParameter.x * (_idLength - i - 1) + time;
-                localTime = Mathf.Max(localTime, 0f);
+                if (0f > localTime) localTime = 0f; // original keeps NaN (x64 comiss 0,time + jbe)
                 var factor = GetEquipmentValueFactor(reverseIds.Exist(id));
                 OnUpdateAnimationData(data, initial + id, localTime, duration, weight, in factor);
                 if (hasTarget)

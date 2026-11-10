@@ -74,7 +74,7 @@ namespace ActorAnimation
             if (toCollider.type == ActorSwingColliderType.Plane) return true;
             float3 difference = fromCollider.fastHitPosition - toCollider.fastHitPosition;
             float radius = fromCollider.fastHitRadius + toCollider.fastHitRadius;
-            return math.lengthsq(difference) <= radius * radius;
+            return !(math.lengthsq(difference) > radius * radius); // original: unordered (NaN) counts as a hit (x64 comiss+setbe)
         }
 
         [MethodImpl(256)]

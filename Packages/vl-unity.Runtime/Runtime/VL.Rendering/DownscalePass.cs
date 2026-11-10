@@ -13,6 +13,12 @@ namespace VL.Rendering
 
     public class DownscalePass : ScriptableRenderPass
     {
+        // DMM PC (D32) vs APK (D24): the platform switch of UniversalRenderer.k_DepthStencilFormat.
+#if (UNITY_SWITCH || UNITY_ANDROID) && !UNITY_EDITOR
+        const GraphicsFormat k_DepthStencilFormat = GraphicsFormat.D24_UNorm_S8_UInt;
+#else
+        const GraphicsFormat k_DepthStencilFormat = GraphicsFormat.D32_SFloat_S8_UInt;
+#endif
         public enum SSAOBlurTypes
         {
             Bilateral,
@@ -132,7 +138,7 @@ namespace VL.Rendering
                 new AttachmentDescriptor((GraphicsFormat)48) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.DontCare, clearColor = Color.clear },
                 new AttachmentDescriptor((GraphicsFormat)48) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store, clearColor = Color.clear },
                 new AttachmentDescriptor((GraphicsFormat)6) { loadAction = RenderBufferLoadAction.DontCare, storeAction = RenderBufferStoreAction.Store },
-                new AttachmentDescriptor((GraphicsFormat)92) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store, clearStencil = 2 }
+                new AttachmentDescriptor(k_DepthStencilFormat) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store, clearStencil = 2 }
             };
             _downscaleRenderPass = new CustomRenderPassData { attachmentDescriptors = attachments, depthAttachmentIndex = attachments.Length - 1, memoryless = new[] { true, false, false, false } };
             _downscaleSubPasses = new[]
@@ -146,7 +152,7 @@ namespace VL.Rendering
                 attachmentDescriptors = new[]
                 {
                     new AttachmentDescriptor((GraphicsFormat)6) { loadAction = RenderBufferLoadAction.DontCare, storeAction = RenderBufferStoreAction.Store },
-                    new AttachmentDescriptor((GraphicsFormat)92) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store }
+                    new AttachmentDescriptor(k_DepthStencilFormat) { loadAction = RenderBufferLoadAction.Clear, storeAction = RenderBufferStoreAction.Store }
                 },
                 depthAttachmentIndex = 1
             };
@@ -262,7 +268,7 @@ namespace VL.Rendering
             RenderingUtils.ReAllocateIfNeeded(ref _buffers.directReflection, reflectionDescriptor, FilterMode.Trilinear, TextureWrapMode.Repeat, name: _buffers.directReflection.name);
             cmd.SetGlobalTexture(_buffers.directReflection.name, _buffers.directReflection.nameID);
             descriptor.graphicsFormat = GraphicsFormat.None;
-            descriptor.depthStencilFormat = (GraphicsFormat)92;
+            descriptor.depthStencilFormat = k_DepthStencilFormat;
             RenderingUtils.ReAllocateIfNeeded(ref _buffers.depthTexture, descriptor, FilterMode.Point, TextureWrapMode.Clamp, name: _buffers.depthTexture.name);
             cmd.SetGlobalTexture(_buffers.depthTexture.name, _buffers.depthTexture.nameID);
             int resetHistoryFrames = renderingData.cameraData.taaSettings.resetHistoryFrames;

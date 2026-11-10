@@ -64,7 +64,7 @@ namespace VL.Core
         {
             get
             {
-                return _boneInfos.Count;
+                return _boneInfos != null ? _boneInfos.Count : 0;
             }
         }
 
@@ -241,6 +241,7 @@ namespace VL.Core
 
         protected virtual void OnDestroy()
         {
+            DisposeMaterials();
         }
 
         public void SetRendererActive(bool active)

@@ -298,10 +298,10 @@ namespace Campus.Common.Live
                             if (campusActor == null) continue;
                             foreach (var pair in binder.CampusTimeline.GetPropAndFieldConstraintTargetPairs(actor.index))
                             {
-                                if (pair.propPrefab != null) campusActor.SetPropFieldConstraintTarget(pair.propPrefab.name, pair.fieldConstraintTarget);
+                                if (pair.fieldConstraintTarget != null) campusActor.SetPropFieldConstraintTarget(pair.propPrefab.name, pair.fieldConstraintTarget);
                             }
                         }
-                        var references = new List<VLTimelineController.ReferenceBindParam>();
+                        var references = new List<VLTimelineController.ReferenceBindParam>(8);
                         if (param.bgmAudioClip != null)
                         {
                             var audioDirector = Enumerable.FirstOrDefault(directors, _003C_003Ec._003C_003E9__39_7 ??

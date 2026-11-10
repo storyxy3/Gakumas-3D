@@ -126,14 +126,14 @@ namespace VLB
                 new float4(glare.y, falloff.w, velocity.w, seed));
                 float apex = coneApexOffsetZ[visibleIndex];
                 float safeApex = math.max(math.abs(apex), 0.0001f);
-                if (apex < 0f) safeApex = -safeApex;
+                if (!(apex >= 0f)) safeApex = -safeApex; // original: unordered (NaN) apex counts as negative
                 float halfAngle = coneAngle[visibleIndex] * 0.017453292f * 0.5f;
                 float2 intensities = intensity[visibleIndex];
                 params1Draw[instanceIndex] = new float4x4(
                 new float4(safeApex, intensities.x, 0f, 0f),
                 new float4(0f, intensities.y, 0f, 0f),
                 new float4(math.cos(halfAngle), cameraClippingDistance[visibleIndex], 0f, 0f),
-                new float4(math.sin(halfAngle), math.max(fresnelPow[visibleIndex], 0.001f), depthBlendDistance[visibleIndex], 0f));
+                new float4(math.sin(halfAngle), (0.001f > fresnelPow[visibleIndex] ? 0.001f : fresnelPow[visibleIndex]) /* original keeps NaN */, depthBlendDistance[visibleIndex], 0f));
             }
         }
 

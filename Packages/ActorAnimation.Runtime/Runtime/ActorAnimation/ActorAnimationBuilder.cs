@@ -13,7 +13,7 @@ namespace ActorAnimation
         protected AnimationScriptPlayable _playable;
         private Animator _animator;
         private ActorAnimationRig _actorAnimationRig;
-        private ushort _setSortingOrder;
+        private ushort _setSortingOrder = 500;
         public virtual ushort setSortingOrder
         {
             get

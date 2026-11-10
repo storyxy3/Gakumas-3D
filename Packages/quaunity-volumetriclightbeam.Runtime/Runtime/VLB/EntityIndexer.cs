@@ -52,8 +52,7 @@ namespace VLB
         public void UpdateIndex(Entity entity, int newArrayIndex)
         {
             var item = _entities[entity.index];
-            item.arrayIndex = newArrayIndex;
-            _entities[entity.index] = item;
+            _entities[entity.index] = new EntityItem { chunkIndex = item.chunkIndex, arrayIndex = newArrayIndex, version = entity.version };
         }
 
         public void RemapChunkIndices(List<int> remaper)

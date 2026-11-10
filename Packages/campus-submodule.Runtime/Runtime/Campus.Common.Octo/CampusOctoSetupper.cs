@@ -45,6 +45,7 @@ namespace Campus.Common.Octo
 
             internal void _003COnInitialize_003Eb__1_0(Stream stream)
             {
+                stream.Dispose();
             }
 
             internal string _003CSetupAsync_003Eb__33_0(string name, string extension)
@@ -96,8 +97,8 @@ namespace Campus.Common.Octo
             }
         }
 
-        private static readonly Regex PushImageRegex;
-        private static readonly Dictionary<string, Stream> Streams;
+        private static readonly Regex PushImageRegex = new Regex("img_chr_.+?_00-thumb-push");
+        private static readonly Dictionary<string, Stream> Streams = new Dictionary<string, Stream>();
         [CompilerGenerated]
         private static Action<string> onAssetBundleLoadInterceptor;
         private static bool _isDbUpdating;
@@ -124,6 +125,12 @@ namespace Campus.Common.Octo
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void OnInitialize()
         {
+            _isDbUpdating = false;
+            _isSetup = false;
+            global::Campus.Common.Extensions.EnumerableExtensions.ForEach(Streams.Values, _003C_003Ec._003C_003E9__1_0 ??
+                (_003C_003Ec._003C_003E9__1_0 = _003C_003Ec._003C_003E9._003COnInitialize_003Eb__1_0));
+            Streams.Clear();
+            onSetup = null;
         }
 
         private static int GetA(OctoEnvType env)

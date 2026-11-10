@@ -114,7 +114,7 @@ namespace VLB
             mesh.vertices = vertices;
             var uv = new Vector4[vertexCount];
             for (int i = 0; i < sideVertexCount; i++)
-                uv[i] = new Vector4(0f, 0f, (float)(i % ringSize) / (ringSize - 1f), (i / ringSize) / (numSegments + 1f));
+                uv[i] = new Vector4(0f, 0f, (float)(i % ringSize) / (ringSize - 1f), (i / ringSize) / (numSegments + 2f - 1f));
             if (hasCap)
             {
                 for (int i = sideVertexCount; i < vertexCount; i++) uv[i] = new Vector4(1f, 0f, 0f, 0f);

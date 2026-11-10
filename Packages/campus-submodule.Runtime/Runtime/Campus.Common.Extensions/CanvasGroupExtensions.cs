@@ -10,10 +10,11 @@ namespace Campus.Common.Extensions
         public static void SetBlockingAlpha(this CanvasGroup canvasGroup, float alpha)
         {
             canvasGroup.alpha = alpha;
-            if ((canvasGroup.interactable && canvasGroup.blocksRaycasts) != (alpha >= 1f))
+            // Original compares 1 > alpha (x64 comiss(1,alpha)+setbe): NaN alpha counts as blocking.
+            if ((canvasGroup.interactable && canvasGroup.blocksRaycasts) != !(1f > alpha))
             {
-                canvasGroup.interactable = alpha >= 1f;
-                canvasGroup.blocksRaycasts = alpha >= 1f;
+                canvasGroup.interactable = !(1f > alpha);
+                canvasGroup.blocksRaycasts = !(1f > alpha);
             }
         }
 

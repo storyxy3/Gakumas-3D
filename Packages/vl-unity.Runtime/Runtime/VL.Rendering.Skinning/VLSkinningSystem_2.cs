@@ -177,7 +177,7 @@ namespace VL.Rendering.Skinning
                 for (int i = 0; i < _blendShapeVertexStarts.Length; i++)
                 {
                     float weight = blendShapeWeights[i] * 0.01f;
-                    if (weight >= 0.001f)
+                    if (!(0.001f > weight)) // original skips only on ordered weight < 0.001 (x64 comiss threshold,value + ja): NaN is kept
                     {
                         _blendShapeInfoArray[count++] = new BlendShapeInfo { start = _blendShapeVertexStarts[i], length = _blendShapeVertexLengths[i], weight = weight };
                     }

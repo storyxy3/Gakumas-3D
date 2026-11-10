@@ -9,6 +9,7 @@ namespace Qua.Base
         [RuntimeInitializeOnLoadMethod]
         private static void InitializeOnUnityLoad()
         {
+            unityContext = SynchronizationContext.Current;
         }
     }
 }

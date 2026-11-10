@@ -7,7 +7,7 @@ namespace VL.Core
     [Serializable]
     public class HumanBodyBoneMapDictionary : SerializedDictionary<HumanBodyBones, Transform>
     {
-        public HumanBodyBoneMapDictionary()
+        public HumanBodyBoneMapDictionary() : base(56)
         {
         }
     }

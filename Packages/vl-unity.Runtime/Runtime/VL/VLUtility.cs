@@ -7,7 +7,12 @@ namespace VL
     {
         public static bool FastStartsWith(string str, string value)
         {
-            return default(bool);
+            if (value.Length > str.Length) return false;
+            for (int i = 0; i < value.Length; i++)
+            {
+                if (str[i] != value[i]) return false;
+            }
+            return true;
         }
 
         public static void DestroyObject(Object target)

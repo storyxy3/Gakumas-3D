@@ -8,24 +8,28 @@ namespace VL.Animation
         public Playable playable;
         public Playable GetBaseInput()
         {
-            return default(Playable);
+            if (playable.IsValid()) return playable.GetInput(baseInputIndex);
+            return Playable.Null;
         }
 
         public bool IsValid()
         {
-            return default(bool);
+            return playable.IsValid();
         }
 
         public void ConnectBaseInput(Playable child)
         {
+            playable.ConnectInput(baseInputIndex, child, 0, 1f);
         }
 
         public void DisconnectBaseInput()
         {
+            playable.DisconnectInput(baseInputIndex);
         }
 
         public void Destroy()
         {
+            if (playable.IsValid()) playable.Destroy();
         }
     }
 }

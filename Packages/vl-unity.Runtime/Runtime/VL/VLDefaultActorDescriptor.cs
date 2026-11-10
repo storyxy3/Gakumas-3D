@@ -9,11 +9,11 @@ namespace VL
     public class VLDefaultActorDescriptor : VLActorDescriptor, IVLDefaultActorDescriptor, IVLActorDescriptor
     {
         [SerializeField]
-        private bool _humanoid = true;
+        private bool _humanoid;
         [SerializeField]
         private VLActorColliderType _colliderType;
         [SerializeField]
-        private bool _colliderTrigger;
+        private bool _colliderTrigger = true;
         public bool humanoid
         {
             get

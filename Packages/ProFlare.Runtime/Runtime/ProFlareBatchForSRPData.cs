@@ -171,8 +171,9 @@ public class ProFlareBatchForSRPData : IDisposable
             var flare = flares[i];
             var input = _flareUpdateInoutData[i];
             input.isVisible = flare != null && flare.isVisible && flare._Atlas == flareBatchForSrp.CurrentAtlas &&
-                flare.GlobalBrightness >= 0.001f && Mathf.Max(Mathf.Max(flare.GlobalTintColor.r, flare.GlobalTintColor.g), flare.GlobalTintColor.b) >= 0.001f &&
-                flare.GlobalScale >= 0.01f && flare.thisTransform.localScale.x >= 0.01f;
+                // Original rejects only when the threshold is greater (x64 comiss threshold,value + ja): NaN passes.
+                !(0.001f > flare.GlobalBrightness) && !(0.001f > Mathf.Max(Mathf.Max(flare.GlobalTintColor.r, flare.GlobalTintColor.g), flare.GlobalTintColor.b)) &&
+                !(0.01f > flare.GlobalScale) && !(0.01f > flare.thisTransform.localScale.x);
             if (input.isVisible) input.offScreenFadeDist = flare.OffScreenFadeDist;
             _flareUpdateInoutData[i] = input;
         }

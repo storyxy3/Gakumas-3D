@@ -20,15 +20,16 @@ namespace ActorAnimation
 
         private unsafe static void FindSurroundingKeyframes(float time, ref AnimationCurveData curve, KeyframeData* keyframe)
         {
-            if (!(curve.leftCacheIndex == curve.rightCacheIndex
-                || keyframe[curve.leftCacheIndex].time > time || keyframe[curve.rightCacheIndex].time < time)) return;
+            // Original keeps the cache only on ordered compares (ARM b.hi / x64 jb): a NaN time searches again.
+            if (curve.leftCacheIndex != curve.rightCacheIndex
+                && keyframe[curve.leftCacheIndex].time <= time && keyframe[curve.rightCacheIndex].time >= time) return;
             int first = curve.startIndex;
             int count = curve.length;
             while (count > 0)
             {
                 int half = count >> 1;
                 int middle = first + half;
-                if (keyframe[middle].time <= time)
+                if (!(keyframe[middle].time > time)) // original advances on unordered (NaN) compares
                 {
                     first = middle + 1;
                     count -= half + 1;
